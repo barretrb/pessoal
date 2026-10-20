@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+venv/
+config/config.json
+credentials.json
+token.json
+token_tasks.json
+token_calendar.json
+state/*.json
+!state/.gitkeep
+*.log

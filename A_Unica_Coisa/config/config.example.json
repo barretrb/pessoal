@@ -1,0 +1,27 @@
+{
+  "google": {
+    "credentials_path": "credentials.json",
+    "token_path": "token.json",
+    "calendar_id": "primary",
+    "tasks_lists": {
+      "professional": "💼 Profissional",
+      "personal": "🏠 Pessoal"
+    }
+  },
+  "whatsapp": {
+    "provider": "callmebot",
+    "phone": "5521999999999",
+    "callmebot_apikey": "YOUR_CALLMEBOT_APIKEY"
+  },
+  "llm": {
+    "provider": "groq",
+    "groq_api_key": "YOUR_GROQ_API_KEY",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "preferences": {
+    "focus_block_minutes": 90,
+    "morning_routine_time": "08:15",
+    "night_checkin_time": "18:00",
+    "weekly_planning_time": "08:00"
+  }
+}
