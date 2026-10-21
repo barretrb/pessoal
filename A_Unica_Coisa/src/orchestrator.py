@@ -161,7 +161,7 @@ class Orchestrator:
 
         start_dt = datetime.fromisoformat(slot_data["start"])
         end_dt = datetime.fromisoformat(slot_data["end"])
-        task_info = day_state.get("chosen_deep_task", {})
+        task_info = day_state.get("chosen_deep_task") or {}
         task_title = task_info.get("clean_title", "Deep Work")
 
         event = self.calendar_service.create_focus_block(
@@ -184,8 +184,8 @@ class Orchestrator:
         today_str = datetime.now().strftime("%Y-%m-%d")
         day_state = self.state.get("daily_history", {}).get(today_str, {})
 
-        deep_title = day_state.get("chosen_deep_task", {}).get("clean_title", "")
-        personal_title = day_state.get("chosen_personal_task", {}).get("clean_title", "")
+        deep_title = (day_state.get("chosen_deep_task") or {}).get("clean_title", "")
+        personal_title = (day_state.get("chosen_personal_task") or {}).get("clean_title", "")
 
         msg = self.whatsapp.format_night_checkin(deep_title, personal_title)
         sent = self.whatsapp.send_message(msg)
