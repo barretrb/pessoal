@@ -40,7 +40,8 @@ class WhatsAppService:
         reserve_task: Optional[Dict[str, Any]],
         personal_task: Optional[Dict[str, Any]],
         shallow_tasks: List[Dict[str, Any]],
-        slot_info: Dict[str, Any]
+        slot_info: Dict[str, Any],
+        auto_booked: bool = False
     ) -> str:
         """Formata o briefing matinal (Seção 7.2 da spec)."""
         lines = ["🎯 *A ÚNICA COISA DE HOJE*\n"]
@@ -54,12 +55,13 @@ class WhatsAppService:
         else:
             lines.append("📌 _Nenhuma tarefa Deep Work encontrada no backlog!_")
 
-        # Janela de foco sugerida
+        # Janela de foco sugerida / auto-reservada
         if slot_info.get("start") and slot_info.get("end"):
             st_str = slot_info["start"].strftime("%H:%M")
             et_str = slot_info["end"].strftime("%H:%M")
             period_note = " (tarde)" if slot_info.get("is_fallback_afternoon") else ""
-            lines.append(f"⏰ *Melhor janela hoje:* {st_str} às {et_str}{period_note}.")
+            prefix = "🔒 *Bloco reservado na agenda:*" if auto_booked else "⏰ *Melhor janela hoje:*"
+            lines.append(f"{prefix} {st_str} às {et_str}{period_note}.")
         else:
             lines.append("⏰ *Aviso:* Sem janelas livres de 60m+ na agenda de hoje.")
 
@@ -81,7 +83,11 @@ class WhatsAppService:
         else:
             lines.append("  • _Lista operacional limpa._")
 
-        lines.append("\n👉 _Responda *\"OK\"* para eu bloquear sua agenda, ou *\"Trocar por X\"*._")
+        if auto_booked:
+            lines.append("\n👉 _O bloco de foco já está bloqueado na sua agenda! Se precisar ajustar, basta mover no Google Calendar._")
+        else:
+            lines.append("\n👉 _Responda *\"OK\"* para eu bloquear sua agenda, ou *\"Trocar por X\"*._")
+
         return "\n".join(lines)
 
     @staticmethod

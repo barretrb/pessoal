@@ -21,6 +21,7 @@
     "model": "llama-3.3-70b-versatile"
   },
   "preferences": {
+    "auto_book": true,
     "focus_block_minutes": 90,
     "morning_routine_time": "08:15",
     "night_checkin_time": "18:00",

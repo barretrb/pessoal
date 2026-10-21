@@ -74,14 +74,17 @@ class Orchestrator:
         with open(self.state_path, "w", encoding="utf-8") as f:
             json.dump(self.state, f, indent=2, ensure_ascii=False)
 
-    def run_morning_routine(self, force: bool = False) -> Dict[str, Any]:
-        """Executa o ritual matinal das 08:15."""
+    def run_morning_routine(self, force: bool = False, auto_book: Optional[bool] = None) -> Dict[str, Any]:
+        """Executa o ritual matinal das 08:15 com suporte a Auto-Booking."""
         today_str = datetime.now().strftime("%Y-%m-%d")
         day_state = self.state.get("daily_history", {}).get(today_str, {})
 
         if day_state.get("morning_briefing_sent") and not force:
             print(f"[ORCHESTRATOR] Briefing matinal já enviado hoje ({today_str}).")
             return day_state
+
+        if auto_book is None:
+            auto_book = self.config.get("preferences", {}).get("auto_book", True)
 
         print("[ORCHESTRATOR] Iniciando ritual matinal...")
 
@@ -112,17 +115,37 @@ class Orchestrator:
         now = datetime.now()
         slot_info = self.calendar_service.find_best_focus_slot(now, duration_minutes=90)
 
-        # 4. Formata e envia mensagem via WhatsApp
+        # 4. Auto-booking proativo (se habilitado e slot disponível)
+        calendar_event_created = False
+        calendar_event_id = None
+        if auto_book and slot_info.get("start") and slot_info.get("end"):
+            task_info = chosen_deep or {}
+            task_title = task_info.get("clean_title", "Deep Work")
+            try:
+                event = self.calendar_service.create_focus_block(
+                    start_dt=slot_info["start"],
+                    end_dt=slot_info["end"],
+                    task_title=task_title,
+                    notes=task_info.get("raw_notes", "")
+                )
+                calendar_event_created = True
+                calendar_event_id = event.get("id")
+                print(f"[ORCHESTRATOR] Auto-Booking realizado: evento ID {calendar_event_id}")
+            except Exception as e:
+                print(f"[ORCHESTRATOR] Aviso no auto-booking: {e}")
+
+        # 5. Formata e envia mensagem via WhatsApp
         msg = self.whatsapp.format_morning_briefing(
             deep_task=chosen_deep,
             reserve_task=reserve_deep,
             personal_task=chosen_personal,
             shallow_tasks=shallow_candidates,
-            slot_info=slot_info
+            slot_info=slot_info,
+            auto_booked=calendar_event_created
         )
         sent = self.whatsapp.send_message(msg)
 
-        # 5. Atualiza estado
+        # 6. Atualiza estado
         if "daily_history" not in self.state:
             self.state["daily_history"] = {}
 
@@ -137,13 +160,14 @@ class Orchestrator:
                 "duration_minutes": slot_info.get("duration_minutes", 0),
                 "is_fallback_afternoon": slot_info.get("is_fallback_afternoon", False)
             },
-            "calendar_event_created": False
+            "calendar_event_created": calendar_event_created,
+            "calendar_event_id": calendar_event_id
         }
         self._save_state()
         return self.state["daily_history"][today_str]
 
     def confirm_focus_block(self) -> bool:
-        """Processa a resposta 'OK' do usuário para bloquear o tempo no Google Calendar."""
+        """Processa a confirmação manual do bloco de foco no Google Calendar."""
         today_str = datetime.now().strftime("%Y-%m-%d")
         day_state = self.state.get("daily_history", {}).get(today_str)
         if not day_state:
