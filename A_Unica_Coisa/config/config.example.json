@@ -3,6 +3,8 @@
     "credentials_path": "credentials.json",
     "token_path": "token.json",
     "calendar_id": "primary",
+    "professional_ical_url": "https://calendar.google.com/calendar/ical/SEU_EMAIL%40blip.ai/public/basic.ics",
+    "invite_professional_email": "seu.email@blip.ai",
     "tasks_lists": {
       "professional": "💼 Profissional",
       "personal": "🏠 Pessoal"

@@ -1,35 +1,143 @@
 # -*- coding: utf-8 -*-
 """
-Serviço de Integração com Google Calendar API.
+Serviço de Integração com Google Calendar API e iCal corporativo.
 Realiza a varredura de horários livres e criação de blocos de foco (Time Blocking).
 """
 
+import urllib.request
 from datetime import datetime, time, timedelta, timezone
 from typing import List, Dict, Optional, Any
 
 class CalendarService:
     """Interface para verificação de agenda e agendamento de blocos de foco."""
 
-    def __init__(self, google_auth_manager, calendar_id: str = "primary"):
+    def __init__(
+        self,
+        google_auth_manager,
+        calendar_id: str = "primary",
+        professional_ical_url: Optional[str] = None,
+        invite_email: Optional[str] = None
+    ):
         self.auth_manager = google_auth_manager
         self.calendar_id = calendar_id
-        self.service = self.auth_manager.get_calendar_service()
+        self.professional_ical_url = professional_ical_url
+        self.invite_email = invite_email
+        self._service = None
+
+    @property
+    def service(self):
+        if self._service is None:
+            self._service = self.auth_manager.get_calendar_service()
+        return self._service
+
+    def _fetch_ical_events_for_day(self, target_date: datetime, tz) -> List[Dict[str, Any]]:
+        """Baixa o feed iCal público/privado (ex: agenda Blip) e filtra os eventos do dia."""
+        if not self.professional_ical_url:
+            return []
+
+        try:
+            req = urllib.request.Request(
+                self.professional_ical_url,
+                headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+            )
+            with urllib.request.urlopen(req, timeout=12) as resp:
+                text = resp.read().decode("utf-8", errors="ignore")
+        except Exception as e:
+            print(f"[CALENDAR] Aviso ao consultar iCal: {e}")
+            return []
+
+        target_day = target_date.date()
+        events_blocks = []
+        current = []
+        in_event = False
+
+        for line in text.splitlines():
+            sline = line.strip()
+            if sline == "BEGIN:VEVENT":
+                in_event = True
+                current = []
+            elif sline == "END:VEVENT":
+                in_event = False
+                events_blocks.append(current)
+            elif in_event:
+                current.append(sline)
+
+        ical_events = []
+        for ev in events_blocks:
+            summary = "Compromisso Profissional"
+            dtstart_raw = ""
+            dtend_raw = ""
+            for l in ev:
+                if l.startswith("SUMMARY:"):
+                    summary = l.split(":", 1)[1]
+                elif l.startswith("DTSTART"):
+                    dtstart_raw = l.split(":")[-1].strip()
+                elif l.startswith("DTEND"):
+                    dtend_raw = l.split(":")[-1].strip()
+
+            if not dtstart_raw:
+                continue
+
+            dt_start = self._parse_ical_datetime(dtstart_raw, default_tz=tz)
+            if not dt_start:
+                continue
+
+            dt_start_local = dt_start.astimezone(tz)
+            if dt_start_local.date() != target_day:
+                continue
+
+            if dtend_raw:
+                dt_end = self._parse_ical_datetime(dtend_raw, default_tz=tz)
+            else:
+                dt_end = dt_start + timedelta(hours=1)
+
+            dt_end_local = (dt_end or (dt_start + timedelta(hours=1))).astimezone(tz)
+
+            ical_events.append({
+                "summary": summary,
+                "start": {"dateTime": dt_start_local.isoformat()},
+                "end": {"dateTime": dt_end_local.isoformat()}
+            })
+
+        return ical_events
+
+    def _parse_ical_datetime(self, dt_str: str, default_tz) -> Optional[datetime]:
+        """Converte strings no padrão iCal (UTC ou local) para datetime com timezone."""
+        try:
+            if dt_str.endswith("Z"):
+                return datetime.strptime(dt_str, "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
+            elif len(dt_str) == 8 and dt_str.isdigit():
+                d = datetime.strptime(dt_str, "%Y%m%d").date()
+                return datetime.combine(d, time(0, 0), tzinfo=default_tz)
+            elif "T" in dt_str:
+                clean_str = dt_str[:15]
+                return datetime.strptime(clean_str, "%Y%m%dT%H%M%S").replace(tzinfo=default_tz)
+        except Exception:
+            return None
+        return None
 
     def get_events_for_day(self, target_date: datetime) -> List[Dict[str, Any]]:
-        """Busca todos os compromissos agendados no dia especificado (08:00 às 19:00)."""
-        tz = target_date.tzinfo or timezone.utc
+        """Busca compromissos agendados no dia mesclando Google Calendar API e iCal."""
+        tz = target_date.tzinfo or datetime.now().astimezone().tzinfo
         start_of_day = datetime.combine(target_date.date(), time(8, 0), tzinfo=tz).isoformat()
         end_of_day = datetime.combine(target_date.date(), time(19, 0), tzinfo=tz).isoformat()
 
-        events_result = self.service.events().list(
-            calendarId=self.calendar_id,
-            timeMin=start_of_day,
-            timeMax=end_of_day,
-            singleEvents=True,
-            orderBy="startTime"
-        ).execute()
+        api_events = []
+        try:
+            events_result = self.service.events().list(
+                calendarId=self.calendar_id,
+                timeMin=start_of_day,
+                timeMax=end_of_day,
+                singleEvents=True,
+                orderBy="startTime"
+            ).execute()
+            api_events = events_result.get("items", [])
+        except Exception as e:
+            # Em ambientes sem API ou offline, prossegue com os outros métodos
+            pass
 
-        return events_result.get("items", [])
+        ical_events = self._fetch_ical_events_for_day(target_date, tz)
+        return api_events + ical_events
 
     def find_best_focus_slot(
         self,
@@ -38,22 +146,21 @@ class CalendarService:
     ) -> Dict[str, Any]:
         """
         Analisa a agenda do dia e localiza a melhor janela livre para Deep Work.
-        Prioriza a manhã (08:30 às 12:00). Se não houver, busca na tarde (13:30 às 18:00).
+        Prioriza a manhã (08:30 às 12:30). Se não houver, busca na tarde (13:30 às 18:00).
         """
-        tz = target_date.tzinfo or timezone.utc
+        tz = target_date.tzinfo or datetime.now().astimezone().tzinfo
         events = self.get_events_for_day(target_date)
 
         # Mapeia intervalos ocupados
         busy_intervals = []
         for ev in events:
-            # Ignora eventos de dia inteiro sem horário específico
             start_raw = ev.get("start", {}).get("dateTime")
             end_raw = ev.get("end", {}).get("dateTime")
             if not start_raw or not end_raw:
                 continue
 
-            dt_start = datetime.fromisoformat(start_raw.replace("Z", "+00:00"))
-            dt_end = datetime.fromisoformat(end_raw.replace("Z", "+00:00"))
+            dt_start = datetime.fromisoformat(start_raw.replace("Z", "+00:00")).astimezone(tz)
+            dt_end = datetime.fromisoformat(end_raw.replace("Z", "+00:00")).astimezone(tz)
             busy_intervals.append((dt_start, dt_end))
 
         # Ordena intervalos ocupados por início
@@ -122,10 +229,8 @@ class CalendarService:
 
         while current_cursor + needed_delta <= win_end:
             candidate_end = current_cursor + needed_delta
-            # Verifica colisão com qualquer intervalo ocupado
             collision = False
             for b_start, b_end in busy_intervals:
-                # Há sobreposição se candidato começa antes do fim e termina depois do início do evento
                 if max(current_cursor, b_start) < min(candidate_end, b_end):
                     collision = True
                     current_cursor = max(current_cursor + timedelta(minutes=15), b_end)
@@ -143,7 +248,7 @@ class CalendarService:
         task_title: str,
         notes: str = ""
     ) -> Dict[str, Any]:
-        """Cria o bloco de foco 'A Única Coisa' no Google Calendar."""
+        """Cria o bloco de foco 'A Única Coisa' no Google Calendar com convite opcional para trabalho."""
         event_body = {
             "summary": f"🎯 A Única Coisa: {task_title}",
             "description": f"Bloco de foco Deep Work reservado pelo Agente 'A Única Coisa'.\n\nNotas:\n{notes}",
@@ -161,6 +266,9 @@ class CalendarService:
                 ]
             }
         }
+
+        if self.invite_email:
+            event_body["attendees"] = [{"email": self.invite_email}]
 
         return self.service.events().insert(
             calendarId=self.calendar_id,

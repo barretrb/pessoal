@@ -42,7 +42,9 @@ class Orchestrator:
 
         self.calendar_service = CalendarService(
             self.auth_manager,
-            calendar_id=google_cfg.get("calendar_id", "primary")
+            calendar_id=google_cfg.get("calendar_id", "primary"),
+            professional_ical_url=google_cfg.get("professional_ical_url"),
+            invite_email=google_cfg.get("invite_professional_email")
         )
 
         llm_cfg = self.config.get("llm", {})
@@ -106,7 +108,7 @@ class Orchestrator:
         eligible_personal = [t for t in personal_tasks if not t.get("syntax_metadata", {}).get("is_blocked")]
         chosen_personal = eligible_personal[0] if eligible_personal else None
 
-        # 3. Varredura de horários livres no Google Calendar
+        # 3. Varredura de horários livres no Google Calendar (combinando pessoal + corporativo)
         now = datetime.now()
         slot_info = self.calendar_service.find_best_focus_slot(now, duration_minutes=90)
 
