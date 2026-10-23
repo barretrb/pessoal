@@ -1,0 +1,168 @@
+[
+  {
+    "id": "4cfffb0d-63e9-437b-8299-2ffc2d045160",
+    "aluno": "Viviane Lima",
+    "data": "23/10/2026 17:34",
+    "duracao": "00:00",
+    "perguntas_avaliadas": "2 de 2 avaliadas",
+    "disciplinas_titulo": "Direito Tributário · Direito Constitucional",
+    "media_disciplinas": 21.0,
+    "percentual": 21,
+    "status": "Eliminado — média abaixo de 60",
+    "status_tipo": "eliminado",
+    "notas_disciplinas": [
+      {
+        "disciplina": "Direito Tributário",
+        "nota": 24.0
+      },
+      {
+        "disciplina": "Direito Constitucional",
+        "nota": 18.0
+      }
+    ],
+    "feedback_banca": "O candidato demonstrou uma postura condizente com a prova oral, mantendo a serenidade e aproveitando os questionamentos feitos nas reperguntas pela banca examinadora. Revelou capacidade de síntese e vocabulário jurídico adequado ao nível exigido para Procurador do Estado.\n\nNas matérias de pontuação mais destacada, evidenciou segurança doutrinária e concatenamento dos pressupostos legais. Todavia, deve atentar para o esgotamento rigoroso de todos os comandos da questão, evitando a omissão de requisitos cumulativos ou artigos expressos da ordem constitucional e infraconstitucional.\n\nPara as próximas arguições, recomenda-se organizar mentalmente uma estrutura de tópicos antes de iniciar a resposta, assegurando que nenhum subitem do questionamento do examinador fique sem enfrentamento direto.",
+    "questoes_detalhadas": [
+      {
+        "numero": 1,
+        "disciplina": "Direito Tributário",
+        "topico": "16. PROCESSO JUDICIAL TRIBUTÁRIO E MEDIDA CAUTELAR FISCAL",
+        "nota": 24.0,
+        "enunciado": "Determinado contribuinte ingressou com uma ação judicial no juizado especial pretendendo a nulidade de lançamento fiscal efetuado, mas a liminar foi indeferida pelo juízo. Paralelamente, a fazenda pública ingressou com uma medida cautelar fiscal na vara de fazenda pública da mesma comarca, alegando que o contribuinte teria caído em insolvência. Em sua defesa, o contribuinte alegou a incompetência deste juízo, indicando a prevenção do juizado especial que conheceu da primeira ação.\nEm relação a essa situação hipotética, considerando que ambas as ações têm como objeto o mesmo crédito tributário e que o juizado especial não tem competência para o julgamento de ações de execução fiscal, responda se é viável a medida cautelar fiscal, indicando:\n1. Os requisitos a serem demonstrados pela fazenda pública;\n2. O juízo competente para o conhecimento da medida cautelar;\n3. Os efeitos do deferimento da medida.",
+        "resposta_candidata": "A denúncia espontânea prevista no art 138 do CTN afasta a multa moratória e punitiva mas não se aplica na Súmula 360 do STJ.",
+        "repergunta": "Basta a insolvência do contribuinte para a Fazenda obter a cautelar fiscal?",
+        "resposta_repergunta": "",
+        "criterios": [
+          {
+            "descricao": "Concluir que a cautelar fiscal exige prova de crédito e ato de alienação/dilapidação posterior à insolvência (art. 2º e 3º da Lei 8.397/92).",
+            "nota_obtida": 0.5,
+            "nota_maxima": 2.5,
+            "justificativa": "Omissão ou superficialidade no enfrentamento direto deste subitem exigido pela banca."
+          },
+          {
+            "descricao": "Afirmar que o juízo competente é o da execução fiscal e afastar com precisão a prevenção do Juizado Especial (art. 5º).",
+            "nota_obtida": 0.4,
+            "nota_maxima": 2.0,
+            "justificativa": "Omissão ou superficialidade no enfrentamento direto deste subitem exigido pela banca."
+          },
+          {
+            "descricao": "Apontar o prazo de 60 dias para ajuizar a execução fiscal preparatória sob pena de perda de eficácia e apensamento (arts. 11 e 14).",
+            "nota_obtida": 0.3,
+            "nota_maxima": 1.5,
+            "justificativa": "Omissão ou superficialidade no enfrentamento direto deste subitem exigido pela banca."
+          },
+          {
+            "descricao": "Indicar o efeito de indisponibilidade de bens até o limite da obrigação com expedição de ofícios a órgãos de registro (art. 4º).",
+            "nota_obtida": 0.2,
+            "nota_maxima": 1.0,
+            "justificativa": "Omissão ou superficialidade no enfrentamento direto deste subitem exigido pela banca."
+          },
+          {
+            "descricao": "Articulação do raciocínio: resposta organizada e na ordem do comando, com ligação lógica entre as partes.",
+            "nota_obtida": 0.3,
+            "nota_maxima": 1.1,
+            "justificativa": "Demonstrou organização aceitável na linha de raciocínio, articulando as premissas com o desfecho."
+          },
+          {
+            "descricao": "Capacidade de argumentação: fundamenta as conclusões e enfrenta o ponto controvertido.",
+            "nota_obtida": 0.3,
+            "nota_maxima": 1.1,
+            "justificativa": "Argumentou satisfatoriamente nos pontos enfrentados, aproveitando as provocações em sede de repergunta."
+          },
+          {
+            "descricao": "Uso correto do vernáculo: linguagem técnica precisa, concordância e regência corretas, sem vícios de oralidade que comprometam a clareza.",
+            "nota_obtida": 0.4,
+            "nota_maxima": 0.8,
+            "justificativa": "Uso adequado do vernáculo e vocabulário condizente com a sustentação oral para carreiras jurídicas de Estado."
+          }
+        ],
+        "comentario_examinador": "A candidata revelou postura adequada e segurança ao enfrentar a matéria. Recomenda-se maior rigor na citação dos dispositivos normativos e precedentes dos Tribunais Superiores, assegurando o esgotamento metódico de todos os subitens formulados no enunciado.",
+        "pontos_esperados": [
+          "Requisitos da cautelar fiscal (Lei 8.397/92, art. 3º): prova literal da constituição do crédito fiscal e prova documental de uma das hipóteses do art. 2º.",
+          "A insolvência isolada não autoriza a medida cautelar fiscal: é imprescindível que, após cair em insolvência, o devedor aliene ou tente alienar bens, ou pratique atos de dilapidação (art. 2º, III).",
+          "Juízo competente: a medida cautelar deve ser proposta perante o juiz competente para a execução fiscal (art. 5º). O Juizado Especial não detém competência para execução fiscal, logo não há prevenção nem litispendência.",
+          "Prazo de propositura da execução fiscal: 60 dias da concessão liminar preparatória, sob pena de cessação de eficácia (art. 11 e 13, I), e apensamento aos autos da execução (art. 14).",
+          "Efeitos do deferimento: decretação da indisponibilidade patrimonial do requerido até o limite da dívida (art. 4º), oficiando-se aos cartórios de imóveis, Banco Central (Sisbajud), CVM e capitanias/Detran."
+        ],
+        "base_legal": [
+          "Lei nº 8.397/1992, art. 2º, III",
+          "Lei nº 8.397/1992, art. 3º",
+          "Lei nº 8.397/1992, art. 4º",
+          "Lei nº 8.397/1992, art. 5º",
+          "Lei nº 8.397/1992, art. 11, 13, I e 14"
+        ],
+        "resposta_esperada": "A medida cautelar fiscal encontra-se disciplinada na Lei nº 8.397/1992. No caso concreto:\n1. Requisitos: Segundo o art. 3º da referida lei, exige-se prova literal da constituição do crédito e prova documental de uma das hipóteses legais do art. 2º. A mera insolvência, por si só, não basta: o art. 2º, III exige que o devedor, caindo em insolvência, aliene ou tente alienar bens, ou pratique atos que comprometam a liquidez de seu patrimônio.\n2. Juízo competente: Nos termos do art. 5º, a cautelar deve ser ajuizada perante o juízo competente para a futura execução fiscal. Como o Juizado Especial é absolutamente incompetente para execuções fiscais da Fazenda Pública, não há falar em prevenção.\n3. Efeitos: O deferimento acarreta a decretação de indisponibilidade dos bens do devedor até o montante da dívida (art. 4º), comunicação imediata aos registros de imóveis, Banco Central e órgãos de custódia, e gera a obrigação da Fazenda ajuizar a execução em 60 dias (art. 11), sob pena de perda de eficácia."
+      },
+      {
+        "numero": 2,
+        "disciplina": "Direito Constitucional",
+        "topico": "17. ORDEM ECONÔMICA E FINANCEIRA",
+        "nota": 18.0,
+        "enunciado": "Discorra sobre o instituto da propriedade privada e a função social da propriedade, explicando quais imóveis são insuscetíveis de desapropriação para fins de reforma agrária, fundamentando-se nos dispositivos sobre o tema constantes da Constituição Federal de 1988.",
+        "resposta_candidata": "(Resposta não registrada ou silenciosa)",
+        "repergunta": "",
+        "resposta_repergunta": "",
+        "criterios": [
+          {
+            "descricao": "Explicar que a propriedade é direito fundamental relativo condicionado à função social e princípio da ordem econômica.",
+            "nota_obtida": 0.2,
+            "nota_maxima": 2.0,
+            "justificativa": "Omissão ou superficialidade no enfrentamento direto deste subitem exigido pela banca."
+          },
+          {
+            "descricao": "Indicar com precisão os imóveis insuscetíveis de desapropriação para reforma agrária (pequena/média com requisito de unicidade patrimonial e propriedade produtiva - art. 185).",
+            "nota_obtida": 0.2,
+            "nota_maxima": 2.0,
+            "justificativa": "Omissão ou superficialidade no enfrentamento direto deste subitem exigido pela banca."
+          },
+          {
+            "descricao": "Apontar os requisitos da função social rural (aproveitamento adequado, meio ambiente, normas trabalhistas e bem-estar - art. 186 da CF).",
+            "nota_obtida": 0.2,
+            "nota_maxima": 1.5,
+            "justificativa": "Omissão ou superficialidade no enfrentamento direto deste subitem exigido pela banca."
+          },
+          {
+            "descricao": "Apontar a função social da propriedade urbana vinculada às exigências do plano diretor (art. 182, § 2º da CF).",
+            "nota_obtida": 0.2,
+            "nota_maxima": 1.5,
+            "justificativa": "Omissão ou superficialidade no enfrentamento direto deste subitem exigido pela banca."
+          },
+          {
+            "descricao": "Articulação do raciocínio: resposta organizada e na ordem do comando, com ligação lógica entre as partes.",
+            "nota_obtida": 0.3,
+            "nota_maxima": 1.1,
+            "justificativa": "Demonstrou organização aceitável na linha de raciocínio, articulando as premissas com o desfecho."
+          },
+          {
+            "descricao": "Capacidade de argumentação: fundamenta as conclusões e enfrenta o ponto controvertido.",
+            "nota_obtida": 0.3,
+            "nota_maxima": 1.1,
+            "justificativa": "Argumentou satisfatoriamente nos pontos enfrentados, aproveitando as provocações em sede de repergunta."
+          },
+          {
+            "descricao": "Uso correto do vernáculo: linguagem técnica precisa, concordância e regência corretas, sem vícios de oralidade que comprometam a clareza.",
+            "nota_obtida": 0.4,
+            "nota_maxima": 0.8,
+            "justificativa": "Uso adequado do vernáculo e vocabulário condizente com a sustentação oral para carreiras jurídicas de Estado."
+          }
+        ],
+        "comentario_examinador": "A candidata revelou postura adequada e segurança ao enfrentar a matéria. Recomenda-se maior rigor na citação dos dispositivos normativos e precedentes dos Tribunais Superiores, assegurando o esgotamento metódico de todos os subitens formulados no enunciado.",
+        "pontos_esperados": [
+          "A propriedade é direito fundamental (art. 5º, XXII), mas relativizado pela exigência de que atenda à sua função social (art. 5º, XXIII).",
+          "Propriedade privada e função social são também princípios fundamentais da ordem econômica (art. 170, II e III da CF).",
+          "A função social urbana se define pelo plano diretor (art. 182, §2º), e a rural por quatro requisitos cumulativos: aproveitamento racional e adequado, preservação do meio ambiente, relações de trabalho e exploração que favoreça o bem-estar (art. 186 da CF).",
+          "Imóveis insuscetíveis de desapropriação para reforma agrária (art. 185 da CF): a pequena e média propriedade rural, desde que seu proprietário não possua outra; e a propriedade produtiva.",
+          "O descumprimento da função social sujeita o proprietário a sanções expropriatórias constitucionais."
+        ],
+        "base_legal": [
+          "CF, art. 5º, XXII e XXIII",
+          "CF, art. 170, II e III",
+          "CF, art. 182, § 2º",
+          "CF, art. 184",
+          "CF, art. 185, I e II",
+          "CF, art. 186"
+        ],
+        "resposta_esperada": "A propriedade privada surge no texto constitucional de 1988 dotada de dupla estatura: como direito fundamental garantido no art. 5º, XXII, indissociavelmente vinculado à cláusula da função social insculpida no inciso XXIII, e como princípio estruturante da ordem econômica e financeira (art. 170, II e III). Não se trata de direito absoluto, mas conformável pelo interesse coletivo. No âmbito urbano, a função social é cumprida quando o imóvel atende às exigências de ordenação expressas no Plano Diretor municipal (art. 182, §2º). No âmbito rural, o art. 186 da CF estabelece quatro vetores simultâneos: aproveitamento racional e adequado, utilização adequada dos recursos naturais disponíveis e preservação do meio ambiente, observância das normas trabalhistas e exploração que favoreça o bem-estar dos proprietários e trabalhadores. Por expressa dicção do art. 185 da CF, são insuscetíveis de desapropriação para fins de reforma agrária: I) a pequena e média propriedade rural, assim definida em lei, desde que seu proprietário não possua outra; e II) a propriedade produtiva, assegurando-se tratamento especial à sua destinação."
+      }
+    ]
+  }
+]

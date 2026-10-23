@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Banca Oral — PGE-AL (Procuradoria Geral do Estado)</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar Superior -->
+  <header class="navbar">
+    <div class="brand">
+      <div class="brand-icon">⚖️</div>
+      <div>
+        <div class="brand-title">SIMULADOR PROVA ORAL PGE-AL</div>
+        <div class="brand-sub">Banca Examinadora Simulada • Viviane Lima</div>
+      </div>
+    </div>
+    
+    <nav class="nav-links">
+      <button class="nav-btn active" id="btn-nav-simulado" onclick="switchView('setup-view')">
+        <span>🎙️</span> Simulado
+      </button>
+      <button class="nav-btn" id="btn-nav-banco" onclick="switchView('bank-view'); carregarBancoQuestoes();">
+        <span>📚</span> Banco de Questões
+      </button>
+      <button class="nav-btn" id="btn-nav-historico" onclick="switchView('history-view'); carregarHistorico();">
+        <span>📊</span> Histórico
+      </button>
+      <button class="nav-btn" id="btn-nav-config" onclick="abrirModalConfig()">
+        <span>⚙️</span> Configurações
+      </button>
+    </nav>
+
+    <div class="user-badge" id="banca-status-badge">
+      <span class="pulse-dot"></span>
+      <span id="banca-status-text">Banca Online</span>
+    </div>
+  </header>
+
+  <!-- Container Principal -->
+  <main class="main-container">
+
+    <!-- VIEW 1: CONFIGURAÇÃO DO SIMULADO (SETUP) -->
+    <section id="setup-view" class="view-section active">
+      <div class="setup-card">
+        <div class="setup-header">
+          <h1>Arguição Oral Simulada — PGE-AL</h1>
+          <p>Treinamento intensivo de prova oral com avaliação por critérios objetivos, tempo de leitura/resposta, reperguntas da banca e relatório completo no padrão ProGrupo.</p>
+        </div>
+
+        <form id="form-iniciar-simulado" onsubmit="event.preventDefault(); iniciarSimulado();">
+          
+          <div class="form-group">
+            <label class="form-label">Nome da Candidata</label>
+            <input type="text" id="setup-candidata" class="form-input" value="Viviane Lima" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Disciplinas para Arguição</label>
+            <div class="disciplinas-grid" id="disciplinas-checkbox-container">
+              <!-- Preenchido dinamicamente via JS -->
+            </div>
+            <div class="quick-buttons">
+              <button type="button" class="btn-secondary-sm" onclick="selecionarTodasDisciplinas(true)">Selecionar Todas</button>
+              <button type="button" class="btn-secondary-sm" onclick="selecionarPadraoProGrupo()">Padrão Simulado (4 Matérias)</button>
+              <button type="button" class="btn-secondary-sm" onclick="selecionarTodasDisciplinas(false)">Limpar</button>
+            </div>
+          </div>
+
+          <div class="options-row">
+            <div class="form-group">
+              <label class="form-label">Número de Questões</label>
+              <select id="setup-qtd-questoes" class="form-select">
+                <option value="1">1 Questão (Treino Rápido)</option>
+                <option value="2">2 Questões</option>
+                <option value="4" selected>4 Questões (Padrão ProGrupo / Oficial)</option>
+                <option value="6">6 Questões (Todas as Disciplinas)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Tempo para Leitura do Texto</label>
+              <select id="setup-tempo-leitura" class="form-select">
+                <option value="60">1 Minuto</option>
+                <option value="120" selected>2 Minutos (Recomendado)</option>
+                <option value="180">3 Minutos</option>
+                <option value="0">Sem Limite de Tempo</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Tempo para Resposta Oral</label>
+              <select id="setup-tempo-resposta" class="form-select">
+                <option value="180">3 Minutos</option>
+                <option value="300" selected>5 Minutos (Média Oficial de Prova Oral)</option>
+                <option value="420">7 Minutos</option>
+                <option value="0">Tempo Livre</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="setup-cta">
+            <button type="submit" class="btn-start" id="btn-iniciar">
+              <span>⚖️</span> Iniciar Simulado de Banca Oral
+            </button>
+            <button type="button" class="btn-test-mic" onclick="abrirModalTesteMic()">
+              <span>🎤</span> Testar Microfone e Áudio
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- VIEW 2: TELA DE ARGUIÇÃO ORAL EM ANDAMENTO -->
+    <section id="simulation-view" class="view-section">
+      
+      <!-- Cabeçalho de progresso -->
+      <div class="sim-header-card">
+        <div>
+          <div class="sim-progress-title" id="sim-progress-label">PERGUNTA 1 DE 4</div>
+          <div class="sim-disc-name" id="sim-disc-title">Direito Tributário</div>
+          <div class="sim-topico" id="sim-topico-title">EXTINÇÃO DO CRÉDITO TRIBUTÁRIO</div>
+        </div>
+        <div id="sim-stage-badge" class="sim-stage-badge stage-reading">
+          <span id="sim-stage-icon">📖</span>
+          <span id="sim-stage-text">Tempo de Leitura</span>
+        </div>
+      </div>
+
+      <!-- Caixa do Enunciado / Texto da Questão -->
+      <div class="question-box">
+        <div class="question-box-header">
+          <span class="question-box-label">
+            <span>📋</span> Texto para Leitura da Candidata
+          </span>
+          <button type="button" class="btn-speak-question" id="btn-ouvir-enunciado" onclick="ouvirTextoBanca()">
+            <span>🔊</span> Ouvir Examinador
+          </button>
+        </div>
+        <div class="question-text" id="sim-enunciado-texto">
+          Carregando questão da banca...
+        </div>
+      </div>
+
+      <!-- Card do Cronômetro, Gravação e Interação -->
+      <div class="timer-interaction-card">
+        
+        <!-- Cronômetro Central -->
+        <div class="timer-section">
+          <div class="timer-display" id="sim-timer-display">02:00</div>
+          <div class="timer-label" id="sim-timer-label">TEMPO RESTANTE PARA LEITURA</div>
+          <div class="timer-progress-bar">
+            <div class="timer-progress-fill" id="sim-timer-fill" style="width: 100%;"></div>
+          </div>
+        </div>
+
+        <!-- Visualizador de Ondas Sonoras do Microfone -->
+        <div class="audio-visualizer-container" id="visualizer-container" style="display: none;">
+          <canvas id="waveform-canvas" class="waveform-canvas" width="600" height="60"></canvas>
+          <div class="mic-status-label" id="mic-status-label">
+            <span class="pulse-dot"></span>
+            <span id="mic-status-text">Microfone Ativo: Gravando sustentação oral...</span>
+          </div>
+        </div>
+
+        <!-- Bloco de Repergunta da Banca (se houver) -->
+        <div id="repergunta-container" class="repergunta-box" style="display: none;">
+          <div class="repergunta-title">
+            <span>🗣️</span> REPERGUNTA DA BANCA EXAMINADORA
+          </div>
+          <div class="repergunta-text" id="sim-repergunta-texto">
+            Aguardando formulação de repergunta...
+          </div>
+          <button type="button" class="btn-speak-question" onclick="ouvirReperguntaBanca()">
+            <span>🔊</span> Ouvir Repergunta Novamente
+          </button>
+        </div>
+
+        <!-- Pré-visualização da Transcrição ao Vivo -->
+        <div class="transcript-preview-box" id="transcript-box">
+          <div class="transcript-header">
+            <span>Transcrição em Tempo Real da sua Fala:</span>
+            <button type="button" class="btn-toggle-transcript" id="btn-toggle-transcript" onclick="toggleVisibilidadeTranscricao()">
+              Ocultar durante a fala
+            </button>
+          </div>
+          <div class="transcript-text" id="sim-live-transcript">
+            (Inicie a fala para visualizar a transcrição do microfone...)
+          </div>
+        </div>
+
+        <!-- Barra de Ações e Botões de Controle -->
+        <div class="sim-controls-bar">
+          <div>
+            <button type="button" class="btn-ask-banca" id="btn-perguntar-banca" onclick="abrirModalDuvidaBanca()">
+              <span>❓</span> Fazer Pergunta / Esclarecimento à Banca
+            </button>
+          </div>
+
+          <div style="display: flex; gap: 0.75rem;">
+            <!-- Botão de Iniciar Resposta Antecipada se estiver no tempo de leitura -->
+            <button type="button" class="btn-secondary-sm" id="btn-iniciar-fala-agora" onclick="iniciarFaseRespostaOral()" style="padding: 0.8rem 1.25rem; font-size: 0.95rem;">
+              <span>🎙️</span> Concluir Leitura e Começar a Falar
+            </button>
+
+            <!-- Botão Oficial de Finalizar Resposta -->
+            <button type="button" class="btn-primary-finish" id="btn-finalizar-resposta" onclick="finalizarRespostaOral()" style="display: none;">
+              <span>✅</span> FINALIZAR RESPOSTA E ENVIAR ÁUDIO
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- VIEW 3: RELATÓRIO DO SIMULADO (EXATAMENTE PADRÃO PROGRUPO) -->
+    <section id="report-view" class="view-section">
+      <div class="report-paper" id="relatorio-paper">
+        
+        <!-- Topo ProGrupo -->
+        <div class="report-top-header">
+          <div class="progrupo-logo">
+            <div class="progrupo-logo-icon">⚖️</div>
+            <div class="progrupo-logo-text">PROGRUPO</div>
+            <div class="progrupo-subtext">Cursos e mentorias para concursos</div>
+          </div>
+          <div class="report-actions">
+            <button type="button" class="btn-print" onclick="window.print()">
+              <span>🖨️</span> Imprimir Relatório / Salvar em PDF
+            </button>
+            <button type="button" class="btn-secondary-sm" onclick="switchView('setup-view')" style="padding: 0.75rem 1.25rem; font-size: 0.95rem;">
+              <span>🔄</span> Novo Simulado
+            </button>
+          </div>
+        </div>
+
+        <!-- Título e Disciplinas -->
+        <div class="report-subtitle-banner">RELATÓRIO DO SIMULADO DE ARGUIÇÃO ORAL</div>
+        <div class="report-main-disciplines" id="rep-disciplinas-titulo">
+          Direito Constitucional · Direito Tributário · Direito Civil · Direito Financeiro
+        </div>
+
+        <!-- Grade de Metadados -->
+        <div class="report-meta-grid">
+          <div>
+            <div class="meta-item-label">ALUNO</div>
+            <div class="meta-item-value" id="rep-aluno">Viviane Lima</div>
+          </div>
+          <div>
+            <div class="meta-item-label">DATA</div>
+            <div class="meta-item-value" id="rep-data">23/10/2026 10:37</div>
+          </div>
+          <div>
+            <div class="meta-item-label">DURAÇÃO</div>
+            <div class="meta-item-value" id="rep-duracao">16:19</div>
+          </div>
+          <div>
+            <div class="meta-item-label">PERGUNTAS</div>
+            <div class="meta-item-value" id="rep-perguntas-count">4 de 4 avaliadas</div>
+          </div>
+        </div>
+
+        <!-- Card de Pontuação Geral -->
+        <div class="score-card">
+          <div class="score-header-row">
+            <div>
+              <div class="score-title">MÉDIA DAS DISCIPLINAS</div>
+              <div class="score-main-value" id="rep-media-geral">
+                59.8 <span>/ 100</span>
+              </div>
+            </div>
+            <div class="score-pct-badge" id="rep-percentual-badge">60%</div>
+          </div>
+
+          <div id="rep-status-banner" class="status-alert-pill status-eliminado">
+            Eliminado — média abaixo de 60
+          </div>
+
+          <table class="disciplines-table">
+            <thead>
+              <tr>
+                <th>Disciplina</th>
+                <th style="text-align: right;">Nota</th>
+              </tr>
+            </thead>
+            <tbody id="rep-tabela-disciplinas">
+              <!-- Inserido dinamicamente -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Card de Feedback Geral da Banca -->
+        <div class="feedback-card">
+          <div class="feedback-card-title">Feedback da banca</div>
+          <div class="feedback-content" id="rep-feedback-banca">
+            <!-- Parágrafos de feedback inseridos dinamicamente -->
+          </div>
+        </div>
+
+        <!-- Detalhamento Pergunta por Pergunta -->
+        <div class="questions-breakdown-title">Desempenho pergunta por pergunta</div>
+        <div id="rep-questoes-container">
+          <!-- Questões detalhadas inseridas dinamicamente -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIEW 4: EXPLORADOR DO BANCO DE QUESTÕES -->
+    <section id="bank-view" class="view-section">
+      <div class="setup-card">
+        <div class="setup-header">
+          <h1>Banco de Questões PGE-AL</h1>
+          <p>Explore as mais de 3.900 questões e tópicos de revisão das 6 disciplinas jurídicas (extraídas diretamente dos arquivos de reta final da candidata).</p>
+        </div>
+
+        <div class="options-row" style="margin-bottom: 1.5rem;">
+          <div class="form-group" style="margin-bottom: 0;">
+            <label class="form-label">Filtrar por Disciplina</label>
+            <select id="bank-filtro-disc" class="form-select" onchange="carregarBancoQuestoes()">
+              <option value="">Todas as Disciplinas</option>
+              <option value="Direito Administrativo">Direito Administrativo</option>
+              <option value="Direito Constitucional">Direito Constitucional</option>
+              <option value="Direito Processual Civil">Direito Processual Civil</option>
+              <option value="Direito Tributário">Direito Tributário</option>
+              <option value="Direito Financeiro">Direito Financeiro</option>
+              <option value="Direito Civil">Direito Civil</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 0;">
+            <label class="form-label">Buscar por Palavra-Chave</label>
+            <input type="text" id="bank-busca-texto" class="form-input" placeholder="Ex: denúncia espontânea, anualidade, cautelar fiscal..." oninput="debounceBusca()">
+          </div>
+        </div>
+
+        <div id="bank-stats-label" style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem; font-weight: 600;">
+          Carregando banco de questões...
+        </div>
+
+        <div id="bank-questoes-lista">
+          <!-- Itens carregados via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 5: HISTÓRICO DE SIMULADOS -->
+    <section id="history-view" class="view-section">
+      <div class="setup-card">
+        <div class="setup-header">
+          <h1>Histórico de Simulados Realizados</h1>
+          <p>Consulte todos os relatórios das simulações anteriores para acompanhar a evolução da média e pontuação por matéria de Viviane Lima.</p>
+        </div>
+
+        <div id="history-lista-container">
+          <!-- Tabela de histórico via JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL DE CONFIGURAÇÕES -->
+  <div class="modal-overlay" id="modal-config">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">Configurações do Simulador</h3>
+        <button type="button" class="modal-close" onclick="fecharModalConfig()">&times;</button>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Nome da Candidata</label>
+        <input type="text" id="cfg-candidata" class="form-input" placeholder="Viviane Lima">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Chave de API do Google Gemini (Opcional)</label>
+        <input type="password" id="cfg-gemini-key" class="form-input" placeholder="Insira sua GEMINI_API_KEY">
+        <span style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.35rem; display: block;">
+          Caso queira avaliação via IA de última geração do Google. Se deixar em branco, o simulador funciona 100% no modo heurístico offline!
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Voz do Examinador (Leitura Automática)</label>
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <input type="checkbox" id="cfg-auto-speak" checked style="width: 18px; height: 18px; accent-color: var(--primary);">
+          <span style="font-size: 0.92rem; font-weight: 500;">Ler perguntas e reperguntas em voz alta automaticamente</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Velocidade da Voz da Banca</label>
+        <input type="range" id="cfg-voice-speed" min="0.8" max="1.2" step="0.05" value="0.95" style="width: 100%;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted);">
+          <span>Solene (Lenta)</span>
+          <span>Normal</span>
+          <span>Rápida</span>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary-sm" onclick="fecharModalConfig()">Cancelar</button>
+        <button type="button" class="btn-start" style="padding: 0.6rem 1.25rem; font-size: 0.95rem;" onclick="salvarConfiguracoes()">Salvar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DE DÚVIDA DA CANDIDATA À BANCA -->
+  <div class="modal-overlay" id="modal-duvida">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">Fazer Pergunta à Banca Examinadora</h3>
+        <button type="button" class="modal-close" onclick="fecharModalDuvida()">&times;</button>
+      </div>
+
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+        Você pode solicitar esclarecimentos ou pedir a repetição do comando da questão (ex: "Poderia repetir o segundo ponto do enunciado?").
+      </p>
+
+      <div class="form-group">
+        <textarea id="duvida-texto-input" class="form-input" rows="3" placeholder="Digite ou dite sua solicitação à banca..."></textarea>
+      </div>
+
+      <div id="duvida-resposta-box" style="display: none; background: #f8fafc; border-left: 4px solid var(--primary); padding: 1rem; border-radius: 6px; font-size: 0.95rem; margin-top: 1rem;">
+        <strong>Resposta da Banca:</strong>
+        <div id="duvida-resposta-texto" style="margin-top: 0.35rem; color: #1e293b;"></div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary-sm" onclick="fecharModalDuvida()">Fechar</button>
+        <button type="button" class="btn-start" style="padding: 0.6rem 1.25rem; font-size: 0.95rem;" id="btn-enviar-duvida" onclick="enviarDuvidaBanca()">Perguntar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DE TESTE DE MICROFONE -->
+  <div class="modal-overlay" id="modal-test-mic">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">Teste de Microfone e Alto-falante</h3>
+        <button type="button" class="modal-close" onclick="fecharModalTesteMic()">&times;</button>
+      </div>
+
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem;">
+          Fale no microfone para verificar a captação e a transcrição antes de iniciar o simulado oral.
+        </p>
+
+        <canvas id="test-mic-waveform" width="450" height="60" style="background: #f8fafc; border-radius: 8px; width: 100%; border: 1px solid var(--border);"></canvas>
+        <div id="test-mic-status" style="font-size: 0.88rem; font-weight: 600; margin-top: 0.5rem; color: var(--text-muted);">
+          Clique em "Iniciar Teste" para calibrar
+        </div>
+      </div>
+
+      <div class="transcript-preview-box" style="margin: 1rem 0;">
+        <div class="transcript-header">Transcrição do Teste:</div>
+        <div id="test-mic-transcript" class="transcript-text">(Diga algo como: "Boa tarde, senhores examinadores...")</div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.25rem;">
+        <button type="button" class="btn-secondary-sm" onclick="testarVozExaminador()">
+          <span>🔊</span> Testar Voz da Banca
+        </button>
+
+        <button type="button" class="btn-start" id="btn-toggle-test-mic" style="padding: 0.6rem 1.25rem; font-size: 0.95rem;" onclick="toggleTesteMicrofone()">
+          Iniciar Teste
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/static/app.js"></script>
+</body>
+</html>
