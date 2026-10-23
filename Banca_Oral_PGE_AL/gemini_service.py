@@ -283,7 +283,12 @@ Retorne EXCLUSIVAMENTE um objeto JSON válido com a seguinte estrutura:
                 try:
                     match = re.search(r'\{.*\}', raw, re.DOTALL)
                     if match:
-                        return json.loads(match.group())
+                        res_json = json.loads(match.group())
+                        orig_questoes = dados_simulado.get('questoes', [])
+                        for i, qd in enumerate(res_json.get('questoes_detalhadas', [])):
+                            if i < len(orig_questoes):
+                                qd['duvidas_candidata'] = orig_questoes[i].get('duvidas_candidata', [])
+                        return res_json
                 except Exception as e:
                     print(f"[JSON PARSE ERROR] {e}")
 
@@ -370,6 +375,7 @@ Retorne EXCLUSIVAMENTE um objeto JSON válido com a seguinte estrutura:
             questoes_detalhadas.append({
                 "numero": idx,
                 "disciplina": disc,
+                "duvidas_candidata": q_info.get("duvidas_candidata", []),
                 "topico": questao.get("topico", "PONTOS DA PROVA ORAL"),
                 "nota": nota_questao,
                 "enunciado": questao.get("enunciado", ""),

@@ -33,7 +33,11 @@ const state = {
   hideTranscriptDuringSpeech: false,
   testMicRecording: false,
   testMicContext: null,
-  testMicRecognition: null
+  testMicRecognition: null,
+  duvidaRecording: false,
+  duvidaContext: null,
+  duvidaRecognition: null,
+  duvidaAnimationId: null
 };
 
 // Inicialização
@@ -790,19 +794,41 @@ function renderizarRelatorioProGrupo(rel) {
         ${q.enunciado}
       </div>
 
-      <div class="q-section-title">RESPOSTA DO CANDIDATO</div>
+      <div class="q-section-title">RESPOSTA DO CANDIDATO (TRANSCRIÇÃO DO ÁUDIO)</div>
       <div class="q-candidata-answer">
         ${q.resposta_candidata}
       </div>
 
+      ${q.duvidas_candidata && q.duvidas_candidata.length > 0 ? `
+        <div class="q-section-title" style="color: #4f46e5; margin-top: 1.35rem;">
+          INTERAÇÃO / ESCLARECIMENTO FORMULADO PELA CANDIDATA À BANCA
+        </div>
+        ${q.duvidas_candidata.map(d => `
+          <div class="q-candidata-duvida-box">
+            <div style="font-weight: 700; color: #4338ca; margin-bottom: 0.35rem;">
+              🗣️ Indagação Oral da Candidata (Transcrição do Áudio):
+            </div>
+            <div style="font-style: italic; color: #1e293b; margin-bottom: 0.6rem;">
+              "${d.pergunta}"
+            </div>
+            <div style="font-weight: 700; color: #1e293b; margin-bottom: 0.25rem;">
+              ⚖️ Resposta da Banca Examinadora:
+            </div>
+            <div style="color: #334155;">
+              ${d.resposta_banca}
+            </div>
+          </div>
+        `).join("")}
+      ` : ""}
+
       ${q.repergunta ? `
-        <div class="q-section-title" style="color: #6b21a8; margin-top: 1.25rem;">REPERGUNTA</div>
+        <div class="q-section-title" style="color: #6b21a8; margin-top: 1.35rem;">REPERGUNTA DA BANCA EXAMINADORA</div>
         <div style="font-weight: 700; color: #1e1b4b; margin-bottom: 0.5rem; font-size: 1.05rem;">
           ${q.repergunta}
         </div>
-        <div class="q-section-title">RESPOSTA</div>
+        <div class="q-section-title">RESPOSTA À REPERGUNTA (TRANSCRIÇÃO DO ÁUDIO)</div>
         <div class="q-candidata-answer">
-          ${q.resposta_repergunta || "(Sem manifestação)"}
+          ${q.resposta_repergunta || "(Sem manifestação oral registrada)"}
         </div>
       ` : ""}
 
@@ -994,22 +1020,151 @@ async function salvarConfiguracoes() {
   }
 }
 
-// Modal Dúvida
+// Modal Dúvida (Com Suporte Integral a Áudio)
 function abrirModalDuvidaBanca() {
   document.getElementById("duvida-texto-input").value = "";
   document.getElementById("duvida-resposta-box").style.display = "none";
+  document.getElementById("duvida-audio-container").style.display = "none";
+  const btnGrav = document.getElementById("btn-gravar-duvida");
+  if (btnGrav) {
+    btnGrav.innerHTML = "<span>🎙️</span> Falar com a Banca (Gravar Áudio)";
+    btnGrav.style.background = "linear-gradient(135deg, #4f46e5, #7c3aed)";
+  }
   document.getElementById("modal-duvida").classList.add("active");
 }
+
 function fecharModalDuvida() {
+  pararGravacaoDuvida();
   document.getElementById("modal-duvida").classList.remove("active");
 }
+
+function ouvirRespostaDuvidaBanca() {
+  const txt = document.getElementById("duvida-resposta-texto").innerText;
+  if (txt) falarTexto(txt);
+}
+
+async function toggleGravacaoDuvida() {
+  if (state.duvidaRecording) {
+    pararGravacaoDuvida();
+  } else {
+    iniciarGravacaoDuvida();
+  }
+}
+
+async function iniciarGravacaoDuvida() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    state.duvidaRecording = true;
+
+    const btnGrav = document.getElementById("btn-gravar-duvida");
+    if (btnGrav) {
+      btnGrav.innerHTML = "<span>⏹️</span> Parar Gravação e Manter Transcrição";
+      btnGrav.style.background = "#dc2626";
+    }
+
+    document.getElementById("duvida-audio-container").style.display = "block";
+
+    // Visualizador Waveform
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    state.duvidaContext = audioCtx;
+    const source = audioCtx.createMediaStreamSource(stream);
+    const analyser = audioCtx.createAnalyser();
+    analyser.fftSize = 256;
+    source.connect(analyser);
+
+    const canvas = document.getElementById("duvida-waveform");
+    const ctx = canvas.getContext("2d");
+    const bufferLength = analyser.frequencyBinCount;
+    const dataArray = new Uint8Array(bufferLength);
+
+    function drawDuvida() {
+      if (!state.duvidaRecording) return;
+      state.duvidaAnimationId = requestAnimationFrame(drawDuvida);
+      analyser.getByteTimeDomainData(dataArray);
+
+      ctx.fillStyle = "#f8fafc";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.lineWidth = 2.5;
+      ctx.strokeStyle = "#7c3aed";
+      ctx.beginPath();
+
+      const sliceWidth = canvas.width / bufferLength;
+      let x = 0;
+      for (let i = 0; i < bufferLength; i++) {
+        const v = dataArray[i] / 128.0;
+        const y = v * (canvas.height / 2);
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+        x += sliceWidth;
+      }
+      ctx.lineTo(canvas.width, canvas.height / 2);
+      ctx.stroke();
+    }
+    drawDuvida();
+
+    // Reconhecimento de fala em tempo real para a dúvida
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognition) {
+      state.duvidaRecognition = new SpeechRecognition();
+      state.duvidaRecognition.continuous = true;
+      state.duvidaRecognition.interimResults = true;
+      state.duvidaRecognition.lang = "pt-BR";
+
+      let textoBase = document.getElementById("duvida-texto-input").value.trim();
+      if (textoBase) textoBase += " ";
+
+      state.duvidaRecognition.onresult = (e) => {
+        let interim = "";
+        let final = "";
+        for (let i = e.resultIndex; i < e.results.length; ++i) {
+          if (e.results[i].isFinal) final += e.results[i][0].transcript + " ";
+          else interim += e.results[i][0].transcript;
+        }
+        document.getElementById("duvida-texto-input").value = (textoBase + final + interim).trim();
+      };
+
+      state.duvidaRecognition.start();
+    }
+  } catch (err) {
+    console.error("Erro ao gravar dúvida:", err);
+    alert("Microfone não disponível para gravação de áudio da dúvida.");
+  }
+}
+
+function pararGravacaoDuvida() {
+  state.duvidaRecording = false;
+
+  const btnGrav = document.getElementById("btn-gravar-duvida");
+  if (btnGrav) {
+    btnGrav.innerHTML = "<span>🎙️</span> Falar com a Banca (Gravar Áudio)";
+    btnGrav.style.background = "linear-gradient(135deg, #4f46e5, #7c3aed)";
+  }
+
+  document.getElementById("duvida-audio-container").style.display = "none";
+
+  if (state.duvidaContext) {
+    try { state.duvidaContext.close(); } catch (e) {}
+  }
+  if (state.duvidaRecognition) {
+    try { state.duvidaRecognition.stop(); } catch (e) {}
+  }
+  if (state.duvidaAnimationId) {
+    cancelAnimationFrame(state.duvidaAnimationId);
+  }
+}
+
 async function enviarDuvidaBanca() {
+  pararGravacaoDuvida();
+
   const pergunta = document.getElementById("duvida-texto-input").value.trim();
-  if (!pergunta) return;
+  if (!pergunta) {
+    alert("Por favor, fale ou digite sua solicitação antes de enviar.");
+    return;
+  }
 
   const btn = document.getElementById("btn-enviar-duvida");
   btn.disabled = true;
-  btn.innerText = "Consultando banca...";
+  btn.innerHTML = "<span>⏳</span> A banca está deliberando...";
 
   try {
     const res = await fetch("/api/simulado/pergunta_candidata", {
@@ -1028,7 +1183,7 @@ async function enviarDuvidaBanca() {
     console.error("Erro ao perguntar à banca:", err);
   } finally {
     btn.disabled = false;
-    btn.innerText = "Perguntar";
+    btn.innerHTML = "<span>📨</span> Enviar Pergunta à Banca";
   }
 }
 

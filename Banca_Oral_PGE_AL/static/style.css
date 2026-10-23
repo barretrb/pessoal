@@ -951,6 +951,17 @@ body {
   margin: 1.5rem 0 0.5rem 0;
 }
 
+
+.q-candidata-duvida-box {
+  background: #f5f3ff;
+  border-left: 3.5px solid #7c3aed;
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0.75rem 0 1.25rem 0;
+}
+
 .q-candidata-answer {
   background: #f8fafc;
   border-left: 3px solid #7047eb;

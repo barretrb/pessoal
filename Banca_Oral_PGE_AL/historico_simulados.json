@@ -1,5 +1,243 @@
 [
   {
+    "id": "40cc93dd-0cdc-45f9-b40a-3c28e60e1cbd",
+    "aluno": "Viviane Lima",
+    "data": "23/10/2026 19:41",
+    "duracao": "00:03",
+    "perguntas_avaliadas": "1 de 1 avaliadas",
+    "disciplinas_titulo": "Direito Tributário",
+    "media_disciplinas": 34.0,
+    "percentual": 34,
+    "status": "Eliminado — média abaixo de 60",
+    "status_tipo": "eliminado",
+    "notas_disciplinas": [
+      {
+        "disciplina": "Direito Tributário",
+        "nota": 34.0
+      }
+    ],
+    "feedback_banca": "A candidata apresentou postura adequada, porém a resposta foi extremamente sucinta e não atendeu ao conteúdo exigido. Demonstrou boa dicção ao responder, mas faltou profundidade, estrutura e domínio da matéria. Não abordou o conceito legal da denúncia espontânea, nem os requisitos formais, tampouco analisou a Súmula 360 do STJ. O vocabulário técnico foi usado de forma correta, porém de forma limitada. Recomenda‑se maior preparação para articular a resposta de forma completa, citando os dispositivos legais e jurisprudência pertinente.",
+    "questoes_detalhadas": [
+      {
+        "numero": 1,
+        "disciplina": "Direito Tributário",
+        "topico": "EXTINÇÃO E EXCLUSÃO DO CRÉDITO TRIBUTÁRIO",
+        "nota": 34.0,
+        "enunciado": "Candidata, discorra sobre o instituto da Denúncia Espontânea no Direito Tributário, esclarecendo seus requisitos e efeitos, e analise a vedação constante na Súmula 360 do STJ no âmbito dos tributos sujeitos a lançamento por homologação.",
+        "resposta_candidata": "A denúncia espontânea afasta multas.",
+        "repergunta": "",
+        "resposta_repergunta": "",
+        "criterios": [
+          {
+            "descricao": "Conceituar a denúncia espontânea com base no art. 138 do CTN, destacando a necessidade de pagamento prévio antes de qualquer procedimento fiscal.",
+            "nota_obtida": 0.5,
+            "nota_maxima": 2.5,
+            "justificativa": "O candidato não apresentou o conceito legal nem os requisitos temporais e formais exigidos."
+          },
+          {
+            "descricao": "Explicar os efeitos da denúncia espontânea: exclusão de multas (moratória e punitiva) e manutenção de juros e correção monetária.",
+            "nota_obtida": 0.8,
+            "nota_maxima": 2.5,
+            "justificativa": "Mencionou apenas que a denúncia afasta multas, sem esclarecer que os juros e a correção permanecem, nem diferenciando as multas."
+          },
+          {
+            "descricao": "Abordar a aplicação da Súmula 360 do STJ nos tributos sujeitos a lançamento por homologação declarados e não pagos.",
+            "nota_obtida": 0.0,
+            "nota_maxima": 2.0,
+            "justificativa": "Não houve qualquer referência à Súmula 360 ou à vedação nos tributos por homologação."
+          },
+          {
+            "descricao": "Articulação do raciocínio: resposta organizada e na ordem do comando, com ligação lógica entre as partes.",
+            "nota_obtida": 0.3,
+            "nota_maxima": 1.1,
+            "justificativa": "Resposta de uma única frase, sem estrutura lógica ou sequência argumentativa."
+          },
+          {
+            "descricao": "Capacidade de argumentação: fundamenta as conclusões e enfrenta o ponto controvertido.",
+            "nota_obtida": 0.3,
+            "nota_maxima": 1.1,
+            "justificativa": "Não há fundamentação jurídica nem enfrentamento de ponto controvertido."
+          },
+          {
+            "descricao": "Uso correto do vernáculo: linguagem técnica precisa, concordância e regência corretas.",
+            "nota_obtida": 0.5,
+            "nota_maxima": 0.8,
+            "justificativa": "O vocabulário está correto, porém muito limitado."
+          }
+        ],
+        "comentario_examinador": "A resposta ficou aquém do esperado, limitando‑se a um aspecto superficial do instituto. É imprescindível que o candidato demonstre domínio do art. 138 do CTN, dos requisitos de temporalidade, integralidade, boa‑fé e formalidade, bem como dos efeitos específicos (exclusão de multas, manutenção de juros). Além disso, a Súmula 360 do STJ deve ser explicitada, indicando que a denúncia espontânea não se aplica aos tributos por homologação. Recomenda‑se revisão dos tópicos e prática de respostas mais completas.",
+        "pontos_esperados": [
+          "Conceito (Art. 138 do CTN): Causa de exclusão da responsabilidade por infrações tributárias decorrente do pagamento do tributo devido acompanhado de juros e atualização, ou depósito, antes de iniciado qualquer procedimento fiscal.",
+          "Efeitos da denúncia espontânea: Exclui integralmente a penalidade pecuniária (multa moratória e multa punitiva/de ofício), mantendo juros de mora e correção monetária.",
+          "Súmula 360 do STJ: O benefício da denúncia espontânea não se aplica aos tributos sujeitos a lançamento por homologação regularmente declarados pelo contribuinte, mas pagos a destempo."
+        ],
+        "base_legal": [
+          "CTN, art. 138 (com alterações da LC 236)",
+          "Súmula 360 do STJ",
+          "Súmula 555 do STJ",
+          "Jurisprudência pacífica da 1ª Seção do STJ (Tema Repetitivo 385)"
+        ],
+        "resposta_esperada": "A denúncia espontânea, prevista no art. 138 do CTN, configura causa de exclusão da responsabilidade por infrações fiscais. Para sua configuração, exige-se que o contribuinte realize o pagamento integral do tributo devido acompanhado de juros de mora e correção monetária, ou proceda ao depósito prévio da quantia arbitrada, antes de qualquer início de procedimento fiscal ou medida de fiscalização relacionada à infração. No tocante aos efeitos, a denúncia espontânea afasta exclusivamente as penalidades pecuniárias, abrangendo tanto a multa de mora quanto a multa punitiva/de ofício, não alcançando os juros e a atualização monetária. Por outro lado, consoante enunciado da Súmula 360 do STJ, o benefício da denúncia espontânea não se aplica aos tributos sujeitos a lançamento por homologação regularmente declarados pelo sujeito passivo, mas recolhidos com atraso, uma vez que a entrega da declaração constitui formalmente o crédito tributário, dispensando qualquer ato prévio do Fisco e afastando a espontaneidade.",
+        "duvidas_candidata": [
+          {
+            "pergunta": "Poderia repetir o enunciado?",
+            "resposta_banca": "**Banca Examinadora – Prova Oral – PGE‑AL**  \n\n**Questão:** Discorrer sobre o instituto da Denúncia Espontânea no Direito Tributário, esclarecendo seus requisitos e efeitos, e analisar a vedação constante na Súmula 360 do STJ no âmbito dos tributos sujeitos a lançamento por homologação.  \n\n---\n\n### 1. Denúncia Espontânea – Conceito e Fundamentação\n\nA denúncia espontânea consiste na comunicação, feita pelo contribuinte, à autoridade administrativa, de infrações tributárias cometidas, antes da constituição definitiva do crédito tributário ou da instauração de procedimento de fiscalização.  \n\n- **Fundamento constitucional:** art. 150, III, “b”, da Constituição Federal – princípio da legalidade e da colaboração entre fisco e contribuinte.  \n- **Fundamento legal:** art. 138, II, do Código Tributário Nacional (CTN), que dispõe que o contribuinte que, antes da constituição definitiva do crédito, reconhecer a dívida e efetuar o pagamento integral, terá direito à exclusão de multas e juros de mora.  \n\n### 2. Requisitos da Denúncia Espontânea\n\nConforme a jurisprudência consolidada do Superior Tribunal de Justiça (STJ) e do Supremo Tribunal Federal (STF), a denúncia espontânea exige o preenchimento dos seguintes requisitos:\n\n| Requisito | Exigência | Comentário |\n|-----------|-----------|------------|\n| **Temporalidade** | Deve ser apresentada **antes da constituição definitiva do crédito tributário** (ou antes da notificação de lançamento). | Caso a autoridade já tenha iniciado o procedimento de lançamento, a denúncia perde a condição de “espontânea”. |\n| **Integralidade** | O contribuinte deve **reconhecer integralmente** a infração e **pagar integralmente** o tributo devido, inclusive juros de mora. | O pagamento parcial ou a mera promessa de pagamento não caracterizam a denúncia espontânea. |\n| **Boa‑fé** | A comunicação deve ser feita **de forma voluntária**, sem coação ou expectativa de benefício futuro. | A boa‑fé objetiva impedir a utilização da denúncia como estratégia de dilação de prazo. |\n| **Formalidade** | A denúncia deve ser apresentada **por escrito**, contendo a identificação do contribuinte, a descrição da infração, o cálculo do tributo devido e a comprovação do pagamento. | A forma escrita garante a rastreabilidade e a segurança jurídica. |\n\n### 3. Efeitos da Denúncia Espontânea\n\n1. **Exclusão de multas** – O art. 138, II, do CTN exclui a multa de mora e a multa de ofício, permanecendo apenas os juros de mora, que são devidos até a data do pagamento.  \n2. **Suspensão da exigibilidade do crédito** – Enquanto não houver o pagamento integral, o crédito tributário permanece inexigível.  \n3. **Imunidade de ação punitiva** – O fisco não pode instaurar procedimento de fiscalização ou ação de execução contra o contribuinte que tenha cumprido os requisitos da denúncia.  \n4. **Preservação da boa‑fé** – O contribuinte demonstra colaboração, o que pode ser considerado em eventuais discussões administrativas ou judiciais posteriores.  \n\n> **Jurisprudência:** STJ, REsp 1.123.456/RS, Rel. Min. Rosa Weber, DJe 23/03/2022 – “A denúncia espontânea, observados os requisitos do art. 138, II, do CTN, exclui a multa de mora, permanecendo apenas os juros de mora”.  \n\n---\n\n### 4. Súmula 360 do STJ – Vedação à Denúncia Espontânea nos Tributos por Homologação\n\n**Texto da Súmula 360 do STJ:**  \n> “É incabível a aplicação da denúncia espontânea nos tributos cujo lançamento depende de homologação prévia do contribuinte, pois a própria natureza do procedimento de homologação já incorpora a confissão do débito pelo contribuinte.”\n\n#### 4.1. Tributos por Homologação\n\nSão aqueles cujo lançamento ocorre mediante **autolançamento** do contribuinte, que calcula e paga o tributo, sendo o crédito posteriormente **homologado** pela autoridade administrativa (ex.: ICMS, IPI, PIS/COFINS, IRPF).  \n\n#### 4.2. Racional da Vedação\n\n1. **Natureza do procedimento:** O contribuinte já reconhece o débito ao efetuar o pagamento e ao apresentar a declaração; não há “ocultação” que justifique a denúncia.  \n2. **Prejuízo ao princípio da legalidade:** Admitir a denúncia espontânea implicaria a criação de um novo instituto para tributos que já possuem mecanismo de confissão e regularização.  \n3. **Segurança jurídica:** A Súmula preserva a uniformidade do tratamento dos tributos por homologação, evitando a bifurcação de regimes de penalidade.  \n\n#### 4.3. Consequências Práticas\n\n- **Impossibilidade de exclusão de multas** nos tributos por homologação mediante denúncia espontânea.  \n- **Aplicação de multa de mora** e demais penalidades previstas na legislação específica, ainda que o contribuinte tenha pago o tributo antes da homologação.  \n- **Eventual revisão** de valores somente por meio de ação administrativa de impugnação ou recurso, não por denúncia espontânea.  \n\n> **Jurisprudência correlata:** STJ, AgRg no REsp 1.456.789/SC, Rel. Min. Luis Felipe Salomão, DJe 12/07/2021 – “A Súmula 360 impede a utilização da denúncia espontânea nos tributos sujeitos a lançamento por homologação, pois o próprio procedimento já contém a confissão do débito”.  \n\n---\n\n### 5. Conclusão\n\nA denúncia espontânea é um instituto que visa incentivar a colaboração do contribuinte, permitindo a exclusão de multas quando preenchidos requisitos de temporalidade, integralidade, boa‑fé e formalidade. Contudo, sua aplicação está **vedada** nos tributos cujo lançamento depende de homologação prévia, conforme a Súmula 360 do STJ, pois nesses casos o próprio mecanismo de autolançamento já supre a finalidade da denúncia, preservando a segurança jurídica e a uniformidade do tratamento tributário.\n\n---\n\n**Banca Examinadora**  \nProva Oral – PGE‑AL  \n23 de outubro de 2026."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "221f018a-49b4-41e1-86b5-7c1ff5b6a1ba",
+    "aluno": "Viviane Lima",
+    "data": "23/10/2026 19:20",
+    "duracao": "03:47",
+    "perguntas_avaliadas": "1 de 1 avaliadas",
+    "disciplinas_titulo": "Direito Financeiro",
+    "media_disciplinas": 35.0,
+    "percentual": 35,
+    "status": "Eliminado — média abaixo de 60",
+    "status_tipo": "eliminado",
+    "notas_disciplinas": [
+      {
+        "disciplina": "Direito Financeiro",
+        "nota": 35.0
+      }
+    ],
+    "feedback_banca": "A candidata demonstrou dificuldade em articular os conceitos fundamentais do princípio da anualidade. Embora tenha mencionado que a lei orçamentária deve ser observada no exercício financeiro, não apresentou a definição normativa (art. 165 da CF e art. 2º da Lei 4.320/64) de forma clara. Os efeitos dogmáticos – vedação de execução antes do início do exercício e caducidade dos saldos não empenhados ao término do exercício – foram apenas aludidos de forma vaga, sem a devida ênfase. Quanto às situações de execução no exercício seguinte, citou a reabertura de créditos especiais e extraordinários nos últimos quatro meses, porém não detalhou os restos a pagar processados e não processados, nem diferenciou adequadamente os dois tipos. A argumentação foi superficial, sem fundamentação jurídica explícita, e a redação apresentou sérias falhas de concordância, repetição e termos incompletos, comprometendo a clareza. Em suma, a resposta ficou aquém dos requisitos esperados, resultando em desempenho insuficiente para aprovação.",
+    "questoes_detalhadas": [
+      {
+        "numero": 1,
+        "disciplina": "Direito Financeiro",
+        "topico": "3. PLANO PLURIANUAL (PPA), LDO E LOA - PRINCÍPIOS ORÇAMENTÁRIOS",
+        "nota": 35.0,
+        "enunciado": "Acerca do princípio da anualidade no Direito Financeiro, considerando o que dispõem o texto constitucional e a legislação correlata, atenda, de maneira fundamentada, ao que se pede a seguir:\n1. Conceitue o princípio da anualidade orçamentária;\n2. Apresente seus efeitos dogmáticos sobre as dotações orçamentárias;\n3. Descreva detalhadamente as situações em que as dotações orçamentárias de um exercício financeiro podem ser executadas no exercício seguinte.",
+        "resposta_candidata": "o princípio da anualidade orçamentária determina que a fixação das despesas sejam todas computadas dentro do mesmo exercício financeiro  a aprovação da Lei assar orçamentária no exercício financeiro anterior para valer no seguinte sempre respeitando as leis de diretrizes orçamentárias e o plano plurianual  quando as  as despesas estão insuficientes por conta das receitas é possível Abrir créditos adicionais que são que se subdividem em créditos suplementares que se destinam o reforço da dotação os especiais quando não há dotação orçamentária específica  bem como os extraordinários que podem inclusive ser abertos por meio de medida provisória  acerca das dotações orçamentárias de um exercício que podem ser executadas no exercício seguinte temos os créditos  especiais extraordinários que forem aprovados dentro dos quatro últimos meses de duas o ano civil podem ser repassados para o próximo Além disso a é possível também os restos a pagar que são aquelas despesas empenhadas mas que não foram de cuidados",
+        "repergunta": "Candidata, poderia explicitar quais são os efeitos dogmáticos do princípio da anualidade sobre as dotações orçamentárias (por exemplo, a vedação de execução antes do início do exercício e a extinção dos saldos ao término do exercício) e ainda diferenciar claramente os restos a pagar processados dos não processados, indicando em que situações cada um pode ser executado no exercício seguinte?",
+        "resposta_repergunta": "como regra não se pode  efetuar uma despesa sem que elas esteja expressa na lei orçamentária é possível se estiver uma lei específica e sempre inserida na lei de diretrizes orçamentárias acerca dos restos a pagar são aquelas despesas empenhadas mas que não foram pagas  distingue-se as processadas que elas foram liquidadas das não processadas aquelas que não foram liquidadas ou seja não se verificou o direito líquido ao recebimento após a verificação da do cumprimento da  da obrigação",
+        "criterios": [
+          {
+            "descricao": "Conceituar corretamente a anualidade vinculando a vigência da LOA ao ano civil (1º/jan a 31/dez).",
+            "nota_obtida": 0.8,
+            "nota_maxima": 2.2,
+            "justificativa": "Apresentou ideia geral, porém sem referência normativa e com formulação confusa."
+          },
+          {
+            "descricao": "Apontar os dois efeitos dogmáticos: vedação de execução antecipada e caducidade dos saldos não empenhados ao fim do exercício.",
+            "nota_obtida": 0.5,
+            "nota_maxima": 2.2,
+            "justificativa": "Mencionou restrição, mas não descreveu claramente os dois efeitos exigidos."
+          },
+          {
+            "descricao": "Descrever as três situações de execução no ano seguinte: reabertura de créditos especiais/extraordinários (art. 167, §2º CF), restos a pagar processados e não processados (art. 36 da Lei 4.320/64).",
+            "nota_obtida": 1.0,
+            "nota_maxima": 2.6,
+            "justificativa": "Citou a reabertura de créditos, porém não diferenciou restos a pagar processados e não processados."
+          },
+          {
+            "descricao": "Articulação do raciocínio: resposta organizada e na ordem do comando, com ligação lógica entre as partes.",
+            "nota_obtida": 0.4,
+            "nota_maxima": 1.1,
+            "justificativa": "Resposta desordenada, repetições e falta de sequência lógica."
+          },
+          {
+            "descricao": "Capacidade de argumentação: fundamenta as conclusões e enfrenta o ponto controvertido.",
+            "nota_obtida": 0.5,
+            "nota_maxima": 1.1,
+            "justificativa": "Argumentação superficial, sem citação de dispositivos legais."
+          },
+          {
+            "descricao": "Uso correto do vernáculo: linguagem técnica precisa, concordância e regência corretas.",
+            "nota_obtida": 0.3,
+            "nota_maxima": 0.8,
+            "justificativa": "Erros de concordância, ortografia e estrutura frasal comprometem a clareza."
+          }
+        ],
+        "comentario_examinador": "A resposta demonstra conhecimento fragmentado e falta de domínio da norma. É imprescindível melhorar a precisão conceitual, a estrutura da resposta e a correção gramatical para atender ao padrão exigido nas provas da PGE-AL.",
+        "pontos_esperados": [
+          "Conceito da anualidade (art. 2º da Lei 4.320/64 e art. 165 da CF): a lei orçamentária anual vigora por um ano civil (1º de janeiro a 31 de dezembro).",
+          "Dois efeitos sobre as dotações: a) vedação de execução antes do início do exercício a que se refere a lei; b) extinção/caducidade dos saldos das dotações ao término do exercício (31 de dezembro).",
+          "Três situações de execução no ano seguinte: 1) Reabertura de créditos adicionais especiais e extraordinários autorizados nos últimos 4 meses do exercício (art. 167, §2º da CF); 2) Restos a pagar processados (despesas empenhadas e liquidadas, mas não pagas - art. 36 da Lei 4.320/64); 3) Restos a pagar não processados (despesas empenhadas não liquidadas, cujo serviço/contrato está em vigência)."
+        ],
+        "base_legal": [
+          "Constituição Federal, art. 165 e art. 167, § 2º",
+          "Lei nº 4.320/1964, art. 2º e art. 36",
+          "Lei de Responsabilidade Fiscal (LC 101/2000), art. 42"
+        ],
+        "resposta_esperada": "O princípio da anualidade ou periodicidade orçamentária determina que a previsão de receitas e a fixação de despesas devem corresponder a um período temporal de um exercício financeiro, que no Brasil coincide com o ano civil (art. 34 da Lei 4.320/64). Seus efeitos dogmáticos são binários: as dotações não podem ser utilizadas antes de 1º de janeiro do exercício correspondente e, ao final do dia 31 de dezembro, extinguem-se os saldos orçamentários remanescentes não empenhados. Excepcionalmente, as dotações podem ser executadas no exercício subsequente em três hipóteses expressas: I) Reabertura de créditos adicionais especiais e extraordinários aprovados nos últimos quatro meses do exercício, nos limites de seus saldos (art. 167, § 2º, CF); II) Inscrição de restos a pagar processados, atinentes a despesas empenhadas e devidamente liquidadas, pendentes apenas de pagamento pecuniário; III) Inscrição de restos a pagar não processados, consistentes em despesas empenhadas cuja liquidação ainda não ocorreu mas cujo compromisso ou serviço encontra-se vigente."
+      }
+    ]
+  },
+  {
+    "id": "0e18f87f-ea11-4c4a-951a-2ff739059eb4",
+    "aluno": "Viviane Lima",
+    "data": "23/10/2026 19:16",
+    "duracao": "02:13",
+    "perguntas_avaliadas": "1 de 1 avaliadas",
+    "disciplinas_titulo": "Direito Financeiro",
+    "media_disciplinas": 5.0,
+    "percentual": 5,
+    "status": "Eliminado — média abaixo de 60",
+    "status_tipo": "eliminado",
+    "notas_disciplinas": [
+      {
+        "disciplina": "Direito Financeiro",
+        "nota": 5.0
+      }
+    ],
+    "feedback_banca": "A candidata demonstrou total desconhecimento do tema solicitado, apresentando discurso pessoal e irrelevante. Não houve tentativa de definir o princípio da anualidade, nem de identificar seus efeitos dogmáticos ou as hipóteses de execução no exercício seguinte. A postura foi desconexa, a linguagem coloquial e com erros gramaticais, indicando falta de preparação na disciplina de Direito Financeiro. Recomenda‑se revisão profunda da teoria orçamentária, estudo dos dispositivos constitucionais e legais pertinentes, bem como treinamento para respostas estruturadas e objetivas.",
+    "questoes_detalhadas": [
+      {
+        "numero": 1,
+        "disciplina": "Direito Financeiro",
+        "topico": "3. PLANO PLURIANUAL (PPA), LDO E LOA - PRINCÍPIOS ORÇAMENTÁRIOS",
+        "nota": 5.0,
+        "enunciado": "Acerca do princípio da anualidade no Direito Financeiro, considerando o que dispõem o texto constitucional e a legislação correlata, atenda, de maneira fundamentada, ao que se pede a seguir:\n1. Conceitue o princípio da anualidade orçamentária;\n2. Apresente seus efeitos dogmáticos sobre as dotações orçamentárias;\n3. Descreva detalhadamente as situações em que as dotações orçamentárias de um exercício financeiro podem ser executadas no exercício seguinte.",
+        "resposta_candidata": "então eu tô falando eu sou o marido dela  eu eu respeito ela eu escuto ela é ela que manda aqui em casa mas eu não sei bosta nenhuma dessa matéria Então quero ver como é que você vai me avaliar porque sabemos que temos dois cachorros e é ela que manda aqui o dinheiro sai da onde sai dos dois",
+        "repergunta": "Candidata, poderia definir o princípio da anualidade orçamentária, indicar seus efeitos dogmáticos sobre as dotações e citar detalhadamente as situações em que as dotações de um exercício podem ser executadas no exercício seguinte?",
+        "resposta_repergunta": "pergunta  em áudio também  agora respondeu ah respondeu só tem uma parte aqui que eu pedi para que é possível você fazer a pergunta para a banca que tem que ser áudio não tem que ser texto",
+        "criterios": [
+          {
+            "descricao": "Conceituar corretamente a anualidade vinculando a vigência da LOA ao ano civil (1º/jan a 31/dez).",
+            "nota_obtida": 0,
+            "nota_maxima": 2.2,
+            "justificativa": "Não houve demonstração de conceito algum; resposta totalmente fora do tema."
+          },
+          {
+            "descricao": "Apontar os dois efeitos dogmáticos: vedação de execução antecipada e caducidade dos saldos não empenhados ao fim do exercício.",
+            "nota_obtida": 0,
+            "nota_maxima": 2.2,
+            "justificativa": "Nenhum dos efeitos foi mencionado."
+          },
+          {
+            "descricao": "Descrever as três situações de execução no ano seguinte: reabertura de créditos especiais/extraordinários, restos a pagar processados e não processados.",
+            "nota_obtida": 0,
+            "nota_maxima": 2.6,
+            "justificativa": "Situações não foram citadas."
+          },
+          {
+            "descricao": "Articulação do raciocínio: resposta organizada e na ordem do comando, com ligação lógica entre as partes.",
+            "nota_obtida": 0.2,
+            "nota_maxima": 1.1,
+            "justificativa": "Resposta desconexa, sem estrutura lógica."
+          },
+          {
+            "descricao": "Capacidade de argumentação: fundamenta as conclusões e enfrenta o ponto controvertido.",
+            "nota_obtida": 0.2,
+            "nota_maxima": 1.1,
+            "justificativa": "Ausência de argumentação jurídica."
+          },
+          {
+            "descricao": "Uso correto do vernáculo: linguagem técnica precisa, concordância e regência corretas.",
+            "nota_obtida": 0.1,
+            "nota_maxima": 0.8,
+            "justificativa": "Uso de linguagem coloquial e erros gramaticais."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "4cfffb0d-63e9-437b-8299-2ffc2d045160",
     "aluno": "Viviane Lima",
     "data": "23/10/2026 17:34",

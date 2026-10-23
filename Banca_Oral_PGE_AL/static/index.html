@@ -413,30 +413,51 @@
     </div>
   </div>
 
-  <!-- MODAL DE DÚVIDA DA CANDIDATA À BANCA -->
+  <!-- MODAL DE DÚVIDA DA CANDIDATA À BANCA (COM SUPORTE A ÁUDIO) -->
   <div class="modal-overlay" id="modal-duvida">
     <div class="modal-window">
       <div class="modal-header">
-        <h3 class="modal-title">Fazer Pergunta à Banca Examinadora</h3>
+        <h3 class="modal-title">Fazer Pergunta / Esclarecimento à Banca</h3>
         <button type="button" class="modal-close" onclick="fecharModalDuvida()">&times;</button>
       </div>
 
       <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
-        Você pode solicitar esclarecimentos ou pedir a repetição do comando da questão (ex: "Poderia repetir o segundo ponto do enunciado?").
+        Você pode <strong>falar no microfone</strong> para solicitar esclarecimentos ou pedir repetição de algum comando à banca examinadora (ex: <em>"Senhor examinador, poderia repetir o segundo ponto do enunciado?"</em>).
       </p>
 
-      <div class="form-group">
-        <textarea id="duvida-texto-input" class="form-input" rows="3" placeholder="Digite ou dite sua solicitação à banca..."></textarea>
+      <!-- Botão de Gravação de Áudio da Dúvida -->
+      <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+        <button type="button" class="btn-start" id="btn-gravar-duvida" style="flex: 1; padding: 0.75rem 1rem; font-size: 0.95rem; background: linear-gradient(135deg, #4f46e5, #7c3aed);" onclick="toggleGravacaoDuvida()">
+          <span>🎙️</span> Falar com a Banca (Gravar Áudio)
+        </button>
       </div>
 
-      <div id="duvida-resposta-box" style="display: none; background: #f8fafc; border-left: 4px solid var(--primary); padding: 1rem; border-radius: 6px; font-size: 0.95rem; margin-top: 1rem;">
-        <strong>Resposta da Banca:</strong>
-        <div id="duvida-resposta-texto" style="margin-top: 0.35rem; color: #1e293b;"></div>
+      <!-- Visualizador de Ondas Sonoras da Dúvida -->
+      <div id="duvida-audio-container" style="display: none; margin-bottom: 1rem; text-align: center;">
+        <canvas id="duvida-waveform" width="450" height="50" style="background: #f8fafc; border-radius: 8px; width: 100%; border: 1px solid var(--border);"></canvas>
+        <div id="duvida-mic-status" style="font-size: 0.85rem; font-weight: 700; color: #dc2626; margin-top: 0.4rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
+          <span class="pulse-dot"></span> Gravando sua pergunta... Fale com a banca examinadora
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" style="font-size: 0.85rem; color: var(--text-muted);">Transcrição da sua pergunta (ou digite se preferir):</label>
+        <textarea id="duvida-texto-input" class="form-input" rows="3" placeholder="Sua fala aparecerá transcrita aqui em tempo real..."></textarea>
+      </div>
+
+      <div id="duvida-resposta-box" style="display: none; background: #f8fafc; border-left: 4px solid var(--primary); padding: 1.1rem; border-radius: 8px; font-size: 0.95rem; margin-top: 1rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <strong>⚖️ Resposta da Banca Examinadora:</strong>
+          <button type="button" class="btn-secondary-sm" onclick="ouvirRespostaDuvidaBanca()" style="font-size: 0.78rem;"><span>🔊</span> Ouvir Novamente</button>
+        </div>
+        <div id="duvida-resposta-texto" style="color: #1e293b; line-height: 1.6;"></div>
       </div>
 
       <div class="modal-footer">
         <button type="button" class="btn-secondary-sm" onclick="fecharModalDuvida()">Fechar</button>
-        <button type="button" class="btn-start" style="padding: 0.6rem 1.25rem; font-size: 0.95rem;" id="btn-enviar-duvida" onclick="enviarDuvidaBanca()">Perguntar</button>
+        <button type="button" class="btn-start" style="padding: 0.65rem 1.35rem; font-size: 0.95rem;" id="btn-enviar-duvida" onclick="enviarDuvidaBanca()">
+          <span>📨</span> Enviar Pergunta à Banca
+        </button>
       </div>
     </div>
   </div>
