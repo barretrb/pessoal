@@ -11,7 +11,7 @@ from typing import List, Dict, Any, Optional
 
 from fastapi import FastAPI, HTTPException, UploadFile, File, Form, Request
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
+from fastapi.responses import HTMLResponse, JSONResponse, FileResponse, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
@@ -110,7 +110,6 @@ def get_status():
 @app.get("/api/config")
 def get_config():
     cfg = load_config()
-    # Oculta chave completa para segurança
     masked = dict(cfg)
     if masked.get("gemini_api_key"):
         k = masked["gemini_api_key"]
@@ -307,7 +306,6 @@ def finalizar_simulado(session_id: str):
 @app.get("/api/simulado/historico")
 def get_historico():
     historico = carregar_historico()
-    # Retorna resumo para listagem
     resumos = [
         {
             "id": h["id"],
@@ -373,6 +371,10 @@ def pesquisar_banco_questoes(disciplina: Optional[str] = None, busca: Optional[s
 # Monta arquivos estáticos
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
+@app.get("/favicon.ico", include_in_schema=False)
+def favicon():
+    return Response(status_code=204)
+
 @app.get("/", response_class=HTMLResponse)
 def serve_index():
     index_file = os.path.join(STATIC_DIR, "index.html")
@@ -383,4 +385,4 @@ def serve_index():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run(app, host="127.0.0.1", port=8000)

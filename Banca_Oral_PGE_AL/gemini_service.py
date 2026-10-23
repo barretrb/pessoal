@@ -7,6 +7,11 @@ com fallback inteligente para modo offline / heurístico estruturado.
 import json
 import os
 import re
+import warnings
+
+# Suprime avisos de alerta de versão futura do pacote
+warnings.filterwarnings('ignore', category=FutureWarning)
+
 from typing import Dict, Any, List, Optional
 
 try:
