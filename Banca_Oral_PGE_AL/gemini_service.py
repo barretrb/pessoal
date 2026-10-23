@@ -1,7 +1,7 @@
 """
-Módulo de Inteligência Artificial para a Banca Oral PGE-AL.
-Integração com Google Gemini (multimodal, áudio e texto)
-com fallback inteligente para modo offline / heurístico estruturado.
+Módulo Unificado de Inteligência Artificial para a Banca Oral PGE-AL.
+Suporta Groq (openai/gpt-oss-120b e whisper-large-v3-turbo) e Google Gemini,
+com fallback heurístico offline estruturado.
 """
 
 import json
@@ -9,10 +9,10 @@ import os
 import re
 import warnings
 
-# Suprime avisos de alerta de versão futura do pacote
-warnings.filterwarnings('ignore', category=FutureWarning)
+warnings.filterwarnings("ignore", category=FutureWarning)
 
 from typing import Dict, Any, List, Optional
+import requests
 
 try:
     import google.generativeai as genai
@@ -27,8 +27,10 @@ def load_config() -> Dict[str, Any]:
         "candidate_name": "Viviane Lima",
         "reading_time_seconds": 120,
         "response_time_seconds": 300,
+        "groq_api_key": "",
         "gemini_api_key": "",
-        "model_name": "gemini-2.5-flash",
+        "model_name": "openai/gpt-oss-120b",
+        "audio_model": "whisper-large-v3-turbo",
         "auto_speak_examiner": True,
         "examiner_voice_speed": 0.95
     }
@@ -52,31 +54,78 @@ def save_config(config_data: Dict[str, Any]) -> bool:
         print(f"Erro ao salvar config: {e}")
         return False
 
-class GeminiBancaService:
+class UnifiedBancaAIService:
     def __init__(self):
         self.config = load_config()
-        self._init_gemini()
+        self._init_providers()
 
-    def _init_gemini(self):
-        api_key = self.config.get("gemini_api_key") or os.environ.get("GEMINI_API_KEY", "")
-        if api_key and genai:
+    def _init_providers(self):
+        self.groq_key = self.config.get("groq_api_key") or os.environ.get("GROQ_API_KEY", "")
+        self.gemini_key = self.config.get("gemini_api_key") or os.environ.get("GEMINI_API_KEY", "")
+        self.has_groq = bool(self.groq_key)
+        self.has_gemini = False
+
+        if self.gemini_key and genai:
             try:
-                genai.configure(api_key=api_key)
+                genai.configure(api_key=self.gemini_key)
                 self.has_gemini = True
-            except Exception as e:
-                print(f"Falha ao configurar Gemini: {e}")
+            except Exception:
                 self.has_gemini = False
-        else:
-            self.has_gemini = False
+
+        self.has_ai = self.has_groq or self.has_gemini
+        provider_name = "Groq (openai/gpt-oss-120b)" if self.has_groq else ("Gemini" if self.has_gemini else "Modo Heurístico Offline")
+        print(f"[BANCA AI] Provedor ativo: {provider_name}")
 
     def reload_config(self):
         self.config = load_config()
-        self._init_gemini()
+        self._init_providers()
+
+    def _call_llm(self, prompt: str, system_prompt: str = "Você é a Banca Examinadora da Prova Oral da PGE-AL.", json_mode: bool = False) -> Optional[str]:
+        """Chama Groq prioritariamente (ou Gemini como fallback)"""
+        # 1. Tenta Groq
+        if self.has_groq:
+            try:
+                url = "https://api.groq.com/openai/v1/chat/completions"
+                headers = {
+                    "Authorization": f"Bearer {self.groq_key}",
+                    "Content-Type": "application/json"
+                }
+                model_name = self.config.get("model_name", "openai/gpt-oss-120b")
+                payload: Dict[str, Any] = {
+                    "model": model_name,
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": prompt}
+                    ],
+                    "temperature": 0.2
+                }
+                if json_mode:
+                    payload["response_format"] = {"type": "json_object"}
+
+                resp = requests.post(url, headers=headers, json=payload, timeout=25)
+                if resp.status_code == 200:
+                    data = resp.json()
+                    return data["choices"][0]["message"]["content"]
+                else:
+                    print(f"[GROQ ERROR] Status {resp.status_code}: {resp.text}")
+            except Exception as e:
+                print(f"[GROQ CALL FAILED] {e}")
+
+        # 2. Tenta Gemini
+        if self.has_gemini and genai:
+            try:
+                model = genai.GenerativeModel(self.config.get("gemini_model_name", "gemini-2.5-flash"))
+                full_prompt = f"{system_prompt}\n\n{prompt}"
+                res = model.generate_content(full_prompt)
+                return res.text.strip()
+            except Exception as e:
+                print(f"[GEMINI CALL FAILED] {e}")
+
+        return None
 
     def verificar_necessidade_repergunta(self, questao: Dict[str, Any], resposta_candidata: str) -> Dict[str, Any]:
         """
-        Analisa a resposta da candidata frente aos pontos esperados da questão.
-        Decide se a banca examinadora deve fazer uma repergunta para aprofundar ou esclarecer.
+        Analisa a resposta preliminar da candidata e formula uma repergunta se houver omissão relevante.
         """
         if not resposta_candidata or len(resposta_candidata.strip()) < 10:
             reperguntas = questao.get("reperguntas_padrao", [])
@@ -84,16 +133,11 @@ class GeminiBancaService:
             return {
                 "deve_reperguntar": True,
                 "repergunta": pergunta_padrao,
-                "motivo": "Resposta excessivamente sucinta ou ausente, necessitando provocação da banca."
+                "motivo": "Resposta excessivamente sucinta ou sem enfrentamento de mérito."
             }
 
-        # Se Gemini estiver disponível
-        if self.has_gemini:
-            try:
-                model = genai.GenerativeModel(self.config.get("model_name", "gemini-2.5-flash"))
-                prompt = f"""
-Você é um membro rigoroso, porém sereno e polido, da Banca Examinadora da Prova Oral para Procurador do Estado de Alagoas (PGE-AL).
-Avalie a resposta preliminar da candidata abaixo em relação aos pontos esperados e ao gabarito da questão.
+        prompt = f"""
+Avalie a resposta preliminar da candidata da PGE-AL abaixo:
 
 QUESTÃO:
 Disciplina: {questao.get('disciplina')}
@@ -103,38 +147,37 @@ Enunciado: {questao.get('enunciado')}
 PONTOS ESPERADOS:
 {json.dumps(questao.get('pontos_esperados', []), ensure_ascii=False)}
 
-RESPOSTA ESPERADA / ESPELHO:
+RESPOSTA ESPERADA:
 {questao.get('resposta_esperada')}
 
 RESPOSTA TRANSCRITA DA CANDIDATA:
 "{resposta_candidata}"
 
-INSTRUÇÕES PARA A BANCA:
-Verifique se a candidata omitiu algum ponto crucial, se gerou alguma ambiguidade doutrinária ou se cabe um questionamento complementar de aprofundamento (repergunta), exatamente como fazem os examinadores da ProGrupo / CESPE / PGE.
-Retorne EXCLUSIVAMENTE um objeto JSON no seguinte formato:
+INSTRUÇÕES:
+Verifique se a candidata omitiu algum ponto crucial ou se cabe uma repergunta técnica para aprofundar a resposta oral.
+Retorne um JSON estrito no formato:
 {{
-  "deve_reperguntar": true/false,
-  "repergunta": "Texto direto e formal da repergunta da banca (ex: 'Candidata, a propriedade privada é um direito absoluto na Constituição de 1988?') ou vazio se não houver repergunta",
-  "motivo": "Breve justificativa técnica do porquê desta repergunta"
+  "deve_reperguntar": true,
+  "repergunta": "Candidata, ...?",
+  "motivo": "Justificativa..."
 }}
 """
-                response = model.generate_content(prompt)
-                txt = response.text.strip()
-                # Extrai JSON
-                match = re.search(r'\{.*\}', txt, re.DOTALL)
+        raw = self._call_llm(prompt, json_mode=True)
+        if raw:
+            try:
+                match = re.search(r'\{.*\}', raw, re.DOTALL)
                 if match:
                     return json.loads(match.group())
-            except Exception as e:
-                print(f"Erro ao consultar Gemini para repergunta: {e}")
+            except Exception:
+                pass
 
-        # Fallback inteligente (reperguntas padrão cadastradas na questão)
+        # Fallback para reperguntas cadastradas na questão
         reperguntas = questao.get("reperguntas_padrao", [])
         if reperguntas:
-            escolhida = reperguntas[0]
             return {
                 "deve_reperguntar": True,
-                "repergunta": escolhida["pergunta"],
-                "motivo": "Aprofundamento dogmático sobre ponto controvertido essencial ao espelho de prova oral."
+                "repergunta": reperguntas[0]["pergunta"],
+                "motivo": "Aprofundamento dogmático sobre ponto controvertido essencial ao espelho."
             }
 
         return {
@@ -144,86 +187,59 @@ Retorne EXCLUSIVAMENTE um objeto JSON no seguinte formato:
         }
 
     def responder_duvida_candidata(self, questao: Dict[str, Any], pergunta_candidata: str) -> str:
-        """
-        Responde a uma indagação feita pela candidata à banca durante a arguição (ex: pedido de repetição de enunciado).
-        """
-        if self.has_gemini:
-            try:
-                model = genai.GenerativeModel(self.config.get("model_name", "gemini-2.5-flash"))
-                prompt = f"""
-Você é a Banca Examinadora da Prova Oral da PGE-AL.
-A candidata acabou de formular uma pergunta ou solicitação à banca:
+        """Responde à indagação ou pedido de esclarecimento da candidata à banca"""
+        prompt = f"""
+A candidata acabou de formular uma solicitação/dúvida à banca examinadora:
 "{pergunta_candidata}"
 
 QUESTÃO EM ARGUIÇÃO:
 {questao.get('enunciado')}
 
-Responda à candidata de forma solene, estritamente institucional e objetiva, mantendo a postura de examinador de concurso público.
+Responda de forma solene, estritamente institucional e objetiva, mantendo a postura de examinador de concurso público.
 """
-                response = model.generate_content(prompt)
-                return response.text.strip()
-            except Exception as e:
-                print(f"Erro ao responder candidata via Gemini: {e}")
+        resposta = self._call_llm(prompt)
+        if resposta:
+            return resposta.strip()
 
         return f"Pois não, candidata. Reitero o comando da questão: {questao.get('enunciado_fala', questao.get('enunciado'))}"
 
     def avaliar_simulado_completo(self, dados_simulado: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Gera a avaliação completa do simulado nos moldes exatos do relatório ProGrupo:
-        - Média geral (0 a 100) e status (Aprovado >= 60 / Eliminado < 60)
-        - Notas por disciplina
-        - Feedback geral da banca (postura, serenidade, síntese, vocabulário)
-        - Desempenho detalhado pergunta por pergunta (critérios com pontuações fracionadas, raciocínio, argumentação, vernáculo, comentário, pontos esperados, base legal, resposta esperada)
-        """
-        questoes_avaliadas = dados_simulado.get("questoes", [])
-        nome_candidata = dados_simulado.get("candidata", self.config.get("candidate_name", "Viviane Lima"))
+        """Gera o relatório oficial nos moldes exatos da ProGrupo"""
+        if self.has_ai:
+            prompt = f"""
+Você é a Banca Examinadora oficial da Prova Oral da PGE-AL (Procuradoria Geral do Estado de Alagoas), atuando no padrão rigoroso do relatório 'ProGrupo Cursos e Mentorias'.
 
-        if self.has_gemini and questoes_avaliadas:
-            try:
-                return self._avaliar_com_gemini(dados_simulado)
-            except Exception as e:
-                print(f"Erro na avaliação via Gemini, recorrendo ao avaliador heurístico: {e}")
-
-        return self._avaliar_heuristico(dados_simulado)
-
-    def _avaliar_com_gemini(self, dados_simulado: Dict[str, Any]) -> Dict[str, Any]:
-        model = genai.GenerativeModel(self.config.get("model_name", "gemini-2.5-flash"))
-        prompt = f"""
-Você é uma Banca Examinadora de alto nível da Prova Oral para Procurador do Estado de Alagoas (PGE-AL), atuando com a mesma metodologia de pontuação detalhada da 'ProGrupo Cursos e Mentorias'.
-
-Avalie as respostas da candidata no simulado oral realizado.
-CANDIDATA: {dados_simulado.get('candidata', 'Viviane Lima')}
-DURAÇÃO TOTAL: {dados_simulado.get('duracao_formatada', '16:00')}
+Avalie o simulado da candidata: {dados_simulado.get('candidata', 'Viviane Lima')}
+Duração total: {dados_simulado.get('duracao_formatada', '16:00')}
 
 DADOS DAS QUESTÕES E RESPOSTAS:
 {json.dumps(dados_simulado.get('questoes', []), ensure_ascii=False, indent=2)}
 
-DIRETRIZES DE AVALIAÇÃO (PADRÃO PROGRUPO):
-1. Cada pergunta possui critérios de mérito/conteúdo pontuados fracionadamente (ex: 1.5/2.0, 1.0/2.0), além de:
-   - Articulação do raciocínio (escala 0.0 a 1.1)
-   - Capacidade de argumentação (escala 0.0 a 1.1)
-   - Uso correto do vernáculo (escala 0.0 a 0.8)
-   A soma dos pesos de cada pergunta resulta em sua nota normalizada de 0.0 a 100.0.
-2. Seja justa e precisa: avalie se a candidata acertou os conceitos jurídicos, a fundamentação constitucional e legal, e a jurisprudência do STF/STJ. Considere também as respostas dadas na fase de repergunta.
-3. Elabore um Feedback da Banca geral com tom profissional e construtivo, analisando postura, serenidade, capacidade de síntese e vocabulário, além de análise por disciplina e recomendações para as próximas arguições.
+INSTRUÇÕES DE PONTUAÇÃO (PADRÃO PROGRUPO):
+1. Cada questão possui critérios específicos com pontuação fracionada (ex: 1.5 / 2.0, 1.0 / 2.0) e parecer detalhado.
+2. Além dos critérios de conteúdo, avalie:
+   - Articulação do raciocínio (0.0 a 1.1)
+   - Capacidade de argumentação (0.0 a 1.1)
+   - Uso correto do vernáculo (0.0 a 0.8)
+3. A nota final da questão varia de 0.0 a 100.0. Média geral >= 60.0 é 'Aprovado — média igual ou superior a 60', abaixo é 'Eliminado — média abaixo de 60'.
+4. Crie um parecer geral da banca examinadora (Feedback da Banca) completo, em múltiplos parágrafos, analisando postura, serenidade, síntese, vocabulário e cada uma das matérias arguidas.
 
-Retorne EXCLUSIVAMENTE um objeto JSON estritamente válido com a seguinte estrutura:
+Retorne EXCLUSIVAMENTE um objeto JSON válido com a seguinte estrutura:
 {{
-  "media_geral": 64.5,
+  "media_geral": 65.0,
   "percentual": 65,
   "status": "Aprovado — média igual ou superior a 60",
   "status_tipo": "aprovado",
-  "feedback_banca": "Texto amplo em múltiplos parágrafos analisando postura, serenidade, síntese, vocabulário e matérias arguidas, conforme padrão ProGrupo.",
+  "feedback_banca": "O candidato demonstrou uma postura condizente...\\n\\nNas matérias...",
   "notas_disciplinas": [
-    {{"disciplina": "Direito Constitucional", "nota": 64.0}},
-    {{"disciplina": "Direito Tributário", "nota": 50.0}}
+    {{"disciplina": "Direito Tributário", "nota": 65.0}}
   ],
   "questoes_detalhadas": [
     {{
       "numero": 1,
-      "disciplina": "Direito Constitucional",
-      "topico": "17. ORDEM ECONÔMICA E FINANCEIRA",
-      "nota": 64.0,
+      "disciplina": "Direito Tributário",
+      "topico": "EXTINÇÃO E EXCLUSÃO DO CRÉDITO TRIBUTÁRIO",
+      "nota": 65.0,
       "enunciado": "...",
       "resposta_candidata": "...",
       "repergunta": "...",
@@ -239,22 +255,22 @@ Retorne EXCLUSIVAMENTE um objeto JSON estritamente válido com a seguinte estrut
           "descricao": "Articulação do raciocínio: resposta organizada e na ordem do comando, com ligação lógica entre as partes.",
           "nota_obtida": 0.9,
           "nota_maxima": 1.1,
-          "justificativa": "Demonstrou organização aceitável..."
+          "justificativa": "Demonstrou organização..."
         }},
         {{
           "descricao": "Capacidade de argumentação: fundamenta as conclusões e enfrenta o ponto controvertido.",
           "nota_obtida": 0.8,
           "nota_maxima": 1.1,
-          "justificativa": "Argumentou de forma satisfatória..."
+          "justificativa": "Argumentou satisfatoriamente..."
         }},
         {{
-          "descricao": "Uso correto do vernáculo: linguagem técnica precisa, concordância e regência corretas, sem vícios de oralidade.",
+          "descricao": "Uso correto do vernáculo: linguagem técnica precisa, concordância e regência corretas.",
           "nota_obtida": 0.7,
           "nota_maxima": 0.8,
           "justificativa": "Uso adequado do vernáculo..."
         }}
       ],
-      "comentario_examinador": "Parecer do examinador sobre o desempenho neste ponto...",
+      "comentario_examinador": "Parecer do examinador...",
       "pontos_esperados": ["..."],
       "base_legal": ["..."],
       "resposta_esperada": "..."
@@ -262,12 +278,17 @@ Retorne EXCLUSIVAMENTE um objeto JSON estritamente válido com a seguinte estrut
   ]
 }}
 """
-        response = model.generate_content(prompt)
-        txt = response.text.strip()
-        match = re.search(r'\{.*\}', txt, re.DOTALL)
-        if match:
-            return json.loads(match.group())
-        raise ValueError("Não foi possível decodificar JSON da resposta do Gemini")
+            raw = self._call_llm(prompt, json_mode=True)
+            if raw:
+                try:
+                    match = re.search(r'\{.*\}', raw, re.DOTALL)
+                    if match:
+                        return json.loads(match.group())
+                except Exception as e:
+                    print(f"[JSON PARSE ERROR] {e}")
+
+        # Fallback para o avaliador heurístico
+        return self._avaliar_heuristico(dados_simulado)
 
     def _avaliar_heuristico(self, dados_simulado: Dict[str, Any]) -> Dict[str, Any]:
         """Avaliador heurístico estruturado idêntico ao modelo ProGrupo"""
@@ -279,36 +300,32 @@ Retorne EXCLUSIVAMENTE um objeto JSON estritamente válido com a seguinte estrut
             resp_candidata = q_info.get("resposta", "").strip()
             repergunta = q_info.get("repergunta", "")
             resp_repergunta = q_info.get("resposta_repergunta", "").strip()
-            
-            # Análise de densidade e vocabulário
+
             resp_lower = resp_candidata.lower() + " " + resp_repergunta.lower()
             palavras = resp_lower.split()
             qtd_palavras = len(palavras)
-            
-            # Cálculo de critérios
+
             criterios = []
             soma_obtida = 0.0
             soma_maxima = 0.0
-            
-            # Critérios de conteúdo da questão
+
             for crit in questao.get("criterios_correcao", []):
                 peso = crit.get("peso", 2.0)
-                # Verifica menção a palavras-chave
                 desc_words = [w for w in re.findall(r'\b[a-zA-ZáéíóúãõçâêôÁÉÍÓÚÃÕÇÂÊÔ]{4,}\b', crit["descricao"].lower()) if w not in ("para", "sobre", "como", "com", "este", "essa", "pelo", "pela")]
                 match_count = sum(1 for w in desc_words if w in resp_lower)
                 proporcao = min(1.0, max(0.2, (match_count / max(1, len(desc_words) * 0.4)))) if qtd_palavras > 20 else 0.1
-                
+
                 nota_crit = round(peso * proporcao, 1)
                 soma_obtida += nota_crit
                 soma_maxima += peso
-                
+
                 if proporcao >= 0.8:
-                    just = f"Abordou com clareza e precisão técnica o ponto solicitado no comando da questão."
+                    just = "Abordou com clareza e precisão técnica o ponto solicitado no comando da questão."
                 elif proporcao >= 0.5:
-                    just = f"O candidato reconheceu os institutos principais, contudo deixou de aprofundar a fundamentação expressa."
+                    just = "O candidato reconheceu os institutos principais, contudo deixou de aprofundar a fundamentação expressa."
                 else:
-                    just = f"Omissão ou superficialidade no enfrentamento direto deste subitem exigido pela banca."
-                    
+                    just = "Omissão ou superficialidade no enfrentamento direto deste subitem exigido pela banca."
+
                 criterios.append({
                     "descricao": crit["descricao"],
                     "nota_obtida": nota_crit,
@@ -316,8 +333,6 @@ Retorne EXCLUSIVAMENTE um objeto JSON estritamente válido com a seguinte estrut
                     "justificativa": just
                 })
 
-            # Critérios formais padrão ProGrupo
-            # 1. Articulação do raciocínio (1.1)
             nota_raciocinio = 0.9 if qtd_palavras > 60 else (0.6 if qtd_palavras > 25 else 0.3)
             soma_obtida += nota_raciocinio
             soma_maxima += 1.1
@@ -328,7 +343,6 @@ Retorne EXCLUSIVAMENTE um objeto JSON estritamente válido com a seguinte estrut
                 "justificativa": "Demonstrou organização aceitável na linha de raciocínio, articulando as premissas com o desfecho."
             })
 
-            # 2. Capacidade de argumentação (1.1)
             nota_arg = 0.8 if len(resp_repergunta) > 15 else (0.5 if qtd_palavras > 50 else 0.3)
             soma_obtida += nota_arg
             soma_maxima += 1.1
@@ -339,7 +353,6 @@ Retorne EXCLUSIVAMENTE um objeto JSON estritamente válido com a seguinte estrut
                 "justificativa": "Argumentou satisfatoriamente nos pontos enfrentados, aproveitando as provocações em sede de repergunta."
             })
 
-            # 3. Uso correto do vernáculo (0.8)
             nota_vernaculo = 0.7 if qtd_palavras > 30 else 0.4
             soma_obtida += nota_vernaculo
             soma_maxima += 0.8
@@ -350,7 +363,6 @@ Retorne EXCLUSIVAMENTE um objeto JSON estritamente válido com a seguinte estrut
                 "justificativa": "Uso adequado do vernáculo e vocabulário condizente com a sustentação oral para carreiras jurídicas de Estado."
             })
 
-            # Nota normalizada da questão (0 a 100)
             nota_questao = round((soma_obtida / max(0.1, soma_maxima)) * 100, 1)
             disc = questao.get("disciplina", "Geral")
             disciplinas_dict.setdefault(disc, []).append(nota_questao)
@@ -375,7 +387,6 @@ Retorne EXCLUSIVAMENTE um objeto JSON estritamente válido com a seguinte estrut
                 "resposta_esperada": questao.get("resposta_esperada", "")
             })
 
-        # Média das disciplinas
         notas_disciplinas = []
         todas_notas = []
         for disc, lista_notas in disciplinas_dict.items():
@@ -410,4 +421,4 @@ Retorne EXCLUSIVAMENTE um objeto JSON estritamente válido com a seguinte estrut
             "questoes_detalhadas": questoes_detalhadas
         }
 
-gemini_service = GeminiBancaService()
+gemini_service = UnifiedBancaAIService()

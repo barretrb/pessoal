@@ -67,6 +67,7 @@ class ConfigRequest(BaseModel):
     candidate_name: Optional[str] = None
     reading_time_seconds: Optional[int] = None
     response_time_seconds: Optional[int] = None
+    groq_api_key: Optional[str] = None
     gemini_api_key: Optional[str] = None
     model_name: Optional[str] = None
     auto_speak_examiner: Optional[bool] = None
@@ -91,9 +92,11 @@ class ReperguntaRespostaRequest(BaseModel):
 def get_status():
     cfg = load_config()
     total_extraidas = sum(len(v) for v in banco.questoes_extraidas.values())
+    provider = "Groq (openai/gpt-oss-120b)" if gemini_service.has_groq else ("Gemini" if gemini_service.has_gemini else "Modo Heurístico")
     return {
         "status": "online",
-        "has_gemini": gemini_service.has_gemini,
+        "has_ai": gemini_service.has_ai,
+        "provider": provider,
         "model": cfg.get("model_name"),
         "total_questoes_oficiais": len(banco.questoes_oficiais),
         "total_questoes_revisao": total_extraidas,
@@ -101,7 +104,7 @@ def get_status():
             "candidate_name": cfg.get("candidate_name"),
             "reading_time_seconds": cfg.get("reading_time_seconds"),
             "response_time_seconds": cfg.get("response_time_seconds"),
-            "has_key": bool(cfg.get("gemini_api_key")),
+            "has_key": bool(cfg.get("groq_api_key") or cfg.get("gemini_api_key")),
             "auto_speak_examiner": cfg.get("auto_speak_examiner"),
             "examiner_voice_speed": cfg.get("examiner_voice_speed")
         }
@@ -111,6 +114,9 @@ def get_status():
 def get_config():
     cfg = load_config()
     masked = dict(cfg)
+    if masked.get("groq_api_key"):
+        k = masked["groq_api_key"]
+        masked["groq_api_key_masked"] = k[:6] + "..." + k[-4:] if len(k) > 10 else "***"
     if masked.get("gemini_api_key"):
         k = masked["gemini_api_key"]
         masked["gemini_api_key_masked"] = k[:6] + "..." + k[-4:] if len(k) > 10 else "***"

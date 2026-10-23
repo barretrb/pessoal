@@ -62,6 +62,10 @@ async function carregarConfiguracoes() {
   try {
     const res = await fetch("/api/status");
     const data = await res.json();
+    if (data.has_ai) {
+      const el = document.getElementById('banca-status-text');
+      if (el) el.innerText = 'Banca IA Ativa (' + (data.provider || 'IA') + ')';
+    }
     if (data.config) {
       state.config = { ...state.config, ...data.config };
       document.getElementById("setup-candidata").value = state.config.candidate_name || "Viviane Lima";
