@@ -17,7 +17,7 @@ export const dailyMedia = {
     video: {
       title: "BibleProject Português | Visão Geral: Lucas (Cap. 10 a 24)",
       channel: "BibleProject Português",
-      youtubeId: "Qp492cKzS70",
+      youtubeId: "UeUAAAs7hec",
       description: "Vídeo explicativo animado ilustrando a jornada de Jesus a caminho de Jerusalém, o modelo de discipulado e as parábolas do Reino."
     }
   },
@@ -29,16 +29,16 @@ export const dailyMedia = {
     passage: "Lucas 13–15",
     theme: "A Porta Estreita, O Grande Banquete, A Ovelha Perdida e a Parábola do Filho Pródigo",
     music: {
-      title: "Filho Pródigo / O Amor Que Me Encontrou",
-      artist: "Alessandro Vilas Boas & Morada",
-      youtubeId: "JmD1XoZ3VxE",
-      youtubeMusicUrl: "https://music.youtube.com/search?q=Filho+Prodigo+Alessandro+Vilas+Boas",
+      title: "Pródigo (O Abraço do Pai)",
+      artist: "Casa Worship",
+      youtubeId: "whHMcK4N3Kg",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=whHMcK4N3Kg",
       description: "Um hino profundo sobre a parábola de Lucas 15: o Pai que corre ao encontro do filho em farrapos, restaurando sua dignidade e celebrando com júbilo."
     },
     video: {
-      title: "A Graça Escandalosa do Pai (Lucas 15)",
-      channel: "BibleProject Português / Paulo Won",
-      youtubeId: "tPZfZ4R2vA8",
+      title: "BibleProject Português | Visão Geral: Lucas (Cap. 10 a 24)",
+      channel: "BibleProject Português",
+      youtubeId: "UeUAAAs7hec",
       description: "Explicação minuciosa da estrutura literária das três parábolas perdidas e encontradas de Lucas 15."
     }
   },
@@ -46,16 +46,16 @@ export const dailyMedia = {
   // Fallback padrão para outros dias
   default: {
     music: {
-      title: "Graça Maravilhosa / Quão Grande és Tu",
-      artist: "Adoração Devocional Acústico",
-      youtubeId: "7xT02aY1f6M",
-      youtubeMusicUrl: "https://music.youtube.com/search?q=Adoracao+Devocional+Acustico",
+      title: "Pra Onde Eu Irei? / Graça Maravilhosa",
+      artist: "Morada",
+      youtubeId: "JPXjpqstzng",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=JPXjpqstzng",
       description: "Momento de adoração para acalmar o coração e preparar a mente para ouvir a voz de Deus nas Escrituras."
     },
     video: {
       title: "Como Ler a Bíblia com Profundidade Devocional",
       channel: "BibleProject Português",
-      youtubeId: "3xHkQ-2_x8s",
+      youtubeId: "UeUAAAs7hec",
       description: "Guia prático para meditar e internalizar a mensagem viva da Palavra de Deus no dia a dia."
     }
   }

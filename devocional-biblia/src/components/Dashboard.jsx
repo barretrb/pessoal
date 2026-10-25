@@ -92,9 +92,9 @@ export default function Dashboard({
             <div className="aspect-video w-full max-w-xl mx-auto rounded-2xl overflow-hidden shadow-2xl bg-black">
               <iframe
                 className="w-full h-full"
-                src={`https://www.youtube-nocookie.com/embed/${activeMedia.music.youtubeId}?autoplay=1`}
+                src={`https://www.youtube.com/embed/${activeMedia.music.youtubeId}?autoplay=1&rel=0`}
                 title="Música Devocional do Dia"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
             </div>
@@ -216,9 +216,9 @@ export default function Dashboard({
           <div className="aspect-video w-full max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-lg bg-black mt-4">
             <iframe
               className="w-full h-full"
-              src={`https://www.youtube-nocookie.com/embed/${activeMedia.video.youtubeId}`}
+              src={`https://www.youtube.com/embed/${activeMedia.video.youtubeId}?rel=0`}
               title="Vídeo de Estudo Bíblico"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             />
           </div>
