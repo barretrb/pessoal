@@ -5,9 +5,16 @@ Implementa o envio de mensagens utilizando CallMeBot (mesmo padrão do projeto I
 e a formatação dos templates definidos na especificação do agente 'A Única Coisa'.
 """
 
+import sys
 import urllib.request
 import urllib.parse
 from typing import Dict, Any, List, Optional
+
+# Garante suporte seguro a emojis e UTF-8 em qualquer ambiente/OS
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 class WhatsAppService:
     """Responsável pela montagem e entrega das mensagens no WhatsApp."""
@@ -20,7 +27,10 @@ class WhatsAppService:
     def send_message(self, message: str) -> bool:
         """Envia mensagem de texto para o WhatsApp configurado via CallMeBot ou mock local."""
         if not self.phone or not self.apikey or self.apikey.startswith("YOUR_"):
-            print(f"[WHATSAPP MOCK/DRY-RUN]\n{message}\n------------------------------")
+            try:
+                print(f"[WHATSAPP MOCK/DRY-RUN]\n{message}\n------------------------------")
+            except Exception:
+                pass
             return True
 
         try:
@@ -31,7 +41,10 @@ class WhatsAppService:
                 status = resp.status
                 return 200 <= status < 300
         except Exception as e:
-            print(f"[WHATSAPP] Erro ao enviar mensagem via CallMeBot: {e}")
+            try:
+                print(f"[WHATSAPP] Erro ao enviar mensagem via CallMeBot: {e}")
+            except Exception:
+                pass
             return False
 
     @staticmethod
@@ -55,13 +68,15 @@ class WhatsAppService:
         else:
             lines.append("📌 _Nenhuma tarefa Deep Work encontrada no backlog!_")
 
-        # Janela de foco sugerida / auto-reservada
+        # Janela de foco sugerida
         if slot_info.get("start") and slot_info.get("end"):
             st_str = slot_info["start"].strftime("%H:%M")
             et_str = slot_info["end"].strftime("%H:%M")
             period_note = " (tarde)" if slot_info.get("is_fallback_afternoon") else ""
-            prefix = "🔒 *Bloco reservado na agenda:*" if auto_booked else "⏰ *Melhor janela hoje:*"
-            lines.append(f"{prefix} {st_str} às {et_str}{period_note}.")
+            if auto_booked:
+                lines.append(f"🔒 *Agenda Bloqueada:* {st_str} às {et_str}{period_note} (Time Blocking ativo).")
+            else:
+                lines.append(f"⏰ *Melhor janela hoje:* {st_str} às {et_str}{period_note}.")
         else:
             lines.append("⏰ *Aviso:* Sem janelas livres de 60m+ na agenda de hoje.")
 
@@ -83,11 +98,8 @@ class WhatsAppService:
         else:
             lines.append("  • _Lista operacional limpa._")
 
-        if auto_booked:
-            lines.append("\n👉 _O bloco de foco já está bloqueado na sua agenda! Se precisar ajustar, basta mover no Google Calendar._")
-        else:
+        if not auto_booked:
             lines.append("\n👉 _Responda *\"OK\"* para eu bloquear sua agenda, ou *\"Trocar por X\"*._")
-
         return "\n".join(lines)
 
     @staticmethod

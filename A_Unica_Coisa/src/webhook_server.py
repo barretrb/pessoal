@@ -6,8 +6,16 @@ Recebe mensagens do WhatsApp, dispara crons e executa o processador de intençõ
 """
 
 import os
+import sys
+import traceback
 from fastapi import FastAPI, Request, BackgroundTasks, HTTPException
-from fastapi.responses import JSONResponse, PlainTextResponse
+from fastapi.responses import JSONResponse
+
+# Garante saída UTF-8 compatível sem quebras de encoding
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 from src.orchestrator import Orchestrator
 from src.inbound_handler import InboundHandler
@@ -21,6 +29,13 @@ app = FastAPI(
 # Inicializa orchestrator e handler
 orchestrator = Orchestrator()
 inbound_handler = InboundHandler(orchestrator)
+
+def safe_send_whatsapp(message: str):
+    """Envia mensagem no WhatsApp em background capturando qualquer exceção."""
+    try:
+        orchestrator.whatsapp.send_message(message)
+    except Exception as e:
+        print(f"[BACKGROUND WHATSAPP ERROR] {e}")
 
 @app.get("/")
 def root():
@@ -39,10 +54,8 @@ async def whatsapp_webhook(request: Request, background_tasks: BackgroundTasks):
     """
     Recebe payloads de WhatsApp.
     Compatível com Evolution API, Z-API, Twilio e simuladores JSON simples.
-    Espera receber { "text": "mensagem", "phone": "..." } ou payloads aninhados de mensageria.
     """
     try:
-        # Tenta obter JSON
         content_type = request.headers.get("content-type", "")
         if "application/json" in content_type:
             payload = await request.json()
@@ -53,7 +66,6 @@ async def whatsapp_webhook(request: Request, background_tasks: BackgroundTasks):
         # Extração flexível de mensagem de texto
         incoming_text = ""
         if isinstance(payload, dict):
-            # Formatos comuns de APIs de WhatsApp
             incoming_text = (
                 payload.get("text") or
                 payload.get("message") or
@@ -70,16 +82,16 @@ async def whatsapp_webhook(request: Request, background_tasks: BackgroundTasks):
         # Processa a mensagem com o InboundHandler
         result = inbound_handler.process_incoming_message(incoming_text)
 
-        # Envia a resposta de volta ao WhatsApp
+        # Envia a resposta de volta ao WhatsApp de forma segura
         reply_text = result.get("reply")
         if reply_text:
-            background_tasks.add_task(orchestrator.whatsapp.send_message, reply_text)
+            background_tasks.add_task(safe_send_whatsapp, reply_text)
 
         return JSONResponse(status_code=200, content=result)
 
     except Exception as e:
-        print(f"[WEBHOOK ERROR] {e}")
-        return JSONResponse(status_code=500, content={"error": str(e)})
+        traceback.print_exc()
+        return JSONResponse(status_code=500, content={"error": str(e), "traceback": traceback.format_exc()})
 
 @app.get("/cron/morning")
 def trigger_morning_cron(force: bool = False):
