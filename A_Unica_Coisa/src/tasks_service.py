@@ -13,12 +13,19 @@ class TasksService:
 
     def __init__(self, google_auth_manager, list_names: Optional[Dict[str, str]] = None):
         self.auth_manager = google_auth_manager
-        self.service = self.auth_manager.get_tasks_service()
+        self._service = None
         self.list_names = list_names or {
             "professional": "💼 Profissional",
             "personal": "🏠 Pessoal"
         }
         self._list_cache: Dict[str, str] = {}
+
+    @property
+    def service(self):
+        """Retorna o serviço da Google Tasks com lazy-loading."""
+        if self._service is None and self.auth_manager:
+            self._service = self.auth_manager.get_tasks_service()
+        return self._service
 
     def get_or_create_list_id(self, domain_key: str) -> str:
         """Localiza o ID da lista pelo nome configurado ou a cria se não existir."""
@@ -26,6 +33,10 @@ class TasksService:
 
         if target_title in self._list_cache:
             return self._list_cache[target_title]
+
+        if not self.service:
+            print("[TASKS] Google Tasks não autenticado. Operando em modo offline.")
+            return f"mock_{domain_key}"
 
         # Busca listas existentes
         results = self.service.tasklists().list(maxResults=50).execute()
@@ -87,6 +98,10 @@ class TasksService:
 
     def fetch_active_tasks(self, domain_key: str) -> List[Dict[str, Any]]:
         """Busca todas as tarefas abertas (não concluídas) de uma lista específica."""
+        if not self.service:
+            print("[TASKS] Google Tasks não autenticado. Nenhuma tarefa remota retornada.")
+            return []
+
         list_id = self.get_or_create_list_id(domain_key)
         tasks_result = self.service.tasks().list(
             tasklist=list_id,
@@ -125,6 +140,10 @@ class TasksService:
 
     def complete_task(self, domain_key: str, task_id: str) -> Dict[str, Any]:
         """Marca uma tarefa como concluída no Google Tasks."""
+        if not self.service:
+            print("[TASKS] Google Tasks offline. Tarefa marcada localmente.")
+            return {"status": "completed_offline", "task_id": task_id}
+
         list_id = self.get_or_create_list_id(domain_key)
         now_iso = datetime.now(timezone.utc).isoformat()
         body = {
@@ -135,6 +154,10 @@ class TasksService:
 
     def create_task(self, domain_key: str, title: str, notes: str = "", due_date: Optional[str] = None) -> Dict[str, Any]:
         """Insere uma nova tarefa na lista especificada."""
+        if not self.service:
+            print(f"[TASKS] Google Tasks offline. Tarefa '{title}' simulada.")
+            return {"id": "mock_id", "title": title}
+
         list_id = self.get_or_create_list_id(domain_key)
         body = {
             "title": title,

@@ -270,6 +270,10 @@ class CalendarService:
         if self.invite_email:
             event_body["attendees"] = [{"email": self.invite_email}]
 
+        if not self.service:
+            print(f"[CALENDAR] Google Calendar offline. Evento simulado para {start_dt}.")
+            return {"id": "mock_event_id", "summary": event_body["summary"]}
+
         return self.service.events().insert(
             calendarId=self.calendar_id,
             body=event_body
