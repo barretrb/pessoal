@@ -7,6 +7,7 @@ Recebe mensagens do WhatsApp, dispara crons e executa o processador de intençõ
 
 import os
 import sys
+import json
 import traceback
 from fastapi import FastAPI, Request, BackgroundTasks, HTTPException
 from fastapi.responses import JSONResponse
@@ -56,10 +57,15 @@ async def whatsapp_webhook(request: Request, background_tasks: BackgroundTasks):
     Compatível com Evolution API, Z-API, Twilio e simuladores JSON simples.
     """
     try:
-        content_type = request.headers.get("content-type", "")
-        if "application/json" in content_type:
-            payload = await request.json()
-        else:
+        body_bytes = await request.body()
+        try:
+            body_str = body_bytes.decode("utf-8")
+        except UnicodeDecodeError:
+            body_str = body_bytes.decode("latin-1", errors="replace")
+
+        try:
+            payload = json.loads(body_str) if body_str else {}
+        except Exception:
             form = await request.form()
             payload = dict(form)
 
