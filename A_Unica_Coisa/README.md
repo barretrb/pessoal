@@ -41,3 +41,17 @@ Agente de produtividade proativo baseado no livro *"A Única Coisa"* (Gary Kelle
    ```bash
    python -m unittest discover -s tests
    ```
+
+---
+
+## 🌐 Deploy na Nuvem (Webhook & Automação 24/7)
+
+O projeto inclui suporte pronto para deploy no **Render** (plano gratuito) ou qualquer servidor Docker:
+
+* **Servidor Webhook (FastAPI):** `src/webhook_server.py`
+  * Rota `POST /webhook/whatsapp` : Escuta respostas do usuário ("OK", "Trocar por X", conclusões noturnas e captura rápida de tarefas como *"Amanhã preciso..."*).
+  * Rota `GET /cron/morning` : Disparo matinal (08:15).
+  * Rota `GET /cron/night` : Fechamento noturno (18:00).
+  * Rota `GET /cron/weekly` : Planejamento semanal (segundas às 08:00).
+* **Arquivo de Deploy Render:** `render.yaml`
+* **Container Docker:** `Dockerfile`
