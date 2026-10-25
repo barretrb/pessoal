@@ -137,17 +137,95 @@ Se você for gravar um vídeo ou demonstrar o projeto publicamente, siga este ro
 
 ---
 
-## 🛠️ 6. Instalação e Execução
+## 🔑 6. Guia Passo a Passo: Como Obter as Chaves e Configurar Cada Ferramenta
 
-### Pré-requisitos
-* Python 3.12+
-* Conta no Google Cloud Console com as APIs ativadas:
-  * **Google Tasks API**
-  * **Google Calendar API**
-* Chave de API da **Groq** ([console.groq.com](https://console.groq.com/))
-* Conta gratuita no **CallMeBot** para entrega no WhatsApp
+Todas as ferramentas utilizadas neste projeto possuem **nível gratuito generoso (Free Tier)** e não exigem cartão de crédito para os testes!
 
-### Execução Local
+### 📱 6.1. CallMeBot (API de WhatsApp Gratuita — 1 minuto)
+O CallMeBot permite que scripts enviem mensagens de texto para o seu WhatsApp pessoal via requisição HTTP simples:
+
+1. Salve o número do bot do CallMeBot na sua agenda do celular: **`+34 644 59 71 84`** (ou acesse diretamente pelo link: [api.callmebot.com](https://api.callmebot.com/whatsapp.php)).
+2. Abra uma conversa com ele no WhatsApp e envie exatamente a seguinte mensagem:
+   ```text
+   I allow callmebot to send me messages
+   ```
+3. O bot responderá em poucos segundos confirmando a autorização e enviará a sua **API Key numérica** (ex: `6993580`).
+4. Guarde essa chave e o seu número de telefone com DDI e DDD (ex: `5521999999999`).
+
+---
+
+### 🧠 6.2. Groq (Inferência Ultrarrápida com Llama 3.3 — 1 minuto)
+A Groq fornece acesso gratuito e em milissegundos aos melhores modelos abertos do mundo (Llama 3.3 70B):
+
+1. Acesse o portal oficial de desenvolvedores: **[console.groq.com](https://console.groq.com/)**.
+2. Faça login usando sua conta do Google ou GitHub.
+3. No menu lateral esquerdo, clique em **API Keys**.
+4. Clique no botão **`Create API Key`**, dê um nome (ex: `Agente-A-Unica-Coisa`) e clique em **Submit**.
+5. Copie a chave gerada imediatamente (ela começa com `gsk_...`), pois ela só será exibida uma vez.
+
+---
+
+### 📅 6.3. Google Cloud Console (Google Tasks & Google Calendar API — 3 minutos)
+Para que o agente possa ler suas listas e gerenciar o Time Blocking no seu calendário:
+
+1. Acesse o **[Google Cloud Console](https://console.cloud.google.com/)** e faça login na sua conta Google.
+2. No menu superior, clique no seletor de projetos e em **"New Project"** (Nome sugerido: `Agente-A-Unica-Coisa`).
+3. **Ative as duas APIs necessárias:**
+   * No menu lateral, vá em **APIs & Services > Library**.
+   * Pesquise por **Google Tasks API** e clique em **Enable**.
+   * Volte à biblioteca, pesquise por **Google Calendar API** e clique em **Enable**.
+4. **Configure a Tela de Consentimento (OAuth Consent Screen):**
+   * Vá em **APIs & Services > OAuth consent screen**.
+   * Escolha o tipo de usuário **External** e clique em **Create**.
+   * Preencha o nome do App (ex: `A Única Coisa`) e seu e-mail de suporte.
+   * Na etapa **Scopes**, adicione: `.../auth/tasks` e `.../auth/calendar`.
+   * Na etapa **Test users**, clique em **Add Users** e adicione o seu próprio e-mail Google (isso permite que você faça login em modo de desenvolvimento).
+5. **Crie a Credencial OAuth:**
+   * Vá em **APIs & Services > Credentials > Create Credentials > OAuth client ID**.
+   * Em **Application type**, selecione **Desktop app** (ou *Web application*).
+   * Clique em **Create** e, em seguida, no botão **Download JSON**.
+   * Renomeie o arquivo baixado para **`credentials.json`** e coloque-o na raiz do projeto (ou na pasta `A_Unica_Coisa`).
+
+---
+
+### 🌐 6.4. Render (Hospedagem Gratuita do Webhook 24/7 — 2 minutos)
+1. Acesse **[dashboard.render.com](https://dashboard.render.com/)** e conecte sua conta do GitHub.
+2. Clique em **New + > Web Service**.
+3. Selecione o repositório `pessoal` (ou o repositório onde seu código está salvo).
+4. Configure os campos:
+   * **Name:** `agente-a-unica-coisa`
+   * **Root Directory:** `A_Unica_Coisa`
+   * **Runtime:** `Python 3`
+   * **Build Command:** `pip install -r requirements.txt`
+   * **Start Command:** `uvicorn src.webhook_server:app --host 0.0.0.0 --port $PORT`
+   * **Instance Type:** `Free` ($0/mês)
+5. Na seção **Environment Variables**, adicione suas 4 variáveis:
+   * `WHATSAPP_PHONE`: `5521999999999`
+   * `CALLMEBOT_APIKEY`: Sua API Key do CallMeBot
+   * `GROQ_API_KEY`: Sua chave `gsk_...` da Groq
+   * `PYTHON_VERSION`: `3.12.0`
+6. Clique em **Deploy Web Service** e copie a URL pública gerada (ex: `https://agente-a-unica-coisa.onrender.com`).
+
+---
+
+### ⏰ 6.5. cron-job.org (Agendamento Automático dos Rituais — 2 minutos)
+Para que o agente dispare automaticamente nos horários certos todos os dias úteis:
+
+1. Acesse **[cron-job.org](https://cron-job.org/)** e crie uma conta gratuita.
+2. No painel, clique em **Create Cronjob** e cadastre as 3 rotinas:
+   * **Job 1 (Briefing Matinal):**
+     * URL: `https://seu-app.onrender.com/cron/morning`
+     * Schedule: Seg a Sex às **08:15** (Fuso Horário: America/Sao_Paulo)
+   * **Job 2 (Pílula do Almoço):**
+     * URL: `https://seu-app.onrender.com/cron/lunch`
+     * Schedule: Seg a Sex às **12:30**
+   * **Job 3 (Check-in Noturno):**
+     * URL: `https://seu-app.onrender.com/cron/night`
+     * Schedule: Seg a Sex às **18:00**
+
+---
+
+## 🛠️ 7. Instalação e Execução Local
 
 ```bash
 # 1. Clone o repositório
@@ -160,28 +238,15 @@ pip install -r requirements.txt
 # 3. Configure as variáveis de ambiente ou config.json
 cp config/config.example.json config/config.json
 
-# 4. Execute a bateria de testes unitários (17 testes)
+# 4. Execute a bateria completa de testes unitários (17 testes)
 python -m unittest discover -s tests
 
-# 5. Inicie o servidor local
+# 5. Inicie o servidor FastAPI local
 uvicorn src.webhook_server:app --reload --port 8000
 ```
 
-### Deploy na Nuvem (Render / Docker)
-
-1. Conecte o repositório no **[Render](https://dashboard.render.com/)** como um **Web Service** usando o arquivo `render.yaml`.
-2. Configure as seguintes variáveis de ambiente:
-   * `WHATSAPP_PHONE`: Seu número internacional (ex: `5521999999999`)
-   * `CALLMEBOT_APIKEY`: Sua API Key do CallMeBot
-   * `GROQ_API_KEY`: Sua chave de API da Groq
-   * `PYTHON_VERSION`: `3.12.0`
-3. Agende os 3 disparos gratuitos no **[cron-job.org](https://cron-job.org)**:
-   * `08:15` ➔ `https://seu-app.onrender.com/cron/morning`
-   * `12:30` ➔ `https://seu-app.onrender.com/cron/lunch`
-   * `18:00` ➔ `https://seu-app.onrender.com/cron/night`
-
 ---
 
-## ⚖️ Licença e Créditos
+## ⚖️ 8. Licença e Créditos
 Desenvolvido por **Rafael Barreto** como parte do ecossistema de agentes autônomos de produtividade e IA.  
 Inspirado na obra de **Gary Keller e Jay Papasan** (*The ONE Thing*).
