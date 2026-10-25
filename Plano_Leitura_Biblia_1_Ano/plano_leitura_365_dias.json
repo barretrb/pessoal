@@ -8,7 +8,9 @@
       "Gênesis 1",
       "Gênesis 2",
       "Salmos 1"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-01"
   },
   {
     "id": 2,
@@ -20,7 +22,9 @@
       "Gênesis 4",
       "Gênesis 5",
       "Gênesis 6"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-02"
   },
   {
     "id": 3,
@@ -31,7 +35,9 @@
       "Gênesis 7",
       "Gênesis 8",
       "Salmos 2"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-03"
   },
   {
     "id": 4,
@@ -43,7 +49,9 @@
       "Gênesis 10",
       "Gênesis 11",
       "Gênesis 12"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-04"
   },
   {
     "id": 5,
@@ -54,7 +62,9 @@
       "Gênesis 13",
       "Gênesis 14",
       "Salmos 3"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-05"
   },
   {
     "id": 6,
@@ -66,7 +76,9 @@
       "Gênesis 16",
       "Gênesis 17",
       "Gênesis 18"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-06"
   },
   {
     "id": 7,
@@ -77,7 +89,9 @@
       "Gênesis 19",
       "Gênesis 20",
       "Salmos 4"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-07"
   },
   {
     "id": 8,
@@ -89,7 +103,9 @@
       "Gênesis 22",
       "Gênesis 23",
       "Gênesis 24"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-08"
   },
   {
     "id": 9,
@@ -100,7 +116,9 @@
       "Gênesis 25",
       "Gênesis 26",
       "Salmos 5"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-09"
   },
   {
     "id": 10,
@@ -112,7 +130,9 @@
       "Gênesis 28",
       "Gênesis 29",
       "Gênesis 30"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-10"
   },
   {
     "id": 11,
@@ -123,7 +143,9 @@
       "Gênesis 31",
       "Gênesis 32",
       "Salmos 6"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-11"
   },
   {
     "id": 12,
@@ -135,7 +157,9 @@
       "Gênesis 34",
       "Gênesis 35",
       "Gênesis 36"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-12"
   },
   {
     "id": 13,
@@ -146,7 +170,9 @@
       "Gênesis 37",
       "Gênesis 38",
       "Salmos 7"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-13"
   },
   {
     "id": 14,
@@ -158,7 +184,9 @@
       "Gênesis 40",
       "Gênesis 41",
       "Gênesis 42"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-14"
   },
   {
     "id": 15,
@@ -169,7 +197,9 @@
       "Gênesis 43",
       "Gênesis 44",
       "Salmos 8"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-15"
   },
   {
     "id": 16,
@@ -181,7 +211,9 @@
       "Gênesis 46",
       "Gênesis 47",
       "Gênesis 48"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-16"
   },
   {
     "id": 17,
@@ -192,7 +224,9 @@
       "Gênesis 49",
       "Gênesis 50",
       "Salmos 9"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-17"
   },
   {
     "id": 18,
@@ -204,7 +238,9 @@
       "Êxodo 2",
       "Êxodo 3",
       "Êxodo 4"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-18"
   },
   {
     "id": 19,
@@ -215,7 +251,9 @@
       "Êxodo 5",
       "Êxodo 6",
       "Salmos 10"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-19"
   },
   {
     "id": 20,
@@ -227,7 +265,9 @@
       "Êxodo 8",
       "Êxodo 9",
       "Êxodo 10"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-20"
   },
   {
     "id": 21,
@@ -238,7 +278,9 @@
       "Êxodo 11",
       "Êxodo 12",
       "Salmos 11"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-21"
   },
   {
     "id": 22,
@@ -250,7 +292,9 @@
       "Êxodo 14",
       "Êxodo 15",
       "Êxodo 16"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-22"
   },
   {
     "id": 23,
@@ -261,7 +305,9 @@
       "Êxodo 17",
       "Êxodo 18",
       "Salmos 12"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-23"
   },
   {
     "id": 24,
@@ -273,7 +319,9 @@
       "Êxodo 20",
       "Êxodo 21",
       "Êxodo 22"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-24"
   },
   {
     "id": 25,
@@ -284,7 +332,9 @@
       "Êxodo 23",
       "Êxodo 24",
       "Salmos 13"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-25"
   },
   {
     "id": 26,
@@ -296,7 +346,9 @@
       "Êxodo 26",
       "Êxodo 27",
       "Êxodo 28"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-26"
   },
   {
     "id": 27,
@@ -307,7 +359,9 @@
       "Êxodo 29",
       "Êxodo 30",
       "Salmos 14"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-27"
   },
   {
     "id": 28,
@@ -319,7 +373,9 @@
       "Êxodo 32",
       "Êxodo 33",
       "Êxodo 34"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-28"
   },
   {
     "id": 29,
@@ -330,7 +386,9 @@
       "Êxodo 35",
       "Êxodo 36",
       "Salmos 15"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-29"
   },
   {
     "id": 30,
@@ -342,7 +400,9 @@
       "Êxodo 38",
       "Êxodo 39",
       "Êxodo 40"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-30"
   },
   {
     "id": 31,
@@ -353,7 +413,9 @@
       "Levítico 1",
       "Levítico 2",
       "Salmos 16"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-01-31"
   },
   {
     "id": 32,
@@ -365,7 +427,9 @@
       "Levítico 4",
       "Levítico 5",
       "Levítico 6"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-01"
   },
   {
     "id": 33,
@@ -376,7 +440,9 @@
       "Levítico 7",
       "Levítico 8",
       "Salmos 17"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-02"
   },
   {
     "id": 34,
@@ -388,7 +454,9 @@
       "Levítico 10",
       "Levítico 11",
       "Levítico 12"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-03"
   },
   {
     "id": 35,
@@ -399,7 +467,9 @@
       "Levítico 13",
       "Levítico 14",
       "Salmos 18"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-04"
   },
   {
     "id": 36,
@@ -411,7 +481,9 @@
       "Levítico 16",
       "Levítico 17",
       "Levítico 18"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-05"
   },
   {
     "id": 37,
@@ -422,7 +494,9 @@
       "Levítico 19",
       "Levítico 20",
       "Salmos 19"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-06"
   },
   {
     "id": 38,
@@ -434,7 +508,9 @@
       "Levítico 22",
       "Levítico 23",
       "Levítico 24"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-07"
   },
   {
     "id": 39,
@@ -445,7 +521,9 @@
       "Levítico 25",
       "Levítico 26",
       "Salmos 20"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-08"
   },
   {
     "id": 40,
@@ -457,7 +535,9 @@
       "Números 1",
       "Números 2",
       "Números 3"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-09"
   },
   {
     "id": 41,
@@ -468,7 +548,9 @@
       "Números 4",
       "Números 5",
       "Salmos 21"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-10"
   },
   {
     "id": 42,
@@ -480,7 +562,9 @@
       "Números 7",
       "Números 8",
       "Números 9"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-11"
   },
   {
     "id": 43,
@@ -491,7 +575,9 @@
       "Números 10",
       "Números 11",
       "Salmos 22"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-12"
   },
   {
     "id": 44,
@@ -503,7 +589,9 @@
       "Números 13",
       "Números 14",
       "Números 15"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-13"
   },
   {
     "id": 45,
@@ -514,7 +602,9 @@
       "Números 16",
       "Números 17",
       "Salmos 23"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-14"
   },
   {
     "id": 46,
@@ -526,7 +616,9 @@
       "Números 19",
       "Números 20",
       "Números 21"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-15"
   },
   {
     "id": 47,
@@ -537,7 +629,9 @@
       "Números 22",
       "Números 23",
       "Salmos 24"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-16"
   },
   {
     "id": 48,
@@ -549,7 +643,9 @@
       "Números 25",
       "Números 26",
       "Números 27"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-17"
   },
   {
     "id": 49,
@@ -560,7 +656,9 @@
       "Números 28",
       "Números 29",
       "Salmos 25"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-18"
   },
   {
     "id": 50,
@@ -572,7 +670,9 @@
       "Números 31",
       "Números 32",
       "Números 33"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-19"
   },
   {
     "id": 51,
@@ -583,7 +683,9 @@
       "Números 34",
       "Números 35",
       "Salmos 26"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-20"
   },
   {
     "id": 52,
@@ -595,7 +697,9 @@
       "Deuteronômio 1",
       "Deuteronômio 2",
       "Deuteronômio 3"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-21"
   },
   {
     "id": 53,
@@ -606,7 +710,9 @@
       "Deuteronômio 4",
       "Deuteronômio 5",
       "Salmos 27"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-22"
   },
   {
     "id": 54,
@@ -618,7 +724,9 @@
       "Deuteronômio 7",
       "Deuteronômio 8",
       "Deuteronômio 9"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-23"
   },
   {
     "id": 55,
@@ -629,7 +737,9 @@
       "Deuteronômio 10",
       "Deuteronômio 11",
       "Salmos 28"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-24"
   },
   {
     "id": 56,
@@ -641,7 +751,9 @@
       "Deuteronômio 13",
       "Deuteronômio 14",
       "Deuteronômio 15"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-25"
   },
   {
     "id": 57,
@@ -652,7 +764,9 @@
       "Deuteronômio 16",
       "Deuteronômio 17",
       "Salmos 29"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-26"
   },
   {
     "id": 58,
@@ -664,7 +778,9 @@
       "Deuteronômio 19",
       "Deuteronômio 20",
       "Deuteronômio 21"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-27"
   },
   {
     "id": 59,
@@ -675,7 +791,9 @@
       "Deuteronômio 22",
       "Deuteronômio 23",
       "Salmos 30"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-02-28"
   },
   {
     "id": 60,
@@ -687,7 +805,9 @@
       "Deuteronômio 25",
       "Deuteronômio 26",
       "Deuteronômio 27"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-01"
   },
   {
     "id": 61,
@@ -698,7 +818,9 @@
       "Deuteronômio 28",
       "Deuteronômio 29",
       "Salmos 31"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-02"
   },
   {
     "id": 62,
@@ -710,7 +832,9 @@
       "Deuteronômio 31",
       "Deuteronômio 32",
       "Deuteronômio 33"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-03"
   },
   {
     "id": 63,
@@ -721,7 +845,9 @@
       "Deuteronômio 34",
       "Josué 1",
       "Salmos 32"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-04"
   },
   {
     "id": 64,
@@ -733,7 +859,9 @@
       "Josué 3",
       "Josué 4",
       "Josué 5"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-05"
   },
   {
     "id": 65,
@@ -744,7 +872,9 @@
       "Josué 6",
       "Josué 7",
       "Salmos 33"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-06"
   },
   {
     "id": 66,
@@ -756,7 +886,9 @@
       "Josué 9",
       "Josué 10",
       "Josué 11"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-07"
   },
   {
     "id": 67,
@@ -767,7 +899,9 @@
       "Josué 12",
       "Josué 13",
       "Salmos 34"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-08"
   },
   {
     "id": 68,
@@ -779,7 +913,9 @@
       "Josué 15",
       "Josué 16",
       "Josué 17"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-09"
   },
   {
     "id": 69,
@@ -790,7 +926,9 @@
       "Josué 18",
       "Josué 19",
       "Salmos 35"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-10"
   },
   {
     "id": 70,
@@ -802,7 +940,9 @@
       "Josué 21",
       "Josué 22",
       "Josué 23"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-11"
   },
   {
     "id": 71,
@@ -813,7 +953,9 @@
       "Josué 24",
       "Juízes 1",
       "Salmos 36"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-12"
   },
   {
     "id": 72,
@@ -825,7 +967,9 @@
       "Juízes 3",
       "Juízes 4",
       "Juízes 5"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-13"
   },
   {
     "id": 73,
@@ -836,7 +980,9 @@
       "Juízes 6",
       "Juízes 7",
       "Salmos 37"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-14"
   },
   {
     "id": 74,
@@ -848,7 +994,9 @@
       "Juízes 9",
       "Juízes 10",
       "Juízes 11"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-15"
   },
   {
     "id": 75,
@@ -859,7 +1007,9 @@
       "Juízes 12",
       "Juízes 13",
       "Salmos 38"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-16"
   },
   {
     "id": 76,
@@ -871,7 +1021,9 @@
       "Juízes 15",
       "Juízes 16",
       "Juízes 17"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-17"
   },
   {
     "id": 77,
@@ -882,7 +1034,9 @@
       "Juízes 18",
       "Juízes 19",
       "Salmos 39"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-18"
   },
   {
     "id": 78,
@@ -894,7 +1048,9 @@
       "Juízes 21",
       "Rute 1",
       "Rute 2"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-19"
   },
   {
     "id": 79,
@@ -905,7 +1061,9 @@
       "Rute 3",
       "Rute 4",
       "Salmos 40"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-20"
   },
   {
     "id": 80,
@@ -917,7 +1075,9 @@
       "1 Samuel 2",
       "1 Samuel 3",
       "1 Samuel 4"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-21"
   },
   {
     "id": 81,
@@ -928,7 +1088,9 @@
       "1 Samuel 5",
       "1 Samuel 6",
       "Salmos 41"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-22"
   },
   {
     "id": 82,
@@ -940,7 +1102,9 @@
       "1 Samuel 8",
       "1 Samuel 9",
       "1 Samuel 10"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-23"
   },
   {
     "id": 83,
@@ -951,7 +1115,9 @@
       "1 Samuel 11",
       "1 Samuel 12",
       "Salmos 42"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-24"
   },
   {
     "id": 84,
@@ -963,7 +1129,9 @@
       "1 Samuel 14",
       "1 Samuel 15",
       "1 Samuel 16"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-25"
   },
   {
     "id": 85,
@@ -974,7 +1142,9 @@
       "1 Samuel 17",
       "1 Samuel 18",
       "Salmos 43"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-26"
   },
   {
     "id": 86,
@@ -986,7 +1156,9 @@
       "1 Samuel 20",
       "1 Samuel 21",
       "1 Samuel 22"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-27"
   },
   {
     "id": 87,
@@ -997,7 +1169,9 @@
       "1 Samuel 23",
       "1 Samuel 24",
       "Salmos 44"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-28"
   },
   {
     "id": 88,
@@ -1009,7 +1183,9 @@
       "1 Samuel 26",
       "1 Samuel 27",
       "1 Samuel 28"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-29"
   },
   {
     "id": 89,
@@ -1020,7 +1196,9 @@
       "1 Samuel 29",
       "1 Samuel 30",
       "Salmos 45"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-30"
   },
   {
     "id": 90,
@@ -1032,7 +1210,9 @@
       "2 Samuel 1",
       "2 Samuel 2",
       "2 Samuel 3"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-03-31"
   },
   {
     "id": 91,
@@ -1043,7 +1223,9 @@
       "2 Samuel 4",
       "2 Samuel 5",
       "Salmos 46"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-01"
   },
   {
     "id": 92,
@@ -1055,7 +1237,9 @@
       "2 Samuel 7",
       "2 Samuel 8",
       "2 Samuel 9"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-02"
   },
   {
     "id": 93,
@@ -1066,7 +1250,9 @@
       "2 Samuel 10",
       "2 Samuel 11",
       "Salmos 47"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-03"
   },
   {
     "id": 94,
@@ -1078,7 +1264,9 @@
       "2 Samuel 13",
       "2 Samuel 14",
       "2 Samuel 15"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-04"
   },
   {
     "id": 95,
@@ -1089,7 +1277,9 @@
       "2 Samuel 16",
       "2 Samuel 17",
       "Salmos 48"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-05"
   },
   {
     "id": 96,
@@ -1101,7 +1291,9 @@
       "2 Samuel 19",
       "2 Samuel 20",
       "2 Samuel 21"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-06"
   },
   {
     "id": 97,
@@ -1112,7 +1304,9 @@
       "2 Samuel 22",
       "2 Samuel 23",
       "Salmos 49"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-07"
   },
   {
     "id": 98,
@@ -1124,7 +1318,9 @@
       "1 Reis 1",
       "1 Reis 2",
       "1 Reis 3"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-08"
   },
   {
     "id": 99,
@@ -1135,7 +1331,9 @@
       "1 Reis 4",
       "1 Reis 5",
       "Salmos 50"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-09"
   },
   {
     "id": 100,
@@ -1147,7 +1345,9 @@
       "1 Reis 7",
       "1 Reis 8",
       "1 Reis 9"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-10"
   },
   {
     "id": 101,
@@ -1158,7 +1358,9 @@
       "1 Reis 10",
       "1 Reis 11",
       "Salmos 51"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-11"
   },
   {
     "id": 102,
@@ -1170,7 +1372,9 @@
       "1 Reis 13",
       "1 Reis 14",
       "1 Reis 15"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-12"
   },
   {
     "id": 103,
@@ -1181,7 +1385,9 @@
       "1 Reis 16",
       "1 Reis 17",
       "Salmos 52"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-13"
   },
   {
     "id": 104,
@@ -1193,7 +1399,9 @@
       "1 Reis 19",
       "1 Reis 20",
       "1 Reis 21"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-14"
   },
   {
     "id": 105,
@@ -1204,7 +1412,9 @@
       "1 Reis 22",
       "2 Reis 1",
       "Salmos 53"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-15"
   },
   {
     "id": 106,
@@ -1216,7 +1426,9 @@
       "2 Reis 3",
       "2 Reis 4",
       "2 Reis 5"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-16"
   },
   {
     "id": 107,
@@ -1227,7 +1439,9 @@
       "2 Reis 6",
       "2 Reis 7",
       "Salmos 54"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-17"
   },
   {
     "id": 108,
@@ -1239,7 +1453,9 @@
       "2 Reis 9",
       "2 Reis 10",
       "2 Reis 11"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-18"
   },
   {
     "id": 109,
@@ -1250,7 +1466,9 @@
       "2 Reis 12",
       "2 Reis 13",
       "Salmos 55"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-19"
   },
   {
     "id": 110,
@@ -1262,7 +1480,9 @@
       "2 Reis 15",
       "2 Reis 16",
       "2 Reis 17"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-20"
   },
   {
     "id": 111,
@@ -1273,7 +1493,9 @@
       "2 Reis 18",
       "2 Reis 19",
       "Salmos 56"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-21"
   },
   {
     "id": 112,
@@ -1285,7 +1507,9 @@
       "2 Reis 21",
       "2 Reis 22",
       "2 Reis 23"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-22"
   },
   {
     "id": 113,
@@ -1296,7 +1520,9 @@
       "2 Reis 24",
       "2 Reis 25",
       "Salmos 57"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-23"
   },
   {
     "id": 114,
@@ -1308,7 +1534,9 @@
       "1 Crônicas 2",
       "1 Crônicas 3",
       "1 Crônicas 4"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-24"
   },
   {
     "id": 115,
@@ -1319,7 +1547,9 @@
       "1 Crônicas 5",
       "1 Crônicas 6",
       "Salmos 58"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-25"
   },
   {
     "id": 116,
@@ -1331,7 +1561,9 @@
       "1 Crônicas 8",
       "1 Crônicas 9",
       "1 Crônicas 10"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-26"
   },
   {
     "id": 117,
@@ -1342,7 +1574,9 @@
       "1 Crônicas 11",
       "1 Crônicas 12",
       "Salmos 59"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-27"
   },
   {
     "id": 118,
@@ -1354,7 +1588,9 @@
       "1 Crônicas 14",
       "1 Crônicas 15",
       "1 Crônicas 16"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-28"
   },
   {
     "id": 119,
@@ -1365,7 +1601,9 @@
       "1 Crônicas 17",
       "1 Crônicas 18",
       "Salmos 60"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-29"
   },
   {
     "id": 120,
@@ -1377,7 +1615,9 @@
       "1 Crônicas 20",
       "1 Crônicas 21",
       "1 Crônicas 22"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-04-30"
   },
   {
     "id": 121,
@@ -1388,7 +1628,9 @@
       "1 Crônicas 23",
       "1 Crônicas 24",
       "Salmos 61"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-01"
   },
   {
     "id": 122,
@@ -1400,7 +1642,9 @@
       "1 Crônicas 26",
       "1 Crônicas 27",
       "1 Crônicas 28"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-02"
   },
   {
     "id": 123,
@@ -1411,7 +1655,9 @@
       "1 Crônicas 29",
       "2 Crônicas 1",
       "Salmos 62"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-03"
   },
   {
     "id": 124,
@@ -1423,7 +1669,9 @@
       "2 Crônicas 3",
       "2 Crônicas 4",
       "2 Crônicas 5"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-04"
   },
   {
     "id": 125,
@@ -1434,7 +1682,9 @@
       "2 Crônicas 6",
       "2 Crônicas 7",
       "Salmos 63"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-05"
   },
   {
     "id": 126,
@@ -1446,7 +1696,9 @@
       "2 Crônicas 9",
       "2 Crônicas 10",
       "2 Crônicas 11"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-06"
   },
   {
     "id": 127,
@@ -1457,7 +1709,9 @@
       "2 Crônicas 12",
       "2 Crônicas 13",
       "Salmos 64"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-07"
   },
   {
     "id": 128,
@@ -1469,7 +1723,9 @@
       "2 Crônicas 15",
       "2 Crônicas 16",
       "2 Crônicas 17"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-08"
   },
   {
     "id": 129,
@@ -1480,7 +1736,9 @@
       "2 Crônicas 18",
       "2 Crônicas 19",
       "Salmos 65"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-09"
   },
   {
     "id": 130,
@@ -1492,7 +1750,9 @@
       "2 Crônicas 21",
       "2 Crônicas 22",
       "2 Crônicas 23"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-10"
   },
   {
     "id": 131,
@@ -1503,7 +1763,9 @@
       "2 Crônicas 24",
       "2 Crônicas 25",
       "Salmos 66"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-11"
   },
   {
     "id": 132,
@@ -1515,7 +1777,9 @@
       "2 Crônicas 27",
       "2 Crônicas 28",
       "2 Crônicas 29"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-12"
   },
   {
     "id": 133,
@@ -1526,7 +1790,9 @@
       "2 Crônicas 30",
       "2 Crônicas 31",
       "Salmos 67"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-13"
   },
   {
     "id": 134,
@@ -1538,7 +1804,9 @@
       "2 Crônicas 33",
       "2 Crônicas 34",
       "2 Crônicas 35"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-14"
   },
   {
     "id": 135,
@@ -1549,7 +1817,9 @@
       "2 Crônicas 36",
       "Esdras 1",
       "Salmos 68"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-15"
   },
   {
     "id": 136,
@@ -1561,7 +1831,9 @@
       "Esdras 3",
       "Esdras 4",
       "Esdras 5"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-16"
   },
   {
     "id": 137,
@@ -1572,7 +1844,9 @@
       "Esdras 6",
       "Esdras 7",
       "Salmos 69"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-17"
   },
   {
     "id": 138,
@@ -1584,7 +1858,9 @@
       "Esdras 9",
       "Esdras 10",
       "Neemias 1"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-18"
   },
   {
     "id": 139,
@@ -1595,7 +1871,9 @@
       "Neemias 2",
       "Neemias 3",
       "Salmos 70"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-19"
   },
   {
     "id": 140,
@@ -1607,7 +1885,9 @@
       "Neemias 5",
       "Neemias 6",
       "Neemias 7"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-20"
   },
   {
     "id": 141,
@@ -1618,7 +1898,9 @@
       "Neemias 8",
       "Neemias 9",
       "Salmos 71"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-21"
   },
   {
     "id": 142,
@@ -1630,7 +1912,9 @@
       "Neemias 11",
       "Neemias 12",
       "Neemias 13"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-22"
   },
   {
     "id": 143,
@@ -1641,7 +1925,9 @@
       "Ester 1",
       "Ester 2",
       "Salmos 72"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-23"
   },
   {
     "id": 144,
@@ -1653,7 +1939,9 @@
       "Ester 4",
       "Ester 5",
       "Ester 6"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-24"
   },
   {
     "id": 145,
@@ -1664,7 +1952,9 @@
       "Ester 7",
       "Ester 8",
       "Salmos 73"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-25"
   },
   {
     "id": 146,
@@ -1676,7 +1966,9 @@
       "Ester 10",
       "Jó 1",
       "Jó 2"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-26"
   },
   {
     "id": 147,
@@ -1687,7 +1979,9 @@
       "Jó 3",
       "Jó 4",
       "Salmos 74"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-27"
   },
   {
     "id": 148,
@@ -1699,7 +1993,9 @@
       "Jó 6",
       "Jó 7",
       "Jó 8"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-28"
   },
   {
     "id": 149,
@@ -1710,7 +2006,9 @@
       "Jó 9",
       "Jó 10",
       "Salmos 75"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-29"
   },
   {
     "id": 150,
@@ -1722,7 +2020,9 @@
       "Jó 12",
       "Jó 13",
       "Jó 14"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-30"
   },
   {
     "id": 151,
@@ -1733,7 +2033,9 @@
       "Jó 15",
       "Jó 16",
       "Salmos 76"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-05-31"
   },
   {
     "id": 152,
@@ -1745,7 +2047,9 @@
       "Jó 18",
       "Jó 19",
       "Jó 20"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-01"
   },
   {
     "id": 153,
@@ -1756,7 +2060,9 @@
       "Jó 21",
       "Jó 22",
       "Salmos 77"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-02"
   },
   {
     "id": 154,
@@ -1768,7 +2074,9 @@
       "Jó 24",
       "Jó 25",
       "Jó 26"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-03"
   },
   {
     "id": 155,
@@ -1779,7 +2087,9 @@
       "Jó 27",
       "Jó 28",
       "Salmos 78"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-04"
   },
   {
     "id": 156,
@@ -1791,7 +2101,9 @@
       "Jó 30",
       "Jó 31",
       "Jó 32"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-05"
   },
   {
     "id": 157,
@@ -1802,7 +2114,9 @@
       "Jó 33",
       "Jó 34",
       "Salmos 79"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-06"
   },
   {
     "id": 158,
@@ -1814,7 +2128,9 @@
       "Jó 36",
       "Jó 37",
       "Jó 38"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-07"
   },
   {
     "id": 159,
@@ -1825,7 +2141,9 @@
       "Jó 39",
       "Jó 40",
       "Salmos 80"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-08"
   },
   {
     "id": 160,
@@ -1837,7 +2155,9 @@
       "Jó 42",
       "Provérbios 1",
       "Provérbios 2"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-09"
   },
   {
     "id": 161,
@@ -1848,7 +2168,9 @@
       "Provérbios 3",
       "Provérbios 4",
       "Salmos 81"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-10"
   },
   {
     "id": 162,
@@ -1860,7 +2182,9 @@
       "Provérbios 6",
       "Provérbios 7",
       "Provérbios 8"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-11"
   },
   {
     "id": 163,
@@ -1871,7 +2195,9 @@
       "Provérbios 9",
       "Provérbios 10",
       "Salmos 82"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-12"
   },
   {
     "id": 164,
@@ -1883,7 +2209,9 @@
       "Provérbios 12",
       "Provérbios 13",
       "Provérbios 14"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-13"
   },
   {
     "id": 165,
@@ -1894,7 +2222,9 @@
       "Provérbios 15",
       "Provérbios 16",
       "Salmos 83"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-14"
   },
   {
     "id": 166,
@@ -1906,7 +2236,9 @@
       "Provérbios 18",
       "Provérbios 19",
       "Provérbios 20"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-15"
   },
   {
     "id": 167,
@@ -1917,7 +2249,9 @@
       "Provérbios 21",
       "Provérbios 22",
       "Salmos 84"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-16"
   },
   {
     "id": 168,
@@ -1929,7 +2263,9 @@
       "Provérbios 24",
       "Provérbios 25",
       "Provérbios 26"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-17"
   },
   {
     "id": 169,
@@ -1940,7 +2276,9 @@
       "Provérbios 27",
       "Provérbios 28",
       "Salmos 85"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-18"
   },
   {
     "id": 170,
@@ -1952,7 +2290,9 @@
       "Provérbios 30",
       "Provérbios 31",
       "Eclesiastes 1"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-19"
   },
   {
     "id": 171,
@@ -1963,7 +2303,9 @@
       "Eclesiastes 2",
       "Eclesiastes 3",
       "Salmos 86"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-20"
   },
   {
     "id": 172,
@@ -1975,7 +2317,9 @@
       "Eclesiastes 5",
       "Eclesiastes 6",
       "Eclesiastes 7"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-21"
   },
   {
     "id": 173,
@@ -1986,7 +2330,9 @@
       "Eclesiastes 8",
       "Eclesiastes 9",
       "Salmos 87"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-22"
   },
   {
     "id": 174,
@@ -1998,7 +2344,9 @@
       "Eclesiastes 11",
       "Eclesiastes 12",
       "Cântico dos Cânticos 1"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-23"
   },
   {
     "id": 175,
@@ -2009,7 +2357,9 @@
       "Cântico dos Cânticos 2",
       "Cântico dos Cânticos 3",
       "Salmos 88"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-24"
   },
   {
     "id": 176,
@@ -2021,7 +2371,9 @@
       "Cântico dos Cânticos 5",
       "Cântico dos Cânticos 6",
       "Cântico dos Cânticos 7"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-25"
   },
   {
     "id": 177,
@@ -2032,7 +2384,9 @@
       "Cântico dos Cânticos 8",
       "Isaías 1",
       "Salmos 89"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-26"
   },
   {
     "id": 178,
@@ -2044,7 +2398,9 @@
       "Isaías 3",
       "Isaías 4",
       "Isaías 5"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-27"
   },
   {
     "id": 179,
@@ -2055,7 +2411,9 @@
       "Isaías 6",
       "Isaías 7",
       "Salmos 90"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-28"
   },
   {
     "id": 180,
@@ -2067,7 +2425,9 @@
       "Isaías 9",
       "Isaías 10",
       "Isaías 11"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-29"
   },
   {
     "id": 181,
@@ -2078,7 +2438,9 @@
       "Isaías 12",
       "Isaías 13",
       "Salmos 91"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-06-30"
   },
   {
     "id": 182,
@@ -2090,7 +2452,9 @@
       "Isaías 15",
       "Isaías 16",
       "Isaías 17"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-01"
   },
   {
     "id": 183,
@@ -2101,7 +2465,9 @@
       "Isaías 18",
       "Isaías 19",
       "Salmos 92"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-02"
   },
   {
     "id": 184,
@@ -2113,7 +2479,9 @@
       "Isaías 21",
       "Isaías 22",
       "Isaías 23"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-03"
   },
   {
     "id": 185,
@@ -2124,7 +2492,9 @@
       "Isaías 24",
       "Isaías 25",
       "Salmos 93"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-04"
   },
   {
     "id": 186,
@@ -2136,7 +2506,9 @@
       "Isaías 27",
       "Isaías 28",
       "Isaías 29"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-05"
   },
   {
     "id": 187,
@@ -2147,7 +2519,9 @@
       "Isaías 30",
       "Isaías 31",
       "Salmos 94"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-06"
   },
   {
     "id": 188,
@@ -2159,7 +2533,9 @@
       "Isaías 33",
       "Isaías 34",
       "Isaías 35"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-07"
   },
   {
     "id": 189,
@@ -2170,7 +2546,9 @@
       "Isaías 36",
       "Isaías 37",
       "Salmos 95"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-08"
   },
   {
     "id": 190,
@@ -2182,7 +2560,9 @@
       "Isaías 39",
       "Isaías 40",
       "Isaías 41"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-09"
   },
   {
     "id": 191,
@@ -2193,7 +2573,9 @@
       "Isaías 42",
       "Isaías 43",
       "Salmos 96"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-10"
   },
   {
     "id": 192,
@@ -2205,7 +2587,9 @@
       "Isaías 45",
       "Isaías 46",
       "Isaías 47"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-11"
   },
   {
     "id": 193,
@@ -2216,7 +2600,9 @@
       "Isaías 48",
       "Isaías 49",
       "Salmos 97"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-12"
   },
   {
     "id": 194,
@@ -2228,7 +2614,9 @@
       "Isaías 51",
       "Isaías 52",
       "Isaías 53"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-13"
   },
   {
     "id": 195,
@@ -2239,7 +2627,9 @@
       "Isaías 54",
       "Isaías 55",
       "Salmos 98"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-14"
   },
   {
     "id": 196,
@@ -2251,7 +2641,9 @@
       "Isaías 57",
       "Isaías 58",
       "Isaías 59"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-15"
   },
   {
     "id": 197,
@@ -2262,7 +2654,9 @@
       "Isaías 60",
       "Isaías 61",
       "Salmos 99"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-16"
   },
   {
     "id": 198,
@@ -2274,7 +2668,9 @@
       "Isaías 63",
       "Isaías 64",
       "Isaías 65"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-17"
   },
   {
     "id": 199,
@@ -2285,7 +2681,9 @@
       "Isaías 66",
       "Jeremias 1",
       "Salmos 100"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-18"
   },
   {
     "id": 200,
@@ -2297,7 +2695,9 @@
       "Jeremias 3",
       "Jeremias 4",
       "Jeremias 5"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-19"
   },
   {
     "id": 201,
@@ -2308,7 +2708,9 @@
       "Jeremias 6",
       "Jeremias 7",
       "Salmos 101"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-20"
   },
   {
     "id": 202,
@@ -2320,7 +2722,9 @@
       "Jeremias 9",
       "Jeremias 10",
       "Jeremias 11"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-21"
   },
   {
     "id": 203,
@@ -2331,7 +2735,9 @@
       "Jeremias 12",
       "Jeremias 13",
       "Salmos 102"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-22"
   },
   {
     "id": 204,
@@ -2343,7 +2749,9 @@
       "Jeremias 15",
       "Jeremias 16",
       "Jeremias 17"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-23"
   },
   {
     "id": 205,
@@ -2354,7 +2762,9 @@
       "Jeremias 18",
       "Jeremias 19",
       "Salmos 103"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-24"
   },
   {
     "id": 206,
@@ -2366,7 +2776,9 @@
       "Jeremias 21",
       "Jeremias 22",
       "Jeremias 23"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-25"
   },
   {
     "id": 207,
@@ -2377,7 +2789,9 @@
       "Jeremias 24",
       "Jeremias 25",
       "Salmos 104"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-26"
   },
   {
     "id": 208,
@@ -2389,7 +2803,9 @@
       "Jeremias 27",
       "Jeremias 28",
       "Jeremias 29"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-27"
   },
   {
     "id": 209,
@@ -2400,7 +2816,9 @@
       "Jeremias 30",
       "Jeremias 31",
       "Salmos 105"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-28"
   },
   {
     "id": 210,
@@ -2412,7 +2830,9 @@
       "Jeremias 33",
       "Jeremias 34",
       "Jeremias 35"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-29"
   },
   {
     "id": 211,
@@ -2423,7 +2843,9 @@
       "Jeremias 36",
       "Jeremias 37",
       "Salmos 106"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-30"
   },
   {
     "id": 212,
@@ -2435,7 +2857,9 @@
       "Jeremias 39",
       "Jeremias 40",
       "Jeremias 41"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-07-31"
   },
   {
     "id": 213,
@@ -2446,7 +2870,9 @@
       "Jeremias 42",
       "Jeremias 43",
       "Salmos 107"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-01"
   },
   {
     "id": 214,
@@ -2458,7 +2884,9 @@
       "Jeremias 45",
       "Jeremias 46",
       "Jeremias 47"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-02"
   },
   {
     "id": 215,
@@ -2469,7 +2897,9 @@
       "Jeremias 48",
       "Jeremias 49",
       "Salmos 108"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-03"
   },
   {
     "id": 216,
@@ -2481,7 +2911,9 @@
       "Jeremias 51",
       "Jeremias 52",
       "Lamentações 1"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-04"
   },
   {
     "id": 217,
@@ -2492,7 +2924,9 @@
       "Lamentações 2",
       "Lamentações 3",
       "Salmos 109"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-05"
   },
   {
     "id": 218,
@@ -2504,7 +2938,9 @@
       "Lamentações 5",
       "Ezequiel 1",
       "Ezequiel 2"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-06"
   },
   {
     "id": 219,
@@ -2515,7 +2951,9 @@
       "Ezequiel 3",
       "Ezequiel 4",
       "Salmos 110"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-07"
   },
   {
     "id": 220,
@@ -2527,7 +2965,9 @@
       "Ezequiel 6",
       "Ezequiel 7",
       "Ezequiel 8"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-08"
   },
   {
     "id": 221,
@@ -2538,7 +2978,9 @@
       "Ezequiel 9",
       "Ezequiel 10",
       "Salmos 111"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-09"
   },
   {
     "id": 222,
@@ -2550,7 +2992,9 @@
       "Ezequiel 12",
       "Ezequiel 13",
       "Ezequiel 14"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-10"
   },
   {
     "id": 223,
@@ -2561,7 +3005,9 @@
       "Ezequiel 15",
       "Ezequiel 16",
       "Salmos 112"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-11"
   },
   {
     "id": 224,
@@ -2573,7 +3019,9 @@
       "Ezequiel 18",
       "Ezequiel 19",
       "Ezequiel 20"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-12"
   },
   {
     "id": 225,
@@ -2584,7 +3032,9 @@
       "Ezequiel 21",
       "Ezequiel 22",
       "Salmos 113"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-13"
   },
   {
     "id": 226,
@@ -2596,7 +3046,9 @@
       "Ezequiel 24",
       "Ezequiel 25",
       "Ezequiel 26"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-14"
   },
   {
     "id": 227,
@@ -2607,7 +3059,9 @@
       "Ezequiel 27",
       "Ezequiel 28",
       "Salmos 114"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-15"
   },
   {
     "id": 228,
@@ -2619,7 +3073,9 @@
       "Ezequiel 30",
       "Ezequiel 31",
       "Ezequiel 32"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-16"
   },
   {
     "id": 229,
@@ -2630,7 +3086,9 @@
       "Ezequiel 33",
       "Ezequiel 34",
       "Salmos 115"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-17"
   },
   {
     "id": 230,
@@ -2642,7 +3100,9 @@
       "Ezequiel 36",
       "Ezequiel 37",
       "Ezequiel 38"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-18"
   },
   {
     "id": 231,
@@ -2653,7 +3113,9 @@
       "Ezequiel 39",
       "Ezequiel 40",
       "Salmos 116"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-19"
   },
   {
     "id": 232,
@@ -2664,7 +3126,9 @@
       "Ezequiel 41",
       "Ezequiel 42",
       "Salmos 117"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-20"
   },
   {
     "id": 233,
@@ -2675,7 +3139,9 @@
       "Ezequiel 43",
       "Ezequiel 44",
       "Salmos 118"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-21"
   },
   {
     "id": 234,
@@ -2686,7 +3152,9 @@
       "Ezequiel 45",
       "Ezequiel 46",
       "Salmos 119 (Álefe) vv.1–8"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-22"
   },
   {
     "id": 235,
@@ -2697,7 +3165,9 @@
       "Ezequiel 47",
       "Ezequiel 48",
       "Salmos 119 (Bete) vv.9–16"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-23"
   },
   {
     "id": 236,
@@ -2708,7 +3178,9 @@
       "Daniel 1",
       "Daniel 2",
       "Salmos 119 (Guímel) vv.17–24"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-24"
   },
   {
     "id": 237,
@@ -2719,7 +3191,9 @@
       "Daniel 3",
       "Daniel 4",
       "Salmos 119 (Dálete) vv.25–32"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-25"
   },
   {
     "id": 238,
@@ -2730,7 +3204,9 @@
       "Daniel 5",
       "Daniel 6",
       "Salmos 119 (Hê) vv.33–40"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-26"
   },
   {
     "id": 239,
@@ -2741,7 +3217,9 @@
       "Daniel 7",
       "Daniel 8",
       "Salmos 119 (Vav) vv.41–48"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-27"
   },
   {
     "id": 240,
@@ -2752,7 +3230,9 @@
       "Daniel 9",
       "Daniel 10",
       "Salmos 119 (Záin) vv.49–56"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-28"
   },
   {
     "id": 241,
@@ -2763,7 +3243,9 @@
       "Daniel 11",
       "Daniel 12",
       "Salmos 119 (Hete) vv.57–64"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-29"
   },
   {
     "id": 242,
@@ -2774,7 +3256,9 @@
       "Oséias 1",
       "Oséias 2",
       "Salmos 119 (Tete) vv.65–72"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-30"
   },
   {
     "id": 243,
@@ -2785,7 +3269,9 @@
       "Oséias 3",
       "Oséias 4",
       "Salmos 119 (Iôde) vv.73–80"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-08-31"
   },
   {
     "id": 244,
@@ -2796,7 +3282,9 @@
       "Oséias 5",
       "Oséias 6",
       "Salmos 119 (Cafe) vv.81–88"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-01"
   },
   {
     "id": 245,
@@ -2807,7 +3295,9 @@
       "Oséias 7",
       "Oséias 8",
       "Salmos 119 (Lâmede) vv.89–96"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-02"
   },
   {
     "id": 246,
@@ -2818,7 +3308,9 @@
       "Oséias 9",
       "Oséias 10",
       "Salmos 119 (Mêm) vv.97–104"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-03"
   },
   {
     "id": 247,
@@ -2829,7 +3321,9 @@
       "Oséias 11",
       "Oséias 12",
       "Salmos 119 (Nun) vv.105–112"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-04"
   },
   {
     "id": 248,
@@ -2840,7 +3334,9 @@
       "Oséias 13",
       "Oséias 14",
       "Salmos 119 (Sâmeque) vv.113–120"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-05"
   },
   {
     "id": 249,
@@ -2851,7 +3347,9 @@
       "Joel 1",
       "Joel 2",
       "Salmos 119 (Áin) vv.121–128"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-06"
   },
   {
     "id": 250,
@@ -2862,7 +3360,9 @@
       "Joel 3",
       "Amós 1",
       "Salmos 119 (Pê) vv.129–136"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-07"
   },
   {
     "id": 251,
@@ -2873,7 +3373,9 @@
       "Amós 2",
       "Amós 3",
       "Salmos 119 (Tsáde) vv.137–144"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-08"
   },
   {
     "id": 252,
@@ -2884,7 +3386,9 @@
       "Amós 4",
       "Amós 5",
       "Salmos 119 (Qôfe) vv.145–152"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-09"
   },
   {
     "id": 253,
@@ -2895,7 +3399,9 @@
       "Amós 6",
       "Amós 7",
       "Salmos 119 (Rexe) vv.153–160"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-10"
   },
   {
     "id": 254,
@@ -2906,7 +3412,9 @@
       "Amós 8",
       "Amós 9",
       "Salmos 119 (Chin) vv.161–168"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-11"
   },
   {
     "id": 255,
@@ -2917,7 +3425,9 @@
       "Obadias 1",
       "Jonas 1",
       "Salmos 119 (Tau) vv.169–176"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-12"
   },
   {
     "id": 256,
@@ -2928,7 +3438,9 @@
       "Jonas 2",
       "Jonas 3",
       "Salmos 120"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-13"
   },
   {
     "id": 257,
@@ -2939,7 +3451,9 @@
       "Jonas 4",
       "Miqueias 1",
       "Salmos 121"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-14"
   },
   {
     "id": 258,
@@ -2950,7 +3464,9 @@
       "Miqueias 2",
       "Miqueias 3",
       "Salmos 122"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-15"
   },
   {
     "id": 259,
@@ -2961,7 +3477,9 @@
       "Miqueias 4",
       "Miqueias 5",
       "Salmos 123"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-16"
   },
   {
     "id": 260,
@@ -2972,7 +3490,9 @@
       "Miqueias 6",
       "Miqueias 7",
       "Salmos 124"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-17"
   },
   {
     "id": 261,
@@ -2983,7 +3503,9 @@
       "Naum 1",
       "Naum 2",
       "Salmos 125"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-18"
   },
   {
     "id": 262,
@@ -2994,7 +3516,9 @@
       "Naum 3",
       "Habacuque 1",
       "Salmos 126"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-19"
   },
   {
     "id": 263,
@@ -3005,7 +3529,9 @@
       "Habacuque 2",
       "Habacuque 3",
       "Salmos 127"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-20"
   },
   {
     "id": 264,
@@ -3016,7 +3542,9 @@
       "Sofonias 1",
       "Sofonias 2",
       "Salmos 128"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-21"
   },
   {
     "id": 265,
@@ -3027,7 +3555,9 @@
       "Sofonias 3",
       "Ageu 1",
       "Salmos 129"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-22"
   },
   {
     "id": 266,
@@ -3038,7 +3568,9 @@
       "Ageu 2",
       "Zacarias 1",
       "Salmos 130"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-23"
   },
   {
     "id": 267,
@@ -3049,7 +3581,9 @@
       "Zacarias 2",
       "Zacarias 3",
       "Salmos 131"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-24"
   },
   {
     "id": 268,
@@ -3060,7 +3594,9 @@
       "Zacarias 4",
       "Zacarias 5",
       "Salmos 132"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-25"
   },
   {
     "id": 269,
@@ -3071,7 +3607,9 @@
       "Zacarias 6",
       "Zacarias 7",
       "Salmos 133"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-26"
   },
   {
     "id": 270,
@@ -3082,7 +3620,9 @@
       "Zacarias 8",
       "Zacarias 9",
       "Salmos 134"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-27"
   },
   {
     "id": 271,
@@ -3093,7 +3633,9 @@
       "Zacarias 10",
       "Zacarias 11",
       "Salmos 135"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-28"
   },
   {
     "id": 272,
@@ -3104,7 +3646,9 @@
       "Zacarias 12",
       "Zacarias 13",
       "Salmos 136"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-29"
   },
   {
     "id": 273,
@@ -3115,7 +3659,9 @@
       "Zacarias 14",
       "Malaquias 1",
       "Salmos 137"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-09-30"
   },
   {
     "id": 274,
@@ -3126,7 +3672,9 @@
       "Malaquias 2",
       "Malaquias 3",
       "Salmos 138"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-01"
   },
   {
     "id": 275,
@@ -3137,7 +3685,9 @@
       "Malaquias 4",
       "Mateus 1",
       "Salmos 139"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-02"
   },
   {
     "id": 276,
@@ -3148,7 +3698,9 @@
       "Mateus 2",
       "Mateus 3",
       "Salmos 140"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-03"
   },
   {
     "id": 277,
@@ -3159,7 +3711,9 @@
       "Mateus 4",
       "Mateus 5",
       "Salmos 141"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-04"
   },
   {
     "id": 278,
@@ -3170,7 +3724,9 @@
       "Mateus 6",
       "Mateus 7",
       "Salmos 142"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-05"
   },
   {
     "id": 279,
@@ -3181,7 +3737,9 @@
       "Mateus 8",
       "Mateus 9",
       "Salmos 143"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-06"
   },
   {
     "id": 280,
@@ -3192,7 +3750,9 @@
       "Mateus 10",
       "Mateus 11",
       "Salmos 144"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-07"
   },
   {
     "id": 281,
@@ -3203,7 +3763,9 @@
       "Mateus 12",
       "Mateus 13",
       "Salmos 145"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-08"
   },
   {
     "id": 282,
@@ -3214,7 +3776,9 @@
       "Mateus 14",
       "Mateus 15",
       "Salmos 146"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-09"
   },
   {
     "id": 283,
@@ -3225,7 +3789,9 @@
       "Mateus 16",
       "Mateus 17",
       "Salmos 147"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-10"
   },
   {
     "id": 284,
@@ -3236,7 +3802,9 @@
       "Mateus 18",
       "Mateus 19",
       "Salmos 148"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-11"
   },
   {
     "id": 285,
@@ -3247,7 +3815,9 @@
       "Mateus 20",
       "Mateus 21",
       "Salmos 149"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-12"
   },
   {
     "id": 286,
@@ -3258,7 +3828,9 @@
       "Mateus 22",
       "Mateus 23",
       "Salmos 150"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-13"
   },
   {
     "id": 287,
@@ -3269,7 +3841,9 @@
       "Mateus 24",
       "Mateus 25",
       "Mateus 26"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-14"
   },
   {
     "id": 288,
@@ -3280,7 +3854,9 @@
       "Mateus 27",
       "Mateus 28",
       "Marcos 1"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-15"
   },
   {
     "id": 289,
@@ -3291,7 +3867,9 @@
       "Marcos 2",
       "Marcos 3",
       "Marcos 4"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-16"
   },
   {
     "id": 290,
@@ -3302,7 +3880,9 @@
       "Marcos 5",
       "Marcos 6",
       "Marcos 7"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-17"
   },
   {
     "id": 291,
@@ -3313,7 +3893,9 @@
       "Marcos 8",
       "Marcos 9",
       "Marcos 10"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-18"
   },
   {
     "id": 292,
@@ -3324,7 +3906,9 @@
       "Marcos 11",
       "Marcos 12",
       "Marcos 13"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-19"
   },
   {
     "id": 293,
@@ -3335,7 +3919,9 @@
       "Marcos 14",
       "Marcos 15",
       "Marcos 16"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-20"
   },
   {
     "id": 294,
@@ -3346,7 +3932,9 @@
       "Lucas 1",
       "Lucas 2",
       "Lucas 3"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-21"
   },
   {
     "id": 295,
@@ -3357,7 +3945,9 @@
       "Lucas 4",
       "Lucas 5",
       "Lucas 6"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-22"
   },
   {
     "id": 296,
@@ -3368,7 +3958,9 @@
       "Lucas 7",
       "Lucas 8",
       "Lucas 9"
-    ]
+    ],
+    "completed": true,
+    "completedAt": "2026-10-23"
   },
   {
     "id": 297,
@@ -3379,7 +3971,9 @@
       "Lucas 10",
       "Lucas 11",
       "Lucas 12"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 298,
@@ -3390,7 +3984,9 @@
       "Lucas 13",
       "Lucas 14",
       "Lucas 15"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 299,
@@ -3401,7 +3997,9 @@
       "Lucas 16",
       "Lucas 17",
       "Lucas 18"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 300,
@@ -3412,7 +4010,9 @@
       "Lucas 19",
       "Lucas 20",
       "Lucas 21"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 301,
@@ -3423,7 +4023,9 @@
       "Lucas 22",
       "Lucas 23",
       "Lucas 24"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 302,
@@ -3434,7 +4036,9 @@
       "João 1",
       "João 2",
       "João 3"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 303,
@@ -3445,7 +4049,9 @@
       "João 4",
       "João 5",
       "João 6"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 304,
@@ -3456,7 +4062,9 @@
       "João 7",
       "João 8",
       "João 9"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 305,
@@ -3467,7 +4075,9 @@
       "João 10",
       "João 11",
       "João 12"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 306,
@@ -3478,7 +4088,9 @@
       "João 13",
       "João 14",
       "João 15"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 307,
@@ -3489,7 +4101,9 @@
       "João 16",
       "João 17",
       "João 18"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 308,
@@ -3500,7 +4114,9 @@
       "João 19",
       "João 20",
       "João 21"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 309,
@@ -3511,7 +4127,9 @@
       "Atos 1",
       "Atos 2",
       "Atos 3"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 310,
@@ -3522,7 +4140,9 @@
       "Atos 4",
       "Atos 5",
       "Atos 6"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 311,
@@ -3533,7 +4153,9 @@
       "Atos 7",
       "Atos 8",
       "Atos 9"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 312,
@@ -3544,7 +4166,9 @@
       "Atos 10",
       "Atos 11",
       "Atos 12"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 313,
@@ -3555,7 +4179,9 @@
       "Atos 13",
       "Atos 14",
       "Atos 15"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 314,
@@ -3566,7 +4192,9 @@
       "Atos 16",
       "Atos 17",
       "Atos 18"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 315,
@@ -3577,7 +4205,9 @@
       "Atos 19",
       "Atos 20",
       "Atos 21"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 316,
@@ -3588,7 +4218,9 @@
       "Atos 22",
       "Atos 23",
       "Atos 24"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 317,
@@ -3599,7 +4231,9 @@
       "Atos 25",
       "Atos 26",
       "Atos 27"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 318,
@@ -3610,7 +4244,9 @@
       "Atos 28",
       "Romanos 1",
       "Romanos 2"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 319,
@@ -3621,7 +4257,9 @@
       "Romanos 3",
       "Romanos 4",
       "Romanos 5"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 320,
@@ -3632,7 +4270,9 @@
       "Romanos 6",
       "Romanos 7",
       "Romanos 8"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 321,
@@ -3643,7 +4283,9 @@
       "Romanos 9",
       "Romanos 10",
       "Romanos 11"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 322,
@@ -3654,7 +4296,9 @@
       "Romanos 12",
       "Romanos 13",
       "Romanos 14"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 323,
@@ -3665,7 +4309,9 @@
       "Romanos 15",
       "Romanos 16",
       "1 Coríntios 1"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 324,
@@ -3676,7 +4322,9 @@
       "1 Coríntios 2",
       "1 Coríntios 3",
       "1 Coríntios 4"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 325,
@@ -3687,7 +4335,9 @@
       "1 Coríntios 5",
       "1 Coríntios 6",
       "1 Coríntios 7"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 326,
@@ -3698,7 +4348,9 @@
       "1 Coríntios 8",
       "1 Coríntios 9",
       "1 Coríntios 10"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 327,
@@ -3709,7 +4361,9 @@
       "1 Coríntios 11",
       "1 Coríntios 12",
       "1 Coríntios 13"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 328,
@@ -3720,7 +4374,9 @@
       "1 Coríntios 14",
       "1 Coríntios 15",
       "1 Coríntios 16"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 329,
@@ -3731,7 +4387,9 @@
       "2 Coríntios 1",
       "2 Coríntios 2",
       "2 Coríntios 3"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 330,
@@ -3742,7 +4400,9 @@
       "2 Coríntios 4",
       "2 Coríntios 5",
       "2 Coríntios 6"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 331,
@@ -3753,7 +4413,9 @@
       "2 Coríntios 7",
       "2 Coríntios 8",
       "2 Coríntios 9"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 332,
@@ -3764,7 +4426,9 @@
       "2 Coríntios 10",
       "2 Coríntios 11",
       "2 Coríntios 12"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 333,
@@ -3775,7 +4439,9 @@
       "2 Coríntios 13",
       "Gálatas 1",
       "Gálatas 2"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 334,
@@ -3786,7 +4452,9 @@
       "Gálatas 3",
       "Gálatas 4",
       "Gálatas 5"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 335,
@@ -3797,7 +4465,9 @@
       "Gálatas 6",
       "Efésios 1",
       "Efésios 2"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 336,
@@ -3808,7 +4478,9 @@
       "Efésios 3",
       "Efésios 4",
       "Efésios 5"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 337,
@@ -3819,7 +4491,9 @@
       "Efésios 6",
       "Filipenses 1",
       "Filipenses 2"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 338,
@@ -3830,7 +4504,9 @@
       "Filipenses 3",
       "Filipenses 4",
       "Colossenses 1"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 339,
@@ -3841,7 +4517,9 @@
       "Colossenses 2",
       "Colossenses 3",
       "Colossenses 4"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 340,
@@ -3852,7 +4530,9 @@
       "1 Tessalonicenses 1",
       "1 Tessalonicenses 2",
       "1 Tessalonicenses 3"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 341,
@@ -3863,7 +4543,9 @@
       "1 Tessalonicenses 4",
       "1 Tessalonicenses 5",
       "2 Tessalonicenses 1"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 342,
@@ -3874,7 +4556,9 @@
       "2 Tessalonicenses 2",
       "2 Tessalonicenses 3",
       "1 Timóteo 1"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 343,
@@ -3885,7 +4569,9 @@
       "1 Timóteo 2",
       "1 Timóteo 3",
       "1 Timóteo 4"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 344,
@@ -3896,7 +4582,9 @@
       "1 Timóteo 5",
       "1 Timóteo 6",
       "2 Timóteo 1"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 345,
@@ -3907,7 +4595,9 @@
       "2 Timóteo 2",
       "2 Timóteo 3",
       "2 Timóteo 4"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 346,
@@ -3918,7 +4608,9 @@
       "Tito 1",
       "Tito 2",
       "Tito 3"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 347,
@@ -3929,7 +4621,9 @@
       "Filemom 1",
       "Hebreus 1",
       "Hebreus 2"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 348,
@@ -3940,7 +4634,9 @@
       "Hebreus 3",
       "Hebreus 4",
       "Hebreus 5"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 349,
@@ -3951,7 +4647,9 @@
       "Hebreus 6",
       "Hebreus 7",
       "Hebreus 8"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 350,
@@ -3962,7 +4660,9 @@
       "Hebreus 9",
       "Hebreus 10",
       "Hebreus 11"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 351,
@@ -3973,7 +4673,9 @@
       "Hebreus 12",
       "Hebreus 13",
       "Tiago 1"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 352,
@@ -3984,7 +4686,9 @@
       "Tiago 2",
       "Tiago 3",
       "Tiago 4"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 353,
@@ -3995,7 +4699,9 @@
       "Tiago 5",
       "1 Pedro 1",
       "1 Pedro 2"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 354,
@@ -4006,7 +4712,9 @@
       "1 Pedro 3",
       "1 Pedro 4",
       "1 Pedro 5"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 355,
@@ -4017,7 +4725,9 @@
       "2 Pedro 1",
       "2 Pedro 2",
       "2 Pedro 3"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 356,
@@ -4028,7 +4738,9 @@
       "1 João 1",
       "1 João 2",
       "1 João 3"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 357,
@@ -4039,7 +4751,9 @@
       "1 João 4",
       "1 João 5",
       "2 João 1"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 358,
@@ -4050,7 +4764,9 @@
       "3 João 1",
       "Judas 1",
       "Apocalipse 1"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 359,
@@ -4061,7 +4777,9 @@
       "Apocalipse 2",
       "Apocalipse 3",
       "Apocalipse 4"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 360,
@@ -4072,7 +4790,9 @@
       "Apocalipse 5",
       "Apocalipse 6",
       "Apocalipse 7"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 361,
@@ -4083,7 +4803,9 @@
       "Apocalipse 8",
       "Apocalipse 9",
       "Apocalipse 10"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 362,
@@ -4094,7 +4816,9 @@
       "Apocalipse 11",
       "Apocalipse 12",
       "Apocalipse 13"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 363,
@@ -4105,7 +4829,9 @@
       "Apocalipse 14",
       "Apocalipse 15",
       "Apocalipse 16"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 364,
@@ -4116,7 +4842,9 @@
       "Apocalipse 17",
       "Apocalipse 18",
       "Apocalipse 19"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   },
   {
     "id": 365,
@@ -4127,6 +4855,8 @@
       "Apocalipse 20",
       "Apocalipse 21",
       "Apocalipse 22"
-    ]
+    ],
+    "completed": false,
+    "completedAt": null
   }
 ]
