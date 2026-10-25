@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   X, Plus, Trash2, Save, Sparkles, HelpCircle, Check, 
   GitCommit, Star, Copy, Share2, BookOpen, Layers, 
-  ArrowRight, Compass, Lightbulb, ChevronRight, CheckCircle2
+  ArrowLeft, ArrowRight, Compass, Lightbulb, ChevronRight, CheckCircle2
 } from 'lucide-react';
 import { BIBLE_ARC_RELATIONS } from '../data/bibleArcRelations';
 import { storage } from '../services/storage';
@@ -124,6 +124,17 @@ export default function BibleArcModal({ isOpen, onClose, initialPassage, initial
       }
     }
   }, [propositions]);
+
+  // Tecla Escape para voltar/fechar
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [onClose]);
 
   // Carregar Preset
   const handleLoadPreset = (preset) => {
@@ -275,24 +286,41 @@ export default function BibleArcModal({ isOpen, onClose, initialPassage, initial
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/70 backdrop-blur-xs">
-      <div className="bg-white dark:bg-zinc-900 rounded-3xl w-full max-w-5xl max-h-[94vh] flex flex-col shadow-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden">
+    <div 
+      onClick={onClose}
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/70 backdrop-blur-xs"
+    >
+      <div 
+        onClick={(e) => e.stopPropagation()}
+        className="bg-white dark:bg-zinc-900 rounded-3xl w-full max-w-5xl max-h-[94vh] flex flex-col shadow-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden"
+      >
         
         {/* Cabeçalho */}
-        <div className="px-4 sm:px-6 py-3 sm:py-4 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between bg-zinc-50 dark:bg-zinc-850">
-          <div className="flex items-center space-x-3 overflow-hidden">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-lg shadow-sm flex-shrink-0">
+        <div className="px-3 sm:px-6 py-2.5 sm:py-3.5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between bg-zinc-50 dark:bg-zinc-850 gap-2">
+          <div className="flex items-center space-x-2 sm:space-x-3 overflow-hidden min-w-0">
+            {/* Botão Voltar Destacado */}
+            <button
+              onClick={onClose}
+              className="inline-flex items-center space-x-1 sm:space-x-1.5 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl bg-zinc-200/90 hover:bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-100 text-xs font-bold transition-colors flex-shrink-0"
+              title="Voltar ao leitor bíblico"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              <span>Voltar</span>
+            </button>
+
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-base shadow-sm flex-shrink-0">
               ⌒
             </div>
-            <div className="min-w-0">
+
+            <div className="min-w-0 flex-1">
               <input
                 type="text"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
-                className="font-bold text-base sm:text-lg text-zinc-900 dark:text-zinc-100 bg-transparent border-b border-transparent hover:border-zinc-300 focus:border-indigo-500 focus:outline-hidden truncate w-full"
+                className="font-bold text-xs sm:text-base text-zinc-900 dark:text-zinc-100 bg-transparent border-b border-transparent hover:border-zinc-300 focus:border-indigo-500 focus:outline-hidden truncate w-full"
               />
-              <p className="text-[11px] sm:text-xs text-zinc-500 dark:text-zinc-400 truncate">
-                Método de Análise de Discurso (John Piper & Thomas Schreiner)
+              <p className="text-[10px] sm:text-xs text-zinc-500 dark:text-zinc-400 truncate">
+                {passageName} • Análise de Discurso
               </p>
             </div>
           </div>
@@ -300,15 +328,15 @@ export default function BibleArcModal({ isOpen, onClose, initialPassage, initial
           <div className="flex items-center space-x-1 sm:space-x-2 flex-shrink-0">
             <button
               onClick={() => setShowHelper(!showHelper)}
-              className="p-2 text-zinc-500 hover:text-indigo-600 dark:text-zinc-400 dark:hover:text-indigo-400 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+              className="p-1.5 sm:p-2 text-zinc-500 hover:text-indigo-600 dark:text-zinc-400 dark:hover:text-indigo-400 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
               title="Como Funciona o BibleArc?"
             >
-              <HelpCircle className="w-5 h-5" />
+              <HelpCircle className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
 
             <button
               onClick={handleCopyFullStudy}
-              className="hidden sm:inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-750 text-zinc-800 dark:text-zinc-200 text-xs font-semibold shadow-2xs transition-colors"
+              className="hidden md:inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-750 text-zinc-800 dark:text-zinc-200 text-xs font-semibold shadow-2xs transition-colors"
               title="Copiar Estudo Completo"
             >
               {copiedSuccess ? <Check className="w-4 h-4 text-emerald-500" /> : <Copy className="w-4 h-4 text-zinc-500" />}
@@ -317,7 +345,7 @@ export default function BibleArcModal({ isOpen, onClose, initialPassage, initial
 
             <button
               onClick={handleSave}
-              className="inline-flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold shadow-xs transition-colors"
+              className="hidden sm:inline-flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold shadow-xs transition-colors"
             >
               {savedSuccess ? <Check className="w-4 h-4" /> : <Save className="w-4 h-4" />}
               <span>{savedSuccess ? 'Salvo!' : 'Salvar'}</span>
@@ -325,7 +353,8 @@ export default function BibleArcModal({ isOpen, onClose, initialPassage, initial
 
             <button
               onClick={onClose}
-              className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800"
+              className="p-1.5 sm:p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+              title="Fechar"
             >
               <X className="w-5 h-5" />
             </button>
@@ -1065,6 +1094,27 @@ export default function BibleArcModal({ isOpen, onClose, initialPassage, initial
             </div>
           )}
 
+        </div>
+
+        {/* Rodapé Fixo com Botão Voltar */}
+        <div className="px-3 sm:px-6 py-2.5 sm:py-3 border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-850 flex items-center justify-between gap-2">
+          <button
+            onClick={onClose}
+            className="inline-flex items-center space-x-1.5 sm:space-x-2 px-3 sm:px-4 py-2 rounded-xl bg-zinc-200/90 hover:bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs sm:text-sm font-bold transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            <span>Voltar ao Texto Bíblico</span>
+          </button>
+
+          <div className="flex items-center space-x-2">
+            <button
+              onClick={handleSave}
+              className="inline-flex items-center space-x-1.5 px-3.5 sm:px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-bold shadow-xs transition-colors"
+            >
+              {savedSuccess ? <Check className="w-4 h-4" /> : <Save className="w-4 h-4" />}
+              <span>{savedSuccess ? 'Salvo!' : 'Salvar'}</span>
+            </button>
+          </div>
         </div>
 
       </div>
