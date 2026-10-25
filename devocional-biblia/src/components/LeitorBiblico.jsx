@@ -13,7 +13,9 @@ import {
   Type, 
   Music,
   Share2,
-  Bookmark
+  Bookmark,
+  Copy,
+  Check
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { HIGHLIGHT_COLORS, storage } from '../services/storage';
@@ -74,6 +76,28 @@ export default function LeitorBiblico({
   const handleToggleFav = (vKey, vText) => {
     const updated = storage.toggleFavorite(vKey, { text: vText, book: 'Lucas', chapter: selectedChapter });
     setFavorites([...updated]);
+  };
+
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyVerse = (vKey, vText) => {
+    try {
+      navigator.clipboard.writeText(`"${vText}" (${vKey} NVT)`);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (e) {}
+  };
+
+  const handleShareVerse = (vKey, vText) => {
+    const shareText = `"${vText}" (${vKey} NVT)`;
+    if (navigator.share) {
+      navigator.share({
+        title: vKey,
+        text: shareText
+      }).catch(() => {});
+    } else {
+      handleCopyVerse(vKey, vText);
+    }
   };
 
   const handleCompleteReading = () => {
@@ -285,67 +309,123 @@ export default function LeitorBiblico({
         ))}
       </article>
 
-      {/* 4. TOOLBAR FLUTUANTE DE AÇÕES DO VERSÍCULO SELECIONADO */}
-      {selectedVerseKey && selectedVerseData && (
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 bg-zinc-900 text-white rounded-2xl shadow-2xl px-4 py-3 flex items-center space-x-3 border border-zinc-700 animate-in fade-in slide-in-from-bottom-4">
-          <span className="text-xs font-bold text-amber-400">
-            {selectedVerseKey}
-          </span>
+      {/* 4. TOOLBAR FLUTUANTE DE AÇÕES DO VERSÍCULO SELECIONADO (RESPONSIVA MOBILE) */}
+      {selectedVerseKey && selectedVerseData && (() => {
+        const isFav = favorites.some(f => f.verseKey === selectedVerseKey);
+        const hasRefs = selectedVerseData.references && selectedVerseData.references.length > 0;
 
-          <div className="h-4 w-px bg-zinc-700" />
+        return (
+          <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-1.25rem)] max-w-md bg-zinc-900/95 dark:bg-zinc-900/95 text-white rounded-2xl shadow-2xl p-3 border border-zinc-700/80 backdrop-blur-md animate-in fade-in slide-in-from-bottom-4">
+            
+            {/* Linha Superior: Cabeçalho com Versículo e Ações Rápidas */}
+            <div className="flex items-center justify-between pb-2 border-b border-zinc-800">
+              <div className="flex items-center space-x-1.5 min-w-0">
+                <span className="text-xs font-bold text-amber-400 truncate">
+                  {selectedVerseKey}
+                </span>
+                {isFav && (
+                  <span className="text-[10px] bg-amber-400/20 text-amber-300 px-1.5 py-0.2 rounded-full font-medium">
+                    Favorito
+                  </span>
+                )}
+              </div>
 
-          {/* Paleta de Cores de Destaque */}
-          <div className="flex items-center space-x-1.5">
-            {Object.entries(HIGHLIGHT_COLORS).map(([cKey, cData]) => (
-              <button
-                key={cKey}
-                onClick={() => handleApplyHighlight(cKey)}
-                className="w-5 h-5 rounded-full hover:scale-125 transition-transform border border-white/20"
-                style={{ backgroundColor: cData.hex }}
-                title={cData.name}
-              />
-            ))}
-            <button
-              onClick={() => handleApplyHighlight(null)}
-              className="text-[10px] text-zinc-400 hover:text-white px-1"
-              title="Remover cor"
-            >
-              Limpar
-            </button>
+              <div className="flex items-center space-x-1 shrink-0">
+                {/* Botão Favoritar */}
+                <button
+                  onClick={() => handleToggleFav(selectedVerseKey, selectedVerseData.text)}
+                  className={`p-1.5 rounded-lg transition-colors ${isFav ? 'text-amber-400 bg-amber-400/10' : 'text-zinc-400 hover:text-amber-400 hover:bg-zinc-800'}`}
+                  title={isFav ? "Remover dos Favoritos" : "Favoritar Versículo"}
+                >
+                  <Star className="w-4 h-4" fill={isFav ? "currentColor" : "none"} />
+                </button>
+
+                {/* Botão Copiar */}
+                <button
+                  onClick={() => handleCopyVerse(selectedVerseKey, selectedVerseData.text)}
+                  className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
+                  title="Copiar Versículo"
+                >
+                  {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
+                </button>
+
+                {/* Botão Compartilhar */}
+                <button
+                  onClick={() => handleShareVerse(selectedVerseKey, selectedVerseData.text)}
+                  className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
+                  title="Compartilhar Versículo"
+                >
+                  <Share2 className="w-4 h-4" />
+                </button>
+
+                {/* Botão BibleArc */}
+                <button
+                  onClick={() => {
+                    onOpenBibleArc(selectedVerseKey, selectedVerseData.text);
+                    setSelectedVerseKey(null);
+                  }}
+                  className="inline-flex items-center space-x-1 px-2 py-1 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold ml-0.5"
+                  title="Arquear este versículo com a técnica de John Piper"
+                >
+                  <GitCommit className="w-3.5 h-3.5" />
+                  <span className="text-[11px]">BibleArc</span>
+                </button>
+
+                {/* Fechar */}
+                <button
+                  onClick={() => setSelectedVerseKey(null)}
+                  className="p-1 text-zinc-400 hover:text-white ml-1 text-xs font-bold"
+                  title="Fechar"
+                >
+                  ✕
+                </button>
+              </div>
+            </div>
+
+            {/* Linha Inferior: Marca-Texto e Referências Cruzadas */}
+            <div className="flex items-center justify-between pt-2">
+              <div className="flex items-center space-x-2">
+                <span className="text-[10px] uppercase font-bold text-zinc-400 tracking-wider">
+                  Destaque:
+                </span>
+                <div className="flex items-center space-x-1.5">
+                  {Object.entries(HIGHLIGHT_COLORS).map(([cKey, cData]) => (
+                    <button
+                      key={cKey}
+                      onClick={() => handleApplyHighlight(cKey)}
+                      className="w-5 h-5 rounded-full hover:scale-125 transition-transform border border-white/20"
+                      style={{ backgroundColor: cData.hex }}
+                      title={cData.name}
+                    />
+                  ))}
+                  <button
+                    onClick={() => handleApplyHighlight(null)}
+                    className="text-[11px] text-zinc-400 hover:text-white px-1.5 py-0.5 rounded hover:bg-zinc-800"
+                    title="Remover cor"
+                  >
+                    Limpar
+                  </button>
+                </div>
+              </div>
+
+              {/* Botão de Referências Cruzadas se houver */}
+              {hasRefs && (
+                <button
+                  onClick={() => {
+                    onOpenReferences(selectedVerseKey, selectedVerseData.references);
+                    setSelectedVerseKey(null);
+                  }}
+                  className="inline-flex items-center space-x-1 text-[11px] font-medium text-amber-400 hover:underline px-1 py-0.5"
+                  title="Ver referências cruzadas deste versículo"
+                >
+                  <Link2 className="w-3 h-3" />
+                  <span>{selectedVerseData.references.length} ref</span>
+                </button>
+              )}
+            </div>
           </div>
-
-          <div className="h-4 w-px bg-zinc-700" />
-
-          {/* Botão Favoritar */}
-          <button
-            onClick={() => handleToggleFav(selectedVerseKey, selectedVerseData.text)}
-            className="p-1.5 rounded-lg hover:bg-zinc-800 text-zinc-300 hover:text-amber-400 transition-colors"
-            title="Favoritar Versículo"
-          >
-            <Star className="w-4 h-4" />
-          </button>
-
-          {/* Botão BibleArc do Versículo */}
-          <button
-            onClick={() => {
-              onOpenBibleArc(selectedVerseKey, selectedVerseData.text);
-              setSelectedVerseKey(null);
-            }}
-            className="inline-flex items-center space-x-1 px-2.5 py-1 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold"
-            title="Arquear este versículo com a técnica de John Piper"
-          >
-            <GitCommit className="w-3.5 h-3.5" />
-            <span>BibleArc</span>
-          </button>
-
-          <button
-            onClick={() => setSelectedVerseKey(null)}
-            className="text-xs text-zinc-400 hover:text-white pl-1"
-          >
-            ✕
-          </button>
-        </div>
-      )}
+        );
+      })()}
 
       {/* 5. NAVEGAÇÃO ENTRE DIAS NO RODAPÉ */}
       <div className="flex items-center justify-between pt-6 border-t border-zinc-200 dark:border-zinc-800">
