@@ -35,7 +35,7 @@ export default function Navbar({
               </span>
             </div>
             <p className="text-xs text-zinc-500 dark:text-zinc-400 sepia:text-[#76634c]">
-              Plano Anual • Paulo Won
+              Plano Devocional Anual
             </p>
           </div>
         </div>

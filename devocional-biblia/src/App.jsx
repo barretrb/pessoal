@@ -169,7 +169,7 @@ export default function App() {
 
       {/* Rodapé sutil */}
       <footer className="py-6 border-t border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] text-center text-xs text-zinc-400 dark:text-zinc-500">
-        <p>Bíblia em 1 Ano com Paulo Won • Nova Versão Transformadora (NVT)</p>
+        <p>Bíblia em 1 Ano • Nova Versão Transformadora (NVT)</p>
         <p className="mt-1">Desenvolvido para sua caminhada diária de fé e oração.</p>
       </footer>
 
