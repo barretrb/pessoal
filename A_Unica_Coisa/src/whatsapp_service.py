@@ -51,10 +51,11 @@ class WhatsAppService:
     def format_morning_briefing(
         deep_task: Optional[Dict[str, Any]],
         reserve_task: Optional[Dict[str, Any]],
-        personal_task: Optional[Dict[str, Any]],
+        personal_task: Optional[Any],
         shallow_tasks: List[Dict[str, Any]],
         slot_info: Dict[str, Any],
-        auto_booked: bool = False
+        auto_booked: bool = False,
+        knowledge_pill: Optional[str] = None
     ) -> str:
         """Formata o briefing matinal (Seção 7.2 da spec)."""
         lines = ["🎯 *A ÚNICA COISA DE HOJE*\n"]
@@ -86,9 +87,13 @@ class WhatsAppService:
         # 2. Contrapeso Pessoal
         lines.append("\n⚖️ 🏠 *Contrapeso Pessoal (Inegociável):*")
         if personal_task:
-            lines.append(f"📌 *{personal_task.get('clean_title')}*")
+            if isinstance(personal_task, dict):
+                p_text = personal_task.get("display_text") or personal_task.get("clean_title") or personal_task.get("original_summary")
+            else:
+                p_text = str(personal_task)
+            lines.append(f"📌 *{p_text}*")
         else:
-            lines.append("📌 _Nenhum contrapeso cadastrado na lista Pessoal hoje._")
+            lines.append("📌 _Nenhum contrapeso cadastrado na lista Pessoal ou detectado na agenda hoje._")
 
         # 3. Lote Operacional
         lines.append("\n📦 *Lote Operacional (Agrupar após as 14h):*")
@@ -97,6 +102,10 @@ class WhatsAppService:
                 lines.append(f"  • {st.get('clean_title')}")
         else:
             lines.append("  • _Lista operacional limpa._")
+
+        # 4. Pílula de Conhecimento do Livro
+        if knowledge_pill:
+            lines.append(f"\n{knowledge_pill}")
 
         if not auto_booked:
             lines.append("\n👉 _Responda *\"OK\"* para eu bloquear sua agenda, ou *\"Trocar por X\"*._")

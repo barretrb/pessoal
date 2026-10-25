@@ -15,6 +15,7 @@ from src.tasks_service import TasksService
 from src.calendar_service import CalendarService
 from src.task_classifier import TaskClassifier
 from src.whatsapp_service import WhatsAppService
+from src.pills_service import KnowledgePillsService
 
 class Orchestrator:
     """Coordena o fluxo de execução dos rituais diários e semanais."""
@@ -110,13 +111,30 @@ class Orchestrator:
         chosen_deep = deep_candidates[0] if deep_candidates else None
         reserve_deep = deep_candidates[1] if len(deep_candidates) > 1 else None
 
-        # 2. Busca contrapeso pessoal
+        # 2. Busca contrapeso pessoal (Google Tasks + Hábitos Âncora no Calendar)
+        now = datetime.now()
         personal_tasks = self.tasks_service.fetch_active_tasks("personal")
         eligible_personal = [t for t in personal_tasks if not t.get("syntax_metadata", {}).get("is_blocked")]
         chosen_personal = eligible_personal[0] if eligible_personal else None
 
+        # Detecta hábitos âncora pessoais no Calendar com horários dinâmicos (Rafa - EF, Corrida, Academia)
+        try:
+            anchor_events = self.calendar_service.detect_personal_anchor_events(now)
+            if anchor_events:
+                anchor = anchor_events[0]
+                if not chosen_personal:
+                    chosen_personal = {
+                        "clean_title": anchor["display_text"],
+                        "display_text": anchor["display_text"],
+                        "is_calendar_anchor": True
+                    }
+                else:
+                    comb_text = f"{chosen_personal.get('clean_title')} + {anchor['display_text']}"
+                    chosen_personal["display_text"] = comb_text
+        except Exception as e:
+            print(f"[ORCHESTRATOR] Aviso ao detectar hábitos âncora: {e}")
+
         # 3. Varredura de horários livres no Google Calendar (combinando pessoal + corporativo)
-        now = datetime.now()
         slot_info = self.calendar_service.find_best_focus_slot(now, duration_minutes=90)
 
         # 4. Auto-booking proativo (se habilitado e slot disponível)
@@ -138,14 +156,19 @@ class Orchestrator:
             except Exception as e:
                 print(f"[ORCHESTRATOR] Aviso no auto-booking: {e}")
 
-        # 5. Formata e envia mensagem via WhatsApp
+        # 5. Obtém pílula diária da metodologia A Única Coisa
+        pill = KnowledgePillsService.get_daily_pill(now)
+        pill_formatted = KnowledgePillsService.format_pill_for_whatsapp(pill)
+
+        # 6. Formata e envia mensagem via WhatsApp
         msg = self.whatsapp.format_morning_briefing(
             deep_task=chosen_deep,
             reserve_task=reserve_deep,
             personal_task=chosen_personal,
             shallow_tasks=shallow_candidates,
             slot_info=slot_info,
-            auto_booked=calendar_event_created
+            auto_booked=calendar_event_created,
+            knowledge_pill=pill_formatted
         )
         sent = self.whatsapp.send_message(msg)
 

@@ -139,6 +139,64 @@ class CalendarService:
         ical_events = self._fetch_ical_events_for_day(target_date, tz)
         return api_events + ical_events
 
+    def detect_personal_anchor_events(self, target_date: datetime) -> List[Dict[str, Any]]:
+        """
+        Varre a agenda do dia e localiza eventos âncora pessoais (Corrida, Academia, Rafa - EF).
+        Captura dinamicamente os horários reais em que estão marcados no dia (pois podem mudar).
+        """
+        events = self.get_events_for_day(target_date)
+        anchors = []
+
+        import re
+        anchor_patterns = [
+            (r"(rafa\s*-\s*ef|aula\s+de\s+ingl[eê]s|ingl[eê]s)", "Aula de Inglês (Rafa - EF)"),
+            (r"(corrida|correr|treino\s+de\s+corrida)", "Corrida"),
+            (r"(academia|muscula[cç][aã]o|treino\s+funcional|crossfit)", "Academia / Treino"),
+            (r"(pilates|nata[cç][aã]o|fisioterapia)", "Saúde / Treino")
+        ]
+
+        for ev in events:
+            summary = ev.get("summary", "").strip()
+            if not summary:
+                continue
+
+            for pattern, friendly_name in anchor_patterns:
+                if re.search(pattern, summary, re.IGNORECASE):
+                    start_raw = ev.get("start", {}).get("dateTime")
+                    end_raw = ev.get("end", {}).get("dateTime")
+
+                    start_str = ""
+                    end_str = ""
+                    if start_raw:
+                        try:
+                            dt_start = datetime.fromisoformat(start_raw.replace("Z", "+00:00"))
+                            start_str = dt_start.strftime("%H:%M")
+                        except Exception:
+                            pass
+                    if end_raw:
+                        try:
+                            dt_end = datetime.fromisoformat(end_raw.replace("Z", "+00:00"))
+                            end_str = dt_end.strftime("%H:%M")
+                        except Exception:
+                            pass
+
+                    time_display = f"das {start_str} às {end_str}" if start_str and end_str else (f"às {start_str}" if start_str else "")
+                    display_text = f"{friendly_name} ({summary})" if summary.lower() != friendly_name.lower() else friendly_name
+                    if time_display:
+                        display_text = f"{display_text} {time_display}"
+
+                    anchors.append({
+                        "original_summary": summary,
+                        "friendly_name": friendly_name,
+                        "start_str": start_str,
+                        "end_str": end_str,
+                        "time_display": time_display,
+                        "display_text": display_text
+                    })
+                    break
+
+        return anchors
+
     def find_best_focus_slot(
         self,
         target_date: datetime,
