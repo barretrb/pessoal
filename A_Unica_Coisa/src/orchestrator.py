@@ -48,15 +48,19 @@ class Orchestrator:
         )
 
         llm_cfg = self.config.get("llm", {})
+        groq_key = os.environ.get("GROQ_API_KEY") or llm_cfg.get("groq_api_key")
+        llm_model = os.environ.get("GROQ_MODEL") or llm_cfg.get("model", "llama-3.3-70b-versatile")
         self.classifier = TaskClassifier(
-            groq_api_key=llm_cfg.get("groq_api_key"),
-            model=llm_cfg.get("model", "llama-3.3-70b-versatile")
+            groq_api_key=groq_key,
+            model=llm_model
         )
 
         wa_cfg = self.config.get("whatsapp", {})
+        phone = os.environ.get("WHATSAPP_PHONE") or wa_cfg.get("phone", "")
+        callmebot_key = os.environ.get("CALLMEBOT_APIKEY") or wa_cfg.get("callmebot_apikey", "")
         self.whatsapp = WhatsAppService(
-            phone=wa_cfg.get("phone", ""),
-            apikey=wa_cfg.get("callmebot_apikey", ""),
+            phone=phone,
+            apikey=callmebot_key,
             provider=wa_cfg.get("provider", "callmebot")
         )
 
