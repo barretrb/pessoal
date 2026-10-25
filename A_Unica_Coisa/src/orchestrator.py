@@ -156,19 +156,14 @@ class Orchestrator:
             except Exception as e:
                 print(f"[ORCHESTRATOR] Aviso no auto-booking: {e}")
 
-        # 5. Obtém pílula diária da metodologia A Única Coisa
-        pill = KnowledgePillsService.get_daily_pill(now)
-        pill_formatted = KnowledgePillsService.format_pill_for_whatsapp(pill)
-
-        # 6. Formata e envia mensagem via WhatsApp
+        # 5. Formata e envia mensagem via WhatsApp (Briefing Ultracompacto)
         msg = self.whatsapp.format_morning_briefing(
             deep_task=chosen_deep,
             reserve_task=reserve_deep,
             personal_task=chosen_personal,
             shallow_tasks=shallow_candidates,
             slot_info=slot_info,
-            auto_booked=calendar_event_created,
-            knowledge_pill=pill_formatted
+            auto_booked=calendar_event_created
         )
         sent = self.whatsapp.send_message(msg)
 
@@ -229,6 +224,24 @@ class Orchestrator:
         conf_msg = f"✅ Bloco de foco reservado na sua agenda das {start_dt.strftime('%H:%M')} às {end_dt.strftime('%H:%M')} para: *{task_title}*!"
         self.whatsapp.send_message(conf_msg)
         return True
+
+    def run_lunch_pill(self) -> bool:
+        """Dispara a pílula de conhecimento completa no horário do almoço (12:30)."""
+        now = datetime.now()
+        today_str = now.strftime("%Y-%m-%d")
+
+        pill = KnowledgePillsService.get_daily_pill(now)
+        msg = KnowledgePillsService.format_lunch_pill(pill)
+        sent = self.whatsapp.send_message(msg)
+
+        if "daily_history" not in self.state:
+            self.state["daily_history"] = {}
+        if today_str not in self.state["daily_history"]:
+            self.state["daily_history"][today_str] = {}
+
+        self.state["daily_history"][today_str]["lunch_pill_sent"] = sent
+        self._save_state()
+        return sent
 
     def run_night_checkin(self) -> bool:
         """Dispara o ritual de fechamento das 18:00."""

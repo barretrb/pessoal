@@ -54,61 +54,45 @@ class WhatsAppService:
         personal_task: Optional[Any],
         shallow_tasks: List[Dict[str, Any]],
         slot_info: Dict[str, Any],
-        auto_booked: bool = False,
-        knowledge_pill: Optional[str] = None
+        auto_booked: bool = False
     ) -> str:
-        """Formata o briefing matinal (Seção 7.2 da spec)."""
+        """Formata o briefing matinal ultracompacto (foco e leitura em 4s)."""
         lines = ["🎯 *A ÚNICA COISA DE HOJE*\n"]
 
         # 1. Dominó Profissional
-        lines.append("💼 *Dominó Profissional (Manhã):*")
         if deep_task:
             title_display = deep_task.get("inferred_metadata", {}).get("suggested_slice") or deep_task.get("clean_title")
-            lines.append(f"📌 *{title_display}*")
-            lines.append("💡 _Por quê:_ Trabalho profundo de alta alavancagem.")
+            lines.append(f"💼 *Dominó:* {title_display}")
         else:
-            lines.append("📌 _Nenhuma tarefa Deep Work encontrada no backlog!_")
+            lines.append("💼 *Dominó:* _Nenhum dominó no backlog_")
 
         # Janela de foco sugerida
         if slot_info.get("start") and slot_info.get("end"):
             st_str = slot_info["start"].strftime("%H:%M")
             et_str = slot_info["end"].strftime("%H:%M")
             period_note = " (tarde)" if slot_info.get("is_fallback_afternoon") else ""
-            if auto_booked:
-                lines.append(f"🔒 *Agenda Bloqueada:* {st_str} às {et_str}{period_note} (Time Blocking ativo).")
-            else:
-                lines.append(f"⏰ *Melhor janela hoje:* {st_str} às {et_str}{period_note}.")
+            status_tag = "🔒 Bloqueado:" if auto_booked else "⏰ Janela:"
+            lines.append(f"{status_tag} {st_str} às {et_str}{period_note}")
         else:
-            lines.append("⏰ *Aviso:* Sem janelas livres de 60m+ na agenda de hoje.")
-
-        if reserve_task:
-            lines.append(f"*(Reserva se esta estiver travada: {reserve_task.get('clean_title')})*")
+            lines.append("⏰ Janela: _Sem janelas de 60m+ livres hoje_")
 
         # 2. Contrapeso Pessoal
-        lines.append("\n⚖️ 🏠 *Contrapeso Pessoal (Inegociável):*")
         if personal_task:
             if isinstance(personal_task, dict):
                 p_text = personal_task.get("display_text") or personal_task.get("clean_title") or personal_task.get("original_summary")
             else:
                 p_text = str(personal_task)
-            lines.append(f"📌 *{p_text}*")
-        else:
-            lines.append("📌 _Nenhum contrapeso cadastrado na lista Pessoal ou detectado na agenda hoje._")
+            lines.append(f"⚖️ *Pessoal:* {p_text}")
 
-        # 3. Lote Operacional
-        lines.append("\n📦 *Lote Operacional (Agrupar após as 14h):*")
+        # 3. Lote Operacional (Máximo 2 itens para não poluir)
         if shallow_tasks:
-            for st in shallow_tasks[:3]:
-                lines.append(f"  • {st.get('clean_title')}")
-        else:
-            lines.append("  • _Lista operacional limpa._")
-
-        # 4. Pílula de Conhecimento do Livro
-        if knowledge_pill:
-            lines.append(f"\n{knowledge_pill}")
+            primeira = shallow_tasks[0].get("clean_title")
+            extras = len(shallow_tasks) - 1
+            extra_text = f" (+{extras} rápida{'s' if extras > 1 else ''})" if extras > 0 else ""
+            lines.append(f"📦 *Tarde:* {primeira}{extra_text}")
 
         if not auto_booked:
-            lines.append("\n👉 _Responda *\"OK\"* para eu bloquear sua agenda, ou *\"Trocar por X\"*._")
+            lines.append("\n👉 _Responda *\"OK\"* para bloquear sua agenda._")
         return "\n".join(lines)
 
     @staticmethod

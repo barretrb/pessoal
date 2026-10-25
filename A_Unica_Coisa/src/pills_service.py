@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Serviço de Pílulas de Conhecimento do livro "A Única Coisa" (Gary Keller).
-Gera ensinamentos diários curtos e práticos para fixação contínua da metodologia.
+Gera ensinamentos diários aprofundados para o horário do almoço (12:30).
 """
 
 from datetime import datetime
@@ -72,11 +72,12 @@ class KnowledgePillsService:
         return PILLS[index]
 
     @staticmethod
-    def format_pill_for_whatsapp(pill: Dict[str, str]) -> str:
-        """Formata a pílula em texto compacto para inclusão no WhatsApp."""
+    def format_lunch_pill(pill: Dict[str, str]) -> str:
+        """Formata a pílula para leitura tranquila durante o almoço (12:30)."""
         return (
-            f"🧠 *Pílula do Livro (A Única Coisa):*\n"
-            f"📖 *{pill['concept']}*\n"
-            f"_{pill['quote']}_\n"
-            f"💡 *Dica prática:* {pill['action']}"
+            f"🍽️ 🧠 *Pausa do Almoço: A Única Coisa*\n\n"
+            f"📌 *{pill['concept']}*\n\n"
+            f"_{pill['quote']}_\n\n"
+            f"💡 *Dica prática para a tarde:* {pill['action']}\n\n"
+            f"*(Aproveite o almoço e recarregue a energia para fechar o dia em alta!)*"
         )

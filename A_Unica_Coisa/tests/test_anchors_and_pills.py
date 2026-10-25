@@ -52,9 +52,10 @@ class TestAnchorsAndPills(unittest.TestCase):
         self.assertIn("quote", pill)
         self.assertIn("action", pill)
 
-        formatted = KnowledgePillsService.format_pill_for_whatsapp(pill)
-        self.assertIn("Pílula do Livro (A Única Coisa)", formatted)
-        self.assertIn(pill["concept"], formatted)
+        lunch_msg = KnowledgePillsService.format_lunch_pill(pill)
+        self.assertIn("Pausa do Almoço: A Única Coisa", lunch_msg)
+        self.assertIn(pill["concept"], lunch_msg)
+        self.assertIn(pill["action"], lunch_msg)
 
 if __name__ == "__main__":
     unittest.main()

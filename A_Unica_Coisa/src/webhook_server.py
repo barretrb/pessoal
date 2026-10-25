@@ -108,6 +108,15 @@ def trigger_morning_cron(force: bool = False):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/cron/lunch")
+def trigger_lunch_cron():
+    """Disparo da pílula do livro no horário do almoço (12:30)."""
+    try:
+        sent = orchestrator.run_lunch_pill()
+        return {"status": "success", "sent": sent}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 @app.get("/cron/night")
 def trigger_night_cron():
     """Disparo do fechamento noturno das 18:00."""
