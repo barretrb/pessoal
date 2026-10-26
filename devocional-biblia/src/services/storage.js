@@ -2,6 +2,7 @@
 
 const STORAGE_KEYS = {
   PROGRESS: "devocional_plano_progress_v1",
+  CHAPTERS_PROGRESS: "devocional_chapters_progress_v1",
   HIGHLIGHTS: "devocional_highlights_v1",
   FAVORITES: "devocional_favorites_v1",
   NOTES: "devocional_notes_v1",
@@ -51,6 +52,47 @@ export const storage = {
     }
   },
 
+  // 1.1 Progresso detalhado por capítulo (ex: "Lucas 10", "Lucas 13")
+  getChapterProgress() {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEYS.CHAPTERS_PROGRESS);
+      return stored ? JSON.parse(stored) : {};
+    } catch (e) {
+      return {};
+    }
+  },
+
+  saveChapterProgress(chapterName, isCompleted) {
+    try {
+      const progress = this.getChapterProgress();
+      progress[chapterName] = {
+        completed: isCompleted,
+        completedAt: isCompleted ? new Date().toISOString() : null
+      };
+      localStorage.setItem(STORAGE_KEYS.CHAPTERS_PROGRESS, JSON.stringify(progress));
+      return progress;
+    } catch (e) {
+      console.error("Erro ao salvar progresso do capítulo:", e);
+      return {};
+    }
+  },
+
+  setDayChaptersProgress(readings, isCompleted) {
+    try {
+      const progress = this.getChapterProgress();
+      readings.forEach(ch => {
+        progress[ch] = {
+          completed: isCompleted,
+          completedAt: isCompleted ? new Date().toISOString() : null
+        };
+      });
+      localStorage.setItem(STORAGE_KEYS.CHAPTERS_PROGRESS, JSON.stringify(progress));
+      return progress;
+    } catch (e) {
+      return {};
+    }
+  },
+
   // 2. Destaques (Highlights)
   getHighlights() {
     try {
@@ -81,6 +123,29 @@ export const storage = {
     }
   },
 
+  saveMultipleHighlights(verseKeys, colorKey) {
+    try {
+      const highlights = this.getHighlights();
+      const now = new Date().toISOString();
+      verseKeys.forEach(k => {
+        if (!colorKey) {
+          delete highlights[k];
+        } else {
+          highlights[k] = {
+            color: colorKey,
+            note: "",
+            updatedAt: now
+          };
+        }
+      });
+      localStorage.setItem(STORAGE_KEYS.HIGHLIGHTS, JSON.stringify(highlights));
+      return highlights;
+    } catch (e) {
+      console.error("Erro ao salvar múltiplos destaques:", e);
+      return {};
+    }
+  },
+
   // 3. Favoritos
   getFavorites() {
     try {
@@ -102,6 +167,37 @@ export const storage = {
           key: verseKey,
           ...verseData,
           savedAt: new Date().toISOString()
+        });
+      }
+      localStorage.setItem(STORAGE_KEYS.FAVORITES, JSON.stringify(favs));
+      return favs;
+    } catch (e) {
+      return [];
+    }
+  },
+
+  toggleMultipleFavorites(versesDataList) {
+    try {
+      let favs = this.getFavorites();
+      const allExist = versesDataList.every(v => favs.some(f => f.key === v.key));
+      const now = new Date().toISOString();
+
+      if (allExist) {
+        // Remover todos os selecionados
+        const keysToRemove = new Set(versesDataList.map(v => v.key));
+        favs = favs.filter(f => !keysToRemove.has(f.key));
+      } else {
+        // Adicionar os que faltam
+        versesDataList.forEach(v => {
+          if (!favs.some(f => f.key === v.key)) {
+            favs.push({
+              key: v.key,
+              text: v.text,
+              book: v.book || "Lucas",
+              chapter: v.chapter || "",
+              savedAt: now
+            });
+          }
         });
       }
       localStorage.setItem(STORAGE_KEYS.FAVORITES, JSON.stringify(favs));
