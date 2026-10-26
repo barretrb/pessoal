@@ -211,22 +211,32 @@ test('QA Test 6: Arqueamento (BibleArc) Dinâmico para o Livro e Capítulo Abert
   console.log('✓ QA Test 6 Aprovado: Arqueamento BibleArc contextualizado para o livro e capítulo ativos.');
 });
 
-test('QA Test 7: Motor BibleArc Pré-Calculado & Imediato (Sem Trabalho Manual)', () => {
-  // Testar Juízes 1
-  const juizesStudy = bibleArcEngine.getStudy('Juízes 1');
+test('QA Test 7: Motor BibleArc Pré-Calculado & Mapeado por Temas (Sem Trabalho Manual)', () => {
+  // Testar Gênesis 2 (mapeado em 3 temas prontos para degustar)
+  const gen2Study = bibleArcEngine.getChapterThematicStudy('Gênesis', '2');
+  assert.ok(gen2Study, 'Estudo de Gênesis 2 deve existir');
+  assert.equal(gen2Study.themes.length, 3, 'Gênesis 2 deve conter 3 temas mapeados');
+  assert.ok(gen2Study.themes[0].themeTitle.includes('Descanso'), 'Tema 1 deve ser sobre o descanso');
+  assert.ok(gen2Study.themes[0].arcs.length >= 2, 'Tema 1 deve ter arcos pré-traçados');
+  assert.equal(gen2Study.themes[0].mainProp, 2, 'A tese central deve ser a proposição 2');
+  assert.ok(gen2Study.themes[0].theologicalSynthesis.length > 50, 'Deve conter síntese teológica pronta');
+  assert.ok(gen2Study.themes[0].practicalApplication.length > 50, 'Deve conter aplicação prática pronta');
+
+  // Testar Juízes 1 (mapeado em 3 temas)
+  const juizesStudy = bibleArcEngine.getChapterThematicStudy('Juízes', '1');
   assert.ok(juizesStudy, 'Estudo de Juízes 1 deve existir');
-  assert.ok(juizesStudy.propositions.length >= 4, 'Juízes 1 deve ter no mínimo 4 proposições');
-  assert.ok(juizesStudy.arcs.length >= 3, 'Juízes 1 deve ter arcos lógicos pré-traçados');
-  assert.equal(juizesStudy.mainProp, 2, 'A tese central deve ser a proposição 2');
-  assert.ok(juizesStudy.theologicalSynthesis.length > 50, 'Deve conter síntese teológica pronta');
-  assert.ok(juizesStudy.practicalApplication.length > 50, 'Deve conter aplicação prática pronta');
+  assert.equal(juizesStudy.themes.length, 3, 'Juízes 1 deve ter 3 temas mapeados');
+  assert.equal(juizesStudy.themes[0].mainProp, 2, 'A tese central deve ser a proposição 2');
 
-  // Testar geração dinâmica para outro livro aleatório
-  const randomStudy = bibleArcEngine.getStudy('Atos 2', '1 Quando chegou o dia de Pentecostes, estavam todos reunidos num só lugar. 2 De repente, veio do céu um som como de vento forte.');
-  assert.ok(randomStudy.propositions.length >= 2, 'Deve decompor versículos de qualquer livro');
-  assert.ok(randomStudy.arcs.length >= 1, 'Deve traçar arcos automáticos de discurso');
+  // Testar geração dinâmica para qualquer livro/capítulo
+  const randomStudy = bibleArcEngine.getChapterThematicStudy('Atos', '2', [
+    { number: 1, text: 'Quando chegou o dia de Pentecostes, estavam todos reunidos num só lugar.' },
+    { number: 2, text: 'De repente, veio do céu um som como de vento forte.' }
+  ]);
+  assert.ok(randomStudy.themes.length >= 1, 'Deve decompor qualquer livro em temas');
+  assert.ok(randomStudy.themes[0].propositions.length >= 2, 'Deve ter proposições completas');
 
-  console.log('✓ QA Test 7 Aprovado: Motor BibleArc entrega diagramas e sínteses 100% prontos.');
+  console.log('✓ QA Test 7 Aprovado: Motor BibleArc entrega temas mapeados e diagramas 100% prontos.');
 });
 
 test('QA Test 8: Comentários Teológicos Expositivos Além de Lucas', () => {

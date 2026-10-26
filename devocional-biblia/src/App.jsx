@@ -63,7 +63,7 @@ export default function App() {
   const [loadingBook, setLoadingBook] = useState(false);
 
   // Modais e Drawers
-  const [bibleArcData, setBibleArcData] = useState({ isOpen: false, passage: '', text: '' });
+  const [bibleArcData, setBibleArcData] = useState({ isOpen: false, book: '', chapter: '', verses: [], passage: '', text: '' });
   const [referencesData, setReferencesData] = useState({ isOpen: false, verseKey: '', references: [] });
   const [commentaryData, setCommentaryData] = useState({ isOpen: false, chapterData: null });
   const [favoritesModalOpen, setFavoritesModalOpen] = useState(false);
@@ -355,8 +355,15 @@ export default function App() {
               if (selectedDayId > 1) handleSelectDay(selectedDayId - 1);
             }}
             redLetterEnabled={redLetterEnabled}
-            onOpenBibleArc={(passage, text) => {
-              setBibleArcData({ isOpen: true, passage, text });
+            onOpenBibleArc={(book, chapter, verses, passage, text) => {
+              setBibleArcData({ 
+                isOpen: true, 
+                book, 
+                chapter, 
+                verses: verses || [], 
+                passage: passage || `${book} ${chapter}`, 
+                text: text || '' 
+              });
             }}
             onOpenReferences={(verseKey, references) => {
               setReferencesData({ isOpen: true, verseKey, references });
@@ -439,11 +446,14 @@ export default function App() {
         }}
       />
 
-      {/* Modal BibleArc (John Piper) */}
+      {/* Modal BibleArc (Análise de Discurso por Temas) */}
       <BibleArcModal
-        key={`${bibleArcData.passage}_${bibleArcData.isOpen}`}
+        key={`${bibleArcData.book}_${bibleArcData.chapter}_${bibleArcData.passage}_${bibleArcData.isOpen}`}
         isOpen={bibleArcData.isOpen}
         onClose={() => setBibleArcData({ ...bibleArcData, isOpen: false })}
+        bookName={bibleArcData.book}
+        chapter={bibleArcData.chapter}
+        chapterVerses={bibleArcData.verses}
         initialPassage={bibleArcData.passage}
         initialText={bibleArcData.text}
       />

@@ -264,18 +264,8 @@ export default function LeitorBiblico({
   };
 
   const handleOpenBibleArcFromTop = () => {
-    if (selectedKeys.length > 0) {
-      onOpenBibleArc(formatCitation(), getCombinedText());
-      setSelectedVerses({});
-    } else {
-      // Se não há versículos selecionados, usa a perícope do capítulo atualmente aberto
-      const sampleVerses = allChapterVerses.slice(0, 4);
-      const citation = sampleVerses.length > 1
-        ? `${activeBook} ${selectedChapter}:1-${sampleVerses.length}`
-        : `${activeBook} ${selectedChapter}:1`;
-      const combinedText = sampleVerses.map(v => `${v.number} ${v.text}`).join(' ');
-      onOpenBibleArc(citation, combinedText);
-    }
+    onOpenBibleArc(activeBook, selectedChapter, allChapterVerses);
+    setSelectedVerses({});
   };
 
   // Próximo capítulo na lista de leituras do dia
@@ -332,25 +322,17 @@ export default function LeitorBiblico({
           {/* Botão de Comentários do Capítulo com Indicador Visual */}
           <button
             onClick={() => onOpenCommentary(activeChapterData)}
-            className={`inline-flex items-center space-x-1.5 px-2.5 py-1.5 rounded-xl border text-xs font-bold transition-all shrink-0 ${
-              hasAnyCommentary
-                ? 'border-amber-400 bg-amber-50 dark:bg-amber-950/60 text-amber-900 dark:text-amber-200 shadow-sm'
-                : 'border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 text-zinc-700 dark:text-zinc-200 shadow-2xs'
-            }`}
-            title={hasAnyCommentary ? "Comentário expositivo e reflexões disponíveis para este capítulo!" : "Registrar anotação e diário espiritual para este capítulo"}
+            className="inline-flex items-center space-x-1.5 px-2.5 py-1.5 rounded-xl border text-xs font-bold transition-all shrink-0 border-amber-400 bg-amber-50 dark:bg-amber-950/60 text-amber-900 dark:text-amber-200 shadow-sm"
+            title="Comentário expositivo, temas centrais e conexão cristocêntrica para este capítulo"
           >
             <div className="relative">
-              <MessageSquare className={`w-3.5 h-3.5 ${hasAnyCommentary ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-400'}`} />
-              {hasAnyCommentary && (
-                <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
-              )}
+              <MessageSquare className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+              <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
             </div>
-            <span>{hasAnyCommentary ? 'Comentários' : 'Anotar'}</span>
-            {hasAnyCommentary && (
-              <span className="text-[9px] font-extrabold px-1 rounded-full bg-amber-500 text-white">
-                ✓
-              </span>
-            )}
+            <span>Comentários</span>
+            <span className="text-[9px] font-extrabold px-1 rounded-full bg-amber-500 text-white">
+              ✓
+            </span>
           </button>
 
           {/* Botão de Arqueamento (BibleArc) */}
@@ -581,25 +563,21 @@ export default function LeitorBiblico({
         </article>
       )}
 
-      {/* BANNER INFORMATIVO: COMENTÁRIOS E DIÁRIO ESPIRITUAL DESTE CAPÍTULO */}
+      {/* BANNER INFORMATIVO: COMENTÁRIOS EXPOSITIVOS DESTE CAPÍTULO */}
       <div className="p-4 sm:p-5 rounded-3xl bg-white dark:bg-zinc-800/90 sepia:bg-[#f4e4c1]/70 border border-zinc-200 dark:border-zinc-700/80 sepia:border-[#e6d3a7] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs">
         <div className="flex items-center space-x-3">
-          <span className="text-2xl">{hasAnyCommentary ? '💡' : '✍️'}</span>
+          <span className="text-2xl">💡</span>
           <div>
             <div className="flex items-center space-x-2">
               <h5 className="font-bold text-sm text-zinc-900 dark:text-zinc-100">
-                {hasAnyCommentary ? 'Comentários & Contexto Disponíveis' : 'Diário Espiritual & Anotações'}
+                Comentários & Contexto Teológico
               </h5>
-              {hasAnyCommentary && (
-                <span className="text-[10px] font-extrabold px-1.5 py-0.2 rounded-full bg-amber-500 text-white">
-                  Disponível
-                </span>
-              )}
+              <span className="text-[10px] font-extrabold px-1.5 py-0.2 rounded-full bg-amber-500 text-white">
+                Disponível
+              </span>
             </div>
             <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5 leading-relaxed">
-              {hasAnyCommentary 
-                ? `Há reflexões e visão expositiva registradas para ${activeBook} ${selectedChapter}.` 
-                : `Registre o que Deus falou ao seu coração durante a leitura de ${activeBook} ${selectedChapter}.`}
+              Visão geral expositiva, temas centrais e conexão cristocêntrica de {activeBook} {selectedChapter}.
             </p>
           </div>
         </div>
@@ -608,7 +586,7 @@ export default function LeitorBiblico({
           onClick={() => onOpenCommentary(activeChapterData)}
           className="w-full sm:w-auto px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-xs transition-colors whitespace-nowrap shrink-0"
         >
-          {hasAnyCommentary ? 'Ler Comentários ➔' : 'Abrir Diário ➔'}
+          Ler Comentários ➔
         </button>
       </div>
 
@@ -728,11 +706,11 @@ export default function LeitorBiblico({
                 {/* Botão BibleArc */}
                 <button
                   onClick={() => {
-                    onOpenBibleArc(citation, getCombinedText());
+                    onOpenBibleArc(activeBook, selectedChapter, allChapterVerses, citation, getCombinedText());
                     setSelectedVerses({});
                   }}
                   className="inline-flex items-center space-x-1 px-2 py-1 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold ml-0.5"
-                  title="Arquear estes versículos com a técnica de John Piper"
+                  title="Ver análise de discurso e arqueamento dos temas deste texto"
                 >
                   <GitCommit className="w-3.5 h-3.5" />
                   <span className="text-[11px]">BibleArc</span>

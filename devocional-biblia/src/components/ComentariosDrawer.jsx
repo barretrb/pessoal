@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { X, BookOpen, MessageSquare, Save, Check, Sparkles, Heart } from 'lucide-react';
-import { storage } from '../services/storage';
+import React from 'react';
+import { X, BookOpen, Heart, Sparkles } from 'lucide-react';
 import { bibleCommentaryService } from '../services/bibleCommentaryService';
 
 export default function ComentariosDrawer({ isOpen, onClose, chapterData }) {
@@ -13,25 +12,6 @@ export default function ComentariosDrawer({ isOpen, onClose, chapterData }) {
   const commentary = (chapterData?.commentary?.overview)
     ? chapterData.commentary
     : bibleCommentaryService.getCommentary(bookName, chapterNum);
-
-  const noteKey = `note_chapter_${chapterData?.book}_${chapterData?.chapter}`;
-  const [userNote, setUserNote] = useState('');
-  const [savedSuccess, setSavedSuccess] = useState(false);
-
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem(noteKey);
-      if (saved) setUserNote(saved);
-    } catch (e) {}
-  }, [noteKey]);
-
-  const handleSaveNote = () => {
-    try {
-      localStorage.setItem(noteKey, userNote);
-      setSavedSuccess(true);
-      setTimeout(() => setSavedSuccess(false), 2000);
-    } catch (e) {}
-  };
 
   return (
     <div className="fixed inset-0 z-50 overflow-hidden bg-black/40 backdrop-blur-2xs transition-opacity">
@@ -57,6 +37,7 @@ export default function ComentariosDrawer({ isOpen, onClose, chapterData }) {
             <button
               onClick={onClose}
               className="p-1.5 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 rounded-lg"
+              title="Fechar comentários"
             >
               <X className="w-5 h-5" />
             </button>
@@ -67,8 +48,9 @@ export default function ComentariosDrawer({ isOpen, onClose, chapterData }) {
             
             {/* Visão Geral Teológica */}
             <div className="space-y-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">
-                Visão Geral da Perícope
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 flex items-center space-x-1.5">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Visão Geral da Perícope</span>
               </span>
               <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed font-scripture">
                 {commentary.overview}
@@ -85,7 +67,7 @@ export default function ComentariosDrawer({ isOpen, onClose, chapterData }) {
                   {commentary.keyThemes.map((theme, i) => (
                     <span 
                       key={i}
-                      className="px-3 py-1 rounded-full text-xs font-medium bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-200 border border-amber-200/60 dark:border-amber-800/60"
+                      className="px-3 py-1.5 rounded-full text-xs font-medium bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-200 border border-amber-200/60 dark:border-amber-800/60"
                     >
                       • {theme}
                     </span>
@@ -96,40 +78,16 @@ export default function ComentariosDrawer({ isOpen, onClose, chapterData }) {
 
             {/* Chave Cristocêntrica */}
             {commentary.christocentricKey && (
-              <div className="p-3.5 rounded-2xl bg-gradient-to-r from-red-50/70 to-amber-50/70 dark:from-red-950/25 dark:to-amber-950/25 border border-red-200/60 dark:border-red-900/40 space-y-1.5">
+              <div className="p-4 rounded-2xl bg-gradient-to-r from-red-50/70 to-amber-50/70 dark:from-red-950/30 dark:to-amber-950/30 border border-red-200/60 dark:border-red-900/40 space-y-2">
                 <span className="text-xs font-bold uppercase tracking-wider text-red-700 dark:text-red-400 flex items-center space-x-1.5">
-                  <Heart className="w-3.5 h-3.5 fill-red-500 text-red-500" />
+                  <Heart className="w-4 h-4 fill-red-500 text-red-500" />
                   <span>Conexão Cristocêntrica & Redentora</span>
                 </span>
-                <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed font-scripture">
+                <p className="text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed font-scripture">
                   {commentary.christocentricKey}
                 </p>
               </div>
             )}
-
-            {/* Diário Espiritual do Usuário */}
-            <div className="pt-4 border-t border-zinc-200 dark:border-zinc-800 space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-zinc-600 dark:text-zinc-300 flex items-center space-x-1.5">
-                  <MessageSquare className="w-3.5 h-3.5 text-indigo-500" />
-                  <span>Meu Diário Espiritual</span>
-                </span>
-                <button
-                  onClick={handleSaveNote}
-                  className="inline-flex items-center space-x-1 px-3 py-1 rounded-lg bg-amber-600 hover:bg-amber-700 text-white text-xs font-semibold shadow-2xs transition-colors"
-                >
-                  {savedSuccess ? <Check className="w-3.5 h-3.5" /> : <Save className="w-3.5 h-3.5" />}
-                  <span>{savedSuccess ? 'Salvo!' : 'Salvar Reflexão'}</span>
-                </button>
-              </div>
-
-              <textarea
-                value={userNote}
-                onChange={(e) => setUserNote(e.target.value)}
-                placeholder="O que Deus falou ao seu coração hoje através desta passagem? Registre aqui suas orações e aprendizados..."
-                className="w-full h-36 p-3 rounded-2xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 focus:outline-hidden focus:ring-2 focus:ring-amber-500 resize-none font-scripture"
-              />
-            </div>
 
           </div>
 
