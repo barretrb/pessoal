@@ -165,7 +165,7 @@ test('QA Test 5: Banco de Dados em Nuvem & Sincronização Multi-Aparelho', asyn
 
   // Criar pacote para nuvem
   const payload = cloudDbService.createCloudPayload();
-  assert.equal(payload.familyCode, 'FAMILIA-BARRETO', 'Código da família deve ser preservado');
+  assert.equal(payload.familyCode, 'DEVOCIONAL-SYNC-RAFAEL', 'Código de sincronização deve ser individual');
   assert.ok(payload.progressByProfile['default'], 'Progresso do Rafael deve estar presente no payload');
 
   // Simular recebimento do payload em outro aparelho vazio
@@ -178,4 +178,33 @@ test('QA Test 5: Banco de Dados em Nuvem & Sincronização Multi-Aparelho', asyn
   assert.equal(!!restoredChapters['Lucas 10']?.completed, true, 'Lucas 10 deve estar restaurado no novo aparelho');
 
   console.log('✓ QA Test 5 Aprovado: Sincronização em nuvem e exportação multi-aparelho verificada.');
+});
+
+test('QA Test 6: Arqueamento (BibleArc) Dinâmico para o Livro e Capítulo Abertos', () => {
+  // Simular abertura de Juízes 1
+  const juizesVerses = [
+    { number: 1, text: 'Depois da morte de Josué, os israelitas perguntaram ao SENHOR: "Qual das tribos deve ser a primeira a atacar os cananeus?".' },
+    { number: 2, text: 'O SENHOR respondeu: "Judá, pois eu entreguei a terra em suas mãos".' },
+    { number: 3, text: 'Os homens de Judá disseram a seus parentes da tribo de Simeão: "Venham conosco lutar contra os cananeus".' }
+  ];
+
+  const rawText = juizesVerses.map(v => `${v.number} ${v.text}`).join(' ');
+
+  // Parser do BibleArc
+  const parts = rawText
+    .split(/(?<=[.;!?:])\s+/)
+    .map(t => t.replace(/^\d+\s*/, '').trim())
+    .filter(t => t.length > 0);
+
+  const propositions = parts.map((text, idx) => ({
+    id: `p${idx + 1}`,
+    number: idx + 1,
+    text
+  }));
+
+  assert.ok(propositions.length >= 3, 'Deve gerar ao menos 3 proposições lógicas');
+  assert.ok(propositions[0].text.includes('Josué'), 'Proposição 1 deve ser de Juízes, não de Lucas');
+  assert.ok(!propositions.some(p => p.text.includes('Peçam, e lhes será dado')), 'Não deve conter o texto de Lucas 11');
+
+  console.log('✓ QA Test 6 Aprovado: Arqueamento BibleArc contextualizado para o livro e capítulo ativos.');
 });

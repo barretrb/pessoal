@@ -77,7 +77,7 @@ export default function PerfilModal({
                 Gerenciamento de Contas
               </h3>
               <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                {isAdmin ? 'Você é o Administrador da Família' : 'Perfil de Leitura Compartilhado'}
+                {isAdmin ? 'Conta Principal (Administrador)' : 'Perfil de Leitura Individual'}
               </p>
             </div>
           </div>
@@ -228,7 +228,7 @@ export default function PerfilModal({
             isCreating ? (
               <form onSubmit={handleCreate} className="p-4 rounded-2xl border-2 border-dashed border-amber-300 dark:border-amber-800 bg-amber-50/40 dark:bg-amber-950/20 space-y-3">
                 <h4 className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300">
-                  Adicionar Novo Membro da Família
+                  Adicionar Novo Perfil de Leitura
                 </h4>
                 
                 <div>
@@ -290,7 +290,7 @@ export default function PerfilModal({
                 className="w-full py-3 px-4 rounded-2xl border-2 border-dashed border-zinc-300 dark:border-zinc-700 hover:border-amber-500 text-zinc-600 dark:text-zinc-300 hover:text-amber-600 text-xs font-bold flex items-center justify-center space-x-2 transition-colors"
               >
                 <UserPlus className="w-4 h-4" />
-                <span>Adicionar Novo Membro da Família</span>
+                <span>Adicionar Novo Perfil</span>
               </button>
             )
           )}

@@ -262,6 +262,21 @@ export default function LeitorBiblico({
     }
   };
 
+  const handleOpenBibleArcFromTop = () => {
+    if (selectedKeys.length > 0) {
+      onOpenBibleArc(formatCitation(), getCombinedText());
+      setSelectedVerses({});
+    } else {
+      // Se não há versículos selecionados, usa a perícope do capítulo atualmente aberto
+      const sampleVerses = allChapterVerses.slice(0, 4);
+      const citation = sampleVerses.length > 1
+        ? `${activeBook} ${selectedChapter}:1-${sampleVerses.length}`
+        : `${activeBook} ${selectedChapter}:1`;
+      const combinedText = sampleVerses.map(v => `${v.number} ${v.text}`).join(' ');
+      onOpenBibleArc(citation, combinedText);
+    }
+  };
+
   // Próximo capítulo na lista de leituras do dia
   const currentChapterIdx = readings.findIndex(r => {
     const p = parseReading(r);
@@ -339,7 +354,7 @@ export default function LeitorBiblico({
 
           {/* Botão de Arqueamento (BibleArc) */}
           <button
-            onClick={() => onOpenBibleArc(`${activeBook} ${selectedChapter}`, '')}
+            onClick={handleOpenBibleArcFromTop}
             className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/60 dark:bg-indigo-950/40 hover:bg-indigo-100/60 text-xs font-semibold text-indigo-700 dark:text-indigo-300 transition-colors shrink-0"
             title="Fazer Arqueamento do Texto (John Piper)"
           >

@@ -483,10 +483,16 @@ export const storage = {
   getCloudConfig() {
     try {
       const stored = localStorage.getItem(STORAGE_KEYS.CLOUD_CONFIG);
-      if (stored) return JSON.parse(stored);
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        if (parsed.familyCode === 'FAMILIA-BARRETO') {
+          parsed.familyCode = 'DEVOCIONAL-SYNC-RAFAEL';
+        }
+        return parsed;
+      }
     } catch (e) {}
     return {
-      familyCode: 'FAMILIA-BARRETO', // Código padrão familiar
+      familyCode: 'DEVOCIONAL-SYNC-RAFAEL', // Código padrão individual
       lastSyncedAt: null,
       autoSync: true
     };

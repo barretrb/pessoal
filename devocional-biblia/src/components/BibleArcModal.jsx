@@ -74,16 +74,14 @@ const PRESETS = [
 export default function BibleArcModal({ isOpen, onClose, initialPassage, initialText }) {
   if (!isOpen) return null;
 
-  // Quebra inicial do texto em proposições lógicas
-  const createInitialPropositions = () => {
-    if (!initialText) return PRESETS[0].propositions;
+  // Função pura para quebrar o texto bíblico em proposições lógicas
+  const parseTextToPropositions = (rawText) => {
+    if (!rawText || typeof rawText !== 'string' || rawText.trim().length === 0) return [];
 
-    const parts = initialText
+    const parts = rawText
       .split(/(?<=[.;!?:])\s+/)
-      .map(t => t.trim())
+      .map(t => t.replace(/^\d+\s*/, '').trim()) // limpa numeração de versículo inicial
       .filter(t => t.length > 0);
-
-    if (parts.length === 0) return PRESETS[0].propositions;
 
     return parts.map((text, idx) => ({
       id: `p${idx + 1}`,
@@ -92,14 +90,73 @@ export default function BibleArcModal({ isOpen, onClose, initialPassage, initial
     }));
   };
 
+  const getInitialPropositions = () => {
+    if (initialText && initialText.trim().length > 0) {
+      return parseTextToPropositions(initialText);
+    }
+    if (initialPassage) {
+      try {
+        const savedStudies = storage.getBibleArcs ? storage.getBibleArcs() : [];
+        const existing = savedStudies.find(s => s.passage === initialPassage);
+        if (existing?.propositions?.length) return existing.propositions;
+      } catch (e) {}
+      return [];
+    }
+    return PRESETS[0].propositions;
+  };
+
   const [activeTab, setActiveTab] = useState('diagram'); // 'diagram' | 'analysis' | 'result'
   const [passageName, setPassageName] = useState(initialPassage || 'Lucas 11:9-10');
   const [title, setTitle] = useState(initialPassage ? `Arqueamento: ${initialPassage}` : 'Estudo de Arqueamento (BibleArc)');
-  const [propositions, setPropositions] = useState(createInitialPropositions);
-  const [arcs, setArcs] = useState(initialText ? [] : PRESETS[0].arcs);
+  const [propositions, setPropositions] = useState(getInitialPropositions);
+  const [arcs, setArcs] = useState(() => (initialText || initialPassage) ? [] : PRESETS[0].arcs);
   const [mainProp, setMainProp] = useState(1);
-  const [theologicalSynthesis, setTheologicalSynthesis] = useState(initialText ? '' : PRESETS[0].theologicalSynthesis);
-  const [practicalApplication, setPracticalApplication] = useState(initialText ? '' : PRESETS[0].practicalApplication);
+  const [theologicalSynthesis, setTheologicalSynthesis] = useState(() => (initialText || initialPassage) ? '' : PRESETS[0].theologicalSynthesis);
+  const [practicalApplication, setPracticalApplication] = useState(() => (initialText || initialPassage) ? '' : PRESETS[0].practicalApplication);
+
+  // Sincroniza sempre que a passagem ou texto mudar (ex: ao abrir Juízes 1)
+  useEffect(() => {
+    if (initialPassage) {
+      setPassageName(initialPassage);
+      setTitle(`Arqueamento: ${initialPassage}`);
+
+      // Verifica se o usuário já salvou um estudo desta passagem anteriormente
+      try {
+        const savedStudies = storage.getBibleArcs ? storage.getBibleArcs() : [];
+        const existing = savedStudies.find(s => s.passage === initialPassage);
+        if (existing) {
+          setPropositions(existing.propositions || []);
+          setArcs(existing.arcs || []);
+          setMainProp(existing.mainProp || 1);
+          setTheologicalSynthesis(existing.theologicalSynthesis || '');
+          setPracticalApplication(existing.practicalApplication || '');
+          return;
+        }
+      } catch (e) {}
+
+      if (initialText && initialText.trim().length > 0) {
+        const generated = parseTextToPropositions(initialText);
+        setPropositions(generated);
+        setArcs([]);
+        setMainProp(1);
+        setTheologicalSynthesis('');
+        setPracticalApplication('');
+      } else {
+        setPropositions([]);
+        setArcs([]);
+        setMainProp(1);
+        setTheologicalSynthesis('');
+        setPracticalApplication('');
+      }
+    } else if (initialText && initialText.trim().length > 0) {
+      const generated = parseTextToPropositions(initialText);
+      setPropositions(generated);
+      setArcs([]);
+      setMainProp(1);
+      setTheologicalSynthesis('');
+      setPracticalApplication('');
+    }
+  }, [initialPassage, initialText]);
 
   // Controle de adição de arco
   const [fromProp, setFromProp] = useState(1);

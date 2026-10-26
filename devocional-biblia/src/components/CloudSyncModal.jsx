@@ -22,7 +22,8 @@ export default function CloudSyncModal({
   onDataSynced
 }) {
   const [config, setConfig] = useState(() => storage.getCloudConfig());
-  const [familyCodeInput, setFamilyCodeInput] = useState(config.familyCode || 'FAMILIA-BARRETO');
+  const initialSyncCode = (config.familyCode === 'FAMILIA-BARRETO' ? 'DEVOCIONAL-SYNC-RAFAEL' : config.familyCode) || 'DEVOCIONAL-SYNC-RAFAEL';
+  const [familyCodeInput, setFamilyCodeInput] = useState(initialSyncCode);
   const [isSyncing, setIsSyncing] = useState(false);
   const [syncStatusMsg, setSyncStatusMsg] = useState(null);
   const [copied, setCopied] = useState(false);
@@ -94,7 +95,7 @@ export default function CloudSyncModal({
                 Banco de Dados & Nuvem
               </h3>
               <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                Sincronize entre celular, computador e família
+                Sincronize entre celular, tablet e computador
               </p>
             </div>
           </div>
@@ -110,17 +111,17 @@ export default function CloudSyncModal({
         {/* Conteúdo */}
         <div className="p-4 sm:p-5 space-y-5 overflow-y-auto flex-1 bg-zinc-50/50 dark:bg-zinc-950/40">
           
-          {/* Card com Código da Família para Conectar Outro Aparelho */}
+          {/* Card com Código para Conectar Outro Aparelho */}
           <div className="p-4 rounded-2xl border-2 border-sky-200 dark:border-sky-900/60 bg-sky-50/50 dark:bg-sky-950/20 space-y-3">
             <div className="flex items-center space-x-2">
               <Smartphone className="w-4 h-4 text-sky-600 dark:text-sky-400" />
               <Laptop className="w-4 h-4 text-sky-600 dark:text-sky-400" />
               <span className="text-xs font-bold text-sky-900 dark:text-sky-200 uppercase tracking-wide">
-                Código de Sincronização Familiar
+                Código de Sincronização da Conta
               </span>
             </div>
             <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              Digite este mesmo código no seu outro aparelho ou no celular da sua esposa para sincronizarem o mesmo banco:
+              Digite este mesmo código nos seus outros aparelhos para sincronizarem automaticamente o mesmo histórico:
             </p>
 
             <div className="flex items-center space-x-2">
@@ -129,7 +130,7 @@ export default function CloudSyncModal({
                 value={familyCodeInput}
                 onChange={(e) => setFamilyCodeInput(e.target.value)}
                 className="flex-1 font-mono uppercase font-bold text-sm px-3 py-2 rounded-xl border border-sky-300 dark:border-sky-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 focus:ring-2 focus:ring-sky-500"
-                placeholder="Ex: FAMILIA-BARRETO"
+                placeholder="Ex: DEVOCIONAL-SYNC-RAFAEL"
               />
               <button
                 onClick={handleCopyCode}

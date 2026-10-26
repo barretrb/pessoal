@@ -36,7 +36,7 @@ export const cloudDbService = {
 
     return {
       version: 1,
-      familyCode: cloudConfig.familyCode || 'FAMILIA-BARRETO',
+      familyCode: cloudConfig.familyCode || 'DEVOCIONAL-SYNC-RAFAEL',
       updatedAt: new Date().toISOString(),
       profiles,
       activeProfileId,
@@ -115,7 +115,7 @@ export const cloudDbService = {
       isSyncInProgress = true;
       try {
         const payload = this.createCloudPayload();
-        // Persiste no cofre em nuvem familiar
+        // Persiste no cofre em nuvem da conta
         localStorage.setItem(`devocional_cloud_vault_${payload.familyCode}`, JSON.stringify(payload));
         
         const config = storage.getCloudConfig();
@@ -135,7 +135,7 @@ export const cloudDbService = {
   async fetchAndMergeLatest() {
     try {
       const config = storage.getCloudConfig();
-      const vaultKey = `devocional_cloud_vault_${config.familyCode || 'FAMILIA-BARRETO'}`;
+      const vaultKey = `devocional_cloud_vault_${config.familyCode || 'DEVOCIONAL-SYNC-RAFAEL'}`;
       const remoteData = localStorage.getItem(vaultKey);
       if (remoteData) {
         const parsed = JSON.parse(remoteData);

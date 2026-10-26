@@ -441,6 +441,7 @@ export default function App() {
 
       {/* Modal BibleArc (John Piper) */}
       <BibleArcModal
+        key={`${bibleArcData.passage}_${bibleArcData.isOpen}`}
         isOpen={bibleArcData.isOpen}
         onClose={() => setBibleArcData({ ...bibleArcData, isOpen: false })}
         initialPassage={bibleArcData.passage}
@@ -488,7 +489,7 @@ export default function App() {
       <footer className="py-6 border-t border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] text-center text-xs text-zinc-400 dark:text-zinc-500 space-y-1">
         <p className="flex items-center justify-center space-x-1.5 text-emerald-600 dark:text-emerald-400 font-semibold text-[11px]">
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>Sincronização em nuvem automática ativa • Família Barreto</span>
+          <span>Sincronização em nuvem ativa • {activeProfile?.name || 'Individual'}</span>
         </p>
         <p>Bíblia em 1 Ano • Nova Versão Transformadora (NVT)</p>
         <p className="text-[11px]">Desenvolvido para sua caminhada diária de fé e oração.</p>

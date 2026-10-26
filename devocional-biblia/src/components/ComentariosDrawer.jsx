@@ -5,9 +5,12 @@ import { storage } from '../services/storage';
 export default function ComentariosDrawer({ isOpen, onClose, chapterData }) {
   if (!isOpen) return null;
 
+  const bookName = chapterData?.book || 'Capítulo';
+  const chapterNum = chapterData?.chapter || '';
+
   const commentary = chapterData?.commentary || {
-    title: `Lucas ${chapterData?.chapter}`,
-    overview: 'Comentário expositivo da passagem.',
+    title: `${bookName} ${chapterNum}`.trim(),
+    overview: 'Notas teológicas e comentários expositivos ainda não incluídos para este trecho bíblico. Use o seu Diário Espiritual abaixo para registrar suas orações, aprendizados e meditações deste capítulo.',
     keyThemes: []
   };
 
