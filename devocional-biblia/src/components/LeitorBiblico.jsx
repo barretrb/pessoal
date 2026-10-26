@@ -210,51 +210,51 @@ export default function LeitorBiblico({
   const completedChaptersCount = readings.filter(r => !!chapterProgress[r]?.completed).length;
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6 space-y-6">
+    <div className="max-w-4xl mx-auto px-3 sm:px-6 py-4 sm:py-6 space-y-6 overflow-x-hidden">
       
       {/* 1. BARRA SUPERIOR DE CONTROLE E NAVEGAÇÃO */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-4 border-b border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7]">
+      <div className="flex flex-wrap items-center justify-between gap-2.5 pb-4 border-b border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7]">
         <button
           onClick={onBack}
           className="inline-flex items-center space-x-1.5 text-xs font-semibold text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span>{isFreeReading ? 'Voltar à Navegação' : 'Voltar ao Panorama'}</span>
+          <span>{isFreeReading ? 'Voltar' : 'Panorama'}</span>
         </button>
 
-        <div className="flex items-center flex-wrap gap-2">
+        <div className="flex items-center flex-wrap gap-1.5 sm:gap-2">
           {/* Botão de Estudo do Livro Atual (Bíblia de Estudos) */}
           <button
             onClick={() => onOpenStudyInfo && onOpenStudyInfo(activeBook)}
-            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-950/40 hover:bg-amber-100 text-xs font-bold text-amber-800 dark:text-amber-300 transition-colors"
+            className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-xl border border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-950/40 hover:bg-amber-100 text-xs font-bold text-amber-800 dark:text-amber-300 transition-colors shrink-0"
             title={`Abrir Bíblia de Estudos: Informações do Livro de ${activeBook}`}
           >
             <BookMarked className="w-3.5 h-3.5" />
-            <span>Estudo de {activeBook}</span>
+            <span><span className="hidden min-[380px]:inline">Estudo de </span>{activeBook}</span>
           </button>
 
           {/* Botão de Comentários do Capítulo */}
           <button
             onClick={() => onOpenCommentary(activeChapterData)}
-            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 text-xs font-medium text-zinc-700 dark:text-zinc-200 transition-colors shadow-2xs"
+            className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 text-xs font-medium text-zinc-700 dark:text-zinc-200 transition-colors shadow-2xs shrink-0"
             title="Abrir Comentários & Diário Espiritual"
           >
             <MessageSquare className="w-3.5 h-3.5 text-amber-600" />
-            <span>Comentários</span>
+            <span className="hidden min-[340px]:inline">Comentários</span>
           </button>
 
           {/* Botão de Arqueamento (BibleArc) */}
           <button
             onClick={() => onOpenBibleArc(`${activeBook} ${selectedChapter}`, '')}
-            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/60 dark:bg-indigo-950/40 hover:bg-indigo-100/60 text-xs font-semibold text-indigo-700 dark:text-indigo-300 transition-colors"
+            className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/60 dark:bg-indigo-950/40 hover:bg-indigo-100/60 text-xs font-semibold text-indigo-700 dark:text-indigo-300 transition-colors shrink-0"
             title="Fazer Arqueamento do Texto (John Piper)"
           >
             <GitCommit className="w-3.5 h-3.5" />
-            <span>BibleArc</span>
+            <span className="hidden min-[340px]:inline">BibleArc</span>
           </button>
 
           {/* Controle de Fonte */}
-          <div className="flex items-center space-x-1 bg-zinc-200 dark:bg-zinc-800 rounded-xl p-0.5">
+          <div className="flex items-center space-x-0.5 bg-zinc-200 dark:bg-zinc-800 rounded-xl p-0.5 shrink-0">
             <button
               onClick={() => setFontSize(Math.max(16, fontSize - 1))}
               className="px-2 py-1 text-xs font-bold text-zinc-700 dark:text-zinc-200 hover:text-zinc-900"
@@ -531,7 +531,7 @@ export default function LeitorBiblico({
         const hasRefs = singleVerseData && singleVerseData.crossReferences && singleVerseData.crossReferences.length > 0;
 
         return (
-          <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-1.25rem)] max-w-lg bg-zinc-900/95 dark:bg-zinc-900/95 text-white rounded-2xl shadow-2xl p-3 border border-zinc-700/80 backdrop-blur-md animate-in fade-in slide-in-from-bottom-4">
+          <div className="fixed bottom-18 md:bottom-6 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-1.25rem)] max-w-lg bg-zinc-900/95 dark:bg-zinc-900/95 text-white rounded-2xl shadow-2xl p-3 border border-zinc-700/80 backdrop-blur-md animate-in fade-in slide-in-from-bottom-4">
             
             {/* Linha Superior: Cabeçalho com Versículos e Ações */}
             <div className="flex items-center justify-between pb-2 border-b border-zinc-800">

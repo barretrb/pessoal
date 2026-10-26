@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
+import BottomNav from './components/BottomNav';
 import Dashboard from './components/Dashboard';
 import LeitorBiblico from './components/LeitorBiblico';
 import BibleArcModal from './components/BibleArcModal';
@@ -177,7 +178,7 @@ export default function App() {
       />
 
       {/* Conteúdo Principal */}
-      <main className="flex-1 pb-16">
+      <main className="flex-1 pb-24 md:pb-16 overflow-x-hidden">
         {currentView === 'dashboard' ? (
           <Dashboard
             days={days}
@@ -226,6 +227,23 @@ export default function App() {
           />
         )}
       </main>
+
+      {/* Barra de Navegação Inferior Móvel (Otimizada para Celular) */}
+      <BottomNav
+        currentView={currentView}
+        onGoHome={() => {
+          setIsFreeReading(false);
+          setCurrentView('dashboard');
+        }}
+        onOpenBibleNav={() => setBibleNavOpen(true)}
+        onOpenStudyInfo={() => handleOpenStudyInfo(isFreeReading ? freeReadingBook : 'Lucas')}
+        onOpenFavorites={() => {
+          setFavorites(storage.getFavorites());
+          setHighlights(storage.getHighlights());
+          setFavoritesModalOpen(true);
+        }}
+        pendingDayId={pendingDayId}
+      />
 
       {/* Modal Navegação Livre da Bíblia */}
       <NavegacaoBibliaModal
