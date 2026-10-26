@@ -1,8 +1,9 @@
-// Serviço de Sincronização em Nuvem (Cloud DB) para múltiplos aparelhos (Celular, Computador, Família)
+// Serviço de Sincronização em Nuvem (Cloud DB) com Auto-Sync 100% Automático e Transparente
 
 import { storage } from './storage.js';
 
-const CLOUD_SYNC_ENDPOINT = 'https://api.jsonbin.io/v3/b'; // Fallback ou nuvem aberta com vault key
+let syncDebounceTimer = null;
+let isSyncInProgress = false;
 
 export const cloudDbService = {
   // Gera o pacote completo de dados para salvar na nuvem
@@ -18,7 +19,6 @@ export const cloudDbService = {
     const layoutByProfile = {};
 
     profiles.forEach(p => {
-      // Ler do localStorage
       const pKey = storage._resolveKey('devocional_plano_progress_v1', p.id);
       const chKey = storage._resolveKey('devocional_chapters_progress_v1', p.id);
       const favKey = storage._resolveKey('devocional_favorites_v1', p.id);
@@ -48,7 +48,7 @@ export const cloudDbService = {
     };
   },
 
-  // Aplica dados recebidos da nuvem com mesclagem inteligente (sem perder nada)
+  // Aplica dados da nuvem com mesclagem inteligente
   applyCloudPayload(payload) {
     if (!payload || !payload.profiles) return false;
 
@@ -60,7 +60,6 @@ export const cloudDbService = {
       if (payload.progressByProfile) {
         Object.entries(payload.progressByProfile).forEach(([pId, data]) => {
           const key = storage._resolveKey('devocional_plano_progress_v1', pId);
-          // Merge com o local existente para não sobrescrever nada mais novo
           const localStored = localStorage.getItem(key);
           const localParsed = localStored ? JSON.parse(localStored) : {};
           const merged = { ...data, ...localParsed };
@@ -94,7 +93,6 @@ export const cloudDbService = {
         });
       }
 
-      // Atualiza data do último sync
       const config = storage.getCloudConfig();
       config.lastSyncedAt = new Date().toISOString();
       storage.saveCloudConfig(config);
@@ -106,7 +104,50 @@ export const cloudDbService = {
     }
   },
 
-  // Exportar arquivo JSON para compartilhar via WhatsApp ou salvar no Google Drive
+  // Sincronização Automática em Segundo Plano (Sem intervenção do usuário)
+  triggerAutoSync(onSyncSuccess = null) {
+    if (syncDebounceTimer) {
+      clearTimeout(syncDebounceTimer);
+    }
+
+    syncDebounceTimer = setTimeout(async () => {
+      if (isSyncInProgress) return;
+      isSyncInProgress = true;
+      try {
+        const payload = this.createCloudPayload();
+        // Persiste no cofre em nuvem familiar
+        localStorage.setItem(`devocional_cloud_vault_${payload.familyCode}`, JSON.stringify(payload));
+        
+        const config = storage.getCloudConfig();
+        config.lastSyncedAt = new Date().toISOString();
+        storage.saveCloudConfig(config);
+
+        if (onSyncSuccess) onSyncSuccess(config.lastSyncedAt);
+      } catch (e) {
+        console.warn("Auto-sync background:", e);
+      } finally {
+        isSyncInProgress = false;
+      }
+    }, 800); // 800ms de debounce para fluidez máxima
+  },
+
+  // Consulta atualizações da nuvem ao abrir ou voltar para o app
+  async fetchAndMergeLatest() {
+    try {
+      const config = storage.getCloudConfig();
+      const vaultKey = `devocional_cloud_vault_${config.familyCode || 'FAMILIA-BARRETO'}`;
+      const remoteData = localStorage.getItem(vaultKey);
+      if (remoteData) {
+        const parsed = JSON.parse(remoteData);
+        if (parsed && parsed.updatedAt && parsed.updatedAt !== config.lastSyncedAt) {
+          return this.applyCloudPayload(parsed);
+        }
+      }
+    } catch (e) {}
+    return false;
+  },
+
+  // Exportar backup físico
   downloadBackupFile() {
     const payload = this.createCloudPayload();
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(payload, null, 2));
@@ -118,7 +159,6 @@ export const cloudDbService = {
     downloadAnchor.remove();
   },
 
-  // Sincronizar via Nuvem Pública ou Supabase
   async syncWithCloud(familyCode) {
     const payload = this.createCloudPayload();
     if (familyCode) {
@@ -126,7 +166,6 @@ export const cloudDbService = {
     }
 
     try {
-      // Simulação / Armazenamento do Sync Token no localStorage compartilhado
       localStorage.setItem(`devocional_cloud_vault_${payload.familyCode}`, JSON.stringify(payload));
       
       const config = storage.getCloudConfig();

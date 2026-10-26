@@ -18,33 +18,33 @@ import {
 const SECTION_METADATA = {
   todayPending: {
     title: 'Leitura de Hoje & Pendências',
-    description: 'Cartão principal com as passagens do dia e alerta de leitura pendente',
+    description: 'Cartão com as passagens bíblicas do dia e alerta de leitura pendente',
     icon: Flame,
-    colorClass: 'text-amber-600 dark:text-amber-400 bg-amber-100 dark:bg-amber-950/80 border border-amber-300 dark:border-amber-800'
+    colorClass: 'text-amber-500 bg-amber-500/10 border border-amber-500/30'
   },
   music: {
     title: 'Música Devocional do Dia (YouTube Music)',
-    description: 'Louvor selecionado com player integrado de áudio/vídeo',
+    description: 'Louvor selecionado do dia com player integrado de áudio e vídeo',
     icon: Music,
-    colorClass: 'text-orange-600 dark:text-orange-400 bg-orange-100 dark:bg-orange-950/80 border border-orange-300 dark:border-orange-800'
+    colorClass: 'text-orange-500 bg-orange-500/10 border border-orange-500/30'
   },
   studyBanner: {
     title: 'Bíblia de Estudos & Navegação Completa',
-    description: 'Acesso rápido aos 66 livros e informações de introdução bíblica',
+    description: 'Acesso rápido aos 66 livros bíblicos, autores, épocas e temas',
     icon: BookMarked,
-    colorClass: 'text-indigo-600 dark:text-indigo-400 bg-indigo-100 dark:bg-indigo-950/80 border border-indigo-300 dark:border-indigo-800'
+    colorClass: 'text-indigo-400 bg-indigo-500/10 border border-indigo-500/30'
   },
   video: {
     title: 'Vídeo de Estudo Relacionado (BibleProject)',
-    description: 'Visão geral bíblica e animações explicativas em vídeo',
+    description: 'Visão geral bíblica e animações explicativas do livro em vídeo',
     icon: Video,
-    colorClass: 'text-rose-600 dark:text-rose-400 bg-rose-100 dark:bg-rose-950/80 border border-rose-300 dark:border-rose-800'
+    colorClass: 'text-rose-500 bg-rose-500/10 border border-rose-500/30'
   },
   calendar: {
     title: 'Panorama dos 365 Dias',
-    description: 'Grade anual completa dos 365 dias e barra de progresso',
+    description: 'Grade anual completa dos 365 dias do plano e barra de progresso',
     icon: Calendar,
-    colorClass: 'text-emerald-600 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-950/80 border border-emerald-300 dark:border-emerald-800'
+    colorClass: 'text-emerald-500 bg-emerald-500/10 border border-emerald-500/30'
   }
 };
 
@@ -81,37 +81,37 @@ export default function PersonalizarDashboardModal({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/75 backdrop-blur-sm animate-in fade-in">
-      <div className="bg-white dark:bg-zinc-900 rounded-3xl max-w-lg w-full shadow-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden flex flex-col max-h-[92vh]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-sm animate-in fade-in">
+      <div className="bg-zinc-900 text-zinc-100 rounded-3xl max-w-lg w-full shadow-2xl border border-zinc-800 overflow-hidden flex flex-col max-h-[92vh]">
         
         {/* Cabeçalho */}
-        <div className="p-4 sm:p-5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between bg-zinc-50 dark:bg-zinc-900/80">
+        <div className="p-4 sm:p-5 border-b border-zinc-800 flex items-center justify-between bg-zinc-900/90">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-2xl bg-amber-500/15 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/20">
+            <div className="w-10 h-10 rounded-2xl bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/30">
               <Sliders className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-extrabold text-base text-zinc-900 dark:text-zinc-50">
+              <h3 className="font-extrabold text-base text-zinc-50">
                 Personalizar Tela Inicial
               </h3>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                Reordene com as setas ou oculte o que não desejar
+              <p className="text-xs text-zinc-400">
+                Organize a ordem ou oculte caixas para simplificar
               </p>
             </div>
           </div>
           <button 
             onClick={onClose}
-            className="p-2 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            className="p-2 text-zinc-400 hover:text-zinc-100 rounded-xl hover:bg-zinc-800 transition-colors"
             title="Fechar"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        {/* Lista de Caixas com Alto Contraste e Legibilidade Absoluta */}
-        <div className="p-4 sm:p-5 space-y-3 overflow-y-auto flex-1 bg-zinc-50/50 dark:bg-zinc-950/40">
-          <p className="text-xs text-zinc-600 dark:text-zinc-300 font-medium pb-1">
-            Defina a ordem das caixas na tela inicial com as setas. Clique no olho para ocultar:
+        {/* Lista de Caixas com Texto 100% Legível (Sem Truncamento no Mobile) */}
+        <div className="p-4 sm:p-5 space-y-3.5 overflow-y-auto flex-1 bg-zinc-950/60">
+          <p className="text-xs text-zinc-400 font-medium pb-0.5 leading-relaxed">
+            Use as setas para mover a posição da caixa. Oculte o que não quiser ver na tela inicial:
           </p>
 
           <div className="space-y-3">
@@ -120,7 +120,7 @@ export default function PersonalizarDashboardModal({
                 title: secId,
                 description: '',
                 icon: Sliders,
-                colorClass: 'text-zinc-600 bg-zinc-100 border-zinc-200'
+                colorClass: 'text-zinc-400 bg-zinc-800 border-zinc-700'
               };
               const isHidden = !!hidden[secId];
               const Icon = meta.icon;
@@ -128,64 +128,69 @@ export default function PersonalizarDashboardModal({
               return (
                 <div 
                   key={secId}
-                  className={`p-3.5 sm:p-4 rounded-2xl border-2 transition-all flex items-center justify-between gap-3 ${
+                  className={`p-3.5 sm:p-4 rounded-2xl border transition-all flex flex-col gap-2.5 ${
                     isHidden 
-                      ? 'bg-zinc-100/70 dark:bg-zinc-800/40 border-zinc-300 dark:border-zinc-800 opacity-60' 
-                      : 'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 shadow-sm hover:shadow-md'
+                      ? 'bg-zinc-900/40 border-zinc-800/80 opacity-55' 
+                      : 'bg-zinc-900 border-zinc-750 shadow-md'
                   }`}
                 >
-                  {/* Ícone e Nome com Alto Contraste */}
-                  <div className="flex items-center space-x-3 min-w-0">
-                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 shadow-2xs ${meta.colorClass}`}>
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <div className="min-w-0">
-                      <h4 className="font-bold text-sm text-zinc-900 dark:text-zinc-100 tracking-tight truncate">
+                  {/* Linha Superior: Ícone + Título Completo sem cortes + Botão Olho */}
+                  <div className="flex items-start justify-between gap-2.5">
+                    <div className="flex items-center space-x-3 min-w-0 flex-1">
+                      <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 shadow-xs ${meta.colorClass}`}>
+                        <Icon className="w-4 h-4" />
+                      </div>
+                      <h4 className="font-bold text-sm text-zinc-100 leading-snug break-words">
                         {meta.title}
                       </h4>
-                      <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate">
-                        {meta.description}
-                      </p>
                     </div>
-                  </div>
 
-                  {/* Botões de Ação com Cores e Contraste Nítidos */}
-                  <div className="flex items-center space-x-1.5 shrink-0">
-                    
-                    {/* Botão Subir */}
-                    <button
-                      onClick={() => handleMove(idx, -1)}
-                      disabled={idx === 0}
-                      className="w-8 h-8 rounded-xl bg-zinc-100 dark:bg-zinc-700 hover:bg-amber-500 dark:hover:bg-amber-600 text-zinc-800 dark:text-zinc-100 hover:text-white disabled:opacity-20 border border-zinc-200 dark:border-zinc-600 flex items-center justify-center transition-all"
-                      title="Mover para cima"
-                    >
-                      <ArrowUp className="w-4 h-4 stroke-[2.5]" />
-                    </button>
-
-                    {/* Botão Descer */}
-                    <button
-                      onClick={() => handleMove(idx, 1)}
-                      disabled={idx === order.length - 1}
-                      className="w-8 h-8 rounded-xl bg-zinc-100 dark:bg-zinc-700 hover:bg-amber-500 dark:hover:bg-amber-600 text-zinc-800 dark:text-zinc-100 hover:text-white disabled:opacity-20 border border-zinc-200 dark:border-zinc-600 flex items-center justify-center transition-all"
-                      title="Mover para baixo"
-                    >
-                      <ArrowDown className="w-4 h-4 stroke-[2.5]" />
-                    </button>
-
-                    {/* Botão Ocultar / Exibir */}
+                    {/* Botão de Visibilidade com Destaque Máximo */}
                     <button
                       onClick={() => handleToggleVisibility(secId)}
-                      className={`w-9 h-8 rounded-xl flex items-center justify-center transition-all ml-1 font-bold ${
+                      className={`px-3 py-1.5 rounded-xl text-xs font-bold flex items-center space-x-1.5 shrink-0 transition-all ${
                         isHidden 
-                          ? 'bg-zinc-200 dark:bg-zinc-700 text-zinc-500 dark:text-zinc-400 border border-zinc-300 dark:border-zinc-600' 
-                          : 'bg-amber-500 text-white shadow-xs hover:bg-amber-600'
+                          ? 'bg-zinc-800 text-zinc-400 border border-zinc-700 hover:text-zinc-200' 
+                          : 'bg-amber-500 text-zinc-950 shadow-sm hover:bg-amber-400 font-extrabold'
                       }`}
                       title={isHidden ? "Caixa Ocultada (Clique para exibir)" : "Caixa Visível (Clique para ocultar)"}
                     >
-                      {isHidden ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                      {isHidden ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+                      <span>{isHidden ? 'Oculta' : 'Visível'}</span>
                     </button>
-
                   </div>
+
+                  {/* Linha Inferior: Subtítulo Explicativo Completo + Controles de Posição */}
+                  <div className="flex items-center justify-between gap-3 pt-1 border-t border-zinc-800/60">
+                    <p className="text-[11px] text-zinc-400 leading-tight flex-1">
+                      {meta.description}
+                    </p>
+
+                    <div className="flex items-center space-x-1.5 shrink-0">
+                      {/* Botão Subir */}
+                      <button
+                        onClick={() => handleMove(idx, -1)}
+                        disabled={idx === 0}
+                        className="px-2.5 py-1.5 rounded-xl bg-zinc-800 hover:bg-amber-500 text-zinc-200 hover:text-zinc-950 disabled:opacity-25 border border-zinc-700 flex items-center space-x-1 text-xs font-bold transition-all"
+                        title="Subir posição desta caixa"
+                      >
+                        <ArrowUp className="w-3.5 h-3.5 stroke-[2.5]" />
+                        <span className="text-[10px]">Subir</span>
+                      </button>
+
+                      {/* Botão Descer */}
+                      <button
+                        onClick={() => handleMove(idx, 1)}
+                        disabled={idx === order.length - 1}
+                        className="px-2.5 py-1.5 rounded-xl bg-zinc-800 hover:bg-amber-500 text-zinc-200 hover:text-zinc-950 disabled:opacity-25 border border-zinc-700 flex items-center space-x-1 text-xs font-bold transition-all"
+                        title="Descer posição desta caixa"
+                      >
+                        <ArrowDown className="w-3.5 h-3.5 stroke-[2.5]" />
+                        <span className="text-[10px]">Descer</span>
+                      </button>
+                    </div>
+                  </div>
+
                 </div>
               );
             })}
@@ -193,10 +198,10 @@ export default function PersonalizarDashboardModal({
         </div>
 
         {/* Rodapé com Botão Restaurar e Concluir */}
-        <div className="p-4 bg-white dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800 flex items-center justify-between">
+        <div className="p-4 bg-zinc-900 border-t border-zinc-800 flex items-center justify-between">
           <button
             onClick={onResetLayout}
-            className="inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-bold text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            className="inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-bold text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800 transition-colors"
           >
             <RotateCcw className="w-3.5 h-3.5" />
             <span>Restaurar Padrão</span>
@@ -204,7 +209,7 @@ export default function PersonalizarDashboardModal({
 
           <button
             onClick={onClose}
-            className="inline-flex items-center space-x-1.5 px-5 py-2.5 bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold rounded-xl shadow-md transition-all active:scale-95"
+            className="inline-flex items-center space-x-1.5 px-6 py-2.5 bg-amber-500 hover:bg-amber-400 text-zinc-950 text-xs font-black rounded-xl shadow-md transition-all active:scale-95"
           >
             <Check className="w-4 h-4 stroke-[3]" />
             <span>Pronto</span>

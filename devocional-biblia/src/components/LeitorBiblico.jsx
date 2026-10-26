@@ -102,6 +102,25 @@ export default function LeitorBiblico({
   const [highlights, setHighlights] = useState(storage.getHighlights());
   const [favorites, setFavorites] = useState(storage.getFavorites());
 
+  // Indicador de Comentários / Notas do Capítulo
+  const chapterNoteKey = `note_chapter_${activeBook}_${selectedChapter}`;
+  const [hasUserNote, setHasUserNote] = useState(false);
+
+  useEffect(() => {
+    try {
+      const savedNote = localStorage.getItem(chapterNoteKey);
+      setHasUserNote(!!savedNote);
+    } catch (e) {
+      setHasUserNote(false);
+    }
+  }, [chapterNoteKey]);
+
+  const hasTheologicalCommentary = !!(
+    activeChapterData?.commentary?.overview || 
+    (activeChapterData?.commentary?.keyThemes && activeChapterData.commentary.keyThemes.length > 0)
+  );
+  const hasAnyCommentary = hasTheologicalCommentary || hasUserNote;
+
   // ESTADO DE NARRAÇÃO EM ÁUDIO
   const [audioStatus, setAudioStatus] = useState({ status: 'stopped', isPlaying: false, rate: 1.0 });
   const [speakingVerseNumber, setSpeakingVerseNumber] = useState(null);
@@ -294,14 +313,28 @@ export default function LeitorBiblico({
             <span><span className="hidden min-[380px]:inline">Estudo de </span>{activeBook}</span>
           </button>
 
-          {/* Botão de Comentários do Capítulo */}
+          {/* Botão de Comentários do Capítulo com Indicador Visual */}
           <button
             onClick={() => onOpenCommentary(activeChapterData)}
-            className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 text-xs font-medium text-zinc-700 dark:text-zinc-200 transition-colors shadow-2xs shrink-0"
-            title="Abrir Comentários & Diário Espiritual"
+            className={`inline-flex items-center space-x-1.5 px-2.5 py-1.5 rounded-xl border text-xs font-bold transition-all shrink-0 ${
+              hasAnyCommentary
+                ? 'border-amber-400 bg-amber-50 dark:bg-amber-950/60 text-amber-900 dark:text-amber-200 shadow-sm'
+                : 'border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 text-zinc-700 dark:text-zinc-200 shadow-2xs'
+            }`}
+            title={hasAnyCommentary ? "Comentário expositivo e reflexões disponíveis para este capítulo!" : "Registrar anotação e diário espiritual para este capítulo"}
           >
-            <MessageSquare className="w-3.5 h-3.5 text-amber-600" />
-            <span className="hidden min-[340px]:inline">Comentários</span>
+            <div className="relative">
+              <MessageSquare className={`w-3.5 h-3.5 ${hasAnyCommentary ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-400'}`} />
+              {hasAnyCommentary && (
+                <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+              )}
+            </div>
+            <span>{hasAnyCommentary ? 'Comentários' : 'Anotar'}</span>
+            {hasAnyCommentary && (
+              <span className="text-[9px] font-extrabold px-1 rounded-full bg-amber-500 text-white">
+                ✓
+              </span>
+            )}
           </button>
 
           {/* Botão de Arqueamento (BibleArc) */}
@@ -531,6 +564,37 @@ export default function LeitorBiblico({
           )}
         </article>
       )}
+
+      {/* BANNER INFORMATIVO: COMENTÁRIOS E DIÁRIO ESPIRITUAL DESTE CAPÍTULO */}
+      <div className="p-4 sm:p-5 rounded-3xl bg-white dark:bg-zinc-800/90 sepia:bg-[#f4e4c1]/70 border border-zinc-200 dark:border-zinc-700/80 sepia:border-[#e6d3a7] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs">
+        <div className="flex items-center space-x-3">
+          <span className="text-2xl">{hasAnyCommentary ? '💡' : '✍️'}</span>
+          <div>
+            <div className="flex items-center space-x-2">
+              <h5 className="font-bold text-sm text-zinc-900 dark:text-zinc-100">
+                {hasAnyCommentary ? 'Comentários & Contexto Disponíveis' : 'Diário Espiritual & Anotações'}
+              </h5>
+              {hasAnyCommentary && (
+                <span className="text-[10px] font-extrabold px-1.5 py-0.2 rounded-full bg-amber-500 text-white">
+                  Disponível
+                </span>
+              )}
+            </div>
+            <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5 leading-relaxed">
+              {hasAnyCommentary 
+                ? `Há reflexões e visão expositiva registradas para ${activeBook} ${selectedChapter}.` 
+                : `Registre o que Deus falou ao seu coração durante a leitura de ${activeBook} ${selectedChapter}.`}
+            </p>
+          </div>
+        </div>
+
+        <button
+          onClick={() => onOpenCommentary(activeChapterData)}
+          className="w-full sm:w-auto px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-xs transition-colors whitespace-nowrap shrink-0"
+        >
+          {hasAnyCommentary ? 'Ler Comentários ➔' : 'Abrir Diário ➔'}
+        </button>
+      </div>
 
       {/* 4. CARD DE CONCLUSÃO DO CAPÍTULO ATUAL AO FINAL DA LEITURA */}
       <div className="p-5 sm:p-6 rounded-3xl bg-zinc-100/80 dark:bg-zinc-800 sepia:bg-[#f4e4c1]/60 border border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] flex flex-col sm:flex-row items-center justify-between gap-4">

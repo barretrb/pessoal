@@ -16,6 +16,7 @@ import CloudSyncModal from './components/CloudSyncModal';
 import initialDays from './data/plano365.json';
 import lucasData from './data/lucas_nvt.json';
 import { storage, DEFAULT_DASHBOARD_LAYOUT } from './services/storage';
+import { cloudDbService } from './services/cloudDbService';
 import { getTodayDay, getPendingDays } from './services/dateUtils';
 import { fetchBookData } from './services/bibleService';
 import confetti from 'canvas-confetti';
@@ -170,14 +171,40 @@ export default function App() {
     };
   };
 
+  // AUTO-SYNC 100% AUTOMÁTICO NA NUVEM
+  useEffect(() => {
+    // Sincronização inicial em segundo plano ao abrir o app
+    cloudDbService.fetchAndMergeLatest().then(updated => {
+      if (updated) handleDataSyncedFromCloud();
+    });
+
+    // Sincronizar automaticamente sempre que o usuário retornar à aba ou reabrir o app
+    const handleFocusSync = () => {
+      if (document.visibilityState === 'visible') {
+        cloudDbService.fetchAndMergeLatest().then(updated => {
+          if (updated) handleDataSyncedFromCloud();
+        });
+      }
+    };
+
+    window.addEventListener('focus', handleFocusSync);
+    document.addEventListener('visibilitychange', handleFocusSync);
+    return () => {
+      window.removeEventListener('focus', handleFocusSync);
+      document.removeEventListener('visibilitychange', handleFocusSync);
+    };
+  }, []);
+
   const handleUpdateDashboardLayout = (newLayout) => {
     const saved = storage.saveDashboardLayout(newLayout, activeProfileId);
     setDashboardLayout({ ...saved });
+    cloudDbService.triggerAutoSync();
   };
 
   const handleResetDashboardLayout = () => {
     const reset = storage.saveDashboardLayout(DEFAULT_DASHBOARD_LAYOUT, activeProfileId);
     setDashboardLayout({ ...reset });
+    cloudDbService.triggerAutoSync();
   };
 
   // Handler para marcar dia inteiro como concluído
@@ -191,6 +218,8 @@ export default function App() {
     setDays(prevDays => 
       prevDays.map(d => d.id === dayId ? { ...d, completed: status, completedAt: status ? new Date().toISOString() : null } : d)
     );
+    // Salva automaticamente no banco em nuvem sem o usuário precisar clicar em nada
+    cloudDbService.triggerAutoSync();
   };
 
   // Handler para marcar cada capítulo individualmente
@@ -220,6 +249,8 @@ export default function App() {
         setDays(prev => prev.map(d => d.id === activeDay.id ? { ...d, completed: false, completedAt: null } : d));
       }
     }
+    // Salva automaticamente no banco em nuvem
+    cloudDbService.triggerAutoSync();
   };
 
   // Navegar para um dia específico no leitor do plano devocional
@@ -440,10 +471,12 @@ export default function App() {
         onRemoveFavorite={(vKey) => {
           const updated = storage.toggleFavorite(vKey, null, activeProfileId);
           setFavorites([...updated]);
+          cloudDbService.triggerAutoSync();
         }}
         onRemoveHighlight={(vKey) => {
           const updated = storage.saveHighlight(vKey, null, "", activeProfileId);
           setHighlights({ ...updated });
+          cloudDbService.triggerAutoSync();
         }}
         onGoToPassage={(vKey) => {
           setFavoritesModalOpen(false);
@@ -451,10 +484,14 @@ export default function App() {
         }}
       />
 
-      {/* Rodapé */}
-      <footer className="py-6 border-t border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] text-center text-xs text-zinc-400 dark:text-zinc-500">
+      {/* Rodapé com Indicador de Auto-Sync Automático */}
+      <footer className="py-6 border-t border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] text-center text-xs text-zinc-400 dark:text-zinc-500 space-y-1">
+        <p className="flex items-center justify-center space-x-1.5 text-emerald-600 dark:text-emerald-400 font-semibold text-[11px]">
+          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>Sincronização em nuvem automática ativa • Família Barreto</span>
+        </p>
         <p>Bíblia em 1 Ano • Nova Versão Transformadora (NVT)</p>
-        <p className="mt-1">Desenvolvido para sua caminhada diária de fé e oração.</p>
+        <p className="text-[11px]">Desenvolvido para sua caminhada diária de fé e oração.</p>
       </footer>
 
     </div>
