@@ -8,7 +8,8 @@ import {
   Bookmark, 
   AlertCircle, 
   BookMarked,
-  Library
+  Library,
+  Cloud
 } from 'lucide-react';
 
 export default function Navbar({ 
@@ -25,7 +26,8 @@ export default function Navbar({
   onOpenBibleNav,
   onOpenStudyInfo,
   activeProfile,
-  onOpenProfiles
+  onOpenProfiles,
+  onOpenCloud
 }) {
   // Alternador de tema em 1 clique para mobile (Claro -> Sépia -> Escuro -> Claro)
   const handleCycleTheme = () => {
@@ -130,6 +132,15 @@ export default function Navbar({
           >
             <span className="text-sm">{activeProfile?.avatar || '👤'}</span>
             <span className="hidden lg:inline">{activeProfile?.name || 'Perfil'}</span>
+          </button>
+
+          {/* Botão Sincronização em Nuvem (Multi-Aparelho) */}
+          <button
+            onClick={onOpenCloud}
+            className="p-1.5 sm:p-2 rounded-xl text-sky-600 dark:text-sky-400 hover:bg-sky-50 dark:hover:bg-sky-950/40 border border-sky-200 dark:border-sky-900/60 transition-colors shrink-0"
+            title="Banco de Dados e Sincronização na Nuvem"
+          >
+            <Cloud className="w-4 h-4" />
           </button>
 
           {/* Favoritos (Apenas Desktop - no Mobile fica na Bottom Nav) */}

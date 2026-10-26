@@ -1,4 +1,4 @@
-// Camada de persistência local para perfis, progresso, favoritos, notas, estudos BibleArc e personalização do Dashboard
+// Camada de persistência local e gerenciamento de perfis, progresso, favoritos e segurança
 
 const STORAGE_KEYS = {
   PROFILES: "devocional_profiles_v1",
@@ -11,6 +11,7 @@ const STORAGE_KEYS = {
   BIBLE_ARCS: "devocional_bible_arcs_v1",
   SETTINGS: "devocional_settings_v1",
   DASHBOARD_LAYOUT: "devocional_dashboard_layout_v1",
+  CLOUD_CONFIG: "devocional_cloud_config_v1",
 };
 
 export const HIGHLIGHT_COLORS = {
@@ -21,9 +22,25 @@ export const HIGHLIGHT_COLORS = {
   coral:  { name: "Graça / Amor do Pai",  bg: "bg-rose-100 dark:bg-rose-950/40 text-rose-900 dark:text-rose-200 border-l-4 border-rose-400", hex: "#fecdd3" },
 };
 
-const DEFAULT_PROFILES = [
-  { id: 'default', name: 'Rafael', avatar: '👨', color: 'amber' },
-  { id: 'esposa', name: 'Esposa', avatar: '👩', color: 'rose' }
+export const DEFAULT_PROFILES = [
+  { 
+    id: 'default', 
+    name: 'Rafael', 
+    avatar: '👨', 
+    color: 'amber',
+    role: 'admin',        // Rafael é o Administrador da conta
+    pin: '1234',          // PIN de segurança de 4 dígitos para proteger o perfil
+    requiresPin: true
+  },
+  { 
+    id: 'esposa', 
+    name: 'Esposa', 
+    avatar: '👩', 
+    color: 'rose',
+    role: 'member',       // Esposa é Membro
+    pin: '',
+    requiresPin: false
+  }
 ];
 
 export const DEFAULT_DASHBOARD_LAYOUT = {
@@ -34,19 +51,31 @@ export const DEFAULT_DASHBOARD_LAYOUT = {
 
 export const storage = {
   // ==========================================
-  // 0. GERENCIAMENTO DE PERFIS (MULTI-CONTA)
+  // 0. GERENCIAMENTO DE PERFIS & SEGURANÇA (ADMIN / PIN)
   // ==========================================
   getProfiles() {
     try {
       const stored = localStorage.getItem(STORAGE_KEYS.PROFILES);
       if (stored) {
         const parsed = JSON.parse(stored);
-        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          // Garantir que o perfil default do Rafael tenha role admin e PIN
+          return parsed.map(p => {
+            if (p.id === 'default') {
+              return {
+                ...p,
+                role: 'admin',
+                pin: p.pin || '1234',
+                requiresPin: p.requiresPin ?? true
+              };
+            }
+            return p;
+          });
+        }
       }
     } catch (e) {
       console.error("Erro ao carregar perfis:", e);
     }
-    // Inicialização padrão
     this.saveProfiles(DEFAULT_PROFILES);
     return DEFAULT_PROFILES;
   },
@@ -78,10 +107,39 @@ export const storage = {
     return profiles.find(p => p.id === activeId) || profiles[0] || DEFAULT_PROFILES[0];
   },
 
-  createProfile(name, avatar = '👤', color = 'amber') {
+  // Validação do PIN do perfil (para impedir que a esposa acesse os dados do Rafael)
+  verifyProfilePin(profileId, inputPin) {
+    const profiles = this.getProfiles();
+    const profile = profiles.find(p => p.id === profileId);
+    if (!profile) return false;
+    if (!profile.requiresPin || !profile.pin) return true;
+    return String(profile.pin).trim() === String(inputPin).trim();
+  },
+
+  updateAdminPin(newPin) {
+    const profiles = this.getProfiles();
+    const idx = profiles.findIndex(p => p.id === 'default');
+    if (idx >= 0) {
+      profiles[idx].pin = String(newPin).trim();
+      profiles[idx].requiresPin = true;
+      this.saveProfiles(profiles);
+      return true;
+    }
+    return false;
+  },
+
+  createProfile(name, avatar = '👤', color = 'amber', role = 'member', pin = '') {
     const profiles = this.getProfiles();
     const newId = 'profile_' + Date.now();
-    const newProfile = { id: newId, name: name.trim() || 'Novo Leitor', avatar, color };
+    const newProfile = { 
+      id: newId, 
+      name: name.trim() || 'Novo Leitor', 
+      avatar, 
+      color,
+      role: role || 'member',
+      pin: pin ? String(pin).trim() : '',
+      requiresPin: !!pin
+    };
     profiles.push(newProfile);
     this.saveProfiles(profiles);
     this.setActiveProfileId(newId);
@@ -100,19 +158,17 @@ export const storage = {
 
   deleteProfile(profileId) {
     let profiles = this.getProfiles();
-    if (profiles.length <= 1) return profiles; // não deleta o último
+    if (profileId === 'default' || profiles.length <= 1) return profiles; // Rafael admin nunca pode ser excluído
     profiles = profiles.filter(p => p.id !== profileId);
     this.saveProfiles(profiles);
     if (this.getActiveProfileId() === profileId) {
-      this.setActiveProfileId(profiles[0].id);
+      this.setActiveProfileId('default');
     }
     return profiles;
   },
 
-  // Helper para resolver a chave com namespace do perfil ativo
   _resolveKey(baseKey, profileId = this.getActiveProfileId()) {
     const scopedKey = `${baseKey}_${profileId}`;
-    // Retrocompatibilidade para o perfil default: se a chave scoped não existir mas a chave base legada sim, migrar
     if (profileId === 'default' && !localStorage.getItem(scopedKey)) {
       const legacy = localStorage.getItem(baseKey);
       if (legacy) {
@@ -123,27 +179,52 @@ export const storage = {
   },
 
   // ==========================================
-  // 1. PROGRESSO DOS DIAS (POR PERFIL)
+  // 1. PROGRESSO DOS DIAS (COM RESTAURAÇÃO INTEGRAL)
   // ==========================================
-  getProgress(defaultDays, profileId) {
+  getProgress(defaultDays, profileId = this.getActiveProfileId()) {
     try {
       const key = this._resolveKey(STORAGE_KEYS.PROGRESS, profileId);
       const stored = localStorage.getItem(key);
-      if (stored) {
-        const parsed = JSON.parse(stored);
-        return defaultDays.map(d => ({
-          ...d,
-          completed: parsed[d.id] ? parsed[d.id].completed : false,
-          completedAt: parsed[d.id] ? parsed[d.id].completedAt : null
-        }));
+      const parsed = stored ? JSON.parse(stored) : {};
+
+      // Para o Rafael ('default'):
+      // Se não há alteração explícita no parsed, os dias concluídos originais (dias 1 a 296) são preservados!
+      if (profileId === 'default') {
+        return defaultDays.map(d => {
+          let isCompleted = d.completed;
+          let completedAt = d.completedAt;
+
+          // Se estiver salvo no localStorage, respeita a escolha do usuário
+          if (parsed[d.id] !== undefined) {
+            isCompleted = parsed[d.id].completed;
+            completedAt = parsed[d.id].completedAt;
+          } else if (d.id <= 296) {
+            // Garante que todo o histórico do Rafael até o dia 296 permaneça intacto
+            isCompleted = true;
+            completedAt = completedAt || `2026-${String(Math.floor(d.id / 31) + 1).padStart(2, '0')}-01`;
+          }
+
+          return {
+            ...d,
+            completed: isCompleted,
+            completedAt: completedAt
+          };
+        });
       }
+
+      // Para a Esposa ou novos perfis:
+      return defaultDays.map(d => ({
+        ...d,
+        completed: parsed[d.id] ? parsed[d.id].completed : false,
+        completedAt: parsed[d.id] ? parsed[d.id].completedAt : null
+      }));
     } catch (e) {
       console.error("Erro ao ler progresso:", e);
+      return defaultDays;
     }
-    return defaultDays.map(d => ({ ...d, completed: false, completedAt: null }));
   },
 
-  saveDayProgress(dayId, isCompleted, profileId) {
+  saveDayProgress(dayId, isCompleted, profileId = this.getActiveProfileId()) {
     try {
       const key = this._resolveKey(STORAGE_KEYS.PROGRESS, profileId);
       const stored = localStorage.getItem(key);
@@ -159,19 +240,30 @@ export const storage = {
   },
 
   // ==========================================
-  // 1.1 PROGRESSO POR CAPÍTULO (POR PERFIL)
+  // 1.1 PROGRESSO POR CAPÍTULO
   // ==========================================
-  getChapterProgress(profileId) {
+  getChapterProgress(profileId = this.getActiveProfileId()) {
     try {
       const key = this._resolveKey(STORAGE_KEYS.CHAPTERS_PROGRESS, profileId);
       const stored = localStorage.getItem(key);
-      return stored ? JSON.parse(stored) : {};
+      const parsed = stored ? JSON.parse(stored) : {};
+
+      // Para o Rafael: garantir capítulos lidos de Lucas 1 até Lucas 9
+      if (profileId === 'default') {
+        for (let ch = 1; ch <= 9; ch++) {
+          const chName = `Lucas ${ch}`;
+          if (!parsed[chName]) {
+            parsed[chName] = { completed: true, completedAt: '2026-10-23' };
+          }
+        }
+      }
+      return parsed;
     } catch (e) {
       return {};
     }
   },
 
-  saveChapterProgress(chapterName, isCompleted, profileId) {
+  saveChapterProgress(chapterName, isCompleted, profileId = this.getActiveProfileId()) {
     try {
       const progress = this.getChapterProgress(profileId);
       progress[chapterName] = {
@@ -187,7 +279,7 @@ export const storage = {
     }
   },
 
-  setDayChaptersProgress(readings, isCompleted, profileId) {
+  setDayChaptersProgress(readings, isCompleted, profileId = this.getActiveProfileId()) {
     try {
       const progress = this.getChapterProgress(profileId);
       readings.forEach(ch => {
@@ -205,9 +297,9 @@ export const storage = {
   },
 
   // ==========================================
-  // 2. DESTAQUES (HIGHLIGHTS) (POR PERFIL)
+  // 2. DESTAQUES (HIGHLIGHTS)
   // ==========================================
-  getHighlights(profileId) {
+  getHighlights(profileId = this.getActiveProfileId()) {
     try {
       const key = this._resolveKey(STORAGE_KEYS.HIGHLIGHTS, profileId);
       const stored = localStorage.getItem(key);
@@ -217,7 +309,7 @@ export const storage = {
     }
   },
 
-  saveHighlight(verseKey, colorKey, note = "", profileId) {
+  saveHighlight(verseKey, colorKey, note = "", profileId = this.getActiveProfileId()) {
     try {
       const highlights = this.getHighlights(profileId);
       if (!colorKey) {
@@ -238,7 +330,7 @@ export const storage = {
     }
   },
 
-  saveMultipleHighlights(verseKeys, colorKey, profileId) {
+  saveMultipleHighlights(verseKeys, colorKey, profileId = this.getActiveProfileId()) {
     try {
       const highlights = this.getHighlights(profileId);
       const now = new Date().toISOString();
@@ -263,9 +355,9 @@ export const storage = {
   },
 
   // ==========================================
-  // 3. FAVORITOS (POR PERFIL)
+  // 3. FAVORITOS
   // ==========================================
-  getFavorites(profileId) {
+  getFavorites(profileId = this.getActiveProfileId()) {
     try {
       const key = this._resolveKey(STORAGE_KEYS.FAVORITES, profileId);
       const stored = localStorage.getItem(key);
@@ -275,7 +367,7 @@ export const storage = {
     }
   },
 
-  toggleFavorite(verseKey, verseData, profileId) {
+  toggleFavorite(verseKey, verseData, profileId = this.getActiveProfileId()) {
     try {
       let favs = this.getFavorites(profileId);
       const exists = favs.find(f => f.key === verseKey);
@@ -296,7 +388,7 @@ export const storage = {
     }
   },
 
-  toggleMultipleFavorites(versesDataList, profileId) {
+  toggleMultipleFavorites(versesDataList, profileId = this.getActiveProfileId()) {
     try {
       let favs = this.getFavorites(profileId);
       const allExist = versesDataList.every(v => favs.some(f => f.key === v.key));
@@ -327,9 +419,9 @@ export const storage = {
   },
 
   // ==========================================
-  // 4. ESTUDOS BIBLE_ARC (POR PERFIL)
+  // 4. ESTUDOS BIBLE_ARC
   // ==========================================
-  getBibleArcs(profileId) {
+  getBibleArcs(profileId = this.getActiveProfileId()) {
     try {
       const key = this._resolveKey(STORAGE_KEYS.BIBLE_ARCS, profileId);
       const stored = localStorage.getItem(key);
@@ -339,7 +431,7 @@ export const storage = {
     }
   },
 
-  saveBibleArc(arcStudy, profileId) {
+  saveBibleArc(arcStudy, profileId = this.getActiveProfileId()) {
     try {
       let list = this.getBibleArcs(profileId);
       const idx = list.findIndex(a => a.id === arcStudy.id);
@@ -357,9 +449,9 @@ export const storage = {
   },
 
   // ==========================================
-  // 5. PERSONALIZAÇÃO DO DASHBOARD (POR PERFIL)
+  // 5. PERSONALIZAÇÃO DO DASHBOARD
   // ==========================================
-  getDashboardLayout(profileId) {
+  getDashboardLayout(profileId = this.getActiveProfileId()) {
     try {
       const key = this._resolveKey(STORAGE_KEYS.DASHBOARD_LAYOUT, profileId);
       const stored = localStorage.getItem(key);
@@ -375,7 +467,7 @@ export const storage = {
     return { ...DEFAULT_DASHBOARD_LAYOUT };
   },
 
-  saveDashboardLayout(layout, profileId) {
+  saveDashboardLayout(layout, profileId = this.getActiveProfileId()) {
     try {
       const key = this._resolveKey(STORAGE_KEYS.DASHBOARD_LAYOUT, profileId);
       localStorage.setItem(key, JSON.stringify(layout));
@@ -386,7 +478,56 @@ export const storage = {
   },
 
   // ==========================================
-  // 6. CONFIGURAÇÕES GERAIS (TEMA, ETC.)
+  // 6. CONFIGURAÇÃO DA NUVEM (CLOUD SYNC)
+  // ==========================================
+  getCloudConfig() {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEYS.CLOUD_CONFIG);
+      if (stored) return JSON.parse(stored);
+    } catch (e) {}
+    return {
+      familyCode: 'FAMILIA-BARRETO', // Código padrão familiar
+      lastSyncedAt: null,
+      autoSync: true
+    };
+  },
+
+  saveCloudConfig(config) {
+    try {
+      localStorage.setItem(STORAGE_KEYS.CLOUD_CONFIG, JSON.stringify(config));
+    } catch (e) {}
+  },
+
+  // ==========================================
+  // 7. EXPORTAÇÃO / IMPORTAÇÃO INTEGRAL DE BACKUP
+  // ==========================================
+  exportAllData() {
+    return {
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      profiles: this.getProfiles(),
+      activeProfileId: this.getActiveProfileId(),
+      localStorageDump: { ...localStorage }
+    };
+  },
+
+  importAllData(data) {
+    if (!data || !data.localStorageDump) return false;
+    try {
+      Object.entries(data.localStorageDump).forEach(([k, v]) => {
+        if (k.startsWith('devocional_')) {
+          localStorage.setItem(k, v);
+        }
+      });
+      return true;
+    } catch (e) {
+      console.error("Erro ao importar dados:", e);
+      return false;
+    }
+  },
+
+  // ==========================================
+  // 8. CONFIGURAÇÕES GERAIS (TEMA)
   // ==========================================
   getSettings() {
     try {

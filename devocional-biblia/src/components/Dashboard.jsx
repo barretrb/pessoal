@@ -18,7 +18,8 @@ import {
   BookMarked,
   Library,
   Sliders,
-  Users
+  Users,
+  Cloud
 } from 'lucide-react';
 import { getMediaForDay } from '../data/dailyMedia';
 import { formatDateBR } from '../services/dateUtils';
@@ -38,7 +39,8 @@ export default function Dashboard({
   onOpenProfiles,
   dashboardLayout,
   onUpdateDashboardLayout,
-  onResetDashboardLayout
+  onResetDashboardLayout,
+  onOpenCloud
 }) {
   const [filter, setFilter] = useState('all'); // all, pending, completed
   const [showMusicPlayer, setShowMusicPlayer] = useState(false);
@@ -551,7 +553,7 @@ export default function Dashboard({
         {isCol ? (
           <div 
             onClick={() => toggleCollapse('video')}
-            className="p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-850 cursor-pointer flex items-center justify-between hover:bg-zinc-50 transition-colors"
+            className="p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-800 cursor-pointer flex items-center justify-between hover:bg-zinc-50 dark:hover:bg-zinc-750 transition-colors"
           >
             <div className="flex items-center space-x-3">
               <span className="text-xl">🎬</span>
@@ -651,7 +653,7 @@ export default function Dashboard({
         {isCol ? (
           <div 
             onClick={() => toggleCollapse('calendar')}
-            className="p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-850 cursor-pointer flex items-center justify-between hover:bg-zinc-50 transition-colors"
+            className="p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-800 cursor-pointer flex items-center justify-between hover:bg-zinc-50 dark:hover:bg-zinc-750 transition-colors"
           >
             <div className="flex items-center space-x-3">
               <span className="text-xl">📅</span>
@@ -795,15 +797,27 @@ export default function Dashboard({
           </div>
         </div>
 
-        {/* Botão de Personalizar a Tela Inicial */}
-        <button
-          onClick={() => setIsCustomizeOpen(true)}
-          className="inline-flex items-center space-x-1.5 px-3.5 py-2 rounded-2xl bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-xs font-bold transition-colors"
-          title="Personalizar quais caixas exibir e alterar a ordem da tela inicial"
-        >
-          <Sliders className="w-3.5 h-3.5 text-amber-500" />
-          <span>Personalizar Tela Inicial</span>
-        </button>
+        <div className="flex items-center space-x-2">
+          {/* Botão de Nuvem / Banco de Dados */}
+          <button
+            onClick={onOpenCloud}
+            className="inline-flex items-center space-x-1.5 px-3 py-2 rounded-2xl bg-sky-50 dark:bg-sky-950/50 text-sky-700 dark:text-sky-300 hover:bg-sky-100 border border-sky-200 dark:border-sky-900/60 text-xs font-bold transition-colors"
+            title="Sincronizar dados na nuvem para múltiplos aparelhos"
+          >
+            <Cloud className="w-3.5 h-3.5 text-sky-500" />
+            <span className="hidden sm:inline">Nuvem & Sync</span>
+          </button>
+
+          {/* Botão de Personalizar a Tela Inicial */}
+          <button
+            onClick={() => setIsCustomizeOpen(true)}
+            className="inline-flex items-center space-x-1.5 px-3.5 py-2 rounded-2xl bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-xs font-bold transition-colors"
+            title="Personalizar quais caixas exibir e alterar a ordem da tela inicial"
+          >
+            <Sliders className="w-3.5 h-3.5 text-amber-500" />
+            <span>Personalizar Tela</span>
+          </button>
+        </div>
       </div>
 
       {/* RENDERIZAÇÃO DAS CAIXAS NA ORDEM DEFINIDA PELO USUÁRIO */}

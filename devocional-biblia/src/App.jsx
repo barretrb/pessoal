@@ -10,6 +10,8 @@ import DestaquesModal from './components/DestaquesModal';
 import NavegacaoBibliaModal from './components/NavegacaoBibliaModal';
 import EstudoLivroModal from './components/EstudoLivroModal';
 import PerfilModal from './components/PerfilModal';
+import PinAuthModal from './components/PinAuthModal';
+import CloudSyncModal from './components/CloudSyncModal';
 
 import initialDays from './data/plano365.json';
 import lucasData from './data/lucas_nvt.json';
@@ -69,6 +71,12 @@ export default function App() {
   const [bibleNavOpen, setBibleNavOpen] = useState(false);
   const [studyModalData, setStudyModalData] = useState({ isOpen: false, bookName: 'Lucas' });
 
+  // Modal de Autenticação por PIN (Proteção do Rafael Admin contra acesso da esposa)
+  const [pinModalData, setPinModalData] = useState({ isOpen: false, targetProfile: null });
+
+  // Modal de Nuvem & Sincronização em múltiplos aparelhos
+  const [cloudModalOpen, setCloudModalOpen] = useState(false);
+
   // Favoritos e Highlights do perfil ativo
   const [favorites, setFavorites] = useState(() => storage.getFavorites(activeProfileId));
   const [highlights, setHighlights] = useState(() => storage.getHighlights(activeProfileId));
@@ -96,8 +104,40 @@ export default function App() {
     setDashboardLayout(storage.getDashboardLayout(newId));
   };
 
-  const handleCreateProfile = (name, avatar, color) => {
-    const newProf = storage.createProfile(name, avatar, color);
+  // Solicitação de troca de perfil com verificação de PIN de segurança
+  const handleSelectProfileRequest = (targetProfile) => {
+    if (targetProfile.id === activeProfileId) {
+      setProfileModalOpen(false);
+      return;
+    }
+
+    // Se o perfil de destino requer PIN (ex: Rafael Admin)
+    if (targetProfile.requiresPin && targetProfile.pin) {
+      setPinModalData({ isOpen: true, targetProfile });
+    } else {
+      handleSelectProfile(targetProfile.id);
+      setProfileModalOpen(false);
+    }
+  };
+
+  const handlePinSuccess = (enteredPin) => {
+    if (!pinModalData.targetProfile) return false;
+    const isValid = storage.verifyProfilePin(pinModalData.targetProfile.id, enteredPin);
+    if (isValid) {
+      handleSelectProfile(pinModalData.targetProfile.id);
+      setProfileModalOpen(false);
+      return true;
+    }
+    return false;
+  };
+
+  const handleUpdateAdminPin = (newPin) => {
+    storage.updateAdminPin(newPin);
+    setProfiles([...storage.getProfiles()]);
+  };
+
+  const handleCreateProfile = (name, avatar, color, role = 'member', pin = '') => {
+    const newProf = storage.createProfile(name, avatar, color, role, pin);
     setProfiles([...storage.getProfiles()]);
     handleSelectProfile(newProf.id);
   };
@@ -107,6 +147,18 @@ export default function App() {
     setProfiles([...updated]);
     const currentActive = storage.getActiveProfileId();
     handleSelectProfile(currentActive);
+  };
+
+  const handleDataSyncedFromCloud = () => {
+    const profs = storage.getProfiles();
+    const actId = storage.getActiveProfileId();
+    setProfiles(profs);
+    setActiveProfileId(actId);
+    setDays(storage.getProgress(initialDays, actId));
+    setChapterProgress(storage.getChapterProgress(actId));
+    setFavorites(storage.getFavorites(actId));
+    setHighlights(storage.getHighlights(actId));
+    setDashboardLayout(storage.getDashboardLayout(actId));
   };
 
   const getProfileProgressStats = (pId) => {
@@ -231,6 +283,7 @@ export default function App() {
         onOpenStudyInfo={handleOpenStudyInfo}
         activeProfile={activeProfile}
         onOpenProfiles={() => setProfileModalOpen(true)}
+        onOpenCloud={() => setCloudModalOpen(true)}
       />
 
       {/* Conteúdo Principal */}
@@ -251,6 +304,7 @@ export default function App() {
             dashboardLayout={dashboardLayout}
             onUpdateDashboardLayout={handleUpdateDashboardLayout}
             onResetDashboardLayout={handleResetDashboardLayout}
+            onOpenCloud={() => setCloudModalOpen(true)}
           />
         ) : (
           <LeitorBiblico
@@ -306,16 +360,32 @@ export default function App() {
         pendingDayId={pendingDayId}
       />
 
-      {/* Modal Multi-Perfil (Rafael & Esposa / Família) */}
+      {/* Modal Multi-Perfil (Gerenciamento de Contas e Admin) */}
       <PerfilModal
         isOpen={profileModalOpen}
         onClose={() => setProfileModalOpen(false)}
         profiles={profiles}
         activeProfileId={activeProfileId}
-        onSelectProfile={handleSelectProfile}
+        onSelectProfileRequest={handleSelectProfileRequest}
         onCreateProfile={handleCreateProfile}
         onDeleteProfile={handleDeleteProfile}
+        onUpdateAdminPin={handleUpdateAdminPin}
         getProfileProgressStats={getProfileProgressStats}
+      />
+
+      {/* Modal de Autenticação por PIN (Proteção do Rafael Admin) */}
+      <PinAuthModal
+        isOpen={pinModalData.isOpen}
+        onClose={() => setPinModalData({ isOpen: false, targetProfile: null })}
+        targetProfileName={pinModalData.targetProfile?.name || 'Administrador'}
+        onSuccess={handlePinSuccess}
+      />
+
+      {/* Modal de Sincronização em Nuvem (Multi-Aparelho & Backup) */}
+      <CloudSyncModal
+        isOpen={cloudModalOpen}
+        onClose={() => setCloudModalOpen(false)}
+        onDataSynced={handleDataSyncedFromCloud}
       />
 
       {/* Modal Navegação Livre da Bíblia */}
