@@ -37,6 +37,8 @@ const defaultDays = JSON.parse(readFileSync(planoPath, 'utf-8'));
 // Importar módulo de storage
 const { storage, DEFAULT_PROFILES, DEFAULT_DASHBOARD_LAYOUT } = await import('../src/services/storage.js');
 const { cloudDbService } = await import('../src/services/cloudDbService.js');
+const { bibleCommentaryService } = await import('../src/services/bibleCommentaryService.js');
+const { bibleArcEngine } = await import('../src/services/bibleArcEngine.js');
 
 test('QA Test 1: Restauração Integral do Histórico de Dias Concluídos do Rafael', () => {
   localStorage.clear();
@@ -207,4 +209,41 @@ test('QA Test 6: Arqueamento (BibleArc) Dinâmico para o Livro e Capítulo Abert
   assert.ok(!propositions.some(p => p.text.includes('Peçam, e lhes será dado')), 'Não deve conter o texto de Lucas 11');
 
   console.log('✓ QA Test 6 Aprovado: Arqueamento BibleArc contextualizado para o livro e capítulo ativos.');
+});
+
+test('QA Test 7: Motor BibleArc Pré-Calculado & Imediato (Sem Trabalho Manual)', () => {
+  // Testar Juízes 1
+  const juizesStudy = bibleArcEngine.getStudy('Juízes 1');
+  assert.ok(juizesStudy, 'Estudo de Juízes 1 deve existir');
+  assert.ok(juizesStudy.propositions.length >= 4, 'Juízes 1 deve ter no mínimo 4 proposições');
+  assert.ok(juizesStudy.arcs.length >= 3, 'Juízes 1 deve ter arcos lógicos pré-traçados');
+  assert.equal(juizesStudy.mainProp, 2, 'A tese central deve ser a proposição 2');
+  assert.ok(juizesStudy.theologicalSynthesis.length > 50, 'Deve conter síntese teológica pronta');
+  assert.ok(juizesStudy.practicalApplication.length > 50, 'Deve conter aplicação prática pronta');
+
+  // Testar geração dinâmica para outro livro aleatório
+  const randomStudy = bibleArcEngine.getStudy('Atos 2', '1 Quando chegou o dia de Pentecostes, estavam todos reunidos num só lugar. 2 De repente, veio do céu um som como de vento forte.');
+  assert.ok(randomStudy.propositions.length >= 2, 'Deve decompor versículos de qualquer livro');
+  assert.ok(randomStudy.arcs.length >= 1, 'Deve traçar arcos automáticos de discurso');
+
+  console.log('✓ QA Test 7 Aprovado: Motor BibleArc entrega diagramas e sínteses 100% prontos.');
+});
+
+test('QA Test 8: Comentários Teológicos Expositivos Além de Lucas', () => {
+  // Testar Juízes 1
+  const juizesComm = bibleCommentaryService.getCommentary('Juízes', '1');
+  assert.ok(juizesComm.title.includes('Juízes 1'), 'Título do comentário deve ser de Juízes 1');
+  assert.ok(juizesComm.overview.length > 80, 'Visão geral expositiva deve ser aprofundada');
+  assert.ok(juizesComm.keyThemes.length >= 3, 'Deve conter ao menos 3 temas chave');
+  assert.ok(juizesComm.christocentricKey, 'Deve conter a chave cristocêntrica');
+
+  // Testar Gênesis 1
+  const genComm = bibleCommentaryService.getCommentary('Gênesis', '1');
+  assert.ok(genComm.title.includes('Gênesis 1'), 'Título deve ser de Gênesis 1');
+
+  // Testar Romanos 8
+  const romComm = bibleCommentaryService.getCommentary('Romanos', '8');
+  assert.ok(romComm.overview.includes('Espírito') || romComm.overview.includes('Cristo'), 'Deve conter teologia paulina');
+
+  console.log('✓ QA Test 8 Aprovado: Comentários teológicos disponíveis para livros de toda a Bíblia.');
 });

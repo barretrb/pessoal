@@ -105,8 +105,8 @@ export default function PerfilModal({
                   onClick={() => onSelectProfileRequest(p)}
                   className={`p-3.5 sm:p-4 rounded-2xl border-2 transition-all cursor-pointer flex items-center justify-between group ${
                     isActive
-                      ? 'border-amber-500 bg-amber-50/70 dark:bg-amber-950/30 shadow-xs'
-                      : 'border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 bg-white dark:bg-zinc-850'
+                      ? 'border-amber-500 bg-amber-50/70 dark:bg-amber-950/40 shadow-xs'
+                      : 'border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 bg-zinc-50 dark:bg-zinc-800/90'
                   }`}
                 >
                   <div className="flex items-center space-x-3 min-w-0">

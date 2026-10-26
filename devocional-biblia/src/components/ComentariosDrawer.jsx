@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { X, BookOpen, MessageSquare, Save, Check, Sparkles } from 'lucide-react';
+import { X, BookOpen, MessageSquare, Save, Check, Sparkles, Heart } from 'lucide-react';
 import { storage } from '../services/storage';
+import { bibleCommentaryService } from '../services/bibleCommentaryService';
 
 export default function ComentariosDrawer({ isOpen, onClose, chapterData }) {
   if (!isOpen) return null;
 
   const bookName = chapterData?.book || 'Capítulo';
-  const chapterNum = chapterData?.chapter || '';
+  const chapterNum = chapterData?.chapter || '1';
 
-  const commentary = chapterData?.commentary || {
-    title: `${bookName} ${chapterNum}`.trim(),
-    overview: 'Notas teológicas e comentários expositivos ainda não incluídos para este trecho bíblico. Use o seu Diário Espiritual abaixo para registrar suas orações, aprendizados e meditações deste capítulo.',
-    keyThemes: []
-  };
+  // Obtém o comentário teológico do serviço ou do chapterData
+  const commentary = (chapterData?.commentary?.overview)
+    ? chapterData.commentary
+    : bibleCommentaryService.getCommentary(bookName, chapterNum);
 
   const noteKey = `note_chapter_${chapterData?.book}_${chapterData?.chapter}`;
   const [userNote, setUserNote] = useState('');
@@ -91,6 +91,19 @@ export default function ComentariosDrawer({ isOpen, onClose, chapterData }) {
                     </span>
                   ))}
                 </div>
+              </div>
+            )}
+
+            {/* Chave Cristocêntrica */}
+            {commentary.christocentricKey && (
+              <div className="p-3.5 rounded-2xl bg-gradient-to-r from-red-50/70 to-amber-50/70 dark:from-red-950/25 dark:to-amber-950/25 border border-red-200/60 dark:border-red-900/40 space-y-1.5">
+                <span className="text-xs font-bold uppercase tracking-wider text-red-700 dark:text-red-400 flex items-center space-x-1.5">
+                  <Heart className="w-3.5 h-3.5 fill-red-500 text-red-500" />
+                  <span>Conexão Cristocêntrica & Redentora</span>
+                </span>
+                <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed font-scripture">
+                  {commentary.christocentricKey}
+                </p>
               </div>
             )}
 

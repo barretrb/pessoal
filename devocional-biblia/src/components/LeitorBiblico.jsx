@@ -22,6 +22,7 @@ import confetti from 'canvas-confetti';
 import { HIGHLIGHT_COLORS, storage } from '../services/storage';
 import { getMediaForDay } from '../data/dailyMedia';
 import { speechService } from '../services/speechService';
+import { bibleCommentaryService } from '../services/bibleCommentaryService';
 import AudioPlayerBar from './AudioPlayerBar';
 
 function parseReading(str) {
@@ -117,7 +118,7 @@ export default function LeitorBiblico({
 
   const hasTheologicalCommentary = !!(
     activeChapterData?.commentary?.overview || 
-    (activeChapterData?.commentary?.keyThemes && activeChapterData.commentary.keyThemes.length > 0)
+    bibleCommentaryService.getCommentary(activeBook, selectedChapter)
   );
   const hasAnyCommentary = hasTheologicalCommentary || hasUserNote;
 

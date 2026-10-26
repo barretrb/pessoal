@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { BIBLE_ARC_RELATIONS } from '../data/bibleArcRelations';
 import { storage } from '../services/storage';
+import { bibleArcEngine } from '../services/bibleArcEngine';
 
 // Exemplos didáticos consagrados na exegese bíblica
 const PRESETS = [
@@ -74,88 +75,63 @@ const PRESETS = [
 export default function BibleArcModal({ isOpen, onClose, initialPassage, initialText }) {
   if (!isOpen) return null;
 
-  // Função pura para quebrar o texto bíblico em proposições lógicas
-  const parseTextToPropositions = (rawText) => {
-    if (!rawText || typeof rawText !== 'string' || rawText.trim().length === 0) return [];
-
-    const parts = rawText
-      .split(/(?<=[.;!?:])\s+/)
-      .map(t => t.replace(/^\d+\s*/, '').trim()) // limpa numeração de versículo inicial
-      .filter(t => t.length > 0);
-
-    return parts.map((text, idx) => ({
-      id: `p${idx + 1}`,
-      number: idx + 1,
-      text
-    }));
-  };
-
-  const getInitialPropositions = () => {
-    if (initialText && initialText.trim().length > 0) {
-      return parseTextToPropositions(initialText);
-    }
+  // Obtém o estudo de arqueamento pronto e estruturado
+  const getInitialStudy = () => {
     if (initialPassage) {
       try {
         const savedStudies = storage.getBibleArcs ? storage.getBibleArcs() : [];
         const existing = savedStudies.find(s => s.passage === initialPassage);
-        if (existing?.propositions?.length) return existing.propositions;
+        if (existing?.propositions?.length) return existing;
       } catch (e) {}
-      return [];
+
+      // Busca ou gera estudo pronto e completo do motor BibleArc
+      return bibleArcEngine.getStudy(initialPassage, initialText);
     }
-    return PRESETS[0].propositions;
+    return PRESETS[0];
   };
 
+  const initialStudy = getInitialStudy();
+
   const [activeTab, setActiveTab] = useState('diagram'); // 'diagram' | 'analysis' | 'result'
-  const [passageName, setPassageName] = useState(initialPassage || 'Lucas 11:9-10');
-  const [title, setTitle] = useState(initialPassage ? `Arqueamento: ${initialPassage}` : 'Estudo de Arqueamento (BibleArc)');
-  const [propositions, setPropositions] = useState(getInitialPropositions);
-  const [arcs, setArcs] = useState(() => (initialText || initialPassage) ? [] : PRESETS[0].arcs);
-  const [mainProp, setMainProp] = useState(1);
-  const [theologicalSynthesis, setTheologicalSynthesis] = useState(() => (initialText || initialPassage) ? '' : PRESETS[0].theologicalSynthesis);
-  const [practicalApplication, setPracticalApplication] = useState(() => (initialText || initialPassage) ? '' : PRESETS[0].practicalApplication);
+  const [passageName, setPassageName] = useState(initialStudy.passage || initialPassage || 'Lucas 11:9-10');
+  const [title, setTitle] = useState(initialStudy.title || `Arqueamento: ${initialPassage}`);
+  const [propositions, setPropositions] = useState(initialStudy.propositions || []);
+  const [arcs, setArcs] = useState(initialStudy.arcs || []);
+  const [mainProp, setMainProp] = useState(initialStudy.mainProp || 1);
+  const [theologicalSynthesis, setTheologicalSynthesis] = useState(initialStudy.theologicalSynthesis || '');
+  const [practicalApplication, setPracticalApplication] = useState(initialStudy.practicalApplication || '');
 
   // Sincroniza sempre que a passagem ou texto mudar (ex: ao abrir Juízes 1)
   useEffect(() => {
-    if (initialPassage) {
-      setPassageName(initialPassage);
-      setTitle(`Arqueamento: ${initialPassage}`);
+    if (!initialPassage && !initialText) return;
 
-      // Verifica se o usuário já salvou um estudo desta passagem anteriormente
-      try {
-        const savedStudies = storage.getBibleArcs ? storage.getBibleArcs() : [];
-        const existing = savedStudies.find(s => s.passage === initialPassage);
-        if (existing) {
-          setPropositions(existing.propositions || []);
-          setArcs(existing.arcs || []);
-          setMainProp(existing.mainProp || 1);
-          setTheologicalSynthesis(existing.theologicalSynthesis || '');
-          setPracticalApplication(existing.practicalApplication || '');
-          return;
-        }
-      } catch (e) {}
+    const currentPassage = initialPassage || 'Lucas 11:9-10';
 
-      if (initialText && initialText.trim().length > 0) {
-        const generated = parseTextToPropositions(initialText);
-        setPropositions(generated);
-        setArcs([]);
-        setMainProp(1);
-        setTheologicalSynthesis('');
-        setPracticalApplication('');
-      } else {
-        setPropositions([]);
-        setArcs([]);
-        setMainProp(1);
-        setTheologicalSynthesis('');
-        setPracticalApplication('');
+    // 1. Verifica se já existe estudo salvo pelo usuário
+    try {
+      const savedStudies = storage.getBibleArcs ? storage.getBibleArcs() : [];
+      const existing = savedStudies.find(s => s.passage === currentPassage);
+      if (existing) {
+        setPassageName(existing.passage || currentPassage);
+        setTitle(existing.title || `Arqueamento: ${currentPassage}`);
+        setPropositions(existing.propositions || []);
+        setArcs(existing.arcs || []);
+        setMainProp(existing.mainProp || 1);
+        setTheologicalSynthesis(existing.theologicalSynthesis || '');
+        setPracticalApplication(existing.practicalApplication || '');
+        return;
       }
-    } else if (initialText && initialText.trim().length > 0) {
-      const generated = parseTextToPropositions(initialText);
-      setPropositions(generated);
-      setArcs([]);
-      setMainProp(1);
-      setTheologicalSynthesis('');
-      setPracticalApplication('');
-    }
+    } catch (e) {}
+
+    // 2. Carrega estudo 100% pronto do motor BibleArc
+    const study = bibleArcEngine.getStudy(currentPassage, initialText);
+    setPassageName(study.passage || currentPassage);
+    setTitle(study.title || `Arqueamento: ${currentPassage}`);
+    setPropositions(study.propositions || []);
+    setArcs(study.arcs || []);
+    setMainProp(study.mainProp || 1);
+    setTheologicalSynthesis(study.theologicalSynthesis || '');
+    setPracticalApplication(study.practicalApplication || '');
   }, [initialPassage, initialText]);
 
   // Controle de adição de arco
