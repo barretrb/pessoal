@@ -23,7 +23,9 @@ export default function Navbar({
   setRedLetterEnabled,
   onOpenFavorites,
   onOpenBibleNav,
-  onOpenStudyInfo
+  onOpenStudyInfo,
+  activeProfile,
+  onOpenProfiles
 }) {
   // Alternador de tema em 1 clique para mobile (Claro -> Sépia -> Escuro -> Claro)
   const handleCycleTheme = () => {
@@ -118,6 +120,16 @@ export default function Navbar({
           >
             <span className="text-xs font-black text-rose-500 leading-none">✝</span>
             <span className="text-[11px] font-bold hidden min-[340px]:inline">Jesus</span>
+          </button>
+
+          {/* Botão de Perfil / Multi-Conta (Rafael / Esposa) */}
+          <button
+            onClick={onOpenProfiles}
+            className="flex items-center space-x-1 p-1 sm:px-2 sm:py-1 rounded-xl bg-amber-500/10 dark:bg-amber-950/40 border border-amber-300/80 dark:border-amber-800/80 text-xs font-bold text-amber-900 dark:text-amber-200 hover:scale-105 transition-transform shrink-0"
+            title={`Perfil Ativo: ${activeProfile?.name || 'Leitor'}. Clique para alternar perfis.`}
+          >
+            <span className="text-sm">{activeProfile?.avatar || '👤'}</span>
+            <span className="hidden lg:inline">{activeProfile?.name || 'Perfil'}</span>
           </button>
 
           {/* Favoritos (Apenas Desktop - no Mobile fica na Bottom Nav) */}

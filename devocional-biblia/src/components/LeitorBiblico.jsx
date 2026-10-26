@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -15,11 +15,14 @@ import {
   Check,
   Info,
   BookMarked,
-  Loader2
+  Loader2,
+  Headphones
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { HIGHLIGHT_COLORS, storage } from '../services/storage';
 import { getMediaForDay } from '../data/dailyMedia';
+import { speechService } from '../services/speechService';
+import AudioPlayerBar from './AudioPlayerBar';
 
 function parseReading(str) {
   if (!str) return { book: 'Lucas', chapter: '1' };
@@ -98,6 +101,48 @@ export default function LeitorBiblico({
   // Highlights e Favoritos locais
   const [highlights, setHighlights] = useState(storage.getHighlights());
   const [favorites, setFavorites] = useState(storage.getFavorites());
+
+  // ESTADO DE NARRAÇÃO EM ÁUDIO
+  const [audioStatus, setAudioStatus] = useState({ status: 'stopped', isPlaying: false, rate: 1.0 });
+  const [speakingVerseNumber, setSpeakingVerseNumber] = useState(null);
+
+  // Parar áudio ao trocar de capítulo ou livro
+  useEffect(() => {
+    return () => {
+      speechService.stop();
+      setSpeakingVerseNumber(null);
+      setAudioStatus({ status: 'stopped', isPlaying: false, rate: 1.0 });
+    };
+  }, [selectedChapter, activeBook]);
+
+  // Lista linear de versículos do capítulo atual para reprodução em áudio
+  const allChapterVerses = useMemo(() => {
+    const list = [];
+    if (activeChapterData?.sections) {
+      activeChapterData.sections.forEach(sec => {
+        if (sec.verses) {
+          sec.verses.forEach(v => list.push(v));
+        }
+      });
+    }
+    return list;
+  }, [activeChapterData]);
+
+  const handleToggleAudio = () => {
+    if (audioStatus.isPlaying) {
+      speechService.pause();
+    } else if (audioStatus.status === 'paused') {
+      speechService.resume();
+    } else {
+      if (allChapterVerses.length === 0) return;
+      speechService.startReading(
+        allChapterVerses,
+        0,
+        (verseNum) => setSpeakingVerseNumber(verseNum),
+        (status) => setAudioStatus(status)
+      );
+    }
+  };
 
   const currentChapterName = `${activeBook} ${selectedChapter}`;
   const isCurrentChapterCompleted = !!chapterProgress[currentChapterName]?.completed;
@@ -223,6 +268,22 @@ export default function LeitorBiblico({
         </button>
 
         <div className="flex items-center flex-wrap gap-1.5 sm:gap-2">
+          {/* Botão de Narração em Áudio do Capítulo */}
+          <button
+            onClick={handleToggleAudio}
+            className={`inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-xl border text-xs font-bold transition-all shrink-0 ${
+              audioStatus.isPlaying
+                ? 'bg-amber-500 text-white border-amber-600 shadow-md ring-2 ring-amber-400/50'
+                : audioStatus.status === 'paused'
+                ? 'bg-amber-100 text-amber-800 border-amber-400 dark:bg-amber-950/60 dark:text-amber-200'
+                : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 hover:bg-amber-50 dark:hover:bg-amber-950/30'
+            }`}
+            title="Ouvir narração em áudio dos versículos deste capítulo (Web Speech)"
+          >
+            <Headphones className="w-3.5 h-3.5" />
+            <span>{audioStatus.isPlaying ? 'Pausar Áudio' : audioStatus.status === 'paused' ? 'Retomar' : 'Ouvir'}</span>
+          </button>
+
           {/* Botão de Estudo do Livro Atual (Bíblia de Estudos) */}
           <button
             onClick={() => onOpenStudyInfo && onOpenStudyInfo(activeBook)}
@@ -419,6 +480,7 @@ export default function LeitorBiblico({
                     const isFavorite = favorites.some(f => f.key === verseKey);
                     const hasCrossRefs = v.crossReferences && v.crossReferences.length > 0;
                     const isSelected = !!selectedVerses[verseKey];
+                    const isSpeaking = speakingVerseNumber === v.number;
                     const highlightClass = highlight && HIGHLIGHT_COLORS[highlight.color] ? HIGHLIGHT_COLORS[highlight.color].bg : '';
 
                     return (
@@ -426,7 +488,9 @@ export default function LeitorBiblico({
                         key={v.number}
                         className={`inline relative group transition-colors rounded-sm px-0.5 py-0.5 cursor-pointer ${
                           highlightClass ? highlightClass : 'hover:bg-amber-50/60 dark:hover:bg-zinc-800/60'
-                        } ${isSelected ? 'ring-2 ring-amber-400 bg-amber-100/60 dark:bg-amber-900/30' : ''}`}
+                        } ${isSelected ? 'ring-2 ring-amber-400 bg-amber-100/60 dark:bg-amber-900/30' : ''} ${
+                          isSpeaking ? 'ring-2 ring-amber-500 bg-amber-200/70 dark:bg-amber-900/50 shadow-xs' : ''
+                        }`}
                         onClick={() => handleVerseClick(v)}
                       >
                         {/* Número do versículo */}
@@ -672,6 +736,20 @@ export default function LeitorBiblico({
           </button>
         </div>
       )}
+
+      {/* 7. PLAYER DE ÁUDIO BÍBLICO (WEB SPEECH NARRATOR) */}
+      <AudioPlayerBar
+        bookName={activeBook}
+        chapterNumber={selectedChapter}
+        audioStatus={audioStatus}
+        onPlay={handleToggleAudio}
+        onPause={() => speechService.pause()}
+        onResume={() => speechService.resume()}
+        onStop={() => speechService.stop()}
+        onNextVerse={() => speechService.nextVerse()}
+        onPrevVerse={() => speechService.prevVerse()}
+        onChangeRate={(newRate) => speechService.setRate(newRate)}
+      />
 
     </div>
   );

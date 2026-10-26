@@ -9,10 +9,11 @@ import ComentariosDrawer from './components/ComentariosDrawer';
 import DestaquesModal from './components/DestaquesModal';
 import NavegacaoBibliaModal from './components/NavegacaoBibliaModal';
 import EstudoLivroModal from './components/EstudoLivroModal';
+import PerfilModal from './components/PerfilModal';
 
 import initialDays from './data/plano365.json';
 import lucasData from './data/lucas_nvt.json';
-import { storage } from './services/storage';
+import { storage, DEFAULT_DASHBOARD_LAYOUT } from './services/storage';
 import { getTodayDay, getPendingDays } from './services/dateUtils';
 import { fetchBookData } from './services/bibleService';
 import confetti from 'canvas-confetti';
@@ -23,11 +24,21 @@ export default function App() {
   const [theme, setTheme] = useState(savedSettings.theme || 'light');
   const [redLetterEnabled, setRedLetterEnabled] = useState(savedSettings.redLetters ?? true);
 
-  // Progresso dos 365 dias
-  const [days, setDays] = useState(() => storage.getProgress(initialDays));
+  // 1. SISTEMA DE PERFIS (MULTI-CONTA: RAFAEL, ESPOSA, ETC.)
+  const [profiles, setProfiles] = useState(() => storage.getProfiles());
+  const [activeProfileId, setActiveProfileId] = useState(() => storage.getActiveProfileId());
+  const [profileModalOpen, setProfileModalOpen] = useState(false);
 
-  // Progresso individual de capítulos
-  const [chapterProgress, setChapterProgress] = useState(() => storage.getChapterProgress());
+  const activeProfile = profiles.find(p => p.id === activeProfileId) || profiles[0] || { name: 'Rafael', avatar: '👨' };
+
+  // 2. LAYOUT DO DASHBOARD (REORDENAÇÃO, COLAPSO E OCULTAÇÃO)
+  const [dashboardLayout, setDashboardLayout] = useState(() => storage.getDashboardLayout(activeProfileId));
+
+  // 3. PROGRESSO DOS 365 DIAS (POR PERFIL)
+  const [days, setDays] = useState(() => storage.getProgress(initialDays, activeProfileId));
+
+  // 4. PROGRESSO INDIVIDUAL DE CAPÍTULOS (POR PERFIL)
+  const [chapterProgress, setChapterProgress] = useState(() => storage.getChapterProgress(activeProfileId));
 
   // Cálculo DINÂMICO da data de hoje e pendências
   const todayDay = getTodayDay(days) || days[298];
@@ -58,9 +69,9 @@ export default function App() {
   const [bibleNavOpen, setBibleNavOpen] = useState(false);
   const [studyModalData, setStudyModalData] = useState({ isOpen: false, bookName: 'Lucas' });
 
-  // Favoritos e Highlights para gerenciar no modal
-  const [favorites, setFavorites] = useState(storage.getFavorites());
-  const [highlights, setHighlights] = useState(storage.getHighlights());
+  // Favoritos e Highlights do perfil ativo
+  const [favorites, setFavorites] = useState(() => storage.getFavorites(activeProfileId));
+  const [highlights, setHighlights] = useState(() => storage.getHighlights(activeProfileId));
 
   // Aplicar tema no elemento raiz
   useEffect(() => {
@@ -74,12 +85,55 @@ export default function App() {
     storage.saveSettings({ theme, redLetters: redLetterEnabled });
   }, [theme, redLetterEnabled]);
 
+  // Alternar perfil ativo
+  const handleSelectProfile = (newId) => {
+    setActiveProfileId(newId);
+    storage.setActiveProfileId(newId);
+    setDays(storage.getProgress(initialDays, newId));
+    setChapterProgress(storage.getChapterProgress(newId));
+    setFavorites(storage.getFavorites(newId));
+    setHighlights(storage.getHighlights(newId));
+    setDashboardLayout(storage.getDashboardLayout(newId));
+  };
+
+  const handleCreateProfile = (name, avatar, color) => {
+    const newProf = storage.createProfile(name, avatar, color);
+    setProfiles([...storage.getProfiles()]);
+    handleSelectProfile(newProf.id);
+  };
+
+  const handleDeleteProfile = (profileId) => {
+    const updated = storage.deleteProfile(profileId);
+    setProfiles([...updated]);
+    const currentActive = storage.getActiveProfileId();
+    handleSelectProfile(currentActive);
+  };
+
+  const getProfileProgressStats = (pId) => {
+    const pDays = storage.getProgress(initialDays, pId);
+    const completedDays = pDays.filter(d => d.completed).length;
+    return {
+      completedDays,
+      percent: Math.round((completedDays / 365) * 100)
+    };
+  };
+
+  const handleUpdateDashboardLayout = (newLayout) => {
+    const saved = storage.saveDashboardLayout(newLayout, activeProfileId);
+    setDashboardLayout({ ...saved });
+  };
+
+  const handleResetDashboardLayout = () => {
+    const reset = storage.saveDashboardLayout(DEFAULT_DASHBOARD_LAYOUT, activeProfileId);
+    setDashboardLayout({ ...reset });
+  };
+
   // Handler para marcar dia inteiro como concluído
   const handleToggleComplete = (dayId, status) => {
-    storage.saveDayProgress(dayId, status);
+    storage.saveDayProgress(dayId, status, activeProfileId);
     const targetDay = days.find(d => d.id === dayId);
     if (targetDay) {
-      const updatedCh = storage.setDayChaptersProgress(targetDay.readings, status);
+      const updatedCh = storage.setDayChaptersProgress(targetDay.readings, status, activeProfileId);
       setChapterProgress({ ...updatedCh });
     }
     setDays(prevDays => 
@@ -89,7 +143,7 @@ export default function App() {
 
   // Handler para marcar cada capítulo individualmente
   const handleToggleChapter = (chapterName, status) => {
-    const updated = storage.saveChapterProgress(chapterName, status);
+    const updated = storage.saveChapterProgress(chapterName, status, activeProfileId);
     setChapterProgress({ ...updated });
 
     // Verificar se todos os capítulos do dia atual foram concluídos (se estiver no plano)
@@ -100,7 +154,7 @@ export default function App() {
       );
       
       if (allCompleted && !activeDay.completed) {
-        storage.saveDayProgress(activeDay.id, true);
+        storage.saveDayProgress(activeDay.id, true, activeProfileId);
         setDays(prev => prev.map(d => d.id === activeDay.id ? { ...d, completed: true, completedAt: new Date().toISOString() } : d));
         try {
           confetti({
@@ -110,7 +164,7 @@ export default function App() {
           });
         } catch (e) {}
       } else if (!allCompleted && activeDay.completed) {
-        storage.saveDayProgress(activeDay.id, false);
+        storage.saveDayProgress(activeDay.id, false, activeProfileId);
         setDays(prev => prev.map(d => d.id === activeDay.id ? { ...d, completed: false, completedAt: null } : d));
       }
     }
@@ -169,12 +223,14 @@ export default function App() {
         redLetterEnabled={redLetterEnabled}
         setRedLetterEnabled={setRedLetterEnabled}
         onOpenFavorites={() => {
-          setFavorites(storage.getFavorites());
-          setHighlights(storage.getHighlights());
+          setFavorites(storage.getFavorites(activeProfileId));
+          setHighlights(storage.getHighlights(activeProfileId));
           setFavoritesModalOpen(true);
         }}
         onOpenBibleNav={() => setBibleNavOpen(true)}
         onOpenStudyInfo={handleOpenStudyInfo}
+        activeProfile={activeProfile}
+        onOpenProfiles={() => setProfileModalOpen(true)}
       />
 
       {/* Conteúdo Principal */}
@@ -190,6 +246,11 @@ export default function App() {
             chapterProgress={chapterProgress}
             onOpenBibleNav={() => setBibleNavOpen(true)}
             onOpenStudyInfo={handleOpenStudyInfo}
+            activeProfile={activeProfile}
+            onOpenProfiles={() => setProfileModalOpen(true)}
+            dashboardLayout={dashboardLayout}
+            onUpdateDashboardLayout={handleUpdateDashboardLayout}
+            onResetDashboardLayout={handleResetDashboardLayout}
           />
         ) : (
           <LeitorBiblico
@@ -238,11 +299,23 @@ export default function App() {
         onOpenBibleNav={() => setBibleNavOpen(true)}
         onOpenStudyInfo={() => handleOpenStudyInfo(isFreeReading ? freeReadingBook : 'Lucas')}
         onOpenFavorites={() => {
-          setFavorites(storage.getFavorites());
-          setHighlights(storage.getHighlights());
+          setFavorites(storage.getFavorites(activeProfileId));
+          setHighlights(storage.getHighlights(activeProfileId));
           setFavoritesModalOpen(true);
         }}
         pendingDayId={pendingDayId}
+      />
+
+      {/* Modal Multi-Perfil (Rafael & Esposa / Família) */}
+      <PerfilModal
+        isOpen={profileModalOpen}
+        onClose={() => setProfileModalOpen(false)}
+        profiles={profiles}
+        activeProfileId={activeProfileId}
+        onSelectProfile={handleSelectProfile}
+        onCreateProfile={handleCreateProfile}
+        onDeleteProfile={handleDeleteProfile}
+        getProfileProgressStats={getProfileProgressStats}
       />
 
       {/* Modal Navegação Livre da Bíblia */}
@@ -295,11 +368,11 @@ export default function App() {
         favorites={favorites}
         highlights={highlights}
         onRemoveFavorite={(vKey) => {
-          const updated = storage.toggleFavorite(vKey);
+          const updated = storage.toggleFavorite(vKey, null, activeProfileId);
           setFavorites([...updated]);
         }}
         onRemoveHighlight={(vKey) => {
-          const updated = storage.saveHighlight(vKey, null);
+          const updated = storage.saveHighlight(vKey, null, "", activeProfileId);
           setHighlights({ ...updated });
         }}
         onGoToPassage={(vKey) => {

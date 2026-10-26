@@ -1,6 +1,8 @@
-// Camada de persistência local para progresso, favoritos, notas e estudos BibleArc
+// Camada de persistência local para perfis, progresso, favoritos, notas, estudos BibleArc e personalização do Dashboard
 
 const STORAGE_KEYS = {
+  PROFILES: "devocional_profiles_v1",
+  ACTIVE_PROFILE: "devocional_active_profile_v1",
   PROGRESS: "devocional_plano_progress_v1",
   CHAPTERS_PROGRESS: "devocional_chapters_progress_v1",
   HIGHLIGHTS: "devocional_highlights_v1",
@@ -8,6 +10,7 @@ const STORAGE_KEYS = {
   NOTES: "devocional_notes_v1",
   BIBLE_ARCS: "devocional_bible_arcs_v1",
   SETTINGS: "devocional_settings_v1",
+  DASHBOARD_LAYOUT: "devocional_dashboard_layout_v1",
 };
 
 export const HIGHLIGHT_COLORS = {
@@ -18,58 +21,165 @@ export const HIGHLIGHT_COLORS = {
   coral:  { name: "Graça / Amor do Pai",  bg: "bg-rose-100 dark:bg-rose-950/40 text-rose-900 dark:text-rose-200 border-l-4 border-rose-400", hex: "#fecdd3" },
 };
 
+const DEFAULT_PROFILES = [
+  { id: 'default', name: 'Rafael', avatar: '👨', color: 'amber' },
+  { id: 'esposa', name: 'Esposa', avatar: '👩', color: 'rose' }
+];
+
+export const DEFAULT_DASHBOARD_LAYOUT = {
+  order: ['todayPending', 'music', 'studyBanner', 'video', 'calendar'],
+  hidden: {},
+  collapsed: {}
+};
+
 export const storage = {
-  // 1. Progresso dos dias
-  getProgress(defaultDays) {
+  // ==========================================
+  // 0. GERENCIAMENTO DE PERFIS (MULTI-CONTA)
+  // ==========================================
+  getProfiles() {
     try {
-      const stored = localStorage.getItem(STORAGE_KEYS.PROGRESS);
+      const stored = localStorage.getItem(STORAGE_KEYS.PROFILES);
       if (stored) {
         const parsed = JSON.parse(stored);
-        // Merge with initial days
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch (e) {
+      console.error("Erro ao carregar perfis:", e);
+    }
+    // Inicialização padrão
+    this.saveProfiles(DEFAULT_PROFILES);
+    return DEFAULT_PROFILES;
+  },
+
+  saveProfiles(profiles) {
+    try {
+      localStorage.setItem(STORAGE_KEYS.PROFILES, JSON.stringify(profiles));
+    } catch (e) {}
+  },
+
+  getActiveProfileId() {
+    try {
+      const active = localStorage.getItem(STORAGE_KEYS.ACTIVE_PROFILE);
+      if (active) return active;
+    } catch (e) {}
+    return 'default';
+  },
+
+  setActiveProfileId(profileId) {
+    try {
+      localStorage.setItem(STORAGE_KEYS.ACTIVE_PROFILE, profileId);
+    } catch (e) {}
+    return profileId;
+  },
+
+  getActiveProfile() {
+    const profiles = this.getProfiles();
+    const activeId = this.getActiveProfileId();
+    return profiles.find(p => p.id === activeId) || profiles[0] || DEFAULT_PROFILES[0];
+  },
+
+  createProfile(name, avatar = '👤', color = 'amber') {
+    const profiles = this.getProfiles();
+    const newId = 'profile_' + Date.now();
+    const newProfile = { id: newId, name: name.trim() || 'Novo Leitor', avatar, color };
+    profiles.push(newProfile);
+    this.saveProfiles(profiles);
+    this.setActiveProfileId(newId);
+    return newProfile;
+  },
+
+  updateProfile(profileId, updates) {
+    const profiles = this.getProfiles();
+    const idx = profiles.findIndex(p => p.id === profileId);
+    if (idx >= 0) {
+      profiles[idx] = { ...profiles[idx], ...updates };
+      this.saveProfiles(profiles);
+    }
+    return profiles;
+  },
+
+  deleteProfile(profileId) {
+    let profiles = this.getProfiles();
+    if (profiles.length <= 1) return profiles; // não deleta o último
+    profiles = profiles.filter(p => p.id !== profileId);
+    this.saveProfiles(profiles);
+    if (this.getActiveProfileId() === profileId) {
+      this.setActiveProfileId(profiles[0].id);
+    }
+    return profiles;
+  },
+
+  // Helper para resolver a chave com namespace do perfil ativo
+  _resolveKey(baseKey, profileId = this.getActiveProfileId()) {
+    const scopedKey = `${baseKey}_${profileId}`;
+    // Retrocompatibilidade para o perfil default: se a chave scoped não existir mas a chave base legada sim, migrar
+    if (profileId === 'default' && !localStorage.getItem(scopedKey)) {
+      const legacy = localStorage.getItem(baseKey);
+      if (legacy) {
+        localStorage.setItem(scopedKey, legacy);
+      }
+    }
+    return scopedKey;
+  },
+
+  // ==========================================
+  // 1. PROGRESSO DOS DIAS (POR PERFIL)
+  // ==========================================
+  getProgress(defaultDays, profileId) {
+    try {
+      const key = this._resolveKey(STORAGE_KEYS.PROGRESS, profileId);
+      const stored = localStorage.getItem(key);
+      if (stored) {
+        const parsed = JSON.parse(stored);
         return defaultDays.map(d => ({
           ...d,
-          completed: parsed[d.id] ? parsed[d.id].completed : d.completed,
-          completedAt: parsed[d.id] ? parsed[d.id].completedAt : d.completedAt
+          completed: parsed[d.id] ? parsed[d.id].completed : false,
+          completedAt: parsed[d.id] ? parsed[d.id].completedAt : null
         }));
       }
     } catch (e) {
       console.error("Erro ao ler progresso:", e);
     }
-    return defaultDays;
+    return defaultDays.map(d => ({ ...d, completed: false, completedAt: null }));
   },
 
-  saveDayProgress(dayId, isCompleted) {
+  saveDayProgress(dayId, isCompleted, profileId) {
     try {
-      const stored = localStorage.getItem(STORAGE_KEYS.PROGRESS);
+      const key = this._resolveKey(STORAGE_KEYS.PROGRESS, profileId);
+      const stored = localStorage.getItem(key);
       const current = stored ? JSON.parse(stored) : {};
       current[dayId] = {
         completed: isCompleted,
         completedAt: isCompleted ? new Date().toISOString() : null
       };
-      localStorage.setItem(STORAGE_KEYS.PROGRESS, JSON.stringify(current));
+      localStorage.setItem(key, JSON.stringify(current));
     } catch (e) {
       console.error("Erro ao salvar progresso do dia:", e);
     }
   },
 
-  // 1.1 Progresso detalhado por capítulo (ex: "Lucas 10", "Lucas 13")
-  getChapterProgress() {
+  // ==========================================
+  // 1.1 PROGRESSO POR CAPÍTULO (POR PERFIL)
+  // ==========================================
+  getChapterProgress(profileId) {
     try {
-      const stored = localStorage.getItem(STORAGE_KEYS.CHAPTERS_PROGRESS);
+      const key = this._resolveKey(STORAGE_KEYS.CHAPTERS_PROGRESS, profileId);
+      const stored = localStorage.getItem(key);
       return stored ? JSON.parse(stored) : {};
     } catch (e) {
       return {};
     }
   },
 
-  saveChapterProgress(chapterName, isCompleted) {
+  saveChapterProgress(chapterName, isCompleted, profileId) {
     try {
-      const progress = this.getChapterProgress();
+      const progress = this.getChapterProgress(profileId);
       progress[chapterName] = {
         completed: isCompleted,
         completedAt: isCompleted ? new Date().toISOString() : null
       };
-      localStorage.setItem(STORAGE_KEYS.CHAPTERS_PROGRESS, JSON.stringify(progress));
+      const key = this._resolveKey(STORAGE_KEYS.CHAPTERS_PROGRESS, profileId);
+      localStorage.setItem(key, JSON.stringify(progress));
       return progress;
     } catch (e) {
       console.error("Erro ao salvar progresso do capítulo:", e);
@@ -77,35 +187,39 @@ export const storage = {
     }
   },
 
-  setDayChaptersProgress(readings, isCompleted) {
+  setDayChaptersProgress(readings, isCompleted, profileId) {
     try {
-      const progress = this.getChapterProgress();
+      const progress = this.getChapterProgress(profileId);
       readings.forEach(ch => {
         progress[ch] = {
           completed: isCompleted,
           completedAt: isCompleted ? new Date().toISOString() : null
         };
       });
-      localStorage.setItem(STORAGE_KEYS.CHAPTERS_PROGRESS, JSON.stringify(progress));
+      const key = this._resolveKey(STORAGE_KEYS.CHAPTERS_PROGRESS, profileId);
+      localStorage.setItem(key, JSON.stringify(progress));
       return progress;
     } catch (e) {
       return {};
     }
   },
 
-  // 2. Destaques (Highlights)
-  getHighlights() {
+  // ==========================================
+  // 2. DESTAQUES (HIGHLIGHTS) (POR PERFIL)
+  // ==========================================
+  getHighlights(profileId) {
     try {
-      const stored = localStorage.getItem(STORAGE_KEYS.HIGHLIGHTS);
+      const key = this._resolveKey(STORAGE_KEYS.HIGHLIGHTS, profileId);
+      const stored = localStorage.getItem(key);
       return stored ? JSON.parse(stored) : {};
     } catch (e) {
       return {};
     }
   },
 
-  saveHighlight(verseKey, colorKey, note = "") {
+  saveHighlight(verseKey, colorKey, note = "", profileId) {
     try {
-      const highlights = this.getHighlights();
+      const highlights = this.getHighlights(profileId);
       if (!colorKey) {
         delete highlights[verseKey];
       } else {
@@ -115,7 +229,8 @@ export const storage = {
           updatedAt: new Date().toISOString()
         };
       }
-      localStorage.setItem(STORAGE_KEYS.HIGHLIGHTS, JSON.stringify(highlights));
+      const key = this._resolveKey(STORAGE_KEYS.HIGHLIGHTS, profileId);
+      localStorage.setItem(key, JSON.stringify(highlights));
       return highlights;
     } catch (e) {
       console.error("Erro ao salvar destaque:", e);
@@ -123,9 +238,9 @@ export const storage = {
     }
   },
 
-  saveMultipleHighlights(verseKeys, colorKey) {
+  saveMultipleHighlights(verseKeys, colorKey, profileId) {
     try {
-      const highlights = this.getHighlights();
+      const highlights = this.getHighlights(profileId);
       const now = new Date().toISOString();
       verseKeys.forEach(k => {
         if (!colorKey) {
@@ -138,7 +253,8 @@ export const storage = {
           };
         }
       });
-      localStorage.setItem(STORAGE_KEYS.HIGHLIGHTS, JSON.stringify(highlights));
+      const key = this._resolveKey(STORAGE_KEYS.HIGHLIGHTS, profileId);
+      localStorage.setItem(key, JSON.stringify(highlights));
       return highlights;
     } catch (e) {
       console.error("Erro ao salvar múltiplos destaques:", e);
@@ -146,19 +262,22 @@ export const storage = {
     }
   },
 
-  // 3. Favoritos
-  getFavorites() {
+  // ==========================================
+  // 3. FAVORITOS (POR PERFIL)
+  // ==========================================
+  getFavorites(profileId) {
     try {
-      const stored = localStorage.getItem(STORAGE_KEYS.FAVORITES);
+      const key = this._resolveKey(STORAGE_KEYS.FAVORITES, profileId);
+      const stored = localStorage.getItem(key);
       return stored ? JSON.parse(stored) : [];
     } catch (e) {
       return [];
     }
   },
 
-  toggleFavorite(verseKey, verseData) {
+  toggleFavorite(verseKey, verseData, profileId) {
     try {
-      let favs = this.getFavorites();
+      let favs = this.getFavorites(profileId);
       const exists = favs.find(f => f.key === verseKey);
       if (exists) {
         favs = favs.filter(f => f.key !== verseKey);
@@ -169,25 +288,24 @@ export const storage = {
           savedAt: new Date().toISOString()
         });
       }
-      localStorage.setItem(STORAGE_KEYS.FAVORITES, JSON.stringify(favs));
+      const key = this._resolveKey(STORAGE_KEYS.FAVORITES, profileId);
+      localStorage.setItem(key, JSON.stringify(favs));
       return favs;
     } catch (e) {
       return [];
     }
   },
 
-  toggleMultipleFavorites(versesDataList) {
+  toggleMultipleFavorites(versesDataList, profileId) {
     try {
-      let favs = this.getFavorites();
+      let favs = this.getFavorites(profileId);
       const allExist = versesDataList.every(v => favs.some(f => f.key === v.key));
       const now = new Date().toISOString();
 
       if (allExist) {
-        // Remover todos os selecionados
         const keysToRemove = new Set(versesDataList.map(v => v.key));
         favs = favs.filter(f => !keysToRemove.has(f.key));
       } else {
-        // Adicionar os que faltam
         versesDataList.forEach(v => {
           if (!favs.some(f => f.key === v.key)) {
             favs.push({
@@ -200,40 +318,76 @@ export const storage = {
           }
         });
       }
-      localStorage.setItem(STORAGE_KEYS.FAVORITES, JSON.stringify(favs));
+      const key = this._resolveKey(STORAGE_KEYS.FAVORITES, profileId);
+      localStorage.setItem(key, JSON.stringify(favs));
       return favs;
     } catch (e) {
       return [];
     }
   },
 
-  // 4. Estudos BibleArc
-  getBibleArcs() {
+  // ==========================================
+  // 4. ESTUDOS BIBLE_ARC (POR PERFIL)
+  // ==========================================
+  getBibleArcs(profileId) {
     try {
-      const stored = localStorage.getItem(STORAGE_KEYS.BIBLE_ARCS);
+      const key = this._resolveKey(STORAGE_KEYS.BIBLE_ARCS, profileId);
+      const stored = localStorage.getItem(key);
       return stored ? JSON.parse(stored) : [];
     } catch (e) {
       return [];
     }
   },
 
-  saveBibleArc(arcStudy) {
+  saveBibleArc(arcStudy, profileId) {
     try {
-      let list = this.getBibleArcs();
+      let list = this.getBibleArcs(profileId);
       const idx = list.findIndex(a => a.id === arcStudy.id);
       if (idx >= 0) {
         list[idx] = { ...arcStudy, updatedAt: new Date().toISOString() };
       } else {
         list.push({ ...arcStudy, id: Date.now().toString(), createdAt: new Date().toISOString() });
       }
-      localStorage.setItem(STORAGE_KEYS.BIBLE_ARCS, JSON.stringify(list));
+      const key = this._resolveKey(STORAGE_KEYS.BIBLE_ARCS, profileId);
+      localStorage.setItem(key, JSON.stringify(list));
       return list;
     } catch (e) {
       return [];
     }
   },
 
-  // 5. Configurações
+  // ==========================================
+  // 5. PERSONALIZAÇÃO DO DASHBOARD (POR PERFIL)
+  // ==========================================
+  getDashboardLayout(profileId) {
+    try {
+      const key = this._resolveKey(STORAGE_KEYS.DASHBOARD_LAYOUT, profileId);
+      const stored = localStorage.getItem(key);
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        return {
+          order: parsed.order || DEFAULT_DASHBOARD_LAYOUT.order,
+          hidden: parsed.hidden || {},
+          collapsed: parsed.collapsed || {}
+        };
+      }
+    } catch (e) {}
+    return { ...DEFAULT_DASHBOARD_LAYOUT };
+  },
+
+  saveDashboardLayout(layout, profileId) {
+    try {
+      const key = this._resolveKey(STORAGE_KEYS.DASHBOARD_LAYOUT, profileId);
+      localStorage.setItem(key, JSON.stringify(layout));
+      return layout;
+    } catch (e) {
+      return layout;
+    }
+  },
+
+  // ==========================================
+  // 6. CONFIGURAÇÕES GERAIS (TEMA, ETC.)
+  // ==========================================
   getSettings() {
     try {
       const stored = localStorage.getItem(STORAGE_KEYS.SETTINGS);
