@@ -257,3 +257,42 @@ test('QA Test 8: Comentários Teológicos Expositivos Além de Lucas', () => {
 
   console.log('✓ QA Test 8 Aprovado: Comentários teológicos disponíveis para livros de toda a Bíblia.');
 });
+
+test('QA Test 9: Validação Exegética de Teses Centrais no Arqueamento (Êxodo 5 e Algoritmo)', () => {
+  // 1. Êxodo 5 com acento e sem acento
+  const ex5Study = bibleArcEngine.getChapterThematicStudy('Êxodo', '5');
+  assert.ok(ex5Study, 'Estudo de Êxodo 5 deve existir');
+  assert.equal(ex5Study.themes.length, 3, 'Êxodo 5 deve possuir 3 perícopes mapeadas');
+
+  // Perícope 1: Mandato Soberano de Yahweh (vv. 1-4)
+  const p1 = ex5Study.themes[0];
+  assert.equal(p1.mainProp, 1, 'Tese central da Perícope 1 deve ser P1 (o decreto divino de libertação)');
+  const mainPropText1 = p1.propositions.find(p => p.number === p1.mainProp)?.text || '';
+  assert.ok(
+    mainPropText1.includes('Assim diz o SENHOR') && mainPropText1.includes('Deixe meu povo'),
+    'A tese central não pode ser o preâmbulo dos emissários, mas sim o mandamento de Deus'
+  );
+  assert.ok(
+    !mainPropText1.startsWith('Depois disso, Moisés e Arão foram ver o faraó e declararam:'),
+    'O preâmbulo narrativo foi higienizado e não é a tese central isolada'
+  );
+
+  // Perícope 2: Tirania de Faraó (vv. 5-14)
+  const p2 = ex5Study.themes[1];
+  assert.equal(p2.mainProp, 5, 'Tese central da Perícope 2 deve ser P5 (o decreto de opressão)');
+
+  // Perícope 3: Clamor de Moisés (vv. 15-23)
+  const p3 = ex5Study.themes[2];
+  assert.equal(p3.mainProp, 2, 'Tese central da Perícope 3 deve ser P2 (o clamor honesto de Moisés)');
+
+  // 2. Validação do detector com preâmbulos narrativos em textos dinâmicos
+  const dynamicStudy = bibleArcEngine.getChapterThematicStudy('Moisés', '99', [
+    { number: 1, text: 'Depois disso, partiram os mensageiros e chegaram ao arraial.' },
+    { number: 2, text: 'Assim diz o Senhor: Eu sou o Senhor vosso Deus e farei maravilhas.' },
+    { number: 3, text: 'E o povo todo respondeu amém.' }
+  ]);
+  // A proposição 2 (oráculo divino) deve ter sido eleita, e nunca a 1 (preâmbulo narrativo)
+  assert.equal(dynamicStudy.themes[0].mainProp, 2, 'O algoritmo deve pontuar o oráculo divino sobre o preâmbulo');
+
+  console.log('✓ QA Test 9 Aprovado: Teses centrais exegeticamente corretas e preâmbulos narrativos eliminados.');
+});

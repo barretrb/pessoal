@@ -131,7 +131,7 @@ export default function PersonalizarDashboardModal({
                   className={`p-3.5 sm:p-4 rounded-2xl border transition-all flex flex-col gap-2.5 ${
                     isHidden 
                       ? 'bg-zinc-900/40 border-zinc-800/80 opacity-55' 
-                      : 'bg-zinc-900 border-zinc-750 shadow-md'
+                      : 'bg-zinc-900 border-zinc-700 shadow-md'
                   }`}
                 >
                   {/* Linha Superior: Ícone + Título Completo sem cortes + Botão Olho */}

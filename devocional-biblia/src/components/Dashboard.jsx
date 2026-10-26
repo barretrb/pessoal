@@ -553,7 +553,7 @@ export default function Dashboard({
         {isCol ? (
           <div 
             onClick={() => toggleCollapse('video')}
-            className="p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-800 cursor-pointer flex items-center justify-between hover:bg-zinc-50 dark:hover:bg-zinc-750 transition-colors"
+            className="p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-800 cursor-pointer flex items-center justify-between hover:bg-zinc-50 dark:hover:bg-zinc-700/60 transition-colors"
           >
             <div className="flex items-center space-x-3">
               <span className="text-xl">🎬</span>
@@ -653,7 +653,7 @@ export default function Dashboard({
         {isCol ? (
           <div 
             onClick={() => toggleCollapse('calendar')}
-            className="p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-800 cursor-pointer flex items-center justify-between hover:bg-zinc-50 dark:hover:bg-zinc-750 transition-colors"
+            className="p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-800 cursor-pointer flex items-center justify-between hover:bg-zinc-50 dark:hover:bg-zinc-700/60 transition-colors"
           >
             <div className="flex items-center space-x-3">
               <span className="text-xl">📅</span>
