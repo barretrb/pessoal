@@ -14,15 +14,26 @@ import {
   Copy,
   Check,
   Info,
-  BookMarked
+  BookMarked,
+  Loader2
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { HIGHLIGHT_COLORS, storage } from '../services/storage';
 import { getMediaForDay } from '../data/dailyMedia';
 
+function parseReading(str) {
+  if (!str) return { book: 'Lucas', chapter: '1' };
+  const parts = str.trim().split(/\s+/);
+  const chapter = parts.pop();
+  const book = parts.join(' ');
+  return { book: book || 'Lucas', chapter: chapter || '1' };
+}
+
 export default function LeitorBiblico({
   dayData,
-  lucasData,
+  bookData,
+  currentBookName = 'Lucas',
+  currentChapter = '1',
   onBack,
   onToggleComplete,
   onNextDay,
@@ -35,31 +46,51 @@ export default function LeitorBiblico({
   onToggleChapter,
   onOpenStudyInfo,
   isFreeReading = false,
-  freeReadingChapter = null
+  isLoading = false,
+  onChangeFreeChapter
 }) {
   if (!dayData && !isFreeReading) return null;
 
-  // Lista de capítulos deste dia (ex: ['Lucas 10', 'Lucas 11', 'Lucas 12'])
-  const readings = dayData?.readings || (freeReadingChapter ? [`Lucas ${freeReadingChapter}`] : ['Lucas 1']);
+  // Lista de capítulos deste dia no plano devocional
+  const readings = dayData?.readings || [`${currentBookName} ${currentChapter}`];
   
-  // Parse capitulo selecionado
-  const initialChapter = freeReadingChapter 
-    ? String(freeReadingChapter) 
-    : (readings[0] ? readings[0].replace('Lucas ', '').trim() : '1');
+  // Parse capítulo selecionado inicial
+  const firstParsed = parseReading(readings[0]);
+  const initialChapter = isFreeReading ? String(currentChapter) : firstParsed.chapter;
+  const initialBook = isFreeReading ? currentBookName : firstParsed.book;
 
   const [selectedChapter, setSelectedChapter] = useState(initialChapter);
+  const [selectedBook, setSelectedBook] = useState(initialBook);
   const [fontSize, setFontSize] = useState(19); // 16 a 24 px
 
   // MULTI-SELEÇÃO DE VERSÍCULOS
-  // Formato: { [verseKey]: { number, text, crossReferences, isJesusWords, book, chapter, key } }
   const [selectedVerses, setSelectedVerses] = useState({});
 
-  // Mídia do dia
+  // Mídia do dia (se houver no plano devocional)
   const dayMedia = dayData ? getMediaForDay(dayData.id) : null;
 
-  // Carregar dados de Lucas do capítulo
-  const chapterData = lucasData[selectedChapter] || {
-    book: 'Lucas',
+  // Atualizar quando trocar de dia, livro ou capítulo livre
+  useEffect(() => {
+    if (isFreeReading) {
+      setSelectedChapter(String(currentChapter));
+      setSelectedBook(currentBookName);
+    } else if (readings.length > 0) {
+      const p = parseReading(readings[0]);
+      setSelectedChapter(p.chapter);
+      setSelectedBook(p.book);
+    }
+    setSelectedVerses({});
+  }, [dayData?.id, currentBookName, currentChapter, isFreeReading]);
+
+  // Limpar seleção ao trocar de capítulo
+  useEffect(() => {
+    setSelectedVerses({});
+  }, [selectedChapter, selectedBook]);
+
+  // Carregar dados do capítulo atual a partir de bookData
+  const activeBook = isFreeReading ? currentBookName : selectedBook;
+  const activeChapterData = bookData?.[selectedChapter] || {
+    book: activeBook,
     chapter: selectedChapter,
     sections: []
   };
@@ -68,28 +99,12 @@ export default function LeitorBiblico({
   const [highlights, setHighlights] = useState(storage.getHighlights());
   const [favorites, setFavorites] = useState(storage.getFavorites());
 
-  // Atualizar quando trocar de dia ou capítulo livre
-  useEffect(() => {
-    if (freeReadingChapter) {
-      setSelectedChapter(String(freeReadingChapter));
-    } else if (readings.length > 0) {
-      const firstCh = readings[0].replace('Lucas ', '').trim();
-      setSelectedChapter(firstCh);
-    }
-    setSelectedVerses({});
-  }, [dayData?.id, freeReadingChapter]);
-
-  // Limpar seleção ao trocar de capítulo
-  useEffect(() => {
-    setSelectedVerses({});
-  }, [selectedChapter]);
-
-  const currentChapterName = `Lucas ${selectedChapter}`;
+  const currentChapterName = `${activeBook} ${selectedChapter}`;
   const isCurrentChapterCompleted = !!chapterProgress[currentChapterName]?.completed;
 
   // Multi-seleção de versículos
   const handleVerseClick = (v) => {
-    const verseKey = `Lucas ${selectedChapter}:${v.number}`;
+    const verseKey = `${activeBook} ${selectedChapter}:${v.number}`;
     setSelectedVerses(prev => {
       const next = { ...prev };
       if (next[verseKey]) {
@@ -100,7 +115,7 @@ export default function LeitorBiblico({
           text: v.text,
           crossReferences: v.crossReferences,
           isJesusWords: v.isJesusWords,
-          book: 'Lucas',
+          book: activeBook,
           chapter: selectedChapter,
           key: verseKey
         };
@@ -117,23 +132,21 @@ export default function LeitorBiblico({
     .map(v => v.number)
     .sort((a, b) => a - b);
 
-  // Formatar citação (ex: "Lucas 10:4" ou "Lucas 10:2–5" ou "Lucas 10:2, 4, 6")
+  // Formatar citação (ex: "Mateus 1:4" ou "Mateus 1:2–5" ou "Mateus 1:2, 4, 6")
   const formatCitation = () => {
     if (selectedNumbers.length === 0) return '';
-    if (selectedNumbers.length === 1) return `Lucas ${selectedChapter}:${selectedNumbers[0]}`;
+    if (selectedNumbers.length === 1) return `${activeBook} ${selectedChapter}:${selectedNumbers[0]}`;
     
-    // Verificar se são consecutivos
     const isConsecutive = selectedNumbers.every((num, idx) => 
       idx === 0 || num === selectedNumbers[idx - 1] + 1
     );
 
     if (isConsecutive) {
-      return `Lucas ${selectedChapter}:${selectedNumbers[0]}–${selectedNumbers[selectedNumbers.length - 1]}`;
+      return `${activeBook} ${selectedChapter}:${selectedNumbers[0]}–${selectedNumbers[selectedNumbers.length - 1]}`;
     }
-    return `Lucas ${selectedChapter}:${selectedNumbers.join(', ')}`;
+    return `${activeBook} ${selectedChapter}:${selectedNumbers.join(', ')}`;
   };
 
-  // Texto combinado dos versículos selecionados
   const getCombinedText = () => {
     return selectedNumbers.map(n => {
       const item = Object.values(selectedVerses).find(v => v.number === n);
@@ -141,7 +154,6 @@ export default function LeitorBiblico({
     }).join(' ');
   };
 
-  // Aplicar destaque em múltiplos versículos
   const handleApplyHighlight = (colorKey) => {
     if (selectedKeys.length === 0) return;
     const updated = storage.saveMultipleHighlights(selectedKeys, colorKey);
@@ -149,7 +161,6 @@ export default function LeitorBiblico({
     setSelectedVerses({});
   };
 
-  // Favoritar / Desfavoritar múltiplos versículos
   const handleToggleFav = () => {
     if (selectedKeys.length === 0) return;
     const items = Object.values(selectedVerses);
@@ -187,9 +198,12 @@ export default function LeitorBiblico({
     }
   };
 
-  // Calcular índice do próximo capítulo do dia
-  const currentChapterIdx = readings.findIndex(r => r.replace('Lucas ', '').trim() === selectedChapter);
-  const nextChapterInDay = currentChapterIdx >= 0 && currentChapterIdx < readings.length - 1 
+  // Próximo capítulo na lista de leituras do dia
+  const currentChapterIdx = readings.findIndex(r => {
+    const p = parseReading(r);
+    return p.book === activeBook && p.chapter === selectedChapter;
+  });
+  const nextReadingInDay = currentChapterIdx >= 0 && currentChapterIdx < readings.length - 1 
     ? readings[currentChapterIdx + 1] 
     : null;
 
@@ -202,27 +216,27 @@ export default function LeitorBiblico({
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-4 border-b border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7]">
         <button
           onClick={onBack}
-          className="inline-flex items-center space-x-1.5 text-xs font-semibold text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+          className="inline-flex items-center space-x-1.5 text-xs font-semibold text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>{isFreeReading ? 'Voltar à Navegação' : 'Voltar ao Panorama'}</span>
         </button>
 
         <div className="flex items-center flex-wrap gap-2">
-          {/* Botão de Estudo do Livro de Lucas (Bíblia de Estudos) */}
+          {/* Botão de Estudo do Livro Atual (Bíblia de Estudos) */}
           <button
-            onClick={() => onOpenStudyInfo && onOpenStudyInfo('Lucas')}
-            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/70 dark:bg-amber-950/40 hover:bg-amber-100 text-xs font-bold text-amber-700 dark:text-amber-300 transition-colors"
-            title="Abrir Bíblia de Estudos: Informações do Livro de Lucas"
+            onClick={() => onOpenStudyInfo && onOpenStudyInfo(activeBook)}
+            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-950/40 hover:bg-amber-100 text-xs font-bold text-amber-800 dark:text-amber-300 transition-colors"
+            title={`Abrir Bíblia de Estudos: Informações do Livro de ${activeBook}`}
           >
             <BookMarked className="w-3.5 h-3.5" />
-            <span>Estudo de Lucas</span>
+            <span>Estudo de {activeBook}</span>
           </button>
 
           {/* Botão de Comentários do Capítulo */}
           <button
-            onClick={() => onOpenCommentary(chapterData)}
-            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-800 hover:bg-zinc-50 text-xs font-medium text-zinc-700 dark:text-zinc-300 transition-colors shadow-2xs"
+            onClick={() => onOpenCommentary(activeChapterData)}
+            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 text-xs font-medium text-zinc-700 dark:text-zinc-200 transition-colors shadow-2xs"
             title="Abrir Comentários & Diário Espiritual"
           >
             <MessageSquare className="w-3.5 h-3.5 text-amber-600" />
@@ -231,7 +245,7 @@ export default function LeitorBiblico({
 
           {/* Botão de Arqueamento (BibleArc) */}
           <button
-            onClick={() => onOpenBibleArc(`Lucas ${selectedChapter}`, '')}
+            onClick={() => onOpenBibleArc(`${activeBook} ${selectedChapter}`, '')}
             className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/60 dark:bg-indigo-950/40 hover:bg-indigo-100/60 text-xs font-semibold text-indigo-700 dark:text-indigo-300 transition-colors"
             title="Fazer Arqueamento do Texto (John Piper)"
           >
@@ -240,17 +254,17 @@ export default function LeitorBiblico({
           </button>
 
           {/* Controle de Fonte */}
-          <div className="flex items-center space-x-1 bg-zinc-100 dark:bg-zinc-800 rounded-xl p-0.5">
+          <div className="flex items-center space-x-1 bg-zinc-200 dark:bg-zinc-800 rounded-xl p-0.5">
             <button
               onClick={() => setFontSize(Math.max(16, fontSize - 1))}
-              className="px-2 py-1 text-xs font-bold text-zinc-600 dark:text-zinc-300 hover:text-zinc-900"
+              className="px-2 py-1 text-xs font-bold text-zinc-700 dark:text-zinc-200 hover:text-zinc-900"
               title="Diminuir Fonte"
             >
               A-
             </button>
             <button
               onClick={() => setFontSize(Math.min(26, fontSize + 1))}
-              className="px-2 py-1 text-xs font-bold text-zinc-600 dark:text-zinc-300 hover:text-zinc-900"
+              className="px-2 py-1 text-xs font-bold text-zinc-700 dark:text-zinc-200 hover:text-zinc-900"
               title="Aumentar Fonte"
             >
               A+
@@ -259,7 +273,7 @@ export default function LeitorBiblico({
         </div>
       </div>
 
-      {/* 2. CABEÇALHO DO DIA & SELETOR DE CAPÍTULOS */}
+      {/* 2. CABEÇALHO DO LIVRO & SELETOR DE CAPÍTULOS */}
       <div className="space-y-4">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <div>
@@ -267,7 +281,7 @@ export default function LeitorBiblico({
               {isFreeReading ? 'Leitura Livre da Bíblia' : `Dia ${dayData?.id} • ${dayData?.dayOfWeek}`}
             </span>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-zinc-900 dark:text-zinc-100 tracking-tight">
-              {readings.join(', ')}
+              {isFreeReading ? `${activeBook} ${selectedChapter}` : readings.join(', ')}
             </h1>
           </div>
 
@@ -278,7 +292,7 @@ export default function LeitorBiblico({
               className={`inline-flex items-center space-x-2 px-3.5 py-2 rounded-2xl text-xs font-bold transition-all shadow-xs ${
                 isCurrentChapterCompleted
                   ? 'bg-emerald-600 text-white shadow-emerald-600/20'
-                  : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 hover:text-emerald-700 border border-zinc-200 dark:border-zinc-700'
+                  : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 hover:text-emerald-700 border border-zinc-300 dark:border-zinc-700'
               }`}
               title={isCurrentChapterCompleted ? "Capítulo Concluído! Clique para desmarcar" : `Marcar ${currentChapterName} como concluído`}
             >
@@ -288,24 +302,27 @@ export default function LeitorBiblico({
           </div>
         </div>
 
-        {/* Abas para alternar entre os capítulos do dia com status individual de conclusão */}
-        {readings.length > 1 && (
+        {/* Abas para alternar entre os capítulos do dia (se no plano) */}
+        {!isFreeReading && readings.length > 1 && (
           <div className="flex items-center space-x-2 border-b border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] pb-3 overflow-x-auto">
             {readings.map((reading) => {
-              const chNumber = reading.replace('Lucas ', '').trim();
-              const isSelected = selectedChapter === chNumber;
+              const p = parseReading(reading);
+              const isSelected = selectedChapter === p.chapter && selectedBook === p.book;
               const isDone = !!chapterProgress[reading]?.completed;
 
               return (
                 <button
                   key={reading}
-                  onClick={() => setSelectedChapter(chNumber)}
+                  onClick={() => {
+                    setSelectedChapter(p.chapter);
+                    setSelectedBook(p.book);
+                  }}
                   className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all flex items-center space-x-1.5 shrink-0 ${
                     isSelected
                       ? 'bg-amber-500 text-white shadow-xs'
                       : isDone
-                        ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800'
-                        : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                        ? 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800'
+                        : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-300 dark:hover:bg-zinc-700'
                   }`}
                 >
                   <span>{reading}</span>
@@ -320,9 +337,35 @@ export default function LeitorBiblico({
           </div>
         )}
 
+        {/* Seletor rápido de capítulos em leitura livre */}
+        {isFreeReading && (
+          <div className="flex items-center justify-between border-b border-zinc-200 dark:border-zinc-800 pb-3 text-xs text-zinc-500 dark:text-zinc-400">
+            <button
+              onClick={() => onChangeFreeChapter && onChangeFreeChapter(activeBook, Math.max(1, parseInt(selectedChapter, 10) - 1))}
+              disabled={parseInt(selectedChapter, 10) <= 1}
+              className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-300 disabled:opacity-40"
+            >
+              <ArrowLeft className="w-3.5 h-3.5" />
+              <span>Capítulo Anterior</span>
+            </button>
+
+            <span className="font-bold text-zinc-800 dark:text-zinc-200">
+              {activeBook} • Capítulo {selectedChapter}
+            </span>
+
+            <button
+              onClick={() => onChangeFreeChapter && onChangeFreeChapter(activeBook, parseInt(selectedChapter, 10) + 1)}
+              className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-300"
+            >
+              <span>Próximo Capítulo</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        )}
+
         {/* Mini barra de louvor do dia */}
         {dayMedia && dayMedia.music && (
-          <div className="p-3 rounded-2xl bg-amber-50/70 dark:bg-amber-950/20 border border-amber-200/50 dark:border-amber-900/30 flex items-center justify-between text-xs">
+          <div className="p-3 rounded-2xl bg-amber-50/70 dark:bg-zinc-800/80 border border-amber-200 dark:border-zinc-700 flex items-center justify-between text-xs">
             <div className="flex items-center space-x-2 text-amber-900 dark:text-amber-200">
               <Music className="w-4 h-4 text-amber-600" />
               <span>
@@ -341,75 +384,89 @@ export default function LeitorBiblico({
         )}
       </div>
 
-      {/* 3. TEXTO BÍBLICO NVT COM PALAVRAS DE JESUS E SUPORTE A MULTI-SELEÇÃO */}
-      <article 
-        className="font-scripture bg-white dark:bg-zinc-900 sepia:bg-[#fbf0d9] rounded-3xl p-6 sm:p-10 shadow-xs border border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] space-y-8"
-        style={{ fontSize: `${fontSize}px` }}
-      >
-        {chapterData.sections.map((section, sIdx) => (
-          <div key={sIdx} className="space-y-4">
-            
-            {/* Título de Seção da NVT */}
-            {section.title && (
-              <h3 className="font-sans font-bold text-lg sm:text-xl text-teal-700 dark:text-teal-400 sepia:text-[#008674] pt-4 border-t border-zinc-100 dark:border-zinc-800 first:border-0 first:pt-0">
-                {section.title}
-              </h3>
-            )}
-
-            {/* Versículos */}
-            <div className="space-y-2 leading-relaxed">
-              {section.verses.map((v) => {
-                const verseKey = `Lucas ${selectedChapter}:${v.number}`;
-                const highlight = highlights[verseKey];
-                const isFavorite = favorites.some(f => f.key === verseKey);
-                const hasCrossRefs = v.crossReferences && v.crossReferences.length > 0;
-                const isSelected = !!selectedVerses[verseKey];
-                const highlightClass = highlight && HIGHLIGHT_COLORS[highlight.color] ? HIGHLIGHT_COLORS[highlight.color].bg : '';
-
-                return (
-                  <span
-                    key={v.number}
-                    className={`inline relative group transition-colors rounded-sm px-0.5 py-0.5 cursor-pointer ${
-                      highlightClass ? highlightClass : 'hover:bg-amber-50/60 dark:hover:bg-zinc-800/60'
-                    } ${isSelected ? 'ring-2 ring-amber-400 bg-amber-100/60 dark:bg-amber-900/30' : ''}`}
-                    onClick={() => handleVerseClick(v)}
-                  >
-                    {/* Número do versículo */}
-                    <sup className="font-sans font-bold text-[11px] text-amber-700 dark:text-amber-500 sepia:text-[#78350f] select-none mr-1 inline-block">
-                      {v.number}
-                    </sup>
-
-                    {/* Texto com Destaque de Palavras de Jesus (Red Letter) */}
-                    <span className={redLetterEnabled && v.isJesusWords ? 'red-letter' : ''}>
-                      {v.text}{' '}
-                    </span>
-
-                    {/* Ícone sutil de Referência Cruzada Clicável */}
-                    {hasCrossRefs && (
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          onOpenReferences(verseKey, v.crossReferences);
-                        }}
-                        className="inline-flex items-center text-amber-600 dark:text-amber-400 hover:text-amber-800 ml-1 p-0.5 align-middle select-none"
-                        title="Ver referências cruzadas"
-                      >
-                        <Link2 className="w-3.5 h-3.5" />
-                      </button>
-                    )}
-
-                    {/* Indicador de Favorito */}
-                    {isFavorite && (
-                      <Star className="inline w-3 h-3 text-amber-400 fill-current ml-0.5 align-middle" />
-                    )}
-                  </span>
-                );
-              })}
+      {/* ESTADO DE CARREGAMENTO */}
+      {isLoading ? (
+        <div className="py-20 flex flex-col items-center justify-center space-y-3 text-zinc-500 dark:text-zinc-400">
+          <Loader2 className="w-8 h-8 animate-spin text-amber-500" />
+          <p className="text-sm font-semibold">Carregando {activeBook} {selectedChapter} (NVT)...</p>
+        </div>
+      ) : (
+        /* 3. TEXTO BÍBLICO NVT COM PALAVRAS DE JESUS E SUPORTE A MULTI-SELEÇÃO */
+        <article 
+          className="font-scripture bg-white dark:bg-zinc-900 sepia:bg-[#fbf0d9] rounded-3xl p-6 sm:p-10 shadow-xs border border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] space-y-8"
+          style={{ fontSize: `${fontSize}px` }}
+        >
+          {activeChapterData.sections.length === 0 ? (
+            <div className="py-12 text-center text-zinc-500 text-sm">
+              Nenhum texto disponível para {activeBook} {selectedChapter}.
             </div>
+          ) : (
+            activeChapterData.sections.map((section, sIdx) => (
+              <div key={sIdx} className="space-y-4">
+                
+                {/* Título de Seção da NVT */}
+                {section.title && (
+                  <h3 className="font-sans font-bold text-lg sm:text-xl text-teal-700 dark:text-teal-400 sepia:text-[#008674] pt-4 border-t border-zinc-100 dark:border-zinc-800 first:border-0 first:pt-0">
+                    {section.title}
+                  </h3>
+                )}
 
-          </div>
-        ))}
-      </article>
+                {/* Versículos */}
+                <div className="space-y-2 leading-relaxed">
+                  {section.verses.map((v) => {
+                    const verseKey = `${activeBook} ${selectedChapter}:${v.number}`;
+                    const highlight = highlights[verseKey];
+                    const isFavorite = favorites.some(f => f.key === verseKey);
+                    const hasCrossRefs = v.crossReferences && v.crossReferences.length > 0;
+                    const isSelected = !!selectedVerses[verseKey];
+                    const highlightClass = highlight && HIGHLIGHT_COLORS[highlight.color] ? HIGHLIGHT_COLORS[highlight.color].bg : '';
+
+                    return (
+                      <span
+                        key={v.number}
+                        className={`inline relative group transition-colors rounded-sm px-0.5 py-0.5 cursor-pointer ${
+                          highlightClass ? highlightClass : 'hover:bg-amber-50/60 dark:hover:bg-zinc-800/60'
+                        } ${isSelected ? 'ring-2 ring-amber-400 bg-amber-100/60 dark:bg-amber-900/30' : ''}`}
+                        onClick={() => handleVerseClick(v)}
+                      >
+                        {/* Número do versículo */}
+                        <sup className="font-sans font-bold text-[11px] text-amber-700 dark:text-amber-500 sepia:text-[#78350f] select-none mr-1 inline-block">
+                          {v.number}
+                        </sup>
+
+                        {/* Texto com Destaque de Palavras de Jesus (Red Letter) */}
+                        <span className={redLetterEnabled && v.isJesusWords ? 'red-letter' : ''}>
+                          {v.text}{' '}
+                        </span>
+
+                        {/* Ícone de Referência Cruzada Clicável */}
+                        {hasCrossRefs && (
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              onOpenReferences(verseKey, v.crossReferences);
+                            }}
+                            className="inline-flex items-center text-amber-600 dark:text-amber-400 hover:text-amber-800 ml-1 p-0.5 align-middle select-none"
+                            title="Ver referências cruzadas"
+                          >
+                            <Link2 className="w-3.5 h-3.5" />
+                          </button>
+                        )}
+
+                        {/* Indicador de Favorito */}
+                        {isFavorite && (
+                          <Star className="inline w-3 h-3 text-amber-400 fill-current ml-0.5 align-middle" />
+                        )}
+                      </span>
+                    );
+                  })}
+                </div>
+
+              </div>
+            ))
+          )}
+        </article>
+      )}
 
       {/* 4. CARD DE CONCLUSÃO DO CAPÍTULO ATUAL AO FINAL DA LEITURA */}
       <div className="p-5 sm:p-6 rounded-3xl bg-zinc-100/80 dark:bg-zinc-800 sepia:bg-[#f4e4c1]/60 border border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -421,7 +478,7 @@ export default function LeitorBiblico({
             </h4>
           </div>
           <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
-            {completedChaptersCount} de {readings.length} capítulos do dia lidos.
+            {isFreeReading ? 'Marque para registrar a leitura deste capítulo em seu histórico.' : `${completedChaptersCount} de ${readings.length} capítulos do dia lidos.`}
           </p>
         </div>
 
@@ -438,16 +495,29 @@ export default function LeitorBiblico({
             <span>{isCurrentChapterCompleted ? 'Capítulo Concluído ✓' : `Marcar ${currentChapterName} como Lido`}</span>
           </button>
 
-          {/* Próximo capítulo do dia se houver */}
-          {nextChapterInDay && (
+          {/* Próximo capítulo se houver no plano */}
+          {!isFreeReading && nextReadingInDay && (
             <button
               onClick={() => {
-                setSelectedChapter(nextChapterInDay.replace('Lucas ', '').trim());
+                const p = parseReading(nextReadingInDay);
+                setSelectedChapter(p.chapter);
+                setSelectedBook(p.book);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
               className="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-2xl bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 text-zinc-800 dark:text-zinc-200 text-xs font-bold transition-colors"
             >
-              <span>{nextChapterInDay}</span>
+              <span>{nextReadingInDay}</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          )}
+
+          {/* Próximo capítulo se em leitura livre */}
+          {isFreeReading && (
+            <button
+              onClick={() => onChangeFreeChapter && onChangeFreeChapter(activeBook, parseInt(selectedChapter, 10) + 1)}
+              className="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-2xl bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 text-zinc-800 dark:text-zinc-200 text-xs font-bold transition-colors"
+            >
+              <span>Próximo Cap.</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           )}
@@ -571,7 +641,7 @@ export default function LeitorBiblico({
                   className="inline-flex items-center space-x-1 text-[11px] font-medium text-amber-400 hover:underline px-1 py-0.5"
                   title="Ver referências cruzadas deste versículo"
                 >
-                  <Link2 className="w-3 h-3" />
+                  <Link2 className="w-3.5 h-3.5" />
                   <span>{singleVerseData.crossReferences.length} ref</span>
                 </button>
               )}

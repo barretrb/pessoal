@@ -6,7 +6,6 @@ import {
   Info, 
   ChevronRight, 
   Check, 
-  Sparkles,
   BookMarked
 } from 'lucide-react';
 import { BIBLE_BOOKS_STUDY_INFO } from '../data/bibleBooksStudyInfo';
@@ -20,7 +19,7 @@ export default function NavegacaoBibliaModal({
 }) {
   const [activeTestament, setActiveTestament] = useState('ALL'); // 'ALL' | 'AT' | 'NT'
   const [searchTerm, setSearchTerm] = useState('');
-  const [expandedBookId, setExpandedBookId] = useState('lucas'); // Lucas expandido por padrão
+  const [expandedBookId, setExpandedBookId] = useState('mateus');
 
   if (!isOpen) return null;
 
@@ -43,7 +42,7 @@ export default function NavegacaoBibliaModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/75 backdrop-blur-sm animate-in fade-in">
       <div className="relative w-full max-w-3xl max-h-[92vh] flex flex-col bg-white dark:bg-zinc-900 sepia:bg-[#fbf0d9] rounded-2xl sm:rounded-3xl shadow-2xl border border-zinc-300 dark:border-zinc-800 sepia:border-[#e6d3a7] overflow-hidden text-zinc-900 dark:text-zinc-100 sepia:text-[#433422]">
         
-        {/* CABEÇALHO COM CONTRASTE NÍTIDO */}
+        {/* CABEÇALHO */}
         <div className="flex items-center justify-between px-4 py-3 sm:px-5 sm:py-3.5 border-b border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] bg-zinc-100 dark:bg-zinc-800 sepia:bg-[#f4e4c1]">
           <div className="flex items-center space-x-2.5">
             <div className="w-8 h-8 rounded-xl bg-amber-500/10 dark:bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center">
@@ -54,7 +53,7 @@ export default function NavegacaoBibliaModal({
                 Bíblia Sagrada • Navegação
               </h2>
               <p className="text-[11px] text-zinc-600 dark:text-zinc-300 sepia:text-[#76634c]">
-                Selecione o livro e capítulo desejado
+                Selecione o livro e capítulo para ler
               </p>
             </div>
           </div>
@@ -68,17 +67,16 @@ export default function NavegacaoBibliaModal({
           </button>
         </div>
 
-        {/* FILTROS E BUSCA COMPACTOS */}
+        {/* FILTROS E BUSCA */}
         <div className="p-3 bg-zinc-50 dark:bg-zinc-900/90 sepia:bg-[#eee0be]/50 border-b border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] space-y-2.5">
           
-          {/* Campo de Busca */}
           <div className="relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-400" />
             <input
               type="text"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder="Buscar livro ou categoria (ex: Lucas, Salmos)..."
+              placeholder="Buscar livro ou categoria (ex: Mateus, Salmos, Romanos)..."
               className="w-full pl-8 pr-7 py-1.5 text-xs rounded-xl bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-amber-500"
             />
             {searchTerm && (
@@ -91,7 +89,6 @@ export default function NavegacaoBibliaModal({
             )}
           </div>
 
-          {/* Abas de Testamento compactas */}
           <div className="flex items-center space-x-1.5">
             <button
               onClick={() => setActiveTestament('ALL')}
@@ -126,7 +123,7 @@ export default function NavegacaoBibliaModal({
           </div>
         </div>
 
-        {/* LISTA DE LIVROS COMPACTA E LEGÍVEL (SEM FONTES GIGANTES, ALTO CONTRASTE) */}
+        {/* LISTA DE LIVROS COMPACTA COM CAPÍTULOS DE LEITURA DIRETA */}
         <div className="flex-1 overflow-y-auto p-2.5 sm:p-4 space-y-2">
           {filteredBooks.length === 0 ? (
             <div className="text-center py-8 text-zinc-500 dark:text-zinc-400 text-xs">
@@ -135,7 +132,6 @@ export default function NavegacaoBibliaModal({
           ) : (
             filteredBooks.map((book) => {
               const isExpanded = expandedBookId === book.id;
-              const hasFullText = book.id === 'lucas'; // Lucas já tem texto completo no app
 
               return (
                 <div 
@@ -146,17 +142,13 @@ export default function NavegacaoBibliaModal({
                       : 'border-zinc-200 dark:border-zinc-700 sepia:border-[#e6d3a7] bg-zinc-50 dark:bg-zinc-800/80 hover:border-zinc-400 dark:hover:border-zinc-600'
                   }`}
                 >
-                  {/* Linha do Livro Compacta */}
+                  {/* Linha do Livro */}
                   <div className="p-2.5 sm:p-3 flex items-center justify-between gap-2">
                     <div 
                       onClick={() => setExpandedBookId(isExpanded ? null : book.id)}
                       className="flex items-center space-x-2.5 cursor-pointer flex-1 min-w-0"
                     >
-                      <div className={`w-7 h-7 rounded-lg flex items-center justify-center text-[10px] font-bold shrink-0 ${
-                        hasFullText 
-                          ? 'bg-amber-500 text-white' 
-                          : 'bg-zinc-200 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200'
-                      }`}>
+                      <div className="w-7 h-7 rounded-lg bg-amber-500 text-white flex items-center justify-center text-[10px] font-bold shrink-0">
                         {book.name.substring(0, 2).toUpperCase()}
                       </div>
                       <div className="min-w-0">
@@ -164,14 +156,9 @@ export default function NavegacaoBibliaModal({
                           <span className="font-bold text-xs sm:text-sm text-zinc-900 dark:text-zinc-100 sepia:text-[#433422] truncate">
                             {book.name}
                           </span>
-                          {hasFullText && (
-                            <span className="text-[9px] bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 font-bold px-1.5 py-0.2 rounded-full border border-emerald-300 dark:border-emerald-800">
-                              Disponível
-                            </span>
-                          )}
                         </div>
                         <p className="text-[10px] text-zinc-500 dark:text-zinc-400 sepia:text-[#76634c]">
-                          {book.category} • {book.chapters} cap.
+                          {book.category} • {book.chapters} capítulos
                         </p>
                       </div>
                     </div>
@@ -181,7 +168,7 @@ export default function NavegacaoBibliaModal({
                       <button
                         onClick={() => onOpenStudyInfo(book.name)}
                         className="inline-flex items-center space-x-1 px-2 py-1 rounded-lg border border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-950/40 hover:bg-amber-100 text-amber-800 dark:text-amber-300 text-[11px] font-semibold transition-colors"
-                        title={`Ver informações de estudo de ${book.name}`}
+                        title={`Ver introdução teológica de ${book.name}`}
                       >
                         <Info className="w-3 h-3" />
                         <span>Estudo</span>
@@ -191,23 +178,18 @@ export default function NavegacaoBibliaModal({
                       <button
                         onClick={() => setExpandedBookId(isExpanded ? null : book.id)}
                         className="p-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
-                        title={isExpanded ? "Recolher capítulos" : "Ver capítulos"}
+                        title={isExpanded ? "Recolher capítulos" : "Ver capítulos para ler"}
                       >
                         <ChevronRight className={`w-3.5 h-3.5 transition-transform ${isExpanded ? 'rotate-90' : ''}`} />
                       </button>
                     </div>
                   </div>
 
-                  {/* Grade de Capítulos quando expandido */}
+                  {/* Grade de Capítulos: CLICOU, ABRE O LEITOR IMEDIATAMENTE */}
                   {isExpanded && (
                     <div className="p-2.5 sm:p-3 pt-0 border-t border-zinc-200 dark:border-zinc-700 space-y-1.5 bg-white/70 dark:bg-zinc-800/50">
                       <div className="flex items-center justify-between text-[11px] text-zinc-600 dark:text-zinc-300">
-                        <span className="font-medium">Escolha o capítulo:</span>
-                        {!hasFullText && (
-                          <span className="text-[10px] text-amber-600 dark:text-amber-400 font-medium">
-                            (Estudo teológico disponível)
-                          </span>
-                        )}
+                        <span className="font-medium">Toque no capítulo para ler agora:</span>
                       </div>
 
                       <div className="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-12 gap-1.5">
@@ -225,9 +207,9 @@ export default function NavegacaoBibliaModal({
                               className={`relative py-1.5 rounded-lg text-xs font-bold transition-all ${
                                 isDone 
                                   ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800'
-                                  : 'bg-zinc-200 dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 hover:bg-amber-500 hover:text-white'
+                                  : 'bg-zinc-200 dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 hover:bg-amber-500 hover:text-white active:scale-95'
                               }`}
-                              title={isDone ? `${chKey} (Concluído)` : `Ler ${chKey}`}
+                              title={isDone ? `${chKey} (Concluído) - Clique para ler` : `Abrir e ler ${chKey}`}
                             >
                               <span>{chNum}</span>
                               {isDone && (
@@ -248,7 +230,7 @@ export default function NavegacaoBibliaModal({
 
         {/* RODAPÉ */}
         <div className="px-4 py-2.5 border-t border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] bg-zinc-100 dark:bg-zinc-800 sepia:bg-[#f4e4c1] flex items-center justify-between text-xs text-zinc-600 dark:text-zinc-300">
-          <span>66 Livros da Bíblia Sagrada (NVT)</span>
+          <span>66 Livros Disponíveis para Leitura (NVT)</span>
           <button
             onClick={onClose}
             className="px-3.5 py-1 rounded-xl bg-zinc-300 dark:bg-zinc-700 hover:bg-zinc-400 text-zinc-900 dark:text-zinc-100 font-semibold transition-colors"

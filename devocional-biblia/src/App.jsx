@@ -13,6 +13,7 @@ import initialDays from './data/plano365.json';
 import lucasData from './data/lucas_nvt.json';
 import { storage } from './services/storage';
 import { getTodayDay, getPendingDays } from './services/dateUtils';
+import { fetchBookData } from './services/bibleService';
 import confetti from 'canvas-confetti';
 
 export default function App() {
@@ -24,12 +25,12 @@ export default function App() {
   // Progresso dos 365 dias
   const [days, setDays] = useState(() => storage.getProgress(initialDays));
 
-  // Progresso individual de capítulos (Item 2)
+  // Progresso individual de capítulos
   const [chapterProgress, setChapterProgress] = useState(() => storage.getChapterProgress());
 
-  // Cálculo DINÂMICO da data de hoje e pendências (Item 3)
+  // Cálculo DINÂMICO da data de hoje e pendências
   const todayDay = getTodayDay(days) || days[298];
-  const currentDayId = todayDay.id; // Ex: Dia 299 para 26 de Outubro
+  const currentDayId = todayDay.id;
 
   // Encontrar todas as pendências anteriores a hoje
   const allPendingDays = getPendingDays(days, currentDayId);
@@ -38,8 +39,13 @@ export default function App() {
   // Visualização e Seleção
   const [selectedDayId, setSelectedDayId] = useState(currentDayId);
   const [currentView, setCurrentView] = useState('dashboard'); // 'dashboard' | 'reader'
+  
+  // Estado para Leitura Livre de qualquer livro da Bíblia
   const [isFreeReading, setIsFreeReading] = useState(false);
-  const [freeReadingChapter, setFreeReadingChapter] = useState(null);
+  const [freeReadingBook, setFreeReadingBook] = useState('Mateus');
+  const [freeReadingChapter, setFreeReadingChapter] = useState(1);
+  const [currentBookData, setCurrentBookData] = useState(lucasData);
+  const [loadingBook, setLoadingBook] = useState(false);
 
   // Modais e Drawers
   const [bibleArcData, setBibleArcData] = useState({ isOpen: false, passage: '', text: '' });
@@ -47,7 +53,7 @@ export default function App() {
   const [commentaryData, setCommentaryData] = useState({ isOpen: false, chapterData: null });
   const [favoritesModalOpen, setFavoritesModalOpen] = useState(false);
   
-  // Modais de Navegação Livre da Bíblia e Bíblia de Estudos (Itens 6 e 7)
+  // Modais de Navegação Livre da Bíblia e Bíblia de Estudos
   const [bibleNavOpen, setBibleNavOpen] = useState(false);
   const [studyModalData, setStudyModalData] = useState({ isOpen: false, bookName: 'Lucas' });
 
@@ -80,20 +86,19 @@ export default function App() {
     );
   };
 
-  // Handler para marcar cada capítulo individualmente (Item 2)
+  // Handler para marcar cada capítulo individualmente
   const handleToggleChapter = (chapterName, status) => {
     const updated = storage.saveChapterProgress(chapterName, status);
     setChapterProgress({ ...updated });
 
-    // Verificar se todos os capítulos do dia atual foram concluídos
+    // Verificar se todos os capítulos do dia atual foram concluídos (se estiver no plano)
     const activeDay = days.find(d => d.id === selectedDayId);
-    if (activeDay) {
+    if (activeDay && !isFreeReading) {
       const allCompleted = activeDay.readings.every(r => 
         r === chapterName ? status : !!updated[r]?.completed
       );
       
       if (allCompleted && !activeDay.completed) {
-        // Marca o dia todo automaticamente como concluído
         storage.saveDayProgress(activeDay.id, true);
         setDays(prev => prev.map(d => d.id === activeDay.id ? { ...d, completed: true, completedAt: new Date().toISOString() } : d));
         try {
@@ -104,7 +109,6 @@ export default function App() {
           });
         } catch (e) {}
       } else if (!allCompleted && activeDay.completed) {
-        // Desmarca o dia todo se algum capítulo for desmarcado
         storage.saveDayProgress(activeDay.id, false);
         setDays(prev => prev.map(d => d.id === activeDay.id ? { ...d, completed: false, completedAt: null } : d));
       }
@@ -115,21 +119,28 @@ export default function App() {
   const handleSelectDay = (dayId) => {
     setSelectedDayId(dayId);
     setIsFreeReading(false);
-    setFreeReadingChapter(null);
     setCurrentView('reader');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Navegar para capítulo fora do plano devocional (Item 6)
-  const handleSelectFreeChapter = (bookName, chapterNum) => {
-    if (bookName === 'Lucas') {
-      setIsFreeReading(true);
-      setFreeReadingChapter(chapterNum);
-      setCurrentView('reader');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      // Abre as informações de estudo do livro
-      setStudyModalData({ isOpen: true, bookName });
+  // Navegar para capítulo livre de QUALQUER livro da Bíblia (Gênesis a Apocalipse)
+  const handleSelectFreeChapter = async (bookName, chapterNum) => {
+    const bName = bookName || 'Mateus';
+    const chNum = chapterNum || 1;
+    setFreeReadingBook(bName);
+    setFreeReadingChapter(chNum);
+    setIsFreeReading(true);
+    setCurrentView('reader');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    setLoadingBook(true);
+    try {
+      const data = await fetchBookData(bName);
+      setCurrentBookData(data);
+    } catch (err) {
+      console.error("Erro ao carregar livro bíblico:", err);
+    } finally {
+      setLoadingBook(false);
     }
   };
 
@@ -182,7 +193,9 @@ export default function App() {
         ) : (
           <LeitorBiblico
             dayData={isFreeReading ? null : currentDayData}
-            lucasData={lucasData}
+            bookData={isFreeReading ? currentBookData : lucasData}
+            currentBookName={isFreeReading ? freeReadingBook : 'Lucas'}
+            currentChapter={isFreeReading ? freeReadingChapter : '1'}
             onBack={() => {
               setIsFreeReading(false);
               setCurrentView('dashboard');
@@ -208,12 +221,13 @@ export default function App() {
             onToggleChapter={handleToggleChapter}
             onOpenStudyInfo={handleOpenStudyInfo}
             isFreeReading={isFreeReading}
-            freeReadingChapter={freeReadingChapter}
+            isLoading={loadingBook}
+            onChangeFreeChapter={handleSelectFreeChapter}
           />
         )}
       </main>
 
-      {/* Modal Navegação Livre da Bíblia (Item 6) */}
+      {/* Modal Navegação Livre da Bíblia */}
       <NavegacaoBibliaModal
         isOpen={bibleNavOpen}
         onClose={() => setBibleNavOpen(false)}
@@ -222,12 +236,15 @@ export default function App() {
         chapterProgress={chapterProgress}
       />
 
-      {/* Modal Bíblia de Estudos com Acordeões Retráteis (Item 7) */}
+      {/* Modal Bíblia de Estudos com Acordeões Retráteis */}
       <EstudoLivroModal
         isOpen={studyModalData.isOpen}
         onClose={() => setStudyModalData({ ...studyModalData, isOpen: false })}
         initialBookName={studyModalData.bookName}
-        onSelectChapterToRead={(bookName, ch) => handleSelectFreeChapter(bookName, ch)}
+        onSelectChapterToRead={(bookName, ch) => {
+          setStudyModalData({ isOpen: false, bookName });
+          handleSelectFreeChapter(bookName, ch || 1);
+        }}
       />
 
       {/* Modal BibleArc (John Piper) */}
@@ -273,7 +290,7 @@ export default function App() {
         }}
       />
 
-      {/* Rodapé sutil */}
+      {/* Rodapé */}
       <footer className="py-6 border-t border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] text-center text-xs text-zinc-400 dark:text-zinc-500">
         <p>Bíblia em 1 Ano • Nova Versão Transformadora (NVT)</p>
         <p className="mt-1">Desenvolvido para sua caminhada diária de fé e oração.</p>
