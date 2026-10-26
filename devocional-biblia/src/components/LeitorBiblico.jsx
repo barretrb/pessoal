@@ -222,7 +222,7 @@ export default function LeitorBiblico({
           {/* Botão de Comentários do Capítulo */}
           <button
             onClick={() => onOpenCommentary(chapterData)}
-            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-850 hover:bg-zinc-50 text-xs font-medium text-zinc-700 dark:text-zinc-300 transition-colors shadow-2xs"
+            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-800 hover:bg-zinc-50 text-xs font-medium text-zinc-700 dark:text-zinc-300 transition-colors shadow-2xs"
             title="Abrir Comentários & Diário Espiritual"
           >
             <MessageSquare className="w-3.5 h-3.5 text-amber-600" />
@@ -412,7 +412,7 @@ export default function LeitorBiblico({
       </article>
 
       {/* 4. CARD DE CONCLUSÃO DO CAPÍTULO ATUAL AO FINAL DA LEITURA */}
-      <div className="p-5 sm:p-6 rounded-3xl bg-zinc-100/80 dark:bg-zinc-850/80 sepia:bg-[#f4e4c1]/60 border border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="p-5 sm:p-6 rounded-3xl bg-zinc-100/80 dark:bg-zinc-800 sepia:bg-[#f4e4c1]/60 border border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <div className="flex items-center space-x-2">
             <CheckCircle2 className={`w-5 h-5 ${isCurrentChapterCompleted ? 'text-emerald-500' : 'text-zinc-400'}`} />

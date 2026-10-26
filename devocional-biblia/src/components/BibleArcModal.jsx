@@ -296,7 +296,7 @@ export default function BibleArcModal({ isOpen, onClose, initialPassage, initial
       >
         
         {/* Cabeçalho */}
-        <div className="px-3 sm:px-6 py-2.5 sm:py-3.5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between bg-zinc-50 dark:bg-zinc-850 gap-2">
+        <div className="px-3 sm:px-6 py-2.5 sm:py-3.5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between bg-zinc-50 dark:bg-zinc-800 gap-2">
           <div className="flex items-center space-x-2 sm:space-x-3 overflow-hidden min-w-0">
             {/* Botão Voltar Destacado */}
             <button
@@ -696,7 +696,7 @@ export default function BibleArcModal({ isOpen, onClose, initialPassage, initial
               </div>
 
               {/* Construtor de Arcos Lógicos */}
-              <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-4 sm:p-5 space-y-4 bg-white dark:bg-zinc-850">
+              <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-4 sm:p-5 space-y-4 bg-white dark:bg-zinc-800">
                 <div className="flex items-center justify-between">
                   <h4 className="font-bold text-sm text-zinc-900 dark:text-zinc-100 flex items-center space-x-2">
                     <GitCommit className="w-4 h-4 text-indigo-500" />
@@ -857,7 +857,7 @@ export default function BibleArcModal({ isOpen, onClose, initialPassage, initial
               </div>
 
               {/* Relação da Tese Central com as Demais */}
-              <div className="p-5 rounded-2xl bg-white dark:bg-zinc-850 border border-zinc-200 dark:border-zinc-800 space-y-4">
+              <div className="p-5 rounded-2xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-800 space-y-4">
                 <div className="flex items-center space-x-2">
                   <Star className="w-5 h-5 text-amber-500 fill-amber-500" />
                   <h4 className="font-bold text-sm text-zinc-900 dark:text-zinc-100">
@@ -1017,7 +1017,7 @@ export default function BibleArcModal({ isOpen, onClose, initialPassage, initial
               </div>
 
               {/* 2. Síntese Teológica / Ideia Central Exegética */}
-              <div className="space-y-3 bg-white dark:bg-zinc-850 p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800">
+              <div className="space-y-3 bg-white dark:bg-zinc-800 p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800">
                 <div className="flex items-center justify-between">
                   <label className="text-xs font-bold text-zinc-900 dark:text-zinc-100 flex items-center space-x-2">
                     <BookOpen className="w-4 h-4 text-indigo-500" />
@@ -1046,7 +1046,7 @@ export default function BibleArcModal({ isOpen, onClose, initialPassage, initial
               </div>
 
               {/* 3. Aplicação Pessoal e Prática Devocional */}
-              <div className="space-y-3 bg-white dark:bg-zinc-850 p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800">
+              <div className="space-y-3 bg-white dark:bg-zinc-800 p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800">
                 <label className="text-xs font-bold text-zinc-900 dark:text-zinc-100 flex items-center space-x-2">
                   <Lightbulb className="w-4 h-4 text-amber-500" />
                   <span>3. Aplicação Prática Devocional (O Fruto do Estudo)</span>
@@ -1097,7 +1097,7 @@ export default function BibleArcModal({ isOpen, onClose, initialPassage, initial
         </div>
 
         {/* Rodapé Fixo com Botão Voltar */}
-        <div className="px-3 sm:px-6 py-2.5 sm:py-3 border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-850 flex items-center justify-between gap-2">
+        <div className="px-3 sm:px-6 py-2.5 sm:py-3 border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 flex items-center justify-between gap-2">
           <button
             onClick={onClose}
             className="inline-flex items-center space-x-1.5 sm:space-x-2 px-3 sm:px-4 py-2 rounded-xl bg-zinc-200/90 hover:bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs sm:text-sm font-bold transition-colors"
