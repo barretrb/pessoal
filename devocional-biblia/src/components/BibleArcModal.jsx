@@ -101,54 +101,41 @@ export default function BibleArcModal({
         className="bg-white dark:bg-zinc-900 rounded-3xl w-full max-w-4xl max-h-[92vh] flex flex-col shadow-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden"
       >
         
-        {/* Cabeçalho */}
-        <div className="px-3 sm:px-6 py-3 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between bg-zinc-50 dark:bg-zinc-850 gap-2">
-          <div className="flex items-center space-x-2 sm:space-x-3 overflow-hidden min-w-0">
-            {/* Botão Voltar Destacado para Mobile */}
-            <button
-              onClick={onClose}
-              className="inline-flex items-center space-x-1 sm:space-x-1.5 px-3 py-1.5 sm:py-2 rounded-xl bg-zinc-200/90 hover:bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-100 text-xs font-bold transition-colors shrink-0 shadow-2xs"
-              title="Voltar ao leitor bíblico"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span>Voltar</span>
-            </button>
+        {/* Cabeçalho Superior: Ações e Título Limpo */}
+        <div className="px-3 sm:px-6 py-2.5 sm:py-3.5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between bg-zinc-50 dark:bg-zinc-850">
+          {/* Botão Voltar Destacado para Mobile */}
+          <button
+            onClick={onClose}
+            className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-xl bg-zinc-200/90 hover:bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-100 text-xs font-bold transition-colors shrink-0 shadow-2xs"
+            title="Voltar ao leitor bíblico"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            <span>Voltar</span>
+          </button>
 
-            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-base shadow-sm shrink-0">
+          {/* Identificação Central do Livro e Capítulo */}
+          <div className="flex items-center space-x-1.5 truncate px-2">
+            <div className="w-6 h-6 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-xs shadow-2xs shrink-0">
               ⌒
             </div>
-
-            <div className="min-w-0 flex-1">
-              <h3 className="font-extrabold text-xs sm:text-base text-zinc-900 dark:text-zinc-100 truncate">
-                Arqueamento: {chapterStudy.chapterTitle}
-              </h3>
-              <p className="text-[11px] sm:text-xs text-indigo-600 dark:text-indigo-400 font-semibold truncate">
-                {activeTheme.passage} • Análise de Discurso
-              </p>
-            </div>
+            <h3 className="font-extrabold text-sm sm:text-base text-zinc-900 dark:text-zinc-100 truncate">
+              {chapterStudy.chapterTitle}
+            </h3>
           </div>
 
-          <div className="flex items-center space-x-1 sm:space-x-2 shrink-0">
-            <button
-              onClick={() => setShowHelper(!showHelper)}
-              className="p-1.5 sm:p-2 text-zinc-500 hover:text-indigo-600 dark:text-zinc-400 dark:hover:text-indigo-400 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
-              title="Como Funciona o Arqueamento?"
-            >
-              <Compass className="w-4 h-4 sm:w-5 sm:h-5" />
-            </button>
-
+          {/* Ações da Direita */}
+          <div className="flex items-center space-x-1 shrink-0">
             <button
               onClick={handleCopyFullStudy}
-              className="inline-flex items-center space-x-1 sm:space-x-1.5 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-750 text-zinc-800 dark:text-zinc-200 text-xs font-semibold shadow-2xs transition-colors"
+              className="p-2 text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200 rounded-xl hover:bg-zinc-200/60 dark:hover:bg-zinc-800 transition-colors"
               title="Copiar Análise Completa"
             >
-              {copiedSuccess ? <Check className="w-4 h-4 text-emerald-500" /> : <Copy className="w-4 h-4 text-zinc-500" />}
-              <span className="hidden sm:inline">{copiedSuccess ? 'Copiado!' : 'Copiar'}</span>
+              {copiedSuccess ? <Check className="w-4 h-4 text-emerald-500" /> : <Copy className="w-4 h-4" />}
             </button>
 
             <button
               onClick={onClose}
-              className="p-1.5 sm:p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+              className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 rounded-xl hover:bg-zinc-200/60 dark:hover:bg-zinc-800 transition-colors"
               title="Fechar"
             >
               <X className="w-5 h-5" />
@@ -156,33 +143,52 @@ export default function BibleArcModal({
           </div>
         </div>
 
-        {/* Barra de Mapeamento por Temas do Capítulo */}
-        {themes.length > 1 && (
-          <div className="p-2 sm:p-3 bg-zinc-100/90 dark:bg-zinc-950/70 border-b border-zinc-200 dark:border-zinc-800 overflow-x-auto flex items-center space-x-2">
-            <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 shrink-0 px-2 flex items-center">
-              <Sparkles className="w-3.5 h-3.5 text-amber-500 mr-1" />
-              Temas:
-            </span>
-            <div className="flex space-x-2">
+        {/* Barra de Mapeamento por Temas & Contexto */}
+        <div className="px-3 sm:px-6 py-2.5 bg-zinc-100/70 dark:bg-zinc-950/50 border-b border-zinc-200 dark:border-zinc-800/80 space-y-2">
+          {/* Seletor de Temas em Pílulas Sem Barra de Rolagem Feia */}
+          {themes.length > 1 && (
+            <div className="flex items-center space-x-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden py-0.5">
               {themes.map((t, idx) => {
                 const isSelected = idx === activeThemeIdx;
                 return (
                   <button
                     key={t.id}
                     onClick={() => setActiveThemeIdx(idx)}
-                    className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all shadow-2xs flex items-center space-x-1.5 ${
+                    className={`px-3 py-1 rounded-xl text-xs font-semibold whitespace-nowrap transition-all shrink-0 ${
                       isSelected
                         ? 'bg-indigo-600 text-white shadow-xs scale-[1.02]'
-                        : 'bg-white dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700'
+                        : 'bg-white dark:bg-zinc-800/90 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700'
                     }`}
                   >
-                    <span>{t.themeTitle}</span>
+                    <span>{t.themeTitle.split(':')[0]}</span>
+                    <span className="text-[10px] opacity-75 ml-1">({t.passage.split(':')[1] || t.passage})</span>
                   </button>
                 );
               })}
             </div>
+          )}
+
+          {/* Título do Tema Ativo em Linha Própria */}
+          <div className="flex items-center justify-between gap-2">
+            <div className="min-w-0 flex-1">
+              <h4 className="font-extrabold text-xs sm:text-sm text-zinc-900 dark:text-zinc-100 truncate">
+                {activeTheme.themeTitle}
+              </h4>
+              <p className="text-[11px] text-indigo-600 dark:text-indigo-400 font-semibold truncate">
+                {activeTheme.passage} • Análise de Discurso (BibleArc)
+              </p>
+            </div>
+
+            <button
+              onClick={() => setShowHelper(!showHelper)}
+              className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center space-x-1 px-2 py-1 rounded-lg hover:bg-zinc-200/50 dark:hover:bg-zinc-800 shrink-0 transition-colors"
+              title="O que significam os arcos?"
+            >
+              <Compass className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Legenda</span>
+            </button>
           </div>
-        )}
+        </div>
 
         {/* Guia Didático Rápido do Método */}
         {showHelper && (
@@ -209,46 +215,48 @@ export default function BibleArcModal({
           </div>
         )}
 
-        {/* Barra de Abas de Degustação */}
-        <div className="flex items-center space-x-2 border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 px-3 sm:px-6 py-2 overflow-x-auto">
-          <button
-            onClick={() => setActiveTab('diagram')}
-            className={`flex items-center space-x-2 px-3.5 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap ${
-              activeTab === 'diagram'
-                ? 'bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 shadow-2xs'
-                : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
-            }`}
-          >
-            <Layers className="w-4 h-4" />
-            <span>1. Diagrama & Curvas</span>
-            <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 font-extrabold">
-              {arcs.length} arcos
-            </span>
-          </button>
+        {/* Barra de Abas em Grade Segmentada (Sem Transbordamento) */}
+        <div className="px-3 sm:px-6 pt-2 pb-1.5 bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800">
+          <div className="grid grid-cols-3 gap-1.5 p-1 bg-zinc-100 dark:bg-zinc-800/80 rounded-2xl">
+            <button
+              onClick={() => setActiveTab('diagram')}
+              className={`py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all text-center flex items-center justify-center space-x-1 ${
+                activeTab === 'diagram'
+                  ? 'bg-white dark:bg-zinc-900 text-indigo-600 dark:text-indigo-400 shadow-2xs'
+                  : 'text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-200'
+              }`}
+            >
+              <Layers className="w-3.5 h-3.5 shrink-0" />
+              <span>Diagrama</span>
+              <span className="text-[10px] px-1 rounded-full bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-extrabold">
+                {arcs.length}
+              </span>
+            </button>
 
-          <button
-            onClick={() => setActiveTab('synthesis')}
-            className={`flex items-center space-x-2 px-3.5 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap ${
-              activeTab === 'synthesis'
-                ? 'bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 shadow-2xs'
-                : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
-            }`}
-          >
-            <GitCommit className="w-4 h-4" />
-            <span>2. Síntese Teológica</span>
-          </button>
+            <button
+              onClick={() => setActiveTab('synthesis')}
+              className={`py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all text-center flex items-center justify-center space-x-1 ${
+                activeTab === 'synthesis'
+                  ? 'bg-white dark:bg-zinc-900 text-indigo-600 dark:text-indigo-400 shadow-2xs'
+                  : 'text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-200'
+              }`}
+            >
+              <GitCommit className="w-3.5 h-3.5 shrink-0" />
+              <span>Síntese</span>
+            </button>
 
-          <button
-            onClick={() => setActiveTab('application')}
-            className={`flex items-center space-x-2 px-3.5 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap ${
-              activeTab === 'application'
-                ? 'bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 shadow-2xs'
-                : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
-            }`}
-          >
-            <Heart className="w-4 h-4 text-rose-500 fill-rose-500" />
-            <span>3. Aplicação Prática</span>
-          </button>
+            <button
+              onClick={() => setActiveTab('application')}
+              className={`py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all text-center flex items-center justify-center space-x-1 ${
+                activeTab === 'application'
+                  ? 'bg-white dark:bg-zinc-900 text-indigo-600 dark:text-indigo-400 shadow-2xs'
+                  : 'text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-200'
+              }`}
+            >
+              <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 shrink-0" />
+              <span>Aplicação</span>
+            </button>
+          </div>
         </div>
 
         {/* Conteúdo Dinâmico */}
