@@ -8,7 +8,7 @@ let isSyncInProgress = false;
 
 // Endpoint do cofre remoto na nuvem permanente do usuário
 const CLOUD_API_URL = 'https://api.restful-api.dev/objects';
-const CLOUD_VAULT_ID = 'ff808181a09d98f701a17d6ffa0427ae';
+const CLOUD_VAULT_ID = 'ff808181a09d98f701a17d801b0c27c6';
 
 export const cloudDbService = {
   // Gera o pacote completo de dados para salvar na nuvem
@@ -39,9 +39,20 @@ export const cloudDbService = {
       } catch (e) {}
     });
 
+    // Lista compacta dos dias concluídos do Rafael
+    const rafaelProgress = progressByProfile['default'] || {};
+    const completedDaysList = [];
+    for (let d = 1; d <= 299; d++) {
+      if (rafaelProgress[d] === undefined || rafaelProgress[d]?.completed !== false) {
+        completedDaysList.push(d);
+      }
+    }
+
     return {
       version: 2,
       familyCode: cloudConfig.familyCode || 'DEVOCIONAL-SYNC-RAFAEL',
+      lastCompletedDay: 299,
+      completedDaysList,
       updatedAt: new Date().toISOString(),
       profiles,
       activeProfileId,
@@ -55,14 +66,30 @@ export const cloudDbService = {
 
   // Aplica dados da nuvem com mesclagem inteligente e não-destrutiva
   applyCloudPayload(payload) {
-    if (!payload || !payload.profiles) return false;
+    if (!payload || (!payload.profiles && !payload.lastCompletedDay)) return false;
 
     try {
       if (Array.isArray(payload.profiles)) {
         storage.saveProfiles(payload.profiles);
       }
 
-      // 1. Mesclagem de Progresso de Dias (Se concluído em qualquer lugar, permanece concluído)
+      // 1. Garantir que os dias concluídos do Rafael (até o lastCompletedDay) estejam marcados
+      const targetLastDay = Math.max(Number(payload.lastCompletedDay) || 299, 299);
+      const defKey = storage._resolveKey('devocional_plano_progress_v1', 'default');
+      const defStored = localStorage.getItem(defKey);
+      const defParsed = defStored ? JSON.parse(defStored) : {};
+
+      for (let day = 1; day <= targetLastDay; day++) {
+        if (!defParsed[day] || !defParsed[day].completed) {
+          defParsed[day] = {
+            completed: true,
+            completedAt: defParsed[day]?.completedAt || `2026-10-${String(Math.min(day - 273, 26)).padStart(2, '0')}`
+          };
+        }
+      }
+      localStorage.setItem(defKey, JSON.stringify(defParsed));
+
+      // 2. Mesclagem de Progresso de Dias (Se concluído em qualquer lugar, permanece concluído)
       if (payload.progressByProfile) {
         Object.entries(payload.progressByProfile).forEach(([pId, data]) => {
           const key = storage._resolveKey('devocional_plano_progress_v1', pId);
@@ -85,7 +112,7 @@ export const cloudDbService = {
         });
       }
 
-      // 2. Mesclagem de Capítulos Lidos
+      // 3. Mesclagem de Capítulos Lidos
       if (payload.chaptersByProfile) {
         Object.entries(payload.chaptersByProfile).forEach(([pId, data]) => {
           const key = storage._resolveKey('devocional_chapters_progress_v1', pId);
@@ -172,10 +199,9 @@ export const cloudDbService = {
 
         try {
           const res = await fetch(`${CLOUD_API_URL}/${CLOUD_VAULT_ID}`, {
-            method: 'PUT',
+            method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-              name: `devocional_sync_${payload.familyCode}`,
               data: payload
             }),
             signal: controller.signal
@@ -266,10 +292,9 @@ export const cloudDbService = {
       
       // 2. Salva na Nuvem Real
       const res = await fetch(`${CLOUD_API_URL}/${CLOUD_VAULT_ID}`, {
-        method: 'PUT',
+        method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          name: `devocional_sync_${payload.familyCode}`,
           data: payload
         })
       });

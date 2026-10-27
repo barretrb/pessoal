@@ -49,21 +49,25 @@ test('QA Test 1: Restauração Integral do Histórico de Dias Concluídos do Raf
   // Deve ter exatamente 365 dias
   assert.equal(rafaelDays.length, 365, 'O plano deve ter 365 dias');
 
-  // Dias 1 até 296 devem estar CONCLUÍDOS (completed: true)
+  // Dias 1 até 299 devem estar CONCLUÍDOS (completed: true)
   const completedCount = rafaelDays.filter(d => d.completed).length;
-  assert.ok(completedCount >= 296, `Rafael deve ter no mínimo 296 dias concluídos. Encontrado: ${completedCount}`);
+  assert.ok(completedCount >= 299, `Rafael deve ter no mínimo 299 dias concluídos. Encontrado: ${completedCount}`);
 
-  // Dia 298 (ontem) deve estar pendente (completed: false)
+  // Dia 300 (hoje) deve estar pendente (completed: false)
+  const day300 = rafaelDays.find(d => d.id === 300);
+  assert.equal(day300.completed, false, 'Dia 300 (hoje) deve ser pendente');
+
+  // Dias 297, 298 e 299 devem estar concluídos
+  const day297 = rafaelDays.find(d => d.id === 297);
   const day298 = rafaelDays.find(d => d.id === 298);
-  assert.equal(day298.completed, false, 'Dia 298 deve ser pendente');
+  const day299 = rafaelDays.find(d => d.id === 299);
+  assert.equal(day297.completed, true, 'Dia 297 deve estar concluído');
+  assert.equal(day298.completed, true, 'Dia 298 deve estar concluído');
+  assert.equal(day299.completed, true, 'Dia 299 deve estar concluído');
 
   // Dia 1 deve estar concluído
   const day1 = rafaelDays.find(d => d.id === 1);
   assert.equal(day1.completed, true, 'Dia 1 deve estar concluído');
-
-  // Dia 296 deve estar concluído
-  const day296 = rafaelDays.find(d => d.id === 296);
-  assert.equal(day296.completed, true, 'Dia 296 deve estar concluído');
 
   console.log(`✓ QA Test 1 Aprovado: Histórico restaurado com ${completedCount}/365 dias concluídos.`);
 });

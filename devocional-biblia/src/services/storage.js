@@ -188,7 +188,7 @@ export const storage = {
       const parsed = stored ? JSON.parse(stored) : {};
 
       // Para o Rafael ('default'):
-      // Se não há alteração explícita no parsed, os dias concluídos originais (dias 1 a 296) são preservados!
+      // Se não há alteração explícita no parsed, os dias concluídos originais (dias 1 a 299) são preservados!
       if (profileId === 'default') {
         return defaultDays.map(d => {
           let isCompleted = d.completed;
@@ -198,8 +198,8 @@ export const storage = {
           if (parsed[d.id] !== undefined) {
             isCompleted = parsed[d.id].completed;
             completedAt = parsed[d.id].completedAt;
-          } else if (d.id <= 296) {
-            // Garante que todo o histórico do Rafael até o dia 296 permaneça intacto
+          } else if (d.id <= 299) {
+            // Garante que todo o histórico do Rafael até o dia 299 permaneça intacto
             isCompleted = true;
             completedAt = completedAt || `2026-${String(Math.floor(d.id / 31) + 1).padStart(2, '0')}-01`;
           }

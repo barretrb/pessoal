@@ -3972,8 +3972,8 @@
       "Lucas 11",
       "Lucas 12"
     ],
-    "completed": false,
-    "completedAt": null
+    "completed": true,
+    "completedAt": "2026-10-24"
   },
   {
     "id": 298,
@@ -3985,8 +3985,8 @@
       "Lucas 14",
       "Lucas 15"
     ],
-    "completed": false,
-    "completedAt": null
+    "completed": true,
+    "completedAt": "2026-10-25"
   },
   {
     "id": 299,
@@ -3998,8 +3998,8 @@
       "Lucas 17",
       "Lucas 18"
     ],
-    "completed": false,
-    "completedAt": null
+    "completed": true,
+    "completedAt": "2026-10-26"
   },
   {
     "id": 300,
