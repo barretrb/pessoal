@@ -296,3 +296,67 @@ test('QA Test 9: Validação Exegética de Teses Centrais no Arqueamento (Êxodo
 
   console.log('✓ QA Test 9 Aprovado: Teses centrais exegeticamente corretas e preâmbulos narrativos eliminados.');
 });
+
+test('QA Test 10: Mídia Devocional Diária (Músicas < 10 min, Sem Repetição de Ontem, Vídeos do Tema)', async () => {
+  const { getMediaForDay, getMediaForPassage, SHORT_DEVOTIONAL_TRACKS } = await import('../src/data/dailyMedia.js');
+
+  // 1. A música de hoje (Dia 300) NÃO pode ser igual à de ontem (Dia 299)
+  const mediaOntem = getMediaForDay(299, { readings: ['Lucas 16', 'Lucas 17', 'Lucas 18'] });
+  const mediaHoje = getMediaForDay(300, { readings: ['Lucas 19', 'Lucas 20', 'Lucas 21'] });
+
+  assert.notEqual(
+    mediaHoje.music.title,
+    mediaOntem.music.title,
+    'A música de hoje DEVE ser diferente da música de ontem'
+  );
+  assert.notEqual(
+    mediaHoje.music.youtubeId,
+    mediaOntem.music.youtubeId,
+    'O vídeo da música de hoje DEVE ter ID diferente de ontem'
+  );
+
+  // 2. A música NÃO pode ser um set/live de 1 hora (limite estrito: até 10 minutos)
+  assert.ok(
+    mediaHoje.music.duration,
+    'A música deve indicar a duração'
+  );
+  // Verificar que todas as músicas do catálogo têm duração declarada de até 10 minutos
+  SHORT_DEVOTIONAL_TRACKS.forEach(track => {
+    assert.ok(track.duration, `Faixa ${track.title} deve ter duração especificada`);
+    const minutes = parseFloat(track.duration.replace(' min', '').replace(':', '.'));
+    assert.ok(minutes < 10, `Faixa ${track.title} (${track.duration}) deve ter menos de 10 minutos`);
+    assert.notEqual(track.youtubeId, 'JPXjpqstzng', 'Não pode conter o setlist de 1 hora (JPXjpqstzng)');
+  });
+
+  // 3. A música de hoje é inspirada no tema do dia (Lucas 19 - Zaqueu e a Entrada Triunfal)
+  assert.ok(
+    mediaHoje.music.title.includes('Zaqueu') || mediaHoje.music.theme.includes('Lucas 19'),
+    'Música de hoje deve ser contextualizada ao encontro de Zaqueu e Entrada Triunfal'
+  );
+
+  // 4. O vídeo de hoje deve ser do BibleProject relacionado diretamente ao tema de Lucas 19-21
+  assert.ok(
+    mediaHoje.video.title.includes('Lucas 19') || mediaHoje.video.youtubeId === 'sU15_0N87LE',
+    'O vídeo de hoje deve ser a animação oficial do BibleProject sobre Lucas 19 a 23'
+  );
+
+  // 5. Testar vídeo contextualizado para outros livros na leitura livre (ex: Êxodo)
+  const mediaExodo = getMediaForPassage('Êxodo', '5');
+  assert.ok(
+    mediaExodo.video.title.includes('Êxodo'),
+    'O vídeo de estudo para Êxodo deve ser o vídeo do BibleProject de Êxodo'
+  );
+
+  // 6. Testar rotação garantida para dias sequenciais quaisquer
+  for (let d = 1; d <= 10; d++) {
+    const m1 = getMediaForDay(d);
+    const m2 = getMediaForDay(d + 1);
+    assert.notEqual(
+      m1.music.title,
+      m2.music.title,
+      `Dia ${d} e Dia ${d + 1} não podem ter a mesma música devocional`
+    );
+  }
+
+  console.log('✓ QA Test 10 Aprovado: Músicas curtas (<10min), rotação diária sem repetição e vídeos conectados ao tema.');
+});

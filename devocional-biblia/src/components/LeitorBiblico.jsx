@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { HIGHLIGHT_COLORS, storage } from '../services/storage';
-import { getMediaForDay } from '../data/dailyMedia';
+import { getMediaForDay, getMediaForPassage } from '../data/dailyMedia';
 import { speechService } from '../services/speechService';
 import { bibleCommentaryService } from '../services/bibleCommentaryService';
 import AudioPlayerBar from './AudioPlayerBar';
@@ -70,8 +70,10 @@ export default function LeitorBiblico({
   // MULTI-SELEÇÃO DE VERSÍCULOS
   const [selectedVerses, setSelectedVerses] = useState({});
 
-  // Mídia do dia (se houver no plano devocional)
-  const dayMedia = dayData ? getMediaForDay(dayData.id) : null;
+  // Mídia devocional conectada à leitura (do plano do dia ou leitura livre)
+  const dayMedia = dayData 
+    ? getMediaForDay(dayData.id, dayData) 
+    : getMediaForPassage(selectedBook || 'Lucas', selectedChapter || '1');
 
   // Atualizar quando trocar de dia, livro ou capítulo livre
   useEffect(() => {

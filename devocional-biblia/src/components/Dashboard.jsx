@@ -48,8 +48,8 @@ export default function Dashboard({
   const [isCustomizeOpen, setIsCustomizeOpen] = useState(false);
 
   // Mídia do dia atual
-  const activeMedia = getMediaForDay(currentDayId);
   const currentDayData = days.find(d => d.id === currentDayId);
+  const activeMedia = getMediaForDay(currentDayId, currentDayData);
   const pendingDayData = pendingDayId ? days.find(d => d.id === pendingDayId) : null;
 
   // Estatísticas do perfil atual
@@ -343,7 +343,14 @@ export default function Dashboard({
             <div className="flex items-center space-x-3">
               <span className="text-xl">🎵</span>
               <div>
-                <p className="text-xs font-bold">{activeMedia.music.title} - {activeMedia.music.artist}</p>
+                <p className="text-xs font-bold flex items-center gap-1.5">
+                  <span>{activeMedia.music.title} - {activeMedia.music.artist}</span>
+                  {activeMedia.music.duration && (
+                    <span className="text-[10px] bg-white/20 px-1.5 py-0.2 rounded-full font-semibold">
+                      ⏱ {activeMedia.music.duration}
+                    </span>
+                  )}
+                </p>
                 <p className="text-[11px] text-amber-100">{activeMedia.theme}</p>
               </div>
             </div>
@@ -355,9 +362,16 @@ export default function Dashboard({
           <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-600 via-orange-600 to-rose-700 text-white shadow-xl shadow-orange-950/10 p-6 sm:p-8">
             <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
               <div className="space-y-2 max-w-2xl">
-                <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs font-semibold uppercase tracking-wider text-amber-100">
-                  <Music className="w-3.5 h-3.5 animate-bounce" />
-                  <span>Música Devocional do Dia • YouTube Music</span>
+                <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs font-semibold uppercase tracking-wider text-amber-100">
+                  <div className="flex items-center space-x-1.5">
+                    <Music className="w-3.5 h-3.5 animate-bounce" />
+                    <span>Música Devocional do Dia • YouTube Music</span>
+                  </div>
+                  {activeMedia.music.duration && (
+                    <span className="bg-white/25 px-2 py-0.5 rounded-full text-[10px] font-bold text-white">
+                      ⏱ {activeMedia.music.duration} (&lt; 10 min)
+                    </span>
+                  )}
                 </div>
                 
                 <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
@@ -574,12 +588,20 @@ export default function Dashboard({
                   <Video className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-zinc-900 dark:text-zinc-100">
-                    Vídeo de Estudo Relacionado
+                  <h3 className="font-bold text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
+                    <span>Vídeo de Estudo Relacionado</span>
+                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-rose-100 text-rose-700 dark:bg-rose-950/70 dark:text-rose-300 font-semibold tracking-wide">
+                      Tema do Dia
+                    </span>
                   </h3>
-                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                  <p className="text-xs text-zinc-600 dark:text-zinc-400 font-medium">
                     {activeMedia.video.title} • {activeMedia.video.channel}
                   </p>
+                  {activeMedia.video.description && (
+                    <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-1 max-w-xl line-clamp-2">
+                      {activeMedia.video.description}
+                    </p>
+                  )}
                 </div>
               </div>
 
