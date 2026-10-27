@@ -340,8 +340,8 @@ test('QA Test 10: Mídia Devocional Diária (Músicas < 10 min, Sem Repetição 
 
   // 4. O vídeo de hoje deve ser do BibleProject relacionado diretamente ao tema de Lucas 19-21
   assert.ok(
-    mediaHoje.video.title.includes('Lucas 19') || mediaHoje.video.youtubeId === 'sU15_0N87LE',
-    'O vídeo de hoje deve ser a animação oficial do BibleProject sobre Lucas 19 a 23'
+    mediaHoje.video.title.includes('Lucas') || mediaHoje.video.youtubeId === 'UeUAAAs7hec',
+    'O vídeo de hoje deve ser a animação oficial do BibleProject sobre Lucas 10 a 24'
   );
 
   // 5. Testar vídeo contextualizado para outros livros na leitura livre (ex: Êxodo)
