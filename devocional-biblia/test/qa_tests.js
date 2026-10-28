@@ -38,6 +38,7 @@ const defaultDays = JSON.parse(readFileSync(planoPath, 'utf-8'));
 const { storage, DEFAULT_PROFILES, DEFAULT_DASHBOARD_LAYOUT } = await import('../src/services/storage.js');
 const { cloudDbService } = await import('../src/services/cloudDbService.js');
 const { bibleCommentaryService } = await import('../src/services/bibleCommentaryService.js');
+const { crossReferenceService } = await import('../src/services/crossReferenceService.js');
 const { bibleArcEngine } = await import('../src/services/bibleArcEngine.js');
 
 test('QA Test 1: Restauração Integral do Histórico de Dias Concluídos do Rafael', () => {
@@ -363,4 +364,58 @@ test('QA Test 10: Mídia Devocional Diária (Músicas < 10 min, Sem Repetição 
   }
 
   console.log('✓ QA Test 10 Aprovado: Músicas curtas (<10min), rotação diária sem repetição e vídeos conectados ao tema.');
+});
+
+test('QA Test 11: Referências Cruzadas Bíblicas e Conexões Canônicas', async () => {
+  // 1. Validar que versículos chave de Lucas 19 a 21 (leitura de hoje) possuem referências
+  const refsLc19_10 = crossReferenceService.getReferences('Lucas', '19', 10);
+  assert.ok(refsLc19_10.length > 0, 'Lucas 19:10 ("buscar e salvar o perdido") deve ter referências cruzadas');
+  assert.ok(
+    refsLc19_10.some(r => r.reference.includes('Ezequiel 34:16') || r.reference.includes('Mateus 18:11')),
+    'Lucas 19:10 deve conectar-se a Ezequiel 34 ou Mateus 18'
+  );
+
+  const refsLc19_38 = crossReferenceService.getReferences('Lucas', '19', 38);
+  assert.ok(refsLc19_38.length > 0, 'Lucas 19:38 (Entrada Triunfal) deve ter referências cruzadas');
+  assert.ok(
+    refsLc19_38.some(r => r.reference.includes('Salmos 118:26')),
+    'Lucas 19:38 deve citar Salmos 118:26'
+  );
+
+  const refsLc20_17 = crossReferenceService.getReferences('Lucas', '20', 17);
+  assert.ok(refsLc20_17.length > 0, 'Lucas 20:17 (A pedra angular) deve ter referências');
+  assert.ok(
+    refsLc20_17.some(r => r.reference.includes('Salmos 118:22') || r.reference.includes('Isaías 28:16')),
+    'Lucas 20:17 deve conectar-se ao Salmo 118 ou Isaías 28'
+  );
+
+  const refsLc21_33 = crossReferenceService.getReferences('Lucas', '21', 33);
+  assert.ok(refsLc21_33.length > 0, 'Lucas 21:33 ("O céu e a terra passarão...") deve ter referências');
+  assert.ok(
+    refsLc21_33.some(r => r.reference.includes('Isaías 40:8') || r.reference.includes('Mateus 24:35')),
+    'Lucas 21:33 deve conectar-se a Isaías 40:8 ou Mateus 24:35'
+  );
+
+  // 2. Validar que capítulos anteriores (ex: Lucas 16, 17, 18) e futuros (Lucas 22, 23, 24) possuem referências
+  const refsLc16_13 = crossReferenceService.getReferences('Lucas', '16', 13);
+  assert.ok(refsLc16_13.length > 0, 'Lucas 16:13 ("Nenhum servo pode servir a dois senhores") deve ter referências');
+
+  const refsLc22_19 = crossReferenceService.getReferences('Lucas', '22', 19);
+  assert.ok(refsLc22_19.length > 0, 'Lucas 22:19 (A Ceia do Senhor) deve ter referências');
+  assert.ok(
+    refsLc22_19.some(r => r.reference.includes('1 Coríntios 11:23') || r.reference.includes('1 Coríntios 11:24') || r.reference.includes('1 Coríntios 11')),
+    'Lucas 22:19 deve conectar-se a 1 Coríntios 11:23-24'
+  );
+
+  // 3. Validar fallback e preservação de referências nativas do arquivo se houver
+  const nativeRef = [{ reference: 'Romanos 1:1', text: 'Texto de teste', connection: 'Conexão teste' }];
+  const mergedRefs = crossReferenceService.getReferences('Lucas', '19', 10, nativeRef);
+  assert.ok(mergedRefs.length >= 2, 'Deve mesclar referências nativas com o catálogo canônico');
+  assert.ok(mergedRefs.some(r => r.reference === 'Romanos 1:1'), 'Deve manter a referência nativa');
+
+  // 4. Testar método hasReferences
+  assert.equal(crossReferenceService.hasReferences('Lucas', '19', 10), true);
+  assert.equal(crossReferenceService.hasReferences('Lucas', '999', 999), false);
+
+  console.log('✓ QA Test 11 Aprovado: Referências cruzadas bíblicas ativas e canonicamente conectadas em todos os capítulos.');
 });

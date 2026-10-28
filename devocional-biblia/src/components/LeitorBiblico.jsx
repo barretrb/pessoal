@@ -23,6 +23,7 @@ import { HIGHLIGHT_COLORS, storage } from '../services/storage';
 import { getMediaForDay, getMediaForPassage } from '../data/dailyMedia';
 import { speechService } from '../services/speechService';
 import { bibleCommentaryService } from '../services/bibleCommentaryService';
+import { crossReferenceService } from '../services/crossReferenceService';
 import AudioPlayerBar from './AudioPlayerBar';
 
 function parseReading(str) {
@@ -511,7 +512,8 @@ export default function LeitorBiblico({
                     const verseKey = `${activeBook} ${selectedChapter}:${v.number}`;
                     const highlight = highlights[verseKey];
                     const isFavorite = favorites.some(f => f.key === verseKey);
-                    const hasCrossRefs = v.crossReferences && v.crossReferences.length > 0;
+                    const crossRefs = crossReferenceService.getReferences(activeBook, selectedChapter, v.number, v.crossReferences);
+                    const hasCrossRefs = crossRefs.length > 0;
                     const isSelected = !!selectedVerses[verseKey];
                     const isSpeaking = speakingVerseNumber === v.number;
                     const highlightClass = highlight && HIGHLIGHT_COLORS[highlight.color] ? HIGHLIGHT_COLORS[highlight.color].bg : '';
@@ -541,7 +543,7 @@ export default function LeitorBiblico({
                           <button
                             onClick={(e) => {
                               e.stopPropagation();
-                              onOpenReferences(verseKey, v.crossReferences);
+                              onOpenReferences(verseKey, crossRefs);
                             }}
                             className="inline-flex items-center text-amber-600 dark:text-amber-400 hover:text-amber-800 ml-1 p-0.5 align-middle select-none"
                             title="Ver referências cruzadas"
@@ -652,7 +654,10 @@ export default function LeitorBiblico({
       {selectedCount > 0 && (() => {
         const citation = formatCitation();
         const singleVerseData = selectedCount === 1 ? Object.values(selectedVerses)[0] : null;
-        const hasRefs = singleVerseData && singleVerseData.crossReferences && singleVerseData.crossReferences.length > 0;
+        const singleRefs = singleVerseData 
+          ? crossReferenceService.getReferences(activeBook, selectedChapter, singleVerseData.number, singleVerseData.crossReferences)
+          : [];
+        const hasRefs = singleRefs.length > 0;
 
         return (
           <div className="fixed bottom-18 md:bottom-6 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-1.25rem)] max-w-lg bg-zinc-900/95 dark:bg-zinc-900/95 text-white rounded-2xl shadow-2xl p-3 border border-zinc-700/80 backdrop-blur-md animate-in fade-in slide-in-from-bottom-4">
@@ -759,14 +764,14 @@ export default function LeitorBiblico({
               {hasRefs && (
                 <button
                   onClick={() => {
-                    onOpenReferences(singleVerseData.key, singleVerseData.crossReferences);
+                    onOpenReferences(singleVerseData.key, singleRefs);
                     setSelectedVerses({});
                   }}
                   className="inline-flex items-center space-x-1 text-[11px] font-medium text-amber-400 hover:underline px-1 py-0.5"
                   title="Ver referências cruzadas deste versículo"
                 >
                   <Link2 className="w-3.5 h-3.5" />
-                  <span>{singleVerseData.crossReferences.length} ref</span>
+                  <span>{singleRefs.length} {singleRefs.length === 1 ? 'ref' : 'refs'}</span>
                 </button>
               )}
             </div>
