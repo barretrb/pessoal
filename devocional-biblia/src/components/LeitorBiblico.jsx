@@ -24,6 +24,7 @@ import { getMediaForDay, getMediaForPassage } from '../data/dailyMedia';
 import { speechService } from '../services/speechService';
 import { bibleCommentaryService } from '../services/bibleCommentaryService';
 import { crossReferenceService } from '../services/crossReferenceService';
+import { fetchBookData } from '../services/bibleService';
 import AudioPlayerBar from './AudioPlayerBar';
 
 function parseReading(str) {
@@ -94,13 +95,48 @@ export default function LeitorBiblico({
     setSelectedVerses({});
   }, [selectedChapter, selectedBook]);
 
-  // Carregar dados do capítulo atual a partir de bookData
+  // Carregar dados do capítulo atual a partir de bookData ou busca dinâmica
   const activeBook = isFreeReading ? currentBookName : selectedBook;
-  const activeChapterData = bookData?.[selectedChapter] || {
+  const [internalBookData, setInternalBookData] = useState(bookData);
+  const [isFetchingBook, setIsFetchingBook] = useState(false);
+
+  useEffect(() => {
+    if (bookData) {
+      setInternalBookData(bookData);
+    }
+  }, [bookData]);
+
+  useEffect(() => {
+    if (!activeBook) return;
+    const sampleChapter = internalBookData ? Object.values(internalBookData)[0] : null;
+    const currentDataBook = sampleChapter?.book || '';
+    if (currentDataBook && currentDataBook.toLowerCase() === activeBook.toLowerCase()) {
+      return;
+    }
+
+    let isMounted = true;
+    setIsFetchingBook(true);
+    fetchBookData(activeBook)
+      .then(data => {
+        if (isMounted && data) {
+          setInternalBookData(data);
+        }
+      })
+      .catch(err => console.error("Erro ao carregar livro no leitor:", err))
+      .finally(() => {
+        if (isMounted) setIsFetchingBook(false);
+      });
+
+    return () => { isMounted = false; };
+  }, [activeBook, internalBookData]);
+
+  const activeChapterData = internalBookData?.[selectedChapter] || {
     book: activeBook,
     chapter: selectedChapter,
     sections: []
   };
+
+  const isDataLoading = isLoading || isFetchingBook || (activeChapterData?.book && activeChapterData.book.toLowerCase() !== activeBook.toLowerCase());
 
   // Highlights e Favoritos locais
   const [highlights, setHighlights] = useState(storage.getHighlights());
@@ -480,7 +516,7 @@ export default function LeitorBiblico({
       </div>
 
       {/* ESTADO DE CARREGAMENTO */}
-      {isLoading ? (
+      {isDataLoading ? (
         <div className="py-20 flex flex-col items-center justify-center space-y-3 text-zinc-500 dark:text-zinc-400">
           <Loader2 className="w-8 h-8 animate-spin text-amber-500" />
           <p className="text-sm font-semibold">Carregando {activeBook} {selectedChapter} (NVT)...</p>

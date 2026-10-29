@@ -1,5 +1,5 @@
-import lucasData from '../data/lucas_nvt.json';
-import { BIBLE_BOOKS_STUDY_INFO } from '../data/bibleBooksStudyInfo';
+import lucasData from '../data/lucas_nvt.json' with { type: 'json' };
+import { BIBLE_BOOKS_STUDY_INFO } from '../data/bibleBooksStudyInfo.js';
 
 // Cache em memória de livros já carregados
 const bookCache = {
@@ -28,6 +28,82 @@ export function normalizeBookId(nameOrId) {
 export function getBookNameById(bookId) {
   const info = BIBLE_BOOKS_STUDY_INFO.find(b => b.id === bookId);
   return info ? info.name : bookId;
+}
+
+export function parseReading(str) {
+  if (!str) return { book: 'Lucas', chapter: '1' };
+  const parts = str.trim().split(/\s+/);
+  const chapter = parts.pop();
+  const book = parts.join(' ');
+  return { book: book || 'Lucas', chapter: chapter || '1' };
+}
+
+export function sanitizeBookData(bookData) {
+  if (!bookData || typeof bookData !== 'object') return bookData;
+
+  const result = {};
+
+  for (const [chKey, chData] of Object.entries(bookData)) {
+    if (!chData || !Array.isArray(chData.sections)) {
+      result[chKey] = chData;
+      continue;
+    }
+
+    const allVerses = chData.sections.flatMap(s => s.verses);
+    if (!allVerses || allVerses.length === 0) {
+      result[chKey] = chData;
+      continue;
+    }
+
+    const hasEmbedded = allVerses.some(v => v.text && /^(.*?[.!?\u201d\u2019'])\s+([A-ZÀ-Ú][^.!?\n,;:]{3,65})$/.test(v.text));
+    if (!hasEmbedded && chData.sections.length > 1) {
+      result[chKey] = chData;
+      continue;
+    }
+
+    let newSections = [];
+    let currentTitle = chData.sections[0]?.title || '';
+    let currentVerses = [];
+
+    for (let i = 0; i < allVerses.length; i++) {
+      const v = { ...allVerses[i] };
+      const text = v.text || '';
+
+      const match = text.match(/^(.*?[.!?\u201d\u2019'])\s+([A-ZÀ-Ú][^.!?\n,;:]{3,65})$/);
+
+      if (match) {
+        const cleanScripture = match[1].trim();
+        const nextTitle = match[2].trim();
+
+        v.text = cleanScripture;
+        currentVerses.push(v);
+
+        newSections.push({
+          title: currentTitle,
+          verses: currentVerses
+        });
+
+        currentTitle = nextTitle;
+        currentVerses = [];
+      } else {
+        currentVerses.push(v);
+      }
+    }
+
+    if (currentVerses.length > 0) {
+      newSections.push({
+        title: currentTitle,
+        verses: currentVerses
+      });
+    }
+
+    result[chKey] = {
+      ...chData,
+      sections: newSections.length > 0 ? newSections : chData.sections
+    };
+  }
+
+  return result;
 }
 
 export async function fetchBookData(bookIdOrName) {
@@ -66,7 +142,8 @@ export async function fetchBookData(bookIdOrName) {
         continue;
       }
 
-      const data = JSON.parse(text);
+      const rawData = JSON.parse(text);
+      const data = sanitizeBookData(rawData);
       bookCache[bookId] = data;
       return data;
     } catch (err) {

@@ -18,7 +18,7 @@ import lucasData from './data/lucas_nvt.json';
 import { storage, DEFAULT_DASHBOARD_LAYOUT } from './services/storage';
 import { cloudDbService } from './services/cloudDbService';
 import { getTodayDay, getPendingDays } from './services/dateUtils';
-import { fetchBookData } from './services/bibleService';
+import { fetchBookData, parseReading } from './services/bibleService';
 import confetti from 'canvas-confetti';
 
 export default function App() {
@@ -53,6 +53,9 @@ export default function App() {
 
   // Visualização e Seleção
   const [selectedDayId, setSelectedDayId] = useState(currentDayId);
+  const currentDayData = days.find(d => d.id === selectedDayId) || todayDay;
+  const currentDayReading = currentDayData?.readings?.[0] ? parseReading(currentDayData.readings[0]) : { book: 'Lucas', chapter: '1' };
+
   const [currentView, setCurrentView] = useState('dashboard'); // 'dashboard' | 'reader'
   
   // Estado para Leitura Livre de qualquer livro da Bíblia
@@ -60,7 +63,21 @@ export default function App() {
   const [freeReadingBook, setFreeReadingBook] = useState('Mateus');
   const [freeReadingChapter, setFreeReadingChapter] = useState(1);
   const [currentBookData, setCurrentBookData] = useState(lucasData);
+  const [dayBookData, setDayBookData] = useState(lucasData);
   const [loadingBook, setLoadingBook] = useState(false);
+
+  // Sincroniza e carrega o livro bíblico correto para a leitura do dia
+  useEffect(() => {
+    if (isFreeReading) return;
+    const targetBook = currentDayReading.book || 'Lucas';
+    let isMounted = true;
+    fetchBookData(targetBook).then(data => {
+      if (isMounted && data) {
+        setDayBookData(data);
+      }
+    });
+    return () => { isMounted = false; };
+  }, [selectedDayId, currentDayReading.book, isFreeReading]);
 
   // Modais e Drawers
   const [bibleArcData, setBibleArcData] = useState({ isOpen: false, book: '', chapter: '', verses: [], passage: '', text: '' });
@@ -286,8 +303,6 @@ export default function App() {
     setStudyModalData({ isOpen: true, bookName: bookName || 'Lucas' });
   };
 
-  const currentDayData = days.find(d => d.id === selectedDayId) || todayDay;
-
   return (
     <div className="min-h-screen transition-colors duration-200 bg-zinc-50 dark:bg-zinc-950 sepia:bg-[#fbf0d9] text-zinc-900 dark:text-zinc-100 sepia:text-[#433422] flex flex-col font-sans">
       
@@ -340,9 +355,9 @@ export default function App() {
         ) : (
           <LeitorBiblico
             dayData={isFreeReading ? null : currentDayData}
-            bookData={isFreeReading ? currentBookData : lucasData}
-            currentBookName={isFreeReading ? freeReadingBook : 'Lucas'}
-            currentChapter={isFreeReading ? freeReadingChapter : '1'}
+            bookData={isFreeReading ? currentBookData : dayBookData}
+            currentBookName={isFreeReading ? freeReadingBook : currentDayReading.book}
+            currentChapter={isFreeReading ? freeReadingChapter : currentDayReading.chapter}
             onBack={() => {
               setIsFreeReading(false);
               setCurrentView('dashboard');

@@ -40,6 +40,7 @@ const { cloudDbService } = await import('../src/services/cloudDbService.js');
 const { bibleCommentaryService } = await import('../src/services/bibleCommentaryService.js');
 const { crossReferenceService } = await import('../src/services/crossReferenceService.js');
 const { bibleArcEngine } = await import('../src/services/bibleArcEngine.js');
+const { parseReading, sanitizeBookData, normalizeBookId } = await import('../src/services/bibleService.js');
 
 test('QA Test 1: Restauração Integral do Histórico de Dias Concluídos do Rafael', () => {
   localStorage.clear();
@@ -418,4 +419,79 @@ test('QA Test 11: Referências Cruzadas Bíblicas e Conexões Canônicas', async
   assert.equal(crossReferenceService.hasReferences('Lucas', '999', 999), false);
 
   console.log('✓ QA Test 11 Aprovado: Referências cruzadas bíblicas ativas e canonicamente conectadas em todos os capítulos.');
+});
+
+test('QA Test 12: Carregamento do Livro do Dia (João 1) e Separação Exegética de Subtítulos', () => {
+  // 1. Validar que o dia 302 do plano devocional é de fato João 1, 2, 3
+  const day302 = defaultDays.find(d => d.id === 302);
+  assert.ok(day302, 'Dia 302 deve existir no plano 365');
+  const parsed = parseReading(day302.readings[0]);
+  assert.equal(parsed.book, 'João', 'O livro da primeira leitura do dia 302 deve ser João');
+  assert.equal(parsed.chapter, '1', 'O capítulo da leitura do dia 302 deve ser 1');
+
+  // 2. Carregar o arquivo joao.json e verificar que João 1:1 é o Evangelho de João e NÃO Lucas
+  const joaoPath = resolve(__dirname, '../public/biblia/joao.json');
+  const joaoData = JSON.parse(readFileSync(joaoPath, 'utf-8'));
+  const ch1 = joaoData['1'];
+  assert.ok(ch1, 'Capítulo 1 de João deve existir no arquivo joao.json');
+  assert.equal(ch1.book, 'João', 'O livro deve ser identificado como João');
+
+  const firstVerse = ch1.sections[0].verses[0];
+  assert.equal(firstVerse.number, 1);
+  assert.ok(
+    firstVerse.text.includes('No princípio, aquele que é a Palavra já existia'),
+    'João 1:1 deve ser o texto de João ("No princípio..."), jamais Lucas 1:1'
+  );
+  assert.equal(
+    firstVerse.text.includes('Muitos se propuseram'),
+    false,
+    'Não pode conter o texto de Lucas 1:1 ("Muitos se propuseram")'
+  );
+
+  // 3. Validar que o subtítulo "Os primeiros discípulos" foi desacoplado do versículo 34
+  const allVerses = ch1.sections.flatMap(s => s.verses);
+  const verse34 = allVerses.find(v => v.number === 34);
+  assert.ok(verse34, 'Versículo 34 deve existir');
+  assert.equal(
+    verse34.text.includes('Os primeiros discípulos'),
+    false,
+    'O versículo 34 NÃO pode conter o subtítulo "Os primeiros discípulos" no final do seu texto'
+  );
+  assert.ok(
+    verse34.text.endsWith('Filho de Deus”.'),
+    'O versículo 34 deve terminar limpo em "Filho de Deus”.'
+  );
+
+  // 4. Validar que "Os primeiros discípulos" agora é um título de seção autônomo para os versículos 35 em diante
+  const discipulosSection = ch1.sections.find(s => s.title === 'Os primeiros discípulos');
+  assert.ok(discipulosSection, 'Deve existir uma seção com o título "Os primeiros discípulos"');
+  assert.equal(discipulosSection.verses[0].number, 35, 'A seção dos primeiros discípulos deve iniciar no versículo 35');
+
+  // 5. Validar que João 1 tem 5 seções bem delimitadas e não apenas 1 bloco monolítico
+  assert.equal(ch1.sections.length, 5, 'João 1 deve ter 5 seções com títulos bem delimitados');
+  assert.equal(allVerses.length, 51, 'Todos os 51 versículos de João 1 devem estar preservados');
+
+  // 6. Testar o motor sanitizeBookData em dados brutos com título incorporado
+  const mockRawData = {
+    '1': {
+      book: 'Teste',
+      chapter: '1',
+      sections: [
+        {
+          title: 'Introdução',
+          verses: [
+            { number: 1, text: 'Este é o primeiro texto. Subtítulo Exemplo' },
+            { number: 2, text: 'Texto do segundo versículo.' }
+          ]
+        }
+      ]
+    }
+  };
+  const sanitized = sanitizeBookData(mockRawData);
+  assert.equal(sanitized['1'].sections.length, 2, 'Deve ter dividido em 2 seções');
+  assert.equal(sanitized['1'].sections[0].verses[0].text, 'Este é o primeiro texto.');
+  assert.equal(sanitized['1'].sections[1].title, 'Subtítulo Exemplo');
+  assert.equal(sanitized['1'].sections[1].verses[0].number, 2);
+
+  console.log('✓ QA Test 12 Aprovado: Livro de João carregado corretamente e subtítulos separados como seções autônomas.');
 });
