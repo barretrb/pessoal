@@ -6,6 +6,17 @@ const bookCache = {
   lucas: lucasData
 };
 
+const BOOK_ALIASES = {
+  'canticodoscanticos': 'canticos',
+  'cantares': 'canticos',
+  'cantaresdesalomao': 'canticos',
+  'salmo': 'salmos',
+  'atosdosapostolos': 'atos',
+  '1joao': '1joao',
+  '2joao': '2joao',
+  '3joao': '3joao'
+};
+
 export function normalizeBookId(nameOrId) {
   if (!nameOrId) return 'lucas';
   const clean = nameOrId
@@ -14,6 +25,10 @@ export function normalizeBookId(nameOrId) {
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/\s+/g, '')
     .trim();
+
+  if (BOOK_ALIASES[clean]) {
+    return BOOK_ALIASES[clean];
+  }
 
   // Procurar correspondência nos 66 livros
   const match = BIBLE_BOOKS_STUDY_INFO.find(b => {
@@ -32,7 +47,11 @@ export function getBookNameById(bookId) {
 
 export function parseReading(str) {
   if (!str) return { book: 'Lucas', chapter: '1' };
-  const parts = str.trim().split(/\s+/);
+  // Limpa anotações de versículos como "vv.1–8" ou "v. 1"
+  let cleanStr = str.replace(/\s*vv?\..*$/i, '').trim();
+  // Limpa anotações de perícopes em parênteses, como "Salmos 119 (Álefe)"
+  cleanStr = cleanStr.replace(/\s*\([^)]*\)\s*$/, '').trim();
+  const parts = cleanStr.split(/\s+/);
   const chapter = parts.pop();
   const book = parts.join(' ');
   return { book: book || 'Lucas', chapter: chapter || '1' };

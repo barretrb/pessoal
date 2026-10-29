@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "test": "node --test test/qa_tests.js"
+    "test": "node --test test/qa_tests.js && node test/audit_full_system.js",
+    "audit": "node test/audit_full_system.js"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
