@@ -495,3 +495,40 @@ test('QA Test 12: Carregamento do Livro do Dia (João 1) e Separação Exegétic
 
   console.log('✓ QA Test 12 Aprovado: Livro de João carregado corretamente e subtítulos separados como seções autônomas.');
 });
+
+test('QA Test 13: Sincronização em Nuvem do Dia 300 e 301 (Multi-Aparelho Celular e Laptop)', async () => {
+  // 1. Simular estado de um laptop que só tinha até o dia 299 concluído
+  localStorage.clear();
+  const laptopInitialDays = storage.getProgress(defaultDays, 'default');
+  assert.equal(laptopInitialDays.find(d => d.id === 300).completed, false);
+  assert.equal(laptopInitialDays.find(d => d.id === 301).completed, false);
+
+  // 2. Simular payload da nuvem vindo com lastCompletedDay = 301 (como concluído no celular)
+  const cloudPayloadFromPhone = {
+    version: 3,
+    familyCode: 'DEVOCIONAL-SYNC-RAFAEL',
+    lastCompletedDay: 301,
+    pendingDays: [],
+    completedChapters: ['Lucas 19', 'Lucas 20', 'Lucas 21', 'Lucas 22', 'Lucas 23', 'Lucas 24'],
+    updatedAt: new Date().toISOString(),
+    profiles: DEFAULT_PROFILES,
+    activeProfileId: 'default'
+  };
+
+  // 3. Aplicar payload da nuvem no laptop
+  const applied = cloudDbService.applyCloudPayload(cloudPayloadFromPhone);
+  assert.equal(applied, true, 'O payload da nuvem deve ser aplicado com sucesso');
+
+  // 4. Verificar que no laptop os dias 300 e 301 agora estão 100% concluídos!
+  const laptopUpdatedDays = storage.getProgress(defaultDays, 'default');
+  assert.equal(laptopUpdatedDays.find(d => d.id === 300).completed, true, 'Dia 300 deve estar concluído no laptop após sync');
+  assert.equal(laptopUpdatedDays.find(d => d.id === 301).completed, true, 'Dia 301 deve estar concluído no laptop após sync');
+  assert.equal(laptopUpdatedDays.find(d => d.id === 302).completed, false, 'Dia 302 (hoje) deve continuar aberto para leitura');
+
+  // 5. Verificar que os capítulos de Lucas 19 a 24 estão concluídos
+  const laptopChapters = storage.getChapterProgress('default');
+  assert.equal(laptopChapters['Lucas 19'].completed, true);
+  assert.equal(laptopChapters['Lucas 24'].completed, true);
+
+  console.log('✓ QA Test 13 Aprovado: Sincronização multi-aparelho propagou dias 300 e 301 para o laptop sem pendências.');
+});

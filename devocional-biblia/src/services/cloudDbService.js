@@ -39,25 +39,58 @@ export const cloudDbService = {
       } catch (e) {}
     });
 
-    // Lista compacta dos dias concluídos do Rafael
+    // Determina dinamicamente o maior dia concluído do Rafael (mínimo 299)
     const rafaelProgress = progressByProfile['default'] || {};
-    const completedDaysList = [];
-    for (let d = 1; d <= 299; d++) {
-      if (rafaelProgress[d] === undefined || rafaelProgress[d]?.completed !== false) {
-        completedDaysList.push(d);
+    let maxCompletedDay = 299;
+    Object.entries(rafaelProgress).forEach(([dId, dData]) => {
+      if (dData && dData.completed) {
+        const num = Number(dId);
+        if (num > maxCompletedDay) {
+          maxCompletedDay = num;
+        }
+      }
+    });
+
+    // Identifica eventuais dias desmarcados (pendências intencionais abaixo do maxCompletedDay)
+    const pendingDays = [];
+    for (let d = 1; d <= maxCompletedDay; d++) {
+      if (rafaelProgress[d] && rafaelProgress[d].completed === false) {
+        pendingDays.push(d);
       }
     }
 
+    // Lista compacta de capítulos lidos do Rafael
+    const rafaelChapters = chaptersByProfile['default'] || {};
+    const completedChapters = Object.entries(rafaelChapters)
+      .filter(([_, cData]) => cData && cData.completed)
+      .map(([chName]) => chName);
+
+    // Filtra progresso para payload compacto e ultraleve (evita limite de 1KB do storage remoto)
+    const compactProgress = {};
+    Object.entries(rafaelProgress).forEach(([dId, dData]) => {
+      const num = Number(dId);
+      if (num >= 300 || dData?.completed === false) {
+        compactProgress[dId] = dData;
+      }
+    });
+
     return {
-      version: 2,
+      version: 3,
       familyCode: cloudConfig.familyCode || 'DEVOCIONAL-SYNC-RAFAEL',
-      lastCompletedDay: 299,
-      completedDaysList,
+      lastCompletedDay: maxCompletedDay,
+      pendingDays,
+      completedChapters,
       updatedAt: new Date().toISOString(),
       profiles,
       activeProfileId,
-      progressByProfile,
-      chaptersByProfile,
+      progressByProfile: {
+        default: compactProgress,
+        esposa: progressByProfile['esposa'] || {}
+      },
+      chaptersByProfile: {
+        default: rafaelChapters,
+        esposa: chaptersByProfile['esposa'] || {}
+      },
       favoritesByProfile,
       highlightsByProfile,
       layoutByProfile
@@ -79,8 +112,12 @@ export const cloudDbService = {
       const defStored = localStorage.getItem(defKey);
       const defParsed = defStored ? JSON.parse(defStored) : {};
 
+      const pendingSet = new Set(Array.isArray(payload.pendingDays) ? payload.pendingDays : []);
+
       for (let day = 1; day <= targetLastDay; day++) {
-        if (!defParsed[day] || !defParsed[day].completed) {
+        if (pendingSet.has(day)) {
+          defParsed[day] = { completed: false, completedAt: null };
+        } else if (!defParsed[day] || !defParsed[day].completed) {
           defParsed[day] = {
             completed: true,
             completedAt: defParsed[day]?.completedAt || `2026-10-${String(Math.min(day - 273, 26)).padStart(2, '0')}`
@@ -89,17 +126,15 @@ export const cloudDbService = {
       }
       localStorage.setItem(defKey, JSON.stringify(defParsed));
 
-      // 2. Mesclagem de Progresso de Dias (Se concluído em qualquer lugar, permanece concluído)
+      // 2. Mesclagem de Progresso explícito de Dias (Se concluído em qualquer lugar, permanece concluído)
       if (payload.progressByProfile) {
         Object.entries(payload.progressByProfile).forEach(([pId, data]) => {
           const key = storage._resolveKey('devocional_plano_progress_v1', pId);
           const localStored = localStorage.getItem(key);
           const localParsed = localStored ? JSON.parse(localStored) : {};
           
-          const merged = {};
-          const allDayIds = new Set([...Object.keys(data || {}), ...Object.keys(localParsed || {})]);
-          allDayIds.forEach(id => {
-            const dRemote = data?.[id];
+          const merged = { ...localParsed };
+          Object.entries(data || {}).forEach(([id, dRemote]) => {
             const dLocal = localParsed?.[id];
             const isCompleted = !!(dRemote?.completed || dLocal?.completed);
             merged[id] = {
@@ -113,26 +148,30 @@ export const cloudDbService = {
       }
 
       // 3. Mesclagem de Capítulos Lidos
+      const chKey = storage._resolveKey('devocional_chapters_progress_v1', 'default');
+      const chStored = localStorage.getItem(chKey);
+      const chParsed = chStored ? JSON.parse(chStored) : {};
+
+      if (Array.isArray(payload.completedChapters)) {
+        payload.completedChapters.forEach(ch => {
+          chParsed[ch] = { completed: true, completedAt: chParsed[ch]?.completedAt || new Date().toISOString() };
+        });
+      }
+
       if (payload.chaptersByProfile) {
         Object.entries(payload.chaptersByProfile).forEach(([pId, data]) => {
-          const key = storage._resolveKey('devocional_chapters_progress_v1', pId);
-          const localStored = localStorage.getItem(key);
-          const localParsed = localStored ? JSON.parse(localStored) : {};
-          
-          const mergedChapters = {};
-          const allChKeys = new Set([...Object.keys(data || {}), ...Object.keys(localParsed || {})]);
-          allChKeys.forEach(ch => {
-            const cRemote = data?.[ch];
-            const cLocal = localParsed?.[ch];
-            const isCompleted = !!(cRemote?.completed || cLocal?.completed);
-            mergedChapters[ch] = {
-              completed: isCompleted,
-              completedAt: cRemote?.completed ? cRemote.completedAt : (cLocal?.completedAt || null)
-            };
+          const profileChKey = storage._resolveKey('devocional_chapters_progress_v1', pId);
+          const pStored = localStorage.getItem(profileChKey);
+          const pParsed = pStored ? JSON.parse(pStored) : {};
+          Object.entries(data || {}).forEach(([chName, cRemote]) => {
+            if (cRemote?.completed) {
+              pParsed[chName] = { completed: true, completedAt: cRemote.completedAt || new Date().toISOString() };
+            }
           });
-
-          localStorage.setItem(key, JSON.stringify(mergedChapters));
+          localStorage.setItem(profileChKey, JSON.stringify(pParsed));
         });
+      } else {
+        localStorage.setItem(chKey, JSON.stringify(chParsed));
       }
 
       // 3. Mesclagem de Favoritos (união por chave)
@@ -199,9 +238,10 @@ export const cloudDbService = {
 
         try {
           const res = await fetch(`${CLOUD_API_URL}/${CLOUD_VAULT_ID}`, {
-            method: 'PATCH',
+            method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
+              name: 'devocional_sync_DEVOCIONAL-SYNC-RAFAEL',
               data: payload
             }),
             signal: controller.signal
@@ -245,11 +285,8 @@ export const cloudDbService = {
         if (res.ok) {
           const json = await res.json();
           const remotePayload = json?.data;
-          if (remotePayload && remotePayload.updatedAt) {
-            // Se os dados remotos forem mais recentes ou locais ainda não sincronizados
-            if (!config.lastSyncedAt || new Date(remotePayload.updatedAt) > new Date(config.lastSyncedAt)) {
-              return this.applyCloudPayload(remotePayload);
-            }
+          if (remotePayload) {
+            return this.applyCloudPayload(remotePayload);
           }
         }
       } catch (netErr) {
@@ -258,7 +295,7 @@ export const cloudDbService = {
         const localVault = localStorage.getItem(vaultKey);
         if (localVault) {
           const parsed = JSON.parse(localVault);
-          if (parsed && parsed.updatedAt && parsed.updatedAt !== config.lastSyncedAt) {
+          if (parsed && parsed.updatedAt) {
             return this.applyCloudPayload(parsed);
           }
         }
@@ -290,11 +327,12 @@ export const cloudDbService = {
       // 1. Salva localmente
       localStorage.setItem(`devocional_cloud_vault_${payload.familyCode}`, JSON.stringify(payload));
       
-      // 2. Salva na Nuvem Real
+      // 2. Salva na Nuvem Real com PUT
       const res = await fetch(`${CLOUD_API_URL}/${CLOUD_VAULT_ID}`, {
-        method: 'PATCH',
+        method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          name: 'devocional_sync_DEVOCIONAL-SYNC-RAFAEL',
           data: payload
         })
       });

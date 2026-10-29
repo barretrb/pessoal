@@ -34,6 +34,9 @@ export default function CloudSyncModal({
     setIsSyncing(true);
     setSyncStatusMsg(null);
 
+    // 1. Puxa e mescla da nuvem primeiro
+    await cloudDbService.fetchAndMergeLatest();
+    // 2. Envia os dados locais consolidados para a nuvem
     const res = await cloudDbService.syncWithCloud(familyCodeInput.trim().toUpperCase());
     setIsSyncing(false);
 
