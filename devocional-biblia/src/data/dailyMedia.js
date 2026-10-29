@@ -1,6 +1,11 @@
-// Curadoria de Músicas Curtas (YouTube Music / YouTube) e Vídeos Expositivos (BibleProject)
-// Regra Estrita: Todos os IDs do YouTube são 100% verificados e liberados para incorporação (embed) sem restrições.
-// Todas as músicas têm duração entre 3 e 7 minutos (< 10 minutos).
+// Curadoria de Músicas de Estúdio (YouTube Music / YouTube) e Vídeos Expositivos (BibleProject)
+// Regra Estrita:
+// 1. Somente faixas de estúdio (gravação em estúdio / álbum de estúdio, SEM gravações ao vivo/shows).
+// 2. Artistas da curadoria preferida do usuário: Os Arrais, Projeto Sola, Leonardo Gonçalves, Marcos Almeida,
+//    Vocal Livre, Eli Soares, Paulo César Baruk, Oficina G3, Mauro Henrique, Felipe Valente, Alexandre Magnani,
+//    Coletivo Candieiro, Purples, PG, Fruto Sagrado, Novo Canto, Fernandinho, Thalles Roberto, Morada.
+// 3. Duração estritamente inferior a 10 minutos (entre 3 e 6 minutos).
+// 4. Todos os IDs verificados via oEmbed e disponíveis diretamente no YouTube Music.
 
 // Catálogo de Vídeos Oficiais do BibleProject em Português por Livro e Perícope
 export const BIBLE_PROJECT_VIDEOS = {
@@ -47,79 +52,247 @@ export const BIBLE_PROJECT_VIDEOS = {
   }
 };
 
-// Músicas Devocionais Curtas (< 10 minutos) 100% testadas e com embed autorizado no YouTube
+// Músicas Devocionais de Estúdio (< 10 minutos) dos Artistas Preferidos
 export const SHORT_DEVOTIONAL_TRACKS = [
   {
-    title: "Faz Um Milagre em Mim (Como Zaqueu)",
-    artist: "Regis Danese",
+    title: "Esperança",
+    artist: "Os Arrais",
+    duration: "4:24 min",
+    youtubeId: "eDflquxhedQ",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=eDflquxhedQ",
+    album: "As Canções da Terra (Estúdio)",
+    description: "Canção reflexiva de estúdio sobre a esperança eterna em Cristo, a graça que sustenta e a caminhada cristã.",
+    theme: "Esperança & Confiança Soberana"
+  },
+  {
+    title: "Colossenses 1",
+    artist: "Projeto Sola",
+    duration: "4:47 min",
+    youtubeId: "gk7XWCMwO94",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=gk7XWCMwO94",
+    album: "Single de Estúdio",
+    description: "Meditação lírica sobre a supremacia e primazia absoluta de Cristo: 'Ele é o princípio, o primogênito dentre os mortos'.",
+    theme: "A Primazia de Cristo (João 1 / Colossenses 1)"
+  },
+  {
+    title: "Getsêmani",
+    artist: "Leonardo Gonçalves",
+    duration: "5:09 min",
+    youtubeId: "edGwczJm_uo",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=edGwczJm_uo",
+    album: "Poemas e Canções (Estúdio)",
+    description: "Gravação clássica de estúdio que retrata o mistério e a agonia de Cristo em oração no Jardim do Getsêmani.",
+    theme: "Oração, Entrega e Redenção (Lucas 22)"
+  },
+  {
+    title: "Vem Me Socorrer",
+    artist: "Marcos Almeida",
+    duration: "4:18 min",
+    youtubeId: "_kAVIQzwffg",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=_kAVIQzwffg",
+    album: "Eu Sarau (Estúdio)",
+    description: "Canção poética e intimista de clamor pela graça e dependência de Deus em meio às fraquezas humanas.",
+    theme: "Graça dos Humildes & Dependência Divina"
+  },
+  {
+    title: "A Começar em Mim",
+    artist: "Vocal Livre",
+    duration: "3:50 min",
+    youtubeId: "nDXqNTyNC7A",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=nDXqNTyNC7A",
+    album: "Por Toda a Terra (Estúdio)",
+    description: "Harmonia vocal impecável de estúdio chamando à transformação interior genuína e discipulado prático.",
+    theme: "Transformação Interior & Humildade"
+  },
+  {
+    title: "Me Ajude a Melhorar",
+    artist: "Eli Soares",
+    duration: "4:35 min",
+    youtubeId: "lclKOqYuvug",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=lclKOqYuvug",
+    album: "Casa de Deus (Estúdio)",
+    description: "Oração de estúdio sincera por quebrantamento: 'Meu coração é tão pequeno, me ajude a melhorar'.",
+    theme: "Quebrantamento & Renovação Diária"
+  },
+  {
+    title: "Jardim da Inocência",
+    artist: "Paulo César Baruk",
+    duration: "4:52 min",
+    youtubeId: "bi9W6oZzfxk",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=bi9W6oZzfxk",
+    album: "Graça (Estúdio)",
+    description: "Gravação de estúdio poética sobre o retorno ao jardim da comunhão íntima e sem reservas com o Criador.",
+    theme: "A Graça que Transforma e Reconcilia (Lucas 19)"
+  },
+  {
+    title: "Incondicional",
+    artist: "Oficina G3",
+    duration: "3:59 min",
+    youtubeId: "oYuIZLGrmcg",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=oYuIZLGrmcg",
+    album: "Depois da Guerra (Estúdio)",
+    description: "Versão oficial de estúdio com melodia reflexiva sobre o amor sacrificial e incondicional do Salvador na cruz.",
+    theme: "O Amor Sacrificial de Cristo"
+  },
+  {
+    title: "17 de Janeiro",
+    artist: "Os Arrais",
     duration: "4:10 min",
-    youtubeId: "HS-HSWBFogs",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=HS-HSWBFogs",
-    description: "Canção inspirada em Lucas 19:1-10: 'Como Zaqueu, eu quero subir... Entra na minha casa, entra na minha vida'. Louvor de arrependimento e encontro transformador com Cristo.",
-    theme: "Encontro com Cristo & Restauração (Lucas 19)"
+    youtubeId: "iLLydSZOR8k",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=iLLydSZOR8k",
+    album: "Mais (Estúdio)",
+    description: "Folk reflexivo de estúdio sobre a revelação da graça, a partida do velho homem e o renascer em Deus.",
+    theme: "Novo Nascimento & Paz com Deus"
   },
   {
-    title: "Hosana nas Alturas",
-    artist: "Gabriela Rocha",
-    duration: "5:00 min",
-    youtubeId: "ceCMxv72Uqw",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=ceCMxv72Uqw",
-    description: "O clamor da Entrada Triunfal em Jerusalém: 'Bendito o Rei que vem em nome do Senhor! Hosana!' (Lucas 19:38).",
-    theme: "Entrada Triunfal & Exaltação do Rei (Lucas 19)"
+    title: "Isaías 53",
+    artist: "Projeto Sola",
+    duration: "4:35 min",
+    youtubeId: "7clLRGKd1q0",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=7clLRGKd1q0",
+    album: "Homem das Dores (Estúdio)",
+    description: "Exposição lírica de estúdio sobre a profecia do Servo Sofredor que levou sobre Si as nossas dores.",
+    theme: "O Servo Sofredor e a Cruz"
   },
   {
-    title: "Bondade de Deus",
-    artist: "Isaías Saad",
-    duration: "4:58 min",
-    youtubeId: "mZ9yZYo9Mmk",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=mZ9yZYo9Mmk",
-    description: "Gratidão humilde pela fidelidade divina que nos persegue e nos sustenta todos os dias.",
-    theme: "Gratidão & Misericórdia (Lucas 17–18)"
+    title: "Pequeninos",
+    artist: "Mauro Henrique",
+    duration: "3:45 min",
+    youtubeId: "qMt6R88UPkQ",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=qMt6R88UPkQ",
+    album: "Single de Estúdio",
+    description: "Canção intimista de estúdio sobre o Reino dos Céus pertencente aos pequeninos e aos que têm fé simples.",
+    theme: "A Simplicidade do Evangelho"
   },
   {
-    title: "Pródigo (O Abraço do Pai)",
-    artist: "Casa Worship",
-    duration: "6:15 min",
-    youtubeId: "whHMcK4N3Kg",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=whHMcK4N3Kg",
-    description: "A celebração do amor incondicional de Deus pelo filho que retorna arrependido ao lar (Lucas 15).",
-    theme: "A Graça que Restaura (Lucas 15)"
+    title: "Despreocupado",
+    artist: "Felipe Valente",
+    duration: "3:58 min",
+    youtubeId: "UZDKMpD-6wY",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=UZDKMpD-6wY",
+    album: "Reversão (Estúdio)",
+    description: "MPB cristã de estúdio inspirada no Sermão do Monte: confiar na providência divina e descansar da ansiedade.",
+    theme: "Descanso da Ansiedade & Providência"
   },
   {
-    title: "A Boa Parte (Maria aos Pés de Jesus)",
-    artist: "Laura Souguellis & Fhop Music",
-    duration: "5:20 min",
-    youtubeId: "dlGOiuxSzVw",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=dlGOiuxSzVw",
-    description: "Louvor centrado em sentar-se aos pés de Jesus para ouvir Sua voz (Lucas 10:42), a única coisa necessária.",
-    theme: "Intimidade & Escuta Devocional (Lucas 10)"
+    title: "Ninguém Chega Só",
+    artist: "Alexandre Magnani",
+    duration: "3:42 min",
+    youtubeId: "ToqPLrFb6-I",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=ToqPLrFb6-I",
+    album: "O Que Realmente Importa (Estúdio)",
+    description: "Melodia leve de estúdio sobre comunidade, amor fraternal e a beleza de caminhar juntos na fé.",
+    theme: "Comunhão Fraternal & Unidade"
   },
   {
-    title: "Porque Ele Vive (Pra Sempre)",
-    artist: "Gabriel Guedes",
-    duration: "5:15 min",
-    youtubeId: "RcVUr-wjcdY",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=RcVUr-wjcdY",
-    description: "Hino triunfante sobre a ressurreição corporal de Cristo (Lucas 24) e a vitória sobre o medo do amanhã.",
-    theme: "A Ressurreição e Esperança Viva (Lucas 24)"
+    title: "Arrastão",
+    artist: "Coletivo Candieiro",
+    duration: "3:50 min",
+    youtubeId: "8AAQzkzfEb4",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=8AAQzkzfEb4",
+    album: "Single de Estúdio",
+    description: "Folk brasileiro de estúdio que resgata a poesia dos pescadores de homens e o chamado de Cristo.",
+    theme: "O Chamado dos Discípulos (Lucas 5)"
   },
   {
-    title: "Lugar Secreto",
-    artist: "Gabriela Rocha",
-    duration: "4:55 min",
-    youtubeId: "YnrN0o0lubM",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=YnrN0o0lubM",
-    description: "Oração no esconderijo do Altíssimo, buscando a presença do Pai sem distrações terrenas.",
-    theme: "Oração & Comunhão Pessoal"
+    title: "Meu Lugar",
+    artist: "Purples",
+    duration: "4:30 min",
+    youtubeId: "Q4ejKplh_ms",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=Q4ejKplh_ms",
+    album: "Single de Estúdio",
+    description: "Canção reflexiva de estúdio sobre encontrar o verdadeiro descanso e identidade na presença de Deus.",
+    theme: "Descanso & Identidade no Pai"
   },
   {
-    title: "Que Ele Cresça (Humildade)",
-    artist: "Deigma Marques",
-    duration: "6:10 min",
-    youtubeId: "4J-kPpMmmNo",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=4J-kPpMmmNo",
-    description: "Mais de Ti e menos de mim: a postura humilde de João Batista e dos discípulos de Jesus.",
-    theme: "Humildade & Renúncia (João 3:30)"
+    title: "Teu Melhor",
+    artist: "Purples",
+    duration: "4:15 min",
+    youtubeId: "fPwhZQgk7Yc",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=fPwhZQgk7Yc",
+    album: "Single de Estúdio",
+    description: "Meditação lírica de estúdio sobre a entrega completa do coração à vontade sábia do Senhor.",
+    theme: "Consagração & Fidelidade"
+  },
+  {
+    title: "Posso Ouvir",
+    artist: "PG",
+    duration: "4:12 min",
+    youtubeId: "9h126QoPIEg",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=9h126QoPIEg",
+    album: "Imagem e Semelhança (Estúdio)",
+    description: "Versão de estúdio sobre a sensibilidade espiritual para discernir e obedecer à voz de Deus.",
+    theme: "Escuta Espiritual & Fé Viva"
+  },
+  {
+    title: "Eu Sou Livre",
+    artist: "PG",
+    duration: "4:05 min",
+    youtubeId: "sA7dygVU09g",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=sA7dygVU09g",
+    album: "Eu Sou Livre (Estúdio)",
+    description: "Canção de estúdio vibrante sobre a verdadeira liberdade concedida por Cristo.",
+    theme: "Liberdade em Cristo"
+  },
+  {
+    title: "O Que Na Verdade Somos",
+    artist: "Fruto Sagrado",
+    duration: "4:20 min",
+    youtubeId: "8MksLBGRUpo",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=8MksLBGRUpo",
+    album: "O Que na Verdade Somos (Estúdio)",
+    description: "Faixa de estúdio clássica que questiona a hipocrisia e clama por uma fé sincera, transparente e sem máscaras.",
+    theme: "Sinceridade de Fé & Verdade Interior"
+  },
+  {
+    title: "O Senhor Logo Vem",
+    artist: "Novo Canto",
+    duration: "4:45 min",
+    youtubeId: "nir1fJ9PGpg",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=nir1fJ9PGpg",
+    album: "Gravação de Estúdio",
+    description: "Gravação vocal de estúdio harmoniosa anunciando a promessa da volta gloriosa do Messias.",
+    theme: "A Bendita Esperança do Retorno de Cristo"
+  },
+  {
+    title: "Galileu",
+    artist: "Fernandinho",
+    duration: "4:10 min",
+    youtubeId: "9YC8iDNpyYU",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=9YC8iDNpyYU",
+    album: "Galileu (Clipe Oficial de Estúdio)",
+    description: "Canção cristocêntrica de estúdio proclamando o Salvador que caminhou entre nós e transformou a história.",
+    theme: "Cristo, o Salvador do Mundo"
+  },
+  {
+    title: "Arde Outra Vez",
+    artist: "Thalles Roberto",
+    duration: "4:50 min",
+    youtubeId: "_pnAJPnp_Jw",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=_pnAJPnp_Jw",
+    album: "Saudade (Clipe Oficial de Estúdio)",
+    description: "Clamor intimista de estúdio pela chama renovada do primeiro amor e pela presença viva do Espírito Santo.",
+    theme: "Primeiro Amor & Renovação Espiritual"
+  },
+  {
+    title: "É Tudo Sobre Você",
+    artist: "Morada",
+    duration: "4:35 min",
+    youtubeId: "ePdRgBWhvog",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=ePdRgBWhvog",
+    album: "Gravação de Estúdio",
+    description: "Versão de estúdio cristocêntrica afirmando que toda a vida, criação e história convergem para Cristo.",
+    theme: "Cristocentralidade Absoluta"
+  },
+  {
+    title: "Emaús",
+    artist: "Morada",
+    duration: "5:10 min",
+    youtubeId: "d7iMVvuZkyg",
+    youtubeMusicUrl: "https://music.youtube.com/watch?v=d7iMVvuZkyg",
+    album: "Gravação de Estúdio com Poiema Music",
+    description: "Canção de estúdio inspirada nos discípulos no caminho de Emaús (Lucas 24): 'Porventura não ardia o nosso coração?'.",
+    theme: "O Cristo Ressurreto em Emaús (Lucas 24)"
   }
 ];
 
@@ -132,12 +305,13 @@ export const dailyMedia = {
     passage: "Lucas 7–9",
     theme: "A Fé do Centurião, A Tempestade Acalmada e a Transfiguração",
     music: {
-      title: "Lugar Secreto",
-      artist: "Gabriela Rocha",
-      duration: "4:55 min",
-      youtubeId: "YnrN0o0lubM",
-      youtubeMusicUrl: "https://music.youtube.com/watch?v=YnrN0o0lubM",
-      description: "Louvor focado em intimidade profunda com Cristo no esconderijo do Altíssimo."
+      title: "Getsêmani",
+      artist: "Leonardo Gonçalves",
+      duration: "5:09 min",
+      youtubeId: "edGwczJm_uo",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=edGwczJm_uo",
+      album: "Poemas e Canções (Estúdio)",
+      description: "Gravação clássica de estúdio que retrata o mistério e a agonia de Cristo em oração no Jardim do Getsêmani."
     },
     video: BIBLE_PROJECT_VIDEOS['lucas_1_9']
   },
@@ -149,12 +323,13 @@ export const dailyMedia = {
     passage: "Lucas 10–12",
     theme: "O Bom Samaritano, Maria aos Pés de Jesus, A Oração do Pai Nosso e a Liberdade da Ansiedade",
     music: {
-      title: "A Boa Parte (Maria aos Pés de Jesus)",
-      artist: "Laura Souguellis & Fhop Music",
-      duration: "5:20 min",
-      youtubeId: "dlGOiuxSzVw",
-      youtubeMusicUrl: "https://music.youtube.com/watch?v=dlGOiuxSzVw",
-      description: "Louvor focado em sentar-se aos pés de Jesus para ouvir sua voz, a 'única coisa necessária' que nunca será tirada (Lucas 10:41–42)."
+      title: "A Começar em Mim",
+      artist: "Vocal Livre",
+      duration: "3:50 min",
+      youtubeId: "nDXqNTyNC7A",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=nDXqNTyNC7A",
+      album: "Por Toda a Terra (Estúdio)",
+      description: "Harmonia vocal de estúdio chamando à transformação interior e pureza de motivações aos pés de Cristo."
     },
     video: BIBLE_PROJECT_VIDEOS['lucas_10_24']
   },
@@ -166,12 +341,13 @@ export const dailyMedia = {
     passage: "Lucas 13–15",
     theme: "A Porta Estreita, O Grande Banquete, A Ovelha Perdida e a Parábola do Filho Pródigo",
     music: {
-      title: "Pródigo (O Abraço do Pai)",
-      artist: "Casa Worship",
-      duration: "6:15 min",
-      youtubeId: "whHMcK4N3Kg",
-      youtubeMusicUrl: "https://music.youtube.com/watch?v=whHMcK4N3Kg",
-      description: "Um hino profundo sobre a parábola de Lucas 15: o Pai que corre ao encontro do filho em farrapos, restaurando sua dignidade e celebrando com júbilo."
+      title: "Me Ajude a Melhorar",
+      artist: "Eli Soares",
+      duration: "4:35 min",
+      youtubeId: "lclKOqYuvug",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=lclKOqYuvug",
+      album: "Casa de Deus (Estúdio)",
+      description: "Versão de estúdio de quebrantamento e humildade, expressando o retorno do coração arrependido ao abraço do Pai."
     },
     video: BIBLE_PROJECT_VIDEOS['lucas_10_24']
   },
@@ -183,12 +359,13 @@ export const dailyMedia = {
     passage: "Lucas 16–18",
     theme: "O Rico e Lázaro, Os Dez Leprosos (Gratidão), O Fariseu e o Publicano e o Cego de Jericó",
     music: {
-      title: "Bondade de Deus",
-      artist: "Isaías Saad",
-      duration: "4:58 min",
-      youtubeId: "mZ9yZYo9Mmk",
-      youtubeMusicUrl: "https://music.youtube.com/watch?v=mZ9yZYo9Mmk",
-      description: "Louvor curto de sincera gratidão pela graça imerecida de Deus, ecoando o clamor do publicano (Lucas 18:13) e o samaritano curado que voltou agradecido (Lucas 17:15)."
+      title: "Vem Me Socorrer",
+      artist: "Marcos Almeida",
+      duration: "4:18 min",
+      youtubeId: "_kAVIQzwffg",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=_kAVIQzwffg",
+      album: "Eu Sarau (Estúdio)",
+      description: "Canção de estúdio intimista que traduz o clamor humilde por misericórdia do publicano e a gratidão dos restaurados."
     },
     video: BIBLE_PROJECT_VIDEOS['lucas_10_24']
   },
@@ -200,12 +377,14 @@ export const dailyMedia = {
     passage: "Lucas 19–21",
     theme: "O Encontro com Zaqueu em Jericó, A Entrada Triunfal em Jerusalém ('Hosana!'), Os Lavradores e o Templo",
     music: {
-      title: "Faz Um Milagre em Mim (Como Zaqueu)",
-      artist: "Regis Danese",
-      duration: "4:10 min",
-      youtubeId: "HS-HSWBFogs",
-      youtubeMusicUrl: "https://music.youtube.com/watch?v=HS-HSWBFogs",
-      description: "'Como Zaqueu eu quero subir... Entra na minha casa, entra na minha vida'. Clipe oficial curto (4:10 min) inspirado no encontro de salvação de Jesus com Zaqueu em Lucas 19:1-10."
+      title: "Jardim da Inocência",
+      artist: "Paulo César Baruk",
+      duration: "4:52 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=bi9W6oZzfxk",
+      album: "Graça (Estúdio)",
+      description: "Gravação de estúdio poética sobre o encontro transformador da graça de Cristo (Lucas 19) e a reconciliação com o Pai.",
+      theme: "A Graça que Transforma e Reconcilia (Lucas 19)"
     },
     video: BIBLE_PROJECT_VIDEOS['lucas_10_24']
   },
@@ -217,12 +396,13 @@ export const dailyMedia = {
     passage: "Lucas 22–24",
     theme: "A Última Ceia, O Getsêmani, A Crucificação, A Ressurreição e os Discípulos no Caminho de Emaús",
     music: {
-      title: "Porque Ele Vive (Pra Sempre)",
-      artist: "Gabriel Guedes",
-      duration: "5:15 min",
-      youtubeId: "RcVUr-wjcdY",
-      youtubeMusicUrl: "https://music.youtube.com/watch?v=RcVUr-wjcdY",
-      description: "Hino triunfante sobre a certeza inabalável da ressurreição corporal de Cristo narrada em Lucas 24 e o túmulo vazio que nos dá esperança para o amanhã."
+      title: "Emaús",
+      artist: "Morada",
+      duration: "5:10 min",
+      youtubeId: "d7iMVvuZkyg",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=d7iMVvuZkyg",
+      album: "Gravação de Estúdio com Poiema Music",
+      description: "Canção oficial de estúdio sobre a revelação de Cristo aos discípulos de Emaús após a ressurreição (Lucas 24)."
     },
     video: BIBLE_PROJECT_VIDEOS['lucas_10_24']
   },
@@ -234,12 +414,13 @@ export const dailyMedia = {
     passage: "João 1–3",
     theme: "No Princípio Era o Verbo, O Primeiro Milagre em Caná da Galileia e o Diálogo com Nicodemos (João 3:16)",
     music: {
-      title: "Que Ele Cresça (Humildade)",
-      artist: "Deigma Marques",
-      duration: "6:10 min",
-      youtubeId: "4J-kPpMmmNo",
-      youtubeMusicUrl: "https://music.youtube.com/watch?v=4J-kPpMmmNo",
-      description: "Meditação lírica sobre o testemunho de João Batista: 'Convém que Ele cresça e que eu diminua' (João 3:30)."
+      title: "Colossenses 1",
+      artist: "Projeto Sola",
+      duration: "4:47 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=gk7XWCMwO94",
+      album: "Single de Estúdio",
+      description: "Exposição lírica de estúdio sobre Cristo, o Verbo Eterno pelo qual todas as coisas foram criadas (João 1:1–3)."
     },
     video: BIBLE_PROJECT_VIDEOS['joao_1_12']
   },
@@ -251,12 +432,13 @@ export const dailyMedia = {
     passage: "João 4–6",
     theme: "A Mulher Samaritana junto ao Poço de Jacó, A Cura no Tanque de Betesda e o Pão que Desceu do Céu",
     music: {
-      title: "Hosana nas Alturas",
-      artist: "Gabriela Rocha",
-      duration: "5:00 min",
-      youtubeId: "ceCMxv72Uqw",
-      youtubeMusicUrl: "https://music.youtube.com/watch?v=ceCMxv72Uqw",
-      description: "Louvor festivo exaltando o Messias que sacia a alma e concede a água da vida eterna."
+      title: "Esperança",
+      artist: "Os Arrais",
+      duration: "4:24 min",
+      youtubeId: "eDflquxhedQ",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=eDflquxhedQ",
+      album: "As Canções da Terra (Estúdio)",
+      description: "Folk intimista de estúdio sobre o Messias que sacia a sede da alma com a água da vida eterna."
     },
     video: BIBLE_PROJECT_VIDEOS['joao_1_12']
   }

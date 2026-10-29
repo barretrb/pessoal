@@ -9,6 +9,7 @@ import {
   Flame, 
   Music, 
   Video, 
+  Headphones,
   ChevronRight,
   ChevronDown,
   ChevronUp,
@@ -365,8 +366,13 @@ export default function Dashboard({
                 <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs font-semibold uppercase tracking-wider text-amber-100">
                   <div className="flex items-center space-x-1.5">
                     <Music className="w-3.5 h-3.5 animate-bounce" />
-                    <span>Música Devocional do Dia • YouTube Music</span>
+                    <span>Música Devocional • YouTube Music</span>
                   </div>
+                  {activeMedia.music.album && (
+                    <span className="bg-white/20 px-2 py-0.5 rounded-full text-[10px] font-bold text-white">
+                      🎙️ {activeMedia.music.album}
+                    </span>
+                  )}
                   {activeMedia.music.duration && (
                     <span className="bg-white/25 px-2 py-0.5 rounded-full text-[10px] font-bold text-white">
                       ⏱ {activeMedia.music.duration} (&lt; 10 min)
@@ -386,36 +392,73 @@ export default function Dashboard({
               </div>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
-                <button
-                  onClick={() => setShowMusicPlayer(!showMusicPlayer)}
-                  className="inline-flex items-center justify-center space-x-2 px-5 py-3 rounded-2xl bg-white text-zinc-900 font-bold text-sm shadow-lg hover:bg-amber-50 hover:scale-105 active:scale-95 transition-all"
-                >
-                  <Play className="w-4 h-4 fill-current text-orange-600" />
-                  <span>{showMusicPlayer ? 'Ocultar Player' : 'Ouvir Louvor Agora'}</span>
-                </button>
-
                 <a
                   href={activeMedia.music.youtubeMusicUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center space-x-2 px-5 py-3 rounded-2xl bg-white text-zinc-900 font-bold text-sm shadow-lg hover:bg-amber-50 hover:scale-105 active:scale-95 transition-all group"
+                  title="Ouvir música no YouTube Music"
+                >
+                  <Headphones className="w-4 h-4 text-orange-600 group-hover:scale-110 transition-transform" />
+                  <span>Ouvir no YouTube Music</span>
+                  <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />
+                </a>
+
+                <button
+                  onClick={() => setShowMusicPlayer(!showMusicPlayer)}
                   className="inline-flex items-center justify-center space-x-2 px-4 py-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium text-xs transition-colors backdrop-blur-xs"
                 >
-                  <span>Abrir no YouTube Music</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
+                  <Play className="w-3.5 h-3.5 fill-current text-amber-200" />
+                  <span>{showMusicPlayer ? 'Ocultar Player' : 'Tocar Áudio Aqui'}</span>
+                </button>
               </div>
             </div>
 
             {showMusicPlayer && (
               <div className="relative z-10 mt-6 pt-6 border-t border-white/20">
-                <div className="aspect-video w-full max-w-xl mx-auto rounded-2xl overflow-hidden shadow-2xl bg-black">
-                  <iframe
-                    className="w-full h-full"
-                    src={`https://www.youtube.com/embed/${activeMedia.music.youtubeId}?autoplay=1&rel=0`}
-                    title="Música Devocional do Dia"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  />
+                <div className="bg-black/40 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/20 max-w-2xl mx-auto shadow-2xl">
+                  <div className="flex flex-col sm:flex-row items-center gap-4">
+                    {/* Capa de Álbum / Thumbnail */}
+                    <div className="relative w-24 h-24 rounded-xl overflow-hidden shrink-0 shadow-lg border border-white/20 bg-zinc-900 group">
+                      <img 
+                        src={`https://img.youtube.com/vi/${activeMedia.music.youtubeId}/hqdefault.jpg`} 
+                        alt={activeMedia.music.title} 
+                        className="w-full h-full object-cover" 
+                      />
+                      <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                        <Music className="w-6 h-6 text-white drop-shadow" />
+                      </div>
+                    </div>
+
+                    {/* Metadados e Player de Áudio */}
+                    <div className="flex-1 min-w-0 w-full space-y-2">
+                      <div className="flex items-center justify-between gap-2">
+                        <div>
+                          <div className="text-sm font-bold text-white truncate">{activeMedia.music.title}</div>
+                          <div className="text-xs text-amber-200 truncate">{activeMedia.music.artist} • {activeMedia.music.album || 'Gravação em Estúdio'}</div>
+                        </div>
+                        <a 
+                          href={activeMedia.music.youtubeMusicUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="shrink-0 text-[11px] font-semibold text-amber-300 hover:text-white underline flex items-center gap-1"
+                        >
+                          YouTube Music ↗
+                        </a>
+                      </div>
+
+                      {/* Embed de áudio compacto */}
+                      <div className="h-20 sm:h-24 w-full rounded-xl overflow-hidden bg-black/60 shadow-inner">
+                        <iframe
+                          className="w-full h-full"
+                          src={`https://www.youtube.com/embed/${activeMedia.music.youtubeId}?autoplay=1&rel=0`}
+                          title={`${activeMedia.music.title} - ${activeMedia.music.artist}`}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             )}
