@@ -11,8 +11,6 @@ import {
   Video, 
   Headphones,
   RefreshCw,
-  Search,
-  Sparkles,
   ChevronRight,
   ChevronDown,
   ChevronUp,
@@ -25,7 +23,7 @@ import {
   Users,
   Cloud
 } from 'lucide-react';
-import { getMediaForDay, PREFERRED_ARTISTS, getYoutubeMusicSearchUrl } from '../data/dailyMedia';
+import { getMediaForDay, PREFERRED_ARTISTS, getMusicForChapter } from '../data/dailyMedia';
 import { formatDateBR } from '../services/dateUtils';
 import PersonalizarDashboardModal from './PersonalizarDashboardModal';
 
@@ -47,30 +45,38 @@ export default function Dashboard({
   onOpenCloud
 }) {
   const [filter, setFilter] = useState('all'); // all, pending, completed
-  const [showMusicPlayer, setShowMusicPlayer] = useState(false);
   const [showVideoPlayer, setShowVideoPlayer] = useState(false);
   const [isCustomizeOpen, setIsCustomizeOpen] = useState(false);
-  const [selectedArtistIndex, setSelectedArtistIndex] = useState(null);
+  const [chapterMusicOverrides, setChapterMusicOverrides] = useState({});
+  const [playingChapterIndex, setPlayingChapterIndex] = useState(null);
 
   // Mídia do dia atual
   const currentDayData = days.find(d => d.id === currentDayId);
   const activeMedia = getMediaForDay(currentDayId, currentDayData);
   const pendingDayData = pendingDayId ? days.find(d => d.id === pendingDayId) : null;
 
-  // Louvor ativo (dinâmico, permite alternar entre artistas preferidos e buscar novidades no YouTube Music)
-  const currentMusic = selectedArtistIndex !== null && PREFERRED_ARTISTS[selectedArtistIndex]
-    ? {
-        ...PREFERRED_ARTISTS[selectedArtistIndex].sampleTrack,
-        theme: `${PREFERRED_ARTISTS[selectedArtistIndex].style} • Sugestão YouTube Music`,
-        musicSearchUrl: PREFERRED_ARTISTS[selectedArtistIndex].musicSearchUrl,
-        album: PREFERRED_ARTISTS[selectedArtistIndex].sampleTrack.album
-      }
-    : activeMedia.music;
+  // Leituras e Capítulos do Dia Atual (ex: ['João 1', 'João 2', 'João 3'])
+  const currentReadings = currentDayData?.readings && currentDayData.readings.length > 0
+    ? currentDayData.readings
+    : ['Capítulo 1', 'Capítulo 2', 'Capítulo 3'];
 
-  const handleCycleArtist = () => {
-    setSelectedArtistIndex(prev => {
-      const current = prev !== null ? prev : 0;
-      return (current + 1) % PREFERRED_ARTISTS.length;
+  // Músicas por capítulo (1 música para cada capítulo do dia)
+  const chapterMusics = currentReadings.map((reading, idx) => {
+    const override = chapterMusicOverrides[idx];
+    return getMusicForChapter(currentDayId, reading, idx, override);
+  });
+
+  // Alterna dinamicamente a música de um capítulo específico
+  const handleCycleChapterMusic = (readingIndex) => {
+    setChapterMusicOverrides(prev => {
+      const current = prev[readingIndex] !== undefined
+        ? prev[readingIndex]
+        : getMusicForChapter(currentDayId, currentReadings[readingIndex], readingIndex).artistIndex;
+      const next = (current + 1) % PREFERRED_ARTISTS.length;
+      return {
+        ...prev,
+        [readingIndex]: next
+      };
     });
   };
 
@@ -366,14 +372,11 @@ export default function Dashboard({
               <span className="text-xl">🎵</span>
               <div>
                 <p className="text-xs font-bold flex items-center gap-1.5">
-                  <span>{currentMusic.title} - {currentMusic.artist}</span>
-                  {currentMusic.duration && (
-                    <span className="text-[10px] bg-white/20 px-1.5 py-0.2 rounded-full font-semibold">
-                      ⏱ {currentMusic.duration}
-                    </span>
-                  )}
+                  <span>Louvores do Dia • {currentReadings.length} Capítulos ({currentReadings.join(', ')})</span>
                 </p>
-                <p className="text-[11px] text-amber-100">{currentMusic.theme}</p>
+                <p className="text-[11px] text-amber-100">
+                  {chapterMusics.map(m => `${m.chapter}: ${m.title}`).join(' • ')}
+                </p>
               </div>
             </div>
             <span className="text-xs font-semibold text-amber-100 flex items-center">
@@ -382,154 +385,178 @@ export default function Dashboard({
           </div>
         ) : (
           <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-600 via-orange-600 to-rose-700 text-white shadow-xl shadow-orange-950/10 p-6 sm:p-8">
-            <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-              <div className="space-y-2 max-w-2xl">
-                <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs font-semibold uppercase tracking-wider text-amber-100">
-                  <div className="flex items-center space-x-1.5">
-                    <Music className="w-3.5 h-3.5 animate-bounce" />
-                    <span>YouTube Music • Curadoria Dinâmica</span>
+            <div className="relative z-10 space-y-4">
+              {/* Cabeçalho da Seção */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/15 pb-4">
+                <div>
+                  <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs font-semibold uppercase tracking-wider text-amber-100 mb-2">
+                    <Music className="w-3.5 h-3.5" />
+                    <span>YouTube Music • Louvor por Capítulo</span>
                   </div>
-                  {currentMusic.album && (
-                    <span className="bg-white/20 px-2 py-0.5 rounded-full text-[10px] font-bold text-white">
-                      🎙️ {currentMusic.album}
-                    </span>
-                  )}
-                  {currentMusic.duration && (
-                    <span className="bg-white/25 px-2 py-0.5 rounded-full text-[10px] font-bold text-white">
-                      ⏱ {currentMusic.duration} (&lt; 10 min)
-                    </span>
-                  )}
-                </div>
-                
-                <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-                  {currentMusic.title}
-                </h2>
-                <p className="text-sm sm:text-base text-amber-100/90 font-medium">
-                  {currentMusic.artist} • <span className="italic">{currentMusic.theme}</span>
-                </p>
-                <p className="text-xs sm:text-sm text-white/80 line-clamp-2 leading-relaxed">
-                  {currentMusic.description}
-                </p>
-
-                {/* Seleção Rápida de Artistas da Preferência (Banda NOVA, Novo Canto, etc.) */}
-                <div className="pt-2">
-                  <div className="text-[11px] font-semibold text-amber-200/90 mb-1.5 flex items-center gap-1.5">
-                    <Sparkles className="w-3 h-3 text-amber-300" />
-                    <span>Explorar Artistas no YouTube Music:</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-xs">
-                    {PREFERRED_ARTISTS.slice(0, 10).map((art, idx) => {
-                      const isSelected = (selectedArtistIndex === idx) || (selectedArtistIndex === null && currentMusic.artist.includes(art.shortName));
-                      return (
-                        <button
-                          key={art.id}
-                          onClick={() => setSelectedArtistIndex(idx)}
-                          className={`shrink-0 px-2.5 py-1 rounded-full text-[11px] font-medium transition-all ${
-                            isSelected 
-                              ? 'bg-white text-orange-950 font-extrabold shadow-md scale-105' 
-                              : 'bg-white/15 hover:bg-white/25 text-white border border-white/20'
-                          }`}
-                        >
-                          {art.shortName}
-                        </button>
-                      );
-                    })}
-                  </div>
+                  <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight">
+                    Louvores da Leitura de Hoje
+                  </h2>
+                  <p className="text-xs sm:text-sm text-amber-100/90 font-medium">
+                    1 música recomendada para cada capítulo. Use o botão <strong>"Trocar"</strong> para alternar a música de qualquer capítulo.
+                  </p>
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-2.5 w-full md:w-auto">
-                <a
-                  href={currentMusic.youtubeMusicUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center space-x-2 px-5 py-3 rounded-2xl bg-white text-zinc-900 font-bold text-sm shadow-lg hover:bg-amber-50 hover:scale-105 active:scale-95 transition-all group"
-                  title="Ouvir faixa no YouTube Music"
-                >
-                  <Headphones className="w-4 h-4 text-orange-600 group-hover:scale-110 transition-transform" />
-                  <span>Ouvir no YouTube Music</span>
-                  <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />
-                </a>
-
-                <a
-                  href={currentMusic.musicSearchUrl || getYoutubeMusicSearchUrl(`${currentMusic.artist} novidades`)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center space-x-1.5 px-3.5 py-3 rounded-2xl bg-white/15 hover:bg-white/25 border border-white/20 text-white font-medium text-xs transition-colors backdrop-blur-xs"
-                  title="Buscar lançamentos do artista no YouTube Music"
-                >
-                  <Search className="w-3.5 h-3.5 text-amber-200" />
-                  <span>Lançamentos</span>
-                  <ExternalLink className="w-3 h-3 text-white/60" />
-                </a>
-
-                <button
-                  onClick={handleCycleArtist}
-                  className="inline-flex items-center justify-center space-x-1.5 px-3.5 py-3 rounded-2xl bg-white/15 hover:bg-white/25 border border-white/20 text-white font-medium text-xs transition-colors backdrop-blur-xs"
-                  title="Alternar para outro artista preferido"
-                >
-                  <RefreshCw className="w-3.5 h-3.5 text-amber-200" />
-                  <span>Trocar</span>
-                </button>
-
-                <button
-                  onClick={() => setShowMusicPlayer(!showMusicPlayer)}
-                  className="inline-flex items-center justify-center space-x-1.5 px-3.5 py-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium text-xs transition-colors backdrop-blur-xs"
-                >
-                  <Play className="w-3.5 h-3.5 fill-current text-amber-200" />
-                  <span>{showMusicPlayer ? 'Ocultar' : 'Tocar Aqui'}</span>
-                </button>
-              </div>
-            </div>
-
-            {showMusicPlayer && (
-              <div className="relative z-10 mt-6 pt-6 border-t border-white/20">
-                <div className="bg-black/40 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/20 max-w-2xl mx-auto shadow-2xl">
-                  <div className="flex flex-col sm:flex-row items-center gap-4">
-                    {/* Capa de Álbum / Thumbnail */}
-                    <div className="relative w-24 h-24 rounded-xl overflow-hidden shrink-0 shadow-lg border border-white/20 bg-zinc-900 group">
-                      <img 
-                        src={`https://img.youtube.com/vi/${currentMusic.youtubeId}/hqdefault.jpg`} 
-                        alt={currentMusic.title} 
-                        className="w-full h-full object-cover" 
-                      />
-                      <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                        <Music className="w-6 h-6 text-white drop-shadow" />
+              {/* Grade de Músicas: 1 para cada Capítulo */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-1">
+                {chapterMusics.map((chapterMusic, idx) => (
+                  <div 
+                    key={chapterMusic.chapter || idx}
+                    className="bg-black/25 hover:bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/20 flex flex-col justify-between transition-all shadow-lg hover:shadow-xl"
+                  >
+                    <div>
+                      {/* Chip do Capítulo e Duração */}
+                      <div className="flex items-center justify-between gap-2 mb-3">
+                        <span className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-full bg-white/20 text-white font-bold text-xs uppercase tracking-wide">
+                          <BookOpen className="w-3.5 h-3.5 text-amber-300" />
+                          <span>{chapterMusic.chapter}</span>
+                        </span>
+                        {chapterMusic.duration && (
+                          <span className="text-[10px] font-semibold text-amber-200 bg-white/10 px-2 py-0.5 rounded-full">
+                            ⏱ {chapterMusic.duration}
+                          </span>
+                        )}
                       </div>
-                    </div>
 
-                    {/* Metadados e Player de Áudio */}
-                    <div className="flex-1 min-w-0 w-full space-y-2">
-                      <div className="flex items-center justify-between gap-2">
-                        <div>
-                          <div className="text-sm font-bold text-white truncate">{currentMusic.title}</div>
-                          <div className="text-xs text-amber-200 truncate">{currentMusic.artist} • {currentMusic.album || 'Gravação em Estúdio'}</div>
+                      {/* Informações da Música */}
+                      <div className="flex items-start space-x-3 mb-3">
+                        <div className="relative w-14 h-14 rounded-xl overflow-hidden shrink-0 shadow-md border border-white/20 bg-zinc-900">
+                          <img 
+                            src={`https://img.youtube.com/vi/${chapterMusic.youtubeId}/hqdefault.jpg`} 
+                            alt={chapterMusic.title} 
+                            className="w-full h-full object-cover" 
+                          />
+                          <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                            <Music className="w-4 h-4 text-white drop-shadow" />
+                          </div>
                         </div>
-                        <a 
-                          href={currentMusic.youtubeMusicUrl} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="shrink-0 text-[11px] font-semibold text-amber-300 hover:text-white underline flex items-center gap-1"
-                        >
-                          YouTube Music ↗
-                        </a>
+
+                        <div className="min-w-0 flex-1">
+                          <h3 className="text-base font-extrabold text-white truncate leading-tight" title={chapterMusic.title}>
+                            {chapterMusic.title}
+                          </h3>
+                          <p className="text-xs font-semibold text-amber-200 truncate mt-0.5">
+                            {chapterMusic.artist}
+                          </p>
+                          {chapterMusic.album && (
+                            <p className="text-[10px] text-white/70 truncate mt-0.5">
+                              🎙️ {chapterMusic.album}
+                            </p>
+                          )}
+                        </div>
                       </div>
 
-                      {/* Embed de áudio compacto */}
-                      <div className="h-20 sm:h-24 w-full rounded-xl overflow-hidden bg-black/60 shadow-inner">
-                        <iframe
-                          className="w-full h-full"
-                          src={`https://www.youtube.com/embed/${currentMusic.youtubeId}?autoplay=1&rel=0`}
-                          title={`${currentMusic.title} - ${currentMusic.artist}`}
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
+                      {/* Descrição */}
+                      <p className="text-xs text-white/80 line-clamp-2 leading-relaxed mb-4">
+                        {chapterMusic.description}
+                      </p>
+                    </div>
+
+                    {/* Ações: Ouvir no YouTube Music e Trocar */}
+                    <div className="space-y-2 pt-3 border-t border-white/15">
+                      <div className="flex items-center gap-2">
+                        <a
+                          href={chapterMusic.youtubeMusicUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 inline-flex items-center justify-center space-x-1.5 px-3 py-2.5 rounded-xl bg-white text-zinc-900 font-bold text-xs shadow-md hover:bg-amber-50 active:scale-95 transition-all group"
+                          title={`Ouvir ${chapterMusic.title} no YouTube Music`}
+                        >
+                          <Headphones className="w-3.5 h-3.5 text-orange-600 group-hover:scale-110 transition-transform" />
+                          <span>Ouvir no YouTube Music</span>
+                          <ExternalLink className="w-3 h-3 text-zinc-400" />
+                        </a>
+
+                        <button
+                          onClick={() => handleCycleChapterMusic(idx)}
+                          className="inline-flex items-center justify-center space-x-1 px-3 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 border border-white/20 text-white font-medium text-xs transition-colors shrink-0"
+                          title="Trocar a música deste capítulo"
+                        >
+                          <RefreshCw className="w-3.5 h-3.5 text-amber-200" />
+                          <span>Trocar</span>
+                        </button>
+                      </div>
+
+                      {/* Tocar no App */}
+                      <button
+                        onClick={() => setPlayingChapterIndex(playingChapterIndex === idx ? null : idx)}
+                        className="w-full text-center text-[11px] text-amber-100/90 hover:text-white py-1 flex items-center justify-center space-x-1 transition-colors"
+                      >
+                        <Play className="w-3 h-3 fill-current text-amber-300" />
+                        <span>{playingChapterIndex === idx ? 'Fechar Player no App' : 'Tocar Áudio Aqui'}</span>
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Player Compacto de Áudio in-app caso o usuário clique em 'Tocar Áudio Aqui' */}
+              {playingChapterIndex !== null && chapterMusics[playingChapterIndex] && (
+                <div className="mt-4 pt-4 border-t border-white/20">
+                  <div className="bg-black/50 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/20 max-w-2xl mx-auto shadow-2xl">
+                    <div className="flex flex-col sm:flex-row items-center gap-4">
+                      <div className="relative w-20 h-20 rounded-xl overflow-hidden shrink-0 shadow-lg border border-white/20 bg-zinc-900">
+                        <img 
+                          src={`https://img.youtube.com/vi/${chapterMusics[playingChapterIndex].youtubeId}/hqdefault.jpg`} 
+                          alt={chapterMusics[playingChapterIndex].title} 
+                          className="w-full h-full object-cover" 
                         />
+                        <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                          <Music className="w-6 h-6 text-white drop-shadow" />
+                        </div>
+                      </div>
+
+                      <div className="flex-1 min-w-0 w-full space-y-2">
+                        <div className="flex items-center justify-between gap-2">
+                          <div>
+                            <div className="text-[10px] font-bold uppercase tracking-wider text-amber-300">
+                              Tocando para {chapterMusics[playingChapterIndex].chapter}
+                            </div>
+                            <div className="text-sm font-bold text-white truncate">
+                              {chapterMusics[playingChapterIndex].title}
+                            </div>
+                            <div className="text-xs text-amber-200 truncate">
+                              {chapterMusics[playingChapterIndex].artist} • {chapterMusics[playingChapterIndex].album || 'Gravação em Estúdio'}
+                            </div>
+                          </div>
+                          <div className="flex items-center space-x-2 shrink-0">
+                            <a 
+                              href={chapterMusics[playingChapterIndex].youtubeMusicUrl} 
+                              target="_blank" 
+                              rel="noopener noreferrer" 
+                              className="text-[11px] font-semibold text-amber-300 hover:text-white underline flex items-center gap-1"
+                            >
+                              YouTube Music ↗
+                            </a>
+                            <button 
+                              onClick={() => setPlayingChapterIndex(null)}
+                              className="text-xs text-white/70 hover:text-white px-2 py-1 rounded-lg bg-white/10"
+                            >
+                              ✕
+                            </button>
+                          </div>
+                        </div>
+
+                        <div className="h-20 sm:h-24 w-full rounded-xl overflow-hidden bg-black/60 shadow-inner">
+                          <iframe
+                            className="w-full h-full"
+                            src={`https://www.youtube.com/embed/${chapterMusics[playingChapterIndex].youtubeId}?autoplay=1&rel=0`}
+                            title={`${chapterMusics[playingChapterIndex].title} - ${chapterMusics[playingChapterIndex].artist}`}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
 
             <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-white/10 rounded-full blur-3xl pointer-events-none" />
           </section>

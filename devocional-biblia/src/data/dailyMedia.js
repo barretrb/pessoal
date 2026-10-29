@@ -681,3 +681,52 @@ export function getMediaForPassage(bookName, chapter) {
     video: selectedVideo
   };
 }
+
+// Obtém a música recomendada especificamente para cada capítulo do dia
+export function getMusicForChapter(dayId, readingStr, readingIndex = 0, overrideArtistIndex = null) {
+  const numericDay = Number(dayId) || 300;
+  
+  // Se houver um índice forçado (pelo botão "Trocar"), usa diretamente
+  if (overrideArtistIndex !== null && overrideArtistIndex !== undefined) {
+    const artist = PREFERRED_ARTISTS[overrideArtistIndex % PREFERRED_ARTISTS.length];
+    return {
+      chapter: readingStr,
+      ...artist.sampleTrack,
+      theme: `${artist.style} • Sugestão para ${readingStr}`,
+      artistIndex: overrideArtistIndex % PREFERRED_ARTISTS.length
+    };
+  }
+
+  // Curadoria inicial por dia e índice de leitura
+  // Garante que o capítulo 1, 2 e 3 do dia tenham artistas diferentes
+  // Dando destaque especial aos artistas preferidos (Banda NOVA, Novo Canto, Projeto Sola, etc.)
+  let artistIndex;
+  
+  if (numericDay === 302) {
+    // Dia 302: João 1, 2, 3
+    if (readingIndex === 0) artistIndex = 3; // Projeto Sola (Colossenses 1 / João 1: o Verbo Criador)
+    else if (readingIndex === 1) artistIndex = 0; // Banda NOVA (IPAlpha) (Aqui Vou Eu / João 2)
+    else artistIndex = 1; // Novo Canto (IPAlpha) (Castelo Forte / João 3)
+  } else if (numericDay === 300) {
+    // Dia 300: Lucas 19, 20, 21
+    if (readingIndex === 0) artistIndex = 6; // Paulo César Baruk (Lucas 19)
+    else if (readingIndex === 1) artistIndex = 2; // Os Arrais (Esperança / Lucas 20)
+    else artistIndex = 8; // Vocal Livre (A Começar em Mim / Lucas 21)
+  } else if (numericDay === 301) {
+    // Dia 301: Lucas 22, 23, 24
+    if (readingIndex === 0) artistIndex = 4; // Leonardo Gonçalves (Getsêmani / Lucas 22)
+    else if (readingIndex === 1) artistIndex = 3; // Projeto Sola (Isaías 53 / Lucas 23)
+    else artistIndex = 1; // Novo Canto (IPAlpha) (Castelo Forte / Lucas 24)
+  } else {
+    // Rotação pseudo-aleatória estável para qualquer dia do ano
+    artistIndex = (numericDay * 3 + readingIndex) % PREFERRED_ARTISTS.length;
+  }
+
+  const artist = PREFERRED_ARTISTS[artistIndex];
+  return {
+    chapter: readingStr,
+    ...artist.sampleTrack,
+    theme: `${artist.style} • Sugestão para ${readingStr}`,
+    artistIndex
+  };
+}
