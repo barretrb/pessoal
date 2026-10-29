@@ -1,11 +1,28 @@
-// Curadoria de Músicas de Estúdio (YouTube Music / YouTube) e Vídeos Expositivos (BibleProject)
-// Regra Estrita:
-// 1. Somente faixas de estúdio (gravação em estúdio / álbum de estúdio, SEM gravações ao vivo/shows).
-// 2. Artistas da curadoria preferida do usuário: Os Arrais, Projeto Sola, Leonardo Gonçalves, Marcos Almeida,
-//    Vocal Livre, Eli Soares, Paulo César Baruk, Oficina G3, Mauro Henrique, Felipe Valente, Alexandre Magnani,
-//    Coletivo Candieiro, Purples, PG, Fruto Sagrado, Novo Canto, Fernandinho, Thalles Roberto, Morada.
-// 3. Duração estritamente inferior a 10 minutos (entre 3 e 6 minutos).
-// 4. Todos os IDs verificados via oEmbed e disponíveis diretamente no YouTube Music.
+// Curadoria Dinâmica de Músicas no YouTube Music (https://music.youtube.com/) e Vídeos Expositivos (BibleProject)
+// Regras Estritas:
+// 1. Busca e reprodução direcionadas especificamente para o https://music.youtube.com/ (não youtube.com comum).
+// 2. Não fixar rigidamente: suporta busca dinâmica, rotação entre artistas preferidos e exploração de lançamentos recentes.
+// 3. Artistas preferidos incluídos com destaque:
+//    - Banda NOVA (IPAlpha)
+//    - Novo Canto (IPAlpha)
+//    - Os Arrais
+//    - Projeto Sola
+//    - Leonardo Gonçalves
+//    - Marcos Almeida
+//    - Paulo César Baruk
+//    - Eli Soares
+//    - Vocal Livre
+//    - Purples
+//    - Oficina G3
+//    - Fruto Sagrado
+//    - PG
+//    - Mauro Henrique
+//    - Felipe Valente
+//    - Alexandre Magnani
+//    - Coletivo Candieiro
+//    - Morada
+//    - Fernandinho
+//    - Thalles Roberto
 
 // Catálogo de Vídeos Oficiais do BibleProject em Português por Livro e Perícope
 export const BIBLE_PROJECT_VIDEOS = {
@@ -52,249 +69,361 @@ export const BIBLE_PROJECT_VIDEOS = {
   }
 };
 
-// Músicas Devocionais de Estúdio (< 10 minutos) dos Artistas Preferidos
-export const SHORT_DEVOTIONAL_TRACKS = [
+// Gera URL de busca dinâmica no YouTube Music (https://music.youtube.com/)
+export function getYoutubeMusicSearchUrl(query) {
+  return `https://music.youtube.com/search?q=${encodeURIComponent(query)}`;
+}
+
+// Lista de Artistas Preferidos para Busca e Rotação Dinâmica no YouTube Music
+export const PREFERRED_ARTISTS = [
   {
-    title: "Esperança",
-    artist: "Os Arrais",
-    duration: "4:24 min",
-    youtubeId: "eDflquxhedQ",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=eDflquxhedQ",
-    album: "As Canções da Terra (Estúdio)",
-    description: "Canção reflexiva de estúdio sobre a esperança eterna em Cristo, a graça que sustenta e a caminhada cristã.",
-    theme: "Esperança & Confiança Soberana"
+    id: "banda-nova",
+    name: "Banda NOVA (IPAlpha)",
+    shortName: "Banda NOVA",
+    searchQuery: "Banda NOVA IPAlpha",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Banda NOVA IPAlpha"),
+    style: "Louvor Contemporâneo & Teologia Cristocêntrica (IPAlpha)",
+    sampleTrack: {
+      title: "Aqui Vou Eu",
+      artist: "Banda NOVA (IPAlpha)",
+      duration: "4:30 min",
+      youtubeId: "cGcWmX2Pz0k",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=cGcWmX2Pz0k",
+      album: "IPAlpha Nova",
+      description: "Ministério jovem da IPAlpha proclamando dependência, graça e envio no Reino de Deus."
+    }
   },
   {
-    title: "Colossenses 1",
-    artist: "Projeto Sola",
-    duration: "4:47 min",
-    youtubeId: "gk7XWCMwO94",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=gk7XWCMwO94",
-    album: "Single de Estúdio",
-    description: "Meditação lírica sobre a supremacia e primazia absoluta de Cristo: 'Ele é o princípio, o primogênito dentre os mortos'.",
-    theme: "A Primazia de Cristo (João 1 / Colossenses 1)"
+    id: "novo-canto",
+    name: "Novo Canto (IPAlpha)",
+    shortName: "Novo Canto",
+    searchQuery: "Novo Canto IPAlpha",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha"),
+    style: "Louvor Congregacional & Hinos da Fé Reformada (IPAlpha)",
+    sampleTrack: {
+      title: "Castelo Forte",
+      artist: "Novo Canto (IPAlpha)",
+      duration: "4:50 min",
+      youtubeId: "RGCzQjFKk2w",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=RGCzQjFKk2w",
+      album: "IPAlpha Música",
+      description: "Louvor da IPAlpha resgatando a segurança inabalável do Deus Soberano e Sua Palavra eterna."
+    }
   },
   {
-    title: "Getsêmani",
-    artist: "Leonardo Gonçalves",
-    duration: "5:09 min",
-    youtubeId: "edGwczJm_uo",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=edGwczJm_uo",
-    album: "Poemas e Canções (Estúdio)",
-    description: "Gravação clássica de estúdio que retrata o mistério e a agonia de Cristo em oração no Jardim do Getsêmani.",
-    theme: "Oração, Entrega e Redenção (Lucas 22)"
+    id: "os-arrais",
+    name: "Os Arrais",
+    shortName: "Os Arrais",
+    searchQuery: "Os Arrais estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Os Arrais estúdio"),
+    style: "Folk Acústico Reflexivo",
+    sampleTrack: {
+      title: "Esperança",
+      artist: "Os Arrais",
+      duration: "4:24 min",
+      youtubeId: "eDflquxhedQ",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=eDflquxhedQ",
+      album: "As Canções da Terra (Estúdio)",
+      description: "Folk reflexivo de estúdio sobre a graça que sustenta e a bendita esperança cristã."
+    }
   },
   {
-    title: "Vem Me Socorrer",
-    artist: "Marcos Almeida",
-    duration: "4:18 min",
-    youtubeId: "_kAVIQzwffg",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=_kAVIQzwffg",
-    album: "Eu Sarau (Estúdio)",
-    description: "Canção poética e intimista de clamor pela graça e dependência de Deus em meio às fraquezas humanas.",
-    theme: "Graça dos Humildes & Dependência Divina"
+    id: "projeto-sola",
+    name: "Projeto Sola",
+    shortName: "Projeto Sola",
+    searchQuery: "Projeto Sola estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Projeto Sola estúdio"),
+    style: "Folk Reformado & Poesia Bíblica",
+    sampleTrack: {
+      title: "Colossenses 1",
+      artist: "Projeto Sola",
+      duration: "4:47 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=gk7XWCMwO94",
+      album: "Single de Estúdio",
+      description: "Meditação lírica sobre a primazia de Cristo, o Verbo pelo qual todas as coisas foram criadas."
+    }
   },
   {
-    title: "A Começar em Mim",
-    artist: "Vocal Livre",
-    duration: "3:50 min",
-    youtubeId: "nDXqNTyNC7A",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=nDXqNTyNC7A",
-    album: "Por Toda a Terra (Estúdio)",
-    description: "Harmonia vocal impecável de estúdio chamando à transformação interior genuína e discipulado prático.",
-    theme: "Transformação Interior & Humildade"
+    id: "leonardo-goncalves",
+    name: "Leonardo Gonçalves",
+    shortName: "Leonardo Gonçalves",
+    searchQuery: "Leonardo Gonçalves estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Leonardo Gonçalves estúdio"),
+    style: "Vocal Clássico & Poemas Sacros",
+    sampleTrack: {
+      title: "Getsêmani",
+      artist: "Leonardo Gonçalves",
+      duration: "5:09 min",
+      youtubeId: "edGwczJm_uo",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=edGwczJm_uo",
+      album: "Poemas e Canções (Estúdio)",
+      description: "Gravação de estúdio retratando o Getsêmani e a entrega voluntária do Redentor."
+    }
   },
   {
-    title: "Me Ajude a Melhorar",
-    artist: "Eli Soares",
-    duration: "4:35 min",
-    youtubeId: "lclKOqYuvug",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=lclKOqYuvug",
-    album: "Casa de Deus (Estúdio)",
-    description: "Oração de estúdio sincera por quebrantamento: 'Meu coração é tão pequeno, me ajude a melhorar'.",
-    theme: "Quebrantamento & Renovação Diária"
+    id: "marcos-almeida",
+    name: "Marcos Almeida",
+    shortName: "Marcos Almeida",
+    searchQuery: "Marcos Almeida estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Marcos Almeida estúdio"),
+    style: "MPB Poética da Graça",
+    sampleTrack: {
+      title: "Vem Me Socorrer",
+      artist: "Marcos Almeida",
+      duration: "4:18 min",
+      youtubeId: "_kAVIQzwffg",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=_kAVIQzwffg",
+      album: "Eu Sarau (Estúdio)",
+      description: "Poesia intimista de clamor por socorro e descanso na fidelidade de Deus."
+    }
   },
   {
-    title: "Jardim da Inocência",
-    artist: "Paulo César Baruk",
-    duration: "4:52 min",
-    youtubeId: "bi9W6oZzfxk",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=bi9W6oZzfxk",
-    album: "Graça (Estúdio)",
-    description: "Gravação de estúdio poética sobre o retorno ao jardim da comunhão íntima e sem reservas com o Criador.",
-    theme: "A Graça que Transforma e Reconcilia (Lucas 19)"
+    id: "paulo-cesar-baruk",
+    name: "Paulo César Baruk",
+    shortName: "Baruk",
+    searchQuery: "Paulo César Baruk estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Paulo César Baruk estúdio"),
+    style: "Adoração & Teologia da Graça",
+    sampleTrack: {
+      title: "Jardim da Inocência",
+      artist: "Paulo César Baruk",
+      duration: "4:52 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=bi9W6oZzfxk",
+      album: "Graça (Estúdio)",
+      description: "Gravação de estúdio poética sobre a reconciliação e intimidade restaurada com o Pai."
+    }
   },
   {
-    title: "Incondicional",
-    artist: "Oficina G3",
-    duration: "3:59 min",
-    youtubeId: "oYuIZLGrmcg",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=oYuIZLGrmcg",
-    album: "Depois da Guerra (Estúdio)",
-    description: "Versão oficial de estúdio com melodia reflexiva sobre o amor sacrificial e incondicional do Salvador na cruz.",
-    theme: "O Amor Sacrificial de Cristo"
+    id: "eli-soares",
+    name: "Eli Soares",
+    shortName: "Eli Soares",
+    searchQuery: "Eli Soares estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Eli Soares estúdio"),
+    style: "Soul & R&B Cristão Devocional",
+    sampleTrack: {
+      title: "Me Ajude a Melhorar",
+      artist: "Eli Soares",
+      duration: "4:35 min",
+      youtubeId: "lclKOqYuvug",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=lclKOqYuvug",
+      album: "Casa de Deus (Estúdio)",
+      description: "Oração humilde por transformação de caráter e santificação sincera."
+    }
   },
   {
-    title: "17 de Janeiro",
-    artist: "Os Arrais",
-    duration: "4:10 min",
-    youtubeId: "iLLydSZOR8k",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=iLLydSZOR8k",
-    album: "Mais (Estúdio)",
-    description: "Folk reflexivo de estúdio sobre a revelação da graça, a partida do velho homem e o renascer em Deus.",
-    theme: "Novo Nascimento & Paz com Deus"
+    id: "vocal-livre",
+    name: "Vocal Livre",
+    shortName: "Vocal Livre",
+    searchQuery: "Vocal Livre estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Vocal Livre estúdio"),
+    style: "Harmonia Vocal Cristã Contemporânea",
+    sampleTrack: {
+      title: "A Começar em Mim",
+      artist: "Vocal Livre",
+      duration: "3:50 min",
+      youtubeId: "nDXqNTyNC7A",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=nDXqNTyNC7A",
+      album: "Por Toda a Terra (Estúdio)",
+      description: "Arranjos vocais de estúdio convocando à mudança que começa no coração do discípulo."
+    }
   },
   {
-    title: "Isaías 53",
-    artist: "Projeto Sola",
-    duration: "4:35 min",
-    youtubeId: "7clLRGKd1q0",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=7clLRGKd1q0",
-    album: "Homem das Dores (Estúdio)",
-    description: "Exposição lírica de estúdio sobre a profecia do Servo Sofredor que levou sobre Si as nossas dores.",
-    theme: "O Servo Sofredor e a Cruz"
+    id: "purples",
+    name: "Purples",
+    shortName: "Purples",
+    searchQuery: "Banda Purples estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Banda Purples estúdio"),
+    style: "Indie Rock Cristão & Meditação",
+    sampleTrack: {
+      title: "Meu Lugar",
+      artist: "Purples",
+      duration: "4:30 min",
+      youtubeId: "Q4ejKplh_ms",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=Q4ejKplh_ms",
+      album: "Single de Estúdio",
+      description: "Canção reflexiva de estúdio sobre a segurança e paz encontradas na presença divina."
+    }
   },
   {
-    title: "Pequeninos",
-    artist: "Mauro Henrique",
-    duration: "3:45 min",
-    youtubeId: "qMt6R88UPkQ",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=qMt6R88UPkQ",
-    album: "Single de Estúdio",
-    description: "Canção intimista de estúdio sobre o Reino dos Céus pertencente aos pequeninos e aos que têm fé simples.",
-    theme: "A Simplicidade do Evangelho"
+    id: "oficina-g3",
+    name: "Oficina G3",
+    shortName: "Oficina G3",
+    searchQuery: "Oficina G3 estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Oficina G3 estúdio"),
+    style: "Rock / Balada Reflexiva",
+    sampleTrack: {
+      title: "Incondicional",
+      artist: "Oficina G3",
+      duration: "3:59 min",
+      youtubeId: "oYuIZLGrmcg",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=oYuIZLGrmcg",
+      album: "Depois da Guerra (Estúdio)",
+      description: "Balada reflexiva sobre o amor incondicional demonstrado na cruz do Calvário."
+    }
   },
   {
-    title: "Despreocupado",
-    artist: "Felipe Valente",
-    duration: "3:58 min",
-    youtubeId: "UZDKMpD-6wY",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=UZDKMpD-6wY",
-    album: "Reversão (Estúdio)",
-    description: "MPB cristã de estúdio inspirada no Sermão do Monte: confiar na providência divina e descansar da ansiedade.",
-    theme: "Descanso da Ansiedade & Providência"
+    id: "fruto-sagrado",
+    name: "Fruto Sagrado",
+    shortName: "Fruto Sagrado",
+    searchQuery: "Fruto Sagrado estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Fruto Sagrado estúdio"),
+    style: "Rock Cristão & Letras Profundas",
+    sampleTrack: {
+      title: "O Que Na Verdade Somos",
+      artist: "Fruto Sagrado",
+      duration: "4:20 min",
+      youtubeId: "8MksLBGRUpo",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=8MksLBGRUpo",
+      album: "O Que na Verdade Somos (Estúdio)",
+      description: "Canção reflexiva sobre autenticidade espiritual e a busca pela verdade interior."
+    }
   },
   {
-    title: "Ninguém Chega Só",
-    artist: "Alexandre Magnani",
-    duration: "3:42 min",
-    youtubeId: "ToqPLrFb6-I",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=ToqPLrFb6-I",
-    album: "O Que Realmente Importa (Estúdio)",
-    description: "Melodia leve de estúdio sobre comunidade, amor fraternal e a beleza de caminhar juntos na fé.",
-    theme: "Comunhão Fraternal & Unidade"
+    id: "pg",
+    name: "PG",
+    shortName: "PG",
+    searchQuery: "Cantor PG estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Cantor PG estúdio"),
+    style: "Pop Rock & Adoração Bíblica",
+    sampleTrack: {
+      title: "Posso Ouvir",
+      artist: "PG",
+      duration: "4:12 min",
+      youtubeId: "9h126QoPIEg",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=9h126QoPIEg",
+      album: "Imagem e Semelhança (Estúdio)",
+      description: "Clamor por ouvidos sensíveis e coração obediente à direção de Deus."
+    }
   },
   {
-    title: "Arrastão",
-    artist: "Coletivo Candieiro",
-    duration: "3:50 min",
-    youtubeId: "8AAQzkzfEb4",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=8AAQzkzfEb4",
-    album: "Single de Estúdio",
-    description: "Folk brasileiro de estúdio que resgata a poesia dos pescadores de homens e o chamado de Cristo.",
-    theme: "O Chamado dos Discípulos (Lucas 5)"
+    id: "mauro-henrique",
+    name: "Mauro Henrique",
+    shortName: "Mauro Henrique",
+    searchQuery: "Mauro Henrique estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Mauro Henrique estúdio"),
+    style: "Acústico Intimista & Rock Reflexivo",
+    sampleTrack: {
+      title: "Pequeninos",
+      artist: "Mauro Henrique",
+      duration: "3:45 min",
+      youtubeId: "qMt6R88UPkQ",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=qMt6R88UPkQ",
+      album: "Single de Estúdio",
+      description: "Poesia intimista sobre a fé pura e a graça concedida aos pequeninos."
+    }
   },
   {
-    title: "Meu Lugar",
-    artist: "Purples",
-    duration: "4:30 min",
-    youtubeId: "Q4ejKplh_ms",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=Q4ejKplh_ms",
-    album: "Single de Estúdio",
-    description: "Canção reflexiva de estúdio sobre encontrar o verdadeiro descanso e identidade na presença de Deus.",
-    theme: "Descanso & Identidade no Pai"
+    id: "felipe-valente",
+    name: "Felipe Valente",
+    shortName: "Felipe Valente",
+    searchQuery: "Felipe Valente estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Felipe Valente estúdio"),
+    style: "MPB Acústica & Descanso",
+    sampleTrack: {
+      title: "Despreocupado",
+      artist: "Felipe Valente",
+      duration: "3:58 min",
+      youtubeId: "UZDKMpD-6wY",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=UZDKMpD-6wY",
+      album: "Reversão (Estúdio)",
+      description: "Canção inspirada no Sermão do Monte sobre descansar da ansiedade nos cuidados do Pai."
+    }
   },
   {
-    title: "Teu Melhor",
-    artist: "Purples",
-    duration: "4:15 min",
-    youtubeId: "fPwhZQgk7Yc",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=fPwhZQgk7Yc",
-    album: "Single de Estúdio",
-    description: "Meditação lírica de estúdio sobre a entrega completa do coração à vontade sábia do Senhor.",
-    theme: "Consagração & Fidelidade"
+    id: "alexandre-magnani",
+    name: "Alexandre Magnani",
+    shortName: "Alexandre Magnani",
+    searchQuery: "Alexandre Magnani estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Alexandre Magnani estúdio"),
+    style: "MPB Cristã & Comunhão",
+    sampleTrack: {
+      title: "Ninguém Chega Só",
+      artist: "Alexandre Magnani",
+      duration: "3:42 min",
+      youtubeId: "ToqPLrFb6-I",
+      youtubeMusicUrl: "https://music.youtube.com/watch?to=ToqPLrFb6-I",
+      album: "O Que Realmente Importa (Estúdio)",
+      description: "Canção calorosa sobre fraternidade, unidade e caminhar juntos na caminhada da fé."
+    }
   },
   {
-    title: "Posso Ouvir",
-    artist: "PG",
-    duration: "4:12 min",
-    youtubeId: "9h126QoPIEg",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=9h126QoPIEg",
-    album: "Imagem e Semelhança (Estúdio)",
-    description: "Versão de estúdio sobre a sensibilidade espiritual para discernir e obedecer à voz de Deus.",
-    theme: "Escuta Espiritual & Fé Viva"
+    id: "coletivo-candieiro",
+    name: "Coletivo Candieiro",
+    shortName: "Coletivo Candieiro",
+    searchQuery: "Coletivo Candieiro estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Coletivo Candieiro estúdio"),
+    style: "Folk Regional Brasileiro",
+    sampleTrack: {
+      title: "Arrastão",
+      artist: "Coletivo Candieiro",
+      duration: "3:50 min",
+      youtubeId: "8AAQzkzfEb4",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=8AAQzkzfEb4",
+      album: "Single de Estúdio",
+      description: "Poesia sonora brasileira celebrando a vocação e o envio dos discípulos de Jesus."
+    }
   },
   {
-    title: "Eu Sou Livre",
-    artist: "PG",
-    duration: "4:05 min",
-    youtubeId: "sA7dygVU09g",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=sA7dygVU09g",
-    album: "Eu Sou Livre (Estúdio)",
-    description: "Canção de estúdio vibrante sobre a verdadeira liberdade concedida por Cristo.",
-    theme: "Liberdade em Cristo"
+    id: "morada",
+    name: "Morada",
+    shortName: "Morada",
+    searchQuery: "Banda Morada estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Banda Morada estúdio"),
+    style: "Adoração Contemporânea",
+    sampleTrack: {
+      title: "É Tudo Sobre Você",
+      artist: "Morada",
+      duration: "4:35 min",
+      youtubeId: "ePdRgBWhvog",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=ePdRgBWhvog",
+      album: "Gravação de Estúdio",
+      description: "Declaração cristocêntrica de que toda a criação e vida convergem em Cristo."
+    }
   },
   {
-    title: "O Que Na Verdade Somos",
-    artist: "Fruto Sagrado",
-    duration: "4:20 min",
-    youtubeId: "8MksLBGRUpo",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=8MksLBGRUpo",
-    album: "O Que na Verdade Somos (Estúdio)",
-    description: "Faixa de estúdio clássica que questiona a hipocrisia e clama por uma fé sincera, transparente e sem máscaras.",
-    theme: "Sinceridade de Fé & Verdade Interior"
+    id: "fernandinho",
+    name: "Fernandinho",
+    shortName: "Fernandinho",
+    searchQuery: "Fernandinho estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Fernandinho estúdio"),
+    style: "Louvor Cristocêntrico",
+    sampleTrack: {
+      title: "Galileu",
+      artist: "Fernandinho",
+      duration: "4:10 min",
+      youtubeId: "9YC8iDNpyYU",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=9YC8iDNpyYU",
+      album: "Galileu (Clipe de Estúdio)",
+      description: "Hino cristocêntrico exaltando o Homem da Galileia que cura, salva e liberta."
+    }
   },
   {
-    title: "O Senhor Logo Vem",
-    artist: "Novo Canto",
-    duration: "4:45 min",
-    youtubeId: "nir1fJ9PGpg",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=nir1fJ9PGpg",
-    album: "Gravação de Estúdio",
-    description: "Gravação vocal de estúdio harmoniosa anunciando a promessa da volta gloriosa do Messias.",
-    theme: "A Bendita Esperança do Retorno de Cristo"
-  },
-  {
-    title: "Galileu",
-    artist: "Fernandinho",
-    duration: "4:10 min",
-    youtubeId: "9YC8iDNpyYU",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=9YC8iDNpyYU",
-    album: "Galileu (Clipe Oficial de Estúdio)",
-    description: "Canção cristocêntrica de estúdio proclamando o Salvador que caminhou entre nós e transformou a história.",
-    theme: "Cristo, o Salvador do Mundo"
-  },
-  {
-    title: "Arde Outra Vez",
-    artist: "Thalles Roberto",
-    duration: "4:50 min",
-    youtubeId: "_pnAJPnp_Jw",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=_pnAJPnp_Jw",
-    album: "Saudade (Clipe Oficial de Estúdio)",
-    description: "Clamor intimista de estúdio pela chama renovada do primeiro amor e pela presença viva do Espírito Santo.",
-    theme: "Primeiro Amor & Renovação Espiritual"
-  },
-  {
-    title: "É Tudo Sobre Você",
-    artist: "Morada",
-    duration: "4:35 min",
-    youtubeId: "ePdRgBWhvog",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=ePdRgBWhvog",
-    album: "Gravação de Estúdio",
-    description: "Versão de estúdio cristocêntrica afirmando que toda a vida, criação e história convergem para Cristo.",
-    theme: "Cristocentralidade Absoluta"
-  },
-  {
-    title: "Emaús",
-    artist: "Morada",
-    duration: "5:10 min",
-    youtubeId: "d7iMVvuZkyg",
-    youtubeMusicUrl: "https://music.youtube.com/watch?v=d7iMVvuZkyg",
-    album: "Gravação de Estúdio com Poiema Music",
-    description: "Canção de estúdio inspirada nos discípulos no caminho de Emaús (Lucas 24): 'Porventura não ardia o nosso coração?'.",
-    theme: "O Cristo Ressurreto em Emaús (Lucas 24)"
+    id: "thalles-roberto",
+    name: "Thalles Roberto",
+    shortName: "Thalles Roberto",
+    searchQuery: "Thalles Roberto estúdio",
+    musicSearchUrl: getYoutubeMusicSearchUrl("Thalles Roberto estúdio"),
+    style: "Gospel Intimista & Adoração",
+    sampleTrack: {
+      title: "Arde Outra Vez",
+      artist: "Thalles Roberto",
+      duration: "4:50 min",
+      youtubeId: "_pnAJPnp_Jw",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=_pnAJPnp_Jw",
+      album: "Saudade (Clipe de Estúdio)",
+      description: "Clamor fervoroso pela renovação do primeiro amor e intimidade sincera com Deus."
+    }
   }
 ];
+
+// Músicas Devocionais para Rotação Diária no YouTube Music (< 10 minutos)
+export const SHORT_DEVOTIONAL_TRACKS = PREFERRED_ARTISTS.map(artist => ({
+  ...artist.sampleTrack,
+  theme: `${artist.style} • Sugestão YouTube Music`,
+  musicSearchUrl: artist.musicSearchUrl
+}));
 
 // Curadoria Específica por Dia do Plano de Leitura
 export const dailyMedia = {
@@ -310,6 +439,7 @@ export const dailyMedia = {
       duration: "5:09 min",
       youtubeId: "edGwczJm_uo",
       youtubeMusicUrl: "https://music.youtube.com/watch?v=edGwczJm_uo",
+      musicSearchUrl: getYoutubeMusicSearchUrl("Leonardo Gonçalves Getsêmani"),
       album: "Poemas e Canções (Estúdio)",
       description: "Gravação clássica de estúdio que retrata o mistério e a agonia de Cristo em oração no Jardim do Getsêmani."
     },
@@ -323,13 +453,14 @@ export const dailyMedia = {
     passage: "Lucas 10–12",
     theme: "O Bom Samaritano, Maria aos Pés de Jesus, A Oração do Pai Nosso e a Liberdade da Ansiedade",
     music: {
-      title: "A Começar em Mim",
-      artist: "Vocal Livre",
-      duration: "3:50 min",
-      youtubeId: "nDXqNTyNC7A",
-      youtubeMusicUrl: "https://music.youtube.com/watch?v=nDXqNTyNC7A",
-      album: "Por Toda a Terra (Estúdio)",
-      description: "Harmonia vocal de estúdio chamando à transformação interior e pureza de motivações aos pés de Cristo."
+      title: "Aqui Vou Eu",
+      artist: "Banda NOVA (IPAlpha)",
+      duration: "4:30 min",
+      youtubeId: "cGcWmX2Pz0k",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=cGcWmX2Pz0k",
+      musicSearchUrl: getYoutubeMusicSearchUrl("Banda NOVA IPAlpha Aqui Vou Eu"),
+      album: "IPAlpha Nova",
+      description: "Louvor da Banda NOVA (IPAlpha) proclamando a entrega aos pés de Cristo e a prontidão para o Reino."
     },
     video: BIBLE_PROJECT_VIDEOS['lucas_10_24']
   },
@@ -346,6 +477,7 @@ export const dailyMedia = {
       duration: "4:35 min",
       youtubeId: "lclKOqYuvug",
       youtubeMusicUrl: "https://music.youtube.com/watch?v=lclKOqYuvug",
+      musicSearchUrl: getYoutubeMusicSearchUrl("Eli Soares Me Ajude a Melhorar"),
       album: "Casa de Deus (Estúdio)",
       description: "Versão de estúdio de quebrantamento e humildade, expressando o retorno do coração arrependido ao abraço do Pai."
     },
@@ -364,6 +496,7 @@ export const dailyMedia = {
       duration: "4:18 min",
       youtubeId: "_kAVIQzwffg",
       youtubeMusicUrl: "https://music.youtube.com/watch?v=_kAVIQzwffg",
+      musicSearchUrl: getYoutubeMusicSearchUrl("Marcos Almeida Vem Me Socorrer"),
       album: "Eu Sarau (Estúdio)",
       description: "Canção de estúdio intimista que traduz o clamor humilde por misericórdia do publicano e a gratidão dos restaurados."
     },
@@ -382,6 +515,7 @@ export const dailyMedia = {
       duration: "4:52 min",
       youtubeId: "bi9W6oZzfxk",
       youtubeMusicUrl: "https://music.youtube.com/watch?v=bi9W6oZzfxk",
+      musicSearchUrl: getYoutubeMusicSearchUrl("Paulo César Baruk Jardim da Inocência"),
       album: "Graça (Estúdio)",
       description: "Gravação de estúdio poética sobre o encontro transformador da graça de Cristo (Lucas 19) e a reconciliação com o Pai.",
       theme: "A Graça que Transforma e Reconcilia (Lucas 19)"
@@ -396,13 +530,14 @@ export const dailyMedia = {
     passage: "Lucas 22–24",
     theme: "A Última Ceia, O Getsêmani, A Crucificação, A Ressurreição e os Discípulos no Caminho de Emaús",
     music: {
-      title: "Emaús",
-      artist: "Morada",
-      duration: "5:10 min",
-      youtubeId: "d7iMVvuZkyg",
-      youtubeMusicUrl: "https://music.youtube.com/watch?v=d7iMVvuZkyg",
-      album: "Gravação de Estúdio com Poiema Music",
-      description: "Canção oficial de estúdio sobre a revelação de Cristo aos discípulos de Emaús após a ressurreição (Lucas 24)."
+      title: "Castelo Forte",
+      artist: "Novo Canto (IPAlpha)",
+      duration: "4:50 min",
+      youtubeId: "RGCzQjFKk2w",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=RGCzQjFKk2w",
+      musicSearchUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Castelo Forte"),
+      album: "IPAlpha Música",
+      description: "Louvor congregacional do Novo Canto (IPAlpha) proclamando a vitória eterna do Redentor sobre a morte."
     },
     video: BIBLE_PROJECT_VIDEOS['lucas_10_24']
   },
@@ -419,8 +554,9 @@ export const dailyMedia = {
       duration: "4:47 min",
       youtubeId: "gk7XWCMwO94",
       youtubeMusicUrl: "https://music.youtube.com/watch?v=gk7XWCMwO94",
+      musicSearchUrl: getYoutubeMusicSearchUrl("Projeto Sola Colossenses 1"),
       album: "Single de Estúdio",
-      description: "Exposição lírica de estúdio sobre Cristo, o Verbo Eterno pelo qual todas as coisas foram criadas (João 1:1–3)."
+      description: "Exposição lírica sobre Cristo, o Verbo Eterno pelo qual todas as coisas foram criadas (João 1:1–3)."
     },
     video: BIBLE_PROJECT_VIDEOS['joao_1_12']
   },
@@ -437,6 +573,7 @@ export const dailyMedia = {
       duration: "4:24 min",
       youtubeId: "eDflquxhedQ",
       youtubeMusicUrl: "https://music.youtube.com/watch?v=eDflquxhedQ",
+      musicSearchUrl: getYoutubeMusicSearchUrl("Os Arrais Esperança"),
       album: "As Canções da Terra (Estúdio)",
       description: "Folk intimista de estúdio sobre o Messias que sacia a sede da alma com a água da vida eterna."
     },
@@ -483,22 +620,34 @@ function parseReadingsInfo(readings = []) {
   return { bookName, chapters, passageStr };
 }
 
-// Função Principal de Obtenção de Mídia do Dia
+// Função Principal de Obtenção de Mídia do Dia (com URLs no YouTube Music)
 export function getMediaForDay(dayId, dayData = null) {
   const numericDay = Number(dayId) || 300;
 
-  // 1. Verifica se há curadoria manual rica e consagrada para o dia
+  // 1. Verifica se há curadoria manual rica para o dia
   if (dailyMedia[numericDay]) {
-    return dailyMedia[numericDay];
+    const item = dailyMedia[numericDay];
+    return {
+      ...item,
+      music: {
+        ...item.music,
+        musicSearchUrl: item.music.musicSearchUrl || getYoutubeMusicSearchUrl(`${item.music.artist} ${item.music.title}`)
+      }
+    };
   }
 
   // 2. Se não há entrada manual fixa, gera dinamicamente com base nas leituras do dia
   const readings = dayData?.readings || [];
   const { bookName, chapters, passageStr } = parseReadingsInfo(readings);
 
-  // Seleciona a música a partir de rotação estrita por dia (garante que dia N != dia N - 1)
-  const trackIndex = Math.abs(numericDay) % SHORT_DEVOTIONAL_TRACKS.length;
-  const selectedTrack = SHORT_DEVOTIONAL_TRACKS[trackIndex];
+  // Seleciona o artista a partir de rotação estrita por dia
+  const artistIndex = Math.abs(numericDay) % PREFERRED_ARTISTS.length;
+  const artist = PREFERRED_ARTISTS[artistIndex];
+  const track = {
+    ...artist.sampleTrack,
+    theme: `${artist.style} • Sugestão YouTube Music`,
+    musicSearchUrl: artist.musicSearchUrl
+  };
 
   // Seleciona o vídeo do BibleProject específico para o livro e capítulo da leitura
   const selectedVideo = resolveBibleProjectVideo(bookName, chapters);
@@ -508,7 +657,7 @@ export function getMediaForDay(dayId, dayData = null) {
     title: `Dia ${numericDay} • ${passageStr}`,
     passage: passageStr,
     theme: `${bookName} (Cap. ${chapters.join(', ')}) • Meditação Devocional`,
-    music: selectedTrack,
+    music: track,
     video: selectedVideo
   };
 }
@@ -517,7 +666,12 @@ export function getMediaForDay(dayId, dayData = null) {
 export function getMediaForPassage(bookName, chapter) {
   const selectedVideo = resolveBibleProjectVideo(bookName, [chapter]);
   const charSum = (bookName + chapter).split('').reduce((acc, c) => acc + c.charCodeAt(0), 0);
-  const track = SHORT_DEVOTIONAL_TRACKS[charSum % SHORT_DEVOTIONAL_TRACKS.length];
+  const artist = PREFERRED_ARTISTS[charSum % PREFERRED_ARTISTS.length];
+  const track = {
+    ...artist.sampleTrack,
+    theme: `${artist.style} • Estudo de ${bookName} ${chapter}`,
+    musicSearchUrl: getYoutubeMusicSearchUrl(`${artist.name} ${bookName} ${chapter}`)
+  };
 
   return {
     title: `${bookName} ${chapter}`,

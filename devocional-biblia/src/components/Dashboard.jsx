@@ -10,6 +10,9 @@ import {
   Music, 
   Video, 
   Headphones,
+  RefreshCw,
+  Search,
+  Sparkles,
   ChevronRight,
   ChevronDown,
   ChevronUp,
@@ -22,7 +25,7 @@ import {
   Users,
   Cloud
 } from 'lucide-react';
-import { getMediaForDay } from '../data/dailyMedia';
+import { getMediaForDay, PREFERRED_ARTISTS, getYoutubeMusicSearchUrl } from '../data/dailyMedia';
 import { formatDateBR } from '../services/dateUtils';
 import PersonalizarDashboardModal from './PersonalizarDashboardModal';
 
@@ -47,11 +50,29 @@ export default function Dashboard({
   const [showMusicPlayer, setShowMusicPlayer] = useState(false);
   const [showVideoPlayer, setShowVideoPlayer] = useState(false);
   const [isCustomizeOpen, setIsCustomizeOpen] = useState(false);
+  const [selectedArtistIndex, setSelectedArtistIndex] = useState(null);
 
   // Mídia do dia atual
   const currentDayData = days.find(d => d.id === currentDayId);
   const activeMedia = getMediaForDay(currentDayId, currentDayData);
   const pendingDayData = pendingDayId ? days.find(d => d.id === pendingDayId) : null;
+
+  // Louvor ativo (dinâmico, permite alternar entre artistas preferidos e buscar novidades no YouTube Music)
+  const currentMusic = selectedArtistIndex !== null && PREFERRED_ARTISTS[selectedArtistIndex]
+    ? {
+        ...PREFERRED_ARTISTS[selectedArtistIndex].sampleTrack,
+        theme: `${PREFERRED_ARTISTS[selectedArtistIndex].style} • Sugestão YouTube Music`,
+        musicSearchUrl: PREFERRED_ARTISTS[selectedArtistIndex].musicSearchUrl,
+        album: PREFERRED_ARTISTS[selectedArtistIndex].sampleTrack.album
+      }
+    : activeMedia.music;
+
+  const handleCycleArtist = () => {
+    setSelectedArtistIndex(prev => {
+      const current = prev !== null ? prev : 0;
+      return (current + 1) % PREFERRED_ARTISTS.length;
+    });
+  };
 
   // Estatísticas do perfil atual
   const totalCompleted = days.filter(d => d.completed).length;
@@ -345,14 +366,14 @@ export default function Dashboard({
               <span className="text-xl">🎵</span>
               <div>
                 <p className="text-xs font-bold flex items-center gap-1.5">
-                  <span>{activeMedia.music.title} - {activeMedia.music.artist}</span>
-                  {activeMedia.music.duration && (
+                  <span>{currentMusic.title} - {currentMusic.artist}</span>
+                  {currentMusic.duration && (
                     <span className="text-[10px] bg-white/20 px-1.5 py-0.2 rounded-full font-semibold">
-                      ⏱ {activeMedia.music.duration}
+                      ⏱ {currentMusic.duration}
                     </span>
                   )}
                 </p>
-                <p className="text-[11px] text-amber-100">{activeMedia.theme}</p>
+                <p className="text-[11px] text-amber-100">{currentMusic.theme}</p>
               </div>
             </div>
             <span className="text-xs font-semibold text-amber-100 flex items-center">
@@ -366,50 +387,97 @@ export default function Dashboard({
                 <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs font-semibold uppercase tracking-wider text-amber-100">
                   <div className="flex items-center space-x-1.5">
                     <Music className="w-3.5 h-3.5 animate-bounce" />
-                    <span>Música Devocional • YouTube Music</span>
+                    <span>YouTube Music • Curadoria Dinâmica</span>
                   </div>
-                  {activeMedia.music.album && (
+                  {currentMusic.album && (
                     <span className="bg-white/20 px-2 py-0.5 rounded-full text-[10px] font-bold text-white">
-                      🎙️ {activeMedia.music.album}
+                      🎙️ {currentMusic.album}
                     </span>
                   )}
-                  {activeMedia.music.duration && (
+                  {currentMusic.duration && (
                     <span className="bg-white/25 px-2 py-0.5 rounded-full text-[10px] font-bold text-white">
-                      ⏱ {activeMedia.music.duration} (&lt; 10 min)
+                      ⏱ {currentMusic.duration} (&lt; 10 min)
                     </span>
                   )}
                 </div>
                 
                 <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-                  {activeMedia.music.title}
+                  {currentMusic.title}
                 </h2>
                 <p className="text-sm sm:text-base text-amber-100/90 font-medium">
-                  {activeMedia.music.artist} • <span className="italic">{activeMedia.theme}</span>
+                  {currentMusic.artist} • <span className="italic">{currentMusic.theme}</span>
                 </p>
                 <p className="text-xs sm:text-sm text-white/80 line-clamp-2 leading-relaxed">
-                  {activeMedia.music.description}
+                  {currentMusic.description}
                 </p>
+
+                {/* Seleção Rápida de Artistas da Preferência (Banda NOVA, Novo Canto, etc.) */}
+                <div className="pt-2">
+                  <div className="text-[11px] font-semibold text-amber-200/90 mb-1.5 flex items-center gap-1.5">
+                    <Sparkles className="w-3 h-3 text-amber-300" />
+                    <span>Explorar Artistas no YouTube Music:</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-xs">
+                    {PREFERRED_ARTISTS.slice(0, 10).map((art, idx) => {
+                      const isSelected = (selectedArtistIndex === idx) || (selectedArtistIndex === null && currentMusic.artist.includes(art.shortName));
+                      return (
+                        <button
+                          key={art.id}
+                          onClick={() => setSelectedArtistIndex(idx)}
+                          className={`shrink-0 px-2.5 py-1 rounded-full text-[11px] font-medium transition-all ${
+                            isSelected 
+                              ? 'bg-white text-orange-950 font-extrabold shadow-md scale-105' 
+                              : 'bg-white/15 hover:bg-white/25 text-white border border-white/20'
+                          }`}
+                        >
+                          {art.shortName}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
+              <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-2.5 w-full md:w-auto">
                 <a
-                  href={activeMedia.music.youtubeMusicUrl}
+                  href={currentMusic.youtubeMusicUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center space-x-2 px-5 py-3 rounded-2xl bg-white text-zinc-900 font-bold text-sm shadow-lg hover:bg-amber-50 hover:scale-105 active:scale-95 transition-all group"
-                  title="Ouvir música no YouTube Music"
+                  title="Ouvir faixa no YouTube Music"
                 >
                   <Headphones className="w-4 h-4 text-orange-600 group-hover:scale-110 transition-transform" />
                   <span>Ouvir no YouTube Music</span>
                   <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />
                 </a>
 
+                <a
+                  href={currentMusic.musicSearchUrl || getYoutubeMusicSearchUrl(`${currentMusic.artist} novidades`)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center space-x-1.5 px-3.5 py-3 rounded-2xl bg-white/15 hover:bg-white/25 border border-white/20 text-white font-medium text-xs transition-colors backdrop-blur-xs"
+                  title="Buscar lançamentos do artista no YouTube Music"
+                >
+                  <Search className="w-3.5 h-3.5 text-amber-200" />
+                  <span>Lançamentos</span>
+                  <ExternalLink className="w-3 h-3 text-white/60" />
+                </a>
+
+                <button
+                  onClick={handleCycleArtist}
+                  className="inline-flex items-center justify-center space-x-1.5 px-3.5 py-3 rounded-2xl bg-white/15 hover:bg-white/25 border border-white/20 text-white font-medium text-xs transition-colors backdrop-blur-xs"
+                  title="Alternar para outro artista preferido"
+                >
+                  <RefreshCw className="w-3.5 h-3.5 text-amber-200" />
+                  <span>Trocar</span>
+                </button>
+
                 <button
                   onClick={() => setShowMusicPlayer(!showMusicPlayer)}
-                  className="inline-flex items-center justify-center space-x-2 px-4 py-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium text-xs transition-colors backdrop-blur-xs"
+                  className="inline-flex items-center justify-center space-x-1.5 px-3.5 py-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium text-xs transition-colors backdrop-blur-xs"
                 >
                   <Play className="w-3.5 h-3.5 fill-current text-amber-200" />
-                  <span>{showMusicPlayer ? 'Ocultar Player' : 'Tocar Áudio Aqui'}</span>
+                  <span>{showMusicPlayer ? 'Ocultar' : 'Tocar Aqui'}</span>
                 </button>
               </div>
             </div>
@@ -421,8 +489,8 @@ export default function Dashboard({
                     {/* Capa de Álbum / Thumbnail */}
                     <div className="relative w-24 h-24 rounded-xl overflow-hidden shrink-0 shadow-lg border border-white/20 bg-zinc-900 group">
                       <img 
-                        src={`https://img.youtube.com/vi/${activeMedia.music.youtubeId}/hqdefault.jpg`} 
-                        alt={activeMedia.music.title} 
+                        src={`https://img.youtube.com/vi/${currentMusic.youtubeId}/hqdefault.jpg`} 
+                        alt={currentMusic.title} 
                         className="w-full h-full object-cover" 
                       />
                       <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
@@ -434,11 +502,11 @@ export default function Dashboard({
                     <div className="flex-1 min-w-0 w-full space-y-2">
                       <div className="flex items-center justify-between gap-2">
                         <div>
-                          <div className="text-sm font-bold text-white truncate">{activeMedia.music.title}</div>
-                          <div className="text-xs text-amber-200 truncate">{activeMedia.music.artist} • {activeMedia.music.album || 'Gravação em Estúdio'}</div>
+                          <div className="text-sm font-bold text-white truncate">{currentMusic.title}</div>
+                          <div className="text-xs text-amber-200 truncate">{currentMusic.artist} • {currentMusic.album || 'Gravação em Estúdio'}</div>
                         </div>
                         <a 
-                          href={activeMedia.music.youtubeMusicUrl} 
+                          href={currentMusic.youtubeMusicUrl} 
                           target="_blank" 
                           rel="noopener noreferrer" 
                           className="shrink-0 text-[11px] font-semibold text-amber-300 hover:text-white underline flex items-center gap-1"
@@ -451,8 +519,8 @@ export default function Dashboard({
                       <div className="h-20 sm:h-24 w-full rounded-xl overflow-hidden bg-black/60 shadow-inner">
                         <iframe
                           className="w-full h-full"
-                          src={`https://www.youtube.com/embed/${activeMedia.music.youtubeId}?autoplay=1&rel=0`}
-                          title={`${activeMedia.music.title} - ${activeMedia.music.artist}`}
+                          src={`https://www.youtube.com/embed/${currentMusic.youtubeId}?autoplay=1&rel=0`}
+                          title={`${currentMusic.title} - ${currentMusic.artist}`}
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                           allowFullScreen
                         />
