@@ -6495,7 +6495,7 @@
           {
             "number": 23,
             "text": "Jesus percebeu a hipocrisia deles e disse:",
-            "isJesusWords": false,
+            "isJesusWords": true,
             "crossReferences": []
           },
           {
@@ -7331,7 +7331,7 @@
           {
             "number": 61,
             "text": "Então o Senhor se voltou e olhou para Pedro. E Pedro se lembrou das palavras dele: “Hoje, antes que o galo cante, você me negará três vezes”.",
-            "isJesusWords": false,
+            "isJesusWords": true,
             "crossReferences": []
           },
           {
@@ -7837,7 +7837,7 @@
           {
             "number": 7,
             "text": "‘É necessário que o Filho do Homem seja traído e entregue nas mãos de pecadores, seja crucificado e ressuscite no terceiro dia’”.",
-            "isJesusWords": false,
+            "isJesusWords": true,
             "crossReferences": []
           },
           {

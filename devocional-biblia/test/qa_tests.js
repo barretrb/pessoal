@@ -566,37 +566,55 @@ test('QA Test 14: Reconciliação Automática de Dias Concluídos por Capítulos
   console.log('✓ QA Test 14 Aprovado: Reconciliação automática eliminou falsas pendências quando capítulos estão concluídos.');
 });
 
-test('QA Test 15: Palavras de Jesus (Red Letter) no Evangelho de João', () => {
-  const joaoPath = resolve(__dirname, '../public/biblia/joao.json');
-  const joaoData = JSON.parse(readFileSync(joaoPath, 'utf-8'));
+test('QA Test 15: Palavras de Jesus (Red Letter) em Toda a Bíblia (Evangelhos, Atos, Epístolas e Apocalipse)', () => {
+  const bibliaDir = resolve(__dirname, '../public/biblia');
+  
+  function getVerse(bookName, ch, vNum) {
+    const p = resolve(bibliaDir, `${bookName}.json`);
+    const data = JSON.parse(readFileSync(p, 'utf-8'));
+    return data[String(ch)].sections.flatMap(s => s.verses).find(v => v.number === vNum);
+  }
 
   // 1. Validar João 4 versículos 21 a 24 (conforme imagem enviada pelo usuário)
-  const ch4 = joaoData['4'];
-  assert.ok(ch4, 'Capítulo 4 de João deve existir');
-  const v21 = ch4.sections.flatMap(s => s.verses).find(v => v.number === 21);
-  const v22 = ch4.sections.flatMap(s => s.verses).find(v => v.number === 22);
-  const v23 = ch4.sections.flatMap(s => s.verses).find(v => v.number === 23);
-  const v24 = ch4.sections.flatMap(s => s.verses).find(v => v.number === 24);
+  const v21 = getVerse('joao', 4, 21);
+  const v22 = getVerse('joao', 4, 22);
+  const v23 = getVerse('joao', 4, 23);
+  const v24 = getVerse('joao', 4, 24);
 
   assert.equal(v21.isJesusWords, true, 'João 4:21 ("Creia em mim, mulher...") deve ter isJesusWords = true');
   assert.equal(v22.isJesusWords, true, 'João 4:22 deve ter isJesusWords = true');
   assert.equal(v23.isJesusWords, true, 'João 4:23 ("Mas está chegando a hora...") deve ter isJesusWords = true');
   assert.equal(v24.isJesusWords, true, 'João 4:24 ("Pois Deus é Espírito...") deve ter isJesusWords = true');
 
-  // 2. Validar que discursos capitais em João estão marcados (ex: João 3 com Nicodemos, João 14, 15, 17)
-  const ch3 = joaoData['3'];
-  const v16 = ch3.sections.flatMap(s => s.verses).find(v => v.number === 16);
-  assert.equal(v16.isJesusWords, true, 'João 3:16 ("Porque Deus amou o mundo...") deve ter isJesusWords = true');
+  // 2. Validar Mateus (Sermão do Monte - Mateus 5:3)
+  const mt5_3 = getVerse('mateus', 5, 3);
+  assert.equal(mt5_3.isJesusWords, true, 'Mateus 5:3 ("Bem-aventurados os pobres de espírito") deve ser Red Letter');
 
-  const ch14 = joaoData['14'];
-  const v6 = ch14.sections.flatMap(s => s.verses).find(v => v.number === 6);
-  assert.equal(v6.isJesusWords, true, 'João 14:6 ("Eu sou o caminho, a verdade e a vida") deve ter isJesusWords = true');
+  // 3. Validar Marcos (Marcos 1:15)
+  const mc1_15 = getVerse('marcos', 1, 15);
+  assert.equal(mc1_15.isJesusWords, true, 'Marcos 1:15 ("O Reino de Deus está próximo") deve ser Red Letter');
 
-  // 3. Contagem total de versículos com falas de Jesus em João deve ser superior a 400
-  const allJesusVersesJohn = Object.values(joaoData).flatMap(c => c.sections.flatMap(s => s.verses)).filter(v => v.isJesusWords);
-  assert.ok(allJesusVersesJohn.length >= 400, `João deve ter >= 400 versículos com palavras de Jesus (atual: ${allJesusVersesJohn.length})`);
+  // 4. Validar Lucas (Lucas 4:4)
+  const lc4_4 = getVerse('lucas', 4, 4);
+  assert.equal(lc4_4.isJesusWords, true, 'Lucas 4:4 ("Nem só de pão viverá o homem") deve ser Red Letter');
 
-  console.log('✓ QA Test 15 Aprovado: Falas de Jesus em João mapeadas com total fidelidade exegética.');
+  // 5. Validar Atos (Atos 1:8 - Grande Comissão e Envio do Espírito)
+  const at1_8 = getVerse('atos', 1, 8);
+  assert.equal(at1_8.isJesusWords, true, 'Atos 1:8 ("Mas receberão poder quando o Espírito Santo descer") deve ser Red Letter');
+
+  // 6. Validar Epístolas Paulinas (1 Coríntios 11:24 - Instituição da Santa Ceia)
+  const cor11_24 = getVerse('1corintios', 11, 24);
+  assert.equal(cor11_24.isJesusWords, true, '1 Coríntios 11:24 ("Isto é o meu corpo...") deve ser Red Letter');
+
+  // 7. Validar Apocalipse (Apocalipse 1:18 - O Cristo Glorificado)
+  const ap1_18 = getVerse('apocalipse', 1, 18);
+  assert.equal(ap1_18.isJesusWords, true, 'Apocalipse 1:18 ("Eu sou aquele que vive...") deve ser Red Letter');
+
+  // 8. Validar ausência de falas de Jesus no Antigo Testamento (ex: Gênesis 1:1)
+  const gn1_1 = getVerse('genesis', 1, 1);
+  assert.equal(gn1_1.isJesusWords, false, 'Gênesis 1:1 deve ter isJesusWords = false');
+
+  console.log('✓ QA Test 15 Aprovado: Palavras de Jesus (Red Letter) mapeadas e ativas em toda a Bíblia.');
 });
 
 test('QA Test 16: Telemetria e Monitoramento de Uso por Funcionalidade (Opção 1)', async () => {
