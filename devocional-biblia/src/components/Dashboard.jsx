@@ -11,6 +11,7 @@ import {
   Video, 
   Headphones,
   RefreshCw,
+  BarChart3,
   ChevronRight,
   ChevronDown,
   ChevronUp,
@@ -25,7 +26,9 @@ import {
 } from 'lucide-react';
 import { getMediaForDay, PREFERRED_ARTISTS, getMusicForChapter } from '../data/dailyMedia';
 import { formatDateBR } from '../services/dateUtils';
+import { telemetryService } from '../services/telemetryService';
 import PersonalizarDashboardModal from './PersonalizarDashboardModal';
+import UsoFeaturesModal from './UsoFeaturesModal';
 
 export default function Dashboard({ 
   days, 
@@ -47,6 +50,7 @@ export default function Dashboard({
   const [filter, setFilter] = useState('all'); // all, pending, completed
   const [showVideoPlayer, setShowVideoPlayer] = useState(false);
   const [isCustomizeOpen, setIsCustomizeOpen] = useState(false);
+  const [isTelemetryOpen, setIsTelemetryOpen] = useState(false);
   const [chapterMusicOverrides, setChapterMusicOverrides] = useState({});
   const [playingChapterIndex, setPlayingChapterIndex] = useState(null);
 
@@ -68,6 +72,7 @@ export default function Dashboard({
 
   // Alterna dinamicamente a música de um capítulo específico
   const handleCycleChapterMusic = (readingIndex) => {
+    telemetryService.track('music_cycle', { chapter: currentReadings[readingIndex] });
     setChapterMusicOverrides(prev => {
       const current = prev[readingIndex] !== undefined
         ? prev[readingIndex]
@@ -464,6 +469,7 @@ export default function Dashboard({
                           href={chapterMusic.youtubeMusicUrl}
                           target="_blank"
                           rel="noopener noreferrer"
+                          onClick={() => telemetryService.track('music_play_youtube_music', { chapter: chapterMusic.chapter, title: chapterMusic.title, artist: chapterMusic.artist })}
                           className="flex-1 inline-flex items-center justify-center space-x-1.5 px-3 py-2.5 rounded-xl bg-white text-zinc-900 font-bold text-xs shadow-md hover:bg-amber-50 active:scale-95 transition-all group"
                           title={`Ouvir ${chapterMusic.title} no YouTube Music`}
                         >
@@ -484,7 +490,13 @@ export default function Dashboard({
 
                       {/* Tocar no App */}
                       <button
-                        onClick={() => setPlayingChapterIndex(playingChapterIndex === idx ? null : idx)}
+                        onClick={() => {
+                          const nextState = playingChapterIndex === idx ? null : idx;
+                          if (nextState !== null) {
+                            telemetryService.track('music_play_in_app', { chapter: chapterMusic.chapter, title: chapterMusic.title });
+                          }
+                          setPlayingChapterIndex(nextState);
+                        }}
                         className="w-full text-center text-[11px] text-amber-100/90 hover:text-white py-1 flex items-center justify-center space-x-1 transition-colors"
                       >
                         <Play className="w-3 h-3 fill-current text-amber-300" />
@@ -968,9 +980,22 @@ export default function Dashboard({
             <span className="hidden sm:inline">Nuvem & Sync</span>
           </button>
 
+          {/* Botão de Métricas de Uso de Features (Telemetria Opção 1) */}
+          <button
+            onClick={() => setIsTelemetryOpen(true)}
+            className="inline-flex items-center space-x-1.5 px-3 py-2 rounded-2xl bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 hover:bg-amber-100 border border-amber-200 dark:border-amber-900/60 text-xs font-bold transition-colors"
+            title="Ver ranking de uso de cada funcionalidade do app"
+          >
+            <BarChart3 className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+            <span className="hidden sm:inline">Métricas de Uso</span>
+          </button>
+
           {/* Botão de Personalizar a Tela Inicial */}
           <button
-            onClick={() => setIsCustomizeOpen(true)}
+            onClick={() => {
+              telemetryService.track('dashboard_customize');
+              setIsCustomizeOpen(true);
+            }}
             className="inline-flex items-center space-x-1.5 px-3.5 py-2 rounded-2xl bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-xs font-bold transition-colors"
             title="Personalizar quais caixas exibir e alterar a ordem da tela inicial"
           >
@@ -993,6 +1018,13 @@ export default function Dashboard({
         layout={dashboardLayout}
         onUpdateLayout={onUpdateDashboardLayout}
         onResetLayout={onResetDashboardLayout}
+      />
+
+      {/* Modal de Telemetria e Monitoramento de Uso de Features (Opção 1) */}
+      <UsoFeaturesModal
+        isOpen={isTelemetryOpen}
+        onClose={() => setIsTelemetryOpen(false)}
+        activeProfile={activeProfile}
       />
 
     </div>

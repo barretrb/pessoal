@@ -19,6 +19,7 @@ import { storage, DEFAULT_DASHBOARD_LAYOUT } from './services/storage';
 import { cloudDbService } from './services/cloudDbService';
 import { getTodayDay, getPendingDays } from './services/dateUtils';
 import { fetchBookData, parseReading } from './services/bibleService';
+import { telemetryService } from './services/telemetryService';
 import confetti from 'canvas-confetti';
 
 export default function App() {
@@ -47,8 +48,8 @@ export default function App() {
   const todayDay = getTodayDay(days) || days[298];
   const currentDayId = todayDay.id;
 
-  // Encontrar todas as pendências anteriores a hoje
-  const allPendingDays = getPendingDays(days, currentDayId);
+  // Encontrar todas as pendências anteriores a hoje (respeitando capítulos concluídos)
+  const allPendingDays = getPendingDays(days, currentDayId, chapterProgress);
   const pendingDayId = allPendingDays.length > 0 ? allPendingDays[0].id : null;
 
   // Visualização e Seleção
@@ -226,6 +227,7 @@ export default function App() {
 
   // Handler para marcar dia inteiro como concluído
   const handleToggleComplete = (dayId, status) => {
+    telemetryService.track('day_completed', { dayId, status });
     storage.saveDayProgress(dayId, status, activeProfileId);
     const targetDay = days.find(d => d.id === dayId);
     if (targetDay) {
@@ -241,19 +243,21 @@ export default function App() {
 
   // Handler para marcar cada capítulo individualmente
   const handleToggleChapter = (chapterName, status) => {
+    telemetryService.track('chapter_completed', { chapter: chapterName, status });
     const updated = storage.saveChapterProgress(chapterName, status, activeProfileId);
     setChapterProgress({ ...updated });
 
-    // Verificar se todos os capítulos do dia atual foram concluídos (se estiver no plano)
-    const activeDay = days.find(d => d.id === selectedDayId);
-    if (activeDay && !isFreeReading) {
-      const allCompleted = activeDay.readings.every(r => 
+    // RECONCILIAÇÃO AUTOMÁTICA DE DIAS:
+    // Encontra todos os dias que contêm este capítulo (mesmo em leitura livre ou navegação avulsa)
+    const matchingDays = days.filter(d => d.readings && d.readings.includes(chapterName));
+    matchingDays.forEach(matchingDay => {
+      const allCompleted = matchingDay.readings.every(r => 
         r === chapterName ? status : !!updated[r]?.completed
       );
       
-      if (allCompleted && !activeDay.completed) {
-        storage.saveDayProgress(activeDay.id, true, activeProfileId);
-        setDays(prev => prev.map(d => d.id === activeDay.id ? { ...d, completed: true, completedAt: new Date().toISOString() } : d));
+      if (allCompleted && !matchingDay.completed) {
+        storage.saveDayProgress(matchingDay.id, true, activeProfileId);
+        setDays(prev => prev.map(d => d.id === matchingDay.id ? { ...d, completed: true, completedAt: new Date().toISOString() } : d));
         try {
           confetti({
             particleCount: 85,
@@ -261,11 +265,12 @@ export default function App() {
             origin: { y: 0.6 }
           });
         } catch (e) {}
-      } else if (!allCompleted && activeDay.completed) {
-        storage.saveDayProgress(activeDay.id, false, activeProfileId);
-        setDays(prev => prev.map(d => d.id === activeDay.id ? { ...d, completed: false, completedAt: null } : d));
+      } else if (!allCompleted && matchingDay.completed) {
+        storage.saveDayProgress(matchingDay.id, false, activeProfileId);
+        setDays(prev => prev.map(d => d.id === matchingDay.id ? { ...d, completed: false, completedAt: null } : d));
       }
-    }
+    });
+
     // Salva automaticamente no banco em nuvem
     cloudDbService.triggerAutoSync();
   };
@@ -319,17 +324,26 @@ export default function App() {
         theme={theme}
         setTheme={setTheme}
         redLetterEnabled={redLetterEnabled}
-        setRedLetterEnabled={setRedLetterEnabled}
+        setRedLetterEnabled={(val) => {
+          telemetryService.track('red_letter_toggle', { enabled: val });
+          setRedLetterEnabled(val);
+        }}
         onOpenFavorites={() => {
           setFavorites(storage.getFavorites(activeProfileId));
           setHighlights(storage.getHighlights(activeProfileId));
           setFavoritesModalOpen(true);
         }}
-        onOpenBibleNav={() => setBibleNavOpen(true)}
+        onOpenBibleNav={() => {
+          telemetryService.track('free_bible_nav');
+          setBibleNavOpen(true);
+        }}
         onOpenStudyInfo={handleOpenStudyInfo}
         activeProfile={activeProfile}
         onOpenProfiles={() => setProfileModalOpen(true)}
-        onOpenCloud={() => setCloudModalOpen(true)}
+        onOpenCloud={() => {
+          telemetryService.track('cloud_sync_click');
+          setCloudModalOpen(true);
+        }}
       />
 
       {/* Conteúdo Principal */}

@@ -18,9 +18,19 @@ export function getTodayDay(daysList) {
   return daysList.find(d => d.id === clamped) || daysList[clamped - 1] || daysList[0];
 }
 
-export function getPendingDays(daysList, currentDayId) {
+export function getPendingDays(daysList, currentDayId, chapterProgress = {}) {
   if (!daysList) return [];
-  return daysList.filter(d => !d.completed && d.id < currentDayId);
+  return daysList.filter(d => {
+    // Se o dia já está marcado como concluído, não é pendente
+    if (d.completed) return false;
+    // Se não é dia anterior a hoje, não é pendência acumulada
+    if (d.id >= currentDayId) return false;
+    // Se todos os capítulos do dia já foram concluídos individualmente, NÃO é pendência
+    if (d.readings && d.readings.length > 0 && d.readings.every(r => !!chapterProgress[r]?.completed)) {
+      return false;
+    }
+    return true;
+  });
 }
 
 const MONTHS_BR = [

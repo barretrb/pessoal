@@ -41,6 +41,7 @@ const { bibleCommentaryService } = await import('../src/services/bibleCommentary
 const { crossReferenceService } = await import('../src/services/crossReferenceService.js');
 const { bibleArcEngine } = await import('../src/services/bibleArcEngine.js');
 const { parseReading, sanitizeBookData, normalizeBookId } = await import('../src/services/bibleService.js');
+const { getPendingDays } = await import('../src/services/dateUtils.js');
 
 test('QA Test 1: Restauração Integral do Histórico de Dias Concluídos do Rafael', () => {
   localStorage.clear();
@@ -531,4 +532,102 @@ test('QA Test 13: Sincronização em Nuvem do Dia 300 e 301 (Multi-Aparelho Celu
   assert.equal(laptopChapters['Lucas 24'].completed, true);
 
   console.log('✓ QA Test 13 Aprovado: Sincronização multi-aparelho propagou dias 300 e 301 para o laptop sem pendências.');
+});
+
+test('QA Test 14: Reconciliação Automática de Dias Concluídos por Capítulos (Eliminação de Falsas Pendências)', async () => {
+  localStorage.clear();
+  const testProfile = 'default';
+
+  // 1. Simular que o usuário leu e marcou João 1, João 2 e João 3 individualmente
+  storage.saveChapterProgress('João 1', true, testProfile);
+  storage.saveChapterProgress('João 2', true, testProfile);
+  storage.saveChapterProgress('João 3', true, testProfile);
+
+  const chProgress = storage.getChapterProgress(testProfile);
+  assert.equal(chProgress['João 1'].completed, true);
+  assert.equal(chProgress['João 2'].completed, true);
+  assert.equal(chProgress['João 3'].completed, true);
+
+  // 2. storage.getProgress DEVE reconciliar e retornar o Dia 302 como completed: true!
+  const reconciledDays = storage.getProgress(defaultDays, testProfile);
+  const day302 = reconciledDays.find(d => d.id === 302);
+  assert.ok(day302, 'Dia 302 deve existir');
+  assert.equal(day302.completed, true, 'Dia 302 DEVE estar concluído pois João 1, 2 e 3 foram lidos');
+
+  // 3. getPendingDays NÃO pode listar o Dia 302 como pendente no dia 303 (hoje)!
+  const currentDayId = 303;
+  const pending = getPendingDays(reconciledDays, currentDayId, chProgress);
+  assert.equal(
+    pending.some(d => d.id === 302),
+    false,
+    'O Dia 302 NÃO PODE constar como pendência acumulada quando todos os seus capítulos foram lidos!'
+  );
+
+  console.log('✓ QA Test 14 Aprovado: Reconciliação automática eliminou falsas pendências quando capítulos estão concluídos.');
+});
+
+test('QA Test 15: Palavras de Jesus (Red Letter) no Evangelho de João', () => {
+  const joaoPath = resolve(__dirname, '../public/biblia/joao.json');
+  const joaoData = JSON.parse(readFileSync(joaoPath, 'utf-8'));
+
+  // 1. Validar João 4 versículos 21 a 24 (conforme imagem enviada pelo usuário)
+  const ch4 = joaoData['4'];
+  assert.ok(ch4, 'Capítulo 4 de João deve existir');
+  const v21 = ch4.sections.flatMap(s => s.verses).find(v => v.number === 21);
+  const v22 = ch4.sections.flatMap(s => s.verses).find(v => v.number === 22);
+  const v23 = ch4.sections.flatMap(s => s.verses).find(v => v.number === 23);
+  const v24 = ch4.sections.flatMap(s => s.verses).find(v => v.number === 24);
+
+  assert.equal(v21.isJesusWords, true, 'João 4:21 ("Creia em mim, mulher...") deve ter isJesusWords = true');
+  assert.equal(v22.isJesusWords, true, 'João 4:22 deve ter isJesusWords = true');
+  assert.equal(v23.isJesusWords, true, 'João 4:23 ("Mas está chegando a hora...") deve ter isJesusWords = true');
+  assert.equal(v24.isJesusWords, true, 'João 4:24 ("Pois Deus é Espírito...") deve ter isJesusWords = true');
+
+  // 2. Validar que discursos capitais em João estão marcados (ex: João 3 com Nicodemos, João 14, 15, 17)
+  const ch3 = joaoData['3'];
+  const v16 = ch3.sections.flatMap(s => s.verses).find(v => v.number === 16);
+  assert.equal(v16.isJesusWords, true, 'João 3:16 ("Porque Deus amou o mundo...") deve ter isJesusWords = true');
+
+  const ch14 = joaoData['14'];
+  const v6 = ch14.sections.flatMap(s => s.verses).find(v => v.number === 6);
+  assert.equal(v6.isJesusWords, true, 'João 14:6 ("Eu sou o caminho, a verdade e a vida") deve ter isJesusWords = true');
+
+  // 3. Contagem total de versículos com falas de Jesus em João deve ser superior a 400
+  const allJesusVersesJohn = Object.values(joaoData).flatMap(c => c.sections.flatMap(s => s.verses)).filter(v => v.isJesusWords);
+  assert.ok(allJesusVersesJohn.length >= 400, `João deve ter >= 400 versículos com palavras de Jesus (atual: ${allJesusVersesJohn.length})`);
+
+  console.log('✓ QA Test 15 Aprovado: Falas de Jesus em João mapeadas com total fidelidade exegética.');
+});
+
+test('QA Test 16: Telemetria e Monitoramento de Uso por Funcionalidade (Opção 1)', async () => {
+  const { telemetryService, FEATURE_METADATA } = await import('../src/services/telemetryService.js');
+  localStorage.clear();
+
+  // 1. Validar catálogo de features monitoradas
+  assert.ok(FEATURE_METADATA.music_play_youtube_music, 'Deve monitorar reprodução no YouTube Music');
+  assert.ok(FEATURE_METADATA.music_cycle, 'Deve monitorar troca de música por capítulo');
+  assert.ok(FEATURE_METADATA.bible_arc_view, 'Deve monitorar visualização do BibleArc');
+  assert.ok(FEATURE_METADATA.cross_references_click, 'Deve monitorar consultas de referências');
+  assert.ok(FEATURE_METADATA.theological_commentary_view, 'Deve monitorar comentários teológicos');
+
+  // 2. Disparar eventos simulados
+  telemetryService.track('music_play_youtube_music', { song: 'Colossenses 1' });
+  telemetryService.track('music_play_youtube_music', { song: 'Esperança' });
+  telemetryService.track('bible_arc_view', { book: 'João', chapter: '4' });
+  telemetryService.track('cross_references_click', { verse: 'João 4:24' });
+
+  // 3. Obter estatísticas consolidadas
+  const stats = telemetryService.getStats('default');
+  assert.equal(stats.totalInteractions, 4, 'Total de interações deve ser 4');
+
+  const topFeature = stats.features[0];
+  assert.equal(topFeature.id, 'music_play_youtube_music', 'A feature mais usada deve ser Ouvir no YouTube Music');
+  assert.equal(topFeature.count, 2);
+
+  // 4. Testar reset de métricas
+  telemetryService.resetStats('default');
+  const emptyStats = telemetryService.getStats('default');
+  assert.equal(emptyStats.totalInteractions, 0, 'Após reset, o total de interações deve ser 0');
+
+  console.log('✓ QA Test 16 Aprovado: Telemetria nativa registrou eventos, calculou ranking e gerenciou estatísticas.');
 });

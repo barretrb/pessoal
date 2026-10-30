@@ -186,6 +186,7 @@ export const storage = {
       const key = this._resolveKey(STORAGE_KEYS.PROGRESS, profileId);
       const stored = localStorage.getItem(key);
       const parsed = stored ? JSON.parse(stored) : {};
+      const chProgress = this.getChapterProgress(profileId) || {};
 
       // Para o Rafael ('default'):
       // Se não há alteração explícita no parsed, os dias concluídos originais (dias 1 a 299) são preservados!
@@ -204,6 +205,12 @@ export const storage = {
             completedAt = completedAt || `2026-${String(Math.floor(d.id / 31) + 1).padStart(2, '0')}-01`;
           }
 
+          // RECONCILIAÇÃO INTELIGENTE: Se todos os capítulos do dia já foram concluídos, o dia é considerado concluído
+          if (!isCompleted && d.readings && d.readings.length > 0 && d.readings.every(r => !!chProgress[r]?.completed)) {
+            isCompleted = true;
+            completedAt = completedAt || new Date().toISOString();
+          }
+
           return {
             ...d,
             completed: isCompleted,
@@ -213,11 +220,22 @@ export const storage = {
       }
 
       // Para a Esposa ou novos perfis:
-      return defaultDays.map(d => ({
-        ...d,
-        completed: parsed[d.id] ? parsed[d.id].completed : false,
-        completedAt: parsed[d.id] ? parsed[d.id].completedAt : null
-      }));
+      return defaultDays.map(d => {
+        let isCompleted = parsed[d.id] ? parsed[d.id].completed : false;
+        let completedAt = parsed[d.id] ? parsed[d.id].completedAt : null;
+
+        // RECONCILIAÇÃO INTELIGENTE: Se todos os capítulos do dia foram concluídos
+        if (!isCompleted && d.readings && d.readings.length > 0 && d.readings.every(r => !!chProgress[r]?.completed)) {
+          isCompleted = true;
+          completedAt = completedAt || new Date().toISOString();
+        }
+
+        return {
+          ...d,
+          completed: isCompleted,
+          completedAt: completedAt
+        };
+      });
     } catch (e) {
       console.error("Erro ao ler progresso:", e);
       return defaultDays;

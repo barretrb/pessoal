@@ -25,6 +25,7 @@ import { speechService } from '../services/speechService';
 import { bibleCommentaryService } from '../services/bibleCommentaryService';
 import { crossReferenceService } from '../services/crossReferenceService';
 import { fetchBookData } from '../services/bibleService';
+import { telemetryService } from '../services/telemetryService';
 import AudioPlayerBar from './AudioPlayerBar';
 
 function parseReading(str) {
@@ -334,7 +335,10 @@ export default function LeitorBiblico({
         <div className="flex items-center flex-wrap gap-1.5 sm:gap-2">
           {/* Botão de Narração em Áudio do Capítulo */}
           <button
-            onClick={handleToggleAudio}
+            onClick={() => {
+              telemetryService.track('audio_narration_play', { book: activeBook, chapter: selectedChapter });
+              handleToggleAudio();
+            }}
             className={`inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-xl border text-xs font-bold transition-all shrink-0 ${
               audioStatus.isPlaying
                 ? 'bg-amber-500 text-white border-amber-600 shadow-md ring-2 ring-amber-400/50'
@@ -350,7 +354,10 @@ export default function LeitorBiblico({
 
           {/* Botão de Estudo do Livro Atual (Bíblia de Estudos) */}
           <button
-            onClick={() => onOpenStudyInfo && onOpenStudyInfo(activeBook)}
+            onClick={() => {
+              telemetryService.track('theological_commentary_view', { book: activeBook });
+              onOpenStudyInfo && onOpenStudyInfo(activeBook);
+            }}
             className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-xl border border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-950/40 hover:bg-amber-100 text-xs font-bold text-amber-800 dark:text-amber-300 transition-colors shrink-0"
             title={`Abrir Bíblia de Estudos: Informações do Livro de ${activeBook}`}
           >
@@ -360,7 +367,10 @@ export default function LeitorBiblico({
 
           {/* Botão de Comentários do Capítulo com Indicador Visual */}
           <button
-            onClick={() => onOpenCommentary(activeChapterData)}
+            onClick={() => {
+              telemetryService.track('theological_commentary_view', { book: activeBook, chapter: selectedChapter });
+              onOpenCommentary(activeChapterData);
+            }}
             className="inline-flex items-center space-x-1.5 px-2.5 py-1.5 rounded-xl border text-xs font-bold transition-all shrink-0 border-amber-400 bg-amber-50 dark:bg-amber-950/60 text-amber-900 dark:text-amber-200 shadow-sm"
             title="Comentário expositivo, temas centrais e conexão cristocêntrica para este capítulo"
           >
@@ -376,7 +386,10 @@ export default function LeitorBiblico({
 
           {/* Botão de Arqueamento (BibleArc) */}
           <button
-            onClick={handleOpenBibleArcFromTop}
+            onClick={() => {
+              telemetryService.track('bible_arc_view', { book: activeBook, chapter: selectedChapter });
+              handleOpenBibleArcFromTop();
+            }}
             className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/60 dark:bg-indigo-950/40 hover:bg-indigo-100/60 text-xs font-semibold text-indigo-700 dark:text-indigo-300 transition-colors shrink-0"
             title="Fazer Arqueamento do Texto (John Piper)"
           >
@@ -579,6 +592,7 @@ export default function LeitorBiblico({
                           <button
                             onClick={(e) => {
                               e.stopPropagation();
+                              telemetryService.track('cross_references_click', { verse: verseKey });
                               onOpenReferences(verseKey, crossRefs);
                             }}
                             className="inline-flex items-center text-amber-600 dark:text-amber-400 hover:text-amber-800 ml-1 p-0.5 align-middle select-none"
