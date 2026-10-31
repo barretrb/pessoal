@@ -10,7 +10,24 @@
             "number": 1,
             "text": "Esta é a mensagem que o SENHOR anunciou a Israel por meio do profeta Malaquias.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 13:1",
+                "text": "Isaías, filho de Amoz, recebeu esta mensagem acerca da Babilônia:"
+              },
+              {
+                "ref": "Habacuque 1:1",
+                "text": "Esta é a mensagem que o profeta Habacuque recebeu numa visão."
+              },
+              {
+                "ref": "Ageu 1:1",
+                "text": "Em 29 de agosto do segundo ano do reinado de Dario, o SENHOR transmitiu esta mensagem por meio do profeta Ageu ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque."
+              },
+              {
+                "ref": "Zacarias 9:1",
+                "text": "Esta é a sentença do SENHOR contra a terra de Hadraque e a cidade de Damasco, pois os olhos da humanidade, incluindo os de todas as tribos de Israel, estão voltados para o SENHOR."
+              }
+            ]
           }
         ]
       },
@@ -21,25 +38,93 @@
             "number": 2,
             "text": "“Eu sempre amei vocês”, diz o SENHOR. Mas vocês perguntam: “De que maneira nos amou?”. E o SENHOR responde: “Foi desta maneira: amei seu antepassado Jacó,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 25:23",
+                "text": "O SENHOR respondeu: “Os filhos em seu ventre se tornarão duas nações. Desde o começo, elas serão rivais. Uma nação será mais forte que a outra, e seu filho mais velho servirá a seu filho mais novo”."
+              },
+              {
+                "ref": "Deuteronômio 4:37",
+                "text": "Porque amou seus antepassados, ele escolheu abençoar vocês, os descendentes, e ele mesmo os tirou do Egito com grande poder."
+              },
+              {
+                "ref": "1 Reis 10:9",
+                "text": "Louvado seja o SENHOR, seu Deus, que se agradou de você e o colocou no trono de Israel. Por causa do amor eterno do SENHOR por Israel, ele o fez rei para governar com justiça e retidão”."
+              },
+              {
+                "ref": "2 Reis 3:8",
+                "text": "E perguntou: “Que caminho vamos tomar?”. “Vamos atacar pelo deserto de Edom”, respondeu o rei de Israel."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "mas rejeitei o irmão dele, Esaú, e devastei sua região montanhosa. Transformei a propriedade de Esaú num deserto para chacais”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 29:30",
+                "text": "Jacó se deitou também com Raquel, a quem ele amava muito mais que a Lia. Então permaneceu ali e trabalhou mais sete anos para Labão."
+              },
+              {
+                "ref": "Deuteronômio 21:15",
+                "text": "“Se um homem tiver duas esposas e amar apenas uma delas, mas ambas lhe derem filhos homens, e o filho mais velho for da esposa que ele não ama,"
+              },
+              {
+                "ref": "Isaías 13:21",
+                "text": "Animais do deserto habitarão na cidade arruinada, criaturas uivantes rondarão as casas. Corujas viverão entre as ruínas, bodes selvagens ali saltarão."
+              },
+              {
+                "ref": "Jeremias 9:11",
+                "text": "“Farei de Jerusalém um monte de ruínas; será morada de chacais. As cidades de Judá serão abandonadas, e ninguém viverá nelas”, diz o SENHOR."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "O povo de Edom talvez diga: “Fomos arrasados, mas reconstruiremos as ruínas”. O SENHOR dos Exércitos, porém, declara: “Podem reconstruir, mas eu demolirei tudo outra vez. Seu país ficará conhecido como ‘Terra da Maldade’, e seu povo será chamado de ‘Povo Contra o Qual o SENHOR Está Irado Para Sempre’.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jó 9:4",
+                "text": "Pois Deus é muito sábio e poderoso: quem alguma vez o enfrentou e saiu vencedor?"
+              },
+              {
+                "ref": "Salmos 33:10",
+                "text": "O SENHOR desfaz os planos das nações e frustra os projetos dos povos."
+              },
+              {
+                "ref": "Provérbios 21:30",
+                "text": "Não há sabedoria, entendimento, nem conselho humano capaz de resistir ao SENHOR."
+              },
+              {
+                "ref": "Isaías 9:9",
+                "text": "Os habitantes de Israel e de Samaria, que falaram com tanto orgulho e arrogância, logo ficarão sabendo."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Quando vocês virem a destruição com os próprios olhos, dirão: ‘A grandeza do SENHOR vai muito além das fronteiras de Israel!’”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 4:3",
+                "text": "“Vocês viram com os próprios olhos o que o SENHOR fez no incidente em Baal-Peor. Ali, o SENHOR, seu Deus, destruiu todos aqueles que adoraram Baal, o deus de Peor."
+              },
+              {
+                "ref": "Josué 24:7",
+                "text": "Seus antepassados clamaram ao SENHOR, e eu coloquei escuridão entre os israelitas e os egípcios. Fiz o mar desabar sobre eles e os afoguei. Vocês viram com os próprios olhos o que eu fiz contra os egípcios. Depois, vocês..."
+              },
+              {
+                "ref": "1 Samuel 12:16",
+                "text": "“Agora, fiquem aqui e vejam o maravilhoso feito que o SENHOR está prestes a realizar."
+              },
+              {
+                "ref": "2 Crônicas 29:8",
+                "text": "“Por isso a ira do SENHOR veio sobre Judá e sobre Jerusalém. Ele fez deles objeto de espanto, horror e zombaria, como vocês veem com os próprios olhos."
+              }
+            ]
           }
         ]
       },
@@ -50,55 +135,208 @@
             "number": 6,
             "text": "O SENHOR dos Exércitos diz aos sacerdotes: “O filho honra seu pai, e o servo respeita seu senhor. Se eu sou seu pai e seu senhor, onde estão a honra e o respeito que mereço? Vocês desprezam meu nome! “Mas vocês perguntam: ‘De que maneira desprezamos teu nome?’.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 4:22",
+                "text": "Você dirá ao faraó: ‘Assim diz o SENHOR: Israel é meu filho mais velho."
+              },
+              {
+                "ref": "Levítico 19:3",
+                "text": "“Mostrem respeito, cada um de vocês, por sua mãe e por seu pai; guardem também meus sábados. Eu sou o SENHOR, seu Deus."
+              },
+              {
+                "ref": "Deuteronômio 5:16",
+                "text": "“Honre seu pai e sua mãe, como o SENHOR, seu Deus, lhe ordenou. Assim você terá vida longa e plena na terra que o SENHOR, seu Deus, lhe dá."
+              },
+              {
+                "ref": "1 Samuel 2:28",
+                "text": "Escolhi seus antepassados dentre todas as tribos de Israel para serem meus sacerdotes, oferecerem sacrifícios sobre meu altar, queimarem incenso e usarem o colete sacerdotal em minha presença. Além disso, designei as ofe..."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "“Vocês o desprezam oferecendo sacrifícios contaminados sobre meu altar. “E vocês perguntam: ‘De que maneira contaminamos os sacrifícios?’. “Vocês os contaminam dizendo que a mesa do SENHOR não merece respeito.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 2:11",
+                "text": "“Não use fermento ao preparar qualquer das ofertas de cereal a ser apresentada ao SENHOR, pois nem fermento nem mel devem ser queimados como oferta especial apresentada ao SENHOR."
+              },
+              {
+                "ref": "Deuteronômio 15:21",
+                "text": "Mas, se essa primeira cria tiver algum defeito, se o animal for manco, cego ou tiver algum outro problema, não o sacrifiquem ao SENHOR, seu Deus."
+              },
+              {
+                "ref": "1 Samuel 2:15",
+                "text": "Às vezes, o servo chegava antes mesmo que a gordura do animal fosse queimada no altar, exigindo: “Não dê a carne cozida, mas sim a carne crua, para que o sacerdote a asse”."
+              },
+              {
+                "ref": "1 Coríntios 10:21",
+                "text": "Vocês não podem beber do cálice do Senhor e também do cálice de demônios. Não podem participar da mesa do Senhor e também da mesa de demônios."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Acaso não é errado sacrificarem animais cegos? Não é errado oferecerem animais aleijados e doentes? Apresentem ofertas como essas a seu governador e vejam se ele ficará satisfeito e se agradará de vocês!”, diz o SENHOR dos Exércitos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 22:19",
+                "text": "só será aceito se o animal oferecido for um macho sem defeito. Poderá ser um boi, um carneiro ou um bode."
+              },
+              {
+                "ref": "Deuteronômio 15:21",
+                "text": "Mas, se essa primeira cria tiver algum defeito, se o animal for manco, cego ou tiver algum outro problema, não o sacrifiquem ao SENHOR, seu Deus."
+              },
+              {
+                "ref": "Jó 42:8",
+                "text": "Por isso, peguem sete novilhos e sete carneiros, levem os animais a meu servo Jó e ofereçam holocaustos em favor de si mesmos. Meu servo Jó orará por vocês, e eu aceitarei a oração dele. Não tratarei vocês como merecem p..."
+              },
+              {
+                "ref": "Salmos 20:3",
+                "text": "Que ele se lembre de todas as suas ofertas e olhe com favor para os seus holocaustos."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "“Vão em frente, supliquem a Deus para que tenha compaixão de vocês. Mas por que ele atenderia, uma vez que apresentam esse tipo de oferta?”, diz o SENHOR dos Exércitos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 32:11",
+                "text": "Moisés, porém, tentou apaziguar o SENHOR, seu Deus. “Ó SENHOR!”, exclamou ele. “Por que estás tão irado com teu próprio povo, que tiraste do Egito com tão grande poder e mão forte?"
+              },
+              {
+                "ref": "2 Crônicas 30:27",
+                "text": "Então os sacerdotes e os levitas se levantaram e abençoaram o povo, e Deus, de sua santa habitação nos céus, ouviu sua oração."
+              },
+              {
+                "ref": "Jeremias 26:19",
+                "text": "Acaso o rei Ezequias e o povo o mataram porque ele disse isso? Não, mas temeram o SENHOR e lhe suplicaram por misericórdia. Então o SENHOR voltou atrás e não enviou a calamidade que havia pronunciado contra eles. Estamos..."
+              },
+              {
+                "ref": "Lamentações 2:19",
+                "text": "Levantem-se no meio da noite e clamem, derramem como água o coração diante do Senhor. Levantem as mãos em oração e supliquem por seus filhos, pois desfalecem de fome pelas ruas."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "“Quem dera um de vocês fechasse as portas do templo para que não se acendesse em vão o fogo do meu altar! Não me agrado de vocês”, diz o SENHOR dos Exércitos, “e não aceitarei suas ofertas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Reis 12:6",
+                "text": "Contudo, no vigésimo terceiro ano do reinado de Joás, os sacerdotes ainda não haviam feito os reparos no templo."
+              },
+              {
+                "ref": "Jó 1:9",
+                "text": "Satanás respondeu: “É verdade, mas Jó tem bons motivos para temer a Deus."
+              },
+              {
+                "ref": "Provérbios 15:8",
+                "text": "Os sacrifícios dos perversos são detestáveis para o SENHOR, mas ele tem prazer nas orações dos justos."
+              },
+              {
+                "ref": "Isaías 1:11",
+                "text": "“O que os faz pensar que desejo seus muitos sacrifícios?”, diz o SENHOR. “Estou farto de holocaustos de carneiros e da gordura de novilhos gordos. Não tenho prazer no sangue de touros, de cordeiros e de bodes."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Contudo, meu nome é honrado de manhã até a noite por pessoas de outras nações. Em todo o mundo oferecem incenso e sacrifícios puros em minha honra, pois meu nome é grande entre as nações”, diz o SENHOR dos Exércitos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Crônicas 16:25",
+                "text": "Grande é o SENHOR! Digno de muito louvor! Ele é mais temível que todos os deuses."
+              },
+              {
+                "ref": "Salmos 22:27",
+                "text": "Toda a terra reconhecerá o SENHOR e voltará para ele; diante dele se prostrarão todas as famílias das nações."
+              },
+              {
+                "ref": "Isaías 11:9",
+                "text": "Em todo o meu santo monte, não se fará mal nem haverá destruição, pois, como as águas enchem o mar, a terra estará cheia de gente que conhece o SENHOR."
+              },
+              {
+                "ref": "Jeremias 4:2",
+                "text": "Quando jurasse por meu nome e dissesse: ‘Tão certo como vive o SENHOR’, poderia fazê-lo em verdade, justiça e retidão. Então você seria uma bênção para as nações do mundo, e todos os povos viriam e louvariam meu nome.”"
+              }
+            ]
           },
           {
             "number": 12,
             "text": "“Mas vocês, com suas ações, desonram meu nome. Ao trazer alimentos desprezíveis, declaram que não há nada de errado em contaminar a mesa do Senhor.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Números 11:4",
+                "text": "Então o bando de estrangeiros que viajava com os israelitas começou a desejar intensamente a comida do Egito. E o povo de Israel também começou a se queixar: “Ah, se tivéssemos carne para comer!"
+              },
+              {
+                "ref": "2 Samuel 12:14",
+                "text": "Contudo, uma vez que você demonstrou o mais absoluto desprezo pela palavra do SENHOR ao agir desse modo, seu filho morrerá”."
+              },
+              {
+                "ref": "Daniel 5:3",
+                "text": "Então trouxeram as taças de ouro do templo, a casa de Deus em Jerusalém, e o rei e seus nobres, suas esposas e concubinas beberam nelas."
+              },
+              {
+                "ref": "Amós 2:7",
+                "text": "Pisoteiam a cabeça dos indefesos no pó e empurram os oprimidos para fora do caminho. Pai e filho dormem com a mesma mulher e assim profanam meu santo nome."
+              }
+            ]
           },
           {
             "number": 13,
             "text": "Dizem: ‘É difícil demais servir ao SENHOR!’ e desprezam minhas ordens”, diz o SENHOR dos Exércitos. “Vocês trazem como ofertas animais roubados, aleijados e doentes! Acaso devo aceitar de suas mãos esse tipo de oferta?”, diz o SENHOR.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 22:8",
+                "text": "Não comerá um animal que morreu de forma natural ou que foi despedaçado por animais selvagens, pois se contaminaria. Eu sou o SENHOR."
+              },
+              {
+                "ref": "Deuteronômio 15:21",
+                "text": "Mas, se essa primeira cria tiver algum defeito, se o animal for manco, cego ou tiver algum outro problema, não o sacrifiquem ao SENHOR, seu Deus."
+              },
+              {
+                "ref": "1 Samuel 2:29",
+                "text": "Então por que você despreza meus sacrifícios e ofertas? Por que honra seus filhos mais que a mim? Pois você e eles engordaram com as melhores partes das ofertas de meu povo, Israel!"
+              },
+              {
+                "ref": "Isaías 1:12",
+                "text": "Quem lhes pediu que fizessem esse alvoroço por meus pátios quando vêm me adorar?"
+              }
+            ]
           },
           {
             "number": 14,
             "text": "“Maldito seja o trapaceiro que promete um carneiro forte de seu rebanho, mas depois sacrifica ao Senhor um animal defeituoso. Pois eu sou o grande Rei”, diz o SENHOR dos Exércitos, “e meu nome é temido entre as nações!”",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 27:12",
+                "text": "E se meu pai me tocar? Perceberá que estou tentando enganá-lo e, em vez de me abençoar, me amaldiçoará!”."
+              },
+              {
+                "ref": "Levítico 22:18",
+                "text": "“Dê as seguintes instruções a Arão, a seus filhos e a todo o povo de Israel. Elas se aplicam tanto aos israelitas de nascimento como aos estrangeiros que vivem entre vocês. “Se alguém apresentar ao SENHOR um holocausto..."
+              },
+              {
+                "ref": "Deuteronômio 28:58",
+                "text": "“Se vocês se recusarem a obedecer a todos os termos desta lei escritos neste livro e se não temerem o nome glorioso e terrível do SENHOR, seu Deus,"
+              },
+              {
+                "ref": "Josué 7:11",
+                "text": "Israel pecou e quebrou a minha aliança! Roubou alguns dos objetos que eu ordenei que fossem separados para mim. E não apenas os roubou, mas também mentiu a respeito e os escondeu no meio de seus pertences."
+              }
+            ]
           }
         ]
       }
@@ -115,55 +353,208 @@
             "number": 1,
             "text": "“Ouçam, sacerdotes! Este mandamento é para vocês.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 13:13",
+                "text": "“Então diga-lhes: ‘Assim diz o SENHOR: Deixarei todos nesta terra completamente embriagados, desde o rei sentado no trono de Davi até os sacerdotes e os profetas, e todos os habitantes de Jerusalém."
+              },
+              {
+                "ref": "Lamentações 4:13",
+                "text": "Mas foi o que aconteceu por causa do pecado de seus profetas e da maldade de seus sacerdotes, que profanaram a cidade ao derramar sangue inocente."
+              },
+              {
+                "ref": "Oséias 5:1",
+                "text": "“Ouçam isto, sacerdotes! Prestem atenção, líderes de Israel! Escutem, membros da família real; foi pronunciada a sentença contra vocês, pois conduziram meu povo a uma armadilha, em Mispá e em Tabor."
+              },
+              {
+                "ref": "Malaquias 1:6",
+                "text": "O SENHOR dos Exércitos diz aos sacerdotes: “O filho honra seu pai, e o servo respeita seu senhor. Se eu sou seu pai e seu senhor, onde estão a honra e o respeito que mereço? Vocês desprezam meu nome! “Mas vocês perguntam..."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "Escutem- me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 26:14",
+                "text": "“Mas, se vocês não me derem ouvidos e não obedecerem a todos esses mandamentos,"
+              },
+              {
+                "ref": "Deuteronômio 28:15",
+                "text": "“Mas, se vocês se recusarem a dar ouvidos ao SENHOR, seu Deus, e não cumprirem todos os mandamentos e decretos que hoje lhes dou, as seguintes maldições cairão sobre vocês e os atingirão:"
+              },
+              {
+                "ref": "Josué 7:19",
+                "text": "Então Josué disse a Acã: “Meu filho, dê glória e louvor ao SENHOR, o Deus de Israel. Confesse e conte-me o que você fez. Não o esconda de mim”."
+              },
+              {
+                "ref": "Salmos 69:22",
+                "text": "Que a mesa farta diante deles se transforme em laço, e que sua prosperidade se torne armadilha."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "Castigarei seus descendentes, esfregarei em seu rosto o esterco dos sacrifícios que vocês ofereceram em suas festas sagradas e os lançarei no monte de esterco.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 29:14",
+                "text": "Depois, tome o restante do novilho, incluindo o couro, a carne e o excremento, e queime-o fora do acampamento como oferta pelo pecado."
+              },
+              {
+                "ref": "1 Samuel 2:29",
+                "text": "Então por que você despreza meus sacrifícios e ofertas? Por que honra seus filhos mais que a mim? Pois você e eles engordaram com as melhores partes das ofertas de meu povo, Israel!"
+              },
+              {
+                "ref": "1 Reis 14:10",
+                "text": "Por isso, trarei desgraça sobre sua família e destruirei todos os seus descendentes do sexo masculino em Israel, tanto escravos como livres. Queimarei sua dinastia como se queima lixo, até que tenha desaparecido."
+              },
+              {
+                "ref": "2 Reis 9:36",
+                "text": "Quando voltaram e contaram a Jeú, ele disse: “Isso cumpre a mensagem do SENHOR, anunciada por meio de seu servo Elias, de Tisbe: ‘Cães devorarão o corpo de Jezabel no campo em Jezreel."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "Assim, vocês saberão que enviei este mandamento para que minha aliança com os levitas continue”, diz o SENHOR dos Exércitos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Números 3:12",
+                "text": "“Veja, escolhi os levitas dentre os israelitas como substitutos de todos os filhos mais velhos de Israel. Os levitas me pertencem,"
+              },
+              {
+                "ref": "1 Reis 22:25",
+                "text": "Micaías respondeu: “Você descobrirá em breve, quando tentar se esconder em algum quarto secreto!”."
+              },
+              {
+                "ref": "Neemias 13:29",
+                "text": "Lembra-te deles, ó meu Deus, pois profanaram o sacerdócio e a aliança dos sacerdotes e dos levitas."
+              },
+              {
+                "ref": "Isaías 1:24",
+                "text": "Por isso o Soberano SENHOR dos Exércitos, o Poderoso de Israel, diz: “Eu me vingarei de meus inimigos; darei a meus adversários o que eles merecem!"
+              }
+            ]
           },
           {
             "number": 5,
             "text": "“O propósito de minha aliança com os levitas era dar vida e paz, e foi o que lhes dei. Para isso, era necessário que me temessem, e eles demonstraram grande temor por mim e reverência por meu nome.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 32:26",
+                "text": "Portanto, colocou-se à entrada do acampamento e gritou: “Todos que estiverem do lado do SENHOR, venham até aqui e juntem-se a mim!”. E todos os levitas se reuniram ao redor dele."
+              },
+              {
+                "ref": "Números 3:45",
+                "text": "“Tome os levitas como substitutos dos filhos mais velhos dos israelitas e tome os animais dos levitas como substitutos dos machos das primeiras crias dos animais de todos os israelitas. Os levitas me pertencem. Eu sou o SENHOR."
+              },
+              {
+                "ref": "Deuteronômio 33:8",
+                "text": "A respeito da tribo de Levi, disse: “Ó SENHOR, deste o Tumim e o Urim, as sortes sagradas, a teus servos fiéis. Tu os provaste em Massá e lutaste com eles junto às águas de Meribá."
+              },
+              {
+                "ref": "Salmos 106:30",
+                "text": "Fineias, porém, teve coragem de intervir, e a praga foi detida."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Transmitiram ao povo a verdade das leis que receberam de mim. Não mentiram nem enganaram; andaram comigo, vivendo de modo pacífico e justo, e desviaram muitos do pecado.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 5:21",
+                "text": "Aos 65 anos, Enoque gerou Matusalém."
+              },
+              {
+                "ref": "Deuteronômio 33:10",
+                "text": "Ensinaram teus estatutos a Jacó, deram tuas instruções a Israel. Oferecem incenso diante de ti e apresentam holocaustos inteiros no teu altar."
+              },
+              {
+                "ref": "1 Samuel 2:12",
+                "text": "Os filhos de Eli eram homens perversos, que não tinham nenhuma consideração pelo SENHOR,"
+              },
+              {
+                "ref": "Salmos 37:30",
+                "text": "O justo oferece conselhos sábios e ensina o que é certo."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "“As palavras do sacerdote devem guardar o conhecimento de Deus, e o povo deve buscar o sacerdote para receber instrução, pois ele é mensageiro do SENHOR dos Exércitos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 10:11",
+                "text": "e ensinem aos israelitas todos os decretos que o SENHOR lhes deu por meio de Moisés”."
+              },
+              {
+                "ref": "Números 27:21",
+                "text": "Quando for necessário receber orientação do SENHOR, Josué se apresentará diante do sacerdote Eleazar, que usará o Urim perante o SENHOR para determinar sua vontade. É pela palavra de Eleazar que Josué e toda a comunidade..."
+              },
+              {
+                "ref": "Deuteronômio 17:8",
+                "text": "“Se um caso muito difícil de resolver chegar a um tribunal local, como, por exemplo, uma decisão sobre que tipo de homicídio aconteceu, ou entre diferentes ações judiciais, ou entre tipos diferentes de agressão, levem es..."
+              },
+              {
+                "ref": "2 Reis 16:11",
+                "text": "O sacerdote Urias seguiu as instruções do rei e construiu um altar exatamente igual, que ficou pronto antes de o rei voltar de Damasco."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Mas vocês, sacerdotes, se desviaram dos caminhos de Deus. Suas instruções fizeram muitos caírem em pecado. Vocês quebraram a aliança que fiz com os levitas”, diz o SENHOR dos Exércitos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 21:15",
+                "text": "para que ele não desonre seus descendentes entre o povo, pois eu sou o SENHOR, que o santifico”."
+              },
+              {
+                "ref": "1 Samuel 2:17",
+                "text": "O pecado desses homens era muito sério aos olhos do SENHOR, pois eles tratavam com desprezo as ofertas para o SENHOR."
+              },
+              {
+                "ref": "2 Reis 16:11",
+                "text": "O sacerdote Urias seguiu as instruções do rei e construiu um altar exatamente igual, que ficou pronto antes de o rei voltar de Damasco."
+              },
+              {
+                "ref": "Neemias 13:29",
+                "text": "Lembra-te deles, ó meu Deus, pois profanaram o sacerdócio e a aliança dos sacerdotes e dos levitas."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "“Por isso fiz que vocês fossem desprezados e humilhados diante de todo o povo, pois não me obedeceram, mas mostraram parcialidade na aplicação de minha lei.”",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 1:17",
+                "text": "e imparciais em seus julgamentos. Cuidem tanto dos casos dos pobres como dos ricos. Não deixem que ninguém os intimide, pois Deus dará a decisão por seu intermédio. Tragam-me os casos que forem difíceis demais para vocês, e eu cuidarei deles’."
+              },
+              {
+                "ref": "1 Samuel 2:30",
+                "text": "“Portanto, assim declara o SENHOR, Deus de Israel: Prometi que membros de sua família, da tribo de Levi, sempre seriam meus sacerdotes. Agora, porém, declara o SENHOR: Isso não acontecerá! Honrarei aqueles que me honram..."
+              },
+              {
+                "ref": "1 Reis 22:28",
+                "text": "Micaías, porém, respondeu: “Se voltar em segurança, significará que o SENHOR não falou por meu intermédio!”. E acrescentou aos que estavam ao redor: “Todos vocês, prestem atenção às minhas palavras!”."
+              },
+              {
+                "ref": "Jó 32:21",
+                "text": "Não tomarei partido, nem tentarei bajular ninguém."
+              }
+            ]
           }
         ]
       },
@@ -174,49 +565,185 @@
             "number": 10,
             "text": "Não somos filhos do mesmo Pai? Não fomos todos criados pelo mesmo Deus? Então por que traímos uns aos outros e quebramos a aliança de nossos antepassados?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 19:5",
+                "text": "Agora, se me obedecerem e cumprirem minha aliança, serão meu tesouro especial dentre todos os povos da terra, pois toda a terra me pertence."
+              },
+              {
+                "ref": "Josué 23:12",
+                "text": "“Mas, se vocês se desviarem dele e se apegarem aos costumes dos sobreviventes das nações que ainda restam no meio de vocês, e se casarem com eles, e eles com vocês,"
+              },
+              {
+                "ref": "Esdras 9:11",
+                "text": "Tu nos advertiste por meio de teus servos, os profetas, quando eles disseram: ‘A terra em que estão entrando está inteiramente contaminada pelas práticas detestáveis dos povos que nela habitam. Está cheia de corrupção, de uma extremidade à outra."
+              },
+              {
+                "ref": "Neemias 13:29",
+                "text": "Lembra-te deles, ó meu Deus, pois profanaram o sacerdócio e a aliança dos sacerdotes e dos levitas."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Judá foi infiel, e uma coisa detestável foi feita em Israel e em Jerusalém. Os homens de Judá contaminaram o santuário que o SENHOR ama ao se casarem com mulheres que adoram deuses estrangeiros.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 6:1",
+                "text": "Os seres humanos começaram a se multiplicar na terra e tiveram filhas."
+              },
+              {
+                "ref": "Êxodo 19:5",
+                "text": "Agora, se me obedecerem e cumprirem minha aliança, serão meu tesouro especial dentre todos os povos da terra, pois toda a terra me pertence."
+              },
+              {
+                "ref": "Levítico 18:24",
+                "text": "“Não se contaminem de nenhuma dessas formas, pois os povos que expulsarei da presença de vocês se contaminaram com todas essas práticas."
+              },
+              {
+                "ref": "Deuteronômio 7:3",
+                "text": "Não se unam a elas por meio de casamentos. Não deem suas filhas em casamento aos filhos delas, nem tomem as filhas delas como esposas para seus filhos,"
+              }
+            ]
           },
           {
             "number": 12,
             "text": "Que o SENHOR elimine das casas de Israel até o último homem que fez isso e que, ainda assim, apresenta uma oferta ao SENHOR dos Exércitos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 4:3",
+                "text": "No tempo da colheita, Caim apresentou parte de sua produção como oferta ao SENHOR."
+              },
+              {
+                "ref": "Levítico 18:29",
+                "text": "Quem cometer algum desses pecados detestáveis será eliminado do meio do povo."
+              },
+              {
+                "ref": "Números 15:30",
+                "text": "“Mas aquele que arrogantemente fizer algo contrário à vontade de Deus, seja israelita de nascimento ou estrangeiro, blasfema contra o SENHOR e deverá ser eliminado do meio do povo."
+              },
+              {
+                "ref": "Josué 23:12",
+                "text": "“Mas, se vocês se desviarem dele e se apegarem aos costumes dos sobreviventes das nações que ainda restam no meio de vocês, e se casarem com eles, e eles com vocês,"
+              }
+            ]
           },
           {
             "number": 13,
             "text": "Há outra coisa que vocês fazem. Cobrem de lágrimas o altar do SENHOR, choram e gemem porque ele não dá atenção às suas ofertas nem as aceita com prazer.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 15:9",
+                "text": "Não sejam mesquinhos nem se recusem a emprestar a alguém só porque o ano de cancelamento das dívidas está próximo. Se vocês se recusarem a fornecer o empréstimo e a pessoa necessitada clamar ao SENHOR, vocês serão considerados culpados de pecado."
+              },
+              {
+                "ref": "1 Samuel 1:9",
+                "text": "Certa vez, depois que comeram e beberam em Siló, Ana se levantou. O sacerdote Eli estava sentado ao lado da entrada do templo do SENHOR."
+              },
+              {
+                "ref": "2 Samuel 13:19",
+                "text": "Então rasgou sua túnica, jogou cinzas sobre a cabeça e, cobrindo o rosto com as mãos, foi embora chorando."
+              },
+              {
+                "ref": "Neemias 5:1",
+                "text": "Por esse tempo, alguns homens e suas esposas fizeram um grande protesto contra seus irmãos judeus."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "E ainda perguntam: “Por quê?”. Porque o SENHOR foi testemunha dos votos que você e sua esposa fizeram quando jovens. Mas você foi infiel, embora ela tenha continuado a ser sua companheira, a esposa à qual você fez seus votos de casamento.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 2:18",
+                "text": "O SENHOR Deus disse: “Não é bom que o homem esteja sozinho. Farei alguém que o ajude e o complete”."
+              },
+              {
+                "ref": "Juízes 11:10",
+                "text": "Os líderes de Gileade responderam: “O SENHOR é nossa testemunha de que faremos exatamente como você disse”."
+              },
+              {
+                "ref": "1 Samuel 12:5",
+                "text": "Então Samuel declarou: “Hoje o SENHOR e o rei que ele ungiu são testemunhas de que minhas mãos estão limpas”. Eles responderam: “Sim, eles são testemunhas”."
+              },
+              {
+                "ref": "Provérbios 2:17",
+                "text": "Ela abandona o marido, o companheiro de sua juventude, e ignora a aliança que fez diante de Deus."
+              }
+            ]
           },
           {
             "number": 15,
             "text": "Acaso o SENHOR não o fez um só com sua esposa? Em corpo e em espírito vocês pertencem a ele. E o que ele quer? Dessa união, quer filhos dedicados a ele. Portanto, guardem seu coração; permaneçam fiéis à esposa de sua mocidade.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 1:27",
+                "text": "Assim, Deus criou os seres humanos à sua própria imagem, à imagem de Deus os criou; homem e mulher os criou."
+              },
+              {
+                "ref": "Deuteronômio 7:4",
+                "text": "pois farão seus filhos se afastarem de mim para adorar outros deuses. Então a ira do SENHOR arderá contra vocês e os destruirá rapidamente."
+              },
+              {
+                "ref": "Esdras 9:4",
+                "text": "Então todos que tremiam diante das palavras do Deus de Israel vieram e sentaram-se comigo por causa dessa infidelidade cometida pelos exilados que haviam regressado. E fiquei sentado ali, atônito, até o sacrifício da tarde."
+              },
+              {
+                "ref": "Neemias 13:24",
+                "text": "Além disso, a metade de seus filhos falava a língua de Asdode ou de algum outro povo, mas não sabia falar a língua de Judá."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "“Pois eu odeio o divórcio”, diz o SENHOR, o Deus de Israel. “Divorciar-se de sua esposa é cobri-la de crueldade”, diz o SENHOR dos Exércitos. “Portanto, guardem seu coração; não sejam infiéis.”",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 24:1",
+                "text": "“Se um homem se casar e a esposa não for do seu agrado porque ele descobriu alguma coisa vergonhosa da parte dela, ele escreverá um certificado de divórcio e o dará a ela, mandando-a embora de sua casa."
+              },
+              {
+                "ref": "Provérbios 5:20",
+                "text": "Por que, meu filho, se deixar cativar pela mulher imoral, ou acariciar os seios da promíscua?"
+              },
+              {
+                "ref": "Isaías 28:20",
+                "text": "A cama que vocês fizeram é curta demais para se deitarem, os cobertores são muito estreitos para se cobrirem."
+              },
+              {
+                "ref": "Miqueias 7:2",
+                "text": "Os fiéis desapareceram; não resta uma só pessoa honesta na terra. São todos assassinos, que preparam armadilhas até para os próprios irmãos;"
+              }
+            ]
           },
           {
             "number": 17,
             "text": "Vocês cansaram o SENHOR com suas palavras. “De que maneira o cansamos?”, vocês perguntam. Vocês o cansaram dizendo que todos que praticam o mal são bons aos olhos do SENHOR e que ele se agrada deles, e também ao perguntar: “Onde está o Deus da justiça?”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 32:4",
+                "text": "Ele é a Rocha, e suas obras são perfeitas; tudo que ele faz é certo. É um Deus fiel, que nunca erra, é justo e verdadeiro!"
+              },
+              {
+                "ref": "1 Samuel 2:3",
+                "text": "“Deixem de ser tão orgulhosos e soberbos! Não falem com tamanha arrogância! Pois o SENHOR é um Deus que tudo sabe; ele julgará as ações de todos."
+              },
+              {
+                "ref": "Jó 34:5",
+                "text": "Pois Jó também disse: ‘Sou inocente, mas Deus tirou de mim meus direitos."
+              },
+              {
+                "ref": "Salmos 10:11",
+                "text": "O perverso diz consigo: “Deus não se importa! Fechou os olhos e não vê o que faço!”."
+              }
+            ]
           }
         ]
       }
@@ -233,31 +760,116 @@
             "number": 1,
             "text": "“Vejam! Envio meu mensageiro, que preparará o caminho diante de mim. Então, de repente, o Senhor a quem vocês buscam virá a seu templo. O mensageiro da aliança, por quem vocês anseiam, certamente virá”, diz o SENHOR dos Exércitos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 48:15",
+                "text": "Em seguida, abençoou José, dizendo: “Que o Deus diante do qual andaram meu avô, Abraão, e meu pai, Isaque, o Deus que tem sido meu pastor toda a minha vida, até o dia de hoje,"
+              },
+              {
+                "ref": "Êxodo 23:20",
+                "text": "“Vejam, eu enviarei um anjo à sua frente para protegê-los ao longo da jornada e conduzi-los em segurança ao lugar que lhes preparei."
+              },
+              {
+                "ref": "Salmos 110:1",
+                "text": "O SENHOR disse ao meu Senhor:144 “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
+              },
+              {
+                "ref": "Isaías 7:14",
+                "text": "Por isso, o Senhor mesmo lhes dará um sinal. Vejam! A virgem ficará grávida! Ela dará à luz um filho e o chamará de Emanuel."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "“Mas quem poderá suportar quando ele vier? Quem permanecerá em pé em sua presença quando ele aparecer? Pois ele será como fogo ardente que refina o metal, como sabão forte que branqueia as roupas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 19:28",
+                "text": "Olhou para a planície, em direção a Sodoma e Gomorra, e viu colunas de fumaça subindo do lugar onde antes ficavam as cidades, como fumaça de uma fornalha."
+              },
+              {
+                "ref": "1 Samuel 6:20",
+                "text": "“Quem pode estar na presença do SENHOR, este Deus santo?”, clamaram. “Para onde mandaremos a arca daqui?”"
+              },
+              {
+                "ref": "Jó 28:1",
+                "text": "“As pessoas sabem de onde extrair a prata e onde refinar o ouro."
+              },
+              {
+                "ref": "Salmos 2:7",
+                "text": "O rei proclama o decreto do SENHOR: “O SENHOR me disse: ‘Você é meu filho; hoje eu o gerei."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "Ele se sentará como refinador de prata e queimará toda impureza. Purificará os levitas e os refinará como ouro e prata, para que voltem a oferecer sacri­fícios aceitáveis ao SENHOR.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Números 8:6",
+                "text": "“Agora, separe os levitas do restante dos israelitas e torne-os cerimonialmente puros."
+              },
+              {
+                "ref": "Salmos 4:5",
+                "text": "Ofereçam os sacrifícios exigidos e confiem no SENHOR."
+              },
+              {
+                "ref": "Provérbios 17:3",
+                "text": "O fogo prova a pureza da prata e do ouro, mas o SENHOR prova o coração."
+              },
+              {
+                "ref": "Isaías 1:25",
+                "text": "Levantarei o punho contra você; o derreterei e separarei o que é descartável e removerei todas as suas impurezas."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "Então o SENHOR se agradará novamente das ofertas do povo de Judá e do povo de Jerusalém, como no passado.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Crônicas 15:26",
+                "text": "E, como Deus estava claramente ajudando os levitas enquanto carregavam a arca da aliança do SENHOR, ofereceram como sacrifício sete novilhos e sete carneiros."
+              },
+              {
+                "ref": "2 Crônicas 1:6",
+                "text": "Na presença do SENHOR, Salomão ofereceu mil holocaustos sobre o altar de bronze, que estava na tenda do encontro."
+              },
+              {
+                "ref": "Salmos 51:19",
+                "text": "Então te agradarás dos sacrifícios de justiça, dos holocaustos e das ofertas queimadas; e sobre teu altar novilhos voltarão a ser sacrificados."
+              },
+              {
+                "ref": "Isaías 1:26",
+                "text": "Eu lhe darei bons juízes e conselheiros sábios, como tinha no passado. Então você voltará a ser chamada de Centro da Justiça e Cidade Fiel”."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "“Naquele dia, eu julgarei vocês. Não demorarei para testemunhar contra todos os feiticeiros, adúlteros e mentirosos. Falarei contra aqueles que roubam o salário de seus empregados, que oprimem as viúvas e os órfãos, ou que privam os estrangeiros de seus direitos, pois essas pessoas não me temem”, diz o SENHOR dos Exércitos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 20:11",
+                "text": "Abraão respondeu: “Pensei comigo: ‘Este é um lugar onde ninguém teme a Deus, e vão me matar para ficarem com minha mulher’."
+              },
+              {
+                "ref": "Êxodo 1:17",
+                "text": "Mas as parteiras temiam a Deus e se recusaram a obedecer à ordem do rei; assim, deixaram os meninos viver."
+              },
+              {
+                "ref": "Levítico 19:13",
+                "text": "“Não explorem nem roubem o seu próximo. “Não fiquem até o dia seguinte com o pagamento de seus empregados."
+              },
+              {
+                "ref": "Deuteronômio 5:11",
+                "text": "“Não use o nome do SENHOR, seu Deus, de forma indevida. O SENHOR não deixará impune quem usar o nome dele de forma indevida."
+              }
+            ]
           }
         ]
       },
@@ -268,61 +880,231 @@
             "number": 6,
             "text": "“Eu sou o SENHOR e não mudo. Por isso vocês, descendentes de Jacó, ainda não foram destruídos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 15:7",
+                "text": "Então o SENHOR lhe disse: “Eu sou o SENHOR, que o tirei de Ur dos caldeus para lhe dar esta terra como posse”."
+              },
+              {
+                "ref": "Êxodo 3:14",
+                "text": "Deus respondeu a Moisés: “EU SOU O QUE SOU. Diga ao povo de Israel: EU SOU me enviou a vocês”."
+              },
+              {
+                "ref": "Números 23:19",
+                "text": "Deus não é homem para mentir, nem ser humano para mudar de ideia. Alguma vez ele falou e não agiu? Alguma vez prometeu e não cumpriu?"
+              },
+              {
+                "ref": "1 Samuel 15:29",
+                "text": "E aquele que é a Glória de Israel não mente nem se arrepende, pois não é ser humano para se arrepender!”."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "Desde os dias de seus antepassados vocês se afastaram de meus decretos e não os seguiram. Agora, voltem-se para mim, e eu me voltarei para vocês”, diz o SENHOR dos Exércitos. “Mas vocês perguntam: ‘De que maneira voltaremos?’.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 26:40",
+                "text": "“Enfim, porém, meu povo confessará seus pecados e os pecados de seus antepassados por serem infiéis e se oporem a mim."
+              },
+              {
+                "ref": "Deuteronômio 4:29",
+                "text": "De lá, porém, vocês buscarão o SENHOR, seu Deus, outra vez. E, se o buscarem de todo o coração e de toda a alma, o encontrarão."
+              },
+              {
+                "ref": "1 Reis 8:47",
+                "text": "Se caírem em si nessa terra de exílio e se arrependerem, suplicando-te: ‘Pecamos, praticamos o mal e agimos perversamente’,"
+              },
+              {
+                "ref": "Neemias 1:8",
+                "text": "“Por favor, lembra-te do que disseste a teu servo Moisés: ‘Se forem infiéis a mim, eu os dispersarei entre as nações,"
+              }
+            ]
           },
           {
             "number": 8,
             "text": "“Acaso alguém pode roubar a Deus? Mas vocês têm me roubado! “Perguntam: ‘Em que te roubamos?’. “Vocês me roubaram nos dízimos e nas ofertas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 5:15",
+                "text": "“Se alguém cometer um delito religioso, violando, mesmo sem intenção, algum mandamento sobre as coisas consagradas do SENHOR, deverá trazer ao SENHOR uma oferta pela culpa. A oferta será um carneiro sem defeito do seu pr..."
+              },
+              {
+                "ref": "Números 18:21",
+                "text": "Darei aos levitas os dízimos de todo o povo de Israel como herança por seus serviços na tenda do encontro."
+              },
+              {
+                "ref": "Josué 7:11",
+                "text": "Israel pecou e quebrou a minha aliança! Roubou alguns dos objetos que eu ordenei que fossem separados para mim. E não apenas os roubou, mas também mentiu a respeito e os escondeu no meio de seus pertences."
+              },
+              {
+                "ref": "Neemias 13:4",
+                "text": "Antes disso, o sacerdote Eliasibe havia sido nomeado para supervisionar os depósitos no templo de nosso Deus."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Estão sob maldição, pois a nação inteira tem me roubado.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 28:15",
+                "text": "“Mas, se vocês se recusarem a dar ouvidos ao SENHOR, seu Deus, e não cumprirem todos os mandamentos e decretos que hoje lhes dou, as seguintes maldições cairão sobre vocês e os atingirão:"
+              },
+              {
+                "ref": "Josué 7:12",
+                "text": "Por isso os israelitas foram derrotados e fugiram de seus inimigos. Agora Israel foi separado para a destruição. Não permanecerei mais com vocês, a menos que eliminem do seu meio aquilo que foi separado para a destruição."
+              },
+              {
+                "ref": "Isaías 43:28",
+                "text": "Por isso, humilhei seus sacerdotes; decretei destruição total para Jacó, vergonha para Israel.”"
+              },
+              {
+                "ref": "Ageu 1:6",
+                "text": "Plantam muito, mas colhem pouco. Comem, mas não se saciam. Bebem, mas ainda têm sede. Vestem-se, mas não se aquecem. Seus salários desaparecem como se vocês os colocassem em bolsos furados."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "Tragam todos os seus dízimos aos depósitos do templo, para que haja provisão em minha casa. Se o fizerem”, diz o SENHOR dos Exércitos, “abrirei as janelas do céu para vocês. Derramarei tantas bênçãos que não haverá espaço para guardá-las! Sim, ponham-me à prova!",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 7:11",
+                "text": "Quando Noé tinha 600 anos, no décimo sétimo dia do segundo mês, todas as fontes subterrâneas de água jorraram da terra, e a chuva caiu do céu em grandes temporais"
+              },
+              {
+                "ref": "Levítico 26:10",
+                "text": "Suas colheitas serão tão fartas que vocês terão de se desfazer dos cereais velhos a fim de dar espaço à nova safra."
+              },
+              {
+                "ref": "Números 18:21",
+                "text": "Darei aos levitas os dízimos de todo o povo de Israel como herança por seus serviços na tenda do encontro."
+              },
+              {
+                "ref": "Deuteronômio 28:12",
+                "text": "No tempo certo, o SENHOR enviará chuvas de seu rico tesouro no céu e abençoará todo o trabalho que realizarem. Vocês emprestarão a muitas nações, mas jamais precisarão tomar emprestado delas."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Suas colheitas serão fartas, pois as protegerei das pragas. Suas uvas não cairão das videiras antes de amadurecerem”, diz o SENHOR dos Exércitos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 11:14",
+                "text": "ele mandará as chuvas na estação apropriada, as chuvas de outono e de primavera, para que vocês juntem suas colheitas de cereais e produzam vinho novo e azeite."
+              },
+              {
+                "ref": "Jeremias 8:13",
+                "text": "Certamente os consumirei; não haverá mais colheita de figos nem de uvas. Suas árvores frutíferas morrerão, tudo que lhes dei em breve acabará. Eu, o SENHOR, falei!’."
+              },
+              {
+                "ref": "Amós 4:9",
+                "text": "“Castiguei suas plantações e videiras com pragas e ferrugem; gafanhotos devoraram suas figueiras e oliveiras. Nem assim vocês voltaram para mim”, diz o SENHOR."
+              },
+              {
+                "ref": "Habacuque 3:17",
+                "text": "Ainda que a figueira não floresça e não haja frutos nas videiras, ainda que a colheita de azeitonas não dê em nada e os campos fiquem vazios e improdutivos, ainda que os rebanhos morram nos campos e os currais fiquem vazios,"
+              }
+            ]
           },
           {
             "number": 12,
             "text": "“Então todas as nações os chamarão de abençoados, pois sua terra será cheia de alegria”, diz o SENHOR dos Exércitos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 4:6",
+                "text": "Obedeçam-lhes por completo, e assim demonstrarão sabedoria e inteligência às nações vizinhas. Quando elas ouvirem estes decretos, exclamarão: ‘Como é sábio e prudente o povo dessa grande nação!’."
+              },
+              {
+                "ref": "2 Crônicas 32:23",
+                "text": "Daquela ocasião em diante, o rei Ezequias se tornou muito respeitado entre todas as nações, e muitos traziam a Jerusalém ofertas para o SENHOR e presentes valiosos para o rei."
+              },
+              {
+                "ref": "Salmos 72:17",
+                "text": "Que o nome do rei permaneça para sempre, que dure enquanto o sol brilhar. Que todas as nações sejam abençoadas por meio dele e o louvem."
+              },
+              {
+                "ref": "Isaías 61:9",
+                "text": "Seus descendentes serão reconhecidos e honrados entre as nações. Todos saberão que eles são um povo abençoado pelo SENHOR.”"
+              }
+            ]
           },
           {
             "number": 13,
             "text": "“Vocês falaram coisas terríveis contra mim”, diz o SENHOR. “Mas vocês perguntam: ‘O que falamos contra ti?’.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 5:2",
+                "text": "“Quem é o SENHOR?”, retrucou o faraó. “Por que devo dar ouvidos a ele e deixar Israel sair? Não conheço o SENHOR e não deixarei Israel sair.”"
+              },
+              {
+                "ref": "2 Crônicas 32:14",
+                "text": "Qual de seus deuses foi capaz de salvar seu povo do poder destruidor de meus antecessores? O que os faz pensar que seu Deus poderá livrá-los de minhas mãos?"
+              },
+              {
+                "ref": "Jó 15:13",
+                "text": "quando você se volta contra Deus e diz tais absurdos?"
+              },
+              {
+                "ref": "Salmos 10:11",
+                "text": "O perverso diz consigo: “Deus não se importa! Fechou os olhos e não vê o que faço!”."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "“Vocês disseram: ‘De que adianta servir a Deus? Que vantagem temos em obedecer a suas ordens ou chorar por nossos pecados diante do SENHOR dos Exércitos?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jó 21:14",
+                "text": "E, no entanto, dizem a Deus: ‘Deixa-nos em paz! Não queremos saber de ti nem de teus caminhos."
+              },
+              {
+                "ref": "Salmos 73:8",
+                "text": "Zombam e falam somente maldades; em seu orgulho, ameaçam usar de violência."
+              },
+              {
+                "ref": "Isaías 58:3",
+                "text": "Dizem: ‘Jejuamos diante de ti! Por que não prestas atenção? Nós nos humilhamos com severidade, e tu nem reparas!’. “Vou lhes dizer por quê”, eu respondo. “É porque jejuam para satisfazer a si mesmos. Enquanto isso, oprimem seus empregados."
+              },
+              {
+                "ref": "Jeremias 44:18",
+                "text": "Mas desde que paramos de queimar incenso para a Rainha do Céu e deixamos de adorá-la com ofertas derramadas, temos enfrentado grandes aflições e morrido por guerra e fome”."
+              }
+            ]
           },
           {
             "number": 15,
             "text": "De agora em diante, chamaremos de abençoados os arrogantes. Pois os que praticam maldades enriquecem, e os que provocam a ira de Deus nenhum mal sofrem’.”",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Números 14:22",
+                "text": "nenhuma dessas pessoas entrará na terra. Todas elas viram a minha presença gloriosa e os sinais que realizei no Egito e no deserto. Repetidamente, porém, me puseram à prova, ­re-­ cusando-se a ouvir a minha voz."
+              },
+              {
+                "ref": "Ester 5:10",
+                "text": "Hamã, porém, se conteve e foi para casa. Então reuniu seus amigos e sua esposa, Zeres,"
+              },
+              {
+                "ref": "Jó 1:22",
+                "text": "Em tudo isso, Jó não pecou nem culpou a Deus."
+              },
+              {
+                "ref": "Salmos 10:3",
+                "text": "Pois conta vantagem de seus desejos maus; elogia os gananciosos e amaldiçoa o SENHOR."
+              }
+            ]
           }
         ]
       },
@@ -333,19 +1115,70 @@
             "number": 16,
             "text": "Então aqueles que temiam o SENHOR falaram uns com os outros, e o SENHOR ouviu o que disseram. Na presença dele, foi escrito um livro memorial para registrar os nomes dos que o temiam e que sempre honravam seu nome.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 22:12",
+                "text": "“Não toque no rapaz”, disse o anjo. “Não lhe faça mal algum. Agora sei que você teme a Deus de fato. Não me negou nem mesmo seu filho, seu único filho!”"
+              },
+              {
+                "ref": "Deuteronômio 6:6",
+                "text": "Guarde sempre no coração as palavras que hoje eu lhe dou."
+              },
+              {
+                "ref": "1 Samuel 23:16",
+                "text": "Jônatas, o filho de Saul, foi encontrar Davi e o animou a permanecer firme em Deus."
+              },
+              {
+                "ref": "2 Samuel 7:1",
+                "text": "Quando o rei Davi já havia se estabelecido em seu palácio e o SENHOR lhe tinha dado descanso de todos os inimigos ao redor,"
+              }
+            ]
           },
           {
             "number": 17,
             "text": "“Eles serão meu povo”, diz o SENHOR dos Exércitos. “No dia em que eu agir, eles serão meu tesouro especial. Terei compaixão deles como o pai tem compaixão de seu filho obediente.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 19:5",
+                "text": "Agora, se me obedecerem e cumprirem minha aliança, serão meu tesouro especial dentre todos os povos da terra, pois toda a terra me pertence."
+              },
+              {
+                "ref": "Deuteronômio 7:6",
+                "text": "Vocês são um povo santo que pertence ao SENHOR, seu Deus. Dentre todos os povos da terra, o SENHOR, seu Deus, os escolheu para serem sua propriedade especial."
+              },
+              {
+                "ref": "Neemias 13:22",
+                "text": "Então ordenei que os levitas se purificassem e guardassem as portas, para manter o sábado como um dia sagrado. Lembra-te também desta boa obra, ó meu Deus! Tem compaixão de mim de acordo com teu grande amor leal!"
+              },
+              {
+                "ref": "Salmos 103:8",
+                "text": "O SENHOR é compassivo e misericordioso, lento para se irar e cheio de amor."
+              }
+            ]
           },
           {
             "number": 18,
             "text": "Então vocês verão outra vez a diferença entre o justo e o mau, entre o que serve a Deus e o que não serve.”",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 18:25",
+                "text": "Claro que não farias tal coisa: destruir o justo com o perverso. Afinal, estarias tratando o justo e o perverso da mesma maneira! Certamente não farias isso! Acaso o Juiz de toda a terra não faria o que é certo?”."
+              },
+              {
+                "ref": "Êxodo 11:7",
+                "text": "Quanto aos israelitas, porém, nem um cão latirá contra eles ou seus animais. Com isso vocês saberão que o SENHOR faz distinção entre os egípcios e os israelitas."
+              },
+              {
+                "ref": "Josué 24:15",
+                "text": "Mas, se vocês se recusarem a servir ao SENHOR, escolham hoje a quem servirão. Escolherão servir os deuses aos quais seus antepassados serviam além do Eufrates? Ou os deuses dos amorreus, em cuja terra vocês habitam? Quan..."
+              },
+              {
+                "ref": "Jó 6:29",
+                "text": "Não pressuponham que sou culpado, pois nada fiz de errado."
+              }
+            ]
           }
         ]
       }
@@ -368,31 +1201,115 @@
             "number": 2,
             "text": "“Mas, para vocês que temem meu nome, o sol da justiça se levantará, trazendo cura em suas asas. E vocês sairão e saltarão de alegria, como bezerros soltos no pasto.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Rute 2:12",
+                "text": "Que o SENHOR, o Deus de Israel, sob cujas asas você veio se refugiar, a recompense ricamente pelo que você fez.”"
+              },
+              {
+                "ref": "2 Samuel 23:4"
+              },
+              {
+                "ref": "Salmos 67:1",
+                "text": "Que Deus seja misericordioso e nos abençoe. Que a luz de seu rosto brilhe sobre nós."
+              },
+              {
+                "ref": "Provérbios 4:18",
+                "text": "O caminho dos justos é como a primeira luz do amanhecer, que brilha cada vez mais até o dia pleno clarear."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "No dia em que eu agir, vocês pisarão sobre os perversos como se eles fossem pó sob os seus pés”, diz o SENHOR dos Exércitos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 3:15",
+                "text": "Farei que haja inimizade entre você e a mulher, e entre a sua descendência e o descendente dela. Ele lhe ferirá12 a cabeça, e você lhe ferirá o calcanhar”."
+              },
+              {
+                "ref": "Josué 10:24",
+                "text": "Os reis foram trazidos para fora, diante de Josué, e ele ordenou aos comandantes de seu exército: “Venham e coloquem o pé sobre o pescoço dos reis”. E eles obedeceram."
+              },
+              {
+                "ref": "2 Samuel 22:43",
+                "text": "Eu os moí tão fino como o pó da terra; eu os esmaguei e os pisoteei como a lama das ruas."
+              },
+              {
+                "ref": "Jó 40:12",
+                "text": "Humilhe-os com um olhar, pise os perversos onde estiverem."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "“Lembrem-se de obedecer à lei de Moisés, meu servo, a todos os decretos e estatutos que dei a todo o Israel no monte Sinai.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 20:3",
+                "text": "“Não tenha outros deuses além de mim."
+              },
+              {
+                "ref": "Levítico 1:1",
+                "text": "Da tenda do encontro, o SENHOR chamou Moisés e lhe disse:"
+              },
+              {
+                "ref": "Deuteronômio 4:5",
+                "text": "“Vejam, agora eu lhes ensino estes decretos e estatutos conforme me ordenou o SENHOR, meu Deus, para que vocês os cumpram na terra em que estão prestes a entrar para tomar posse dela."
+              },
+              {
+                "ref": "Salmos 147:19",
+                "text": "Ele revelou sua palavra a Jacó, seus decretos e estatutos, a Israel."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "“Vejam, eu lhes envio o profeta Elias antes da vinda do grande e terrível dia do SENHOR.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 40:3",
+                "text": "Ouçam! Uma voz clama: “Abram caminho no deserto para o SENHOR!127 Preparem para nosso Deus uma estrada reta na terra desolada!"
+              },
+              {
+                "ref": "Mateus 11:13",
+                "text": "Pois, antes de João vir, todos os profetas e a lei de Moisés falavam dos dias de João com grande expectativa,"
+              },
+              {
+                "ref": "Marcos 9:11",
+                "text": "Então eles perguntaram a Jesus: “Por que os mestres da lei afirmam que é necessário que Elias volte antes que o Cristo venha?”."
+              },
+              {
+                "ref": "Lucas 1:17",
+                "text": "Será um homem com o espírito e o poder de Elias, e preparará o povo para a vinda do Senhor. Fará o coração dos pais voltar para seus filhos e levará os rebeldes a aceitarem a sabedoria dos justos”."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Ele fará que o coração dos pais volte para seus filhos e o coração dos filhos volte para seus pais. Do contrário, eu virei e castigarei a terra com maldição.” 1 1. Malaquias significa “meu mensageiro”. 2 1. Conforme a Septuaginta; o hebraico traz te contaminamos? 3 1.11a Ou será honrado. 4 1.11b Ou oferecerão. 5 1. Ou dilacerados. 6 2. Em hebraico, das tendas de Jacó. Os nomes “Jacó” e “Israel” são usados de forma intercambiável ao longo de todo o Antigo Testamento e se referem, por vezes, ao patriarca e, em outras ocasiões, à nação. 7 2. Ou Acaso o SENHOR não nos criou e preservou nossa vida e nosso fôlego?, ou Acaso o único Deus não a fez, carne e espírito? O significado do hebraico é incerto. 8 2. Em hebraico, cobrir suas vestes de violência. 9 3. Em hebraico, do devorador. 10 4. No texto hebraico, os versículos 4.1-6 são numerados 3.19-24. 11 4. Em hebraico, Horebe, outro nome para o Sinai.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 29:19",
+                "text": "“Aqueles que ouvirem as advertências desta maldição não devem se parabenizar e pensar: ‘Estou seguro, embora siga os desejos do meu coração obstinado’. Isso levaria à ruína total!"
+              },
+              {
+                "ref": "Isaías 11:4",
+                "text": "Fará justiça aos pobres e tomará decisões imparciais em favor dos oprimidos. A terra estremecerá com a força de sua palavra, e o sopro de sua boca destruirá os perversos."
+              },
+              {
+                "ref": "Daniel 9:11",
+                "text": "Todo o Israel desobedeceu às tuas leis, desviou-se e não quis ouvir tua voz. “Por isso, agora as maldições solenes e os juízos escritos na lei de Moisés, servo de Deus, foram derramados sobre nós por causa de nosso pecado."
+              },
+              {
+                "ref": "Zacarias 5:3",
+                "text": "Em seguida, ele me disse: “Nesse rolo está a maldição que sai para toda a terra. Uma maldição do rolo diz que os ladrões serão expulsos da terra; a outra maldição diz que os que juram falsamente serão expulsos da terra."
+              }
+            ]
           }
         ]
       }

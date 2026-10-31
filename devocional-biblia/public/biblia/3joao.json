@@ -10,25 +10,93 @@
             "number": 1,
             "text": "Eu, o presbítero, escrevo a Gaio, meu amigo querido, a quem amo na verdade.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Atos 19:29",
+                "text": "Em pouco tempo, a cidade toda estava uma confusão. O povo correu para o anfiteatro, arrastando os macedônios Gaio e Aristarco, companheiros de viagem de Paulo."
+              },
+              {
+                "ref": "Romanos 16:23",
+                "text": "Gaio os saúda. Estou hospedado em sua casa, onde ele também tem recebido toda a igreja. Erasto, tesoureiro da cidade, bem como nosso irmão Quarto, lhes enviam saudações."
+              },
+              {
+                "ref": "1 Coríntios 1:14",
+                "text": "Graças a Deus, não batizei nenhum de vocês, exceto Crispo e Gaio,"
+              },
+              {
+                "ref": "1 João 3:18",
+                "text": "Filhinhos, não nos limitemos a dizer que amamos uns aos outros; demonstremos a verdade por meio de nossas ações."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "Amado, espero que você esteja bem e fisicamente tão sadio quanto é forte em espírito.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 20:1",
+                "text": "Que o SENHOR responda ao seu clamor em tempos de sofrimento; o nome do Deus de Jacó o guarde de todo mal."
+              },
+              {
+                "ref": "Filipenses 2:4",
+                "text": "Não- ­ procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios."
+              },
+              {
+                "ref": "Colossenses 1:4",
+                "text": "pois temos ouvido falar de sua fé em Cristo Jesus e de seu amor por todo o povo santo,"
+              },
+              {
+                "ref": "1 Tessalonicenses 1:3",
+                "text": "Quando oramos por vocês diante de nosso Deus e Pai, relembramos seu trabalho fiel, seus atos em amor e sua firme esperança em nosso Senhor Jesus Cristo."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "Alguns dos irmãos regressaram e me deixaram muito alegre quando falaram de sua fidelidade e de como você vive de acordo com a verdade.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 119:11",
+                "text": "Guardei tua palavra em meu coração, para não pecar contra ti."
+              },
+              {
+                "ref": "Romanos 1:8",
+                "text": "Antes de tudo, quero dizer que, por meio de Jesus Cristo, agradeço a meu Deus por todos vocês, pois sua fé nele é comentada em todo o mundo."
+              },
+              {
+                "ref": "2 Coríntios 7:6",
+                "text": "Mas Deus, que conforta os desanimados, nos encorajou com a chegada de Tito."
+              },
+              {
+                "ref": "Efésios 1:15",
+                "text": "Desde que eu soube de sua fé no Senhor Jesus e de seu amor pelo povo santo em toda parte,"
+              }
+            ]
           },
           {
             "number": 4,
             "text": "Eu não poderia ter maior alegria que saber que meus filhos têm seguido a verdade.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Reis 2:4",
+                "text": "Desse modo, o SENHOR manterá a promessa que me fez: ‘Se seus descendentes viverem como devem e me seguirem fielmente de todo o coração e de toda a alma, sempre haverá um deles no trono de Israel’."
+              },
+              {
+                "ref": "2 Reis 20:3",
+                "text": "“Ó SENHOR, lembra-te de como sempre te servi com fidelidade e devoção, e de como sempre fiz o que é certo aos teus olhos”. Depois, o rei chorou ­amargamente."
+              },
+              {
+                "ref": "Salmos 26:1",
+                "text": "Declara-me inocente, SENHOR, pois tenho vivido com integridade; tenho confiado no SENHOR sem vacilar."
+              },
+              {
+                "ref": "Provérbios 23:24",
+                "text": "O pai dos justos tem motivos para se alegrar; é uma grande alegria ter filhos sábios."
+              }
+            ]
           }
         ]
       },
@@ -39,49 +107,185 @@
             "number": 5,
             "text": "Amado, você é fiel quando cuida dos irmãos que passam por aí, embora não os conheça.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 24:45",
+                "text": "“O servo fiel e sensato é aquele a quem seu senhor encarrega de gerir os outros servos da casa e alimentá-los."
+              },
+              {
+                "ref": "Lucas 12:42",
+                "text": "O Senhor respondeu: “O servo fiel e sensato é aquele a quem o senhor encarrega de chefiar os demais servos da casa e alimentá-los."
+              },
+              {
+                "ref": "2 Coríntios 4:1",
+                "text": "Portanto, visto que Deus, em sua misericórdia, nos deu a tarefa de ministrar nesse novo sistema, nunca desistimos."
+              },
+              {
+                "ref": "Gálatas 6:10",
+                "text": "Por isso, sempre que tivermos oportunidade, façamos o bem a todos, especialmente aos da família da fé."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Eles falaram à igreja daqui a respeito de sua amizade afetuosa. Peço que continue a suprir as necessidades deles de modo agradável a Deus.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 4:7",
+                "text": "Se você fizer o que é certo, será aceito. Mas, se não o fizer, tome cuidado! O pecado está à porta, à sua espera, e deseja controlá-lo, mas é você quem deve dominá-lo.”"
+              },
+              {
+                "ref": "Jonas 4:4",
+                "text": "O SENHOR respondeu: “Você acha certo ficar tão irado assim?”."
+              },
+              {
+                "ref": "Mateus 25:21",
+                "text": "“O senhor disse: ‘Muito bem, meu servo bom e fiel. Você foi fiel na administração dessa quantia pequena, e agora lhe darei muitas outras responsabilidades. Venha celebrar comigo’."
+              },
+              {
+                "ref": "Atos 15:3",
+                "text": "A igreja, portanto, enviou seus representantes a Jerusalém. No caminho, eles pararam na Fenícia e em Samaria para visitar os irmãos e contaram que os gentios também estavam sendo convertidos, o que muito alegrou a todos."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "Pois eles viajam a serviço do Senhor e não aceitam coisa alguma dos que são de fora.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Reis 5:15",
+                "text": "Então Naamã e toda a sua comitiva voltaram para onde morava o homem de Deus. Ao chegar diante dele, Naamã disse: “Agora sei que no mundo inteiro não há Deus, senão em Israel. Por favor, aceite um presente de seu servo”."
+              },
+              {
+                "ref": "Atos 5:41",
+                "text": "Quando os apóstolos saíram da reunião do conselho, estavam alegres porque Deus os havia considerado dignos de sofrer humilhação pelo nome de Jesus."
+              },
+              {
+                "ref": "1 Coríntios 9:12",
+                "text": "Se vocês sustentam outros que pregam a vocês, não temos ainda mais direito de receber o mesmo sustento? Mas nunca fizemos uso desse direito. Preferimos suportar qualquer coisa a fim de não sermos obstáculo para as boas-novas a respeito de Cristo."
+              },
+              {
+                "ref": "2 Coríntios 4:5",
+                "text": "Não andamos por aí falando de nós mesmos, mas proclamamos que Jesus Cristo é Senhor e que nós mesmos somos servos de vocês por causa de Jesus."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Assim, nós mesmos devemos sustentá-los, a fim de nos tornarmos seus cooperadores quando eles ensinarem a verdade.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 94:16",
+                "text": "Quem me protegerá dos perversos? Quem me defenderá dos que praticam o mal?"
+              },
+              {
+                "ref": "Mateus 10:14",
+                "text": "Se alguma casa ou cidade se recusar a recebê-los ou a ouvir sua mensagem, sacudam a poeira dos pés ao sair."
+              },
+              {
+                "ref": "Lucas 11:7",
+                "text": "e ele respondesse lá de dentro: ‘Não me perturbe. A porta já está trancada, e minha família e eu já estamos deitados. Não posso ajudá-lo’."
+              },
+              {
+                "ref": "1 Coríntios 3:5",
+                "text": "Afinal, quem é Paulo? Quem é Apolo? Somos apenas servos de Deus por meio dos quais vocês vieram a crer. Cada um de nós fez o trabalho do qual o Senhor nos encarregou."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Escrevi à igreja sobre isso, mas Diótrefes, que gosta de ser o mais importante, se recusa a receber-nos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 10:40",
+                "text": "“Quem recebe vocês recebe a mim, e quem me recebe também recebe aquele que me enviou."
+              },
+              {
+                "ref": "Marcos 9:34",
+                "text": "Eles não responderam, pois tinham discutido sobre qual deles era o maior."
+              },
+              {
+                "ref": "Lucas 9:48",
+                "text": "e disse: “Quem recebe uma criança como esta em meu nome recebe a mim, e quem me recebe também recebe aquele que me enviou. Portanto, o menor entre vocês será o maior”."
+              },
+              {
+                "ref": "Romanos 12:10",
+                "text": "Amem-se com amor fraternal e tenham prazer em honrar uns aos outros."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "Quando eu for, relatarei algumas das coisas que ele tem feito, bem como suas acusações maldosas contra nós. Ele não apenas se recusa a acolher os irmãos, mas também impede outros de ajudá-los. E, quando o fazem, ele os expulsa da igreja.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 10:8",
+                "text": "O sábio recebe os mandamentos de bom grado, mas as palavras do insensato causam sua ruína."
+              },
+              {
+                "ref": "Isaías 66:5",
+                "text": "Ouçam esta mensagem do SENHOR, todos vocês que tremem diante de suas palavras: “Seu próprio povo os odeia e os expulsa porque são leais ao meu nome. Zombam: ‘Que o SENHOR seja glorificado! Alegrem-se nele!’, mas eles serão envergonhados."
+              },
+              {
+                "ref": "Lucas 6:22",
+                "text": "Felizes são vocês quando os odiarem e os excluírem, quando zombarem de vocês e os caluniarem como se fossem maus porque seguem o Filho do Homem."
+              },
+              {
+                "ref": "João 9:22",
+                "text": "Seus pais disseram isso por medo dos líderes judeus, pois estes haviam anunciado que, se alguém dissesse que Jesus era o Cristo, seria expulso da sinagoga."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Amado, não deixe que esse mau exemplo o influencie, mas siga apenas o que é bom. Quem faz o bem prova que é filho de Deus; quem faz o mal prova que não conhece a Deus.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 23:2",
+                "text": "“Não se deixe levar pela maioria na prática do mal. Quando o chamarem para testemunhar em um processo legal, não permita que a multidão o influencie a perverter a justiça."
+              },
+              {
+                "ref": "Salmos 34:14",
+                "text": "Afaste-se do mal e faça o bem; busque a paz e esforce-se para mantê-la."
+              },
+              {
+                "ref": "Provérbios 12:11",
+                "text": "Quem trabalha com dedicação tem fartura de alimento; quem corre atrás de fantasias não tem juízo."
+              },
+              {
+                "ref": "Isaías 1:16",
+                "text": "Lavem-se e limpem-se! Removam seus pecados de minha vista e parem de fazer o mal."
+              }
+            ]
           },
           {
             "number": 12,
             "text": "Todos, incluindo a própria verdade, falam bem de Demétrio. Nós dizemos o mesmo a ­respeito dele, e você sabe que falamos a verdade.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Samuel 12:4",
+                "text": "Eles responderam: “O senhor nunca nos enganou nem nos oprimiu, e nunca aceitou suborno”."
+              },
+              {
+                "ref": "João 19:35",
+                "text": "Essa informação provém de uma testemunha ocular. Ela diz a verdade para que vocês também creiam."
+              },
+              {
+                "ref": "Atos 10:22",
+                "text": "Eles responderam: “Cornélio, um oficial romano, nos enviou. Ele é um homem devoto e temente a Deus, respeitado por todos os judeus. Um santo anjo o instruiu a chamar o senhor à casa dele para que ele ouça sua mensagem”."
+              },
+              {
+                "ref": "1 Tessalonicenses 4:12",
+                "text": "Assim, os que são de fora respeitarão seu modo de viver, e vocês não terão de depender de outros."
+              }
+            ]
           }
         ]
       },
@@ -92,13 +296,34 @@
             "number": 13,
             "text": "Tenho muito mais a lhe dizer, mas não quero fazê-lo com pena e tinta,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 João 1:12",
+                "text": "Tenho muito mais a lhes dizer, mas não quero fazê-lo com papel e tinta, pois espero visitá-los em breve e conversar com vocês pessoalmente. Então nossa alegria será completa."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "pois espero vê-lo em breve, e então conversaremos pessoalmente.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 43:23",
+                "text": "“Fiquem tranquilos”, disse o administrador. “Não tenham medo. Seu Deus, o Deus de seu pai, deve ter colocado esse tesouro nos sacos. Tenho certeza de que recebi seu pagamento.” Depois disso, soltou Simeão e o levou até onde eles estavam."
+              },
+              {
+                "ref": "Daniel 4:1"
+              },
+              {
+                "ref": "Romanos 16:1",
+                "text": "Rs 19.."
+              },
+              {
+                "ref": "Gálatas 5:16",
+                "text": "Por isso digo: deixem que o Espírito guie sua vida. Assim, não satisfarão os anseios de sua natureza humana."
+              }
+            ]
           },
           {
             "number": 15,

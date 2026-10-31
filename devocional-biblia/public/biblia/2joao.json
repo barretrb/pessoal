@@ -10,19 +10,70 @@
             "number": 1,
             "text": "Eu, o presbítero, escrevo à senhora escolhida e a seus filhos, a quem amo na verdade, como fazem todos os que conhecem a verdade,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Lucas 1:3",
+                "text": "Depois de investigar tudo detalhadamente desde o início, também decidi escrever-lhe um relato preciso, excelentíssimo Teófilo,"
+              },
+              {
+                "ref": "João 8:32",
+                "text": "Então conhecerão a verdade, e a verdade os libertará”."
+              },
+              {
+                "ref": "Gálatas 2:5",
+                "text": "mas não cedemos a eles nem por um momento, a fim de preservar a verdade das boas-novas para vocês."
+              },
+              {
+                "ref": "Efésios 1:4",
+                "text": "Mesmo antes de criar o mundo, Deus nos amou e nos escolheu em Cristo para sermos santos e sem culpa diante dele."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "porque a verdade permanece em nós e estará conosco para sempre.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "João 15:7",
+                "text": "Mas, se vocês permanecerem em mim e minhas palavras permanecerem em vocês, pedirão o que quiserem, e isso lhes será concedido!"
+              },
+              {
+                "ref": "1 Coríntios 9:23",
+                "text": "Faço tudo isso para espalhar as boas-novas e participar de suas bênçãos."
+              },
+              {
+                "ref": "2 Coríntios 4:5",
+                "text": "Não andamos por aí falando de nós mesmos, mas proclamamos que Jesus Cristo é Senhor e que nós mesmos somos servos de vocês por causa de Jesus."
+              },
+              {
+                "ref": "Colossenses 3:16",
+                "text": "Que a mensagem a respeito de Cristo, em toda a sua riqueza, preencha a vida de vocês. Ensinem e aconselhem uns aos outros com toda a sabedoria. Cantem a Deus salmos, hinos e cânticos espirituais com o coração agradecido."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "Graça, misericórdia e paz que vêm de Deus, o Pai, e de Jesus Cristo, o Filho do Pai, estarão conosco, os que vivemos na verdade e no amor.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Zacarias 8:19",
+                "text": "“Assim diz o SENHOR dos Exércitos: Os jejuns habituais que vocês têm observado no quarto mês, bem como no quinto, no sétimo e no décimo mês, chegaram ao fim. Eles se tornarão festas de alegria e celebração para o povo de..."
+              },
+              {
+                "ref": "Romanos 1:7",
+                "text": "Escrevo a todos vocês que estão em Roma, amados por Deus e chamados para ser seu povo santo. Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz."
+              },
+              {
+                "ref": "Gálatas 5:6",
+                "text": "Pois, em Cristo Jesus, não há benefício algum em ser ou não circuncidado. O que importa é a fé que se expressa pelo amor."
+              },
+              {
+                "ref": "1 Timóteo 1:2",
+                "text": "escrevo esta carta a Timóteo, meu verdadeiro filho na fé. Que Deus, o Pai, e Cristo Jesus, nosso Senhor, lhe deem graça, misericórdia e paz."
+              }
+            ]
           }
         ]
       },
@@ -33,49 +84,185 @@
             "number": 4,
             "text": "Fiquei muito feliz por encontrar alguns de seus filhos e ver que estão vivendo de acordo com a verdade, conforme o Pai ordenou.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Oséias 14:9",
+                "text": "Quem for sábio, entenda estas coisas; quem tiver discernimento, ouça com atenção. Os caminhos do SENHOR são retos, e neles andam os justos. Mas, nesses mesmos caminhos, os pecadores tropeçam e caem."
+              },
+              {
+                "ref": "Malaquias 2:6",
+                "text": "Transmitiram ao povo a verdade das leis que receberam de mim. Não mentiram nem enganaram; andaram comigo, vivendo de modo pacífico e justo, e desviaram muitos do pecado."
+              },
+              {
+                "ref": "Gálatas 2:14",
+                "text": "Quando vi que não estavam seguindo a verdade das boas-novas, disse a Pedro diante de todos: “Se você, que é judeu de nascimento, vive como gentio, e não como judeu, por que agora obriga esses gentios a viverem como judeus?"
+              },
+              {
+                "ref": "Efésios 5:2",
+                "text": "Vivam em amor, seguindo o exemplo de Cristo, que nos amou e se entregou por nós como oferta e sacrifício de aroma agradável a Deus."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Agora, senhora, peço-lhe que amemos uns aos outros. Não se trata de um novo mandamento; nós o temos desde o princípio.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "João 13:34",
+                "text": "Por isso, agora eu lhes dou um novo mandamento: Amem uns aos outros. Assim como eu os amei, vocês devem amar uns aos outros."
+              },
+              {
+                "ref": "Gálatas 5:22",
+                "text": "Mas o Espírito produz este fruto: amor, alegria, paz, paciência, amabilidade, bondade, fidelidade,"
+              },
+              {
+                "ref": "Efésios 5:2",
+                "text": "Vivam em amor, seguindo o exemplo de Cristo, que nos amou e se entregou por nós como oferta e sacrifício de aroma agradável a Deus."
+              },
+              {
+                "ref": "1 Tessalonicenses 4:9",
+                "text": "Não precisamos lhes escrever sobre a importância do amor fraternal, pois o próprio Deus os ensinou a amarem uns aos outros."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "O amor consiste em fazer o que Deus nos ordenou, e ele ordenou que amemos uns aos outros, como vocês ouviram desde o princípio.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "João 14:15",
+                "text": "“Se vocês me amam, obedeçam a meus mandamentos."
+              },
+              {
+                "ref": "Romanos 13:8",
+                "text": "Não devam nada a ninguém, a não ser o amor de uns pelos outros. Quem ama seu próximo cumpre os requisitos da lei de Deus."
+              },
+              {
+                "ref": "Gálatas 5:13",
+                "text": "Porque vocês, irmãos, foram chamados para viver em liberdade. Não a usem, porém, para satisfazer sua natureza humana. Ao contrário, usem-na para servir uns aos outros em amor."
+              },
+              {
+                "ref": "1 João 2:5",
+                "text": "Mas quem obedece à palavra de Deus mostra que o amor que vem dele está se aperfeiçoando em sua vida. Desse modo, sabemos que estamos nele."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "Digo isso porque muitos enganadores têm ido pelo mundo afora, negando que Jesus Cristo veio em corpo humano. Quem age assim é o enganador e o anticristo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "João 1:14",
+                "text": "Assim, a Palavra se tornou ser humano, carne e osso, e habitou entre nós. Ele era cheio de graça e verdade. E vimos sua glória, a glória do Filho único do Pai."
+              },
+              {
+                "ref": "1 Timóteo 3:16",
+                "text": "Sem dúvida, este é o grande segredo de nossa fé: Cristo foi revelado em corpo humano, justificado pelo Espírito, visto por anjos, anunciado às nações, crido em todo o mundo e levado para o céu em glória."
+              },
+              {
+                "ref": "2 Pedro 2:1",
+                "text": "Contudo, assim como surgiram falsos profetas entre o povo de Israel, também surgirão falsos mestres entre vocês. Eles ensinarão astutamente heresias destrutivas e até negarão o Mestre que os resgatou, trazendo sobre si mesmos destruição repentina."
+              },
+              {
+                "ref": "1 João 2:18",
+                "text": "Filhinhos, chegou a hora final. Vocês ouviram que o anticristo está por vir, e muitos anticristos já apareceram. Por isso sabemos que chegou a hora final."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Tenham cuidado para não perder aquilo que nos esforçamos tanto para conseguir. Sejam diligentes a fim de receber a recompensa completa.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Daniel 12:3",
+                "text": "Os sábios brilharão intensamente como o esplendor do céu, e os que conduzem muitos à justiça resplandecerão como estrelas, para sempre."
+              },
+              {
+                "ref": "Mateus 24:4",
+                "text": "Jesus respondeu: “Não deixem que ninguém os engane,"
+              },
+              {
+                "ref": "Marcos 13:5",
+                "text": "Jesus respondeu: “Não deixem que ninguém os engane,"
+              },
+              {
+                "ref": "Lucas 19:19",
+                "text": "“‘Muito bem!’, disse o rei. ‘Você governará cinco cidades.’"
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Quem se desvia deste ensino não tem ligação alguma com Deus, mas quem permanece no ensino de Cristo tem ligação com o Pai e também com o Filho.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 11:27",
+                "text": "“Meu Pai me confiou todas as coisas. Ninguém conhece verdadeiramente o Filho, a não ser o Pai, e ninguém conhece verdadeiramente o Pai, a não ser o Filho e aqueles a quem o Filho escolhe revelá-lo."
+              },
+              {
+                "ref": "Lucas 10:22",
+                "text": "“Meu Pai me confiou todas as coisas. Ninguém conhece verdadeiramente o Filho, a não ser o Pai, e ninguém conhece verdadeiramente o Pai, a não ser o Filho e aqueles a quem o Filho escolhe revelá-lo”."
+              },
+              {
+                "ref": "João 5:23",
+                "text": "para que todos honrem o Filho como honram o Pai. Quem não honra o Filho certamente não honra o Pai, que o enviou."
+              },
+              {
+                "ref": "Atos 2:42",
+                "text": "Todos se dedicavam de coração ao ensino dos apóstolos, à comunhão, ao partir do pão e à oração."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "Se alguém for a suas reuniões e não ensinar a verdade de Cristo, não o convidem a entrar em sua casa, nem lhe deem nenhum tipo de apoio.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 24:12",
+                "text": "Então o servo orou: “Ó SENHOR, Deus do meu senhor Abraão, por favor, dá-me sucesso hoje e sê bondoso com o meu senhor Abraão."
+              },
+              {
+                "ref": "Salmos 129:8",
+                "text": "Que ninguém que passar por eles diga: “O SENHOR os abençoe; nós os abençoamos em nome do SENHOR”."
+              },
+              {
+                "ref": "Romanos 16:17",
+                "text": "E agora, irmãos, peço-lhes que tomem cuidado com aqueles que causam divisões e perturbam a fé, ensinando coisas contrárias ao que vocês aprenderam. Fiquem longe deles."
+              },
+              {
+                "ref": "1 Coríntios 5:11",
+                "text": "O que eu queria dizer era que vocês não devem se associar a alguém que afirma ser irmão mas vive em imoralidade sexual, ou é avarento, ou adora ídolos, ou insulta as pessoas, ou é bêbado ou explora os outros. Nem ao menos comam com gente assim."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Quem apoia esse tipo de pessoa torna-se cúmplice de suas obras malignas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 50:18",
+                "text": "Quando vê ladrões, aprova o que fazem e passa seu tempo com adúlteros."
+              },
+              {
+                "ref": "Efésios 5:11",
+                "text": "Não participem dos feitos inúteis do mal e da escuridão; antes, mostrem sua reprovação expondo-os à luz."
+              },
+              {
+                "ref": "1 Timóteo 5:22",
+                "text": "Não se apresse em nomear um líder. Não participe dos pecados alheios. Mantenha-se puro."
+              },
+              {
+                "ref": "Apocalipse 18:4",
+                "text": "Então ouvi outra voz do céu, que disse: “Saiam dela, meu povo! Não participem de seus pecados, ou serão castigados com ela."
+              }
+            ]
           }
         ]
       },
@@ -86,13 +273,39 @@
             "number": 12,
             "text": "Tenho muito mais a lhes dizer, mas não quero fazê-lo com papel e tinta, pois espero visitá-los em breve e conversar com vocês pessoalmente. Então nossa alegria será completa.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Números 12:8",
+                "text": "Falo com ele face a face, claramente, e não por meio de enigmas; ele vê a forma do SENHOR. Como vocês ousaram criticar meu servo Moisés?”."
+              },
+              {
+                "ref": "João 15:11",
+                "text": "Eu lhes disse estas coisas para que fiquem repletos da minha alegria. Sim, sua alegria transbordará!"
+              },
+              {
+                "ref": "Romanos 15:24",
+                "text": "Planejo ir à Espanha e, quando for, espero passar por Roma. E, depois de ter desfrutado um pouco de sua companhia, vocês poderão me ajudar com a viagem."
+              },
+              {
+                "ref": "1 Coríntios 16:5",
+                "text": "Eu os visitarei depois de ir à Macedônia, pois devo passar por lá."
+              }
+            ]
           },
           {
             "number": 13,
             "text": "Saudações dos filhos de sua irmã5 escolhida. 1 1.1a Ou o ancião. 2 1.1b Ou à igreja escolhida e a seus membros. 3 1. Ou Agora, igreja. 4 1. Alguns manuscritos trazem vocês se esforçaram. 5 1. Ou membros de sua igreja irmã.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Pedro 5:13",
+                "text": "Aquela que está na Babilônia, escolhida assim como vocês, lhes envia saudações, e também meu filho Marcos."
+              },
+              {
+                "ref": "2 João 1:1",
+                "text": "Eu, o presbítero, escrevo à senhora escolhida e a seus filhos, a quem amo na verdade, como fazem todos os que conhecem a verdade,"
+              }
+            ]
           }
         ]
       }

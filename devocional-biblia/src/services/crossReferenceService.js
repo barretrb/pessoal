@@ -873,11 +873,12 @@ export const crossReferenceService = {
     const key = `${cleanBook} ${ch}:${vNum}`;
 
     let canonical = CANONICAL_CROSS_REFERENCES[key] || [];
-    // Fallback contextual por capítulo se o versículo específico não possuir entrada individual
-    if (canonical.length === 0 && CANONICAL_CHAPTER_THEMES[`${cleanBook} ${ch}`]) {
+    const native = Array.isArray(nativeRefs) ? nativeRefs : [];
+
+    // Fallback contextual por capítulo se nem o versículo canônico nem o nativo tiverem entradas
+    if (canonical.length === 0 && native.length === 0 && CANONICAL_CHAPTER_THEMES[`${cleanBook} ${ch}`]) {
       canonical = CANONICAL_CHAPTER_THEMES[`${cleanBook} ${ch}`];
     }
-    const native = Array.isArray(nativeRefs) ? nativeRefs : [];
 
     // Mescla garantindo unicidade pela referência bíblica
     const seenRefs = new Set();

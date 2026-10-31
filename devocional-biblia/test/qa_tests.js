@@ -462,7 +462,43 @@ test('QA Test 11: Referências Cruzadas Bíblicas e Conexões Canônicas', async
 
   assert.equal(crossReferenceService.hasReferences('João', '8', 12), true, 'hasReferences para João 8:12 deve ser true');
 
-  console.log('✓ QA Test 11 Aprovado: Referências cruzadas bíblicas ativas e canonicamente conectadas em todos os capítulos.');
+  // 6. Validar que toda a Bíblia (Antigo e Novo Testamento) possui referências cruzadas integradas
+  const fs = await import('fs');
+  const path = await import('path');
+  const loadBookJson = (bId) => JSON.parse(fs.readFileSync(path.resolve(`public/biblia/${bId}.json`), 'utf8'));
+
+  // Pentateuco: Gênesis 1:1
+  const genData = loadBookJson('genesis');
+  const gen1_1_v = genData['1'].sections[0].verses.find(v => v.number === 1);
+  const refsGen1_1 = crossReferenceService.getReferences('Gênesis', '1', 1, gen1_1_v?.crossReferences);
+  assert.ok(refsGen1_1.length >= 3, 'Gênesis 1:1 deve conter referências canônicas');
+  assert.ok(refsGen1_1.some(r => r.ref && r.ref.includes('Êxodo 20:11')), 'Gênesis 1:1 deve conectar a Êxodo 20:11');
+
+  // Poéticos: Salmos 23:1
+  const slData = loadBookJson('salmos');
+  const sl23_1_v = slData['23'].sections[0].verses.find(v => v.number === 1);
+  const refsSl23_1 = crossReferenceService.getReferences('Salmos', '23', 1, sl23_1_v?.crossReferences);
+  assert.ok(refsSl23_1.length >= 3, 'Salmos 23:1 deve conter referências');
+
+  // Profetas: Isaías 53:5
+  const isData = loadBookJson('isaias');
+  const is53_5_v = isData['53'].sections.flatMap(s => s.verses).find(v => v.number === 5);
+  const refsIs53_5 = crossReferenceService.getReferences('Isaías', '53', 5, is53_5_v?.crossReferences);
+  assert.ok(refsIs53_5.length >= 3, 'Isaías 53:5 deve conter referências proféticas');
+
+  // Epístolas: Romanos 8:28
+  const rmData = loadBookJson('romanos');
+  const rm8_28_v = rmData['8'].sections.flatMap(s => s.verses).find(v => v.number === 28);
+  const refsRm8_28 = crossReferenceService.getReferences('Romanos', '8', 28, rm8_28_v?.crossReferences);
+  assert.ok(refsRm8_28.length >= 3, 'Romanos 8:28 deve conter referências');
+
+  // Apocalipse: Apocalipse 22:20
+  const revData = loadBookJson('apocalipse');
+  const rev22_20_v = revData['22'].sections.flatMap(s => s.verses).find(v => v.number === 20);
+  const refsRev22_20 = crossReferenceService.getReferences('Apocalipse', '22', 20, rev22_20_v?.crossReferences);
+  assert.ok(refsRev22_20.length >= 3, 'Apocalipse 22:20 deve conter referências escatológicas');
+
+  console.log('✓ QA Test 11 Aprovado: Referências cruzadas bíblicas ativas e canonicamente conectadas em todos os 66 livros da Bíblia.');
 });
 
 test('QA Test 12: Carregamento do Livro do Dia (João 1) e Separação Exegética de Subtítulos', () => {

@@ -10,13 +10,42 @@
             "number": 1,
             "text": "Eu, Paulo, prisioneiro de Cristo Jesus, escrevo esta carta, junto com nosso irmão Timóteo, a Filemom, nosso amado colaborador, 2à irmã Áfia, a Arquipo, nosso companheiro na luta, e à igreja que se reúne em sua casa.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Coríntios 3:9",
+                "text": "Pois nós somos colaboradores de Deus, e vocês são lavoura de Deus e edifício de Deus."
+              },
+              {
+                "ref": "2 Coríntios 1:1",
+                "text": "Eu, Paulo, chamado pela vontade de Deus para ser apóstolo de Cristo Jesus, escrevo esta carta, com nosso irmão Timóteo, à igreja de Deus em Corinto e a todo o seu povo santo em toda a Acaia."
+              },
+              {
+                "ref": "Efésios 3:1",
+                "text": "Quando penso em tudo isso, eu, Paulo, prisioneiro de Cristo Jesus para o bem de vocês, gentios..."
+              },
+              {
+                "ref": "Filipenses 2:25",
+                "text": "Enquanto isso, penso que devo enviar-lhes de volta Epafrodito. Ele é um verdadeiro irmão, colaborador e companheiro de lutas, que também foi mensageiro de vocês para me ajudar em minha necessidade."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 1:7",
+                "text": "Escrevo a todos vocês que estão em Roma, amados por Deus e chamados para ser seu povo santo. Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz."
+              },
+              {
+                "ref": "2 Coríntios 13:14"
+              },
+              {
+                "ref": "Efésios 1:2",
+                "text": "Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz."
+              }
+            ]
           }
         ]
       },
@@ -27,25 +56,93 @@
             "number": 4,
             "text": "Sempre dou graças a meu Deus por você em minhas orações,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 1:8",
+                "text": "Antes de tudo, quero dizer que, por meio de Jesus Cristo, agradeço a meu Deus por todos vocês, pois sua fé nele é comentada em todo o mundo."
+              },
+              {
+                "ref": "Efésios 1:16",
+                "text": "não deixo de agradecer a Deus por vocês. Em minhas orações,"
+              },
+              {
+                "ref": "Filipenses 1:3",
+                "text": "Todas as vezes que penso em vocês, dou graças a meu Deus."
+              },
+              {
+                "ref": "Colossenses 1:3",
+                "text": "Sempre oramos por vocês e damos graças a Deus, o Pai de nosso Senhor Jesus Cristo,"
+              }
+            ]
           },
           {
             "number": 5,
             "text": "pois ouço com frequência de sua fé no Senhor Jesus e de seu amor por todo o povo santo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 16:3",
+                "text": "Os que são fiéis aqui na terra são os verdadeiros heróis; tenho prazer na companhia deles."
+              },
+              {
+                "ref": "Atos 9:39",
+                "text": "Então Pedro voltou com eles e, assim que chegou, foi levado para a sala do andar superior. O cômodo estava cheio de viúvas que choravam e lhe mostravam os vestidos e outras roupas que Dorcas havia feito para elas."
+              },
+              {
+                "ref": "Romanos 12:13",
+                "text": "Quando membros do povo santo passarem por necessidade, ajudem com prontidão. Estejam sempre dispostos a praticar a hospitalidade."
+              },
+              {
+                "ref": "1 Coríntios 16:1",
+                "text": "Quanto à pergunta sobre o dinheiro que vocês estão coletando para o povo santo, sigam as mesmas instruções que dei às igrejas na Galácia."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Oro para que você ponha em prática a comunhão que vem da fé, à medida que entender e experimentar todas as coisas boas que temos em Cristo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 5:16",
+                "text": "Da mesma forma, suas boas obras devem brilhar, para que todos as vejam e louvem seu Pai, que está no céu.”"
+              },
+              {
+                "ref": "1 Coríntios 14:25",
+                "text": "Ao ouvirem, os pensamentos secretos deles serão revelados, e eles cairão de joelhos e adorarão a Deus, declarando: “De fato, Deus está aqui no meio de vocês”."
+              },
+              {
+                "ref": "2 Coríntios 9:12",
+                "text": "Logo, duas coisas boas resultarão desse ministério de auxílio: as necessidades do povo santo serão supridas, e eles expressarão com alegria sua gratidão a Deus."
+              },
+              {
+                "ref": "Filipenses 1:9",
+                "text": "Oro para que o amor de vocês transborde cada vez mais e que continuem a crescer em conhecimento e discernimento."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "Seu amor, meu irmão, tem me dado muita alegria e conforto, pois sua bondade tem revigorado o coração do povo santo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Coríntios 7:4",
+                "text": "Tenho muita confiança em vocês, e de vocês tenho muito orgulho. Vocês têm me encorajado grandemente e me proporcionado alegria, apesar de todas as nossas aflições."
+              },
+              {
+                "ref": "1 Tessalonicenses 1:3",
+                "text": "Quando oramos por vocês diante de nosso Deus e Pai, relembramos seu trabalho fiel, seus atos em amor e sua firme esperança em nosso Senhor Jesus Cristo."
+              },
+              {
+                "ref": "2 Timóteo 1:16",
+                "text": "Que o Senhor demonstre misericórdia a Onesíforo e sua família, pois muitas vezes me animou em suas visitas e nunca se envergonhou por eu estar na prisão."
+              },
+              {
+                "ref": "2 João 1:4",
+                "text": "Fiquei muito feliz por encontrar alguns de seus filhos e ver que estão vivendo de acordo com a verdade, conforme o Pai ordenou."
+              }
+            ]
           }
         ]
       },
@@ -56,91 +153,334 @@
             "number": 8,
             "text": "Por isso, ainda que pudesse exigir em Cristo que você faça o que é certo,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Coríntios 3:12",
+                "text": "Uma vez que o novo sistema nos dá tal esperança, podemos falar com grande coragem."
+              },
+              {
+                "ref": "Efésios 5:4",
+                "text": "As histórias obscenas, as conversas tolas e as piadas vulgares não são para vocês. Em vez disso, sejam agradecidos a Deus."
+              },
+              {
+                "ref": "1 Tessalonicenses 2:2",
+                "text": "Sabem como fomos maltratados e quanto sofremos em Filipos, antes de chegarmos aí. E, no entanto, com confiança em nosso Deus, anunciamos a vocês as boas-novas de Deus, apesar de grande oposição."
+              },
+              {
+                "ref": "2 Coríntios 10:1",
+                "text": "Agora eu, Paulo, apelo a vocês com a mansidão e a bondade de Cristo, mesmo ciente de que vocês me consideram fraco pessoalmente e duro apenas a distância, quando lhes escrevo."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "prefiro pedir com base no amor — eu, Paulo, já velho e agora prisioneiro de Cristo Jesus.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Juízes 21:22",
+                "text": "E quando os pais e os irmãos delas vierem se queixar a nós, diremos: ‘Por favor, tenham compaixão. Deixem que fiquem com suas filhas, pois não encontramos esposas para todos eles quando destruímos Jabes-Gileade. E vocês..."
+              },
+              {
+                "ref": "Salmos 71:9",
+                "text": "Não me rejeites agora, em minha velhice; não me abandones quando me faltam as forças."
+              },
+              {
+                "ref": "Provérbios 16:31",
+                "text": "Os cabelos brancos são coroa de glória, para quem andou nos caminhos da justiça."
+              },
+              {
+                "ref": "Isaías 46:4",
+                "text": "Serei o seu Deus por toda a sua vida, até que seus cabelos fiquem brancos. Eu os criei e cuidarei de vocês, eu os carregarei e os salvarei."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "Suplico que demonstre bondade a meu filho Onésimo. Tornei- me pai dele na fé quando estava aqui na prisão.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Samuel 9:1",
+                "text": "Certo dia, Davi perguntou: “Resta alguém da família de Saul, a quem eu possa mostrar bondade por causa de Jônatas?”."
+              },
+              {
+                "ref": "Marcos 9:17",
+                "text": "Um dos homens na multidão respondeu: “Mestre, eu lhe trouxe meu filho, que está possuído por um espírito impuro que não o deixa falar."
+              },
+              {
+                "ref": "1 Coríntios 4:15",
+                "text": "Pois, ainda que tivessem dez mil mestres em Cristo, vocês não têm muitos pais, pois eu me tornei seu pai espiritual em Cristo Jesus por meio das boas-novas que lhes anunciei."
+              },
+              {
+                "ref": "Gálatas 4:19",
+                "text": "Ó meus filhos queridos, sinto como se estivesse passando outra vez pelas dores de parto por sua causa, e elas continuarão até que Cristo seja plenamente desenvolvido em vocês."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Onésimo não lhe foi de muita utilidade no passado, mas agora é muito útil para nós dois.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jó 30:1",
+                "text": "“Agora, porém, os mais jovens zombam de mim, rapazes cujos pais não são dignos de correr com meus cães pastores."
+              },
+              {
+                "ref": "Mateus 25:30",
+                "text": "Agora lancem este servo inútil para fora, na escuridão, onde haverá choro e ranger de dentes’.”"
+              },
+              {
+                "ref": "Lucas 15:24",
+                "text": "pois este meu filho estava morto e voltou à vida. Estava perdido e foi achado!’. E começaram a festejar."
+              },
+              {
+                "ref": "Romanos 3:12",
+                "text": "Todos se desviaram, todos se tornaram inúteis. Ninguém faz o bem, nem um sequer.”"
+              }
+            ]
           },
           {
             "number": 12,
             "text": "Eu o envio de volta a você, e com ele vai meu próprio coração.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 13:6",
+                "text": "“Se alguém o instigar secretamente, seja seu irmão, seu filho ou filha, sua esposa querida ou seu amigo mais chegado, e disser: ‘Vamos adorar outros deuses!’, deuses que nem você nem seus antepassados conheceram,"
+              },
+              {
+                "ref": "2 Samuel 16:11",
+                "text": "Então Davi disse a Abisai e a todos os seus servos: “Meu próprio filho procura me matar. Não teria este parente de Saul ainda mais motivos para fazer o mesmo? Deixem-no em paz. Que ele me amaldiçoe, pois foi o SENHOR que o mandou."
+              },
+              {
+                "ref": "Jeremias 31:20",
+                "text": "“Acaso Israel não continua a ser meu filho querido?”, diz o SENHOR. “Tenho de castigá-lo com frequência, mas ainda assim o amo. Por isso meu coração anseia por ele e dele certamente terei misericórdia."
+              },
+              {
+                "ref": "Mateus 6:14",
+                "text": "“Seu Pai celestial os perdoará se perdoarem aqueles que pecam contra vocês."
+              }
+            ]
           },
           {
             "number": 13,
             "text": "Gostaria de mantê-lo aqui comigo enquanto estou preso por anunciar as boas-novas; assim ele me ajudaria em seu lugar.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Coríntios 16:17",
+                "text": "Estou muito contente com a vinda de Estéfanas, Fortunato e Acaico. Eles proveram a ajuda que vocês, por não estarem aqui, não puderam me dar."
+              },
+              {
+                "ref": "Efésios 3:1",
+                "text": "Quando penso em tudo isso, eu, Paulo, prisioneiro de Cristo Jesus para o bem de vocês, gentios..."
+              },
+              {
+                "ref": "Filipenses 1:7",
+                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas- novas."
+              },
+              {
+                "ref": "Efésios 4:1",
+                "text": "Portanto, como prisioneiro no Senhor, suplico-lhes que vivam de modo digno do chamado que receberam."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "Mas eu nada quis fazer sem seu consentimento. Meu desejo era que você ajudasse de boa vontade, e não por obrigação.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Crônicas 29:17",
+                "text": "Eu sei, meu Deus, que examinas nosso coração e te regozijas quando nele encontras integridade. Tu sabes que fiz tudo isso com boas intenções e vi teu povo entregar ofertas voluntariamente e com alegria."
+              },
+              {
+                "ref": "Salmos 110:3",
+                "text": "Quando você for à guerra, seu povo o servirá de livre vontade. Você está envolto em vestes santas, e sua força será renovada a cada dia, como o orvalho da manhã."
+              },
+              {
+                "ref": "1 Coríntios 9:7",
+                "text": "Que soldado precisa pagar pelas próprias despesas? Que agricultor planta uma videira e não tem direito de comer de seus frutos? Que pastor cuida de um rebanho e não tem permissão de tomar de seu leite?"
+              },
+              {
+                "ref": "2 Coríntios 1:24",
+                "text": "Isso não significa que queremos controlar vocês, dizendo-lhes como exercer sua fé. Nosso desejo é trabalhar com vocês para que tenham alegria, pois é pela fé que permanecem firmes."
+              }
+            ]
           },
           {
             "number": 15,
             "text": "Ao que parece, você perdeu Onésimo por algum tempo para ganhá-lo de volta para sempre.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 45:5",
+                "text": "Agora, não fiquem aflitos ou furiosos uns com os outros por terem me vendido para cá. Foi Deus quem me enviou adiante de vocês para lhes preservar a vida."
+              },
+              {
+                "ref": "Salmos 76:10",
+                "text": "A rebeldia humana resultará em tua glória, pois tu a usas como arma."
+              },
+              {
+                "ref": "Isaías 20:6",
+                "text": "Dirão: ‘Se isso aconteceu com aqueles que eram nossa esperança de socorro, o que será de nós? Confiávamos que eles nos protegeriam do rei da Assíria!’”."
+              },
+              {
+                "ref": "Atos 4:28",
+                "text": "Tudo que fizeram, porém, havia sido decidido de antemão pela tua vontade."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "Ele já não é um escravo para você. É mais que um escravo: é um irmão amado, especialmente para mim. Agora ele será muito mais importante para você, como pessoa e como irmão no Senhor.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 23:8",
+                "text": "“Não deixem que pessoa alguma os chame de ‘Rabi’, pois vocês têm somente um mestre, e todos vocês são irmãos."
+              },
+              {
+                "ref": "Atos 9:17",
+                "text": "Ananias foi e encontrou Saulo. Ao impor as mãos sobre ele, disse: “Irmão Saulo, o Senhor Jesus, que lhe apareceu no caminho para cá, me enviou para que você volte a enxergar e fique cheio do Espírito Santo”."
+              },
+              {
+                "ref": "1 Coríntios 7:22",
+                "text": "E, se você era escravo quando o Senhor o chamou, agora é livre no Senhor. E, se você era livre quando o Senhor o chamou, agora é escravo de Cristo."
+              },
+              {
+                "ref": "Gálatas 4:28",
+                "text": "E vocês, irmãos, são filhos da promessa, como Isaque."
+              }
+            ]
           },
           {
             "number": 17,
             "text": "Portanto, se me considera seu companheiro na fé, receba-o como receberia a mim.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 10:40",
+                "text": "“Quem recebe vocês recebe a mim, e quem me recebe também recebe aquele que me enviou."
+              },
+              {
+                "ref": "Atos 16:15",
+                "text": "Foi batizada, junto com sua família, e pediu que nos hospedássemos em sua casa. “Se concordam que creio de fato no Senhor, venham ficar em minha casa”, disse ela, e insistiu até que aceitamos."
+              },
+              {
+                "ref": "2 Coríntios 8:23",
+                "text": "Se alguém lhes perguntar a respeito de Tito, digam que ele é meu colaborador, que trabalha comigo para ajudar vocês. Quanto aos irmãos que o acompanham, foram enviados pelas igrejas e trazem honra a Cristo."
+              },
+              {
+                "ref": "Efésios 3:6",
+                "text": "E este é o segredo revelado: tanto os gentios como os judeus que creem nas boas-novas participam igualmente das riquezas herdadas pelos filhos de Deus. Ambos são membros do mesmo corpo e desfrutam a promessa em Cristo Jesus."
+              }
+            ]
           },
           {
             "number": 18,
             "text": "Se ele o prejudicou de alguma forma ou se lhe deve algo, cobre de mim.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 53:4",
+                "text": "Apesar disso, foram as nossas enfermidades que ele tomou sobre si, e foram as nossas doenças que pesaram sobre ele. Pensamos que seu sofrimento era castigo de Deus, castigo por sua culpa."
+              }
+            ]
           },
           {
             "number": 19,
             "text": "Eu, Paulo, escrevo de próprio punho: Eu pagarei. E não mencionarei que você me deve sua própria vida.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Coríntios 4:15",
+                "text": "Pois, ainda que tivessem dez mil mestres em Cristo, vocês não têm muitos pais, pois eu me tornei seu pai espiritual em Cristo Jesus por meio das boas-novas que lhes anunciei."
+              },
+              {
+                "ref": "2 Coríntios 3:2",
+                "text": "Vocês mesmos são nossa carta, escrita em nosso coração, para ser conhecida e lida por todos!"
+              },
+              {
+                "ref": "Gálatas 5:2",
+                "text": "Prestem atenção! Eu, Paulo, lhes digo: se vocês se deixarem ser circuncidados, Cristo de nada lhes servirá."
+              },
+              {
+                "ref": "1 Timóteo 1:2",
+                "text": "escrevo esta carta a Timóteo, meu verdadeiro filho na fé. Que Deus, o Pai, e Cristo Jesus, nosso Senhor, lhe deem graça, misericórdia e paz."
+              }
+            ]
           },
           {
             "number": 20,
             "text": "Sim, meu irmão, faça-me essa gentileza no Senhor. Reanime meu coração em Cristo!",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Coríntios 2:2",
+                "text": "Pois, se eu lhes causar tristeza, quem me alegrará? Certamente não serão aqueles a quem entristeci."
+              },
+              {
+                "ref": "Filipenses 1:8",
+                "text": "Deus sabe do meu amor por vocês e da saudade que tenho de todos, com a mesma compaixão de Cristo Jesus."
+              },
+              {
+                "ref": "1 Tessalonicenses 2:19",
+                "text": "Afinal, o que nos dá esperança e alegria? E qual será nossa magnífica recompensa e coroa diante do Senhor Jesus quando ele voltar? Serão vocês!"
+              },
+              {
+                "ref": "Hebreus 13:17",
+                "text": "Obedeçam a seus líderes e façam o que disserem. O trabalho deles é cuidar de sua alma, e disso prestarão contas. Deem-lhes motivo para trabalhar com alegria, e não com tristeza, pois isso certamente não beneficiaria vocês."
+              }
+            ]
           },
           {
             "number": 21,
             "text": "Escrevo esta carta certo de que você fará o que lhe peço, e até mais.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Coríntios 2:3",
+                "text": "Esse foi o motivo de eu ter escrito como o fiz, para que, quando eu for, não seja entristecido por aqueles que deveriam me alegrar. Sem dúvida, vocês sabem que minha alegria vem do fato de vocês estarem alegres."
+              },
+              {
+                "ref": "Gálatas 5:10",
+                "text": "Confio que o Senhor os guardará de crer em falsos ensinamentos. Aquele que os perturbar, seja ele quem for, será julgado."
+              },
+              {
+                "ref": "2 Tessalonicenses 3:4",
+                "text": "E confiamos no Senhor que vocês estão fazendo e continuarão a fazer aquilo que lhes ordenamos."
+              },
+              {
+                "ref": "2 Coríntios 7:16",
+                "text": "Fico muito feliz por poder ter plena confiança em vocês."
+              }
+            ]
           },
           {
             "number": 22,
             "text": "Por favor, prepare um quarto para mim, pois espero que as orações de vocês sejam respondidas e eu possa voltar a visitá-los em breve.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Atos 28:23",
+                "text": "Então marcaram uma data e, nesse dia, muita gente foi à casa de Paulo. Ele explicou e testemunhou sobre o reino de Deus e, desde cedo até a noite, procurou convencê-los acerca de Jesus com base na lei de Moisés e nos livros dos profetas."
+              },
+              {
+                "ref": "Romanos 15:24",
+                "text": "Planejo ir à Espanha e, quando for, espero passar por Roma. E, depois de ter desfrutado um pouco de sua companhia, vocês poderão me ajudar com a viagem."
+              },
+              {
+                "ref": "2 Coríntios 1:11",
+                "text": "E vocês nos têm ajudado ao orar por nós. Então muitos darão graças porque Deus, em sua bondade, respondeu a tantas orações feitas em nosso favor."
+              },
+              {
+                "ref": "Filipenses 1:19",
+                "text": "pois sei que, com suas orações e o auxílio do Espírito de Jesus Cristo, isso resultará em minha libertação."
+              }
+            ]
           }
         ]
       },
@@ -151,19 +491,70 @@
             "number": 23,
             "text": "Epafras, meu companheiro de prisão em Cristo Jesus, manda lembranças.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 16:7",
+                "text": "Saúdem Andrônico e Júnias, meus compatriotas judeus que estiveram comigo na prisão. São muito respeitados entre os apóstolos e se tornaram seguidores de Cristo antes de mim."
+              },
+              {
+                "ref": "Colossenses 1:7",
+                "text": "Vocês aprenderam as boas-novas por meio de Epafras, nosso amado colaborador. Ele é servo fiel de Cristo e nos tem ajudado em favor de vocês."
+              },
+              {
+                "ref": "Colossenses 4:10",
+                "text": "Aristarco, que é prisioneiro comigo, lhes envia saudações, e assim também Marcos, primo de Barnabé. Conforme vocês foram instruídos, se Marcos passar por aí, recebam-no bem."
+              },
+              {
+                "ref": "Colossenses 4:12",
+                "text": "Epafras, que é um de vocês e servo de Cristo Jesus, lhes envia saudações. Ele sempre ora por vocês com fervor, pedindo que sejam maduros e plenamente confiantes de que praticam toda a vontade de Deus."
+              }
+            ]
           },
           {
             "number": 24,
             "text": "Marcos, Aristarco, Demas e Lucas, meus colaboradores, também enviam saudações.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Atos 12:12",
+                "text": "Quando Pedro se deu conta disso, foi à casa de Maria, mãe de João Marcos, onde muitos estavam reunidos para orar."
+              },
+              {
+                "ref": "2 Coríntios 8:23",
+                "text": "Se alguém lhes perguntar a respeito de Tito, digam que ele é meu colaborador, que trabalha comigo para ajudar vocês. Quanto aos irmãos que o acompanham, foram enviados pelas igrejas e trazem honra a Cristo."
+              },
+              {
+                "ref": "Filipenses 2:25",
+                "text": "Enquanto isso, penso que devo enviar-lhes de volta Epafrodito. Ele é um verdadeiro irmão, colaborador e companheiro de lutas, que também foi mensageiro de vocês para me ajudar em minha necessidade."
+              },
+              {
+                "ref": "Colossenses 4:10",
+                "text": "Aristarco, que é prisioneiro comigo, lhes envia saudações, e assim também Marcos, primo de Barnabé. Conforme vocês foram instruídos, se Marcos passar por aí, recebam-no bem."
+              }
+            ]
           },
           {
             "number": 25,
             "text": "Que a graça de nosso Senhor Jesus Cristo esteja com o espírito de vocês. 1 1. Onésimo significa “útil”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 16:20",
+                "text": "Em breve o Deus da paz esmagará Satanás sob os pés de vocês. Que a graça de nosso Senhor Jesus seja com vocês."
+              },
+              {
+                "ref": "Gálatas 6:18",
+                "text": "Irmãos, que a graça de nosso Senhor Jesus Cristo esteja com o espírito de vocês. Amém."
+              },
+              {
+                "ref": "2 Timóteo 4:22",
+                "text": "Que o Senhor esteja com seu espírito. E que a graça esteja com todos vocês."
+              },
+              {
+                "ref": "Romanos 16:23",
+                "text": "Gaio os saúda. Estou hospedado em sua casa, onde ele também tem recebido toda a igreja. Erasto, tesoureiro da cidade, bem como nosso irmão Quarto, lhes enviam saudações."
+              }
+            ]
           }
         ]
       }

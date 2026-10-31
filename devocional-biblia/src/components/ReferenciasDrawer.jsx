@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { X, Link2, BookOpen, Copy, Check } from 'lucide-react';
 
 export default function ReferenciasDrawer({ isOpen, onClose, verseKey, references }) {
+  const [copiedIdx, setCopiedIdx] = useState(null);
+
   if (!isOpen) return null;
+
+  const handleCopy = (item, idx) => {
+    const textToCopy = item.text ? `${item.ref} - "${item.text}"` : item.ref;
+    if (navigator?.clipboard?.writeText) {
+      navigator.clipboard.writeText(textToCopy);
+      setCopiedIdx(idx);
+      setTimeout(() => setCopiedIdx(null), 2000);
+    }
+  };
 
   return (
     <div className="fixed inset-0 z-50 overflow-hidden bg-black/40 backdrop-blur-2xs transition-opacity">
@@ -28,6 +39,7 @@ export default function ReferenciasDrawer({ isOpen, onClose, verseKey, reference
             <button
               onClick={onClose}
               className="p-1.5 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 rounded-lg"
+              title="Fechar painel"
             >
               <X className="w-5 h-5" />
             </button>
@@ -39,17 +51,36 @@ export default function ReferenciasDrawer({ isOpen, onClose, verseKey, reference
               references.map((item, idx) => (
                 <div 
                   key={idx}
-                  className="rounded-2xl p-4 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-800/40 space-y-2"
+                  className="rounded-2xl p-4 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-800/40 space-y-2 hover:border-amber-400/50 dark:hover:border-amber-600/50 transition-colors"
                 >
                   <div className="flex items-center justify-between">
                     <span className="font-bold text-xs uppercase tracking-wider text-amber-700 dark:text-amber-400 flex items-center space-x-1.5">
                       <BookOpen className="w-3.5 h-3.5" />
                       <span>{item.ref}</span>
                     </span>
+
+                    <button
+                      onClick={() => handleCopy(item, idx)}
+                      className="p-1 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 rounded transition-colors"
+                      title="Copiar referência e texto"
+                    >
+                      {copiedIdx === idx ? (
+                        <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                      ) : (
+                        <Copy className="w-3.5 h-3.5" />
+                      )}
+                    </button>
                   </div>
-                  <p className="font-scripture text-sm text-zinc-800 dark:text-zinc-200 italic leading-relaxed">
-                    "{item.text}"
-                  </p>
+
+                  {item.text ? (
+                    <p className="font-scripture text-sm text-zinc-800 dark:text-zinc-200 italic leading-relaxed">
+                      "{item.text}"
+                    </p>
+                  ) : (
+                    <p className="text-xs text-zinc-500 dark:text-zinc-400 italic">
+                      Consulte esta passagem para aprofundar seu estudo bíblico.
+                    </p>
+                  )}
                 </div>
               ))
             ) : (

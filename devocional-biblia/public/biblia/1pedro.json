@@ -10,13 +10,46 @@
             "number": 1,
             "text": "Eu, Pedro, apóstolo de Jesus Cristo, escrevo esta carta aos escolhidos que vivem como estrangeiros nas províncias de Ponto, Galácia, Capadócia, Ásia e Bitínia.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 26:33",
+                "text": "Eu os espalharei entre as nações e empunharei minha espada contra vocês. A terra ficará desolada, e as cidades, em ruínas."
+              },
+              {
+                "ref": "Deuteronômio 4:27",
+                "text": "O SENHOR os dispersará entre as nações, onde apenas alguns de vocês sobreviverão."
+              },
+              {
+                "ref": "Ester 3:8",
+                "text": "Então Hamã foi ao rei Xerxes e disse: “Há certo povo espalhado por todas as províncias de seu império que se mantém separado dos demais. Eles têm leis diferentes das leis dos outros povos e não obedecem às leis do rei. P..."
+              },
+              {
+                "ref": "Salmos 44:11",
+                "text": "Entregaste-nos como ovelhas para o matadouro e espalhaste-nos entre as nações."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "Deus, o Pai, os conhecia de antemão e os escolheu, e o Espírito os santificou para a obediência e a purificação pelo sangue de Jesus Cristo. Que vocês tenham cada vez mais graça e paz.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 7:6",
+                "text": "Vocês são um povo santo que pertence ao SENHOR, seu Deus. Dentre todos os povos da terra, o SENHOR, seu Deus, os escolheu para serem sua propriedade especial."
+              },
+              {
+                "ref": "Isaías 55:7",
+                "text": "Que os perversos mudem de conduta e deixem de lado até mesmo a ideia de fazer o mal. Que se voltem para o SENHOR, para que ele tenha misericórdia deles; sim, voltem-se para nosso Deus, pois ele os perdoará generosamente."
+              },
+              {
+                "ref": "Daniel 4:1"
+              },
+              {
+                "ref": "Mateus 24:22",
+                "text": "De fato, se o tempo de calamidade não tivesse sido limitado, ninguém sobreviveria, mas esse tempo foi limitado por causa dos escolhidos."
+              }
+            ]
           }
         ]
       },
@@ -27,7 +60,24 @@
             "number": 3,
             "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 34:6",
+                "text": "O SENHOR passou diante de Moisés, proclamando: “Javé! O SENHOR! O Deus de compaixão e misericórdia! Sou lento para me irar e cheio de amor e fidelidade."
+              },
+              {
+                "ref": "1 Reis 8:15",
+                "text": "Em seguida, orou: “Louvado seja o SENHOR, o Deus de Israel, que cumpriu o que prometeu a meu pai, Davi, pois lhe disse: 16‘Desde o dia em que tirei Israel, meu povo, do Egito, não escolhi nenhuma cidade das tribos de Isr..."
+              },
+              {
+                "ref": "1 Crônicas 29:10",
+                "text": "Então Davi louvou o SENHOR na presença de toda a comunidade: “Ó SENHOR, Deus de nosso antepassado Israel,186 louvado sejas para sempre!"
+              },
+              {
+                "ref": "2 Crônicas 31:8",
+                "text": "Quando Ezequias e seus oficiais viram esses montões, agradeceram ao SENHOR e a seu povo, Israel."
+              }
+            ]
           }
         ]
       },
@@ -38,55 +88,200 @@
             "number": 4,
             "text": "e uma herança imperecível, pura e imaculada, que não muda nem se deteriora, guardada para vocês no céu.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 31:19",
+                "text": "Grande é a bondade que reservaste para os que te temem! Tu a concedes aos que em ti se refugiam e os abençoas à vista de todos."
+              },
+              {
+                "ref": "Isaías 40:7",
+                "text": "O capim seca e as flores murcham quando o SENHOR sopra sobre elas; o mesmo acontece aos seres humanos."
+              },
+              {
+                "ref": "Mateus 25:34",
+                "text": "“Então o Rei dirá aos que estiverem à sua direita: ‘Venham, vocês que são abençoados por meu Pai. Recebam como herança o reino que ele lhes preparou desde a criação do mundo."
+              },
+              {
+                "ref": "Atos 20:32",
+                "text": "“E, agora, eu os entrego a Deus e à mensagem de sua graça que pode edificá-los e dar-lhes uma herança junto com todos que ele separou para si."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Por meio da fé que vocês têm, Deus os protege com seu poder até que recebam essa salvação, pronta para ser revelada nos últimos tempos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Samuel 2:9",
+                "text": "“Ele protegerá os fiéis, mas os perversos desaparecerão nas trevas, pois ninguém vencerá só pela força."
+              },
+              {
+                "ref": "Jó 19:25",
+                "text": "“Quanto a mim, sei que meu Redentor vive e que um dia, por fim, ele se levantará sobre a terra."
+              },
+              {
+                "ref": "Salmos 37:23",
+                "text": "O SENHOR dirige os passos do justo; ele se agrada de quem anda em seu caminho."
+              },
+              {
+                "ref": "Provérbios 2:8",
+                "text": "Guarda os caminhos dos justos e protege seus fiéis por onde andam."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Portanto, alegrem-se com isso, ainda que agora, por algum tempo, vocês precisem suportar muitas provações.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Samuel 2:1",
+                "text": "Então Ana orou: “Meu coração se alegra no SENHOR; o SENHOR me fortaleceu!7 Agora dou risada de meus inimigos; sim, eu me alegro porque me libertaste!"
+              },
+              {
+                "ref": "Jó 9:27",
+                "text": "Se eu decidisse esquecer minhas queixas, deixar de lado a tristeza e exibir um rosto alegre,"
+              },
+              {
+                "ref": "Salmos 9:14",
+                "text": "Salva-me, para que eu te louve às portas de Jerusalém; para que eu me alegre por teu resgate."
+              },
+              {
+                "ref": "Isaías 12:2",
+                "text": "Vejam, Deus veio me salvar; confiarei nele e não terei medo. O SENHOR Deus é minha força e meu cântico; ele me deu vitória!”."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "Elas mostrarão que sua fé é autêntica. Como o fogo prova e purifica o ouro, assim sua fé está sendo experimentada, e ela é muito mais preciosa que o simples ouro. Isso resultará em louvor, glória e honra no dia em que Jesus Cristo for revelado.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Números 5:28",
+                "text": "Mas, se ela não tiver se contaminado e estiver pura, não sofrerá castigo e poderá ter filhos."
+              },
+              {
+                "ref": "1 Samuel 2:30",
+                "text": "“Portanto, assim declara o SENHOR, Deus de Israel: Prometi que membros de sua família, da tribo de Levi, sempre seriam meus sacerdotes. Agora, porém, declara o SENHOR: Isso não acontecerá! Honrarei aqueles que me honram..."
+              },
+              {
+                "ref": "Jó 23:10",
+                "text": "“E, no entanto, ele sabe aonde vou; quando ele me provar, sairei puro como o ouro."
+              },
+              {
+                "ref": "Salmos 66:10",
+                "text": "Tu nos puseste à prova, ó Deus, e nos purificaste como prata."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Embora nunca o tenham visto, vocês o amam. E, ainda que não o vejam agora, creem nele e se regozijam com alegria inexprimível e gloriosa,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Habacuque 3:17",
+                "text": "Ainda que a figueira não floresça e não haja frutos nas videiras, ainda que a colheita de azeitonas não dê em nada e os campos fiquem vazios e improdutivos, ainda que os rebanhos morram nos campos e os currais fiquem vazios,"
+              },
+              {
+                "ref": "Mateus 10:37",
+                "text": "“Quem ama seu pai ou sua mãe mais que a mim não é digno de mim; e quem ama seu filho ou sua filha mais que a mim não é digno de mim."
+              },
+              {
+                "ref": "João 8:42",
+                "text": "Jesus lhes disse: “Se Deus fosse seu Pai, vocês me amariam, porque eu venho até vocês da parte de Deus. Não estou aqui por minha própria conta, mas ele me enviou."
+              },
+              {
+                "ref": "Atos 16:34",
+                "text": "Depois, levou-os para sua casa e lhes serviu uma refeição, e ele e toda a sua família se alegraram porque creram em Deus."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "pois estão alcançando o alvo de sua fé, a sua salvação.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 6:22",
+                "text": "Agora, porém, estão livres do poder do pecado e se tornaram escravos de Deus. Fazem aquilo que conduz à santidade e resulta na vida eterna."
+              },
+              {
+                "ref": "Hebreus 11:13",
+                "text": "Todos eles morreram na fé e, embora não tenham recebido todas as coisas que lhes foram prometidas, as avistaram de longe e de bom grado as aceitaram. Reconheceram que eram estrangeiros e peregrinos neste mundo."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "Até mesmo os profetas queriam saber mais sobre essa salvação e investigaram a respeito, quando profetizaram acerca da graça preparada para vocês.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 49:10",
+                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes,172 até que venha aquele a quem pertence,173 aquele que todas as nações honrarão."
+              },
+              {
+                "ref": "Provérbios 2:4",
+                "text": "Busque-os como a prata, procure-os como a tesouros escondidos."
+              },
+              {
+                "ref": "Daniel 2:44",
+                "text": "“Enquanto esses reis estiverem no poder, o Deus dos céus estabelecerá um reino que jamais será destruído ou conquistado. Reduzirá os outros reinos a nada e permanecerá para sempre."
+              },
+              {
+                "ref": "Ageu 2:7",
+                "text": "Sacudirei todas as nações, e os tesouros das nações virão para este templo. Encherei este lugar de glória, diz o SENHOR dos Exércitos."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Buscavam descobrir a que tempo ou ocasião se referia o Espírito de Cristo, que neles estava, ao predizer o sofrimento de Cristo e sua grande glória posterior.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 3:15",
+                "text": "Farei que haja inimizade entre você e a mulher, e entre a sua descendência e o descendente dela. Ele lhe ferirá12 a cabeça, e você lhe ferirá o calcanhar”."
+              },
+              {
+                "ref": "Salmos 22:1",
+                "text": "Meu Deus, meu Deus, por que me abandonaste? Por que estás tão distante de meus gemidos por socorro?"
+              },
+              {
+                "ref": "Isaías 9:6",
+                "text": "Pois um menino nos nasceu, um filho nos foi dado. O governo estará sobre seus ombros, e ele será chamado de Maravilhoso Conselheiro, Deus Poderoso, Pai Eterno e Príncipe da Paz."
+              },
+              {
+                "ref": "Daniel 2:34",
+                "text": "Enquanto o rei observava, uma pedra foi cortada de uma montanha, mas não por mãos humanas. Ela atingiu os pés de ferro e barro e os despedaçou."
+              }
+            ]
           },
           {
             "number": 12,
             "text": "Foi-lhes dito que suas mensagens não eram para eles, mas para vocês. E, agora, essas boas-novas lhes foram anunciadas por aqueles que pregaram pelo poder do Espírito Santo enviado do céu. É algo tão maravilhoso que até os anjos anseiam observar.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 25:20",
+                "text": "Os querubins ficarão de frente um para o outro, com o rosto voltado para a tampa da arca. Estenderão as asas sobre a tampa para protegê-la."
+              },
+              {
+                "ref": "Provérbios 1:23",
+                "text": "Venham e ouçam minhas advertências; abrirei meu coração para vocês e os tornarei sábios."
+              },
+              {
+                "ref": "Isaías 11:2",
+                "text": "E o Espírito do SENHOR estará sobre ele, o Espírito de sabedoria e discernimento, o Espírito de conselho e poder, o Espírito de conhecimento e temor do SENHOR."
+              },
+              {
+                "ref": "Daniel 2:19",
+                "text": "Naquela noite, o segredo foi revelado a Daniel numa visão."
+              }
+            ]
           }
         ]
       },
@@ -97,79 +292,299 @@
             "number": 13,
             "text": "Portanto, preparem sua mente para a ação e exercitem o autocontrole. Depositem toda a sua esperança na graça que receberão quando Jesus Cristo for revelado.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 12:11",
+                "text": "“Estas são as instruções para quando fizerem a refeição. Estejam vestidos para a viagem, de sandálias nos pés e cajado na mão. Façam a refeição apressadamente, pois é a Páscoa do SENHOR."
+              },
+              {
+                "ref": "1 Reis 18:46",
+                "text": "Então o SENHOR concedeu força extraordinária a Elias. Ele prendeu a capa no cinto108 e correu à frente do carro de Acabe até a entrada de Jezreel."
+              },
+              {
+                "ref": "2 Reis 4:29",
+                "text": "Eliseu disse a Geazi: “Prepare-se para viajar; pegue meu cajado e vá! Não cumprimente ninguém pelo caminho. Quando chegar, coloque o cajado sobre o rosto do menino”."
+              },
+              {
+                "ref": "Jó 38:3",
+                "text": "Prepare-se como um guerreiro, pois lhe farei algumas perguntas, e você me responderá."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "Sejam filhos obedientes. Não voltem ao seu antigo modo de viver, quando satisfaziam os próprios desejos e viviam na ignorância.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 27:10",
+                "text": "Obedeça, portanto, ao SENHOR, seu Deus, cumprindo todos estes mandamentos e decretos que hoje lhe dou”."
+              },
+              {
+                "ref": "Atos 17:30",
+                "text": "“No passado, Deus não levou em conta a ignorância das pessoas acerca dessas coisas, mas agora ele ordena que todos, em todo lugar, se arrependam."
+              },
+              {
+                "ref": "Romanos 6:4",
+                "text": "Pois, pelo batismo, morremos e fomos sepultados com Cristo. E, assim como ele foi ressuscitado dos mortos pelo poder glorioso do Pai, agora nós também podemos viver uma nova vida."
+              },
+              {
+                "ref": "Efésios 2:2",
+                "text": "nos quais costumavam viver, como o resto do mundo, obedecendo ao comandante dos poderes do mundo invisível. Ele é o espírito que opera no coração dos que se recusam a obedecer."
+              }
+            ]
           },
           {
             "number": 15,
             "text": "Agora, porém, sejam santos em tudo que fizerem, como é santo aquele que os chamou.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 6:3",
+                "text": "Diziam em alta voz uns aos outros: “Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está cheia de sua glória!”"
+              },
+              {
+                "ref": "Mateus 5:48",
+                "text": "Portanto, sejam perfeitos, como perfeito é seu Pai celestial.”"
+              },
+              {
+                "ref": "Lucas 1:74",
+                "text": "Prometeu livrar-nos de nossos inimigos para o servirmos sem medo,"
+              },
+              {
+                "ref": "Romanos 8:28",
+                "text": "E sabemos que Deus faz todas as coisas cooperarem para o bem daqueles que o amam e que são chamados de acordo com seu propósito."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "Pois as Escrituras dizem: “Sejam santos, porque eu sou santo”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 11:44",
+                "text": "pois eu sou o SENHOR, seu Deus. Consagrem-se e sejam santos, pois eu sou santo. Não se contaminem com nenhum desses animais pequenos que rastejam pelo chão."
+              },
+              {
+                "ref": "Amós 3:3",
+                "text": "Acaso duas pessoas podem andar juntas se não estiverem de acordo?"
+              },
+              {
+                "ref": "Levítico 19:2",
+                "text": "“Dê as seguintes instruções a toda a comunidade de Israel. Sejam santos, pois eu, o SENHOR, seu Deus, sou santo."
+              },
+              {
+                "ref": "Levítico 20:7",
+                "text": "Portanto, consagrem-se e sejam santos, pois eu sou o SENHOR, seu Deus."
+              }
+            ]
           },
           {
             "number": 17,
             "text": "Lembrem-se de que o Pai celestial, a quem vocês oram, não mostra favorecimento. Ele os julgará de acordo com suas ações. Por isso, vivam com temor durante seu tempo como residentes na terra.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 47:9",
+                "text": "Jacó respondeu: “Tenho andado por este mundo há 130 árduos anos. Comparada à vida de meus antepassados, minha vida foi curta”."
+              },
+              {
+                "ref": "Deuteronômio 10:17",
+                "text": "“Pois o SENHOR, seu Deus, é Deus dos deuses e Senhor dos senhores. É o grande Deus, o Deus poderoso e temível, que não mostra parcialidade e não aceita subornos."
+              },
+              {
+                "ref": "1 Crônicas 29:15",
+                "text": "Somos estrangeiros e peregrinos na terra, como nossos antepassados antes de nós. Nossos dias na terra são como uma sombra, passam rápido, sem deixar vestígio."
+              },
+              {
+                "ref": "2 Crônicas 19:7",
+                "text": "Temam o SENHOR e julguem com integridade, pois o SENHOR, nosso Deus, não tolera injustiça, nem parcialidade, nem suborno”."
+              }
+            ]
           },
           {
             "number": 18,
             "text": "Pois vocês sabem que o resgate para salvá-los do estilo de vida vazio que herdaram de seus antepassados não foi pago com simples ouro ou prata, que perdem seu valor,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Números 7:15",
+                "text": "Apresentou ainda um novilho, um carneiro e um cordeiro de um ano como holocausto,"
+              },
+              {
+                "ref": "Salmos 39:6",
+                "text": "Somos apenas sombras que se movem, e nossas inquietações não dão em nada. Acumulamos riquezas sem saber quem as gastará."
+              },
+              {
+                "ref": "Jeremias 4:11",
+                "text": "Naquele dia, o SENHOR dirá ao povo de Jerusalém: “Meu povo querido, do deserto sopra um vento abrasador, e não uma brisa suave para separar a palha dos cereais."
+              },
+              {
+                "ref": "Amós 2:4",
+                "text": "Assim diz o SENHOR: “Os habitantes de Judá pecaram repetidamente; não deixarei que fiquem impunes! Rejeitaram a lei do SENHOR e não obedeceram a seus decretos. Foram desviados pelas mesmas mentiras que enganaram seus antepassados."
+              }
+            ]
           },
           {
             "number": 19,
             "text": "mas com o sangue precioso de Cristo, o Cordeiro de Deus, sem pecado nem mancha.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 12:5",
+                "text": "O animal escolhido deverá ser um cordeiro ou um cabrito de um ano, sem defeito algum."
+              },
+              {
+                "ref": "Números 7:39",
+                "text": "Apresentou ainda um novilho, um carneiro e um cordeiro de um ano como holocausto,"
+              },
+              {
+                "ref": "Isaías 53:7",
+                "text": "Ele foi oprimido e humilhado, mas não disse uma só palavra. Foi levado como cordeiro para o matadouro; como ovelha muda diante dos tosquiadores, não abriu a boca."
+              },
+              {
+                "ref": "Daniel 9:24",
+                "text": "“Um período de setenta semanas de sete foi decretado ao seu povo e à sua cidade santa para dar fim à rebelião, acabar com o pecado, fazer expiação por sua culpa, trazer justiça eterna, confirmar a visão profética e ungir o lugar santíssimo."
+              }
+            ]
           },
           {
             "number": 20,
             "text": "Ele foi escolhido antes da criação do mundo, mas agora, nestes últimos tempos, foi revelado por causa de vocês.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 3:15",
+                "text": "Farei que haja inimizade entre você e a mulher, e entre a sua descendência e o descendente dela. Ele lhe ferirá12 a cabeça, e você lhe ferirá o calcanhar”."
+              },
+              {
+                "ref": "Provérbios 8:23",
+                "text": "Fui designada desde eras passadas, logo no início, antes de a terra existir."
+              },
+              {
+                "ref": "Miqueias 5:2"
+              },
+              {
+                "ref": "Atos 3:25",
+                "text": "Vocês são descendentes desses profetas e estão incluídos na aliança que Deus fez com seus antepassados ao dizer a Abraão: ‘Por meio de sua descendência, todas as famílias da terra serão abençoadas’."
+              }
+            ]
           },
           {
             "number": 21,
             "text": "Por meio de Cristo, vocês vieram a crer em Deus. Depositam sua fé e esperança em Deus porque ele ressuscitou Cristo dos mortos e lhe deu grande glória.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 42:5",
+                "text": "Por que você está tão abatida, ó minha alma? Por que está tão triste? Espere em Deus! Ainda voltarei a louvá-lo, meu Salvador e"
+              },
+              {
+                "ref": "Jeremias 17:7",
+                "text": "“Feliz é quem confia no SENHOR, cuja esperança é o SENHOR."
+              },
+              {
+                "ref": "Mateus 28:18",
+                "text": "Jesus se aproximou deles e disse: “Toda a autoridade no céu e na terra me foi dada."
+              },
+              {
+                "ref": "João 3:34",
+                "text": "Pois ele foi enviado por Deus e fala as palavras de Deus, porque Deus lhe dá, sem limites, o Espírito."
+              }
+            ]
           },
           {
             "number": 22,
             "text": "Uma vez que vocês foram purificados de seus pecados quando obedeceram à verdade, tenham como alvo agora o amor fraternal sem fingimento. Amem uns aos outros sinceramente, de todo o coração.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "João 13:34",
+                "text": "Por isso, agora eu lhes dou um novo mandamento: Amem uns aos outros. Assim como eu os amei, vocês devem amar uns aos outros."
+              },
+              {
+                "ref": "Atos 6:7",
+                "text": "Assim, a mensagem de Deus continuou a se espalhar. O número de discípulos se multiplicava em Jerusalém, e muitos sacerdotes também se converteram."
+              },
+              {
+                "ref": "Romanos 1:5",
+                "text": "Por meio dele recebemos a graça e a autoridade, como apóstolos, de chamar os gentios em toda parte a crer nele e lhe obedecer, em honra de seu nome."
+              },
+              {
+                "ref": "2 Coríntios 6:6",
+                "text": "Mostramos quem somos por nossa pureza, nosso entendimento, nossa paciência e nossa bondade, pelo Espírito Santo que vive em nós e por nosso amor sincero."
+              }
+            ]
           },
           {
             "number": 23,
             "text": "Pois vocês nasceram de novo, não para uma vida que pode ser destruída, mas para uma vida que durará para sempre, porque vem da eterna e viva palavra de Deus.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 11:37",
+                "text": "Se o cadáver cair sobre sementes a serem plantadas no campo, ainda assim as sementes serão consideradas puras."
+              },
+              {
+                "ref": "Jeremias 23:28",
+                "text": "“Que esses falsos profetas relatem seus sonhos, mas que meus verdadeiros mensageiros proclamem fielmente todas as minhas palavras; há diferença entre palha e trigo!"
+              },
+              {
+                "ref": "Malaquias 2:3",
+                "text": "Castigarei seus descendentes, esfregarei em seu rosto o esterco dos sacrifícios que vocês ofereceram em suas festas sagradas e os lançarei no monte de esterco."
+              },
+              {
+                "ref": "Mateus 24:35",
+                "text": "O céu e a terra desaparecerão, mas as minhas palavras jamais desaparecerão."
+              }
+            ]
           },
           {
             "number": 24,
             "text": "Pois, “Os seres humanos são como o capim; sua beleza é como as flores do campo. O capim seca e as flores murcham,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Reis 19:26",
+                "text": "Por isso, seus habitantes perdem as forças e ficam assustados e envergonhados. São frágeis como a relva, indefesos como brotos verdes e tenros. São como capim que surge no telhado, queimado antes mesmo de crescer."
+              },
+              {
+                "ref": "Salmos 37:2",
+                "text": "Pois, como o capim, logo secarão e, como a grama verde, logo murcharão."
+              },
+              {
+                "ref": "Isaías 40:6",
+                "text": "Uma voz disse: “Clame!”. Eu perguntei: “O que devo clamar?”. “Anuncie que os seres humanos são como capim; sua beleza passa depressa, como as flores do campo."
+              },
+              {
+                "ref": "1 João 2:17",
+                "text": "E este mundo passa, e com ele tudo que as pessoas tanto desejam. Mas quem faz o que agrada a Deus vive para sempre."
+              }
+            ]
           },
           {
             "number": 25,
             "text": "mas a palavra do Senhor permanece para sempre”. E essa palavra é a mensagem das boas-novas que lhes foi anunciada.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 102:12",
+                "text": "Tu, porém, SENHOR, reinarás para sempre; teu nome será lembrado por todas as gerações."
+              },
+              {
+                "ref": "Isaías 40:8",
+                "text": "O capim seca e as flores murcham, mas a palavra de nosso Deus permanece para sempre.”"
+              },
+              {
+                "ref": "Mateus 5:18",
+                "text": "Eu lhes digo a verdade: enquanto o céu e a terra existirem, nem a menor letra ou o menor traço da lei desaparecerá até que todas as coisas se cumpram."
+              },
+              {
+                "ref": "Lucas 16:17",
+                "text": "É mais fácil o céu e a terra desaparecerem que ser anulado até o menor traço da lei de Deus."
+              }
+            ]
           }
         ]
       }
@@ -186,19 +601,70 @@
             "number": 1,
             "text": "Portanto, livrem-se de toda maldade, todo engano, toda hipocrisia, toda inveja e todo tipo de difamação.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Samuel 18:8",
+                "text": "Saul ficou indignado com essas palavras. “O que é isso?”, disse ele. “Atribuem a Davi dezenas de milhares, e a mim, apenas milhares? Só falta o declararem rei!”"
+              },
+              {
+                "ref": "Jó 36:13",
+                "text": "Pois os ímpios são cheios de ressentimento; mesmo quando Deus os castiga, não clamam por socorro."
+              },
+              {
+                "ref": "Salmos 32:2",
+                "text": "Sim, como é feliz aquele cuja culpa o SENHOR não leva em conta, cuja consciência é sempre sincera!"
+              },
+              {
+                "ref": "Provérbios 3:31",
+                "text": "Não tenha inveja dos violentos, nem imite sua conduta."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "Como bebês recém-nascidos, desejem intensamente o puro leite espiritual, para que, por meio dele, cresçam e experimentem plenamente a salvação,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Samuel 23:5",
+                "text": "“Acaso não foi minha família que Deus escolheu? Sim, ele fez comigo uma aliança sem fim, bem definida e garantida nos mínimos detalhes; ele me dará segurança e êxito."
+              },
+              {
+                "ref": "Jó 17:9",
+                "text": "Os justos prosseguem em seu caminho, e os de mãos limpas se fortalecem cada vez mais."
+              },
+              {
+                "ref": "Salmos 19:7",
+                "text": "A lei do SENHOR é perfeita e revigora a alma. Os decretos do SENHOR são dignos de confiança e dão sabedoria aos ingênuos."
+              },
+              {
+                "ref": "Provérbios 4:18",
+                "text": "O caminho dos justos é como a primeira luz do amanhecer, que brilha cada vez mais até o dia pleno clarear."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "agora que provaram da bondade do Senhor.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 9:10",
+                "text": "Quem conhece teu nome confia em ti, pois tu, SENHOR, não abandonas quem te busca."
+              },
+              {
+                "ref": "Zacarias 9:17",
+                "text": "Ah, como serão belos e maravilhosos! A fartura de trigo dará vigor aos rapazes, e o vinho novo fará florescer as moças."
+              },
+              {
+                "ref": "Hebreus 6:5",
+                "text": "que provaram a bondade da palavra de Deus e os poderes do mundo por vir,"
+              },
+              {
+                "ref": "Salmos 24:8",
+                "text": "Quem é o Rei da glória? O SENHOR, forte e poderoso. O SENHOR, invencível nas batalhas."
+              }
+            ]
           }
         ]
       },
@@ -209,55 +675,207 @@
             "number": 4,
             "text": "Vocês têm se aproximado de Cristo, a pedra viva. As pessoas o rejeitaram, mas Deus o escolheu para lhe conceder grande honra.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 118:22",
+                "text": "A pedra que os construtores rejeitaram se tornou a pedra angular."
+              },
+              {
+                "ref": "Isaías 8:14",
+                "text": "ele o manterá seguro. Mas, para Israel e Judá, ele será pedra de tropeço, rocha que os faz cair. Para o povo de Jerusalém, será armadilha e laço."
+              },
+              {
+                "ref": "Jeremias 3:22",
+                "text": "“Meus filhos rebeldes”, diz o SENHOR, “voltem para mim, e eu curarei a rebeldia de seu coração.” “Sim, nós voltaremos”, o povo responde, “pois tu és o SENHOR, nosso Deus."
+              },
+              {
+                "ref": "Daniel 2:34",
+                "text": "Enquanto o rei observava, uma pedra foi cortada de uma montanha, mas não por mãos humanas. Ela atingiu os pés de ferro e barro e os despedaçou."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "E vocês também são pedras vivas, com as quais um templo espiritual é edificado. Além disso, são sacerdotes santos. Por meio de Jesus Cristo, oferecem sacrifícios espirituais que agradam a Deus.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 18:2",
+                "text": "Não terão herança entre os israelitas. O SENHOR é sua herança, conforme lhes prometeu."
+              },
+              {
+                "ref": "1 Reis 7:11",
+                "text": "Por cima dos alicerces foram colocados blocos de pedra de alta qualidade, cortados sob medida, e vigas de cedro."
+              },
+              {
+                "ref": "Salmos 50:14",
+                "text": "Ofereçam a Deus seu sacrifício de gratidão e cumpram os votos que fizerem ao Altíssimo."
+              },
+              {
+                "ref": "Isaías 61:6",
+                "text": "Vocês serão chamados de sacerdotes do SENHOR, ministros de nosso Deus. Das riquezas das nações se alimentarão e se orgulharão de possuírem os tesouros delas."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Como dizem as Escrituras: “Ponho em Sião uma pedra angular, escolhida para grande honra; quem confiar nela jamais será envergonhado”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 40:14",
+                "text": "Sejam envergonhados e humilhados os que procuram me matar. Voltem atrás em desonra os que se alegram com a minha desgraça."
+              },
+              {
+                "ref": "Isaías 28:16",
+                "text": "Por isso, assim diz o SENHOR Soberano: “Vejam, ponho em Sião uma pedra angular, uma pedra firme e testada! É uma pedra angular preciosa, sobre a qual se pode construir com segurança; quem crer jamais será abalado."
+              },
+              {
+                "ref": "Daniel 10:21",
+                "text": "Mas agora lhe direi o que está escrito no Livro da Verdade. (Ninguém me ajuda na luta contra esses príncipes, exceto Miguel, o príncipe de vocês."
+              },
+              {
+                "ref": "Zacarias 10:4",
+                "text": "De Judá virão a pedra angular, a estaca da tenda, o arco para a batalha, e todos os governantes."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "Sim, vocês, os que creem, reconhecem a honra que lhe é devida. Mas, para os que não creem, “A pedra que os construtores rejeitaram se tornou a pedra angular”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 118:22",
+                "text": "A pedra que os construtores rejeitaram se tornou a pedra angular."
+              },
+              {
+                "ref": "Isaías 28:5",
+                "text": "Naquele dia, o próprio SENHOR dos Exércitos será a coroa gloriosa de Israel. Será o orgulho e a alegria do remanescente de seu povo."
+              },
+              {
+                "ref": "Ageu 2:7",
+                "text": "Sacudirei todas as nações, e os tesouros das nações virão para este templo. Encherei este lugar de glória, diz o SENHOR dos Exércitos."
+              },
+              {
+                "ref": "Zacarias 4:7",
+                "text": "Nada será obstáculo para Zorobabel, nem mesmo uma grande montanha; diante dele ela se tornará uma planície! E, quando Zorobabel colocar no lugar a última pedra do templo, o povo gritará: ‘É pela graça! É pela graça!’”."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "E também, “Ele é a pedra de tropeço, rocha que faz as pessoas caírem”. Tropeçam porque não obedecem à palavra e, portanto, deparam com o destino planejado para elas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 9:16",
+                "text": "Mas eu o poupei a fim de lhe mostrar meu poder e propagar meu nome por toda a terra."
+              },
+              {
+                "ref": "Jó 23:14",
+                "text": "Portanto, fará comigo tudo que planejou; ele controla meu destino."
+              },
+              {
+                "ref": "Isaías 8:14",
+                "text": "ele o manterá seguro. Mas, para Israel e Judá, ele será pedra de tropeço, rocha que os faz cair. Para o povo de Jerusalém, será armadilha e laço."
+              },
+              {
+                "ref": "Lucas 2:34",
+                "text": "Então Simeão os abençoou e disse a Maria, a mãe do bebê: “Este menino está destinado a provocar a queda de muitos em Israel, mas também a ascensão de tantos outros. Foi enviado como sinal de Deus, mas muitos resistirão a ele."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Vocês, porém, são povo escolhido, reino de sacerdotes, nação santa, propriedade exclusiva de Deus. Assim, vocês podem mostrar às pessoas como é admirável aquele que os chamou das trevas para sua maravilhosa luz.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 19:5",
+                "text": "Agora, se me obedecerem e cumprirem minha aliança, serão meu tesouro especial dentre todos os povos da terra, pois toda a terra me pertence."
+              },
+              {
+                "ref": "Deuteronômio 4:20",
+                "text": "Lembrem-se de que o SENHOR os libertou do Egito, uma fornalha de fundir ferro, para torná-los seu povo e sua propriedade especial, como hoje se vê."
+              },
+              {
+                "ref": "Salmos 22:30",
+                "text": "Nossos filhos também o servirão, as gerações futuras ouvirão sobre o Senhor."
+              },
+              {
+                "ref": "Isaías 9:2"
+              }
+            ]
           },
           {
             "number": 10,
             "text": "“Antes vocês não tinham identidade como povo, agora são povo de Deus. Antes não haviam recebido misericórdia, agora receberam misericórdia de Deus.”10",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Samuel 7:24",
+                "text": "Fizeste de Israel teu próprio povo para sempre, e tu, ó SENHOR, te tornaste seu Deus."
+              },
+              {
+                "ref": "Oséias 1:9",
+                "text": "E o SENHOR disse: “Dê-lhe o nome de Lo-Ami, ‘Não Meu Povo’, pois Israel não é meu povo, e eu não sou seu Deus. 103 “Virá o tempo, porém, em que o povo de Israel se tornará como a areia à beira do mar, que não se pode con..."
+              },
+              {
+                "ref": "Romanos 9:25",
+                "text": "A esse respeito, Deus diz na profecia de Oseias: “Chamarei ‘meu povo’ aqueles que não eram meu povo, e amarei aqueles que antes eu não amava”."
+              },
+              {
+                "ref": "1 Coríntios 7:25",
+                "text": "Quanto à pergunta sobre as moças que ainda não se casaram, não tenho para elas um mandamento do Senhor. Em sua misericórdia, porém, o Senhor me deu sabedoria confiável, e eu a compartilharei com vocês."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Amados, eu os advirto, como peregrinos e estrangeiros que são, a manter distância dos desejos carnais que lutam contra a alma.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 21:34",
+                "text": "E Abraão morou na terra dos filisteus como estrangeiro por longo tempo."
+              },
+              {
+                "ref": "Levítico 15:18",
+                "text": "Depois que um homem e uma mulher tiverem relações sexuais, ambos terão de banhar-se com água, e ficarão impuros até o entardecer."
+              },
+              {
+                "ref": "1 Crônicas 29:15",
+                "text": "Somos estrangeiros e peregrinos na terra, como nossos antepassados antes de nós. Nossos dias na terra são como uma sombra, passam rápido, sem deixar vestígio."
+              },
+              {
+                "ref": "Salmos 39:12",
+                "text": "Ouve minha oração, SENHOR! Escuta meus clamores por socorro! Não ignores minhas lágrimas, pois sou como estrangeiro diante de ti, um viajante que está só de passagem, como eram meus antepassados."
+              }
+            ]
           },
           {
             "number": 12,
             "text": "Procurem viver de maneira exemplar entre os que não creem. Assim, mesmo que eles os acusem de praticar o mal, verão seu comportamento correto e darão glória a Deus quando ele julgar o mundo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 13:7",
+                "text": "Logo, surgiram desentendimentos entre os pastores de Abrão e os de Ló. (Naquele tempo, os cananeus e os ferezeus também viviam na terra.)"
+              },
+              {
+                "ref": "Rute 3:14",
+                "text": "Rute ficou deitada aos pés de Boaz até de manhã, mas levantou- se antes de raiar o dia, pois Boaz tinha dito: “Ninguém deve saber que uma mulher esteve na eira”."
+              },
+              {
+                "ref": "Salmos 37:14",
+                "text": "Os perversos puxam suas espadas e preparam seus arcos, para matar o pobre e o oprimido, para massacrar os que são corretos."
+              },
+              {
+                "ref": "Isaías 10:3",
+                "text": "O que farão quando eu os castigar, quando trouxer de uma terra distante calamidade sobre vocês? A quem pedirão ajuda? Onde seus tesouros estarão seguros?"
+              }
+            ]
           }
         ]
       },
@@ -268,31 +886,104 @@
             "number": 13,
             "text": "Por causa do Senhor, submetam-se a todas as autoridades humanas, seja o rei como autoridade máxima,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 17:11",
+                "text": "A pessoa má sempre procura razão para se rebelar, por isso será severamente castigada."
+              },
+              {
+                "ref": "Jeremias 29:7",
+                "text": "Trabalhem pela paz e pela prosperidade da cidade para a qual os deportei. Orem por ela ao SENHOR, pois a prosperidade de vocês depende da prosperidade dela”."
+              },
+              {
+                "ref": "Mateus 22:21",
+                "text": "“De César”, responderam. “Então deem a César o que pertence a César, e deem a Deus o que pertence a Deus”, disse ele."
+              },
+              {
+                "ref": "Marcos 12:17",
+                "text": "“Então deem a César o que pertence a César, e deem a Deus o que pertence a Deus”, disse ele. Sua resposta os deixou muito admirados."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "sejam os oficiais nomeados e enviados por ele para castigar os que fazem o mal e honrar os que fazem o bem.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 13:3",
+                "text": "Pois as autoridades não causam temor naqueles que fazem o que é certo, mas sim nos que fazem o que é errado. Você deseja viver livre do medo das autoridades? Faça o que é certo, e elas o honrarão."
+              }
+            ]
           },
           {
             "number": 15,
             "text": "É da vontade de Deus que, pela prática do bem, vocês calem os ignorantes que os acusam falsamente.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 32:6",
+                "text": "É assim que retribuem ao SENHOR, povo tolo e sem juízo? Não é ele o Pai de vocês, que os criou? Não foi ele que os fez e os estabeleceu?"
+              },
+              {
+                "ref": "Jó 2:10",
+                "text": "Jó respondeu: “Você fala como uma mulher insensata. Aceitaremos da mão de Deus apenas as coisas boas e nunca o mal?”. Em tudo isso, Jó não pecou com seus lábios."
+              },
+              {
+                "ref": "Salmos 5:5",
+                "text": "Os orgulhosos não terão lugar em tua presença, pois odeias todos que praticam o mal."
+              },
+              {
+                "ref": "Provérbios 9:6",
+                "text": "Deixem sua ingenuidade para trás e vivam; andem pelo caminho do discernimento”."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "Pois vocês são livres e, no entanto, são escravos de Deus; não usem sua liberdade como desculpa para fazer o mal.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 23:13",
+                "text": "“Que aflição os espera, mestres da lei e fariseus! Hipócritas! Fecham a porta do reino dos céus na cara das pessoas. Vocês mesmos não entram e não permitem que os outros entrem."
+              },
+              {
+                "ref": "João 8:32",
+                "text": "Então conhecerão a verdade, e a verdade os libertará”."
+              },
+              {
+                "ref": "Romanos 6:18",
+                "text": "Estão livres da escravidão do pecado e se tornaram escravos da justiça."
+              },
+              {
+                "ref": "1 Coríntios 7:22",
+                "text": "E, se você era escravo quando o Senhor o chamou, agora é livre no Senhor. E, se você era livre quando o Senhor o chamou, agora é escravo de Cristo."
+              }
+            ]
           },
           {
             "number": 17,
             "text": "Tratem todos com respeito e amem seus irmãos em Cristo. Temam a Deus e respeitem o rei.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 20:11",
+                "text": "Abraão respondeu: “Pensei comigo: ‘Este é um lugar onde ninguém teme a Deus, e vão me matar para ficarem com minha mulher’."
+              },
+              {
+                "ref": "Êxodo 20:12",
+                "text": "“Honre seu pai e sua mãe. Assim você terá vida longa e plena na terra que o SENHOR, seu Deus, lhe dá."
+              },
+              {
+                "ref": "Levítico 19:32",
+                "text": "“Levantem-se na presença dos idosos e honrem os anciãos. Temam o seu Deus. Eu sou o SENHOR."
+              },
+              {
+                "ref": "1 Samuel 15:30",
+                "text": "Saul implorou novamente: “Sei que pequei! Mas, por favor, pelo menos honre-me diante das autoridades de meu povo e diante de Israel ao voltar comigo, para que eu possa adorar o SENHOR, seu Deus!”."
+              }
+            ]
           }
         ]
       },
@@ -303,49 +994,185 @@
             "number": 18,
             "text": "Vocês, escravos, submetam-se a seu senhor com todo o respeito. Façam o que ele mandar, não apenas se for bondoso e amável, mas até mesmo se for cruel.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 101:4",
+                "text": "Rejeitarei ideias perversas e me manterei afastado de todo mal."
+              },
+              {
+                "ref": "Provérbios 3:32",
+                "text": "Esses perversos são detestáveis para o SENHOR, mas aos justos ele oferece sua amizade."
+              },
+              {
+                "ref": "2 Coríntios 10:1",
+                "text": "Agora eu, Paulo, apelo a vocês com a mansidão e a bondade de Cristo, mesmo ciente de que vocês me consideram fraco pessoalmente e duro apenas a distância, quando lhes escrevo."
+              },
+              {
+                "ref": "Gálatas 5:22",
+                "text": "Mas o Espírito produz este fruto: amor, alegria, paz, paciência, amabilidade, bondade, fidelidade,"
+              }
+            ]
           },
           {
             "number": 19,
             "text": "Porque Deus se agrada de vocês quando, conscientes da vontade dele, suportam com paciência o tratamento injusto.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jó 21:27",
+                "text": "“Sei o que estão pensando, sei dos planos que tramam contra mim. 28‘Onde está a casa dos ricos?’, vocês me dirão. ‘Onde está a casa dos perversos?’"
+              },
+              {
+                "ref": "Salmos 35:19",
+                "text": "Não permitas que meus inimigos traiçoeiros riam de mim, não deixes que me desprezem os que me odeiam sem razão."
+              },
+              {
+                "ref": "Mateus 5:10",
+                "text": "Felizes os perseguidos por causa da justiça, pois o reino dos céus lhes pertence."
+              },
+              {
+                "ref": "Lucas 6:32",
+                "text": "“Se vocês amam apenas aqueles que os amam, que mérito têm? Até os pecadores amam quem os ama."
+              }
+            ]
           },
           {
             "number": 20,
             "text": "Claro que não há mérito algum em ser paciente quando são açoitados por terem feito o mal. Mas, se sofrem por terem feito o bem e suportam com paciência, Deus se agrada de vocês.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 5:10",
+                "text": "Felizes os perseguidos por causa da justiça, pois o reino dos céus lhes pertence."
+              },
+              {
+                "ref": "Marcos 14:65",
+                "text": "Então alguns deles começaram a cuspir em Jesus. Vendaram seus olhos e lhe deram socos. “Profetize para nós!”, zombavam. E os guardas lhe davam tapas enquanto o levavam."
+              },
+              {
+                "ref": "Lucas 6:32",
+                "text": "“Se vocês amam apenas aqueles que os amam, que mérito têm? Até os pecadores amam quem os ama."
+              },
+              {
+                "ref": "Romanos 12:1",
+                "text": "Portanto, irmãos, suplico-lhes que entreguem seu corpo a Deus, por causa de tudo que ele fez por vocês. Que seja um sacrifício vivo e santo, do tipo que Deus considera agradável. Essa é a verdadeira forma de adorá-lo."
+              }
+            ]
           },
           {
             "number": 21,
             "text": "Porque Deus os chamou para fazerem o bem, mesmo que isso resulte em sofrimento, pois Cristo sofreu por vocês. Ele é seu exemplo; sigam seus passos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 85:13",
+                "text": "A justiça vai adiante dele e prepara o caminho para os seus passos."
+              },
+              {
+                "ref": "Mateus 10:38",
+                "text": "Quem se recusa a tomar sua cruz e me seguir não é digno de mim."
+              },
+              {
+                "ref": "Marcos 8:34",
+                "text": "Depois, chamou a multidão e os discípulos e disse: “Se alguém quer ser meu seguidor, negue a si mesmo, tome sua cruz e siga-me."
+              },
+              {
+                "ref": "Lucas 9:23",
+                "text": "Disse ele à multidão: “Se alguém quer ser meu seguidor, negue a si mesmo, tome diariamente sua cruz e siga-me."
+              }
+            ]
           },
           {
             "number": 22,
             "text": "Ele nunca pecou, nem enganou ninguém.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 53:9",
+                "text": "Não havia cometido nenhuma injustiça e jamais havia enganado alguém. Ainda assim, foi sepultado como criminoso, colocado no túmulo de um homem rico."
+              },
+              {
+                "ref": "Mateus 27:4",
+                "text": "dizendo: “Pequei, pois traí um homem inocente”. “Que nos importa?”, retrucaram eles. “Isso é problema seu.”"
+              },
+              {
+                "ref": "Lucas 23:41",
+                "text": "Nós merecemos morrer por nossos crimes, mas este homem não cometeu mal algum”."
+              },
+              {
+                "ref": "João 1:47",
+                "text": "Jesus viu Natanael se aproximar e disse: “Aí está um verdadeiro filho de Israel, um homem totalmente íntegro”."
+              }
+            ]
           },
           {
             "number": 23,
             "text": "Não revidou quando foi insultado, nem ameaçou se vingar quando sofreu, mas deixou seu caso nas mãos de Deus, que sempre julga com justiça.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 18:25",
+                "text": "Claro que não farias tal coisa: destruir o justo com o perverso. Afinal, estarias tratando o justo e o perverso da mesma maneira! Certamente não farias isso! Acaso o Juiz de toda a terra não faria o que é certo?”."
+              },
+              {
+                "ref": "Salmos 7:11",
+                "text": "Deus é justo juiz; todos os dias ele mostra sua ira contra os perversos."
+              },
+              {
+                "ref": "Isaías 53:7",
+                "text": "Ele foi oprimido e humilhado, mas não disse uma só palavra. Foi levado como cordeiro para o matadouro; como ovelha muda diante dos tosquiadores, não abriu a boca."
+              },
+              {
+                "ref": "Mateus 27:39",
+                "text": "O povo que passava por ali gritava insultos e sacudia a cabeça, em zombaria:"
+              }
+            ]
           },
           {
             "number": 24,
             "text": "Ele mesmo carregou nossos pecados em seu corpo na cruz, a fim de que morrêssemos para o pecado e vivêssemos para a justiça; por suas feridas somos curados.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 22:6",
+                "text": "Abraão pôs a lenha para o holocausto nos ombros de Isaque, e ele próprio levou o fogo e a faca. Enquanto os dois caminhavam juntos,"
+              },
+              {
+                "ref": "Êxodo 28:38",
+                "text": "Arão a usará na testa, para que tome sobre si toda a ­culpa dos israelitas quando consagrarem suas ofertas sagradas. Terá de usá-la sempre na testa para que o SENHOR aceite seu povo."
+              },
+              {
+                "ref": "Levítico 16:22",
+                "text": "Ao sair para o deserto, o bode levará sobre si todos os pecados do povo para um lugar distante."
+              },
+              {
+                "ref": "Números 7:15",
+                "text": "Apresentou ainda um novilho, um carneiro e um cordeiro de um ano como holocausto,"
+              }
+            ]
           },
           {
             "number": 25,
             "text": "Vocês eram como ovelhas desgarradas, mas agora voltaram para o Pastor, o Guardião de sua alma.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 23:1",
+                "text": "O SENHOR é meu pastor, e nada me faltará."
+              },
+              {
+                "ref": "Isaías 40:11",
+                "text": "Como pastor, ele alimentará seu rebanho; levará os cordeirinhos nos braços e os carregará junto ao coração; conduzirá ternamente as ovelhas com suas crias."
+              },
+              {
+                "ref": "Jeremias 23:2",
+                "text": "Portanto, assim diz o SENHOR, o Deus de Israel, a esses líderes do povo: “Em vez de cuidarem do meu rebanho e o conduzirem em segurança, vocês o abandonaram e o levaram à destruição. Agora, eu os castigarei pelo mal que fizeram."
+              },
+              {
+                "ref": "Zacarias 13:7",
+                "text": "“Desperte, ó espada, contra meu pastor, o homem que é meu companheiro”, diz o SENHOR dos Exércitos. “Fira o pastor, e as ovelhas serão dispersas, e eu me voltarei contra os cordeiros."
+              }
+            ]
           }
         ]
       }
@@ -362,37 +1189,138 @@
             "number": 1,
             "text": "Da mesma forma, vocês, esposas, sujeitem-se à autoridade de seu marido. Assim, mesmo que ele se recuse a obedecer à palavra, será conquistado por sua conduta, sem palavra alguma,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 3:16",
+                "text": "À mulher ele disse: “Farei mais intensas as dores de sua gravidez, e com dor você dará à luz. Seu desejo será para seu marido, e ele a dominará”."
+              },
+              {
+                "ref": "Ester 1:16",
+                "text": "Memucã respondeu ao rei e aos nobres: “A rainha Vasti ofendeu não somente o rei, mas todos os nobres e cidadãos das províncias do império."
+              },
+              {
+                "ref": "Provérbios 11:30",
+                "text": "O fruto do justo é árvore de vida; o sábio conquista pessoas."
+              },
+              {
+                "ref": "Mateus 18:15",
+                "text": "“Se um irmão pecar contra você,100 fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "mas por observar seu modo de viver puro e reverente.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Efésios 5:33",
+                "text": "Portanto, volto a dizer: cada homem deve amar a esposa como ama a si mesmo, e a esposa deve respeitar o marido."
+              },
+              {
+                "ref": "Filipenses 1:27",
+                "text": "O mais importante é que vocês vivam em sua comunidade de maneira digna das boas-novas de Cristo. Então, quando eu for vê-los novamente, ou mesmo quando ouvir a seu respeito, saberei que estão firmes e unidos em um só esp..."
+              },
+              {
+                "ref": "Colossenses 3:22",
+                "text": "Escravos, em tudo obedeçam a seus senhores terrenos. Procurem agradá-los sempre, e não apenas quando eles estiverem observando. Sirvam-nos com sinceridade, por causa de seu temor ao Senhor."
+              },
+              {
+                "ref": "1 Timóteo 4:12",
+                "text": "Não deixe que ninguém o menospreze porque você é jovem. Seja exemplo para todos os fiéis nas palavras, na conduta, no amor, na fé e na pureza."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "Não se preocupem com a beleza exterior obtida com penteados extravagantes, joias caras e roupas bonitas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 24:22",
+                "text": "Por fim, quando os camelos terminaram de beber, o servo deu à moça uma argola de ouro para o nariz e duas pulseiras grandes de ouro para os braços."
+              },
+              {
+                "ref": "Êxodo 3:22",
+                "text": "Toda mulher israelita pedirá de suas vizinhas egípcias e das mulheres que as visitam artigos de ouro e prata e roupas caras, com as quais vestirão seus filhos e suas filhas. Desse modo, vocês tomarão para si as riquezas dos egípcios”."
+              },
+              {
+                "ref": "2 Reis 9:30",
+                "text": "Quando Jezabel soube que Jeú tinha chegado a Jezreel, pintou os olhos, arrumou os cabelos e sentou-se em frente a uma janela."
+              },
+              {
+                "ref": "Ester 5:1",
+                "text": "No terceiro dia do jejum, Ester vestiu seus trajes reais e entrou no pátio interno do palácio, em frente do salão do rei. O rei estava sentado no trono, voltado para a entrada."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "Em vez disso, vistam-se com a beleza que vem de dentro e que não desaparece, a beleza de um espírito amável e sereno, tão precioso para Deus.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Samuel 16:7",
+                "text": "O SENHOR, porém, disse a Samuel: “Não o julgue pela aparência nem pela altura, pois eu o rejeitei. O SENHOR não vê as coisas como o ser humano as vê. As pessoas julgam pela aparência exterior, mas o SENHOR olha para o coração”."
+              },
+              {
+                "ref": "Salmos 25:9",
+                "text": "Guia os humildes na justiça e ensina-lhes seu caminho."
+              },
+              {
+                "ref": "Isaías 11:4",
+                "text": "Fará justiça aos pobres e tomará decisões imparciais em favor dos oprimidos. A terra estremecerá com a força de sua palavra, e o sopro de sua boca destruirá os perversos."
+              },
+              {
+                "ref": "Jeremias 51:59",
+                "text": "O profeta Jeremias transmitiu esta mensagem a Seraías, filho de Nerias e neto de Maaseias, chefe dos assessores do rei, quando Seraías foi à Babilônia com Zedequias, rei de Judá. Isso aconteceu no quarto ano do reinado de Zedequias."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Era assim que se adornavam as mulheres santas do passado. Elas depositavam sua confiança em Deus e se sujeitavam à autoridade do marido.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Samuel 2:1",
+                "text": "Então Ana orou: “Meu coração se alegra no SENHOR; o SENHOR me fortaleceu!7 Agora dou risada de meus inimigos; sim, eu me alegro porque me libertaste!"
+              },
+              {
+                "ref": "Provérbios 31:10"
+              },
+              {
+                "ref": "Jeremias 49:11",
+                "text": "Protegerei, contudo, os órfãos que restarem em seu meio, e as viúvas também podem esperar minha ajuda”."
+              },
+              {
+                "ref": "Lucas 2:37",
+                "text": "e vivido como viúva até os 84 anos. Nunca deixava o templo, adorando a Deus dia e noite, em jejum e oração."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Sara, por exemplo, obedecia a Abraão e o chamava de senhor. Vocês são filhas dela quando praticam o bem, sem medo algum.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 18:12",
+                "text": "Por isso, riu consigo e disse: “Como poderia uma mulher da minha idade ter esse prazer, ainda mais quando meu senhor, meu marido, também é idoso?”."
+              },
+              {
+                "ref": "Juízes 19:26",
+                "text": "Ao amanhecer, a mulher voltou para casa onde o marido estava hospedado. Caiu junto à porta da casa e ali ficou até o dia clarear."
+              },
+              {
+                "ref": "Isaías 57:11",
+                "text": "“Vocês temem esses ídolos? Eles os apavoram? Foi por isso que mentiram para mim e se esqueceram de mim e de minhas palavras? Foi por causa do meu longo silêncio que deixaram de me temer?"
+              },
+              {
+                "ref": "Daniel 3:16",
+                "text": "Sadraque, Mesaque e Abede-Nego responderam: “Ó Nabucodonosor, não precisamos nos defender diante do rei."
+              }
+            ]
           }
         ]
       },
@@ -403,7 +1331,24 @@
             "number": 7,
             "text": "Da mesma forma, vocês, maridos, honrem sua esposa. Sejam compreensivos no convívio com ela, pois, ainda que seja mais frágil que vocês, ela é igualmente participante da dádiva de nova vida concedida por Deus. Tratem-na de maneira correta, para que nada atrapalhe suas orações.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 2:23",
+                "text": "“Finalmente!”, exclamou o homem. “Esta é osso dos meus ossos, e carne da minha carne! Será chamada ‘mulher’, porque foi tirada do ‘homem’”."
+              },
+              {
+                "ref": "Jó 42:8",
+                "text": "Por isso, peguem sete novilhos e sete carneiros, levem os animais a meu servo Jó e ofereçam holocaustos em favor de si mesmos. Meu servo Jó orará por vocês, e eu aceitarei a oração dele. Não tratarei vocês como merecem p..."
+              },
+              {
+                "ref": "Provérbios 5:15",
+                "text": "Beba a água de sua própria cisterna, compartilhe seu amor somente com sua esposa."
+              },
+              {
+                "ref": "Malaquias 2:14",
+                "text": "E ainda perguntam: “Por quê?”. Porque o SENHOR foi testemunha dos votos que você e sua esposa fizeram quando jovens. Mas você foi infiel, embora ela tenha continuado a ser sua companheira, a esposa à qual você fez seus votos de casamento."
+              }
+            ]
           }
         ]
       },
@@ -414,31 +1359,116 @@
             "number": 8,
             "text": "Por fim, tenham todos o mesmo modo de pensar. Sejam cheios de compaixão uns pelos outros. Amem uns aos outros como irmãos. Mostrem misericórdia e humildade.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 103:13",
+                "text": "O SENHOR é como um pai para seus filhos, bondoso e compassivo para os que o temem."
+              },
+              {
+                "ref": "Provérbios 28:8",
+                "text": "O lucro obtido da cobrança de juros altos terminará no bolso de alguém que trata os pobres com bondade."
+              },
+              {
+                "ref": "Zacarias 7:9",
+                "text": "“Assim diz o SENHOR dos Exércitos: Julguem com justiça e mostrem compaixão e bondade uns pelos outros."
+              },
+              {
+                "ref": "Mateus 18:33",
+                "text": "Acaso não devia ter misericórdia de seu companheiro, como tive misericórdia de você?’."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Não retribuam mal por mal, nem insulto com insulto. Ao contrário, retribuam com uma bênção. Foi para isso que vocês foram chamados, e a bênção lhes será concedida.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 17:13",
+                "text": "Quem paga o bem com o mal sempre terá o mal em sua casa."
+              },
+              {
+                "ref": "Mateus 5:39",
+                "text": "Eu, porém, lhes digo que não se oponham ao perverso. Se alguém lhe der um tapa na face direita, ofereça também a outra."
+              },
+              {
+                "ref": "Marcos 10:17",
+                "text": "Quando Jesus saía para Jerusalém, um homem veio correndo em sua direção, ajoelhou-se diante dele e perguntou: “Bom mestre, que devo fazer para herdar a vida eterna?”."
+              },
+              {
+                "ref": "Lucas 6:27",
+                "text": "“Mas a vocês que me ouvem, eu digo: amem os seus inimigos, façam o bem a quem os odeia,"
+              }
+            ]
           },
           {
             "number": 10,
             "text": "Pois, “Se quiser desfrutar a vida e ver muitos dias felizes, refreie a língua de falar maldades e os lábios de dizerem mentiras.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 32:47",
+                "text": "Não são palavras vazias; são a vida de vocês! Se obedecerem a elas, terão vida longa na terra da qual tomarão posse quando atravessarem o rio Jordão”."
+              },
+              {
+                "ref": "Jó 2:4",
+                "text": "Satanás respondeu: “Pele por pele! Um homem dará tudo que tem para salvar a própria vida."
+              },
+              {
+                "ref": "Salmos 27:13",
+                "text": "Ainda assim, confio que verei a bondade do SENHOR enquanto estiver aqui, na terra dos vivos."
+              },
+              {
+                "ref": "Provérbios 3:2",
+                "text": "Se assim fizer, viverá muitos anos, e sua vida será cheia de paz."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Afaste-se do mal e faça o bem; busque a paz e esforce-se para mantê-la.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Juízes 11:14",
+                "text": "Jefté enviou a seguinte mensagem em resposta ao rei amonita:"
+              },
+              {
+                "ref": "Jó 1:1",
+                "text": "Havia um homem chamado Jó que vivia na terra de Uz. Ele era íntegro e correto, temia a Deus e se mantinha afastado do mal."
+              },
+              {
+                "ref": "Salmos 34:14",
+                "text": "Afaste-se do mal e faça o bem; busque a paz e esforce-se para mantê-la."
+              },
+              {
+                "ref": "Provérbios 3:7",
+                "text": "Não se impressione com sua própria sabedoria; tema o SENHOR e afaste-se do mal."
+              }
+            ]
           },
           {
             "number": 12,
             "text": "Os olhos do Senhor estão sobre os justos, e seus ouvidos, abertos para suas orações. O Senhor, porém, volta o rosto contra os que praticam o mal”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 17:10",
+                "text": "“Se algum israelita de nascimento ou um estrangeiro que vive entre vocês comer sangue, sob qualquer circunstância, eu me voltarei contra ele e o eliminarei do meio do povo,"
+              },
+              {
+                "ref": "Deuteronômio 11:12",
+                "text": "terra da qual o SENHOR, seu Deus, cuida continuamente, todo o ano!"
+              },
+              {
+                "ref": "2 Crônicas 7:15",
+                "text": "Olharei e ouvirei atentamente cada oração feita neste lugar."
+              },
+              {
+                "ref": "Salmos 11:4",
+                "text": "O SENHOR, porém, está em seu santo templo; o SENHOR governa dos céus. Observa a todos com atenção, examina cada pessoa na terra."
+              }
+            ]
           }
         ]
       },
@@ -449,55 +1479,207 @@
             "number": 13,
             "text": "Quem é que desejará lhes fazer mal se vocês se dedicarem a fazer o bem?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 38:20",
+                "text": "Pagam o bem com o mal e opõem-se a mim porque procuro o bem."
+              },
+              {
+                "ref": "Provérbios 15:9",
+                "text": "Os caminhos dos perversos são detestáveis para o SENHOR, mas ele ama aquele que busca a justiça."
+              },
+              {
+                "ref": "Romanos 8:28",
+                "text": "E sabemos que Deus faz todas as coisas cooperarem para o bem daqueles que o amam e que são chamados de acordo com seu propósito."
+              },
+              {
+                "ref": "1 Coríntios 14:1",
+                "text": "Que o amor seja seu maior objetivo! Contudo, desejem também os dons espirituais, especialmente a capacidade de profetizar."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "Mas, ainda que sofram por fazer o que é certo, vocês serão abençoados. Portanto, não se preocupem e não tenham medo de ameaças.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 8:12",
+                "text": "“Não chame tudo de conspiração, como eles fazem; não viva com medo do que eles temem."
+              },
+              {
+                "ref": "Jeremias 1:8",
+                "text": "E não tenha medo do povo, pois estarei com você e o protegerei. Eu, o SENHOR, falei!”."
+              },
+              {
+                "ref": "Mateus 5:10",
+                "text": "Felizes os perseguidos por causa da justiça, pois o reino dos céus lhes pertence."
+              },
+              {
+                "ref": "Marcos 8:35",
+                "text": "Se tentar se apegar à sua vida, a perderá. Mas, se abrir mão de sua vida por minha causa e por causa das boas-novas, a salvará."
+              }
+            ]
           },
           {
             "number": 15,
             "text": "Em vez disso, consagrem a Cristo como o Senhor de sua vida. E, se alguém lhes perguntar a respeito de sua esperança, estejam sempre preparados para explicá-la.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Números 20:12",
+                "text": "O SENHOR, porém, disse a Moisés e a Arão: “Uma vez que vocês não confiaram em mim para mostrar minha santidade aos israelitas, não os conduzirão à terra que eu lhes dou!”."
+              },
+              {
+                "ref": "1 Samuel 12:7",
+                "text": "Agora, fiquem aqui diante do SENHOR enquanto eu os confronto com todos os atos de justiça que o SENHOR fez por vocês e por seus antepassados."
+              },
+              {
+                "ref": "Salmos 119:46",
+                "text": "Falarei de teus preceitos a reis, e não me envergonharei."
+              },
+              {
+                "ref": "Isaías 1:18",
+                "text": "“Venham, vamos resolver este assunto”, diz o SENHOR. “Embora seus pecados sejam como o escarlate, eu os tornarei brancos como a neve; embora sejam vermelhos como o carmesim, eu os tornarei brancos como a lã."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "Façam-no, porém, de modo amável e respeitoso. Mantenham sempre a consciência limpa. Então, se as pessoas falarem mal de vocês, ficarão envergonhadas ao ver como vocês vivem corretamente em Cristo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 5:11",
+                "text": "“Felizes são vocês quando, por minha causa, sofrerem zombaria e perseguição, e quando outros, mentindo, disserem todo tipo de maldade a seu respeito."
+              },
+              {
+                "ref": "Atos 24:16",
+                "text": "Por isso, procuro sempre manter a consciência limpa diante de Deus e dos homens."
+              },
+              {
+                "ref": "Romanos 9:1",
+                "text": "Digo-lhes a verdade, tendo Cristo como testemunha, e minha consciência e o Espírito Santo a confirmam."
+              },
+              {
+                "ref": "2 Coríntios 1:12",
+                "text": "Podemos dizer com certeza e com a consciência limpa que temos vivido em santidade e sinceridade dadas por Deus. Dependemos da graça divina, e não da sabedoria humana. É dessa forma que nos temos conduzido diante do mundo..."
+              }
+            ]
           },
           {
             "number": 17,
             "text": "Lembrem-se de que é melhor sofrer por fazer o bem, se for da vontade de Deus, do que por fazer o mal.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 26:39",
+                "text": "Ele avançou um pouco, curvou-se com o rosto no chão e orou: “Meu Pai! Se for possível, afasta de mim este cálice. Contudo, que seja feita a tua vontade, e não a minha”."
+              },
+              {
+                "ref": "Atos 21:14",
+                "text": "Quando ficou evidente que não conseguiríamos fazê-lo mudar de ideia, desistimos e dissemos: “Que seja feita a vontade do Senhor”."
+              },
+              {
+                "ref": "Mateus 26:42",
+                "text": "Então os deixou pela segunda vez e orou: “Meu Pai! Se não for possível afastar de mim este cálice152 sem que eu o beba, faça-se a tua vontade”."
+              },
+              {
+                "ref": "1 Pedro 2:15",
+                "text": "É da vontade de Deus que, pela prática do bem, vocês calem os ignorantes que os acusam falsamente."
+              }
+            ]
           },
           {
             "number": 18,
             "text": "Pois Cristo também sofreu por nossos pecados, de uma vez por todas. Embora nunca tenha pecado, morreu pelos pecadores a fim de conduzi-los a Deus. Sofreu morte física, mas foi ressuscitado pelo Espírito,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Números 7:15",
+                "text": "Apresentou ainda um novilho, um carneiro e um cordeiro de um ano como holocausto,"
+              },
+              {
+                "ref": "Isaías 53:4",
+                "text": "Apesar disso, foram as nossas enfermidades que ele tomou sobre si, e foram as nossas doenças que pesaram sobre ele. Pensamos que seu sofrimento era castigo de Deus, castigo por sua culpa."
+              },
+              {
+                "ref": "Daniel 9:26",
+                "text": "“Depois desse período de 62 semanas de sete, o Ungido será morto, e nada dele restará. Surgirá um governante cujos exércitos destruirão a cidade e o templo. O fim chegará com uma inundação, e a guerra e seus sofrimentos..."
+              },
+              {
+                "ref": "Zacarias 9:9",
+                "text": "Alegre-se, ó povo de Sião!29 Exulte, ó preciosa Jerusalém!30 Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
+              }
+            ]
           },
           {
             "number": 19,
             "text": "por meio do qual pregou aos espíritos em prisão, 20àqueles que, muito tempo atrás, desobedeceram a Deus quando ele esperou pacientemente enquanto Noé construía sua embarcação. Apenas oito pessoas foram salvas por meio da água do dilúvio,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Neemias 9:30",
+                "text": "Por muitos anos, foste paciente com eles. Enviaste teu Espírito, que os advertiu por meio dos profetas. Ainda assim, eles se re­cusaram a ouvir. Por isso, mais uma vez, permitiste que os povos da terra os dominassem."
+              },
+              {
+                "ref": "Isaías 42:7",
+                "text": "abrirá os olhos dos cegos, libertará da prisão os cativos, livrará os que estão em calabouços escuros."
+              },
+              {
+                "ref": "Apocalipse 19:10",
+                "text": "Então caí aos pés do anjo para adorá-lo, mas ele me disse: “Não faça isso! Sou um servo, como você e seus irmãos que dão testemunho de sua fé em Jesus. Adore somente a Deus, pois o testemunho a respeito de Jesus é a essê..."
+              },
+              {
+                "ref": "Isaías 49:9",
+                "text": "Direi aos prisioneiros: ‘Saiam em liberdade!’, e aos que estão na escuridão: ‘Venham para a luz!’. Serão minhas ovelhas e se alimentarão em pastos verdes e nas colinas que antes eram estéreis."
+              }
+            ]
           },
           {
             "number": 21,
             "text": "e aquela água simboliza o batismo que agora os salva, não pela remoção da sujeira do corpo, mas porque no batismo vocês declaram ter boa consciência diante de Deus. Ela é eficaz por meio da ressurreição de Jesus Cristo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Zacarias 13:1",
+                "text": "“Naquele dia, uma fonte será aberta para a linhagem de Davi e para os habitantes de Jerusalém, uma fonte para purificá-los de todos os seus pecados e impurezas."
+              },
+              {
+                "ref": "Mateus 28:19",
+                "text": "Portanto, vão e façam discípulos de todas as nações,170 batizando-os em nome do Pai, do Filho e do Espírito Santo."
+              },
+              {
+                "ref": "Marcos 16:16",
+                "text": "Quem crer e for batizado será salvo, mas quem se recusar a crer será condenado."
+              },
+              {
+                "ref": "João 13:9",
+                "text": "Simão Pedro exclamou: “Senhor, então lave também minhas mãos e minha cabeça, e não somente os pés!”."
+              }
+            ]
           },
           {
             "number": 22,
             "text": "Agora, Cristo foi para o céu e está sentado no lugar de honra à direita de Deus, e todos os anjos, autoridades e poderes se sujeitam a ele.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 110:1",
+                "text": "O SENHOR disse ao meu Senhor:144 “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
+              },
+              {
+                "ref": "Mateus 22:44"
+              },
+              {
+                "ref": "Marcos 12:36",
+                "text": "O próprio Davi, falando por meio do Espírito Santo, disse: ‘O Senhor disse ao meu Senhor: Sente-se no lugar de honra à minha direita até que eu humilhe seus inimigos debaixo de seus pés’."
+              },
+              {
+                "ref": "Lucas 20:42",
+                "text": "Afinal, o próprio Davi escreveu no Livro de Salmos: ‘O Senhor disse ao meu Senhor, Sente-se no lugar de honra à minha direita"
+              }
+            ]
           }
         ]
       }
@@ -514,67 +1696,254 @@
             "number": 1,
             "text": "Portanto, uma vez que Cristo sofreu fisicamente, armem-se com a mesma atitude que ele teve e estejam prontos para também sofrer. Porque, se vocês sofreram fisicamente por Cristo, deixaram o pecado para trás.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 27:10",
+                "text": "Obedeça, portanto, ao SENHOR, seu Deus, cumprindo todos estes mandamentos e decretos que hoje lhe dou”."
+              },
+              {
+                "ref": "Isaías 1:16",
+                "text": "Lavem-se e limpem-se! Removam seus pecados de minha vista e parem de fazer o mal."
+              },
+              {
+                "ref": "Marcos 3:3",
+                "text": "Jesus disse ao homem com a mão deformada: “Venha e fique diante de todos”."
+              },
+              {
+                "ref": "Romanos 6:2",
+                "text": "Claro que não! Uma vez que morremos para o pecado, como podemos continuar vivendo nele?"
+              }
+            ]
           },
           {
             "number": 2,
             "text": "Não passarão o resto da vida buscando os próprios desejos, mas fazendo a vontade de Deus.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 143:10",
+                "text": "Ensina-me a fazer tua vontade, pois tu és meu Deus. Que o teu Espírito bondoso me conduza adiante por um caminho reto e seguro."
+              },
+              {
+                "ref": "Oséias 6:7",
+                "text": "Como Adão, porém, vocês quebraram minha aliança e traíram minha confiança."
+              },
+              {
+                "ref": "Mateus 7:21",
+                "text": "“Nem todos que me chamam: ‘Senhor! Senhor!’ entrarão no reino dos céus, mas apenas aqueles que, de fato, fazem a vontade de meu Pai, que está no céu."
+              },
+              {
+                "ref": "Marcos 3:35",
+                "text": "Quem faz a vontade de Deus é meu irmão, minha irmã e minha mãe”."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "No passado, vocês desperdiçaram muito tempo praticando o que gostam de fazer aqueles que não creem: imoralidade e desejos carnais, farras, bebedeiras e festanças desregradas, além da detestável adoração de ídolos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 12:30",
+                "text": "não caiam na armadilha de seguir os costumes das nações e adorar seus deuses. Não fiquem curiosos a respeito de seus deuses, nem perguntem: ‘Como essas nações adoram seus deuses? Queremos seguir seu exemplo’."
+              },
+              {
+                "ref": "2 Samuel 13:28",
+                "text": "Absalão disse a seus homens: “Esperem até Amnom estar bêbado; então, quando eu ordenar, matem-no. Não tenham medo. A responsabilidade é minha. Sejam corajosos e valentes!”."
+              },
+              {
+                "ref": "1 Reis 21:26",
+                "text": "Sua prática mais repugnante foi adorar ídolos116 como haviam feito os amorreus, povo que o SENHOR tinha expulsado de diante dos israelitas."
+              },
+              {
+                "ref": "2 Crônicas 15:8",
+                "text": "Quando Asa ouviu essa mensagem do profeta Azarias, encheu- se de coragem e removeu todos os ídolos repulsivos da terra de Judá e de Benjamim e das cidades que ele havia capturado na região montanhosa de Efraim. Além diss..."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "Agora, essas pessoas ficam surpresas quando vocês deixam de participar de suas práticas desregradas e destrutivas e, por isso, os difamam.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 23:25",
+                "text": "“Que aflição os espera, mestres da lei e fariseus! Hipócritas! Têm o cuidado de limpar a parte exterior do copo e do prato, enquanto o interior está imundo, cheio de ganância e falta de domínio próprio."
+              },
+              {
+                "ref": "Lucas 15:13",
+                "text": "“Alguns dias depois, o filho mais jovem arrumou suas coisas e se mudou para uma terra distante, onde desperdiçou tudo que tinha por viver de forma desregrada."
+              },
+              {
+                "ref": "Atos 13:45",
+                "text": "Quando alguns dos judeus viram as multidões, ficaram com inveja, de modo que difamaram Paulo e contestavam tudo que ele dizia."
+              },
+              {
+                "ref": "Romanos 13:13",
+                "text": "Uma vez que pertencemos ao dia, vivamos com decência, à vista de todos. Não participem de festanças desregradas, de bebedeiras, de promiscuidade sexual e de práticas imorais, e não se envolvam em brigas nem em invejas."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Lembrem-se, porém, de que eles terão de prestar contas àquele que está pronto para julgar a todos, vivos e mortos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 1:6",
+                "text": "Pois o SENHOR guarda o caminho dos justos, mas o caminho dos perversos leva à destruição."
+              },
+              {
+                "ref": "Eclesiastes 12:14",
+                "text": "Deus nos julgará por todos os nossos atos, incluindo o que fazemos em segredo, seja o bem, seja o mal."
+              },
+              {
+                "ref": "Malaquias 3:13",
+                "text": "“Vocês falaram coisas terríveis contra mim”, diz o SENHOR. “Mas vocês perguntam: ‘O que falamos contra ti?’."
+              },
+              {
+                "ref": "Mateus 12:36",
+                "text": "Eu lhes digo: no dia do juízo, vocês prestarão contas de toda palavra inútil que falarem."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Por isso as boas-novas foram anunciadas até mesmo aos mortos, pois, embora estivessem destinados a morrer como todo ser humano, agora vivem para sempre com Deus pelo Espírito.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 24:9",
+                "text": "“Então vocês serão presos, perseguidos e mortos. Por minha causa, serão odiados em todo o mundo."
+              },
+              {
+                "ref": "João 5:25",
+                "text": "“E eu lhes asseguro que está chegando a hora, e de fato já chegou, em que os mortos ouvirão minha voz, a voz do Filho de Deus. E aqueles que a ouvirem viverão."
+              },
+              {
+                "ref": "Romanos 8:2",
+                "text": "Pois em Cristo Jesus a lei do Espírito que dá vida os libertou da lei do pecado, que leva à morte."
+              },
+              {
+                "ref": "1 Coríntios 11:31",
+                "text": "Se examinássemos a nós mesmos, não seríamos julgados dessa maneira."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "O fim de todas as coisas está próximo. Portanto, sejam sensatos e disciplinados em suas orações.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 19:35",
+                "text": "Naquela noite, portanto, voltaram a embebedar o pai com vinho, e a filha mais nova teve relações com ele. Mais uma vez, ele não percebeu quando ela se deitou nem quando se levantou."
+              },
+              {
+                "ref": "Eclesiastes 7:2",
+                "text": "É melhor ir a funerais que ir a festas; afinal, todos morrem, e é bom que os vivos se lembrem disso."
+              },
+              {
+                "ref": "Jeremias 5:31",
+                "text": "os profetas fazem profecias falsas, os sacerdotes governam com mão de ferro, e, pior ainda, meu povo fica feliz com isso! O que farão, porém, quando o fim chegar?”"
+              },
+              {
+                "ref": "Mateus 24:13",
+                "text": "mas quem se mantiver firme até o fim será salvo."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Acima de tudo, amem uns aos outros sinceramente, pois o amor cobre muitos pecados.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 10:12",
+                "text": "O ódio provoca brigas, mas o amor cobre todas as ofensas."
+              },
+              {
+                "ref": "1 Coríntios 13:1",
+                "text": "Se eu falasse as línguas dos homens e dos anjos, mas não tivesse amor, seria como um sino que ressoa ou um címbalo que retine."
+              },
+              {
+                "ref": "Colossenses 3:14",
+                "text": "Acima de tudo, revistam-se do amor que une todos nós em perfeita harmonia."
+              },
+              {
+                "ref": "1 Tessalonicenses 3:12",
+                "text": "E que o Senhor faça crescer e transbordar o amor que vocês têm uns pelos outros e por todos, da mesma forma que nosso amor transborda por vocês."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Abram sua casa de bom grado para os que necessitam de um lugar para se hospedar.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 24:19",
+                "text": "Depois que lhe deu de beber, disse: “Tirarei água para seus camelos também, até que estejam satisfeitos”."
+              },
+              {
+                "ref": "Romanos 12:13",
+                "text": "Quando membros do povo santo passarem por necessidade, ajudem com prontidão. Estejam sempre dispostos a praticar a hospitalidade."
+              },
+              {
+                "ref": "2 Coríntios 9:7",
+                "text": "Cada um deve decidir em seu coração quanto dar. Não contribuam com relutância ou por obrigação. “Pois Deus ama quem dá com alegria.”"
+              },
+              {
+                "ref": "Filipenses 2:14",
+                "text": "Façam tudo sem queixas nem discussões,"
+              }
+            ]
           },
           {
             "number": 10,
             "text": "Deus concedeu um dom a cada um, e vocês devem usá-lo para servir uns aos outros, fazendo bom uso da múltipla e variada graça divina.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 20:28",
+                "text": "Pois nem mesmo o Filho do Homem veio para ser servido, mas para servir e dar sua vida em resgate por muitos”."
+              },
+              {
+                "ref": "Marcos 10:45",
+                "text": "Pois nem mesmo o Filho do Homem veio para ser servido, mas para servir e dar sua vida em resgate por muitos”."
+              },
+              {
+                "ref": "Lucas 8:3",
+                "text": "Joana, esposa de Cuza, administrador de Herodes; Susana, e muitas outras que contribuíam com seus próprios recursos para o sustento de Jesus e seus discípulos."
+              },
+              {
+                "ref": "Romanos 12:6",
+                "text": "Deus, em sua graça, nos concedeu diferentes dons. Portanto, se você tiver a capacidade de profetizar, faça-o de acordo com a proporção de fé que recebeu."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Você tem o dom de falar? Então faça-o de acordo com as palavras de Deus. Tem o dom de ajudar? Faça-o com a força que Deus lhe dá. Assim, tudo que você realizar trará glória a Deus por meio de Jesus Cristo. A ele sejam a glória e o poder para todo o sempre! Amém.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Crônicas 29:11",
+                "text": "Ó SENHOR, a ti pertencem a grandeza, o poder, a glória, a vitória e a majestade. Tudo que há nos céus e na terra é teu, ó SENHOR, e este é teu reino. Tu estás acima de tudo."
+              },
+              {
+                "ref": "Salmos 145:13",
+                "text": "Pois o teu reino é reino para sempre; tu governas por todas as gerações. O SENHOR sempre cumpre suas promessas; é bondoso em tudo que faz."
+              },
+              {
+                "ref": "Isaías 8:20",
+                "text": "Consultem a lei e os ensinamentos de Deus! Aqueles que contradizem sua palavra jamais verão a luz."
+              },
+              {
+                "ref": "Jeremias 23:22",
+                "text": "Se houvessem estado diante de mim e me ouvido, teriam anunciado minhas palavras e levado meu povo a se arrepender de seus maus caminhos e suas más ações."
+              }
+            ]
           }
         ]
       },
@@ -585,49 +1954,185 @@
             "number": 12,
             "text": "Amados, não se surpreendam com as provações de fogo ardente pelas quais estão passando, como se algo estranho lhes estivesse acontecendo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 28:21",
+                "text": "O SENHOR virá, como fez contra os filisteus no monte Perazim e contra os amorreus em Gibeão. Virá para fazer algo estranho, para realizar um ato incomum."
+              },
+              {
+                "ref": "Daniel 11:35",
+                "text": "Alguns dos sábios serão vítimas de perseguição e, desse modo, serão refinados, purificados e limpos até o tempo do fim, pois o tempo determinado ainda está por vir."
+              },
+              {
+                "ref": "1 Coríntios 3:13",
+                "text": "No dia do juízo, porém, o fogo revelará que tipo de obra cada construtor realizou, e o fogo mostrará se a obra tem algum valor."
+              },
+              {
+                "ref": "1 Tessalonicenses 3:2",
+                "text": "e enviamos Timóteo para visitá-los. Ele é nosso irmão e colaborador de Deus na proclamação das boas-novas de Cristo. Nós o enviamos para fortalecê-los e animá-los na fé,"
+              }
+            ]
           },
           {
             "number": 13,
             "text": "Pelo contrário, alegrem-se muito, pois essas provações os tornam participantes dos sofrimentos de Cristo, a fim de que tenham a maravilhosa alegria de ver sua glória quando ela for revelada.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 25:9",
+                "text": "Naquele dia, o povo dirá: “Este é nosso Deus! Confiamos nele, e ele nos salvou! Este é o SENHOR, em quem confiamos; alegremo-nos em seu livramento!”."
+              },
+              {
+                "ref": "Mateus 5:12",
+                "text": "Alegrem-se e exultem, porque uma grande recompensa os espera no céu. E lembrem-se de que os antigos profetas foram perseguidos da mesma forma.”"
+              },
+              {
+                "ref": "Marcos 8:38",
+                "text": "Se alguém se envergonhar de mim e de minha mensagem nesta época de adultério e pecado, o Filho do Homem se envergonhará dele quando vier na glória de seu Pai com os santos anjos”."
+              },
+              {
+                "ref": "Lucas 6:22",
+                "text": "Felizes são vocês quando os odiarem e os excluírem, quando zombarem de vocês e os caluniarem como se fossem maus porque seguem o Filho do Homem."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "Se vocês forem insultados por causa do nome de Cristo, abençoados serão, pois o glorioso Espírito de Deus repousa sobre vocês.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Números 11:25",
+                "text": "O SENHOR desceu na nuvem e falou com ele. Depois, deu aos setenta líderes o mesmo Espírito que estava sobre Moisés. E, quando o Espírito pousou sobre eles, os líderes profetizaram, algo que nunca mais aconteceu."
+              },
+              {
+                "ref": "1 Reis 10:8",
+                "text": "Como deve ser feliz o seu povo!73 Que privilégio para seus oficiais estarem em sua presença todos os dias, ouvindo sua sabedoria!"
+              },
+              {
+                "ref": "2 Reis 2:15",
+                "text": "Quando os membros do grupo de profetas de Jericó viram o que havia acontecido, exclamaram: “O espírito de Elias repousa sobre Eliseu!”. Então foram encontrar-se com Eliseu e se curvaram com o rosto no chão diante dele."
+              },
+              {
+                "ref": "Salmos 32:1",
+                "text": "Como é feliz aquele cuja desobediência é perdoada, cujo pecado é coberto!"
+              }
+            ]
           },
           {
             "number": 15,
             "text": "Se sofrerem, porém, que não seja por matar, roubar, causar confusão ou intrometer-se em assuntos alheios.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 5:11",
+                "text": "“Felizes são vocês quando, por minha causa, sofrerem zombaria e perseguição, e quando outros, mentindo, disserem todo tipo de maldade a seu respeito."
+              },
+              {
+                "ref": "1 Tessalonicenses 4:11",
+                "text": "Tenham como objetivo uma vida tranquila, ocupando-se com seus próprios assuntos e trabalhando com suas próprias mãos, conforme os instruímos anteriormente."
+              },
+              {
+                "ref": "2 Tessalonicenses 3:11",
+                "text": "Contudo, soubemos que alguns de vocês estão vivendo ociosamente, recusando-se a trabalhar e intrometendo-se em assuntos alheios."
+              },
+              {
+                "ref": "1 Timóteo 5:13",
+                "text": "Além disso, aprenderão a se tornar ociosas e a andar de casa em casa, fazendo fofoca, intrometendo-se em assuntos alheios e falando do que não devem."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "Mas, se sofrerem por ser cristãos, não se envergonhem; louvem a Deus por serem chamados por esse nome!",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 24:15",
+                "text": "Nas terras do leste, deem glória ao SENHOR; nas terras além do mar, louvem o nome do SENHOR, o Deus de Israel!"
+              },
+              {
+                "ref": "Atos 5:41",
+                "text": "Quando os apóstolos saíram da reunião do conselho, estavam alegres porque Deus os havia considerado dignos de sofrer humilhação pelo nome de Jesus."
+              },
+              {
+                "ref": "Romanos 5:2",
+                "text": "Foi por meio da fé que Cristo nos concedeu esta graça que agora desfrutamos com segurança e alegria, pois temos a esperança de participar da glória de Deus."
+              },
+              {
+                "ref": "Efésios 3:13",
+                "text": "Portanto, peço-lhes que não desanimem por causa de minhas provações. É por vocês que sofro; a honra é de vocês."
+              }
+            ]
           },
           {
             "number": 17,
             "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas- novas de Deus!",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 10:12",
+                "text": "Depois que o Senhor tiver usado o rei da Assíria para realizar seus propósitos no monte Sião e em Jerusalém, ele se voltará contra o rei da Assíria e o castigará, pois o rei é orgulhoso e arrogante."
+              },
+              {
+                "ref": "Jeremias 25:29",
+                "text": "Comecei a castigar Jerusalém, a cidade que leva meu nome. Acaso deixarei que escapem do castigo? Não, vocês não escaparão. Trarei guerra contra todas as nações da terra. Eu, o SENHOR dos Exércitos, falei!’."
+              },
+              {
+                "ref": "Amós 3:2",
+                "text": "“De todas as famílias da terra, só escolhi vocês. Por isso devo castigá-los por todos os seus pecados”."
+              },
+              {
+                "ref": "Malaquias 3:5",
+                "text": "“Naquele dia, eu julgarei vocês. Não demorarei para testemunhar contra todos os feiticeiros, adúlteros e mentirosos. Falarei contra aqueles que roubam o salário de seus empregados, que oprimem as viúvas e os órfãos, ou q..."
+              }
+            ]
           },
           {
             "number": 18,
             "text": "E, “Se o justo é salvo por um triz, o que será do pecador perverso?”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 13:13",
+                "text": "O povo dessa região, porém, era extremamente perverso e vivia pecando contra o SENHOR."
+              },
+              {
+                "ref": "1 Samuel 15:18",
+                "text": "Então o SENHOR o enviou numa missão e disse: ‘Vá e destrua completamente aqueles pecadores, os amalequitas. Lute contra eles até exterminá-los’."
+              },
+              {
+                "ref": "Salmos 1:4",
+                "text": "O mesmo não acontece com os perversos! São como palha levada pelo vento."
+              },
+              {
+                "ref": "Provérbios 11:31",
+                "text": "Se o justo recebe o que merece aqui na terra,"
+              }
+            ]
           },
           {
             "number": 19,
             "text": "Portanto, se vocês sofrem porque cumprem a vontade de Deus, continuem a fazer o que é certo e confiem sua vida àquele que os criou, pois ele é fiel.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Ester 4:16",
+                "text": "“Vá, reúna todos os judeus de Susã e jejuem por mim. Não comam nem bebam durante três dias e três noites. Minhas criadas e eu faremos o mesmo. Depois, irei à presença do rei, mesmo que seja contra a lei. Se eu tiver de morrer, morrerei”."
+              },
+              {
+                "ref": "Salmos 31:5",
+                "text": "Em tuas mãos entrego meu espírito; resgata-me, SENHOR, pois és Deus fiel."
+              },
+              {
+                "ref": "Isaías 40:27",
+                "text": "Ó Jacó, como pode dizer que o SENHOR não vê o que se passa? Ó Israel, como pode dizer que Deus não se importa com seus direitos?"
+              },
+              {
+                "ref": "Jeremias 26:11",
+                "text": "Os sacerdotes e os profetas apresentaram suas acusações aos oficiais e ao povo. “Este homem deve ser condenado à morte”, disseram. “Vocês ouviram com os próprios ouvidos que ele profetizou contra esta cidade!”"
+              }
+            ]
           }
         ]
       }
@@ -644,67 +2149,254 @@
             "number": 1,
             "text": "E agora, uma palavra aos presbíteros em seu meio. Eu, que também sou presbítero, testemunhei os sofrimentos de Cristo e também participarei de sua glória quando ela for revelada. Assim, peço-lhes",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 73:24",
+                "text": "Tu me guias com teu conselho e me conduzes a um destino glorioso."
+              },
+              {
+                "ref": "Lucas 24:48",
+                "text": "Vocês são testemunhas dessas coisas."
+              },
+              {
+                "ref": "João 15:26",
+                "text": "“Mas eu enviarei a vocês o Encorajador, o Espírito da verdade. Ele virá do Pai e testemunhará a meu respeito."
+              },
+              {
+                "ref": "Atos 1:8",
+                "text": "Vocês receberão poder quando o Espírito Santo descer sobre vocês, e serão minhas testemunhas em toda parte: em Jerusalém, em toda a Judeia, em Samaria e nos lugares mais distantes da terra”."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "que cuidem do rebanho que Deus lhes confiou com disposição, e não de má vontade; não pelo que lucrarão com isso, mas pelo desejo de servir a Deus.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Reis 12:6",
+                "text": "Contudo, no vigésimo terceiro ano do reinado de Joás, os sacerdotes ainda não haviam feito os reparos no templo."
+              },
+              {
+                "ref": "Salmos 78:71",
+                "text": "Tirou-o do pastoreio de ovelhas e cordeiros e tornou-o pastor dos descendentes de Jacó, o povo que a Deus pertence, Israel."
+              },
+              {
+                "ref": "Isaías 6:8",
+                "text": "Então ouvi o Senhor perguntar: “Quem enviarei como mensageiro a este povo? Quem irá por nós?”. E eu respondi: “Aqui estou; envia-me”."
+              },
+              {
+                "ref": "Jeremias 6:13",
+                "text": "“Desde o mais humilde até o mais importante, sua vida é dominada pela ganância. Desde os profetas até os sacerdotes, são todos impostores."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "Não abusem de sua autoridade com aqueles que foram colocados sob seus cuidados, mas guiem-nos com seu bom exemplo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 32:9",
+                "text": "“Pois o povo de Israel pertence ao SENHOR; Jacó é sua propriedade especial."
+              },
+              {
+                "ref": "Salmos 33:12",
+                "text": "Como é feliz a nação cujo Deus é o SENHOR, cujo povo ele escolheu para lhe pertencer!"
+              },
+              {
+                "ref": "Miqueias 7:14",
+                "text": "Ó SENHOR, protege teu povo com teu cajado de pastor; conduz este rebanho que pertence a ti! Embora vivam sozinhos num bosque no alto do monte Carmelo, leva-os para pastar nos campos verdes de Basã e Gileade, como faziam muito tempo atrás."
+              },
+              {
+                "ref": "Mateus 20:25",
+                "text": "Então Jesus os reuniu e disse: “Vocês sabem que os governantes deste mundo têm poder sobre o povo, e que os oficiais exercem sua autoridade sobre os súditos."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "E, quando vier o Grande Pastor, vocês receberão uma coroa de glória sem fim.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 23:1",
+                "text": "O SENHOR é meu pastor, e nada me faltará."
+              },
+              {
+                "ref": "Isaías 40:11",
+                "text": "Como pastor, ele alimentará seu rebanho; levará os cordeirinhos nos braços e os carregará junto ao coração; conduzirá ternamente as ovelhas com suas crias."
+              },
+              {
+                "ref": "Daniel 12:3",
+                "text": "Os sábios brilharão intensamente como o esplendor do céu, e os que conduzem muitos à justiça resplandecerão como estrelas, para sempre."
+              },
+              {
+                "ref": "Zacarias 13:7",
+                "text": "“Desperte, ó espada, contra meu pastor, o homem que é meu companheiro”, diz o SENHOR dos Exércitos. “Fira o pastor, e as ovelhas serão dispersas, e eu me voltarei contra os cordeiros."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Da mesma forma, vocês, que são mais jovens, aceitem a autoridade dos presbíteros. E todos vocês vistam-se de humildade no relacionamento uns com os outros. Pois, “Deus se opõe aos orgulhosos, mas concede graça aos humildes”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 19:32",
+                "text": "“Levantem-se na presença dos idosos e honrem os anciãos. Temam o seu Deus. Eu sou o SENHOR."
+              },
+              {
+                "ref": "2 Crônicas 6:41",
+                "text": "“E, agora, levanta-te, ó SENHOR Deus, e entra neste teu lugar de descanso, junto à arca, o símbolo do teu poder. Estejam teus sacerdotes, ó SENHOR Deus, vestidos de salvação; alegrem-se teus servos leais em tua bondade."
+              },
+              {
+                "ref": "Jó 22:29",
+                "text": "Se outros estiverem em dificuldade e você disser: ‘Ajuda-os’, Deus os salvará."
+              },
+              {
+                "ref": "Salmos 132:9",
+                "text": "Que teus sacerdotes se vistam de justiça, que teus fiéis cantem de alegria."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Portanto, humilhem-se sob o grande poder de Deus e, no tempo certo, ele os exaltará.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 3:19",
+                "text": "“Eu sei que o rei do Egito não os deixará ir, a não ser que uma mão poderosa o force."
+              },
+              {
+                "ref": "Levítico 26:41",
+                "text": "Quando eu me opuser a eles e os levar à terra de seus inimigos, seu coração obstinado se humilhará e receberão o castigo de seus pecados."
+              },
+              {
+                "ref": "Deuteronômio 32:35",
+                "text": "A vingança cabe a mim, eu lhes darei o troco; no devido tempo, seus pés escorregarão. O dia da calamidade chegará, e seu destino os alcançará’."
+              },
+              {
+                "ref": "1 Reis 21:29",
+                "text": "“Vê como Acabe se humilhou diante de mim? Por isso, não trarei calamidade durante sua vida. Farei cair a calamidade sobre os filhos dele; destruirei sua dinastia”."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "Entreguem-lhe todas as suas ansiedades, pois ele cuida de vocês.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Samuel 1:10",
+                "text": "Ana estava muito angustiada e chorava sem parar enquanto orava ao SENHOR."
+              },
+              {
+                "ref": "Salmos 27:13",
+                "text": "Ainda assim, confio que verei a bondade do SENHOR enquanto estiver aqui, na terra dos vivos."
+              },
+              {
+                "ref": "Mateus 6:25",
+                "text": "“Por isso eu lhes digo que não se preocupem com a vida diária, se terão o suficiente para comer, beber ou vestir. A vida não é mais que comida, e o corpo não é mais que roupa?"
+              },
+              {
+                "ref": "Marcos 4:38",
+                "text": "Jesus dormia na parte de trás do barco, com a cabeça numa almofada. Os discípulos o acordaram, clamando: “Mestre, vamos morrer! O senhor não se importa?”."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Estejam atentos! Tomem cuidado com seu grande inimigo, o diabo, que anda como um leão rugindo à sua volta, à procura de alguém para devorar.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Juízes 14:5",
+                "text": "Quando Sansão e seus pais estavam descendo a Timna, de repente um jovem leão atacou Sansão perto dos vinhedos de Timna."
+              },
+              {
+                "ref": "Ester 7:6",
+                "text": "Ester respondeu: “Nosso inimigo e adversário é Hamã, este homem perverso”. Hamã ficou apavorado diante do rei e da rainha."
+              },
+              {
+                "ref": "Jó 1:6",
+                "text": "Certo dia, os anjos vieram à presença do SENHOR, e Satanás, o acusador, veio com eles."
+              },
+              {
+                "ref": "Salmos 104:21",
+                "text": "Os leões jovens rugem por sua presa, saem à procura do alimento que Deus lhes provê."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Permaneçam firmes contra ele e sejam fortes na fé. Lembrem-se de que seus irmãos em Cristo em todo o mundo estão passando pelos mesmos sofrimentos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Lucas 4:3",
+                "text": "Então o diabo lhe disse: “Se você é o Filho de Deus, ordene que esta pedra se transforme em pão”."
+              },
+              {
+                "ref": "João 16:33",
+                "text": "Eu lhes falei tudo isso para que tenham paz em mim. Aqui no mundo vocês terão aflições, mas animem-se, pois eu venci o mundo”."
+              },
+              {
+                "ref": "Atos 14:22",
+                "text": "onde fortaleceram os discípulos. Eles os encorajaram a permanecer na fé, lembrando-os de que é necessário passar por muitos sofrimentos até entrar no reino de Deus."
+              },
+              {
+                "ref": "1 Coríntios 10:13",
+                "text": "As tentações em sua vida não são diferentes daquelas que outros enfrentaram. Deus é fiel, e ele não permitirá tentações maiores do que vocês podem suportar. Quando forem tentados, ele mostrará uma saída para que consigam resistir."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "Deus, em toda a sua graça, os chamou para participarem de sua glória eterna por meio de Cristo Jesus. Assim, depois que tiverem sofrido por um pouco de tempo, ele os restaurará, os sustentará e os fortalecerá, e os colocará sobre um firme alicerce.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 34:6",
+                "text": "O SENHOR passou diante de Moisés, proclamando: “Javé! O SENHOR! O Deus de compaixão e misericórdia! Sou lento para me irar e cheio de amor e fidelidade."
+              },
+              {
+                "ref": "Salmos 86:5",
+                "text": "Ó Senhor, tu és tão bom, tão pronto a perdoar, tão cheio de amor por todos que te buscam."
+              },
+              {
+                "ref": "Miqueias 7:18",
+                "text": "Que outro Deus há semelhante a ti, que perdoas a culpa do remanescente e esqueces os pecados dos que te pertencem? Não permanecerás irado com teu povo para sempre, pois tens prazer em mostrar teu amor."
+              },
+              {
+                "ref": "Zacarias 10:6",
+                "text": "“Fortalecerei Judá e livrarei Israel; eu os restaurarei, porque tenho compaixão deles. Será como se eu nunca os houvesse rejeitado, pois eu sou o SENHOR, seu Deus, e ouvirei seus clamores."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "A ele seja o poder para sempre! Amém.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 11:36",
+                "text": "Pois todas as coisas vêm dele, existem por meio dele e são para ele. A ele seja toda a glória para sempre! Amém."
+              },
+              {
+                "ref": "Apocalipse 1:6",
+                "text": "Ele fez de nós um reino de sacerdotes para Deus, seu Pai. A ele sejam a glória e o poder para todo o sempre! Amém."
+              },
+              {
+                "ref": "1 Pedro 4:11",
+                "text": "Você tem o dom de falar? Então faça-o de acordo com as palavras de Deus. Tem o dom de ajudar? Faça-o com a força que Deus lhe dá. Assim, tudo que você realizar trará glória a Deus por meio de Jesus Cristo. A ele sejam a..."
+              },
+              {
+                "ref": "Apocalipse 5:13",
+                "text": "Depois, ouvi todas as criaturas no céu, na terra, debaixo da terra e no mar, cantarem: “Louvor e honra, glória e poder pertencem àquele que está sentado no trono e ao Cordeiro para todo o sempre!”."
+              }
+            ]
           }
         ]
       },
@@ -715,19 +2407,70 @@
             "number": 12,
             "text": "Escrevi e enviei esta breve carta com a ajuda de Silas, a quem lhes recomendo como irmão fiel. Meu objetivo ao escrever é encorajá-los e garantir-lhes que as experiências pelas quais vocês têm passado são, verdadeiramente, parte da graça de Deus. Permaneçam firmes nessa graça.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "João 21:21",
+                "text": "Pedro perguntou a Jesus: “Senhor, e quanto a ele?”."
+              },
+              {
+                "ref": "Atos 11:23",
+                "text": "Ao chegar ali e ver essa demonstração da graça de Deus, alegrou-se muito e incentivou os irmãos a permanecerem fiéis ao Senhor."
+              },
+              {
+                "ref": "Romanos 5:2",
+                "text": "Foi por meio da fé que Cristo nos concedeu esta graça que agora desfrutamos com segurança e alegria, pois temos a esperança de participar da glória de Deus."
+              },
+              {
+                "ref": "1 Coríntios 15:1",
+                "text": "Agora, irmãos, quero lembrá-los das boas-novas que lhes anunciei anteriormente. Vocês as receberam e nelas permanecem firmes."
+              }
+            ]
           },
           {
             "number": 13,
             "text": "Aquela que está na Babilônia, escolhida assim como vocês, lhes envia saudações, e também meu filho Marcos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 87:4",
+                "text": "Incluirei o Egito116 e a Babilônia entre os que me conhecem, também a Filístia e Tiro, e até a distante Etiópia;117 ali todos se tornaram seus cidadãos!"
+              },
+              {
+                "ref": "Atos 12:12",
+                "text": "Quando Pedro se deu conta disso, foi à casa de Maria, mãe de João Marcos, onde muitos estavam reunidos para orar."
+              },
+              {
+                "ref": "2 João 1:13",
+                "text": "Saudações dos filhos de sua irmã5 escolhida."
+              },
+              {
+                "ref": "Apocalipse 17:5",
+                "text": "Em sua testa estava escrito um nome misterioso: “Babilônia, a Grande, a Mãe das Prostitutas e das Abominações da Terra”."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "Cumprimentem uns aos outros com um beijo de amor. Paz seja com todos vocês que estão em Cristo. 1 1. Províncias romanas onde hoje fica a Turquia. 2 1. Lv 11.44-45; 19.; 20.. 3 1.24-25 Is 40.6-8. 4 2. Em grego, sacerdócio santo. 5 2. Is 28., conforme a Septuaginta. 6 2.7a Ou Sim, para vocês que creem, existe honra. 7 2.7b Sl 118.. 8 2. Is 8.. 9 2. Em grego, sacerdócio real. 10 2. Os 1.,; 2.. 11 2. Em grego, no dia da visitação. 12 2.17 Em grego, a irmandade. 13 2. Ou porque vocês temem a Deus; o grego traz em todo o temor. 14 2. Alguns manuscritos trazem morreu. 15 2. Ver Is 53.. 16 3.10-12 Sl 34.12-16. 17 3. Em algumas traduções essa frase fica no versículo 15. 18 3.18a Alguns manuscritos trazem morreu. 19 3.18b Ou em espírito. 20 3. Ou suplicam a Deus por uma boa consciência. 21 4. Ou Pois aquele [ou Aquele] que sofreu fisicamente acabou com o pecado. 22 4.6a Ou embora as pessoas os tivessem julgado dignos de morte. 23 4.6b Ou em espírito. 24 4.14a Ou a glória de Deus, seu Espírito. 25 4.14b Alguns manuscritos acrescentam Ele é blasfemado por eles, mas glorificado por vocês. 26 4. Pv 11., conforme a Septuaginta. 27 5. Ou anciãos; também em 5.. 28 5. Pv 3., conforme a Septuaginta. 29 5. Em grego, sua irmandade. 30 5. Em grego, Silvano. 31 5. Ou Sua igreja irmã aqui na Babilônia. É provável que Babilônia represente Roma.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "João 14:27",
+                "text": "“Eu lhes deixo um presente, a minha plena paz. E essa paz que eu lhes dou é um presente que o mundo não pode dar. Portanto, não se aflijam nem tenham medo."
+              },
+              {
+                "ref": "Romanos 1:7",
+                "text": "Escrevo a todos vocês que estão em Roma, amados por Deus e chamados para ser seu povo santo. Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz."
+              },
+              {
+                "ref": "1 Coríntios 1:30",
+                "text": "Foi por iniciativa de Deus que vocês estão em Cristo Jesus, que se tornou a sabedoria de Deus em nosso favor, nos declarou justos diante de Deus, nos santificou e nos libertou do pecado."
+              },
+              {
+                "ref": "2 Coríntios 5:17",
+                "text": "Logo, todo aquele que está em Cristo se tornou nova criação. A velha vida acabou, e uma nova vida teve início!"
+              }
+            ]
           }
         ]
       }
