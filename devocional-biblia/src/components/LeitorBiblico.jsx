@@ -16,11 +16,13 @@ import {
   Info,
   BookMarked,
   Loader2,
-  Headphones
+  Headphones,
+  RefreshCw,
+  ExternalLink
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { HIGHLIGHT_COLORS, storage } from '../services/storage';
-import { getMediaForDay, getMediaForPassage } from '../data/dailyMedia';
+import { getMediaForDay, getMediaForPassage, getMusicForChapter } from '../data/dailyMedia';
 import { speechService } from '../services/speechService';
 import { bibleCommentaryService } from '../services/bibleCommentaryService';
 import { crossReferenceService } from '../services/crossReferenceService';
@@ -100,6 +102,23 @@ export default function LeitorBiblico({
   const activeBook = isFreeReading ? currentBookName : selectedBook;
   const [internalBookData, setInternalBookData] = useState(bookData);
   const [isFetchingBook, setIsFetchingBook] = useState(false);
+
+  // Mídia devocional conectada especificamente ao capítulo bíblico aberto
+  const activeChapterStr = `${activeBook} ${selectedChapter}`;
+  const activeChapterIndex = dayData?.readings ? dayData.readings.indexOf(activeChapterStr) : 0;
+  const [chapterMusicOverride, setChapterMusicOverride] = useState(0);
+
+  // Reseta override ao alternar de livro ou capítulo
+  useEffect(() => {
+    setChapterMusicOverride(0);
+  }, [activeBook, selectedChapter]);
+
+  const activeChapterMusic = getMusicForChapter(
+    dayData?.id,
+    activeChapterStr,
+    activeChapterIndex >= 0 ? activeChapterIndex : 0,
+    chapterMusicOverride
+  );
 
   useEffect(() => {
     if (bookData) {
@@ -507,23 +526,48 @@ export default function LeitorBiblico({
           </div>
         )}
 
-        {/* Mini barra de louvor do dia */}
-        {dayMedia && dayMedia.music && (
-          <div className="p-3 rounded-2xl bg-amber-50/70 dark:bg-zinc-800/80 border border-amber-200 dark:border-zinc-700 flex items-center justify-between text-xs">
-            <div className="flex items-center space-x-2 text-amber-900 dark:text-amber-200">
-              <Music className="w-4 h-4 text-amber-600" />
-              <span>
-                <strong>Louvor para esta leitura:</strong> {dayMedia.music.title} ({dayMedia.music.artist})
-              </span>
+        {/* Mini barra de louvor conectada especificamente ao capítulo ativo */}
+        {activeChapterMusic && (
+          <div className="p-3 rounded-2xl bg-amber-50/70 dark:bg-zinc-800/80 border border-amber-200 dark:border-zinc-700 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs">
+            <div className="flex items-center space-x-2 text-amber-900 dark:text-amber-200 min-w-0">
+              <Music className="w-4 h-4 text-amber-600 shrink-0" />
+              <div className="truncate">
+                <span>
+                  <strong>Louvor para {activeBook} {selectedChapter}:</strong> {activeChapterMusic.title} ({activeChapterMusic.artist})
+                </span>
+                {activeChapterMusic.description && (
+                  <span className="hidden md:inline text-[11px] text-zinc-500 dark:text-zinc-400 ml-2">
+                    — {activeChapterMusic.description}
+                  </span>
+                )}
+              </div>
             </div>
-            <a
-              href={dayMedia.music.youtubeMusicUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-amber-700 dark:text-amber-400 font-semibold hover:underline"
-            >
-              Ouvir no YouTube Music ➔
-            </a>
+            <div className="flex items-center space-x-2 shrink-0 self-end sm:self-auto">
+              <button
+                onClick={() => {
+                  telemetryService.track('music_cycle_reader', { chapter: activeChapterStr });
+                  setChapterMusicOverride(prev => prev + 1);
+                }}
+                className="inline-flex items-center space-x-1 px-2.5 py-1 rounded-xl bg-white dark:bg-zinc-700 border border-zinc-200 dark:border-zinc-600 text-[11px] font-medium text-zinc-700 dark:text-zinc-200 hover:bg-amber-50 dark:hover:bg-zinc-600 transition-colors shadow-2xs"
+                title="Trocar por outro louvor temático deste capítulo"
+              >
+                <RefreshCw className="w-3 h-3 text-amber-600" />
+                <span>Trocar</span>
+              </button>
+
+              <a
+                href={activeChapterMusic.youtubeMusicUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => telemetryService.track('music_play_youtube_music_reader', { chapter: activeChapterStr, title: activeChapterMusic.title, artist: activeChapterMusic.artist })}
+                className="inline-flex items-center space-x-1 px-2.5 py-1 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-semibold text-[11px] transition-colors shadow-2xs"
+                title="Ouvir no YouTube Music"
+              >
+                <Headphones className="w-3 h-3" />
+                <span>Ouvir no YouTube Music</span>
+                <ExternalLink className="w-2.5 h-2.5" />
+              </a>
+            </div>
           </div>
         )}
       </div>
@@ -811,7 +855,7 @@ export default function LeitorBiblico({
               </div>
 
               {/* Botão de Referências Cruzadas se 1 versículo estiver selecionado */}
-              {hasRefs && (
+              {singleVerseData && (
                 <button
                   onClick={() => {
                     onOpenReferences(singleVerseData.key, singleRefs);
@@ -821,7 +865,7 @@ export default function LeitorBiblico({
                   title="Ver referências cruzadas deste versículo"
                 >
                   <Link2 className="w-3.5 h-3.5" />
-                  <span>{singleRefs.length} {singleRefs.length === 1 ? 'ref' : 'refs'}</span>
+                  <span>{singleRefs.length > 0 ? `${singleRefs.length} ${singleRefs.length === 1 ? 'ref' : 'refs'}` : 'Referências'}</span>
                 </button>
               )}
             </div>

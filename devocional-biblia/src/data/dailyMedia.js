@@ -578,6 +578,106 @@ export const dailyMedia = {
       description: "Folk intimista de estúdio sobre o Messias que sacia a sede da alma com a água da vida eterna."
     },
     video: BIBLE_PROJECT_VIDEOS['joao_1_12']
+  },
+
+  // Dia 304 - João 7, 8 e 9 (HOJE)
+  304: {
+    dayId: 304,
+    title: "Água Viva, A Luz do Mundo e os Olhos da Fé",
+    passage: "João 7–9",
+    theme: "A Sede Saciada no Templo, A Graça com a Mulher Perdoada, A Verdade que Liberta e a Cura do Cego de Nascença",
+    music: {
+      title: "Luz do Mundo",
+      artist: "Marcos Almeida",
+      duration: "4:10 min",
+      youtubeId: "_kAVIQzwffg",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Marcos Almeida Luz do Mundo estudio"),
+      musicSearchUrl: getYoutubeMusicSearchUrl("Marcos Almeida Luz do Mundo estudio"),
+      album: "Eu Sarau (Estúdio)",
+      description: "Inspirado em João 8:12: 'Eu sou a luz do mundo; quem me segue não andará nas trevas, mas terá a luz da vida' — canção de estúdio sobre a luz da graça.",
+      theme: "A Luz do Mundo que dissipa a condenação (João 8)"
+    },
+    video: BIBLE_PROJECT_VIDEOS['joao_1_12']
+  },
+
+  // Dia 305 - João 10, 11 e 12
+  305: {
+    dayId: 305,
+    title: "O Bom Pastor e a Ressurreição",
+    passage: "João 10–12",
+    theme: "O Bom Pastor que dá a vida pelas ovelhas, A Ressurreição de Lázaro e a Unção em Betânia",
+    music: {
+      title: "O Bom Pastor",
+      artist: "Projeto Sola",
+      duration: "4:32 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola O Bom Pastor estudio"),
+      musicSearchUrl: getYoutubeMusicSearchUrl("Projeto Sola O Bom Pastor estudio"),
+      album: "Single de Estúdio",
+      description: "Meditação lírica sobre Cristo, o Bom Pastor que cuida, protege e resgata as suas ovelhas (João 10).",
+      theme: "O Bom Pastor e as Ovelhas (João 10)"
+    },
+    video: BIBLE_PROJECT_VIDEOS['joao_1_12']
+  },
+
+  // Dia 306 - João 13, 14 e 15
+  306: {
+    dayId: 306,
+    title: "O Lava-pés, O Caminho e a Videira Verdadeira",
+    passage: "João 13–15",
+    theme: "O Exemplo de Humildade no Lava-pés, O Caminho a Verdade e a Vida e o Mandamento de Permanecer na Videira",
+    music: {
+      title: "O Caminho, a Verdade e a Vida",
+      artist: "Paulo César Baruk",
+      duration: "4:40 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Paulo Cesar Baruk O Caminho a Verdade e a Vida estudio"),
+      musicSearchUrl: getYoutubeMusicSearchUrl("Paulo Cesar Baruk O Caminho a Verdade e a Vida estudio"),
+      album: "Graça (Estúdio)",
+      description: "Exposição poética baseada em João 14:6: 'Eu sou o caminho, e a verdade, e a vida; ninguém vem ao Pai senão por mim'.",
+      theme: "Cristo, o Único Caminho (João 14)"
+    },
+    video: BIBLE_PROJECT_VIDEOS['joao_13_21']
+  },
+
+  // Dia 307 - João 16, 17 e 18
+  307: {
+    dayId: 307,
+    title: "O Consolador, A Oração Sacerdotal e a Entrega",
+    passage: "João 16–18",
+    theme: "O Espírito da Verdade, A Oração pela Unidade da Igreja e a Prisão no Getsêmani",
+    music: {
+      title: "Que Sejamos Um",
+      artist: "Leonardo Gonçalves",
+      duration: "5:00 min",
+      youtubeId: "edGwczJm_uo",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Leonardo Goncalves Que Sejamos Um estudio"),
+      musicSearchUrl: getYoutubeMusicSearchUrl("Leonardo Goncalves Que Sejamos Um estudio"),
+      album: "Poemas e Canções (Estúdio)",
+      description: "Vocal reflexivo traduzindo a oração sacerdotal de Jesus em João 17 pela comunhão e santificação do seu povo.",
+      theme: "A Oração Sacerdotal (João 17)"
+    },
+    video: BIBLE_PROJECT_VIDEOS['joao_13_21']
+  },
+
+  // Dia 308 - João 19, 20 e 21
+  308: {
+    dayId: 308,
+    title: "Está Consumado: A Cruz, A Ressurreição e o Amor",
+    passage: "João 19–21",
+    theme: "A Crucificação no Gólgota, O Túmulo Vazio na Manhã de Páscoa e o Diálogo Restaurador com Pedro",
+    music: {
+      title: "Está Consumado",
+      artist: "Paulo César Baruk",
+      duration: "4:35 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Paulo Cesar Baruk Esta Consumado estudio"),
+      musicSearchUrl: getYoutubeMusicSearchUrl("Paulo Cesar Baruk Esta Consumado estudio"),
+      album: "Graça (Estúdio)",
+      description: "Gravação de estúdio celebrando a vitória definitiva da redenção na cruz em João 19:30: 'Está consumado!'.",
+      theme: "A Obra Completa da Cruz (João 19)"
+    },
+    video: BIBLE_PROJECT_VIDEOS['joao_13_21']
   }
 };
 
@@ -682,51 +782,991 @@ export function getMediaForPassage(bookName, chapter) {
   };
 }
 
-// Obtém a música recomendada especificamente para cada capítulo do dia
+// Catálogo Temático de Músicas Conectadas Especificamente ao Texto e Mensagem de Cada Capítulo Bíblico
+// Prioriza gravações de estúdio, conexão exegética direta e direcionamento ao YouTube Music (https://music.youtube.com/)
+export const THEMATIC_CHAPTER_MUSIC = {
+  // === EVANGELHO DE JOÃO (Capítulos 1 a 21) ===
+  'João 1': [
+    {
+      title: "Colossenses 1 / O Verbo Eterno",
+      artist: "Projeto Sola",
+      album: "Single de Estúdio",
+      duration: "4:47 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Colossenses 1 estudio"),
+      theme: "No Princípio era o Verbo • João 1:1–14",
+      description: "Meditação lírica em estúdio sobre a primazia de Cristo, o Verbo eterno pelo qual todas as coisas foram criadas (João 1:1-3)."
+    },
+    {
+      title: "Verbo Vivo",
+      artist: "Banda NOVA (IPAlpha)",
+      album: "IPAlpha Nova (Estúdio)",
+      duration: "4:25 min",
+      youtubeId: "cGcWmX2Pz0k",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Banda NOVA IPAlpha Verbo Vivo estudio"),
+      theme: "A Palavra que se Fez Carne • João 1:14",
+      description: "Louvor congregacional da IPAlpha proclamando a encarnação do Filho de Deus cheio de graça e verdade."
+    },
+    {
+      title: "Eis o Cordeiro de Deus",
+      artist: "Novo Canto (IPAlpha)",
+      album: "IPAlpha Música (Estúdio)",
+      duration: "4:15 min",
+      youtubeId: "RGCzQjFKk2w",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Eis o Cordeiro de Deus estudio"),
+      theme: "O Cordeiro que Tira o Pecado • João 1:29",
+      description: "Hino da fé reformada exaltando o testemunho de João Batista: 'Eis o Cordeiro de Deus que tira o pecado do mundo'."
+    }
+  ],
+  'João 2': [
+    {
+      title: "Aqui Vou Eu (Vinho Novo)",
+      artist: "Banda NOVA (IPAlpha)",
+      album: "IPAlpha Nova (Estúdio)",
+      duration: "4:30 min",
+      youtubeId: "cGcWmX2Pz0k",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Banda NOVA IPAlpha Aqui Vou Eu estudio"),
+      theme: "As Bodas de Caná & O Primeiro Sinal • João 2",
+      description: "Louvor cristocêntrico celebrando a alegria do Reino inaugurado no milagre da transformação da água em vinho."
+    },
+    {
+      title: "Transformação",
+      artist: "Paulo César Baruk",
+      album: "Graça (Estúdio)",
+      duration: "4:30 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Paulo Cesar Baruk Transformacao estudio"),
+      theme: "O Poder Transformador de Cristo • João 2",
+      description: "Gravação de estúdio sobre como Cristo renova a nossa história e purifica o templo do nosso coração."
+    },
+    {
+      title: "Zelo Por Tua Casa",
+      artist: "Purples",
+      album: "Single de Estúdio",
+      duration: "4:10 min",
+      youtubeId: "Q4ejKplh_ms",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Banda Purples Zelo Por Tua Casa estudio"),
+      theme: "A Purificação do Templo • João 2:13–22",
+      description: "Indie reflexivo contemplando a santidade e o zelo ardente do Senhor pela pureza da adoração."
+    }
+  ],
+  'João 3': [
+    {
+      title: "Amor Sem Igual (João 3:16)",
+      artist: "Novo Canto (IPAlpha)",
+      album: "IPAlpha Música (Estúdio)",
+      duration: "4:50 min",
+      youtubeId: "RGCzQjFKk2w",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Amor Sem Igual João 3:16 estudio"),
+      theme: "Deus Amou o Mundo de Tal Maneira • João 3:16",
+      description: "Hino congregacional baseado em João 3:16 sobre o amor incondicional do Pai entregando o Seu Filho unigênito."
+    },
+    {
+      title: "Nascer de Novo",
+      artist: "Leonardo Gonçalves",
+      album: "Poemas e Canções (Estúdio)",
+      duration: "4:40 min",
+      youtubeId: "edGwczJm_uo",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Leonardo Goncalves Nascer de Novo estudio"),
+      theme: "O Diálogo com Nicodemos • João 3:3–8",
+      description: "Poema sacro de estúdio sobre a regeneração e o sopro soberano do Espírito que dá vida nova."
+    },
+    {
+      title: "Vento do Espírito",
+      artist: "Marcos Almeida",
+      album: "Eu Sarau (Estúdio)",
+      duration: "4:15 min",
+      youtubeId: "_kAVIQzwffg",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Marcos Almeida Vento do Espirito estudio"),
+      theme: "O Vento Sopra Onde Quer • João 3:8",
+      description: "Poesia intimista contemplando a ação invisível e transformadora da graça soberana."
+    }
+  ],
+  'João 4': [
+    {
+      title: "Em Espírito e em Verdade",
+      artist: "Banda NOVA (IPAlpha)",
+      album: "IPAlpha Nova (Estúdio)",
+      duration: "4:35 min",
+      youtubeId: "cGcWmX2Pz0k",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Banda NOVA IPAlpha Em Espirito e em Verdade estudio"),
+      theme: "A Mulher Samaritana & Adoração • João 4:23–24",
+      description: "Louvor sobre os verdadeiros adoradores que o Pai procura, celebrando a adoração que brota de um coração restaurado."
+    },
+    {
+      title: "Água Viva",
+      artist: "Projeto Sola",
+      album: "Single de Estúdio",
+      duration: "4:20 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Agua Viva estudio"),
+      theme: "A Fonte a Jorrar para a Vida Eterna • João 4:14",
+      description: "Folk bíblico contemplando Cristo junto ao poço de Jacó oferecendo a água que sacia para sempre."
+    },
+    {
+      title: "Esperança",
+      artist: "Os Arrais",
+      album: "As Canções da Terra (Estúdio)",
+      duration: "4:24 min",
+      youtubeId: "eDflquxhedQ",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Os Arrais Esperança estudio"),
+      theme: "O Encontro que Restaura • João 4",
+      description: "Folk intimista de estúdio sobre a graça que acolhe os marginalizados e restaura a dignidade."
+    }
+  ],
+  'João 5': [
+    {
+      title: "Me Ajude a Melhorar",
+      artist: "Eli Soares",
+      album: "Casa de Deus (Estúdio)",
+      duration: "4:35 min",
+      youtubeId: "lclKOqYuvug",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Eli Soares Me Ajude a Melhorar estudio"),
+      theme: "A Cura no Tanque de Betesda • João 5:1–15",
+      description: "Oração sincera de quebrantamento e cura, inspirada na compaixão de Jesus pelo homem paralítico há 38 anos."
+    },
+    {
+      title: "Levanta e Anda",
+      artist: "Mauro Henrique",
+      album: "Single de Estúdio",
+      duration: "4:15 min",
+      youtubeId: "cGcWmX2Pz0k",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Mauro Henrique Levanta e Anda estudio"),
+      theme: "A Ordem de Graça e Poder • João 5:8",
+      description: "Interpretação marcante sobre a voz de Cristo que ressuscita os mortos e põe de pé os abatidos."
+    },
+    {
+      title: "A Voz do Filho de Deus",
+      artist: "Paulo César Baruk",
+      album: "Graça (Estúdio)",
+      duration: "4:28 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Paulo Cesar Baruk A Voz do Filho de Deus estudio"),
+      theme: "Quem Ouve a Minha Palavra Tem a Vida • João 5:24",
+      description: "Canção de estúdio exaltando a passagem da morte para a vida operada pela autoridade do Filho."
+    }
+  ],
+  'João 6': [
+    {
+      title: "Pão da Vida",
+      artist: "Projeto Sola",
+      album: "Single de Estúdio",
+      duration: "4:30 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Pao da Vida estudio"),
+      theme: "Eu Sou o Pão da Vida • João 6:35",
+      description: "Meditação lírica sobre a multiplicação dos pães e a declaração de Cristo: 'Aquele que vem a mim jamais terá fome'."
+    },
+    {
+      title: "Palavras de Vida Eterna",
+      artist: "Novo Canto (IPAlpha)",
+      album: "IPAlpha Música (Estúdio)",
+      duration: "4:40 min",
+      youtubeId: "RGCzQjFKk2w",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Palavras de Vida Eterna estudio"),
+      theme: "Para Quem Iremos Nós? • João 6:68",
+      description: "Hino congregacional baseado na confissão de Pedro: 'Senhor, para quem iremos nós? Tu tens as palavras da vida eterna'."
+    },
+    {
+      title: "O Pão do Céu",
+      artist: "Leonardo Gonçalves",
+      album: "Poemas e Canções (Estúdio)",
+      duration: "4:50 min",
+      youtubeId: "edGwczJm_uo",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Leonardo Goncalves O Pao do Ceu estudio"),
+      theme: "O Verdadeiro Alimento Espiritual • João 6:51",
+      description: "Poema sacro de estúdio sobre a entrega voluntária do corpo e sangue de Cristo para a vida do mundo."
+    }
+  ],
+
+  // === JOÃO 7, 8 e 9 (LEITURA DE HOJE - DIA 304) ===
+  'João 7': [
+    {
+      title: "Águas Vivas",
+      artist: "Banda NOVA (IPAlpha)",
+      album: "IPAlpha Nova (Estúdio)",
+      duration: "4:30 min",
+      youtubeId: "cGcWmX2Pz0k",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Banda NOVA IPAlpha Aguas Vivas estudio"),
+      theme: "Rios de Água Viva no Templo • João 7:37–38",
+      description: "Inspirado em João 7:37–38: 'Se alguém tem sede, venha a mim e beba. Do seu interior fluirão rios de água viva' — louvor congregacional proclamando a sede saciada no Espírito."
+    },
+    {
+      title: "Fonte de Águas Vivas",
+      artist: "Projeto Sola",
+      album: "Single de Estúdio",
+      duration: "4:15 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Fonte de Aguas Vivas estudio"),
+      theme: "A Rocha que Sacía no Deserto • João 7",
+      description: "Folk contemplativo em estúdio retratando Cristo como o manancial eterno proclamado no último e grande dia da Festa dos Tabernáculos."
+    },
+    {
+      title: "Quem Tem Sede",
+      artist: "Asaph Borba",
+      album: "Cânticos de Louvor (Estúdio)",
+      duration: "4:45 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Asaph Borba Quem Tem Sede estudio"),
+      theme: "O Grande Convite de Jesus • João 7:37",
+      description: "Clássico da adoração cristã evocando o clamor de Jesus aos peregrinos sedentos em Jerusalém."
+    }
+  ],
+  'João 8': [
+    {
+      title: "Luz do Mundo",
+      artist: "Marcos Almeida",
+      album: "Eu Sarau (Estúdio)",
+      duration: "4:10 min",
+      youtubeId: "_kAVIQzwffg",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Marcos Almeida Luz do Mundo estudio"),
+      theme: "A Luz da Vida & Perdão da Mulher • João 8:12",
+      description: "Inspirado em João 8:12: 'Eu sou a luz do mundo; quem me segue não andará nas trevas, mas terá a luz da vida' — reflexão intimista sobre a graça que dissipa a condenação."
+    },
+    {
+      title: "Verdadeiramente Livres",
+      artist: "Paulo César Baruk",
+      album: "Graça (Estúdio)",
+      duration: "4:40 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Paulo Cesar Baruk Verdadeiramente Livres estudio"),
+      theme: "A Verdade que Liberta • João 8:32, 36",
+      description: "Baseado em João 8:36: 'Se, pois, o Filho vos libertar, verdadeiramente sereis livres' — proclamação da quebra do cativeiro do pecado pela verdade da cruz."
+    },
+    {
+      title: "Nem Eu Te Condeno (Graça)",
+      artist: "Eli Soares",
+      album: "Casa de Deus (Estúdio)",
+      duration: "4:20 min",
+      youtubeId: "lclKOqYuvug",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Eli Soares Nem Eu Te Condeno estudio"),
+      theme: "O Perdão da Adúltera • João 8:1–11",
+      description: "Meditação lírica sobre a misericórdia de Cristo perante os acusadores fariseus: 'Aquele que dentre vós estiver sem pecado atire a primeira pedra'."
+    }
+  ],
+  'João 9': [
+    {
+      title: "Graça Maravilhosa (Eu Era Cego e Agora Vejo)",
+      artist: "Novo Canto (IPAlpha)",
+      album: "IPAlpha Música (Estúdio)",
+      duration: "4:45 min",
+      youtubeId: "RGCzQjFKk2w",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Graca Maravilhosa estudio"),
+      theme: "A Cura do Cego de Siloé • João 9:25",
+      description: "Inspirado em João 9:25: 'Uma coisa sei: eu era cego, mas agora vejo!' — hino congregacional em estúdio celebrando a iluminação dos olhos operada por Cristo."
+    },
+    {
+      title: "Abre os Olhos do Meu Coração",
+      artist: "Leonardo Gonçalves",
+      album: "Poemas e Canções (Estúdio)",
+      duration: "4:35 min",
+      youtubeId: "edGwczJm_uo",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Leonardo Goncalves Abre os Olhos estudio"),
+      theme: "Visão Espiritual e Adoração ao Filho • João 9:38",
+      description: "Interpretação comovente clamando para ver a santidade de Cristo e adorá-lo de joelhos como o cego curado."
+    },
+    {
+      title: "Novo Olhar",
+      artist: "Vocal Livre",
+      album: "Por Toda a Terra (Estúdio)",
+      duration: "3:55 min",
+      youtubeId: "nDXqNTyNC7A",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Vocal Livre Novo Olhar estudio"),
+      theme: "Das Trevas Para a Luz • João 9",
+      description: "Arranjos vocais de estúdio exaltando o milagre que remove a cegueira e revela a fidelidade eterna de Deus."
+    }
+  ],
+
+  // === JOÃO 10 a 21 ===
+  'João 10': [
+    {
+      title: "O Bom Pastor",
+      artist: "Projeto Sola",
+      album: "Single de Estúdio",
+      duration: "4:32 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola O Bom Pastor estudio"),
+      theme: "O Pastor que Dá a Vida • João 10:11",
+      description: "Folk bíblico contemplando a voz do Bom Pastor que chama as suas ovelhas pelo nome e as protege."
+    },
+    {
+      title: "As Minhas Ovelhas",
+      artist: "Novo Canto (IPAlpha)",
+      album: "IPAlpha Música (Estúdio)",
+      duration: "4:30 min",
+      youtubeId: "RGCzQjFKk2w",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha As Minhas Ovelhas estudio"),
+      theme: "Segurança Eterna nas Mãos do Pai • João 10:28–29",
+      description: "Hino da fé reformada sobre a segurança inabalável das ovelhas de Cristo que jamais perecerão."
+    },
+    {
+      title: "Ovelhas do Seu Pastoreio",
+      artist: "Os Arrais",
+      album: "As Canções da Terra (Estúdio)",
+      duration: "4:20 min",
+      youtubeId: "eDflquxhedQ",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Os Arrais Ovelhas estudio"),
+      theme: "O Cuidado Diário do Pastor • João 10",
+      description: "Folk contemplativo sobre o pastoreio generoso e o descanso seguro nos pastos verdejantes."
+    }
+  ],
+  'João 11': [
+    {
+      title: "Ressurreição e Vida",
+      artist: "Morada",
+      album: "Single de Estúdio",
+      duration: "4:40 min",
+      youtubeId: "cGcWmX2Pz0k",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Morada Ressurreicao e Vida estudio"),
+      theme: "Eu Sou a Ressurreição e a Vida • João 11:25",
+      description: "Louvor expressivo proclamando a vitória de Cristo sobre a morte no túmulo de Lázaro: 'Aquele que crê em mim viverá'."
+    },
+    {
+      title: "Vem Para Fora",
+      artist: "Mauro Henrique",
+      album: "Single de Estúdio",
+      duration: "4:15 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Mauro Henrique Vem Para Fora estudio"),
+      theme: "A Ordem que Vence a Morte • João 11:43",
+      description: "Canção intimista sobre a voz do Mestre chamando os seus filhos da sepultura para a vida plena."
+    },
+    {
+      title: "Ele Chora Conosco",
+      artist: "Marcos Almeida",
+      album: "Eu Sarau (Estúdio)",
+      duration: "4:12 min",
+      youtubeId: "_kAVIQzwffg",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Marcos Almeida Ele Chora Conosco estudio"),
+      theme: "Jesus Chorou • João 11:35",
+      description: "Poesia profunda meditando na empatia e compaixão sincera do Salvador diante do sofrimento humano."
+    }
+  ],
+  'João 12': [
+    {
+      title: "Digno de Louvor (O Grão de Trigo)",
+      artist: "Banda NOVA (IPAlpha)",
+      album: "IPAlpha Nova (Estúdio)",
+      duration: "4:30 min",
+      youtubeId: "cGcWmX2Pz0k",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Banda NOVA IPAlpha Digno de Louvor estudio"),
+      theme: "O Grão que Morre para Dar Fruto • João 12:24",
+      description: "Louvor congregacional sobre a entrega sacrificial de Cristo e a entrada triunfal com ramos de palmeira em Jerusalém."
+    },
+    {
+      title: "Derramar Meu Perfume",
+      artist: "Leonardo Gonçalves",
+      album: "Poemas e Canções (Estúdio)",
+      duration: "4:50 min",
+      youtubeId: "edGwczJm_uo",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Leonardo Goncalves Derramar Meu Perfume estudio"),
+      theme: "A Unção de Maria em Betânia • João 12:1–8",
+      description: "Vocal lírico de consagração e devoção irrestrita aos pés de Jesus."
+    },
+    {
+      title: "Quando Eu For Levantado",
+      artist: "Projeto Sola",
+      album: "Single de Estúdio",
+      duration: "4:25 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Quando Eu For Levantado estudio"),
+      theme: "Atrairei Todos a Mim • João 12:32",
+      description: "Folk bíblico contemplando a cruz glorificada que atrai pecadores de todas as nações."
+    }
+  ],
+  'João 13': [
+    {
+      title: "A Começar em Mim (Lava-pés)",
+      artist: "Vocal Livre",
+      album: "Por Toda a Terra (Estúdio)",
+      duration: "3:50 min",
+      youtubeId: "nDXqNTyNC7A",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Vocal Livre A Começar em Mim estudio"),
+      theme: "O Lava-pés & O Servo Humilde • João 13:14–15",
+      description: "Harmonias vocais inspiradas no exemplo do Mestre: 'Se eu, o Senhor e Mestre, lavei os vossos pés, vós deveis também lavar os pés uns dos outros'."
+    },
+    {
+      title: "Um Novo Mandamento",
+      artist: "Asaph Borba",
+      album: "Cânticos de Louvor (Estúdio)",
+      duration: "4:20 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Asaph Borba Um Novo Mandamento estudio"),
+      theme: "O Mandamento do Amor • João 13:34–35",
+      description: "Cântico clássico sobre a marca distintiva dos discípulos de Jesus: o amor sincero e sacrificial."
+    },
+    {
+      title: "Servir ao Rei",
+      artist: "Novo Canto (IPAlpha)",
+      album: "IPAlpha Música (Estúdio)",
+      duration: "4:30 min",
+      youtubeId: "RGCzQjFKk2w",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Servir ao Rei estudio"),
+      theme: "Humildade no Reino de Deus • João 13",
+      description: "Hino reformado convocando a igreja ao serviço abnegado e à compaixão cristã."
+    }
+  ],
+  'João 14': [
+    {
+      title: "O Caminho, a Verdade e a Vida",
+      artist: "Paulo César Baruk",
+      album: "Graça (Estúdio)",
+      duration: "4:40 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Paulo Cesar Baruk O Caminho a Verdade e a Vida estudio"),
+      theme: "Eu Sou o Caminho • João 14:6",
+      description: "Exposição poética sobre a exclusividade de Cristo como o único mediador entre Deus e os homens."
+    },
+    {
+      title: "A Minha Paz Vos Dou",
+      artist: "Os Arrais",
+      album: "As Canções da Terra (Estúdio)",
+      duration: "4:15 min",
+      youtubeId: "eDflquxhedQ",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Os Arrais A Minha Paz Vos Dou estudio"),
+      theme: "Não se Turbe o Vosso Coração • João 14:1, 27",
+      description: "Folk intimista de consolo transmitindo a paz celestial que o mundo não pode dar nem tirar."
+    },
+    {
+      title: "O Consolador",
+      artist: "Banda NOVA (IPAlpha)",
+      album: "IPAlpha Nova (Estúdio)",
+      duration: "4:25 min",
+      youtubeId: "cGcWmX2Pz0k",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Banda NOVA IPAlpha O Consolador estudio"),
+      theme: "A Promessa do Espírito Santo • João 14:16–26",
+      description: "Louvor congregacional celebrando a presença contínua do Espírito da Verdade habitando em nós."
+    }
+  ],
+  'João 15': [
+    {
+      title: "Permanecer em Ti (A Videira)",
+      artist: "Projeto Sola",
+      album: "Single de Estúdio",
+      duration: "4:35 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Permanecer em Ti estudio"),
+      theme: "A Videira Verdadeira • João 15:1–8",
+      description: "Folk bíblico contemplando a dependência vital dos ramos no tronco: 'Sem mim nada podeis fazer'."
+    },
+    {
+      title: "A Videira Verdadeira",
+      artist: "Purples",
+      album: "Single de Estúdio",
+      duration: "4:20 min",
+      youtubeId: "Q4ejKplh_ms",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Banda Purples A Videira estudio"),
+      theme: "Dar Muito Fruto • João 15:5",
+      description: "Canção de estúdio sobre a alegria de habitar nas palavras de Cristo e produzir frutos de justiça."
+    },
+    {
+      title: "Amigos de Deus",
+      artist: "Felipe Valente",
+      album: "Single de Estúdio",
+      duration: "4:10 min",
+      youtubeId: "_kAVIQzwffg",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Felipe Valente Amigos de Deus estudio"),
+      theme: "Já Não Vos Chamo Servos • João 15:14–15",
+      description: "Poesia acústica contemplando a intimidade e amizade redentora selada por Cristo."
+    }
+  ],
+  'João 16': [
+    {
+      title: "O Espírito da Verdade",
+      artist: "Novo Canto (IPAlpha)",
+      album: "IPAlpha Música (Estúdio)",
+      duration: "4:35 min",
+      youtubeId: "RGCzQjFKk2w",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha O Espirito da Verdade estudio"),
+      theme: "O Consolador que Convence e Guia • João 16:7–14",
+      description: "Hino congregacional sobre a obra regeneradora do Espírito Santo guiando os crentes em toda a verdade."
+    },
+    {
+      title: "Tende Bom Ânimo",
+      artist: "Marcos Almeida",
+      album: "Eu Sarau (Estúdio)",
+      duration: "4:15 min",
+      youtubeId: "_kAVIQzwffg",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Marcos Almeida Tende Bom Animo estudio"),
+      theme: "Eu Venci o Mundo • João 16:33",
+      description: "Canção intimista de esperança e coragem diante das aflições passageiras deste mundo presente."
+    },
+    {
+      title: "Vencedor",
+      artist: "Oficina G3",
+      album: "Histórias e Bicicletas (Estúdio)",
+      duration: "4:45 min",
+      youtubeId: "cGcWmX2Pz0k",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Oficina G3 Vencedor estudio"),
+      theme: "A Vitória Inabalável de Cristo • João 16:33",
+      description: "Rock devocional de estúdio proclamando o triunfo do Salvador sobre a morte e o medo."
+    }
+  ],
+  'João 17': [
+    {
+      title: "Que Sejamos Um (Oração Sacerdotal)",
+      artist: "Leonardo Gonçalves",
+      album: "Poemas e Canções (Estúdio)",
+      duration: "5:00 min",
+      youtubeId: "edGwczJm_uo",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Leonardo Goncalves Que Sejamos Um estudio"),
+      theme: "A Oração pela Unidade da Igreja • João 17:21",
+      description: "Vocal reflexivo traduzindo o clamor do Sumo Sacerdote para que a igreja resplandeça na unidade do Pai e do Filho."
+    },
+    {
+      title: "Santifica-os na Verdade",
+      artist: "Projeto Sola",
+      album: "Single de Estúdio",
+      duration: "4:30 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Santifica-os na Verdade estudio"),
+      theme: "A Tua Palavra é a Verdade • João 17:17",
+      description: "Folk bíblico contemplando o envio dos discípulos ao mundo sustentados pela verdade das Escrituras."
+    },
+    {
+      title: "A Glória Eterna",
+      artist: "Banda NOVA (IPAlpha)",
+      album: "IPAlpha Nova (Estúdio)",
+      duration: "4:40 min",
+      youtubeId: "cGcWmX2Pz0k",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Banda NOVA IPAlpha A Gloria Eterna estudio"),
+      theme: "A Glória Antes da Fundação do Mundo • João 17:5",
+      description: "Louvor congregacional contemplando a majestade pré-eterna do Verbo junto ao Pai."
+    }
+  ],
+  'João 18': [
+    {
+      title: "O Cálice do Pai",
+      artist: "Projeto Sola",
+      album: "Single de Estúdio",
+      duration: "4:30 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola O Calice do Pai estudio"),
+      theme: "Não Beberei Eu o Cálice? • João 18:11",
+      description: "Folk de estúdio sobre a obediência voluntária de Jesus ao beber o cálice da ira divina em favor do seu povo."
+    },
+    {
+      title: "Reino Sem Fim",
+      artist: "Fruto Sagrado",
+      album: "Single de Estúdio",
+      duration: "4:15 min",
+      youtubeId: "_pnAJPnp_Jw",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Fruto Sagrado Reino Sem Fim estudio"),
+      theme: "O Meu Reino Não é Deste Mundo • João 18:36",
+      description: "Canção reflexiva de estúdio proclamando a soberania eterna do Reino de Deus diante dos poderes terrestres."
+    },
+    {
+      title: "A Verdade Perante os Homens",
+      artist: "PG",
+      album: "Imagem e Semelhança (Estúdio)",
+      duration: "4:20 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("PG A Verdade Perante os Homens estudio"),
+      theme: "Que é a Verdade? • João 18:37–38",
+      description: "Interpretação marcante sobre Cristo como o Rei que veio para dar testemunho da verdade eterna."
+    }
+  ],
+  'João 19': [
+    {
+      title: "Está Consumado",
+      artist: "Paulo César Baruk",
+      album: "Graça (Estúdio)",
+      duration: "4:35 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Paulo Cesar Baruk Esta Consumado estudio"),
+      theme: "A Obra Perfeita da Cruz • João 19:30",
+      description: "Gravação de estúdio celebrando a consumação da dívida do pecado pelo sacrifício pleno do Cordeiro."
+    },
+    {
+      title: "Na Cruz",
+      artist: "Projeto Sola",
+      album: "Single de Estúdio",
+      duration: "4:40 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Na Cruz estudio"),
+      theme: "O Cordeiro Traspassado • João 19:34–37",
+      description: "Folk lírico meditando na contemplação daquele a quem traspassaram e de cujo lado brotou sangue e água."
+    },
+    {
+      title: "Pela Cruz",
+      artist: "Novo Canto (IPAlpha)",
+      album: "IPAlpha Música (Estúdio)",
+      duration: "4:45 min",
+      youtubeId: "RGCzQjFKk2w",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Pela Cruz estudio"),
+      theme: "A Reconciliação Definitiva • João 19",
+      description: "Hino congregacional da IPAlpha exaltando a cruz onde a justiça e a misericórdia de Deus se beijaram."
+    }
+  ],
+  'João 20': [
+    {
+      title: "Ele Vive (O Túmulo Vazio)",
+      artist: "Novo Canto (IPAlpha)",
+      album: "IPAlpha Música (Estúdio)",
+      duration: "4:50 min",
+      youtubeId: "RGCzQjFKk2w",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Ele Vive estudio"),
+      theme: "A Ressurreição e o Túmulo Vazio • João 20:1–18",
+      description: "Proclamação festiva da vitória de Cristo rompendo os grilhões da morte: 'Por que choras? Ele ressuscitou!'."
+    },
+    {
+      title: "Paz Seja Convosco",
+      artist: "Leonardo Gonçalves",
+      album: "Poemas e Canções (Estúdio)",
+      duration: "4:35 min",
+      youtubeId: "edGwczJm_uo",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Leonardo Goncalves Paz Seja Convosco estudio"),
+      theme: "Jesus no Meio dos Discípulos • João 20:19–23",
+      description: "Interpretação poética da saudação daquele que traz a paz eterna e sopra o Espírito sobre os seus enviados."
+    },
+    {
+      title: "Senhor Meu e Deus Meu",
+      artist: "Morada",
+      album: "Single de Estúdio",
+      duration: "4:30 min",
+      youtubeId: "cGcWmX2Pz0k",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Morada Senhor Meu e Deus Meu estudio"),
+      theme: "A Confissão de Tomé • João 20:28",
+      description: "Louvor expressivo culminando na confissão mais alta da fé: 'Senhor meu e Deus meu!'."
+    }
+  ],
+  'João 21': [
+    {
+      title: "Tu Me Amas?",
+      artist: "Marcos Almeida",
+      album: "Eu Sarau (Estúdio)",
+      duration: "4:15 min",
+      youtubeId: "_kAVIQzwffg",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Marcos Almeida Tu Me Amas estudio"),
+      theme: "A Restauração de Pedro • João 21:15–17",
+      description: "Poesia intimista de estúdio sobre a pergunta de Jesus junto às brasas no mar de Tiberíades e a restauração do pastor arrependido."
+    },
+    {
+      title: "Junto ao Mar de Tiberíades",
+      artist: "Os Arrais",
+      album: "As Canções da Terra (Estúdio)",
+      duration: "4:25 min",
+      youtubeId: "eDflquxhedQ",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Os Arrais Mar de Tiberiades estudio"),
+      theme: "A Pesca Maravilhosa & O Banheiro na Praia • João 21",
+      description: "Folk reflexivo contemplando a fidelidade incondicional de Jesus que prepara o peixe e convida: 'Vinde, comei'."
+    },
+    {
+      title: "Segue-me Tu",
+      artist: "Vocal Livre",
+      album: "Por Toda a Terra (Estúdio)",
+      duration: "4:00 min",
+      youtubeId: "nDXqNTyNC7A",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Vocal Livre Segue-me Tu estudio"),
+      theme: "O Chamado Pessoal do Discípulo • João 21:22",
+      description: "Arranjo vocal contemplando a ordem de Cristo a cada seguidor: fixar os olhos exclusivamente nEle e perseverar até o fim."
+    }
+  ],
+
+  // === EVANGELHO DE LUCAS (Capítulos 19 a 24) ===
+  'Lucas 19': [
+    {
+      title: "Jardim da Inocência (Zaqueu)",
+      artist: "Paulo César Baruk",
+      album: "Graça (Estúdio)",
+      duration: "4:52 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Paulo Cesar Baruk Jardim da Inocencia estudio"),
+      theme: "Zaqueu & Entrada Triunfal • Lucas 19",
+      description: "Gravação de estúdio poética sobre o encontro transformador da graça de Cristo e a entrada triunfal em Jerusalém."
+    },
+    {
+      title: "Vem Me Socorrer",
+      artist: "Marcos Almeida",
+      album: "Eu Sarau (Estúdio)",
+      duration: "4:18 min",
+      youtubeId: "_kAVIQzwffg",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Marcos Almeida Vem Me Socorrer estudio"),
+      theme: "O Filho do Homem Veio Salvar o Perdido • Lucas 19:10",
+      description: "Poesia intimista de socorro e reconciliação aos pés do Salvador."
+    }
+  ],
+  'Lucas 20': [
+    {
+      title: "Pedra Angular / Castelo Forte",
+      artist: "Novo Canto (IPAlpha)",
+      album: "IPAlpha Música (Estúdio)",
+      duration: "4:50 min",
+      youtubeId: "RGCzQjFKk2w",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Castelo Forte estudio"),
+      theme: "A Pedra que os Edificadores Rejeitaram • Lucas 20:17",
+      description: "Louvor congregacional proclamando a soberania da Rocha Inabalável que sustenta o seu povo."
+    },
+    {
+      title: "Esperança",
+      artist: "Os Arrais",
+      album: "As Canções da Terra (Estúdio)",
+      duration: "4:24 min",
+      youtubeId: "eDflquxhedQ",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Os Arrais Esperança estudio"),
+      theme: "Deus Não é Deus de Mortos, mas de Vivos • Lucas 20:38",
+      description: "Folk contemplativo sobre a promessa irrevogável da ressurreição."
+    }
+  ],
+  'Lucas 21': [
+    {
+      title: "A Começar em Mim",
+      artist: "Vocal Livre",
+      album: "Por Toda a Terra (Estúdio)",
+      duration: "3:50 min",
+      youtubeId: "nDXqNTyNC7A",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Vocal Livre A Começar em Mim estudio"),
+      theme: "A Oferta da Viúva & A Redenção Próxima • Lucas 21",
+      description: "Harmonias vocais sobre a entrega total do coração e a vigilância esperançosa no retorno de Cristo."
+    },
+    {
+      title: "Colossenses 1",
+      artist: "Projeto Sola",
+      album: "Single de Estúdio",
+      duration: "4:47 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Colossenses 1 estudio"),
+      theme: "O Céu e a Terra Passarão • Lucas 21:33",
+      description: "Meditação lírica sobre a Palavra eterna que jamais passará."
+    }
+  ],
+  'Lucas 22': [
+    {
+      title: "Getsêmani",
+      artist: "Leonardo Gonçalves",
+      album: "Poemas e Canções (Estúdio)",
+      duration: "5:09 min",
+      youtubeId: "edGwczJm_uo",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Leonardo Goncalves Getsemani estudio"),
+      theme: "A Ceia e a Agonia no Jardim • Lucas 22:39–44",
+      description: "Gravação clássica de estúdio retratando a angústia vicária e a entrega voluntária de Cristo no Getsêmani: 'Não seja feita a minha vontade, mas a tua'."
+    },
+    {
+      title: "Cálice de Amor",
+      artist: "Projeto Sola",
+      album: "Single de Estúdio",
+      duration: "4:20 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Calice estudio"),
+      theme: "O Novo Pacto no Meu Sangue • Lucas 22:20",
+      description: "Folk bíblico sobre a instituição da Ceia e o sangue derramado por nós."
+    }
+  ],
+  'Lucas 23': [
+    {
+      title: "Na Cruz (Isaías 53)",
+      artist: "Projeto Sola",
+      album: "Single de Estúdio",
+      duration: "4:40 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Na Cruz estudio"),
+      theme: "A Crucificação & O Perdão na Cruz • Lucas 23:34",
+      description: "Exposição comovente sobre a oração de Jesus na cruz: 'Pai, perdoa-lhes, porque não sabem o que fazem'."
+    },
+    {
+      title: "Está Consumado",
+      artist: "Paulo César Baruk",
+      album: "Graça (Estúdio)",
+      duration: "4:35 min",
+      youtubeId: "bi9W6oZzfxk",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Paulo Cesar Baruk Esta Consumado estudio"),
+      theme: "Pai, nas Tuas Mãos Entrego o Meu Espírito • Lucas 23:46",
+      description: "Celebração em estúdio da redenção perfeita consumada no Calvário."
+    }
+  ],
+  'Lucas 24': [
+    {
+      title: "Castelo Forte / Ele Vive",
+      artist: "Novo Canto (IPAlpha)",
+      album: "IPAlpha Música (Estúdio)",
+      duration: "4:50 min",
+      youtubeId: "RGCzQjFKk2w",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Castelo Forte estudio"),
+      theme: "A Ressurreição & Os Discípulos de Emaús • Lucas 24",
+      description: "Hino da fé reformada celebrando a vitória triunfante sobre a sepultura: 'Ele não está aqui, mas ressuscitou!'."
+    },
+    {
+      title: "Esperança (Caminho de Emaús)",
+      artist: "Os Arrais",
+      album: "As Canções da Terra (Estúdio)",
+      duration: "4:24 min",
+      youtubeId: "eDflquxhedQ",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Os Arrais Esperança estudio"),
+      theme: "O Coração que Ardia no Caminho • Lucas 24:32",
+      description: "Folk contemplativo sobre os olhos que se abrem ao partir do pão na presença do Ressurreto."
+    }
+  ]
+};
+
+// Resolução de Fallback Temático Inteligente para qualquer livro e capítulo da Bíblia
+function resolveThematicFallback(bookName, chapterNum, readingIndex = 0, overrideIndex = null) {
+  const clean = (bookName || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+  const index = overrideIndex !== null && overrideIndex !== undefined ? Math.abs(overrideIndex) : (chapterNum + readingIndex);
+
+  // Evangelhos e Atos
+  if (clean.includes('mateus') || clean.includes('marcos') || clean.includes('lucas') || clean.includes('atos')) {
+    const list = [
+      {
+        title: "Castelo Forte",
+        artist: "Novo Canto (IPAlpha)",
+        album: "IPAlpha Música (Estúdio)",
+        duration: "4:50 min",
+        youtubeId: "RGCzQjFKk2w",
+        youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Castelo Forte estudio"),
+        description: "Hino congregacional da fé reformada sobre a soberania triunfante do Reino de Deus."
+      },
+      {
+        title: "Aqui Vou Eu",
+        artist: "Banda NOVA (IPAlpha)",
+        album: "IPAlpha Nova (Estúdio)",
+        duration: "4:30 min",
+        youtubeId: "cGcWmX2Pz0k",
+        youtubeMusicUrl: getYoutubeMusicSearchUrl("Banda NOVA IPAlpha Aqui Vou Eu estudio"),
+        description: "Louvor jovem de consagração e disponibilidade ao chamado do Reino de Cristo."
+      },
+      {
+        title: "Vem Me Socorrer",
+        artist: "Marcos Almeida",
+        album: "Eu Sarau (Estúdio)",
+        duration: "4:18 min",
+        youtubeId: "_kAVIQzwffg",
+        youtubeMusicUrl: getYoutubeMusicSearchUrl("Marcos Almeida Vem Me Socorrer estudio"),
+        description: "Clamor poético e sincero por graça e restauração aos pés do Redentor."
+      }
+    ];
+    return list[index % list.length];
+  }
+
+  // Cartas Paulinas e Gerais
+  if (clean.includes('romanos') || clean.includes('corintios') || clean.includes('galatas') || clean.includes('efesios') || clean.includes('filipenses') || clean.includes('colossenses') || clean.includes('hebreus')) {
+    const list = [
+      {
+        title: "Colossenses 1",
+        artist: "Projeto Sola",
+        album: "Single de Estúdio",
+        duration: "4:47 min",
+        youtubeId: "gk7XWCMwO94",
+        youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Colossenses 1 estudio"),
+        description: "Exposição lírica da doutrina da justificação e supremacia de Cristo."
+      },
+      {
+        title: "Jardim da Inocência (Graça)",
+        artist: "Paulo César Baruk",
+        album: "Graça (Estúdio)",
+        duration: "4:52 min",
+        youtubeId: "bi9W6oZzfxk",
+        youtubeMusicUrl: getYoutubeMusicSearchUrl("Paulo Cesar Baruk Jardim da Inocencia estudio"),
+        description: "Gravação de estúdio celebrando a paz com Deus mediante a justificação pela fé."
+      },
+      {
+        title: "Esperança",
+        artist: "Os Arrais",
+        album: "As Canções da Terra (Estúdio)",
+        duration: "4:24 min",
+        youtubeId: "eDflquxhedQ",
+        youtubeMusicUrl: getYoutubeMusicSearchUrl("Os Arrais Esperança estudio"),
+        description: "Folk bíblico contemplando a firme esperança da glória eterna prometida nas Escrituras."
+      }
+    ];
+    return list[index % list.length];
+  }
+
+  // Salmos e Sabedoria
+  if (clean.includes('salmo') || clean.includes('proverbios') || clean.includes('eclesiastes')) {
+    const list = [
+      {
+        title: "Castelo Forte (Salmo 46)",
+        artist: "Novo Canto (IPAlpha)",
+        album: "IPAlpha Música (Estúdio)",
+        duration: "4:50 min",
+        youtubeId: "RGCzQjFKk2w",
+        youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Castelo Forte estudio"),
+        description: "Deus é o nosso refúgio e fortaleza, socorro bem presente nas tribulações."
+      },
+      {
+        title: "Esperança",
+        artist: "Os Arrais",
+        album: "As Canções da Terra (Estúdio)",
+        duration: "4:24 min",
+        youtubeId: "eDflquxhedQ",
+        youtubeMusicUrl: getYoutubeMusicSearchUrl("Os Arrais Esperança estudio"),
+        description: "Oração lírica e contemplativa baseada nos cânticos de confiança nos Salmos."
+      },
+      {
+        title: "A Começar em Mim",
+        artist: "Vocal Livre",
+        album: "Por Toda a Terra (Estúdio)",
+        duration: "3:50 min",
+        youtubeId: "nDXqNTyNC7A",
+        youtubeMusicUrl: getYoutubeMusicSearchUrl("Vocal Livre A Começar em Mim estudio"),
+        description: "Súplica sincera pela renovação de um coração puro e espírito inabalável."
+      }
+    ];
+    return list[index % list.length];
+  }
+
+  // Antigo Testamento Geral
+  const generalList = [
+    {
+      title: "Castelo Forte",
+      artist: "Novo Canto (IPAlpha)",
+      album: "IPAlpha Música (Estúdio)",
+      duration: "4:50 min",
+      youtubeId: "RGCzQjFKk2w",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Castelo Forte estudio"),
+      description: "Louvor congregacional proclamando a aliança eterna e a soberania do Senhor dos Exércitos."
+    },
+    {
+      title: "Aqui Vou Eu",
+      artist: "Banda NOVA (IPAlpha)",
+      album: "IPAlpha Nova (Estúdio)",
+      duration: "4:30 min",
+      youtubeId: "cGcWmX2Pz0k",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Banda NOVA IPAlpha Aqui Vou Eu estudio"),
+      description: "Louvor celebrando a obediência e prontidão ao chamado de Deus."
+    },
+    {
+      title: "Colossenses 1",
+      artist: "Projeto Sola",
+      album: "Single de Estúdio",
+      duration: "4:47 min",
+      youtubeId: "gk7XWCMwO94",
+      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Colossenses 1 estudio"),
+      description: "Poesia bíblica conectando a promessa das Escrituras ao Cordeiro Eterno."
+    }
+  ];
+  return generalList[index % generalList.length];
+}
+
+// Obtém a música recomendada especificamente para cada capítulo do dia com base no tema exegético do texto
 export function getMusicForChapter(dayId, readingStr, readingIndex = 0, overrideArtistIndex = null) {
-  const numericDay = Number(dayId) || 300;
-  
-  // Se houver um índice forçado (pelo botão "Trocar"), usa diretamente
-  if (overrideArtistIndex !== null && overrideArtistIndex !== undefined) {
-    const artist = PREFERRED_ARTISTS[overrideArtistIndex % PREFERRED_ARTISTS.length];
+  const cleanReading = (readingStr || '').trim();
+
+  // 1. Prioridade Máxima: Catálogo Temático Específico por Capítulo Bíblico
+  if (THEMATIC_CHAPTER_MUSIC[cleanReading] && THEMATIC_CHAPTER_MUSIC[cleanReading].length > 0) {
+    const list = THEMATIC_CHAPTER_MUSIC[cleanReading];
+    const index = overrideArtistIndex !== null && overrideArtistIndex !== undefined
+      ? Math.abs(overrideArtistIndex) % list.length
+      : 0;
+    const track = list[index];
     return {
-      chapter: readingStr,
-      ...artist.sampleTrack,
-      theme: `${artist.style} • Sugestão para ${readingStr}`,
-      artistIndex: overrideArtistIndex % PREFERRED_ARTISTS.length
+      chapter: cleanReading,
+      ...track,
+      artistIndex: index,
+      theme: track.theme || `Louvor específico para ${cleanReading}`
     };
   }
 
-  // Curadoria inicial por dia e índice de leitura
-  // Garante que o capítulo 1, 2 e 3 do dia tenham artistas diferentes
-  // Dando destaque especial aos artistas preferidos (Banda NOVA, Novo Canto, Projeto Sola, etc.)
-  let artistIndex;
-  
-  if (numericDay === 302) {
-    // Dia 302: João 1, 2, 3
-    if (readingIndex === 0) artistIndex = 3; // Projeto Sola (Colossenses 1 / João 1: o Verbo Criador)
-    else if (readingIndex === 1) artistIndex = 0; // Banda NOVA (IPAlpha) (Aqui Vou Eu / João 2)
-    else artistIndex = 1; // Novo Canto (IPAlpha) (Castelo Forte / João 3)
-  } else if (numericDay === 300) {
-    // Dia 300: Lucas 19, 20, 21
-    if (readingIndex === 0) artistIndex = 6; // Paulo César Baruk (Lucas 19)
-    else if (readingIndex === 1) artistIndex = 2; // Os Arrais (Esperança / Lucas 20)
-    else artistIndex = 8; // Vocal Livre (A Começar em Mim / Lucas 21)
-  } else if (numericDay === 301) {
-    // Dia 301: Lucas 22, 23, 24
-    if (readingIndex === 0) artistIndex = 4; // Leonardo Gonçalves (Getsêmani / Lucas 22)
-    else if (readingIndex === 1) artistIndex = 3; // Projeto Sola (Isaías 53 / Lucas 23)
-    else artistIndex = 1; // Novo Canto (IPAlpha) (Castelo Forte / Lucas 24)
-  } else {
-    // Rotação pseudo-aleatória estável para qualquer dia do ano
-    artistIndex = (numericDay * 3 + readingIndex) % PREFERRED_ARTISTS.length;
-  }
+  // 2. Fallback Contextual Inteligente por Livro e Capítulo
+  const parts = cleanReading.split(' ');
+  const bookName = parts.slice(0, parts.length - 1).join(' ') || parts[0] || 'Lucas';
+  const chapterNum = Number(parts[parts.length - 1]) || 1;
+  const fallback = resolveThematicFallback(bookName, chapterNum, readingIndex, overrideArtistIndex);
 
-  const artist = PREFERRED_ARTISTS[artistIndex];
   return {
-    chapter: readingStr,
-    ...artist.sampleTrack,
-    theme: `${artist.style} • Sugestão para ${readingStr}`,
-    artistIndex
+    chapter: cleanReading,
+    ...fallback,
+    theme: fallback.theme || `Louvor para ${cleanReading}`,
+    artistIndex: overrideArtistIndex !== null && overrideArtistIndex !== undefined ? overrideArtistIndex : readingIndex
   };
 }

@@ -365,6 +365,30 @@ test('QA Test 10: Mídia Devocional Diária (Músicas < 10 min, Sem Repetição 
     );
   }
 
+  // 7. Testar conexão temática estrita de músicas para João 7, 8 e 9 (Dia 304)
+  const { getMusicForChapter } = await import('../src/data/dailyMedia.js');
+  const media304 = getMediaForDay(304);
+  assert.equal(media304.music.title, 'Luz do Mundo', 'Dia 304 deve sugerir Luz do Mundo de Marcos Almeida para João 8');
+  assert.equal(media304.music.artist, 'Marcos Almeida');
+  assert.ok(media304.music.youtubeMusicUrl.includes('music.youtube.com'), 'URL deve ser do YouTube Music');
+
+  const musicJoao7 = getMusicForChapter(304, 'João 7');
+  assert.equal(musicJoao7.title, 'Águas Vivas', 'João 7 deve sugerir Águas Vivas da Banda NOVA');
+  assert.equal(musicJoao7.artist, 'Banda NOVA (IPAlpha)');
+  assert.ok(musicJoao7.description.includes('João 7'), 'Descrição deve citar João 7 e rios de água viva');
+
+  const musicJoao8 = getMusicForChapter(304, 'João 8');
+  assert.equal(musicJoao8.title, 'Luz do Mundo', 'João 8 deve sugerir Luz do Mundo');
+  assert.ok(musicJoao8.description.includes('João 8:12'), 'Descrição deve citar João 8:12');
+
+  const musicJoao8Alt = getMusicForChapter(304, 'João 8', 1, 1);
+  assert.equal(musicJoao8Alt.title, 'Verdadeiramente Livres', 'Trocar em João 8 deve alternar para Verdadeiramente Livres');
+  assert.equal(musicJoao8Alt.artist, 'Paulo César Baruk');
+
+  const musicJoao9 = getMusicForChapter(304, 'João 9');
+  assert.ok(musicJoao9.title.includes('Eu Era Cego e Agora Vejo'), 'João 9 deve sugerir louvor conectado à cura do cego');
+  assert.equal(musicJoao9.artist, 'Novo Canto (IPAlpha)');
+
   console.log('✓ QA Test 10 Aprovado: Músicas curtas (<10min), rotação diária sem repetição e vídeos conectados ao tema.');
 });
 
@@ -418,6 +442,25 @@ test('QA Test 11: Referências Cruzadas Bíblicas e Conexões Canônicas', async
   // 4. Testar método hasReferences
   assert.equal(crossReferenceService.hasReferences('Lucas', '19', 10), true);
   assert.equal(crossReferenceService.hasReferences('Lucas', '999', 999), false);
+
+  // 5. Validar que capítulos de João (João 7, 8 e 9) possuem referências canônicas
+  const refsJo8_12 = crossReferenceService.getReferences('João', '8', 12);
+  assert.ok(refsJo8_12.length > 0, 'João 8:12 ("Eu sou a luz do mundo") deve ter referências');
+  assert.ok(refsJo8_12.some(r => r.reference.includes('Isaías 9:2') || r.reference.includes('1 João 1:5')), 'João 8:12 deve conectar a Isaías 9:2 ou 1 João 1:5');
+
+  const refsJo8_36 = crossReferenceService.getReferences('João', '8', 36);
+  assert.ok(refsJo8_36.length > 0, 'João 8:36 ("se o Filho vos libertar...") deve ter referências');
+  assert.ok(refsJo8_36.some(r => r.reference.includes('Gálatas 5:1') || r.reference.includes('Romanos 8:2')), 'João 8:36 deve conectar a Gálatas 5:1');
+
+  const refsJo7_37 = crossReferenceService.getReferences('João', '7', 37);
+  assert.ok(refsJo7_37.length > 0, 'João 7:37 ("Quem tem sede venha a mim e beba") deve ter referências');
+  assert.ok(refsJo7_37.some(r => r.reference.includes('Isaías 55:1')), 'João 7:37 deve conectar a Isaías 55:1');
+
+  const refsJo9_25 = crossReferenceService.getReferences('João', '9', 25);
+  assert.ok(refsJo9_25.length > 0, 'João 9:25 ("era cego e agora vejo") deve ter referências');
+  assert.ok(refsJo9_25.some(r => r.reference.includes('Lucas 18:42') || r.reference.includes('Atos 26:18')), 'João 9:25 deve conectar a Lucas 18 ou Atos 26');
+
+  assert.equal(crossReferenceService.hasReferences('João', '8', 12), true, 'hasReferences para João 8:12 deve ser true');
 
   console.log('✓ QA Test 11 Aprovado: Referências cruzadas bíblicas ativas e canonicamente conectadas em todos os capítulos.');
 });
