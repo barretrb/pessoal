@@ -46,7 +46,7 @@ def root():
         "description": "One Thing Prioritizer & Tracker Webhook"
     }
 
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD", "POST"])
 def health():
     return {"status": "ok"}
 
@@ -99,7 +99,7 @@ async def whatsapp_webhook(request: Request, background_tasks: BackgroundTasks):
         traceback.print_exc()
         return JSONResponse(status_code=500, content={"error": str(e), "traceback": traceback.format_exc()})
 
-@app.get("/cron/morning")
+@app.api_route("/cron/morning", methods=["GET", "POST"])
 def trigger_morning_cron(force: bool = False):
     """Disparo do ritual matinal das 08:15."""
     try:
@@ -108,7 +108,7 @@ def trigger_morning_cron(force: bool = False):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/cron/lunch")
+@app.api_route("/cron/lunch", methods=["GET", "POST"])
 def trigger_lunch_cron():
     """Disparo da pílula do livro no horário do almoço (12:30)."""
     try:
@@ -117,7 +117,7 @@ def trigger_lunch_cron():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/cron/night")
+@app.api_route("/cron/night", methods=["GET", "POST"])
 def trigger_night_cron():
     """Disparo do fechamento noturno das 18:00."""
     try:
@@ -126,7 +126,7 @@ def trigger_night_cron():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/cron/weekly")
+@app.api_route("/cron/weekly", methods=["GET", "POST"])
 def trigger_weekly_cron():
     """Disparo do planejamento semanal de segunda-feira."""
     try:

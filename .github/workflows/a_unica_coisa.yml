@@ -1,11 +1,9 @@
 name: Agente A Unica Coisa
 
+# Desativado schedule do GitHub Actions para evitar atrasos na fila global compartilhada.
+# O agendamento é disparado com precisão pelo Cron Job da Hostinger (reagiu.com.br).
+# O workflow_dispatch continua disponível para disparos manuais no GitHub.
 on:
-  schedule:
-    # 08:15 BRT (11:15 UTC) de segunda a sexta -> Ritual Matinal
-    - cron: '15 11 * * 1-5'
-    # 18:00 BRT (21:00 UTC) de segunda a sexta -> Check-in Noturno
-    - cron: '0 21 * * 1-5'
   workflow_dispatch:
     inputs:
       action:
