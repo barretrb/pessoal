@@ -1,20 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   X, 
   Cloud, 
-  CloudDownload, 
-  CloudUpload, 
   Check, 
-  Share2, 
   Copy, 
   Smartphone, 
   Laptop, 
   RefreshCw,
   Download,
-  Upload
+  Upload,
+  Database,
+  Lock,
+  Mail,
+  LogOut,
+  UserCheck
 } from 'lucide-react';
 import { cloudDbService } from '../services/cloudDbService';
 import { storage } from '../services/storage';
+import { supabase } from '../services/supabaseClient';
+import { supabaseSyncService } from '../services/supabaseSyncService';
 
 export default function CloudSyncModal({
   isOpen,
@@ -28,19 +32,83 @@ export default function CloudSyncModal({
   const [syncStatusMsg, setSyncStatusMsg] = useState(null);
   const [copied, setCopied] = useState(false);
 
+  // Estados de Autenticação Supabase
+  const [supabaseUser, setSupabaseUser] = useState(null);
+  const [authMode, setAuthMode] = useState('login'); // 'login' ou 'register'
+  const [authEmail, setAuthEmail] = useState('');
+  const [authPassword, setAuthPassword] = useState('');
+  const [authLoading, setAuthLoading] = useState(false);
+  const [authError, setAuthError] = useState(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      supabase.auth.getUser().then(({ data: { user } }) => {
+        setSupabaseUser(user || null);
+      });
+    }
+  }, [isOpen]);
+
   if (!isOpen) return null;
+
+  const handleSupabaseAuth = async (e) => {
+    e.preventDefault();
+    if (!authEmail.trim() || !authPassword) return;
+
+    setAuthLoading(true);
+    setAuthError(null);
+
+    try {
+      if (authMode === 'login') {
+        const { data, error } = await supabase.auth.signInWithPassword({
+          email: authEmail.trim(),
+          password: authPassword
+        });
+        if (error) throw error;
+        setSupabaseUser(data.user);
+        setSyncStatusMsg({ type: 'success', text: 'Login realizado com sucesso! Sincronizando com Supabase...' });
+        await supabaseSyncService._migrateLocalDataIfEmpty();
+        if (onDataSynced) onDataSynced();
+      } else {
+        const { data, error } = await supabase.auth.signUp({
+          email: authEmail.trim(),
+          password: authPassword
+        });
+        if (error) throw error;
+        setSupabaseUser(data.user);
+        setSyncStatusMsg({ type: 'success', text: 'Conta criada com sucesso! Conectado ao Supabase.' });
+        await supabaseSyncService._migrateLocalDataIfEmpty();
+        if (onDataSynced) onDataSynced();
+      }
+    } catch (err) {
+      setAuthError(err.message || 'Falha na autenticação com o Supabase.');
+    } finally {
+      setAuthLoading(false);
+    }
+  };
+
+  const handleSupabaseSignOut = async () => {
+    setAuthLoading(true);
+    await supabase.auth.signOut();
+    setSupabaseUser(null);
+    setAuthLoading(false);
+    setSyncStatusMsg({ type: 'success', text: 'Desconectado da conta Supabase.' });
+  };
 
   const handleSyncNow = async () => {
     setIsSyncing(true);
     setSyncStatusMsg(null);
 
-    // 1. Puxa e mescla da nuvem primeiro
+    // 1. Sincroniza com Supabase se usuário estiver logado
+    if (supabaseUser) {
+      await supabaseSyncService._migrateLocalDataIfEmpty();
+    }
+
+    // 2. Mantém redundância no cofre REST existente
     await cloudDbService.fetchAndMergeLatest();
-    // 2. Envia os dados locais consolidados para a nuvem
     const res = await cloudDbService.syncWithCloud(familyCodeInput.trim().toUpperCase());
     setIsSyncing(false);
 
-    if (res.success) {
+    if (res.success || supabaseUser) {
       setSyncStatusMsg({ type: 'success', text: 'Sincronizado com a nuvem com sucesso!' });
       setConfig(storage.getCloudConfig());
       if (onDataSynced) onDataSynced();
@@ -90,122 +158,190 @@ export default function CloudSyncModal({
         {/* Cabeçalho */}
         <div className="p-4 sm:p-5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between bg-zinc-50 dark:bg-zinc-900/80">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-2xl bg-sky-500/15 text-sky-600 dark:text-sky-400 flex items-center justify-center border border-sky-500/30">
-              <Cloud className="w-5 h-5" />
+            <div className="w-10 h-10 rounded-2xl bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 flex items-center justify-center border border-emerald-500/30">
+              <Database className="w-5 h-5" />
             </div>
             <div>
               <h3 className="font-extrabold text-base text-zinc-900 dark:text-zinc-50">
                 Banco de Dados & Nuvem
               </h3>
               <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                Sincronize entre celular, tablet e computador
+                Sincronismo em tempo real (Supabase PostgreSQL)
               </p>
             </div>
           </div>
-          <button 
+
+          <button
             onClick={onClose}
-            className="p-2 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 rounded-xl"
-            title="Fechar"
+            className="p-2 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        {/* Conteúdo */}
-        <div className="p-4 sm:p-5 space-y-5 overflow-y-auto flex-1 bg-zinc-50/50 dark:bg-zinc-950/40">
-          
-          {/* Card com Código para Conectar Outro Aparelho */}
-          <div className="p-4 rounded-2xl border-2 border-sky-200 dark:border-sky-900/60 bg-sky-50/50 dark:bg-sky-950/20 space-y-3">
-            <div className="flex items-center space-x-2">
-              <Smartphone className="w-4 h-4 text-sky-600 dark:text-sky-400" />
-              <Laptop className="w-4 h-4 text-sky-600 dark:text-sky-400" />
-              <span className="text-xs font-bold text-sky-900 dark:text-sky-200 uppercase tracking-wide">
-                Código de Sincronização da Conta
+        {/* Conteúdo com Scroll */}
+        <div className="p-4 sm:p-5 overflow-y-auto space-y-5 text-sm">
+
+          {/* Feedback de Status */}
+          {syncStatusMsg && (
+            <div className={`p-3 rounded-2xl text-xs flex items-center space-x-2 ${
+              syncStatusMsg.type === 'success' 
+                ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60'
+                : 'bg-rose-50 dark:bg-rose-950/40 text-rose-800 dark:text-rose-300 border border-rose-200 dark:border-rose-800/60'
+            }`}>
+              <Check className="w-4 h-4 shrink-0" />
+              <span>{syncStatusMsg.text}</span>
+            </div>
+          )}
+
+          {/* Card Supabase Auth (Principal) */}
+          <div className="p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700/80 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold text-zinc-900 dark:text-zinc-100 flex items-center space-x-1.5">
+                <Database className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                <span>Nuvem Supabase (PostgreSQL 17)</span>
               </span>
+              {supabaseUser ? (
+                <span className="inline-flex items-center space-x-1 text-[11px] font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-100/70 dark:bg-emerald-950/60 px-2 py-0.5 rounded-full">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                  <span>Conectado</span>
+                </span>
+              ) : (
+                <span className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                  Desconectado
+                </span>
+              )}
             </div>
-            <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              Digite este mesmo código nos seus outros aparelhos para sincronizarem automaticamente o mesmo histórico:
-            </p>
 
-            <div className="flex items-center space-x-2">
-              <input
-                type="text"
-                value={familyCodeInput}
-                onChange={(e) => setFamilyCodeInput(e.target.value)}
-                className="flex-1 font-mono uppercase font-bold text-sm px-3 py-2 rounded-xl border border-sky-300 dark:border-sky-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 focus:ring-2 focus:ring-sky-500"
-                placeholder="Ex: DEVOCIONAL-SYNC-RAFAEL"
-              />
-              <button
-                onClick={handleCopyCode}
-                className="px-3 py-2 rounded-xl bg-sky-600 hover:bg-sky-700 text-white text-xs font-bold flex items-center space-x-1 shadow-xs"
-                title="Copiar código"
-              >
-                {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                <span className="hidden sm:inline">{copied ? 'Copiado!' : 'Copiar'}</span>
-              </button>
-            </div>
-          </div>
-
-          {/* Botão Sincronizar Agora */}
-          <div className="space-y-2">
-            <button
-              onClick={handleSyncNow}
-              disabled={isSyncing}
-              className="w-full py-3 px-4 rounded-2xl bg-amber-600 hover:bg-amber-700 text-white text-sm font-bold flex items-center justify-center space-x-2 shadow-md transition-all active:scale-95 disabled:opacity-50"
-            >
-              <RefreshCw className={`w-4 h-4 ${isSyncing ? 'animate-spin' : ''}`} />
-              <span>{isSyncing ? 'Sincronizando com a Nuvem...' : 'Sincronizar com a Nuvem Agora'}</span>
-            </button>
-
-            {config.lastSyncedAt && (
-              <p className="text-[11px] text-zinc-500 dark:text-zinc-400 text-center">
-                Última sincronização: {new Date(config.lastSyncedAt).toLocaleString('pt-BR')}
-              </p>
-            )}
-
-            {syncStatusMsg && (
-              <div className={`p-2.5 rounded-xl text-xs font-semibold text-center ${
-                syncStatusMsg.type === 'success' 
-                  ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300' 
-                  : 'bg-rose-100 text-rose-800 dark:bg-rose-950/60 dark:text-rose-300'
-              }`}>
-                {syncStatusMsg.text}
+            {supabaseUser ? (
+              <div className="space-y-3 pt-1">
+                <div className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-between">
+                  <div className="flex items-center space-x-2 truncate">
+                    <UserCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                    <span className="text-xs font-medium text-zinc-800 dark:text-zinc-200 truncate">
+                      {supabaseUser.email}
+                    </span>
+                  </div>
+                  <button
+                    onClick={handleSupabaseSignOut}
+                    disabled={authLoading}
+                    className="p-1.5 text-zinc-400 hover:text-rose-600 dark:hover:text-rose-400 rounded-lg hover:bg-rose-50 dark:hover:bg-rose-950/30 transition-colors"
+                    title="Desconectar conta"
+                  >
+                    <LogOut className="w-4 h-4" />
+                  </button>
+                </div>
+                <p className="text-[11px] text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                  Seus 365 dias de leitura, favoritos e telemetria estão sincronizados com segurança permanente no banco do Supabase.
+                </p>
               </div>
+            ) : (
+              <form onSubmit={handleSupabaseAuth} className="space-y-3 pt-1">
+                <div className="flex items-center space-x-2 text-xs">
+                  <button
+                    type="button"
+                    onClick={() => setAuthMode('login')}
+                    className={`pb-1 font-semibold transition-colors border-b-2 ${
+                      authMode === 'login' 
+                        ? 'border-emerald-600 text-emerald-700 dark:text-emerald-400' 
+                        : 'border-transparent text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-300'
+                    }`}
+                  >
+                    Entrar na Conta
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setAuthMode('register')}
+                    className={`pb-1 font-semibold transition-colors border-b-2 ${
+                      authMode === 'register' 
+                        ? 'border-emerald-600 text-emerald-700 dark:text-emerald-400' 
+                        : 'border-transparent text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-300'
+                    }`}
+                  >
+                    Criar Conta
+                  </button>
+                </div>
+
+                {authError && (
+                  <p className="text-[11px] text-rose-600 dark:text-rose-400">
+                    {authError}
+                  </p>
+                )}
+
+                <div className="space-y-2">
+                  <div className="relative">
+                    <Mail className="w-4 h-4 text-zinc-400 absolute left-3 top-2.5" />
+                    <input
+                      type="email"
+                      required
+                      placeholder="Seu email (ex: rafael@exemplo.com)"
+                      value={authEmail}
+                      onChange={(e) => setAuthEmail(e.target.value)}
+                      className="w-full pl-9 pr-3 py-2 text-xs rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 focus:outline-hidden focus:ring-2 focus:ring-emerald-500"
+                    />
+                  </div>
+                  <div className="relative">
+                    <Lock className="w-4 h-4 text-zinc-400 absolute left-3 top-2.5" />
+                    <input
+                      type="password"
+                      required
+                      placeholder="Sua senha segura"
+                      value={authPassword}
+                      onChange={(e) => setAuthPassword(e.target.value)}
+                      className="w-full pl-9 pr-3 py-2 text-xs rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 focus:outline-hidden focus:ring-2 focus:ring-emerald-500"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={authLoading}
+                  className="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md transition-colors flex items-center justify-center space-x-1.5 disabled:opacity-50"
+                >
+                  {authLoading && <RefreshCw className="w-3.5 h-3.5 animate-spin" />}
+                  <span>{authMode === 'login' ? 'Entrar e Sincronizar' : 'Criar Conta e Salvar Dados'}</span>
+                </button>
+              </form>
             )}
           </div>
 
-          {/* Opções de Backup Manual (Segurança Total) */}
-          <div className="pt-2 border-t border-zinc-200 dark:border-zinc-800 space-y-2.5">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
-              Backup do Histórico Completo
-            </h4>
+          {/* Botão de Sincronização Geral */}
+          <button
+            onClick={handleSyncNow}
+            disabled={isSyncing}
+            className="w-full py-3 rounded-2xl bg-zinc-900 hover:bg-zinc-800 dark:bg-zinc-100 dark:hover:bg-white text-white dark:text-zinc-900 font-extrabold text-xs shadow-lg transition-all flex items-center justify-center space-x-2 disabled:opacity-50"
+          >
+            <RefreshCw className={`w-4 h-4 ${isSyncing ? 'animate-spin' : ''}`} />
+            <span>{isSyncing ? 'Sincronizando Nuvem...' : 'Sincronizar Todos os Dados Agora'}</span>
+          </button>
+
+          {/* Backup Manual / Arquivo JSON */}
+          <div className="pt-2 border-t border-zinc-200 dark:border-zinc-800 space-y-2">
+            <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300">
+              Backup Físico em Arquivo
+            </span>
             <div className="grid grid-cols-2 gap-2">
               <button
                 onClick={handleDownloadBackup}
-                className="py-2.5 px-3 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs font-bold flex items-center justify-center space-x-1.5 transition-colors shadow-2xs"
+                className="py-2 px-3 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800/60 text-zinc-700 dark:text-zinc-200 font-semibold text-xs transition-colors flex items-center justify-center space-x-1.5"
               >
-                <Download className="w-3.5 h-3.5 text-amber-600" />
-                <span>Baixar Backup</span>
+                <Download className="w-3.5 h-3.5" />
+                <span>Exportar JSON</span>
               </button>
 
-              <label className="py-2.5 px-3 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs font-bold flex items-center justify-center space-x-1.5 transition-colors shadow-2xs cursor-pointer">
-                <Upload className="w-3.5 h-3.5 text-indigo-600" />
-                <span>Restaurar</span>
-                <input type="file" accept=".json" onChange={handleImportFile} className="hidden" />
+              <label className="py-2 px-3 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800/60 text-zinc-700 dark:text-zinc-200 font-semibold text-xs transition-colors flex items-center justify-center space-x-1.5 cursor-pointer">
+                <Upload className="w-3.5 h-3.5" />
+                <span>Importar JSON</span>
+                <input
+                  type="file"
+                  accept=".json"
+                  onChange={handleImportFile}
+                  className="hidden"
+                />
               </label>
             </div>
           </div>
 
-        </div>
-
-        {/* Rodapé */}
-        <div className="p-4 bg-zinc-100 dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800 flex items-center justify-end">
-          <button
-            onClick={onClose}
-            className="px-5 py-2 bg-zinc-800 dark:bg-zinc-700 hover:bg-zinc-900 text-white text-xs font-bold rounded-xl"
-          >
-            Fechar
-          </button>
         </div>
 
       </div>

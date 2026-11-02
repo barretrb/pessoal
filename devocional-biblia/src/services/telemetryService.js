@@ -2,6 +2,7 @@
 // 100% Nativo, Privado, Sem Dependência de Terceiros e Persistente por Perfil
 
 import { storage } from './storage.js';
+import { supabaseSyncService } from './supabaseSyncService.js';
 
 const TELEMETRY_STORAGE_PREFIX = 'devocional_telemetry_v1';
 
@@ -178,6 +179,9 @@ class TelemetryService {
 
       data.lastActivityAt = new Date().toISOString();
       localStorage.setItem(key, JSON.stringify(data));
+
+      // Propaga evento para a nuvem no Supabase de forma assíncrona
+      supabaseSyncService.trackTelemetry(eventId, metadata);
     } catch (e) {
       console.warn("Telemetria: Falha não-bloqueante ao registrar métrica:", e);
     }

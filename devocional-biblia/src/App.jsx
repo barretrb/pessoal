@@ -20,6 +20,7 @@ import { cloudDbService } from './services/cloudDbService';
 import { getTodayDay, getPendingDays } from './services/dateUtils';
 import { fetchBookData, parseReading } from './services/bibleService';
 import { telemetryService } from './services/telemetryService';
+import { supabaseSyncService } from './services/supabaseSyncService';
 import confetti from 'canvas-confetti';
 
 export default function App() {
@@ -207,9 +208,16 @@ export default function App() {
 
     window.addEventListener('focus', handleFocusSync);
     document.addEventListener('visibilitychange', handleFocusSync);
+
+    // Sincronização em tempo real do Supabase
+    const unsubSupabase = supabaseSyncService.onRemoteUpdate(() => {
+      handleDataSyncedFromCloud();
+    });
+
     return () => {
       window.removeEventListener('focus', handleFocusSync);
       document.removeEventListener('visibilitychange', handleFocusSync);
+      if (unsubSupabase) unsubSupabase();
     };
   }, []);
 
@@ -229,10 +237,16 @@ export default function App() {
   const handleToggleComplete = (dayId, status) => {
     telemetryService.track('day_completed', { dayId, status });
     storage.saveDayProgress(dayId, status, activeProfileId);
+    supabaseSyncService.saveDayProgress(dayId, status);
+
     const targetDay = days.find(d => d.id === dayId);
     if (targetDay) {
       const updatedCh = storage.setDayChaptersProgress(targetDay.readings, status, activeProfileId);
       setChapterProgress({ ...updatedCh });
+      targetDay.readings.forEach(r => {
+        const p = parseReading(r);
+        supabaseSyncService.saveChapterProgress(p.book, p.chapter, status);
+      });
     }
     setDays(prevDays => 
       prevDays.map(d => d.id === dayId ? { ...d, completed: status, completedAt: status ? new Date().toISOString() : null } : d)
@@ -247,6 +261,9 @@ export default function App() {
     const updated = storage.saveChapterProgress(chapterName, status, activeProfileId);
     setChapterProgress({ ...updated });
 
+    const p = parseReading(chapterName);
+    supabaseSyncService.saveChapterProgress(p.book, p.chapter, status);
+
     // RECONCILIAÇÃO AUTOMÁTICA DE DIAS:
     // Encontra todos os dias que contêm este capítulo (mesmo em leitura livre ou navegação avulsa)
     const matchingDays = days.filter(d => d.readings && d.readings.includes(chapterName));
@@ -257,6 +274,7 @@ export default function App() {
       
       if (allCompleted && !matchingDay.completed) {
         storage.saveDayProgress(matchingDay.id, true, activeProfileId);
+        supabaseSyncService.saveDayProgress(matchingDay.id, true);
         setDays(prev => prev.map(d => d.id === matchingDay.id ? { ...d, completed: true, completedAt: new Date().toISOString() } : d));
         try {
           confetti({
@@ -267,6 +285,7 @@ export default function App() {
         } catch (e) {}
       } else if (!allCompleted && matchingDay.completed) {
         storage.saveDayProgress(matchingDay.id, false, activeProfileId);
+        supabaseSyncService.saveDayProgress(matchingDay.id, false);
         setDays(prev => prev.map(d => d.id === matchingDay.id ? { ...d, completed: false, completedAt: null } : d));
       }
     });
