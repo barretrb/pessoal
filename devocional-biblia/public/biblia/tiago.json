@@ -10,7 +10,24 @@
             "number": 1,
             "text": "Eu, Tiago, escravo de Deus e do Senhor Jesus Cristo, envio esta carta às doze tribos espalhadas pelo mundo. Saudações.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Ezequiel 12:15",
+                "text": "E, quando eu os espalhar entre as nações, eles saberão que eu sou o SENHOR."
+              },
+              {
+                "ref": "1 Pedro 1:1",
+                "text": "Eu, Pedro, apóstolo de Jesus Cristo, escrevo esta carta aos escolhidos que vivem como estrangeiros nas províncias de Ponto, Galácia, Capadócia, Ásia e Bitínia."
+              },
+              {
+                "ref": "João 7:35",
+                "text": "Os judeus se perguntavam: “Para onde ele pretende ir? Será que planeja partir e ir aos judeus em outras terras?34 Talvez até ensine aos gregos!"
+              },
+              {
+                "ref": "Atos 8:1",
+                "text": "E Saulo concordou inteiramente com a morte de Estêvão. A perseguição faz os discípulos dispersarem Uma grande onda de perseguição começou naquele dia e varreu a igreja de Jerusalém. Todos eles, com exceção dos apóstolos..."
+              }
+            ]
           }
         ]
       },
@@ -21,103 +38,392 @@
             "number": 2,
             "text": "Meus irmãos, considerem motivo de grande alegria sempre que passarem por qualquer tipo de provação,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Pedro 1:6–8",
+                "text": "Portanto, alegrem-se com isso, ainda que agora, por algum tempo, vocês precisem suportar muitas provações."
+              },
+              {
+                "ref": "Tiago 1:12",
+                "text": "Feliz é aquele que suporta com paciência as provações e tentações, porque depois receberá a coroa da vida que Deus prometeu àqueles que o amam."
+              },
+              {
+                "ref": "2 Coríntios 12:9–10",
+                "text": "mas ele disse: “Minha graça é tudo de que você precisa. Meu poder opera melhor na fraqueza”. Portanto, agora fico feliz de me orgulhar de minhas fraquezas, para que o poder de Deus opere por meu intermédio."
+              },
+              {
+                "ref": "Mateus 5:10–12",
+                "text": "Felizes os perseguidos por causa da justiça, pois o reino dos céus lhes pertence."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "pois sabem que, quando sua fé é provada, a perseverança tem a oportunidade de crescer.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 5:3–4",
+                "text": "Também nos alegramos ao enfrentar dificuldades e provações, pois sabemos que contribuem para desenvolvermos perseverança, e a perseverança produz caráter aprovado, e o caráter aprovado fortalece nossa esperança,"
+              },
+              {
+                "ref": "Hebreus 10:36",
+                "text": "Vocês precisam perseverar, a fim de que, depois de terem feito a vontade de Deus, recebam tudo que ele lhes prometeu."
+              },
+              {
+                "ref": "Colossenses 1:11",
+                "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam."
+              },
+              {
+                "ref": "2 Coríntios 4:17",
+                "text": "Pois estas aflições pequenas e momentâneas que agora enfrentamos produzem para nós uma glória que pesa mais que todas as angústias e durará para sempre."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "E é necessário que ela cresça, pois quando estiver plenamente desenvolvida vocês serão maduros e completos, sem que nada lhes falte.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Pedro 5:10",
+                "text": "Deus, em toda a sua graça, os chamou para participarem de sua glória eterna por meio de Cristo Jesus. Assim, depois que tiverem sofrido por um pouco de tempo, ele os restaurará, os sustentará e os fortalecerá, e os colocará sobre um firme alicerce."
+              },
+              {
+                "ref": "Lucas 21:19",
+                "text": "É pela perseverança que obterão a vida."
+              },
+              {
+                "ref": "Mateus 5:48",
+                "text": "Portanto, sejam perfeitos, como perfeito é seu Pai celestial.”"
+              },
+              {
+                "ref": "2 Timóteo 3:17",
+                "text": "Deus a usa para preparar e capacitar seu povo para toda boa obra."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Se algum de vocês precisar de sabedoria, peça a nosso Deus generoso, e receberá. Ele não os repreenderá por pedirem.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 2:3–6",
+                "text": "Clame por inteligência e peça entendimento."
+              },
+              {
+                "ref": "João 15:7",
+                "text": "Mas, se vocês permanecerem em mim e minhas palavras permanecerem em vocês, pedirão o que quiserem, e isso lhes será concedido!"
+              },
+              {
+                "ref": "Jeremias 29:12–13",
+                "text": "Naqueles dias, quando vocês clamarem por mim em oração, eu os ouvirei. Se me buscarem de todo o coração, me encontrarão."
+              },
+              {
+                "ref": "Provérbios 3:5–7",
+                "text": "Confie no SENHOR de todo o coração; não dependa de seu próprio entendimento."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Mas, quando pedirem, façam-no com fé, sem vacilar, pois aquele que duvida é como a onda do mar, empurrada e agitada pelo vento.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 21:21–22",
+                "text": "Jesus respondeu: “Eu lhes digo a verdade: se vocês tiverem fé e não duvidarem, poderão fazer o mesmo que fiz com esta figueira, e muito mais. Poderão até dizer a este monte: ‘Levante-se e ­atire-se no mar’, e isso acontecerá."
+              },
+              {
+                "ref": "Hebreus 11:6",
+                "text": "Sem fé é impossível agradar a Deus. Quem deseja se aproximar de Deus deve crer que ele existe e que recompensa aqueles que o buscam."
+              },
+              {
+                "ref": "Marcos 11:22–24",
+                "text": "Então Jesus disse aos discípulos: “Tenham fé em Deus."
+              },
+              {
+                "ref": "Efésios 4:14",
+                "text": "Então não seremos mais imaturos como crianças, nem levados de um lado para outro, empurrados por qualquer vento de novos ensinamentos, e também não seremos influenciados quando nos tentarem enganar com mentiras astutas."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "Ele não deve esperar receber coisa alguma do Senhor,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 4:3",
+                "text": "E, quando pedem, não recebem, pois seus motivos são errados; pedem apenas o que lhes dará prazer."
+              },
+              {
+                "ref": "Provérbios 15:8",
+                "text": "Os sacrifícios dos perversos são detestáveis para o SENHOR, mas ele tem prazer nas orações dos justos."
+              },
+              {
+                "ref": "Isaías 1:15",
+                "text": "Não olharei para vocês quando levantarem as mãos para orar; ainda que ofereçam muitas orações, não os ouvirei, pois suas mãos estão cobertas de sangue."
+              },
+              {
+                "ref": "Isaías 58:3–4",
+                "text": "Dizem: ‘Jejuamos diante de ti! Por que não prestas atenção? Nós nos humilhamos com severidade, e tu nem reparas!’. “Vou lhes dizer por quê”, eu respondo. “É porque jejuam para satisfazer a si mesmos. Enquanto isso, oprimem seus empregados."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "pois tem a mente dividida e é instável em tudo que faz.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Reis 18:21",
+                "text": "Elias se colocou diante do povo e disse: “Até quando ficarão oscilando de um lado para o outro? Se o SENHOR é Deus, sigam-no! Mas, se Baal é Deus, então sigam Baal!”. O povo, contudo, ficou em silêncio."
+              },
+              {
+                "ref": "Mateus 6:24",
+                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”48 Ensino sobre a preocupação"
+              },
+              {
+                "ref": "Tiago 4:8",
+                "text": "Aproximem-se de Deus, e ele se aproximará de vocês. Lavem as mãos, pecadores; purifiquem o coração, vocês que têm a mente dividida."
+              },
+              {
+                "ref": "Isaías 29:13",
+                "text": "Portanto, o Senhor diz: “Este povo fala que me pertence; honra-me com os lábios, mas o coração está longe de mim. A adoração que me prestam não passa de regras ensinadas por homens."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "O irmão que é pobre tem motivo para se orgulhar, porque é digno de honra.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 9:23–24",
+                "text": "Assim diz o SENHOR: “Que o sábio não se orgulhe de sua sabedoria, nem o poderoso de seu poder, nem o rico de suas riquezas."
+              },
+              {
+                "ref": "Provérbios 19:1",
+                "text": "É melhor ser pobre e honesto que ser desonesto e tolo."
+              },
+              {
+                "ref": "Tiago 2:5–6",
+                "text": "Ouçam, meus amados irmãos: não foi Deus que escolheu os pobres deste mundo para serem ricos na fé? Não são eles os herdeiros do reino prometido àqueles que o amam?"
+              },
+              {
+                "ref": "2 Coríntios 6:10",
+                "text": "Nosso coração se entristece, mas sempre temos alegria. Somos pobres, mas enriquecemos a muitos outros. Não possuímos nada e, no entanto, temos tudo."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "E o que é rico deve se orgulhar porque é insignificante. Ele murchará como uma pequena flor do campo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Pedro 1:24",
+                "text": "Pois, “Os seres humanos são como o capim; sua beleza é como as flores do campo. O capim seca e as flores murcham,"
+              },
+              {
+                "ref": "1 João 2:17",
+                "text": "E este mundo passa, e com ele tudo que as pessoas tanto desejam. Mas quem faz o que agrada a Deus vive para sempre."
+              },
+              {
+                "ref": "Jó 14:2",
+                "text": "Como uma flor, nasce e depois murcha; como uma sombra passageira, some depressa."
+              },
+              {
+                "ref": "Mateus 5:3",
+                "text": "“Felizes os pobres de espírito, pois o reino dos céus lhes pertence."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "O sol quente se levanta e a grama seca; a flor perde o viço e cai, e sua beleza desaparece. Da mesma forma murchará o rico com todas as suas realizações.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 40:7–8",
+                "text": "O capim seca e as flores murcham quando o SENHOR sopra sobre elas; o mesmo acontece aos seres humanos. O capim seca e as flores murcham, mas a palavra de nosso Deus permanece para sempre.”"
+              },
+              {
+                "ref": "Salmos 37:35–36",
+                "text": "Vi pessoas más e cruéis florescerem como árvores em solo nativo. Mas, quando voltei a olhar, tinham desaparecido; procurei por elas, mas não as encontrei."
+              },
+              {
+                "ref": "Lucas 16:19–25",
+                "text": "Jesus disse: “Havia um homem rico que se vestia de púrpura e linho fino e vivia sempre cercado de luxos."
+              },
+              {
+                "ref": "Marcos 4:6",
+                "text": "mas as plantas logo murcharam sob o calor do sol e secaram, pois não tinham raízes profundas."
+              }
+            ]
           },
           {
             "number": 12,
             "text": "Feliz é aquele que suporta com paciência as provações e tentações, porque depois receberá a coroa da vida que Deus prometeu àqueles que o amam.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Pedro 5:10",
+                "text": "Deus, em toda a sua graça, os chamou para participarem de sua glória eterna por meio de Cristo Jesus. Assim, depois que tiverem sofrido por um pouco de tempo, ele os restaurará, os sustentará e os fortalecerá, e os colocará sobre um firme alicerce."
+              },
+              {
+                "ref": "1 Pedro 1:6–8",
+                "text": "Portanto, alegrem-se com isso, ainda que agora, por algum tempo, vocês precisem suportar muitas provações."
+              },
+              {
+                "ref": "Apocalipse 2:10",
+                "text": "Não tenha medo do que está prestes a sofrer. O diabo lançará alguns de vocês na prisão a fim de prová-los, e terão aflições por dez dias. Mas, se você permanecer fiel mesmo diante da morte, eu lhe darei a coroa da vida."
+              },
+              {
+                "ref": "Tiago 5:11",
+                "text": "Consideramos felizes aqueles que permanecem firmes em meio à aflição. Vocês ouviram falar de Jó, um homem de muita perseverança. Sabem como, no final, o Senhor foi bondoso com ele, pois o Senhor é cheio de compaixão e misericórdia."
+              }
+            ]
           },
           {
             "number": 13,
             "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 1:12",
+                "text": "Feliz é aquele que suporta com paciência as provações e tentações, porque depois receberá a coroa da vida que Deus prometeu àqueles que o amam."
+              },
+              {
+                "ref": "Habacuque 2:12–13",
+                "text": "“Que aflição espera vocês que constroem cidades com dinheiro obtido por meio de homicídio e corrupção!"
+              },
+              {
+                "ref": "Romanos 9:19–20",
+                "text": "Mas algum de vocês dirá: “Então por que Deus os culpa? Não estão apenas cumprindo a vontade dele?”."
+              },
+              {
+                "ref": "Tiago 1:2",
+                "text": "Meus irmãos, considerem motivo de grande alegria sempre que passarem por qualquer tipo de provação,"
+              }
+            ]
           },
           {
             "number": 14,
             "text": "A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Marcos 7:21–22",
+                "text": "Pois, de dentro, do coração da pessoa, vêm maus pensamentos, imoralidade sexual, roubo, homicídio, adultério, cobiça, perversidade, engano, paixões carnais, inveja, calúnias, orgulho e insensatez."
+              },
+              {
+                "ref": "Efésios 4:22",
+                "text": "livrem-se de sua antiga natureza e de seu velho modo de viver, corrompido pelos desejos impuros e pelo engano."
+              },
+              {
+                "ref": "Mateus 15:18",
+                "text": "mas as palavras vêm do coração, e é isso que os contamina."
+              },
+              {
+                "ref": "Hebreus 3:13",
+                "text": "Advirtam uns aos outros todos os dias, enquanto ainda é “hoje”, para que nenhum de vocês seja enganado pelo pecado e fique endurecido."
+              }
+            ]
           },
           {
             "number": 15,
             "text": "Esses desejos dão à luz o pecado, e quando o pecado se desenvolve plenamente, gera a morte.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 7:14",
+                "text": "Sim, o perverso gera o mal; concebe o sofrimento e dá à luz a mentira."
+              },
+              {
+                "ref": "Jó 15:35",
+                "text": "Concebem desgraça e dão à luz maldade; seu ventre só gera engano”."
+              },
+              {
+                "ref": "Romanos 5:12–21",
+                "text": "Quando Adão pecou, o pecado entrou no mundo, e com ele a morte, que se estendeu a todos, porque todos pecaram."
+              },
+              {
+                "ref": "Gênesis 2:17",
+                "text": "exceto da árvore do conhecimento do bem e do mal. Se você comer desse fruto, com certeza morrerá”."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "Não se deixem enganar, meus amados irmãos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gálatas 6:7",
+                "text": "Não se deixem enganar: ninguém pode zombar de Deus. A pessoa sempre colherá aquilo que semear."
+              },
+              {
+                "ref": "Tiago 1:19",
+                "text": "Entendam isto, meus amados irmãos: estejam todos prontos para ouvir, mas não se apressem em falar nem em se irar."
+              },
+              {
+                "ref": "Colossenses 2:8",
+                "text": "Não permitam que outros os escravizem com filosofias vazias e invenções enganosas provenientes do raciocínio humano, com base nos princípios espirituais deste mundo, e não em Cristo."
+              },
+              {
+                "ref": "Colossenses 2:4",
+                "text": "Eu lhes digo isso para que ninguém os engane com argumentos bem elaborados."
+              }
+            ]
           },
           {
             "number": 17,
             "text": "Toda dádiva que é boa e perfeita vem do alto, do Pai que criou as luzes no céu. Nele não há variação nem sombra de mudança.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "João 3:27",
+                "text": "João respondeu: “Ninguém pode receber coisa alguma, a menos que lhe seja concedida do céu."
+              },
+              {
+                "ref": "Mateus 7:11",
+                "text": "Portanto, se vocês, que são maus, sabem dar bons presentes a seus filhos, quanto mais seu Pai, que está no céu, dará bons presentes aos que lhe pedirem!”"
+              },
+              {
+                "ref": "Hebreus 13:8",
+                "text": "Jesus Cristo é o mesmo ontem, hoje e para sempre."
+              },
+              {
+                "ref": "João 8:12",
+                "text": "Jesus voltou a falar ao povo e disse: “Eu sou a luz do mundo. Se vocês me seguirem, não andarão no escuro, pois terão a luz da vida”."
+              }
+            ]
           },
           {
             "number": 18,
             "text": "Por sua própria vontade, ele nos gerou por meio de sua palavra verdadeira. E nós, dentre toda a criação, nos tornamos seus primeiros frutos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 8:29–31",
+                "text": "Pois Deus conheceu de antemão os seus e os predestinou para se tornarem semelhantes à imagem de seu Filho, a fim de que ele fosse o primeiro entre muitos irmãos."
+              },
+              {
+                "ref": "1 Pedro 1:23",
+                "text": "Pois vocês nasceram de novo, não para uma vida que pode ser destruída, mas para uma vida que durará para sempre, porque vem da eterna e viva palavra de Deus."
+              },
+              {
+                "ref": "João 3:3–5",
+                "text": "Jesus respondeu: “Eu lhe digo a verdade: quem não nascer de novo, não verá o reino de Deus”."
+              },
+              {
+                "ref": "João 1:13",
+                "text": "Estes não nasceram segundo a ordem natural, nem como resultado da paixão ou da vontade humana, mas nasceram de Deus."
+              }
+            ]
           }
         ]
       },
@@ -128,55 +434,208 @@
             "number": 19,
             "text": "Entendam isto, meus amados irmãos: estejam todos prontos para ouvir, mas não se apressem em falar nem em se irar.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 17:27",
+                "text": "Quem é verdadeiramente sábio usa poucas palavras; quem tem entendimento controla suas emoções."
+              },
+              {
+                "ref": "Provérbios 21:23",
+                "text": "Cuide da língua e fique de boca fechada, e você não se meterá em apuros."
+              },
+              {
+                "ref": "Efésios 4:26",
+                "text": "E “não pequem ao permitir que a ira os controle”. Acalmem a ira antes que o sol se ponha,"
+              },
+              {
+                "ref": "Eclesiastes 7:8–9",
+                "text": "Terminar algo é melhor que começar; a paciência é melhor que o orgulho. Não se ire facilmente, pois a raiva é a marca dos tolos."
+              }
+            ]
           },
           {
             "number": 20,
             "text": "A ira humana não produz a justiça divina.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Timóteo 2:24–25",
+                "text": "O servo do Senhor não deve viver brigando, mas ser amável com todos, apto a ensinar e paciente. Instrua com mansidão aqueles que se opõem, na esperança de que Deus os leve ao arrependimento e, assim, conheçam a verdade."
+              },
+              {
+                "ref": "Efésios 4:26",
+                "text": "E “não pequem ao permitir que a ira os controle”. Acalmem a ira antes que o sol se ponha,"
+              },
+              {
+                "ref": "Tiago 3:17–18",
+                "text": "Mas a sabedoria que vem do alto é, antes de tudo, pura. Também é pacífica, sempre amável e disposta a ceder a outros. É cheia de misericórdia e é o fruto de boas obras. Não mostra favoritismo e é sempre sincera."
+              },
+              {
+                "ref": "Números 20:11–12",
+                "text": "Então Moisés levantou a mão e bateu na rocha duas vezes com a vara, e jorrou muita água. Assim, toda a comunidade e todos os seus animais beberam até matar a sede."
+              }
+            ]
           },
           {
             "number": 21,
             "text": "Portanto, removam toda impureza e maldade e aceitem humildemente a palavra que lhes foi implantada no coração, pois ela tem poder para salvá-los.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Efésios 4:22",
+                "text": "livrem-se de sua antiga natureza e de seu velho modo de viver, corrompido pelos desejos impuros e pelo engano."
+              },
+              {
+                "ref": "Efésios 1:13",
+                "text": "Agora vocês também ouviram a verdade, as boas-novas da salvação. E, quando creram em Cristo, ele colocou sobre vocês o selo do Espírito Santo que havia prometido."
+              },
+              {
+                "ref": "1 Pedro 2:11",
+                "text": "Amados, eu os advirto, como peregrinos e estrangeiros que são, a manter distância dos desejos carnais que lutam contra a alma."
+              },
+              {
+                "ref": "João 6:63",
+                "text": "Somente o Espírito dá vida. A natureza humana não realiza coisa alguma. E as palavras que eu lhes disse são espírito e vida."
+              }
+            ]
           },
           {
             "number": 22,
             "text": "Não se limitem, porém, a ouvir a palavra; ponham-na em prática. Do contrário, só enganarão a si mesmos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 2:13",
+                "text": "Pois o simples ato de ouvir a lei não nos torna justos diante de Deus, mas sim a obediência à lei é que nos torna justos aos olhos dele."
+              },
+              {
+                "ref": "Lucas 6:46–48",
+                "text": "“Por que vocês me chamam ‘Senhor! Senhor!’, se não fazem o que eu digo?"
+              },
+              {
+                "ref": "João 13:17",
+                "text": "Agora que vocês sabem estas coisas, serão felizes se as praticarem.”"
+              },
+              {
+                "ref": "Tiago 4:17",
+                "text": "Lembrem-se de que é pecado saber o que devem fazer e não fazê-lo."
+              }
+            ]
           },
           {
             "number": 23,
             "text": "Pois, se ouvirem a palavra e não a praticarem, serão como alguém que olha no espelho,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 7:26–27",
+                "text": "Mas quem ouve meu ensino e não o pratica é tão tolo como a pessoa que constrói sua casa sobre a areia. Quando vierem as chuvas e as inundações e os ventos castigarem a casa, ela cairá com grande estrondo.”"
+              },
+              {
+                "ref": "Tiago 2:14–26",
+                "text": "De que adianta, meus irmãos, dizerem que têm fé se não a demonstram por meio de suas ações? Acaso esse tipo de fé pode salvar alguém?"
+              },
+              {
+                "ref": "Ezequiel 33:31–32",
+                "text": "Eles vêm, fingindo ser sinceros, e sentam-se diante de você. Ouvem suas palavras, mas não têm intenção alguma de pô-las em prática. Têm a boca cheia de palavras sensuais, e seu coração só quer dinheiro."
+              },
+              {
+                "ref": "Lucas 6:47",
+                "text": "Eu lhes mostrarei como é aquele que vem a mim, ouve as minhas palavras e as pratica."
+              }
+            ]
           },
           {
             "number": 24,
             "text": "vê a si mesmo, mas, assim que se afasta, esquece como era sua aparência.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Pedro 3:11",
+                "text": "Visto, portanto, que tudo ao redor será destruído, a vida de vocês deve ser caracterizada por santidade e devoção,"
+              },
+              {
+                "ref": "Lucas 1:66",
+                "text": "Todos que ficavam sabendo meditavam sobre esses acontecimentos e perguntavam: “O que vai ser esse menino?”. Pois a mão do Senhor estava sobre ele."
+              },
+              {
+                "ref": "Lucas 7:39",
+                "text": "Quando o fariseu que havia convidado Jesus viu isso, disse consigo: “Se este homem fosse profeta, saberia que tipo de mulher está tocando nele. Ela é uma pecadora!”."
+              },
+              {
+                "ref": "Juízes 8:18",
+                "text": "Depois disso, Gideão perguntou a Zeba e a Zalmuna: “Como eram os homens que vocês mataram em Tabor?”. “Como você”, responderam eles. “Todos pareciam filhos de rei.”"
+              }
+            ]
           },
           {
             "number": 25,
             "text": "Se, contudo, observarem atentamente a lei perfeita que os liberta, perseverarem nela e a puserem em prática sem esquecer o que ouviram, serão felizes no que fizerem.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Lucas 11:28",
+                "text": "Jesus, porém, respondeu: “Ainda mais felizes são os que ouvem a palavra de Deus e a praticam”."
+              },
+              {
+                "ref": "João 13:17",
+                "text": "Agora que vocês sabem estas coisas, serão felizes se as praticarem.”"
+              },
+              {
+                "ref": "2 Coríntios 3:17–18",
+                "text": "Pois o Senhor é o Espírito, e onde está o Espírito do Senhor, ali há liberdade."
+              },
+              {
+                "ref": "1 Pedro 2:16",
+                "text": "Pois vocês são livres e, no entanto, são escravos de Deus; não usem sua liberdade como desculpa para fazer o mal."
+              }
+            ]
           },
           {
             "number": 26,
             "text": "Se algum de vocês afirma ser religioso, mas não controla a língua, engana a si mesmo e sua religião não tem valor.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 141:3",
+                "text": "Assume o controle do que eu digo, SENHOR, e guarda meus lábios."
+              },
+              {
+                "ref": "Efésios 4:29",
+                "text": "Evitem o linguajar sujo e insultante. Que todas as suas palavras sejam boas e úteis, a fim de dar ânimo àqueles que as ouvirem."
+              },
+              {
+                "ref": "1 Pedro 3:10",
+                "text": "Pois, “Se quiser desfrutar a vida e ver muitos dias felizes, refreie a língua de falar maldades e os lábios de dizerem mentiras."
+              },
+              {
+                "ref": "Efésios 5:4",
+                "text": "As histórias obscenas, as conversas tolas e as piadas vulgares não são para vocês. Em vez disso, sejam agradecidos a Deus."
+              }
+            ]
           },
           {
             "number": 27,
             "text": "A religião pura e verdadeira aos olhos de Deus, o Pai, é esta: cuidar dos órfãos e das viúvas em suas dificuldades e não se deixar corromper pelo mundo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 1:16–17",
+                "text": "Lavem-se e limpem-se! Removam seus pecados de minha vista e parem de fazer o mal. Aprendam a fazer o bem e busquem a justiça. Ajudem os oprimidos, defendam a causa dos órfãos, lutem pelos direitos das viúvas."
+              },
+              {
+                "ref": "1 João 3:17–19",
+                "text": "Se alguém tem recursos suficientes para viver bem e vê um irmão em necessidade, mas não mostra compaixão, como pode estar nele o amor de Deus?"
+              },
+              {
+                "ref": "Gálatas 6:9–10",
+                "text": "Portanto, não nos cansemos de fazer o bem. No momento certo, teremos uma colheita de bênçãos, se não desistirmos. Por isso, sempre que tivermos oportunidade, façamos o bem a todos, especialmente aos da família da fé."
+              },
+              {
+                "ref": "Romanos 12:2",
+                "text": "Não imitem o comportamento e os costumes deste mundo, mas deixem que Deus os transforme por meio de uma mudança em seu modo de pensar, a fim de que experimentem a boa, agradável e perfeita vontade de Deus para vocês."
+              }
+            ]
           }
         ]
       }
@@ -193,79 +652,295 @@
             "number": 1,
             "text": "Meus irmãos, como podem afirmar que têm fé em nosso glorioso Senhor Jesus Cristo se mostram favorecimento a algumas pessoas?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 24:23",
+                "text": "Estes são mais alguns ditados dos sábios: É errado tomar partido quando se julga um caso."
+              },
+              {
+                "ref": "Tiago 2:9",
+                "text": "Mas, se mostram favorecimento a algumas pessoas, cometem pecado e são culpados de transgredir a lei."
+              },
+              {
+                "ref": "Levítico 19:15",
+                "text": "“Não distorçam a justiça em questões legais, favorecendo os pobres ou tomando partido dos ricos e poderosos. Julguem sempre com imparcialidade."
+              },
+              {
+                "ref": "Deuteronômio 16:19",
+                "text": "Nunca distorçam a justiça nem mostrem parcialidade. Nunca aceitem subornos, pois eles cegam os olhos dos sábios e corrompem as decisões dos íntegros."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "Se, por exemplo, alguém chegar a uma de suas reuniões vestido com roupas elegantes e usando joias caras, e também entrar um pobre com roupas sujas,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Ester 3:10",
+                "text": "O rei concordou e, para confirmar sua decisão, tirou do dedo o anel com o selo real e o entregou a Hamã, filho de Hamedata, o agagita, inimigo dos judeus."
+              },
+              {
+                "ref": "Lucas 15:22",
+                "text": "“O pai, no entanto, disse aos servos: ‘Depressa! Tragam a melhor roupa da casa e vistam nele. Coloquem-lhe um anel no dedo e sandálias nos pés."
+              },
+              {
+                "ref": "Ester 8:2",
+                "text": "O rei tirou do dedo o anel com o selo real, que ele havia tomado de volta de Hamã, e o entregou a Mardoqueu. Assim, Ester o nomeou administrador dos bens de Hamã."
+              },
+              {
+                "ref": "Mateus 11:8–9",
+                "text": "Afinal, o que esperavam ver? Um homem vestido com roupas caras? Não, quem veste roupas caras mora em palácios. Acaso procuravam um profeta? Sim, ele é mais que profeta."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "e vocês derem atenção ao que está bem vestido, dizendo-lhe: “Sente-se aqui neste lugar especial”, mas disserem ao pobre: “Fique em pé ali ou sente-se aqui no chão”,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Coríntios 8:9",
+                "text": "Vocês conhecem a graça de nosso Senhor Jesus Cristo. Embora fosse rico, por amor a vocês ele se fez pobre, para que por meio da pobreza dele vocês se tornassem ricos."
+              },
+              {
+                "ref": "Tiago 2:6",
+                "text": "Mas vocês desprezam os pobres! Não são os ricos que oprimem vocês e os arrastam aos tribunais?"
+              },
+              {
+                "ref": "Lucas 7:44–46",
+                "text": "Então voltou-se para a mulher e disse a Simão: “Veja esta mulher ajoelhada aqui. Quando entrei em sua casa, você não ofereceu água para eu lavar os pés, mas ela os lavou com suas lágrimas e os secou com seus cabelos."
+              },
+              {
+                "ref": "Isaías 65:5",
+                "text": "Apesar disso, dizem uns aos outros: ‘Não se aproxime, pois vai me contaminar! Sou mais santo que você!’. Essa gente é fedor em minhas narinas, fumaça irritante que nunca passa."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "essa discriminação não mostrará que agem como juízes guiados por motivos perversos?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "João 7:24",
+                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”. Jesus é o Messias?"
+              },
+              {
+                "ref": "Jó 34:19",
+                "text": "Para Deus, não importa a posição da pessoa; ele não dá mais atenção aos ricos que aos pobres, pois todos foram criados por ele."
+              },
+              {
+                "ref": "Mateus 7:1–5",
+                "text": "“Não julguem para não serem julgados,"
+              },
+              {
+                "ref": "Salmos 82:2",
+                "text": "“Até quando tomarão decisões injustas que favorecem a causa dos perversos?"
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Ouçam, meus amados irmãos: não foi Deus que escolheu os pobres deste mundo para serem ricos na fé? Não são eles os herdeiros do reino prometido àqueles que o amam?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 5:3",
+                "text": "“Felizes os pobres de espírito, pois o reino dos céus lhes pertence."
+              },
+              {
+                "ref": "Lucas 6:20",
+                "text": "Então Jesus se voltou para seus discípulos e disse: “Felizes são vocês, pobres, pois o reino de Deus lhes pertence."
+              },
+              {
+                "ref": "Apocalipse 2:9",
+                "text": "“Conheço suas aflições e sua pobreza, mas você é rico. Sei da blasfêmia dos que se opõem a você. Eles se dizem judeus, mas não são, pois a sinagoga deles pertence a Satanás."
+              },
+              {
+                "ref": "1 Coríntios 1:26–28",
+                "text": "Lembrem-se, irmãos, de que poucos de vocês eram sábios aos olhos do mundo ou poderosos ou ricos quando foram chamados."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Mas vocês desprezam os pobres! Não são os ricos que oprimem vocês e os arrastam aos tribunais?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 17:5",
+                "text": "Quem zomba do pobre insulta seu Criador; quem se alegra com a desgraça alheia será castigado."
+              },
+              {
+                "ref": "Provérbios 14:31",
+                "text": "Quem oprime o pobre insulta seu Criador, mas quem ajuda o necessitado honra a Deus."
+              },
+              {
+                "ref": "1 Coríntios 11:22",
+                "text": "Será que vocês não têm casa onde comer e beber? Ou querem mesmo envergonhar a igreja de Deus e humilhar os pobres? Que devo dizer? Querem que eu os elogie? Certamente não os elogiarei por isso!"
+              },
+              {
+                "ref": "Salmos 14:6",
+                "text": "Os perversos frustram os planos dos oprimidos, mas o SENHOR protegerá seu povo."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "Não são eles que difamam aquele cujo nome honroso vocês carregam?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Filipenses 2:9–11",
+                "text": "Por isso Deus o elevou ao lugar de mais alta honra e lhe deu o nome que está acima de todos os nomes,"
+              },
+              {
+                "ref": "Efésios 3:15",
+                "text": "o Criador de todas as coisas nos céus e na terra."
+              },
+              {
+                "ref": "Apocalipse 13:5–6",
+                "text": "Então foi permitido à besta falar grandes blasfêmias, e lhe foi dada autoridade para fazer o que quisesse durante 42 meses."
+              },
+              {
+                "ref": "1 Timóteo 1:13",
+                "text": "embora eu fosse blasfemo, perseguidor e violento. Contudo, recebi misericórdia, porque agia por ignorância e incredulidade."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Sem dúvida vocês fazem bem quando obedecem à lei do reino conforme dizem as Escrituras: “Ame seu próximo como a si mesmo”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 19:18",
+                "text": "“Não procurem se vingar nem guardem rancor de alguém do seu povo, mas cada um ame o seu próximo como a si mesmo. Eu sou o SENHOR."
+              },
+              {
+                "ref": "Gálatas 5:14",
+                "text": "Pois toda a lei pode ser resumida neste único mandamento: “Ame o seu próximo como a si mesmo”."
+              },
+              {
+                "ref": "Mateus 22:39",
+                "text": "O segundo é igualmente importante: ‘Ame o seu próximo como a si mesmo’."
+              },
+              {
+                "ref": "Romanos 13:8–9",
+                "text": "Não devam nada a ninguém, a não ser o amor de uns pelos outros. Quem ama seu próximo cumpre os requisitos da lei de Deus."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Mas, se mostram favorecimento a algumas pessoas, cometem pecado e são culpados de transgredir a lei.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 19:15",
+                "text": "“Não distorçam a justiça em questões legais, favorecendo os pobres ou tomando partido dos ricos e poderosos. Julguem sempre com imparcialidade."
+              },
+              {
+                "ref": "Tiago 2:1–4",
+                "text": "Meus irmãos, como podem afirmar que têm fé em nosso glorioso Senhor Jesus Cristo se mostram favorecimento a algumas pessoas?"
+              },
+              {
+                "ref": "João 8:9",
+                "text": "Quando ouviram isso, foram saindo, um de cada vez, começando pelos mais velhos, até que só restaram Jesus e a mulher no meio da multidão."
+              },
+              {
+                "ref": "João 16:8",
+                "text": "Quando ele vier, convencerá o mundo do pecado, da justiça e do juízo."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "Pois quem obedece a todas as leis, exceto uma, torna-se culpado de desobedecer a todas as outras.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gálatas 3:10",
+                "text": "Contudo, os que confiam na lei para serem declarados justos estão sob maldição, pois as Escrituras dizem: “Maldito quem não se mantiver obediente a tudo que está escrito no Livro da Lei”."
+              },
+              {
+                "ref": "Mateus 5:18–19",
+                "text": "Eu lhes digo a verdade: enquanto o céu e a terra existirem, nem a menor letra ou o menor traço da lei desaparecerá até que todas as coisas se cumpram."
+              },
+              {
+                "ref": "Deuteronômio 27:26"
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Pois aquele que disse: “Não cometa adultério”, também disse: “Não mate”. Logo, mesmo que não cometam adultério, se matarem alguém, transgredirão a lei.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 20:13–14",
+                "text": "“Não mate. “Não cometa adultério."
+              },
+              {
+                "ref": "Mateus 5:21–28",
+                "text": "“Vocês ouviram o que foi dito a seus antepassados: ‘Não mate. Se cometer homicídio, estará sujeito a julgamento’."
+              },
+              {
+                "ref": "Deuteronômio 5:17–18",
+                "text": "“Não mate. “Não cometa adultério."
+              },
+              {
+                "ref": "Romanos 13:9",
+                "text": "Pois os mandamentos dizem: “Não cometa adultério. Não mate. Não roube. Não cobice”. Esses e outros mandamentos semelhantes se resumem num só: “Ame o seu próximo como a si mesmo”."
+              }
+            ]
           },
           {
             "number": 12,
             "text": "Portanto, em tudo que disserem e fizerem, lembrem-se de que serão julgados pela lei que os liberta.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 1:25",
+                "text": "Se, contudo, observarem atentamente a lei perfeita que os liberta, perseverarem nela e a puserem em prática sem esquecer o que ouviram, serão felizes no que fizerem."
+              },
+              {
+                "ref": "Tiago 2:8",
+                "text": "Sem dúvida vocês fazem bem quando obedecem à lei do reino conforme dizem as Escrituras: “Ame seu próximo como a si mesmo”."
+              },
+              {
+                "ref": "2 Pedro 1:4–8",
+                "text": "E, por causa de sua glória e excelência, ele nos deu grandes e preciosas promessas. São elas que permitem a vocês participar da natureza divina e escapar da corrupção do mundo causada pelos desejos humanos."
+              },
+              {
+                "ref": "Filipenses 4:8",
+                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem- se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
+              }
+            ]
           },
           {
             "number": 13,
             "text": "Não haverá misericórdia para quem não tiver demonstrado misericórdia. Mas, se forem misericordiosos, haverá misericórdia quando forem julgados.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 5:7",
+                "text": "Felizes os misericordiosos, pois serão tratados com misericórdia."
+              },
+              {
+                "ref": "Mateus 6:15",
+                "text": "Mas, se vocês se recusarem a perdoar os outros, seu Pai não perdoará seus pecados.”"
+              },
+              {
+                "ref": "Provérbios 21:13",
+                "text": "Quem fecha os ouvidos aos clamores dos pobres será ignorado quando passar necessidade."
+              },
+              {
+                "ref": "Lucas 6:37",
+                "text": "“Não julguem e não serão julgados. Não condenem e não serão condenados. Perdoem e serão perdoados."
+              }
+            ]
           }
         ]
       },
@@ -276,79 +951,292 @@
             "number": 14,
             "text": "De que adianta, meus irmãos, dizerem que têm fé se não a demonstram por meio de suas ações? Acaso esse tipo de fé pode salvar alguém?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 7:26–27",
+                "text": "Mas quem ouve meu ensino e não o pratica é tão tolo como a pessoa que constrói sua casa sobre a areia. Quando vierem as chuvas e as inundações e os ventos castigarem a casa, ela cairá com grande estrondo.”"
+              },
+              {
+                "ref": "Mateus 7:21–23",
+                "text": "“Nem todos que me chamam: ‘Senhor! Senhor!’ entrarão no reino dos céus, mas apenas aqueles que, de fato, fazem a vontade de meu Pai, que está no céu."
+              },
+              {
+                "ref": "Tiago 1:22–25",
+                "text": "Não se limitem, porém, a ouvir a palavra; ponham-na em prática. Do contrário, só enganarão a si mesmos."
+              },
+              {
+                "ref": "Lucas 6:49",
+                "text": "Mas quem ouve e não obedece é como a pessoa que constrói uma casa sobre o chão, sem alicerces. Quando a água bater nessa casa, ela cairá, deixando uma pilha de ruínas”."
+              }
+            ]
           },
           {
             "number": 15,
             "text": "Se um irmão ou uma irmã necessitar de alimento ou de roupa,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Lucas 3:11",
+                "text": "João respondeu: “Se tiverem duas vestimentas, deem uma a quem não tem. Se tiverem comida, dividam com quem passa fome”."
+              },
+              {
+                "ref": "Mateus 25:35–40",
+                "text": "Pois tive fome e vocês me deram de comer. Tive sede e me deram de beber. Era estrangeiro e me convidaram para a sua casa."
+              },
+              {
+                "ref": "Isaías 58:7",
+                "text": "Repartam seu alimento com os famintos, ofereçam abrigo aos que não têm casa. Deem roupas aos que precisam, não se escondam dos que carecem de ajuda."
+              },
+              {
+                "ref": "Isaías 58:10",
+                "text": "Deem alimento aos famintos e ajudem os aflitos. Então sua luz brilhará na escuridão, e a escuridão ao redor se tornará clara como o meio-dia."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "e vocês disserem: “Até logo e tenha um bom dia; aqueça-se e coma bem”, mas não lhe derem alimento nem roupa, em que isso ajuda?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 3:27–28",
+                "text": "Não deixe de fazer o bem àqueles que precisarem, sempre que isso estiver ao seu alcance. Se você pode ajudar seu próximo agora, não lhe diga: “Volte amanhã, e lhe darei algo”."
+              },
+              {
+                "ref": "1 João 3:16–18",
+                "text": "Sabemos o que é o amor porque Jesus deu sua vida por nós. Portanto, também devemos dar nossa vida por nossos irmãos."
+              },
+              {
+                "ref": "Mateus 25:42–45",
+                "text": "Pois tive fome, e vocês não me deram de comer. Tive sede, e não me deram de beber."
+              },
+              {
+                "ref": "Romanos 12:9",
+                "text": "Amem as pessoas sem fingimento. Odeiem tudo que é mau. Apeguem-se firmemente ao que é bom."
+              }
+            ]
           },
           {
             "number": 17,
             "text": "Como veem, a fé por si mesma, a menos que produza boas obras, está morta.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 2:26",
+                "text": "Assim como o corpo sem fôlego está morto, também a fé sem obras está morta."
+              },
+              {
+                "ref": "2 Pedro 1:5–9",
+                "text": "Diante de tudo isso, esforcem-se ao máximo para corresponder a essas promessas. Acrescentem à fé a excelência moral; à excelência moral o conhecimento;"
+              },
+              {
+                "ref": "Tiago 2:19–20",
+                "text": "Você diz crer que há um único Deus. Muito bem! Até os demônios creem nisso e tremem de medo. Quanta insensatez! Vocês não entendem que a fé sem as obras é inútil?"
+              },
+              {
+                "ref": "1 Coríntios 13:13",
+                "text": "Três coisas, na verdade, permanecerão: a fé, a esperança e o amor, e a maior delas é o amor."
+              }
+            ]
           },
           {
             "number": 18,
             "text": "Mas alguém pode argumentar: “Uns têm fé; outros têm obras”. Mostre-me sua fé sem obras e eu, pelas minhas obras, lhe mostrarei minha fé!",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 3:13",
+                "text": "Se vocês são sábios e inteligentes, demonstrem isso vivendo honradamente, realizando boas obras com a humildade que vem da sabedoria."
+              },
+              {
+                "ref": "Tiago 2:14",
+                "text": "De que adianta, meus irmãos, dizerem que têm fé se não a demonstram por meio de suas ações? Acaso esse tipo de fé pode salvar alguém?"
+              },
+              {
+                "ref": "1 Timóteo 1:5",
+                "text": "O alvo de minha instrução é o amor que vem de um coração puro, de uma consciência limpa e de uma fé sincera."
+              },
+              {
+                "ref": "Gálatas 5:6",
+                "text": "Pois, em Cristo Jesus, não há benefício algum em ser ou não circuncidado. O que importa é a fé que se expressa pelo amor."
+              }
+            ]
           },
           {
             "number": 19,
             "text": "Você diz crer que há um único Deus. Muito bem! Até os demônios creem nisso e tremem de medo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Lucas 4:34",
+                "text": "“Por que vem nos importunar, Jesus de Nazaré? Veio para nos destruir? Sei quem é você: o Santo de Deus!”."
+              },
+              {
+                "ref": "Marcos 1:24",
+                "text": "“Por que vem nos importunar, Jesus de Nazaré? Veio para nos destruir? Sei quem é você: o Santo de Deus!”."
+              },
+              {
+                "ref": "Mateus 8:29",
+                "text": "Eles começaram a gritar: “Por que vem nos importunar, Filho de Deus? Veio aqui para nos atormentar antes do tempo determinado?”."
+              },
+              {
+                "ref": "Atos 16:17",
+                "text": "Ela seguia Paulo e a nós, gritando: “Estes homens são servos do Deus Altíssimo e vieram anunciar como vocês podem ser salvos!”."
+              }
+            ]
           },
           {
             "number": 20,
             "text": "Quanta insensatez! Vocês não entendem que a fé sem as obras é inútil?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 2:17",
+                "text": "Como veem, a fé por si mesma, a menos que produza boas obras, está morta."
+              },
+              {
+                "ref": "Tiago 2:26",
+                "text": "Assim como o corpo sem fôlego está morto, também a fé sem obras está morta."
+              },
+              {
+                "ref": "Provérbios 12:11",
+                "text": "Quem trabalha com dedicação tem fartura de alimento; quem corre atrás de fantasias não tem juízo."
+              },
+              {
+                "ref": "Romanos 1:21",
+                "text": "Sim, eles conheciam algo sobre Deus, mas não o adoraram nem lhe agradeceram. Em vez disso, começaram a inventar ideias tolas e, com isso, sua mente ficou obscurecida e confusa."
+              }
+            ]
           },
           {
             "number": 21,
             "text": "Não lembram que nosso antepassado Abraão foi declarado justo por suas ações quando ofereceu seu filho Isaque sobre o altar?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 22:16–18",
+                "text": "“Assim diz o SENHOR: Uma vez que você me obedeceu e não me negou nem mesmo seu filho, seu único filho, juro pelo meu nome que"
+              },
+              {
+                "ref": "Gênesis 22:9–12",
+                "text": "Quando chegaram ao lugar que Deus havia indicado, Abraão construiu um altar e arrumou a lenha sobre ele. Em seguida, amarrou seu filho Isaque e o colocou no altar, sobre a lenha."
+              },
+              {
+                "ref": "João 8:39",
+                "text": "“Nosso pai é Abraão!”, declararam eles. Jesus respondeu: “Se vocês fossem, de fato, filhos de Abraão, seguiriam o exemplo dele."
+              },
+              {
+                "ref": "Romanos 4:16",
+                "text": "É por isso que a promessa vem pela fé, para que ela seja segundo a graça e, assim, alcance toda a descendência de Abraão, não somente os que vivem sob a lei, mas todos que têm fé como a que teve Abraão. Pois ele é o pai de todos que creem."
+              }
+            ]
           },
           {
             "number": 22,
             "text": "Como veem, sua fé e suas ações atuaram juntas e, assim, as ações tornaram a fé completa.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Tessalonicenses 1:3",
+                "text": "Quando oramos por vocês diante de nosso Deus e Pai, relembramos seu trabalho fiel, seus atos em amor e sua firme esperança em nosso Senhor Jesus Cristo."
+              },
+              {
+                "ref": "Hebreus 11:17–19",
+                "text": "Pela fé, Abraão, ao ser posto à prova, ofereceu Isaque como sacrifício. Abraão, que havia recebido as promessas, estava disposto a sacrificar seu único filho,"
+              },
+              {
+                "ref": "Gálatas 5:6",
+                "text": "Pois, em Cristo Jesus, não há benefício algum em ser ou não circuncidado. O que importa é a fé que se expressa pelo amor."
+              },
+              {
+                "ref": "1 João 2:5",
+                "text": "Mas quem obedece à palavra de Deus mostra que o amor que vem dele está se aperfeiçoando em sua vida. Desse modo, sabemos que estamos nele."
+              }
+            ]
           },
           {
             "number": 23,
             "text": "E aconteceu exatamente como as Escrituras dizem: “Abraão creu em Deus, e assim foi considerado justo”. Ele até foi chamado amigo de Deus!9",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gênesis 15:6",
+                "text": "Abrão creu no SENHOR, e assim foi considerado justo."
+              },
+              {
+                "ref": "Isaías 41:8",
+                "text": "“Quanto a você, meu servo Israel, Jacó, meu escolhido, descendente de meu amigo Abraão,"
+              },
+              {
+                "ref": "2 Crônicas 20:7",
+                "text": "Ó nosso Deus, acaso não expulsaste os habitantes desta terra quando Israel, teu povo, chegou? Não deste esta terra para sempre aos descendentes de teu amigo Abraão?"
+              },
+              {
+                "ref": "Gálatas 3:6",
+                "text": "Da mesma forma, “Abraão creu em Deus, e assim foi considerado justo”."
+              }
+            ]
           },
           {
             "number": 24,
             "text": "Vejam que somos declarados justos pelo que fazemos, e não apenas pela fé.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 2:21–22",
+                "text": "Não lembram que nosso antepassado Abraão foi declarado justo por suas ações quando ofereceu seu filho Isaque sobre o altar? Como veem, sua fé e suas ações atuaram juntas e, assim, as ações tornaram a fé completa."
+              },
+              {
+                "ref": "Tiago 2:15–18",
+                "text": "Se um irmão ou uma irmã necessitar de alimento ou de roupa,"
+              }
+            ]
           },
           {
             "number": 25,
             "text": "Raabe, a prostituta, é outro exemplo. Ela foi declarada justa por causa de suas ações quando escondeu os mensageiros e os fez sair em segurança por um caminho diferente.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Hebreus 11:31",
+                "text": "Pela fé, a prostituta Raabe não foi morta com os habitantes de sua cidade que se recusaram a obedecer, pois ela acolheu em paz os espiões."
+              },
+              {
+                "ref": "Josué 6:22–25",
+                "text": "Josué disse aos dois espiões: “Cumpram sua promessa! Vão à casa da prostituta e tirem-na de lá com toda a sua família”."
+              },
+              {
+                "ref": "Josué 2:19–21",
+                "text": "Se saírem na rua e forem mortos, não teremos culpa. Mas, se alguém fizer mal aos que estiverem dentro desta casa, assumiremos a responsabilidade por sua morte."
+              },
+              {
+                "ref": "Mateus 1:5",
+                "text": "Salmom gerou Boaz, cuja mãe foi Raabe. Boaz gerou Obede, cuja mãe foi Rute. Obede gerou Jessé."
+              }
+            ]
           },
           {
             "number": 26,
             "text": "Assim como o corpo sem fôlego está morto, também a fé sem obras está morta.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 2:20",
+                "text": "Quanta insensatez! Vocês não entendem que a fé sem as obras é inútil?"
+              },
+              {
+                "ref": "Tiago 2:17",
+                "text": "Como veem, a fé por si mesma, a menos que produza boas obras, está morta."
+              },
+              {
+                "ref": "Eclesiastes 12:7",
+                "text": "Pois, então, o pó voltará à terra e o espírito voltará a Deus, que o deu."
+              },
+              {
+                "ref": "Salmos 104:29",
+                "text": "Se te afastas deles, porém, enchem-se de medo; quando lhes retiras o fôlego, morrem e voltam ao pó."
+              }
+            ]
           }
         ]
       }
@@ -365,61 +1253,215 @@
             "number": 1,
             "text": "Meus irmãos, não sejam muitos de vocês mestres, pois nós, os que ensinamos, seremos julgados com mais rigor.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Timóteo 1:7",
+                "text": "Querem ser conhecidos como mestres da lei, mas não sabem do que estão falando, embora o façam com tanta confiança."
+              },
+              {
+                "ref": "Lucas 12:47–48",
+                "text": "“O servo que conhece a vontade do seu senhor e não se prepara nem segue as instruções dele será duramente castigado."
+              },
+              {
+                "ref": "1 Pedro 5:3",
+                "text": "Não abusem de sua autoridade com aqueles que foram colocados sob seus cuidados, mas guiem-nos com seu bom exemplo."
+              },
+              {
+                "ref": "Mateus 23:13",
+                "text": "“Que aflição os espera, mestres da lei e fariseus! Hipócritas! Fecham a porta do reino dos céus na cara das pessoas. Vocês mesmos não entram e não permitem que os outros entrem."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "É verdade que todos nós cometemos muitos erros. Se pudéssemos controlar a língua, seríamos perfeitos, capazes de nos controlar em todos os outros sentidos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 1:26",
+                "text": "Se algum de vocês afirma ser religioso, mas não controla a língua, engana a si mesmo e sua religião não tem valor."
+              },
+              {
+                "ref": "Provérbios 13:3",
+                "text": "Quem controla a língua terá vida longa; quem fala demais acaba se arruinando."
+              },
+              {
+                "ref": "1 Pedro 3:10",
+                "text": "Pois, “Se quiser desfrutar a vida e ver muitos dias felizes, refreie a língua de falar maldades e os lábios de dizerem mentiras."
+              },
+              {
+                "ref": "Mateus 12:37",
+                "text": "Por suas palavras vocês serão absolvidos, e por elas serão condenados”."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "Por exemplo, se colocamos um freio na boca do cavalo, podemos conduzi-lo para onde quisermos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 32:9",
+                "text": "Não sejam como o cavalo ou a mula, que não têm entendimento e precisam de freios e rédeas para ser controlados”."
+              },
+              {
+                "ref": "Salmos 39:1",
+                "text": "Disse comigo: “Tomarei cuidado com o que faço e não pecarei no que digo. Ficarei calado enquanto o perverso estiver por perto”."
+              },
+              {
+                "ref": "Tiago 1:26",
+                "text": "Se algum de vocês afirma ser religioso, mas não controla a língua, engana a si mesmo e sua religião não tem valor."
+              },
+              {
+                "ref": "2 Reis 19:28",
+                "text": "E, por causa de sua raiva contra mim e de sua arrogância, que eu mesmo ouvi, porei minha argola em seu nariz e meu freio em sua boca. Eu o farei voltar pelo mesmo caminho por onde veio”."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "Observem também que um pequeno leme faz um grande navio se voltar para onde o piloto deseja, mesmo com ventos fortes.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 8:24",
+                "text": "De repente, veio sobre o mar uma tempestade violenta, com ondas que cobriam o barco. Jesus, no entanto, dormia."
+              },
+              {
+                "ref": "Salmos 107:25–27",
+                "text": "Por sua ordem, os ventos se levantaram e agitaram as ondas."
+              },
+              {
+                "ref": "Atos 27:14–38",
+                "text": "Mas o tempo mudou de repente, e um vento com força de furacão, chamado Nordeste, soprou sobre a ilha e nos empurrou para o mar aberto."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Assim também, a língua é algo pequeno que profere discursos grandiosos. Vejam como uma simples fagulha é capaz de incendiar uma grande floresta.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 18:21",
+                "text": "A língua tem poder para trazer morte ou vida; quem gosta de falar arcará com as consequências."
+              },
+              {
+                "ref": "Provérbios 12:18",
+                "text": "Os comentários de algumas pessoas ferem, mas as palavras dos sábios trazem cura."
+              },
+              {
+                "ref": "Jeremias 9:3–8",
+                "text": "“Meu povo curva a língua como um arco para disparar mentiras. Não querem defender a verdade; vão de mal a pior e não me conhecem”, diz o SENHOR."
+              },
+              {
+                "ref": "Salmos 17:10",
+                "text": "Eles não têm compaixão; ouve como contam vantagem!"
+              }
+            ]
           },
           {
             "number": 6,
             "text": "E, entre todas as partes do corpo, a língua é uma chama de fogo. É um mundo de maldade que corrompe todo o corpo. Ateia fogo a uma vida inteira, pois o próprio inferno a acende.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 120:2–3",
+                "text": "Livra-me, SENHOR, dos mentirosos e dos enganadores. Ó língua mentirosa, o que Deus fará com você? Como aumentará seu castigo?"
+              },
+              {
+                "ref": "Provérbios 16:27",
+                "text": "A pessoa sem caráter cria problemas; suas palavras são fogo destruidor."
+              },
+              {
+                "ref": "Marcos 7:15",
+                "text": "Não é o que entra no corpo que os contamina; vocês se contaminam com o que sai do coração."
+              },
+              {
+                "ref": "Mateus 15:11–20",
+                "text": "Não é o que entra pela boca que os contamina; vocês se contaminam com as palavras que saem dela”."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "O ser humano consegue domar toda espécie de animal, ave, réptil e peixe,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Marcos 5:4",
+                "text": "Sempre que era acorrentado e algemado, quebrava as algemas dos pulsos e despedaçava as correntes dos pés. Ninguém era forte o suficiente para dominá-lo."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "mas ninguém consegue domar a língua. Ela é incontrolável e perversa, cheia de veneno mortífero.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 3:13",
+                "text": "“Sua conversa é repulsiva, como o odor de um túmulo aberto; sua língua é cheia de mentiras.” “Veneno de serpentes goteja de seus lábios.”"
+              },
+              {
+                "ref": "Salmos 140:3",
+                "text": "Sua língua fere como uma serpente; veneno de víbora goteja de seus lábios."
+              },
+              {
+                "ref": "Salmos 55:21",
+                "text": "Sua fala é macia como manteiga, mas em seu coração há guerra. Suas palavras são suaves como azeite, mas na verdade são punhais."
+              },
+              {
+                "ref": "Tiago 3:6",
+                "text": "E, entre todas as partes do corpo, a língua é uma chama de fogo. É um mundo de maldade que corrompe todo o corpo. Ateia fogo a uma vida inteira, pois o próprio inferno a acende."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Às vezes louva nosso Senhor e Pai e, às vezes, amaldiçoa aqueles que Deus criou à sua imagem.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 10:7",
+                "text": "Sua boca é cheia de maldições, mentiras e ameaças; em sua língua há violência e maldade."
+              },
+              {
+                "ref": "Gênesis 1:26–27",
+                "text": "Então Deus disse: “Façamos o ser humano à nossa imagem; ele será semelhante a nós. Dominará sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre todos os animais selvagens da terra e sobre os..."
+              },
+              {
+                "ref": "Gênesis 9:6",
+                "text": "Quem tirar a vida humana, por mãos humanas perderá a vida. Pois eu criei o ser humano à minha imagem."
+              },
+              {
+                "ref": "Salmos 62:4",
+                "text": "Planejam me derrubar de minha posição elevada; têm prazer em contar mentiras. Diante de mim, me elogiam; em seu coração, porém, me amaldiçoam."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "E, assim, bênção e maldição saem da mesma boca. Meus irmãos, isso não está certo!",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 12:14",
+                "text": "Abençoem aqueles que os perseguem. Não os amaldiçoem, mas orem para que Deus os abençoe."
+              },
+              {
+                "ref": "1 Pedro 3:9",
+                "text": "Não retribuam mal por mal, nem insulto com insulto. Ao contrário, retribuam com uma bênção. Foi para isso que vocês foram chamados, e a bênção lhes será concedida."
+              },
+              {
+                "ref": "1 Coríntios 3:3",
+                "text": "porque ainda são controlados por sua natureza humana. Têm ciúme uns dos outros, discutem e brigam entre si. Acaso isso não mostra que são controlados por sua natureza humana e que vivem como pessoas do mundo?"
+              },
+              {
+                "ref": "Salmos 50:16–20",
+                "text": "Ao perverso, porém, Deus diz: “De que adianta recitar meus decretos e falar a respeito de minha aliança?"
+              }
+            ]
           },
           {
             "number": 11,
@@ -431,7 +1473,24 @@
             "number": 12,
             "text": "Pode a figueira produzir azeitonas ou a videira produzir figos? Da mesma forma, não se pode tirar água doce de uma fonte salgada.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 12:33",
+                "text": "“Uma árvore é identificada por seus frutos. Se a árvore é boa, os frutos serão bons. Se a árvore é ruim, os frutos serão ruins."
+              },
+              {
+                "ref": "Lucas 6:43–44",
+                "text": "“Uma árvore boa não produz frutos ruins, e uma árvore ruim não produz frutos bons. Uma árvore é identificada por seus frutos. Ninguém colhe figos de espinheiros, nem uvas de arbustos espinhosos."
+              },
+              {
+                "ref": "Mateus 7:16–20",
+                "text": "Vocês os identificarão por seus frutos. É possível colher uvas de espinheiros ou figos de ervas daninhas?"
+              },
+              {
+                "ref": "Jeremias 2:21",
+                "text": "Contudo, eu o plantei, como videira de origem pura, da melhor qualidade; como você se transformou em videira silvestre e degenerada?"
+              }
+            ]
           }
         ]
       },
@@ -442,37 +1501,139 @@
             "number": 13,
             "text": "Se vocês são sábios e inteligentes, demonstrem isso vivendo honradamente, realizando boas obras com a humildade que vem da sabedoria.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gálatas 5:23",
+                "text": "mansidão e domínio próprio. Não há lei contra essas coisas!"
+              },
+              {
+                "ref": "Tiago 3:17",
+                "text": "Mas a sabedoria que vem do alto é, antes de tudo, pura. Também é pacífica, sempre amável e disposta a ceder a outros. É cheia de misericórdia e é o fruto de boas obras. Não mostra favoritismo e é sempre sincera."
+              },
+              {
+                "ref": "Mateus 5:5",
+                "text": "Felizes os humildes, pois herdarão a terra."
+              },
+              {
+                "ref": "Colossenses 3:12",
+                "text": "Visto que Deus os escolheu para ser seu povo santo e amado, revistam-se de compaixão, bondade, humildade, mansidão e paciência."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "Mas, se em seu coração há inveja amarga e ambição egoísta, não encubram a verdade com vanglórias e mentiras.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 3:16",
+                "text": "Pois onde há inveja e ambição egoísta, também há confusão e males de todo tipo."
+              },
+              {
+                "ref": "1 Coríntios 13:4",
+                "text": "O amor é paciente e bondoso. O amor não é ciumento, nem presunçoso. Não é orgulhoso,"
+              },
+              {
+                "ref": "Filipenses 2:3",
+                "text": "Não sejam egoístas, nem tentem impressionar ninguém. Sejam humildes e considerem os outros mais importantes que vocês."
+              },
+              {
+                "ref": "1 Coríntios 3:3",
+                "text": "porque ainda são controlados por sua natureza humana. Têm ciúme uns dos outros, discutem e brigam entre si. Acaso isso não mostra que são controlados por sua natureza humana e que vivem como pessoas do mundo?"
+              }
+            ]
           },
           {
             "number": 15,
             "text": "Porque essas coisas não são a espécie de sabedoria que vem do alto; antes, são terrenas, mundanas e demoníacas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 3:17",
+                "text": "Mas a sabedoria que vem do alto é, antes de tudo, pura. Também é pacífica, sempre amável e disposta a ceder a outros. É cheia de misericórdia e é o fruto de boas obras. Não mostra favoritismo e é sempre sincera."
+              },
+              {
+                "ref": "1 Coríntios 3:19",
+                "text": "Pois a sabedoria deste mundo é loucura para Deus. Como dizem as Escrituras: “Ele apanha os sábios na armadilha da própria astúcia deles”."
+              },
+              {
+                "ref": "Tiago 1:17",
+                "text": "Toda dádiva que é boa e perfeita vem do alto, do Pai que criou as luzes no céu. Nele não há variação nem sombra de mudança."
+              },
+              {
+                "ref": "1 Coríntios 2:14",
+                "text": "Mas o homem natural não aceita as verdades do Espírito de Deus. Elas lhe parecem loucura, e ele não consegue entendê-las, pois apenas quem é espiritual consegue avaliar corretamente o que diz o Espírito."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "Pois onde há inveja e ambição egoísta, também há confusão e males de todo tipo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 3:14",
+                "text": "Mas, se em seu coração há inveja amarga e ambição egoísta, não encubram a verdade com vanglórias e mentiras."
+              },
+              {
+                "ref": "1 Coríntios 3:3",
+                "text": "porque ainda são controlados por sua natureza humana. Têm ciúme uns dos outros, discutem e brigam entre si. Acaso isso não mostra que são controlados por sua natureza humana e que vivem como pessoas do mundo?"
+              },
+              {
+                "ref": "1 Coríntios 14:33",
+                "text": "Pois Deus não é Deus de desordem, mas de paz, como em todas as reuniões do povo santo."
+              },
+              {
+                "ref": "1 João 3:12",
+                "text": "Não sejamos como Caim, que pertencia ao maligno e assassinou seu irmão. E por que o assassinou? Porque Caim praticava o mal, e seu irmão praticava a justiça."
+              }
+            ]
           },
           {
             "number": 17,
             "text": "Mas a sabedoria que vem do alto é, antes de tudo, pura. Também é pacífica, sempre amável e disposta a ceder a outros. É cheia de misericórdia e é o fruto de boas obras. Não mostra favoritismo e é sempre sincera.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gálatas 5:22–23",
+                "text": "Mas o Espírito produz este fruto: amor, alegria, paz, paciência, amabilidade, bondade, fidelidade, mansidão e domínio próprio. Não há lei contra essas coisas!"
+              },
+              {
+                "ref": "Provérbios 2:6",
+                "text": "Pois o SENHOR concede sabedoria; de sua boca vêm conhecimento e entendimento."
+              },
+              {
+                "ref": "1 Coríntios 13:4–7",
+                "text": "O amor é paciente e bondoso. O amor não é ciumento, nem presunçoso. Não é orgulhoso,"
+              },
+              {
+                "ref": "Tiago 3:15",
+                "text": "Porque essas coisas não são a espécie de sabedoria que vem do alto; antes, são terrenas, mundanas e demoníacas."
+              }
+            ]
           },
           {
             "number": 18,
             "text": "E aqueles que são pacificadores plantarão sementes de paz e ajuntarão uma colheita de justiça.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 5:9",
+                "text": "Felizes os que promovem a paz, pois serão chamados filhos de Deus."
+              },
+              {
+                "ref": "Oséias 10:12",
+                "text": "Eu disse: ‘Plantem boas sementes de justiça e terão uma colheita de amor. Arem o solo endurecido de seu coração, pois é hora de buscar o SENHOR, para que ele venha e faça chover justiça sobre vocês’."
+              },
+              {
+                "ref": "Filipenses 1:11",
+                "text": "Que vocês sejam sempre cheios do fruto da justiça, que vem por meio de Jesus Cristo, para a glória e o louvor de Deus."
+              },
+              {
+                "ref": "Isaías 32:16–17",
+                "text": "A retidão governará no deserto, e a justiça, no campo fértil. E essa justiça trará paz; haverá sossego e confiança para sempre."
+              }
+            ]
           }
         ]
       }
@@ -489,37 +1650,139 @@
             "number": 1,
             "text": "De onde vêm as discussões e brigas em seu meio? Acaso não procedem dos prazeres que guerreiam dentro de vocês?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Pedro 2:11",
+                "text": "Amados, eu os advirto, como peregrinos e estrangeiros que são, a manter distância dos desejos carnais que lutam contra a alma."
+              },
+              {
+                "ref": "Gálatas 5:17",
+                "text": "A natureza humana deseja fazer exatamente o oposto do que o Espírito quer, e o Espírito nos impele na direção contrária àquela desejada pela natureza humana. Essas duas forças se confrontam o tempo todo, de modo que você..."
+              },
+              {
+                "ref": "Romanos 7:23",
+                "text": "Contudo, há outra lei dentro de mim que está em guerra com minha mente e me torna escravo do pecado que permanece dentro de mim."
+              },
+              {
+                "ref": "Tiago 1:14",
+                "text": "A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "Querem o que não têm, e até matam para consegui-lo. Invejam o que outros possuem, lutam e fazem guerra para tomar deles. E, no entanto, não têm o que desejam porque não pedem.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "João 16:24",
+                "text": "Vocês nunca pediram desse modo. Peçam em meu nome e receberão, e terão alegria completa."
+              },
+              {
+                "ref": "Mateus 7:7–8",
+                "text": "“Peçam, e receberão. Procurem, e encontrarão. Batam, e a porta lhes será aberta. Pois todos que pedem, recebem. Todos que procuram, encontram. E, para todos que batem, a porta é aberta."
+              },
+              {
+                "ref": "Tiago 1:5",
+                "text": "Se algum de vocês precisar de sabedoria, peça a nosso Deus generoso, e receberá. Ele não os repreenderá por pedirem."
+              },
+              {
+                "ref": "Lucas 11:9–13",
+                "text": "“Portanto eu lhes digo: peçam, e receberão. Procurem, e encontrarão. Batam, e a porta lhes será aberta."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "E, quando pedem, não recebem, pois seus motivos são errados; pedem apenas o que lhes dará prazer.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 João 5:14",
+                "text": "Estamos certos de que ele nos ouve sempre que lhe pedimos algo conforme sua vontade."
+              },
+              {
+                "ref": "1 João 3:22",
+                "text": "e dele receberemos tudo que pedirmos, pois lhe obedecemos e fazemos o que lhe agrada."
+              },
+              {
+                "ref": "Tiago 1:6–7",
+                "text": "Mas, quando pedirem, façam-no com fé, sem vacilar, pois aquele que duvida é como a onda do mar, empurrada e agitada pelo vento. Ele não deve esperar receber coisa alguma do Senhor,"
+              },
+              {
+                "ref": "Tiago 4:1",
+                "text": "De onde vêm as discussões e brigas em seu meio? Acaso não procedem dos prazeres que guerreiam dentro de vocês?"
+              }
+            ]
           },
           {
             "number": 4,
             "text": "Adúlteros!14 Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam- se inimigos de Deus.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 João 2:15–16",
+                "text": "Não amem este mundo, nem as coisas que ele oferece, pois, quando amam o mundo, o amor do Pai não está em vocês."
+              },
+              {
+                "ref": "Romanos 8:7",
+                "text": "Pois a mentalidade da natureza humana é sempre inimiga de Deus. Nunca obedeceu às leis de Deus, e nunca obedecerá."
+              },
+              {
+                "ref": "Mateus 6:24",
+                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”48 Ensino sobre a preocupação"
+              },
+              {
+                "ref": "João 15:19",
+                "text": "O mundo os amaria se pertencessem a ele, mas vocês já não fazem parte do mundo. Eu os escolhi para que não mais pertençam ao mundo, e por isso o mundo os odeia."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "O que vocês acham que as Escrituras querem dizer quando afirmam que o espírito colocado por Deus em nós tem ciúmes?15",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Coríntios 6:16",
+                "text": "E que união pode haver entre o templo de Deus e os ídolos? Pois somos o templo do Deus vivo. Como ele próprio disse: “Habitarei e andarei no meio deles. Serei o seu Deus, e eles serão o meu povo."
+              },
+              {
+                "ref": "1 Coríntios 6:19",
+                "text": "Vocês não sabem que seu corpo é o templo do Espírito Santo, que habita em vocês e lhes foi dado por Deus? Vocês não pertencem a si mesmos,"
+              },
+              {
+                "ref": "Números 11:29",
+                "text": "Moisés, porém, respondeu: “Você está com ciúmes por mim? Que bom seria se todos do povo do SENHOR fossem profetas e se o SENHOR colocasse seu Espírito sobre todos eles!”."
+              },
+              {
+                "ref": "Tito 3:3",
+                "text": "Em outros tempos, também éramos insensatos e desobedientes. Vivíamos no engano e nos tornamos escravos de muitas paixões e prazeres. Éramos cheios de maldade e inveja e odiávamos uns aos outros."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Contudo, ele generosamente nos concede graça. Como dizem as Escrituras: “Deus se opõe aos orgulhosos, mas concede graça aos humildes”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 23:12",
+                "text": "pois os que se exaltam serão humilhados, e os que se humilham serão exaltados."
+              },
+              {
+                "ref": "Provérbios 3:34",
+                "text": "O SENHOR zomba dos zombadores, mas concede graça aos humildes."
+              },
+              {
+                "ref": "1 Pedro 5:5",
+                "text": "Da mesma forma, vocês, que são mais jovens, aceitem a autoridade dos presbíteros. E todos vocês vistam-se de humildade no relacionamento uns com os outros. Pois, “Deus se opõe aos orgulhosos, mas concede graça aos humildes”."
+              },
+              {
+                "ref": "Salmos 138:6",
+                "text": "Mesmo nas alturas, o SENHOR cuida dos humildes, mas mantém distância dos orgulhosos."
+              }
+            ]
           }
         ]
       },
@@ -530,25 +1793,93 @@
             "number": 7,
             "text": "Portanto, submetam-se a Deus. Resistam ao diabo, e ele fugirá de vocês.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Pedro 5:8–9",
+                "text": "Estejam atentos! Tomem cuidado com seu grande inimigo, o diabo, que anda como um leão rugindo à sua volta, à procura de alguém para devorar."
+              },
+              {
+                "ref": "Efésios 4:27",
+                "text": "pois ela cria oportunidades para o diabo."
+              },
+              {
+                "ref": "Efésios 6:11–12",
+                "text": "Vistam toda a armadura de Deus, para que possam permanecer firmes contra as estratégias do diabo."
+              },
+              {
+                "ref": "1 Pedro 5:6",
+                "text": "Portanto, humilhem-se sob o grande poder de Deus e, no tempo certo, ele os exaltará."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Aproximem-se de Deus, e ele se aproximará de vocês. Lavem as mãos, pecadores; purifiquem o coração, vocês que têm a mente dividida.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 145:18",
+                "text": "O SENHOR está perto de todos que o invocam, sim, de todos que o invocam com sinceridade."
+              },
+              {
+                "ref": "Hebreus 10:22",
+                "text": "entremos com coração sincero e plena confiança, pois nossa consciência culpada foi purificada, e nosso corpo, lavado com água pura."
+              },
+              {
+                "ref": "Malaquias 3:7",
+                "text": "Desde os dias de seus antepassados vocês se afastaram de meus decretos e não os seguiram. Agora, voltem-se para mim, e eu me voltarei para vocês”, diz o SENHOR dos Exércitos. “Mas vocês perguntam: ‘De que maneira voltaremos?’."
+              },
+              {
+                "ref": "Zacarias 1:3",
+                "text": "Portanto, diga ao povo: ‘Assim diz o SENHOR dos Exércitos: Voltem-se para mim, e eu me voltarei para vocês, diz o SENHOR dos Exércitos’."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Que haja lágrimas, lamentação e profundo pesar. Que haja choro em vez de riso, e tristeza em vez de alegria.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 5:4",
+                "text": "Felizes os que choram, pois serão consolados."
+              },
+              {
+                "ref": "2 Coríntios 7:10–11",
+                "text": "Porque a tristeza que é da vontade de Deus conduz ao arrependimento e resulta em salvação. Não é uma tristeza que causa remorso. Mas a tristeza do mundo resulta em morte."
+              },
+              {
+                "ref": "Lucas 6:25",
+                "text": "Que aflição espera vocês que agora têm fartura, pois um terrível tempo de fome os espera! Que aflição espera vocês que agora riem, pois em breve seu riso se transformará em lamento e tristeza!"
+              },
+              {
+                "ref": "Provérbios 14:13",
+                "text": "O riso pode esconder o coração aflito, mas, quando a alegria se extingue, a dor permanece."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "Humilhem-se diante do Senhor, e ele os exaltará.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 147:6",
+                "text": "O SENHOR protege os humildes, mas lança os perversos no pó."
+              },
+              {
+                "ref": "Mateus 23:12",
+                "text": "pois os que se exaltam serão humilhados, e os que se humilham serão exaltados."
+              },
+              {
+                "ref": "1 Pedro 5:6",
+                "text": "Portanto, humilhem-se sob o grande poder de Deus e, no tempo certo, ele os exaltará."
+              },
+              {
+                "ref": "Lucas 14:11",
+                "text": "Pois os que se exaltam serão humilhados, e os que se humilham serão exaltados”."
+              }
+            ]
           }
         ]
       },
@@ -559,13 +1890,47 @@
             "number": 11,
             "text": "Irmãos, não falem mal uns dos outros. Se criticam e julgam uns aos outros, criticam e julgam a lei. Cabe-lhes, porém, praticar a lei, e não julgá-la.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Pedro 2:1",
+                "text": "Portanto, livrem-se de toda maldade, todo engano, toda hipocrisia, toda inveja e todo tipo de difamação."
+              },
+              {
+                "ref": "Tiago 5:9",
+                "text": "Irmãos, não se queixem uns dos outros, para que não sejam julgados. Pois, vejam, o Juiz está à porta!"
+              },
+              {
+                "ref": "Romanos 2:1",
+                "text": "Talvez você pense que pode condenar esses indivíduos, mas é igual a eles e não tem desculpa! Quando diz que eles deveriam ser castigados, condena a si mesmo, porque você, que julga os outros, pratica as mesmas coisas."
+              },
+              {
+                "ref": "Lucas 6:37",
+                "text": "“Não julguem e não serão julgados. Não condenem e não serão condenados. Perdoem e serão perdoados."
+              }
+            ]
           },
           {
             "number": 12,
             "text": "Somente aquele que deu a lei é Juiz, e somente ele tem poder de salvar ou destruir. Portanto, que direito vocês têm de julgar o próximo?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 14:4",
+                "text": "Quem são vocês para condenar os servos de outra pessoa? O senhor deles julgará se estão em pé ou se caíram. E, com a ajuda de Deus, ficarão em pé e receberão a aprovação dele."
+              },
+              {
+                "ref": "Romanos 2:1",
+                "text": "Talvez você pense que pode condenar esses indivíduos, mas é igual a eles e não tem desculpa! Quando diz que eles deveriam ser castigados, condena a si mesmo, porque você, que julga os outros, pratica as mesmas coisas."
+              },
+              {
+                "ref": "Mateus 10:28",
+                "text": "“Não tenham medo dos que querem matar o corpo; eles não podem tocar na alma. Temam somente a Deus, que pode destruir no inferno tanto a alma como o corpo."
+              },
+              {
+                "ref": "Isaías 33:22",
+                "text": "Pois o SENHOR é nosso juiz, nosso comandante e nosso rei; ele nos livrará."
+              }
+            ]
           }
         ]
       },
@@ -576,31 +1941,116 @@
             "number": 13,
             "text": "Prestem atenção, vocês que dizem: “Hoje ou amanhã iremos a determinada cidade e ficaremos lá um ano. Negociaremos ali e teremos lucro”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 27:1",
+                "text": "Não conte vantagem a respeito do futuro, pois você não sabe o que o amanhã trará."
+              },
+              {
+                "ref": "Lucas 12:17–20",
+                "text": "Pensou consigo: ‘O que devo fazer? Não tenho espaço para toda a minha colheita’."
+              },
+              {
+                "ref": "Gênesis 11:3–4",
+                "text": "Começaram a dizer uns aos outros: “Venham, vamos fazer tijolos e endurecê-los no fogo”. (Naquela região, era costume usar tijolos em vez de pedras, e betume em vez de argamassa.)"
+              },
+              {
+                "ref": "Eclesiastes 2:1",
+                "text": "Disse a mim mesmo: “Venha, vamos experimentar o prazer; vamos procurar as coisas boas da vida!”. Descobri, porém, que isso também não fazia sentido."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "Como sabem o que será de sua vida amanhã? A vida é como a névoa ao amanhecer: aparece por um pouco e logo se dissipa.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Pedro 1:24",
+                "text": "Pois, “Os seres humanos são como o capim; sua beleza é como as flores do campo. O capim seca e as flores murcham,"
+              },
+              {
+                "ref": "Salmos 39:5",
+                "text": "A vida que me deste não é mais longa que alguns palmos, e diante de ti toda a minha existência não passa de um momento; na verdade, o ser humano não passa de um sopro”."
+              },
+              {
+                "ref": "1 João 2:17",
+                "text": "E este mundo passa, e com ele tudo que as pessoas tanto desejam. Mas quem faz o que agrada a Deus vive para sempre."
+              },
+              {
+                "ref": "Salmos 102:3",
+                "text": "Pois meus dias somem como fumaça; como brasas ardentes, meus ossos queimam."
+              }
+            ]
           },
           {
             "number": 15,
             "text": "O que devem dizer é: “Se o Senhor quiser, viveremos e faremos isso ou aquilo”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 19:21",
+                "text": "É da natureza humana fazer planos, mas o propósito do SENHOR prevalecerá."
+              },
+              {
+                "ref": "Hebreus 6:3",
+                "text": "Se Deus permitir, avançaremos para um maior entendimento."
+              },
+              {
+                "ref": "Lamentações 3:37",
+                "text": "Quem pode ordenar que algo aconteça sem a permissão do Senhor?"
+              },
+              {
+                "ref": "Atos 18:21",
+                "text": "Ao despedir-se, Paulo disse: “Voltarei depois, se Deus quiser”. Então zarpou de Éfeso."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "Caso contrário, estarão se orgulhando de seus planos pretensiosos, e toda presunção como essa é maligna.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 27:1",
+                "text": "Não conte vantagem a respeito do futuro, pois você não sabe o que o amanhã trará."
+              },
+              {
+                "ref": "1 Coríntios 5:6",
+                "text": "Não é nada bom se orgulharem disso. Não percebem que esse pecado é como um pouco de fermento que leveda toda a massa?"
+              },
+              {
+                "ref": "Salmos 52:7",
+                "text": "“Vejam o que acontece aos poderosos guerreiros que não fazem de Deus sua fortaleza! Confiam em suas muitas riquezas e se refugiam em sua maldade”."
+              },
+              {
+                "ref": "Provérbios 25:14",
+                "text": "A pessoa que promete um presente, mas não o entrega, é como nuvens e ventos que não trazem chuva."
+              }
+            ]
           },
           {
             "number": 17,
             "text": "Lembrem-se de que é pecado saber o que devem fazer e não fazê-lo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "João 9:41",
+                "text": "“Se vocês fossem cegos, não seriam culpados”, respondeu Jesus. “Mas a culpa de vocês permanece, pois afirmam que podem ver.”"
+              },
+              {
+                "ref": "João 13:17",
+                "text": "Agora que vocês sabem estas coisas, serão felizes se as praticarem.”"
+              },
+              {
+                "ref": "2 Pedro 2:21",
+                "text": "Teria sido melhor nunca haver conhecido o caminho da justiça do que, conhecendo-o, rejeitar a ordem recebida para viver de modo santo."
+              },
+              {
+                "ref": "Lucas 12:47–48",
+                "text": "“O servo que conhece a vontade do seu senhor e não se prepara nem segue as instruções dele será duramente castigado."
+              }
+            ]
           }
         ]
       }
@@ -617,37 +2067,139 @@
             "number": 1,
             "text": "Prestem atenção, vocês que são ricos. Chorem e gemam de angústia por causa das desgraças que os esperam.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 11:28",
+                "text": "Quem confia em seu dinheiro cairá, mas o justo floresce como a verde folhagem."
+              },
+              {
+                "ref": "1 Timóteo 6:9–10",
+                "text": "Mas aqueles que desejam enriquecer caem em tentações e armadilhas e em muitos desejos tolos e nocivos, que os levam à ruína e destruição."
+              },
+              {
+                "ref": "Provérbios 11:4",
+                "text": "As riquezas de nada ajudarão no dia do juízo, mas uma vida justa livra da morte."
+              },
+              {
+                "ref": "Jeremias 9:23",
+                "text": "Assim diz o SENHOR: “Que o sábio não se orgulhe de sua sabedoria, nem o poderoso de seu poder, nem o rico de suas riquezas."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "Sua riqueza apodreceu, e suas roupas finas são trapos comidos por traças.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 6:19–20",
+                "text": "“Não ajuntem tesouros aqui na terra, onde as traças e a ferrugem os destroem, e onde ladrões arrombam casas e os furtam."
+              },
+              {
+                "ref": "Jó 13:28",
+                "text": "Eu me consumo como madeira que apodrece, como roupa comida pela traça.”"
+              },
+              {
+                "ref": "Lucas 12:33",
+                "text": "“Vendam seus bens e deem aos necessitados. Com isso, ajuntarão tesouros no céu, e as bolsas no céu não se desgastam nem se desfazem. Seu tesouro estará seguro; nenhum ladrão o roubará e nenhuma traça o destruirá."
+              },
+              {
+                "ref": "Isaías 50:9",
+                "text": "Vejam, o SENHOR Soberano está do meu lado! Quem me declarará culpado? Todos os meus inimigos serão destruídos como roupas velhas, comidas pelas traças."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "Seu ouro e sua prata estão corroídos. A mesma riqueza com a qual vocês contavam devorará sua carne como fogo. Esse tesouro corroído que vocês acumularam testemunhará contra vocês nos últimos dias.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 2:5",
+                "text": "Mas, por causa de seu coração rebelde, você se recusa a abandonar o pecado, acumulando ira sobre si mesmo. Pois o dia da ira se aproxima, quando o justo juízo de Deus se revelará."
+              },
+              {
+                "ref": "Tiago 5:7–8",
+                "text": "Por isso, irmãos, sejam pacientes enquanto esperam a volta do Senhor. Vejam como os lavradores esperam pacientemente as chuvas do outono e da primavera. Com grande expectativa, aguardam o amadurecimento de sua preciosa colheita."
+              },
+              {
+                "ref": "Apocalipse 21:8",
+                "text": "“Mas os covardes, os incrédulos, os corruptos, os assassinos, os sexualmente impuros, os que praticam feitiçaria, os adoradores de ídolos e todos os mentirosos estão destinados ao lago de fogo que arde com enxofre. Esta é a segunda morte”."
+              },
+              {
+                "ref": "Isaías 2:2",
+                "text": "Nos últimos dias, o monte da casa do SENHOR será o mais alto de todos. Será elevado acima de todos os outros montes, e povos de todo o mundo irão até lá para adorar."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "Por isso, ouçam os clamores dos que trabalharam em seus campos, cujo salário vocês retiveram de modo fraudulento! Sim, os clamores dos que fizeram a colheita em seus campos chegaram aos ouvidos do Senhor dos Exércitos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 19:13",
+                "text": "“Não explorem nem roubem o seu próximo. “Não fiquem até o dia seguinte com o pagamento de seus empregados."
+              },
+              {
+                "ref": "Jeremias 22:13",
+                "text": "“Que aflição espera Jeoaquim, que edifica seu palácio de forma desonesta! Constrói suas paredes com injustiça, pois obriga gente do seu povo a trabalhar sem pagar salário."
+              },
+              {
+                "ref": "Deuteronômio 24:14–15",
+                "text": "“Nunca se aproveitem de trabalhadores pobres e necessitados, sejam irmãos israelitas ou estrangeiros que vivem em suas cidades."
+              },
+              {
+                "ref": "Romanos 9:29",
+                "text": "E, como Isaías tinha dito em outra passagem: “Se o Senhor dos Exércitos não houvesse poupado alguns de nossos filhos, teríamos sido exterminados como Sodoma e destruídos como Gomorra”."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Vocês levam uma vida de luxo na terra, satisfazendo seus desejos e engordando a si mesmos para o dia do abate.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Timóteo 5:6",
+                "text": "Mas a viúva que vive apenas para o prazer está morta, ainda que esteja viva."
+              },
+              {
+                "ref": "Lucas 16:25",
+                "text": "“Abraão, porém, respondeu: ‘Filho, lembre-se de que durante a vida você teve tudo que queria e Lázaro não teve coisa alguma. Agora, ele está aqui sendo consolado, e você está em agonia."
+              },
+              {
+                "ref": "Lucas 16:19",
+                "text": "Jesus disse: “Havia um homem rico que se vestia de púrpura e linho fino e vivia sempre cercado de luxos."
+              },
+              {
+                "ref": "Jeremias 12:3",
+                "text": "Quanto a mim, SENHOR, tu me conheces; tu me vês e provas meus pensamentos. Arrasta essa gente como ovelhas para o matadouro; separa-os para a matança!"
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Condenam e matam inocentes, sem que eles resistam.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Pedro 2:22–23",
+                "text": "Ele nunca pecou, nem enganou ninguém. Não revidou quando foi insultado, nem ameaçou se vingar quando sofreu, mas deixou seu caso nas mãos de Deus, que sempre julga com justiça."
+              },
+              {
+                "ref": "João 19:9–11",
+                "text": "Levou Jesus de volta para dentro do palácio e lhe perguntou: “De onde você vem?”. Jesus, porém, não respondeu."
+              },
+              {
+                "ref": "Isaías 53:7",
+                "text": "Ele foi oprimido e humilhado, mas não disse uma só palavra. Foi levado como cordeiro para o matadouro; como ovelha muda diante dos tosquiadores, não abriu a boca."
+              },
+              {
+                "ref": "Lucas 22:51–53",
+                "text": "Mas Jesus disse: “Basta!”. E, tocando a orelha do homem, curou- o."
+              }
+            ]
           }
         ]
       },
@@ -658,37 +2210,135 @@
             "number": 7,
             "text": "Por isso, irmãos, sejam pacientes enquanto esperam a volta do Senhor. Vejam como os lavradores esperam pacientemente as chuvas do outono e da primavera. Com grande expectativa, aguardam o amadurecimento de sua preciosa colheita.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Hebreus 12:1–3",
+                "text": "Portanto, uma vez que estamos rodeados de tão grande multidão de testemunhas, livremo-nos de todo peso que nos torna vagarosos e do pecado que nos atrapalha, e corramos com perseverança a corrida que foi posta diante de nós."
+              },
+              {
+                "ref": "Tiago 5:8–9",
+                "text": "Sejam também pacientes. Fortaleçam-se em seu coração, pois a vinda do Senhor está próxima. Irmãos, não se queixem uns dos outros, para que não sejam julgados. Pois, vejam, o Juiz está à porta!"
+              },
+              {
+                "ref": "Joel 2:23",
+                "text": "Alegrem-se, vocês que habitam em Sião! Exultem no SENHOR, seu Deus! Pois ele envia as chuvas na medida certa; as chuvas de outono voltarão a cair, e também as chuvas de primavera."
+              },
+              {
+                "ref": "Gálatas 6:9",
+                "text": "Portanto, não nos cansemos de fazer o bem. No momento certo, teremos uma colheita de bênçãos, se não desistirmos."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Sejam também pacientes. Fortaleçam-se em seu coração, pois a vinda do Senhor está próxima.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 5:9",
+                "text": "Irmãos, não se queixem uns dos outros, para que não sejam julgados. Pois, vejam, o Juiz está à porta!"
+              },
+              {
+                "ref": "Gálatas 5:22",
+                "text": "Mas o Espírito produz este fruto: amor, alegria, paz, paciência, amabilidade, bondade, fidelidade,"
+              },
+              {
+                "ref": "Salmos 37:7",
+                "text": "Aquiete-se na presença do SENHOR, espere nele com paciência. Não se preocupe com o perverso que prospera, nem se aborreça com seus planos maldosos."
+              },
+              {
+                "ref": "1 Pedro 4:7",
+                "text": "O fim de todas as coisas está próximo. Portanto, sejam sensatos e disciplinados em suas orações."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Irmãos, não se queixem uns dos outros, para que não sejam julgados. Pois, vejam, o Juiz está à porta!",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Levítico 19:18",
+                "text": "“Não procurem se vingar nem guardem rancor de alguém do seu povo, mas cada um ame o seu próximo como a si mesmo. Eu sou o SENHOR."
+              },
+              {
+                "ref": "1 Coríntios 4:5",
+                "text": "Portanto, não julguem ninguém antes do tempo, antes que o Senhor volte. Pois ele trará à luz nossos segredos mais obscuros e revelará nossas intenções mais íntimas. Então Deus dará a cada um a devida aprovação."
+              },
+              {
+                "ref": "Tiago 4:11",
+                "text": "Irmãos, não falem mal uns dos outros. Se criticam e julgam uns aos outros, criticam e julgam a lei. Cabe-lhes, porém, praticar a lei, e não julgá-la."
+              },
+              {
+                "ref": "Gálatas 5:14",
+                "text": "Pois toda a lei pode ser resumida neste único mandamento: “Ame o seu próximo como a si mesmo”."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "Irmãos, tomem como exemplo de paciência no sofrimento os profetas que falaram em nome do Senhor.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Hebreus 11:32–38",
+                "text": "Quanto mais preciso dizer? Levaria muito tempo para falar sobre a fé que Gideão, Baraque, Sansão, Jefté, Davi, Samuel e os profetas tiveram."
+              },
+              {
+                "ref": "Mateus 5:11–12",
+                "text": "“Felizes são vocês quando, por minha causa, sofrerem zombaria e perseguição, e quando outros, mentindo, disserem todo tipo de maldade a seu respeito."
+              },
+              {
+                "ref": "Hebreus 13:7",
+                "text": "Lembrem-se de seus líderes que lhes ensinaram a palavra de Deus. Pensem em todo o bem que resultou da vida deles e sigam seu exemplo de fé."
+              },
+              {
+                "ref": "1 Tessalonicenses 2:14–15",
+                "text": "E então, irmãos, vocês foram perseguidos por seus próprios compatriotas, tornando-se assim imitadores das igrejas de Deus em Cristo Jesus na Judeia, que também sofreram nas mãos de seu próprio povo, os judeus."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Consideramos felizes aqueles que permanecem firmes em meio à aflição. Vocês ouviram falar de Jó, um homem de muita perseverança. Sabem como, no final, o Senhor foi bondoso com ele, pois o Senhor é cheio de compaixão e misericórdia.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 1:12",
+                "text": "Feliz é aquele que suporta com paciência as provações e tentações, porque depois receberá a coroa da vida que Deus prometeu àqueles que o amam."
+              },
+              {
+                "ref": "Êxodo 34:6",
+                "text": "O SENHOR passou diante de Moisés, proclamando: “Javé! O SENHOR! O Deus de compaixão e misericórdia! Sou lento para me irar e cheio de amor e fidelidade."
+              },
+              {
+                "ref": "Jó 1:21–22",
+                "text": "e disse: “Saí nu do ventre de minha mãe, e estarei nu quando partir. O SENHOR me deu o que eu tinha, e o SENHOR o tomou. Louvado seja o nome do SENHOR!”. Em tudo isso, Jó não pecou nem culpou a Deus."
+              },
+              {
+                "ref": "Isaías 55:6–7",
+                "text": "Busquem o SENHOR enquanto podem achá-lo; invoquem-no agora, enquanto ele está perto."
+              }
+            ]
           },
           {
             "number": 12,
             "text": "Acima de tudo, meus irmãos, não jurem pelo céu, nem pela terra, nem por qualquer outra coisa. Que seu “sim” seja de fato sim, e seu “não”, não, para que não pequem e sejam condenados.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 5:33–37",
+                "text": "“Vocês também ouviram o que foi dito a seus antepassados: ‘Não quebre seus juramentos; cumpra os juramentos que fizer ao Senhor’."
+              },
+              {
+                "ref": "Mateus 23:16–22",
+                "text": "“Que aflição os espera, guias cegos! Vocês dizem não haver importância se alguém jura ‘pelo templo de Deus’, mas se jurar ‘pelo ouro do templo’ será obrigado a cumprir o juramento."
+              },
+              {
+                "ref": "2 Coríntios 1:17–20",
+                "text": "Talvez vocês estejam se perguntando por que mudei de ideia. Será que faço meus planos de modo irresponsável? Será que sou como as pessoas do mundo, que dizem “sim” quando na verdade querem dizer “não”?"
+              }
+            ]
           }
         ]
       },
@@ -699,37 +2349,139 @@
             "number": 13,
             "text": "Algum de vocês está passando por dificuldades? Então ore. Alguém está feliz? Cante louvores.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 50:15",
+                "text": "Então clamem a mim em tempos de aflição; eu os livrarei, e vocês me darão glória.”"
+              },
+              {
+                "ref": "Jonas 2:2",
+                "text": "e disse: “Em minha angústia, clamei ao SENHOR, e ele me respondeu. Gritei da terra dos mortos, e tu me ouviste."
+              },
+              {
+                "ref": "Efésios 5:19",
+                "text": "cantando salmos, hinos e cânticos espirituais entre si e louvando o Senhor de coração com música."
+              },
+              {
+                "ref": "Atos 16:24–25",
+                "text": "por isso os colocou no cárcere interno, prendendo-lhes os pés no tronco. Por volta da meia-noite, Paulo e Silas oravam e cantavam hinos a Deus, e os outros presos ouviam."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "Alguém está doente? Chame os presbíteros da igreja para que venham e orem sobre ele e o unjam com óleo, em nome do Senhor.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Marcos 6:13",
+                "text": "Expulsaram muitos demônios e curaram muitos enfermos, ungindo-os com óleo."
+              },
+              {
+                "ref": "Atos 28:8",
+                "text": "Aconteceu que o pai de Públio estava doente, com febre e disenteria. Paulo entrou, orou por ele e, impondo as mãos sobre sua cabeça, o curou."
+              },
+              {
+                "ref": "Marcos 16:18",
+                "text": "pegarão em serpentes sem correr perigo, se beberem algo venenoso, não lhes fará mal, e colocarão as mãos sobre os enfermos e eles serão curados”."
+              },
+              {
+                "ref": "Atos 9:40",
+                "text": "Pedro pediu que todos saíssem do quarto. Então, ajoelhou-se e orou. Voltando-se para o corpo da mulher, disse: “Tabita, levante-se”, e ela abriu os olhos. Quando ela viu Pedro, sentou-se."
+              }
+            ]
           },
           {
             "number": 15,
             "text": "Essa oração de fé curará o enfermo, e o Senhor o restabelecerá. E, se cometeu algum pecado, será perdoado.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 João 5:14–16",
+                "text": "Estamos certos de que ele nos ouve sempre que lhe pedimos algo conforme sua vontade."
+              },
+              {
+                "ref": "Tiago 5:13",
+                "text": "Algum de vocês está passando por dificuldades? Então ore. Alguém está feliz? Cante louvores."
+              },
+              {
+                "ref": "Tiago 5:16",
+                "text": "Portanto, confessem seus pecados uns aos outros e orem uns pelos outros para serem curados. A oração de um justo tem grande poder e produz grandes resultados."
+              },
+              {
+                "ref": "Mateus 21:21–22",
+                "text": "Jesus respondeu: “Eu lhes digo a verdade: se vocês tiverem fé e não duvidarem, poderão fazer o mesmo que fiz com esta figueira, e muito mais. Poderão até dizer a este monte: ‘Levante-se e ­atire-se no mar’, e isso acontecerá."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "Portanto, confessem seus pecados uns aos outros e orem uns pelos outros para serem curados. A oração de um justo tem grande poder e produz grandes resultados.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 29:12–13",
+                "text": "Naqueles dias, quando vocês clamarem por mim em oração, eu os ouvirei. Se me buscarem de todo o coração, me encontrarão."
+              },
+              {
+                "ref": "Provérbios 15:29",
+                "text": "O SENHOR está longe dos perversos, mas ouve as orações dos justos."
+              },
+              {
+                "ref": "Mateus 21:22",
+                "text": "Se crerem, receberão qualquer coisa que pedirem em oração”."
+              },
+              {
+                "ref": "Salmos 34:15",
+                "text": "Os olhos do SENHOR estão sobre os justos, e seus ouvidos, abertos para seus clamores."
+              }
+            ]
           },
           {
             "number": 17,
             "text": "Elias era humano como nós e, no entanto, quando orou insistentemente para que não caísse chuva, não choveu durante três anos e meio.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Reis 17:1",
+                "text": "Elias, que era de Tisbe, em Gileade, disse ao rei Acabe: “Tão certo como vive o SENHOR, o Deus de Israel, a quem sirvo, não haverá orvalho nem chuva durante os próximos anos, até que eu ordene!”."
+              },
+              {
+                "ref": "Lucas 4:25",
+                "text": "“Por certo havia muitas viúvas necessitadas em Israel no tempo de Elias, quando o céu se fechou por três anos e meio e uma fome terrível devastou a terra."
+              },
+              {
+                "ref": "1 Reis 18:1",
+                "text": "Algum tempo depois, no terceiro ano da seca, o SENHOR disse a Elias: “Vá apresentar-se ao rei Acabe. Diga-lhe que enviarei chuva”."
+              },
+              {
+                "ref": "Apocalipse 11:6",
+                "text": "Elas têm poder para fechar o céu, a fim de que não chova durante o tempo que profetizarem, e têm poder para transformar as águas em sangue e para ferir a terra com pragas de toda espécie, quantas vezes desejarem."
+              }
+            ]
           },
           {
             "number": 18,
             "text": "Então ele orou outra vez e o céu enviou chuva, e a terra começou a produzir suas colheitas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Reis 18:42–45",
+                "text": "Acabe foi comer e beber. Elias, porém, subiu ao topo do monte Carmelo, prostrou-se até o chão com o rosto entre os joelhos e orou."
+              },
+              {
+                "ref": "Jeremias 14:22",
+                "text": "Acaso algum desses deuses estrangeiros pode enviar a chuva? Ela cai por si mesma do céu? Somente tu, ó SENHOR, nosso Deus, podes fazer essas coisas; por isso esperamos teu socorro."
+              },
+              {
+                "ref": "1 Reis 18:18",
+                "text": "“Não causei problema algum a Israel”, respondeu Elias. “O senhor e sua família é que são os perturbadores, pois se recusaram a obedecer aos mandamentos do SENHOR e, em vez disso, adoraram imagens de Baal."
+              },
+              {
+                "ref": "Atos 14:17",
+                "text": "mas nunca as deixou sem evidências de sua existência e de sua bondade. Ele lhes concede chuvas e boas colheitas, e também alimento e um coração alegre”."
+              }
+            ]
           }
         ]
       },
@@ -740,13 +2492,47 @@
             "number": 19,
             "text": "Meus irmãos, se algum de vocês se desviar da verdade e for trazido de volta,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Gálatas 6:1",
+                "text": "Irmãos, se alguém for vencido por algum pecado, vocês que são guiados pelo Espírito devem, com mansidão, ajudá-lo a voltar ao caminho certo. E cada um cuide para não ser tentado."
+              },
+              {
+                "ref": "Mateus 18:15",
+                "text": "“Se um irmão pecar contra você,100 fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
+              },
+              {
+                "ref": "Tiago 5:20",
+                "text": "saibam que quem trouxer o pecador de volta de seu desvio o salvará da morte e trará perdão para muitos pecados."
+              },
+              {
+                "ref": "Judas 1:22–23",
+                "text": "Tenham compaixão daqueles que vacilam na fé. Resgatem outros, tirando-os das chamas do julgamento. De outros ainda, tenham misericórdia, mas façam isso com grande cautela, odiando os pecados que contaminam a vida deles."
+              }
+            ]
           },
           {
             "number": 20,
             "text": "saibam que quem trouxer o pecador de volta de seu desvio o salvará da morte e trará perdão para muitos pecados. 1 1. Ou perfeitos. 2 1. Ou Deus não deve ser posto à prova por perversos. 3 1. Em grego, nos tornamos como primícias de suas criaturas. 4 2. Em grego, à sua sinagoga. 5 2. Lv 19.. 6 2. Êx 20.13-14; Dt 5.17-18. 7 2. Alguns manuscritos trazem que Deus é um. Ver Dt 6.. 8 2.23a Gn 15.. 9 2.23b Ver Is 41.. 10 2. Ou sem espírito. 11 3. Ou porque ela queimará no inferno [em grego, Gehenna]. 12 3. Em grego, do sal. 13 3. Ou de coisas boas, ou de retidão. 14 4. Em grego, Adúlteras! 15 4. Ou que Deus anseia com zelo pelo espírito humano que colocou em nós?, ou que o Espírito que Deus colocou em nós se opõe à nossa inveja? 16 4. Pv 3., conforme a Septuaginta. 17 5.6a Ou o Justo. 18 5.6b Ou e eles não lhes resistem?, ou e Deus não se opõe a vocês?, ou e eles não os acusam agora diante de Deus? 19 5. Ou anciãos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Pedro 4:8",
+                "text": "Acima de tudo, amem uns aos outros sinceramente, pois o amor cobre muitos pecados."
+              },
+              {
+                "ref": "Provérbios 10:12",
+                "text": "O ódio provoca brigas, mas o amor cobre todas as ofensas."
+              },
+              {
+                "ref": "1 Timóteo 4:16",
+                "text": "Fique atento a seu modo de viver e a seus ensinamentos. Permaneça fiel ao que é certo, e assim salvará a si mesmo e àqueles que o ouvem."
+              },
+              {
+                "ref": "Provérbios 11:30",
+                "text": "O fruto do justo é árvore de vida; o sábio conquista pessoas."
+              }
+            ]
           }
         ]
       }

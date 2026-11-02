@@ -10,7 +10,24 @@
             "number": 1,
             "text": "Naum, que vivia em Elcós, recebeu numa visão esta mensagem acerca de Nínive.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Sofonias 2:13",
+                "text": "E, com sua mão, ele ferirá as terras do norte e destruirá a terra da Assíria. Fará de Nínive uma terra vazia e desolada, seca como um deserto."
+              },
+              {
+                "ref": "Jonas 1:2",
+                "text": "“Apronte-se e vá à grande cidade de Nínive. Anuncie meu julgamento contra ela, pois vi como seu povo é perverso”."
+              },
+              {
+                "ref": "Zacarias 9:1",
+                "text": "Esta é a sentença do SENHOR contra a terra de Hadraque e a cidade de Damasco, pois os olhos da humanidade, incluindo os de todas as tribos de Israel, estão voltados para o SENHOR."
+              },
+              {
+                "ref": "Naum 2:8",
+                "text": "Nínive é como um açude rompido, que deixa vazar seu povo. “Parem! Parem!”, alguém grita, mas ninguém olha para trás."
+              }
+            ]
           }
         ]
       },
@@ -21,79 +38,298 @@
             "number": 2,
             "text": "O SENHOR é Deus zeloso, cheio de vingança e ira. Vinga-se de todos que a ele se opõem e reserva sua fúria para seus inimigos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 20:5",
+                "text": "Não se curve diante deles nem os adore, pois eu, o SENHOR, seu Deus, sou um Deus zeloso. Trago as consequências do pecado dos pais sobre os filhos até a terceira e quarta geração dos que me rejeitam,"
+              },
+              {
+                "ref": "Zacarias 8:2",
+                "text": "“Assim diz o SENHOR dos Exércitos: Tenho muito ciúme do monte Sião e sou consumido de zelo por ele!"
+              },
+              {
+                "ref": "Salmos 94:1",
+                "text": "Ó SENHOR, Deus da vingança, ó Deus da vingança, manifesta teu esplendor!"
+              },
+              {
+                "ref": "Êxodo 34:14",
+                "text": "Não adore outros deuses, pois o SENHOR, cujo nome é Zeloso, é Deus zeloso de seu relacionamento com vocês."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "O SENHOR é lento para se irar, mas tem grande poder e nunca deixa de castigar o culpado. Demonstra seu poder no vendaval e na tempestade; as nuvens são poeira debaixo de seus pés.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Êxodo 34:6–7",
+                "text": "O SENHOR passou diante de Moisés, proclamando: “Javé! O SENHOR! O Deus de compaixão e misericórdia! Sou lento para me irar e cheio de amor e fidelidade."
+              },
+              {
+                "ref": "Salmos 147:5",
+                "text": "Nosso Senhor é grande! Seu poder é absoluto! É impossível medir seu entendimento."
+              },
+              {
+                "ref": "Neemias 9:17",
+                "text": "Não quiseram obedecer e não se lembraram dos milagres que havias realizado em favor deles. Em vez disso, rebelaram-se e nomearam um líder para levá-los de volta à escravidão no Egito. Mas tu és Deus de perdão, misericord..."
+              },
+              {
+                "ref": "Salmos 104:3",
+                "text": "pões as vigas de tua casa nas nuvens de chuva. Fazes das nuvens o teu carro de combate, cavalgas nas asas do vento."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "À sua ordem, os oceanos secam e os rios desaparecem. Os pastos verdejantes de Basã e do Carmelo se esvaem, e os bosques do Líbano murcham.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 33:9",
+                "text": "A terra de Israel murcha de tanto chorar; o Líbano seca de vergonha. A planície de Sarom agora é um deserto; Basã e Carmelo foram saqueados."
+              },
+              {
+                "ref": "Salmos 106:9",
+                "text": "Ordenou que o mar Vermelho137 secasse e os conduziu pelas águas como por um deserto."
+              },
+              {
+                "ref": "Isaías 19:5–10",
+                "text": "As águas do Nilo deixarão de inundar os campos; o leito do rio ficará seco e árido."
+              },
+              {
+                "ref": "Salmos 114:3",
+                "text": "O mar Vermelho147 os viu chegando e se abriu, e as águas do rio Jordão recuaram."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Em sua presença, os montes tremem e as colinas se derretem; a terra estremece e seus habitantes são destruídos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Miqueias 1:4",
+                "text": "Os montes se derretem sob seus pés e escorrem para os vales, como cera no fogo, como água que desce pela encosta."
+              },
+              {
+                "ref": "2 Samuel 22:8",
+                "text": "“A terra se abalou e estremeceu; tremeram os alicerces dos céus, agitaram-se por causa de sua ira."
+              },
+              {
+                "ref": "Jeremias 4:24",
+                "text": "Olhei para os montes e para as colinas, e eles estremeciam e balançavam."
+              },
+              {
+                "ref": "Isaías 64:1–2"
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Quem pode resistir à sua indignação? Quem pode sobreviver à sua ira ardente? Sua fúria queima como fogo, e os montes desabam em sua presença.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 10:10",
+                "text": "Mas o SENHOR é o único Deus verdadeiro; ele é o Deus vivo e o Rei eterno! A terra treme com sua ira; as nações não podem suportar sua fúria."
+              },
+              {
+                "ref": "Malaquias 3:2",
+                "text": "“Mas quem poderá suportar quando ele vier? Quem permanecerá em pé em sua presença quando ele aparecer? Pois ele será como fogo ardente que refina o metal, como sabão forte que branqueia as roupas."
+              },
+              {
+                "ref": "Deuteronômio 32:22–23",
+                "text": "Pois minha ira arde como o fogo e queima até as profundezas da sepultura. Devora a terra e todas as suas colheitas e incendeia os alicerces dos montes."
+              },
+              {
+                "ref": "Salmos 76:7",
+                "text": "Não é de admirar que sejas tão temido! Quem pode permanecer diante de ti quando irrompe a tua ira?"
+              }
+            ]
           },
           {
             "number": 7,
             "text": "O SENHOR é bom; é forte refúgio quando vem a aflição. Está perto dos que nele confiam,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "João 10:27",
+                "text": "Minhas ovelhas ouvem a minha voz; eu as conheço, e elas me seguem."
+              },
+              {
+                "ref": "2 Timóteo 2:19",
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+              },
+              {
+                "ref": "Lamentações 3:25",
+                "text": "O SENHOR é bom para os que dependem dele, para os que o buscam."
+              },
+              {
+                "ref": "João 10:14",
+                "text": "“Eu sou o bom pastor. Conheço minhas ovelhas, e elas me conhecem,"
+              }
+            ]
           },
           {
             "number": 8,
             "text": "mas arrasará seus inimigos com uma tremenda inundação. Perseguirá seus adversários escuridão adentro.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Ezequiel 13:13",
+                "text": "“Portanto, assim diz o SENHOR Soberano: Destruirei esse muro com ventos impetuosos de indignação, com forte tempestade de ira e com pedras de granizo de fúria."
+              },
+              {
+                "ref": "Isaías 28:17",
+                "text": "Provarei vocês com a corda de medir da justiça e com o prumo da retidão. Porque seu refúgio é feito de mentiras, uma tempestade de granizo o derrubará. Porque é feito de engano, uma inundação o arrastará."
+              },
+              {
+                "ref": "Isaías 8:22",
+                "text": "depois olharão para a terra, mas para onde voltarem os olhos só haverá problemas, angústia e sombrio desespero. Serão lançados nas trevas."
+              },
+              {
+                "ref": "Amós 9:5–6",
+                "text": "O Soberano SENHOR dos Exércitos toca a terra e ela se derrete, e todos que nela habitam lamentam. A terra se levanta como o Nilo, o rio do Egito, na época das enchentes e depois afunda."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Por que vocês tramam contra o SENHOR? Ele os destruirá com um só golpe; não precisará vir outra vez.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 21:11",
+                "text": "Embora conspirem contra ti, suas tramas perversas não terão sucesso."
+              },
+              {
+                "ref": "Provérbios 21:30",
+                "text": "Não há sabedoria, entendimento, nem conselho humano capaz de resistir ao SENHOR."
+              },
+              {
+                "ref": "Salmos 33:10",
+                "text": "O SENHOR desfaz os planos das nações e frustra os projetos dos povos."
+              },
+              {
+                "ref": "2 Coríntios 10:5",
+                "text": "Destruímos todas as opiniões arrogantes que impedem as pessoas de conhecer a Deus. Levamos cativo todo pensamento rebelde e o ensinamos a obedecer a Cristo."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "Seus inimigos, emaranhados como espinheiros e cambaleantes como bêbados, serão queimados como palha seca.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Miqueias 7:4",
+                "text": "Até o melhor deles é como um espinheiro, e o mais honesto é perigoso como uma cerca de espinhos. Mas o dia anunciado se aproxima; está chegando a hora de seu castigo, um tempo de confusão."
+              },
+              {
+                "ref": "Malaquias 4:1"
+              },
+              {
+                "ref": "Naum 3:11",
+                "text": "E você, Nínive, também tropeçará como um bêbado e se esconderá de medo do inimigo que ataca."
+              },
+              {
+                "ref": "Isaías 5:24",
+                "text": "Portanto, assim como o fogo consome a palha e o capim seco se desfaz com a chama, suas raízes apodrecerão e suas flores murcharão. Pois rejeitaram a lei do SENHOR dos Exércitos, desprezaram a palavra do Santo de Israel."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Ó Nínive, quem é esse seu conselheiro perverso, que trama o mal contra o SENHOR?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Naum 1:9",
+                "text": "Por que vocês tramam contra o SENHOR? Ele os destruirá com um só golpe; não precisará vir outra vez."
+              },
+              {
+                "ref": "2 Crônicas 13:7",
+                "text": "Homens desocupados e perversos se juntaram a ele e conspiraram contra Roboão, filho de Salomão, quando ele era jovem, inexperiente e incapaz de enfrentá-los."
+              },
+              {
+                "ref": "Isaías 10:7–15",
+                "text": "O rei da Assíria, porém, não entenderá que é meu instrumento; esse não é seu modo de pensar. Seu plano é somente destruir, derrubar uma nação após a outra."
+              },
+              {
+                "ref": "2 Reis 18:30",
+                "text": "Não deixem que ele os convença a confiar no SENHOR, dizendo: ‘Certamente o SENHOR nos livrará; esta cidade jamais cairá nas mãos do rei da Assíria!’."
+              }
+            ]
           },
           {
             "number": 12,
             "text": "Assim diz o SENHOR: “Embora os assírios tenham muitos aliados, serão destruídos e desaparecerão. Ó meu povo, eu o castiguei antes, mas não o castigarei outra vez.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 2:19",
+                "text": "O SENHOR respondeu: “Vejam! Eu lhes envio cereal, vinho novo e azeite, suficientes para saciá-los. Vocês não serão mais objeto de zombaria entre as nações vizinhas."
+              },
+              {
+                "ref": "Isaías 30:19",
+                "text": "Ó povo de Sião, que mora em Jerusalém, você não chorará mais! Ele será bondoso quando lhe pedirem ajuda; certamente atenderá a seus clamores."
+              },
+              {
+                "ref": "Isaías 31:8",
+                "text": "“Os assírios serão destruídos, mas não por espadas de homens. A espada de Deus os ferirá; entrarão em pânico e fugirão. Os jovens assírios serão levados como escravos."
+              },
+              {
+                "ref": "Daniel 11:10",
+                "text": "Os filhos do rei do norte, porém, reunirão um exército poderoso que avançará como uma inundação e levará a batalha até a fortaleza do inimigo."
+              }
+            ]
           },
           {
             "number": 13,
             "text": "Agora quebrarei o jugo sobre seu pescoço e arrancarei as correntes de sua opressão”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 10:27",
+                "text": "Naquele dia, o SENHOR acabará com a servidão de seu povo; quebrará o jugo de escravidão e o levantará de seus ombros."
+              },
+              {
+                "ref": "Isaías 9:4",
+                "text": "Pois tu quebrarás o jugo de escravidão que os oprimia e levantarás o fardo que lhes pesava sobre os ombros. Quebrarás a vara do opressor, como fizeste ao destruir o exército de Midiã."
+              },
+              {
+                "ref": "Jeremias 2:20",
+                "text": "“Há muito tempo, quebrei o jugo que o oprimia e despedacei as correntes de sua escravidão. Ainda assim, você disse: ‘Jamais o servirei’. No alto dos montes e debaixo de toda árvore verdejante, você se prostituiu ao se curvar para ídolos."
+              },
+              {
+                "ref": "Salmos 107:14",
+                "text": "Tirou-os da escuridão e das trevas profundas e quebrou suas algemas."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "E assim diz o SENHOR acerca dos assírios: “Vocês não terão mais filhos para dar continuidade ao seu nome; destruirei todos os ídolos nos templos de seus deuses. Estou preparando uma sepultura para vocês, pois são desprezíveis!”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 109:13",
+                "text": "Que todos os seus descendentes morram; que o nome de sua família seja apagado na geração seguinte."
+              },
+              {
+                "ref": "Miqueias 5:13",
+                "text": "Destruirei seus ídolos e suas colunas sagradas, para que vocês nunca mais adorem as obras de suas mãos."
+              },
+              {
+                "ref": "Isaías 46:1–2",
+                "text": "Bel e Nebo, os deuses da Babilônia, se curvam enquanto são postos no chão. São transportados em carros de boi, e os pobres animais tropeçam por causa do peso;"
+              },
+              {
+                "ref": "Provérbios 10:7",
+                "text": "O justo deixa boas lembranças, mas o nome dos perversos apodrece."
+              }
+            ]
           },
           {
             "number": 152,
@@ -116,79 +352,288 @@
             "number": 13,
             "text": "Ó Nínive, seu inimigo vem destruí-la. Guarde as muralhas! Vigie as estradas! Prepare suas defesas! Reúna suas forças!",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 21:13",
+                "text": "Eu mesmo lutarei contra os habitantes de Jerusalém, essa fortaleza poderosa, contra o povo que diz: ‘Estamos seguros aqui; ninguém conseguirá entrar’."
+              },
+              {
+                "ref": "Naum 3:5",
+                "text": "“Sou seu inimigo!”, diz o SENHOR dos Exércitos. “Agora levantarei suas vestes e mostrarei às nações sua nudez e vergonha."
+              },
+              {
+                "ref": "Salmos 46:9",
+                "text": "Acaba com as guerras em toda a terra, quebra o arco e parte ao meio a lança, e destrói os escudos com fogo."
+              },
+              {
+                "ref": "2 Reis 19:23",
+                "text": "Por meio de seus mensageiros, desafiou o Senhor. Disse: ‘Com meus numerosos carros de guerra, conquistei os montes mais elevados, sim, os picos mais remotos do Líbano. Cortei seus cedros mais altos e seus melhores cipres..."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "Embora os saqueadores tenham despojado Israel, o SENHOR restaurará sua honra. Os ramos da videira foram arrancados, mas ele restaurará seu esplendor.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 80:12–13",
+                "text": "Mas, agora, por que derrubaste nossos muros? Todos que passam roubam nossos frutos. Os javalis da floresta devoram a videira, animais selvagens se alimentam dela."
+              },
+              {
+                "ref": "Ezequiel 37:23",
+                "text": "Nunca mais se contaminarão com ídolos, nem com imagens detestáveis, nem com qualquer de suas rebeliões, pois eu os salvarei de sua apostasia pecaminosa. Sim, eu os purificarei; então eles serão o meu povo, e eu serei o seu Deus."
+              },
+              {
+                "ref": "Sofonias 3:11",
+                "text": "Naquele dia, vocês não precisarão se envergonhar, pois já não serão rebeldes contra mim. Removerei de seu meio os orgulhosos; não haverá mais arrogância em meu santo monte."
+              },
+              {
+                "ref": "Isaías 60:15",
+                "text": "“Antes você era desprezada e odiada, e ninguém sequer passava por você, mas agora eu a tornarei majestosa para sempre, uma alegria para todas as gerações."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "Os escudos de seus guerreiros são vermelhos; vejam os uniformes escarlates dos soldados valentes! Observem seus reluzentes carros de guerra se alinharem, enquanto as lanças se agitam acima deles.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Ezequiel 23:14–15",
+                "text": "“Então levou sua prostituição ainda mais longe e se apaixonou por figuras pintadas numa parede, figuras de oficiais babilônios, com uniformes vermelhos chamativos"
+              },
+              {
+                "ref": "Isaías 63:1–3",
+                "text": "Quem é este que vem de Edom, da cidade de Bozra, com as roupas manchadas de vermelho? Quem é este vestido de trajes reais, que marcha em sua grande força? “Sou eu, o SENHOR, anunciando sua justiça! Sou eu, o SENHOR, poderoso para salvar!”"
+              },
+              {
+                "ref": "Zacarias 6:2",
+                "text": "Cavalos vermelhos puxavam o primeiro carro, cavalos pretos puxavam o segundo,"
+              },
+              {
+                "ref": "Zacarias 1:8",
+                "text": "Numa visão durante a noite, vi um homem montado num cavalo vermelho, parado entre algumas murtas num desfiladeiro. Atrás dele, havia cavaleiros montados em cavalos vermelhos, marrons e brancos."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "Os implacáveis carros de guerra percorrem as ruas e atravessam velozes as praças. Brilham como tochas de fogo e se movem com a rapidez de relâmpagos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 4:13",
+                "text": "Os inimigos avançam sobre nós como nuvens de tempestade; seus carros de guerra são como vendavais, seus cavalos, mais velozes que águias. Que terrível será! Estamos perdidos!"
+              },
+              {
+                "ref": "Ezequiel 26:10",
+                "text": "Os cascos dos cavalos dele encherão a cidade de poeira, e o barulho dos condutores e dos carros de guerra fará estremecer os muros quando passarem por suas portas quebradas."
+              },
+              {
+                "ref": "Isaías 66:15",
+                "text": "Vejam, o SENHOR vem com fogo, e seus carros de guerra são velozes como um vendaval. Trará castigo com a fúria de sua ira e com o fogo ardente de sua repreensão."
+              },
+              {
+                "ref": "Naum 3:2–3",
+                "text": "Ouçam o estalo de chicotes, o estrondo de rodas! Os cavalos vêm galopando, e os carros de guerra sacodem sem parar."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Os oficiais são convocados e, de tanta pressa, saem tropeçando, correndo para os muros a fim de organizar as defesas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 46:12",
+                "text": "As nações ouviram falar de sua humilhação, a terra está cheia de seus gritos de desespero. Seus guerreiros mais valentes tropeçarão uns nos outros e juntos cairão.”"
+              },
+              {
+                "ref": "Jeremias 50:29",
+                "text": "“Convoquem os arqueiros para virem à Babilônia, cerquem a cidade para que ninguém escape. Façam a ela o mesmo que ela fez a outros, pois desafiou o SENHOR, o Santo de Israel."
+              },
+              {
+                "ref": "Isaías 21:5",
+                "text": "Eles preparam um grande banquete, estendem tapetes para que os convidados se sentem; todos comem e bebem. Rápido, levantem-se! Peguem seus escudos e preparem-se para a batalha!"
+              },
+              {
+                "ref": "Isaías 5:27",
+                "text": "Não se cansarão nem tropeçarão; ninguém descansará nem dormirá. Nenhum cinto estará solto, nenhuma correia de sandália se arrebentará."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "As comportas do rio foram abertas! O palácio está prestes a desabar!",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 45:1–2",
+                "text": "É isto que diz o SENHOR a Ciro, seu ungido, cuja mão direita ele fortalecerá. Diante dele, reis poderosos ficarão paralisados de medo; os portões de suas fortalezas se abrirão e nunca mais se fecharão."
+              },
+              {
+                "ref": "2 Pedro 3:10–11",
+                "text": "Contudo, o dia do Senhor virá como um ladrão. Os céus desaparecerão com terrível estrondo, e até os elementos serão consumidos pelo fogo, e a terra e tudo que nela há serão expostos."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "O exílio de Nínive foi decretado, e todas as servas lamentam sua derrota. Gemem como pombas e batem no peito em sinal de tristeza.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 59:11",
+                "text": "Rugimos como ursos, gememos como pombas. Procuramos justiça, mas ela nunca chega; procuramos salvação, mas ela está distante de nós."
+              },
+              {
+                "ref": "Isaías 38:14",
+                "text": "Delirante, chilreava como a andorinha ou como o grou, depois gemia como a pomba. Meus olhos se cansaram de olhar para o céu à espera de socorro. Estou aflito, Senhor; responde-me!”."
+              },
+              {
+                "ref": "Lucas 23:48",
+                "text": "E, quando toda a multidão que tinha ido assistir à crucificação viu isso, voltou para casa entristecida e batendo no peito."
+              },
+              {
+                "ref": "Lucas 23:27",
+                "text": "Uma grande multidão os seguia, incluindo muitas mulheres aflitas que choravam por ele."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Nínive é como um açude rompido, que deixa vazar seu povo. “Parem! Parem!”, alguém grita, mas ninguém olha para trás.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 51:13",
+                "text": "Você fica junto a um grande rio e está repleta de tesouros. Mas seu fim chegou; o fio de sua vida foi cortado."
+              },
+              {
+                "ref": "Gênesis 10:11",
+                "text": "Expandiu seu território até a Assíria, onde construiu as cidades de Nínive, Reobote-Ir, Calá"
+              },
+              {
+                "ref": "Isaías 47:13",
+                "text": "Você está cansada de tantos conselhos; onde estão seus astrólogos, que observam as estrelas e fazem previsões todos os meses? Que se levantem e a salvem do que o futuro lhe reserva!"
+              },
+              {
+                "ref": "Isaías 13:14",
+                "text": "Todos na Babilônia correrão como uma gazela perseguida, como ovelhas sem pastor. Tentarão encontrar seu povo e fugir para sua terra."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Saqueiem a prata! Levem o ouro! Os tesouros de Nínive não têm fim; sua riqueza é incalculável.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 33:4",
+                "text": "Como os campos são despojados por lagartas e gafanhotos, assim o exército da Assíria será despojado!"
+              },
+              {
+                "ref": "Ezequiel 26:12",
+                "text": "“Saquearão todas as suas riquezas e mercadorias e derrubarão seus muros. Destruirão suas lindas casas e lançarão ao mar suas pedras, suas vigas de madeira e até mesmo seu pó."
+              },
+              {
+                "ref": "Jeremias 51:56",
+                "text": "Exércitos destruidores vêm contra a Babilônia; seus homens valentes são capturados, seus arcos se quebram em suas mãos. Pois o SENHOR é Deus que dá o justo castigo; sempre retribui em plena medida."
+              },
+              {
+                "ref": "2 Crônicas 36:10",
+                "text": "Na virada do ano,152 o rei Nabucodonosor levou Joaquim para a Babilônia. Nessa ocasião, também levou os tesouros do templo do SENHOR. Nabucodonosor nomeou Zedequias, tio153 de Joaquim, rei sobre Judá e sobre Jerusalém."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "A cidade é saqueada e fica vazia e arruinada; corações se derretem e joelhos vacilam. O povo fica angustiado, de rosto pálido, tremendo de medo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 2:6",
+                "text": "O medo toma conta do povo; todo rosto fica pálido de terror."
+              },
+              {
+                "ref": "Daniel 5:6",
+                "text": "e seu rosto ficou pálido de medo. Seus joelhos batiam um contra o outro, e suas pernas vacilavam."
+              },
+              {
+                "ref": "Salmos 22:14",
+                "text": "Minha vida é derramada como água; todos os meus ossos estão desconjuntados. Meu coração é como cera que se derrete dentro de mim."
+              },
+              {
+                "ref": "Jeremias 30:6",
+                "text": "Parem e pensem: Acaso homens dão à luz? Então por que estão aí, com o rosto pálido e as mãos na barriga, como a mulher em trabalho de parto?"
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Onde está agora a grande Nínive, toca cheia de leões? Ali o povo, como leões e seus filhotes, andava livremente e sem temor.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 5:29",
+                "text": "Rugirão como leões, como os leões mais fortes. Rosnarão e se lançarão sobre suas vítimas, e as levarão embora; ninguém poderá livrá-las."
+              },
+              {
+                "ref": "Jeremias 2:15",
+                "text": "Leões rugiram contra ele, e a terra foi destruída. As cidades estão arruinadas, e ninguém mais vive nelas."
+              },
+              {
+                "ref": "Jeremias 4:7",
+                "text": "Um leão saiu de seu abrigo, um destruidor de nações. Saiu de sua toca e se encaminha até vocês; ele devastará sua terra. Suas cidades serão arruinadas, e ninguém viverá nelas."
+              },
+              {
+                "ref": "Naum 3:1",
+                "text": "Que aflição espera Nínive, cidade de homicídio e mentiras! É cheia de riquezas tomadas à força, e nunca lhe faltam vítimas."
+              }
+            ]
           },
           {
             "number": 12,
             "text": "O leão despedaçava a carne para seus filhotes e estrangulava a presa para a leoa. Enchia sua toca de presas e suas cavernas, de despojos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 51:34",
+                "text": "“Nabucodonosor, rei da Babilônia, nos devorou, nos esmagou e nos deixou sem forças. Ele nos engoliu como um monstro; encheu o estômago com nossas riquezas e nos vomitou de nossa terra."
+              },
+              {
+                "ref": "Isaías 10:6–14",
+                "text": "Envio a Assíria contra uma nação ímpia, contra o povo com o qual estou irado. A Assíria os saqueará e os pisará como pó sob os seus pés."
+              },
+              {
+                "ref": "Salmos 17:12",
+                "text": "São como leões famintos, ansiosos para me despedaçar, como jovens leões escondidos, de tocaia."
+              }
+            ]
           },
           {
             "number": 13,
             "text": "“Sou seu inimigo!”, diz o SENHOR dos Exércitos. “Em breve seus carros serão queimados, e seus jovens morrerão na batalha. Você nunca mais saqueará nações conquistadas; jamais se ouvirá novamente a voz de seus mensageiros.”",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 21:13",
+                "text": "Eu mesmo lutarei contra os habitantes de Jerusalém, essa fortaleza poderosa, contra o povo que diz: ‘Estamos seguros aqui; ninguém conseguirá entrar’."
+              },
+              {
+                "ref": "Naum 3:5",
+                "text": "“Sou seu inimigo!”, diz o SENHOR dos Exércitos. “Agora levantarei suas vestes e mostrarei às nações sua nudez e vergonha."
+              },
+              {
+                "ref": "Salmos 46:9",
+                "text": "Acaba com as guerras em toda a terra, quebra o arco e parte ao meio a lança, e destrói os escudos com fogo."
+              },
+              {
+                "ref": "2 Reis 19:23",
+                "text": "Por meio de seus mensageiros, desafiou o Senhor. Disse: ‘Com meus numerosos carros de guerra, conquistei os montes mais elevados, sim, os picos mais remotos do Líbano. Cortei seus cedros mais altos e seus melhores cipres..."
+              }
+            ]
           }
         ]
       }
@@ -205,115 +650,424 @@
             "number": 1,
             "text": "Que aflição espera Nínive, cidade de homicídio e mentiras! É cheia de riquezas tomadas à força, e nunca lhe faltam vítimas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Habacuque 2:12",
+                "text": "“Que aflição espera vocês que constroem cidades com dinheiro obtido por meio de homicídio e corrupção!"
+              },
+              {
+                "ref": "Sofonias 3:1–3",
+                "text": "Que aflição espera Jerusalém, cidade rebelde e impura, cheia de violência e opressão!"
+              },
+              {
+                "ref": "Oséias 4:2",
+                "text": "Vocês fazem votos e não os cumprem; matam, roubam e cometem adultério. Há violência em toda parte, um homicídio atrás do outro."
+              },
+              {
+                "ref": "Ezequiel 24:6–9",
+                "text": "“Agora, assim diz o SENHOR Soberano: Que aflição espera Jerusalém, cidade de assassinos! Ela é a panela enferrujada, cuja sujeira não se pode limpar. Pegue a carne sem escolhê-la, pois nenhum pedaço é melhor que o outro."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "Ouçam o estalo de chicotes, o estrondo de rodas! Os cavalos vêm galopando, e os carros de guerra sacodem sem parar.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 47:3",
+                "text": "Ouçam o ruído dos cascos de cavalos, o barulho dos carros de guerra e o estrondo de suas rodas. Os pais fogem apavorados, sem olhar para trás, para seus filhos indefesos."
+              },
+              {
+                "ref": "Naum 2:3–4",
+                "text": "Os escudos de seus guerreiros são vermelhos; vejam os uniformes escarlates dos soldados valentes! Observem seus reluzentes carros de guerra se alinharem, enquanto as lanças se agitam acima deles."
+              },
+              {
+                "ref": "Jó 39:22–25",
+                "text": "Ri do medo e nada teme; não foge da espada."
+              },
+              {
+                "ref": "Juízes 5:22",
+                "text": "Os cascos dos cavalos martelavam o chão; galopavam, galopavam seus poderosos cavalos de guerra. 23‘Amaldiçoem os habitantes de Meroz’, disse o anjo do SENHOR. ‘Amaldiçoem duramente, pois não vieram ajudar o SENHOR, ajuda..."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "Vejam as espadas faiscantes e as lanças reluzentes quando passa a cavalaria! Há incontáveis mortos, montes de cadáveres. Os corpos são tantos que os vivos neles tropeçam.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Habacuque 3:11",
+                "text": "O sol e a lua pararam no céu enquanto tuas flechas brilhantes voavam e tua lança reluzente faiscava."
+              },
+              {
+                "ref": "Ezequiel 39:4",
+                "text": "Você, seu exército e seus aliados morrerão nos montes. Eu os darei como alimento aos abutres e aos animais selvagens."
+              },
+              {
+                "ref": "Isaías 34:3",
+                "text": "Seus mortos não serão sepultados; o fedor de seus cadáveres encherá a terra, e o sangue escorrerá pelos montes."
+              },
+              {
+                "ref": "Isaías 37:36",
+                "text": "Naquela noite, o anjo do SENHOR foi ao acampamento assírio e matou 185 mil soldados assírios. Quando os sobreviventes122 acordaram na manhã seguinte, encontraram cadáveres por toda parte."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "Tudo isso porque Nínive, prostituta bela, dona de encantamentos mortais, seduziu as nações com sua beleza. Ensinou a elas sua magia e enfeitiçou gente de toda parte.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 47:9",
+                "text": "Estas duas coisas lhe acontecerão no mesmo instante: ficará viúva e perderá seus filhos. Sim, essas calamidades virão sobre você, apesar de toda a sua feitiçaria e magia."
+              },
+              {
+                "ref": "Isaías 47:12–13",
+                "text": "“Use sua magia! Use os encantamentos a que se dedicou todos esses anos! Talvez eles tenham algum proveito, talvez assustem alguém."
+              },
+              {
+                "ref": "Apocalipse 17:1–5",
+                "text": "Um dos sete anjos que derramaram as sete taças se aproximou e disse: “Venha comigo, e eu lhe mostrarei o julgamento da grande prostituta que governa sobre muitas águas."
+              },
+              {
+                "ref": "Ezequiel 16:25–29",
+                "text": "Em cada esquina, contaminou sua beleza e ofereceu seu corpo a todos que passavam, aumentando sua prostituição."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "“Sou seu inimigo!”, diz o SENHOR dos Exércitos. “Agora levantarei suas vestes e mostrarei às nações sua nudez e vergonha.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 13:26",
+                "text": "Eu mesmo arrancarei suas roupas, para que apareça sua vergonha."
+              },
+              {
+                "ref": "Jeremias 13:22",
+                "text": "Você se perguntará: “Por que isso me aconteceu?”. Foi por causa de seus muitos pecados! Por isso os exércitos invasores arrancaram suas roupas e a violentaram."
+              },
+              {
+                "ref": "Ezequiel 23:29",
+                "text": "Eles a tratarão com ódio, tomarão tudo que você possui e a deixarão completamente nua. A vergonha de sua prostituição ficará exposta para todo o mundo."
+              },
+              {
+                "ref": "Ezequiel 16:37",
+                "text": "ouça o que farei. Reunirei todos os seus aliados — seus amantes com os quais você teve prazer, os que você amou e também os que odiou — e a deixarei nua diante deles, para que todos a vejam."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Cobrirei você de sujeira e mostrarei ao mundo como é desprezível.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Malaquias 2:9",
+                "text": "“Por isso fiz que vocês fossem desprezados e humilhados diante de todo o povo, pois não me obedeceram, mas mostraram parcialidade na aplicação de minha lei.”"
+              },
+              {
+                "ref": "Jeremias 51:37",
+                "text": "e ela se tornará um monte de ruínas, morada de chacais. Será objeto de horror e desprezo, um lugar onde ninguém vive."
+              },
+              {
+                "ref": "Salmos 38:5–7",
+                "text": "Minhas feridas infeccionaram e cheiram mal, por causa de minha insensatez."
+              },
+              {
+                "ref": "Jó 9:31",
+                "text": "tu me lançarás num poço de lodo, e até minhas roupas terão nojo de mim."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "Todos que a virem se afastarão e dirão: ‘Nínive está arruinada! Onde estão os que choram por ela?’. Alguém lamentará sua destruição?”",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 15:5",
+                "text": "“Quem terá compaixão de você, Jerusalém? Quem chorará por você? Quem se dará o trabalho de perguntar se está bem?"
+              },
+              {
+                "ref": "Isaías 51:19",
+                "text": "Duas calamidades a atingiram: desolação e destruição, fome e guerra. E quem restou para ter compaixão de você? Quem restou para consolá-la?"
+              },
+              {
+                "ref": "Apocalipse 18:10",
+                "text": "Ficarão de longe, aterrorizados com seu tormento, e clamarão: “Que terrível, que terrível, ó Babilônia, grande cidade! Num só instante, o julgamento caiu sobre você!”."
+              },
+              {
+                "ref": "Lamentações 2:13",
+                "text": "Que posso dizer a seu respeito? Quem alguma vez viu tamanha tristeza? Ó filha de Jerusalém, a que posso compará-la em sua angústia? Ó filha virgem de Sião, como posso consolá-la? Sua ferida é mais profunda que o mar; quem pode curá-la?"
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Acaso você é melhor que a cidade de Tebas, situada junto ao rio Nilo e cercada de água? Por todos os lados era protegida pelo rio, e as águas eram seus muros.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Amós 6:2",
+                "text": "Vão, porém, a Calné e vejam o que aconteceu ali. Depois, vão à grande cidade de Hamate e desçam à cidade filisteia de Gate. Vocês não são melhores que elas, e vejam como foram destruídas."
+              },
+              {
+                "ref": "Ezequiel 30:14–16",
+                "text": "Destruirei o sul do Egito, incendiarei Zoã e trarei julgamento contra Tebas."
+              },
+              {
+                "ref": "Jeremias 46:25–26",
+                "text": "Assim diz o SENHOR dos Exércitos, o Deus de Israel: “Castigarei Amom, o deus de Tebas, e todos os outros deuses do Egito. Castigarei seus governantes, o faraó e todos que nele confiam."
+              },
+              {
+                "ref": "Ezequiel 31:2–3",
+                "text": "“Filho do homem, transmita esta mensagem ao faraó, rei do Egito, e a todas as suas multidões: “Quem é comparável a você em grandeza?"
+              }
+            ]
           },
           {
             "number": 9,
             "text": "A Etiópia e a terra do Egito lhe davam apoio ilimitado. A nação de Pute e a Líbia estavam entre seus aliados.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Ezequiel 30:5",
+                "text": "Etiópia, Líbia, Lídia, toda a Arábia e seus outros aliados serão destruídos nessa guerra."
+              },
+              {
+                "ref": "Ezequiel 27:10",
+                "text": "“Homens das terras distantes da Pérsia, de Lídia e da Líbia serviam em seu grande exército. Penduravam os escudos e os capacetes em seus muros e assim lhe davam muita honra."
+              },
+              {
+                "ref": "Isaías 20:5",
+                "text": "Então os filisteus entrarão em pânico, pois contavam com o poder da Etiópia e se gabavam de seus aliados no Egito."
+              },
+              {
+                "ref": "Gênesis 10:6",
+                "text": "Os descendentes de Cam foram: Cuxe, Mizraim, Pute e Canaã."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "E, no entanto, Tebas foi conquistada, e seus habitantes, levados como escravos. Seus bebês foram lançados com violência contra as pedras nas ruas. Soldados tiraram sortes para decidir quem levaria oficiais egípcios como servos; todos os seus líderes foram acorrentados.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 20:4",
+                "text": "O rei da Assíria levará como prisioneiros os egípcios e os etíopes, tanto jovens como velhos. Ele os fará andar nus e descalços, com as nádegas descobertas, para vergonha do Egito."
+              },
+              {
+                "ref": "Joel 3:3",
+                "text": "Fizeram um sorteio para decidir quem de meu povo seria seu escravo. Deram meninos em troca de prostitutas e venderam meninas por vinho para se embriagar."
+              },
+              {
+                "ref": "Obadias 1:11",
+                "text": "Quando eles foram invadidos, você se manteve afastado e não quis ajudá-los. Estrangeiros levaram a riqueza da nação e tiraram sortes para dividir Jerusalém, e você agiu como se fosse um deles."
+              },
+              {
+                "ref": "Oséias 13:16"
+              }
+            ]
           },
           {
             "number": 11,
             "text": "E você, Nínive, também tropeçará como um bêbado e se esconderá de medo do inimigo que ataca.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 2:10",
+                "text": "Escondam-se em cavernas no meio das rochas, escondam-se no pó, para escaparem do terror do SENHOR e da glória de sua majestade."
+              },
+              {
+                "ref": "Lucas 23:30",
+                "text": "Suplicarão aos montes: ‘Caiam sobre nós!’ e pedirão às colinas: ‘Soterrem-nos!’."
+              },
+              {
+                "ref": "Isaías 49:26",
+                "text": "Alimentarei seus inimigos com a própria carne deles, ficarão bêbados com rios do próprio sangue. Todo o mundo saberá que eu, o SENHOR, sou seu Salvador e seu Redentor,"
+              },
+              {
+                "ref": "Jeremias 4:5",
+                "text": "“Anunciem em Judá e proclamem em Jerusalém! Mandem tocar a trombeta em toda a terra e avisem: ‘Reúnam-se! Corram para as cidades fortificadas!’."
+              }
+            ]
           },
           {
             "number": 12,
             "text": "Todas as suas fortalezas cairão; serão devoradas como figos maduros que caem na boca de quem sacode a árvore.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Apocalipse 6:13",
+                "text": "Então as estrelas caíram do céu como figos verdes de uma figueira sacudida por um forte vento."
+              },
+              {
+                "ref": "Habacuque 1:10",
+                "text": "Zombam de reis e príncipes e desprezam todas as suas fortalezas. Constroem rampas de terra contra seus muros e as conquistam."
+              },
+              {
+                "ref": "Isaías 28:4",
+                "text": "Fica na parte alta de um vale fértil, mas sua beleza gloriosa murchará como uma flor. Quem a vir a apanhará, como o figo temporão que alguém apanha e come."
+              }
+            ]
           },
           {
             "number": 13,
             "text": "Seus soldados ficarão fracos e indefesos como mulheres. Os portões de sua terra serão escancarados para o inimigo, e fogo consumirá as trancas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 51:30",
+                "text": "Seus guerreiros valentes pararam de lutar e permanecem em seus quartéis, sem coragem alguma; tornaram-se como mulheres. Os invasores queimaram as casas e quebraram os portões da cidade."
+              },
+              {
+                "ref": "Jeremias 50:37",
+                "text": "A espada virá sobre cavalos e carros de guerra e sobre os estrangeiros que ali habitam, e eles se tornarão como mulheres. Virá sobre seus tesouros, e todos eles serão saqueados."
+              },
+              {
+                "ref": "Isaías 19:16",
+                "text": "Naquele dia, os egípcios serão frágeis como mulheres. Eles se encolherão de medo debaixo da mão levantada do SENHOR dos Exércitos."
+              },
+              {
+                "ref": "Naum 2:6",
+                "text": "As comportas do rio foram abertas! O palácio está prestes a desabar!"
+              }
+            ]
           },
           {
             "number": 14,
             "text": "Prepare-se para o cerco! Estoque água! Reforce suas defesas! Entre nos buracos para pisar o barro, coloque-o nas formas e faça tijolos para reparar os muros!",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Naum 2:1"
+              },
+              {
+                "ref": "2 Crônicas 32:3–4",
+                "text": "consultou seus oficiais e conselheiros militares, e eles resolveram fechar a passagem das águas das fontes que havia do lado de fora da cidade."
+              },
+              {
+                "ref": "Jeremias 46:3–4",
+                "text": "“Preparem seus escudos e avancem para a batalha! Selem os cavalos e montem neles, cavaleiros! Tomem suas posições e coloquem os capacetes. Afiem as lanças e vistam as armaduras."
+              },
+              {
+                "ref": "Isaías 22:9–11",
+                "text": "Inspecionam as brechas nos muros de Jerusalém; guardam água no tanque inferior."
+              }
+            ]
           },
           {
             "number": 15,
             "text": "Mesmo assim, o fogo a devorará; a espada a exterminará. O inimigo a consumirá como gafanhotos que devoram tudo pela frente. Mesmo que você se multiplique como gafanhotos, não haverá como escapar.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 1:4",
+                "text": "Depois que os gafanhotos cortadores devoraram as colheitas, os gafanhotos migradores comeram o que restava; então vieram os gafanhotos saltadores e, depois deles, os gafanhotos destruidores!"
+              },
+              {
+                "ref": "Naum 2:13",
+                "text": "“Sou seu inimigo!”, diz o SENHOR dos Exércitos. “Em breve seus carros serão queimados, e seus jovens morrerão na batalha. Você nunca mais saqueará nações conquistadas; jamais se ouvirá novamente a voz de seus mensageiros.”"
+              },
+              {
+                "ref": "Naum 3:13",
+                "text": "Seus soldados ficarão fracos e indefesos como mulheres. Os portões de sua terra serão escancarados para o inimigo, e fogo consumirá as trancas."
+              },
+              {
+                "ref": "Êxodo 10:13–15",
+                "text": "Assim, Moisés estendeu a vara sobre a terra do Egito, e o SENHOR fez soprar um vento leste sobre a terra durante todo o dia e toda a noite. Quando amanheceu, o vento leste havia trazido os gafanhotos."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "Seus comerciantes se tornaram mais numerosos que as estrelas do céu. Mas, como nuvem de gafanhotos, devastam a terra e voam para longe.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Neemias 9:23",
+                "text": "Tornaste seus descendentes tão numerosos como as estrelas do céu e os trouxeste para a terra que havias prometido a seus antepassados."
+              },
+              {
+                "ref": "Jeremias 33:22",
+                "text": "Como não se pode contar as estrelas no céu nem medir a areia na beira do mar, assim também tornarei incontáveis os descendentes de meu servo Davi e os levitas que me servem”."
+              },
+              {
+                "ref": "Gênesis 15:5",
+                "text": "Em seguida, levou Abrão para fora e lhe disse: “Olhe para o céu e conte as estrelas, se for capaz. Este é o número de descendentes que você terá”."
+              },
+              {
+                "ref": "Gênesis 22:17",
+                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar."
+              }
+            ]
           },
           {
             "number": 17,
             "text": "Seus guardas e oficiais também são como gafanhotos, que se ajuntam sobre os muros nos dias frios. Mas, como gafanhotos que voam embora quando o sol aparece, todos vão para longe e desaparecem.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 51:27",
+                "text": "Levantem uma bandeira para as nações! Façam soar o toque de guerra! Mobilizem-nas contra a Babilônia, convoquem os exércitos de Ararate, Mini e Asquenaz. Nomeiem um comandante e tragam muitos cavalos, como um enxame de gafanhotos."
+              },
+              {
+                "ref": "Apocalipse 9:7",
+                "text": "Os gafanhotos pareciam cavalos preparados para a batalha. Tinham na cabeça algo semelhante a coroas de ouro, e o rosto parecia humano."
+              }
+            ]
           },
           {
             "number": 18,
             "text": "Seus líderes dormem, ó rei assírio; seus nobres estão mortos, estendidos no pó. Seu povo está espalhado pelos montes, e não há quem os reúna.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Reis 22:17",
+                "text": "Então Micaías respondeu: “Vi todo o Israel espalhado pelos montes, como ovelhas sem pastor. E o SENHOR disse: ‘Seu líder foi morto.117 Mande-os para casa em paz’”."
+              },
+              {
+                "ref": "Salmos 76:5–6",
+                "text": "Os inimigos mais valentes foram saqueados e jazem no sono da morte; nenhum guerreiro foi capaz de levantar as mãos. Quando os repreendeste, ó Deus de Jacó, cavalos e cavaleiros ficaram imóveis."
+              },
+              {
+                "ref": "Isaías 13:14",
+                "text": "Todos na Babilônia correrão como uma gazela perseguida, como ovelhas sem pastor. Tentarão encontrar seu povo e fugir para sua terra."
+              },
+              {
+                "ref": "Jeremias 51:57",
+                "text": "Deixarei embriagados seus líderes e seus sábios, bem como seus capitães, oficiais e guerreiros. Eles cairão no sono e nunca mais acordarão!”, diz o Rei, cujo nome é SENHOR dos Exércitos."
+              }
+            ]
           },
           {
             "number": 19,
             "text": "Não há cura para sua ferida; ela é mortal. Todos que ouvirem sobre sua destruição baterão palmas de alegria. Onde se poderá encontrar alguém que não sofreu com sua constante crueldade? 1 1. Conforme a Septuaginta; o hebraico traz arrasará seu lugar. 2 1. No texto hebraico, o versículo 1. é numerado 2.. 3 2.1 No texto hebraico, os versículos 2.1-13 são numerados 2.2-14. 4 2. Em hebraico, leões jovens. 5 3. Em hebraico, Nô-Amom; também em 3.. 6 3. Em hebraico, Cuxe. 7 3. Ou príncipes. 8 3. Ou pastores.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Miqueias 1:9",
+                "text": "Pois a ferida de meu povo não tem cura. Chegou a Judá, até as portas de Jerusalém."
+              },
+              {
+                "ref": "Lamentações 2:15",
+                "text": "Todos que passam caçoam de você; zombam da bela Jerusalém e a insultam: “Esta é a cidade chamada de ‘A Mais Bela do Mundo’ e ‘Alegria de Toda a Terra’?”."
+              },
+              {
+                "ref": "Jó 27:23",
+                "text": "Então todos batem palmas e riem deles com desprezo.”"
+              },
+              {
+                "ref": "Isaías 37:18",
+                "text": "“É verdade, SENHOR, que os reis da Assíria destruíram todas essas nações."
+              }
+            ]
           }
         ]
       }

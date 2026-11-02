@@ -10,7 +10,23 @@
             "number": 1,
             "text": "O SENHOR deu esta mensagem a Joel, filho de Petuel.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Atos 2:16",
+                "text": "Pelo contrário! O que vocês estão vendo foi predito há tempos pelo profeta Joel: 17‘Nos últimos dias’, disse Deus, ‘derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os jovens ter..."
+              },
+              {
+                "ref": "Jeremias 1:2",
+                "text": "O SENHOR lhe deu esta mensagem no décimo terceiro ano do reinado de Josias, filho de Amom, rei de Judá."
+              },
+              {
+                "ref": "Ezequiel 1:3"
+              },
+              {
+                "ref": "2 Pedro 1:21",
+                "text": "nem de iniciativa humana. Esses homens foram impulsionados pelo Espírito Santo e falaram da parte de Deus."
+              }
+            ]
           }
         ]
       },
@@ -21,115 +37,430 @@
             "number": 2,
             "text": "Ouçam isto, líderes do povo! Ouçam todos que habitam na terra! Em toda a sua história, já ocorreu algo semelhante?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 2:2",
+                "text": "É um dia de escuridão e trevas, um dia de densas nuvens e sombras profundas. Como o amanhecer se estende pelos montes, assim surge um grande e poderoso exército. Nunca se viu algo parecido, e nunca mais se verá."
+              },
+              {
+                "ref": "Oséias 5:1",
+                "text": "“Ouçam isto, sacerdotes! Prestem atenção, líderes de Israel! Escutem, membros da família real; foi pronunciada a sentença contra vocês, pois conduziram meu povo a uma armadilha, em Mispá e em Tabor."
+              },
+              {
+                "ref": "Jeremias 30:7",
+                "text": "Em toda a história, nunca houve uma ocasião de tanto terror; será um tempo de angústia para Israel. No final, porém, ele será resgatado!"
+              },
+              {
+                "ref": "Jó 8:8",
+                "text": "“Pergunte às gerações anteriores, atente à experiência dos antepassados."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "Contem a seus filhos o que aconteceu, e que seus filhos contem aos filhos deles; transmitam esta história de geração em geração.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Deuteronômio 6:7",
+                "text": "Repita-as com frequência a seus filhos. Converse a respeito delas quando estiver em casa e quando estiver caminhando, quando se deitar e quando se levantar."
+              },
+              {
+                "ref": "Salmos 145:4",
+                "text": "Que cada geração conte a seus filhos sobre tuas obras e proclame teu poder."
+              },
+              {
+                "ref": "Salmos 71:18",
+                "text": "Não me abandones, ó Deus, agora que estou velho, de cabelos brancos. Deixe-me proclamar tua força a esta nova geração, teu poder a todos que vierem depois de mim."
+              },
+              {
+                "ref": "Êxodo 13:14",
+                "text": "“No futuro, seus filhos lhes perguntarão: ‘O que significa tudo isso?’, e vocês responderão: ‘Com a força de sua mão poderosa, o SENHOR nos tirou do Egito, onde éramos escravos."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "Depois que os gafanhotos cortadores devoraram as colheitas, os gafanhotos migradores comeram o que restava; então vieram os gafanhotos saltadores e, depois deles, os gafanhotos destruidores!1",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 2:25",
+                "text": "“Eu lhes devolverei o que perderam por causa dos gafanhotos migradores, dos saltadores, dos destruidores e dos cortadores; enviei esse grande exército devastador contra vocês."
+              },
+              {
+                "ref": "Amós 4:9",
+                "text": "“Castiguei suas plantações e videiras com pragas e ferrugem; gafanhotos devoraram suas figueiras e oliveiras. Nem assim vocês voltaram para mim”, diz o SENHOR."
+              },
+              {
+                "ref": "Amós 7:1",
+                "text": "Foi isto que o SENHOR Soberano me mostrou numa visão: ele se preparava para enviar sobre a terra um exército de gafanhotos. Isso foi depois que a porção do rei havia sido colhida dos campos, quando brotava a colheita principal."
+              },
+              {
+                "ref": "Salmos 78:46",
+                "text": "Entregou suas plantações às lagartas e suas colheitas, aos gafanhotos."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Despertem e chorem, bêbados! Lamentem, vocês que tomam vinho! Todas as uvas estão arruinadas, todo o seu vinho doce acabou.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Lucas 21:34–36",
+                "text": "“Tenham cuidado! Não deixem seu coração se entorpecer com farras e bebedeiras, nem com as preocupações desta vida. Não deixem que esse dia os pegue desprevenidos,"
+              },
+              {
+                "ref": "Tiago 5:1",
+                "text": "Prestem atenção, vocês que são ricos. Chorem e gemam de angústia por causa das desgraças que os esperam."
+              },
+              {
+                "ref": "Isaías 32:10–12",
+                "text": "Em breve, pouco mais de um ano, vocês, presunçosas, ficarão apavoradas. Suas plantações de frutas nada produzirão, e não haverá colheitas."
+              },
+              {
+                "ref": "Isaías 24:7–11",
+                "text": "O vinho novo seca, e as videiras murcham; os que festejavam agora gemem."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Uma nação imensa invadiu minha terra, um exército terrível, tão numeroso que não se pode contar. Seus dentes são como os de leões, suas presas, como as da leoa.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 2:25",
+                "text": "“Eu lhes devolverei o que perderam por causa dos gafanhotos migradores, dos saltadores, dos destruidores e dos cortadores; enviei esse grande exército devastador contra vocês."
+              },
+              {
+                "ref": "Isaías 8:8",
+                "text": "e cobrirá Judá até o pescoço. Abrirá as asas e submergirá sua terra de um extremo ao outro, ó Emanuel."
+              },
+              {
+                "ref": "Joel 2:2–11",
+                "text": "É um dia de escuridão e trevas, um dia de densas nuvens e sombras profundas. Como o amanhecer se estende pelos montes, assim surge um grande e poderoso exército. Nunca se viu algo parecido, e nunca mais se verá."
+              },
+              {
+                "ref": "Apocalipse 9:7–10",
+                "text": "Os gafanhotos pareciam cavalos preparados para a batalha. Tinham na cabeça algo semelhante a coroas de ouro, e o rosto parecia humano."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "Destruiu minhas videiras e arruinou minhas figueiras. Arrancou sua casca e as destruiu; seus galhos ficaram desfolhados.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Amós 4:9",
+                "text": "“Castiguei suas plantações e videiras com pragas e ferrugem; gafanhotos devoraram suas figueiras e oliveiras. Nem assim vocês voltaram para mim”, diz o SENHOR."
+              },
+              {
+                "ref": "Isaías 5:6",
+                "text": "Farei dele um lugar desolado, onde as videiras não são podadas e a terra não é capinada, um lugar cheio de espinhos e mato. Darei ordem às nuvens para que não derramem chuva sobre ele."
+              },
+              {
+                "ref": "Joel 1:12",
+                "text": "As videiras secaram, e as figueiras murcharam. As romãzeiras, as palmeiras e as macieiras, todas as árvores frutíferas secaram, e com elas murchou a alegria do povo."
+              },
+              {
+                "ref": "Êxodo 10:15",
+                "text": "pois os gafanhotos cobriram toda a superfície e escureceram a terra. Devoraram todas as plantas nos campos e todas as frutas nas árvores que tinham sobrevivido à tempestade de granizo. Não restou uma só folha nas árvores..."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Chorem como a moça vestida de luto, que lamenta a morte do noivo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 22:12",
+                "text": "Naquele dia, o Soberano SENHOR dos Exércitos, os chamou para que chorassem e lamentassem. Disse-lhes que raspassem a cabeça e vestissem pano de saco."
+              },
+              {
+                "ref": "Malaquias 2:15",
+                "text": "Acaso o SENHOR não o fez um só com sua esposa? Em corpo e em espírito vocês pertencem a ele. E o que ele quer? Dessa união, quer filhos dedicados a ele. Portanto, guardem seu coração; permaneçam fiéis à esposa de sua mocidade."
+              },
+              {
+                "ref": "Tiago 5:1",
+                "text": "Prestem atenção, vocês que são ricos. Chorem e gemam de angústia por causa das desgraças que os esperam."
+              },
+              {
+                "ref": "Isaías 24:7–12",
+                "text": "O vinho novo seca, e as videiras murcham; os que festejavam agora gemem."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Pois não há cereal nem vinho para oferecer no templo do SENHOR. Por isso os sacerdotes estão de luto; aqueles que servem na casa do SENHOR choram.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 2:17",
+                "text": "Que os sacerdotes, que servem na presença do SENHOR, chorem entre o pórtico do templo e o altar. Que façam esta oração: “Poupa teu povo, SENHOR! Não permitas que a nação que pertence a ti se torne objeto de zombaria. Não..."
+              },
+              {
+                "ref": "Joel 2:14",
+                "text": "Quem sabe ele mude de ideia e lhes envie bênção em lugar desse castigo. Talvez possam apresentar ofertas de cereal e vinho ao SENHOR, seu Deus, como faziam antes."
+              },
+              {
+                "ref": "Oséias 9:4",
+                "text": "Ali não apresentarão ofertas de vinho ao SENHOR; seus sacrifícios não o agradarão. Serão impuros, como o alimento tocado por uma pessoa de luto; todos que apresentarem esses sacrifícios se contaminarão. Eles próprios com..."
+              },
+              {
+                "ref": "Isaías 61:6",
+                "text": "Vocês serão chamados de sacerdotes do SENHOR, ministros de nosso Deus. Das riquezas das nações se alimentarão e se orgulharão de possuírem os tesouros delas."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "Os campos estão arruinados, a terra está desolada. O trigo está destruído, as uvas secaram e o azeite acabou.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Oséias 4:3",
+                "text": "Por isso sua terra está de luto, e todos desfalecem. Até os animais selvagens, as aves do céu e os peixes do mar estão desaparecendo."
+              },
+              {
+                "ref": "Oséias 9:2",
+                "text": "Agora, suas colheitas não bastarão para alimentá-los; não haverá uvas para fazer vinho novo."
+              },
+              {
+                "ref": "Jeremias 12:11",
+                "text": "Fizeram dela uma terra devastada; ouço seu triste lamento. Toda a terra está desolada, e ninguém se importa."
+              },
+              {
+                "ref": "Joel 1:5",
+                "text": "Despertem e chorem, bêbados! Lamentem, vocês que tomam vinho! Todas as uvas estão arruinadas, todo o seu vinho doce acabou."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Desesperem-se, agricultores! Lamentem, vocês que cuidam das videiras! Chorem, pois o trigo e a cevada, todas as colheitas nos campos, estão arruinados.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 14:3–4",
+                "text": "Os nobres mandam os servos buscarem água, mas todos os poços secaram. Confusos e desesperados, voltam com jarros vazios e cobrem a cabeça, entristecidos."
+              },
+              {
+                "ref": "Isaías 17:11",
+                "text": "Pode ser que elas brotem no dia em que as puser na terra, pode ser que floresçam na manhã em que as plantar, mas você jamais colherá delas uma uva sequer; sua colheita será apenas tristeza e dor contínua."
+              },
+              {
+                "ref": "Jeremias 9:12",
+                "text": "Quem é sábio o bastante para entender todas essas coisas? Quem foi instruído pelo SENHOR para explicá-las? Por que a terra foi arruinada de tal modo que ninguém tem coragem de passar por ela?"
+              },
+              {
+                "ref": "Romanos 5:5",
+                "text": "e essa esperança não nos decepcionará, pois sabemos quanto Deus nos ama, uma vez que ele nos deu o Espírito Santo para nos encher o coração com seu amor."
+              }
+            ]
           },
           {
             "number": 12,
             "text": "As videiras secaram, e as figueiras murcharam. As romãzeiras, as palmeiras e as macieiras, todas as árvores frutíferas secaram, e com elas murchou a alegria do povo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 16:10",
+                "text": "Encerrou-se a alegria, acabou-se a celebração pela colheita. Já não haverá cânticos nos vinhedos, nem gritos de exultação, ninguém pisará as uvas nos tanques de prensar; acabei com toda a alegria de suas colheitas."
+              },
+              {
+                "ref": "Isaías 24:11",
+                "text": "Nas ruas, multidões clamam por vinho; a alegria se transformou em tristeza, a celebração foi expulsa da terra."
+              },
+              {
+                "ref": "Cânticos 2:3",
+                "text": "Como uma macieira entre as árvores do bosque, assim é meu amado entre os rapazes. À sua sombra agradável eu me sento e saboreio seus deliciosos frutos."
+              },
+              {
+                "ref": "Habacuque 3:17–18",
+                "text": "Ainda que a figueira não floresça e não haja frutos nas videiras, ainda que a colheita de azeitonas não dê em nada e os campos fiquem vazios e improdutivos, ainda que os rebanhos morram nos campos e os currais fiquem vazios,"
+              }
+            ]
           },
           {
             "number": 13,
             "text": "Vistam-se de pano de saco e chorem, sacerdotes! Lamentem, vocês que servem diante do altar! Venham, passem a noite vestidos de pano de saco, vocês que servem ao meu Deus. Pois não há cereal nem vinho para oferecer no templo de seu Deus.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 4:8",
+                "text": "Portanto, vistam roupas de luto, chorem e lamentem, pois a ira ardente do SENHOR ainda está sobre nós."
+              },
+              {
+                "ref": "Joel 1:8–9",
+                "text": "Chorem como a moça vestida de luto, que lamenta a morte do noivo. Pois não há cereal nem vinho para oferecer no templo do SENHOR. Por isso os sacerdotes estão de luto; aqueles que servem na casa do SENHOR choram."
+              },
+              {
+                "ref": "Jeremias 9:10",
+                "text": "Chorarei pelos montes e lamentarei pelas pastagens no deserto. Pois estão desolados e sem vida; não se ouve mais o mugido do gado, e as aves e os animais selvagens fugiram."
+              },
+              {
+                "ref": "1 Reis 21:27",
+                "text": "Quando Acabe ouviu essa mensagem, rasgou suas roupas, vestiu- se de pano de saco e jejuou. Passou a dormir em cima de panos de saco e a andar cabisbaixo."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "Convoquem um tempo de jejum, juntem o povo para uma reunião solene. Tragam os líderes e todos que habitam na terra para o templo do SENHOR, seu Deus, e ali clamem a ele.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 2:15–16",
+                "text": "Toquem a trombeta em Sião! Convoquem um tempo de jejum, juntem o povo para uma reunião solene."
+              },
+              {
+                "ref": "Deuteronômio 29:10–11",
+                "text": "Todos vocês — chefes de tribos, autoridades, oficiais, e todos os homens de Israel — estão hoje na presença do SENHOR, seu Deus."
+              },
+              {
+                "ref": "2 Crônicas 20:3–4",
+                "text": "Josafá ficou amedrontado com essa notícia e pediu orientação ao SENHOR. Ordenou um jejum em todo o Judá, e habitantes de todas as cidades de Judá vieram a Jerusalém para buscar a ajuda do SENHOR."
+              },
+              {
+                "ref": "2 Crônicas 20:13",
+                "text": "Enquanto todos os homens de Judá estavam diante do SENHOR com suas crianças de colo, suas esposas e seus filhos,"
+              }
+            ]
           },
           {
             "number": 15,
             "text": "O dia do SENHOR está próximo, o dia em que virá destruição da parte do Todo-poderoso; que dia terrível será!",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 13:6–9",
+                "text": "Gritem de terror, pois o dia do SENHOR chegou, o dia em que o Todo-poderoso virá para destruir."
+              },
+              {
+                "ref": "Jeremias 30:7",
+                "text": "Em toda a história, nunca houve uma ocasião de tanto terror; será um tempo de angústia para Israel. No final, porém, ele será resgatado!"
+              },
+              {
+                "ref": "Sofonias 1:14–18",
+                "text": "“Esse dia terrível do SENHOR se aproxima; ele virá depressa. Será um dia de amargura em que até os homens fortes gritarão."
+              },
+              {
+                "ref": "Ezequiel 7:2–12",
+                "text": "“Filho do homem, assim diz o SENHOR Soberano a Israel: “Chegou o fim! Para onde quer que vocês olhem, norte, sul, leste ou oeste, sua terra está acabada."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "Nosso alimento desaparece diante dos olhos; já não há alegria e exultação na casa de nosso Deus.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 105:3",
+                "text": "Exultem em seu santo nome, alegrem-se todos que buscam o SENHOR."
+              },
+              {
+                "ref": "Deuteronômio 12:6–7",
+                "text": "Ali vocês apresentarão os holocaustos, os sacrifícios, os dízimos, as ofertas sagradas, as ofertas para cumprir votos, as ofertas voluntárias e as ofertas da primeira cria do gado e dos rebanhos."
+              },
+              {
+                "ref": "Salmos 43:4",
+                "text": "Ali, irei ao altar de Deus, a Deus, fonte de toda a minha alegria. Eu te louvarei com minha harpa, ó Deus, meu Deus!"
+              },
+              {
+                "ref": "Deuteronômio 12:11–12",
+                "text": "levem ao lugar que o SENHOR, seu Deus, escolher para habitação do seu nome tudo que eu lhes ordeno: os holocaustos, os sacrifícios, os dízimos, as ofertas sagradas e as ofertas para cumprir um voto que fizeram ao SENHOR."
+              }
+            ]
           },
           {
             "number": 17,
             "text": "As sementes morrem na terra seca, as colheitas de cereal se perdem. Os celeiros estão vazios, os armazéns, abandonados.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 17:10–11",
+                "text": "Pois você se afastou do Deus que o salva, se esqueceu da Rocha que o protege. Por isso, pode até plantar as melhores videiras e importar as mudas mais caras."
+              },
+              {
+                "ref": "Gênesis 23:16",
+                "text": "Abraão concordou com o preço e pagou a quantia que Efrom sugeriu: quatrocentas peças de prata, pesadas de acordo com o padrão do mercado. E os hititas testemunharam a transação."
+              }
+            ]
           },
           {
             "number": 18,
             "text": "Como os animais gemem de fome! As manadas de gado vagam confusas, pois não encontram pasto; os rebanhos de ovelhas sofrem.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Oséias 4:3",
+                "text": "Por isso sua terra está de luto, e todos desfalecem. Até os animais selvagens, as aves do céu e os peixes do mar estão desaparecendo."
+              },
+              {
+                "ref": "Jeremias 12:4",
+                "text": "Até quando esta terra ficará de luto? Até o capim nos campos secou. Os animais selvagens e as aves desapareceram por causa da maldade dos que nela habitam. Pois o povo disse: “O SENHOR não vê o que o futuro nos reserva!”."
+              },
+              {
+                "ref": "Jeremias 14:5–6",
+                "text": "Até a corça abandona sua cria, pois não há capim no campo. Os jumentos selvagens ficam no alto dos montes e ofegam como chacais sedentos. Forçam a vista para achar pastagem, mas nada encontram”."
+              },
+              {
+                "ref": "Joel 1:20",
+                "text": "Até os animais selvagens clamam a ti, pois os riachos secaram, e o fogo devorou os pastos do deserto."
+              }
+            ]
           },
           {
             "number": 19,
             "text": "Socorro, SENHOR! O fogo devorou os pastos do deserto, e as chamas queimaram as árvores do campo.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 50:15",
+                "text": "Então clamem a mim em tempos de aflição; eu os livrarei, e vocês me darão glória.”"
+              },
+              {
+                "ref": "Jeremias 9:10",
+                "text": "Chorarei pelos montes e lamentarei pelas pastagens no deserto. Pois estão desolados e sem vida; não se ouve mais o mugido do gado, e as aves e os animais selvagens fugiram."
+              },
+              {
+                "ref": "Amós 7:4",
+                "text": "Foi isto que o SENHOR Soberano me mostrou em outra visão: ele se preparava para castigar seu povo com um grande fogo. O fogo havia consumido as profundezas do mar e devorava toda a terra."
+              },
+              {
+                "ref": "Miqueias 7:7",
+                "text": "Quanto a mim, busco o SENHOR e espero confiante que Deus me salve; certamente meu Deus me ouvirá!"
+              }
+            ]
           },
           {
             "number": 20,
             "text": "Até os animais selvagens clamam a ti, pois os riachos secaram, e o fogo devorou os pastos do deserto.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 104:21",
+                "text": "Os leões jovens rugem por sua presa, saem à procura do alimento que Deus lhes provê."
+              },
+              {
+                "ref": "1 Reis 17:7",
+                "text": "Depois de algum tempo, porém, o riacho secou, pois não caía chuva em parte alguma da terra."
+              },
+              {
+                "ref": "Salmos 147:9",
+                "text": "Alimenta os animais selvagens e dá de comer aos filhotes dos corvos quando pedem."
+              },
+              {
+                "ref": "1 Reis 18:5",
+                "text": "Acabe disse a Obadias: “Precisamos ir a todas as fontes e vales na terra. Quem sabe encontraremos pasto suficiente para salvar pelo menos alguns de meus cavalos e mulas!”."
+              }
+            ]
           }
         ]
       }
@@ -146,67 +477,237 @@
             "number": 1,
             "text": "Toquem a trombeta em Sião! Soem o alarme em meu santo monte! Que todos tremam de medo, pois está chegando o dia do SENHOR.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 1:15",
+                "text": "O dia do SENHOR está próximo, o dia em que virá destruição da parte do Todo-poderoso; que dia terrível será!"
+              },
+              {
+                "ref": "Joel 2:15",
+                "text": "Toquem a trombeta em Sião! Convoquem um tempo de jejum, juntem o povo para uma reunião solene."
+              },
+              {
+                "ref": "1 Pedro 4:7",
+                "text": "O fim de todas as coisas está próximo. Portanto, sejam sensatos e disciplinados em suas orações."
+              },
+              {
+                "ref": "Malaquias 4:1"
+              }
+            ]
           },
           {
             "number": 2,
             "text": "É um dia de escuridão e trevas, um dia de densas nuvens e sombras profundas. Como o amanhecer se estende pelos montes, assim surge um grande e poderoso exército. Nunca se viu algo parecido, e nunca mais se verá.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 1:6",
+                "text": "Uma nação imensa invadiu minha terra, um exército terrível, tão numeroso que não se pode contar. Seus dentes são como os de leões, suas presas, como as da leoa."
+              },
+              {
+                "ref": "Sofonias 1:14–15",
+                "text": "“Esse dia terrível do SENHOR se aproxima; ele virá depressa. Será um dia de amargura em que até os homens fortes gritarão."
+              },
+              {
+                "ref": "Joel 2:10–11",
+                "text": "A terra treme com seu avanço, e os céus estremecem. O sol e a lua escurecem, e as estrelas deixam de brilhar."
+              },
+              {
+                "ref": "Amós 5:18–20",
+                "text": "Que aflição espera vocês que dizem: “Se ao menos o dia do SENHOR chegasse!”. Não fazem ideia do que desejam; aquele dia trará escuridão, e não luz."
+              }
+            ]
           },
           {
             "number": 3,
             "text": "À frente deles o fogo arde, atrás deles vêm chamas. Diante deles a terra se estende, bela como o jardim do Éden. Atrás deles só há desolação; nada escapa.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 51:3",
+                "text": "O SENHOR voltará a consolar Sião e terá compaixão de suas ruínas. Seu deserto florescerá como o Éden, sua terra desolada, como o jardim do SENHOR. Ali haverá alegria e exultação, e cânticos de gratidão encherão o ar."
+              },
+              {
+                "ref": "Joel 1:19–20",
+                "text": "Socorro, SENHOR! O fogo devorou os pastos do deserto, e as chamas queimaram as árvores do campo. Até os animais selvagens clamam a ti, pois os riachos secaram, e o fogo devorou os pastos do deserto."
+              },
+              {
+                "ref": "Gênesis 2:8",
+                "text": "O SENHOR Deus plantou um jardim no Éden, para os lados do leste, e ali colocou o homem que havia criado."
+              },
+              {
+                "ref": "Zacarias 7:14",
+                "text": "Como um vendaval, eu os espalhei entre as nações distantes, que eles não conheciam. Sua terra ficou tão desolada que ninguém sequer passava por ela. Transformaram sua terra agradável num deserto”."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "Parecem cavalos, atacam como cavalos de guerra.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Apocalipse 9:7",
+                "text": "Os gafanhotos pareciam cavalos preparados para a batalha. Tinham na cabeça algo semelhante a coroas de ouro, e o rosto parecia humano."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Olhem para eles, saltando sobre o topo dos montes; ouçam o barulho que fazem, como o estrondo de carros de guerra, como o fogo crepitante que devora um campo cheio de palha, como um exército poderoso que avança para a batalha.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Apocalipse 9:9",
+                "text": "Vestiam uma couraça semelhante ao ferro, e suas asas rugiam como um exército de carruagens correndo para a batalha."
+              },
+              {
+                "ref": "Isaías 5:24",
+                "text": "Portanto, assim como o fogo consome a palha e o capim seco se desfaz com a chama, suas raízes apodrecerão e suas flores murcharão. Pois rejeitaram a lei do SENHOR dos Exércitos, desprezaram a palavra do Santo de Israel."
+              },
+              {
+                "ref": "Isaías 30:30",
+                "text": "O SENHOR fará ouvir sua voz majestosa e mostrará a força de seu braço poderoso. Em sua ira, descerá com chamas devoradoras, chuvas torrenciais, tempestades e pedras de granizo."
+              },
+              {
+                "ref": "Naum 2:3–4",
+                "text": "Os escudos de seus guerreiros são vermelhos; vejam os uniformes escarlates dos soldados valentes! Observem seus reluzentes carros de guerra se alinharem, enquanto as lanças se agitam acima deles."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "O medo toma conta do povo; todo rosto fica pálido de terror.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Naum 2:10",
+                "text": "A cidade é saqueada e fica vazia e arruinada; corações se derretem e joelhos vacilam. O povo fica angustiado, de rosto pálido, tremendo de medo."
+              },
+              {
+                "ref": "Isaías 13:8",
+                "text": "todos estão apavorados. São tomados de dores agudas de aflição, como as dores da mulher no parto. Apavorados, olham uns para os outros, com o rosto ardendo de medo."
+              },
+              {
+                "ref": "Jeremias 30:6",
+                "text": "Parem e pensem: Acaso homens dão à luz? Então por que estão aí, com o rosto pálido e as mãos na barriga, como a mulher em trabalho de parto?"
+              },
+              {
+                "ref": "Lamentações 4:8",
+                "text": "Agora, porém, seu rosto está mais escuro que fuligem; ninguém os reconhece nas ruas. Sua pele está pegada aos ossos, seca como madeira."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "Os agressores marcham como guerreiros e, como soldados, escalam os muros da cidade. Marcham sempre em frente, sem deixar suas fileiras.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Provérbios 30:27",
+                "text": "os gafanhotos, que, embora não tenham rei, marcham em fileira,"
+              },
+              {
+                "ref": "Isaías 5:26–29",
+                "text": "Ele enviará um sinal a nações distantes, assobiará para os que estão nos confins da terra; eles virão correndo."
+              },
+              {
+                "ref": "2 Samuel 5:8",
+                "text": "No dia do ataque, Davi disse a seus soldados: “Odeio esses jebuseus ‘cegos’ e ‘aleijados’. Quem os atacar deve entrar na cidade pelo túnel de água”. Essa é a origem do ditado: “Os cegos e os aleijados não entrarão na casa”."
+              },
+              {
+                "ref": "2 Samuel 1:23",
+                "text": "Quão amados e estimados eram Saul e Jônatas! Estiveram juntos na vida e na morte. Eram mais velozes que as águias, mais fortes que os leões."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Não empurram uns aos outros; cada um se move na posição correta. Rompem as linhas de defesa, sem desfazer a formação.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Neemias 4:23",
+                "text": "Nenhum de nós — nem eu, nem meus parentes, nem meus servos, nem os guardas que estavam comigo — trocava de roupa. Carregávamos sempre nossas armas, até mesmo quando íamos beber água."
+              },
+              {
+                "ref": "2 Crônicas 32:5",
+                "text": "Então Ezequias se dedicou a reparar todos os trechos onde o muro estava quebrado, construiu torres e fez outro muro do lado de fora do primeiro. Também reforçou o aterro139 da Cidade de Davi e fabricou grande quantidade de armas e escudos."
+              },
+              {
+                "ref": "2 Crônicas 23:10",
+                "text": "Posicionou todos os homens em volta do rei, de armas na mão. Formaram uma fileira desde o lado sul do templo até o lado norte e ao redor do altar."
+              },
+              {
+                "ref": "Jó 33:18",
+                "text": "Preserva-os do túmulo e de serem atravessados pela espada."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Atacam a cidade e correm ao longo de seus muros. Entram em todas as casas e sobem pelas janelas, como ladrões.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 9:21",
+                "text": "Pois a morte subiu por nossas janelas e entrou em nossas mansões. Exterminou as crianças que brincavam nas ruas e os jovens que se reuniam nas praças."
+              },
+              {
+                "ref": "João 10:1",
+                "text": "“Eu lhes digo a verdade: quem entra no curral das ovelhas às escondidas, por sobre a cerca, em vez de passar pela porta, é certamente ladrão e assaltante!"
+              },
+              {
+                "ref": "Êxodo 10:6",
+                "text": "Invadirão seus palácios, as casas de seus oficiais e todas as casas do Egito. Nunca em toda a história do Egito seus antepassados viram uma praga como esta!’”. Quando terminou de falar, Moisés deu as costas ao faraó e saiu."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "A terra treme com seu avanço, e os céus estremecem. O sol e a lua escurecem, e as estrelas deixam de brilhar.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Mateus 24:29",
+                "text": "“Imediatamente depois da angústia daqueles dias, ‘o sol escurecerá, a lua não dará luz, as estrelas cairão do céu e os poderes dos céus serão abalados’."
+              },
+              {
+                "ref": "Isaías 13:10",
+                "text": "Os céus acima deles escurecerão, e as estrelas deixarão de brilhar. O sol estará escuro ao nascer, e a lua não iluminará."
+              },
+              {
+                "ref": "Joel 3:15–16",
+                "text": "O sol e a lua escurecerão, e as estrelas deixarão de brilhar."
+              },
+              {
+                "ref": "Salmos 18:7",
+                "text": "A terra se abalou e estremeceu; tremeram os fundamentos dos montes, agitaram-se por causa de sua ira."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "O SENHOR está à frente de seu exército; com um grito, ele o comanda. É seu exército poderoso e segue suas ordens. O dia do SENHOR é espantoso e terrível; quem poderá sobreviver?",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Malaquias 3:2",
+                "text": "“Mas quem poderá suportar quando ele vier? Quem permanecerá em pé em sua presença quando ele aparecer? Pois ele será como fogo ardente que refina o metal, como sabão forte que branqueia as roupas."
+              },
+              {
+                "ref": "Naum 1:6",
+                "text": "Quem pode resistir à sua indignação? Quem pode sobreviver à sua ira ardente? Sua fúria queima como fogo, e os montes desabam em sua presença."
+              },
+              {
+                "ref": "Apocalipse 6:17",
+                "text": "Pois chegou o grande dia de sua ira, e quem poderá sobreviver?”."
+              },
+              {
+                "ref": "Apocalipse 18:8",
+                "text": "Por isso, estas pragas a alcançarão num só dia: morte, pranto e fome. O fogo a consumirá por completo, pois o Senhor Deus, que a julga, é poderoso”."
+              }
+            ]
           }
         ]
       },
@@ -217,37 +718,139 @@
             "number": 12,
             "text": "Por isso, o SENHOR diz: “Voltem para mim de todo o coração, venham a mim com jejum, choro e lamento!",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 4:8–9",
+                "text": "Aproximem-se de Deus, e ele se aproximará de vocês. Lavem as mãos, pecadores; purifiquem o coração, vocês que têm a mente dividida."
+              },
+              {
+                "ref": "Isaías 55:6–7",
+                "text": "Busquem o SENHOR enquanto podem achá-lo; invoquem-no agora, enquanto ele está perto."
+              },
+              {
+                "ref": "2 Crônicas 7:13–14",
+                "text": "Se, por vezes, eu fechar o céu para que não chova, ou ordenar que gafanhotos devorem suas colheitas, ou enviar pragas entre meu povo,"
+              },
+              {
+                "ref": "Oséias 12:6",
+                "text": "Portanto, voltem para seu Deus; pratiquem o amor e a justiça e confiem sempre nele."
+              }
+            ]
           },
           {
             "number": 13,
             "text": "Não rasguem as roupas em sinal de tristeza; rasguem o coração!”. Voltem para o SENHOR, seu Deus, pois ele é misericordioso e compassivo, lento para se irar e cheio de amor; está sempre pronto a voltar atrás e não castigar.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 86:15",
+                "text": "Mas tu, Senhor, és Deus de compaixão e misericórdia, lento para se irar e cheio de amor e fidelidade."
+              },
+              {
+                "ref": "Salmos 34:18",
+                "text": "O SENHOR está perto dos que têm o coração quebrantado e resgata os de espírito oprimido."
+              },
+              {
+                "ref": "Isaías 57:15",
+                "text": "O Alto e Sublime, que vive na eternidade, o Santo diz: “Habito nos lugares altos e santos, e também com os de espírito oprimido e humilde. Dou novo ânimo aos abatidos e coragem aos de coração arrependido."
+              },
+              {
+                "ref": "Êxodo 34:6–7",
+                "text": "O SENHOR passou diante de Moisés, proclamando: “Javé! O SENHOR! O Deus de compaixão e misericórdia! Sou lento para me irar e cheio de amor e fidelidade."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "Quem sabe ele mude de ideia e lhes envie bênção em lugar desse castigo. Talvez possam apresentar ofertas de cereal e vinho ao SENHOR, seu Deus, como faziam antes.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jonas 3:9",
+                "text": "Quem sabe Deus voltará atrás, conterá sua ira ardente e não nos destruirá”."
+              },
+              {
+                "ref": "Ageu 2:19",
+                "text": "Eu lhes faço uma promessa agora, enquanto a semente ainda está no celeiro e suas videiras, figueiras, romãzeiras e oliveiras ainda não deram frutos. Mas, de hoje em diante, eu os abençoarei”."
+              },
+              {
+                "ref": "Êxodo 32:30",
+                "text": "No dia seguinte, Moisés disse ao povo: “Vocês cometeram um pecado terrível, mas eu subirei ao monte e me encontrarei com o SENHOR outra vez. Talvez eu consiga fazer expiação por este pecado!”."
+              },
+              {
+                "ref": "Jonas 1:6",
+                "text": "Então o capitão desceu para falar com ele. “Como pode dormir numa situação dessas?”, disse. “Levante-se e ore a seu deus! Quem sabe ele prestará atenção em nós e poupará nossa vida!”"
+              }
+            ]
           },
           {
             "number": 15,
             "text": "Toquem a trombeta em Sião! Convoquem um tempo de jejum, juntem o povo para uma reunião solene.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 1:14",
+                "text": "Convoquem um tempo de jejum, juntem o povo para uma reunião solene. Tragam os líderes e todos que habitam na terra para o templo do SENHOR, seu Deus, e ali clamem a ele."
+              },
+              {
+                "ref": "Números 10:3",
+                "text": "Quando as duas trombetas soarem, todos se reunirão diante de você à entrada da tenda do encontro."
+              },
+              {
+                "ref": "Joel 2:1",
+                "text": "Toquem a trombeta em Sião! Soem o alarme em meu santo monte! Que todos tremam de medo, pois está chegando o dia do SENHOR."
+              },
+              {
+                "ref": "1 Reis 21:12",
+                "text": "Convocaram os habitantes da cidade para um jejum e colocaram Nabote num lugar onde todos podiam vê-lo."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "Reúnam e consagrem todo o povo, os anciãos, as crianças e até os bebês. Chamem o noivo de seu aposento e a noiva, de seu quarto.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Crônicas 29:5",
+                "text": "“Ouçam-me, levitas!”, disse ele. “Purifiquem-se e purifiquem o templo do SENHOR, o Deus de seus antepassados. Removam do santuário todos os objetos impuros."
+              },
+              {
+                "ref": "2 Crônicas 20:13",
+                "text": "Enquanto todos os homens de Judá estavam diante do SENHOR com suas crianças de colo, suas esposas e seus filhos,"
+              },
+              {
+                "ref": "1 Coríntios 7:5",
+                "text": "Não privem um ao outro de terem relações, a menos que ambos concordem em abster-se da intimidade sexual por certo tempo, a fim de se dedicarem de modo mais pleno à oração. Depois disso, unam- se novamente, para que Satan..."
+              },
+              {
+                "ref": "Joel 1:14",
+                "text": "Convoquem um tempo de jejum, juntem o povo para uma reunião solene. Tragam os líderes e todos que habitam na terra para o templo do SENHOR, seu Deus, e ali clamem a ele."
+              }
+            ]
           },
           {
             "number": 17,
             "text": "Que os sacerdotes, que servem na presença do SENHOR, chorem entre o pórtico do templo e o altar. Que façam esta oração: “Poupa teu povo, SENHOR! Não permitas que a nação que pertence a ti se torne objeto de zombaria. Não deixes que seja motivo de piada para as nações que dizem: ‘Onde está o seu Deus?’”.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Salmos 115:2",
+                "text": "Por que as nações dizem: “Onde está o deus deles?”."
+              },
+              {
+                "ref": "Salmos 79:10",
+                "text": "Por que permitir que as nações digam: “Onde está o seu Deus?” Mostra-nos tua vingança contra as nações, pois elas derramaram o sangue de teus servos."
+              },
+              {
+                "ref": "Ezequiel 8:16",
+                "text": "Em seguida, levou-me para o pátio interno do templo do SENHOR. Na entrada do templo, entre o pórtico e o altar, havia cerca de 25 homens com as costas para o templo do SENHOR. Estavam voltados para o leste, prostrados no chão, e adoravam o sol."
+              },
+              {
+                "ref": "Amós 7:2",
+                "text": "Em minha visão, os gafanhotos comeram todas as plantas da terra. Então eu disse: “Ó SENHOR Soberano, perdoa-nos! Do contrário, não sobreviveremos, pois Israel é muito pequeno”."
+              }
+            ]
           }
         ]
       },
@@ -258,85 +861,314 @@
             "number": 18,
             "text": "Então o SENHOR teve compaixão de seu povo e com zelo guardou sua terra.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Zacarias 8:2",
+                "text": "“Assim diz o SENHOR dos Exércitos: Tenho muito ciúme do monte Sião e sou consumido de zelo por ele!"
+              },
+              {
+                "ref": "Salmos 103:13",
+                "text": "O SENHOR é como um pai para seus filhos, bondoso e compassivo para os que o temem."
+              },
+              {
+                "ref": "Zacarias 1:14",
+                "text": "Então o anjo me disse: “Proclame esta mensagem: ‘Assim diz o SENHOR dos Exércitos: Tenho grande zelo por Jerusalém e pelo monte Sião,"
+              },
+              {
+                "ref": "Lamentações 3:22",
+                "text": "O amor do SENHOR não tem fim!12 Suas misericórdias são inesgotáveis."
+              }
+            ]
           },
           {
             "number": 19,
             "text": "O SENHOR respondeu: “Vejam! Eu lhes envio cereal, vinho novo e azeite, suficientes para saciá-los. Vocês não serão mais objeto de zombaria entre as nações vizinhas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Ezequiel 34:29",
+                "text": "“Tornarei sua terra conhecida por suas colheitas, e eles nunca mais passarão fome nem sofrerão os insultos de nações estrangeiras."
+              },
+              {
+                "ref": "Ezequiel 36:15",
+                "text": "Não o deixarei ouvir os insultos de outras nações, nem sua zombaria. Você não será uma terra que faz sua nação cair, diz o SENHOR Soberano”."
+              },
+              {
+                "ref": "Isaías 62:8–9",
+                "text": "O SENHOR jurou a Jerusalém por sua própria força: “Nunca mais a entregarei a seus inimigos; nunca mais virão guerreiros de outras nações para levar seu cereal e seu vinho novo."
+              },
+              {
+                "ref": "Jeremias 31:12",
+                "text": "Eles virão e cantarão de alegria no alto do monte Sião; estarão radiantes pelas boas dádivas do SENHOR: cereais, vinho novo, azeite, rebanhos e gado. Sua vida será como um jardim regado, e não haverá mais tristeza."
+              }
+            ]
           },
           {
             "number": 20,
             "text": "Expulsarei esses exércitos que vêm do norte e os enviarei para uma terra seca e desolada. Os que estão na vanguarda serão empurrados para o mar Morto, e os da retaguarda, para o Mediterrâneo. O mau cheiro dos corpos em decomposição se espalhará sobre a terra”. Certamente o SENHOR tem feito grandes coisas!",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Zacarias 14:8",
+                "text": "Naquele dia, fluirão de Jerusalém águas que dão vida; metade das águas correrá para o mar Morto e metade para o Mediterrâneo. Fluirão continuamente, tanto no verão como no inverno."
+              },
+              {
+                "ref": "Deuteronômio 11:24",
+                "text": "Todo lugar em que puserem os pés será de vocês. Suas fronteiras se estenderão do deserto, ao sul, até o Líbano, ao norte, e do rio Eufrates, a leste, até o mar Mediterrâneo, a oeste."
+              },
+              {
+                "ref": "Amós 4:10",
+                "text": "“Enviei pragas contra vocês, como as pragas que enviei contra o Egito. Matei seus jovens na guerra e levei todos os seus cavalos; o mau cheiro dos mortos encheu o ar. Nem assim vocês voltaram para mim”, diz o SENHOR."
+              },
+              {
+                "ref": "Isaías 34:3",
+                "text": "Seus mortos não serão sepultados; o fedor de seus cadáveres encherá a terra, e o sangue escorrerá pelos montes."
+              }
+            ]
           },
           {
             "number": 21,
             "text": "Não tema, ó terra; alegre-se e exulte, pois o SENHOR tem feito grandes coisas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Sofonias 3:16–17",
+                "text": "Naquele dia, se anunciará em Jerusalém: “Anime-se, ó Sião! Não tenha medo!"
+              },
+              {
+                "ref": "Isaías 54:4",
+                "text": "“Não se assuste; você não será envergonhada. Não tenha medo; você não sofrerá humilhação. Não se lembrará mais da vergonha de sua juventude, nem da tristeza da viuvez."
+              },
+              {
+                "ref": "Salmos 126:1–3",
+                "text": "Quando o SENHOR trouxe os exilados de volta a Sião, foi como um sonho."
+              },
+              {
+                "ref": "Isaías 41:10",
+                "text": "Não tenha medo, pois estou com você; não desanime, pois sou o seu Deus. Eu o fortalecerei e o ajudarei; com minha vitoriosa mão direita o sustentarei."
+              }
+            ]
           },
           {
             "number": 22,
             "text": "Não tenham medo, animais do campo, pois os pastos do deserto ficarão verdes. As árvores voltarão a dar frutos, as figueiras e as videiras ficarão carregadas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Zacarias 8:12",
+                "text": "Pois, agora, plantarão as sementes em paz. As videiras ficarão carregadas de uvas, a terra produzirá suas colheitas, e os céus derramarão o orvalho. Darei essas bênçãos como herança ao remanescente deste povo."
+              },
+              {
+                "ref": "Salmos 65:12",
+                "text": "Os pastos no deserto ficam verdes, e as encostas dos montes florescem de alegria."
+              },
+              {
+                "ref": "Isaías 51:3",
+                "text": "O SENHOR voltará a consolar Sião e terá compaixão de suas ruínas. Seu deserto florescerá como o Éden, sua terra desolada, como o jardim do SENHOR. Ali haverá alegria e exultação, e cânticos de gratidão encherão o ar."
+              },
+              {
+                "ref": "Amós 9:14–15",
+                "text": "Trarei meu povo exilado de Israel de volta de terras distantes, e eles reconstruirão as cidades destruídas e voltarão a morar nelas. Plantarão vinhedos e jardins, comerão de suas colheitas e beberão de seu vinho."
+              }
+            ]
           },
           {
             "number": 23,
             "text": "Alegrem-se, vocês que habitam em Sião! Exultem no SENHOR, seu Deus! Pois ele envia as chuvas na medida certa; as chuvas de outono voltarão a cair, e também as chuvas de primavera.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Tiago 5:7–8",
+                "text": "Por isso, irmãos, sejam pacientes enquanto esperam a volta do Senhor. Vejam como os lavradores esperam pacientemente as chuvas do outono e da primavera. Com grande expectativa, aguardam o amadurecimento de sua preciosa colheita."
+              },
+              {
+                "ref": "Filipenses 4:4",
+                "text": "Alegrem-se sempre no Senhor. Repito: alegrem-se!"
+              },
+              {
+                "ref": "Levítico 26:4",
+                "text": "enviarei as chuvas nas estações próprias. A terra dará suas colheitas, e as árvores do campo produzirão seus frutos."
+              },
+              {
+                "ref": "Oséias 6:3",
+                "text": "Ah, como precisamos conhecer o SENHOR; busquemos conhecê-lo! Ele nos responderá, tão certo como chega o amanhecer ou vêm as chuvas da primavera.”"
+              }
+            ]
           },
           {
             "number": 24,
             "text": "As eiras voltarão a se encher de trigo, e os tanques de prensar transbordarão de vinho novo e azeite.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Malaquias 3:10",
+                "text": "Tragam todos os seus dízimos aos depósitos do templo, para que haja provisão em minha casa. Se o fizerem”, diz o SENHOR dos Exércitos, “abrirei as janelas do céu para vocês. Derramarei tantas bênçãos que não haverá espaç..."
+              },
+              {
+                "ref": "Amós 9:13",
+                "text": "“Virá o tempo”, diz o SENHOR, “em que o trigo e as uvas crescerão tão rápido que o povo não dará conta de colhê-los. Vinho doce gotejará das videiras no alto das colinas de Israel."
+              },
+              {
+                "ref": "Joel 3:18",
+                "text": "Naquele dia, vinho doce gotejará dos montes, e leite fluirá das colinas. Água encherá o leito dos riachos de Judá; uma fonte brotará do templo do SENHOR e regará o vale das Acácias."
+              },
+              {
+                "ref": "Provérbios 3:9–10",
+                "text": "Honre o SENHOR com suas riquezas e com a melhor parte de tudo que produzir. Então seus celeiros se encherão de cereais, e seus tonéis transbordarão de vinho."
+              }
+            ]
           },
           {
             "number": 25,
             "text": "“Eu lhes devolverei o que perderam por causa dos gafanhotos migradores, dos saltadores, dos destruidores e dos cortadores; enviei esse grande exército devastador contra vocês.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Zacarias 10:6",
+                "text": "“Fortalecerei Judá e livrarei Israel; eu os restaurarei, porque tenho compaixão deles. Será como se eu nunca os houvesse rejeitado, pois eu sou o SENHOR, seu Deus, e ouvirei seus clamores."
+              },
+              {
+                "ref": "Joel 1:4–7",
+                "text": "Depois que os gafanhotos cortadores devoraram as colheitas, os gafanhotos migradores comeram o que restava; então vieram os gafanhotos saltadores e, depois deles, os gafanhotos destruidores!"
+              },
+              {
+                "ref": "Joel 2:2–11",
+                "text": "É um dia de escuridão e trevas, um dia de densas nuvens e sombras profundas. Como o amanhecer se estende pelos montes, assim surge um grande e poderoso exército. Nunca se viu algo parecido, e nunca mais se verá."
+              }
+            ]
           },
           {
             "number": 26,
             "text": "Vocês voltarão a ter alimento até se saciar e louvarão o SENHOR, seu Deus, que realiza esses milagres em seu favor; nunca mais meu povo será envergonhado.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 10:11",
+                "text": "Como dizem as Escrituras: “Quem confiar nele jamais será envergonhado”."
+              },
+              {
+                "ref": "Salmos 22:26",
+                "text": "Os pobres comerão e se saciarão; todos que buscam o SENHOR o louvarão e terão o coração cheio de alegria sem fim."
+              },
+              {
+                "ref": "Romanos 5:5",
+                "text": "e essa esperança não nos decepcionará, pois sabemos quanto Deus nos ama, uma vez que ele nos deu o Espírito Santo para nos encher o coração com seu amor."
+              },
+              {
+                "ref": "Deuteronômio 12:7",
+                "text": "Ali vocês e seus familiares comerão na presença do SENHOR, seu Deus, e se alegrarão com tudo que realizaram, porque o SENHOR, seu Deus, os abençoou."
+              }
+            ]
           },
           {
             "number": 27,
             "text": "Então vocês saberão que estou no meio de Israel, que sou o SENHOR, seu Deus, e não há nenhum outro; nunca mais meu povo será envergonhado.” O SENHOR promete seu Espírito 285 “Então, depois que eu tiver feito essas coisas, derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os velhos terão sonhos, e os jovens terão visões.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Ezequiel 37:26–28",
+                "text": "Farei com eles uma aliança de paz, uma aliança permanente. Eu lhes darei sua terra e os multiplicarei e estabelecerei meu templo no meio deles para sempre."
+              },
+              {
+                "ref": "Levítico 26:11–12",
+                "text": "Habitarei no meio de vocês e não os desprezarei. Andarei em seu meio; serei o seu Deus, e vocês serão o meu povo."
+              },
+              {
+                "ref": "Sofonias 3:17",
+                "text": "Pois o SENHOR, seu Deus, está em seu meio; ele é um Salvador poderoso. Ele se agradará de vocês com exultação e acalmará todos os seus medos com amor; ele se alegrará em vocês com gritos de alegria!”."
+              },
+              {
+                "ref": "Ezequiel 39:28",
+                "text": "Então meu povo saberá que eu sou o SENHOR, seu Deus, pois os enviei para o exílio entre as nações e os trouxe de volta para sua terra."
+              }
+            ]
           },
           {
             "number": 29,
             "text": "Naqueles dias, derramarei meu Espírito até mesmo sobre servos e servas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "1 Coríntios 12:13",
+                "text": "Alguns de nós são judeus, alguns são gentios, alguns são escravos e alguns são livres, mas todos nós fomos batizados em um só corpo pelo único Espírito, e todos recebemos o privilégio de beber do mesmo Espírito."
+              },
+              {
+                "ref": "Gálatas 3:28",
+                "text": "Não há mais judeu nem gentio, escravo nem livre, homem nem mulher, pois todos vocês são um em Cristo Jesus."
+              },
+              {
+                "ref": "Colossenses 3:11",
+                "text": "Nessa nova vida, não importa se você é judeu ou gentio, se é circuncidado ou incircuncidado, se é inculto ou incivilizado, se é escravo ou livre. Cristo é tudo que importa, e ele vive em todos."
+              }
+            ]
           },
           {
             "number": 30,
             "text": "Farei maravilhas nos céus e na terra: sangue e fogo, e colunas de fumaça.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Atos 2:19–20",
+                "text": "Farei maravilhas em cima, no céu, e sinais embaixo, na terra: sangue e fogo, e nuvens de fumaça. O sol se escurecerá, e a lua se tornará vermelha como sangue, antes que chegue o grande e glorioso dia do Senhor."
+              },
+              {
+                "ref": "Lucas 21:11",
+                "text": "Haverá grandes terremotos, fome e peste em vários lugares, e acontecimentos terríveis e grandes sinais no céu."
+              },
+              {
+                "ref": "Mateus 24:29",
+                "text": "“Imediatamente depois da angústia daqueles dias, ‘o sol escurecerá, a lua não dará luz, as estrelas cairão do céu e os poderes dos céus serão abalados’."
+              },
+              {
+                "ref": "Lucas 21:25–26",
+                "text": "“Haverá sinais no sol, na lua e nas estrelas. E, na terra, as nações ficarão angustiadas, perplexas com o rugir dos mares e a agitação das ondas."
+              }
+            ]
           },
           {
             "number": 31,
             "text": "O sol se escurecerá, a lua se tornará vermelha como sangue antes que chegue o grande e terrível dia do SENHOR.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Apocalipse 6:12–13",
+                "text": "Enquanto eu observava, o Cordeiro abriu o sexto selo, e houve um grande terremoto. O sol ficou escuro como pano negro, e a lua inteira se tornou vermelha como sangue."
+              },
+              {
+                "ref": "Mateus 24:29",
+                "text": "“Imediatamente depois da angústia daqueles dias, ‘o sol escurecerá, a lua não dará luz, as estrelas cairão do céu e os poderes dos céus serão abalados’."
+              },
+              {
+                "ref": "Malaquias 4:1"
+              },
+              {
+                "ref": "Malaquias 4:5",
+                "text": "“Vejam, eu lhes envio o profeta Elias antes da vinda do grande e terrível dia do SENHOR."
+              }
+            ]
           },
           {
             "number": 32,
             "text": "Mas todo aquele que invocar o nome do SENHOR será salvo, pois alguns no monte Sião, em Jerusalém, escaparão, como o SENHOR prometeu. Estarão entre os sobreviventes que o SENHOR chamou.”",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Romanos 10:11–14",
+                "text": "Como dizem as Escrituras: “Quem confiar nele jamais será envergonhado”."
+              },
+              {
+                "ref": "Atos 2:20–21",
+                "text": "O sol se escurecerá, e a lua se tornará vermelha como sangue, antes que chegue o grande e glorioso dia do Senhor. Mas todo aquele que invocar o nome do Senhor será salvo’."
+              },
+              {
+                "ref": "Isaías 46:13",
+                "text": "Pois estou pronto para endireitar as coisas, não no futuro distante, mas agora! Estou pronto para salvar Sião e para mostrar minha glória a Israel.”"
+              },
+              {
+                "ref": "Jeremias 33:3",
+                "text": "Pergunte- me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
+              }
+            ]
           }
         ]
       }
@@ -353,97 +1185,369 @@
             "number": 1,
             "text": "17 “No tempo em que essas coisas acontecerem, quando eu restaurar Judá e Jerusalém,",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Sofonias 3:19–20",
+                "text": "Tratarei severamente todos que os oprimiram; salvarei os fracos e indefesos. Aos que antes foram exilados, darei reconhecimento e honra nas terras em que sofreram humilhação."
+              },
+              {
+                "ref": "Jeremias 30:3",
+                "text": "Porque está chegando o dia em que restaurarei meu povo de Israel e de Judá. Eu os trarei para casa, para esta terra que dei a seus antepassados, e eles voltarão a possuí-la. Eu, o SENHOR, falei!”."
+              },
+              {
+                "ref": "Ezequiel 39:25",
+                "text": "“Portanto, assim diz o SENHOR Soberano: Acabarei com o exílio de meu povo;102 terei compaixão de todo o Israel, pois tenho zelo por meu santo nome."
+              },
+              {
+                "ref": "Amós 9:14",
+                "text": "Trarei meu povo exilado de Israel de volta de terras distantes, e eles reconstruirão as cidades destruídas e voltarão a morar nelas. Plantarão vinhedos e jardins, comerão de suas colheitas e beberão de seu vinho."
+              }
+            ]
           },
           {
             "number": 2,
             "text": "reunirei todas as nações no vale de Josafá. Ali eu as julgarei por terem maltratado Israel, minha propriedade, por terem espalhado meu povo entre as nações e repartido minha terra.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Zacarias 14:2–4",
+                "text": "Rs 25.."
+              },
+              {
+                "ref": "Isaías 66:16",
+                "text": "O SENHOR julgará o mundo com fogo e sua espada, e muitos serão mortos por ele."
+              },
+              {
+                "ref": "Sofonias 3:8",
+                "text": "Portanto, sejam pacientes”, diz o SENHOR, “pois em breve me levantarei para acusar essas nações. Resolvi juntar os reinos da terra e derramar sobre eles minha ira ardente. Toda a terra será consumida pelo fogo de meu zelo."
+              },
+              {
+                "ref": "Ezequiel 38:22",
+                "text": "Castigarei você e seus exércitos com doença e derramamento de sangue; enviarei chuvas torrenciais, granizo, fogo e enxofre!"
+              }
+            ]
           },
           {
             "number": 3,
             "text": "Fizeram um sorteio para decidir quem de meu povo seria seu escravo. Deram meninos em troca de prostitutas e venderam meninas por vinho para se embriagar.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Naum 3:10",
+                "text": "E, no entanto, Tebas foi conquistada, e seus habitantes, levados como escravos. Seus bebês foram lançados com violência contra as pedras nas ruas. Soldados tiraram sortes para decidir quem levaria oficiais egípcios como..."
+              },
+              {
+                "ref": "Amós 2:6",
+                "text": "Assim diz o SENHOR: “Os habitantes de Israel pecaram repetidamente; não deixarei que fiquem impunes! Vendem por prata o justo e, por um par de sandálias, o pobre."
+              },
+              {
+                "ref": "Obadias 1:11",
+                "text": "Quando eles foram invadidos, você se manteve afastado e não quis ajudá-los. Estrangeiros levaram a riqueza da nação e tiraram sortes para dividir Jerusalém, e você agiu como se fosse um deles."
+              },
+              {
+                "ref": "Apocalipse 18:13",
+                "text": "Também comprava canela, especiarias, incenso, mirra, bálsamo, vinho, azeite de oliva, farinha fina, trigo, gado, ovelhas, cavalos, carroças, escravos e vidas humanas."
+              }
+            ]
           },
           {
             "number": 4,
             "text": "“O que vocês têm contra mim, Tiro, Sidom e cidades da Filístia? Estão tentando se vingar de mim? Se essa é sua intenção, tomem cuidado! Eu as atacarei sem demora e lhes darei o que merecem por suas ações.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Amós 1:6–10",
+                "text": "Assim diz o SENHOR: “Os habitantes de Gaza pecaram repetidamente; não deixarei que fiquem impunes! Enviaram todo o povo para o exílio e o entregaram como escravos para Edom."
+              },
+              {
+                "ref": "Jeremias 47:4",
+                "text": "“Chegou o dia de destruir os filisteus e seus aliados de Tiro e de Sidom. Sim, o SENHOR destruirá os filisteus, o remanescente da ilha de Creta."
+              },
+              {
+                "ref": "Isaías 34:8",
+                "text": "Pois é o dia da vingança do SENHOR, o ano em que retribuirá a Edom por tudo que fez a Israel."
+              },
+              {
+                "ref": "Isaías 59:18",
+                "text": "Ele retribuirá a seus inimigos pelo mal que fizeram; sua fúria cairá sobre seus adversários, e até os confins da terra lhes dará o castigo merecido."
+              }
+            ]
           },
           {
             "number": 5,
             "text": "Roubaram minha prata, meu ouro e meus tesouros preciosos e os levaram para seus templos.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "2 Reis 24:13",
+                "text": "Conforme o SENHOR havia declarado de antemão, Nabucodonosor levou embora todos os tesouros do templo do SENHOR e do palácio real. Removeu todos os utensílios de ouro que Salomão, rei de Israel, havia colocado no templo."
+              },
+              {
+                "ref": "2 Crônicas 21:16–17",
+                "text": "Então o SENHOR instigou os filisteus e os árabes que moravam perto dos etíopes a atacarem Jeorão."
+              },
+              {
+                "ref": "2 Reis 18:15–16",
+                "text": "Para juntar essa quantia, Ezequias usou toda a prata guardada no templo do SENHOR e nos tesouros do palácio."
+              },
+              {
+                "ref": "Daniel 11:38",
+                "text": "Em lugar deles, adorará o deus da fortaleza, um deus que seus antepassados não conheceram, e lhe dará honras com ouro, prata, pedras preciosas e presentes caros."
+              }
+            ]
           },
           {
             "number": 6,
             "text": "Venderam aos gregos os habitantes de Judá e Jerusalém, para que os levassem para longe de sua terra natal.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Ezequiel 27:13",
+                "text": "e comerciantes da Grécia, de Tubal e de Meseque traziam escravos e artigos de bronze para negociar com você."
+              },
+              {
+                "ref": "Joel 3:3",
+                "text": "Fizeram um sorteio para decidir quem de meu povo seria seu escravo. Deram meninos em troca de prostitutas e venderam meninas por vinho para se embriagar."
+              },
+              {
+                "ref": "Joel 3:8",
+                "text": "Venderei seus filhos e filhas aos habitantes de Judá, e eles os venderão ao povo da Arábia, uma nação distante. Eu, o SENHOR, falei!”"
+              },
+              {
+                "ref": "Deuteronômio 28:68",
+                "text": "Então o SENHOR os mandará em navios de volta para o Egito, o lugar que eu prometi que nunca mais veriam. Lá, tentarão vender a si mesmos como escravos para seus inimigos, mas ninguém os comprará”."
+              }
+            ]
           },
           {
             "number": 7,
             "text": "“Mas eu os trarei de volta de todos os lugares para onde os venderam, e darei a vocês o que merecem.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 43:5–6",
+                "text": "“Não tema, pois estou com você; reunirei você e seus descendentes desde o leste e o oeste. Direi ao norte e ao sul: ‘Tragam de volta meus filhos e filhas, desde os confins da terra."
+              },
+              {
+                "ref": "Jeremias 23:8",
+                "text": "Em vez disso, dirão: ‘Tão certo como vive o SENHOR, que trouxe o povo de Israel de volta da terra do norte e de todas as nações onde os havia exilado’. Então viverão em sua própria terra.”"
+              },
+              {
+                "ref": "Jeremias 30:16",
+                "text": "“Mas todos que a devorarem serão devorados, todos os seus inimigos serão enviados para o exílio. Todos que a saquearem serão saqueados, todos que a despojarem serão despojados."
+              },
+              {
+                "ref": "2 Tessalonicenses 1:6",
+                "text": "Em sua justiça, Deus pagará com aflição aqueles que afligem vocês."
+              }
+            ]
           },
           {
             "number": 8,
             "text": "Venderei seus filhos e filhas aos habitantes de Judá, e eles os venderão ao povo da Arábia, uma nação distante. Eu, o SENHOR, falei!”",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 60:14",
+                "text": "Os descendentes de seus opressores virão e se curvarão diante de você. Aqueles que a desprezavam beijarão seus pés. Eles a chamarão de Cidade do SENHOR, a Sião do Santo de Israel."
+              },
+              {
+                "ref": "Jó 1:15",
+                "text": "quando os sabeus nos atacaram. Roubaram todos os animais e mataram todos os empregados. Só eu escapei para lhe contar”."
+              },
+              {
+                "ref": "Juízes 2:14",
+                "text": "Com isso, a ira do SENHOR ardeu contra Israel, e ele os entregou nas mãos de saqueadores que tomaram seus bens. Entregou-os aos inimigos ao seu redor, aos quais já não conseguiam resistir."
+              },
+              {
+                "ref": "Isaías 14:1–2",
+                "text": "O SENHOR, porém, terá misericórdia dos descendentes de Jacó. Mais uma vez, escolherá Israel para ser seu povo. Ele os trará de volta e os estabelecerá em sua própria terra. Gente de muitas nações virá, se juntará a eles..."
+              }
+            ]
           },
           {
             "number": 9,
             "text": "Anunciem às nações de toda parte: “Preparem-se para a guerra! Convoquem seus melhores guerreiros; que todos os seus soldados avancem para a batalha.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Jeremias 46:3–4",
+                "text": "“Preparem seus escudos e avancem para a batalha! Selem os cavalos e montem neles, cavaleiros! Tomem suas posições e coloquem os capacetes. Afiem as lanças e vistam as armaduras."
+              },
+              {
+                "ref": "Ezequiel 38:7",
+                "text": "“Prepare-se; esteja pronto! Mantenha todos os exércitos ao seu redor de prontidão e assuma o comando deles."
+              },
+              {
+                "ref": "Isaías 8:9–10",
+                "text": "“Reúnam-se, nações, e fiquem aterrorizadas; prestem atenção, todas as terras distantes. Preparem-se para a batalha, mas serão destruídas; sim, preparem-se para a batalha, mas serão destruídas."
+              },
+              {
+                "ref": "Jeremias 31:10",
+                "text": "“Ouçam esta mensagem do SENHOR, ó nações, anunciem estas palavras nos litorais distantes: Aquele que espalhou seu povo o reunirá e o guardará, como um pastor cuida de seu rebanho."
+              }
+            ]
           },
           {
             "number": 10,
             "text": "Forjem seus arados para fazer espadas e transformem suas podadeiras em lanças; treinem até os mais fracos para serem guerreiros.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Zacarias 12:8",
+                "text": "Naquele dia, o SENHOR defenderá os habitantes de Jerusalém; o mais fraco entre eles será como o rei Davi, e os descendentes do rei serão como Deus, como o anjo do SENHOR que vai diante deles."
+              },
+              {
+                "ref": "Miqueias 4:3",
+                "text": "O SENHOR será mediador entre povos e resolverá conflitos entre nações poderosas e distantes. Elas forjarão suas espadas para fazer arados e transformarão suas lanças em podadeiras. As nações já não lutarão entre si, nem treinarão mais para a guerra."
+              },
+              {
+                "ref": "Isaías 2:4",
+                "text": "O SENHOR será mediador entre os povos e resolverá os conflitos das nações. Os povos transformarão suas espadas em arados e suas lanças em podadeiras. As nações deixarão de lutar entre si e já não treinarão para a guerra."
+              },
+              {
+                "ref": "2 Crônicas 25:8",
+                "text": "Se deixar que acompanhem seus soldados na batalha, mesmo que lutem com coragem, serão derrotados pelo inimigo. Deus o derrubará, pois ele tem poder para ajudá-lo ou fazê-lo tropeçar”."
+              }
+            ]
           },
           {
             "number": 11,
             "text": "Venham depressa, nações de toda parte; reúnam-se no vale!”. E agora, ó SENHOR, convoca teus guerreiros!",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 13:3",
+                "text": "Eu, o SENHOR, consagrei esses soldados; sim, chamei guerreiros valentes para executar minha ira, e eles se alegrarão quando eu for exaltado”."
+              },
+              {
+                "ref": "Sofonias 3:8",
+                "text": "Portanto, sejam pacientes”, diz o SENHOR, “pois em breve me levantarei para acusar essas nações. Resolvi juntar os reinos da terra e derramar sobre eles minha ira ardente. Toda a terra será consumida pelo fogo de meu zelo."
+              },
+              {
+                "ref": "2 Tessalonicenses 1:7",
+                "text": "Deus concederá descanso a vocês, que são afligidos, e também a nós, na revelação do Senhor Jesus, quando ele vier do céu. Virá com seus anjos poderosos,"
+              },
+              {
+                "ref": "Joel 3:2",
+                "text": "reunirei todas as nações no vale de Josafá. Ali eu as julgarei por terem maltratado Israel, minha propriedade, por terem espalhado meu povo entre as nações e repartido minha terra."
+              }
+            ]
           },
           {
             "number": 12,
             "text": "“Que as nações se mobilizem para a guerra e marchem para o vale de Josafá! Ali eu, o SENHOR, me sentarei para julgar todas elas.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 3:2",
+                "text": "reunirei todas as nações no vale de Josafá. Ali eu as julgarei por terem maltratado Israel, minha propriedade, por terem espalhado meu povo entre as nações e repartido minha terra."
+              },
+              {
+                "ref": "Salmos 98:9",
+                "text": "diante do SENHOR, pois ele vem julgar a terra. Julgará o mundo com justiça e as nações, com imparcialidade."
+              },
+              {
+                "ref": "Isaías 2:4",
+                "text": "O SENHOR será mediador entre os povos e resolverá os conflitos das nações. Os povos transformarão suas espadas em arados e suas lanças em podadeiras. As nações deixarão de lutar entre si e já não treinarão para a guerra."
+              },
+              {
+                "ref": "Salmos 96:13",
+                "text": "diante do SENHOR, pois ele vem; ele vem julgar a terra. Julgará o mundo com justiça e as nações, com sua verdade."
+              }
+            ]
           },
           {
             "number": 13,
             "text": "Lancem a foice, pois a colheita está madura. Venham e pisem as uvas, pois o tanque de prensar está cheio. Os tonéis transbordam com a perversidade das nações.”",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Apocalipse 14:15–20",
+                "text": "Então outro anjo veio do templo e gritou bem forte para aquele que estava sentado na nuvem: “Use a foice e comece a ceifar, pois chegou a hora da colheita; a safra da terra está madura!”."
+              },
+              {
+                "ref": "Marcos 4:29",
+                "text": "E, assim que o cereal está maduro, o lavrador vem e o corta com a foice, pois chegou o tempo da colheita”."
+              },
+              {
+                "ref": "Oséias 6:11",
+                "text": "“Ó Judá, uma colheita de castigo também espera por você, embora eu quisesse restaurar a situação de meu povo.”"
+              },
+              {
+                "ref": "Jeremias 51:33",
+                "text": "Assim diz o SENHOR dos Exércitos, o Deus de Israel: “A Babilônia é como o trigo na eira, prestes a ser pisado. Em breve, começará sua colheita”."
+              }
+            ]
           },
           {
             "number": 14,
             "text": "Multidões e multidões esperam no vale da decisão, onde o dia do SENHOR chegará em breve.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 3:2",
+                "text": "reunirei todas as nações no vale de Josafá. Ali eu as julgarei por terem maltratado Israel, minha propriedade, por terem espalhado meu povo entre as nações e repartido minha terra."
+              },
+              {
+                "ref": "Isaías 34:2–8",
+                "text": "Pois é grande a ira do SENHOR com as nações; está furioso com todos os seus exércitos. Ele as destruirá por completo, ele as condenará à matança."
+              },
+              {
+                "ref": "Filipenses 3:2",
+                "text": "Cuidado com os cães, aqueles que praticam o mal, os mutiladores que exigem a circuncisão."
+              },
+              {
+                "ref": "Apocalipse 16:14–16",
+                "text": "São espíritos demoníacos que realizam sinais e vão aos governantes da terra a fim de reuni-los para a batalha contra o Senhor, no grande dia de Deus, o Todo-poderoso."
+              }
+            ]
           },
           {
             "number": 15,
             "text": "O sol e a lua escurecerão, e as estrelas deixarão de brilhar.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 2:10",
+                "text": "A terra treme com seu avanço, e os céus estremecem. O sol e a lua escurecem, e as estrelas deixam de brilhar."
+              },
+              {
+                "ref": "Mateus 24:29",
+                "text": "“Imediatamente depois da angústia daqueles dias, ‘o sol escurecerá, a lua não dará luz, as estrelas cairão do céu e os poderes dos céus serão abalados’."
+              },
+              {
+                "ref": "Joel 2:31",
+                "text": "O sol se escurecerá, a lua se tornará vermelha como sangue antes que chegue o grande e terrível dia do SENHOR."
+              },
+              {
+                "ref": "Lucas 21:25–26",
+                "text": "“Haverá sinais no sol, na lua e nas estrelas. E, na terra, as nações ficarão angustiadas, perplexas com o rugir dos mares e a agitação das ondas."
+              }
+            ]
           },
           {
             "number": 16,
             "text": "A voz do SENHOR rugirá desde Sião e trovejará desde Jerusalém; os céus e a terra tremerão. Mas o SENHOR será refúgio para seu povo, uma fortaleza para o povo de Israel.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 2:10–11",
+                "text": "A terra treme com seu avanço, e os céus estremecem. O sol e a lua escurecem, e as estrelas deixam de brilhar."
+              },
+              {
+                "ref": "Amós 1:2",
+                "text": "Foi isto que ele viu e ouviu: “A voz do SENHOR rugirá desde Sião e trovejará desde Jerusalém! Os pastos verdes dos pastores secarão, e o capim no monte Carmelo murchará e morrerá”."
+              },
+              {
+                "ref": "Jeremias 25:30–31",
+                "text": "“Agora, profetize todas essas coisas e diga-lhes: “‘De sua santa habitação nos céus o SENHOR rugirá contra sua terra. Gritará como aqueles que pisam uvas, gritará contra todos os habitantes da terra."
+              },
+              {
+                "ref": "Ageu 2:6",
+                "text": "“Pois assim diz o SENHOR dos Exércitos: Em pouco tempo sacudirei novamente os céus e a terra, os mares e a terra seca."
+              }
+            ]
           }
         ]
       },
@@ -454,31 +1558,111 @@
             "number": 17,
             "text": "“Então vocês saberão que eu, o SENHOR, seu Deus, habito em Sião, meu santo monte. Jerusalém será santa, e exércitos estrangeiros não voltarão a conquistá-la.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 2:27",
+                "text": "Então vocês saberão que estou no meio de Israel, que sou o SENHOR, seu Deus, e não há nenhum outro; nunca mais meu povo será envergonhado.” O SENHOR promete seu Espírito 285 “Então, depois que eu tiver feito essas coisas..."
+              },
+              {
+                "ref": "Isaías 52:1",
+                "text": "Desperte, desperte, ó Sião! Vista-se de força! Ponha suas lindas roupas, ó cidade santa de Jerusalém, pois os incircuncisos e os impuros não entrarão mais por seus portões."
+              },
+              {
+                "ref": "Naum 1:15"
+              },
+              {
+                "ref": "Isaías 4:3",
+                "text": "Todos que restarem em Sião serão um povo santo, aqueles que permanecerem em Jerusalém, que estiverem registrados entre os vivos."
+              }
+            ]
           },
           {
             "number": 18,
             "text": "Naquele dia, vinho doce gotejará dos montes, e leite fluirá das colinas. Água encherá o leito dos riachos de Judá; uma fonte brotará do templo do SENHOR e regará o vale das Acácias.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Apocalipse 22:1–2",
+                "text": "Então o anjo me mostrou o rio da água da vida, transparente como cristal, que fluía do trono de Deus e do Cordeiro"
+              },
+              {
+                "ref": "Isaías 35:6",
+                "text": "Os aleijados pularão como o cervo, e os mudos cantarão de alegria. Fontes brotarão no deserto, e rios correrão na região desolada."
+              },
+              {
+                "ref": "Ezequiel 47:1–12",
+                "text": "Depois disso, o homem me levou de volta à entrada do templo. Ali, notei que jorrava água para o leste por debaixo da porta do templo e passava à direita do altar, do lado sul."
+              },
+              {
+                "ref": "Zacarias 14:8",
+                "text": "Naquele dia, fluirão de Jerusalém águas que dão vida; metade das águas correrá para o mar Morto e metade para o Mediterrâneo. Fluirão continuamente, tanto no verão como no inverno."
+              }
+            ]
           },
           {
             "number": 19,
             "text": "O Egito, porém, se transformará numa terra desolada, e Edom se tornará um deserto, pois atacaram o povo de Judá e mataram inocentes em sua terra.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Isaías 19:1–15",
+                "text": "Recebi esta mensagem acerca do Egito: Vejam, o SENHOR avança contra o Egito, montado em uma nuvem veloz! Os ídolos do Egito estremecem diante dele; o coração dos egípcios se derrete de medo."
+              },
+              {
+                "ref": "Jeremias 51:35",
+                "text": "Que a Babilônia sofra da mesma forma que nos fez sofrer”, diz o povo de Sião. “Que seus habitantes paguem por terem derramado nosso sangue”, diz Jerusalém."
+              },
+              {
+                "ref": "Zacarias 14:18–19",
+                "text": "Se o povo do Egito não quiser ir à festa, o SENHOR o castigará45 com as mesmas pragas que enviará sobre as outras nações que se recusarem a ir."
+              },
+              {
+                "ref": "Obadias 1:1",
+                "text": "Esta é a visão que o SENHOR Soberano revelou a Obadias acerca da terra de Edom. O julgamento de Edom é anunciado Ouvimos uma mensagem do SENHOR, que um embaixador foi enviado às nações para dizer: “Preparem-se, todos! Va..."
+              }
+            ]
           },
           {
             "number": 20,
             "text": "“Judá, porém, ficará cheia de gente para sempre, e Jerusalém permanecerá por todas as gerações.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Ezequiel 37:25",
+                "text": "Viverão na terra que dei a meu servo Jacó, a terra onde seus antepassados viveram. Eles, seus filhos e seus netos viverão ali para sempre, de geração em geração, e meu servo Davi será seu príncipe para sempre."
+              },
+              {
+                "ref": "Isaías 33:20",
+                "text": "Em vez disso, verão Sião como lugar de festas sagradas; verão Jerusalém, cidade tranquila e segura. Será como uma tenda com as cordas bem esticadas e estacas firmemente cravadas no chão."
+              },
+              {
+                "ref": "Amós 9:15",
+                "text": "Eu os plantarei firmemente ali, em sua própria terra. Nunca mais serão arrancados da terra que lhes dei”, diz o SENHOR, seu Deus."
+              }
+            ]
           },
           {
             "number": 21,
             "text": "Perdoarei os crimes de meu povo, que ainda não perdoei; e eu, o SENHOR, habitarei em Sião.” 1 1. A identificação exata dos quatro tipos de gafanhotos é incerta. 2 2. Ou como cavaleiros. 3 2. Em hebraico, para o mar oriental [...] para o mar ocidental. 4 2. A identificação exata dos quatro tipos de gafanhotos é incerta. 5 2. No texto hebraico, os versículos 2.28-32 são numerados 3.1-5. 6 2. A Septuaginta traz glorioso. 7 3. No texto hebraico, os versículos 3.1-21 são numerados 4.1-21. 8 3. Josafá significa “o SENHOR julga”. 9 3. Em hebraico, aos povos de Javã. 10 3. Em hebraico, aos sabeus. 11 3. A Septuaginta traz pois o tempo da colheita chegou. Comparar com Mc 4.. 12 3. Em hebraico, vale de Sitim.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Apocalipse 21:3",
+                "text": "Ouvi uma forte voz que vinha do trono e dizia: “Vejam, o tabernáculo de Deus está no meio de seu povo! Deus habitará com eles, e eles serão seu povo. O próprio Deus estará com eles."
+              },
+              {
+                "ref": "Ezequiel 36:25",
+                "text": "“Então aspergirei sobre vocês água pura, e ficarão limpos. Eu os purificarei de sua impureza e sua adoração a ídolos."
+              },
+              {
+                "ref": "Isaías 4:4",
+                "text": "O Senhor lavará a imundície da bela Sião; removerá de Jerusalém as manchas de sangue com o quente sopro de julgamento abrasador."
+              },
+              {
+                "ref": "Ezequiel 36:29",
+                "text": "Eu os livrarei de sua impureza. Aumentarei a produção de cereais e não enviarei mais fome à terra."
+              }
+            ]
           }
         ]
       }
