@@ -63,23 +63,43 @@ export const storage = {
     try {
       const stored = localStorage.getItem(STORAGE_KEYS.PROFILES);
       if (stored) {
-        const parsed = JSON.parse(stored);
+        let parsed = JSON.parse(stored);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          // Garantir que o perfil default do Rafael tenha role admin e PIN
-          return parsed.map(p => {
-            if (p.id === 'default') {
+          let rafaelFound = false;
+          parsed = parsed.map(p => {
+            const isRaf = p.id === 'default' || p.name?.trim().toLowerCase() === 'rafael' || p.role === 'admin';
+            if (isRaf) {
+              rafaelFound = true;
               return {
                 ...p,
+                id: 'default',
+                name: 'Rafael',
                 role: 'admin',
                 pin: p.pin || '1234',
                 requiresPin: p.requiresPin ?? true,
                 planOptIn: true,
-                planStartDate: p.planStartDate || '2026-01-01',
-                startDayId: p.startDayId || 1
+                planStartDate: '2026-01-01',
+                startDayId: 1
               };
             }
             return p;
           });
+
+          // Remove duplicatas se houver múltiplos perfis
+          const uniqueProfiles = [];
+          const seen = new Set();
+          for (const p of parsed) {
+            if (!seen.has(p.id)) {
+              seen.add(p.id);
+              uniqueProfiles.push(p);
+            }
+          }
+
+          if (!rafaelFound) {
+            uniqueProfiles.unshift(DEFAULT_PROFILES[0]);
+          }
+
+          return uniqueProfiles;
         }
       }
     } catch (e) {
@@ -125,18 +145,22 @@ export const storage = {
     return profiles.find(p => p.id === activeId) || profiles[0] || DEFAULT_PROFILES[0];
   },
 
-  // Validação do PIN do perfil (para impedir que a esposa acesse os dados do Rafael)
+  // Validação do PIN do perfil (para impedir acesso indevido)
   verifyProfilePin(profileId, inputPin) {
     const profiles = this.getProfiles();
-    const profile = profiles.find(p => p.id === profileId);
+    const profile = profiles.find(p => p.id === profileId || (p.role === 'admin' && profileId === 'default') || p.name?.toLowerCase() === 'rafael');
     if (!profile) return false;
     if (!profile.requiresPin || !profile.pin) return true;
-    return String(profile.pin).trim() === String(inputPin).trim();
+
+    const clean = String(inputPin || '').trim();
+    const storedPin = String(profile.pin).trim();
+
+    return clean === storedPin;
   },
 
   updateAdminPin(newPin) {
     const profiles = this.getProfiles();
-    const idx = profiles.findIndex(p => p.id === 'default');
+    const idx = profiles.findIndex(p => p.id === 'default' || p.role === 'admin' || p.name?.toLowerCase() === 'rafael');
     if (idx >= 0) {
       profiles[idx].pin = String(newPin).trim();
       profiles[idx].requiresPin = true;
@@ -188,9 +212,26 @@ export const storage = {
     return profiles;
   },
 
+  _isRafaelProfile(profileId) {
+    if (!profileId || profileId === 'default') return true;
+    try {
+      const stored = localStorage.getItem(STORAGE_KEYS.PROFILES);
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        const p = parsed.find(x => x.id === profileId);
+        if (p && (p.role === 'admin' || p.name?.trim().toLowerCase() === 'rafael')) {
+          return true;
+        }
+      }
+    } catch (e) {}
+    return false;
+  },
+
   _resolveKey(baseKey, profileId = this.getActiveProfileId()) {
-    const scopedKey = `${baseKey}_${profileId}`;
-    if (profileId === 'default' && !localStorage.getItem(scopedKey)) {
+    const isRafael = profileId === 'default' || this._isRafaelProfile(profileId);
+    const resolvedId = isRafael ? 'default' : profileId;
+    const scopedKey = `${baseKey}_${resolvedId}`;
+    if (resolvedId === 'default' && !localStorage.getItem(scopedKey)) {
       const legacy = localStorage.getItem(baseKey);
       if (legacy) {
         localStorage.setItem(scopedKey, legacy);
@@ -209,10 +250,11 @@ export const storage = {
       const parsed = stored ? JSON.parse(stored) : {};
       const chProgress = this.getChapterProgress(profileId) || {};
 
-      // Para o Rafael ('default'):
+      // Para o Rafael ('default' ou qualquer identificador do Rafael):
       // Rafael confirmou: "eu estou com o plano em dia, eu só não fiz a leitura de hoje."
       // Hoje é 02/11/2026 (Dia 306). Logo, os dias 1 a 305 estão 100% concluídos!
-      if (profileId === 'default') {
+      const isRafael = profileId === 'default' || this._isRafaelProfile(profileId);
+      if (isRafael) {
         return defaultDays.map(d => {
           let isCompleted = d.completed;
           let completedAt = d.completedAt;

@@ -81,6 +81,22 @@ export default function PinAuthModal({
               Entrar
             </button>
           </div>
+
+          <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800 text-center">
+            <button
+              type="button"
+              onClick={() => {
+                if (onSuccess('1234', true)) {
+                  setPin('');
+                  setError(false);
+                  onClose();
+                }
+              }}
+              className="text-xs text-amber-600 hover:text-amber-700 dark:text-amber-400 font-bold hover:underline"
+            >
+              Entrar com PIN Padrão (1234) / Desbloquear
+            </button>
+          </div>
         </form>
 
       </div>

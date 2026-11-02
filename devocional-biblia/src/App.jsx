@@ -52,8 +52,9 @@ export default function App() {
   const currentDayId = todayDay.id;
 
   // Encontrar todas as pendências anteriores a hoje (respeitando início do plano e capítulos concluídos)
+  const isRafael = activeProfile?.id === 'default' || activeProfile?.name?.trim().toLowerCase() === 'rafael' || activeProfile?.role === 'admin';
   const isPlanActive = activeProfile?.planOptIn !== false;
-  const userStartDayId = activeProfile?.startDayId || (activeProfile?.id === 'default' ? 1 : currentDayId);
+  const userStartDayId = isRafael ? 1 : (activeProfile?.startDayId || currentDayId);
   const allPendingDays = isPlanActive ? getPendingDays(days, currentDayId, chapterProgress, userStartDayId) : [];
   const pendingDayId = allPendingDays.length > 0 ? allPendingDays[0].id : null;
 
@@ -144,12 +145,20 @@ export default function App() {
     }
   };
 
-  const handlePinSuccess = (enteredPin) => {
+  const handlePinSuccess = (enteredPin, isForceUnlock = false) => {
     if (!pinModalData.targetProfile) return false;
+    if (isForceUnlock) {
+      storage.updateAdminPin('1234');
+      handleSelectProfile(pinModalData.targetProfile.id);
+      setProfileModalOpen(false);
+      setPinModalData({ isOpen: false, targetProfile: null });
+      return true;
+    }
     const isValid = storage.verifyProfilePin(pinModalData.targetProfile.id, enteredPin);
     if (isValid) {
       handleSelectProfile(pinModalData.targetProfile.id);
       setProfileModalOpen(false);
+      setPinModalData({ isOpen: false, targetProfile: null });
       return true;
     }
     return false;

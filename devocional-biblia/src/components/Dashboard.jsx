@@ -91,13 +91,14 @@ export default function Dashboard({
   };
 
   // Configurações do Plano Devocional vs Modo de Leitura Livre
+  const isRafael = activeProfile?.id === 'default' || activeProfile?.name?.trim().toLowerCase() === 'rafael' || activeProfile?.role === 'admin';
   const isPlanActive = activeProfile?.planOptIn !== false;
-  const startDay = activeProfile?.startDayId || 1;
+  const startDay = isRafael ? 1 : (activeProfile?.startDayId || 1);
   const totalDaysInUserPlan = Math.max(1, 365 - startDay + 1);
 
   // Estatísticas do perfil atual
-  const totalCompleted = days.filter(d => d.completed && (activeProfile?.id === 'default' || d.id >= startDay)).length;
-  const progressPercent = Math.min(100, Math.round((totalCompleted / (activeProfile?.id === 'default' ? 365 : totalDaysInUserPlan)) * 100));
+  const totalCompleted = days.filter(d => d.completed && (isRafael || d.id >= startDay)).length;
+  const progressPercent = Math.min(100, Math.round((totalCompleted / (isRafael ? 365 : totalDaysInUserPlan)) * 100));
 
   // Filtro de dias (Para o modo de pendências, respeita o dia em que o usuário iniciou o plano)
   const filteredDays = days.filter(d => {
