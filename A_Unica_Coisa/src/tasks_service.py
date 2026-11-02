@@ -166,3 +166,34 @@ class TasksService:
         if due_date:
             body["due"] = due_date
         return self.service.tasks().insert(tasklist=list_id, body=body).execute()
+
+    def delete_task(self, domain_key: str, task_id: str) -> bool:
+        """Exclui uma tarefa do Google Tasks."""
+        if not self.service:
+            return True
+        try:
+            list_id = self.get_or_create_list_id(domain_key)
+            self.service.tasks().delete(tasklist=list_id, task=task_id).execute()
+            return True
+        except Exception as e:
+            print(f"[TASKS] Erro ao deletar task: {e}")
+            return False
+
+    def move_task(self, from_domain: str, to_domain: str, task_id: str, new_title: Optional[str] = None) -> Optional[Dict[str, Any]]:
+        """Move uma tarefa de uma lista para outra mantendo notas e prazo."""
+        if not self.service:
+            return {"id": "mock_moved", "title": new_title or "task"}
+        try:
+            from_list_id = self.get_or_create_list_id(from_domain)
+            task_obj = self.service.tasks().get(tasklist=from_list_id, task=task_id).execute()
+            title = new_title or task_obj.get("title", "")
+            notes = task_obj.get("notes", "")
+            due = task_obj.get("due")
+            # Deleta da lista anterior
+            self.service.tasks().delete(tasklist=from_list_id, task=task_id).execute()
+            # Cria na nova lista
+            created = self.create_task(to_domain, title=title, notes=notes, due_date=due)
+            return created
+        except Exception as e:
+            print(f"[TASKS] Erro ao mover task: {e}")
+            return None

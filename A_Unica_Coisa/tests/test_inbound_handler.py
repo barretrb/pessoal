@@ -18,6 +18,8 @@ class TestInboundHandler(unittest.TestCase):
             "inferred_metadata": {"work_type": "DEEP_WORK", "leverage_score": 5}
         }])
         self.mock_orch.tasks_service.create_task = MagicMock(return_value={"id": "task_123"})
+        self.mock_orch.tasks_service.move_task = MagicMock(return_value={"id": "task_123_moved"})
+        self.mock_orch.tasks_service.delete_task = MagicMock(return_value=True)
         self.handler = InboundHandler(self.mock_orch)
 
     def test_ok_confirmation(self):
@@ -34,6 +36,32 @@ class TestInboundHandler(unittest.TestCase):
         self.assertIn("Fechar a criação dos vídeos de demonstração", result["reply"])
         self.assertEqual(result["parsed_task"]["domain"], "PROFESSIONAL")
         self.assertEqual(result["parsed_task"]["due_display"], "amanhã")
+
+    def test_set_domino_personal(self):
+        msg = "Me dominó de hoje é finalizar a configuração dos meus agentes única coisa e biblia devocional"
+        result = self.handler.process_incoming_message(msg)
+        self.assertEqual(result["action"], "SET_ONE_THING")
+        self.assertEqual(result["status"], "success")
+        self.assertEqual(result["domain"], "personal")
+        self.assertIn("Finalizar a configuração dos meus agentes única coisa e biblia devocional", result["title"])
+        self.assertIn("🏠 Pessoal", result["reply"])
+
+    def test_correction_move_to_personal(self):
+        # 1. Cria tarefa simulada
+        self.handler._record_last_task("task_999", "professional", "Finalizar agentes")
+        # 2. Usuário corrige lista
+        correction_msg = "esse não é da lista profissional é do pessoal"
+        result = self.handler.process_incoming_message(correction_msg)
+        self.assertEqual(result["action"], "MOVE_TASK")
+        self.assertEqual(result["status"], "success")
+        self.assertEqual(result["target_domain"], "personal")
+        self.assertIn("🏠 Pessoal", result["reply"])
+        self.mock_orch.tasks_service.move_task.assert_called_with(
+            from_domain="professional",
+            to_domain="personal",
+            task_id="task_999",
+            new_title="Finalizar agentes"
+        )
 
     def test_swap_task(self):
         result = self.handler.process_incoming_message("Trocar por Estruturar arquitetura de eventos")

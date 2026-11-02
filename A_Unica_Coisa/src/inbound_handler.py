@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 Processador de Mensagens Recebidas (Inbound Handler).
-Interpreta as mensagens de texto e áudio enviadas pelo usuário via WhatsApp:
+Interpreta as mensagens de texto e áudio enviadas pelo usuário via WhatsApp e Telegram:
+- Correção de lista / troca ("esse não é da lista profissional é do pessoal")
+- Definição explícita de foco / dominó ("meu dominó de hoje é X")
 - Respostas ao ritual matinal ("OK", "Trocar por X")
 - Respostas ao check-in noturno ("concluí o dominó", "fiz o contrapeso")
 - Captura contínua de novas tarefas ao longo do dia (ex.: "Amanhã preciso fechar...")
@@ -10,7 +12,7 @@ Interpreta as mensagens de texto e áudio enviadas pelo usuário via WhatsApp:
 import json
 import re
 from datetime import datetime, timedelta, timezone
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 
 class InboundHandler:
     """Interpreta intenções do usuário e executa ações correspondentes."""
@@ -23,7 +25,24 @@ class InboundHandler:
         text_clean = text.strip()
         lower = text_clean.lower()
 
-        # 1. Intenção: Confirmação do ritual matinal ("OK", "sim", "confirmo", "pode agendar")
+        # 1. Intenção: Correção de Lista (Troca de Profissional <-> Pessoal)
+        # Ex: "esse não é da lista profissional é do pessoal", "muda para pessoal", "é no pessoal"
+        correction_match = re.search(
+            r"\b(esse\s+n[aã]o\s+[eé]|n[aã]o\s+[eé]|n[aã]o\s+era|mudar\s+para|mover\s+para|trocar\s+para|colocar\s+n[oa]|coloca\s+n[oa]|[eé]\s+d[oa]|[eé]\s+n[oa]|muda\s+pr[oa]|move\s+pr[oa])\b.*?\b(pessoal|profissional)\b",
+            lower
+        )
+        is_short_correction = lower in [
+            "é pessoal", "e pessoal", "no pessoal", "na pessoal", "pessoal", 
+            "na verdade é pessoal", "mude para pessoal", "move para pessoal",
+            "é profissional", "e profissional", "no profissional", "na profissional", "profissional"
+        ]
+
+        if correction_match or is_short_correction:
+            target_domain = "personal" if "pessoal" in lower else "professional"
+            source_domain = "professional" if target_domain == "personal" else "personal"
+            return self._handle_list_correction(target_domain, source_domain, text_clean)
+
+        # 2. Intenção: Confirmação do ritual matinal ("OK", "sim", "confirmo", "pode agendar")
         if lower in ["ok", "ok!", "sim", "confirmar", "confirmo", "pode agendar", "agenda", "beleza"]:
             success = self.orchestrator.confirm_focus_block()
             if success:
@@ -39,10 +58,9 @@ class InboundHandler:
                     "reply": "⚠️ Não encontrei uma janela de foco sugerida para hoje ou ela já foi agendada."
                 }
 
-        # 2. Intenção: Substituição rápida matinal ("Trocar por X")
+        # 3. Intenção: Substituição rápida matinal ("Trocar por X")
         if lower.startswith("trocar por") or lower.startswith("mudar para"):
             new_title = re.sub(r"^(trocar por|mudar para)\s*", "", text_clean, flags=re.IGNORECASE).strip()
-            # Registra no estado como novo foco
             today_str = datetime.now().strftime("%Y-%m-%d")
             day_state = self.orchestrator.state.setdefault("daily_history", {}).setdefault(today_str, {})
             day_state["chosen_deep_task"] = {
@@ -57,7 +75,19 @@ class InboundHandler:
                 "reply": f"🔄 Foco do dia atualizado para: *{new_title}*! Responda *\"OK\"* se desejar bloquear a agenda."
             }
 
-        # 3. Intenção: Resposta ao Fechamento Noturno
+        # 4. Intenção: Declaração Explícita de Dominó ("Meu dominó de hoje é X", "Minha única coisa é X")
+        domino_match = re.search(
+            r"^(me\s+domin[oó]|meu\s+domin[oó]|meu\s+foco|minha\s+[uú]nica\s+coisa|minha\s+meta|meu\s+objetivo)\s*(de\s+hoje)?\s*([eé]|\:)\s*",
+            text_clean,
+            flags=re.IGNORECASE
+        )
+        if domino_match:
+            clean_domino_title = text_clean[domino_match.end():].strip()
+            if clean_domino_title:
+                clean_domino_title = clean_domino_title[0].upper() + clean_domino_title[1:]
+            return self._handle_set_one_thing(clean_domino_title, text_clean)
+
+        # 5. Intenção: Resposta ao Fechamento Noturno
         if any(w in lower for w in ["concluí", "conclui", "derrubei", "terminei", "feito", "fiz"]):
             completed_pro = any(w in lower for w in ["dominó", "domino", "profissional", "1", "ambos", "tudo", "os dois", "ambas"])
             completed_pes = any(w in lower for w in ["pessoal", "contrapeso", "2", "ambos", "tudo", "os dois", "ambas"])
@@ -96,22 +126,24 @@ class InboundHandler:
                     "reply": "\n".join(replies)
                 }
 
-        # 4. Intenção Padrão: Captura Contínua de Nova Tarefa (US05)
-        # Exemplo: "Amanhã preciso fechar a criação dos vídeos de demonstração"
+        # 6. Intenção Padrão: Captura Contínua de Nova Tarefa
         parsed_task = self._parse_quick_capture(text_clean)
         
-        # Insere a tarefa no Google Tasks
         domain_key = "personal" if parsed_task["domain"] == "PERSONAL" else "professional"
         created = None
         try:
             created = self.orchestrator.tasks_service.create_task(
                 domain_key=domain_key,
                 title=parsed_task["title"],
-                notes=f"Capturado via WhatsApp em {datetime.now().strftime('%d/%m/%Y %H:%M')}",
+                notes=f"Capturado via mensagem em {datetime.now().strftime('%d/%m/%Y %H:%M')}",
                 due_date=parsed_task.get("due_date")
             )
         except Exception as e:
             print(f"[INBOUND] Erro ao criar task no Google Tasks: {e}")
+
+        # Salva referência no estado para permitir correção imediata
+        task_id = created.get("id") if created else None
+        self._record_last_task(task_id=task_id, domain=domain_key, title=parsed_task["title"])
 
         domain_label = "🏠 Pessoal" if parsed_task["domain"] == "PERSONAL" else "💼 Profissional"
         due_info = f" para *{parsed_task['due_display']}*" if parsed_task.get("due_display") else ""
@@ -126,9 +158,182 @@ class InboundHandler:
             "action": "CREATE_TASK",
             "status": "success",
             "parsed_task": parsed_task,
-            "google_task_id": created.get("id") if created else None,
+            "google_task_id": task_id,
             "reply": reply_msg
         }
+
+    def _handle_set_one_thing(self, clean_title: str, raw_text: str) -> Dict[str, Any]:
+        """Processa a definição de dominó do dia com detecção refinada de lista."""
+        domain = self._detect_domain(clean_title + " " + raw_text)
+        domain_key = "personal" if domain == "PERSONAL" else "professional"
+        domain_label = "🏠 Pessoal" if domain == "PERSONAL" else "💼 Profissional"
+
+        today_str = datetime.now().strftime("%Y-%m-%d")
+        day_state = self.orchestrator.state.setdefault("daily_history", {}).setdefault(today_str, {})
+
+        created = None
+        try:
+            created = self.orchestrator.tasks_service.create_task(
+                domain_key=domain_key,
+                title=clean_title,
+                notes=f"Dominó do dia definido em {datetime.now().strftime('%d/%m/%Y %H:%M')}"
+            )
+        except Exception as e:
+            print(f"[INBOUND] Erro ao registrar dominó no Google Tasks: {e}")
+
+        task_id = created.get("id") if created else None
+        self._record_last_task(task_id=task_id, domain=domain_key, title=clean_title)
+
+        day_state["chosen_deep_task"] = {
+            "task_id": task_id,
+            "clean_title": clean_title,
+            "raw_title": clean_title,
+            "domain": domain_key,
+            "inferred_metadata": {"work_type": "DEEP_WORK", "leverage_score": 5}
+        }
+        self.orchestrator._save_state()
+
+        reply_msg = (
+            f"🎯 *Dominó Definido com Sucesso!*\n\n"
+            f"Adicionado como seu foco de hoje na lista {domain_label}:\n"
+            f"📌 *{clean_title}*\n\n"
+            f"⚡ _Classificação:_ *DEEP_WORK* (Alavancagem Máxima: 5/5)\n"
+            f"*(Responda \"OK\" a qualquer momento se desejar bloquear a agenda)*"
+        )
+
+        return {
+            "action": "SET_ONE_THING",
+            "status": "success",
+            "title": clean_title,
+            "domain": domain_key,
+            "google_task_id": task_id,
+            "reply": reply_msg
+        }
+
+    def _handle_list_correction(self, target_domain: str, source_domain: str, raw_text: str) -> Dict[str, Any]:
+        """Corrige a lista de uma tarefa recém-criada, removendo duplicidades ou mensagens de correção criadas por engano."""
+        target_label = "🏠 Pessoal" if target_domain == "personal" else "💼 Profissional"
+        source_label = "💼 Profissional" if target_domain == "personal" else "🏠 Pessoal"
+
+        last_task = self.orchestrator.state.get("last_created_task")
+        task_history = self.orchestrator.state.get("task_capture_history", [])
+
+        # Se a última tarefa capturada foi a própria frase de correção (ex: "esse não é da lista...")
+        if last_task and any(w in last_task.get("title", "").lower() for w in ["não é da", "nao e da", "não é profissional", "nao e profissional", "é do pessoal"]):
+            accidental_id = last_task.get("id")
+            if accidental_id:
+                try:
+                    self.orchestrator.tasks_service.delete_task(last_task.get("domain", source_domain), accidental_id)
+                except Exception as e:
+                    print(f"[INBOUND] Erro ao deletar task acidental: {e}")
+
+            # Busca a tarefa anterior real
+            if len(task_history) >= 2:
+                last_task = task_history[-2]
+            else:
+                last_task = None
+
+        if not last_task:
+            # Tenta buscar nas tarefas ativas da lista de origem
+            active = self.orchestrator.tasks_service.fetch_active_tasks(source_domain)
+            if active:
+                last_task = {
+                    "id": active[-1].get("task_id"),
+                    "title": active[-1].get("clean_title"),
+                    "domain": source_domain
+                }
+
+        if last_task and last_task.get("id"):
+            task_id = last_task["id"]
+            clean_title = last_task.get("title", "Tarefa")
+
+            # Remove prefixos estranhos se houverem
+            clean_title = re.sub(
+                r"^(me\s+domin[oó]\s+de\s+hoje\s+[eé]|meu\s+domin[oó]\s+de\s+hoje\s+[eé])\s*",
+                "",
+                clean_title,
+                flags=re.IGNORECASE
+            ).strip()
+            if clean_title:
+                clean_title = clean_title[0].upper() + clean_title[1:]
+
+            moved = self.orchestrator.tasks_service.move_task(
+                from_domain=source_domain,
+                to_domain=target_domain,
+                task_id=task_id,
+                new_title=clean_title
+            )
+
+            # Atualiza estado do foco do dia se era o dominó
+            today_str = datetime.now().strftime("%Y-%m-%d")
+            day_state = self.orchestrator.state.get("daily_history", {}).get(today_str, {})
+            if day_state.get("chosen_deep_task"):
+                day_state["chosen_deep_task"]["clean_title"] = clean_title
+                day_state["chosen_deep_task"]["domain"] = target_domain
+                if moved and moved.get("id"):
+                    day_state["chosen_deep_task"]["task_id"] = moved.get("id")
+
+            self._record_last_task(
+                task_id=moved.get("id") if moved else task_id,
+                domain=target_domain,
+                title=clean_title
+            )
+
+            reply_msg = (
+                f"🔄 *Corrigido com sucesso!*\n\n"
+                f"Movi a tarefa para a lista {target_label}:\n"
+                f"📌 *{clean_title}*\n\n"
+                f"*(Ela foi removida da lista {source_label})*"
+            )
+            return {
+                "action": "MOVE_TASK",
+                "status": "success",
+                "target_domain": target_domain,
+                "title": clean_title,
+                "reply": reply_msg
+            }
+        else:
+            return {
+                "action": "MOVE_TASK",
+                "status": "not_found",
+                "reply": f"⚠️ Não localizei a tarefa anterior para mover. Pode digitar o nome dela que adiciono direto na lista {target_label}!"
+            }
+
+    def _record_last_task(self, task_id: Optional[str], domain: str, title: str):
+        """Armazena histórico das últimas tarefas capturadas para auditoria e correções."""
+        record = {
+            "id": task_id,
+            "domain": domain,
+            "title": title,
+            "timestamp": datetime.now().isoformat()
+        }
+        self.orchestrator.state["last_created_task"] = record
+        if "task_capture_history" not in self.orchestrator.state:
+            self.orchestrator.state["task_capture_history"] = []
+        self.orchestrator.state["task_capture_history"].append(record)
+        if len(self.orchestrator.state["task_capture_history"]) > 10:
+            self.orchestrator.state["task_capture_history"] = self.orchestrator.state["task_capture_history"][-10:]
+        self.orchestrator._save_state()
+
+    def _detect_domain(self, text: str) -> str:
+        """Determina com precisão se a tarefa pertence ao domínio PESSOAL ou PROFISSIONAL."""
+        lower = text.lower()
+
+        # Palavras-chave explícitas
+        if "profissional" in lower or "trabalho" in lower or "reunião" in lower or "squad" in lower or "cliente" in lower:
+            return "PROFESSIONAL"
+
+        personal_keywords = [
+            "pessoal", "pessoais", "meus agentes", "agente", "agentes", 
+            "bíblia", "biblia", "devocional", "estudo", "estudos", "inglês", "ingles", 
+            "corrida", "treino", "academia", "saúde", "saude", "médico", "medico", 
+            "consulta", "remédio", "remedio", "casa", "esposa", "marido", "filho", "filha", 
+            "família", "familia", "carro", "supermercado", "mercado", "feira", "pagar conta"
+        ]
+        if any(k in lower for k in personal_keywords):
+            return "PERSONAL"
+
+        return "PROFESSIONAL"
 
     def _parse_quick_capture(self, text: str) -> Dict[str, Any]:
         """Interpreta o texto capturado para extrair título limpo, data e domínio."""
@@ -152,20 +357,26 @@ class InboundHandler:
             due_iso = target_dt.replace(hour=18, minute=0, second=0).isoformat() + "Z"
             due_display = "segunda-feira"
 
-        # Detecção de Domínio (Pessoal vs Profissional)
-        personal_keywords = ["comprar", "mercado", "treino", "academia", "médico", "consulta", "remédio", "casa", "esposa", "filho", "família", "carro", "pagar conta"]
-        is_personal = any(k in lower for k in personal_keywords)
-        domain = "PERSONAL" if is_personal else "PROFESSIONAL"
+        # Detecção de Domínio
+        domain = self._detect_domain(text)
 
-        # Limpeza do título (remove "amanhã preciso", "lembrar de", etc.)
+        # Limpeza robusta de prefixos de intenção
         clean_title = re.sub(
-            r"^(amanhã|amanha|hoje|lembrar de|preciso|favor|cadastrar|anotar|não esquecer de)\s*",
+            r"^(me\s+domin[oó]|meu\s+domin[oó]|meu\s+foco|minha\s+[uú]nica\s+coisa|minha\s+meta|meu\s+objetivo)\s*(de\s+hoje)?\s*([eé]|\:)\s*",
             "",
             text,
             flags=re.IGNORECASE
         ).strip()
-        # Se começou com verbo de novo (ex.: "amanhã preciso fechar" -> "fechar...")
-        clean_title = re.sub(r"^(preciso|lembrar de)\s*", "", clean_title, flags=re.IGNORECASE).strip()
+
+        clean_title = re.sub(
+            r"^(amanhã|amanha|hoje|segunda|terça|quarta|quinta|sexta|lembrar de|preciso|favor|cadastrar|anotar|não esquecer de|adiciona|adicionar|cria|criar)\s*",
+            "",
+            clean_title,
+            flags=re.IGNORECASE
+        ).strip()
+
+        clean_title = re.sub(r"^(preciso|lembrar de|que preciso)\s*", "", clean_title, flags=re.IGNORECASE).strip()
+
         if clean_title:
             clean_title = clean_title[0].upper() + clean_title[1:]
         else:
