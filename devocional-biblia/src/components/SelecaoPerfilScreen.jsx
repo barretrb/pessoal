@@ -5,6 +5,7 @@ const AVATAR_OPTIONS = ['👨', '👩', '👦', '👧', '👴', '👵', '✝️'
 
 export default function SelecaoPerfilScreen({
   profiles = [],
+  existingProfiles: existingProfilesProp,
   onSelectProfileRequest,
   onCreateProfile
 }) {
@@ -20,7 +21,9 @@ export default function SelecaoPerfilScreen({
     setNewName('');
   };
 
-  const existingProfiles = profiles && profiles.length > 0 ? profiles : [];
+  const existingProfiles = (existingProfilesProp && existingProfilesProp.length > 0)
+    ? existingProfilesProp 
+    : (profiles && profiles.length > 0 ? profiles : []);
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-zinc-50 dark:bg-zinc-950 sepia:bg-[#fbf0d9] text-zinc-900 dark:text-zinc-100 sepia:text-[#433422] transition-colors">

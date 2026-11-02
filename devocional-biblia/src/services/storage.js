@@ -110,13 +110,11 @@ export const storage = {
     try {
       const active = localStorage.getItem(STORAGE_KEYS.ACTIVE_PROFILE);
       if (active === '__none__') return null;
-      if (active === 'esposa') {
-        localStorage.setItem(STORAGE_KEYS.ACTIVE_PROFILE, 'default');
-        return 'default';
-      }
+      if (active === 'esposa') return null;
       if (active) return active;
     } catch (e) {}
-    return 'default';
+    // Em dispositivos novos ou sem login ativo, inicia deslogado para exigir Criar Conta ou Login
+    return null;
   },
 
   setActiveProfileId(profileId) {
