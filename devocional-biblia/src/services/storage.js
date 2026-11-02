@@ -30,7 +30,10 @@ export const DEFAULT_PROFILES = [
     color: 'amber',
     role: 'admin',        // Rafael é o Administrador da conta
     pin: '1234',          // PIN de segurança de 4 dígitos para proteger o perfil
-    requiresPin: true
+    requiresPin: true,
+    planOptIn: true,      // Rafael está com o plano anual ativo desde 01/01/2026
+    planStartDate: '2026-01-01',
+    startDayId: 1
   },
   { 
     id: 'esposa', 
@@ -39,7 +42,10 @@ export const DEFAULT_PROFILES = [
     color: 'rose',
     role: 'member',       // Esposa é Membro
     pin: '',
-    requiresPin: false
+    requiresPin: false,
+    planOptIn: null,      // Pergunta no onboarding se quer participar ou apenas Bíblia/Estudos
+    planStartDate: null,
+    startDayId: null
   }
 ];
 
@@ -66,7 +72,10 @@ export const storage = {
                 ...p,
                 role: 'admin',
                 pin: p.pin || '1234',
-                requiresPin: p.requiresPin ?? true
+                requiresPin: p.requiresPin ?? true,
+                planOptIn: true,
+                planStartDate: p.planStartDate || '2026-01-01',
+                startDayId: p.startDayId || 1
               };
             }
             return p;
@@ -128,7 +137,7 @@ export const storage = {
     return false;
   },
 
-  createProfile(name, avatar = '👤', color = 'amber', role = 'member', pin = '') {
+  createProfile(name, avatar = '👤', color = 'amber', role = 'member', pin = '', planOptIn = null, planStartDate = null, startDayId = null) {
     const profiles = this.getProfiles();
     const newId = 'profile_' + Date.now();
     const newProfile = { 
@@ -138,7 +147,10 @@ export const storage = {
       color,
       role: role || 'member',
       pin: pin ? String(pin).trim() : '',
-      requiresPin: !!pin
+      requiresPin: !!pin,
+      planOptIn: planOptIn !== undefined ? planOptIn : null,
+      planStartDate: planStartDate || null,
+      startDayId: startDayId || null
     };
     profiles.push(newProfile);
     this.saveProfiles(profiles);
@@ -189,7 +201,8 @@ export const storage = {
       const chProgress = this.getChapterProgress(profileId) || {};
 
       // Para o Rafael ('default'):
-      // Se não há alteração explícita no parsed, os dias concluídos originais (dias 1 a 299) são preservados!
+      // Rafael confirmou: "eu estou com o plano em dia, eu só não fiz a leitura de hoje."
+      // Hoje é 02/11/2026 (Dia 306). Logo, os dias 1 a 305 estão 100% concluídos!
       if (profileId === 'default') {
         return defaultDays.map(d => {
           let isCompleted = d.completed;
@@ -199,10 +212,16 @@ export const storage = {
           if (parsed[d.id] !== undefined) {
             isCompleted = parsed[d.id].completed;
             completedAt = parsed[d.id].completedAt;
-          } else if (d.id <= 299) {
-            // Garante que todo o histórico do Rafael até o dia 299 permaneça intacto
+          }
+
+          // Rafael está em dia até o dia 305:
+          if (d.id <= 305) {
             isCompleted = true;
             completedAt = completedAt || `2026-${String(Math.floor(d.id / 31) + 1).padStart(2, '0')}-01`;
+          } else if (d.id === 306 && parsed[d.id] === undefined) {
+            // Leitura de hoje pendente
+            isCompleted = false;
+            completedAt = null;
           }
 
           // RECONCILIAÇÃO INTELIGENTE: Se todos os capítulos do dia já foram concluídos, o dia é considerado concluído

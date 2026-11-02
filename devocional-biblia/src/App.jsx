@@ -12,12 +12,13 @@ import EstudoLivroModal from './components/EstudoLivroModal';
 import PerfilModal from './components/PerfilModal';
 import PinAuthModal from './components/PinAuthModal';
 import CloudSyncModal from './components/CloudSyncModal';
+import PlanoDevocionalOnboardingModal from './components/PlanoDevocionalOnboardingModal';
 
 import initialDays from './data/plano365.json';
 import lucasData from './data/lucas_nvt.json';
 import { storage, DEFAULT_DASHBOARD_LAYOUT } from './services/storage';
 import { cloudDbService } from './services/cloudDbService';
-import { getTodayDay, getPendingDays } from './services/dateUtils';
+import { getTodayDay, getPendingDays, formatDateBR } from './services/dateUtils';
 import { fetchBookData, parseReading } from './services/bibleService';
 import { telemetryService } from './services/telemetryService';
 import { supabaseSyncService } from './services/supabaseSyncService';
@@ -46,11 +47,13 @@ export default function App() {
   const [chapterProgress, setChapterProgress] = useState(() => storage.getChapterProgress(activeProfileId));
 
   // Cálculo DINÂMICO da data de hoje e pendências
-  const todayDay = getTodayDay(days) || days[298];
+  const todayDay = getTodayDay(days) || days[305];
   const currentDayId = todayDay.id;
 
-  // Encontrar todas as pendências anteriores a hoje (respeitando capítulos concluídos)
-  const allPendingDays = getPendingDays(days, currentDayId, chapterProgress);
+  // Encontrar todas as pendências anteriores a hoje (respeitando início do plano e capítulos concluídos)
+  const isPlanActive = activeProfile?.planOptIn !== false;
+  const userStartDayId = activeProfile?.startDayId || (activeProfile?.id === 'default' ? 1 : currentDayId);
+  const allPendingDays = isPlanActive ? getPendingDays(days, currentDayId, chapterProgress, userStartDayId) : [];
   const pendingDayId = allPendingDays.length > 0 ? allPendingDays[0].id : null;
 
   // Visualização e Seleção
@@ -160,6 +163,30 @@ export default function App() {
     const newProf = storage.createProfile(name, avatar, color, role, pin);
     setProfiles([...storage.getProfiles()]);
     handleSelectProfile(newProf.id);
+  };
+
+
+  const handleUpdateProfile = (profileId, updates) => {
+    const updated = storage.updateProfile(profileId, updates);
+    setProfiles([...updated]);
+    cloudDbService.triggerAutoSync();
+  };
+
+  const handleAcceptPlan = () => {
+    const todayStr = todayDay?.date || new Date().toISOString().split('T')[0];
+    handleUpdateProfile(activeProfileId, {
+      planOptIn: true,
+      planStartDate: todayStr,
+      startDayId: currentDayId
+    });
+  };
+
+  const handleDeclinePlan = () => {
+    handleUpdateProfile(activeProfileId, {
+      planOptIn: false,
+      planStartDate: null,
+      startDayId: null
+    });
   };
 
   const handleDeleteProfile = (profileId) => {
@@ -384,6 +411,18 @@ export default function App() {
             onUpdateDashboardLayout={handleUpdateDashboardLayout}
             onResetDashboardLayout={handleResetDashboardLayout}
             onOpenCloud={() => setCloudModalOpen(true)}
+            onOpenBibleArc={(book, chapter) => {
+              setBibleArcData({ 
+                isOpen: true, 
+                book: book || 'Lucas', 
+                chapter: chapter || 1, 
+                verses: [], 
+                passage: `${book || 'Lucas'} ${chapter || 1}`, 
+                text: '' 
+              });
+            }}
+            onOptInPlan={handleAcceptPlan}
+            onOptOutPlan={handleDeclinePlan}
           />
         ) : (
           <LeitorBiblico
@@ -456,6 +495,7 @@ export default function App() {
         onCreateProfile={handleCreateProfile}
         onDeleteProfile={handleDeleteProfile}
         onUpdateAdminPin={handleUpdateAdminPin}
+        onUpdateProfile={handleUpdateProfile}
         getProfileProgressStats={getProfileProgressStats}
       />
 
@@ -541,6 +581,16 @@ export default function App() {
           setFavoritesModalOpen(false);
           setCurrentView('reader');
         }}
+      />
+
+      {/* Modal de Boas-Vindas & Escolha do Plano Devocional para Novos Perfis */}
+      <PlanoDevocionalOnboardingModal
+        isOpen={!!(activeProfile && (activeProfile.planOptIn === null || activeProfile.planOptIn === undefined))}
+        profileName={activeProfile?.name}
+        todayDayId={currentDayId}
+        todayDateFormatted={formatDateBR(todayDay?.date, true) || 'hoje'}
+        onAcceptPlan={handleAcceptPlan}
+        onDeclinePlan={handleDeclinePlan}
       />
 
       {/* Rodapé com Indicador de Auto-Sync Automático */}

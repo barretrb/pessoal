@@ -10,7 +10,9 @@ import {
   KeyRound, 
   Users, 
   BookOpen,
-  Edit2
+  Edit2,
+  Calendar,
+  Sparkles
 } from 'lucide-react';
 
 const AVATAR_OPTIONS = ['👨', '👩', '👦', '👧', '👴', '👵', '✝️', '📖', '🕊️', '❤️'];
@@ -24,6 +26,7 @@ export default function PerfilModal({
   onCreateProfile,
   onDeleteProfile,
   onUpdateAdminPin,
+  onUpdateProfile,
   getProfileProgressStats
 }) {
   const [isCreating, setIsCreating] = useState(false);
@@ -167,6 +170,66 @@ export default function PerfilModal({
                 </div>
               );
             })}
+          </div>
+
+          {/* Seção de Preferências: Plano Devocional Anual vs Modo Livre */}
+          <div className="p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-800/90 shadow-2xs space-y-2.5">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 rounded-xl bg-amber-500/15 text-amber-600 dark:text-amber-400 flex items-center justify-center">
+                  <Calendar className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-zinc-900 dark:text-zinc-100">
+                    Plano Devocional Anual
+                  </h4>
+                  <p className="text-[10px] text-zinc-500 dark:text-zinc-400">
+                    Para o perfil ativo: <strong>{activeProfile?.name}</strong>
+                  </p>
+                </div>
+              </div>
+
+              <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full ${
+                activeProfile?.planOptIn !== false
+                  ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300'
+                  : 'bg-zinc-100 text-zinc-600 dark:bg-zinc-700 dark:text-zinc-300'
+              }`}>
+                {activeProfile?.planOptIn !== false ? '✓ Ativo' : 'Oculto (Modo Livre)'}
+              </span>
+            </div>
+
+            <p className="text-[11px] text-zinc-600 dark:text-zinc-300 leading-relaxed">
+              {activeProfile?.planOptIn !== false
+                ? `Seu plano está ativo ${activeProfile?.planStartDate ? `desde ${activeProfile.planStartDate}` : 'desde 01/01/2026'}. As metas diárias e o calendário estão visíveis.`
+                : 'O plano devocional está oculto. Você tem acesso livre à Bíblia completa, aos comentários teológicos e ao Arqueamento BibleArc sem metas ou atrasos.'}
+            </p>
+
+            <button
+              type="button"
+              onClick={() => {
+                const willEnable = activeProfile?.planOptIn === false;
+                const todayStr = new Date().toISOString().split('T')[0];
+                if (onUpdateProfile) {
+                  onUpdateProfile(activeProfile.id, {
+                    planOptIn: willEnable,
+                    planStartDate: willEnable ? todayStr : null,
+                    startDayId: willEnable ? 306 : null
+                  });
+                }
+              }}
+              className={`w-full py-2 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center space-x-1.5 shadow-2xs ${
+                activeProfile?.planOptIn !== false
+                  ? 'bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-700 dark:hover:bg-zinc-600 text-zinc-700 dark:text-zinc-200'
+                  : 'bg-amber-500 hover:bg-amber-600 text-white shadow-amber-500/20'
+              }`}
+            >
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>
+                {activeProfile?.planOptIn !== false
+                  ? 'Ocultar Plano (Mudar para Modo Leitura Livre)'
+                  : 'Ativar Plano Devocional a partir de Hoje'}
+              </span>
+            </button>
           </div>
 
           {/* Seção Exclusiva do Admin: Alterar PIN de Segurança */}

@@ -18,9 +18,13 @@ export function getTodayDay(daysList) {
   return daysList.find(d => d.id === clamped) || daysList[clamped - 1] || daysList[0];
 }
 
-export function getPendingDays(daysList, currentDayId, chapterProgress = {}) {
+export function getPendingDays(daysList, currentDayId, chapterProgress = {}, startDayId = 1) {
   if (!daysList) return [];
+  const effectiveStart = startDayId || 1;
   return daysList.filter(d => {
+    // Para novos usuários que iniciam o plano após 01/01/2026:
+    // Dias anteriores ao início do plano NUNCA são considerados pendências/atrasos!
+    if (d.id < effectiveStart) return false;
     // Se o dia já está marcado como concluído, não é pendente
     if (d.completed) return false;
     // Se não é dia anterior a hoje, não é pendência acumulada

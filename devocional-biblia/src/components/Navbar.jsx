@@ -81,18 +81,20 @@ export default function Navbar({
             <span>Bíblia de Estudos</span>
           </button>
 
-          {/* Leitura de Hoje */}
-          <button
-            onClick={() => onSelectDay(currentDayId)}
-            className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
-              currentView === 'reader'
-                ? 'bg-amber-500 text-white shadow-sm'
-                : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
-            }`}
-          >
-            <Flame className="w-3.5 h-3.5 text-amber-400" />
-            <span>Hoje (Dia {currentDayId})</span>
-          </button>
+          {/* Leitura de Hoje (Exibido se o plano devocional estiver ativo) */}
+          {activeProfile?.planOptIn !== false && (
+            <button
+              onClick={() => onSelectDay(currentDayId)}
+              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+                currentView === 'reader'
+                  ? 'bg-amber-500 text-white shadow-sm'
+                  : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+              }`}
+            >
+              <Flame className="w-3.5 h-3.5 text-amber-400" />
+              <span>Hoje (Dia {currentDayId})</span>
+            </button>
+          )}
         </div>
 
         {/* 3. MENU DIREITO ULTRA-ENXUTO (OTIMIZADO PARA CELULAR) */}

@@ -79,9 +79,18 @@ export const cloudDbService = {
       familyCode: cloudConfig.familyCode || 'DEVOCIONAL-SYNC-RAFAEL',
       lastCompletedDay: maxCompletedDay,
       pendingDays,
-      completedChapters: completedChapters.slice(-10), // Guarda os últimos 10 capítulos completados (ultraleve < 750 bytes)
+      completedChapters: completedChapters.slice(-5), // Guarda os últimos 5 capítulos completados (ultraleve)
       updatedAt: new Date().toISOString(),
-      profiles,
+      profiles: profiles.map(p => ({
+        id: p.id,
+        name: p.name,
+        avatar: p.avatar,
+        role: p.role,
+        pin: p.pin || '',
+        requiresPin: !!p.requiresPin,
+        ...(p.planOptIn !== undefined && p.planOptIn !== null ? { planOptIn: p.planOptIn } : {}),
+        ...(p.startDayId ? { startDayId: p.startDayId } : {})
+      })),
       activeProfileId,
       progressByProfile: {
         default: compactProgress,

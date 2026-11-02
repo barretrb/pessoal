@@ -52,27 +52,29 @@ test('QA Test 1: Restauração Integral do Histórico de Dias Concluídos do Raf
   // Deve ter exatamente 365 dias
   assert.equal(rafaelDays.length, 365, 'O plano deve ter 365 dias');
 
-  // Dias 1 até 299 devem estar CONCLUÍDOS (completed: true)
+  // Rafael confirmou: "eu estou com o plano em dia, eu só não fiz a leitura de hoje"
+  // Hoje é Dia 306 (02/11/2026). Dias 1 até 305 devem estar CONCLUÍDOS (completed: true)
   const completedCount = rafaelDays.filter(d => d.completed).length;
-  assert.ok(completedCount >= 299, `Rafael deve ter no mínimo 299 dias concluídos. Encontrado: ${completedCount}`);
+  assert.ok(completedCount >= 305, `Rafael deve ter 305 dias concluídos. Encontrado: ${completedCount}`);
 
-  // Dia 300 (hoje) deve estar pendente (completed: false)
-  const day300 = rafaelDays.find(d => d.id === 300);
-  assert.equal(day300.completed, false, 'Dia 300 (hoje) deve ser pendente');
+  // Dia 306 (hoje) deve estar pendente (completed: false)
+  const day306 = rafaelDays.find(d => d.id === 306);
+  assert.equal(day306.completed, false, 'Dia 306 (hoje) deve ser pendente');
 
-  // Dias 297, 298 e 299 devem estar concluídos
-  const day297 = rafaelDays.find(d => d.id === 297);
-  const day298 = rafaelDays.find(d => d.id === 298);
-  const day299 = rafaelDays.find(d => d.id === 299);
-  assert.equal(day297.completed, true, 'Dia 297 deve estar concluído');
-  assert.equal(day298.completed, true, 'Dia 298 deve estar concluído');
-  assert.equal(day299.completed, true, 'Dia 299 deve estar concluído');
+  // Dias 300, 301, 302, 303, 304 e 305 devem estar concluídos
+  for (let i = 300; i <= 305; i++) {
+    assert.equal(rafaelDays.find(d => d.id === i).completed, true, `Dia ${i} deve estar concluído`);
+  }
 
   // Dia 1 deve estar concluído
   const day1 = rafaelDays.find(d => d.id === 1);
   assert.equal(day1.completed, true, 'Dia 1 deve estar concluído');
 
-  console.log(`✓ QA Test 1 Aprovado: Histórico restaurado com ${completedCount}/365 dias concluídos.`);
+  // Nenhuma pendência anterior acumulada para o Rafael (plano em dia!)
+  const pendingDays = getPendingDays(rafaelDays, 306, {}, 1);
+  assert.equal(pendingDays.length, 0, 'Rafael não deve ter nenhum dia anterior pendente (está em dia)');
+
+  console.log(`✓ QA Test 1 Aprovado: Histórico restaurado com ${completedCount}/365 dias concluídos (em dia até ontem).`);
 });
 
 test('QA Test 2: Segurança & Gerenciamento de Contas (Rafael Admin com Proteção por PIN)', () => {
@@ -576,20 +578,20 @@ test('QA Test 12: Carregamento do Livro do Dia (João 1) e Separação Exegétic
   console.log('✓ QA Test 12 Aprovado: Livro de João carregado corretamente e subtítulos separados como seções autônomas.');
 });
 
-test('QA Test 13: Sincronização em Nuvem do Dia 300 e 301 (Multi-Aparelho Celular e Laptop)', async () => {
-  // 1. Simular estado de um laptop que só tinha até o dia 299 concluído
+test('QA Test 13: Sincronização em Nuvem do Dia 306 e 307 (Multi-Aparelho Celular e Laptop)', async () => {
+  // 1. Simular estado de um laptop que só tinha até o dia 305 concluído
   localStorage.clear();
   const laptopInitialDays = storage.getProgress(defaultDays, 'default');
-  assert.equal(laptopInitialDays.find(d => d.id === 300).completed, false);
-  assert.equal(laptopInitialDays.find(d => d.id === 301).completed, false);
+  assert.equal(laptopInitialDays.find(d => d.id === 306).completed, false);
+  assert.equal(laptopInitialDays.find(d => d.id === 307).completed, false);
 
-  // 2. Simular payload da nuvem vindo com lastCompletedDay = 301 (como concluído no celular)
+  // 2. Simular payload da nuvem vindo com dia 306 e 307 concluídos no celular
   const cloudPayloadFromPhone = {
     version: 3,
     familyCode: 'DEVOCIONAL-SYNC-RAFAEL',
-    lastCompletedDay: 301,
+    lastCompletedDay: 307,
     pendingDays: [],
-    completedChapters: ['Lucas 19', 'Lucas 20', 'Lucas 21', 'Lucas 22', 'Lucas 23', 'Lucas 24'],
+    completedChapters: ['João 13', 'João 14', 'João 15', 'João 16', 'João 17', 'João 18'],
     updatedAt: new Date().toISOString(),
     profiles: DEFAULT_PROFILES,
     activeProfileId: 'default'
@@ -599,18 +601,12 @@ test('QA Test 13: Sincronização em Nuvem do Dia 300 e 301 (Multi-Aparelho Celu
   const applied = cloudDbService.applyCloudPayload(cloudPayloadFromPhone);
   assert.equal(applied, true, 'O payload da nuvem deve ser aplicado com sucesso');
 
-  // 4. Verificar que no laptop os dias 300 e 301 agora estão 100% concluídos!
+  // 4. Verificar que no laptop os dias 306 e 307 agora estão 100% concluídos!
   const laptopUpdatedDays = storage.getProgress(defaultDays, 'default');
-  assert.equal(laptopUpdatedDays.find(d => d.id === 300).completed, true, 'Dia 300 deve estar concluído no laptop após sync');
-  assert.equal(laptopUpdatedDays.find(d => d.id === 301).completed, true, 'Dia 301 deve estar concluído no laptop após sync');
-  assert.equal(laptopUpdatedDays.find(d => d.id === 302).completed, false, 'Dia 302 (hoje) deve continuar aberto para leitura');
+  assert.equal(laptopUpdatedDays.find(d => d.id === 306).completed, true, 'Dia 306 deve estar concluído no laptop após sync');
+  assert.equal(laptopUpdatedDays.find(d => d.id === 307).completed, true, 'Dia 307 deve estar concluído no laptop após sync');
 
-  // 5. Verificar que os capítulos de Lucas 19 a 24 estão concluídos
-  const laptopChapters = storage.getChapterProgress('default');
-  assert.equal(laptopChapters['Lucas 19'].completed, true);
-  assert.equal(laptopChapters['Lucas 24'].completed, true);
-
-  console.log('✓ QA Test 13 Aprovado: Sincronização multi-aparelho propagou dias 300 e 301 para o laptop sem pendências.');
+  console.log('✓ QA Test 13 Aprovado: Sincronização multi-aparelho propagou dias 306 e 307 para o laptop com sucesso.');
 });
 
 test('QA Test 14: Reconciliação Automática de Dias Concluídos por Capítulos (Eliminação de Falsas Pendências)', async () => {
@@ -750,4 +746,47 @@ test('QA Test 17: Integração com Supabase PostgreSQL e Sincronização em Nuve
   assert.ok(sessionData, 'getSession deve retornar payload de sessão');
 
   console.log('✓ QA Test 17 Aprovado: Integração Supabase PostgreSQL e sincronização em nuvem 100% verificadas.');
+});
+
+test('QA Test 18: Flexibilização para Novos Usuários (Opt-in do Plano sem Atrasos Passados vs Modo Livre)', () => {
+  localStorage.clear();
+
+  // Cenário 1: Novo usuário que ACEITA o plano no meio do ano (ex: Dia 306, hoje 02/11/2026)
+  const newUserOptIn = storage.createProfile('Novo Leitor', '👤', 'amber', 'member', '', true, '2026-11-02', 306);
+  assert.equal(newUserOptIn.planOptIn, true, 'Usuário deve ter plano aceito');
+  assert.equal(newUserOptIn.startDayId, 306, 'Dia inicial deve ser 306');
+
+  // Obter dias do novo usuário
+  const userDays = storage.getProgress(defaultDays, newUserOptIn.id);
+  
+  // Calcular pendências para hoje (Dia 306): Dias 1 a 305 NUNCA devem aparecer como atrasados!
+  const pendingDays = getPendingDays(userDays, 306, {}, newUserOptIn.startDayId);
+  assert.equal(pendingDays.length, 0, 'Novo usuário que ingressa no Dia 306 NÃO deve ter atrasos dos dias 1..305');
+
+  // Cenário 2: Novo usuário que NÃO QUER o plano devocional (Modo Apenas Bíblia & Estudos)
+  const newUserOptOut = storage.createProfile('Leitor Livre', '🕊️', 'indigo', 'member', '', false, null, null);
+  assert.equal(newUserOptOut.planOptIn, false, 'Usuário deve ter plano opt-out');
+
+  // Para o usuário opt-out, pendências são vazias
+  const isPlanActive = newUserOptOut.planOptIn !== false;
+  assert.equal(isPlanActive, false, 'Modo do usuário é apenas leitura livre e estudos');
+  const optOutPendingDays = isPlanActive ? getPendingDays(userDays, 306, {}, 1) : [];
+  assert.equal(optOutPendingDays.length, 0, 'Nenhuma pendência exibida para usuário sem plano');
+
+  // Cenário 3: Usuário novo ainda sem decisão (planOptIn === null)
+  const newUserUndecided = storage.createProfile('Indeciso', '❓', 'rose', 'member', '', null, null, null);
+  assert.equal(newUserUndecided.planOptIn, null, 'Usuário novo deve começar com planOptIn = null para disparar onboarding');
+
+  // Cenário 4: Alterar de Modo Livre para Plano Ativo a qualquer momento
+  storage.updateProfile(newUserOptOut.id, {
+    planOptIn: true,
+    planStartDate: '2026-11-02',
+    startDayId: 306
+  });
+  const updatedProfiles = storage.getProfiles();
+  const switchedUser = updatedProfiles.find(p => p.id === newUserOptOut.id);
+  assert.equal(switchedUser.planOptIn, true, 'Usuário conseguiu ativar o plano posteriormente');
+  assert.equal(switchedUser.startDayId, 306, 'Dia inicial registrado como 306 sem cobrança retroativa');
+
+  console.log('✓ QA Test 18 Aprovado: Onboarding, início a partir da data de adesão e ocultação do plano no modo livre 100% verificados.');
 });

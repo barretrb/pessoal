@@ -40,12 +40,15 @@ export default function Dashboard({
   chapterProgress = {},
   onOpenBibleNav,
   onOpenStudyInfo,
+  onOpenBibleArc,
   activeProfile,
   onOpenProfiles,
   dashboardLayout,
   onUpdateDashboardLayout,
   onResetDashboardLayout,
-  onOpenCloud
+  onOpenCloud,
+  onOptInPlan,
+  onOptOutPlan
 }) {
   const [filter, setFilter] = useState('all'); // all, pending, completed
   const [showVideoPlayer, setShowVideoPlayer] = useState(false);
@@ -85,14 +88,19 @@ export default function Dashboard({
     });
   };
 
-  // Estatísticas do perfil atual
-  const totalCompleted = days.filter(d => d.completed).length;
-  const progressPercent = Math.round((totalCompleted / 365) * 100);
+  // Configurações do Plano Devocional vs Modo de Leitura Livre
+  const isPlanActive = activeProfile?.planOptIn !== false;
+  const startDay = activeProfile?.startDayId || 1;
+  const totalDaysInUserPlan = Math.max(1, 365 - startDay + 1);
 
-  // Filtro de dias
+  // Estatísticas do perfil atual
+  const totalCompleted = days.filter(d => d.completed && (activeProfile?.id === 'default' || d.id >= startDay)).length;
+  const progressPercent = Math.min(100, Math.round((totalCompleted / (activeProfile?.id === 'default' ? 365 : totalDaysInUserPlan)) * 100));
+
+  // Filtro de dias (Para o modo de pendências, respeita o dia em que o usuário iniciou o plano)
   const filteredDays = days.filter(d => {
     if (filter === 'completed') return d.completed;
-    if (filter === 'pending') return !d.completed && d.id <= currentDayId;
+    if (filter === 'pending') return !d.completed && d.id >= startDay && d.id <= currentDayId;
     return true;
   });
 
@@ -126,6 +134,7 @@ export default function Dashboard({
 
   // 1. CAIXA: LEITURA DE HOJE & PENDÊNCIAS
   const renderTodayPending = (index) => {
+    if (!isPlanActive) return null;
     if (hidden['todayPending']) return null;
     const isCol = !!collapsed['todayPending'];
 
@@ -783,6 +792,7 @@ export default function Dashboard({
 
   // 5. CAIXA: PANORAMA DOS 365 DIAS (CALENDÁRIO)
   const renderCalendar = (index) => {
+    if (!isPlanActive) return null;
     if (hidden['calendar']) return null;
     const isCol = !!collapsed['calendar'];
 
@@ -897,6 +907,7 @@ export default function Dashboard({
               {filteredDays.map(d => {
                 const isToday = d.id === currentDayId;
                 const isPending = d.id === pendingDayId;
+                const isBeforeStart = d.id < startDay;
                 return (
                   <div
                     key={d.id}
@@ -908,9 +919,11 @@ export default function Dashboard({
                         ? 'border-rose-400 bg-rose-50 dark:bg-rose-950/40 text-rose-800 dark:text-rose-200 font-bold animate-pulse'
                         : d.completed
                         ? 'border-emerald-200 dark:border-emerald-900 bg-emerald-50/60 dark:bg-emerald-950/20 text-emerald-800 dark:text-emerald-300'
+                        : isBeforeStart
+                        ? 'border-dashed border-zinc-200 dark:border-zinc-800 bg-zinc-50/30 dark:bg-zinc-900/20 text-zinc-400 opacity-60'
                         : 'border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/40 text-zinc-500 hover:border-zinc-300'
                     }`}
-                    title={`Dia ${d.id}: ${d.readings.join(', ')}`}
+                    title={isBeforeStart ? `Dia ${d.id}: Anterior ao início do seu plano` : `Dia ${d.id}: ${d.readings.join(', ')}`}
                   >
                     <div className="text-[10px] text-zinc-400 leading-none">
                       {d.date.split('-').slice(1).reverse().join('/')}
@@ -927,6 +940,110 @@ export default function Dashboard({
             </div>
           </section>
         )}
+      </div>
+    );
+  };
+
+  // PAINEL DE ESTUDO & LEITURA LIVRE (Exibido para quem não deseja o plano devocional)
+  const renderStudyHub = () => {
+    return (
+      <div key="studyHub" className="space-y-4">
+        {/* Banner de Boas-Vindas no Modo Livre */}
+        <div className="p-6 rounded-3xl bg-gradient-to-br from-indigo-500/10 via-purple-500/5 to-amber-500/10 border border-indigo-200 dark:border-indigo-900/50 space-y-3">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <div className="flex items-center space-x-2">
+                <span className="text-xl">📖</span>
+                <h3 className="text-base sm:text-lg font-black text-zinc-900 dark:text-zinc-50">
+                  Modo de Leitura Livre & Estudos Teológicos
+                </h3>
+              </div>
+              <p className="text-xs text-zinc-600 dark:text-zinc-400 mt-1 max-w-xl leading-relaxed">
+                Você está no modo autônomo sem exigência de metas ou contagem de atrasos. Desfrute de todos os recursos bíblicos, teológicos e exegéticos no seu ritmo.
+              </p>
+            </div>
+            {onOptInPlan && (
+              <button
+                onClick={onOptInPlan}
+                className="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs shadow-md shadow-amber-500/20 shrink-0 transition-transform hover:scale-105"
+              >
+                <Calendar className="w-4 h-4" />
+                <span>Iniciar Plano Devocional Hoje</span>
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* Grade de Funcionalidades Principais */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          
+          {/* Card 1: Bíblia Sagrada (66 Livros) */}
+          <div 
+            onClick={onOpenBibleNav}
+            className="p-5 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 hover:border-amber-400 dark:hover:border-amber-600 cursor-pointer transition-all hover:scale-[1.01] hover:shadow-lg group flex flex-col justify-between space-y-4"
+          >
+            <div className="space-y-2.5">
+              <div className="w-11 h-11 rounded-2xl bg-amber-500/15 text-amber-600 dark:text-amber-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <Library className="w-6 h-6" />
+              </div>
+              <h4 className="font-extrabold text-base text-zinc-900 dark:text-zinc-100 group-hover:text-amber-600 transition-colors">
+                Bíblia Sagrada (66 Livros)
+              </h4>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                Leitura versículo a versículo (NVT), palavras de Jesus em vermelho, comentários exegéticos, referências cruzadas e narração em áudio.
+              </p>
+            </div>
+            <div className="flex items-center space-x-1.5 text-xs font-bold text-amber-600 dark:text-amber-400">
+              <span>Abrir Navegador Bíblico</span>
+              <ChevronRight className="w-4 h-4" />
+            </div>
+          </div>
+
+          {/* Card 2: Bíblia de Estudos por Livro */}
+          <div 
+            onClick={() => onOpenStudyInfo && onOpenStudyInfo('Lucas')}
+            className="p-5 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 hover:border-indigo-400 dark:hover:border-indigo-600 cursor-pointer transition-all hover:scale-[1.01] hover:shadow-lg group flex flex-col justify-between space-y-4"
+          >
+            <div className="space-y-2.5">
+              <div className="w-11 h-11 rounded-2xl bg-indigo-500/15 text-indigo-600 dark:text-indigo-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <BookMarked className="w-6 h-6" />
+              </div>
+              <h4 className="font-extrabold text-base text-zinc-900 dark:text-zinc-100 group-hover:text-indigo-600 transition-colors">
+                Bíblia de Estudos & Panorama
+              </h4>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                Introduções completas com autoria, cronologia, destinatários, contexto teológico e síntese panorâmica dos 66 livros bíblicos.
+              </p>
+            </div>
+            <div className="flex items-center space-x-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400">
+              <span>Explorar Panorama dos Livros</span>
+              <ChevronRight className="w-4 h-4" />
+            </div>
+          </div>
+
+          {/* Card 3: Arqueamento Bíblico (BibleArc) */}
+          <div 
+            onClick={() => onOpenBibleArc && onOpenBibleArc('Lucas', 1)}
+            className="p-5 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 hover:border-purple-400 dark:hover:border-purple-600 cursor-pointer transition-all hover:scale-[1.01] hover:shadow-lg group flex flex-col justify-between space-y-4"
+          >
+            <div className="space-y-2.5">
+              <div className="w-11 h-11 rounded-2xl bg-purple-500/15 text-purple-600 dark:text-purple-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span className="text-2xl">📐</span>
+              </div>
+              <h4 className="font-extrabold text-base text-zinc-900 dark:text-zinc-100 group-hover:text-purple-600 transition-colors">
+                Arqueamento Bíblico (BibleArc)
+              </h4>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                Análise estrutural e lógica do discurso bíblico: mapeamento de proposições, causa, propósito, condição e conclusões exegéticas.
+              </p>
+            </div>
+            <div className="flex items-center space-x-1.5 text-xs font-bold text-purple-600 dark:text-purple-400">
+              <span>Abrir Diagramação BibleArc</span>
+              <ChevronRight className="w-4 h-4" />
+            </div>
+          </div>
+
+        </div>
       </div>
     );
   };
@@ -955,7 +1072,9 @@ export default function Dashboard({
           </div>
           <div>
             <div className="flex items-center space-x-1.5">
-              <span className="text-xs text-zinc-500 dark:text-zinc-400">Devocional de</span>
+              <span className="text-xs text-zinc-500 dark:text-zinc-400">
+                {isPlanActive ? 'Devocional de' : 'Perfil de'}
+              </span>
               <span className="text-sm font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-amber-600 transition-colors">
                 {activeProfile?.name || 'Leitor'}
               </span>
@@ -964,7 +1083,9 @@ export default function Dashboard({
               </span>
             </div>
             <p className="text-xs text-zinc-500 dark:text-zinc-400">
-              {totalCompleted} dias concluídos ({progressPercent}%)
+              {isPlanActive 
+                ? `${totalCompleted} dias concluídos (${progressPercent}%)`
+                : 'Modo: Leitura Livre & Estudos Teológicos'}
             </p>
           </div>
         </div>
@@ -1004,6 +1125,9 @@ export default function Dashboard({
           </button>
         </div>
       </div>
+
+      {/* PAINEL DE LEITURA LIVRE & ESTUDOS TEOLÓGICOS (Quando o usuário optou por não ter o plano diário) */}
+      {!isPlanActive && renderStudyHub()}
 
       {/* RENDERIZAÇÃO DAS CAIXAS NA ORDEM DEFINIDA PELO USUÁRIO */}
       {order.map((secId, idx) => {
