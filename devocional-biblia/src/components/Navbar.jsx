@@ -147,15 +147,6 @@ export default function Navbar({
             <LogOut className="w-4 h-4" />
           </button>
 
-          {/* Botão Sincronização em Nuvem (Multi-Aparelho) */}
-          <button
-            onClick={onOpenCloud}
-            className="p-1.5 sm:p-2 rounded-xl text-sky-600 dark:text-sky-400 hover:bg-sky-50 dark:hover:bg-sky-950/40 border border-sky-200 dark:border-sky-900/60 transition-colors shrink-0"
-            title="Banco de Dados e Sincronização na Nuvem"
-          >
-            <Cloud className="w-4 h-4" />
-          </button>
-
           {/* Favoritos (Apenas Desktop - no Mobile fica na Bottom Nav) */}
           <button
             onClick={onOpenFavorites}

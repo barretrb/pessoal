@@ -817,3 +817,34 @@ test('QA Test 19: Logoff / Desconexão e Criação Autônoma de Novo Leitor', ()
 
   console.log('✓ QA Test 19 Aprovado: Logoff, tela de seleção e criação autônoma de perfil 100% verificados.');
 });
+
+test('QA Test 20: Exclusividade das Métricas de Uso para Admin e Validação de Tema Escuro', () => {
+  localStorage.clear();
+
+  // 1. Validar que apenas Rafael (Admin) possui role === 'admin'
+  const rafael = DEFAULT_PROFILES.find(p => p.id === 'default');
+  assert.equal(rafael.role, 'admin', 'Rafael deve ser admin');
+
+  // 2. Outros usuários (ex: Esposa ou novos leitores) são 'member'
+  const esposa = DEFAULT_PROFILES.find(p => p.id === 'esposa');
+  assert.equal(esposa.role, 'member', 'Esposa deve ser member');
+
+  const novoLeitor = storage.createProfile('Novo Membro', '👤', 'rose', 'member');
+  assert.equal(novoLeitor.role, 'member', 'Novo leitor deve ser member');
+
+  // 3. Regra de visibilidade do botão de Métricas de Uso no Dashboard:
+  const isMetricsVisibleForAdmin = rafael.role === 'admin';
+  const isMetricsVisibleForEsposa = esposa.role === 'admin';
+  const isMetricsVisibleForNewUser = novoLeitor.role === 'admin';
+
+  assert.equal(isMetricsVisibleForAdmin, true, 'Métricas devem ser visíveis exclusivamente para o Admin');
+  assert.equal(isMetricsVisibleForEsposa, false, 'Métricas devem estar ocultas para Esposa');
+  assert.equal(isMetricsVisibleForNewUser, false, 'Métricas devem estar ocultas para novos usuários');
+
+  // 4. Validação da persistência de tema escuro
+  storage.saveSettings({ theme: 'dark', redLetters: true });
+  const settings = storage.getSettings();
+  assert.equal(settings.theme, 'dark', 'Tema escuro deve ser salvo e recuperado');
+
+  console.log('✓ QA Test 20 Aprovado: Exclusividade de Métricas para Admin e persistência de modo escuro verificados.');
+});

@@ -1105,25 +1105,17 @@ export default function Dashboard({
         </div>
 
         <div className="flex items-center space-x-2">
-          {/* Botão de Nuvem / Banco de Dados */}
-          <button
-            onClick={onOpenCloud}
-            className="inline-flex items-center space-x-1.5 px-3 py-2 rounded-2xl bg-sky-50 dark:bg-sky-950/50 text-sky-700 dark:text-sky-300 hover:bg-sky-100 border border-sky-200 dark:border-sky-900/60 text-xs font-bold transition-colors"
-            title="Sincronizar dados na nuvem para múltiplos aparelhos"
-          >
-            <Cloud className="w-3.5 h-3.5 text-sky-500" />
-            <span className="hidden sm:inline">Nuvem & Sync</span>
-          </button>
-
-          {/* Botão de Métricas de Uso de Features (Telemetria Opção 1) */}
-          <button
-            onClick={() => setIsTelemetryOpen(true)}
-            className="inline-flex items-center space-x-1.5 px-3 py-2 rounded-2xl bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 hover:bg-amber-100 border border-amber-200 dark:border-amber-900/60 text-xs font-bold transition-colors"
-            title="Ver ranking de uso de cada funcionalidade do app"
-          >
-            <BarChart3 className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-            <span className="hidden sm:inline">Métricas de Uso</span>
-          </button>
+          {/* Botão de Métricas de Uso de Features (Exclusivo do Administrador Rafael) */}
+          {activeProfile?.role === 'admin' && (
+            <button
+              onClick={() => setIsTelemetryOpen(true)}
+              className="inline-flex items-center space-x-1.5 px-3 py-2 rounded-2xl bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 hover:bg-amber-100 dark:hover:bg-amber-900/50 border border-amber-200 dark:border-amber-900/60 text-xs font-bold transition-colors cursor-pointer"
+              title="Painel Administrativo: Monitorar uso de todas as funcionalidades e leitores"
+            >
+              <BarChart3 className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+              <span className="hidden sm:inline">Métricas de Uso (Admin)</span>
+            </button>
+          )}
 
           {/* Botão de Personalizar a Tela Inicial */}
           <button
