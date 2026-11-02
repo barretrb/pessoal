@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic Executive Hub — Mastering Agentic Systems for AI Leaders</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .badge-pass {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+            border: 1px solid #10b981;
+            padding: 0.35rem 0.8rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        .badge-fail {
+            background: rgba(244, 63, 94, 0.2);
+            color: #f43f5e;
+            border: 1px solid #f43f5e;
+            padding: 0.35rem 0.8rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-ambient"></div>
+
+    <!-- Top Navigation -->
+    <header class="navbar">
+        <div class="brand-wrapper">
+            <div class="brand-logo">⚡</div>
+            <div class="brand-info">
+                <h1>Agentic Executive Hub</h1>
+                <p>Mentoria & Lifelong Learning Executivo • Blip Edition</p>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <button class="nav-btn active" data-tab="trilha">📅 Trilha 7 Dias</button>
+            <button class="nav-btn" data-tab="podcast">🎙️ Podcasts Executivos</button>
+            <button class="nav-btn" data-tab="simulador">🕹️ Simuladores & FSM</button>
+            <button class="nav-btn" data-tab="diagramas">📐 Arquiteturas Visuais</button>
+            <button class="nav-btn" data-tab="flashcards">🗂️ Flashcards Staff</button>
+            <button class="nav-btn" data-tab="quiz">🎯 Quiz de Prontidão</button>
+            <button class="nav-btn" data-tab="vp-pitch">👔 Pitch para VP/Diretores</button>
+            <button class="nav-btn" data-tab="blip-blueprint">🚀 Blueprints Blip (ATA & Insights)</button>
+        </nav>
+        <div class="nav-cta">
+            <button class="btn-primary" onclick="window.print()">📥 Exportar Dossiê</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-tag">✨ Programa Executivo de Aceleração Agêntica</div>
+        <h1 class="hero-title">Dominando <span>Sistemas Agênticos</span> sem perder 13h em código operacional.</h1>
+        <p class="hero-subtitle">
+            Um hub multimodal desenhado para Staff PMs e Líderes Técnicos de IA. Absorva a inteligência arquitetural, governança de risco, FinOps corporativo e os cases de grandes empresas (Claro, ByteDance, Mercado Livre) para liderar discussões estratégicas e acelerar os agentes <strong>ATA</strong> e <strong>Insight Agents</strong>.
+        </p>
+
+        <div class="hero-stats">
+            <div class="stat-card">
+                <div class="stat-number">7 Dias <span>Sprint</span></div>
+                <div class="stat-label">20 min/dia para dominar 100% da matéria</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">60 / 40 <span>Evals</span></div>
+                <div class="stat-label">Esteira Híbrida: Regras Exatas + Juiz de IA</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">0.75 vs 0.90 <span>Régua</span></div>
+                <div class="stat-label">Go-Live: Backoffice vs Cliente Externo</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">PL 2338/23 <span>ANPD</span></div>
+                <div class="stat-label">Conformidade e Rastreabilidade Total</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="container">
+
+        <!-- TAB 1: TRILHA 7 DIAS -->
+        <section id="trilha" class="tab-content active">
+            <div class="section-header">
+                <h2 class="section-title">📅 Trilha de Aceleração Executiva (7 Dias)</h2>
+                <p class="section-desc">Estrutura instrucional recomendada para absorver todo o conhecimento do curso de forma progressiva, dispensando a visualização dos vídeos brutos.</p>
+            </div>
+
+            <div class="roadmap-grid">
+                <!-- Day 1 -->
+                <div class="day-card">
+                    <div>
+                        <div class="day-header">
+                            <span class="day-badge">Dia 01</span>
+                            <span class="day-time">⏱️ 20 min</span>
+                        </div>
+                        <h3 class="day-title">Mental Models: De Chatbots a Sistemas Agênticos</h3>
+                        <p class="day-desc">Compreenda a virada de chave de geradores de texto soltos para o Ciclo ReAct e a anatomia de um agente (Modelo + Ferramentas + Parse).</p>
+                        <ul class="day-takeaways">
+                            <li>Diferença entre LLM puro e chamada de ferramentas (<code>bind_tools</code>).</li>
+                            <li>Padrão <em>Error-as-Observation</em> para autocorreção imediata.</li>
+                            <li>Por que plataformas corporativas constroem pontes anti-lock-in.</li>
+                        </ul>
+                    </div>
+                    <button class="btn-secondary" onclick="document.querySelector('[data-tab=podcast]').click(); selectTrack(0);">🎧 Ouvir Podcast Ep. 01</button>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="day-card">
+                    <div>
+                        <div class="day-header">
+                            <span class="day-badge">Dia 02</span>
+                            <span class="day-time">⏱️ 20 min</span>
+                        </div>
+                        <h3 class="day-title">Orquestração FSM & Governança com LangGraph</h3>
+                        <p class="day-desc">Entenda por que a Máquina de Estados Finitos é uma decisão de governança executiva contra alucinações e riscos operacionais.</p>
+                        <ul class="day-takeaways">
+                            <li>Fórmula <code>State + Event = Next State</code> com reducer acumulativo.</li>
+                            <li>Nó de validação determinística de evidências com retry limitado.</li>
+                            <li>Persistência com <code>PostgresSaver</code> e pausa humana via <code>interrupt()</code>.</li>
+                        </ul>
+                    </div>
+                    <button class="btn-secondary" onclick="document.querySelector('[data-tab=simulador]').click();">🕹️ Testar Simulador FSM</button>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="day-card">
+                    <div>
+                        <div class="day-header">
+                            <span class="day-badge">Dia 03</span>
+                            <span class="day-time">⏱️ 25 min</span>
+                        </div>
+                        <h3 class="day-title">Deep Agent Harness: O Motor do Trabalho Longo</h3>
+                        <p class="day-desc">A fórmula <code>Agente = Modelo + Harness</code> e os 4 pilares para tarefas complexas de 30 a 40 passos sem perder o contexto.</p>
+                        <ul class="day-takeaways">
+                            <li>Planejamento explícito contínuo com <code>write_todos</code>.</li>
+                            <li>Sistema de arquivos virtual com permissão restrita (<code>/base/</code> somente leitura).</li>
+                            <li>Sub-agentes com contexto isolado (<code>task</code>) rodando em paralelo.</li>
+                            <li>Diferença entre <code>AGENTS.md</code> (memória viva) e <code>SKILL.md</code> (padrão fixo).</li>
+                        </ul>
+                    </div>
+                    <button class="btn-secondary" onclick="document.querySelector('[data-tab=podcast]').click(); selectTrack(2);">🎧 Ouvir Podcast Ep. 03</button>
+                </div>
+
+                <!-- Day 4 -->
+                <div class="day-card">
+                    <div>
+                        <div class="day-header">
+                            <span class="day-badge">Dia 04</span>
+                            <span class="day-time">⏱️ 20 min</span>
+                        </div>
+                        <h3 class="day-title">Esteira de Qualidade 60/40 & Observabilidade</h3>
+                        <p class="day-desc">Como evitar degradação silenciosa (<em>silent drift</em>) e garantir que atualizações não quebrem o produto em produção.</p>
+                        <ul class="day-takeaways">
+                            <li>Rastreabilidade total via Langfuse com versão de prompt e tags.</li>
+                            <li>Pirâmide de avaliação: 60% regras determinísticas + 40% LLM-as-a-Judge.</li>
+                            <li>Golden Dataset de ~500 casos e bloqueio automático de PR em CI/CD.</li>
+                        </ul>
+                    </div>
+                    <button class="btn-secondary" onclick="document.querySelector('[data-tab=simulador]').click();">📊 Abrir Calculadora 60/40</button>
+                </div>
+
+                <!-- Day 5 -->
+                <div class="day-card">
+                    <div>
+                        <div class="day-header">
+                            <span class="day-badge">Dia 05</span>
+                            <span class="day-time">⏱️ 20 min</span>
+                        </div>
+                        <h3 class="day-title">FinOps, SSLMs & Escala (Cases Claro e ByteDance)</h3>
+                        <p class="day-desc">Estratégias avançadas de custo, latência e o modelo mental de Funcionários Digitais (Agent Sphere).</p>
+                        <ul class="day-takeaways">
+                            <li>Case Claro: 500k áudios/dia processados em &lt;5 GPUs com SSLMs (WhisperX).</li>
+                            <li>Gestão de 3 janelas de contexto e compactação de memória em Redis.</li>
+                            <li>Framework ByteDance: Hire, Train, Run e Eval.</li>
+                        </ul>
+                    </div>
+                    <button class="btn-secondary" onclick="document.querySelector('[data-tab=diagramas]').click();">📐 Ver Arquitetura ByteDance</button>
+                </div>
+
+                <!-- Day 6 -->
+                <div class="day-card">
+                    <div>
+                        <div class="day-header">
+                            <span class="day-badge">Dia 06</span>
+                            <span class="day-time">⏱️ 25 min</span>
+                        </div>
+                        <h3 class="day-title">Aplicação Prática Blip: Agente ATA & Insight Agents</h3>
+                        <p class="day-desc">Traduza todos os frameworks para os produtos reais de Customer Success e Operações da Blip.</p>
+                        <ul class="day-takeaways">
+                            <li>Agente ATA: Sub-agentes paralelos e HITL antes de e-mails/cards.</li>
+                            <li>Insight Agents: Investigação causal separando sintoma de causa raiz.</li>
+                            <li>PRD, épicos e critérios de aceite prontos para levar para a squad.</li>
+                        </ul>
+                    </div>
+                    <button class="btn-secondary" onclick="document.querySelector('[data-tab=blip-blueprint]').click();">🚀 Explorar Blueprints Blip</button>
+                </div>
+
+                <!-- Day 7 -->
+                <div class="day-card">
+                    <div>
+                        <div class="day-header">
+                            <span class="day-badge">Dia 07</span>
+                            <span class="day-time">⏱️ 20 min</span>
+                        </div>
+                        <h3 class="day-title">Alinhamento Executivo & Defesa com VP/Diretoria</h3>
+                        <p class="day-desc">Treine a defesa das decisões de arquitetura e produto respondendo às principais objeções de C-Level.</p>
+                        <ul class="day-takeaways">
+                            <li>Por que LangGraph e não CrewAI/AutoGen.</li>
+                            <li>Controle de orçamento de tokens e latência (TTFT).</li>
+                            <li>Adequação ao Marco Legal da IA (PL 2338/23 e ANPD).</li>
+                        </ul>
+                    </div>
+                    <button class="btn-secondary" onclick="document.querySelector('[data-tab=vp-pitch]').click();">👔 Acessar Matriz de Objeções</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: PODCASTS EXECUTIVOS -->
+        <section id="podcast" class="tab-content">
+            <div class="section-header">
+                <h2 class="section-title">🎙️ Podcasts Executivos Comentados</h2>
+                <p class="section-desc">Ouça os episódios sintetizados em áudio de alta fidelidade com os argumentos de liderança do instrutor Sérgio Gaiotto (Diretor Executivo Claro Brasil).</p>
+            </div>
+
+            <div class="podcast-hub">
+                <div class="player-main">
+                    <div class="player-cover">
+                        <div class="cover-wave">
+                            <div class="wave-bar" style="height: 45px;"></div>
+                            <div class="wave-bar" style="height: 60px;"></div>
+                            <div class="wave-bar" style="height: 30px;"></div>
+                            <div class="wave-bar" style="height: 55px;"></div>
+                            <div class="wave-bar" style="height: 40px;"></div>
+                            <div class="wave-bar" style="height: 50px;"></div>
+                        </div>
+                        <div style="font-size: 1.1rem; font-weight: 800; color: #fff;">AGENTIC AUDIO</div>
+                        <div style="font-size: 0.75rem; color: var(--blip-cyan); font-weight: 600;">EXECUTIVE SPRINT</div>
+                    </div>
+
+                    <div class="player-controls-panel">
+                        <div>
+                            <h3 id="currentEpTitle" class="ep-title">Carregando episódio...</h3>
+                            <p id="currentEpSpeaker" class="ep-speaker">Instrutor & Mentoria Executiva</p>
+                        </div>
+
+                        <div class="timeline-bar" onclick="alert('Player em áudio contínuo. Use os botões abaixo.')">
+                            <div class="timeline-progress"></div>
+                        </div>
+
+                        <div class="player-buttons">
+                            <button id="btnPrev" class="btn-icon">⏮️</button>
+                            <button id="btnPlayPause" class="btn-circle">▶️</button>
+                            <button id="btnNext" class="btn-icon">⏭️</button>
+                            <span id="btnSpeed" class="speed-badge">1x</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist-grid" id="playlistGrid">
+                    <!-- Tracks injected via JS -->
+                </div>
+
+                <!-- Transcript / Reading Box -->
+                <div style="margin-top: 2.5rem; background: rgba(0,0,0,0.3); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.75rem;">
+                    <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--blip-cyan); margin-bottom: 1rem;">📜 Transcrição Executiva Sincronizada</h4>
+                    <div id="transcriptBox" style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.7; max-height: 250px; overflow-y: auto;">
+                        Carregando transcrição...
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: SIMULADORES & FSM -->
+        <section id="simulador" class="tab-content">
+            <div class="section-header">
+                <h2 class="section-title">🕹️ Laboratório Interativo: FSM do LangGraph & Evals 60/40</h2>
+                <p class="section-desc">Experimente em tempo real as transições de estado, o nó de validação determinística e o cálculo da esteira de qualidade.</p>
+            </div>
+
+            <!-- FSM Interactive Simulator -->
+            <div class="simulator-box">
+                <div class="sim-toolbar">
+                    <div>
+                        <h3 style="font-size: 1.3rem; font-weight: 700; color: #fff;">1. Simulador de Máquina de Estados (LangGraph FSM)</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-muted);">Veja a FSM rotear, executar ferramentas, validar evidências e pausar no HITL.</p>
+                    </div>
+                    <div class="scenario-selector">
+                        <button class="scenario-btn active" data-scenario="sev1">Incidente SEV1 (OpsPilot)</button>
+                        <button class="scenario-btn" data-scenario="alucinacao">Alucinação & Retry</button>
+                        <button class="scenario-btn" data-scenario="recusa">Fora de Escopo (Custo Zero)</button>
+                    </div>
+                </div>
+
+                <!-- Visual Graph Nodes -->
+                <div class="fsm-graph">
+                    <div class="fsm-node" id="node-start">
+                        <div class="node-icon">🚀</div>
+                        <div class="node-title">START</div>
+                        <div class="node-type">Entrada</div>
+                    </div>
+                    <div class="fsm-node" id="node-classificar">
+                        <div class="node-icon">🏷️</div>
+                        <div class="node-title">classificar</div>
+                        <div class="node-type">Router LLM</div>
+                    </div>
+                    <div class="fsm-node" id="node-investigar">
+                        <div class="node-icon">🔍</div>
+                        <div class="node-title">investigar</div>
+                        <div class="node-type">ReAct Loop</div>
+                    </div>
+                    <div class="fsm-node" id="node-ferramentas">
+                        <div class="node-icon">⚙️</div>
+                        <div class="node-title">ferramentas</div>
+                        <div class="node-type">ToolNode</div>
+                    </div>
+                    <div class="fsm-node" id="node-validar">
+                        <div class="node-icon">🛡️</div>
+                        <div class="node-title">validar</div>
+                        <div class="node-type">Pydantic Rule</div>
+                    </div>
+                    <div class="fsm-node" id="node-aprovar">
+                        <div class="node-icon">⏸️</div>
+                        <div class="node-title">HITL (interrupt)</div>
+                        <div class="node-type">Aprovação Humana</div>
+                    </div>
+                    <div class="fsm-node" id="node-responder">
+                        <div class="node-icon">📤</div>
+                        <div class="node-title">responder</div>
+                        <div class="node-type">Saída</div>
+                    </div>
+                    <div class="fsm-node" id="node-recusar" style="display: none;">
+                        <div class="node-icon">🚫</div>
+                        <div class="node-title">recusar</div>
+                        <div class="node-type">Guardrail</div>
+                    </div>
+                    <div class="fsm-node" id="node-end">
+                        <div class="node-icon">🏁</div>
+                        <div class="node-title">END</div>
+                        <div class="node-type">Final</div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
+                    <button id="btnRunSimulation" class="btn-primary">▶️ Executar FSM no LangGraph</button>
+                </div>
+
+                <div class="sim-console" id="fsmConsole">
+                    <span style="color: #64748b;">// Selecione um cenário acima e clique em 'Executar FSM no LangGraph'</span>
+                </div>
+            </div>
+
+            <!-- 60/40 Evals Calculator -->
+            <div class="simulator-box" style="margin-top: 2.5rem;">
+                <h3 style="font-size: 1.3rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem;">2. Calculadora da Esteira Híbrida 60/40 (Agentic CI/CD)</h3>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem;">Simule se a resposta de um agente passa no Gate de CI/CD para deploy corporativo.</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+                    <!-- Rules Column -->
+                    <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.5rem;">
+                        <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--blip-cyan); margin-bottom: 1rem;">Camada 1: Regras Determinísticas (Peso 60%)</h4>
+                        <div style="display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.9rem;">
+                            <label><input type="checkbox" id="evalRule1" checked> 1. Serviço de causa raiz correto (pagamentos-db)</label>
+                            <label><input type="checkbox" id="evalRule2" checked> 2. Termos essenciais presentes ('pool', 'conexões', 'v2.14.0')</label>
+                            <label><input type="checkbox" id="evalRule3" checked> 3. Ausência de termos proibidos ('reiniciar', 'escalar worker')</label>
+                            <label><input type="checkbox" id="evalRule4" checked> 4. Formato JSON/Pydantic estritamente válido</label>
+                        </div>
+                    </div>
+
+                    <!-- Judge Column -->
+                    <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.5rem;">
+                        <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--purple); margin-bottom: 1rem;">Camada 2: LLM-as-a-Judge (Peso 40%)</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Avalia <em>groundedness</em> (se as afirmações têm lastro nos logs reais lidos pelas tools):</p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <input type="range" id="evalJudgeRange" min="1" max="5" value="4" style="flex: 1;" oninput="document.getElementById('judgeVal').innerText = this.value + '/5'">
+                            <span id="judgeVal" style="font-size: 1.1rem; font-weight: 700; color: #fff;">4/5</span>
+                        </div>
+                        <div style="margin-top: 1.5rem;">
+                            <button id="btnCalculateEvals" class="btn-primary" style="width: 100%; justify-content: center;">Calcular Nota Final da Esteira</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Score Result Box -->
+                <div style="margin-top: 2rem; background: rgba(0,0,0,0.4); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.5rem; display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+                    <div>
+                        <div style="font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase;">Score Composto (60% + 40%)</div>
+                        <div id="evalCompositeDisplay" style="font-size: 2.2rem; font-weight: 800; color: #fff;">0.920</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.3rem;">Gate Agentes Internos (>= 0.75)</div>
+                        <span id="gateBadgeInternal" class="badge-pass">APROVADO (>= 0.75)</span>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.3rem;">Gate Cliente Final (>= 0.90)</div>
+                        <span id="gateBadgeExternal" class="badge-pass">APROVADO (>= 0.90)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: ARQUITETURAS VISUAIS -->
+        <section id="diagramas" class="tab-content">
+            <div class="section-header">
+                <h2 class="section-title">📐 Dossiê Arquitetural: 4 Blueprints Visuais</h2>
+                <p class="section-desc">Diagramas estruturados dos conceitos exclusivos falados pelo instrutor nas gravações das 4 aulas.</p>
+            </div>
+
+            <!-- Diagram 1: ByteDance Agent Sphere -->
+            <div class="diagram-container">
+                <h3 style="font-size: 1.35rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem;">1. ByteDance Volcano Engine: Agent Sphere (RH de Agentes)</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Como empresas globais transformam squads em <em>Two-Slice Pizza Teams</em> gerindo funcionários digitais.</p>
+                
+                <div class="diagram-svg-wrap">
+                    <svg viewBox="0 0 960 260" style="max-width: 100%; height: auto;">
+                        <rect x="20" y="20" width="210" height="220" rx="14" fill="#0f1b38" stroke="#005cff" stroke-width="2"/>
+                        <text x="125" y="60" fill="#00d2ff" font-size="18" font-weight="800" text-anchor="middle">1. HIRE</text>
+                        <text x="125" y="90" fill="#94a3b8" font-size="12" text-anchor="middle">Contratação de Agentes</text>
+                        <text x="40" y="130" fill="#cbd5e1" font-size="12">• Templates Padronizados</text>
+                        <text x="40" y="160" fill="#cbd5e1" font-size="12">• Onboarding no Sistema</text>
+                        <text x="40" y="190" fill="#cbd5e1" font-size="12">• RBAC & Identidade</text>
+
+                        <path d="M 235 130 L 255 130" stroke="#00d2ff" stroke-width="3" marker-end="url(#arrow)"/>
+
+                        <rect x="260" y="20" width="210" height="220" rx="14" fill="#0f1b38" stroke="#005cff" stroke-width="2"/>
+                        <text x="365" y="60" fill="#00d2ff" font-size="18" font-weight="800" text-anchor="middle">2. TRAIN</text>
+                        <text x="365" y="90" fill="#94a3b8" font-size="12" text-anchor="middle">Capacitação & Skills</text>
+                        <text x="280" y="130" fill="#cbd5e1" font-size="12">• Habilitação de SKILL.md</text>
+                        <text x="280" y="160" fill="#cbd5e1" font-size="12">• Conectores MCP / APIs</text>
+                        <text x="280" y="190" fill="#cbd5e1" font-size="12">• Definição de Metas (OKRs)</text>
+
+                        <path d="M 475 130 L 495 130" stroke="#00d2ff" stroke-width="3"/>
+
+                        <rect x="500" y="20" width="210" height="220" rx="14" fill="#0f1b38" stroke="#005cff" stroke-width="2"/>
+                        <text x="605" y="60" fill="#00d2ff" font-size="18" font-weight="800" text-anchor="middle">3. RUN</text>
+                        <text x="605" y="90" fill="#94a3b8" font-size="12" text-anchor="middle">Operação & Colaboração</text>
+                        <text x="520" y="130" fill="#cbd5e1" font-size="12">• Project Group Chats</text>
+                        <text x="520" y="160" fill="#cbd5e1" font-size="12">• Human-in-the-Loop</text>
+                        <text x="520" y="190" fill="#cbd5e1" font-size="12">• Execução em Background</text>
+
+                        <path d="M 715 130 L 735 130" stroke="#00d2ff" stroke-width="3"/>
+
+                        <rect x="740" y="20" width="200" height="220" rx="14" fill="#0f1b38" stroke="#10b981" stroke-width="2"/>
+                        <text x="840" y="60" fill="#10b981" font-size="18" font-weight="800" text-anchor="middle">4. EVAL</text>
+                        <text x="840" y="90" fill="#94a3b8" font-size="12" text-anchor="middle">Avaliação & ROI</text>
+                        <text x="760" y="130" fill="#cbd5e1" font-size="12">• Custo por Execução</text>
+                        <text x="760" y="160" fill="#cbd5e1" font-size="12">• Taxa de Erro / Alucinação</text>
+                        <text x="760" y="190" fill="#cbd5e1" font-size="12">• Placar Executivo (ROI)</text>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Diagram 2: 4-Stage Guardrails -->
+            <div class="diagram-container">
+                <h3 style="font-size: 1.35rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem;">2. Pipeline de Guardrails em 4 Camadas (Conformidade LGPD / ANPD)</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Por que instruções em prompt não servem para conformidade legal e como blindar a arquitetura antes da chamada à API externa.</p>
+
+                <div class="diagram-svg-wrap">
+                    <svg viewBox="0 0 980 180" style="max-width: 100%; height: auto;">
+                        <rect x="10" y="40" width="160" height="100" rx="10" fill="#1e1b4b" stroke="#f43f5e" stroke-width="1.5"/>
+                        <text x="90" y="75" fill="#fecdd3" font-size="13" font-weight="700" text-anchor="middle">1. INPUT REGEX</text>
+                        <text x="90" y="100" fill="#94a3b8" font-size="11" text-anchor="middle">Mascara CPF/E-mail</text>
+                        <text x="90" y="118" fill="#cbd5e1" font-size="10" text-anchor="middle">Execução Local (Zero Nuvem)</text>
+
+                        <path d="M 175 90 L 205 90" stroke="#64748b" stroke-width="2"/>
+
+                        <rect x="210" y="40" width="160" height="100" rx="10" fill="#1e1b4b" stroke="#f59e0b" stroke-width="1.5"/>
+                        <text x="290" y="75" fill="#fde68a" font-size="13" font-weight="700" text-anchor="middle">2. INPUT INFERÊNCIA</text>
+                        <text x="290" y="100" fill="#94a3b8" font-size="11" text-anchor="middle">Prompt Injection / Escopo</text>
+                        <text x="290" y="118" fill="#cbd5e1" font-size="10" text-anchor="middle">Classificador Leve (SSLMs)</text>
+
+                        <path d="M 375 90 L 405 90" stroke="#64748b" stroke-width="2"/>
+
+                        <rect x="410" y="25" width="170" height="130" rx="14" fill="#0f1b38" stroke="#005cff" stroke-width="2.5"/>
+                        <text x="495" y="65" fill="#00d2ff" font-size="15" font-weight="800" text-anchor="middle">AGENTE / LLM</text>
+                        <text x="495" y="90" fill="#94a3b8" font-size="11" text-anchor="middle">Planejamento & Tools</text>
+                        <text x="495" y="110" fill="#cbd5e1" font-size="10" text-anchor="middle">LangGraph FSM</text>
+                        <text x="495" y="130" fill="#10b981" font-size="10" text-anchor="middle">Contexto Sanitizado</text>
+
+                        <path d="M 585 90 L 615 90" stroke="#64748b" stroke-width="2"/>
+
+                        <rect x="620" y="40" width="160" height="100" rx="10" fill="#1e1b4b" stroke="#f59e0b" stroke-width="1.5"/>
+                        <text x="700" y="75" fill="#fde68a" font-size="13" font-weight="700" text-anchor="middle">3. OUTPUT INFERÊNCIA</text>
+                        <text x="700" y="100" fill="#94a3b8" font-size="11" text-anchor="middle">Validação Alucinação / Tom</text>
+                        <text x="700" y="118" fill="#cbd5e1" font-size="10" text-anchor="middle">Groundedness Check</text>
+
+                        <path d="M 785 90 L 815 90" stroke="#64748b" stroke-width="2"/>
+
+                        <rect x="820" y="40" width="150" height="100" rx="10" fill="#1e1b4b" stroke="#10b981" stroke-width="1.5"/>
+                        <text x="895" y="75" fill="#a7f3d0" font-size="13" font-weight="700" text-anchor="middle">4. OUTPUT REGEX</text>
+                        <text x="895" y="100" fill="#94a3b8" font-size="11" text-anchor="middle">Termos Proibidos</text>
+                        <text x="895" y="118" fill="#cbd5e1" font-size="10" text-anchor="middle">Bloqueio Concorrentes</text>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Diagram 3: Context Compaction in Redis -->
+            <div class="diagram-container">
+                <h3 style="font-size: 1.35rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem;">3. As 3 Janelas de Contexto & FinOps com Compactação em Redis</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Como manter latência TTFT abaixo de 300ms e evitar explosão de custos em conversas de longa duração.</p>
+
+                <div class="diagram-svg-wrap">
+                    <svg viewBox="0 0 940 180" style="max-width: 100%; height: auto;">
+                        <rect x="20" y="30" width="260" height="120" rx="12" fill="#0f1b38" stroke="#005cff" stroke-width="2"/>
+                        <text x="150" y="65" fill="#00d2ff" font-size="15" font-weight="700" text-anchor="middle">1. Input Window (LLM)</text>
+                        <text x="150" y="90" fill="#94a3b8" font-size="12" text-anchor="middle">Até 1M - 2M tokens</text>
+                        <text x="150" y="115" fill="#cbd5e1" font-size="11" text-anchor="middle">Caro e lento para carregar tudo</text>
+
+                        <rect x="340" y="30" width="260" height="120" rx="12" fill="#0f1b38" stroke="#f59e0b" stroke-width="2"/>
+                        <text x="470" y="65" fill="#fde68a" font-size="15" font-weight="700" text-anchor="middle">2. Output Window (LLM)</text>
+                        <text x="470" y="90" fill="#94a3b8" font-size="12" text-anchor="middle">Limite de 16k - 64k tokens</text>
+                        <text x="470" y="115" fill="#cbd5e1" font-size="11" text-anchor="middle">Risco de truncamento em relatórios</text>
+
+                        <rect x="660" y="30" width="260" height="120" rx="12" fill="#0f1b38" stroke="#10b981" stroke-width="2"/>
+                        <text x="790" y="65" fill="#a7f3d0" font-size="15" font-weight="700" text-anchor="middle">3. Session Context (Redis)</text>
+                        <text x="790" y="90" fill="#94a3b8" font-size="12" text-anchor="middle">Memória Viva de Sessão</text>
+                        <text x="790" y="115" fill="#cbd5e1" font-size="11" text-anchor="middle">Compacta por Intenção e Resumo</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 5: FLASHCARDS STAFF -->
+        <section id="flashcards" class="tab-content">
+            <div class="section-header">
+                <h2 class="section-title">🗂️ Flashcards de Conceitos Críticos para Staff & PM</h2>
+                <p class="section-desc">Clique nos cards para virar e testar seu domínio do vocabulário corporativo de sistemas agênticos.</p>
+            </div>
+
+            <div class="flashcards-grid">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <span class="card-tag">Arquitetura</span>
+                            <h4 class="card-front-title">FSM (Máquina de Estados Finitos)</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.5rem;">Clique para virar</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Por que importa:</strong> Transforma a inferência probabilística do LLM em software controlado com transições explícitas, nós de validação determinística e limites rígidos de retry.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <span class="card-tag">Governança</span>
+                            <h4 class="card-front-title">HITL via interrupt()</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.5rem;">Clique para virar</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Por que importa:</strong> Pausa o grafo antes de ações com efeito colateral (enviar e-mail para cliente, alterar banco ou abrir SEV1), aguardando aprovação humana antes de prosseguir.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <span class="card-tag">Escala & Custo</span>
+                            <h4 class="card-front-title">Context Isolation (task)</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.5rem;">Clique para virar</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Por que importa:</strong> Sub-agentes especialistas processam dados brutos (logs, transcrições) em janelas separadas e devolvem apenas resumos curtos, poupando a janela do orquestrador.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <span class="card-tag">Avaliação</span>
+                            <h4 class="card-front-title">Hit Rate @3</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.5rem;">Clique para virar</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Por que importa:</strong> Métrica de busca semântica em runbooks/catálogos. Mede a porcentagem de perguntas em que o documento correto apareceu entre os 3 primeiros resultados recuperados.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <span class="card-tag">FinOps</span>
+                            <h4 class="card-front-title">SSLMs + LoRA</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.5rem;">Clique para virar</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Por que importa:</strong> Substitui modelos de fronteira caros por modelos menores especializados rodando on-prem ou cloud privada (ex: WhisperX em 5 GPUs transcrevendo 500k áudios/dia na Claro).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <span class="card-tag">Governança CI</span>
+                            <h4 class="card-front-title">Esteira Híbrida 60/40</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.5rem;">Clique para virar</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Por que importa:</strong> 60% regras exatas (custo zero, ms) + 40% Juiz de IA (foco em alucinação). Reprova automaticamente Pull Requests caso a qualidade caia abaixo do limiar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <span class="card-tag">Risco & Produto</span>
+                            <h4 class="card-front-title">Silent Drift</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.5rem;">Clique para virar</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Por que importa:</strong> Degradação silenciosa quando provedores atualizam modelos por trás de aliases móveis (-latest). Regra: travar versão exata e rodar Golden Dataset antes de mudar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <span class="card-tag">Regulação</span>
+                            <h4 class="card-front-title">PL 2338/23 (ANPD)</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.5rem;">Clique para virar</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Por que importa:</strong> Marco Legal de IA no Brasil. Exigirá rastreabilidade, explicabilidade e governança de decisões de IA. Tracing com Langfuse vira prova regulatória.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 6: QUIZ EXECUTIVO -->
+        <section id="quiz" class="tab-content">
+            <div class="section-header">
+                <h2 class="section-title">🎯 Quiz Executivo de Prontidão Agêntica</h2>
+                <p class="section-desc">Avalie seu poder de tomada de decisão técnica e arquitetural em cenários corporativos reais.</p>
+            </div>
+
+            <div class="quiz-container" id="quizContainer">
+                <div class="quiz-question-box">
+                    <div class="quiz-q-num" id="quizQNum">Pergunta 1 de 4</div>
+                    <div class="quiz-q-text" id="quizQText">Carregando pergunta...</div>
+                </div>
+
+                <div class="quiz-options" id="quizOptions">
+                    <!-- Options injected via JS -->
+                </div>
+
+                <div class="quiz-feedback" id="quizFeedback"></div>
+            </div>
+        </section>
+
+        <!-- TAB 7: PITCH PARA VP E DIRETORES -->
+        <section id="vp-pitch" class="tab-content">
+            <div class="section-header">
+                <h2 class="section-title">👔 Role-Play & Matriz de Objeções: VP & Diretores</h2>
+                <p class="section-desc">Scripts e argumentos prontos para defender a estratégia de agentes perante a liderança executiva.</p>
+            </div>
+
+            <div class="objection-card">
+                <div class="objection-header">
+                    <span class="objection-badge">Objeção C-Level</span>
+                    <h3 class="objection-title">"Por que precisamos de LangGraph? Um chatbot com prompt bem escrito e RAG não resolve?"</h3>
+                </div>
+                <div class="pitch-box">
+                    <strong>Como responder ao VP:</strong><br>
+                    "Um prompt sozinho é probabilístico e não garante processo. Se soltarmos um agente livre em produção, não temos como auditar se ele conferiu os dados antes de falar com o cliente ou abrir um chamado. O LangGraph nos dá uma <em>Máquina de Estados</em>: se o agente alucinar ou não encontrar evidência nos logs, o código intercepta deterministicamente, tenta até 3 vezes e desvia para o suporte humano com segurança, eliminando o risco de dano de marca."
+                </div>
+            </div>
+
+            <div class="objection-card">
+                <div class="objection-header">
+                    <span class="objection-badge">Objeção FinOps</span>
+                    <h3 class="objection-title">"Esse negócio de múltiplos agentes não vai explodir nosso custo de tokens na nuvem?"</h3>
+                </div>
+                <div class="pitch-box">
+                    <strong>Como responder ao Diretor Financeiro:</strong><br>
+                    "Pelo contrário: ter sub-agentes com contexto isolado é o que <em>reduz</em> a conta. Em vez de jogar 40.000 tokens de transcrição ou tabelas inteiras na conversa principal a cada turno, cada sub-agente especialista lê o dado bruto à parte e devolve apenas um resumo de 15 linhas. Além disso, aplicamos roteamento de entrada: dúvidas simples usam modelos baratos de frações de centavo, reservando modelos mais caros apenas para raciocínio complexo."
+                </div>
+            </div>
+
+            <div class="objection-card">
+                <div class="objection-header">
+                    <span class="objection-badge">Objeção Jurídico / DPO</span>
+                    <h3 class="objection-title">"Como provamos para a ANPD (PL 2338/23) que o agente não está vazando dados sensíveis de clientes?"</h3>
+                </div>
+                <div class="pitch-box">
+                    <strong>Como responder à Segurança & Compliance:</strong><br>
+                    "Não confiamos em comandos de texto no prompt para LGPD. Nossa arquitetura aplica um guardrail determinístico por Regex <em>antes</em> de qualquer dado sair dos nossos servidores para a API do modelo. Além disso, cada decisão automatizada é carimbada com telemetria rastreável no Langfuse (versão de prompt, ferramentas consultadas e evidências), atendendo aos requisitos de explicabilidade do Marco Legal de IA."
+                </div>
+            </div>
+
+            <div class="objection-card">
+                <div class="objection-header">
+                    <span class="objection-badge">Objeção Engenharia</span>
+                    <h3 class="objection-title">"Por que não usamos CrewAI que parece muito mais simples de programar?"</h3>
+                </div>
+                <div class="pitch-box">
+                    <strong>Como responder ao Tech Lead:</strong><br>
+                    "CrewAI é ótimo para provas de conceito rápidas, mas funciona como uma caixa-preta de conversas livres entre personas. Em produção crítica, precisamos de controle explícito de cada aresta, persistência por checkpoints em banco de dados, pausa no processo para aprovação humana (<code>interrupt</code>) e testes unitários das ferramentas offline. É isso que o LangGraph entrega e por isso empresas como Mercado Livre e Claro adotam essa fundação."
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 8: BLUEPRINTS BLIP (ATA & INSIGHT AGENTS) -->
+        <section id="blip-blueprint" class="tab-content">
+            <div class="section-header">
+                <h2 class="section-title">🚀 Blueprints de Produto: Agente ATA & Insight Agents</h2>
+                <p class="section-desc">Especificações de Product Management (PRD, Arquitetura e Critérios de Aceite) desenhadas para a Blip.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 2rem;">
+                <!-- ATA Agent Card -->
+                <div class="day-card" style="border-left: 4px solid var(--blip-cyan);">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span class="day-badge">Blueprint 01</span>
+                        <span style="font-size: 0.85rem; color: var(--blip-cyan); font-weight: 700;">Agente ATA (PMO / Squads)</span>
+                    </div>
+                    <h3 style="font-size: 1.4rem; font-weight: 800; color: #fff; margin-bottom: 0.75rem;">Agente de Atas e Acompanhamento de Projetos</h3>
+                    <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+                        Elimina o problema de transcrições longas gerando atas com dados inventados, tarefas sem dono ou ideias vetadas tratadas como decisões aprovadas.
+                    </p>
+
+                    <h4 style="font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem;">Arquitetura de Produto Especificada:</h4>
+                    <ul class="day-takeaways" style="margin-bottom: 1.5rem;">
+                        <li><strong>Filesystem Virtual:</strong> Transcrição bruta salva em <code>/base/transcricao.md</code> (somente leitura).</li>
+                        <li><strong>3 Sub-agentes Paralelos:</strong> Extrator de Ações, Radar de Riscos/Impedimentos e Cruzador de Backlog Azure DevOps.</li>
+                        <li><strong>Validação Anti-Alucinação:</strong> Validador Pydantic confere se os donos das tarefas pertencem aos participantes reais da reunião.</li>
+                        <li><strong>HITL (Human-in-the-Loop):</strong> Pausa com <code>interrupt()</code> antes de postar no Slack ou criar cards no DevOps.</li>
+                        <li><strong>Golden Dataset:</strong> 30 reuniões com casos armadilha (ideias vetadas durante o papo).</li>
+                    </ul>
+
+                    <div style="background: rgba(0,210,255,0.08); border-radius: var(--radius-sm); padding: 1rem; font-size: 0.85rem; color: #e2e8f0;">
+                        <strong>Métricas de Sucesso de PM:</strong> Redução de 80% no tempo de emissão de atas, 0% de tarefas com donos inexistentes e adoção de 95% pelas squads.
+                    </div>
+                </div>
+
+                <!-- Insight Agent Card -->
+                <div class="day-card" style="border-left: 4px solid var(--purple);">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span class="day-badge" style="background: rgba(139, 92, 246, 0.2); color: #c084fc;">Blueprint 02</span>
+                        <span style="font-size: 0.85rem; color: #c084fc; font-weight: 700;">Insight Agents (CS & Analytics)</span>
+                    </div>
+                    <h3 style="font-size: 1.4rem; font-weight: 800; color: #fff; margin-bottom: 0.75rem;">Agente Investigador de Métricas e Diagnóstico de CS</h3>
+                    <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+                        Inspirado no caso OpsPilot INC-2041: não para no sintoma informado pelo cliente; investiga causas raízes em múltiplas fontes.
+                    </p>
+
+                    <h4 style="font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem;">Arquitetura de Produto Especificada:</h4>
+                    <ul class="day-takeaways" style="margin-bottom: 1.5rem;">
+                        <li><strong>Roteamento de Custo:</strong> Perguntas de definição vão para RAG rápido; anomalias profundas acionam o Deep Agent.</li>
+                        <li><strong>Error-as-Observation em SQL:</strong> Queries com nomes de métricas errados retornam opções válidas para autocorreção em 1s.</li>
+                        <li><strong>Investigação Causal em 3 Frentes:</strong> Analista Quantitativo (funis), Qualitativo (amostras de conversas) e Auditor de Releases/Config.</li>
+                        <li><strong>Trava contra Alucinação Numérica:</strong> Nó validador confere cada número citado contra o payload bruto retornado pelas APIs.</li>
+                        <li><strong>Régua de Go-Live:</strong> 0.75 para CSMs internos e 0.90 obrigatório para clientes finais no portal Blip.</li>
+                    </ul>
+
+                    <div style="background: rgba(139, 92, 246, 0.08); border-radius: var(--radius-sm); padding: 1rem; font-size: 0.85rem; color: #e2e8f0;">
+                        <strong>Métricas de Sucesso de PM:</strong> Tempo de diagnóstico reduzido de 4h para 45s; taxa de acerto de causa raiz de 92%.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Agentic Executive Hub</strong> • Criado para Lifelong Learning e Mentoria Executiva de IA na Blip.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.78rem;">Baseado na stack: LangChain 1.4 · LangGraph 1.2 · deepagents 0.7 · Langfuse v4 · Hospedado via Hostinger MCP em <a href="https://agentic.reagiu.com.br" target="_blank">agentic.reagiu.com.br</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
