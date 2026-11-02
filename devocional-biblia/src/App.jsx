@@ -370,6 +370,25 @@ export default function App() {
     setStudyModalData({ isOpen: true, bookName: bookName || 'Lucas' });
   };
 
+  // Se o usuário não está logado (deslogou ou está no primeiro acesso)
+  if (!activeProfileId) {
+    return (
+      <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 sepia:bg-[#fbf0d9] flex flex-col justify-center">
+        <SelecaoPerfilScreen
+          existingProfiles={profiles.filter(p => p.id !== 'esposa' && p.name?.toLowerCase() !== 'esposa')}
+          onSelectProfileRequest={handleSelectProfileRequest}
+          onCreateProfile={handleCreateProfile}
+        />
+        <PinAuthModal
+          isOpen={pinModalData.isOpen}
+          onClose={() => setPinModalData({ isOpen: false, targetProfile: null })}
+          targetProfileName={pinModalData.targetProfile?.name}
+          onSuccess={handlePinSuccess}
+        />
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen transition-colors duration-200 bg-zinc-50 dark:bg-zinc-950 sepia:bg-[#fbf0d9] text-zinc-900 dark:text-zinc-100 sepia:text-[#433422] flex flex-col font-sans">
       

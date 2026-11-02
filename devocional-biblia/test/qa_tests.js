@@ -82,16 +82,16 @@ test('QA Test 2: Segurança & Gerenciamento de Contas (Rafael Admin com Proteç�
 
   const profiles = storage.getProfiles();
   const rafael = profiles.find(p => p.id === 'default');
-  const esposa = profiles.find(p => p.id === 'esposa');
+  const outroLeitor = storage.createProfile('Outro Leitor', '👤', 'rose', 'member');
 
   // Rafael deve ser Administrador
   assert.equal(rafael.role, 'admin', 'Rafael deve ser admin');
   assert.equal(rafael.requiresPin, true, 'Rafael deve exigir PIN para segurança');
   assert.equal(rafael.pin, '1234', 'PIN inicial de fábrica do Rafael deve ser 1234');
 
-  // Esposa deve ser Membro
-  assert.equal(esposa.role, 'member', 'Esposa deve ser membro');
-  assert.equal(esposa.requiresPin, false, 'Esposa não requer PIN');
+  // Outro leitor deve ser Membro
+  assert.equal(outroLeitor.role, 'member', 'Outro leitor deve ser membro');
+  assert.equal(outroLeitor.requiresPin, false, 'Outro leitor não requer PIN');
 
   // Tentativa de invasão com PIN incorreto
   assert.equal(storage.verifyProfilePin('default', '0000'), false, 'PIN incorreto deve ser rejeitado');
@@ -825,20 +825,15 @@ test('QA Test 20: Exclusividade das Métricas de Uso para Admin e Validação de
   const rafael = DEFAULT_PROFILES.find(p => p.id === 'default');
   assert.equal(rafael.role, 'admin', 'Rafael deve ser admin');
 
-  // 2. Outros usuários (ex: Esposa ou novos leitores) são 'member'
-  const esposa = DEFAULT_PROFILES.find(p => p.id === 'esposa');
-  assert.equal(esposa.role, 'member', 'Esposa deve ser member');
-
+  // 2. Outros usuários (novos leitores) são 'member'
   const novoLeitor = storage.createProfile('Novo Membro', '👤', 'rose', 'member');
   assert.equal(novoLeitor.role, 'member', 'Novo leitor deve ser member');
 
   // 3. Regra de visibilidade do botão de Métricas de Uso no Dashboard:
   const isMetricsVisibleForAdmin = rafael.role === 'admin';
-  const isMetricsVisibleForEsposa = esposa.role === 'admin';
   const isMetricsVisibleForNewUser = novoLeitor.role === 'admin';
 
   assert.equal(isMetricsVisibleForAdmin, true, 'Métricas devem ser visíveis exclusivamente para o Admin');
-  assert.equal(isMetricsVisibleForEsposa, false, 'Métricas devem estar ocultas para Esposa');
   assert.equal(isMetricsVisibleForNewUser, false, 'Métricas devem estar ocultas para novos usuários');
 
   // 4. Validação da persistência de tema escuro

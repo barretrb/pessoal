@@ -93,8 +93,7 @@ export const cloudDbService = {
       })),
       activeProfileId,
       progressByProfile: {
-        default: compactProgress,
-        esposa: progressByProfile['esposa'] || {}
+        default: compactProgress
       },
       favoritesByProfile,
       highlightsByProfile

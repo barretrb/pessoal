@@ -34,18 +34,6 @@ export const DEFAULT_PROFILES = [
     planOptIn: true,      // Rafael está com o plano anual ativo desde 01/01/2026
     planStartDate: '2026-01-01',
     startDayId: 1
-  },
-  { 
-    id: 'esposa', 
-    name: 'Esposa', 
-    avatar: '👩', 
-    color: 'rose',
-    role: 'member',       // Esposa é Membro
-    pin: '',
-    requiresPin: false,
-    planOptIn: null,      // Pergunta no onboarding se quer participar ou apenas Bíblia/Estudos
-    planStartDate: null,
-    startDayId: null
   }
 ];
 
@@ -65,6 +53,9 @@ export const storage = {
       if (stored) {
         let parsed = JSON.parse(stored);
         if (Array.isArray(parsed) && parsed.length > 0) {
+          // O usuário confirmou a exclusão definitiva do perfil esposa
+          parsed = parsed.filter(p => p.id !== 'esposa' && p.name?.trim().toLowerCase() !== 'esposa');
+
           let rafaelFound = false;
           parsed = parsed.map(p => {
             const isRaf = p.id === 'default' || p.name?.trim().toLowerCase() === 'rafael' || p.role === 'admin';
@@ -119,6 +110,10 @@ export const storage = {
     try {
       const active = localStorage.getItem(STORAGE_KEYS.ACTIVE_PROFILE);
       if (active === '__none__') return null;
+      if (active === 'esposa') {
+        localStorage.setItem(STORAGE_KEYS.ACTIVE_PROFILE, 'default');
+        return 'default';
+      }
       if (active) return active;
     } catch (e) {}
     return 'default';
