@@ -38,6 +38,13 @@ def safe_send_whatsapp(message: str):
     except Exception as e:
         print(f"[BACKGROUND WHATSAPP ERROR] {e}")
 
+def safe_send_telegram(message: str, chat_id: str = ""):
+    """Envia mensagem no Telegram em background capturando qualquer exceção."""
+    try:
+        orchestrator.telegram.send_message(message, chat_id=chat_id)
+    except Exception as e:
+        print(f"[BACKGROUND TELEGRAM ERROR] {e}")
+
 @app.get("/")
 def root():
     return {
@@ -95,6 +102,51 @@ async def whatsapp_webhook(request: Request, background_tasks: BackgroundTasks):
 
         return JSONResponse(status_code=200, content=result)
 
+    except Exception as e:
+        traceback.print_exc()
+        return JSONResponse(status_code=500, content={"error": str(e), "traceback": traceback.format_exc()})
+
+@app.post("/webhook/telegram")
+async def telegram_webhook(request: Request, background_tasks: BackgroundTasks):
+    """
+    Recebe mensagens enviadas pelo usuário no Telegram Bot.
+    Interpreta intenções em tempo real via InboundHandler e responde no chat.
+    """
+    try:
+        data = await request.json()
+        message = data.get("message") or data.get("edited_message")
+        if not message:
+            return JSONResponse(status_code=200, content={"status": "ignored", "reason": "No message in update"})
+
+        chat = message.get("chat", {})
+        chat_id = str(chat.get("id"))
+        user_text = message.get("text", "").strip()
+
+        if not user_text:
+            return JSONResponse(status_code=200, content={"status": "ignored", "reason": "Empty text"})
+
+        # Comando /start
+        if user_text == "/start":
+            welcome_text = (
+                "🎯 *Olá! Sou seu Agente 'A Única Coisa'.*\n\n"
+                "Estou conectado e pronto para ajudar a blindar o seu foco e gerenciar suas prioridades diárias.\n\n"
+                "💬 *O que você pode me dizer a qualquer momento:*\n"
+                "• _'Amanhã preciso preparar a apresentação de diretoria às 10h'_\n"
+                "• _'Minha Única Coisa hoje é fechar o relatório fiscal'_\n"
+                "• _'Finalizei meu dominó de hoje!'_\n"
+                "• _'Quais são minhas tarefas de hoje?'_\n\n"
+                "Qual é o seu maior dominó para hoje?"
+            )
+            background_tasks.add_task(safe_send_telegram, welcome_text, chat_id)
+            return JSONResponse(status_code=200, content={"status": "ok", "action": "welcome"})
+
+        # Processa mensagem via InboundHandler
+        result = inbound_handler.process_incoming_message(user_text)
+        reply = result.get("reply")
+        if reply:
+            background_tasks.add_task(safe_send_telegram, reply, chat_id)
+
+        return JSONResponse(status_code=200, content={"status": "processed", "result": result})
     except Exception as e:
         traceback.print_exc()
         return JSONResponse(status_code=500, content={"error": str(e), "traceback": traceback.format_exc()})

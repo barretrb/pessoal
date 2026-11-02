@@ -15,6 +15,7 @@ from src.tasks_service import TasksService
 from src.calendar_service import CalendarService
 from src.task_classifier import TaskClassifier
 from src.whatsapp_service import WhatsAppService
+from src.telegram_service import TelegramService
 from src.pills_service import KnowledgePillsService
 
 class Orchestrator:
@@ -63,6 +64,14 @@ class Orchestrator:
             phone=phone,
             apikey=callmebot_key,
             provider=wa_cfg.get("provider", "callmebot")
+        )
+
+        tg_cfg = self.config.get("telegram", {})
+        tg_token = os.environ.get("TELEGRAM_BOT_TOKEN") or tg_cfg.get("bot_token", "9093211511:AAEedA_icwCOlAe_yVYD7vzvhCQpz0SZ1Ss")
+        tg_chat_id = os.environ.get("TELEGRAM_CHAT_ID") or tg_cfg.get("chat_id", "")
+        self.telegram = TelegramService(
+            token=tg_token,
+            default_chat_id=tg_chat_id
         )
 
     def _load_json(self, path: str, default: Any) -> Any:
@@ -166,6 +175,11 @@ class Orchestrator:
             auto_booked=calendar_event_created
         )
         sent = self.whatsapp.send_message(msg)
+        if self.telegram.default_chat_id:
+            try:
+                self.telegram.send_message(msg)
+            except Exception as tg_err:
+                print(f"[ORCHESTRATOR] Erro ao enviar Telegram: {tg_err}")
 
         # 6. Atualiza estado
         if "daily_history" not in self.state:
@@ -233,6 +247,11 @@ class Orchestrator:
         pill = KnowledgePillsService.get_daily_pill(now)
         msg = KnowledgePillsService.format_lunch_pill(pill)
         sent = self.whatsapp.send_message(msg)
+        if self.telegram.default_chat_id:
+            try:
+                self.telegram.send_message(msg)
+            except Exception as tg_err:
+                print(f"[ORCHESTRATOR] Erro ao enviar Telegram: {tg_err}")
 
         if "daily_history" not in self.state:
             self.state["daily_history"] = {}
@@ -253,6 +272,11 @@ class Orchestrator:
 
         msg = self.whatsapp.format_night_checkin(deep_title, personal_title)
         sent = self.whatsapp.send_message(msg)
+        if self.telegram.default_chat_id:
+            try:
+                self.telegram.send_message(msg)
+            except Exception as tg_err:
+                print(f"[ORCHESTRATOR] Erro ao enviar Telegram: {tg_err}")
 
         if "daily_history" not in self.state:
             self.state["daily_history"] = {}
