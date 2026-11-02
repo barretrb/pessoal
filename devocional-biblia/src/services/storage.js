@@ -98,6 +98,7 @@ export const storage = {
   getActiveProfileId() {
     try {
       const active = localStorage.getItem(STORAGE_KEYS.ACTIVE_PROFILE);
+      if (active === '__none__') return null;
       if (active) return active;
     } catch (e) {}
     return 'default';
@@ -105,9 +106,17 @@ export const storage = {
 
   setActiveProfileId(profileId) {
     try {
-      localStorage.setItem(STORAGE_KEYS.ACTIVE_PROFILE, profileId);
+      if (!profileId || profileId === '__none__') {
+        localStorage.setItem(STORAGE_KEYS.ACTIVE_PROFILE, '__none__');
+      } else {
+        localStorage.setItem(STORAGE_KEYS.ACTIVE_PROFILE, profileId);
+      }
     } catch (e) {}
     return profileId;
+  },
+
+  logout() {
+    this.setActiveProfileId('__none__');
   },
 
   getActiveProfile() {

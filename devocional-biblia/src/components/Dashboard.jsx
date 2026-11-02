@@ -22,7 +22,8 @@ import {
   Library,
   Sliders,
   Users,
-  Cloud
+  Cloud,
+  LogOut
 } from 'lucide-react';
 import { getMediaForDay, PREFERRED_ARTISTS, getMusicForChapter } from '../data/dailyMedia';
 import { formatDateBR } from '../services/dateUtils';
@@ -48,7 +49,8 @@ export default function Dashboard({
   onResetDashboardLayout,
   onOpenCloud,
   onOptInPlan,
-  onOptOutPlan
+  onOptOutPlan,
+  onLogout
 }) {
   const [filter, setFilter] = useState('all'); // all, pending, completed
   const [showVideoPlayer, setShowVideoPlayer] = useState(false);
@@ -1081,6 +1083,18 @@ export default function Dashboard({
               <span className="text-[10px] bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 px-1.5 py-0.5 rounded-md font-semibold">
                 Trocar ⇄
               </span>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (onLogout) onLogout();
+                }}
+                className="text-[10px] bg-rose-50 dark:bg-rose-950/50 hover:bg-rose-100 dark:hover:bg-rose-900/60 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-900/60 px-2 py-0.5 rounded-md font-bold transition-colors flex items-center space-x-1 cursor-pointer"
+                title="Sair / Desconectar deste leitor"
+              >
+                <LogOut className="w-3 h-3" />
+                <span>Sair</span>
+              </button>
             </div>
             <p className="text-xs text-zinc-500 dark:text-zinc-400">
               {isPlanActive 

@@ -9,7 +9,8 @@ import {
   AlertCircle, 
   BookMarked,
   Library,
-  Cloud
+  Cloud,
+  LogOut
 } from 'lucide-react';
 
 export default function Navbar({ 
@@ -27,7 +28,8 @@ export default function Navbar({
   onOpenStudyInfo,
   activeProfile,
   onOpenProfiles,
-  onOpenCloud
+  onOpenCloud,
+  onLogout
 }) {
   // Alternador de tema em 1 clique para mobile (Claro -> Sépia -> Escuro -> Claro)
   const handleCycleTheme = () => {
@@ -134,6 +136,15 @@ export default function Navbar({
           >
             <span className="text-sm">{activeProfile?.avatar || '👤'}</span>
             <span className="hidden lg:inline">{activeProfile?.name || 'Perfil'}</span>
+          </button>
+
+          {/* Botão de Sair / Logoff */}
+          <button
+            onClick={onLogout}
+            className="p-1.5 sm:p-2 rounded-xl text-zinc-500 hover:text-rose-600 dark:text-zinc-400 dark:hover:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition-colors shrink-0"
+            title="Sair do perfil atual (Fazer logoff para testar ou trocar de leitor)"
+          >
+            <LogOut className="w-4 h-4" />
           </button>
 
           {/* Botão Sincronização em Nuvem (Multi-Aparelho) */}

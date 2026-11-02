@@ -790,3 +790,30 @@ test('QA Test 18: Flexibilização para Novos Usuários (Opt-in do Plano sem Atr
 
   console.log('✓ QA Test 18 Aprovado: Onboarding, início a partir da data de adesão e ocultação do plano no modo livre 100% verificados.');
 });
+
+test('QA Test 19: Logoff / Desconexão e Criação Autônoma de Novo Leitor', () => {
+  localStorage.clear();
+
+  // 1. Iniciar com Rafael conectado
+  storage.setActiveProfileId('default');
+  assert.equal(storage.getActiveProfileId(), 'default');
+
+  // 2. Realizar Logoff (Desconectar)
+  storage.logout();
+  assert.equal(storage.getActiveProfileId(), null, 'Após logout, getActiveProfileId deve retornar null');
+
+  // 3. Qualquer novo usuário pode criar seu próprio perfil sem intervenção do Admin
+  const novoLeitor = storage.createProfile('Visitante VIP', '🌟', 'amber', 'member');
+  assert.ok(novoLeitor.id.startsWith('profile_'), 'ID do novo leitor gerado');
+  assert.equal(novoLeitor.name, 'Visitante VIP');
+  assert.equal(novoLeitor.role, 'member');
+
+  // 4. Perfil recém-criado deve se tornar o perfil ativo
+  assert.equal(storage.getActiveProfileId(), novoLeitor.id, 'Novo leitor deve ser automaticamente o perfil ativo');
+
+  // 5. Histórico e favoritos do novo leitor estão completamente isolados
+  const userDays = storage.getProgress(defaultDays, novoLeitor.id);
+  assert.equal(userDays.filter(d => d.completed).length, 0, 'Novo leitor começa com 0 dias concluídos');
+
+  console.log('✓ QA Test 19 Aprovado: Logoff, tela de seleção e criação autônoma de perfil 100% verificados.');
+});

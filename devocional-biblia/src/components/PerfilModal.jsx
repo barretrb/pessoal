@@ -12,7 +12,8 @@ import {
   BookOpen,
   Edit2,
   Calendar,
-  Sparkles
+  Sparkles,
+  LogOut
 } from 'lucide-react';
 
 const AVATAR_OPTIONS = ['👨', '👩', '👦', '👧', '👴', '👵', '✝️', '📖', '🕊️', '❤️'];
@@ -27,6 +28,7 @@ export default function PerfilModal({
   onDeleteProfile,
   onUpdateAdminPin,
   onUpdateProfile,
+  onLogout,
   getProfileProgressStats
 }) {
   const [isCreating, setIsCreating] = useState(false);
@@ -286,9 +288,8 @@ export default function PerfilModal({
             </div>
           )}
 
-          {/* Adicionar Novo Perfil (Somente o Admin Rafael pode criar) */}
-          {isAdmin && (
-            isCreating ? (
+          {/* Adicionar Novo Perfil (Disponível para qualquer leitor) */}
+          {isCreating ? (
               <form onSubmit={handleCreate} className="p-4 rounded-2xl border-2 border-dashed border-amber-300 dark:border-amber-800 bg-amber-50/40 dark:bg-amber-950/20 space-y-3">
                 <h4 className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300">
                   Adicionar Novo Perfil de Leitura
@@ -353,16 +354,29 @@ export default function PerfilModal({
                 className="w-full py-3 px-4 rounded-2xl border-2 border-dashed border-zinc-300 dark:border-zinc-700 hover:border-amber-500 text-zinc-600 dark:text-zinc-300 hover:text-amber-600 text-xs font-bold flex items-center justify-center space-x-2 transition-colors"
               >
                 <UserPlus className="w-4 h-4" />
-                <span>Adicionar Novo Perfil</span>
+                <span>+ Adicionar Novo Leitor</span>
               </button>
-            )
-          )}
+            )}
 
         </div>
 
-        {/* Rodapé Informativo */}
-        <div className="p-4 bg-zinc-100 dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800 text-[11px] text-zinc-500 dark:text-zinc-400 text-center">
-          O perfil de Administrador (Rafael) é protegido por PIN, impedindo que outros usuários visualizem ou alterem seu progresso.
+        {/* Rodapé Informativo e Ação de Sair */}
+        <div className="p-4 bg-zinc-50 dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800 flex items-center justify-between gap-2">
+          <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+            {isAdmin ? '🔒 Administrador protegido por PIN' : 'Leitor Individual'}
+          </p>
+          <button
+            type="button"
+            onClick={() => {
+              onClose();
+              if (onLogout) onLogout();
+            }}
+            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/40 dark:hover:bg-rose-900/50 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-900/60 text-xs font-bold transition-colors cursor-pointer"
+            title="Sair deste perfil e ir para a tela de escolha de leitor"
+          >
+            <LogOut className="w-3.5 h-3.5" />
+            <span>Sair / Logoff</span>
+          </button>
         </div>
 
       </div>

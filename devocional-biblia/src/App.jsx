@@ -13,6 +13,7 @@ import PerfilModal from './components/PerfilModal';
 import PinAuthModal from './components/PinAuthModal';
 import CloudSyncModal from './components/CloudSyncModal';
 import PlanoDevocionalOnboardingModal from './components/PlanoDevocionalOnboardingModal';
+import SelecaoPerfilScreen from './components/SelecaoPerfilScreen';
 
 import initialDays from './data/plano365.json';
 import lucasData from './data/lucas_nvt.json';
@@ -179,6 +180,12 @@ export default function App() {
       planStartDate: todayStr,
       startDayId: currentDayId
     });
+  };
+
+
+  const handleLogout = () => {
+    storage.logout();
+    setActiveProfileId(null);
   };
 
   const handleDeclinePlan = () => {
@@ -390,6 +397,7 @@ export default function App() {
           telemetryService.track('cloud_sync_click');
           setCloudModalOpen(true);
         }}
+        onLogout={handleLogout}
       />
 
       {/* Conteúdo Principal */}
@@ -423,6 +431,7 @@ export default function App() {
             }}
             onOptInPlan={handleAcceptPlan}
             onOptOutPlan={handleDeclinePlan}
+            onLogout={handleLogout}
           />
         ) : (
           <LeitorBiblico
@@ -496,6 +505,7 @@ export default function App() {
         onDeleteProfile={handleDeleteProfile}
         onUpdateAdminPin={handleUpdateAdminPin}
         onUpdateProfile={handleUpdateProfile}
+        onLogout={handleLogout}
         getProfileProgressStats={getProfileProgressStats}
       />
 
