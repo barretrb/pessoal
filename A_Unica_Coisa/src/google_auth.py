@@ -2,7 +2,7 @@
 """
 Gerenciador de Autenticação OAuth 2.0 do Google.
 Centraliza as credenciais e escopos para Google Tasks API e Google Calendar API.
-Suporta leitura a partir de arquivos locais ou variáveis de ambiente (GOOGLE_TOKEN_JSON) na nuvem.
+Suporta leitura e persistência em Supabase (PostgreSQL), variáveis de ambiente ou arquivos locais.
 """
 
 import os
@@ -19,12 +19,62 @@ SCOPES = [
 ]
 
 class GoogleAuthManager:
-    """Gerencia a autenticação e clientes de API do Google com suporte a nuvem."""
+    """Gerencia a autenticação e clientes de API do Google com suporte a Supabase e Nuvem."""
 
     def __init__(self, credentials_path="credentials.json", token_path="token.json"):
         self.credentials_path = credentials_path
         self.token_path = token_path
         self._credentials = None
+
+    def _load_token_from_supabase(self) -> Optional[Credentials]:
+        """Tenta carregar o token OAuth persistido no Supabase."""
+        try:
+            import psycopg2
+            pg_pass = os.environ.get("PGPASS", "vX$i/cVp5SSKrWV")
+            conn = psycopg2.connect(
+                dbname="postgres",
+                user="postgres",
+                password=pg_pass,
+                host="db.yuravvmgnyeppbwodzvj.supabase.co",
+                port=5432,
+                connect_timeout=6
+            )
+            with conn.cursor() as cur:
+                cur.execute("SELECT token_data FROM public.user_google_tokens ORDER BY updated_at DESC LIMIT 1;")
+                row = cur.fetchone()
+                if row and row[0]:
+                    token_info = row[0]
+                    if isinstance(token_info, str):
+                        token_info = json.loads(token_info)
+                    return Credentials.from_authorized_user_info(token_info, SCOPES)
+            conn.close()
+        except Exception:
+            pass
+        return None
+
+    def _save_token_to_supabase(self, token_json_str: str):
+        """Salva o token OAuth no banco de dados do Supabase."""
+        try:
+            import psycopg2
+            pg_pass = os.environ.get("PGPASS", "vX$i/cVp5SSKrWV")
+            conn = psycopg2.connect(
+                dbname="postgres",
+                user="postgres",
+                password=pg_pass,
+                host="db.yuravvmgnyeppbwodzvj.supabase.co",
+                port=5432,
+                connect_timeout=6
+            )
+            conn.autocommit = True
+            with conn.cursor() as cur:
+                cur.execute("""
+                    INSERT INTO public.user_google_tokens (token_data, is_valid, last_synced_at)
+                    VALUES (%s, TRUE, NOW());
+                """, (token_json_str,))
+            conn.close()
+            print("[AUTH] Token salvo no Supabase com sucesso!")
+        except Exception as e:
+            print(f"[AUTH] Aviso ao salvar token no Supabase: {e}")
 
     def get_credentials(self) -> Optional[Credentials]:
         """Obtém ou renova as credenciais de acesso às APIs do Google."""
@@ -37,10 +87,14 @@ class GoogleAuthManager:
                 token_data = json.loads(env_token)
                 creds = Credentials.from_authorized_user_info(token_data, SCOPES)
             except Exception as e:
-                print(f"[AUTH] Erro ao carregar GOOGLE_TOKEN_JSON da variável de ambiente: {e}")
+                print(f"[AUTH] Erro ao carregar GOOGLE_TOKEN_JSON: {e}")
                 creds = None
 
-        # 2. Tenta carregar token de arquivo local
+        # 2. Tenta carregar token do Supabase
+        if not creds:
+            creds = self._load_token_from_supabase()
+
+        # 3. Tenta carregar token de arquivo local
         if not creds and os.path.exists(self.token_path):
             try:
                 creds = Credentials.from_authorized_user_file(self.token_path, SCOPES)
@@ -48,15 +102,17 @@ class GoogleAuthManager:
                 print(f"[AUTH] Erro ao carregar token existente: {e}.")
                 creds = None
 
-        # 3. Se expirado, tenta renovar via refresh_token
+        # 4. Se expirado, tenta renovar via refresh_token
         if creds and creds.expired and creds.refresh_token:
             try:
                 creds.refresh(Request())
+                if creds.valid:
+                    self._save_token_to_supabase(creds.to_json())
             except Exception as e:
                 print(f"[AUTH] Falha ao renovar token expirado: {e}.")
                 creds = None
 
-        # 4. Se não há credenciais e estamos em ambiente interativo local, tenta fluxo OAuth
+        # 5. Se não há credenciais e estamos em ambiente interativo local, tenta fluxo OAuth
         if not creds:
             if not os.path.exists(self.credentials_path):
                 print(f"[AUTH] Aviso: Nenhum token ou credentials.json configurado. Operando em modo offline.")
@@ -81,10 +137,12 @@ class GoogleAuthManager:
 
                 creds = flow.run_local_server(port=0)
 
-                # Salva o token atualizado para as próximas execuções
+                # Salva o token atualizado para as próximas execuções (local e Supabase)
+                token_json = creds.to_json()
                 os.makedirs(os.path.dirname(os.path.abspath(self.token_path)), exist_ok=True)
                 with open(self.token_path, "w", encoding="utf-8") as token_file:
-                    token_file.write(creds.to_json())
+                    token_file.write(token_json)
+                self._save_token_to_supabase(token_json)
             except Exception as e:
                 print(f"[AUTH] Falha ao executar login interativo: {e}")
                 return None

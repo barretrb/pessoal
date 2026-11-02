@@ -308,7 +308,7 @@ class CalendarService:
     ) -> Dict[str, Any]:
         """Cria o bloco de foco 'A Única Coisa' no Google Calendar com convite opcional para trabalho."""
         event_body = {
-            "summary": f"🎯 A Única Coisa: {task_title}",
+            "summary": f"🎯 {task_title}",
             "description": f"Bloco de foco Deep Work reservado pelo Agente 'A Única Coisa'.\n\nNotas:\n{notes}",
             "start": {
                 "dateTime": start_dt.isoformat()
