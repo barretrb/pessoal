@@ -79,7 +79,7 @@ export const cloudDbService = {
       familyCode: cloudConfig.familyCode || 'DEVOCIONAL-SYNC-RAFAEL',
       lastCompletedDay: maxCompletedDay,
       pendingDays,
-      completedChapters: completedChapters.slice(-5), // Guarda os últimos 5 capítulos completados (ultraleve)
+      completedChapters: completedChapters.slice(-30), // Guarda os últimos 30 capítulos completados na nuvem
       updatedAt: new Date().toISOString(),
       profiles: profiles.map(p => ({
         id: p.id,
@@ -218,6 +218,46 @@ export const cloudDbService = {
     }
   },
 
+  // Sincronização Imediata sob Demanda (sem debounce)
+  async syncNow(onSyncSuccess = null) {
+    if (isSyncInProgress) return false;
+    isSyncInProgress = true;
+    try {
+      const payload = this.createCloudPayload();
+      try {
+        localStorage.setItem(`devocional_cloud_vault_${payload.familyCode}`, JSON.stringify(payload));
+      } catch (e) {}
+
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 7000);
+
+      const res = await fetch(`${CLOUD_API_URL}/${CLOUD_VAULT_ID}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        keepalive: true,
+        body: JSON.stringify({
+          name: 'devocional_sync_DEVOCIONAL-SYNC-RAFAEL',
+          data: payload
+        }),
+        signal: controller.signal
+      });
+      clearTimeout(timeoutId);
+
+      if (res.ok) {
+        const config = storage.getCloudConfig();
+        config.lastSyncedAt = payload.updatedAt;
+        storage.saveCloudConfig(config);
+        if (onSyncSuccess) onSyncSuccess(config.lastSyncedAt);
+        return true;
+      }
+    } catch (err) {
+      console.warn("syncNow falhou:", err?.message);
+    } finally {
+      isSyncInProgress = false;
+    }
+    return false;
+  },
+
   // Sincronização Automática em Segundo Plano (Salva na Nuvem Real + Local)
   triggerAutoSync(onSyncSuccess = null) {
     if (syncDebounceTimer) {
@@ -225,48 +265,8 @@ export const cloudDbService = {
     }
 
     syncDebounceTimer = setTimeout(async () => {
-      if (isSyncInProgress) return;
-      isSyncInProgress = true;
-      try {
-        const payload = this.createCloudPayload();
-        
-        // 1. Persistência local imediata (resiliência offline)
-        try {
-          localStorage.setItem(`devocional_cloud_vault_${payload.familyCode}`, JSON.stringify(payload));
-        } catch (e) {}
-
-        // 2. Envio Real para a Nuvem via REST API (com timeout)
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 6000);
-
-        try {
-          const res = await fetch(`${CLOUD_API_URL}/${CLOUD_VAULT_ID}`, {
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              name: 'devocional_sync_DEVOCIONAL-SYNC-RAFAEL',
-              data: payload
-            }),
-            signal: controller.signal
-          });
-          clearTimeout(timeoutId);
-
-          if (res.ok) {
-            const config = storage.getCloudConfig();
-            config.lastSyncedAt = payload.updatedAt;
-            storage.saveCloudConfig(config);
-            if (onSyncSuccess) onSyncSuccess(config.lastSyncedAt);
-          }
-        } catch (fetchErr) {
-          // Continua silenciosamente caso esteja sem internet momentaneamente
-          console.warn("Aviso: Sincronização na nuvem remota falhou (modo offline preservado):", fetchErr?.message);
-        }
-      } catch (e) {
-        console.warn("Auto-sync background:", e);
-      } finally {
-        isSyncInProgress = false;
-      }
-    }, 800); // 800ms de debounce para fluidez máxima
+      await this.syncNow(onSyncSuccess);
+    }, 150); // 150ms de resposta rápida para celulares e mobile browsers
   },
 
   // Consulta e Baixa Atualizações da Nuvem Real ao Abrir ou Focar o App

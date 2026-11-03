@@ -217,8 +217,8 @@ export default function App() {
     const actId = storage.getActiveProfileId();
     setProfiles(profs);
     setActiveProfileId(actId);
-    setDays(storage.getProgress(initialDays, actId));
-    setChapterProgress(storage.getChapterProgress(actId));
+    setDays([...storage.getProgress(initialDays, actId)]);
+    setChapterProgress({ ...storage.getChapterProgress(actId) });
     setFavorites(storage.getFavorites(actId));
     setHighlights(storage.getHighlights(actId));
     setDashboardLayout(storage.getDashboardLayout(actId));
@@ -252,12 +252,22 @@ export default function App() {
     window.addEventListener('focus', handleFocusSync);
     document.addEventListener('visibilitychange', handleFocusSync);
 
+    // Polling contínuo a cada 4 segundos para sincronizar leituras do celular instantaneamente no laptop
+    const pollInterval = setInterval(() => {
+      if (document.visibilityState === 'visible') {
+        cloudDbService.fetchAndMergeLatest().then(updated => {
+          if (updated) handleDataSyncedFromCloud();
+        });
+      }
+    }, 4000);
+
     // Sincronização em tempo real do Supabase
     const unsubSupabase = supabaseSyncService.onRemoteUpdate(() => {
       handleDataSyncedFromCloud();
     });
 
     return () => {
+      clearInterval(pollInterval);
       window.removeEventListener('focus', handleFocusSync);
       document.removeEventListener('visibilitychange', handleFocusSync);
       if (unsubSupabase) unsubSupabase();
@@ -334,7 +344,7 @@ export default function App() {
     });
 
     // Salva automaticamente no banco em nuvem
-    cloudDbService.triggerAutoSync();
+    cloudDbService.syncNow();
   };
 
   // Navegar para um dia específico no leitor do plano devocional
@@ -438,6 +448,7 @@ export default function App() {
             allPendingDays={allPendingDays}
             onSelectDay={handleSelectDay}
             onToggleComplete={handleToggleComplete}
+            onToggleChapter={handleToggleChapter}
             chapterProgress={chapterProgress}
             onOpenBibleNav={() => setBibleNavOpen(true)}
             onOpenStudyInfo={handleOpenStudyInfo}
