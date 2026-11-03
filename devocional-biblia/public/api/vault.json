@@ -3,7 +3,7 @@
   "data": {
     "version": 3,
     "familyCode": "DEVOCIONAL-SYNC-RAFAEL",
-    "lastCompletedDay": 305,
+    "lastCompletedDay": 306,
     "pendingDays": [],
     "completedChapters": [
       "Lucas 19",
@@ -13,9 +13,10 @@
       "Lucas 23",
       "Lucas 24",
       "João 13",
-      "João 14"
+      "João 14",
+      "João 15"
     ],
-    "updatedAt": "2026-11-03T20:23:00.000Z",
+    "updatedAt": "2026-11-03T23:45:00.000Z",
     "profiles": [
       {
         "id": "default",
@@ -36,7 +37,8 @@
         "302": { "completed": true },
         "303": { "completed": true },
         "304": { "completed": true },
-        "305": { "completed": true }
+        "305": { "completed": true },
+        "306": { "completed": true }
       }
     },
     "favoritesByProfile": {

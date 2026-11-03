@@ -258,14 +258,12 @@ export const storage = {
             completedAt = parsed[d.id].completedAt;
           }
 
-          // Rafael está em dia até o dia 305:
-          if (d.id <= 305) {
+          // Progresso dinâmico baseado no último dia concluído sincronizado
+          const cloudConf = this.getCloudConfig();
+          const targetBaseline = Math.max(Number(cloudConf.lastCompletedDay) || 305, 305);
+          if (parsed[d.id] === undefined && d.id <= targetBaseline) {
             isCompleted = true;
             completedAt = completedAt || `2026-${String(Math.floor(d.id / 31) + 1).padStart(2, '0')}-01`;
-          } else if (d.id === 306 && parsed[d.id] === undefined) {
-            // Leitura de hoje pendente
-            isCompleted = false;
-            completedAt = null;
           }
 
           // RECONCILIAÇÃO INTELIGENTE: Se todos os capítulos do dia já foram concluídos, o dia é considerado concluído
