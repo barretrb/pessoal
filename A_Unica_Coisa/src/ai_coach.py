@@ -39,20 +39,22 @@ def _load_groq_key() -> str:
     return ""
 
 SYSTEM_PROMPT = """Você é o motor de inteligência e Coach do Agente "A Única Coisa" (The ONE Thing, de Gary Keller e Jay Papasan).
-Sua missão é avaliar a mensagem do usuário (Rafael) e classificá-la rigorosamente em UMA destas 3 categorias:
+Sua missão é avaliar a mensagem do usuário (Rafael) e classificá-la rigorosamente em UMA destas 4 categorias:
 
-1. "TASK": O usuário quer cadastrar ou lembrar de uma tarefa/ação a fazer (ex: "comprar café", "enviar proposta para o cliente", "preciso pagar o boleto do condomínio amanhã", "estudar capítulo 4 de inglês", "agendar dentista").
-2. "COACH_QUESTION": O usuário está fazendo uma pergunta, reflexão ou pedindo orientação sobre foco, priorização, o efeito dominó, time blocking (bloqueio de agenda), contrapeso, hábitos, Deep Work ou princípios do livro "A Única Coisa".
-3. "INVALID_OR_OFF_TOPIC": Qualquer mensagem fora do escopo de foco e produtividade (ex: perguntas gerais tipo "qual a capital da França", conversa fiada, piadas, futebol, política, notícias gerais, "bom dia tudo bem", frases desconexas ou sem sentido).
+1. "QUERY_AGENDA_TASKS": O usuário está fazendo uma consulta sobre suas tarefas, afazeres, pendências, agenda, reuniões ou calendário (ex: "quantas tarefas eu tenho para amanhã?", "quais reuniões tenho hoje?", "como está minha agenda?", "o que tenho pendente?", "quais são minhas tarefas?").
+2. "TASK": O usuário quer cadastrar ou lembrar de uma nova tarefa/ação a fazer (ex: "comprar café", "enviar proposta para o cliente", "preciso pagar o boleto do condomínio amanhã", "estudar capítulo 4 de inglês", "agendar dentista").
+3. "COACH_QUESTION": O usuário está fazendo uma pergunta, reflexão ou pedindo orientação conceitual sobre foco, priorização, o efeito dominó, time blocking (bloqueio de agenda), contrapeso, hábitos, Deep Work ou princípios do livro "A Única Coisa".
+4. "INVALID_OR_OFF_TOPIC": Qualquer mensagem fora do escopo de foco e produtividade (ex: perguntas gerais tipo "qual a capital da França", conversa fiada, piadas, futebol, política, notícias gerais, "bom dia tudo bem", frases desconexas ou sem sentido).
 
 Diretrizes de resposta:
+- Se "QUERY_AGENDA_TASKS": no campo "reply", retorne null.
 - Se "TASK": no campo "reply", retorne null. Extraia o título limpo em "clean_title" e o domínio ("PERSONAL" ou "PROFESSIONAL") em "domain".
 - Se "COACH_QUESTION": dê uma resposta afiada, direta e prática fundamentada nos ensinamentos do livro (máximo 2 a 3 frases) e OBRIGATORIAMENTE termine fazendo uma pergunta reflexiva de foco estritamente dentro do contexto.
 - Se "INVALID_OR_OFF_TOPIC": explique gentilmente e com firmeza que você é um agente de foco exclusivo da metodologia A Única Coisa e gestão de tarefas/agenda, e faça uma pergunta de foco trazendo o usuário de volta para o dominó dele.
 
 Responda SEMPRE em formato JSON válido:
 {
-  "category": "TASK" | "COACH_QUESTION" | "INVALID_OR_OFF_TOPIC",
+  "category": "QUERY_AGENDA_TASKS" | "TASK" | "COACH_QUESTION" | "INVALID_OR_OFF_TOPIC",
   "clean_title": "string ou null",
   "domain": "PERSONAL" | "PROFESSIONAL" | null,
   "reply": "string ou null"
@@ -115,6 +117,20 @@ class AICoach:
     def _heuristic_fallback(self, text: str) -> Dict[str, Any]:
         """Classificação heurística caso a LLM esteja offline."""
         lower = text.lower()
+
+        # Palavras-chave de consultas de tarefas ou agenda
+        query_triggers = [
+            "quantas tarefas", "quais tarefas", "minhas tarefas", "lista de tarefas", 
+            "minha agenda", "quais reuniões", "quais reunioes", "como está minha agenda", 
+            "como esta minha agenda", "o que tenho pendente", "o que eu tenho"
+        ]
+        if any(t in lower for t in query_triggers):
+            return {
+                "category": "QUERY_AGENDA_TASKS",
+                "clean_title": None,
+                "domain": None,
+                "reply": None
+            }
 
         # Palavras-chave típicas de perguntas/curiosidades fora de escopo
         off_topic_triggers = ["capital", "piada", "futebol", "tempo hoje", "clima", "política", "presidente"]

@@ -88,5 +88,30 @@ class TestAICoachAndContextValidation(unittest.TestCase):
         self.assertEqual(result["parsed_task"]["domain"], "PERSONAL")
         self.orchestrator.tasks_service.create_task.assert_called_once()
 
+    def test_inbound_handler_queries_tasks_tomorrow(self):
+        from datetime import datetime, timedelta
+        tmrw_str = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d")
+        self.orchestrator.tasks_service.fetch_active_tasks.side_effect = lambda domain: [
+            {"clean_title": "Tarefa Pro 1", "due_date": f"{tmrw_str}T00:00:00Z"}
+        ] if domain == "professional" else []
+
+        handler = InboundHandler(self.orchestrator)
+        result = handler.process_incoming_message("quantas tarefas eu tenho para amanhã?")
+
+        self.assertEqual(result["action"], "QUERY_AGENDA_TASKS")
+        self.assertIn("Tarefa Pro 1", result["reply"])
+        self.assertIn("1 tarefa(s)", result["reply"])
+
+    def test_inbound_handler_queries_agenda_tomorrow(self):
+        self.orchestrator.calendar_service.get_events_for_day.return_value = [
+            {"summary": "Reunião de Alinhamento", "start": {"dateTime": "2026-11-03T10:00:00-03:00"}, "end": {"dateTime": "2026-11-03T11:00:00-03:00"}}
+        ]
+        handler = InboundHandler(self.orchestrator)
+        result = handler.process_incoming_message("como está minha agenda para amanhã?")
+
+        self.assertEqual(result["action"], "QUERY_AGENDA_TASKS")
+        self.assertIn("Reunião de Alinhamento", result["reply"])
+        self.assertIn("10:00 - 11:00", result["reply"])
+
 if __name__ == "__main__":
     unittest.main()

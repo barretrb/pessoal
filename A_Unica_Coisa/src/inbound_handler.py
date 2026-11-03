@@ -133,9 +133,26 @@ class InboundHandler:
                     "reply": "\n".join(replies)
                 }
 
-        # 6. Avaliação Inteligente de Intenção via IA (Coach vs Tarefa vs Inválido/Fora de Contexto)
+        # 6. Intenção: Consulta de Tarefas ou Agenda (Google Tasks / Google Calendar)
+        is_query_tasks = bool(re.search(
+            r"\b(quantas?|quais|qual|listar|ver|me\s+mostre|o\s+que\s+eu\s+tenho|o\s+que\s+tenho|tenho\s+alguma)\b.*\b(tarefas?|tasks?|pend[eê]ncias?|afazeres)\b",
+            lower
+        ) or re.search(r"^(minhas\s+tarefas|minhas\s+tasks|meus\s+afazeres|tarefas\s+de\s+hoje|tarefas\s+de\s+amanh[aã])\b", lower))
+
+        is_query_calendar = bool(re.search(
+            r"\b(como\s+est[aá]|quais|quantas?|que\s+horas?|me\s+mostre|ver|tenho\s+tempo)\b.*\b(agenda|calend[aá]rio|reuni[aã]o|reuni[oõ]es|compromissos?|eventos?)\b",
+            lower
+        ) or re.search(r"^(minha\s+agenda|meu\s+calend[aá]rio|minhas\s+reuni[oõ]es|meus\s+compromissos)\b", lower))
+
+        if is_query_tasks or is_query_calendar:
+            return self._handle_query(text_clean, is_tasks=is_query_tasks, is_calendar=is_query_calendar)
+
+        # 7. Avaliação Inteligente de Intenção via IA (Coach vs Tarefa vs Consulta vs Inválido)
         ai_eval = self.ai_coach.evaluate_input(text_clean)
         category = ai_eval.get("category", "TASK")
+
+        if category == "QUERY_AGENDA_TASKS":
+            return self._handle_query(text_clean, is_tasks=True, is_calendar=True)
 
         # Se for dúvida/pergunta de coaching ou entrada inválida/fora de contexto:
         if category in ["COACH_QUESTION", "INVALID_OR_OFF_TOPIC"]:
@@ -146,7 +163,7 @@ class InboundHandler:
                 "reply": ai_eval.get("reply")
             }
 
-        # 7. Intenção: Captura de Nova Tarefa Legítima
+        # 8. Intenção: Captura de Nova Tarefa Legítima
         parsed_task = self._parse_quick_capture(text_clean, ai_suggested=ai_eval)
         
         domain_key = "personal" if parsed_task["domain"] == "PERSONAL" else "professional"
@@ -180,6 +197,89 @@ class InboundHandler:
             "parsed_task": parsed_task,
             "google_task_id": task_id,
             "reply": reply_msg
+        }
+
+    def _handle_query(self, raw_text: str, is_tasks: bool = True, is_calendar: bool = False) -> Dict[str, Any]:
+        """Consulta tarefas ativas no Google Tasks e compromissos no Google Calendar."""
+        lower = raw_text.lower()
+        now = datetime.now()
+
+        # Define data alvo
+        if "amanhã" in lower or "amanha" in lower:
+            target_dt = now + timedelta(days=1)
+            target_label = f"amanhã ({target_dt.strftime('%d/%m')})"
+        else:
+            target_dt = now
+            target_label = f"hoje ({target_dt.strftime('%d/%m')})"
+        target_ymd = target_dt.strftime("%Y-%m-%d")
+
+        replies = []
+
+        # 1. Consulta de Tarefas no Google Tasks
+        if is_tasks or any(w in lower for w in ["tarefa", "task", "pend", "afazer"]):
+            try:
+                pro_tasks = self.orchestrator.tasks_service.fetch_active_tasks("professional")
+                pes_tasks = self.orchestrator.tasks_service.fetch_active_tasks("personal")
+
+                pro_due = [t for t in pro_tasks if t.get("due_date", "").startswith(target_ymd)]
+                pes_due = [t for t in pes_tasks if t.get("due_date", "").startswith(target_ymd)]
+
+                total_due = len(pro_due) + len(pes_due)
+                
+                if total_due > 0:
+                    replies.append(f"📋 *Você tem {total_due} tarefa(s) agendada(s) para {target_label}:*")
+                    if pro_due:
+                        replies.append("\n💼 *Profissional:*")
+                        for t in pro_due:
+                            replies.append(f"  • {t.get('clean_title')}")
+                    if pes_due:
+                        replies.append("\n🏠 *Pessoal:*")
+                        for t in pes_due:
+                            replies.append(f"  • {t.get('clean_title')}")
+                else:
+                    replies.append(f"📋 *Você não possui tarefas com vencimento marcado para {target_label}.*")
+
+                other_pro = len(pro_tasks) - len(pro_due)
+                other_pes = len(pes_tasks) - len(pes_due)
+                if other_pro > 0 or other_pes > 0:
+                    replies.append(f"\n_(Total ativo nas listas: {len(pro_tasks)} profissional(is), {len(pes_tasks)} pessoal(is))_")
+
+            except Exception as e:
+                print(f"[INBOUND] Erro ao consultar tarefas: {e}")
+                replies.append("⚠️ Não consegui acessar o Google Tasks no momento.")
+
+        # 2. Consulta de Agenda no Google Calendar
+        if is_calendar or any(w in lower for w in ["agenda", "reuni", "compromisso", "evento", "calend"]):
+            try:
+                events = self.orchestrator.calendar_service.get_events_for_day(target_dt)
+                if events:
+                    replies.append(f"\n📅 *Seus compromissos para {target_label}:*")
+                    for ev in events:
+                        start_str = ev.get("start", {}).get("dateTime", "")
+                        end_str = ev.get("end", {}).get("dateTime", "")
+                        time_display = ""
+                        if start_str and end_str:
+                            try:
+                                s_dt = datetime.fromisoformat(start_str.replace("Z", "+00:00"))
+                                e_dt = datetime.fromisoformat(end_str.replace("Z", "+00:00"))
+                                time_display = f"*{s_dt.strftime('%H:%M')} - {e_dt.strftime('%H:%M')}:* "
+                            except Exception:
+                                pass
+                        summary = ev.get("summary", "Ocupado")
+                        replies.append(f"  • {time_display}{summary}")
+                else:
+                    replies.append(f"\n📅 *Sua agenda está totalmente livre para {target_label}!*")
+            except Exception as e:
+                print(f"[INBOUND] Erro ao consultar calendário: {e}")
+                replies.append("⚠️ Não consegui acessar o Google Calendar no momento.")
+
+        # Pergunta de fechamento de foco
+        replies.append("\n🎯 *Qual é A Única Coisa que você precisa garantir para esse dia?*")
+
+        return {
+            "action": "QUERY_AGENDA_TASKS",
+            "status": "success",
+            "reply": "\n".join(replies)
         }
 
     def _handle_set_one_thing(self, clean_title: str, raw_text: str) -> Dict[str, Any]:
