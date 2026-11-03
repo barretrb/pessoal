@@ -13,12 +13,19 @@ import json
 import re
 from datetime import datetime, timedelta, timezone
 from typing import Dict, Any, Optional, List
+from src.ai_coach import AICoach
 
 class InboundHandler:
     """Interpreta intenções do usuário e executa ações correspondentes."""
 
-    def __init__(self, orchestrator):
+    def __init__(self, orchestrator, ai_coach: Optional[AICoach] = None):
         self.orchestrator = orchestrator
+        if ai_coach is not None:
+            self.ai_coach = ai_coach
+        elif hasattr(orchestrator, "ai_coach") and isinstance(getattr(orchestrator, "ai_coach"), AICoach):
+            self.ai_coach = orchestrator.ai_coach
+        else:
+            self.ai_coach = AICoach()
 
     def process_incoming_message(self, text: str) -> Dict[str, Any]:
         """Recebe o texto puro da mensagem do usuário e decide a ação a tomar."""
@@ -87,10 +94,10 @@ class InboundHandler:
                 clean_domino_title = clean_domino_title[0].upper() + clean_domino_title[1:]
             return self._handle_set_one_thing(clean_domino_title, text_clean)
 
-        # 5. Intenção: Resposta ao Fechamento Noturno
-        if any(w in lower for w in ["concluí", "conclui", "derrubei", "terminei", "feito", "fiz"]):
-            completed_pro = any(w in lower for w in ["dominó", "domino", "profissional", "1", "ambos", "tudo", "os dois", "ambas"])
-            completed_pes = any(w in lower for w in ["pessoal", "contrapeso", "2", "ambos", "tudo", "os dois", "ambas"])
+        # 5. Intenção: Resposta ao Fechamento Noturno (usando \b para não confundir 'feito' com 'efeito')
+        if re.search(r"\b(conclu[íi]|derrubei|terminei|feito|fiz)\b", lower):
+            completed_pro = bool(re.search(r"\b(domin[oó]|profissional|1|ambos|tudo|os dois|ambas)\b", lower))
+            completed_pes = bool(re.search(r"\b(pessoal|contrapeso|2|ambos|tudo|os dois|ambas)\b", lower))
 
             today_str = datetime.now().strftime("%Y-%m-%d")
             day_state = self.orchestrator.state.get("daily_history", {}).get(today_str, {})
@@ -126,8 +133,21 @@ class InboundHandler:
                     "reply": "\n".join(replies)
                 }
 
-        # 6. Intenção Padrão: Captura Contínua de Nova Tarefa
-        parsed_task = self._parse_quick_capture(text_clean)
+        # 6. Avaliação Inteligente de Intenção via IA (Coach vs Tarefa vs Inválido/Fora de Contexto)
+        ai_eval = self.ai_coach.evaluate_input(text_clean)
+        category = ai_eval.get("category", "TASK")
+
+        # Se for dúvida/pergunta de coaching ou entrada inválida/fora de contexto:
+        if category in ["COACH_QUESTION", "INVALID_OR_OFF_TOPIC"]:
+            return {
+                "action": "COACH_RESPONSE" if category == "COACH_QUESTION" else "INVALID_INPUT",
+                "status": "success",
+                "category": category,
+                "reply": ai_eval.get("reply")
+            }
+
+        # 7. Intenção: Captura de Nova Tarefa Legítima
+        parsed_task = self._parse_quick_capture(text_clean, ai_suggested=ai_eval)
         
         domain_key = "personal" if parsed_task["domain"] == "PERSONAL" else "professional"
         created = None
@@ -335,7 +355,7 @@ class InboundHandler:
 
         return "PROFESSIONAL"
 
-    def _parse_quick_capture(self, text: str) -> Dict[str, Any]:
+    def _parse_quick_capture(self, text: str, ai_suggested: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         """Interpreta o texto capturado para extrair título limpo, data e domínio."""
         lower = text.lower()
         now = datetime.now()
@@ -357,30 +377,40 @@ class InboundHandler:
             due_iso = target_dt.replace(hour=18, minute=0, second=0).isoformat() + "Z"
             due_display = "segunda-feira"
 
-        # Detecção de Domínio
-        domain = self._detect_domain(text)
+        # Detecção de Domínio (IA sugerida com fallback léxico)
+        ai_domain = ai_suggested.get("domain") if ai_suggested else None
+        if ai_domain in ["PERSONAL", "PROFESSIONAL"]:
+            domain = ai_domain
+        else:
+            domain = self._detect_domain(text)
 
-        # Limpeza robusta de prefixos de intenção
-        clean_title = re.sub(
-            r"^(me\s+domin[oó]|meu\s+domin[oó]|meu\s+foco|minha\s+[uú]nica\s+coisa|minha\s+meta|meu\s+objetivo)\s*(de\s+hoje)?\s*([eé]|\:)\s*",
-            "",
-            text,
-            flags=re.IGNORECASE
-        ).strip()
-
-        clean_title = re.sub(
-            r"^(amanhã|amanha|hoje|segunda|terça|quarta|quinta|sexta|lembrar de|preciso|favor|cadastrar|anotar|não esquecer de|adiciona|adicionar|cria|criar)\s*",
-            "",
-            clean_title,
-            flags=re.IGNORECASE
-        ).strip()
-
-        clean_title = re.sub(r"^(preciso|lembrar de|que preciso)\s*", "", clean_title, flags=re.IGNORECASE).strip()
-
-        if clean_title:
+        # Se a IA sugeriu um clean_title conciso, usa preferencialmente
+        ai_title = ai_suggested.get("clean_title") if ai_suggested else None
+        if ai_title and len(ai_title.strip()) > 2:
+            clean_title = ai_title.strip()
             clean_title = clean_title[0].upper() + clean_title[1:]
         else:
-            clean_title = text
+            # Limpeza robusta de prefixos de intenção
+            clean_title = re.sub(
+                r"^(me\s+domin[oó]|meu\s+domin[oó]|meu\s+foco|minha\s+[uú]nica\s+coisa|minha\s+meta|meu\s+objetivo)\s*(de\s+hoje)?\s*([eé]|\:)\s*",
+                "",
+                text,
+                flags=re.IGNORECASE
+            ).strip()
+
+            clean_title = re.sub(
+                r"^(amanhã|amanha|hoje|segunda|terça|quarta|quinta|sexta|lembrar de|preciso|favor|cadastrar|anotar|não esquecer de|adiciona|adicionar|cria|criar)\s*",
+                "",
+                clean_title,
+                flags=re.IGNORECASE
+            ).strip()
+
+            clean_title = re.sub(r"^(preciso|lembrar de|que preciso)\s*", "", clean_title, flags=re.IGNORECASE).strip()
+
+            if clean_title:
+                clean_title = clean_title[0].upper() + clean_title[1:]
+            else:
+                clean_title = text
 
         # Classificação básica do tipo de trabalho
         syntax_info = self.orchestrator.tasks_service.parse_micro_syntax(clean_title)

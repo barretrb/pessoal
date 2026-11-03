@@ -17,6 +17,7 @@ from src.task_classifier import TaskClassifier
 from src.whatsapp_service import WhatsAppService
 from src.telegram_service import TelegramService
 from src.pills_service import KnowledgePillsService
+from src.ai_coach import AICoach
 
 class Orchestrator:
     """Coordena o fluxo de execução dos rituais diários e semanais."""
@@ -56,6 +57,7 @@ class Orchestrator:
             groq_api_key=groq_key,
             model=llm_model
         )
+        self.ai_coach = AICoach(api_key=groq_key)
 
         wa_cfg = self.config.get("whatsapp", {})
         phone = os.environ.get("WHATSAPP_PHONE") or wa_cfg.get("phone", "")
