@@ -7,6 +7,10 @@ let syncDebounceTimer = null;
 let isSyncInProgress = false;
 
 // Endpoint do cofre remoto na nuvem permanente do usuário
+const HOSTINGER_SYNC_URL = typeof window !== 'undefined' && window.location.origin.includes('reagiu.com.br')
+  ? `${window.location.origin}/api/sync.php`
+  : 'https://devocional.reagiu.com.br/api/sync.php';
+
 const CLOUD_API_URL = 'https://api.restful-api.dev/objects';
 const CLOUD_VAULT_ID = 'ff808181a09d98f701a17d801b0c27c6';
 
@@ -177,6 +181,8 @@ export const cloudDbService = {
         localStorage.setItem(chKey, JSON.stringify(chParsed));
       }
 
+
+
       // 3. Mesclagem de Favoritos (união por chave)
       if (payload.favoritesByProfile) {
         Object.entries(payload.favoritesByProfile).forEach(([pId, data]) => {
@@ -228,22 +234,43 @@ export const cloudDbService = {
         localStorage.setItem(`devocional_cloud_vault_${payload.familyCode}`, JSON.stringify(payload));
       } catch (e) {}
 
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 7000);
+      let savedOk = false;
 
-      const res = await fetch(`${CLOUD_API_URL}/${CLOUD_VAULT_ID}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        keepalive: true,
-        body: JSON.stringify({
-          name: 'devocional_sync_DEVOCIONAL-SYNC-RAFAEL',
-          data: payload
-        }),
-        signal: controller.signal
-      });
-      clearTimeout(timeoutId);
+      // 1. Salva no servidor próprio Hostinger (mesmo domínio, sem problemas de CORS ou keepalive)
+      try {
+        const hRes = await fetch(HOSTINGER_SYNC_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: 'devocional_sync_DEVOCIONAL-SYNC-RAFAEL',
+            data: payload
+          })
+        });
+        if (hRes.ok) savedOk = true;
+      } catch (hErr) {
+        console.warn("Hostinger sync POST falhou:", hErr?.message);
+      }
 
-      if (res.ok) {
+      // 2. Salva em redundância no Mock Cloud Vault
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 6000);
+        const res = await fetch(`${CLOUD_API_URL}/${CLOUD_VAULT_ID}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: 'devocional_sync_DEVOCIONAL-SYNC-RAFAEL',
+            data: payload
+          }),
+          signal: controller.signal
+        });
+        clearTimeout(timeoutId);
+        if (res.ok) savedOk = true;
+      } catch (mErr) {
+        console.warn("Mock sync PUT falhou:", mErr?.message);
+      }
+
+      if (savedOk) {
         const config = storage.getCloudConfig();
         config.lastSyncedAt = payload.updatedAt;
         storage.saveCloudConfig(config);
@@ -273,13 +300,28 @@ export const cloudDbService = {
   async fetchAndMergeLatest() {
     try {
       const config = storage.getCloudConfig();
+      const cacheBust = '?t=' + Date.now();
 
-      // 1. Tenta buscar da Nuvem Real via REST API
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 5000);
-
+      // 1. Tenta buscar primeiro do servidor Hostinger (ultra-rápido e persistente)
       try {
-        const res = await fetch(`${CLOUD_API_URL}/${CLOUD_VAULT_ID}`, {
+        const hRes = await fetch(HOSTINGER_SYNC_URL + cacheBust, {
+          method: 'GET',
+          headers: { 'Accept': 'application/json' }
+        });
+        if (hRes.ok) {
+          const json = await hRes.json();
+          const remotePayload = json?.data;
+          if (remotePayload && (remotePayload.profiles || remotePayload.lastCompletedDay || remotePayload.completedChapters)) {
+            return this.applyCloudPayload(remotePayload);
+          }
+        }
+      } catch (hErr) {}
+
+      // 2. Fallback para Mock REST API
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 5000);
+        const res = await fetch(`${CLOUD_API_URL}/${CLOUD_VAULT_ID}` + cacheBust, {
           method: 'GET',
           signal: controller.signal
         });
@@ -288,19 +330,19 @@ export const cloudDbService = {
         if (res.ok) {
           const json = await res.json();
           const remotePayload = json?.data;
-          if (remotePayload) {
+          if (remotePayload && (remotePayload.profiles || remotePayload.lastCompletedDay || remotePayload.completedChapters)) {
             return this.applyCloudPayload(remotePayload);
           }
         }
-      } catch (netErr) {
-        // Fallback local se estiver offline
-        const vaultKey = `devocional_cloud_vault_${config.familyCode || 'DEVOCIONAL-SYNC-RAFAEL'}`;
-        const localVault = localStorage.getItem(vaultKey);
-        if (localVault) {
-          const parsed = JSON.parse(localVault);
-          if (parsed && parsed.updatedAt) {
-            return this.applyCloudPayload(parsed);
-          }
+      } catch (netErr) {}
+
+      // 3. Fallback local se estiver offline
+      const vaultKey = `devocional_cloud_vault_${config.familyCode || 'DEVOCIONAL-SYNC-RAFAEL'}`;
+      const localVault = localStorage.getItem(vaultKey);
+      if (localVault) {
+        const parsed = JSON.parse(localVault);
+        if (parsed && parsed.updatedAt) {
+          return this.applyCloudPayload(parsed);
         }
       }
     } catch (e) {}

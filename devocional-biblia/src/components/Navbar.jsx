@@ -128,6 +128,16 @@ export default function Navbar({
             <span className="text-[11px] font-bold hidden sm:inline">Jesus</span>
           </button>
 
+          {/* Botão de Nuvem / Sincronismo Multi-Aparelho */}
+          <button
+            onClick={onOpenCloud}
+            className="p-1 sm:px-2 sm:py-1 rounded-xl bg-amber-500/10 dark:bg-amber-950/40 border border-amber-300/80 dark:border-amber-800/80 text-xs font-bold text-amber-900 dark:text-amber-200 hover:scale-105 transition-transform flex items-center space-x-1 shrink-0 cursor-pointer"
+            title="Sincronização em Nuvem (Celular, Laptop, Tablet)"
+          >
+            <Cloud className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+            <span className="hidden min-[540px]:inline">Nuvem</span>
+          </button>
+
           {/* Botão de Perfil / Multi-Conta (Rafael / Esposa) */}
           <button
             onClick={onOpenProfiles}

@@ -1,0 +1,49 @@
+{
+  "name": "devocional_sync_DEVOCIONAL-SYNC-RAFAEL",
+  "data": {
+    "version": 3,
+    "familyCode": "DEVOCIONAL-SYNC-RAFAEL",
+    "lastCompletedDay": 305,
+    "pendingDays": [],
+    "completedChapters": [
+      "Lucas 19",
+      "Lucas 20",
+      "Lucas 21",
+      "Lucas 22",
+      "Lucas 23",
+      "Lucas 24",
+      "João 13",
+      "João 14"
+    ],
+    "updatedAt": "2026-11-03T20:23:00.000Z",
+    "profiles": [
+      {
+        "id": "default",
+        "name": "Rafael",
+        "avatar": "👨",
+        "role": "admin",
+        "pin": "1234",
+        "requiresPin": true,
+        "planOptIn": true,
+        "startDayId": 1
+      }
+    ],
+    "activeProfileId": "default",
+    "progressByProfile": {
+      "default": {
+        "300": { "completed": true },
+        "301": { "completed": true },
+        "302": { "completed": true },
+        "303": { "completed": true },
+        "304": { "completed": true },
+        "305": { "completed": true }
+      }
+    },
+    "favoritesByProfile": {
+      "default": []
+    },
+    "highlightsByProfile": {
+      "default": {}
+    }
+  }
+}

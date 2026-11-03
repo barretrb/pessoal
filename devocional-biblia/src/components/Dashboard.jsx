@@ -250,17 +250,23 @@ export default function Dashboard({
                     {pendingDayData.readings.map(r => {
                       const isDone = !!chapterProgress[r]?.completed;
                       return (
-                        <span 
+                        <button 
                           key={r}
-                          className={`px-2.5 py-1 rounded-xl text-xs font-semibold flex items-center space-x-1 ${
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (onToggleChapter) onToggleChapter(r, !isDone);
+                          }}
+                          className={`px-3 py-1.5 rounded-xl text-xs font-bold flex items-center space-x-1.5 transition-all cursor-pointer shadow-xs active:scale-95 ${
                             isDone 
-                              ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300' 
-                              : 'bg-rose-100/70 dark:bg-rose-950/50 text-rose-700 dark:text-rose-300'
+                              ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 hover:bg-emerald-200' 
+                              : 'bg-rose-100/90 dark:bg-rose-950/60 text-rose-800 dark:text-rose-200 border border-rose-300 dark:border-rose-800 hover:bg-rose-200'
                           }`}
+                          title={isDone ? `Capítulo ${r} lido! Clique para alternar` : `Clique para marcar ${r} como lido agora`}
                         >
                           <span>{r}</span>
-                          <span>{isDone ? '✓' : '• a ler'}</span>
-                        </span>
+                          <span>{isDone ? '✓ Lido' : '• a ler'}</span>
+                        </button>
                       );
                     })}
                   </div>
