@@ -18,6 +18,7 @@ from src.whatsapp_service import WhatsAppService
 from src.telegram_service import TelegramService
 from src.pills_service import KnowledgePillsService
 from src.ai_coach import AICoach
+from src.timezone_utils import BR_TIMEZONE, get_now_br, get_today_str_br
 
 class Orchestrator:
     """Coordena o fluxo de execução dos rituais diários e semanais."""
@@ -92,7 +93,7 @@ class Orchestrator:
 
     def run_morning_routine(self, force: bool = False, auto_book: Optional[bool] = None) -> Dict[str, Any]:
         """Executa o ritual matinal das 08:15 com suporte a Auto-Booking."""
-        today_str = datetime.now().strftime("%Y-%m-%d")
+        today_str = get_today_str_br()
         day_state = self.state.get("daily_history", {}).get(today_str, {})
 
         if day_state.get("morning_briefing_sent") and not force:
@@ -123,7 +124,7 @@ class Orchestrator:
         reserve_deep = deep_candidates[1] if len(deep_candidates) > 1 else None
 
         # 2. Busca contrapeso pessoal (Google Tasks + Hábitos Âncora no Calendar)
-        now = datetime.now()
+        now = get_now_br()
         personal_tasks = self.tasks_service.fetch_active_tasks("personal")
         eligible_personal = [t for t in personal_tasks if not t.get("syntax_metadata", {}).get("is_blocked")]
         chosen_personal = eligible_personal[0] if eligible_personal else None
@@ -189,7 +190,7 @@ class Orchestrator:
 
         self.state["daily_history"][today_str] = {
             "morning_briefing_sent": sent,
-            "morning_timestamp": datetime.now().isoformat(),
+            "morning_timestamp": get_now_br().isoformat(),
             "chosen_deep_task": chosen_deep,
             "chosen_personal_task": chosen_personal,
             "suggested_slot": {
@@ -206,7 +207,7 @@ class Orchestrator:
 
     def confirm_focus_block(self) -> bool:
         """Processa a confirmação manual do bloco de foco no Google Calendar."""
-        today_str = datetime.now().strftime("%Y-%m-%d")
+        today_str = get_today_str_br()
         day_state = self.state.get("daily_history", {}).get(today_str)
         if not day_state:
             print("[ORCHESTRATOR] Nenhum ritual matinal registrado para hoje.")
@@ -243,7 +244,7 @@ class Orchestrator:
 
     def run_lunch_pill(self) -> bool:
         """Dispara a pílula de conhecimento completa no horário do almoço (12:30)."""
-        now = datetime.now()
+        now = get_now_br()
         today_str = now.strftime("%Y-%m-%d")
 
         pill = KnowledgePillsService.get_daily_pill(now)
@@ -266,7 +267,7 @@ class Orchestrator:
 
     def run_night_checkin(self) -> bool:
         """Dispara o ritual de fechamento das 18:00."""
-        today_str = datetime.now().strftime("%Y-%m-%d")
+        today_str = get_today_str_br()
         day_state = self.state.get("daily_history", {}).get(today_str, {})
 
         deep_title = (day_state.get("chosen_deep_task") or {}).get("clean_title", "")

@@ -14,6 +14,7 @@ import re
 from datetime import datetime, timedelta, timezone
 from typing import Dict, Any, Optional, List
 from src.ai_coach import AICoach
+from src.timezone_utils import BR_TIMEZONE, get_now_br, get_today_str_br
 
 class InboundHandler:
     """Interpreta intenções do usuário e executa ações correspondentes."""
@@ -68,7 +69,7 @@ class InboundHandler:
         # 3. Intenção: Substituição rápida matinal ("Trocar por X")
         if lower.startswith("trocar por") or lower.startswith("mudar para"):
             new_title = re.sub(r"^(trocar por|mudar para)\s*", "", text_clean, flags=re.IGNORECASE).strip()
-            today_str = datetime.now().strftime("%Y-%m-%d")
+            today_str = get_today_str_br()
             day_state = self.orchestrator.state.setdefault("daily_history", {}).setdefault(today_str, {})
             day_state["chosen_deep_task"] = {
                 "clean_title": new_title,
@@ -99,7 +100,7 @@ class InboundHandler:
             completed_pro = bool(re.search(r"\b(domin[oó]|profissional|1|ambos|tudo|os dois|ambas)\b", lower))
             completed_pes = bool(re.search(r"\b(pessoal|contrapeso|2|ambos|tudo|os dois|ambas)\b", lower))
 
-            today_str = datetime.now().strftime("%Y-%m-%d")
+            today_str = get_today_str_br()
             day_state = self.orchestrator.state.get("daily_history", {}).get(today_str, {})
             replies = []
 
@@ -172,7 +173,7 @@ class InboundHandler:
             created = self.orchestrator.tasks_service.create_task(
                 domain_key=domain_key,
                 title=parsed_task["title"],
-                notes=f"Capturado via mensagem em {datetime.now().strftime('%d/%m/%Y %H:%M')}",
+                notes=f"Capturado via mensagem em {get_now_br().strftime('%d/%m/%Y %H:%M')}",
                 due_date=parsed_task.get("due_date")
             )
         except Exception as e:
@@ -200,12 +201,24 @@ class InboundHandler:
         }
 
     def _handle_query(self, raw_text: str, is_tasks: bool = True, is_calendar: bool = False) -> Dict[str, Any]:
-        """Consulta tarefas ativas no Google Tasks e compromissos no Google Calendar."""
+        """Consulta tarefas ativas no Google Tasks e compromissos no Google Calendar com fuso de Brasília (UTC-3)."""
         lower = raw_text.lower()
-        now = datetime.now()
+        now = get_now_br()
 
-        # Define data alvo
-        if "amanhã" in lower or "amanha" in lower:
+        # Detecção de data específica (ex: '03/11', '04/11', 'dia 3') ou relativa ('amanhã', 'hoje')
+        date_match = re.search(r"\b(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])\b", lower)
+        day_only_match = re.search(r"\bdia\s+(0?[1-9]|[12][0-9]|3[01])\b", lower)
+
+        if date_match:
+            d = int(date_match.group(1))
+            m = int(date_match.group(2))
+            target_dt = now.replace(month=m, day=d)
+            target_label = f"{d:02d}/{m:02d}"
+        elif day_only_match:
+            d = int(day_only_match.group(1))
+            target_dt = now.replace(day=d)
+            target_label = f"dia {d:02d}/{target_dt.month:02d}"
+        elif "amanhã" in lower or "amanha" in lower:
             target_dt = now + timedelta(days=1)
             target_label = f"amanhã ({target_dt.strftime('%d/%m')})"
         else:
@@ -260,8 +273,8 @@ class InboundHandler:
                         time_display = ""
                         if start_str and end_str:
                             try:
-                                s_dt = datetime.fromisoformat(start_str.replace("Z", "+00:00"))
-                                e_dt = datetime.fromisoformat(end_str.replace("Z", "+00:00"))
+                                s_dt = datetime.fromisoformat(start_str.replace("Z", "+00:00")).astimezone(BR_TIMEZONE)
+                                e_dt = datetime.fromisoformat(end_str.replace("Z", "+00:00")).astimezone(BR_TIMEZONE)
                                 time_display = f"*{s_dt.strftime('%H:%M')} - {e_dt.strftime('%H:%M')}:* "
                             except Exception:
                                 pass
@@ -288,7 +301,7 @@ class InboundHandler:
         domain_key = "personal" if domain == "PERSONAL" else "professional"
         domain_label = "🏠 Pessoal" if domain == "PERSONAL" else "💼 Profissional"
 
-        today_str = datetime.now().strftime("%Y-%m-%d")
+        today_str = get_today_str_br()
         day_state = self.orchestrator.state.setdefault("daily_history", {}).setdefault(today_str, {})
 
         created = None
@@ -296,7 +309,7 @@ class InboundHandler:
             created = self.orchestrator.tasks_service.create_task(
                 domain_key=domain_key,
                 title=clean_title,
-                notes=f"Dominó do dia definido em {datetime.now().strftime('%d/%m/%Y %H:%M')}"
+                notes=f"Dominó do dia definido em {get_now_br().strftime('%d/%m/%Y %H:%M')}"
             )
         except Exception as e:
             print(f"[INBOUND] Erro ao registrar dominó no Google Tasks: {e}")
@@ -385,7 +398,7 @@ class InboundHandler:
             )
 
             # Atualiza estado do foco do dia se era o dominó
-            today_str = datetime.now().strftime("%Y-%m-%d")
+            today_str = get_today_str_br()
             day_state = self.orchestrator.state.get("daily_history", {}).get(today_str, {})
             if day_state.get("chosen_deep_task"):
                 day_state["chosen_deep_task"]["clean_title"] = clean_title
@@ -425,7 +438,7 @@ class InboundHandler:
             "id": task_id,
             "domain": domain,
             "title": title,
-            "timestamp": datetime.now().isoformat()
+            "timestamp": get_now_br().isoformat()
         }
         self.orchestrator.state["last_created_task"] = record
         if "task_capture_history" not in self.orchestrator.state:
@@ -458,7 +471,7 @@ class InboundHandler:
     def _parse_quick_capture(self, text: str, ai_suggested: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         """Interpreta o texto capturado para extrair título limpo, data e domínio."""
         lower = text.lower()
-        now = datetime.now()
+        now = get_now_br()
 
         # Detecção de data relativa
         due_iso = None

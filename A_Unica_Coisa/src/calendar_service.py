@@ -7,6 +7,7 @@ Realiza a varredura de horários livres e criação de blocos de foco (Time Bloc
 import urllib.request
 from datetime import datetime, time, timedelta, timezone
 from typing import List, Dict, Optional, Any
+from src.timezone_utils import BR_TIMEZONE, get_now_br
 
 class CalendarService:
     """Interface para verificação de agenda e agendamento de blocos de foco."""
@@ -118,9 +119,9 @@ class CalendarService:
 
     def get_events_for_day(self, target_date: datetime) -> List[Dict[str, Any]]:
         """Busca compromissos agendados no dia mesclando Google Calendar API e iCal."""
-        tz = target_date.tzinfo or datetime.now().astimezone().tzinfo
-        start_of_day = datetime.combine(target_date.date(), time(8, 0), tzinfo=tz).isoformat()
-        end_of_day = datetime.combine(target_date.date(), time(19, 0), tzinfo=tz).isoformat()
+        tz = target_date.tzinfo or BR_TIMEZONE
+        start_of_day = datetime.combine(target_date.date(), time(0, 0), tzinfo=tz).isoformat()
+        end_of_day = datetime.combine(target_date.date(), time(23, 59, 59), tzinfo=tz).isoformat()
 
         api_events = []
         try:
@@ -206,7 +207,7 @@ class CalendarService:
         Analisa a agenda do dia e localiza a melhor janela livre para Deep Work.
         Prioriza a manhã (08:30 às 12:30). Se não houver, busca na tarde (13:30 às 18:00).
         """
-        tz = target_date.tzinfo or datetime.now().astimezone().tzinfo
+        tz = target_date.tzinfo or BR_TIMEZONE
         events = self.get_events_for_day(target_date)
 
         # Mapeia intervalos ocupados
