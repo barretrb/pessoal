@@ -51,6 +51,7 @@ export default function UsoFeaturesModal({ isOpen, onClose, activeProfile }) {
   const [profiles, setProfiles] = useState([]);
   const [stats, setStats] = useState({ totalInteractions: 0, features: [], userBreakdown: [] });
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [isSyncing, setIsSyncing] = useState(false);
 
   const loadStats = () => {
     const allProfiles = storage.getProfiles();
@@ -65,9 +66,17 @@ export default function UsoFeaturesModal({ isOpen, onClose, activeProfile }) {
     }
   };
 
+  const syncAndLoad = async () => {
+    setIsSyncing(true);
+    await telemetryService.fetchCloudTelemetry();
+    loadStats();
+    setIsSyncing(false);
+  };
+
   useEffect(() => {
     if (isOpen) {
       loadStats();
+      syncAndLoad();
     }
   }, [isOpen, selectedUserFilter, activeProfile]);
 
@@ -86,6 +95,7 @@ export default function UsoFeaturesModal({ isOpen, onClose, activeProfile }) {
       if (selectedUserFilter === 'ALL') {
         profiles.forEach(p => telemetryService.resetStats(p.id));
         telemetryService.resetStats('default');
+        telemetryService.resetStats('ALL');
       } else {
         telemetryService.resetStats(selectedUserFilter);
       }
@@ -111,16 +121,29 @@ export default function UsoFeaturesModal({ isOpen, onClose, activeProfile }) {
                 </span>
               </h2>
               <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                Acompanhamento real do uso de todas as funcionalidades e leitores
+                Acompanhamento consolidado na Nuvem (Laptop & Celular integrados)
               </p>
             </div>
           </div>
-          <button
-            onClick={onClose}
-            className="p-2 rounded-xl text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
-          >
-            <X className="w-5 h-5" />
-          </button>
+          
+          <div className="flex items-center space-x-2">
+            <button
+              onClick={syncAndLoad}
+              disabled={isSyncing}
+              className="px-2.5 py-1.5 rounded-xl bg-amber-500/10 dark:bg-amber-950/40 border border-amber-300/60 dark:border-amber-800/60 text-amber-900 dark:text-amber-200 hover:bg-amber-100 text-xs font-bold transition-all flex items-center space-x-1.5 cursor-pointer disabled:opacity-50"
+              title="Buscar registros mais recentes da nuvem agora"
+            >
+              <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? 'animate-spin text-amber-600' : 'text-amber-600 dark:text-amber-400'}`} />
+              <span className="hidden sm:inline">{isSyncing ? 'Sincronizando...' : 'Atualizar Nuvem'}</span>
+            </button>
+
+            <button
+              onClick={onClose}
+              className="p-2 rounded-xl text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
         {/* 1. SELETOR DE USUÁRIO: TODOS OS USUÁRIOS OU INDIVIDUAL */}
@@ -175,7 +198,7 @@ export default function UsoFeaturesModal({ isOpen, onClose, activeProfile }) {
         <div className="p-4 sm:p-5 bg-zinc-100/50 dark:bg-zinc-800/40 border-b border-zinc-200 dark:border-zinc-800 grid grid-cols-2 sm:grid-cols-3 gap-3">
           <div className="p-3 rounded-2xl bg-white dark:bg-zinc-800/80 border border-zinc-200/80 dark:border-zinc-700/60 shadow-xs">
             <div className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
-              {selectedUserFilter === 'ALL' ? 'Total Geral (Todos)' : 'Ações do Leitor'}
+              {selectedUserFilter === 'ALL' ? 'Total Geral (Nuvem)' : 'Ações do Leitor'}
             </div>
             <div className="text-2xl font-black text-amber-600 dark:text-amber-400 mt-0.5">{stats.totalInteractions}</div>
           </div>
@@ -283,15 +306,15 @@ export default function UsoFeaturesModal({ isOpen, onClose, activeProfile }) {
 
         {/* Rodapé com Dica e Ação de Limpeza */}
         <div className="p-4 sm:p-5 border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-500">
-          <div className="flex items-center space-x-1.5 text-zinc-400">
-            <Info className="w-4 h-4 shrink-0 text-amber-500" />
-            <span>Visão consolidada para o administrador acompanhar o engajamento geral.</span>
+          <div className="flex items-center space-x-1.5 text-zinc-500 dark:text-zinc-400">
+            <Cloud className="w-4 h-4 shrink-0 text-amber-500" />
+            <span>Nuvem Supabase ativa ({stats.totalInteractions} eventos registrados entre aparelhos).</span>
           </div>
 
           <div className="flex items-center space-x-2 w-full sm:w-auto">
             <button
               onClick={handleReset}
-              className="flex-1 sm:flex-none inline-flex items-center justify-center space-x-1.5 px-3 py-2 rounded-xl text-zinc-500 hover:text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition-colors"
+              className="flex-1 sm:flex-none inline-flex items-center justify-center space-x-1.5 px-3 py-2 rounded-xl text-zinc-500 hover:text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition-colors cursor-pointer"
               title="Zerar contadores"
             >
               <RotateCcw className="w-3.5 h-3.5" />
@@ -299,7 +322,7 @@ export default function UsoFeaturesModal({ isOpen, onClose, activeProfile }) {
             </button>
             <button
               onClick={onClose}
-              className="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-bold shadow-sm hover:opacity-90 transition-opacity"
+              className="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-bold shadow-sm hover:opacity-90 transition-opacity cursor-pointer"
             >
               Fechar
             </button>

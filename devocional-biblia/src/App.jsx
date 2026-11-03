@@ -239,6 +239,7 @@ export default function App() {
     cloudDbService.fetchAndMergeLatest().then(updated => {
       if (updated) handleDataSyncedFromCloud();
     });
+    telemetryService.fetchCloudTelemetry();
 
     // Sincronizar automaticamente sempre que o usuário retornar à aba ou reabrir o app
     const handleFocusSync = () => {
@@ -246,6 +247,7 @@ export default function App() {
         cloudDbService.fetchAndMergeLatest().then(updated => {
           if (updated) handleDataSyncedFromCloud();
         });
+        telemetryService.fetchCloudTelemetry();
       }
     };
 
@@ -258,6 +260,7 @@ export default function App() {
         cloudDbService.fetchAndMergeLatest().then(updated => {
           if (updated) handleDataSyncedFromCloud();
         });
+        telemetryService.fetchCloudTelemetry();
       }
     }, 4000);
 
