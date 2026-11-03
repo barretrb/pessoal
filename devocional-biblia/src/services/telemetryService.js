@@ -254,6 +254,109 @@ class TelemetryService {
     }
   }
 
+
+  // Obtém o relatório consolidado de métricas de TODOS os usuários cadastrados
+  getAllUsersStats() {
+    try {
+      const profiles = storage.getProfiles();
+      const userBreakdown = [];
+      const aggregatedEvents = {};
+      let totalInteractions = 0;
+      let latestActivity = null;
+
+      profiles.forEach(p => {
+        const pKey = this._getStorageKey(p.id);
+        const raw = localStorage.getItem(pKey);
+        const data = raw ? JSON.parse(raw) : { events: {} };
+        const events = data.events || {};
+
+        let userTotal = 0;
+        Object.entries(events).forEach(([fId, ev]) => {
+          if (!aggregatedEvents[fId]) {
+            aggregatedEvents[fId] = {
+              count: 0,
+              firstUsedAt: ev.firstUsedAt,
+              lastUsedAt: ev.lastUsedAt,
+              history: []
+            };
+          }
+          aggregatedEvents[fId].count += (ev.count || 0);
+          userTotal += (ev.count || 0);
+          if (ev.lastUsedAt && (!aggregatedEvents[fId].lastUsedAt || ev.lastUsedAt > aggregatedEvents[fId].lastUsedAt)) {
+            aggregatedEvents[fId].lastUsedAt = ev.lastUsedAt;
+          }
+        });
+
+        if (data.lastActivityAt && (!latestActivity || data.lastActivityAt > latestActivity)) {
+          latestActivity = data.lastActivityAt;
+        }
+
+        userBreakdown.push({
+          id: p.id,
+          name: p.name,
+          avatar: p.avatar,
+          role: p.role,
+          totalInteractions: userTotal
+        });
+      });
+
+      const allFeatures = Object.keys(FEATURE_METADATA).map(fId => {
+        const meta = FEATURE_METADATA[fId];
+        const eventData = aggregatedEvents[fId] || { count: 0, firstUsedAt: null, lastUsedAt: null };
+        totalInteractions += eventData.count;
+
+        return {
+          id: fId,
+          name: meta.name,
+          category: meta.category,
+          description: meta.description,
+          icon: meta.icon,
+          count: eventData.count,
+          firstUsedAt: eventData.firstUsedAt,
+          lastUsedAt: eventData.lastUsedAt,
+          history: eventData.history || []
+        };
+      });
+
+      allFeatures.sort((a, b) => b.count - a.count);
+
+      const maxCount = allFeatures[0]?.count || 1;
+      const featuresWithHealth = allFeatures.map((f, idx) => {
+        const percentOfMax = maxCount > 0 ? Math.round((f.count / maxCount) * 100) : 0;
+        const percentOfTotal = totalInteractions > 0 ? Math.round((f.count / totalInteractions) * 100) : 0;
+
+        let statusBadge = { label: 'Em Observação', color: 'bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300' };
+        if (f.count >= 20 || idx < 3) {
+          statusBadge = { label: '🔥 Alta Utilização', color: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300' };
+        } else if (f.count >= 5) {
+          statusBadge = { label: '⚡ Uso Frequente', color: 'bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300' };
+        } else if (f.count >= 1) {
+          statusBadge = { label: '💤 Uso Ocasional', color: 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300' };
+        } else {
+          statusBadge = { label: '⚠️ Não Utilizado', color: 'bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300' };
+        }
+
+        return {
+          ...f,
+          percentOfMax,
+          percentOfTotal,
+          statusBadge
+        };
+      });
+
+      return {
+        isAggregated: true,
+        totalInteractions,
+        features: featuresWithHealth,
+        userBreakdown,
+        lastActivityAt: latestActivity
+      };
+    } catch (e) {
+      console.error("Erro ao consolidar telemetria de todos os usuários:", e);
+      return { isAggregated: true, totalInteractions: 0, features: [], userBreakdown: [] };
+    }
+  }
+
   // Limpa o histórico de métricas
   resetStats(profileId = null) {
     try {

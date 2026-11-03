@@ -45,14 +45,14 @@ export default function Navbar({
         {/* 1. LOGO E TÍTULO RESPONSIVO (COMPACTO NO MOBILE) */}
         <div 
           onClick={() => setCurrentView('dashboard')}
-          className="flex items-center space-x-2 cursor-pointer group shrink min-w-0"
+          className="flex items-center space-x-2 cursor-pointer group shrink-0"
           title="Ir para o Início / Panorama"
         >
           <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-tr from-amber-600 to-orange-500 flex items-center justify-center text-white shadow-md shadow-orange-500/20 group-hover:scale-105 transition-transform shrink-0">
             <BookOpen className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
           </div>
-          <div className="min-w-0 flex items-center space-x-1.5">
-            <span className="font-bold text-sm sm:text-base text-zinc-900 dark:text-zinc-100 sepia:text-[#433422] tracking-tight whitespace-nowrap truncate">
+          <div className="flex items-center space-x-1.5 shrink-0">
+            <span className="font-extrabold text-sm sm:text-base text-zinc-900 dark:text-zinc-100 sepia:text-[#433422] tracking-tight whitespace-nowrap">
               Devocional 365
             </span>
             <span className="text-[9px] font-bold uppercase px-1.5 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 shrink-0">
@@ -125,7 +125,7 @@ export default function Navbar({
             title={redLetterEnabled ? "Palavras de Jesus em Vermelho: ATIVADO" : "Ativar Palavras de Jesus em Vermelho"}
           >
             <span className="text-xs font-black text-rose-500 leading-none">✝</span>
-            <span className="text-[11px] font-bold hidden min-[340px]:inline">Jesus</span>
+            <span className="text-[11px] font-bold hidden sm:inline">Jesus</span>
           </button>
 
           {/* Botão de Perfil / Multi-Conta (Rafael / Esposa) */}
@@ -138,11 +138,11 @@ export default function Navbar({
             <span className="hidden lg:inline">{activeProfile?.name || 'Perfil'}</span>
           </button>
 
-          {/* Botão de Sair / Logoff */}
+          {/* Botão de Sair / Logoff (No mobile fica visível no card de perfil abaixo e no modal) */}
           <button
             onClick={onLogout}
-            className="p-1.5 sm:p-2 rounded-xl text-zinc-500 hover:text-rose-600 dark:text-zinc-400 dark:hover:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition-colors shrink-0"
-            title="Sair do perfil atual (Fazer logoff para testar ou trocar de leitor)"
+            className="hidden sm:flex p-1.5 sm:p-2 rounded-xl text-zinc-500 hover:text-rose-600 dark:text-zinc-400 dark:hover:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition-colors shrink-0"
+            title="Sair do perfil atual"
           >
             <LogOut className="w-4 h-4" />
           </button>

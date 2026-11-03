@@ -20,9 +20,12 @@ import {
   Sliders, 
   Cloud,
   RotateCcw,
-  Info
+  Info,
+  Users,
+  UserCheck
 } from 'lucide-react';
 import { telemetryService } from '../services/telemetryService';
+import { storage } from '../services/storage';
 
 const ICON_MAP = {
   Headphones: Headphones,
@@ -44,32 +47,48 @@ const ICON_MAP = {
 };
 
 export default function UsoFeaturesModal({ isOpen, onClose, activeProfile }) {
-  const [stats, setStats] = useState({ totalInteractions: 0, features: [] });
+  const [selectedUserFilter, setSelectedUserFilter] = useState('ALL'); // 'ALL' ou profile.id
+  const [profiles, setProfiles] = useState([]);
+  const [stats, setStats] = useState({ totalInteractions: 0, features: [], userBreakdown: [] });
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const loadStats = () => {
-    const data = telemetryService.getStats(activeProfile?.id);
-    setStats(data);
+    const allProfiles = storage.getProfiles();
+    setProfiles(allProfiles);
+
+    if (selectedUserFilter === 'ALL') {
+      const data = telemetryService.getAllUsersStats();
+      setStats(data);
+    } else {
+      const data = telemetryService.getStats(selectedUserFilter);
+      setStats(data);
+    }
   };
 
   useEffect(() => {
     if (isOpen) {
       loadStats();
     }
-  }, [isOpen, activeProfile]);
+  }, [isOpen, selectedUserFilter, activeProfile]);
 
   if (!isOpen) return null;
 
   const categories = ['all', 'Estudo Teológico', 'Música & Louvor', 'Leitura Bíblica', 'Plano Devocional', 'Engajamento Pessoal', 'Configurações'];
 
-  const filteredFeatures = stats.features.filter(f => {
+  const filteredFeatures = (stats.features || []).filter(f => {
     if (selectedCategory === 'all') return true;
     return f.category === selectedCategory;
   });
 
   const handleReset = () => {
-    if (window.confirm("Deseja zerar os contadores de métricas para este perfil?")) {
-      telemetryService.resetStats(activeProfile?.id);
+    const targetName = selectedUserFilter === 'ALL' ? 'TODOS os leitores' : `o perfil selecionado`;
+    if (window.confirm(`Deseja zerar os contadores de métricas para ${targetName}?`)) {
+      if (selectedUserFilter === 'ALL') {
+        profiles.forEach(p => telemetryService.resetStats(p.id));
+        telemetryService.resetStats('default');
+      } else {
+        telemetryService.resetStats(selectedUserFilter);
+      }
       loadStats();
     }
   };
@@ -79,20 +98,20 @@ export default function UsoFeaturesModal({ isOpen, onClose, activeProfile }) {
       <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl max-w-2xl w-full max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
         
         {/* Cabeçalho */}
-        <div className="p-5 sm:p-6 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between bg-zinc-50/50 dark:bg-zinc-900/50">
+        <div className="p-4 sm:p-6 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between bg-zinc-50/50 dark:bg-zinc-900/50">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-500 to-orange-500 text-white flex items-center justify-center shadow-md">
+            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-500 to-orange-500 text-white flex items-center justify-center shadow-md shrink-0">
               <BarChart3 className="w-5 h-5" />
             </div>
             <div>
-              <h2 className="text-lg sm:text-xl font-bold text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
-                <span>Métricas de Uso por Feature</span>
-                <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300">
-                  {activeProfile?.name || 'Rafael'}
+              <h2 className="text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
+                <span>Métricas de Uso do App</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-500 text-white shadow-xs">
+                  Painel ADM
                 </span>
               </h2>
               <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                Dados reais de uso para guiar a evolução e simplificação do app
+                Acompanhamento real do uso de todas as funcionalidades e leitores
               </p>
             </div>
           </div>
@@ -104,28 +123,100 @@ export default function UsoFeaturesModal({ isOpen, onClose, activeProfile }) {
           </button>
         </div>
 
+        {/* 1. SELETOR DE USUÁRIO: TODOS OS USUÁRIOS OU INDIVIDUAL */}
+        <div className="px-4 sm:px-6 py-3 bg-amber-50/50 dark:bg-amber-950/20 border-b border-amber-200/50 dark:border-amber-900/30 flex items-center justify-between flex-wrap gap-2">
+          <div className="flex items-center space-x-1.5 text-xs font-bold text-amber-900 dark:text-amber-200">
+            <Users className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+            <span>Filtrar por Leitor:</span>
+          </div>
+
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <button
+              onClick={() => setSelectedUserFilter('ALL')}
+              className={`px-2.5 py-1 rounded-xl text-xs font-bold transition-all flex items-center space-x-1 ${
+                selectedUserFilter === 'ALL'
+                  ? 'bg-amber-600 text-white shadow-xs'
+                  : 'bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100'
+              }`}
+            >
+              <span>👥</span>
+              <span>Todos os Usuários (Geral)</span>
+            </button>
+
+            {profiles.map(p => {
+              const isSelected = selectedUserFilter === p.id;
+              const userStat = stats.userBreakdown?.find(u => u.profileId === p.id);
+              return (
+                <button
+                  key={p.id}
+                  onClick={() => setSelectedUserFilter(p.id)}
+                  className={`px-2.5 py-1 rounded-xl text-xs font-semibold transition-all flex items-center space-x-1 ${
+                    isSelected
+                      ? 'bg-amber-600 text-white shadow-xs'
+                      : 'bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100'
+                  }`}
+                >
+                  <span>{p.avatar || '👤'}</span>
+                  <span>{p.name}</span>
+                  {userStat && (
+                    <span className={`text-[10px] ml-1 px-1.5 py-0.2 rounded-full ${
+                      isSelected ? 'bg-amber-700 text-amber-100' : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-500 dark:text-zinc-300'
+                    }`}>
+                      {userStat.totalInteractions}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Resumo no Topo */}
-        <div className="p-4 sm:p-6 bg-zinc-100/50 dark:bg-zinc-800/40 border-b border-zinc-200 dark:border-zinc-800 grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <div className="p-4 sm:p-5 bg-zinc-100/50 dark:bg-zinc-800/40 border-b border-zinc-200 dark:border-zinc-800 grid grid-cols-2 sm:grid-cols-3 gap-3">
           <div className="p-3 rounded-2xl bg-white dark:bg-zinc-800/80 border border-zinc-200/80 dark:border-zinc-700/60 shadow-xs">
-            <div className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">Total de Ações</div>
+            <div className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+              {selectedUserFilter === 'ALL' ? 'Total Geral (Todos)' : 'Ações do Leitor'}
+            </div>
             <div className="text-2xl font-black text-amber-600 dark:text-amber-400 mt-0.5">{stats.totalInteractions}</div>
           </div>
 
           <div className="p-3 rounded-2xl bg-white dark:bg-zinc-800/80 border border-zinc-200/80 dark:border-zinc-700/60 shadow-xs">
             <div className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">Feature #1 Mais Usada</div>
             <div className="text-sm font-bold text-zinc-900 dark:text-zinc-100 truncate mt-1">
-              {stats.features[0]?.count > 0 ? stats.features[0].name : 'Nenhuma ainda'}
+              {stats.features?.[0]?.count > 0 ? stats.features[0].name : 'Nenhuma ainda'}
             </div>
           </div>
 
           <div className="col-span-2 sm:col-span-1 p-3 rounded-2xl bg-white dark:bg-zinc-800/80 border border-zinc-200/80 dark:border-zinc-700/60 shadow-xs">
-            <div className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">Features Monitoradas</div>
-            <div className="text-2xl font-black text-zinc-900 dark:text-zinc-100 mt-0.5">{stats.features.length}</div>
+            <div className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+              {selectedUserFilter === 'ALL' ? 'Leitores Cadastrados' : 'Features Usadas'}
+            </div>
+            <div className="text-2xl font-black text-zinc-900 dark:text-zinc-100 mt-0.5">
+              {selectedUserFilter === 'ALL' ? (stats.userBreakdown?.length || profiles.length) : (stats.features?.filter(f => f.count > 0).length || 0)}
+            </div>
           </div>
         </div>
 
+        {/* Breakdown de Leitores (Quando visualizando consolidado 'ALL') */}
+        {selectedUserFilter === 'ALL' && stats.userBreakdown && stats.userBreakdown.length > 0 && (
+          <div className="px-4 sm:px-6 py-2.5 bg-zinc-50 dark:bg-zinc-900/60 border-b border-zinc-200 dark:border-zinc-800 flex items-center gap-2 overflow-x-auto scrollbar-none">
+            <span className="text-[11px] font-bold text-zinc-400 uppercase tracking-wider shrink-0">Participação:</span>
+            {stats.userBreakdown.map(u => (
+              <div 
+                key={u.profileId}
+                className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-xs text-zinc-700 dark:text-zinc-300 shrink-0 shadow-2xs"
+              >
+                <span>{u.avatar || '👤'}</span>
+                <span className="font-bold">{u.name}:</span>
+                <span className="font-extrabold text-amber-600 dark:text-amber-400">{u.totalInteractions} ações</span>
+                <span className="text-[10px] text-zinc-400">({u.percentOfTotal}%)</span>
+              </div>
+            ))}
+          </div>
+        )}
+
         {/* Filtro por Categoria */}
-        <div className="px-5 pt-3 pb-2 flex items-center gap-1.5 overflow-x-auto scrollbar-none border-b border-zinc-100 dark:border-zinc-800/60">
+        <div className="px-4 sm:px-6 pt-3 pb-2 flex items-center gap-1.5 overflow-x-auto scrollbar-none border-b border-zinc-100 dark:border-zinc-800/60">
           {categories.map(cat => (
             <button
               key={cat}
@@ -172,8 +263,8 @@ export default function UsoFeaturesModal({ isOpen, onClose, activeProfile }) {
                     <span className="text-base font-extrabold text-zinc-900 dark:text-zinc-100">
                       {f.count} <span className="text-[11px] font-normal text-zinc-400">usos</span>
                     </span>
-                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full mt-1 ${f.statusBadge.color}`}>
-                      {f.statusBadge.label}
+                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full mt-1 ${f.statusBadge?.color || 'bg-zinc-100 text-zinc-700'}`}>
+                      {f.statusBadge?.label || 'Em Uso'}
                     </span>
                   </div>
                 </div>
@@ -182,7 +273,7 @@ export default function UsoFeaturesModal({ isOpen, onClose, activeProfile }) {
                 <div className="w-full bg-zinc-100 dark:bg-zinc-800 rounded-full h-2 overflow-hidden mt-2">
                   <div 
                     className="bg-gradient-to-r from-amber-500 to-orange-500 h-full rounded-full transition-all duration-500"
-                    style={{ width: `${Math.max(f.percentOfMax, f.count > 0 ? 5 : 0)}%` }}
+                    style={{ width: `${Math.max(f.percentOfMax || 0, f.count > 0 ? 5 : 0)}%` }}
                   />
                 </div>
               </div>
@@ -194,7 +285,7 @@ export default function UsoFeaturesModal({ isOpen, onClose, activeProfile }) {
         <div className="p-4 sm:p-5 border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-500">
           <div className="flex items-center space-x-1.5 text-zinc-400">
             <Info className="w-4 h-4 shrink-0 text-amber-500" />
-            <span>As métricas são salvas localmente e sincronizadas com seu perfil.</span>
+            <span>Visão consolidada para o administrador acompanhar o engajamento geral.</span>
           </div>
 
           <div className="flex items-center space-x-2 w-full sm:w-auto">

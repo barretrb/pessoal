@@ -156,7 +156,7 @@ export default function Dashboard({
             <button
               onClick={() => moveSection(index, -1)}
               disabled={index === 0}
-              className="p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
+              className="hidden sm:inline-flex p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
               title="Mover caixa para cima"
             >
               <ArrowUp className="w-3.5 h-3.5" />
@@ -164,7 +164,7 @@ export default function Dashboard({
             <button
               onClick={() => moveSection(index, 1)}
               disabled={index === order.length - 1}
-              className="p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
+              className="hidden sm:inline-flex p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
               title="Mover caixa para baixo"
             >
               <ArrowDown className="w-3.5 h-3.5" />
@@ -225,10 +225,10 @@ export default function Dashboard({
               </div>
             )}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              {/* Card de Pendência */}
-              {pendingDayData ? (
-                <div className="relative rounded-3xl border-2 border-rose-300 dark:border-rose-900/60 bg-gradient-to-b from-rose-50/80 to-white dark:from-rose-950/20 dark:to-zinc-900/40 p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div className={pendingDayData ? "grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5" : "w-full"}>
+              {/* Card de Pendência - Exibido apenas se houver pendência real acumulada */}
+              {pendingDayData && (
+                <div className="relative rounded-3xl border-2 border-rose-300 dark:border-rose-900/60 bg-gradient-to-b from-rose-50/80 to-white dark:from-rose-950/20 dark:to-zinc-900/40 p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center justify-between mb-3">
                     <div className="inline-flex items-center space-x-2 px-2.5 py-1 rounded-full bg-rose-100 dark:bg-rose-900/60 text-rose-700 dark:text-rose-300 text-xs font-bold uppercase tracking-wide">
                       <AlertCircle className="w-3.5 h-3.5" />
@@ -273,32 +273,30 @@ export default function Dashboard({
                     <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>
-              ) : (
-                <div className="rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/40 p-5 sm:p-6 flex flex-col justify-center items-center text-center">
-                  <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-3">
-                    <CheckCircle2 className="w-6 h-6" />
-                  </div>
-                  <h4 className="font-bold text-zinc-900 dark:text-zinc-100">Tudo em Dia!</h4>
-                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
-                    Nenhuma leitura pendente anterior. Você está caminhando firme no plano anual!
-                  </p>
-                </div>
               )}
 
-              {/* Card da Leitura de Hoje */}
+              {/* Card da Leitura de Hoje - Protagonista da Tela */}
               {currentDayData && (
-                <div className="relative rounded-3xl border border-amber-200 dark:border-amber-900/40 bg-gradient-to-b from-amber-50/60 to-white dark:from-amber-950/20 dark:to-zinc-900/40 p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow">
-                  <div className="flex items-center justify-between mb-3">
+                <div className="relative rounded-3xl border border-amber-200 dark:border-amber-900/40 bg-gradient-to-b from-amber-50/60 to-white dark:from-amber-950/20 dark:to-zinc-900/40 p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
                     <div className="inline-flex items-center space-x-2 px-2.5 py-1 rounded-full bg-amber-100 dark:bg-amber-900/50 text-amber-800 dark:text-amber-300 text-xs font-bold uppercase tracking-wide">
                       <Flame className="w-3.5 h-3.5" />
                       <span>Hoje • {formatDateBR(currentDayData.date, true)}</span>
                     </div>
-                    <span className="text-xs font-semibold text-amber-600 dark:text-amber-400">
-                      Dia {currentDayData.id} de 365
-                    </span>
+                    <div className="flex items-center space-x-2">
+                      {!pendingDayData && (
+                        <span className="inline-flex items-center space-x-1 px-2.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-[11px] font-bold">
+                          <CheckCircle2 className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
+                          <span>Em Dia!</span>
+                        </span>
+                      )}
+                      <span className="text-xs font-semibold text-amber-600 dark:text-amber-400">
+                        Dia {currentDayData.id} de 365
+                      </span>
+                    </div>
                   </div>
 
-                  <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-1">
+                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-1">
                     {currentDayData.readings.join(', ')}
                   </h3>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-3">
@@ -364,7 +362,7 @@ export default function Dashboard({
             <button
               onClick={() => moveSection(index, -1)}
               disabled={index === 0}
-              className="p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
+              className="hidden sm:inline-flex p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
               title="Mover caixa para cima"
             >
               <ArrowUp className="w-3.5 h-3.5" />
@@ -372,7 +370,7 @@ export default function Dashboard({
             <button
               onClick={() => moveSection(index, 1)}
               disabled={index === order.length - 1}
-              className="p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
+              className="hidden sm:inline-flex p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
               title="Mover caixa para baixo"
             >
               <ArrowDown className="w-3.5 h-3.5" />
@@ -614,7 +612,7 @@ export default function Dashboard({
             <button
               onClick={() => moveSection(index, -1)}
               disabled={index === 0}
-              className="p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
+              className="hidden sm:inline-flex p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
               title="Mover caixa para cima"
             >
               <ArrowUp className="w-3.5 h-3.5" />
@@ -622,7 +620,7 @@ export default function Dashboard({
             <button
               onClick={() => moveSection(index, 1)}
               disabled={index === order.length - 1}
-              className="p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
+              className="hidden sm:inline-flex p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
               title="Mover caixa para baixo"
             >
               <ArrowDown className="w-3.5 h-3.5" />
@@ -710,7 +708,7 @@ export default function Dashboard({
             <button
               onClick={() => moveSection(index, -1)}
               disabled={index === 0}
-              className="p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
+              className="hidden sm:inline-flex p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
               title="Mover caixa para cima"
             >
               <ArrowUp className="w-3.5 h-3.5" />
@@ -718,7 +716,7 @@ export default function Dashboard({
             <button
               onClick={() => moveSection(index, 1)}
               disabled={index === order.length - 1}
-              className="p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
+              className="hidden sm:inline-flex p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
               title="Mover caixa para baixo"
             >
               <ArrowDown className="w-3.5 h-3.5" />
@@ -819,7 +817,7 @@ export default function Dashboard({
             <button
               onClick={() => moveSection(index, -1)}
               disabled={index === 0}
-              className="p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
+              className="hidden sm:inline-flex p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
               title="Mover caixa para cima"
             >
               <ArrowUp className="w-3.5 h-3.5" />
@@ -827,7 +825,7 @@ export default function Dashboard({
             <button
               onClick={() => moveSection(index, 1)}
               disabled={index === order.length - 1}
-              className="p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
+              className="hidden sm:inline-flex p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded"
               title="Mover caixa para baixo"
             >
               <ArrowDown className="w-3.5 h-3.5" />
@@ -1067,44 +1065,32 @@ export default function Dashboard({
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-7">
+    <div className="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-7 space-y-4 sm:space-y-6">
       
       {/* BARRA SUPERIOR DO DASHBOARD: SAUDAÇÃO AO PERFIL & PERSONALIZAÇÃO DA TELA */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 p-4 rounded-3xl bg-white dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 shadow-2xs">
+      <div className="flex items-center justify-between gap-2.5 p-3 sm:p-4 rounded-2xl sm:rounded-3xl bg-white dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 shadow-2xs">
         {/* Identificação do Perfil Ativo */}
         <div 
           onClick={onOpenProfiles}
-          className="flex items-center space-x-3 cursor-pointer group"
+          className="flex items-center space-x-2.5 sm:space-x-3 cursor-pointer group min-w-0"
           title="Clique para alternar ou gerenciar perfis"
         >
-          <div className="w-10 h-10 rounded-2xl bg-amber-500/10 text-xl flex items-center justify-center border border-amber-500/30 group-hover:scale-105 transition-transform">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl sm:rounded-2xl bg-amber-500/10 text-lg sm:text-xl flex items-center justify-center border border-amber-500/30 group-hover:scale-105 transition-transform shrink-0">
             {activeProfile?.avatar || '👤'}
           </div>
-          <div>
-            <div className="flex items-center space-x-1.5">
+          <div className="min-w-0">
+            <div className="flex items-center space-x-1.5 flex-wrap">
               <span className="text-xs text-zinc-500 dark:text-zinc-400">
                 {isPlanActive ? 'Devocional de' : 'Perfil de'}
               </span>
-              <span className="text-sm font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-amber-600 transition-colors">
+              <span className="text-sm font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-amber-600 transition-colors truncate">
                 {activeProfile?.name || 'Leitor'}
               </span>
-              <span className="text-[10px] bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 px-1.5 py-0.5 rounded-md font-semibold">
+              <span className="text-[10px] bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 px-1.5 py-0.5 rounded-md font-semibold shrink-0">
                 Trocar ⇄
               </span>
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  if (onLogout) onLogout();
-                }}
-                className="text-[10px] bg-rose-50 dark:bg-rose-950/50 hover:bg-rose-100 dark:hover:bg-rose-900/60 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-900/60 px-2 py-0.5 rounded-md font-bold transition-colors flex items-center space-x-1 cursor-pointer"
-                title="Sair / Desconectar deste leitor"
-              >
-                <LogOut className="w-3 h-3" />
-                <span>Sair</span>
-              </button>
             </div>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400">
+            <p className="text-[11px] sm:text-xs text-zinc-500 dark:text-zinc-400 font-medium truncate">
               {isPlanActive 
                 ? `${totalCompleted} dias concluídos (${progressPercent}%)`
                 : 'Modo: Leitura Livre & Estudos Teológicos'}
@@ -1112,16 +1098,16 @@ export default function Dashboard({
           </div>
         </div>
 
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-1.5 shrink-0">
           {/* Botão de Métricas de Uso de Features (Exclusivo do Administrador Rafael) */}
           {activeProfile?.role === 'admin' && (
             <button
               onClick={() => setIsTelemetryOpen(true)}
-              className="inline-flex items-center space-x-1.5 px-3 py-2 rounded-2xl bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 hover:bg-amber-100 dark:hover:bg-amber-900/50 border border-amber-200 dark:border-amber-900/60 text-xs font-bold transition-colors cursor-pointer"
+              className="inline-flex items-center space-x-1.5 p-2 sm:px-3 sm:py-2 rounded-xl sm:rounded-2xl bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 hover:bg-amber-100 dark:hover:bg-amber-900/50 border border-amber-200 dark:border-amber-900/60 text-xs font-bold transition-colors cursor-pointer"
               title="Painel Administrativo: Monitorar uso de todas as funcionalidades e leitores"
             >
-              <BarChart3 className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-              <span className="hidden sm:inline">Métricas de Uso (Admin)</span>
+              <BarChart3 className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+              <span className="hidden md:inline">Métricas de Uso</span>
             </button>
           )}
 
@@ -1131,17 +1117,28 @@ export default function Dashboard({
               telemetryService.track('dashboard_customize');
               setIsCustomizeOpen(true);
             }}
-            className="inline-flex items-center space-x-1.5 px-3.5 py-2 rounded-2xl bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-xs font-bold transition-colors"
+            className="inline-flex items-center space-x-1 p-2 sm:px-3 sm:py-2 rounded-xl sm:rounded-2xl bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-xs font-bold transition-colors cursor-pointer"
             title="Personalizar quais caixas exibir e alterar a ordem da tela inicial"
           >
-            <Sliders className="w-3.5 h-3.5 text-amber-500" />
-            <span>Personalizar Tela</span>
+            <Sliders className="w-4 h-4 text-amber-500" />
+            <span className="hidden sm:inline">Personalizar</span>
+          </button>
+
+          {/* Botão de Sair / Logoff */}
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              if (onLogout) onLogout();
+            }}
+            className="p-2 sm:px-2.5 sm:py-2 rounded-xl sm:rounded-2xl text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 border border-rose-200/60 dark:border-rose-900/40 text-xs font-bold transition-colors flex items-center space-x-1 cursor-pointer"
+            title="Sair / Desconectar deste leitor"
+          >
+            <LogOut className="w-4 h-4" />
+            <span className="hidden sm:inline">Sair</span>
           </button>
         </div>
       </div>
-
-      {/* PAINEL DE LEITURA LIVRE & ESTUDOS TEOLÓGICOS (Quando o usuário optou por não ter o plano diário) */}
-      {!isPlanActive && renderStudyHub()}
 
       {/* RENDERIZAÇÃO DAS CAIXAS NA ORDEM DEFINIDA PELO USUÁRIO */}
       {order.map((secId, idx) => {
