@@ -10,7 +10,6 @@ import {
   BookMarked,
   Library,
   Compass,
-  Camera,
   LogOut,
   Menu
 } from 'lucide-react';
@@ -31,7 +30,6 @@ export default function Navbar({
   activeProfile,
   onOpenProfiles,
   onOpenMaps,
-  onOpenImages,
   onOpenDrawer,
   onLogout
 }) {
@@ -46,38 +44,26 @@ export default function Navbar({
     <header className="sticky top-0 z-40 backdrop-blur-md border-b transition-colors duration-200 bg-white/95 dark:bg-zinc-900/95 sepia:bg-[#f4e4c1]/95 border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7]">
       <div className="max-w-6xl mx-auto px-3 sm:px-6 h-14 sm:h-16 flex items-center justify-between gap-2 overflow-hidden">
         
-        {/* 1. LOGO E TÍTULO RESPONSIVO (COMPACTO NO MOBILE) */}
-        <div className="flex items-center space-x-2">
-          {/* Botão Hambúrguer Mobile (Abre o Menu Lateral) */}
-          <button
-            onClick={onOpenDrawer}
-            className="md:hidden p-2 -ml-1 rounded-xl text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer flex items-center justify-center shrink-0"
-            title="Abrir Menu Lateral"
-            aria-label="Abrir Menu Lateral"
-          >
-            <Menu className="w-5 h-5 text-zinc-800 dark:text-zinc-100" />
-          </button>
-
-          <div 
-            onClick={() => setCurrentView('dashboard')}
-            className="flex items-center space-x-2 cursor-pointer group shrink-0"
-            title="Ir para o Início / Panorama"
-          >
-            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-tr from-amber-600 to-orange-500 flex items-center justify-center text-white shadow-md shadow-orange-500/20 group-hover:scale-105 transition-transform shrink-0">
-              <BookOpen className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
-            </div>
-            <div className="flex items-center space-x-1.5 shrink-0">
-              <span className="font-extrabold text-sm sm:text-base text-zinc-900 dark:text-zinc-100 sepia:text-[#433422] tracking-tight whitespace-nowrap">
-                Devocional 365
-              </span>
-              <span className="text-[9px] font-bold uppercase px-1.5 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 shrink-0">
-                NVT
-              </span>
-            </div>
+        {/* 1. LOGO E TÍTULO RESPONSIVO (SEM MENU DUPLICADO NA ESQUERDA) */}
+        <div 
+          onClick={() => setCurrentView('dashboard')}
+          className="flex items-center space-x-2 cursor-pointer group shrink-0"
+          title="Ir para o Início / Panorama"
+        >
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-tr from-amber-600 to-orange-500 flex items-center justify-center text-white shadow-md shadow-orange-500/20 group-hover:scale-105 transition-transform shrink-0">
+            <BookOpen className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
+          </div>
+          <div className="flex items-center space-x-1.5 shrink-0">
+            <span className="font-extrabold text-sm sm:text-base text-zinc-900 dark:text-zinc-100 sepia:text-[#433422] tracking-tight whitespace-nowrap">
+              Devocional 365
+            </span>
+            <span className="text-[9px] font-bold uppercase px-1.5 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 shrink-0">
+              NVT
+            </span>
           </div>
         </div>
 
-        {/* 2. MENU CENTRAL DESKTOP (ESCONDIDO NO MOBILE, POIS FICA NA BOTTOM NAV E DRAWER) */}
+        {/* 2. MENU CENTRAL DESKTOP */}
         <div className="hidden md:flex items-center space-x-2">
           {/* Botão Bíblia Completa */}
           <button
@@ -109,16 +95,6 @@ export default function Navbar({
             <span>Mapas</span>
           </button>
 
-          {/* Botão Imagens Históricas & Ateliê IA */}
-          <button
-            onClick={onOpenImages}
-            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-orange-50 dark:bg-orange-950/40 text-orange-700 dark:text-orange-300 border border-orange-200 dark:border-orange-800/60 hover:bg-orange-100 transition-colors cursor-pointer"
-            title="Acervo Histórico & Arqueológico Bíblico"
-          >
-            <Camera className="w-3.5 h-3.5 text-orange-500" />
-            <span>Acervo Histórico</span>
-          </button>
-
           {/* Leitura de Hoje */}
           {activeProfile?.planOptIn !== false && (
             <button
@@ -135,7 +111,7 @@ export default function Navbar({
           )}
         </div>
 
-        {/* 3. MENU DIREITO (LIMPO E CONFORTÁVEL) */}
+        {/* 3. MENU DIREITO (COM ÚNICO BOTÃO DE MENU LATERAL) */}
         <div className="flex items-center space-x-1.5 sm:space-x-2 shrink-0">
           
           {/* Alerta de Leitura Pendente (Se houver) */}
@@ -194,13 +170,14 @@ export default function Navbar({
             <LogOut className="w-4 h-4" />
           </button>
 
-          {/* Botão Menu Lateral Completo (Também disponível no Desktop) */}
+          {/* ÚNICO BOTÃO DE MENU LATERAL (NA DIREITA) */}
           <button
             onClick={onOpenDrawer}
-            className="p-1.5 sm:p-2 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer flex items-center space-x-1"
-            title="Menu Completo"
+            className="p-1.5 sm:px-2.5 sm:py-1.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer flex items-center space-x-1.5 shrink-0"
+            title="Abrir Menu Lateral"
+            aria-label="Abrir Menu Lateral"
           >
-            <Menu className="w-4 h-4 text-zinc-800 dark:text-zinc-200" />
+            <Menu className="w-5 h-5 text-zinc-800 dark:text-zinc-100" />
             <span className="text-xs font-bold hidden lg:inline">Menu</span>
           </button>
 

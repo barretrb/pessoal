@@ -50,7 +50,6 @@ export default function Dashboard({
   onUpdateDashboardLayout,
   onResetDashboardLayout,
   onOpenMaps,
-  onOpenImages,
   onOptInPlan,
   onOptOutPlan,
   onLogout
@@ -1055,28 +1054,6 @@ export default function Dashboard({
             </div>
             <div className="flex items-center space-x-1.5 text-xs font-bold text-emerald-600 dark:text-emerald-400">
               <span>Abrir Atlas Bíblico</span>
-              <ChevronRight className="w-4 h-4" />
-            </div>
-          </div>
-
-          {/* Card 5: Acervo Histórico Bíblico */}
-          <div 
-            onClick={onOpenImages}
-            className="p-5 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 hover:border-orange-400 dark:hover:border-orange-600 cursor-pointer transition-all hover:scale-[1.01] hover:shadow-lg group flex flex-col justify-between space-y-4"
-          >
-            <div className="space-y-2.5">
-              <div className="w-11 h-11 rounded-2xl bg-orange-500/15 text-orange-600 dark:text-orange-400 flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Camera className="w-6 h-6" />
-              </div>
-              <h4 className="font-extrabold text-base text-zinc-900 dark:text-zinc-100 group-hover:text-orange-600 transition-colors">
-                Imagens Históricas & Ateliê IA
-              </h4>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
-                Reconstruções arqueológicas do Tabernáculo, Templo, vestes sacerdotais, costumes e vida na época bíblica.
-              </p>
-            </div>
-            <div className="flex items-center space-x-1.5 text-xs font-bold text-orange-600 dark:text-orange-400">
-              <span>Acessar Acervo Histórico</span>
               <ChevronRight className="w-4 h-4" />
             </div>
           </div>

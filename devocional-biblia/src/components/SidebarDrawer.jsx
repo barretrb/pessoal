@@ -2,7 +2,6 @@ import React from 'react';
 import { 
   X, 
   Compass, 
-  Camera, 
   BookOpen, 
   BookMarked, 
   Library, 
@@ -13,11 +12,7 @@ import {
   Coffee, 
   LogOut, 
   ChevronRight, 
-  User, 
-  Sparkles,
-  Bookmark,
-  Flame,
-  Check
+  Bookmark
 } from 'lucide-react';
 
 export default function SidebarDrawer({
@@ -26,7 +21,6 @@ export default function SidebarDrawer({
   activeProfile,
   onOpenProfiles,
   onOpenMaps,
-  onOpenImages,
   onOpenBibleNav,
   onOpenStudyInfo,
   onOpenMetrics,
@@ -125,7 +119,7 @@ export default function SidebarDrawer({
           {/* 1. ATLAS BÍBLICO (MAPAS HISTÓRICOS) */}
           <button
             onClick={() => handleAction(onOpenMaps)}
-            className="w-full p-3 rounded-2xl border border-emerald-200 dark:border-emerald-900/50 bg-emerald-50/40 dark:bg-emerald-950/20 hover:bg-emerald-100/60 dark:hover:bg-emerald-950/40 transition-all flex items-center justify-between text-left group cursor-pointer"
+            className="w-full p-3.5 rounded-2xl border border-emerald-200 dark:border-emerald-900/50 bg-emerald-50/40 dark:bg-emerald-950/20 hover:bg-emerald-100/60 dark:hover:bg-emerald-950/40 transition-all flex items-center justify-between text-left group cursor-pointer"
           >
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform shrink-0">
@@ -133,14 +127,14 @@ export default function SidebarDrawer({
               </div>
               <div>
                 <div className="flex items-center space-x-1.5">
-                  <span className="text-xs font-black text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-600 transition-colors">
+                  <span className="text-sm font-black text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-600 transition-colors">
                     Atlas Bíblico & Rotas
                   </span>
                   <span className="text-[9px] font-bold px-1.5 py-0.2 rounded-full bg-emerald-500 text-white">
                     Mapas Reais
                   </span>
                 </div>
-                <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5 line-clamp-1">
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
                   Jesus, Paulo, Êxodo e 12 Tribos
                 </p>
               </div>
@@ -148,37 +142,11 @@ export default function SidebarDrawer({
             <ChevronRight className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
           </button>
 
-          {/* 2. IMAGENS HISTÓRICAS & ATELIÊ IA */}
-          <button
-            onClick={() => handleAction(onOpenImages)}
-            className="w-full p-3 rounded-2xl border border-orange-200 dark:border-orange-900/50 bg-orange-50/40 dark:bg-orange-950/20 hover:bg-orange-100/60 dark:hover:bg-orange-950/40 transition-all flex items-center justify-between text-left group cursor-pointer"
-          >
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-orange-500 to-amber-600 text-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform shrink-0">
-                <Camera className="w-5 h-5" />
-              </div>
-              <div>
-                <div className="flex items-center space-x-1.5">
-                  <span className="text-xs font-black text-zinc-900 dark:text-zinc-100 group-hover:text-orange-600 transition-colors">
-                    Acervo Histórico & Arqueológico
-                  </span>
-                  <span className="text-[9px] font-bold px-1.5 py-0.2 rounded-full bg-orange-500 text-white">
-                    Arqueologia
-                  </span>
-                </div>
-                <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5 line-clamp-1">
-                  Templos, rituais e vida bíblica
-                </p>
-              </div>
-            </div>
-            <ChevronRight className="w-4 h-4 text-orange-600 dark:text-orange-400 shrink-0" />
-          </button>
-
           <div className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider px-2 pt-2">
             Navegação & Estudo
           </div>
 
-          {/* 3. BÍBLIA SAGRADA (66 LIVROS) */}
+          {/* 2. BÍBLIA SAGRADA (66 LIVROS) */}
           <button
             onClick={() => handleAction(onOpenBibleNav)}
             className="w-full p-2.5 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors flex items-center justify-between text-left cursor-pointer"
@@ -199,7 +167,7 @@ export default function SidebarDrawer({
             <ChevronRight className="w-4 h-4 text-zinc-400" />
           </button>
 
-          {/* 4. BÍBLIA DE ESTUDOS */}
+          {/* 3. BÍBLIA DE ESTUDOS */}
           <button
             onClick={() => handleAction(() => onOpenStudyInfo && onOpenStudyInfo('Lucas'))}
             className="w-full p-2.5 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors flex items-center justify-between text-left cursor-pointer"
@@ -220,7 +188,7 @@ export default function SidebarDrawer({
             <ChevronRight className="w-4 h-4 text-zinc-400" />
           </button>
 
-          {/* 5. FAVORITOS & DESTAQUES */}
+          {/* 4. FAVORITOS & DESTAQUES */}
           <button
             onClick={() => handleAction(onOpenFavorites)}
             className="w-full p-2.5 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors flex items-center justify-between text-left cursor-pointer"
@@ -241,7 +209,7 @@ export default function SidebarDrawer({
             <ChevronRight className="w-4 h-4 text-zinc-400" />
           </button>
 
-          {/* 6. MÉTRICAS DE USO (SE FOR ADMIN) */}
+          {/* 5. MÉTRICAS DE USO (SE FOR ADMIN) */}
           {activeProfile?.isAdmin && (
             <button
               onClick={() => handleAction(onOpenMetrics)}
@@ -264,7 +232,7 @@ export default function SidebarDrawer({
             </button>
           )}
 
-          {/* 7. PERSONALIZAR DASHBOARD */}
+          {/* 6. PERSONALIZAR DASHBOARD */}
           <button
             onClick={() => handleAction(onOpenCustomize)}
             className="w-full p-2.5 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors flex items-center justify-between text-left cursor-pointer"
@@ -289,7 +257,7 @@ export default function SidebarDrawer({
             Preferências Rápidas
           </div>
 
-          {/* 8. PALAVRAS DE JESUS EM VERMELHO */}
+          {/* 7. PALAVRAS DE JESUS EM VERMELHO */}
           <div className="p-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-100 dark:border-zinc-800 flex items-center justify-between">
             <div className="flex items-center space-x-2.5">
               <span className="w-7 h-7 rounded-lg bg-rose-500/15 text-rose-600 dark:text-rose-400 flex items-center justify-center text-xs font-black">
@@ -317,7 +285,7 @@ export default function SidebarDrawer({
             </button>
           </div>
 
-          {/* 9. SELETOR DE TEMA */}
+          {/* 8. SELETOR DE TEMA */}
           <div className="p-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-100 dark:border-zinc-800 space-y-1.5">
             <span className="text-[11px] font-bold text-zinc-700 dark:text-zinc-300 block">
               Tema Visual:

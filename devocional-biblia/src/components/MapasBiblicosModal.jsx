@@ -25,7 +25,7 @@ import {
 import { BIBLICAL_PLACES, BIBLICAL_JOURNEYS } from '../data/biblicalPlaces';
 import { telemetryService } from '../services/telemetryService';
 
-export default function MapasBiblicosModal({ isOpen, onClose, initialPlaceId = null, onSelectReading = null, onOpenImages = null }) {
+export default function MapasBiblicosModal({ isOpen, onClose, initialPlaceId = null, onSelectReading = null }) {
   const [selectedJourneyId, setSelectedJourneyId] = useState('jesus');
   const [selectedPlaceId, setSelectedPlaceId] = useState(initialPlaceId || 'jerusalem');
   const [searchQuery, setSearchQuery] = useState('');
@@ -456,21 +456,7 @@ export default function MapasBiblicosModal({ isOpen, onClose, initialPlaceId = n
                 </div>
               </div>
 
-              {/* Ações Especiais: Ateliê de Imagens / Abrir no Leitor */}
-              {onOpenImages && (
-                <div className="pt-3 border-t border-zinc-200 dark:border-zinc-800">
-                  <button
-                    onClick={() => {
-                      onClose();
-                      onOpenImages(selectedPlace.name);
-                    }}
-                    className="w-full p-3 rounded-2xl bg-gradient-to-r from-orange-500/15 to-purple-500/15 hover:from-orange-500/25 hover:to-purple-500/25 border border-orange-300/60 dark:border-orange-800/60 text-orange-800 dark:text-orange-200 font-bold text-xs sm:text-sm flex items-center justify-center space-x-2 transition-all cursor-pointer shadow-xs"
-                  >
-                    <Sparkles className="w-4 h-4 text-orange-500" />
-                    <span>Ver Acervo Histórico de {selectedPlace.name}</span>
-                  </button>
-                </div>
-              )}
+              
             </div>
 
           </div>

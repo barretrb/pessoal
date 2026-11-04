@@ -13,7 +13,6 @@ import EstudoLivroModal from './components/EstudoLivroModal';
 import PerfilModal from './components/PerfilModal';
 import PinAuthModal from './components/PinAuthModal';
 import MapasBiblicosModal from './components/MapasBiblicosModal';
-import ImagensHistoricasModal from './components/ImagensHistoricasModal';
 import PlanoDevocionalOnboardingModal from './components/PlanoDevocionalOnboardingModal';
 import SelecaoPerfilScreen from './components/SelecaoPerfilScreen';
 
@@ -104,8 +103,7 @@ export default function App() {
 
   // Modal de Nuvem & Sincronização em múltiplos aparelhos
   const [mapasModalData, setMapasModalData] = useState({ isOpen: false, placeId: null });
-  const [imagensModalOpen, setImagensModalOpen] = useState(false);
-
+  
   // Favoritos e Highlights do perfil ativo
   const [favorites, setFavorites] = useState(() => storage.getFavorites(activeProfileId));
   const [highlights, setHighlights] = useState(() => storage.getHighlights(activeProfileId));
@@ -418,8 +416,7 @@ export default function App() {
         activeProfile={activeProfile}
         onOpenProfiles={() => setProfileModalOpen(true)}
         onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
-        onOpenImages={() => setImagensModalOpen(true)}
-        onOpenBibleNav={() => setBibleNavOpen(true)}
+                onOpenBibleNav={() => setBibleNavOpen(true)}
         onOpenStudyInfo={handleOpenStudyInfo}
         onOpenMetrics={() => setUsageMetricsOpen(true)}
         onOpenCustomize={() => setCustomizeModalOpen(true)}
@@ -465,8 +462,7 @@ export default function App() {
         activeProfile={activeProfile}
         onOpenProfiles={() => setProfileModalOpen(true)}
         onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
-        onOpenImages={() => setImagensModalOpen(true)}
-        onOpenDrawer={() => setIsDrawerOpen(true)}
+                onOpenDrawer={() => setIsDrawerOpen(true)}
         onLogout={handleLogout}
       />
 
@@ -490,8 +486,7 @@ export default function App() {
             onUpdateDashboardLayout={handleUpdateDashboardLayout}
             onResetDashboardLayout={handleResetDashboardLayout}
             onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
-            onOpenImages={() => setImagensModalOpen(true)}
-            onOpenBibleArc={(book, chapter) => {
+                        onOpenBibleArc={(book, chapter) => {
               setBibleArcData({ 
                 isOpen: true, 
                 book: book || 'Lucas', 
@@ -595,14 +590,9 @@ export default function App() {
         isOpen={mapasModalData.isOpen}
         onClose={() => setMapasModalData({ isOpen: false, placeId: null })}
         initialPlaceId={mapasModalData.placeId}
-        onOpenImages={() => setImagensModalOpen(true)}
-      />
+              />
 
-      {/* Modal de Imagens Históricas & Ateliê Bíblico IA */}
-      <ImagensHistoricasModal
-        isOpen={imagensModalOpen}
-        onClose={() => setImagensModalOpen(false)}
-      />
+      
 
       {/* Modal Navegação Livre da Bíblia */}
       <NavegacaoBibliaModal
