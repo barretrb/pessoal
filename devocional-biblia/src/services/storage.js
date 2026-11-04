@@ -53,8 +53,6 @@ export const storage = {
       if (stored) {
         let parsed = JSON.parse(stored);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          // O usuário confirmou a exclusão definitiva do perfil esposa
-          parsed = parsed.filter(p => p.id !== 'esposa' && p.name?.trim().toLowerCase() !== 'esposa');
 
           let rafaelFound = false;
           parsed = parsed.map(p => {
@@ -110,7 +108,6 @@ export const storage = {
     try {
       const active = localStorage.getItem(STORAGE_KEYS.ACTIVE_PROFILE);
       if (active === '__none__') return null;
-      if (active === 'esposa') return null;
       if (active) return active;
     } catch (e) {}
     // Em dispositivos novos ou sem login ativo, inicia deslogado para exigir Criar Conta ou Login

@@ -129,12 +129,28 @@ export const FEATURE_METADATA = {
     icon: 'Sliders',
     defaultKeep: true
   },
-  cloud_sync_click: {
-    id: 'cloud_sync_click',
-    name: 'Sincronização na Nuvem',
-    category: 'Configurações',
-    description: 'Consulta do cofre multi-aparelho e backup remoto',
-    icon: 'Cloud',
+  biblical_maps_view: {
+    id: 'biblical_maps_view',
+    name: 'Mapas Bíblicos & Rotas',
+    category: 'Estudo Teológico',
+    description: 'Exploração das viagens missionárias de Paulo, passos de Jesus e Êxodo',
+    icon: 'Compass',
+    defaultKeep: true
+  },
+  historical_images_view: {
+    id: 'historical_images_view',
+    name: 'Imagens Históricas & Arqueologia',
+    category: 'Estudo Teológico',
+    description: 'Acervo de templos, vestimentas do sumo sacerdote, rituais e costumes antigos',
+    icon: 'Sparkles',
+    defaultKeep: true
+  },
+  ai_image_generated: {
+    id: 'ai_image_generated',
+    name: 'Geração de Arte Bíblica com IA',
+    category: 'Engajamento Pessoal',
+    description: 'Criação de cenas e objetos históricos no Ateliê Bíblico IA',
+    icon: 'Flame',
     defaultKeep: true
   }
 };
@@ -273,14 +289,34 @@ class TelemetryService {
   // Obtém o relatório de métricas mesclando armazenamento local e dados da nuvem Supabase
   getStats(profileId = null) {
     try {
-      const actId = profileId || storage.getActiveProfileId() || 'default';
+      const allProfiles = storage.getProfiles();
+      const targetProfile = allProfiles.find(p => p.id === profileId) || storage.getActiveProfile();
+      const actId = profileId || targetProfile?.id || 'default';
+      const profNameLower = (targetProfile?.name || '').trim().toLowerCase();
+
       const key = this._getStorageKey(actId);
       const raw = localStorage.getItem(key);
       const localData = raw ? JSON.parse(raw) : { events: {} };
       const localEvents = localData.events || {};
 
       const cloudCache = this._getCloudCache();
-      const cloudProfileEvents = cloudCache?.profilesMap?.[actId]?.events || (actId === 'default' ? cloudCache?.events : null) || {};
+      
+      // Busca inteligente na nuvem por profileId ou nome (ex: Rafael / Esposa)
+      let cloudProfileEvents = {};
+      if (cloudCache?.profilesMap) {
+        if (cloudCache.profilesMap[actId]) {
+          cloudProfileEvents = cloudCache.profilesMap[actId].events || {};
+        } else if (profNameLower === 'esposa' && cloudCache.profilesMap['esposa']) {
+          cloudProfileEvents = cloudCache.profilesMap['esposa'].events || {};
+        } else if ((actId === 'default' || profNameLower === 'rafael') && (cloudCache.profilesMap['default'] || cloudCache.profilesMap['rafael'])) {
+          cloudProfileEvents = cloudCache.profilesMap['default']?.events || cloudCache.profilesMap['rafael']?.events || {};
+        }
+      }
+
+      // Se for Rafael/default e não encontrou no mapa específico, pode usar os eventos consolidados da nuvem
+      if (Object.keys(cloudProfileEvents).length === 0 && (actId === 'default' || profNameLower === 'rafael')) {
+        cloudProfileEvents = cloudCache?.events || {};
+      }
 
       let totalInteractions = 0;
       const allFeatures = Object.keys(FEATURE_METADATA).map(fId => {
@@ -289,7 +325,7 @@ class TelemetryService {
         const rawCloud = cloudProfileEvents[fId];
         const cloudCount = typeof rawCloud === 'number' ? rawCloud : (rawCloud?.count || 0);
 
-        // O valor consolidado é o maior entre local e nuvem
+        // O valor consolidado é o maior entre local e nuvem para aquele perfil específico
         const count = Math.max(localEvent.count || 0, cloudCount);
         totalInteractions += count;
 
@@ -335,6 +371,7 @@ class TelemetryService {
 
       return {
         profileId: actId,
+        profileName: targetProfile?.name || 'Leitor',
         totalInteractions,
         features: featuresWithHealth,
         lastActivityAt: localData.lastActivityAt || cloudCache?.syncedAt || null,

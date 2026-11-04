@@ -9,7 +9,8 @@ import {
   AlertCircle, 
   BookMarked,
   Library,
-  Cloud,
+  Compass,
+  Camera,
   LogOut
 } from 'lucide-react';
 
@@ -28,7 +29,8 @@ export default function Navbar({
   onOpenStudyInfo,
   activeProfile,
   onOpenProfiles,
-  onOpenCloud,
+  onOpenMaps,
+  onOpenImages,
   onLogout
 }) {
   // Alternador de tema em 1 clique para mobile (Claro -> Sépia -> Escuro -> Claro)
@@ -66,7 +68,7 @@ export default function Navbar({
           {/* Botão Bíblia Completa */}
           <button
             onClick={onOpenBibleNav}
-            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
+            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer"
             title="Acessar todos os 66 livros da Bíblia a qualquer momento"
           >
             <Library className="w-3.5 h-3.5 text-amber-600" />
@@ -76,18 +78,38 @@ export default function Navbar({
           {/* Botão Bíblia de Estudos */}
           <button
             onClick={() => onOpenStudyInfo && onOpenStudyInfo('Lucas')}
-            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
+            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer"
             title="Consultar Introdução e Estudo dos Livros da Bíblia"
           >
             <BookMarked className="w-3.5 h-3.5 text-indigo-500" />
             <span>Bíblia de Estudos</span>
           </button>
 
+          {/* Botão Mapas Bíblicos */}
+          <button
+            onClick={onOpenMaps}
+            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer"
+            title="Atlas Bíblico & Rotas de Paulo e Jesus"
+          >
+            <Compass className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+            <span>Mapas</span>
+          </button>
+
+          {/* Botão Imagens Históricas & Ateliê IA */}
+          <button
+            onClick={onOpenImages}
+            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer"
+            title="Acervo de Imagens Históricas e Ateliê Bíblico IA"
+          >
+            <Camera className="w-3.5 h-3.5 text-orange-500" />
+            <span>Imagens IA</span>
+          </button>
+
           {/* Leitura de Hoje (Exibido se o plano devocional estiver ativo) */}
           {activeProfile?.planOptIn !== false && (
             <button
               onClick={() => onSelectDay(currentDayId)}
-              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-colors cursor-pointer ${
                 currentView === 'reader'
                   ? 'bg-amber-500 text-white shadow-sm'
                   : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
@@ -100,13 +122,13 @@ export default function Navbar({
         </div>
 
         {/* 3. MENU DIREITO ULTRA-ENXUTO (OTIMIZADO PARA CELULAR) */}
-        <div className="flex items-center space-x-1.5 sm:space-x-2 shrink-0">
+        <div className="flex items-center space-x-1 sm:space-x-1.5 shrink-0">
           
           {/* Alerta de Leitura Pendente (Se houver) */}
           {pendingDayId && (
             <button
               onClick={() => onSelectDay(pendingDayId)}
-              className="flex items-center space-x-1 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-bold bg-rose-100 dark:bg-rose-950/70 text-rose-700 dark:text-rose-300 hover:bg-rose-200 transition-colors animate-pulse shrink-0"
+              className="flex items-center space-x-1 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-bold bg-rose-100 dark:bg-rose-950/70 text-rose-700 dark:text-rose-300 hover:bg-rose-200 transition-colors animate-pulse shrink-0 cursor-pointer"
               title="Você tem leitura pendente!"
             >
               <AlertCircle className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
@@ -114,10 +136,28 @@ export default function Navbar({
             </button>
           )}
 
+          {/* Botão Mapas no Mobile */}
+          <button
+            onClick={onOpenMaps}
+            className="md:hidden p-1.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center cursor-pointer"
+            title="Atlas Bíblico & Rotas"
+          >
+            <Compass className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+          </button>
+
+          {/* Botão Imagens IA no Mobile */}
+          <button
+            onClick={onOpenImages}
+            className="md:hidden p-1.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center cursor-pointer"
+            title="Imagens Históricas & Ateliê IA"
+          >
+            <Camera className="w-4 h-4 text-orange-500" />
+          </button>
+
           {/* Botão Palavras de Jesus (Red Letter) - Compacto */}
           <button
             onClick={() => setRedLetterEnabled(!redLetterEnabled)}
-            className={`px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-xl text-xs font-semibold transition-all flex items-center space-x-1 border shrink-0 ${
+            className={`px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-xl text-xs font-semibold transition-all flex items-center space-x-1 border shrink-0 cursor-pointer ${
               redLetterEnabled
                 ? 'text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/50 border-rose-300 dark:border-rose-800 shadow-2xs'
                 : 'text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 border-zinc-200 dark:border-zinc-800'
@@ -128,30 +168,20 @@ export default function Navbar({
             <span className="text-[11px] font-bold hidden sm:inline">Jesus</span>
           </button>
 
-          {/* Botão de Nuvem / Sincronismo Multi-Aparelho */}
-          <button
-            onClick={onOpenCloud}
-            className="p-1 sm:px-2 sm:py-1 rounded-xl bg-amber-500/10 dark:bg-amber-950/40 border border-amber-300/80 dark:border-amber-800/80 text-xs font-bold text-amber-900 dark:text-amber-200 hover:scale-105 transition-transform flex items-center space-x-1 shrink-0 cursor-pointer"
-            title="Sincronização em Nuvem (Celular, Laptop, Tablet)"
-          >
-            <Cloud className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-            <span className="hidden min-[540px]:inline">Nuvem</span>
-          </button>
-
           {/* Botão de Perfil / Multi-Conta (Rafael / Esposa) */}
           <button
             onClick={onOpenProfiles}
-            className="flex items-center space-x-1 p-1 sm:px-2 sm:py-1 rounded-xl bg-amber-500/10 dark:bg-amber-950/40 border border-amber-300/80 dark:border-amber-800/80 text-xs font-bold text-amber-900 dark:text-amber-200 hover:scale-105 transition-transform shrink-0"
+            className="flex items-center space-x-1 p-1 sm:px-2 sm:py-1 rounded-xl bg-amber-500/10 dark:bg-amber-950/40 border border-amber-300/80 dark:border-amber-800/80 text-xs font-bold text-amber-900 dark:text-amber-200 hover:scale-105 transition-transform shrink-0 cursor-pointer"
             title={`Perfil Ativo: ${activeProfile?.name || 'Leitor'}. Clique para alternar perfis.`}
           >
             <span className="text-sm">{activeProfile?.avatar || '👤'}</span>
             <span className="hidden lg:inline">{activeProfile?.name || 'Perfil'}</span>
           </button>
 
-          {/* Botão de Sair / Logoff (No mobile fica visível no card de perfil abaixo e no modal) */}
+          {/* Botão de Sair / Logoff */}
           <button
             onClick={onLogout}
-            className="hidden sm:flex p-1.5 sm:p-2 rounded-xl text-zinc-500 hover:text-rose-600 dark:text-zinc-400 dark:hover:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition-colors shrink-0"
+            className="hidden sm:flex p-1.5 sm:p-2 rounded-xl text-zinc-500 hover:text-rose-600 dark:text-zinc-400 dark:hover:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition-colors shrink-0 cursor-pointer"
             title="Sair do perfil atual"
           >
             <LogOut className="w-4 h-4" />
@@ -160,7 +190,7 @@ export default function Navbar({
           {/* Favoritos (Apenas Desktop - no Mobile fica na Bottom Nav) */}
           <button
             onClick={onOpenFavorites}
-            className="hidden md:flex p-1.5 sm:p-2 rounded-xl text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            className="hidden md:flex p-1.5 sm:p-2 rounded-xl text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
             title="Meus Destaques e Favoritos"
           >
             <Bookmark className="w-4 h-4" />
@@ -169,7 +199,7 @@ export default function Navbar({
           {/* TEMA MOBILE: 1 Único Botão Cíclico Elegante */}
           <button
             onClick={handleCycleTheme}
-            className="md:hidden p-1.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 sepia:bg-[#e6d3a7]/50 text-zinc-700 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-700 shrink-0 flex items-center justify-center w-8 h-8"
+            className="md:hidden p-1.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 sepia:bg-[#e6d3a7]/50 text-zinc-700 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-700 shrink-0 flex items-center justify-center w-8 h-8 cursor-pointer"
             title={`Tema atual: ${theme === 'light' ? 'Claro' : theme === 'sepia' ? 'Sépia' : 'Escuro'}. Clique para alternar.`}
           >
             {theme === 'light' && <Sun className="w-4 h-4 text-amber-500" />}
@@ -181,7 +211,7 @@ export default function Navbar({
           <div className="hidden md:flex items-center bg-zinc-100 dark:bg-zinc-800 sepia:bg-[#e6d3a7]/50 rounded-xl p-0.5">
             <button
               onClick={() => setTheme('light')}
-              className={`p-1.5 rounded-lg transition-colors ${
+              className={`p-1.5 rounded-lg transition-colors cursor-pointer ${
                 theme === 'light' ? 'bg-white text-amber-600 shadow-2xs' : 'text-zinc-400 dark:text-zinc-400'
               }`}
               title="Modo Claro"
@@ -190,7 +220,7 @@ export default function Navbar({
             </button>
             <button
               onClick={() => setTheme('sepia')}
-              className={`p-1.5 rounded-lg transition-colors ${
+              className={`p-1.5 rounded-lg transition-colors cursor-pointer ${
                 theme === 'sepia' ? 'bg-[#fbf0d9] text-[#78350f] shadow-2xs' : 'text-zinc-400 dark:text-zinc-400'
               }`}
               title="Modo Sépia"
@@ -199,7 +229,7 @@ export default function Navbar({
             </button>
             <button
               onClick={() => setTheme('dark')}
-              className={`p-1.5 rounded-lg transition-colors ${
+              className={`p-1.5 rounded-lg transition-colors cursor-pointer ${
                 theme === 'dark' ? 'bg-zinc-700 text-amber-300 shadow-2xs' : 'text-zinc-400 dark:text-zinc-400'
               }`}
               title="Modo Escuro"

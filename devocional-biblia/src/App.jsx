@@ -11,7 +11,8 @@ import NavegacaoBibliaModal from './components/NavegacaoBibliaModal';
 import EstudoLivroModal from './components/EstudoLivroModal';
 import PerfilModal from './components/PerfilModal';
 import PinAuthModal from './components/PinAuthModal';
-import CloudSyncModal from './components/CloudSyncModal';
+import MapasBiblicosModal from './components/MapasBiblicosModal';
+import ImagensHistoricasModal from './components/ImagensHistoricasModal';
 import PlanoDevocionalOnboardingModal from './components/PlanoDevocionalOnboardingModal';
 import SelecaoPerfilScreen from './components/SelecaoPerfilScreen';
 
@@ -100,7 +101,8 @@ export default function App() {
   const [pinModalData, setPinModalData] = useState({ isOpen: false, targetProfile: null });
 
   // Modal de Nuvem & Sincronização em múltiplos aparelhos
-  const [cloudModalOpen, setCloudModalOpen] = useState(false);
+  const [mapasModalData, setMapasModalData] = useState({ isOpen: false, placeId: null });
+  const [imagensModalOpen, setImagensModalOpen] = useState(false);
 
   // Favoritos e Highlights do perfil ativo
   const [favorites, setFavorites] = useState(() => storage.getFavorites(activeProfileId));
@@ -515,6 +517,7 @@ export default function App() {
             isFreeReading={isFreeReading}
             isLoading={loadingBook}
             onChangeFreeChapter={handleSelectFreeChapter}
+            onOpenMaps={(placeId) => setMapasModalData({ isOpen: true, placeId })}
           />
         )}
       </main>

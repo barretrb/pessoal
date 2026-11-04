@@ -22,7 +22,8 @@ import {
   Library,
   Sliders,
   Users,
-  Cloud,
+  Compass,
+  Camera,
   LogOut
 } from 'lucide-react';
 import { getMediaForDay, PREFERRED_ARTISTS, getMusicForChapter } from '../data/dailyMedia';
@@ -48,7 +49,8 @@ export default function Dashboard({
   dashboardLayout,
   onUpdateDashboardLayout,
   onResetDashboardLayout,
-  onOpenCloud,
+  onOpenMaps,
+  onOpenImages,
   onOptInPlan,
   onOptOutPlan,
   onLogout
@@ -989,7 +991,7 @@ export default function Dashboard({
         </div>
 
         {/* Grade de Funcionalidades Principais */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           
           {/* Card 1: Bíblia Sagrada (66 Livros) */}
           <div 
@@ -1031,6 +1033,50 @@ export default function Dashboard({
             </div>
             <div className="flex items-center space-x-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400">
               <span>Explorar Panorama dos Livros</span>
+              <ChevronRight className="w-4 h-4" />
+            </div>
+          </div>
+
+          {/* Card 4: Atlas Bíblico & Rotas */}
+          <div 
+            onClick={onOpenMaps}
+            className="p-5 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 hover:border-emerald-400 dark:hover:border-emerald-600 cursor-pointer transition-all hover:scale-[1.01] hover:shadow-lg group flex flex-col justify-between space-y-4"
+          >
+            <div className="space-y-2.5">
+              <div className="w-11 h-11 rounded-2xl bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <Compass className="w-6 h-6" />
+              </div>
+              <h4 className="font-extrabold text-base text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-600 transition-colors">
+                Atlas Bíblico & Rotas
+              </h4>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                Mapas interativos com as 4 viagens de Paulo, os passos de Jesus na Galileia e Judeia, e a rota do Êxodo no deserto.
+              </p>
+            </div>
+            <div className="flex items-center space-x-1.5 text-xs font-bold text-emerald-600 dark:text-emerald-400">
+              <span>Abrir Atlas Bíblico</span>
+              <ChevronRight className="w-4 h-4" />
+            </div>
+          </div>
+
+          {/* Card 5: Imagens Históricas & Ateliê IA */}
+          <div 
+            onClick={onOpenImages}
+            className="p-5 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 hover:border-orange-400 dark:hover:border-orange-600 cursor-pointer transition-all hover:scale-[1.01] hover:shadow-lg group flex flex-col justify-between space-y-4"
+          >
+            <div className="space-y-2.5">
+              <div className="w-11 h-11 rounded-2xl bg-orange-500/15 text-orange-600 dark:text-orange-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <Camera className="w-6 h-6" />
+              </div>
+              <h4 className="font-extrabold text-base text-zinc-900 dark:text-zinc-100 group-hover:text-orange-600 transition-colors">
+                Imagens Históricas & Ateliê IA
+              </h4>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                Reconstruções arqueológicas do Tabernáculo, Templo, vestes sacerdotais e criação de cenas bíblicas personalizadas com IA.
+              </p>
+            </div>
+            <div className="flex items-center space-x-1.5 text-xs font-bold text-orange-600 dark:text-orange-400">
+              <span>Acessar Ateliê Bíblico</span>
               <ChevronRight className="w-4 h-4" />
             </div>
           </div>

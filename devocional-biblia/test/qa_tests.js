@@ -843,3 +843,88 @@ test('QA Test 20: Exclusividade das Métricas de Uso para Admin e Validação de
 
   console.log('✓ QA Test 20 Aprovado: Exclusividade de Métricas para Admin e persistência de modo escuro verificados.');
 });
+
+
+test('QA Test 21: Atlas Bíblico, Rotas Missionárias e Detecção Geográfica em Capítulos', async () => {
+  const { BIBLICAL_PLACES, BIBLICAL_JOURNEYS, findBiblicalPlacesInText } = await import('../src/data/biblicalPlaces.js');
+
+  // 1. Validar integridade dos locais bíblicos mapeados
+  assert.ok(Object.keys(BIBLICAL_PLACES).length >= 10, 'Deve conter pelo menos 10 locais bíblicos chave');
+  assert.ok(BIBLICAL_PLACES.jerusalem, 'Jerusalém deve estar mapeada');
+  assert.ok(BIBLICAL_PLACES.cafarnaum, 'Cafarnaum deve estar mapeada');
+  assert.ok(BIBLICAL_PLACES.efeso, 'Éfeso deve estar mapeada');
+  assert.ok(BIBLICAL_PLACES.roma, 'Roma deve estar mapeada');
+
+  // Coordenadas válidas (0-100%)
+  Object.values(BIBLICAL_PLACES).forEach(place => {
+    assert.ok(place.coords && place.coords.x >= 0 && place.coords.x <= 100, `Coordenada X de ${place.name} deve ser entre 0 e 100`);
+    assert.ok(place.coords && place.coords.y >= 0 && place.coords.y <= 100, `Coordenada Y de ${place.name} deve ser entre 0 e 100`);
+    assert.ok(place.summary && place.summary.length > 20, `Resumo histórico de ${place.name} deve ser detalhado`);
+  });
+
+  // 2. Validar rotas e jornadas bíblicas
+  assert.equal(BIBLICAL_JOURNEYS.length, 6, 'Devem existir 6 rotas históricas mapeadas');
+  const jesusJourney = BIBLICAL_JOURNEYS.find(j => j.id === 'jesus');
+  assert.ok(jesusJourney && jesusJourney.route.length >= 7, 'Jornada de Jesus deve conter pelo menos 7 etapas históricas');
+
+  // 3. Validar detecção de locais em textos de capítulos bíblicos
+  const samplePassage1 = 'Jesus saiu da Judeia e voltou para a Galileia. Precisava passar por Samaria. Chegou a uma cidade da Samaria chamada Sicar, perto das terras que Jacó tinha dado a seu filho José.';
+  const places1 = findBiblicalPlacesInText(samplePassage1);
+  assert.ok(places1.some(p => p.id === 'samaria'), 'Deve detectar Samaria no texto');
+
+  const samplePassage2 = 'Paulo passou pelas regiões altas e chegou a Éfeso. Ali encontrou alguns discípulos...';
+  const places2 = findBiblicalPlacesInText(samplePassage2);
+  assert.ok(places2.some(p => p.id === 'efeso'), 'Deve detectar Éfeso no texto');
+
+  console.log('✓ QA Test 21 Aprovado: Atlas Bíblico, Rotas Missionárias e Detecção Geográfica validadas.');
+});
+
+test('QA Test 22: Acervo Histórico, Ateliê Bíblico IA e Filtro de Métricas por Usuário', async () => {
+  const { HISTORICAL_IMAGES_CATALOG, INSPIRATION_PROMPTS } = await import('../src/data/historicalImagesData.js');
+  const { telemetryService } = await import('../src/services/telemetryService.js');
+  const { storage } = await import('../src/services/storage.js');
+
+  // 1. Validar catálogo histórico
+  assert.ok(HISTORICAL_IMAGES_CATALOG.length >= 8, 'Catálogo histórico deve ter pelo menos 8 itens detalhados');
+  const tabernacle = HISTORICAL_IMAGES_CATALOG.find(i => i.id === 'tabernaculo_deserto');
+  assert.ok(tabernacle, 'Tabernáculo no Deserto deve estar presente no catálogo');
+  assert.ok(tabernacle.archaeologicalNotes, 'Deve ter notas arqueológicas');
+
+  const highPriest = HISTORICAL_IMAGES_CATALOG.find(i => i.id === 'sumo_sacerdote_vestes');
+  assert.ok(highPriest, 'Vestes do Sumo Sacerdote devem estar presentes no catálogo');
+
+  // 2. Validar sugestões de prompts bíblicos
+  assert.ok(INSPIRATION_PROMPTS.length >= 5, 'Deve haver ao menos 5 sugestões rápidas de prompt para IA');
+
+  // 3. Validar filtro de métricas por usuário e isolamento
+  localStorage.clear();
+  storage.saveProfiles([
+    { id: 'default', name: 'Rafael', role: 'admin' },
+    { id: 'esposa', name: 'Esposa', role: 'member' }
+  ]);
+
+  // Telemetria para Rafael
+  storage.setActiveProfileId('default');
+  telemetryService.track('biblical_maps_view', { journey: 'jesus' });
+  telemetryService.track('historical_images_view', { tab: 'catalog' });
+  telemetryService.track('ai_image_generated', { prompt: 'Templo de Salomão' });
+
+  // Telemetria para Esposa
+  storage.setActiveProfileId('esposa');
+  telemetryService.track('biblical_maps_view', { journey: 'paulo1' });
+
+  // Estatísticas de Rafael
+  const rafaelStats = telemetryService.getStats('default');
+  assert.equal(rafaelStats.totalInteractions, 3, 'Rafael deve ter 3 interações registradas');
+
+  // Estatísticas da Esposa
+  const esposaStats = telemetryService.getStats('esposa');
+  assert.equal(esposaStats.totalInteractions, 1, 'Esposa deve ter 1 interação registrada');
+
+  // Estatísticas consolidadas
+  const allStats = telemetryService.getAllUsersStats();
+  assert.equal(allStats.totalInteractions, 4, 'Total consolidado de todos os usuários deve ser 4');
+  assert.equal(allStats.userBreakdown.length, 2, 'Breakdown deve listar os 2 leitores');
+
+  console.log('✓ QA Test 22 Aprovado: Acervo Histórico, Ateliê IA e Filtro de Métricas por Usuário 100% verificados.');
+});

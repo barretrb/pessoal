@@ -18,7 +18,9 @@ import {
   Loader2,
   Headphones,
   RefreshCw,
-  ExternalLink
+  ExternalLink,
+  Compass,
+  MapPin
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { HIGHLIGHT_COLORS, storage } from '../services/storage';
@@ -29,6 +31,7 @@ import { crossReferenceService } from '../services/crossReferenceService';
 import { fetchBookData } from '../services/bibleService';
 import { telemetryService } from '../services/telemetryService';
 import AudioPlayerBar from './AudioPlayerBar';
+import { findBiblicalPlacesInText } from '../data/biblicalPlaces';
 
 function parseReading(str) {
   if (!str) return { book: 'Lucas', chapter: '1' };
@@ -56,7 +59,8 @@ export default function LeitorBiblico({
   onOpenStudyInfo,
   isFreeReading = false,
   isLoading = false,
-  onChangeFreeChapter
+  onChangeFreeChapter,
+  onOpenMaps
 }) {
   if (!dayData && !isFreeReading) return null;
 
@@ -155,6 +159,15 @@ export default function LeitorBiblico({
     chapter: selectedChapter,
     sections: []
   };
+
+  // Extração dinâmica de cidades e locais bíblicos citados no capítulo ativo
+  const mentionedPlaces = useMemo(() => {
+    if (!activeChapterData?.sections) return [];
+    const fullText = activeChapterData.sections
+      .flatMap(s => (s.verses || []).map(v => v.text || ''))
+      .join(' ');
+    return findBiblicalPlacesInText(fullText);
+  }, [activeChapterData]);
 
   const isDataLoading = isLoading || isFetchingBook || (activeChapterData?.book && activeChapterData.book.toLowerCase() !== activeBook.toLowerCase());
 
@@ -523,6 +536,28 @@ export default function LeitorBiblico({
               <span>Próximo Capítulo</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
+          </div>
+        )}
+
+        {/* Chips de Locais Geográficos & Históricos Citados no Capítulo */}
+        {mentionedPlaces.length > 0 && (
+          <div className="p-2.5 rounded-2xl bg-amber-500/10 dark:bg-amber-950/30 border border-amber-300/50 dark:border-amber-900/40 flex items-center gap-1.5 overflow-x-auto scrollbar-none text-xs">
+            <div className="flex items-center space-x-1.5 text-amber-800 dark:text-amber-200 font-bold shrink-0">
+              <Compass className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+              <span>Locais Históricos Citados:</span>
+            </div>
+            {mentionedPlaces.map(place => (
+              <button
+                key={place.id}
+                onClick={() => onOpenMaps && onOpenMaps(place.id)}
+                className="shrink-0 px-2.5 py-1 rounded-xl bg-white dark:bg-zinc-800 border border-amber-200 dark:border-amber-800/60 text-zinc-800 dark:text-zinc-200 hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-all font-semibold flex items-center space-x-1 cursor-pointer shadow-2xs group"
+                title={`${place.name} (${place.region}) - Clique para ver a rota e história no Atlas Bíblico`}
+              >
+                <MapPin className="w-3 h-3 text-amber-600 dark:text-amber-400 group-hover:scale-110 transition-transform" />
+                <span>{place.name}</span>
+                <span className="text-[10px] text-zinc-400 group-hover:text-amber-600">🗺️</span>
+              </button>
+            ))}
           </div>
         )}
 
