@@ -51,8 +51,6 @@ export default function ImagensHistoricasModal({ isOpen, onClose, initialTab = '
     }
   }, [isOpen, activeTab]);
 
-  if (!isOpen) return null;
-
   const categories = ['all', 'Locais & Templos', 'Rituais & Sacerdócio', 'Personagens & História', 'Fauna, Flora & Cotidiano'];
 
   const filteredCatalog = HISTORICAL_IMAGES_CATALOG.filter(item => {
@@ -216,6 +214,8 @@ export default function ImagensHistoricasModal({ isOpen, onClose, initialTab = '
     a.click();
     document.body.removeChild(a);
   };
+
+  if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/70 backdrop-blur-xs animate-in fade-in duration-200">

@@ -436,10 +436,8 @@ export default function App() {
         onOpenStudyInfo={handleOpenStudyInfo}
         activeProfile={activeProfile}
         onOpenProfiles={() => setProfileModalOpen(true)}
-        onOpenCloud={() => {
-          telemetryService.track('cloud_sync_click');
-          setCloudModalOpen(true);
-        }}
+        onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
+        onOpenImages={() => setImagensModalOpen(true)}
         onLogout={handleLogout}
       />
 
@@ -462,7 +460,8 @@ export default function App() {
             dashboardLayout={dashboardLayout}
             onUpdateDashboardLayout={handleUpdateDashboardLayout}
             onResetDashboardLayout={handleResetDashboardLayout}
-            onOpenCloud={() => setCloudModalOpen(true)}
+            onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
+            onOpenImages={() => setImagensModalOpen(true)}
             onOpenBibleArc={(book, chapter) => {
               setBibleArcData({ 
                 isOpen: true, 

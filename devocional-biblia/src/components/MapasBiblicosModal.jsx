@@ -42,8 +42,6 @@ export default function MapasBiblicosModal({ isOpen, onClose, initialPlaceId = n
     }
   }, [isOpen]);
 
-  if (!isOpen) return null;
-
   const currentJourney = BIBLICAL_JOURNEYS.find(j => j.id === selectedJourneyId) || BIBLICAL_JOURNEYS[0];
   const selectedPlace = BIBLICAL_PLACES[selectedPlaceId] || BIBLICAL_PLACES.jerusalem;
 
@@ -90,6 +88,8 @@ export default function MapasBiblicosModal({ isOpen, onClose, initialPlaceId = n
     setSelectedPlaceId(placeId);
     telemetryService.track('biblical_place_click', { placeId });
   };
+
+  if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200">
