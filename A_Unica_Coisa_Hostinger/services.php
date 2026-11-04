@@ -1,5 +1,6 @@
 <?php
 // Serviços de Integração: Google OAuth, Tasks, Calendar, Groq e Telegram
+date_default_timezone_set('America/Sao_Paulo');
 
 function get_config() {
     static $cfg = null;
@@ -104,14 +105,18 @@ function groq_evaluate_input($text) {
     $key = $cfg['groq_api_key'];
     $model = $cfg['groq_model'];
 
+    $lower = mb_strtolower(trim($text), 'UTF-8');
+    $is_interrogative = (mb_substr(trim($text), -1) === '?') ||
+        preg_match('/\b(como|qual|quais|o que|o q|quando|onde|quem|por que|porque|por quê|quanto|quantos|quantas|será|tem|tenho|pra qual|para qual|me diz|me conta)\b/ui', $lower);
+
     $system_prompt = <<<PROMPT
 Você é o motor de inteligência e Coach do Agente "A Única Coisa" (The ONE Thing, de Gary Keller e Jay Papasan).
 Sua missão é avaliar a mensagem do usuário (Rafael) e classificá-la rigorosamente em UMA destas 4 categorias:
 
-1. "QUERY_AGENDA_TASKS": O usuário está fazendo uma consulta sobre suas tarefas, afazeres, pendências, agenda, reuniões ou calendário (ex: "quantas tarefas eu tenho para amanhã?", "quais reuniões tenho hoje?", "como está minha agenda?", "o que tenho pendente?", "quais são minhas tarefas?").
-2. "TASK": O usuário quer cadastrar ou lembrar de uma nova tarefa/ação a fazer (ex: "comprar café", "enviar proposta para o cliente", "preciso pagar o boleto do condomínio amanhã", "estudar capítulo 4 de inglês", "agendar dentista").
-3. "COACH_QUESTION": O usuário está fazendo uma pergunta, reflexão ou pedindo orientação conceitual sobre foco, priorização, o efeito dominó, time blocking (bloqueio de agenda), contrapeso, hábitos, Deep Work ou princípios do livro "A Única Coisa".
-4. "INVALID_OR_OFF_TOPIC": Qualquer mensagem fora do escopo de foco e produtividade (ex: perguntas gerais tipo "qual a capital da França", conversa fiada, piadas, futebol, política, notícias gerais, "bom dia tudo bem", frases desconexas ou sem sentido).
+1. "QUERY_AGENDA_TASKS": O usuário está fazendo qualquer consulta sobre suas tarefas, afazeres, pendências, agenda, reuniões, horários ou calendário (ex: "quantas tarefas eu tenho para amanhã?", "quais tarefas eu tenho?", "como está minha agenda?", "o que tenho pendente?", "tenho reuniões amanhã?", "o que tenho pra fazer?").
+2. "TASK": O usuário quer cadastrar ou registrar uma nova tarefa/ação executável a fazer (ex: "comprar café", "enviar proposta para o cliente", "lembrar de pagar boleto do condomínio", "estudar capítulo 4 de inglês", "agendar dentista"). NUNCA classifique uma pergunta como TASK!
+3. "COACH_QUESTION": O usuário está fazendo uma pergunta conceitual ou reflexão sobre foco, priorização, o método dominó, time blocking, hábitos ou princípios do livro "A Única Coisa".
+4. "INVALID_OR_OFF_TOPIC": Qualquer mensagem totalmente fora do escopo de foco e produtividade (ex: perguntas gerais tipo "qual a capital da França", piadas, futebol, política, notícias gerais, "bom dia tudo bem", correções soltas ou comentários sem contexto).
 
 Diretrizes de resposta:
 - Se "QUERY_AGENDA_TASKS": no campo "reply", retorne null.
@@ -119,7 +124,7 @@ Diretrizes de resposta:
 - Se "COACH_QUESTION": dê uma resposta afiada, direta e prática fundamentada nos ensinamentos do livro (máximo 2 a 3 frases) e OBRIGATORIAMENTE termine fazendo uma pergunta reflexiva de foco estritamente dentro do contexto.
 - Se "INVALID_OR_OFF_TOPIC": explique gentilmente e com firmeza que você é um agente de foco exclusivo da metodologia A Única Coisa e gestão de tarefas/agenda, e faça uma pergunta de foco trazendo o usuário de volta para o dominó dele.
 
-Responda SEMPRE em formato JSON válido:
+Responda SEMPRE em formato JSON estrito:
 {
   "category": "QUERY_AGENDA_TASKS" | "TASK" | "COACH_QUESTION" | "INVALID_OR_OFF_TOPIC",
   "clean_title": "string ou null",
@@ -135,7 +140,7 @@ PROMPT;
             ['role' => 'system', 'content' => $system_prompt],
             ['role' => 'user', 'content' => $text]
         ],
-        'temperature' => 0.2
+        'temperature' => 0.1
     ];
 
     $ch = curl_init('https://api.groq.com/openai/v1/chat/completions');
@@ -153,22 +158,45 @@ PROMPT;
     $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 
+    $parsed = null;
     if ($status === 200 && $resp) {
         $data = json_decode($resp, true);
         if (isset($data['choices'][0]['message']['content'])) {
-            $parsed = json_decode($data['choices'][0]['message']['content'], true);
-            if ($parsed && isset($parsed['category'])) {
-                return $parsed;
-            }
+            $raw_content = trim($data['choices'][0]['message']['content']);
+            // Remove code fences se houver
+            $raw_content = preg_replace('/^```(?:json)?\s*|\s*```$/i', '', $raw_content);
+            $parsed = json_decode($raw_content, true);
         }
     }
 
-    // Fallback Heurístico Robusto
-    $lower = mb_strtolower($text, 'UTF-8');
-    if (preg_match('/\b(quantas?|quais|minhas?\s+tarefas|minha\s+agenda|reuni[oõ]es|como\s+est[aá]\s+minha)\b/ui', $lower)) {
-        return ['category' => 'QUERY_AGENDA_TASKS', 'clean_title' => null, 'domain' => null, 'reply' => null];
+    if ($parsed && isset($parsed['category'])) {
+        // Blindagem de segurança: Uma pergunta NUNCA pode ser classificada como TASK
+        if ($parsed['category'] === 'TASK' && $is_interrogative) {
+            if (preg_match('/\b(tarefa|task|agenda|reuni|calend|compromisso|pend|fazer|hoje|amanh[aã]|dia)\b/ui', $lower)) {
+                $parsed['category'] = 'QUERY_AGENDA_TASKS';
+                $parsed['reply'] = null;
+            } else {
+                $parsed['category'] = 'COACH_QUESTION';
+                $parsed['reply'] = "🎯 Essa é uma boa reflexão. Na metodologia de *A Única Coisa*, como esclarecer esse ponto ajuda você a focar na sua prioridade principal de hoje?";
+            }
+        }
+        return $parsed;
     }
-    if (preg_match('/\b(capital|piada|futebol|clima|tempo\s+hoje|presidente)\b/ui', $lower)) {
+
+    // Fallback Heurístico Robusto (caso a IA falhe ou demore)
+    if ($is_interrogative || preg_match('/\b(quantas?|quais|minhas?\s+tarefas|minha\s+agenda|reuni[oõ]es|como\s+est[aá]|o\s+que\s+eu\s+tenho)\b/ui', $lower)) {
+        if (preg_match('/\b(tarefa|task|agenda|reuni|calend|compromisso|pend|fazer|hoje|amanh[aã]|dia)\b/ui', $lower)) {
+            return ['category' => 'QUERY_AGENDA_TASKS', 'clean_title' => null, 'domain' => null, 'reply' => null];
+        }
+        return [
+            'category' => 'COACH_QUESTION',
+            'clean_title' => null,
+            'domain' => null,
+            'reply' => "🎯 Sou seu mentor de foco no método *A Única Coisa*. Para avançarmos com clareza, qual é a prioridade ou dominó que você precisa derrubar hoje?"
+        ];
+    }
+
+    if (preg_match('/\b(capital|piada|futebol|clima|tempo\s+hoje|presidente|quem\s+ganhou)\b/ui', $lower)) {
         return [
             'category' => 'INVALID_OR_OFF_TOPIC',
             'clean_title' => null,
@@ -176,10 +204,12 @@ PROMPT;
             'reply' => "🎯 Meu papel é te ajudar a manter o foco absoluto no método *A Única Coisa* e gerenciar suas tarefas e agenda. Não consigo responder sobre outros temas.\n\n👉 *Qual é a prioridade ou dominó que você quer destravar hoje?*"
         ];
     }
+
+    // Apenas entradas declarativas sem '?' viram TASK
     return [
         'category' => 'TASK',
         'clean_title' => $text,
-        'domain' => preg_match('/\b(pessoal|casa|comprar|rem[eé]dio|fam[ií]lia)\b/ui', $lower) ? 'PERSONAL' : 'PROFESSIONAL',
+        'domain' => preg_match('/\b(pessoal|casa|comprar|rem[eé]dio|fam[ií]lia|academia|m[eé]dico|dentista)\b/ui', $lower) ? 'PERSONAL' : 'PROFESSIONAL',
         'reply' => null
     ];
 }
@@ -282,6 +312,24 @@ function google_tasks_complete($token, $domain_key, $task_id) {
     $resp = curl_exec($ch);
     curl_close($ch);
     return json_decode($resp, true);
+}
+
+function google_tasks_delete($token, $domain_key, $task_id) {
+    $lists = google_tasks_get_list_ids($token);
+    $list_id = $lists[$domain_key] ?? '@default';
+
+    $url = "https://tasks.googleapis.com/tasks/v1/lists/{$list_id}/tasks/{$task_id}";
+    $ch = curl_init($url);
+    curl_setopt_array($ch, [
+        CURLOPT_CUSTOMREQUEST => 'DELETE',
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT => 6,
+        CURLOPT_HTTPHEADER => ["Authorization: Bearer {$token}"]
+    ]);
+    $resp = curl_exec($ch);
+    $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+    return ($status >= 200 && $status < 300);
 }
 
 // 5. Google Calendar API (24h de Brasília)

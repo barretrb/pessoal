@@ -1,5 +1,6 @@
 <?php
 // Webhook do Telegram para o Agente "A Única Coisa" - Hostinger
+date_default_timezone_set('America/Sao_Paulo');
 header('Content-Type: application/json; charset=utf-8');
 
 require_once __DIR__ . '/services.php';
@@ -45,7 +46,7 @@ if ($user_text === '/start') {
         . "Estou conectado diretamente pela sua hospedagem na Hostinger e pronto para blindar seu foco.\n\n"
         . "💬 *O que você pode me dizer a qualquer momento:*\n"
         . "• _'Quais tarefas eu tenho para hoje?'_\n"
-        . "• _'Como está minha agenda para hoje?'_\n"
+        . "• _'Como está minha agenda para amanhã?'_\n"
         . "• _'Meu dominó de hoje é Criar apresentação diretoria'_\n"
         . "• _'Lembrar de pagar condomínio amanhã'_\n"
         . "• _'Finalizei meu dominó de hoje!'_\n\n"
@@ -78,102 +79,7 @@ if (in_array($lower, ['ok', 'ok!', 'sim', 'confirmar', 'confirmo', 'pode agendar
     exit;
 }
 
-// 3. Consultas de Agenda ou Tarefas ("quantas tarefas...", "como está minha agenda...")
-$is_query_tasks = preg_match('/\b(quantas?|quais|listar|ver|o\s+que\s+eu\s+tenho|o\s+que\s+tenho)\b.*\b(tarefas?|tasks?|pend[eê]ncias?|afazeres)\b/ui', $lower)
-    || preg_match('/^(minhas\s+tarefas|minhas\s+tasks|meus\s+afazeres|tarefas\s+de\s+hoje|tarefas\s+de\s+amanh[aã])/ui', $lower);
-
-$is_query_calendar = preg_match('/\b(como\s+est[aá]|quais|quantas?|que\s+horas?|me\s+mostre|ver|tenho\s+tempo)\b.*\b(agenda|calend[aá]rio|reuni[aã]o|reuni[oõ]es|compromissos?|eventos?)\b/ui', $lower)
-    || preg_match('/^(minha\s+agenda|meu\s+calend[aá]rio|minhas\s+reuni[oõ]es|meus\s+compromissos)/ui', $lower);
-
-if ($is_query_tasks || $is_query_calendar) {
-    // Determina a data alvo respeitando o fuso de Brasília
-    if (preg_match('/\b(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])\b/u', $lower, $dm)) {
-        $target_dt = clone $now;
-        $target_dt->setDate(intval($now->format('Y')), intval($dm[2]), intval($dm[1]));
-        $target_label = sprintf('%02d/%02d', $dm[1], $dm[2]);
-    } elseif (strpos($lower, 'amanhã') !== false || strpos($lower, 'amanha') !== false) {
-        $target_dt = clone $now;
-        $target_dt->modify('+1 day');
-        $target_label = 'amanhã (' . $target_dt->format('d/m') . ')';
-    } else {
-        $target_dt = clone $now;
-        $target_label = 'hoje (' . $target_dt->format('d/m') . ')';
-    }
-    $target_ymd = $target_dt->format('Y-m-d');
-
-    $token = get_google_access_token();
-    $replies = [];
-
-    if ($token) {
-        // Tarefas
-        if ($is_query_tasks || preg_match('/\b(tarefa|task|pend|afazer)\b/ui', $lower)) {
-            $pro_tasks = google_tasks_list($token, 'professional');
-            $pes_tasks = google_tasks_list($token, 'personal');
-
-            $pro_due = [];
-            foreach ($pro_tasks as $t) {
-                if (isset($t['due']) && strpos($t['due'], $target_ymd) === 0) $pro_due[] = $t['title'];
-            }
-            $pes_due = [];
-            foreach ($pes_tasks as $t) {
-                if (isset($t['due']) && strpos($t['due'], $target_ymd) === 0) $pes_due[] = $t['title'];
-            }
-
-            $total_due = count($pro_due) + count($pes_due);
-            if ($total_due > 0) {
-                $replies[] = "📋 *Você tem {$total_due} tarefa(s) agendada(s) para {$target_label}:*";
-                if (!empty($pro_due)) {
-                    $replies[] = "\n💼 *Profissional:*";
-                    foreach ($pro_due as $title) $replies[] = "  • {$title}";
-                }
-                if (!empty($pes_due)) {
-                    $replies[] = "\n🏠 *Pessoal:*";
-                    foreach ($pes_due as $title) $replies[] = "  • {$title}";
-                }
-            } else {
-                $replies[] = "📋 *Você não possui tarefas com vencimento marcado para {$target_label}.*";
-            }
-            $other_pro = count($pro_tasks) - count($pro_due);
-            $other_pes = count($pes_tasks) - count($pes_due);
-            if ($other_pro > 0 || $other_pes > 0) {
-                $replies[] = "\n_(Total ativo nas listas: " . count($pro_tasks) . " profissional, " . count($pes_tasks) . " pessoal)_";
-            }
-        }
-
-        // Agenda
-        if ($is_query_calendar || preg_match('/\b(agenda|reuni|compromisso|evento|calend)\b/ui', $lower)) {
-            $events = google_calendar_list_events($token, $target_dt);
-            if (!empty($events)) {
-                $replies[] = "\n📅 *Seus compromissos para {$target_label}:*";
-                foreach ($events as $ev) {
-                    $summary = $ev['summary'] ?? 'Ocupado';
-                    $start_raw = $ev['start']['dateTime'] ?? null;
-                    $end_raw = $ev['end']['dateTime'] ?? null;
-                    $time_str = '';
-                    if ($start_raw && $end_raw) {
-                        $s_dt = new DateTime($start_raw);
-                        $s_dt->setTimezone(new DateTimeZone('America/Sao_Paulo'));
-                        $e_dt = new DateTime($end_raw);
-                        $e_dt->setTimezone(new DateTimeZone('America/Sao_Paulo'));
-                        $time_str = "*{$s_dt->format('H:i')} - {$e_dt->format('H:i')}:* ";
-                    }
-                    $replies[] = "  • {$time_str}{$summary}";
-                }
-            } else {
-                $replies[] = "\n📅 *Sua agenda está totalmente livre para {$target_label}!*";
-            }
-        }
-    } else {
-        $replies[] = "⚠️ Não foi possível consultar suas tarefas/agenda no momento.";
-    }
-
-    $replies[] = "\n🎯 *Qual é A Única Coisa que você precisa garantir para esse dia?*";
-    telegram_send($chat_id, implode("\n", $replies));
-    echo json_encode(['status' => 'ok', 'action' => 'query_agenda_tasks']);
-    exit;
-}
-
-// 4. Declaração Explícita de Dominó ("Meu dominó de hoje é X")
+// 3. Declaração Explícita de Dominó ("Meu dominó de hoje é X")
 if (preg_match('/^(me\s+domin[oó]|meu\s+domin[oó]|meu\s+foco|minha\s+[uú]nica\s+coisa|minha\s+meta)\s*(de\s+hoje)?\s*([eé]|\:)\s*(.+)$/ui', $user_text, $m)) {
     $clean_title = trim($m[4]);
     $domain_key = preg_match('/\b(pessoal|casa|fam[ií]lia|devocional|academia|estudo)\b/ui', $clean_title) ? 'personal' : 'professional';
@@ -201,21 +107,132 @@ if (preg_match('/^(me\s+domin[oó]|meu\s+domin[oó]|meu\s+foco|minha\s+[uú]nica
     exit;
 }
 
-// 5. Fechamento Noturno ("concluí o dominó", "conclui", "derrubei")
+// 4. Fechamento Noturno ("concluí o dominó", "conclui", "derrubei")
 if (preg_match('/\b(conclu[íi]|derrubei|terminei|feito|fiz)\b/ui', $lower)) {
-    $token = get_google_access_token();
-    $today_str = $now->format('Y-m-d');
-    $chosen = $state['daily_history'][$today_str]['chosen_deep_task'] ?? null;
     $reply = "🏆 *Dominó Concluído com Sucesso!* Parabéns pelo foco de hoje.";
     telegram_send($chat_id, $reply);
     echo json_encode(['status' => 'ok', 'action' => 'night_checkin']);
     exit;
 }
 
-// 6. Avaliação com Groq AI (Coach vs Nova Tarefa vs Inválido)
+// 5. Avaliação Inteligente com Groq AI
 $eval = groq_evaluate_input($user_text);
 $category = $eval['category'] ?? 'TASK';
 
+// 6. Roteamento: Consulta de Agenda ou Tarefas
+if ($category === 'QUERY_AGENDA_TASKS') {
+    // Determina a data alvo respeitando o fuso estrito de Brasília (America/Sao_Paulo)
+    if (preg_match('/\b(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])\b/u', $lower, $dm)) {
+        $target_dt = clone $now;
+        $target_dt->setDate(intval($now->format('Y')), intval($dm[2]), intval($dm[1]));
+        $target_label = sprintf('%02d/%02d', $dm[1], $dm[2]);
+    } elseif (strpos($lower, 'amanhã') !== false || strpos($lower, 'amanha') !== false) {
+        $target_dt = clone $now;
+        $target_dt->modify('+1 day');
+        $target_label = 'amanhã (' . $target_dt->format('d/m') . ')';
+    } elseif (strpos($lower, 'ontem') !== false) {
+        $target_dt = clone $now;
+        $target_dt->modify('-1 day');
+        $target_label = 'ontem (' . $target_dt->format('d/m') . ')';
+    } else {
+        $target_dt = clone $now;
+        $target_label = 'hoje (' . $target_dt->format('d/m') . ')';
+    }
+    $target_ymd = $target_dt->format('Y-m-d');
+
+    $token = get_google_access_token();
+    $replies = [];
+
+    if ($token) {
+        // Verifica se a pergunta é sobre tarefas ou ambas
+        $asks_tasks = preg_match('/\b(tarefa|task|pend|afazer|fazer|atividade)\b/ui', $lower) || !preg_match('/\b(agenda|reuni|compromisso|calend|evento)\b/ui', $lower);
+        $asks_calendar = preg_match('/\b(agenda|reuni|compromisso|calend|evento|hor[aá]rio)\b/ui', $lower) || !preg_match('/\b(tarefa|task|pend|afazer|atividade)\b/ui', $lower);
+
+        // 1. Google Tasks
+        if ($asks_tasks) {
+            $pro_tasks = google_tasks_list($token, 'professional');
+            $pes_tasks = google_tasks_list($token, 'personal');
+
+            $pro_due = [];
+            $pro_other = [];
+            foreach ($pro_tasks as $t) {
+                if (isset($t['due']) && strpos($t['due'], $target_ymd) === 0) {
+                    $pro_due[] = $t['title'];
+                } else {
+                    $pro_other[] = $t['title'];
+                }
+            }
+
+            $pes_due = [];
+            $pes_other = [];
+            foreach ($pes_tasks as $t) {
+                if (isset($t['due']) && strpos($t['due'], $target_ymd) === 0) {
+                    $pes_due[] = $t['title'];
+                } else {
+                    $pes_other[] = $t['title'];
+                }
+            }
+
+            $total_due = count($pro_due) + count($pes_due);
+            if ($total_due > 0) {
+                $replies[] = "📋 *Tarefas com vencimento para {$target_label}:*";
+                if (!empty($pro_due)) {
+                    $replies[] = "\n💼 *Profissional ({$total_due}):*";
+                    foreach ($pro_due as $title) $replies[] = "  • {$title}";
+                }
+                if (!empty($pes_due)) {
+                    $replies[] = "\n🏠 *Pessoal:*";
+                    foreach ($pes_due as $title) $replies[] = "  • {$title}";
+                }
+            } else {
+                $replies[] = "📋 *Nenhuma tarefa agendada especificamente para {$target_label}.*";
+                // Mostra tarefas ativas do backlog se houver
+                if (!empty($pro_other) || !empty($pes_other)) {
+                    $replies[] = "\n📌 *Tarefas ativas na sua lista aguardando ação:*";
+                    foreach (array_slice($pro_other, 0, 4) as $title) {
+                        $replies[] = "  • 💼 {$title}";
+                    }
+                    foreach (array_slice($pes_other, 0, 3) as $title) {
+                        $replies[] = "  • 🏠 {$title}";
+                    }
+                }
+            }
+        }
+
+        // 2. Google Calendar
+        if ($asks_calendar) {
+            $events = google_calendar_list_events($token, $target_dt);
+            if (!empty($events)) {
+                $replies[] = ($asks_tasks ? "\n" : "") . "📅 *Seus compromissos para {$target_label}:*";
+                foreach ($events as $ev) {
+                    $summary = $ev['summary'] ?? 'Ocupado';
+                    $start_raw = $ev['start']['dateTime'] ?? null;
+                    $end_raw = $ev['end']['dateTime'] ?? null;
+                    $time_str = '';
+                    if ($start_raw && $end_raw) {
+                        $s_dt = new DateTime($start_raw);
+                        $s_dt->setTimezone(new DateTimeZone('America/Sao_Paulo'));
+                        $e_dt = new DateTime($end_raw);
+                        $e_dt->setTimezone(new DateTimeZone('America/Sao_Paulo'));
+                        $time_str = "*{$s_dt->format('H:i')} - {$e_dt->format('H:i')}:* ";
+                    }
+                    $replies[] = "  • {$time_str}{$summary}";
+                }
+            } else {
+                $replies[] = ($asks_tasks ? "\n" : "") . "📅 *Sua agenda está totalmente livre para {$target_label}!*";
+            }
+        }
+    } else {
+        $replies[] = "⚠️ Não foi possível consultar o Google no momento.";
+    }
+
+    $replies[] = "\n🎯 *Qual é A Única Coisa que você precisa garantir para esse dia?*";
+    telegram_send($chat_id, implode("\n", $replies));
+    echo json_encode(['status' => 'ok', 'action' => 'query_agenda_tasks']);
+    exit;
+}
+
+// 7. Roteamento: Respostas de Coach ou Fora de Escopo
 if ($category === 'COACH_QUESTION' || $category === 'INVALID_OR_OFF_TOPIC') {
     $reply = $eval['reply'] ?? "🎯 Qual é a única coisa mais importante que você pode fazer hoje para avançar seu objetivo principal?";
     telegram_send($chat_id, $reply);
@@ -223,7 +240,15 @@ if ($category === 'COACH_QUESTION' || $category === 'INVALID_OR_OFF_TOPIC') {
     exit;
 }
 
-// 7. Captura de Nova Tarefa Legítima
+// 8. Roteamento: Captura de Nova Tarefa Legítima
+// Blindagem absoluta: perguntas nunca viram tarefas
+if (mb_substr(trim($user_text), -1) === '?' || preg_match('/\b(como|qual|quais|o que|quando|onde|quem|por que|porque|quanto|quantos|quantas|será|tem|tenho)\b/ui', $lower)) {
+    $coach_reply = "🎯 Para avançar com foco e clareza: qual é a ação principal ou dominó que você quer destravar hoje?";
+    telegram_send($chat_id, $coach_reply);
+    echo json_encode(['status' => 'ok', 'action' => 'question_diverted_to_coach']);
+    exit;
+}
+
 $task_title = $eval['clean_title'] ?? $user_text;
 $domain = ($eval['domain'] === 'PERSONAL') ? 'personal' : 'professional';
 $domain_label = $domain === 'personal' ? '🏠 Pessoal' : '💼 Profissional';
