@@ -113,10 +113,10 @@ export default function Navbar({
           <button
             onClick={onOpenImages}
             className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-orange-50 dark:bg-orange-950/40 text-orange-700 dark:text-orange-300 border border-orange-200 dark:border-orange-800/60 hover:bg-orange-100 transition-colors cursor-pointer"
-            title="Acervo de Imagens Históricas e Ateliê Bíblico IA"
+            title="Acervo Histórico & Arqueológico Bíblico"
           >
             <Camera className="w-3.5 h-3.5 text-orange-500" />
-            <span>Imagens IA</span>
+            <span>Acervo Histórico</span>
           </button>
 
           {/* Leitura de Hoje */}

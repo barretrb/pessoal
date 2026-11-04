@@ -160,14 +160,14 @@ export default function SidebarDrawer({
               <div>
                 <div className="flex items-center space-x-1.5">
                   <span className="text-xs font-black text-zinc-900 dark:text-zinc-100 group-hover:text-orange-600 transition-colors">
-                    Imagens Históricas & Ateliê IA
+                    Acervo Histórico & Arqueológico
                   </span>
                   <span className="text-[9px] font-bold px-1.5 py-0.2 rounded-full bg-orange-500 text-white">
                     Arqueologia
                   </span>
                 </div>
                 <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5 line-clamp-1">
-                  Templos, rituais e geração com IA
+                  Templos, rituais e vida bíblica
                 </p>
               </div>
             </div>

@@ -467,7 +467,7 @@ export default function MapasBiblicosModal({ isOpen, onClose, initialPlaceId = n
                     className="w-full p-3 rounded-2xl bg-gradient-to-r from-orange-500/15 to-purple-500/15 hover:from-orange-500/25 hover:to-purple-500/25 border border-orange-300/60 dark:border-orange-800/60 text-orange-800 dark:text-orange-200 font-bold text-xs sm:text-sm flex items-center justify-center space-x-2 transition-all cursor-pointer shadow-xs"
                   >
                     <Sparkles className="w-4 h-4 text-orange-500" />
-                    <span>Ver Ilustrações Históricas de {selectedPlace.name}</span>
+                    <span>Ver Acervo Histórico de {selectedPlace.name}</span>
                   </button>
                 </div>
               )}

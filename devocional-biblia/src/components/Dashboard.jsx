@@ -1059,7 +1059,7 @@ export default function Dashboard({
             </div>
           </div>
 
-          {/* Card 5: Imagens Históricas & Ateliê IA */}
+          {/* Card 5: Acervo Histórico Bíblico */}
           <div 
             onClick={onOpenImages}
             className="p-5 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 hover:border-orange-400 dark:hover:border-orange-600 cursor-pointer transition-all hover:scale-[1.01] hover:shadow-lg group flex flex-col justify-between space-y-4"
@@ -1072,11 +1072,11 @@ export default function Dashboard({
                 Imagens Históricas & Ateliê IA
               </h4>
               <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
-                Reconstruções arqueológicas do Tabernáculo, Templo, vestes sacerdotais e criação de cenas bíblicas personalizadas com IA.
+                Reconstruções arqueológicas do Tabernáculo, Templo, vestes sacerdotais, costumes e vida na época bíblica.
               </p>
             </div>
             <div className="flex items-center space-x-1.5 text-xs font-bold text-orange-600 dark:text-orange-400">
-              <span>Acessar Ateliê Bíblico</span>
+              <span>Acessar Acervo Histórico</span>
               <ChevronRight className="w-4 h-4" />
             </div>
           </div>
