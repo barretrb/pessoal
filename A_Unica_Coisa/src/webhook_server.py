@@ -55,7 +55,13 @@ def root():
 
 @app.api_route("/health", methods=["GET", "HEAD", "POST"])
 def health():
-    return {"status": "ok"}
+    has_google = bool(orchestrator.auth_manager.get_credentials())
+    has_groq = bool(getattr(orchestrator, "ai_coach", None) and getattr(orchestrator.ai_coach, "api_key", False))
+    return {
+        "status": "ok",
+        "google_authenticated": has_google,
+        "ai_coach_configured": has_groq
+    }
 
 @app.post("/webhook/whatsapp")
 async def whatsapp_webhook(request: Request, background_tasks: BackgroundTasks):
@@ -106,11 +112,22 @@ async def whatsapp_webhook(request: Request, background_tasks: BackgroundTasks):
         traceback.print_exc()
         return JSONResponse(status_code=500, content={"error": str(e), "traceback": traceback.format_exc()})
 
+def handle_telegram_inbound(text: str, chat_id: str):
+    """Processa a mensagem em background e envia resposta sem travar a conexao HTTP do Telegram."""
+    try:
+        result = inbound_handler.process_incoming_message(text)
+        reply = result.get("reply")
+        if reply:
+            orchestrator.telegram.send_message(reply, chat_id=chat_id)
+    except Exception as e:
+        print(f"[BACKGROUND TELEGRAM PROCESSING ERROR] {e}")
+        traceback.print_exc()
+
 @app.post("/webhook/telegram")
 async def telegram_webhook(request: Request, background_tasks: BackgroundTasks):
     """
     Recebe mensagens enviadas pelo usuário no Telegram Bot.
-    Interpreta intenções em tempo real via InboundHandler e responde no chat.
+    Responde 200 OK imediatamente para evitar timeout de 5s no Telegram e processa em background.
     """
     try:
         data = await request.json()
@@ -140,16 +157,12 @@ async def telegram_webhook(request: Request, background_tasks: BackgroundTasks):
             background_tasks.add_task(safe_send_telegram, welcome_text, chat_id)
             return JSONResponse(status_code=200, content={"status": "ok", "action": "welcome"})
 
-        # Processa mensagem via InboundHandler
-        result = inbound_handler.process_incoming_message(user_text)
-        reply = result.get("reply")
-        if reply:
-            background_tasks.add_task(safe_send_telegram, reply, chat_id)
-
-        return JSONResponse(status_code=200, content={"status": "processed", "result": result})
+        # Dispara processamento em background com latência zero para o webhook
+        background_tasks.add_task(handle_telegram_inbound, user_text, chat_id)
+        return JSONResponse(status_code=200, content={"status": "accepted"})
     except Exception as e:
         traceback.print_exc()
-        return JSONResponse(status_code=500, content={"error": str(e), "traceback": traceback.format_exc()})
+        return JSONResponse(status_code=200, content={"status": "error_handled", "error": str(e)})
 
 @app.api_route("/cron/morning", methods=["GET", "POST"])
 def trigger_morning_cron(force: bool = False):
