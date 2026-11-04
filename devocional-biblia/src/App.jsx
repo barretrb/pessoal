@@ -563,10 +563,16 @@ export default function App() {
       />
 
       {/* Modal de Sincronização em Nuvem (Multi-Aparelho & Backup) */}
-      <CloudSyncModal
-        isOpen={cloudModalOpen}
-        onClose={() => setCloudModalOpen(false)}
-        onDataSynced={handleDataSyncedFromCloud}
+      <MapasBiblicosModal
+        isOpen={mapasModalData.isOpen}
+        onClose={() => setMapasModalData({ isOpen: false, placeId: null })}
+        initialPlaceId={mapasModalData.placeId}
+      />
+
+      {/* Modal de Imagens Históricas & Ateliê Bíblico IA */}
+      <ImagensHistoricasModal
+        isOpen={imagensModalOpen}
+        onClose={() => setImagensModalOpen(false)}
       />
 
       {/* Modal Navegação Livre da Bíblia */}

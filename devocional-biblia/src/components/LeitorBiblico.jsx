@@ -62,7 +62,6 @@ export default function LeitorBiblico({
   onChangeFreeChapter,
   onOpenMaps
 }) {
-  if (!dayData && !isFreeReading) return null;
 
   // Lista de capítulos deste dia no plano devocional
   const readings = dayData?.readings || [`${currentBookName} ${currentChapter}`];
@@ -350,6 +349,10 @@ export default function LeitorBiblico({
     : null;
 
   const completedChaptersCount = readings.filter(r => !!chapterProgress[r]?.completed).length;
+
+  if (!dayData && !isFreeReading) {
+    return null;
+  }
 
   return (
     <div className="max-w-4xl mx-auto px-3 sm:px-6 py-4 sm:py-6 space-y-6 overflow-x-hidden">
