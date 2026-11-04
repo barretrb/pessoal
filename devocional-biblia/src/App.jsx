@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
+import SidebarDrawer from './components/SidebarDrawer';
 import BottomNav from './components/BottomNav';
 import Dashboard from './components/Dashboard';
 import LeitorBiblico from './components/LeitorBiblico';
@@ -64,7 +65,8 @@ export default function App() {
   const currentDayData = days.find(d => d.id === selectedDayId) || todayDay;
   const currentDayReading = currentDayData?.readings?.[0] ? parseReading(currentDayData.readings[0]) : { book: 'Lucas', chapter: '1' };
 
-  const [currentView, setCurrentView] = useState('dashboard'); // 'dashboard' | 'reader'
+  const [currentView, setCurrentView] = useState('dashboard');
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false); // 'dashboard' | 'reader'
   
   // Estado para Leitura Livre de qualquer livro da Bíblia
   const [isFreeReading, setIsFreeReading] = useState(false);
@@ -404,10 +406,36 @@ export default function App() {
     );
   }
 
+  const completedDaysCount = days.filter(d => d.completed).length;
+
   return (
     <div className="min-h-screen transition-colors duration-200 bg-zinc-50 dark:bg-zinc-950 sepia:bg-[#fbf0d9] text-zinc-900 dark:text-zinc-100 sepia:text-[#433422] flex flex-col font-sans">
       
       {/* Barra de Navegação */}
+      <SidebarDrawer
+        isOpen={isDrawerOpen}
+        onClose={() => setIsDrawerOpen(false)}
+        activeProfile={activeProfile}
+        onOpenProfiles={() => setProfileModalOpen(true)}
+        onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
+        onOpenImages={() => setImagensModalOpen(true)}
+        onOpenBibleNav={() => setBibleNavOpen(true)}
+        onOpenStudyInfo={handleOpenStudyInfo}
+        onOpenMetrics={() => setUsageMetricsOpen(true)}
+        onOpenCustomize={() => setCustomizeModalOpen(true)}
+        onOpenFavorites={() => {
+          setFavorites(storage.getFavorites(activeProfileId));
+          setHighlights(storage.getHighlights(activeProfileId));
+          setFavoritesModalOpen(true);
+        }}
+        redLetterEnabled={redLetterEnabled}
+        setRedLetterEnabled={setRedLetterEnabled}
+        theme={theme}
+        setTheme={setTheme}
+        onLogout={handleLogout}
+        completedDaysCount={completedDaysCount}
+      />
+
       <Navbar
         currentDayId={currentDayId}
         pendingDayId={pendingDayId}
@@ -438,6 +466,7 @@ export default function App() {
         onOpenProfiles={() => setProfileModalOpen(true)}
         onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
         onOpenImages={() => setImagensModalOpen(true)}
+        onOpenDrawer={() => setIsDrawerOpen(true)}
         onLogout={handleLogout}
       />
 
