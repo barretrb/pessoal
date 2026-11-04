@@ -862,8 +862,11 @@ test('QA Test 21: Atlas Bíblico, Rotas Missionárias e Detecção Geográfica e
     assert.ok(place.summary && place.summary.length > 20, `Resumo histórico de ${place.name} deve ser detalhado`);
   });
 
-  // 2. Validar rotas e jornadas bíblicas
-  assert.equal(BIBLICAL_JOURNEYS.length, 6, 'Devem existir 6 rotas históricas mapeadas');
+  // 2. Validar rotas e jornadas bíblicas com mapas autênticos
+  assert.ok(BIBLICAL_JOURNEYS.length >= 6, 'Devem existir pelo menos 6 rotas históricas mapeadas');
+  BIBLICAL_JOURNEYS.forEach(j => {
+    assert.ok(j.mapImage && j.mapImage.startsWith('/mapas/'), `Jornada ${j.name} deve conter mapa autêntico em /mapas/`);
+  });
   const jesusJourney = BIBLICAL_JOURNEYS.find(j => j.id === 'jesus');
   assert.ok(jesusJourney && jesusJourney.route.length >= 7, 'Jornada de Jesus deve conter pelo menos 7 etapas históricas');
 

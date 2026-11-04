@@ -566,6 +566,7 @@ export default function App() {
         isOpen={mapasModalData.isOpen}
         onClose={() => setMapasModalData({ isOpen: false, placeId: null })}
         initialPlaceId={mapasModalData.placeId}
+        onOpenImages={() => setImagensModalOpen(true)}
       />
 
       {/* Modal de Imagens Históricas & Ateliê Bíblico IA */}
