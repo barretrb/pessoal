@@ -28,7 +28,7 @@ import { getMediaForDay, getMediaForPassage, getMusicForChapter } from '../data/
 import { speechService } from '../services/speechService';
 import { bibleCommentaryService } from '../services/bibleCommentaryService';
 import { crossReferenceService } from '../services/crossReferenceService';
-import { fetchBookData } from '../services/bibleService';
+import { fetchBookData, normalizeBookId } from '../services/bibleService';
 import { telemetryService } from '../services/telemetryService';
 import AudioPlayerBar from './AudioPlayerBar';
 import { findBiblicalPlacesInText } from '../data/biblicalPlaces';
@@ -133,7 +133,7 @@ export default function LeitorBiblico({
     if (!activeBook) return;
     const sampleChapter = internalBookData ? Object.values(internalBookData)[0] : null;
     const currentDataBook = sampleChapter?.book || '';
-    if (currentDataBook && currentDataBook.toLowerCase() === activeBook.toLowerCase()) {
+    if (currentDataBook && normalizeBookId(currentDataBook) === normalizeBookId(activeBook)) {
       return;
     }
 
@@ -151,9 +151,9 @@ export default function LeitorBiblico({
       });
 
     return () => { isMounted = false; };
-  }, [activeBook, internalBookData]);
+  }, [activeBook]);
 
-  const activeChapterData = internalBookData?.[selectedChapter] || {
+  const activeChapterData = internalBookData?.[String(selectedChapter)] || internalBookData?.[selectedChapter] || {
     book: activeBook,
     chapter: selectedChapter,
     sections: []
@@ -168,7 +168,8 @@ export default function LeitorBiblico({
     return findBiblicalPlacesInText(fullText);
   }, [activeChapterData]);
 
-  const isDataLoading = isLoading || isFetchingBook || (activeChapterData?.book && activeChapterData.book.toLowerCase() !== activeBook.toLowerCase());
+  const sampleChapter = internalBookData ? Object.values(internalBookData)[0] : null;
+  const isDataLoading = isLoading || isFetchingBook || Boolean(activeBook && sampleChapter?.book && normalizeBookId(sampleChapter.book) !== normalizeBookId(activeBook));
 
   // Highlights e Favoritos locais
   const [highlights, setHighlights] = useState(storage.getHighlights());
@@ -342,7 +343,7 @@ export default function LeitorBiblico({
   // Próximo capítulo na lista de leituras do dia
   const currentChapterIdx = readings.findIndex(r => {
     const p = parseReading(r);
-    return p.book === activeBook && p.chapter === selectedChapter;
+    return normalizeBookId(p.book) === normalizeBookId(activeBook) && String(p.chapter) === String(selectedChapter);
   });
   const nextReadingInDay = currentChapterIdx >= 0 && currentChapterIdx < readings.length - 1 
     ? readings[currentChapterIdx + 1] 
