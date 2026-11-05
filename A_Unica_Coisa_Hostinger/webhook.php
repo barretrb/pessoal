@@ -1,5 +1,6 @@
 <?php
 // Webhook do Telegram para o Agente "A Única Coisa" - Hostinger
+// Filosofia: Engenharia de Execução Neuro-Estratégica (WOOP, Ritmos Ultradianos, Zeigarnik, Implementação)
 date_default_timezone_set('America/Sao_Paulo');
 header('Content-Type: application/json; charset=utf-8');
 
@@ -28,100 +29,183 @@ $user_text = trim($message['text']);
 $lower = mb_strtolower($user_text, 'UTF-8');
 
 $now = new DateTime('now', new DateTimeZone('America/Sao_Paulo'));
-$state_file = __DIR__ . '/state.json';
-$state = file_exists($state_file) ? json_decode(file_get_contents($state_file), true) : [];
-
-// Salva o último chat_id para os crons automáticos saberem para quem enviar
-$state['last_chat_id'] = $chat_id;
-save_state($state);
-
-function save_state($state) {
-    global $state_file;
-    file_put_contents($state_file, json_encode($state, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-}
+$state = get_agent_state();
+$state['chat_id'] = $chat_id;
+save_agent_state($state);
 
 // 1. Comando /start
 if ($user_text === '/start') {
-    $welcome = "🎯 *Olá! Sou seu Agente 'A Única Coisa'.*\n\n"
-        . "Estou conectado diretamente pela sua hospedagem na Hostinger e pronto para blindar seu foco.\n\n"
-        . "💬 *O que você pode me dizer a qualquer momento:*\n"
+    $welcome = "🎯 *Agente 'A Única Coisa' — Engenharia Neuro-Estratégica*\n\n"
+        . "Estou conectado diretamente pela Hostinger e pronto para blindar seu foco e eliminar o atrito de execução.\n\n"
+        . "💬 *Comandos rápidos a qualquer momento:*\n"
+        . "• _'Deck de AI em PS, começo às 09h30'_ (Gera plano com WOOP e divide blocos)\n"
         . "• _'Quais tarefas eu tenho para hoje?'_\n"
         . "• _'Como está minha agenda para amanhã?'_\n"
-        . "• _'Meu dominó de hoje é Criar apresentação diretoria'_\n"
-        . "• _'Lembrar de pagar condomínio amanhã'_\n"
-        . "• _'Finalizei meu dominó de hoje!'_\n\n"
-        . "Qual é o seu maior dominó para hoje?";
+        . "• _'Fiz a de 5 min!'_ (Registra destrave de inércia)\n"
+        . "• _'Concluí o dominó!'_ (Fechamento Zeigarnik do dia)\n\n"
+        . "Qual é a sua ÚNICA entrega principal de hoje?";
     telegram_send($chat_id, $welcome);
     echo json_encode(['status' => 'ok', 'action' => 'welcome']);
     exit;
 }
 
-// 2. Confirmação de Bloco de Foco ("OK", "Sim", "Agendar")
-if (in_array($lower, ['ok', 'ok!', 'sim', 'confirmar', 'confirmo', 'pode agendar', 'agenda', 'beleza'])) {
-    $token = get_google_access_token();
-    if ($token) {
-        $today_str = $now->format('Y-m-d');
-        $chosen = $state['daily_history'][$today_str]['chosen_deep_task'] ?? null;
-        $title = $chosen['clean_title'] ?? 'Foco Deep Work';
-        
-        $start_dt = clone $now;
-        $start_dt->modify('+15 minutes');
-        $end_dt = clone $start_dt;
-        $end_dt->modify('+90 minutes');
+// 2. Fechamento Zeigarnik: Semente para o dia seguinte (tomorrow_seed)
+if ($state['conversation_step'] === 'AWAITING_TOMORROW_SEED' || preg_match('/^(alvo\s+de\s+amanh[aã]|amanh[aã]\s+[eé]|amanh[aã]\s+vou|semente\s+de\s+amanh[aã]|alvo\:)\s*(.+)$/ui', $user_text, $sm)) {
+    $seed_title = isset($sm[2]) ? trim($sm[2]) : $user_text;
+    $state['tomorrow_seed'] = $seed_title;
+    $state['conversation_step'] = 'IDLE';
+    save_agent_state($state);
 
-        google_calendar_create_focus_block($token, $title, $start_dt, $end_dt);
-        $reply = "🎯 *Bloco de foco agendado no seu Google Calendar com sucesso!*\n📌 *{$title}* (" . $start_dt->format('H:i') . " às " . $end_dt->format('H:i') . ")\n✉️ *Convidado:* `rafael.barreto@blip.ai`";
+    $reply = "🌙 *Semente de amanhã arquivada com sucesso:*\n📌 *{$seed_title}*\n\n"
+        . "🧠 Memória de trabalho (RAM) liberada para a noite. Descanse sem resíduo de atenção até o ritual das 08h00!";
+    telegram_send($chat_id, $reply);
+    echo json_encode(['status' => 'ok', 'action' => 'tomorrow_seed_saved']);
+    exit;
+}
+
+// 3. Regulação Emocional: Registro de Inércia Rompida ("Fiz a de 5 min")
+if (preg_match('/\b(fiz\s+a\s+de\s+5|micro\s+feita|destravei|rompi\s+a\s+in[eé]rcia|comecei\s+o\s+bloco|primeiro\s+domin[oó]\s+caiu)\b/ui', $lower)) {
+    $state['status_domino'] = 'MICRO_DONE';
+    save_agent_state($state);
+
+    $reply = "🔥 *O Primeiro Dominó caiu!* A inércia inicial foi vencida e o atrito emocional foi zerado.\n\n"
+        . "🛡️ Mantenha-se no Bunker até o fim do bloco atual. Proibido alternar para abas visuais ou Slack antes do fechamento mental do Bloco 1.";
+    telegram_send($chat_id, $reply);
+    echo json_encode(['status' => 'ok', 'action' => 'micro_action_done']);
+    exit;
+}
+
+// 4. Fechamento Noturno sem Julgamento Moral (Efeito Zeigarnik + Autocompaixão)
+if (preg_match('/\b(conclu[íi]|derrubei|caiu|feito|finalizei|completei)\b/ui', $lower) && !preg_match('/\b(tarefa|task)\b/ui', $lower)) {
+    $state['status_domino'] = 'COMPLETED';
+    $state['conversation_step'] = 'AWAITING_TOMORROW_SEED';
+    save_agent_state($state);
+
+    $reply = "🏆 *Dominó do dia derrubado com sucesso!* Excelente trabalho de alavancagem.\n\n"
+        . "🧠 *Para desligar sua memória de trabalho esta noite (Efeito Zeigarnik):*\n"
+        . "Em 1 linha: qual será o seu alvo principal de amanhã?";
+    telegram_send($chat_id, $reply);
+    echo json_encode(['status' => 'ok', 'action' => 'night_completed']);
+    exit;
+}
+
+if (preg_match('/\b(n[aã]o\s+deu|travou|empacou|n[aã]o\s+consegui|falhei)\b/ui', $lower)) {
+    $state['status_domino'] = 'PENDING';
+    $state['conversation_step'] = 'AWAITING_TOMORROW_SEED';
+    save_agent_state($state);
+
+    $reply = "🤝 *Registro salvo sem culpa nem julgamento moral.* Tarefas complexas geram atrito cognitivo natural.\n\n"
+        . "🧠 *Para liberar sua memória RAM e desconectar:* em 1 linha, qual será o seu alvo principal de amanhã para fatiarmos o limiar de ativação?";
+    telegram_send($chat_id, $reply);
+    echo json_encode(['status' => 'ok', 'action' => 'night_friction_logged']);
+    exit;
+}
+
+// 5. Confirmação de Blocos Blindados no Google Calendar ("OK", "Sim", "Agendar")
+if (in_array($lower, ['ok', 'ok!', 'sim', 'confirmar', 'confirmo', 'pode agendar', 'agenda', 'beleza', 'combinado', 'agende'])) {
+    $token = get_google_access_token();
+    if ($token && !empty($state['blocos_sugeridos'])) {
+        $created_summaries = [];
+        foreach ($state['blocos_sugeridos'] as $bloco) {
+            $h_inicio = $bloco['horario_inicio'] ?? $now->format('H:i');
+            $duracao = intval($bloco['duracao_min'] ?? 45);
+
+            // Cria DateTime para hoje no horário sugerido
+            $start_dt = clone $now;
+            if (preg_match('/^(\d{1,2}):(\d{2})$/', $h_inicio, $hm)) {
+                $start_dt->setTime(intval($hm[1]), intval($hm[2]), 0);
+                // Se o horário já passou há mais de 10 minutos, agenda para daqui a 5 minutos
+                if ($start_dt->getTimestamp() < ($now->getTimestamp() - 600)) {
+                    $start_dt = (clone $now)->modify('+5 minutes');
+                }
+            } else {
+                $start_dt = (clone $now)->modify('+10 minutes');
+            }
+
+            $end_dt = (clone $start_dt)->modify("+{$duracao} minutes");
+
+            $desc_extra = "🚀 PRIMEIRO DOMINÓ (5 MIN):\n{$state['micro_acao_5min']}\n\n"
+                . "🔓 REGRA ANTITRAVA (WOOP):\n{$state['obstaculo_woop']}\n\n"
+                . "⏱️ MODO COGNITIVO:\n" . ($bloco['modo_cognitivo'] ?? 'Foco Profundo');
+
+            google_calendar_create_focus_block($token, $bloco['titulo'], $start_dt, $end_dt, $desc_extra, 'rafael.barreto@blip.ai');
+            $created_summaries[] = "• *{$bloco['titulo']}* (" . $start_dt->format('H:i') . " às " . $end_dt->format('H:i') . ")";
+        }
+
+        $reply = "🎯 *Bloco(s) blindado(s) no seu Google Calendar com sucesso!*\n\n"
+            . implode("\n", $created_summaries) . "\n\n"
+            . "✉️ *Convidado corporativo:* `rafael.barreto@blip.ai`\n\n"
+            . "💡 *Instrução em tela:* A descrição de cada evento na sua agenda já contém o seu *Primeiro Dominó de 5 minutos* e o *Checklist do Bunker*. Quando o alarme tocar, execute a micro-ação sem pensar!";
+        $state['conversation_step'] = 'IDLE';
+        save_agent_state($state);
+    } elseif ($token && !empty($state['domino_macro'])) {
+        $start_dt = (clone $now)->modify('+10 minutes');
+        $end_dt = (clone $start_dt)->modify('+90 minutes');
+        google_calendar_create_focus_block($token, $state['domino_macro'], $start_dt, $end_dt, "Primeiro Dominó: {$state['micro_acao_5min']}", 'rafael.barreto@blip.ai');
+        $reply = "🎯 *Bloco blindado no seu Google Calendar!*\n📌 *{$state['domino_macro']}* (" . $start_dt->format('H:i') . " às " . $end_dt->format('H:i') . ")\n✉️ Convidado: `rafael.barreto@blip.ai`";
+        $state['conversation_step'] = 'IDLE';
+        save_agent_state($state);
     } else {
-        $reply = "⚠️ Não consegui conectar ao Google Calendar no momento.";
+        $reply = "⚠️ Não encontrei blocos pendentes de confirmação. Qual é o seu Dominó de hoje?";
     }
+
     telegram_send($chat_id, $reply);
     echo json_encode(['status' => 'ok', 'action' => 'confirm_focus']);
     exit;
 }
 
-// 3. Declaração Explícita de Dominó ("Meu dominó de hoje é X")
-if (preg_match('/^(me\s+domin[oó]|meu\s+domin[oó]|meu\s+foco|minha\s+[uú]nica\s+coisa|minha\s+meta)\s*(de\s+hoje)?\s*([eé]|\:)\s*(.+)$/ui', $user_text, $m)) {
-    $clean_title = trim($m[4]);
-    $domain_key = preg_match('/\b(pessoal|casa|fam[ií]lia|devocional|academia|estudo)\b/ui', $clean_title) ? 'personal' : 'professional';
-    $domain_label = $domain_key === 'personal' ? '🏠 Pessoal' : '💼 Profissional';
-
-    $token = get_google_access_token();
-    if ($token) {
-        google_tasks_create($token, $domain_key, $clean_title, "Dominó do dia definido em " . $now->format('d/m/Y H:i'));
-    }
-
-    $today_str = $now->format('Y-m-d');
-    $state['daily_history'][$today_str]['chosen_deep_task'] = [
-        'clean_title' => $clean_title,
-        'domain' => $domain_key
-    ];
-    save_state($state);
-
-    $reply = "🎯 *Dominó Definido com Sucesso!*\n\n"
-        . "Adicionado como seu foco de hoje na lista {$domain_label}:\n"
-        . "📌 *{$clean_title}*\n\n"
-        . "⚡ _Classificação:_ *DEEP_WORK* (Alavancagem Máxima: 5/5)\n"
-        . "*(Responda \"OK\" a qualquer momento se desejar bloquear a agenda)*";
-    telegram_send($chat_id, $reply);
-    echo json_encode(['status' => 'ok', 'action' => 'set_domino']);
-    exit;
-}
-
-// 4. Fechamento Noturno ("concluí o dominó", "conclui", "derrubei")
-if (preg_match('/\b(conclu[íi]|derrubei|terminei|feito|fiz)\b/ui', $lower)) {
-    $reply = "🏆 *Dominó Concluído com Sucesso!* Parabéns pelo foco de hoje.";
-    telegram_send($chat_id, $reply);
-    echo json_encode(['status' => 'ok', 'action' => 'night_checkin']);
-    exit;
-}
-
-// 5. Avaliação Inteligente com Groq AI
-$eval = groq_evaluate_input($user_text);
+// 6. Router Semântico Inteligente (Groq AI)
+$eval = groq_evaluate_input($user_text, $state['conversation_step']);
 $category = $eval['category'] ?? 'TASK';
 
-// 6. Roteamento: Consulta de Agenda ou Tarefas
+// 7. Roteamento: Definição / Engenharia do Dominó (SET_DOMINO)
+if ($category === 'SET_DOMINO') {
+    $plan = groq_engineer_domino($user_text, $now->format('H:i'), $state['tomorrow_seed'] ?? null);
+
+    $state['domino_macro'] = $plan['domino_macro'];
+    $state['obstaculo_woop'] = $plan['obstaculo_woop'];
+    $state['micro_acao_5min'] = $plan['micro_acao_5min'];
+    $state['gatilho_se_entao'] = $plan['gatilho_se_entao'];
+    $state['bunker_checklist'] = $plan['bunker_checklist'] ?? [];
+    $state['blocos_sugeridos'] = $plan['blocos_sugeridos'] ?? [];
+    $state['status_domino'] = 'PENDING';
+    $state['conversation_step'] = 'AWAITING_CONFIRMATION';
+    save_agent_state($state);
+
+    // Salva o dominó macro no topo da lista Profissional no Google Tasks
+    $token = get_google_access_token();
+    if ($token) {
+        google_tasks_create($token, 'professional', $plan['domino_macro'], "Dominó Neuro-Estratégico definido em " . $now->format('d/m/Y H:i') . "\nPrimeiro dominó: " . $plan['micro_acao_5min']);
+    }
+
+    $blocos_txt = [];
+    foreach ($plan['blocos_sugeridos'] as $b) {
+        $blocos_txt[] = "  • *" . $b['titulo'] . "* (" . $b['duracao_min'] . " min) [" . $b['horario_inicio'] . " às " . $b['horario_fim'] . "]";
+    }
+
+    $bunker_summary = implode(" | ", array_slice($plan['bunker_checklist'], 0, 3));
+
+    $reply = "🎯 *Plano de Execução Neuro-Estratégico*\n\n"
+        . "🎯 *Alvo Principal (Critério de Pronto):*\n"
+        . "{$plan['domino_macro']}\n\n"
+        . "🔓 *Desarme de Fricção (WOOP):*\n"
+        . "_{$plan['obstaculo_woop']}_\n\n"
+        . "🚀 *Primeiro Dominó (Ação de 5 min — Proibido ferramentas visuais):*\n"
+        . "*{$plan['micro_acao_5min']}*\n\n"
+        . "⏱️ *Arquitetura de Blocos (Sem Resíduo de Atenção):*\n"
+        . implode("\n", $blocos_txt) . "\n\n"
+        . "🛡️ *Gatilho & Bunker:*\n"
+        . "\"{$plan['gatilho_se_entao']}\"\n"
+        . "_(Bunker: {$bunker_summary})_\n\n"
+        . "👉 *Responda \"OK\" para blindar esses blocos no Google Calendar (com convite para rafael.barreto@blip.ai).*";
+
+    telegram_send($chat_id, $reply);
+    echo json_encode(['status' => 'ok', 'action' => 'engineer_domino']);
+    exit;
+}
+
+// 8. Roteamento: Consulta de Agenda ou Tarefas
 if ($category === 'QUERY_AGENDA_TASKS') {
-    // Determina a data alvo respeitando o fuso estrito de Brasília (America/Sao_Paulo)
     if (preg_match('/\b(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])\b/u', $lower, $dm)) {
         $target_dt = clone $now;
         $target_dt->setDate(intval($now->format('Y')), intval($dm[2]), intval($dm[1]));
@@ -144,11 +228,9 @@ if ($category === 'QUERY_AGENDA_TASKS') {
     $replies = [];
 
     if ($token) {
-        // Verifica se a pergunta é sobre tarefas ou ambas
         $asks_tasks = preg_match('/\b(tarefa|task|pend|afazer|fazer|atividade)\b/ui', $lower) || !preg_match('/\b(agenda|reuni|compromisso|calend|evento)\b/ui', $lower);
         $asks_calendar = preg_match('/\b(agenda|reuni|compromisso|calend|evento|hor[aá]rio)\b/ui', $lower) || !preg_match('/\b(tarefa|task|pend|afazer|atividade)\b/ui', $lower);
 
-        // 1. Google Tasks
         if ($asks_tasks) {
             $pro_tasks = google_tasks_list($token, 'professional');
             $pes_tasks = google_tasks_list($token, 'personal');
@@ -186,7 +268,6 @@ if ($category === 'QUERY_AGENDA_TASKS') {
                 }
             } else {
                 $replies[] = "📋 *Nenhuma tarefa agendada especificamente para {$target_label}.*";
-                // Mostra tarefas ativas do backlog se houver
                 if (!empty($pro_other) || !empty($pes_other)) {
                     $replies[] = "\n📌 *Tarefas ativas na sua lista aguardando ação:*";
                     foreach (array_slice($pro_other, 0, 4) as $title) {
@@ -199,7 +280,6 @@ if ($category === 'QUERY_AGENDA_TASKS') {
             }
         }
 
-        // 2. Google Calendar
         if ($asks_calendar) {
             $events = google_calendar_list_events($token, $target_dt);
             if (!empty($events)) {
@@ -232,7 +312,7 @@ if ($category === 'QUERY_AGENDA_TASKS') {
     exit;
 }
 
-// 7. Roteamento: Respostas de Coach ou Fora de Escopo
+// 9. Roteamento: Respostas de Orientação Neuro-Estratégica ou Fora de Escopo
 if ($category === 'COACH_QUESTION' || $category === 'INVALID_OR_OFF_TOPIC') {
     $reply = $eval['reply'] ?? "🎯 Qual é a única coisa mais importante que você pode fazer hoje para avançar seu objetivo principal?";
     telegram_send($chat_id, $reply);
@@ -240,7 +320,7 @@ if ($category === 'COACH_QUESTION' || $category === 'INVALID_OR_OFF_TOPIC') {
     exit;
 }
 
-// 8. Roteamento: Captura de Nova Tarefa Legítima
+// 10. Roteamento: Captura de Tarefa Avulsa (Regra Zeigarnik de Caixa de Ruído)
 // Blindagem absoluta: perguntas nunca viram tarefas
 if (mb_substr(trim($user_text), -1) === '?' || preg_match('/\b(como|qual|quais|o que|quando|onde|quem|por que|porque|quanto|quantos|quantas|será|tem|tenho)\b/ui', $lower)) {
     $coach_reply = "🎯 Para avançar com foco e clareza: qual é a ação principal ou dominó que você quer destravar hoje?";
@@ -254,12 +334,10 @@ $domain = ($eval['domain'] === 'PERSONAL') ? 'personal' : 'professional';
 $domain_label = $domain === 'personal' ? '🏠 Pessoal' : '💼 Profissional';
 
 $due_iso = null;
-$due_display = '';
 if (strpos($lower, 'amanhã') !== false || strpos($lower, 'amanha') !== false) {
     $d = clone $now;
     $d->modify('+1 day');
     $due_iso = $d->format('Y-m-d') . 'T18:00:00.000Z';
-    $due_display = ' para *amanhã*';
 }
 
 $token = get_google_access_token();
@@ -267,7 +345,12 @@ if ($token) {
     google_tasks_create($token, $domain, $task_title, "Capturado via Telegram em " . $now->format('d/m/Y H:i'), $due_iso);
 }
 
-$reply = "✅ Tarefa capturada e adicionada na lista {$domain_label}{$due_display}!\n"
-    . "📌 *{$task_title}*";
+// Regra Zeigarnik: Se estiver durante o dia e com dominó pendente, protege a memória de trabalho
+if (!empty($state['domino_macro']) && $state['status_domino'] === 'PENDING') {
+    $reply = "📥 *Capturado na Caixa de Ruído (Google Tasks) para depois do almoço.*\nVolte para o seu Dominó: *{$state['domino_macro']}*.";
+} else {
+    $reply = "📥 *Capturado no Google Tasks ({$domain_label})!*\n📌 *{$task_title}*\n_(Lembre-se: tarefas avulsas são secundárias. Qual é o seu Dominó principal de hoje?)_";
+}
+
 telegram_send($chat_id, $reply);
 echo json_encode(['status' => 'ok', 'action' => 'create_task']);

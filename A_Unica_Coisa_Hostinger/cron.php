@@ -1,70 +1,108 @@
 <?php
 // Executor de Rituais Agendados (Cron Jobs) - Hostinger
+// Filosofia: Engenharia de Execução Neuro-Estratégica (WOOP, Ritmos Ultradianos, Zeigarnik, Implementação)
+date_default_timezone_set('America/Sao_Paulo');
 header('Content-Type: application/json; charset=utf-8');
 
 require_once __DIR__ . '/services.php';
 
 $action = $_GET['action'] ?? 'morning';
 $now = new DateTime('now', new DateTimeZone('America/Sao_Paulo'));
-$state_file = __DIR__ . '/state.json';
-$state = file_exists($state_file) ? json_decode(file_get_contents($state_file), true) : [];
+$state = get_agent_state();
 
-function save_cron_state($state) {
-    global $state_file;
-    file_put_contents($state_file, json_encode($state, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-}
-
-$chat_id = $state['last_chat_id'] ?? '5521968746262'; // chat_id ou fallback
+$chat_id = $state['chat_id'] ?? '5521968746262';
 $token = get_google_access_token();
 
 switch ($action) {
     case 'morning':
         $pro_tasks = $token ? google_tasks_list($token, 'professional') : [];
+        $pes_tasks = $token ? google_tasks_list($token, 'personal') : [];
         $events = $token ? google_calendar_list_events($token, $now) : [];
-        
-        $msg = "☀️ *Bom dia, Rafael! Ritual Matinal 'A Única Coisa' (" . $now->format('d/m') . ")*\n\n";
-        if (!empty($pro_tasks)) {
-            $msg .= "🎯 *Sugestão de Dominó para Hoje:*\n📌 *" . $pro_tasks[0]['title'] . "*\n\n";
+
+        $seed = !empty($state['tomorrow_seed']) ? trim($state['tomorrow_seed']) : null;
+
+        $msg = "☀️ *Ritual Neuro-Estratégico — 08h00 (" . $now->format('d/m') . ")*\n\n";
+
+        if ($seed) {
+            $msg .= "🌱 *Alvo planejado na véspera (Efeito Zeigarnik):*\n📌 *{$seed}*\n\n";
+        } elseif (!empty($pro_tasks)) {
+            $msg .= "📋 *Sugestão do topo da lista:* *" . $pro_tasks[0]['title'] . "*\n\n";
         }
-        $msg .= "Responda *\"OK\"* para bloquear a agenda ou defina: *\"Meu dominó de hoje é X\"*.\nTenha um dia de foco extremo!";
-        
-        if (!empty($state['last_chat_id'])) {
-            telegram_send($state['last_chat_id'], $msg);
+
+        $event_count = count($events);
+        $task_count = count($pro_tasks);
+        $msg .= "📊 *Radar do dia:* {$event_count} compromisso(s) na agenda | {$task_count} tarefa(s) ativas.\n\n"
+            . "1. 🎯 *Qual é a ÚNICA entrega de hoje*" . ($seed ? " (confirma a de ontem)?" : "?") . "\n"
+            . "2. 🧠 *O que mais dá preguiça/trava no início dela e qual horário vamos bloquear?*\n\n"
+            . "_(Exemplo de resposta: 'Deck de AI em PS, começo às 09h30')_";
+
+        $state['conversation_step'] = 'AWAITING_DOMINO';
+        save_agent_state($state);
+
+        if (!empty($chat_id)) {
+            telegram_send($chat_id, $msg);
         }
-        echo json_encode(['status' => 'morning_sent', 'tasks_found' => count($pro_tasks)]);
+        echo json_encode(['status' => 'morning_neuro_sent', 'seed_used' => !empty($seed)]);
         break;
 
     case 'lunch':
-        $pills = [
-            "🎯 *Pílula d'A Única Coisa:* 'Se você persegue dois coelhos, não alcançará nenhum.' Foque no seu bloco de hoje.",
-            "⏳ *Pílula d'A Única Coisa:* 'O tempo é a única coisa que não se recupera. Bloqueie sua agenda como uma fortaleza.'",
-            "⚖️ *Pílula d'A Única Coisa:* 'Equilíbrio é um mito. A vida é um contrapeso constante entre trabalho e vida pessoal.'",
-            "🧱 *Pílula d'A Única Coisa:* 'O efeito dominó começa pequeno, mas cada peça derruba uma 50% maior. Qual dominó você derruba hoje?'"
-        ];
-        $pill = $pills[array_rand($pills)];
-        if (!empty($state['last_chat_id'])) {
-            telegram_send($state['last_chat_id'], $pill);
+        $domino = !empty($state['domino_macro']) ? $state['domino_macro'] : null;
+        $micro = !empty($state['micro_acao_5min']) ? $state['micro_acao_5min'] : 'ação de 5 minutos';
+        $status = $state['status_domino'] ?? 'PENDING';
+
+        $msg = "🥪 *Ponto de Controle Neuro-Estratégico (12h30)*\n\n";
+
+        if ($domino) {
+            if ($status === 'COMPLETED') {
+                $msg .= "🏆 *Parabéns!* Seu Dominó (*{$domino}*) já foi concluído pela manhã.\n\n"
+                    . "O resto do dia é para *Shallow Work* (lote de tarefas secundárias da lista) ou descanso.";
+            } elseif ($status === 'MICRO_DONE') {
+                $msg .= "🔥 *A inércia já foi rompida:* você já executou a micro-ação inicial do Dominó (*{$domino}*).\n\n"
+                    . "Mantenha o foco puro no bloco da tarde para finalizar o entregável.";
+            } else {
+                $msg .= "Você conseguiu executar pelo menos a Ação de 5 minutos (*{$micro}*) do seu Dominó (*{$domino}*) hoje?\n\n"
+                    . "⚡ Se travou: me diga onde empacou para reduzirmos o escopo pela metade para o bloco vespertino.";
+            }
+        } else {
+            $msg .= "Ainda não ativamos o seu Dominó de hoje.\n"
+                . "Qual é a micro-ação de 5 minutos em texto puro que você pode rodar agora para destravar a tarde?";
         }
-        echo json_encode(['status' => 'lunch_pill_sent']);
+
+        if (!empty($chat_id)) {
+            telegram_send($chat_id, $msg);
+        }
+        echo json_encode(['status' => 'lunch_neuro_sent', 'has_domino' => !empty($domino)]);
         break;
 
     case 'night':
-        $msg = "🌙 *Check-in Noturno 'A Única Coisa' (" . $now->format('d/m') . ")*\n\n"
-            . "Você conseguiu derrubar o seu Dominó de hoje?\n"
-            . "Responda: *'Concluí o dominó'* ou me conte como foi o seu foco!";
-        if (!empty($state['last_chat_id'])) {
-            telegram_send($state['last_chat_id'], $msg);
+        $domino = !empty($state['domino_macro']) ? $state['domino_macro'] : 'seu foco principal';
+
+        $msg = "🌙 *Fechamento do Dia & Descompressão Cognitiva (18h30)*\n\n"
+            . "O dominó *{$domino}* caiu, avançou ou travou?\n"
+            . "_(Sem culpa nem cobrança moral se travou: apenas diagnóstico de atrito cognitivo)._\n\n"
+            . "🧠 *Para liberar sua memória de trabalho (RAM) hoje:* em 1 linha, qual será o seu alvo principal de amanhã?";
+
+        $state['conversation_step'] = 'AWAITING_TOMORROW_SEED';
+        save_agent_state($state);
+
+        if (!empty($chat_id)) {
+            telegram_send($chat_id, $msg);
         }
-        echo json_encode(['status' => 'night_checkin_sent']);
+        echo json_encode(['status' => 'night_neuro_sent']);
         break;
 
     case 'weekly':
-        $msg = "📅 *Planejamento Semanal 'A Única Coisa'*\n\n"
-            . "Uma nova semana começa! Qual é o seu grande objetivo e dominó desta semana?";
-        if (!empty($state['last_chat_id'])) {
-            telegram_send($state['last_chat_id'], $msg);
+        $msg = "📅 *Planejamento Semanal Neuro-Estratégico*\n\n"
+            . "Qual é a grande alavanca que vai destravar a sua semana?\n"
+            . "Pense no primeiro dominó de maior impacto. Qual é a entrega principal de amanhã?";
+
+        $state['conversation_step'] = 'AWAITING_TOMORROW_SEED';
+        save_agent_state($state);
+
+        if (!empty($chat_id)) {
+            telegram_send($chat_id, $msg);
         }
-        echo json_encode(['status' => 'weekly_sent']);
+        echo json_encode(['status' => 'weekly_neuro_sent']);
         break;
 
     default:

@@ -1,5 +1,5 @@
 <?php
-// Serviços de Integração: Google OAuth, Tasks, Calendar, Groq e Telegram
+// Serviços de Integração & Engenharia Neuro-Estratégica: Google OAuth, Tasks, Calendar, Groq e Telegram
 date_default_timezone_set('America/Sao_Paulo');
 
 function get_config() {
@@ -10,7 +10,67 @@ function get_config() {
     return $cfg;
 }
 
-// 1. Google OAuth 2.0 (Renovação via Refresh Token com Cache)
+// 1. Gestão de Estado Neuro-Estratégico (state.json)
+function get_agent_state() {
+    $state_file = __DIR__ . '/state.json';
+    $tz = new DateTimeZone('America/Sao_Paulo');
+    $today_str = (new DateTime('now', $tz))->format('Y-m-d');
+
+    $default = [
+        'chat_id' => '5521968746262',
+        'current_date' => $today_str,
+        'conversation_step' => 'IDLE', // IDLE | AWAITING_DOMINO | AWAITING_CONFIRMATION | AWAITING_TOMORROW_SEED
+        'domino_macro' => '',
+        'obstaculo_woop' => '',
+        'micro_acao_5min' => '',
+        'gatilho_se_entao' => '',
+        'bunker_checklist' => [
+            'Fechar Slack e abas de e-mail',
+            'Celular em outro cômodo ou modo foco',
+            'Editor de texto em tela cheia',
+            'Garrafa de água na mesa'
+        ],
+        'blocos_sugeridos' => [],
+        'status_domino' => 'PENDING', // PENDING | MICRO_DONE | COMPLETED
+        'tomorrow_seed' => ''
+    ];
+
+    if (!file_exists($state_file)) {
+        return $default;
+    }
+
+    $raw = json_decode(file_get_contents($state_file), true);
+    if (!is_array($raw)) {
+        return $default;
+    }
+
+    // Compatibilidade com chaves legadas
+    if (!isset($raw['chat_id']) && isset($raw['last_chat_id'])) {
+        $raw['chat_id'] = $raw['last_chat_id'];
+    }
+
+    // Transição de dia: preserva chat_id e tomorrow_seed (que vira semente matinal)
+    if (isset($raw['current_date']) && $raw['current_date'] !== $today_str) {
+        $raw['current_date'] = $today_str;
+        $raw['conversation_step'] = 'IDLE';
+        $raw['domino_macro'] = '';
+        $raw['obstaculo_woop'] = '';
+        $raw['micro_acao_5min'] = '';
+        $raw['gatilho_se_entao'] = '';
+        $raw['blocos_sugeridos'] = [];
+        $raw['status_domino'] = 'PENDING';
+        // tomorrow_seed é mantido para o cron das 08h usar como sugestão
+    }
+
+    return array_merge($default, $raw);
+}
+
+function save_agent_state($state) {
+    $state_file = __DIR__ . '/state.json';
+    file_put_contents($state_file, json_encode($state, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+}
+
+// 2. Google OAuth 2.0 (Renovação via Refresh Token com Cache)
 function get_google_access_token() {
     $token_file = __DIR__ . '/transient_token.json';
     if (file_exists($token_file)) {
@@ -54,7 +114,7 @@ function get_google_access_token() {
     return null;
 }
 
-// 2. Envio de Mensagem no Telegram
+// 3. Envio de Mensagem no Telegram
 function telegram_send($chat_id, $message, $parse_mode = 'Markdown') {
     $cfg = get_config();
     $token = $cfg['telegram_token'];
@@ -99,8 +159,8 @@ function telegram_send($chat_id, $message, $parse_mode = 'Markdown') {
     return ($status >= 200 && $status < 300);
 }
 
-// 3. Avaliação Inteligente com Groq AI
-function groq_evaluate_input($text) {
+// 4. Router Semântico Inteligente com Groq AI
+function groq_evaluate_input($text, $context_step = null) {
     $cfg = get_config();
     $key = $cfg['groq_api_key'];
     $model = $cfg['groq_model'];
@@ -109,24 +169,34 @@ function groq_evaluate_input($text) {
     $is_interrogative = (mb_substr(trim($text), -1) === '?') ||
         preg_match('/\b(como|qual|quais|o que|o q|quando|onde|quem|por que|porque|por quê|quanto|quantos|quantas|será|tem|tenho|pra qual|para qual|me diz|me conta)\b/ui', $lower);
 
+    // Atalhos heurísticos para SET_DOMINO
+    if (preg_match('/^(me\s+domin[oó]|meu\s+domin[oó]|meu\s+foco|minha\s+[uú]nica\s+coisa|minha\s+meta)\s*(de\s+hoje)?\s*([eé]|\:)\s*(.+)$/ui', $text)) {
+        return ['category' => 'SET_DOMINO', 'clean_title' => null, 'domain' => null, 'reply' => null];
+    }
+    if ($context_step === 'AWAITING_DOMINO' && !$is_interrogative && mb_strlen($text) >= 4) {
+        return ['category' => 'SET_DOMINO', 'clean_title' => null, 'domain' => null, 'reply' => null];
+    }
+
     $system_prompt = <<<PROMPT
-Você é o motor de inteligência e Coach do Agente "A Única Coisa" (The ONE Thing, de Gary Keller e Jay Papasan).
-Sua missão é avaliar a mensagem do usuário (Rafael) e classificá-la rigorosamente em UMA destas 4 categorias:
+Você é o Router Semântico e Engenheiro Neuro-Estratégico do Agente "A Única Coisa".
+Sua função é classificar a intenção do usuário (Rafael) rigorosamente em UMA das seguintes 5 categorias:
 
-1. "QUERY_AGENDA_TASKS": O usuário está fazendo qualquer consulta sobre suas tarefas, afazeres, pendências, agenda, reuniões, horários ou calendário (ex: "quantas tarefas eu tenho para amanhã?", "quais tarefas eu tenho?", "como está minha agenda?", "o que tenho pendente?", "tenho reuniões amanhã?", "o que tenho pra fazer?").
-2. "TASK": O usuário quer cadastrar ou registrar uma nova tarefa/ação executável a fazer (ex: "comprar café", "enviar proposta para o cliente", "lembrar de pagar boleto do condomínio", "estudar capítulo 4 de inglês", "agendar dentista"). NUNCA classifique uma pergunta como TASK!
-3. "COACH_QUESTION": O usuário está fazendo uma pergunta conceitual ou reflexão sobre foco, priorização, o método dominó, time blocking, hábitos ou princípios do livro "A Única Coisa".
-4. "INVALID_OR_OFF_TOPIC": Qualquer mensagem totalmente fora do escopo de foco e produtividade (ex: perguntas gerais tipo "qual a capital da França", piadas, futebol, política, notícias gerais, "bom dia tudo bem", correções soltas ou comentários sem contexto).
+1. "SET_DOMINO": O usuário está definindo, escolhendo ou detalhando qual é a sua Única Coisa / Dominó principal do dia (ex: "Deck de AI em PS, começo às 09h30", "Meu dominó de hoje é Criar apresentação diretoria", "Hoje vou entregar a proposta do cliente X", "Sim, confirmo a de ontem", "Finalizar o doc de arquitetura").
+2. "QUERY_AGENDA_TASKS": O usuário está consultando sua agenda, tarefas, calendário, horários ou reuniões (ex: "como está minha agenda hoje?", "quais tarefas eu tenho para amanhã?", "o que tenho pendente?", "tenho reuniões hoje?").
+3. "TASK": O usuário está enviando uma tarefa avulsa, lembrete secundário ou ruído para fazer depois (ex: "comprar café", "lembrar de pagar condomínio", "agendar dentista"). NUNCA classifique uma pergunta como TASK!
+4. "COACH_QUESTION": O usuário está fazendo uma pergunta conceitual ou reflexão sobre foco, ritmo ultradiano, WOOP, priorização ou o livro "A Única Coisa".
+5. "INVALID_OR_OFF_TOPIC": Qualquer mensagem fora do escopo de foco e produtividade (piadas, futebol, política, notícias gerais, "bom dia tudo bem").
 
-Diretrizes de resposta:
+Diretrizes:
+- Se "SET_DOMINO": no campo "reply", retorne null.
 - Se "QUERY_AGENDA_TASKS": no campo "reply", retorne null.
-- Se "TASK": no campo "reply", retorne null. Extraia o título limpo em "clean_title" e o domínio ("PERSONAL" ou "PROFESSIONAL") em "domain".
-- Se "COACH_QUESTION": dê uma resposta afiada, direta e prática fundamentada nos ensinamentos do livro (máximo 2 a 3 frases) e OBRIGATORIAMENTE termine fazendo uma pergunta reflexiva de foco estritamente dentro do contexto.
-- Se "INVALID_OR_OFF_TOPIC": explique gentilmente e com firmeza que você é um agente de foco exclusivo da metodologia A Única Coisa e gestão de tarefas/agenda, e faça uma pergunta de foco trazendo o usuário de volta para o dominó dele.
+- Se "TASK": no campo "reply", retorne null. Extraia o título em "clean_title" e o domínio ("PERSONAL" ou "PROFESSIONAL") em "domain".
+- Se "COACH_QUESTION": responda com Brevidade Inteligente (máximo 2 frases diretas, zero papo motivacional) e termine com 1 pergunta prática.
+- Se "INVALID_OR_OFF_TOPIC": explique em 1 frase que seu papel é blindar a execução neuro-estratégica e pergunte qual é o dominó de hoje.
 
-Responda SEMPRE em formato JSON estrito:
+Responda SEMPRE em JSON:
 {
-  "category": "QUERY_AGENDA_TASKS" | "TASK" | "COACH_QUESTION" | "INVALID_OR_OFF_TOPIC",
+  "category": "SET_DOMINO" | "QUERY_AGENDA_TASKS" | "TASK" | "COACH_QUESTION" | "INVALID_OR_OFF_TOPIC",
   "clean_title": "string ou null",
   "domain": "PERSONAL" | "PROFESSIONAL" | null,
   "reply": "string ou null"
@@ -151,7 +221,8 @@ PROMPT;
         CURLOPT_TIMEOUT => 8,
         CURLOPT_HTTPHEADER => [
             "Authorization: Bearer {$key}",
-            'Content-Type: application/json'
+            'Content-Type: application/json',
+            'User-Agent: A-Unica-Coisa-Agent/2.0'
         ]
     ]);
     $resp = curl_exec($ch);
@@ -163,27 +234,26 @@ PROMPT;
         $data = json_decode($resp, true);
         if (isset($data['choices'][0]['message']['content'])) {
             $raw_content = trim($data['choices'][0]['message']['content']);
-            // Remove code fences se houver
             $raw_content = preg_replace('/^```(?:json)?\s*|\s*```$/i', '', $raw_content);
             $parsed = json_decode($raw_content, true);
         }
     }
 
     if ($parsed && isset($parsed['category'])) {
-        // Blindagem de segurança: Uma pergunta NUNCA pode ser classificada como TASK
+        // Blindagem de segurança: Perguntas nunca podem virar TASK
         if ($parsed['category'] === 'TASK' && $is_interrogative) {
             if (preg_match('/\b(tarefa|task|agenda|reuni|calend|compromisso|pend|fazer|hoje|amanh[aã]|dia)\b/ui', $lower)) {
                 $parsed['category'] = 'QUERY_AGENDA_TASKS';
                 $parsed['reply'] = null;
             } else {
                 $parsed['category'] = 'COACH_QUESTION';
-                $parsed['reply'] = "🎯 Essa é uma boa reflexão. Na metodologia de *A Única Coisa*, como esclarecer esse ponto ajuda você a focar na sua prioridade principal de hoje?";
+                $parsed['reply'] = "🎯 Essa é uma boa reflexão. Na engenharia de foco, como esclarecer esse ponto te ajuda a destravar o dominó de hoje?";
             }
         }
         return $parsed;
     }
 
-    // Fallback Heurístico Robusto (caso a IA falhe ou demore)
+    // Fallback Heurístico Robusto
     if ($is_interrogative || preg_match('/\b(quantas?|quais|minhas?\s+tarefas|minha\s+agenda|reuni[oõ]es|como\s+est[aá]|o\s+que\s+eu\s+tenho)\b/ui', $lower)) {
         if (preg_match('/\b(tarefa|task|agenda|reuni|calend|compromisso|pend|fazer|hoje|amanh[aã]|dia)\b/ui', $lower)) {
             return ['category' => 'QUERY_AGENDA_TASKS', 'clean_title' => null, 'domain' => null, 'reply' => null];
@@ -192,8 +262,12 @@ PROMPT;
             'category' => 'COACH_QUESTION',
             'clean_title' => null,
             'domain' => null,
-            'reply' => "🎯 Sou seu mentor de foco no método *A Única Coisa*. Para avançarmos com clareza, qual é a prioridade ou dominó que você precisa derrubar hoje?"
+            'reply' => "🎯 Foco cirúrgico no método *A Única Coisa*. Para avançarmos sem rodeios, qual é o dominó principal que você vai derrubar hoje?"
         ];
+    }
+
+    if (preg_match('/\b(deck|apresenta|proposta|relat[oó]rio|reuni[aã]o|fechamento|arquitetura|cdigo|projeto|onboarding)\b/ui', $lower)) {
+        return ['category' => 'SET_DOMINO', 'clean_title' => null, 'domain' => null, 'reply' => null];
     }
 
     if (preg_match('/\b(capital|piada|futebol|clima|tempo\s+hoje|presidente|quem\s+ganhou)\b/ui', $lower)) {
@@ -201,11 +275,10 @@ PROMPT;
             'category' => 'INVALID_OR_OFF_TOPIC',
             'clean_title' => null,
             'domain' => null,
-            'reply' => "🎯 Meu papel é te ajudar a manter o foco absoluto no método *A Única Coisa* e gerenciar suas tarefas e agenda. Não consigo responder sobre outros temas.\n\n👉 *Qual é a prioridade ou dominó que você quer destravar hoje?*"
+            'reply' => "🎯 Meu papel é blindar sua execução neuro-estratégica e agenda. Sem distrações externas.\n\n👉 *Qual é o seu Dominó principal de hoje?*"
         ];
     }
 
-    // Apenas entradas declarativas sem '?' viram TASK
     return [
         'category' => 'TASK',
         'clean_title' => $text,
@@ -214,7 +287,138 @@ PROMPT;
     ];
 }
 
-// 4. Google Tasks API
+// 5. Motor de Engenharia Neuro-Estratégica (WOOP, Ritmos Ultradianos & Desarme de Fricção)
+function groq_engineer_domino($user_text, $current_time_str = '09:00', $seed = null) {
+    $cfg = get_config();
+    $key = $cfg['groq_api_key'];
+    $model = $cfg['groq_model'];
+
+    $system_prompt = <<<PROMPT
+Você é o Engenheiro Neuro-Estratégico de Execução do Agente "A Única Coisa".
+Sua missão é eliminar a procrastinação, a ambiguidade e o atrito emocional de tarefas complexas usando ciência comportamental de ponta:
+
+1. WOOP & Regulação Emocional (Tim Pychyl): 
+   - Identifique o atrito invisível da tarefa e neutralize-o com uma regra prática antitrava. 
+   - Reduza o Primeiro Dominó a uma micro-ação de 5 minutos RIDICULAMENTE PEQUENA.
+   - REGRA ABSOLUTA: É TERMINANTEMENTE PROIBIDO abrir PowerPoint, Google Slides, Figma ou ferramentas visuais pesadas nos primeiros 5 minutos. A micro-ação deve ser em TEXTO PURO (ex: abrir editor de texto simples e escrever apenas a tese central em 3 bullets, usando [DADO] onde faltar número).
+
+2. Prevenção de Resíduo de Atenção (Sophie Leroy) & Ritmos Ultradianos:
+   - Decomponha o entregável em 1 ou 2 blocos separados por modo mental (ex: Bloco 1: Storyline em texto + Dados [45-60 min]; Bloco 2: Montagem Visual/Slides [45-60 min]).
+   - Evite misturar raciocínio analítico com design gráfico no mesmo bloco.
+
+3. Intenção de Implementação (Peter Gollwitzer) & Bunker (Wendy Wood):
+   - Formule um gatilho prático "SE [Horário/Condição], ENTÃO fecho o Slack, afasto o celular e executo o Primeiro Dominó em texto puro."
+   - Inclua checklist de ambiente blindado.
+
+Tom: Brevidade Inteligente (Smart Brevity). Zero papo motivacional, zero clichês, foco cirúrgico na inércia inicial.
+
+Responda OBRIGATORIAMENTE em JSON no seguinte formato:
+{
+  "domino_macro": "Critério de pronto claro do entregável",
+  "obstaculo_woop": "Regra prática antitrava (ex: use [DADO] como placeholder para não travar)",
+  "micro_acao_5min": "Micro-ação de 5 min em texto puro (estritamente proibido ferramentas visuais)",
+  "gatilho_se_entao": "SE derem [Horário], ENTÃO fecho o Slack, afasto o celular e escrevo 3 bullets em texto puro.",
+  "bunker_checklist": [
+    "Fechar Slack e abas de e-mail",
+    "Celular fora do campo de visão",
+    "Editor em tela cheia (modo foco)",
+    "Água na mesa"
+  ],
+  "blocos_sugeridos": [
+    {
+      "titulo": "Bloco 1: Storyline & Estrutura (Texto)",
+      "duracao_min": 45,
+      "modo_cognitivo": "Estrutural / Dados",
+      "horario_inicio": "HH:MM",
+      "horario_fim": "HH:MM"
+    },
+    {
+      "titulo": "Bloco 2: Montagem Visual & Fechamento",
+      "duracao_min": 45,
+      "modo_cognitivo": "Visual / Montagem",
+      "horario_inicio": "HH:MM",
+      "horario_fim": "HH:MM"
+    }
+  ]
+}
+PROMPT;
+
+    $user_prompt = "Horário de referência: {$current_time_str}.";
+    if ($seed) {
+        $user_prompt .= " Semente planejada na véspera: '{$seed}'.";
+    }
+    $user_prompt .= " Entrada do usuário: '{$user_text}'.";
+
+    $payload = [
+        'model' => $model,
+        'response_format' => ['type' => 'json_object'],
+        'messages' => [
+            ['role' => 'system', 'content' => $system_prompt],
+            ['role' => 'user', 'content' => $user_prompt]
+        ],
+        'temperature' => 0.2
+    ];
+
+    $ch = curl_init('https://api.groq.com/openai/v1/chat/completions');
+    curl_setopt_array($ch, [
+        CURLOPT_POST => true,
+        CURLOPT_POSTFIELDS => json_encode($payload),
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT => 10,
+        CURLOPT_HTTPHEADER => [
+            "Authorization: Bearer {$key}",
+            'Content-Type: application/json',
+            'User-Agent: A-Unica-Coisa-Agent/2.0'
+        ]
+    ]);
+    $resp = curl_exec($ch);
+    $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($status === 200 && $resp) {
+        $data = json_decode($resp, true);
+        if (isset($data['choices'][0]['message']['content'])) {
+            $raw = trim($data['choices'][0]['message']['content']);
+            $raw = preg_replace('/^```(?:json)?\s*|\s*```$/i', '', $raw);
+            $parsed = json_decode($raw, true);
+            if ($parsed && isset($parsed['domino_macro'])) {
+                return $parsed;
+            }
+        }
+    }
+
+    // Fallback estruturado
+    return [
+        'domino_macro' => $user_text,
+        'obstaculo_woop' => 'Ambiguidade inicial ou falta de dados. Use [DADO] como placeholder e não pare para pesquisar.',
+        'micro_acao_5min' => 'Abrir editor de texto simples e escrever apenas 3 bullets com a tese central (proibido abrir ferramentas visuais).',
+        'gatilho_se_entao' => "SE for {$current_time_str}, ENTÃO fecho o Slack, coloco o celular no modo foco e escrevo os 3 bullets em texto puro.",
+        'bunker_checklist' => [
+            'Fechar Slack e abas de e-mail',
+            'Celular fora do campo de visão',
+            'Editor em tela cheia (modo foco)',
+            'Água na mesa'
+        ],
+        'blocos_sugeridos' => [
+            [
+                'titulo' => 'Bloco 1: Estrutura & Raciocínio (Texto)',
+                'duracao_min' => 45,
+                'modo_cognitivo' => 'Estrutural / Texto',
+                'horario_inicio' => $current_time_str,
+                'horario_fim' => date('H:i', strtotime('+45 minutes', strtotime($current_time_str)))
+            ],
+            [
+                'titulo' => 'Bloco 2: Execução Visual & Refinamento',
+                'duracao_min' => 45,
+                'modo_cognitivo' => 'Visual / Montagem',
+                'horario_inicio' => date('H:i', strtotime('+60 minutes', strtotime($current_time_str))),
+                'horario_fim' => date('H:i', strtotime('+105 minutes', strtotime($current_time_str)))
+            ]
+        ]
+    ];
+}
+
+// 6. Google Tasks API
 function google_tasks_get_list_ids($token) {
     static $list_cache = [];
     if (!empty($list_cache)) return $list_cache;
@@ -332,7 +536,7 @@ function google_tasks_delete($token, $domain_key, $task_id) {
     return ($status >= 200 && $status < 300);
 }
 
-// 5. Google Calendar API (24h de Brasília)
+// 7. Google Calendar API (24h de Brasília & Injeção de Instruções no Evento)
 function google_calendar_list_events($token, DateTime $target_date) {
     $tz = new DateTimeZone('America/Sao_Paulo');
     $day_str = $target_date->format('Y-m-d');
@@ -360,20 +564,28 @@ function google_calendar_list_events($token, DateTime $target_date) {
     return $data['items'] ?? [];
 }
 
-function google_calendar_create_focus_block($token, $title, DateTime $start_dt, DateTime $end_dt, $invite_email = null) {
+function google_calendar_create_focus_block($token, $title, DateTime $start_dt, DateTime $end_dt, $description_extra = '', $invite_email = null) {
     $tz = 'America/Sao_Paulo';
     $cfg = get_config()['google'] ?? [];
     $invite = $invite_email ?? ($cfg['invite_email'] ?? 'rafael.barreto@blip.ai');
 
-    // sendUpdates=all garante que o Google envie o convite e insira o bloco na agenda corporativa
+    // sendUpdates=all envia o convite e insere o bloco na agenda corporativa Blip
     $url = 'https://www.googleapis.com/calendar/v3/calendars/primary/events?sendUpdates=all';
+
+    $full_desc = "🎯 Bloco de foco Deep Work agendado pelo Agente 'A Única Coisa' (Engenharia Neuro-Estratégica).\n\n"
+        . ($description_extra ? "{$description_extra}\n\n" : "")
+        . "🛡️ Checklist do Bunker:\n"
+        . "• Fechar Slack e abas de e-mail\n"
+        . "• Celular fora do campo de visão\n"
+        . "• Editor em tela cheia (modo foco)\n"
+        . "• Garrafa de água na mesa";
 
     $body = [
         'summary' => "🎯 {$title}",
-        'description' => "Bloco de foco Deep Work agendado pelo Agente 'A Única Coisa'.",
+        'description' => $full_desc,
         'start' => ['dateTime' => $start_dt->format(DateTime::RFC3339), 'timeZone' => $tz],
         'end' => ['dateTime' => $end_dt->format(DateTime::RFC3339), 'timeZone' => $tz],
-        'colorId' => '11',
+        'colorId' => '11', // Vermelho tomate / destaque visual no Google Calendar
         'reminders' => [
             'useDefault' => false,
             'overrides' => [
