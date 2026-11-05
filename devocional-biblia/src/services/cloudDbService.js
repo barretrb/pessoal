@@ -45,7 +45,7 @@ export const cloudDbService = {
 
     // Determina dinamicamente o maior dia concluído do Rafael (mínimo 299)
     const rafaelProgress = progressByProfile['default'] || {};
-    let maxCompletedDay = 299;
+    let maxCompletedDay = 308;
     Object.entries(rafaelProgress).forEach(([dId, dData]) => {
       if (dData && dData.completed) {
         const num = Number(dId);
@@ -114,7 +114,7 @@ export const cloudDbService = {
       }
 
       // 1. Garantir que os dias concluídos do Rafael (até o lastCompletedDay) estejam marcados
-      const targetLastDay = Math.max(Number(payload.lastCompletedDay) || 299, 299);
+      const targetLastDay = Math.max(Number(payload.lastCompletedDay) || 305, 305);
       const defKey = storage._resolveKey('devocional_plano_progress_v1', 'default');
       const defStored = localStorage.getItem(defKey);
       const defParsed = defStored ? JSON.parse(defStored) : {};
@@ -162,6 +162,11 @@ export const cloudDbService = {
       if (Array.isArray(payload.completedChapters)) {
         payload.completedChapters.forEach(ch => {
           chParsed[ch] = { completed: true, completedAt: chParsed[ch]?.completedAt || new Date().toISOString() };
+        });
+      }
+      if (targetLastDay >= 308) {
+        ['João 16', 'João 17', 'João 18', 'João 19', 'João 20', 'João 21'].forEach(ch => {
+          if (!chParsed[ch]) chParsed[ch] = { completed: true, completedAt: '2026-11-04T23:59:59.000Z' };
         });
       }
 
@@ -214,6 +219,7 @@ export const cloudDbService = {
       }
 
       const config = storage.getCloudConfig();
+      config.lastCompletedDay = targetLastDay;
       config.lastSyncedAt = payload.updatedAt || new Date().toISOString();
       storage.saveCloudConfig(config);
 
