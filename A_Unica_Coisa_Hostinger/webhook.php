@@ -70,7 +70,7 @@ if (in_array($lower, ['ok', 'ok!', 'sim', 'confirmar', 'confirmo', 'pode agendar
         $end_dt->modify('+90 minutes');
 
         google_calendar_create_focus_block($token, $title, $start_dt, $end_dt);
-        $reply = "🎯 *Bloco de foco agendado no seu Google Calendar com sucesso!*\n📌 *{$title}* (" . $start_dt->format('H:i') . " às " . $end_dt->format('H:i') . ")";
+        $reply = "🎯 *Bloco de foco agendado no seu Google Calendar com sucesso!*\n📌 *{$title}* (" . $start_dt->format('H:i') . " às " . $end_dt->format('H:i') . ")\n✉️ *Convidado:* `rafael.barreto@blip.ai`";
     } else {
         $reply = "⚠️ Não consegui conectar ao Google Calendar no momento.";
     }

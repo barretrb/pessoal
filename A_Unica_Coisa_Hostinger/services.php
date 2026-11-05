@@ -360,24 +360,40 @@ function google_calendar_list_events($token, DateTime $target_date) {
     return $data['items'] ?? [];
 }
 
-function google_calendar_create_focus_block($token, $title, DateTime $start_dt, DateTime $end_dt) {
+function google_calendar_create_focus_block($token, $title, DateTime $start_dt, DateTime $end_dt, $invite_email = null) {
     $tz = 'America/Sao_Paulo';
-    $url = 'https://www.googleapis.com/calendar/v3/calendars/primary/events';
+    $cfg = get_config()['google'] ?? [];
+    $invite = $invite_email ?? ($cfg['invite_email'] ?? 'rafael.barreto@blip.ai');
+
+    // sendUpdates=all garante que o Google envie o convite e insira o bloco na agenda corporativa
+    $url = 'https://www.googleapis.com/calendar/v3/calendars/primary/events?sendUpdates=all';
 
     $body = [
         'summary' => "🎯 {$title}",
         'description' => "Bloco de foco Deep Work agendado pelo Agente 'A Única Coisa'.",
         'start' => ['dateTime' => $start_dt->format(DateTime::RFC3339), 'timeZone' => $tz],
         'end' => ['dateTime' => $end_dt->format(DateTime::RFC3339), 'timeZone' => $tz],
-        'colorId' => '11'
+        'colorId' => '11',
+        'reminders' => [
+            'useDefault' => false,
+            'overrides' => [
+                ['method' => 'popup', 'minutes' => 10]
+            ]
+        ]
     ];
+
+    if ($invite) {
+        $body['attendees'] = [
+            ['email' => $invite]
+        ];
+    }
 
     $ch = curl_init($url);
     curl_setopt_array($ch, [
         CURLOPT_POST => true,
         CURLOPT_POSTFIELDS => json_encode($body),
         CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_TIMEOUT => 6,
+        CURLOPT_TIMEOUT => 8,
         CURLOPT_HTTPHEADER => [
             "Authorization: Bearer {$token}",
             'Content-Type: application/json'

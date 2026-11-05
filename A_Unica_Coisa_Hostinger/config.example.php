@@ -10,6 +10,7 @@ return [
         'client_id' => 'YOUR_GOOGLE_CLIENT_ID',
         'client_secret' => 'YOUR_GOOGLE_CLIENT_SECRET',
         'refresh_token' => 'YOUR_GOOGLE_REFRESH_TOKEN',
+        'invite_email' => 'rafael.barreto@blip.ai',
         'tasks_lists' => [
             'professional' => '💼 Profissional',
             'personal' => '🏠 Pessoal'
