@@ -2,6 +2,7 @@
   "1": {
     "book": "Esdras",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Ciro permite que os exilados regressem",
@@ -17,7 +18,7 @@
               },
               {
                 "ref": "2 Crônicas 36:22–23",
-                "text": "No primeiro ano do reinado de Ciro, rei da Pérsia,156 o SENHOR cumpriu a profecia que havia anunciado por meio de Jeremias.157 O SENHOR despertou o coração de Ciro para registrar por escrito a seguinte proclamação e enviá-la a todo o seu reino:"
+                "text": "No primeiro ano do reinado de Ciro, rei da Pérsia, o SENHOR cumpriu a profecia que havia anunciado por meio de Jeremias. O SENHOR despertou o coração de Ciro para registrar por escrito a seguinte proclamação e enviá-la a todo o seu reino:"
               },
               {
                 "ref": "Jeremias 25:12–14",
@@ -109,11 +110,11 @@
               },
               {
                 "ref": "2 Crônicas 36:22",
-                "text": "No primeiro ano do reinado de Ciro, rei da Pérsia,156 o SENHOR cumpriu a profecia que havia anunciado por meio de Jeremias.157 O SENHOR despertou o coração de Ciro para registrar por escrito a seguinte proclamação e enviá-la a todo o seu reino:"
+                "text": "No primeiro ano do reinado de Ciro, rei da Pérsia, o SENHOR cumpriu a profecia que havia anunciado por meio de Jeremias. O SENHOR despertou o coração de Ciro para registrar por escrito a seguinte proclamação e enviá-la a todo o seu reino:"
               },
               {
                 "ref": "Filipenses 2:13",
-                "text": "Pois Deus está agindo em vocês, dando- lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
+                "text": "Pois Deus está agindo em vocês, dando-lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
               },
               {
                 "ref": "Neemias 2:12",
@@ -151,7 +152,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 36:7",
-                "text": "Nabucodonosor também levou alguns dos tesouros do templo do SENHOR e os colocou em seu palácio,150 na Babilônia."
+                "text": "Nabucodonosor também levou alguns dos tesouros do templo do SENHOR e os colocou em seu palácio, na Babilônia."
               },
               {
                 "ref": "2 Reis 24:13",
@@ -192,12 +193,12 @@
           },
           {
             "number": 9,
-            "text": "Esta é uma lista dos objetos que foram devolvidos: 30 bacias de ouro, 1.000 bacias de prata, 29 incensários de prata, 1030 tigelas de ouro, 410 tigelas de prata, 1.000 objetos diversos.",
+            "text": "Esta é uma lista dos objetos que foram devolvidos: 30 bacias de ouro, 1.000 bacias de prata, 29 incensários de prata,",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Mateus 10:29–31",
-                "text": "Quanto custam dois pardais? Uma moeda de cobre?61 No entanto, nenhum deles cai no chão sem o conhecimento de seu Pai."
+                "text": "Quanto custam dois pardais? Uma moeda de cobre? No entanto, nenhum deles cai no chão sem o conhecimento de seu Pai."
               },
               {
                 "ref": "2 Crônicas 4:8",
@@ -214,6 +215,12 @@
             ]
           },
           {
+            "number": 10,
+            "text": "30 tigelas de ouro, 410 tigelas de prata, 1.000 objetos diversos.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 11,
             "text": "Ao todo, havia 5.400 utensílios de ouro e prata. Sesbazar trouxe tudo isso consigo quando os exilados voltaram da Babilônia para Jerusalém.",
             "isJesusWords": false,
@@ -224,7 +231,7 @@
               },
               {
                 "ref": "2 Timóteo 2:19–21",
-                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”."
               },
               {
                 "ref": "Romanos 9:23",
@@ -239,6 +246,7 @@
   "2": {
     "book": "Esdras",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Exilados que regressaram com Zorobabel",
@@ -295,7 +303,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Esdras 8:3"
+                "ref": "Esdras 8:3",
+                "text": "descendente de Secanias; da família de Parós: Zacarias e 150 homens registrados com ele;"
               },
               {
                 "ref": "Esdras 10:25",
@@ -569,7 +578,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 2:50–52",
-                "text": "Todos esses foram descendentes de Calebe. Descendentes de Hur, filho de Calebe Os filhos de Hur, filho mais velho de Efrata, esposa de Calebe, foram: Sobal, fundador de Quiriate-Jearim,"
+                "text": "Todos esses foram descendentes de Calebe."
               }
             ]
           },
@@ -1141,7 +1150,7 @@
             "crossReferences": [
               {
                 "ref": "Neemias 7:61",
-                "text": "Nessa ocasião, outro grupo regressou das cidades de Tel-Melá, Tel-Harsa, Querube, Adã40 e Imer. Contudo, não puderam comprovar que eles ou suas famílias eram descendentes de Israel."
+                "text": "Nessa ocasião, outro grupo regressou das cidades de Tel-Melá, Tel-Harsa, Querube, Adã e Imer. Contudo, não puderam comprovar que eles ou suas famílias eram descendentes de Israel."
               }
             ]
           },
@@ -1163,7 +1172,7 @@
             "crossReferences": [
               {
                 "ref": "2 Samuel 17:27",
-                "text": "Quando Davi chegou a Maanaim, foi recebido por Sobi, filho de Naás, de Rabá dos amonitas, e por Maquir, filho de Amiel, de Lo- Debar, e por Barzilai, de Rogelim, em Gileade."
+                "text": "Quando Davi chegou a Maanaim, foi recebido por Sobi, filho de Naás, de Rabá dos amonitas, e por Maquir, filho de Amiel, de Lo-Debar, e por Barzilai, de Rogelim, em Gileade."
               },
               {
                 "ref": "1 Reis 2:7",
@@ -1273,7 +1282,7 @@
           },
           {
             "number": 66,
-            "text": "Levaram consigo 736 cavalos, 245 mulas, 67435 camelos e 6.720 jumentos.",
+            "text": "Levaram consigo 736 cavalos, 245 mulas,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1286,9 +1295,15 @@
               },
               {
                 "ref": "Neemias 7:68",
-                "text": "Levaram consigo 736 cavalos, 245 mulas, 69435 camelos e 6.720 jumentos."
+                "text": "Levaram consigo 736 cavalos, 245 mulas,"
               }
             ]
+          },
+          {
+            "number": 67,
+            "text": "435 camelos e 6.720 jumentos.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 68,
@@ -1328,7 +1343,7 @@
               },
               {
                 "ref": "1 Crônicas 22:14",
-                "text": "“Trabalhei arduamente para providenciar os materiais para a construção do templo do SENHOR: 3.500 toneladas de ouro, 35.000 toneladas de prata155 e tanto ferro e bronze que não se pode pesar. Também juntei madeira e pedr..."
+                "text": "“Trabalhei arduamente para providenciar os materiais para a construção do templo do SENHOR: 3.500 toneladas de ouro, 35.000 toneladas de prata e tanto ferro e bronze que não se pode pesar. Também juntei madeira e pedra..."
               },
               {
                 "ref": "Neemias 7:71–72",
@@ -1366,6 +1381,7 @@
   "3": {
     "book": "Esdras",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "A reconstrução do altar",
@@ -1547,7 +1563,7 @@
               },
               {
                 "ref": "1 Crônicas 23:4",
-                "text": "De todos os levitas, 24 mil foram designados para supervisionar o trabalho no templo do SENHOR, 6 mil para ser oficiais e juízes, 54 mil para ser guardas das portas e 4 mil para louvar o SENHOR com os instrumentos musicais que Davi fez para esse fim."
+                "text": "De todos os levitas, 24 mil foram designados para supervisionar o trabalho no templo do SENHOR, 6 mil para ser oficiais e juízes,"
               },
               {
                 "ref": "1 Crônicas 23:24–32",
@@ -1630,7 +1646,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Ageu 2:3"
+                "ref": "Ageu 2:3",
+                "text": "‘Algum de vocês se lembra deste templo em sua antiga glória? Como ele lhes parece agora, em comparação com o anterior? Deve parecer insignificante!"
               },
               {
                 "ref": "Jó 8:7",
@@ -1676,6 +1693,7 @@
   "4": {
     "book": "Esdras",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Inimigos se opõem à reconstrução",
@@ -1691,7 +1709,7 @@
               },
               {
                 "ref": "1 Crônicas 22:9–10",
-                "text": "Contudo, você terá um filho que será um homem de paz. Darei a ele descanso de seus inimigos de todas as terras vizinhas. Seu nome será Salomão,154 e darei paz e tranquilidade a Israel durante seu reinado."
+                "text": "Contudo, você terá um filho que será um homem de paz. Darei a ele descanso de seus inimigos de todas as terras vizinhas. Seu nome será Salomão, e darei paz e tranquilidade a Israel durante seu reinado."
               },
               {
                 "ref": "Daniel 5:13",
@@ -1783,7 +1801,7 @@
               },
               {
                 "ref": "Atos 24:1–27",
-                "text": "Cinco dias depois, o sumo sacerdote Ananias chegou com alguns dos líderes do povo e um advogado119 chamado Tértulo para exporem ao governador sua causa contra Paulo."
+                "text": "Cinco dias depois, o sumo sacerdote Ananias chegou com alguns dos líderes do povo e um advogado chamado Tértulo para exporem ao governador sua causa contra Paulo."
               },
               {
                 "ref": "Salmos 2:1–2",
@@ -1825,12 +1843,12 @@
           },
           {
             "number": 7,
-            "text": "Mais tarde, durante o reinado de Artaxerxes, rei da Pérsia, os inimigos de Judá, liderados por Bislão, Mitredate e Tabeel, enviaram a Artaxerxes uma carta em aramaico, que foi traduzida para o rei. 819 O comandante Reum e o secretário da corte Sinsai escreveram a carta, na qual apresentaram ao rei Artaxerxes um relatório negativo sobre Jerusalém.",
+            "text": "Mais tarde, durante o reinado de Artaxerxes, rei da Pérsia, os inimigos de Judá, liderados por Bislão, Mitredate e Tabeel, enviaram a Artaxerxes uma carta em aramaico, que foi traduzida para o rei.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "2 Reis 18:26",
-                "text": "Então Eliaquim, filho de Hilquias, Sebna e Joá disseram ao porta- voz: “Por favor, fale conosco em aramaico, pois entendemos bem essa língua. Não fale em hebraico, pois o povo sobre o muro o ouvirá”."
+                "text": "Então Eliaquim, filho de Hilquias, Sebna e Joá disseram ao porta-voz: “Por favor, fale conosco em aramaico, pois entendemos bem essa língua. Não fale em hebraico, pois o povo sobre o muro o ouvirá”."
               },
               {
                 "ref": "Daniel 2:4",
@@ -1845,6 +1863,12 @@
                 "text": "Saudaram o rei em nome de todos os seus colegas: os juízes e as autoridades locais, o povo de Tarpel, os persas, os babilônios e o povo de Ereque e de Susã (isto é, Elão)."
               }
             ]
+          },
+          {
+            "number": 8,
+            "text": "O comandante Reum e o secretário da corte Sinsai escreveram a carta, na qual apresentaram ao rei Artaxerxes um relatório negativo sobre Jerusalém.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 9,
@@ -1879,7 +1903,8 @@
                 "text": "O rei Artaxerxes enviou a seguinte resposta: “Ao comandante Reum, ao secretário da corte Sinsai, e a seus companheiros em Samaria e em toda a província a oeste do rio Eufrates. Saudações."
               },
               {
-                "ref": "Esdras 7:12"
+                "ref": "Esdras 7:12",
+                "text": "“De Artaxerxes, rei dos reis, ao sacerdote Esdras, mestre da lei do Deus dos céus. Saudações."
               },
               {
                 "ref": "2 Reis 17:24–41",
@@ -1925,7 +1950,7 @@
               },
               {
                 "ref": "Esdras 5:3",
-                "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar- Bozenai e seus companheiros foram a Jerusalém e perguntaram: “Quem lhes deu permissão para reconstruir este templo e restaurar esta estrutura?”."
+                "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar-Bozenai e seus companheiros foram a Jerusalém e perguntaram: “Quem lhes deu permissão para reconstruir este templo e restaurar esta estrutura?”."
               },
               {
                 "ref": "Esdras 5:9",
@@ -2028,7 +2053,7 @@
             "crossReferences": [
               {
                 "ref": "Esdras 4:7",
-                "text": "Mais tarde, durante o reinado de Artaxerxes, rei da Pérsia, os inimigos de Judá, liderados por Bislão, Mitredate e Tabeel, enviaram a Artaxerxes uma carta em aramaico, que foi traduzida para o rei. 819 O comandante Reum..."
+                "text": "Mais tarde, durante o reinado de Artaxerxes, rei da Pérsia, os inimigos de Judá, liderados por Bislão, Mitredate e Tabeel, enviaram a Artaxerxes uma carta em aramaico, que foi traduzida para o rei."
               },
               {
                 "ref": "Esdras 4:9–11",
@@ -2074,7 +2099,7 @@
               },
               {
                 "ref": "2 Reis 24:20",
-                "text": "Estas coisas aconteceram por causa da ira do SENHOR contra o povo de Jerusalém e de Judá. Por fim, ele os expulsou de sua presença e os mandou para o exílio. A queda de Jerusalém Zedequias se rebelou contra o rei da Babilônia."
+                "text": "Estas coisas aconteceram por causa da ira do SENHOR contra o povo de Jerusalém e de Judá. Por fim, ele os expulsou de sua presença e os mandou para o exílio."
               }
             ]
           },
@@ -2088,7 +2113,8 @@
                 "text": "Então o SENHOR fez uma aliança com Abrão naquele dia e disse: “Dei esta terra a seus descendentes, desde a fronteira com o Egito até o grande rio Eufrates,"
               },
               {
-                "ref": "1 Reis 4:21"
+                "ref": "1 Reis 4:21",
+                "text": "Salomão governava sobre todos os reinos, desde o rio Eufrates, ao norte, até a terra dos filisteus e a fronteira do Egito, ao sul. Os povos conquistados enviavam tributos a Salomão e continuaram a servi-lo durante toda a vida."
               },
               {
                 "ref": "1 Crônicas 18:3",
@@ -2131,7 +2157,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Esdras 4:8–9"
+                "ref": "Esdras 4:8–9",
+                "text": "O comandante Reum e o secretário da corte Sinsai escreveram a carta, na qual apresentaram ao rei Artaxerxes um relatório negativo sobre Jerusalém."
               },
               {
                 "ref": "Miqueias 2:1",
@@ -2154,7 +2181,7 @@
         "verses": [
           {
             "number": 24,
-            "text": "Assim, a obra no templo de Deus em Jerusalém foi interrompida e",
+            "text": "Assim, a obra no templo de Deus em Jerusalém foi interrompida e ficou parada até o segundo ano do reinado de Dario, rei da Pérsia.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2182,9 +2209,10 @@
   "5": {
     "book": "Esdras",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
-        "title": "ficou parada até o segundo ano do reinado de Dario, rei da Pérsia.23",
+        "title": "",
         "verses": [
           {
             "number": 1,
@@ -2234,7 +2262,7 @@
           },
           {
             "number": 3,
-            "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar- Bozenai e seus companheiros foram a Jerusalém e perguntaram: “Quem lhes deu permissão para reconstruir este templo e restaurar esta estrutura?”.",
+            "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar-Bozenai e seus companheiros foram a Jerusalém e perguntaram: “Quem lhes deu permissão para reconstruir este templo e restaurar esta estrutura?”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2243,7 +2271,7 @@
               },
               {
                 "ref": "Esdras 6:13",
-                "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar- Bozenai e seus companheiros obedeceram de imediato à ordem do rei Dario."
+                "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar-Bozenai e seus companheiros obedeceram de imediato à ordem do rei Dario."
               },
               {
                 "ref": "Atos 4:7",
@@ -2300,7 +2328,7 @@
               },
               {
                 "ref": "Esdras 5:3",
-                "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar- Bozenai e seus companheiros foram a Jerusalém e perguntaram: “Quem lhes deu permissão para reconstruir este templo e restaurar esta estrutura?”."
+                "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar-Bozenai e seus companheiros foram a Jerusalém e perguntaram: “Quem lhes deu permissão para reconstruir este templo e restaurar esta estrutura?”."
               }
             ]
           },
@@ -2318,7 +2346,8 @@
                 "text": "Que o próprio Senhor da paz lhes dê paz em todos os momentos e situações. Que o Senhor esteja com todos vocês."
               },
               {
-                "ref": "Daniel 4:1"
+                "ref": "Daniel 4:1",
+                "text": "O rei Nabucodonosor enviou esta mensagem a povos de todas as raças, nações e línguas em todo o mundo: “Paz e prosperidade!"
               },
               {
                 "ref": "João 14:27",
@@ -2356,7 +2385,7 @@
             "crossReferences": [
               {
                 "ref": "Esdras 5:3–4",
-                "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar- Bozenai e seus companheiros foram a Jerusalém e perguntaram: “Quem lhes deu permissão para reconstruir este templo e restaurar esta estrutura?”."
+                "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar-Bozenai e seus companheiros foram a Jerusalém e perguntaram: “Quem lhes deu permissão para reconstruir este templo e restaurar esta estrutura?”."
               }
             ]
           },
@@ -2377,7 +2406,7 @@
               },
               {
                 "ref": "Daniel 3:26",
-                "text": "Então Nabucodonosor se aproximou o máximo que pôde da porta da fornalha ardente e gritou: “Sadraque, Mesaque e Abede- Nego, servos do Deus Altíssimo, saiam! Venham aqui!”. E Sadraque, Mesaque e Abede-Nego saíram do meio do fogo."
+                "text": "Então Nabucodonosor se aproximou o máximo que pôde da porta da fornalha ardente e gritou: “Sadraque, Mesaque e Abede-Nego, servos do Deus Altíssimo, saiam! Venham aqui!”. E Sadraque, Mesaque e Abede-Nego saíram do meio do fogo."
               },
               {
                 "ref": "Salmos 119:46",
@@ -2526,6 +2555,7 @@
   "6": {
     "book": "Esdras",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "Dario aprova a reconstrução",
@@ -2579,7 +2609,7 @@
               },
               {
                 "ref": "Ezequiel 41:13–15",
-                "text": "Então o homem mediu o templo, e tinha 50 metros141 de comprimento. O pátio ao redor do edifício, incluindo suas paredes, tinha mais 50 metros de comprimento."
+                "text": "Então o homem mediu o templo, e tinha 50 metros de comprimento. O pátio ao redor do edifício, incluindo suas paredes, tinha mais 50 metros de comprimento."
               },
               {
                 "ref": "2 Crônicas 2:6",
@@ -2640,7 +2670,7 @@
             "crossReferences": [
               {
                 "ref": "Esdras 5:3",
-                "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar- Bozenai e seus companheiros foram a Jerusalém e perguntaram: “Quem lhes deu permissão para reconstruir este templo e restaurar esta estrutura?”."
+                "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar-Bozenai e seus companheiros foram a Jerusalém e perguntaram: “Quem lhes deu permissão para reconstruir este templo e restaurar esta estrutura?”."
               },
               {
                 "ref": "Romanos 8:31",
@@ -2766,7 +2796,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 9:3",
-                "text": "O SENHOR lhe disse: “Ouvi sua oração e sua súplica. Consagrei este templo que você construiu, onde meu nome será honrado para sempre. Olharei continuamente para ele, com todo o meu ­coração."
+                "text": "O SENHOR lhe disse: “Ouvi sua oração e sua súplica. Consagrei este templo que você construiu, onde meu nome será honrado para sempre. Olharei continuamente para ele, com todo o meu coração."
               },
               {
                 "ref": "Deuteronômio 12:5",
@@ -2789,7 +2819,7 @@
         "verses": [
           {
             "number": 13,
-            "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar- Bozenai e seus companheiros obedeceram de imediato à ordem do rei Dario.",
+            "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar-Bozenai e seus companheiros obedeceram de imediato à ordem do rei Dario.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2824,7 +2854,8 @@
                 "text": "Assim, a obra no templo de Deus em Jerusalém foi interrompida e"
               },
               {
-                "ref": "Zacarias 2:1–4"
+                "ref": "Zacarias 2:1–4",
+                "text": "Quando levantei os olhos outra vez, vi um homem segurando uma corda de medir."
               },
               {
                 "ref": "Zacarias 4:9",
@@ -3016,6 +3047,7 @@
   "7": {
     "book": "Esdras",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Esdras chega a Jerusalém",
@@ -3238,7 +3270,7 @@
             ]
           },
           {
-            "number": 1242,
+            "number": 12,
             "text": "“De Artaxerxes, rei dos reis, ao sacerdote Esdras, mestre da lei do Deus dos céus. Saudações.",
             "isJesusWords": false,
             "crossReferences": []
@@ -3319,7 +3351,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 29:6",
-                "text": "Então os chefes das famílias, os líderes das tribos, os generais e os capitães,184 e os administradores do rei ofertaram voluntariamente."
+                "text": "Então os chefes das famílias, os líderes das tribos, os generais e os capitães, e os administradores do rei ofertaram voluntariamente."
               },
               {
                 "ref": "1 Crônicas 29:9",
@@ -3387,7 +3419,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Esdras 8:27–30"
+                "ref": "Esdras 8:27–30",
+                "text": "20 tigelas de ouro, cada uma pesando 8,6 quilos; 2 utensílios finos de bronze polido, tão valiosos como ouro."
               },
               {
                 "ref": "2 Crônicas 32:19",
@@ -3531,7 +3564,8 @@
                 "text": "“Se alguém desobedecer a este decreto de alguma maneira, terá uma viga de sua casa arrancada. Ele será amarrado a essa viga e pendurado nela, e sua casa será transformada num monte de entulho."
               },
               {
-                "ref": "Deuteronômio 13:1–18"
+                "ref": "Deuteronômio 13:1–18",
+                "text": "“Surgirão entre vocês profetas ou pessoas que têm sonhos sobre o futuro, e eles prometerão sinais ou milagres."
               },
               {
                 "ref": "Levítico 20:1–27",
@@ -3590,7 +3624,7 @@
               },
               {
                 "ref": "Gênesis 32:28",
-                "text": "O homem disse: “Seu nome não será mais Jacó. De agora em diante, você se chamará Israel,117 pois lutou com Deus e com os homens e venceu”."
+                "text": "O homem disse: “Seu nome não será mais Jacó. De agora em diante, você se chamará Israel, pois lutou com Deus e com os homens e venceu”."
               }
             ]
           }
@@ -3601,6 +3635,7 @@
   "8": {
     "book": "Esdras",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "Exilados que regressaram com Esdras",
@@ -3630,7 +3665,7 @@
           },
           {
             "number": 2,
-            "text": "da família de Fineias: Gérson; da família de Itamar: Daniel; da família de Davi: Hatus,3descendente de Secanias; da família de Parós: Zacarias e 150 homens registrados com ele;",
+            "text": "da família de Fineias: Gérson; da família de Itamar: Daniel; da família de Davi: Hatus,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3650,6 +3685,12 @@
                 "text": "Os descendentes de Arão, os sacerdotes, foram divididos em turnos para o serviço. Os filhos de Arão foram: Nadabe, Abiú, Eleazar e Itamar."
               }
             ]
+          },
+          {
+            "number": 3,
+            "text": "descendente de Secanias; da família de Parós: Zacarias e 150 homens registrados com ele;",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 4,
@@ -3861,7 +3902,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 26:14",
-                "text": "Meselemias169 e seu grupo ficaram responsáveis pela porta leste. Seu filho Zacarias, conselheiro de grande sabedoria, ficou responsável pela porta norte."
+                "text": "Meselemias e seu grupo ficaram responsáveis pela porta leste. Seu filho Zacarias, conselheiro de grande sabedoria, ficou responsável pela porta norte."
               },
               {
                 "ref": "Esdras 10:21",
@@ -3929,10 +3970,12 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Crônicas 6:16"
+                "ref": "1 Crônicas 6:16",
+                "text": "Os filhos de Levi foram: Gérson, Coate e Merari."
               },
               {
-                "ref": "1 Crônicas 6:1"
+                "ref": "1 Crônicas 6:1",
+                "text": "Os filhos de Levi foram: Gérson, Coate e Merari."
               },
               {
                 "ref": "Neemias 10:11",
@@ -3969,7 +4012,7 @@
           },
           {
             "number": 21,
-            "text": "Ali, junto ao canal de Aava, ordenei que todos nós jejuássemos e nos humilhássemos diante de nosso Deus. Oramos para que ele nos propor­cionasse uma viagem segura e nos protegesse, como também a nossos filhos e a nossos bens.",
+            "text": "Ali, junto ao canal de Aava, ordenei que todos nós jejuássemos e nos humilhássemos diante de nosso Deus. Oramos para que ele nos proporcionasse uma viagem segura e nos protegesse, como também a nossos filhos e a nossos bens.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4066,20 +4109,26 @@
               },
               {
                 "ref": "Filipenses 4:8",
-                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem- se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
+                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem-se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
               }
             ]
           },
           {
             "number": 26,
-            "text": "Pesei o tesouro ao entregá-lo, e seu total era: 22.750 quilos de prata, 3.500 quilos de utensílios de prata, 3.500 quilos de ouro, 2720 tigelas de ouro, cada uma pesando 8, quilos; 2 utensílios finos de bronze polido, tão valiosos como ouro.",
+            "text": "Pesei o tesouro ao entregá-lo, e seu total era: 22.750 quilos de prata, 3.500 quilos de utensílios de prata, 3.500 quilos de ouro,",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Esdras 1:9–11",
-                "text": "Esta é uma lista dos objetos que foram devolvidos: 30 bacias de ouro, 1.000 bacias de prata, 29 incensários de prata, 1030 tigelas de ouro, 410 tigelas de prata, 1.000 objetos diversos."
+                "text": "Esta é uma lista dos objetos que foram devolvidos: 30 bacias de ouro, 1.000 bacias de prata, 29 incensários de prata,"
               }
             ]
+          },
+          {
+            "number": 27,
+            "text": "20 tigelas de ouro, cada uma pesando 8,6 quilos; 2 utensílios finos de bronze polido, tão valiosos como ouro.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 28,
@@ -4134,7 +4183,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 29:2–3",
-                "text": "Sm 23.."
+                "text": "Usando todos os recursos a meu dispor, juntei o que pude para a construção do templo de meu Deus. Agora, há ouro, prata, bronze, ferro e madeira suficientes, bem como grandes quantidades de ônix e outras pedras preciosas..."
               },
               {
                 "ref": "Salmos 122:9",
@@ -4157,7 +4206,7 @@
             "crossReferences": [
               {
                 "ref": "Esdras 8:21–22",
-                "text": "Ali, junto ao canal de Aava, ordenei que todos nós jejuássemos e nos humilhássemos diante de nosso Deus. Oramos para que ele nos propor­cionasse uma viagem segura e nos protegesse, como também a nossos filhos e a nossos bens."
+                "text": "Ali, junto ao canal de Aava, ordenei que todos nós jejuássemos e nos humilhássemos diante de nosso Deus. Oramos para que ele nos proporcionasse uma viagem segura e nos protegesse, como também a nossos filhos e a nossos bens."
               },
               {
                 "ref": "Esdras 7:9",
@@ -4236,7 +4285,7 @@
               },
               {
                 "ref": "2 Crônicas 29:31–32",
-                "text": "Então Ezequias declarou: “Agora que vocês se consagraram ao SENHOR, tragam seus sacri­fícios e ofertas de gratidão ao templo do SENHOR”. E a comunidade trouxe sacrifícios e ofertas de gratidão, e alguns, voluntariamente, também trouxeram holocaustos."
+                "text": "Então Ezequias declarou: “Agora que vocês se consagraram ao SENHOR, tragam seus sacrifícios e ofertas de gratidão ao templo do SENHOR”. E a comunidade trouxe sacrifícios e ofertas de gratidão, e alguns, voluntariamente, também trouxeram holocaustos."
               }
             ]
           },
@@ -4251,7 +4300,7 @@
               },
               {
                 "ref": "Esdras 4:7–23",
-                "text": "Mais tarde, durante o reinado de Artaxerxes, rei da Pérsia, os inimigos de Judá, liderados por Bislão, Mitredate e Tabeel, enviaram a Artaxerxes uma carta em aramaico, que foi traduzida para o rei. 819 O comandante Reum..."
+                "text": "Mais tarde, durante o reinado de Artaxerxes, rei da Pérsia, os inimigos de Judá, liderados por Bislão, Mitredate e Tabeel, enviaram a Artaxerxes uma carta em aramaico, que foi traduzida para o rei."
               },
               {
                 "ref": "Isaías 56:6–7",
@@ -4270,6 +4319,7 @@
   "9": {
     "book": "Esdras",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "A oração de Esdras a respeito dos casamentos mistos",
@@ -4354,7 +4404,7 @@
               },
               {
                 "ref": "Isaías 66:2",
-                "text": "Co 6.."
+                "text": "Minhas mãos criaram os céus e a terra; eles e tudo que neles há são meus. Eu, o SENHOR, falei! “Abençoarei os de coração humilde e oprimido, os que tremem diante de minha palavra."
               },
               {
                 "ref": "Êxodo 29:39",
@@ -4377,7 +4427,7 @@
               },
               {
                 "ref": "1 Reis 8:22",
-                "text": "Então Salomão se pôs diante do altar do SENHOR, na presença de toda a comunidade de Israel."
+                "text": "Então Salomão se pôs diante do altar do SENHOR, na presença de toda a comunidade de Israel. Levantou as mãos para o céu"
               },
               {
                 "ref": "Êxodo 9:33",
@@ -4408,7 +4458,7 @@
               },
               {
                 "ref": "Jó 42:6",
-                "text": "Retiro tudo que disse e me sento arrependido no pó e nas cinzas”. Conclusão: o SENHOR abençoa Jó"
+                "text": "Retiro tudo que disse e me sento arrependido no pó e nas cinzas”."
               }
             ]
           },
@@ -4561,7 +4611,7 @@
               },
               {
                 "ref": "Lamentações 3:22",
-                "text": "O amor do SENHOR não tem fim!12 Suas misericórdias são inesgotáveis."
+                "text": "O amor do SENHOR não tem fim! Suas misericórdias são inesgotáveis."
               },
               {
                 "ref": "Lamentações 3:39–40",
@@ -4626,6 +4676,7 @@
   "10": {
     "book": "Esdras",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "O povo confessa seu pecado",
@@ -4695,7 +4746,7 @@
               },
               {
                 "ref": "Salmos 119:120",
-                "text": "Estremeço de medo de ti; tenho temor reverente por teus estatutos. Áin"
+                "text": "Estremeço de medo de ti; tenho temor reverente por teus estatutos."
               }
             ]
           },
@@ -4808,7 +4859,7 @@
           },
           {
             "number": 9,
-            "text": "Dentro de três dias, todo o povo de Judá e de Benjamim havia se reunido em Jerusalém. A reu­nião aconteceu no dia 19 de dezembro, e todo o povo estava sentado na praça diante do templo de Deus. Tremiam por causa da seriedade do assunto e porque chovia.",
+            "text": "Dentro de três dias, todo o povo de Judá e de Benjamim havia se reunido em Jerusalém. A reunião aconteceu no dia 19 de dezembro, e todo o povo estava sentado na praça diante do templo de Deus. Tremiam por causa da seriedade do assunto e porque chovia.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4938,7 +4989,7 @@
           },
           {
             "number": 15,
-            "text": "Os únicos que se opuseram à proposta foram Jônatas, filho de Asael, e Jazeías, filho de Tic­vá, apoiados por Mesulão e pelo levita Sabetai.",
+            "text": "Os únicos que se opuseram à proposta foram Jônatas, filho de Asael, e Jazeías, filho de Ticvá, apoiados por Mesulão e pelo levita Sabetai.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5234,7 +5285,7 @@
             "crossReferences": [
               {
                 "ref": "Neemias 3:11",
-                "text": "Em seguida vinham Malquias, filho de Harim, e Hassube, filho de Paate- Moabe, que consertaram outra parte do muro e a torre dos Fornos."
+                "text": "Em seguida vinham Malquias, filho de Harim, e Hassube, filho de Paate-Moabe, que consertaram outra parte do muro e a torre dos Fornos."
               },
               {
                 "ref": "Neemias 7:35",
@@ -5348,7 +5399,7 @@
           },
           {
             "number": 44,
-            "text": "Todos esses homens se casaram com mulheres estrangeiras, e alguns tiveram filhos com essas esposas. 1 1.1a O primeiro ano do reinado de Ciro sobre a Babilônia foi 538 a.C. 2 1.1b Ver Jr 25.11-12; 29.. 3 1. Em hebraico, Sesbazar, príncipe de Judá. 4 1. O significado do termo hebraico é incerto. 5 2. Conforme o texto paralelo em Ne 7.; o hebraico traz Azmavete. 6 2. Conforme alguns manuscritos hebraicos e a Septuaginta (ver tb. Ne 7.29); o hebraico traz Quiriate-Arim. 7 2. Ou do outro Elão. 8 2. Conforme leitura alternativa do Texto Massorético (ver tb. Ne 7.48); a outra leitura traz Samlai. 9 2. Em hebraico, 61.000 dáricos de ouro, 5.000 minas de prata. 10 3. O ano não é especificado, de modo que pode ter sido no primeiro ano do reinado de Ciro (538 a.C.) ou no segundo (537 a.C.). Esse sétimo mês do antigo calendário lunar hebraico caiu entre setembro e outubro de 538 a.C., ou entre outubro e novembro de 537 a.C. 11 3. Em hebraico, Jozadaque, variação de Jeozadaque; também em 3.. 12 3. Em hebraico, No primeiro dia do sétimo mês. Esse dia do antigo calendário lunar hebraico caía em setembro ou outubro. A Festa das Cabanas começava no décimo quinto dia do sétimo mês. 13 3. Em hebraico, do mar. 14 3. Esse segundo mês do antigo calendário lunar hebraico caiu entre abril e maio de 536 a.C. 15 3.9 Em hebraico, os filhos de Judá (i.e., bene Yehudah). Bene também pode ser lido aqui como o nome próprio Binui; é provável que Yehudah seja outro nome para Hodavias. Comparar com 2.; Ne 7.. 16 4. Dario reinou de 521 a 486 a.C. 17 4. Em hebraico, Assuero, outro nome para Xerxes. Ele reinou de 486 a 465 a.C. 18 4. Artaxerxes reinou de 465 a 424 a.C. 19 4. O texto original de 4.8—6. está em aramaico. 20 4.10a Em aramaico, Osnapar, outro nome para Assurbanípal. 21 4.10b Em aramaico, província além do rio; também em 4.,,,. 22 4. Em aramaico, Visto que comemos o sal do palácio. 23 4. O segundo ano do reinado de Dario foi 520 a.C. O versículo 24 retoma a narrativa iniciada em 4.1-5. 24 5. Em aramaico, Jozadaque, variação de Jeozadaque. 25 5. Em aramaico, província além do rio; também em 5.. 26 5. Conforme um manuscrito hebraico, a Septuaginta e a versão siríaca; o Texto Massorético traz Então lhes dissemos. 27 5. Em aramaico, Nabucodonosor, o caldeu. 28 5. Ciro, rei da Pérsia, é identificado aqui como rei da Babilônia porque a Pérsia havia conquistado o império babilônico. 29 6. Em aramaico, 60 côvados de altura e 60 côvados de largura. 30 6. Em aramaico, província além do rio; também em 6.6b,,. 31 6. Em aramaico, num monte de esterco. 32 6. Em aramaico, no terceiro dia do mês de adar, do antigo calendário lunar hebraico. Vários acontecimentos em Esdras podem ser confirmados por datas em registros persas que sobreviveram ao tempo e relacionados com precisão ao calendário moderno. O ano foi 515 a.C. 33 6. Em aramaico, No décimo quarto dia do primeiro mês, do antigo calendário lunar hebraico. O ano foi 515 a.C.; ver também nota em 6.. 34 6. Dario, rei da Pérsia, é identificado aqui como rei da Assíria porque a Pérsia havia conquistado o império babilônico, que incluía o império assírio, anterior ao babilônico. 35 7.1a Artaxerxes reinou de 465 a 424 a.C. 36 7.1b Ou descendente de; ver",
+            "text": "Todos esses homens se casaram com mulheres estrangeiras, e alguns tiveram filhos com essas esposas.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5368,58 +5419,6 @@
                 "text": "Por que, meu filho, se deixar cativar pela mulher imoral, ou acariciar os seios da promíscua?"
               }
             ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 6.. 37 7. Ou descendente de; ver",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Daniel 9:20",
-                "text": "Continuei a orar e a confessar meu pecado e o pecado de meu povo, Israel, suplicando ao SENHOR, meu Deus, por Jerusalém, seu santo monte."
-              },
-              {
-                "ref": "Salmos 119:136",
-                "text": "Rios de lágrimas brotam de meus olhos, porque as pessoas não cumprem tua lei."
-              },
-              {
-                "ref": "Romanos 9:2",
-                "text": "Meu coração está cheio de amarga tristeza e angústia sem fim"
-              },
-              {
-                "ref": "1 João 1:8–10",
-                "text": "Se afirmamos que não temos pecados, enganamos a nós mesmos e não vivemos na verdade."
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 6.6-10. 38 7. Ou do primeiro sacerdote. 39 7. Em hebraico, no quinto mês, do antigo calendário lunar hebraico. O ano foi 458 a.C. 40 7.9a Em hebraico, no primeiro dia do primeiro mês, do antigo calendário lunar hebraico. O ano foi 458 a.C.; ver também nota em 6.. 41 7.9b Em hebraico, no primeiro dia do quinto mês, do antigo calendário lunar hebraico. O ano foi 458 a.C.; ver também nota em 6.. 42 7. O texto original de 7.12-26 está em aramaico. 43 7.21 Em aramaico, província além do rio; também em 7.. 44 7.22a Em aramaico, 100 talentos. 45 7.22b Em aramaico, 100 coros, cerca de 22.000 litros. 46 7.22c Em aramaico, 100 batos de vinho, 100 batos de azeite, cerca de 2.100 litros. 47 8. Conforme alguns manuscritos gregos; o hebraico não traz Zatu. 48 8. Conforme alguns manuscritos gregos; o hebraico não traz Bani. 49 8. Ou que foram os últimos de sua família. 50 8. Conforme a Septuaginta, a versão siríaca e uma leitura alternativa do Texto Massorético; a outra leitura traz Zabude. 51 8. Israel é o nome que Deus deu a Jacó. 52 8.26a Em hebraico, 650 talentos. Cada talento equivalia a 35 quilos. 53 8.26b Em hebraico, 100 talentos; também em 8.26c. 54 8.27 Em hebraico, 1.000 dáricos. 55 8. Em hebraico, no décimo segundo dia do primeiro mês, do antigo calendário lunar hebraico. O ano foi 458 a.C.; ver também nota em 6.. 56 8. Em hebraico, província além do rio. 57 10. Em hebraico, no vigésimo dia do nono mês, do antigo calendário lunar hebraico. O ano foi 458 a.C.; ver também nota em 6.. 58 10. Em hebraico, No primeiro dia do décimo mês, do antigo calendário lunar hebraico. O ano foi 458 a.C.; ver também nota em 6.. 59 10. Em hebraico, No primeiro dia do primeiro mês, do antigo calendário lunar hebraico. O ano foi 457 a.C.; ver também nota em 6.. 60 10. Em hebraico, Jozadaque, variação de Jeozadaque. 61 10.37-38 Conforme a Septuaginta; o hebraico traz Jaasai,",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Daniel 9:20",
-                "text": "Continuei a orar e a confessar meu pecado e o pecado de meu povo, Israel, suplicando ao SENHOR, meu Deus, por Jerusalém, seu santo monte."
-              },
-              {
-                "ref": "Salmos 119:136",
-                "text": "Rios de lágrimas brotam de meus olhos, porque as pessoas não cumprem tua lei."
-              },
-              {
-                "ref": "Romanos 9:2",
-                "text": "Meu coração está cheio de amarga tristeza e angústia sem fim"
-              },
-              {
-                "ref": "1 João 1:8–10",
-                "text": "Se afirmamos que não temos pecados, enganamos a nós mesmos e não vivemos na verdade."
-              }
-            ]
-          },
-          {
-            "number": 38,
-            "text": "Bani, Binui. 62 10. Ou e as mandaram embora com seus filhos. O significado do hebraico é incerto.",
-            "isJesusWords": false,
-            "crossReferences": []
           }
         ]
       }

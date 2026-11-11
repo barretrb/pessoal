@@ -931,3 +931,72 @@ test('QA Test 22: Acervo Histórico, Ateliê Bíblico IA e Filtro de Métricas p
 
   console.log('✓ QA Test 22 Aprovado: Acervo Histórico, Ateliê IA e Filtro de Métricas por Usuário 100% verificados.');
 });
+
+test('QA Test 23: Integridade dos Subtítulos e Numeração de Versículos em Toda a Bíblia (Regressão Atos 14 e 66 Livros)', async () => {
+  const { readdirSync } = await import('node:fs');
+  const bibliaDir = resolve(__dirname, '../public/biblia');
+
+  // 1. Atos 14: "Estava sentado" deve ser parte do v8 e NÃO um subtítulo antes do v9
+  const atos = JSON.parse(readFileSync(resolve(bibliaDir, 'atos.json'), 'utf-8'));
+  const atos14Sanitized = sanitizeBookData(atos)['14'];
+  const atos14Titles = atos14Sanitized.sections.map(s => s.title);
+  assert.deepEqual(atos14Titles, [
+    'Paulo e Barnabé em Icônio',
+    'Paulo e Barnabé em Listra e Derbe',
+    'Paulo e Barnabé voltam para Antioquia da Síria'
+  ]);
+  const atos14Verses = atos14Sanitized.sections.flatMap(s => s.verses);
+  assert.ok(atos14Verses.find(v => v.number === 8).text.endsWith('Estava sentado'));
+  assert.ok(atos14Verses.find(v => v.number === 9).text.startsWith('e ouvia Paulo pregar'));
+
+  // 2. Versículos antes fundidos no texto (Atos 1:18, 2:11, 2:17, 7:32, 7:49) devem ser objetos próprios
+  for (const [ch, prevV, nextV] of [['1', 17, 18], ['2', 10, 11], ['2', 16, 17], ['7', 31, 32], ['7', 48, 49]]) {
+    const chVerses = atos[ch].sections.flatMap(s => s.verses);
+    assert.ok(chVerses.some(v => v.number === nextV), `Atos ${ch}:${nextV} deve existir como versículo separado`);
+    const prevText = chVerses.find(v => v.number === prevV).text;
+    assert.ok(!new RegExp(`\\b${nextV}[(“"‘]`).test(prevText), `Atos ${ch}:${prevV} não pode conter o número ${nextV} embutido no texto`);
+  }
+
+  // 3. Marcador de nota de rodapé não pode estar colado em Atos 6:14 ("Nazaré30")
+  const atos6_14 = atos['6'].sections.flatMap(s => s.verses).find(v => v.number === 14);
+  assert.ok(!atos6_14.text.includes('30'), 'Atos 6:14 não deve conter dígito de nota de rodapé colado');
+
+  // 4. sanitizeBookData não deve criar falso subtítulo em continuação minúscula ou "Interlúdio"
+  const trickyRaw = {
+    '1': {
+      book: 'Teste',
+      chapter: '1',
+      sections: [{
+        title: 'Título Real',
+        verses: [
+          { number: 1, text: 'Ele nunca tinha andado. Estava sentado' },
+          { number: 2, text: 'e ouvia Paulo pregar.' },
+          { number: 3, text: 'Deus é fiel. Interlúdio' },
+          { number: 4, text: 'Louvem ao Senhor.' }
+        ]
+      }]
+    }
+  };
+  const trickyOut = sanitizeBookData(trickyRaw)['1'];
+  assert.equal(trickyOut.sections.length, 1, 'Não deve dividir continuação minúscula nem Interlúdio em subtítulo');
+
+  // 5. Varredura nos 66 livros: nenhum subtítulo seguido por versículo começando em minúscula ou hífen suave
+  const files = readdirSync(bibliaDir).filter(f => f.endsWith('.json'));
+  assert.equal(files.length, 66);
+  for (const file of files) {
+    const data = JSON.parse(readFileSync(resolve(bibliaDir, file), 'utf-8'));
+    for (const [chKey, chData] of Object.entries(data)) {
+      for (const sec of chData.sections) {
+        if (sec.title && sec.verses.length > 0) {
+          const firstChar = sec.verses[0].text[0];
+          assert.ok(firstChar && firstChar === firstChar.toUpperCase(), `${file} ${chKey}: subtítulo "${sec.title}" seguido por minúscula`);
+        }
+        for (const v of sec.verses) {
+          assert.ok(!v.text.includes('\xad'), `${file} ${chKey}:${v.number} não deve conter soft hyphen`);
+        }
+      }
+    }
+  }
+
+  console.log('✓ QA Test 23 Aprovado: Subtítulos e numeração de versículos validados em todos os 66 livros.');
+});

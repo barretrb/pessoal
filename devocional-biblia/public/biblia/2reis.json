@@ -2,6 +2,7 @@
   "1": {
     "book": "2 Reis",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Elias confronta o rei Acazias",
@@ -203,7 +204,7 @@
               },
               {
                 "ref": "1 Reis 18:36–38",
-                "text": "Na hora costumeira de oferecer o sacrifício da tarde, o profeta Elias se aproximou do altar e orou: “Ó SENHOR, Deus de Abraão, Isaque e Jacó,107 prova hoje que és Deus em Israel e que sou teu servo. Prova que fiz tudo isso por ordem tua."
+                "text": "Na hora costumeira de oferecer o sacrifício da tarde, o profeta Elias se aproximou do altar e orou: “Ó SENHOR, Deus de Abraão, Isaque e Jacó, prova hoje que és Deus em Israel e que sou teu servo. Prova que fiz tudo isso por ordem tua."
               },
               {
                 "ref": "Daniel 3:22",
@@ -264,7 +265,7 @@
               },
               {
                 "ref": "Isaías 66:2",
-                "text": "Co 6.."
+                "text": "Minhas mãos criaram os céus e a terra; eles e tudo que neles há são meus. Eu, o SENHOR, falei! “Abençoarei os de coração humilde e oprimido, os que tremem diante de minha palavra."
               }
             ]
           },
@@ -378,6 +379,7 @@
   "2": {
     "book": "2 Reis",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Elias é levado ao céu",
@@ -397,7 +399,7 @@
               },
               {
                 "ref": "1 Reis 19:16–21",
-                "text": "Depois, unja também Jeú, neto de110 Ninsi, para ser rei de Israel, e unja Eliseu, filho de Safate, da cidade de Abel-Meolá, para substituir você como meu profeta."
+                "text": "Depois, unja também Jeú, neto de Ninsi, para ser rei de Israel, e unja Eliseu, filho de Safate, da cidade de Abel-Meolá, para substituir você como meu profeta."
               },
               {
                 "ref": "1 Reis 19:11",
@@ -485,7 +487,7 @@
               },
               {
                 "ref": "João 17:5–7",
-                "text": "Agora, Pai, glorifica- me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
+                "text": "Agora, Pai, glorifica-me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
               },
               {
                 "ref": "Lucas 24:51",
@@ -722,7 +724,7 @@
               },
               {
                 "ref": "2 Coríntios 12:2–3",
-                "text": "Conheço um homem em Cristo que, há catorze anos, foi arrebatado ao terceiro céu. Se foi no corpo ou fora do corpo, não sei; só Deus o sabe. Sim, somente Deus sabe se foi no corpo ou fora do corpo."
+                "text": "Conheço um homem em Cristo que, há catorze anos, foi arrebatado ao terceiro céu. Se foi no corpo ou fora do corpo, não sei; só Deus o sabe. Sim, somente Deus sabe se foi no corpo ou fora do corpo. Mas eu sei"
               },
               {
                 "ref": "Ezequiel 11:24",
@@ -912,6 +914,7 @@
   "3": {
     "book": "2 Reis",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Guerra entre Israel e Moabe",
@@ -995,7 +998,8 @@
                 "text": "Isaque prosperou e se tornou rico e influente. Adquiriu tantos rebanhos de ovelhas e bois e tantos servos que os filisteus o invejaram."
               },
               {
-                "ref": "Gênesis 13:2"
+                "ref": "Gênesis 13:2",
+                "text": "(Abrão era muito rico e tinha muitos rebanhos, prata e ouro.)"
               },
               {
                 "ref": "Jó 1:3",
@@ -1037,7 +1041,7 @@
               },
               {
                 "ref": "2 Samuel 24:1–25",
-                "text": "Cr 21.12); o hebraico traz sete."
+                "text": "Mais uma vez, a ira do SENHOR ardeu contra Israel e incitou Davi contra eles. “Vá e conte o povo de Israel e de Judá”, disse-lhe o SENHOR."
               },
               {
                 "ref": "1 Reis 20:27",
@@ -1075,7 +1079,7 @@
             "crossReferences": [
               {
                 "ref": "Números 21:4",
-                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom."
+                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom. Mas o povo ficou impaciente"
               },
               {
                 "ref": "Malaquias 1:2–3",
@@ -1089,7 +1093,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Reis 22:47"
+                "ref": "1 Reis 22:47",
+                "text": "(Naquela época, não havia rei em Edom, mas apenas um governador.)"
               },
               {
                 "ref": "1 Reis 22:27",
@@ -1227,7 +1232,7 @@
             "crossReferences": [
               {
                 "ref": "1 Samuel 16:23",
-                "text": "Assim, sempre que o espírito maligno envia­do por Deus afligia Saul, Davi tocava a harpa. Saul se sentia melhor, e o espírito se retirava dele."
+                "text": "Assim, sempre que o espírito maligno enviado por Deus afligia Saul, Davi tocava a harpa. Saul se sentia melhor, e o espírito se retirava dele."
               },
               {
                 "ref": "Efésios 5:18–19",
@@ -1238,7 +1243,8 @@
                 "text": "“Quando chegar a Gibeá-Eloim, onde fica o destacamento dos filisteus, encontrará um grupo de profetas descendo do lugar de adoração. Virão tocando harpa, tamborim, flauta e lira, e estarão profetizando."
               },
               {
-                "ref": "Ezequiel 1:3"
+                "ref": "Ezequiel 1:3",
+                "text": "(O SENHOR deu essa mensagem ao sacerdote Ezequiel, filho de Buzi, junto ao rio Quebar, na terra dos babilônios, e a mão do SENHOR estava sobre ele.)"
               }
             ]
           },
@@ -1276,7 +1282,7 @@
               },
               {
                 "ref": "Salmos 84:6",
-                "text": "Quando passarem pelo vale do Choro,112 ele se transformará num lugar de fontes revigorantes; as primeiras chuvas o cobrirão de bênçãos."
+                "text": "Quando passarem pelo vale do Choro, ele se transformará num lugar de fontes revigorantes; as primeiras chuvas o cobrirão de bênçãos."
               }
             ]
           },
@@ -1381,7 +1387,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Juízes 5:30"
+                "ref": "Juízes 5:30",
+                "text": "‘Devem estar repartindo os despojos que tomaram; uma ou duas moças para cada homem. Haverá túnicas coloridas para Sísera, túnicas coloridas e bordadas. Sem dúvida, no despojo haverá túnicas coloridas e bordadas dos dois lados’."
               },
               {
                 "ref": "Isaías 10:14",
@@ -1465,7 +1472,7 @@
               },
               {
                 "ref": "Deuteronômio 12:31",
-                "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacri­fícios a seus deuses."
+                "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacrifícios a seus deuses."
               },
               {
                 "ref": "Juízes 11:31",
@@ -1484,6 +1491,7 @@
   "4": {
     "book": "2 Reis",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Eliseu ajuda uma viúva pobre",
@@ -1645,7 +1653,7 @@
               },
               {
                 "ref": "Filipenses 4:8",
-                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem- se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
+                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem-se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
               }
             ]
           }
@@ -1687,7 +1695,8 @@
                 "text": "Então a mulher disse a Elias: “Agora tenho certeza de que você é um homem de Deus, e de que o SENHOR verdadeiramente fala por seu intermédio!”."
               },
               {
-                "ref": "Provérbios 31:10–11"
+                "ref": "Provérbios 31:10–11",
+                "text": "Quem encontrará uma mulher virtuosa? Ela é mais preciosa que rubis. O marido tem plena confiança nela, e ela lhe enriquecerá a vida grandemente."
               },
               {
                 "ref": "2 Reis 4:7",
@@ -2043,7 +2052,7 @@
           },
           {
             "number": 27,
-            "text": "Mas, quando ela chegou ao homem de Deus no monte, abraçou os pés dele. Geazi quis afastá-la, mas o homem de Deus disse: “Deixe- a em paz. Ela está profundamente angustiada, mas o SENHOR não me revelou o motivo”.",
+            "text": "Mas, quando ela chegou ao homem de Deus no monte, abraçou os pés dele. Geazi quis afastá-la, mas o homem de Deus disse: “Deixe-a em paz. Ela está profundamente angustiada, mas o SENHOR não me revelou o motivo”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2090,7 +2099,7 @@
               },
               {
                 "ref": "1 Reis 18:46",
-                "text": "Então o SENHOR concedeu força extraordinária a Elias. Ele prendeu a capa no cinto108 e correu à frente do carro de Acabe até a entrada de Jezreel."
+                "text": "Então o SENHOR concedeu força extraordinária a Elias. Ele prendeu a capa no cinto e correu à frente do carro de Acabe até a entrada de Jezreel."
               },
               {
                 "ref": "Êxodo 14:16",
@@ -2266,7 +2275,7 @@
               },
               {
                 "ref": "2 Reis 4:27",
-                "text": "Mas, quando ela chegou ao homem de Deus no monte, abraçou os pés dele. Geazi quis afastá-la, mas o homem de Deus disse: “Deixe- a em paz. Ela está profundamente angustiada, mas o SENHOR não me revelou o motivo”."
+                "text": "Mas, quando ela chegou ao homem de Deus no monte, abraçou os pés dele. Geazi quis afastá-la, mas o homem de Deus disse: “Deixe-a em paz. Ela está profundamente angustiada, mas o SENHOR não me revelou o motivo”."
               }
             ]
           }
@@ -2431,6 +2440,7 @@
   "5": {
     "book": "2 Reis",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "A cura de Naamã",
@@ -2500,7 +2510,7 @@
               },
               {
                 "ref": "Mateus 11:5",
-                "text": "os cegos veem, os aleijados andam, os leprosos são purificados, os surdos ouvem, os mortos são ressuscitados e as boas- novas são anunciadas aos pobres”."
+                "text": "os cegos veem, os aleijados andam, os leprosos são purificados, os surdos ouvem, os mortos são ressuscitados e as boas-novas são anunciadas aos pobres”."
               }
             ]
           },
@@ -2519,7 +2529,7 @@
               },
               {
                 "ref": "Marcos 5:19",
-                "text": "Jesus, porém, não permitiu e disse: “Volte para sua casa e para sua família e conte- lhes tudo que o Senhor fez por você e como ele foi misericordioso”."
+                "text": "Jesus, porém, não permitiu e disse: “Volte para sua casa e para sua família e conte-lhes tudo que o Senhor fez por você e como ele foi misericordioso”."
               },
               {
                 "ref": "João 1:42–46",
@@ -2603,7 +2613,7 @@
               },
               {
                 "ref": "1 Reis 18:36–37",
-                "text": "Na hora costumeira de oferecer o sacrifício da tarde, o profeta Elias se aproximou do altar e orou: “Ó SENHOR, Deus de Abraão, Isaque e Jacó,107 prova hoje que és Deus em Israel e que sou teu servo. Prova que fiz tudo isso por ordem tua."
+                "text": "Na hora costumeira de oferecer o sacrifício da tarde, o profeta Elias se aproximou do altar e orou: “Ó SENHOR, Deus de Abraão, Isaque e Jacó, prova hoje que és Deus em Israel e que sou teu servo. Prova que fiz tudo isso por ordem tua."
               }
             ]
           },
@@ -2852,7 +2862,7 @@
               },
               {
                 "ref": "Êxodo 4:18",
-                "text": "Moisés voltou à casa de Jetro, seu sogro, e lhe disse: “Por favor, permita-me voltar ao Egito para procurar meus parentes. Nem sei se ainda ­vivem”. “Vá em paz”, respondeu Jetro."
+                "text": "Moisés voltou à casa de Jetro, seu sogro, e lhe disse: “Por favor, permita-me voltar ao Egito para procurar meus parentes. Nem sei se ainda vivem”. “Vá em paz”, respondeu Jetro."
               },
               {
                 "ref": "1 Coríntios 3:2",
@@ -3056,6 +3066,7 @@
   "6": {
     "book": "2 Reis",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "O ferro do machado",
@@ -3237,7 +3248,7 @@
               },
               {
                 "ref": "Isaías 7:5–7",
-                "text": "É verdade que os reis da Síria e de Israel tramam contra ele e dizem: 6‘Atacaremos Judá e a conquistaremos; então colocaremos o filho de Tabeal para reinar sobre Judá’."
+                "text": "É verdade que os reis da Síria e de Israel tramam contra ele e dizem:"
               }
             ]
           },
@@ -3256,7 +3267,7 @@
               },
               {
                 "ref": "2 Reis 4:27",
-                "text": "Mas, quando ela chegou ao homem de Deus no monte, abraçou os pés dele. Geazi quis afastá-la, mas o homem de Deus disse: “Deixe- a em paz. Ela está profundamente angustiada, mas o SENHOR não me revelou o motivo”."
+                "text": "Mas, quando ela chegou ao homem de Deus no monte, abraçou os pés dele. Geazi quis afastá-la, mas o homem de Deus disse: “Deixe-a em paz. Ela está profundamente angustiada, mas o SENHOR não me revelou o motivo”."
               },
               {
                 "ref": "1 Reis 20:13",
@@ -3266,7 +3277,7 @@
           },
           {
             "number": 10,
-            "text": "E o rei de Israel mandava um aviso para o lugar indicado pelo homem de Deus. Várias vezes ele advertiu o rei de que ficasse alerta naqueles ­lugares.",
+            "text": "E o rei de Israel mandava um aviso para o lugar indicado pelo homem de Deus. Várias vezes ele advertiu o rei de que ficasse alerta naqueles lugares.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3551,7 +3562,7 @@
               },
               {
                 "ref": "Gênesis 48:22",
-                "text": "Em razão de sua autoridade sobre seus irmãos, eu lhe dou uma porção a mais da terra,171 que tomei dos amorreus com a minha espada e o meu arco”."
+                "text": "Em razão de sua autoridade sobre seus irmãos, eu lhe dou uma porção a mais da terra, que tomei dos amorreus com a minha espada e o meu arco”."
               },
               {
                 "ref": "Deuteronômio 20:11–16",
@@ -3639,7 +3650,7 @@
           },
           {
             "number": 26,
-            "text": "Um dia, quando o rei de Israel caminhava pelos muros da cidade, uma mulher gritou para ele: “Ó meu senhor, o rei! Por favor, ajude- me!”.",
+            "text": "Um dia, quando o rei de Israel caminhava pelos muros da cidade, uma mulher gritou para ele: “Ó meu senhor, o rei! Por favor, ajude-me!”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3656,7 +3667,7 @@
               },
               {
                 "ref": "Atos 21:28",
-                "text": "gritando: “Homens de Israel, ajudem-nos! Este é o homem que fala contra nosso povo em toda parte e ensina todos a desobedecerem às leis judaicas. Fala contra o templo e até profana este santo lugar, trazendo gentios106 para dentro dele”."
+                "text": "gritando: “Homens de Israel, ajudem-nos! Este é o homem que fala contra nosso povo em toda parte e ensina todos a desobedecerem às leis judaicas. Fala contra o templo e até profana este santo lugar, trazendo gentios para dentro dele”."
               }
             ]
           },
@@ -3732,7 +3743,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 21:27",
-                "text": "Quando Acabe ouviu essa mensagem, rasgou suas roupas, vestiu- se de pano de saco e jejuou. Passou a dormir em cima de panos de saco e a andar cabisbaixo."
+                "text": "Quando Acabe ouviu essa mensagem, rasgou suas roupas, vestiu-se de pano de saco e jejuou. Passou a dormir em cima de panos de saco e a andar cabisbaixo."
               },
               {
                 "ref": "2 Reis 5:7",
@@ -3824,6 +3835,7 @@
   "7": {
     "book": "2 Reis",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -4024,11 +4036,11 @@
             "crossReferences": [
               {
                 "ref": "Isaías 52:7",
-                "text": "Como são belos sobre os montes os pés do mensageiro que traz boas-novas, boas-novas de paz e salvação, de que o Deus de Israel156 reina!"
+                "text": "Como são belos sobre os montes os pés do mensageiro que traz boas-novas, boas-novas de paz e salvação, de que o Deus de Israel reina!"
               },
               {
                 "ref": "Filipenses 2:4",
-                "text": "Não- ­ procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios."
+                "text": "Não- procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios."
               },
               {
                 "ref": "Números 32:23",
@@ -4036,7 +4048,7 @@
               },
               {
                 "ref": "Isaías 41:27",
-                "text": "Eu fui o primeiro a dizer a Sião: ‘Veja! O socorro está a caminho!’.132 Enviarei a Jerusalém um mensageiro com boas notícias."
+                "text": "Eu fui o primeiro a dizer a Sião: ‘Veja! O socorro está a caminho!’. Enviarei a Jerusalém um mensageiro com boas notícias."
               }
             ]
           },
@@ -4257,6 +4269,7 @@
   "8": {
     "book": "2 Reis",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "A mulher de Suném volta para casa",
@@ -4360,11 +4373,11 @@
               },
               {
                 "ref": "Mateus 10:29–30",
-                "text": "Quanto custam dois pardais? Uma moeda de cobre?61 No entanto, nenhum deles cai no chão sem o conhecimento de seu Pai. Quanto a vocês, até os cabelos de sua cabeça estão contados."
+                "text": "Quanto custam dois pardais? Uma moeda de cobre? No entanto, nenhum deles cai no chão sem o conhecimento de seu Pai. Quanto a vocês, até os cabelos de sua cabeça estão contados."
               },
               {
                 "ref": "Atos 8:27–40",
-                "text": "Filipe partiu e encontrou no caminho um alto oficial etíope, o eunuco responsável pelos tesouros de Candace, rainha da Etiópia."
+                "text": "Filipe partiu e encontrou no caminho um alto oficial etíope, o eunuco responsável pelos tesouros de Candace, rainha da Etiópia. Ele tinha ido a Jerusalém para participar da adoração"
               },
               {
                 "ref": "Salmos 145:1",
@@ -4521,7 +4534,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Oséias 13:16"
+                "ref": "Oséias 13:16",
+                "text": "O povo de Samaria sofrerá as consequências de sua culpa, pois se rebelou contra seu Deus. Serão mortos pela espada inimiga; suas crianças serão despedaçadas, e suas mulheres grávidas, abertas ao meio.”"
               },
               {
                 "ref": "Naum 3:10",
@@ -4693,7 +4707,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Reis 22:47"
+                "ref": "1 Reis 22:47",
+                "text": "(Naquela época, não havia rei em Edom, mas apenas um governador.)"
               },
               {
                 "ref": "2 Reis 3:9",
@@ -4773,7 +4788,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 22:6",
-                "text": "ele voltou a Jezreel para se recuperar dos ferimentos sofridos em Ramote.101 Visto que Jorão estava ferido, Acazias,102 rei de Judá, foi visitá-lo em Jezreel."
+                "text": "ele voltou a Jezreel para se recuperar dos ferimentos sofridos em Ramote. Visto que Jorão estava ferido, Acazias, rei de Judá, foi visitá-lo em Jezreel."
               },
               {
                 "ref": "2 Crônicas 21:17",
@@ -4824,7 +4839,7 @@
               },
               {
                 "ref": "2 Crônicas 22:5–8",
-                "text": "Seguindo o conselho deles, Acazias se uniu a Jorão, filho de Acabe, rei de Israel, na guerra contra Hazael, rei da Síria, em Ramote- Gileade. Quando os sírios100 feriram Jorão na batalha,"
+                "text": "Seguindo o conselho deles, Acazias se uniu a Jorão, filho de Acabe, rei de Israel, na guerra contra Hazael, rei da Síria, em Ramote-Gileade. Quando os sírios feriram Jorão na batalha,"
               },
               {
                 "ref": "2 Reis 9:21–27",
@@ -4866,7 +4881,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 22:5",
-                "text": "Seguindo o conselho deles, Acazias se uniu a Jorão, filho de Acabe, rei de Israel, na guerra contra Hazael, rei da Síria, em Ramote- Gileade. Quando os sírios100 feriram Jorão na batalha,"
+                "text": "Seguindo o conselho deles, Acazias se uniu a Jorão, filho de Acabe, rei de Israel, na guerra contra Hazael, rei da Síria, em Ramote-Gileade. Quando os sírios feriram Jorão na batalha,"
               },
               {
                 "ref": "2 Crônicas 18:31",
@@ -4901,7 +4916,7 @@
               },
               {
                 "ref": "2 Crônicas 22:5–7",
-                "text": "Seguindo o conselho deles, Acazias se uniu a Jorão, filho de Acabe, rei de Israel, na guerra contra Hazael, rei da Síria, em Ramote- Gileade. Quando os sírios100 feriram Jorão na batalha,"
+                "text": "Seguindo o conselho deles, Acazias se uniu a Jorão, filho de Acabe, rei de Israel, na guerra contra Hazael, rei da Síria, em Ramote-Gileade. Quando os sírios feriram Jorão na batalha,"
               }
             ]
           }
@@ -4912,13 +4927,14 @@
   "9": {
     "book": "2 Reis",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "Jeú é ungido rei de Israel",
         "verses": [
           {
             "number": 1,
-            "text": "Enquanto isso, o profeta Eliseu chamou um membro do grupo de profetas e lhe disse: “Prepare-se para viajar e leve esta vasilha de óleo.",
+            "text": "Enquanto isso, o profeta Eliseu chamou um membro do grupo de profetas e lhe disse: “Prepare-se para viajar e leve esta vasilha de óleo. Vá a Ramote-Gileade",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4938,12 +4954,7 @@
                 "text": "Ali o sacerdote Zadoque pegou uma vasilha de óleo da tenda sagrada e ungiu Salomão. Em seguida, tocaram a trombeta, e todo o povo gritou: “Viva o rei Salomão!”."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Vá a Ramote-Gileade",
-        "verses": [
+          },
           {
             "number": 2,
             "text": "e procure Jeú, filho de Josafá, filho de Ninsi. Chame-o a uma sala à parte, longe de seus companheiros,",
@@ -4959,7 +4970,7 @@
               },
               {
                 "ref": "1 Reis 19:16–17",
-                "text": "Depois, unja também Jeú, neto de110 Ninsi, para ser rei de Israel, e unja Eliseu, filho de Safate, da cidade de Abel-Meolá, para substituir você como meu profeta."
+                "text": "Depois, unja também Jeú, neto de Ninsi, para ser rei de Israel, e unja Eliseu, filho de Safate, da cidade de Abel-Meolá, para substituir você como meu profeta."
               },
               {
                 "ref": "1 Reis 20:30",
@@ -4974,7 +4985,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 19:16",
-                "text": "Depois, unja também Jeú, neto de110 Ninsi, para ser rei de Israel, e unja Eliseu, filho de Safate, da cidade de Abel-Meolá, para substituir você como meu profeta."
+                "text": "Depois, unja também Jeú, neto de Ninsi, para ser rei de Israel, e unja Eliseu, filho de Safate, da cidade de Abel-Meolá, para substituir você como meu profeta."
               },
               {
                 "ref": "Daniel 4:35",
@@ -5014,7 +5025,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 19:16",
-                "text": "Depois, unja também Jeú, neto de110 Ninsi, para ser rei de Israel, e unja Eliseu, filho de Safate, da cidade de Abel-Meolá, para substituir você como meu profeta."
+                "text": "Depois, unja também Jeú, neto de Ninsi, para ser rei de Israel, e unja Eliseu, filho de Safate, da cidade de Abel-Meolá, para substituir você como meu profeta."
               },
               {
                 "ref": "2 Reis 9:3",
@@ -5022,7 +5033,7 @@
               },
               {
                 "ref": "2 Crônicas 22:7",
-                "text": "Deus havia decidido que essa visita seria a ruína de Acazias. Enquanto Acazias estava em Jezreel, saiu com Jorão ao encontro de Jeú, neto de Ninsi,103 a quem o SENHOR havia escolhido para destruir a dinastia de Acabe."
+                "text": "Deus havia decidido que essa visita seria a ruína de Acazias. Enquanto Acazias estava em Jezreel, saiu com Jorão ao encontro de Jeú, neto de Ninsi, a quem o SENHOR havia escolhido para destruir a dinastia de Acabe."
               },
               {
                 "ref": "Daniel 2:21",
@@ -5098,7 +5109,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 21:23",
-                "text": "“E quanto a Jezabel, o SENHOR diz: ‘Cães devorarão o corpo de Jezabel no campo115 em Jezreel’."
+                "text": "“E quanto a Jezabel, o SENHOR diz: ‘Cães devorarão o corpo de Jezabel no campo em Jezreel’."
               },
               {
                 "ref": "2 Reis 9:35–36",
@@ -5148,7 +5159,7 @@
               },
               {
                 "ref": "1 Reis 19:16",
-                "text": "Depois, unja também Jeú, neto de110 Ninsi, para ser rei de Israel, e unja Eliseu, filho de Safate, da cidade de Abel-Meolá, para substituir você como meu profeta."
+                "text": "Depois, unja também Jeú, neto de Ninsi, para ser rei de Israel, e unja Eliseu, filho de Safate, da cidade de Abel-Meolá, para substituir você como meu profeta."
               }
             ]
           },
@@ -5218,7 +5229,7 @@
               },
               {
                 "ref": "2 Crônicas 22:6",
-                "text": "ele voltou a Jezreel para se recuperar dos ferimentos sofridos em Ramote.101 Visto que Jorão estava ferido, Acazias,102 rei de Judá, foi visitá-lo em Jezreel."
+                "text": "ele voltou a Jezreel para se recuperar dos ferimentos sofridos em Ramote. Visto que Jorão estava ferido, Acazias, rei de Judá, foi visitá-lo em Jezreel."
               }
             ]
           },
@@ -5229,7 +5240,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 22:6–7",
-                "text": "ele voltou a Jezreel para se recuperar dos ferimentos sofridos em Ramote.101 Visto que Jorão estava ferido, Acazias,102 rei de Judá, foi visitá-lo em Jezreel."
+                "text": "ele voltou a Jezreel para se recuperar dos ferimentos sofridos em Ramote. Visto que Jorão estava ferido, Acazias, rei de Judá, foi visitá-lo em Jezreel."
               },
               {
                 "ref": "2 Reis 8:28–29",
@@ -5340,7 +5351,7 @@
               },
               {
                 "ref": "2 Crônicas 22:7",
-                "text": "Deus havia decidido que essa visita seria a ruína de Acazias. Enquanto Acazias estava em Jezreel, saiu com Jorão ao encontro de Jeú, neto de Ninsi,103 a quem o SENHOR havia escolhido para destruir a dinastia de Acabe."
+                "text": "Deus havia decidido que essa visita seria a ruína de Acazias. Enquanto Acazias estava em Jezreel, saiu com Jorão ao encontro de Jeú, neto de Ninsi, a quem o SENHOR havia escolhido para destruir a dinastia de Acabe."
               },
               {
                 "ref": "Miqueias 1:13",
@@ -5348,7 +5359,7 @@
               },
               {
                 "ref": "2 Reis 9:25–26",
-                "text": "Jeú disse a Bidcar, seu oficial: “Jogue-o no campo que pertencia a Nabote de Jezreel. Lembra-se de quando você e eu acompanhávamos a cavalo o pai dele, Acabe? O SENHOR pronunciou esta mensagem contra ele: 26‘Assim diz o..."
+                "text": "Jeú disse a Bidcar, seu oficial: “Jogue-o no campo que pertencia a Nabote de Jezreel. Lembra-se de quando você e eu acompanhávamos a cavalo o pai dele, Acabe? O SENHOR pronunciou esta mensagem contra ele:"
               }
             ]
           },
@@ -5415,7 +5426,7 @@
           },
           {
             "number": 25,
-            "text": "Jeú disse a Bidcar, seu oficial: “Jogue-o no campo que pertencia a Nabote de Jezreel. Lembra-se de quando você e eu acompanhávamos a cavalo o pai dele, Acabe? O SENHOR pronunciou esta mensagem contra ele: 26‘Assim diz o SENHOR: Ontem vi o assassinato de Nabote e seus filhos. Juro solenemente que o farei pagar por ele neste campo’. Portanto, jogue-o na propriedade de Nabote, como o SENHOR disse”.",
+            "text": "Jeú disse a Bidcar, seu oficial: “Jogue-o no campo que pertencia a Nabote de Jezreel. Lembra-se de quando você e eu acompanhávamos a cavalo o pai dele, Acabe? O SENHOR pronunciou esta mensagem contra ele:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5437,17 +5448,23 @@
             ]
           },
           {
+            "number": 26,
+            "text": "‘Assim diz o SENHOR: Ontem vi o assassinato de Nabote e seus filhos. Juro solenemente que o farei pagar por ele neste campo’. Portanto, jogue-o na propriedade de Nabote, como o SENHOR disse”.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 27,
             "text": "Quando Acazias, rei de Judá, viu o que estava acontecendo, fugiu pela estrada para Bete-Hagã. Jeú foi atrás dele, gritando: “Atirem nele também!”. E atingiram Acazias em seu carro de guerra, na subida para Gur, perto de Ibleã. Ele conseguiu ir até Megido, mas morreu ali.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Juízes 1:27",
-                "text": "A tribo de Manassés, porém, não expulsou os habitantes de Bete- Sã, Taanaque, Dor, Ibleã e Megido, nem dos povoados ao seu redor, pois os cananeus estavam decididos a permanecer naquela região."
+                "text": "A tribo de Manassés, porém, não expulsou os habitantes de Bete-Sã, Taanaque, Dor, Ibleã e Megido, nem dos povoados ao seu redor, pois os cananeus estavam decididos a permanecer naquela região."
               },
               {
                 "ref": "Josué 17:11",
-                "text": "As seguintes cidades dentro do território de Issacar e Aser foram entregues a Manassés: Bete-Sã, Ibleã, Dor (isto é, Nafote- Dor), En-Dor, Taanaque e Megido, cada uma com os assentamentos ao redor."
+                "text": "As seguintes cidades dentro do território de Issacar e Aser foram entregues a Manassés: Bete-Sã, Ibleã, Dor (isto é, Nafote-Dor), En-Dor, Taanaque e Megido, cada uma com os assentamentos ao redor."
               },
               {
                 "ref": "Números 16:26",
@@ -5525,7 +5542,7 @@
               },
               {
                 "ref": "Ezequiel 24:17",
-                "text": "Sofra em si­lêncio, mas não lamente junto ao túmulo. Não des­cubra a cabeça nem tire as sandálias. Não siga os rituais de luto nem aceite comida de amigos que vierem consolá-lo”."
+                "text": "Sofra em silêncio, mas não lamente junto ao túmulo. Não descubra a cabeça nem tire as sandálias. Não siga os rituais de luto nem aceite comida de amigos que vierem consolá-lo”."
               },
               {
                 "ref": "Isaías 3:18–24",
@@ -5535,7 +5552,7 @@
           },
           {
             "number": 31,
-            "text": "Quando Jeú entrou pela porta do palácio, ela gritou para ele: “Veio em paz, assassino? Você é como Zinri, que matou seu senhor!”30.",
+            "text": "Quando Jeú entrou pela porta do palácio, ela gritou para ele: “Veio em paz, assassino? Você é como Zinri, que matou seu senhor!”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5643,7 +5660,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 21:23",
-                "text": "“E quanto a Jezabel, o SENHOR diz: ‘Cães devorarão o corpo de Jezabel no campo115 em Jezreel’."
+                "text": "“E quanto a Jezabel, o SENHOR diz: ‘Cães devorarão o corpo de Jezabel no campo em Jezreel’."
               },
               {
                 "ref": "Levítico 8:36",
@@ -5689,6 +5706,7 @@
   "10": {
     "book": "2 Reis",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "Jeú mata a família de Acabe",
@@ -5712,7 +5730,7 @@
               },
               {
                 "ref": "1 Reis 16:24",
-                "text": "Então Onri comprou de Sêmer o monte de Samaria por setenta quilos103 de prata. Construiu ali uma cidade que chamou de Samaria, em homenagem a Sêmer, o antigo proprietário do monte."
+                "text": "Então Onri comprou de Sêmer o monte de Samaria por setenta quilos de prata. Construiu ali uma cidade que chamou de Samaria, em homenagem a Sêmer, o antigo proprietário do monte."
               }
             ]
           },
@@ -5784,7 +5802,7 @@
               },
               {
                 "ref": "Josué 9:11",
-                "text": "Por isso, nossos líderes e todo o nosso povo nos instruíram: ‘Levem provisões para uma viagem longa. Vão encontrar- se com os israelitas e digam-lhes: Somos seus servos; por favor, façam um tratado conosco’."
+                "text": "Por isso, nossos líderes e todo o nosso povo nos instruíram: ‘Levem provisões para uma viagem longa. Vão encontrar-se com os israelitas e digam-lhes: Somos seus servos; por favor, façam um tratado conosco’."
               },
               {
                 "ref": "1 Reis 20:32",
@@ -5826,7 +5844,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 21:21",
-                "text": "Agora o SENHOR diz:114 ‘Trarei desgraça sobre você e o exterminarei, e destruirei todos os seus descendentes do sexo masculino em Israel, tanto escravos como livres."
+                "text": "Agora o SENHOR diz: ‘Trarei desgraça sobre você e o exterminarei, e destruirei todos os seus descendentes do sexo masculino em Israel, tanto escravos como livres."
               },
               {
                 "ref": "2 Reis 11:1",
@@ -5941,7 +5959,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 22:8",
-                "text": "Quando Jeú executava o juízo contra a família de Acabe, encontrou alguns oficiais de Judá e parentes de Acazias104 que o serviam, e os matou."
+                "text": "Quando Jeú executava o juízo contra a família de Acabe, encontrou alguns oficiais de Judá e parentes de Acazias que o serviam, e os matou."
               }
             ]
           },
@@ -5970,7 +5988,7 @@
           },
           {
             "number": 14,
-            "text": "“Prendam-nos vivos!”, ordenou Jeú a seus homens. Eles os capturaram, 42 pessoas ao todo, e os mataram junto ao poço de Bete- Equede. Nenhum deles escapou.",
+            "text": "“Prendam-nos vivos!”, ordenou Jeú a seus homens. Eles os capturaram, 42 pessoas ao todo, e os mataram junto ao poço de Bete-Equede. Nenhum deles escapou.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5983,7 +6001,7 @@
               },
               {
                 "ref": "2 Crônicas 22:8",
-                "text": "Quando Jeú executava o juízo contra a família de Acabe, encontrou alguns oficiais de Judá e parentes de Acazias104 que o serviam, e os matou."
+                "text": "Quando Jeú executava o juízo contra a família de Acabe, encontrou alguns oficiais de Judá e parentes de Acazias que o serviam, e os matou."
               },
               {
                 "ref": "2 Crônicas 22:10",
@@ -6032,7 +6050,8 @@
                 "text": "“Quando vocês orarem, não sejam como os hipócritas, que gostam de orar em público nas sinagogas e nas esquinas, onde todos possam vê-los. Eu lhes digo a verdade: eles não receberão outra recompensa além dessa."
               },
               {
-                "ref": "Números 24:13–16"
+                "ref": "Números 24:13–16",
+                "text": "‘Mesmo que Balaque me desse seu palácio cheio de prata e ouro, eu não poderia fazer coisa alguma, boa ou má, contra a vontade do SENHOR’! Avisei que só poderia falar aquilo que o SENHOR dissesse!"
               }
             ]
           },
@@ -6047,11 +6066,11 @@
               },
               {
                 "ref": "2 Crônicas 22:8",
-                "text": "Quando Jeú executava o juízo contra a família de Acabe, encontrou alguns oficiais de Judá e parentes de Acazias104 que o serviam, e os matou."
+                "text": "Quando Jeú executava o juízo contra a família de Acabe, encontrou alguns oficiais de Judá e parentes de Acazias que o serviam, e os matou."
               },
               {
                 "ref": "2 Reis 9:25–26",
-                "text": "Jeú disse a Bidcar, seu oficial: “Jogue-o no campo que pertencia a Nabote de Jezreel. Lembra-se de quando você e eu acompanhávamos a cavalo o pai dele, Acabe? O SENHOR pronunciou esta mensagem contra ele: 26‘Assim diz o..."
+                "text": "Jeú disse a Bidcar, seu oficial: “Jogue-o no campo que pertencia a Nabote de Jezreel. Lembra-se de quando você e eu acompanhávamos a cavalo o pai dele, Acabe? O SENHOR pronunciou esta mensagem contra ele:"
               },
               {
                 "ref": "Salmos 109:8–9",
@@ -6079,7 +6098,7 @@
               },
               {
                 "ref": "Filipenses 4:8",
-                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem- se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
+                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem-se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
               },
               {
                 "ref": "Romanos 3:8",
@@ -6089,7 +6108,7 @@
           },
           {
             "number": 19,
-            "text": "Portanto, convoquem todos os profetas e adoradores de Baal e reúnam todos os seus sacerdotes. Todos devem vir, pois vou oferecer um grande sacri­fício a Baal. Quem não comparecer será morto”. O plano astuto de Jeú, porém, era destruir todos os adoradores de Baal.",
+            "text": "Portanto, convoquem todos os profetas e adoradores de Baal e reúnam todos os seus sacerdotes. Todos devem vir, pois vou oferecer um grande sacrifício a Baal. Quem não comparecer será morto”. O plano astuto de Jeú, porém, era destruir todos os adoradores de Baal.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6121,7 +6140,7 @@
               },
               {
                 "ref": "Êxodo 32:5",
-                "text": "Percebendo o entusiasmo do povo, Arão construiu um altar diante do bezerro e ­anunciou: “Amanhã haverá uma festa para o SENHOR!”."
+                "text": "Percebendo o entusiasmo do povo, Arão construiu um altar diante do bezerro e anunciou: “Amanhã haverá uma festa para o SENHOR!”."
               },
               {
                 "ref": "1 Reis 18:19–20",
@@ -6182,7 +6201,7 @@
               },
               {
                 "ref": "Mateus 25:32–33",
-                "text": "Todas as nações149 serão reunidas em sua presença, e ele separará as pessoas como um pastor separa as ovelhas dos bodes. Colocará as ovelhas à sua direita e os bodes à sua esquerda."
+                "text": "Todas as nações serão reunidas em sua presença, e ele separará as pessoas como um pastor separa as ovelhas dos bodes. Colocará as ovelhas à sua direita e os bodes à sua esquerda."
               },
               {
                 "ref": "Mateus 13:41",
@@ -6192,7 +6211,7 @@
           },
           {
             "number": 24,
-            "text": "Estavam todos dentro do templo para oferecer sacri-­ fícios e holocaustos. Jeú havia colocado oitenta homens do lado de fora do edifício e os avisado: “Se deixarem alguém escapar, pagarão com a própria ­vida”.",
+            "text": "Estavam todos dentro do templo para oferecer sacri- fícios e holocaustos. Jeú havia colocado oitenta homens do lado de fora do edifício e os avisado: “Se deixarem alguém escapar, pagarão com a própria vida”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6300,7 +6319,7 @@
               },
               {
                 "ref": "Marcos 6:24–26",
-                "text": "Ela saiu e perguntou à mãe: “O que devo ­pedir?”. A mãe lhe disse: “Peça a cabeça de João ­Batista!”."
+                "text": "Ela saiu e perguntou à mãe: “O que devo pedir?”. A mãe lhe disse: “Peça a cabeça de João Batista!”."
               }
             ]
           },
@@ -6357,7 +6376,7 @@
         "verses": [
           {
             "number": 32,
-            "text": "Naquele tempo, o SENHOR começou a reduzir o território de Israel.",
+            "text": "Naquele tempo, o SENHOR começou a reduzir o território de Israel. O rei Hazael conquistou várias regiões do reino",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6377,12 +6396,7 @@
                 "text": "Hazael, rei da Síria, oprimiu Israel durante todo o reinado de Jeoacaz."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "O rei Hazael conquistou várias regiões do reino",
-        "verses": [
+          },
           {
             "number": 33,
             "text": "a leste do rio Jordão, incluindo toda a terra de Gileade, de Gade, de Rúben e de Manassés. Conquistou a região desde a cidade de Aroer, perto do vale do Arnom, até Gileade e Basã, ao norte.",
@@ -6465,6 +6479,7 @@
   "11": {
     "book": "2 Reis",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "A rainha Atalia reina em Judá",
@@ -6484,7 +6499,7 @@
               },
               {
                 "ref": "2 Reis 25:25",
-                "text": "Mas, no sétimo mês desse mesmo ano,109 Ismael, filho de Netanias, filho de Elisama, que era da família real, foi com dez homens a Mispá e matou Gedalias. Também matou todos os judeus e babilônios que estavam com ele em Mispá."
+                "text": "Mas, no sétimo mês desse mesmo ano, Ismael, filho de Netanias, filho de Elisama, que era da família real, foi com dez homens a Mispá e matou Gedalias. Também matou todos os judeus e babilônios que estavam com ele em Mispá."
               },
               {
                 "ref": "Mateus 2:16",
@@ -6634,7 +6649,7 @@
               },
               {
                 "ref": "Êxodo 21:14",
-                "text": "Se, contudo, alguém matar outra pessoa intencional­mente, o assassino será preso e executado, mesmo que tenha buscado refúgio em meu altar."
+                "text": "Se, contudo, alguém matar outra pessoa intencionalmente, o assassino será preso e executado, mesmo que tenha buscado refúgio em meu altar."
               }
             ]
           },
@@ -6649,7 +6664,7 @@
               },
               {
                 "ref": "1 Crônicas 26:26",
-                "text": "Selemote e seus parentes eram encarregados dos tesouros que o rei Davi, os chefes das famílias, os generais e capitães174 e outros oficiais do exército haviam dedicado ao SENHOR."
+                "text": "Selemote e seus parentes eram encarregados dos tesouros que o rei Davi, os chefes das famílias, os generais e capitães e outros oficiais do exército haviam dedicado ao SENHOR."
               },
               {
                 "ref": "2 Reis 11:4",
@@ -6672,7 +6687,7 @@
               },
               {
                 "ref": "1 Crônicas 26:26–27",
-                "text": "Selemote e seus parentes eram encarregados dos tesouros que o rei Davi, os chefes das famílias, os generais e capitães174 e outros oficiais do exército haviam dedicado ao SENHOR."
+                "text": "Selemote e seus parentes eram encarregados dos tesouros que o rei Davi, os chefes das famílias, os generais e capitães e outros oficiais do exército haviam dedicado ao SENHOR."
               },
               {
                 "ref": "2 Crônicas 5:1",
@@ -6909,8 +6924,8 @@
             ]
           },
           {
-            "number": 2136,
-            "text": "Joás tinha 7 anos quando começou a ­reinar.",
+            "number": 21,
+            "text": "Joás tinha 7 anos quando começou a reinar.",
             "isJesusWords": false,
             "crossReferences": []
           }
@@ -6921,12 +6936,13 @@
   "12": {
     "book": "2 Reis",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "Joás faz reparos no templo",
         "verses": [
           {
-            "number": 138,
+            "number": 1,
             "text": "Joás começou a reinar em Judá no sétimo ano do reinado de Jeú, rei de Israel. Reinou em Jerusalém por quarenta anos. Sua mãe se chamava Zíbia e era de Berseba.",
             "isJesusWords": false,
             "crossReferences": []
@@ -6969,7 +6985,7 @@
               },
               {
                 "ref": "1 Reis 22:43",
-                "text": "Josafá foi um bom rei, que seguiu o exemplo de seu pai, Asa, e fez o que era certo aos olhos do SENHOR."
+                "text": "Josafá foi um bom rei, que seguiu o exemplo de seu pai, Asa, e fez o que era certo aos olhos do SENHOR. Contudo, não removeu todos os santuários idólatras, e o povo continuou a oferecer sacrifícios e queimar incenso neles."
               },
               {
                 "ref": "1 Reis 15:14",
@@ -7272,7 +7288,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 24:23–24",
-                "text": "Na virada do ano,109 o exército sírio marchou contra Joás. Invadiram Judá e Jerusalém e mataram todos os líderes do povo. Enviaram para seu rei em Damasco tudo que haviam saqueado."
+                "text": "Na virada do ano, o exército sírio marchou contra Joás. Invadiram Judá e Jerusalém e mataram todos os líderes do povo. Enviaram para seu rei em Damasco tudo que haviam saqueado."
               },
               {
                 "ref": "1 Samuel 27:2",
@@ -7307,7 +7323,7 @@
               },
               {
                 "ref": "2 Crônicas 16:2",
-                "text": "Em resposta, Asa removeu a prata e o ouro dos tesouros do templo do SENHOR e do palácio real. Enviou a prata e o ouro a Ben- Hadade, rei da Síria, que governava em Damasco, com a seguinte mensagem:"
+                "text": "Em resposta, Asa removeu a prata e o ouro dos tesouros do templo do SENHOR e do palácio real. Enviou a prata e o ouro a Ben-Hadade, rei da Síria, que governava em Damasco, com a seguinte mensagem:"
               }
             ]
           },
@@ -7345,7 +7361,7 @@
               },
               {
                 "ref": "2 Reis 14:5",
-                "text": "Quando Amazias se firmou no poder, exe­cutou os oficiais que haviam assassinado seu pai."
+                "text": "Quando Amazias se firmou no poder, executou os oficiais que haviam assassinado seu pai."
               },
               {
                 "ref": "Juízes 9:6",
@@ -7368,7 +7384,7 @@
               },
               {
                 "ref": "2 Crônicas 24:26–27",
-                "text": "Os assassinos foram Jozacar,110 filho de uma amonita chamada Simeate, e Jeozabade, filho de uma moabita chamada Somer."
+                "text": "Os assassinos foram Jozacar, filho de uma amonita chamada Simeate, e Jeozabade, filho de uma moabita chamada Somer."
               }
             ]
           }
@@ -7379,6 +7395,7 @@
   "13": {
     "book": "2 Reis",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "Jeoacaz reina em Israel",
@@ -7397,7 +7414,8 @@
                 "text": "Acazias tinha 22 anos quando começou a reinar, e reinou em Jerusalém por um ano. Sua mãe era Atalia, neta de Onri, rei de Israel."
               },
               {
-                "ref": "2 Reis 11:21"
+                "ref": "2 Reis 11:21",
+                "text": "Joás tinha 7 anos quando começou a reinar."
               },
               {
                 "ref": "2 Reis 10:35–36",
@@ -7470,7 +7488,7 @@
               },
               {
                 "ref": "Jeremias 33:3",
-                "text": "Pergunte- me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
+                "text": "Pergunte-me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
               }
             ]
           },
@@ -7531,7 +7549,7 @@
               },
               {
                 "ref": "2 Reis 10:32",
-                "text": "Naquele tempo, o SENHOR começou a reduzir o território de Israel."
+                "text": "Naquele tempo, o SENHOR começou a reduzir o território de Israel. O rei Hazael conquistou várias regiões do reino"
               },
               {
                 "ref": "Isaías 41:15–16",
@@ -7604,7 +7622,8 @@
                 "text": "Ainda assim, o SENHOR disse a Jeú: “Você fez bem em seguir minhas instruções e destruir a família de Acabe. Por isso, seus descendentes serão reis de Israel até a quarta geração”."
               },
               {
-                "ref": "2 Reis 12:1"
+                "ref": "2 Reis 12:1",
+                "text": "Joás começou a reinar em Judá no sétimo ano do reinado de Jeú, rei de Israel. Reinou em Jerusalém por quarenta anos. Sua mãe se chamava Zíbia e era de Berseba."
               },
               {
                 "ref": "2 Reis 13:1",
@@ -7646,7 +7665,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 25:17–24",
-                "text": "Depois de consultar seus conselheiros, Amazias, rei de Judá, enviou este desafio a Jeoás,115 filho de Jeoacaz e neto de Jeú, rei de Israel: “Venha enfrentar-me numa batalha!”."
+                "text": "Depois de consultar seus conselheiros, Amazias, rei de Judá, enviou este desafio a Jeoás, filho de Jeoacaz e neto de Jeú, rei de Israel: “Venha enfrentar-me numa batalha!”."
               },
               {
                 "ref": "2 Reis 14:8–16",
@@ -7926,7 +7945,7 @@
               },
               {
                 "ref": "2 Reis 10:32",
-                "text": "Naquele tempo, o SENHOR começou a reduzir o território de Israel."
+                "text": "Naquele tempo, o SENHOR começou a reduzir o território de Israel. O rei Hazael conquistou várias regiões do reino"
               },
               {
                 "ref": "2 Reis 14:25",
@@ -7941,6 +7960,7 @@
   "14": {
     "book": "2 Reis",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
         "title": "Amazias reina em Judá",
@@ -7981,7 +8001,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 25:2–3",
-                "text": "Amazias fez o que era certo aos olhos do SENHOR, mas não de todo o coração. Quando Amazias se firmou no poder, exe­cutou os oficiais que haviam assassinado seu pai."
+                "text": "Amazias fez o que era certo aos olhos do SENHOR, mas não de todo o coração. Quando Amazias se firmou no poder, executou os oficiais que haviam assassinado seu pai."
               },
               {
                 "ref": "Zacarias 1:4–6",
@@ -8022,7 +8042,7 @@
           },
           {
             "number": 5,
-            "text": "Quando Amazias se firmou no poder, exe­cutou os oficiais que haviam assassinado seu pai.",
+            "text": "Quando Amazias se firmou no poder, executou os oficiais que haviam assassinado seu pai.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -8031,7 +8051,7 @@
               },
               {
                 "ref": "2 Crônicas 25:3–4",
-                "text": "Quando Amazias se firmou no poder, exe­cutou os oficiais que haviam assassinado seu pai."
+                "text": "Quando Amazias se firmou no poder, executou os oficiais que haviam assassinado seu pai."
               },
               {
                 "ref": "2 Reis 12:20–21",
@@ -8096,7 +8116,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 25:17–24",
-                "text": "Depois de consultar seus conselheiros, Amazias, rei de Judá, enviou este desafio a Jeoás,115 filho de Jeoacaz e neto de Jeú, rei de Israel: “Venha enfrentar-me numa batalha!”."
+                "text": "Depois de consultar seus conselheiros, Amazias, rei de Judá, enviou este desafio a Jeoás, filho de Jeoacaz e neto de Jeú, rei de Israel: “Venha enfrentar-me numa batalha!”."
               },
               {
                 "ref": "2 Samuel 2:14–17",
@@ -8238,7 +8258,7 @@
               },
               {
                 "ref": "2 Reis 18:23",
-                "text": "“Vou lhes dizer uma coisa: Façam um acordo com meu senhor, o rei da Assíria. Eu lhes darei dois mil cavalos se forem capazes de encontrar homens em número suficiente para montá- los!"
+                "text": "“Vou lhes dizer uma coisa: Façam um acordo com meu senhor, o rei da Assíria. Eu lhes darei dois mil cavalos se forem capazes de encontrar homens em número suficiente para montá-los!"
               },
               {
                 "ref": "2 Reis 24:13",
@@ -8410,7 +8430,7 @@
             "crossReferences": [
               {
                 "ref": "2 Reis 16:6",
-                "text": "Nessa época, o rei de Edom recupe­rou a cidade de Elate para os edomitas. Expulsou o povo de Judá e colocou edomitas para morarem ali, onde estão até hoje."
+                "text": "Nessa época, o rei de Edom recuperou a cidade de Elate para os edomitas. Expulsou o povo de Judá e colocou edomitas para morarem ali, onde estão até hoje."
               },
               {
                 "ref": "1 Reis 9:26",
@@ -8587,6 +8607,7 @@
   "15": {
     "book": "2 Reis",
     "chapter": "15",
+    "verified": true,
     "sections": [
       {
         "title": "Uzias reina em Judá",
@@ -8655,7 +8676,7 @@
               },
               {
                 "ref": "1 Reis 22:43",
-                "text": "Josafá foi um bom rei, que seguiu o exemplo de seu pai, Asa, e fez o que era certo aos olhos do SENHOR."
+                "text": "Josafá foi um bom rei, que seguiu o exemplo de seu pai, Asa, e fez o que era certo aos olhos do SENHOR. Contudo, não removeu todos os santuários idólatras, e o povo continuou a oferecer sacrifícios e queimar incenso neles."
               },
               {
                 "ref": "2 Reis 15:35",
@@ -8701,7 +8722,7 @@
               },
               {
                 "ref": "2 Crônicas 26:5–15",
-                "text": "Uzias buscou a Deus durante a vida de Zacarias, que o ensinou a temer a Deus.119 Enquanto o rei buscou a direção do SENHOR, Deus lhe deu êxito."
+                "text": "Uzias buscou a Deus durante a vida de Zacarias, que o ensinou a temer a Deus. Enquanto o rei buscou a direção do SENHOR, Deus lhe deu êxito."
               }
             ]
           },
@@ -8812,7 +8833,7 @@
               },
               {
                 "ref": "Marcos 13:31",
-                "text": "O céu e a terra desaparecerão, mas as minhas palavras jamais ­desaparecerão."
+                "text": "O céu e a terra desaparecerão, mas as minhas palavras jamais desaparecerão."
               }
             ]
           }
@@ -8901,7 +8922,8 @@
                 "text": "Salomão dominava sobre todos os reinos a oeste do rio Eufrates, desde Tifsa até Gaza, e havia paz em todas as fronteiras."
               },
               {
-                "ref": "Oséias 13:16"
+                "ref": "Oséias 13:16",
+                "text": "O povo de Samaria sofrerá as consequências de sua culpa, pois se rebelou contra seu Deus. Serão mortos pela espada inimiga; suas crianças serão despedaçadas, e suas mulheres grávidas, abertas ao meio.”"
               },
               {
                 "ref": "Amós 1:13",
@@ -8958,7 +8980,7 @@
             "crossReferences": [
               {
                 "ref": "2 Reis 14:5",
-                "text": "Quando Amazias se firmou no poder, exe­cutou os oficiais que haviam assassinado seu pai."
+                "text": "Quando Amazias se firmou no poder, executou os oficiais que haviam assassinado seu pai."
               },
               {
                 "ref": "2 Reis 18:16",
@@ -9262,7 +9284,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 26:4–5",
-                "text": "Fez o que era certo aos olhos do SENHOR, como seu pai, Amazias. Uzias buscou a Deus durante a vida de Zacarias, que o ensinou a temer a Deus.119 Enquanto o rei buscou a direção do SENHOR, Deus lhe deu êxito."
+                "text": "Fez o que era certo aos olhos do SENHOR, como seu pai, Amazias. Uzias buscou a Deus durante a vida de Zacarias, que o ensinou a temer a Deus. Enquanto o rei buscou a direção do SENHOR, Deus lhe deu êxito."
               },
               {
                 "ref": "2 Reis 15:3–4",
@@ -9365,6 +9387,7 @@
   "16": {
     "book": "2 Reis",
     "chapter": "16",
+    "verified": true,
     "sections": [
       {
         "title": "Acaz reina em Judá",
@@ -9422,7 +9445,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 12:31",
-                "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacri­fícios a seus deuses."
+                "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacrifícios a seus deuses."
               },
               {
                 "ref": "Levítico 18:21",
@@ -9486,7 +9509,7 @@
           },
           {
             "number": 6,
-            "text": "Nessa época, o rei de Edom recupe­rou a cidade de Elate para os edomitas. Expulsou o povo de Judá e colocou edomitas para morarem ali, onde estão até hoje.",
+            "text": "Nessa época, o rei de Edom recuperou a cidade de Elate para os edomitas. Expulsou o povo de Judá e colocou edomitas para morarem ali, onde estão até hoje.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9503,7 +9526,7 @@
               },
               {
                 "ref": "2 Crônicas 26:2",
-                "text": "Depois que seu pai morreu e se reuniu a seus antepassados, Uzias reconstruiu a cidade de Elate118 e a recuperou para Judá."
+                "text": "Depois que seu pai morreu e se reuniu a seus antepassados, Uzias reconstruiu a cidade de Elate e a recuperou para Judá."
               }
             ]
           },
@@ -9545,11 +9568,11 @@
               },
               {
                 "ref": "2 Crônicas 16:2",
-                "text": "Em resposta, Asa removeu a prata e o ouro dos tesouros do templo do SENHOR e do palácio real. Enviou a prata e o ouro a Ben- Hadade, rei da Síria, que governava em Damasco, com a seguinte mensagem:"
+                "text": "Em resposta, Asa removeu a prata e o ouro dos tesouros do templo do SENHOR e do palácio real. Enviou a prata e o ouro a Ben-Hadade, rei da Síria, que governava em Damasco, com a seguinte mensagem:"
               },
               {
                 "ref": "Isaías 8:7–8",
-                "text": "Portanto, o Senhor fará vir sobre eles uma grande inundação do rio Eufrates: o rei da Assíria com toda a sua glória. e cobrirá Judá até o pescoço. Abrirá as asas e submergirá sua terra de um extremo ao outro, ó Emanuel."
+                "text": "Portanto, o Senhor fará vir sobre eles uma grande inundação do rio Eufrates: o rei da Assíria com toda a sua glória. A inundação fará transbordar todos os seus canais"
               }
             ]
           },
@@ -9578,7 +9601,7 @@
           },
           {
             "number": 10,
-            "text": "Então o rei Acaz foi a Damasco para encontrar-se com Tiglate- Pileser, rei da Assíria. Enquanto estava lá, viu o altar da cidade e enviou ao sacerdote Urias um modelo e um desenho detalhado do altar.",
+            "text": "Então o rei Acaz foi a Damasco para encontrar-se com Tiglate-Pileser, rei da Assíria. Enquanto estava lá, viu o altar da cidade e enviou ao sacerdote Urias um modelo e um desenho detalhado do altar.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9663,11 +9686,11 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 4:1",
-                "text": "Salomão também fez um altar de bronze com 9 metros de comprimento, 9 metros de largura e 4, metros de altura."
+                "text": "Salomão também fez um altar de bronze com 9 metros de comprimento, 9 metros de largura e 4,5 metros de altura."
               },
               {
                 "ref": "Êxodo 40:29",
-                "text": "e colocou o altar do holocausto perto da entrada do tabernáculo, a tenda do encontro. Apresentou sobre o altar um holocausto e uma oferta de cereal, conforme o SENHOR havia ­ordenado."
+                "text": "e colocou o altar do holocausto perto da entrada do tabernáculo, a tenda do encontro. Apresentou sobre o altar um holocausto e uma oferta de cereal, conforme o SENHOR havia ordenado."
               },
               {
                 "ref": "Êxodo 40:6",
@@ -9792,7 +9815,7 @@
           },
           {
             "number": 20,
-            "text": "Quando Acaz morreu, foi sepultado com seus antepassados na Cidade de Davi. Seu filho Ezequias foi seu ­sucessor.",
+            "text": "Quando Acaz morreu, foi sepultado com seus antepassados na Cidade de Davi. Seu filho Ezequias foi seu sucessor.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9805,7 +9828,7 @@
               },
               {
                 "ref": "1 Crônicas 3:13",
-                "text": "Acaz, Ezequias, Manassés,14Amom, Josias."
+                "text": "Acaz, Ezequias, Manassés,"
               },
               {
                 "ref": "Miqueias 1:1",
@@ -9820,6 +9843,7 @@
   "17": {
     "book": "2 Reis",
     "chapter": "17",
+    "verified": true,
     "sections": [
       {
         "title": "Oseias reina em Israel",
@@ -9911,11 +9935,12 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Oséias 13:16"
+                "ref": "Oséias 13:16",
+                "text": "O povo de Samaria sofrerá as consequências de sua culpa, pois se rebelou contra seu Deus. Serão mortos pela espada inimiga; suas crianças serão despedaçadas, e suas mulheres grávidas, abertas ao meio.”"
               },
               {
                 "ref": "Jeremias 52:4–5",
-                "text": "Assim, em 15 de janeiro,125 durante o nono ano de reinado de Zedequias, Nabucodonosor, rei de Babilônia, e todo o seu exército cercaram Jerusalém e construíram rampas de ataque contra os muros."
+                "text": "Assim, em 15 de janeiro, durante o nono ano de reinado de Zedequias, Nabucodonosor, rei de Babilônia, e todo o seu exército cercaram Jerusalém e construíram rampas de ataque contra os muros."
               },
               {
                 "ref": "2 Reis 18:9",
@@ -9923,7 +9948,7 @@
               },
               {
                 "ref": "2 Reis 25:1–3",
-                "text": "Rs 7.;"
+                "text": "Assim, em 15 de janeiro, durante o nono ano do reinado de Zedequias, Nabucodonosor, rei da Babilônia, e todo o seu exército cercaram Jerusalém e construíram rampas de ataque contra os muros."
               }
             ]
           },
@@ -9933,7 +9958,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Oséias 13:16"
+                "ref": "Oséias 13:16",
+                "text": "O povo de Samaria sofrerá as consequências de sua culpa, pois se rebelou contra seu Deus. Serão mortos pela espada inimiga; suas crianças serão despedaçadas, e suas mulheres grávidas, abertas ao meio.”"
               },
               {
                 "ref": "Deuteronômio 28:64",
@@ -10009,7 +10035,8 @@
                 "text": "“Se alguém o instigar secretamente, seja seu irmão, seu filho ou filha, sua esposa querida ou seu amigo mais chegado, e disser: ‘Vamos adorar outros deuses!’, deuses que nem você nem seus antepassados conheceram,"
               },
               {
-                "ref": "Deuteronômio 27:15"
+                "ref": "Deuteronômio 27:15",
+                "text": "‘Maldito quem esculpir ou fundir um ídolo e o levantar em segredo. Os ídolos, trabalhos de artesãos, são detestáveis ao SENHOR’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Oséias 12:11",
@@ -10047,7 +10074,7 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 44:17",
-                "text": "Faremos o que bem entendermos. Queimaremos incenso e apresentaremos ofertas derramadas para a Rai­nha do Céu, como nós, nossos antepassados e nossos reis e oficiais sempre fizemos nas cidades de Judá e nas ruas de Jerusa..."
+                "text": "Faremos o que bem entendermos. Queimaremos incenso e apresentaremos ofertas derramadas para a Rainha do Céu, como nós, nossos antepassados e nossos reis e oficiais sempre fizemos nas cidades de Judá e nas ruas de Jerusal..."
               },
               {
                 "ref": "1 Reis 13:1",
@@ -10096,7 +10123,8 @@
                 "text": "Tenho enviado meus profetas vez após vez para lhes dizer: ‘Abandonem seus maus caminhos e façam o que é certo. Deixem de adorar outros deuses. Assim, viverão em paz nesta terra que dei a vocês e a seus antepassados’. Mas..."
               },
               {
-                "ref": "1 Samuel 9:9"
+                "ref": "1 Samuel 9:9",
+                "text": "(Naquele tempo, em Israel, quando alguém queria receber uma mensagem de Deus, dizia: “Vamos perguntar ao vidente”, pois os profetas de hoje eram chamados de videntes.)"
               },
               {
                 "ref": "Jeremias 18:11",
@@ -10214,7 +10242,8 @@
                 "text": "Quando o povo de Israel soube que Jeroboão tinha voltado do Egito, convocou uma assembleia e o proclamou rei sobre todo o Israel. Apenas a tribo de Judá permaneceu leal à família de Davi."
               },
               {
-                "ref": "Oséias 11:12"
+                "ref": "Oséias 11:12",
+                "text": "Israel me cerca de mentiras e traições, mas Judá ainda obedece a Deus e é fiel ao Santo."
               },
               {
                 "ref": "Deuteronômio 32:21–26",
@@ -10494,7 +10523,7 @@
               },
               {
                 "ref": "Deuteronômio 12:31",
-                "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacri­fícios a seus deuses."
+                "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacrifícios a seus deuses."
               },
               {
                 "ref": "Deuteronômio 12:28",
@@ -10544,7 +10573,7 @@
               },
               {
                 "ref": "Mateus 6:24",
-                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”48 Ensino sobre a preocupação"
+                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”"
               }
             ]
           },
@@ -10555,7 +10584,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 32:28",
-                "text": "O homem disse: “Seu nome não será mais Jacó. De agora em diante, você se chamará Israel,117 pois lutou com Deus e com os homens e venceu”."
+                "text": "O homem disse: “Seu nome não será mais Jacó. De agora em diante, você se chamará Israel, pois lutou com Deus e com os homens e venceu”."
               },
               {
                 "ref": "Gênesis 35:10",
@@ -10623,7 +10652,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 12:32"
+                "ref": "Deuteronômio 12:32",
+                "text": "“Portanto, tenham o cuidado de cumprir todas as ordens que lhes dou. Não acrescentem nem tirem coisa alguma.”"
               },
               {
                 "ref": "Deuteronômio 4:44–45",
@@ -10711,7 +10741,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 6:24",
-                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”48 Ensino sobre a preocupação"
+                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”"
               },
               {
                 "ref": "Sofonias 1:5",
@@ -10734,6 +10764,7 @@
   "18": {
     "book": "2 Reis",
     "chapter": "18",
+    "verified": true,
     "sections": [
       {
         "title": "Ezequias reina em Judá",
@@ -10753,7 +10784,7 @@
               },
               {
                 "ref": "1 Crônicas 3:13",
-                "text": "Acaz, Ezequias, Manassés,14Amom, Josias."
+                "text": "Acaz, Ezequias, Manassés,"
               },
               {
                 "ref": "2 Reis 16:20–2 Reis 17:1",
@@ -10779,7 +10810,7 @@
             "crossReferences": [
               {
                 "ref": "2 Reis 20:3",
-                "text": "“Ó SENHOR, lembra-te de como sempre te servi com fidelidade e devoção, e de como sempre fiz o que é certo aos teus olhos”. Depois, o rei chorou ­amargamente."
+                "text": "“Ó SENHOR, lembra-te de como sempre te servi com fidelidade e devoção, e de como sempre fiz o que é certo aos teus olhos”. Depois, o rei chorou amargamente."
               },
               {
                 "ref": "2 Crônicas 29:2",
@@ -10902,7 +10933,7 @@
               },
               {
                 "ref": "2 Crônicas 28:18",
-                "text": "Os filisteus haviam atacado cidades nas colinas de Judá127 e no Neguebe. Conquistaram e ocuparam Bete-Semes, Aijalom e Gederote, além de Socó, Timna e Ginzo, com seus povoados."
+                "text": "Os filisteus haviam atacado cidades nas colinas de Judá e no Neguebe. Conquistaram e ocuparam Bete-Semes, Aijalom e Gederote, além de Socó, Timna e Ginzo, com seus povoados."
               },
               {
                 "ref": "Isaías 5:2",
@@ -10939,7 +10970,8 @@
                 "text": "“Por isso, transformarei a cidade de Samaria num monte de ruínas. Farei de suas ruas um campo para plantar videiras. Atirarei no vale as pedras de seus muros, até que os alicerces fiquem descobertos."
               },
               {
-                "ref": "Oséias 13:16"
+                "ref": "Oséias 13:16",
+                "text": "O povo de Samaria sofrerá as consequências de sua culpa, pois se rebelou contra seu Deus. Serão mortos pela espada inimiga; suas crianças serão despedaçadas, e suas mulheres grávidas, abertas ao meio.”"
               },
               {
                 "ref": "Miqueias 6:16",
@@ -11009,14 +11041,15 @@
             "crossReferences": [
               {
                 "ref": "Isaías 36:1–22",
-                "text": "No décimo quarto ano do reinado de Ezequias,111 Senaqueribe, rei da Assíria, atacou as cidades fortificadas de Judá e as conquistou."
+                "text": "No décimo quarto ano do reinado de Ezequias, Senaqueribe, rei da Assíria, atacou as cidades fortificadas de Judá e as conquistou."
               },
               {
-                "ref": "Oséias 12:1–2"
+                "ref": "Oséias 12:1–2",
+                "text": "O povo de Israel se alimenta de vento; corre atrás do vento leste o dia todo. Acumula mentiras e violência, faz acordos com a Assíria e, ao mesmo tempo, envia azeite para comprar o apoio do Egito."
               },
               {
                 "ref": "Isaías 8:7–8",
-                "text": "Portanto, o Senhor fará vir sobre eles uma grande inundação do rio Eufrates: o rei da Assíria com toda a sua glória. e cobrirá Judá até o pescoço. Abrirá as asas e submergirá sua terra de um extremo ao outro, ó Emanuel."
+                "text": "Portanto, o Senhor fará vir sobre eles uma grande inundação do rio Eufrates: o rei da Assíria com toda a sua glória. A inundação fará transbordar todos os seus canais"
               },
               {
                 "ref": "2 Crônicas 32:1–23",
@@ -11066,7 +11099,7 @@
               },
               {
                 "ref": "2 Crônicas 16:2",
-                "text": "Em resposta, Asa removeu a prata e o ouro dos tesouros do templo do SENHOR e do palácio real. Enviou a prata e o ouro a Ben- Hadade, rei da Síria, que governava em Damasco, com a seguinte mensagem:"
+                "text": "Em resposta, Asa removeu a prata e o ouro dos tesouros do templo do SENHOR e do palácio real. Enviou a prata e o ouro a Ben-Hadade, rei da Síria, que governava em Damasco, com a seguinte mensagem:"
               }
             ]
           },
@@ -11147,7 +11180,7 @@
               },
               {
                 "ref": "Isaías 10:8–14",
-                "text": "Ele dirá: ‘Em breve cada um de meus príncipes será rei. 9‘Destruímos Calno, como fizemos com Carquemis, Hamate caiu diante de nós, como aconteceu com Arpade, e derrotamos Samaria, como fizemos com Damasco."
+                "text": "Ele dirá: ‘Em breve cada um de meus príncipes será rei."
               },
               {
                 "ref": "2 Reis 19:10",
@@ -11177,7 +11210,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 30:7",
-                "text": "as promessas do Egito não têm valor algum! Por isso eu o chamo de Raabe, o Dragão Inofensivo.102 Advertência para o povo rebelde de Judá"
+                "text": "as promessas do Egito não têm valor algum! Por isso eu o chamo de Raabe, o Dragão Inofensivo."
               },
               {
                 "ref": "Ezequiel 29:6–7",
@@ -11218,7 +11251,7 @@
           },
           {
             "number": 23,
-            "text": "“Vou lhes dizer uma coisa: Façam um acordo com meu senhor, o rei da Assíria. Eu lhes darei dois mil cavalos se forem capazes de encontrar homens em número suficiente para montá- los!",
+            "text": "“Vou lhes dizer uma coisa: Façam um acordo com meu senhor, o rei da Assíria. Eu lhes darei dois mil cavalos se forem capazes de encontrar homens em número suficiente para montá-los!",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -11246,7 +11279,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 10:8",
-                "text": "Ele dirá: ‘Em breve cada um de meus príncipes será rei. 9‘Destruímos Calno, como fizemos com Carquemis, Hamate caiu diante de nós, como aconteceu com Arpade, e derrotamos Samaria, como fizemos com Damasco."
+                "text": "Ele dirá: ‘Em breve cada um de meus príncipes será rei."
               },
               {
                 "ref": "Isaías 36:6",
@@ -11287,12 +11320,12 @@
           },
           {
             "number": 26,
-            "text": "Então Eliaquim, filho de Hilquias, Sebna e Joá disseram ao porta- voz: “Por favor, fale conosco em aramaico, pois entendemos bem essa língua. Não fale em hebraico, pois o povo sobre o muro o ouvirá”.",
+            "text": "Então Eliaquim, filho de Hilquias, Sebna e Joá disseram ao porta-voz: “Por favor, fale conosco em aramaico, pois entendemos bem essa língua. Não fale em hebraico, pois o povo sobre o muro o ouvirá”.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Esdras 4:7",
-                "text": "Mais tarde, durante o reinado de Artaxerxes, rei da Pérsia, os inimigos de Judá, liderados por Bislão, Mitredate e Tabeel, enviaram a Artaxerxes uma carta em aramaico, que foi traduzida para o rei. 819 O comandante Reum..."
+                "text": "Mais tarde, durante o reinado de Artaxerxes, rei da Pérsia, os inimigos de Judá, liderados por Bislão, Mitredate e Tabeel, enviaram a Artaxerxes uma carta em aramaico, que foi traduzida para o rei."
               },
               {
                 "ref": "Daniel 2:4",
@@ -11300,7 +11333,7 @@
               },
               {
                 "ref": "Isaías 36:11–12",
-                "text": "Então Eliaquim, Sebna e Joá disseram ao porta-voz: “Por favor, fale conosco em aramaico, pois entendemos bem essa língua. Não fale em hebraico,115 pois o povo sobre o muro o ouvirá”."
+                "text": "Então Eliaquim, Sebna e Joá disseram ao porta-voz: “Por favor, fale conosco em aramaico, pois entendemos bem essa língua. Não fale em hebraico, pois o povo sobre o muro o ouvirá”."
               },
               {
                 "ref": "2 Reis 18:18",
@@ -11349,7 +11382,8 @@
                 "text": "Veja a poderosa Assíria, que antes era como um cedro do Líbano, com lindos ramos que davam muita sombra e cujo topo alcançava as nuvens."
               },
               {
-                "ref": "Esdras 7:12"
+                "ref": "Esdras 7:12",
+                "text": "“De Artaxerxes, rei dos reis, ao sacerdote Esdras, mestre da lei do Deus dos céus. Saudações."
               }
             ]
           },
@@ -11410,7 +11444,7 @@
               },
               {
                 "ref": "1 Reis 4:20",
-                "text": "O povo de Judá e Israel era tão numeroso quanto a areia na beira do mar. Todos estavam muito contentes, e tinham comida e bebida com fartura. 2112 Salomão governava sobre todos os reinos, desde o rio Eufrates, ao norte..."
+                "text": "O povo de Judá e Israel era tão numeroso quanto a areia na beira do mar. Todos estavam muito contentes, e tinham comida e bebida com fartura."
               },
               {
                 "ref": "Zacarias 3:10",
@@ -11474,7 +11508,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Isaías 10:9"
+                "ref": "Isaías 10:9",
+                "text": "‘Destruímos Calno, como fizemos com Carquemis, Hamate caiu diante de nós, como aconteceu com Arpade, e derrotamos Samaria, como fizemos com Damasco."
               },
               {
                 "ref": "Isaías 37:18–19",
@@ -11566,6 +11601,7 @@
   "19": {
     "book": "2 Reis",
     "chapter": "19",
+    "verified": true,
     "sections": [
       {
         "title": "Ezequias busca a ajuda do SENHOR",
@@ -11581,7 +11617,7 @@
               },
               {
                 "ref": "1 Reis 21:27",
-                "text": "Quando Acabe ouviu essa mensagem, rasgou suas roupas, vestiu- se de pano de saco e jejuou. Passou a dormir em cima de panos de saco e a andar cabisbaixo."
+                "text": "Quando Acabe ouviu essa mensagem, rasgou suas roupas, vestiu-se de pano de saco e jejuou. Passou a dormir em cima de panos de saco e a andar cabisbaixo."
               },
               {
                 "ref": "Jó 1:20–21",
@@ -11711,7 +11747,7 @@
               },
               {
                 "ref": "Obadias 1:1",
-                "text": "Esta é a visão que o SENHOR Soberano revelou a Obadias acerca da terra de Edom. O julgamento de Edom é anunciado Ouvimos uma mensagem do SENHOR, que um embaixador foi enviado às nações para dizer: “Preparem-se, todos! Va..."
+                "text": "Esta é a visão que o SENHOR Soberano revelou a Obadias acerca da terra de Edom."
               },
               {
                 "ref": "2 Crônicas 32:21",
@@ -11757,7 +11793,7 @@
               },
               {
                 "ref": "Isaías 37:9",
-                "text": "Logo depois, o rei Senaqueribe recebeu a notícia de que Tiraca, rei da Etiópia,118 havia saído com seu exército para lutar contra ele. Então enviou seus homens de volta a Ezequias em Jerusalém com a seguinte mensagem:"
+                "text": "Logo depois, o rei Senaqueribe recebeu a notícia de que Tiraca, rei da Etiópia, havia saído com seu exército para lutar contra ele. Então enviou seus homens de volta a Ezequias em Jerusalém com a seguinte mensagem:"
               },
               {
                 "ref": "2 Reis 18:17",
@@ -11799,7 +11835,7 @@
               },
               {
                 "ref": "Isaías 10:8–11",
-                "text": "Ele dirá: ‘Em breve cada um de meus príncipes será rei. 9‘Destruímos Calno, como fizemos com Carquemis, Hamate caiu diante de nós, como aconteceu com Arpade, e derrotamos Samaria, como fizemos com Damasco."
+                "text": "Ele dirá: ‘Em breve cada um de meus príncipes será rei."
               },
               {
                 "ref": "2 Crônicas 32:13–14",
@@ -11987,11 +12023,11 @@
               },
               {
                 "ref": "Salmos 67:1–2",
-                "text": "Que Deus seja misericordioso e nos abençoe. Que a luz de seu rosto brilhe sobre nós. Que teus caminhos sejam conhecidos em toda a terra, e tua salvação, entre as nações de toda parte."
+                "text": "Que Deus seja misericordioso e nos abençoe. Que a luz de seu rosto brilhe sobre nós. Interlúdio Que teus caminhos sejam conhecidos em toda a terra, e tua salvação, entre as nações de toda parte."
               },
               {
                 "ref": "1 Reis 18:36–37",
-                "text": "Na hora costumeira de oferecer o sacrifício da tarde, o profeta Elias se aproximou do altar e orou: “Ó SENHOR, Deus de Abraão, Isaque e Jacó,107 prova hoje que és Deus em Israel e que sou teu servo. Prova que fiz tudo isso por ordem tua."
+                "text": "Na hora costumeira de oferecer o sacrifício da tarde, o profeta Elias se aproximou do altar e orou: “Ó SENHOR, Deus de Abraão, Isaque e Jacó, prova hoje que és Deus em Israel e que sou teu servo. Prova que fiz tudo isso por ordem tua."
               }
             ]
           }
@@ -12015,7 +12051,7 @@
               },
               {
                 "ref": "Jeremias 33:3",
-                "text": "Pergunte- me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
+                "text": "Pergunte-me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
               },
               {
                 "ref": "Atos 10:31",
@@ -12283,11 +12319,11 @@
             "crossReferences": [
               {
                 "ref": "Isaías 8:7–10",
-                "text": "Portanto, o Senhor fará vir sobre eles uma grande inundação do rio Eufrates: o rei da Assíria com toda a sua glória."
+                "text": "Portanto, o Senhor fará vir sobre eles uma grande inundação do rio Eufrates: o rei da Assíria com toda a sua glória. A inundação fará transbordar todos os seus canais"
               },
               {
                 "ref": "2 Samuel 20:15",
-                "text": "Quando os soldados de Joabe chegaram, cercaram Abel-Bete- Maaca. Construíram uma rampa junto às fortificações da cidade e começaram a derrubar o muro."
+                "text": "Quando os soldados de Joabe chegaram, cercaram Abel-Bete-Maaca. Construíram uma rampa junto às fortificações da cidade e começaram a derrubar o muro."
               },
               {
                 "ref": "Isaías 10:24–25",
@@ -12321,7 +12357,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 11:12–13",
-                "text": "Mas, por causa de seu pai, Davi, não farei isso enquanto você estiver vivo."
+                "text": "Mas, por causa de seu pai, Davi, não farei isso enquanto você estiver vivo. Tirarei o reino de seu filho"
               },
               {
                 "ref": "2 Reis 20:6",
@@ -12356,7 +12392,7 @@
               },
               {
                 "ref": "Isaías 37:36",
-                "text": "Naquela noite, o anjo do SENHOR foi ao acampamento assírio e matou 185 mil soldados assírios. Quando os sobreviventes122 acordaram na manhã seguinte, encontraram cadáveres por toda parte."
+                "text": "Naquela noite, o anjo do SENHOR foi ao acampamento assírio e matou 185 mil soldados assírios. Quando os sobreviventes acordaram na manhã seguinte, encontraram cadáveres por toda parte."
               }
             ]
           },
@@ -12413,6 +12449,7 @@
   "20": {
     "book": "2 Reis",
     "chapter": "20",
+    "verified": true,
     "sections": [
       {
         "title": "A doença e a recuperação de Ezequias",
@@ -12465,7 +12502,7 @@
           },
           {
             "number": 3,
-            "text": "“Ó SENHOR, lembra-te de como sempre te servi com fidelidade e devoção, e de como sempre fiz o que é certo aos teus olhos”. Depois, o rei chorou ­amargamente.",
+            "text": "“Ó SENHOR, lembra-te de como sempre te servi com fidelidade e devoção, e de como sempre fiz o que é certo aos teus olhos”. Depois, o rei chorou amargamente.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -12512,7 +12549,7 @@
               },
               {
                 "ref": "Isaías 38:5",
-                "text": "“Volte a Ezequias e diga-lhe: Assim diz o SENHOR, o Deus de seu antepassado Davi: ‘Ouvi sua oração e vi suas lágrimas."
+                "text": "“Volte a Ezequias e diga-lhe: Assim diz o SENHOR, o Deus de seu antepassado Davi: ‘Ouvi sua oração e vi suas lágrimas. Acrescentarei quinze anos à sua vida"
               },
               {
                 "ref": "1 Samuel 9:16",
@@ -12573,7 +12610,7 @@
             "crossReferences": [
               {
                 "ref": "Juízes 6:17",
-                "text": "Gideão respondeu: “Se, de fato, posso contar com tua ajuda, dá- me um sinal de que é mesmo o SENHOR quem fala comigo."
+                "text": "Gideão respondeu: “Se, de fato, posso contar com tua ajuda, dá-me um sinal de que é mesmo o SENHOR quem fala comigo."
               },
               {
                 "ref": "Isaías 7:11",
@@ -12596,7 +12633,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 38:7–8",
-                "text": "“‘Este é o sinal do SENHOR de que cumprirá o que prometeu. Farei a sombra do sol recuar dez graus no relógio de sol123 de Acaz’”. Então a sombra no relógio de sol de Acaz recuou dez graus."
+                "text": "“‘Este é o sinal do SENHOR de que cumprirá o que prometeu. Farei a sombra do sol recuar dez graus no relógio de sol de Acaz’”. Então a sombra no relógio de sol de Acaz recuou dez graus."
               },
               {
                 "ref": "Marcos 8:11–12",
@@ -12642,7 +12679,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 38:8",
-                "text": "Farei a sombra do sol recuar dez graus no relógio de sol123 de Acaz’”. Então a sombra no relógio de sol de Acaz recuou dez graus."
+                "text": "Farei a sombra do sol recuar dez graus no relógio de sol de Acaz’”. Então a sombra no relógio de sol de Acaz recuou dez graus."
               },
               {
                 "ref": "Josué 10:12–14",
@@ -12654,7 +12691,7 @@
               },
               {
                 "ref": "1 Reis 18:36–38",
-                "text": "Na hora costumeira de oferecer o sacrifício da tarde, o profeta Elias se aproximou do altar e orou: “Ó SENHOR, Deus de Abraão, Isaque e Jacó,107 prova hoje que és Deus em Israel e que sou teu servo. Prova que fiz tudo isso por ordem tua."
+                "text": "Na hora costumeira de oferecer o sacrifício da tarde, o profeta Elias se aproximou do altar e orou: “Ó SENHOR, Deus de Abraão, Isaque e Jacó, prova hoje que és Deus em Israel e que sou teu servo. Prova que fiz tudo isso por ordem tua."
               }
             ]
           }
@@ -12734,7 +12771,7 @@
           },
           {
             "number": 15,
-            "text": "“O que viram em seu palácio?”, perguntou Isaías. “Viram tudo”, Ezequias respondeu. “Eu lhes mostrei tudo que possuo, todos os meus te­souros.”",
+            "text": "“O que viram em seu palácio?”, perguntou Isaías. “Viram tudo”, Ezequias respondeu. “Eu lhes mostrei tudo que possuo, todos os meus tesouros.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -12757,7 +12794,7 @@
           },
           {
             "number": 16,
-            "text": "Então Isaías disse a Ezequias: “Ouça esta mensagem do SENHOR: 17‘Está chegando o dia em que tudo em seu palácio, todos os tesouros que seus antepassados acumularam até agora, será levado para a Babilônia. Não ficará coisa alguma’, diz o SENHOR. 18‘Até mesmo alguns de seus descendentes serão levados para o exílio. Eles se tornarão eunucos e servirão no palácio do rei da Babilônia’”.",
+            "text": "Então Isaías disse a Ezequias: “Ouça esta mensagem do SENHOR:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -12777,6 +12814,18 @@
                 "text": "Agora, portanto, ouça esta mensagem do SENHOR: “Você diz: ‘Não profetize contra Israel; pare de pregar contra meu povo’."
               }
             ]
+          },
+          {
+            "number": 17,
+            "text": "‘Está chegando o dia em que tudo em seu palácio, todos os tesouros que seus antepassados acumularam até agora, será levado para a Babilônia. Não ficará coisa alguma’, diz o SENHOR.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 18,
+            "text": "‘Até mesmo alguns de seus descendentes serão levados para o exílio. Eles se tornarão eunucos e servirão no palácio do rei da Babilônia’”.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 19,
@@ -12854,6 +12903,7 @@
   "21": {
     "book": "2 Reis",
     "chapter": "21",
+    "verified": true,
     "sections": [
       {
         "title": "Manassés reina em Judá",
@@ -12865,11 +12915,11 @@
             "crossReferences": [
               {
                 "ref": "Isaías 62:4",
-                "text": "Nunca mais será chamada de “Cidade Abandonada”170 nem de “Terra Desolada”.171 Seu novo nome será “Cidade do Prazer de Deus”172 e “Esposa de Deus”,173 pois o SENHOR tem prazer em você e a tomará como esposa."
+                "text": "Nunca mais será chamada de “Cidade Abandonada” nem de “Terra Desolada”. Seu novo nome será “Cidade do Prazer de Deus” e “Esposa de Deus”, pois o SENHOR tem prazer em você e a tomará como esposa."
               },
               {
                 "ref": "1 Crônicas 3:13",
-                "text": "Acaz, Ezequias, Manassés,14Amom, Josias."
+                "text": "Acaz, Ezequias, Manassés,"
               },
               {
                 "ref": "2 Crônicas 32:33–2 Crônicas 33:9",
@@ -12888,7 +12938,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 12:31",
-                "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacri­fícios a seus deuses."
+                "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacrifícios a seus deuses."
               },
               {
                 "ref": "Ezequiel 16:51",
@@ -12946,7 +12996,7 @@
               },
               {
                 "ref": "1 Reis 9:3",
-                "text": "O SENHOR lhe disse: “Ouvi sua oração e sua súplica. Consagrei este templo que você construiu, onde meu nome será honrado para sempre. Olharei continuamente para ele, com todo o meu ­coração."
+                "text": "O SENHOR lhe disse: “Ouvi sua oração e sua súplica. Consagrei este templo que você construiu, onde meu nome será honrado para sempre. Olharei continuamente para ele, com todo o meu coração."
               }
             ]
           },
@@ -12998,7 +13048,7 @@
           },
           {
             "number": 7,
-            "text": "Manassés chegou a fazer uma imagem es­culpida da deusa Aserá e colocá-la no templo, sobre o qual o SENHOR tinha dito a Davi e a seu filho Salomão: “Meu nome será honrado para sempre neste templo em Jerusalém, a cidade que escolhi dentre todas as tribos de Israel.",
+            "text": "Manassés chegou a fazer uma imagem esculpida da deusa Aserá e colocá-la no templo, sobre o qual o SENHOR tinha dito a Davi e a seu filho Salomão: “Meu nome será honrado para sempre neste templo em Jerusalém, a cidade que escolhi dentre todas as tribos de Israel.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13030,7 +13080,7 @@
               },
               {
                 "ref": "Ezequiel 22:2–16",
-                "text": "“Filho do homem, você está preparado para pronunciar julgamento sobre Jerusalém, esta cidade de assassinos?"
+                "text": "“Filho do homem, você está preparado para pronunciar julgamento sobre Jerusalém, esta cidade de assassinos? Faça que ela veja como são detestáveis seus pecados"
               },
               {
                 "ref": "1 Crônicas 17:9",
@@ -13080,7 +13130,7 @@
               },
               {
                 "ref": "Neemias 9:30",
-                "text": "Por muitos anos, foste paciente com eles. Enviaste teu Espírito, que os advertiu por meio dos profetas. Ainda assim, eles se re­cusaram a ouvir. Por isso, mais uma vez, permitiste que os povos da terra os dominassem."
+                "text": "Por muitos anos, foste paciente com eles. Enviaste teu Espírito, que os advertiu por meio dos profetas. Ainda assim, eles se recusaram a ouvir. Por isso, mais uma vez, permitiste que os povos da terra os dominassem."
               },
               {
                 "ref": "2 Crônicas 36:15",
@@ -13095,7 +13145,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 21:26",
-                "text": "Sua prática mais repugnante foi adorar ídolos116 como haviam feito os amorreus, povo que o SENHOR tinha expulsado de diante dos israelitas."
+                "text": "Sua prática mais repugnante foi adorar ídolos como haviam feito os amorreus, povo que o SENHOR tinha expulsado de diante dos israelitas."
               },
               {
                 "ref": "2 Reis 24:3–4",
@@ -13117,7 +13167,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Jeremias 19:3"
+                "ref": "Jeremias 19:3",
+                "text": "‘Ouçam esta mensagem do SENHOR, reis de Judá e habitantes de Jerusalém! Assim diz o SENHOR dos Exércitos, o Deus de Israel: Trarei calamidade sobre este lugar, calamidade tão terrível que fará tinir os ouvidos de quem ouvir a respeito!"
               },
               {
                 "ref": "1 Samuel 3:11",
@@ -13148,7 +13199,7 @@
               },
               {
                 "ref": "Isaías 34:11",
-                "text": "Ali viverão a coruja do deserto e o mocho, o corujão e o corvo.108 Pois Deus medirá aquela terra com cuidado; ele a medirá para o caos e para a destruição."
+                "text": "Ali viverão a coruja do deserto e o mocho, o corujão e o corvo. Pois Deus medirá aquela terra com cuidado; ele a medirá para o caos e para a destruição."
               },
               {
                 "ref": "Isaías 28:17",
@@ -13163,7 +13214,7 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 23:33",
-                "text": "“Se alguém do povo, ou algum dos profetas ou dos sacerdotes lhe perguntar: ‘Que palavras pesadas o SENHOR lhe deu para anunciar hoje?’, responda: ‘Vocês são o peso!40 O SENHOR diz que os abandonará!’."
+                "text": "“Se alguém do povo, ou algum dos profetas ou dos sacerdotes lhe perguntar: ‘Que palavras pesadas o SENHOR lhe deu para anunciar hoje?’, responda: ‘Vocês são o peso! O SENHOR diz que os abandonará!’."
               },
               {
                 "ref": "2 Reis 19:4",
@@ -13278,7 +13329,8 @@
                 "text": "Amom tinha 22 anos quando começou a reinar, e reinou em Jerusalém por dois anos."
               },
               {
-                "ref": "1 Crônicas 3:14"
+                "ref": "1 Crônicas 3:14",
+                "text": "Amom, Josias."
               },
               {
                 "ref": "1 Reis 16:8",
@@ -13389,7 +13441,7 @@
             "crossReferences": [
               {
                 "ref": "2 Reis 14:5",
-                "text": "Quando Amazias se firmou no poder, exe­cutou os oficiais que haviam assassinado seu pai."
+                "text": "Quando Amazias se firmou no poder, executou os oficiais que haviam assassinado seu pai."
               },
               {
                 "ref": "2 Crônicas 26:1",
@@ -13435,7 +13487,7 @@
               },
               {
                 "ref": "1 Reis 13:5",
-                "text": "Ao mesmo tempo, uma grande rachadura apareceu no altar e as cinzas se derramaram, exatamente como o homem de Deus tinha dito na mensagem recebida do ­SENHOR."
+                "text": "Ao mesmo tempo, uma grande rachadura apareceu no altar e as cinzas se derramaram, exatamente como o homem de Deus tinha dito na mensagem recebida do SENHOR."
               }
             ]
           }
@@ -13446,6 +13498,7 @@
   "22": {
     "book": "2 Reis",
     "chapter": "22",
+    "verified": true,
     "sections": [
       {
         "title": "Josias reina em Judá",
@@ -13671,7 +13724,8 @@
                 "text": "Quando o rei de Nínive ouviu o que Jonas dizia, desceu do trono, tirou as vestes reais, vestiu-se de pano de saco e sentou-se sobre um monte de cinzas."
               },
               {
-                "ref": "2 Reis 22:19"
+                "ref": "2 Reis 22:19",
+                "text": "‘Você se arrependeu e se humilhou diante do SENHOR quando ouviu o que eu disse contra esta cidade e contra seus habitantes, que esta terra seria amaldiçoada e se tornaria desolada. Você rasgou as roupas e chorou diante d..."
               }
             ]
           },
@@ -13728,7 +13782,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 34:22",
-                "text": "Então Hilquias e os outros homens foram ao Bairro Novo144 de Jerusalém consultar a profetisa Hulda. Ela era esposa de Salum, filho de Tocate, filho de Harás,145 responsável pelo guarda-roupa do templo."
+                "text": "Então Hilquias e os outros homens foram ao Bairro Novo de Jerusalém consultar a profetisa Hulda. Ela era esposa de Salum, filho de Tocate, filho de Harás, responsável pelo guarda-roupa do templo."
               },
               {
                 "ref": "Juízes 4:4",
@@ -13746,7 +13800,7 @@
           },
           {
             "number": 15,
-            "text": "Ela lhes disse: “O SENHOR, o Deus de Israel, falou!",
+            "text": "Ela lhes disse: “O SENHOR, o Deus de Israel, falou! Voltem e digam ao homem que os enviou",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13762,12 +13816,7 @@
                 "text": "Elias disse ao rei: “Assim diz o SENHOR: Por que enviou mensageiros para consultar Baal-Zebube, o deus de Ecrom? Acaso não há Deus em Israel? Por isso, você nunca mais se levantará da cama onde está; certamente morrerá”."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Voltem e digam ao homem que os enviou",
-        "verses": [
+          },
           {
             "number": 16,
             "text": "que assim diz o SENHOR: ‘Trarei desgraça sobre esta cidade e sobre seus habitantes. Todas as palavras escritas no livro que o rei de Judá leu se cumprirão.",
@@ -13816,7 +13865,7 @@
           },
           {
             "number": 18,
-            "text": "“Mas vão ao rei de Judá que os enviou para consultarem o SENHOR e digam-lhe que assim diz o SENHOR a respeito da mensagem que acabaram de ouvir: 19‘Você se arrependeu e se humilhou diante do SENHOR quando ouviu o que eu disse contra esta cidade e contra seus habitantes, que esta terra seria amaldiçoada e se tornaria desolada. Você rasgou as roupas e chorou diante de mim. E eu certamente o ouvi, diz o SENHOR.",
+            "text": "“Mas vão ao rei de Judá que os enviou para consultarem o SENHOR e digam-lhe que assim diz o SENHOR a respeito da mensagem que acabaram de ouvir:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13825,13 +13874,19 @@
               },
               {
                 "ref": "2 Crônicas 34:26–28",
-                "text": "“Mas vão ao rei de Judá que os enviou para consultarem o SENHOR e digam-lhe que assim diz o SENHOR, o Deus de Israel, a respeito da mensagem que acabaram de ouvir: 27‘Você se arrependeu e se humilhou diante de Deus quand..."
+                "text": "“Mas vão ao rei de Judá que os enviou para consultarem o SENHOR e digam-lhe que assim diz o SENHOR, o Deus de Israel, a respeito da mensagem que acabaram de ouvir:"
               },
               {
                 "ref": "Isaías 3:10",
                 "text": "Digam aos justos que tudo lhes irá bem; desfrutarão a recompensa de seus esforços."
               }
             ]
+          },
+          {
+            "number": 19,
+            "text": "‘Você se arrependeu e se humilhou diante do SENHOR quando ouviu o que eu disse contra esta cidade e contra seus habitantes, que esta terra seria amaldiçoada e se tornaria desolada. Você rasgou as roupas e chorou diante de mim. E eu certamente o ouvi, diz o SENHOR.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 20,
@@ -13863,6 +13918,7 @@
   "23": {
     "book": "2 Reis",
     "chapter": "23",
+    "verified": true,
     "sections": [
       {
         "title": "As reformas religiosas de Josias",
@@ -13943,7 +13999,7 @@
             "crossReferences": [
               {
                 "ref": "2 Reis 21:7",
-                "text": "Manassés chegou a fazer uma imagem es­culpida da deusa Aserá e colocá-la no templo, sobre o qual o SENHOR tinha dito a Davi e a seu filho Salomão: “Meu nome será honrado para sempre neste templo em Jerusalém, a cidade qu..."
+                "text": "Manassés chegou a fazer uma imagem esculpida da deusa Aserá e colocá-la no templo, sobre o qual o SENHOR tinha dito a Davi e a seu filho Salomão: “Meu nome será honrado para sempre neste templo em Jerusalém, a cidade que..."
               },
               {
                 "ref": "2 Reis 21:3",
@@ -13966,7 +14022,7 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 44:17–19",
-                "text": "Faremos o que bem entendermos. Queimaremos incenso e apresentaremos ofertas derramadas para a Rai­nha do Céu, como nós, nossos antepassados e nossos reis e oficiais sempre fizemos nas cidades de Judá e nas ruas de Jerusa..."
+                "text": "Faremos o que bem entendermos. Queimaremos incenso e apresentaremos ofertas derramadas para a Rainha do Céu, como nós, nossos antepassados e nossos reis e oficiais sempre fizemos nas cidades de Judá e nas ruas de Jerusal..."
               },
               {
                 "ref": "2 Reis 21:3–4",
@@ -14001,7 +14057,7 @@
               },
               {
                 "ref": "2 Reis 21:7",
-                "text": "Manassés chegou a fazer uma imagem es­culpida da deusa Aserá e colocá-la no templo, sobre o qual o SENHOR tinha dito a Davi e a seu filho Salomão: “Meu nome será honrado para sempre neste templo em Jerusalém, a cidade qu..."
+                "text": "Manassés chegou a fazer uma imagem esculpida da deusa Aserá e colocá-la no templo, sobre o qual o SENHOR tinha dito a Davi e a seu filho Salomão: “Meu nome será honrado para sempre neste templo em Jerusalém, a cidade que..."
               }
             ]
           },
@@ -14016,7 +14072,7 @@
               },
               {
                 "ref": "1 Reis 15:12",
-                "text": "Expulsou da terra os prostitutos cultuais e removeu todos os ídolos102 que seus antepassados haviam feito."
+                "text": "Expulsou da terra os prostitutos cultuais e removeu todos os ídolos que seus antepassados haviam feito."
               },
               {
                 "ref": "1 Reis 14:24",
@@ -14058,7 +14114,7 @@
             "crossReferences": [
               {
                 "ref": "Ezequiel 44:10–14",
-                "text": "E os homens da tribo de Levi que me abandonaram quando Israel se afastou de mim para adorar ídolos163 sofrerão as consequências de seus pecados."
+                "text": "E os homens da tribo de Levi que me abandonaram quando Israel se afastou de mim para adorar ídolos sofrerão as consequências de seus pecados."
               },
               {
                 "ref": "1 Samuel 2:36",
@@ -14066,7 +14122,7 @@
               },
               {
                 "ref": "Ezequiel 44:29–31",
-                "text": "Seu alimento virá das ofertas e dos sacri­fícios que os israelitas trouxerem para o templo: as ofertas de cereal, as ofertas pelo pecado e as ofertas pela culpa. Tudo que for consagrado para o SENHOR pertencerá aos sacerdotes."
+                "text": "Seu alimento virá das ofertas e dos sacrifícios que os israelitas trouxerem para o templo: as ofertas de cereal, as ofertas pelo pecado e as ofertas pela culpa. Tudo que for consagrado para o SENHOR pertencerá aos sacerdotes."
               },
               {
                 "ref": "Malaquias 2:8–9",
@@ -14237,7 +14293,7 @@
           },
           {
             "number": 17,
-            "text": "“Que monumento é aquele ali?”, o rei per­guntou. E o povo da cidade lhe disse: “É o túmulo do homem de Deus que veio de Judá e anunciou exatamente o que o senhor acaba de fazer ao altar em Betel!”.",
+            "text": "“Que monumento é aquele ali?”, o rei perguntou. E o povo da cidade lhe disse: “É o túmulo do homem de Deus que veio de Judá e anunciou exatamente o que o senhor acaba de fazer ao altar em Betel!”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14272,7 +14328,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 34:6–7",
-                "text": "Fez a mesma coisa nas cidades de Manassés, Efraim e Simeão, e até na distante Naftali, bem como nas ruínas142 ao seu redor."
+                "text": "Fez a mesma coisa nas cidades de Manassés, Efraim e Simeão, e até na distante Naftali, bem como nas ruínas ao seu redor."
               },
               {
                 "ref": "Miqueias 6:16",
@@ -14346,7 +14402,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 30:13–20",
-                "text": "Assim, uma grande multidão se reuniu em Jerusalém no segundo mês,134 para comemorar a Festa dos Pães sem Fermento."
+                "text": "Assim, uma grande multidão se reuniu em Jerusalém no segundo mês, para comemorar a Festa dos Pães sem Fermento."
               },
               {
                 "ref": "2 Crônicas 30:1–3",
@@ -14478,7 +14534,7 @@
           },
           {
             "number": 29,
-            "text": "Durante o reinado de Josias, o faraó Neco, rei do Egito, foi ao rio Eufrates dar apoio ao rei da Assíria. O rei Josias e seu exército saíram para lutar contra ele, mas o faraó92 o matou quando se enfrentaram em Megido.",
+            "text": "Durante o reinado de Josias, o faraó Neco, rei do Egito, foi ao rio Eufrates dar apoio ao rei da Assíria. O rei Josias e seu exército saíram para lutar contra ele, mas o faraó o matou quando se enfrentaram em Megido.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14510,7 +14566,7 @@
               },
               {
                 "ref": "2 Crônicas 36:1–4",
-                "text": "Rs 15.; o hebraico traz Abel-Maim, outro nome para Abel- Bete-Maaca."
+                "text": "O povo da terra proclamou Jeoacaz, filho de Josias, como seu sucessor em Jerusalém."
               },
               {
                 "ref": "2 Crônicas 35:24",
@@ -14680,6 +14736,7 @@
   "24": {
     "book": "2 Reis",
     "chapter": "24",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -14853,7 +14910,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 36:9",
-                "text": "Joaquim tinha 18 anos151 quando começou a reinar, e reinou em Jerusalém por três meses e dez dias. Fez o que era mau aos olhos do SENHOR."
+                "text": "Joaquim tinha 18 anos quando começou a reinar, e reinou em Jerusalém por três meses e dez dias. Fez o que era mau aos olhos do SENHOR."
               },
               {
                 "ref": "1 Crônicas 3:16",
@@ -14891,7 +14948,7 @@
             "crossReferences": [
               {
                 "ref": "2 Reis 25:2",
-                "text": "Cr 3.; Jr 52., que trazem 5 côvados; o hebraico traz 3 côvados."
+                "text": "Jerusalém permaneceu cercada até o décimo primeiro ano do reinado de Zedequias."
               },
               {
                 "ref": "Daniel 1:1–2",
@@ -14921,7 +14978,7 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 52:28",
-                "text": "No sétimo ano do reinado de Nabucodo­nosor,134 3.023 judeus foram levados para o exílio na Babilônia."
+                "text": "No sétimo ano do reinado de Nabucodonosor, 3.023 judeus foram levados para o exílio na Babilônia."
               },
               {
                 "ref": "Jeremias 24:1",
@@ -14929,11 +14986,11 @@
               },
               {
                 "ref": "2 Reis 25:27",
-                "text": "No trigésimo sétimo ano do exílio de Joaquim, rei de Judá, Evil- Merodaque começou a reinar na Babilônia. Foi bondoso com110 Joaquim e o libertou111 da prisão em 2 de abril daquele ano."
+                "text": "No trigésimo sétimo ano do exílio de Joaquim, rei de Judá, Evil-Merodaque começou a reinar na Babilônia. Foi bondoso com Joaquim e o libertou da prisão em 2 de abril daquele ano."
               },
               {
                 "ref": "2 Crônicas 36:10",
-                "text": "Na virada do ano,152 o rei Nabucodonosor levou Joaquim para a Babilônia. Nessa ocasião, também levou os tesouros do templo do SENHOR. Nabucodonosor nomeou Zedequias, tio153 de Joaquim, rei sobre Judá e sobre Jerusalém."
+                "text": "Na virada do ano, o rei Nabucodonosor levou Joaquim para a Babilônia. Nessa ocasião, também levou os tesouros do templo do SENHOR. Nabucodonosor nomeou Zedequias, tio de Joaquim, rei sobre Judá e sobre Jerusalém."
               }
             ]
           },
@@ -14943,10 +15000,12 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Isaías 39:6"
+                "ref": "Isaías 39:6",
+                "text": "‘Está chegando o dia em que tudo em seu palácio, todos os tesouros que seus antepassados acumularam até agora, será levado para a Babilônia. Não ficará coisa alguma’, diz o SENHOR."
               },
               {
-                "ref": "2 Reis 20:17"
+                "ref": "2 Reis 20:17",
+                "text": "‘Está chegando o dia em que tudo em seu palácio, todos os tesouros que seus antepassados acumularam até agora, será levado para a Babilônia. Não ficará coisa alguma’, diz o SENHOR."
               },
               {
                 "ref": "Jeremias 20:5",
@@ -14965,7 +15024,7 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 52:28",
-                "text": "No sétimo ano do reinado de Nabucodo­nosor,134 3.023 judeus foram levados para o exílio na Babilônia."
+                "text": "No sétimo ano do reinado de Nabucodonosor, 3.023 judeus foram levados para o exílio na Babilônia."
               },
               {
                 "ref": "2 Reis 25:12",
@@ -14977,7 +15036,7 @@
               },
               {
                 "ref": "Ezequiel 1:1–2",
-                "text": "Em 31 de julho de meu trigésimo ano, enquanto eu estava com os exilados judeus junto ao rio Quebar, na Babilônia, os céus se abriram e tive visões de Deus."
+                "text": "Em 31 de julho de meu trigésimo ano, enquanto eu estava com os exilados judeus junto ao rio Quebar, na Babilônia, os céus se abriram e tive visões de Deus. Isso aconteceu no quinto ano do exílio do rei Joaquim."
               }
             ]
           },
@@ -14988,7 +15047,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 36:10",
-                "text": "Na virada do ano,152 o rei Nabucodonosor levou Joaquim para a Babilônia. Nessa ocasião, também levou os tesouros do templo do SENHOR. Nabucodonosor nomeou Zedequias, tio153 de Joaquim, rei sobre Judá e sobre Jerusalém."
+                "text": "Na virada do ano, o rei Nabucodonosor levou Joaquim para a Babilônia. Nessa ocasião, também levou os tesouros do templo do SENHOR. Nabucodonosor nomeou Zedequias, tio de Joaquim, rei sobre Judá e sobre Jerusalém."
               },
               {
                 "ref": "Ester 2:6",
@@ -15011,7 +15070,7 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 52:28",
-                "text": "No sétimo ano do reinado de Nabucodo­nosor,134 3.023 judeus foram levados para o exílio na Babilônia."
+                "text": "No sétimo ano do reinado de Nabucodonosor, 3.023 judeus foram levados para o exílio na Babilônia."
               },
               {
                 "ref": "Jeremias 29:2",
@@ -15099,7 +15158,35 @@
           },
           {
             "number": 20,
-            "text": "Estas coisas aconteceram por causa da ira do SENHOR contra o povo de Jerusalém e de Judá. Por fim, ele os expulsou de sua presença e os mandou para o exílio. A queda de Jerusalém Zedequias se rebelou contra o rei da Babilônia.",
+            "text": "Estas coisas aconteceram por causa da ira do SENHOR contra o povo de Jerusalém e de Judá. Por fim, ele os expulsou de sua presença e os mandou para o exílio.",
+            "isJesusWords": false,
+            "crossReferences": [
+              {
+                "ref": "2 Crônicas 36:13",
+                "text": "Também se rebelou contra o rei Nabucodonosor, embora lhe tivesse jurado lealdade em nome de Deus. Zedequias era um homem duro e teimoso e se recusou a voltar para o SENHOR, o Deus de Israel."
+              },
+              {
+                "ref": "2 Tessalonicenses 2:9–11",
+                "text": "Esse homem virá para realizar o trabalho de Satanás, com poder, sinais e falsas maravilhas,"
+              },
+              {
+                "ref": "Êxodo 9:14–17",
+                "text": "Do contrário, enviarei mais pragas sobre você, sobre seus oficiais e sobre seu povo. Então você saberá que não há ninguém como eu em toda a terra."
+              },
+              {
+                "ref": "Ezequiel 17:15–20",
+                "text": "“Contudo, esse homem da família real de Israel se rebelou contra a Babilônia e enviou embaixadores ao Egito, para pedir um grande exército e muitos cavalos. Acaso Israel pode deixar de cumprir os tratados que fez sob juramento e ficar impune?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "A queda de Jerusalém",
+        "verses": [
+          {
+            "number": 20,
+            "text": "Zedequias se rebelou contra o rei da Babilônia.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -15127,6 +15214,7 @@
   "25": {
     "book": "2 Reis",
     "chapter": "25",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -15138,11 +15226,11 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 52:4–11",
-                "text": "Assim, em 15 de janeiro,125 durante o nono ano de reinado de Zedequias, Nabucodonosor, rei de Babilônia, e todo o seu exército cercaram Jerusalém e construíram rampas de ataque contra os muros."
+                "text": "Assim, em 15 de janeiro, durante o nono ano de reinado de Zedequias, Nabucodonosor, rei de Babilônia, e todo o seu exército cercaram Jerusalém e construíram rampas de ataque contra os muros."
               },
               {
                 "ref": "1 Crônicas 6:15",
-                "text": "que foi deportado quando o SENHOR enviou o povo de Judá e de Jerusalém para o exílio por meio de Nabucodonosor. Os clãs dos levitas 1660 Os filhos de Levi foram: Gérson, Coate e Merari."
+                "text": "que foi deportado quando o SENHOR enviou o povo de Judá e de Jerusalém para o exílio por meio de Nabucodonosor."
               },
               {
                 "ref": "Jeremias 34:1–6",
@@ -15194,7 +15282,7 @@
           },
           {
             "number": 4,
-            "text": "Assim, abriram uma brecha no muro da cidade. Como a cidade estava cercada pelos babilônios,100 os soldados esperaram até o anoitecer e fugiram101 pelo portão entre os dois muros atrás do jardim do rei. Então seguiram em direção ao vale do Jordão.102",
+            "text": "Assim, abriram uma brecha no muro da cidade. Como a cidade estava cercada pelos babilônios, os soldados esperaram até o anoitecer e fugiram pelo portão entre os dois muros atrás do jardim do rei. Então seguiram em direção ao vale do Jordão.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -15207,17 +15295,17 @@
               },
               {
                 "ref": "2 Reis 25:5",
-                "text": "Contudo, o exército babilônio103 perseguiu o rei e o alcançou nas planícies de Jericó, pois todos os seus soldados o haviam abandonado e se dispersado."
+                "text": "Contudo, o exército babilônio perseguiu o rei e o alcançou nas planícies de Jericó, pois todos os seus soldados o haviam abandonado e se dispersado."
               },
               {
                 "ref": "Jeremias 52:6–11",
-                "text": "Em 18 de julho, no décimo primeiro ano do reinado de Zedequias,126 a fome na cidade tinha se tornado tão severa que não havia mais nenhum alimento."
+                "text": "Em 18 de julho, no décimo primeiro ano do reinado de Zedequias, a fome na cidade tinha se tornado tão severa que não havia mais nenhum alimento."
               }
             ]
           },
           {
             "number": 5,
-            "text": "Contudo, o exército babilônio103 perseguiu o rei e o alcançou nas planícies de Jericó, pois todos os seus soldados o haviam abandonado e se dispersado.",
+            "text": "Contudo, o exército babilônio perseguiu o rei e o alcançou nas planícies de Jericó, pois todos os seus soldados o haviam abandonado e se dispersado.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -15291,12 +15379,12 @@
         "verses": [
           {
             "number": 8,
-            "text": "Em 14 de agosto daquele ano,104 o décimo nono do reinado de Nabucodonosor, Nebuzaradã, capitão da guarda e oficial do rei da Babilônia, chegou a Jerusalém.",
+            "text": "Em 14 de agosto daquele ano, o décimo nono do reinado de Nabucodonosor, Nebuzaradã, capitão da guarda e oficial do rei da Babilônia, chegou a Jerusalém.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Jeremias 52:12–16",
-                "text": "Em 17 de agosto daquele ano,129 o décimo nono ano do reinado de Nabucodonosor, Nebuzaradã, capitão da guarda e oficial do rei babilônio, chegou a Jerusalém."
+                "text": "Em 17 de agosto daquele ano, o décimo nono ano do reinado de Nabucodonosor, Nebuzaradã, capitão da guarda e oficial do rei babilônio, chegou a Jerusalém."
               },
               {
                 "ref": "Jeremias 39:8–14",
@@ -15308,13 +15396,13 @@
               },
               {
                 "ref": "2 Reis 25:27",
-                "text": "No trigésimo sétimo ano do exílio de Joaquim, rei de Judá, Evil- Merodaque começou a reinar na Babilônia. Foi bondoso com110 Joaquim e o libertou111 da prisão em 2 de abril daquele ano."
+                "text": "No trigésimo sétimo ano do exílio de Joaquim, rei de Judá, Evil-Merodaque começou a reinar na Babilônia. Foi bondoso com Joaquim e o libertou da prisão em 2 de abril daquele ano."
               }
             ]
           },
           {
             "number": 9,
-            "text": "Queimou o templo do SENHOR, o palácio real e todas as casas de Jerusalém. Pôs fogo em todos os edifícios importantes105 da cidade.",
+            "text": "Queimou o templo do SENHOR, o palácio real e todas as casas de Jerusalém. Pôs fogo em todos os edifícios importantes da cidade.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -15346,7 +15434,7 @@
               },
               {
                 "ref": "Jeremias 52:14–23",
-                "text": "Depois, supervisionou o exército babilônio130 na demolição de todos os muros de Jerusalém."
+                "text": "Depois, supervisionou o exército babilônio na demolição de todos os muros de Jerusalém."
               },
               {
                 "ref": "Jeremias 39:8",
@@ -15377,7 +15465,7 @@
               },
               {
                 "ref": "Jeremias 52:12",
-                "text": "Em 17 de agosto daquele ano,129 o décimo nono ano do reinado de Nabucodonosor, Nebuzaradã, capitão da guarda e oficial do rei babilônio, chegou a Jerusalém."
+                "text": "Em 17 de agosto daquele ano, o décimo nono ano do reinado de Nabucodonosor, Nebuzaradã, capitão da guarda e oficial do rei babilônio, chegou a Jerusalém."
               }
             ]
           },
@@ -15419,10 +15507,11 @@
               },
               {
                 "ref": "1 Reis 7:15",
-                "text": "Hirão fundiu duas colunas de bronze, cada uma com 8, metros de altura e 5, metros de circunferência."
+                "text": "Hirão fundiu duas colunas de bronze, cada uma com 8,1 metros de altura e 5,4 metros de circunferência."
               },
               {
-                "ref": "2 Reis 20:17"
+                "ref": "2 Reis 20:17",
+                "text": "‘Está chegando o dia em que tudo em seu palácio, todos os tesouros que seus antepassados acumularam até agora, será levado para a Babilônia. Não ficará coisa alguma’, diz o SENHOR."
               }
             ]
           },
@@ -15464,7 +15553,7 @@
               },
               {
                 "ref": "Esdras 1:9–11",
-                "text": "Esta é uma lista dos objetos que foram devolvidos: 30 bacias de ouro, 1.000 bacias de prata, 29 incensários de prata, 1030 tigelas de ouro, 410 tigelas de prata, 1.000 objetos diversos."
+                "text": "Esta é uma lista dos objetos que foram devolvidos: 30 bacias de ouro, 1.000 bacias de prata, 29 incensários de prata,"
               },
               {
                 "ref": "Números 7:13–14",
@@ -15485,16 +15574,16 @@
           },
           {
             "number": 17,
-            "text": "Cada coluna media 8, metros106 de altura. O capitel de bronze no alto de cada coluna media cerca de 2, metros107 de altura e era enfeitado ao redor com correntes entrelaçadas de romãs feitas de bronze.",
+            "text": "Cada coluna media 8,1 metros de altura. O capitel de bronze no alto de cada coluna media cerca de 2,25 metros de altura e era enfeitado ao redor com correntes entrelaçadas de romãs feitas de bronze.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "1 Reis 7:15–22",
-                "text": "Hirão fundiu duas colunas de bronze, cada uma com 8, metros de altura e 5, metros de circunferência."
+                "text": "Hirão fundiu duas colunas de bronze, cada uma com 8,1 metros de altura e 5,4 metros de circunferência."
               },
               {
                 "ref": "Jeremias 52:21–23",
-                "text": "Cada coluna media 8, metros de altura e tinha 5, metros de circunferência.131 Era oca, e suas paredes tinham cerca de 8 centímetros de espessura."
+                "text": "Cada coluna media 8,3 metros de altura e tinha 5,5 metros de circunferência. Era oca, e suas paredes tinham cerca de 8 centímetros de espessura."
               }
             ]
           },
@@ -15590,7 +15679,7 @@
               },
               {
                 "ref": "2 Crônicas 34:20",
-                "text": "Em seguida, deu estas ordens a Hilquias, a Aicam, filho de Safã, a Acbor, filho de Micaías,143 a Safã, secretário da corte, e a Asaías, conselheiro pessoal do rei:"
+                "text": "Em seguida, deu estas ordens a Hilquias, a Aicam, filho de Safã, a Acbor, filho de Micaías, a Safã, secretário da corte, e a Asaías, conselheiro pessoal do rei:"
               },
               {
                 "ref": "Jeremias 26:24",
@@ -15604,7 +15693,7 @@
           },
           {
             "number": 23,
-            "text": "Quando os comandantes do exército e seus homens souberam que o rei da Babilônia havia nomeado Gedalias governador, foram vê-lo em Mispá. Entre eles estavam Ismael, filho de Netanias, Joanã, filho de Careá, Seraías, filho do netofatita Tanumete, Jezanias,108 filho do maacatita, e todos os seus homens.",
+            "text": "Quando os comandantes do exército e seus homens souberam que o rei da Babilônia havia nomeado Gedalias governador, foram vê-lo em Mispá. Entre eles estavam Ismael, filho de Netanias, Joanã, filho de Careá, Seraías, filho do netofatita Tanumete, Jezanias, filho do maacatita, e todos os seus homens.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -15646,7 +15735,7 @@
           },
           {
             "number": 25,
-            "text": "Mas, no sétimo mês desse mesmo ano,109 Ismael, filho de Netanias, filho de Elisama, que era da família real, foi com dez homens a Mispá e matou Gedalias. Também matou todos os judeus e babilônios que estavam com ele em Mispá.",
+            "text": "Mas, no sétimo mês desse mesmo ano, Ismael, filho de Netanias, filho de Elisama, que era da família real, foi com dez homens a Mispá e matou Gedalias. Também matou todos os judeus e babilônios que estavam com ele em Mispá.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -15693,7 +15782,7 @@
         "verses": [
           {
             "number": 27,
-            "text": "No trigésimo sétimo ano do exílio de Joaquim, rei de Judá, Evil- Merodaque começou a reinar na Babilônia. Foi bondoso com110 Joaquim e o libertou111 da prisão em 2 de abril daquele ano.112",
+            "text": "No trigésimo sétimo ano do exílio de Joaquim, rei de Judá, Evil-Merodaque começou a reinar na Babilônia. Foi bondoso com Joaquim e o libertou da prisão em 2 de abril daquele ano.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -15702,7 +15791,7 @@
               },
               {
                 "ref": "Jeremias 52:31–34",
-                "text": "No trigésimo sétimo ano do exílio de Joaquim, rei de Judá, Evil- Merodaque começou a reinar na Babilônia. Foi bondoso com137 Joaquim e o libertou da prisão em 31 de março daquele ano."
+                "text": "No trigésimo sétimo ano do exílio de Joaquim, rei de Judá, Evil-Merodaque começou a reinar na Babilônia. Foi bondoso com Joaquim e o libertou da prisão em 31 de março daquele ano."
               },
               {
                 "ref": "Gênesis 40:13",
@@ -15758,7 +15847,7 @@
           },
           {
             "number": 30,
-            "text": "Assim o rei lhe deu uma provisão diária de alimento pelo resto de sua vida. 1 1. Ou Era um homem peludo. 2 1. Em hebraico, Jeorão, variação de Jorão. 3 3. Em hebraico, Jeorão, variação de Jorão; também em 3.. 4 3. Em hebraico, Ele derramava água nas mãos de Elias. 5 3. Em hebraico, O que tenho em comum com você? 6 3. O significado do hebraico é incerto. 7 3. Ou a ira de Israel foi grande. O significado do hebraico é incerto. 8 4. Em hebraico, Cinja os lombos. 9 5. O termo hebraico não se refere somente à hanseníase, mas também a diversas doenças de pele. 10 5. Em hebraico, 10 talentos de prata, 6 mil [siclos] de ouro. 11 5. Em hebraico, 1 talento. 12 5. Em hebraico, 2 talentos. 13 5. Em hebraico, a Ofel. 14 6.25a Em hebraico, 80 [siclos]. 15 6.25b Em hebraico, 1/4 de cabo de esterco de pombo era vendido por 5 [siclos]. É possível que esterco de pombo fosse uma espécie de vegetal silvestre. 16 6. Em hebraico, e o rei disse. 17 7.1a Em hebraico, 1 seá de farinha fina custará 1 siclo; também em 7.,. 18 7.1b Em hebraico, 2 seás de cevada custarão 1 siclo; também em 7.,. 19 7. O termo hebraico não se refere somente à hanseníase, mas também a diversas doenças de pele. 20 8.11a Em hebraico, Ele o olhou fixamente. 21 8.11b O significado do hebraico é incerto. 22 8. Em hebraico, um cão. 23 8.21a Em hebraico, Jorão, variação de Jeorão; também em 8.,. 24 8.21b A Septuaginta traz Seir. 25 8.21c Ou ele saiu e escapou. O significado do hebraico é incerto. 26 8. Em hebraico, Ramá, variação de Ramote. 27 9. Em hebraico, Cinja os lombos. 28 9. Em hebraico, Jeorão, variação de Jorão; também em 9.,,,,. 29 9. Conforme a Septuaginta e a versão siríaca; o hebraico não traz E atingiram Acazias. 30 9. Ver",
+            "text": "Assim o rei lhe deu uma provisão diária de alimento pelo resto de sua vida.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -15776,110 +15865,6 @@
               {
                 "ref": "Neemias 12:47",
                 "text": "Por isso, agora, nos dias de Zorobabel e de Neemias, todo o Israel trazia uma provisão diária de alimentos para os cantores, os guardas das portas e os levitas. Os levitas, por sua vez, entregavam uma porção daquilo que..."
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Rs 16.9-10. 31 10. Conforme alguns manuscritos gregos e a Vulgata (ver tb. 10.6); o hebraico traz de Jezreel. 32 10. Ou e deixaram os corpos estendidos ali, ou e lançaram os corpos no pátio mais externo. 33 11. Em hebraico, Jorão, variação de Jeorão. 34 11. Ou uma cópia da aliança; o hebraico traz entregou o testemunho. 35 11. Ou Tirem-na dentre as fileiras, ou Tirem-na das dependências do templo. O significado do hebraico é incerto. 36 11.21a No texto hebraico, o versículo 11. é numerado 12. 37 11.21b Em hebraico, Jeoás, variação de Joás. 38 12.1a No texto hebraico, os versículos 12.1-21 são numerados 12.2-22. 39 12.1b Em hebraico, Jeoás, variação de Joás; também em 12.,,,,. 40 12. Conforme a Septuaginta e a versão siríaca; o hebraico traz Jozabade. 41 13. Em hebraico, Joás, variação de Jeoás; também em 13.,,,,. 42 14. Em hebraico, Joás, variação de Jeoás; também em 14.,,. 43 14. Dt 24.. 44 14. Em hebraico, 400 côvados. 45 14. Em hebraico, Azarias, variação de Uzias. 46 14. Em hebraico, mar da Arabá. 47 14. Ou a Iaudi. O significado do hebraico é incerto. 48 14. Conforme alguns manuscritos gregos; o hebraico não traz foi sepultado em Samaria. 49 15. Em hebraico, Azarias, variação de Uzias; também em 15.,,,,,. 50 15. O termo hebraico não se refere somente à hanseníase, mas também a diversas doenças de pele. 51 15. Conforme alguns manuscritos gregos; o hebraico traz Tifsa. 52 15.19a Em hebraico, Pul, outro nome para Tiglate-Pileser. 53 15.19b Em hebraico, 1.000 talentos. 54 15. Em hebraico, 50 siclos. 55 16.6a Conforme a Vulgata; o hebraico traz Rezim, rei da Síria. 56 16.6b Conforme a Vulgata; o hebraico traz para a Síria. 57 16.6c Conforme a Septuaginta, a Vulgata e uma leitura alternativa do Texto Massorético; a outra leitura traz sírios. 58 16. Em hebraico, e seu filho. 59 16. Em hebraico, o grande altar. 60 16. O significado do hebraico é incerto. 61 17. Ou pediu ajuda ao rei do Egito em Sais. 62 17. É provável que o termo hebraico (lit., coisas redondas) se refira a esterco. 63 17. Em hebraico, ele; compare com",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Jeremias 52:4–11",
-                "text": "Assim, em 15 de janeiro,125 durante o nono ano de reinado de Zedequias, Nabucodonosor, rei de Babilônia, e todo o seu exército cercaram Jerusalém e construíram rampas de ataque contra os muros."
-              },
-              {
-                "ref": "1 Crônicas 6:15",
-                "text": "que foi deportado quando o SENHOR enviou o povo de Judá e de Jerusalém para o exílio por meio de Nabucodonosor. Os clãs dos levitas 1660 Os filhos de Levi foram: Gérson, Coate e Merari."
-              },
-              {
-                "ref": "Jeremias 34:1–6",
-                "text": "Nabucodonosor, rei da Babilônia, veio com todos os exércitos dos reinos que ele governava e lutou contra Jerusalém e contra as cidades de Judá. Naquela ocasião, Jeremias recebeu esta mensagem do SENHOR:"
-              },
-              {
-                "ref": "Isaías 29:3",
-                "text": "Serei seu inimigo, cercarei Jerusalém e atacarei seus muros. Levantarei torres de cerco e a destruirei."
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Rs 11.31-32. 64 18. O som da palavra Neustã é semelhante ao de termos hebraicos que significam “serpente”, “bronze” e “coisa impura”. 65 18. Em hebraico, 300 talentos de prata e 30 talentos de ouro. 66 18.17a Ou o rabsaqué; também em 18.,,,,. 67 18.17b Ou onde se branqueia. 68 18. Em hebraico, no dialeto de Judá; também em 18.. 69 19. Ou o rabsaqué; também em 19.. 70 19. Em hebraico, Eu porei nele um espírito. 71 19. Em hebraico, de Cuxe. 72 19. Conforme a Septuaginta, a versão siríaca, a Vulgata e uma leitura alternativa do Texto Massorético (ver tb. Is 37.32); o hebraico traz do SENHOR. 73 19. Em hebraico, Quando eles. 74 19. Conforme a Septuaginta e uma leitura alternativa do Texto Massorético (ver tb. Is 37.38); a outra leitura do Texto Massorético não traz seus filhos. 75 20. Conforme a Septuaginta e uma leitura alternativa do Texto Massorético (ver tb. Is 37.38); a outra leitura do Texto Massorético traz o meio da cidade. 76 20. Ou Você prefere que a sombra da escadaria avance dez degraus ou recue dez degraus? 77 20.11 Ou dez degraus na escadaria. 78 20. Conforme alguns manuscritos hebraicos, a Septuaginta e a versão siríaca (ver tb. Is 39.1); o hebraico traz Berodaque-Baladã. 79 20. Em hebraico, um curso de água. 80 21. É provável que o termo hebraico (lit., coisas redondas) se refira a esterco. 81 21. Em hebraico, Estenderei sobre Jerusalém o mesmo cordel que usei para Samaria e o mesmo prumo. 82 22. Ou Segundo Bairro, uma parte mais nova de Jerusalém. O hebraico traz o Mishneh. 83 22. Em hebraico, sobre este lugar; também em 22.,. 84 23. Ou tendas. 85 23. Em hebraico, não subiam para o. 86 23. Ou no pátio anexo ao templo. O significado do hebraico é incerto. 87 23. Ou Removeu-os rapidamente. 88 23. Em hebraico, Milcom, variação de Moloque. 89 23. Conforme a Septuaginta; o hebraico não traz todo o trecho quando Jeroboão [...] o túmulo do homem de Deus. 90 23.19 Conforme a Septuaginta, a versão siríaca e a Vulgata; o hebraico não traz do SENHOR. 91 23. É provável que o termo hebraico (lit., coisas redondas) se refira a esterco. 92 23. Em hebraico, mas ele. 93 23.33a O significado do hebraico é incerto. 94 23.33b Em hebraico, 100 talentos de prata e 1 talento de ouro. 95 24. Ou caldeus. 96 24. Ou Cortou em pedaços. 97 24. Em hebraico, tio dele. 98 25. Em hebraico, no décimo dia do décimo mês, do antigo calendário lunar hebraico.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Jeremias 52:4–11",
-                "text": "Assim, em 15 de janeiro,125 durante o nono ano de reinado de Zedequias, Nabucodonosor, rei de Babilônia, e todo o seu exército cercaram Jerusalém e construíram rampas de ataque contra os muros."
-              },
-              {
-                "ref": "1 Crônicas 6:15",
-                "text": "que foi deportado quando o SENHOR enviou o povo de Judá e de Jerusalém para o exílio por meio de Nabucodonosor. Os clãs dos levitas 1660 Os filhos de Levi foram: Gérson, Coate e Merari."
-              },
-              {
-                "ref": "Jeremias 34:1–6",
-                "text": "Nabucodonosor, rei da Babilônia, veio com todos os exércitos dos reinos que ele governava e lutou contra Jerusalém e contra as cidades de Judá. Naquela ocasião, Jeremias recebeu esta mensagem do SENHOR:"
-              },
-              {
-                "ref": "Isaías 29:3",
-                "text": "Serei seu inimigo, cercarei Jerusalém e atacarei seus muros. Levantarei torres de cerco e a destruirei."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Vários acontecimentos de",
-        "verses": [
-          {
-            "number": 2,
-            "text": "Reis podem ser verificados com base em datas de registos babilônicos ainda existentes e relacionados com precisão ao calendário moderno. O ano foi 588 a.C. 99 25. Em hebraico, No nono dia do [quarto] mês [do décimo primeiro ano do reinado de Zedequias] (cp. com Jr 39.; 52. e as respectivas notas). O ano foi 586 a.C.; ver também nota em 25.. 100 25.4a Ou caldeus; também em 25.,,,,. 101 25.4b Conforme a Septuaginta (ver tb. Jr 39.; 52.7); o hebraico não traz fugiram. 102 25.4c Em hebraico, à Arabá. 103 25. Ou caldeu; também em 25.. 104 25. Em hebraico, No sétimo dia do quinto mês, do antigo calendário lunar hebraico. O ano foi 586 a.C.; ver também nota em 25.. 105 25. Ou Incendiou as casas de todas as pessoas importantes. 106 25.17a Em hebraico, 18 côvados. 107 25.17b Conforme os textos paralelos em",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Deuteronômio 28:52",
-                "text": "Atacarão suas cidades até derrubarem todos os muros fortificados de sua terra, as muralhas nas quais vocês confiavam como proteção. Atacarão todas as cidades da terra que o SENHOR, seu Deus, lhes dá."
-              },
-              {
-                "ref": "2 Reis 24:10",
-                "text": "Durante o reinado de Joaquim, os oficiais de Nabucodonosor, rei da Babilônia, subiram contra Jerusalém e a cercaram."
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Rs 7.;",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Jeremias 52:4–11",
-                "text": "Assim, em 15 de janeiro,125 durante o nono ano de reinado de Zedequias, Nabucodonosor, rei de Babilônia, e todo o seu exército cercaram Jerusalém e construíram rampas de ataque contra os muros."
-              },
-              {
-                "ref": "1 Crônicas 6:15",
-                "text": "que foi deportado quando o SENHOR enviou o povo de Judá e de Jerusalém para o exílio por meio de Nabucodonosor. Os clãs dos levitas 1660 Os filhos de Levi foram: Gérson, Coate e Merari."
-              },
-              {
-                "ref": "Jeremias 34:1–6",
-                "text": "Nabucodonosor, rei da Babilônia, veio com todos os exércitos dos reinos que ele governava e lutou contra Jerusalém e contra as cidades de Judá. Naquela ocasião, Jeremias recebeu esta mensagem do SENHOR:"
-              },
-              {
-                "ref": "Isaías 29:3",
-                "text": "Serei seu inimigo, cercarei Jerusalém e atacarei seus muros. Levantarei torres de cerco e a destruirei."
-              }
-            ]
-          },
-          {
-            "number": 2,
-            "text": "Cr 3.; Jr 52., que trazem 5 côvados; o hebraico traz 3 côvados. 108 25. Conforme o texto paralelo em Jr 40.; o hebraico traz Jazanias, variação de Jezanias. 109 25.25 Esse mês ocorreu entre outubro e novembro de 586 a.C.; ver também nota em 25.. 110 25.27a Em hebraico, Levantou a cabeça de. 111 25.27b Conforme alguns manuscritos hebraicos, a Septuaginta e a versão siríaca (ver tb. Jr 52.31); o Texto Massorético não traz e o libertou. 112 25.27c Em hebraico, no vigésimo sétimo dia do décimo segundo mês, do antigo calendário lunar hebraico. O ano foi 561 a.C.; ver também nota em 25..",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Deuteronômio 28:52",
-                "text": "Atacarão suas cidades até derrubarem todos os muros fortificados de sua terra, as muralhas nas quais vocês confiavam como proteção. Atacarão todas as cidades da terra que o SENHOR, seu Deus, lhes dá."
-              },
-              {
-                "ref": "2 Reis 24:10",
-                "text": "Durante o reinado de Joaquim, os oficiais de Nabucodonosor, rei da Babilônia, subiram contra Jerusalém e a cercaram."
               }
             ]
           }

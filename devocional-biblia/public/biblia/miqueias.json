@@ -2,6 +2,7 @@
   "1": {
     "book": "Miqueias",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -94,7 +95,8 @@
                 "text": "Os montes se derretem como cera diante do SENHOR, diante do Senhor de toda a terra."
               },
               {
-                "ref": "Isaías 64:1–3"
+                "ref": "Isaías 64:1–3",
+                "text": "Quem dera abrisses os céus e descesses! Os montes tremeriam em tua presença!"
               },
               {
                 "ref": "Habacuque 3:6",
@@ -189,7 +191,8 @@
                 "text": "Ouçam o pranto desesperado do povo de Sião: ‘Estamos arruinados! Que humilhação! Temos de deixar nossa terra, pois nossas casas foram destruídas!’”."
               },
               {
-                "ref": "Jeremias 9:1"
+                "ref": "Jeremias 9:1",
+                "text": "Quem dera minha cabeça fosse uma represa, e meus olhos, uma fonte de lágrimas! Choraria dia e noite por meu povo que foi massacrado."
               }
             ]
           },
@@ -212,7 +215,7 @@
               },
               {
                 "ref": "Isaías 8:7–8",
-                "text": "Portanto, o Senhor fará vir sobre eles uma grande inundação do rio Eufrates: o rei da Assíria com toda a sua glória. e cobrirá Judá até o pescoço. Abrirá as asas e submergirá sua terra de um extremo ao outro, ó Emanuel."
+                "text": "Portanto, o Senhor fará vir sobre eles uma grande inundação do rio Eufrates: o rei da Assíria com toda a sua glória. A inundação fará transbordar todos os seus canais"
               }
             ]
           },
@@ -241,7 +244,7 @@
           },
           {
             "number": 11,
-            "text": "Vocês, habitantes de Safir, vão para o exílio, nus e envergonhados. Os habitantes de Zaanã4 não se atrevem a sair da cidade. Os habitantes de Bete-Ezel estão em prantos, pois não têm proteção.",
+            "text": "Vocês, habitantes de Safir, vão para o exílio, nus e envergonhados. Os habitantes de Zaanã não se atrevem a sair da cidade. Os habitantes de Bete-Ezel estão em prantos, pois não têm proteção.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -250,7 +253,7 @@
               },
               {
                 "ref": "Jeremias 48:9",
-                "text": "Quem dera Moabe tivesse asas para que pudesse voar para longe,103 pois suas cidades ficarão desertas, sem nenhum habitante."
+                "text": "Quem dera Moabe tivesse asas para que pudesse voar para longe, pois suas cidades ficarão desertas, sem nenhum habitante."
               },
               {
                 "ref": "Naum 3:5",
@@ -350,7 +353,7 @@
               },
               {
                 "ref": "Jeremias 49:1",
-                "text": "Esta é a mensagem acerca dos amonitas. Assim diz o SENHOR: “Acaso não há descendentes de Israel para herdar a terra de Gade? Por que vocês, que adoram Moloque,107 habitam nas cidades de Gade?"
+                "text": "Esta é a mensagem acerca dos amonitas. Assim diz o SENHOR: “Acaso não há descendentes de Israel para herdar a terra de Gade? Por que vocês, que adoram Moloque, habitam nas cidades de Gade?"
               }
             ]
           },
@@ -384,6 +387,7 @@
   "2": {
     "book": "Miqueias",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Julgamento contra os opressores ricos",
@@ -533,7 +537,7 @@
           },
           {
             "number": 7,
-            "text": "Acaso deve falar desse modo, ó povo de Israel?14 O Espírito do SENHOR terá paciência com essa conduta? Se fizesse o que é certo, minhas palavras lhe trariam consolo.",
+            "text": "Acaso deve falar desse modo, ó povo de Israel? O Espírito do SENHOR terá paciência com essa conduta? Se fizesse o que é certo, minhas palavras lhe trariam consolo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -662,7 +666,7 @@
               },
               {
                 "ref": "Oséias 1:11",
-                "text": "Nesse tempo, o povo de Judá e o povo de Israel se unirão. Escolherão para si um só líder e voltarão juntos do exílio."
+                "text": "Nesse tempo, o povo de Judá e o povo de Israel se unirão. Escolherão para si um só líder e voltarão juntos do exílio. Que grande dia será o dia em que Deus semear seu povo novamente em sua terra!"
               },
               {
                 "ref": "Miqueias 5:7",
@@ -704,6 +708,7 @@
   "3": {
     "book": "Miqueias",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Julgamento contra os líderes de Israel",
@@ -727,7 +732,7 @@
               },
               {
                 "ref": "Salmos 82:1–5",
-                "text": "Deus preside a assembleia dos céus; no meio dos seres celestiais,110 anuncia seu julgamento:"
+                "text": "Deus preside a assembleia dos céus; no meio dos seres celestiais, anuncia seu julgamento:"
               }
             ]
           },
@@ -861,7 +866,7 @@
               },
               {
                 "ref": "Ezequiel 24:17",
-                "text": "Sofra em si­lêncio, mas não lamente junto ao túmulo. Não des­cubra a cabeça nem tire as sandálias. Não siga os rituais de luto nem aceite comida de amigos que vierem consolá-lo”."
+                "text": "Sofra em silêncio, mas não lamente junto ao túmulo. Não descubra a cabeça nem tire as sandálias. Não siga os rituais de luto nem aceite comida de amigos que vierem consolá-lo”."
               },
               {
                 "ref": "Isaías 47:12–14",
@@ -876,7 +881,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 58:1",
-                "text": "“Grite alto, com todas as suas forças! Grite alto, como o som da trombeta! Fale ao meu povo, Israel,164 sobre sua rebeldia e seus pecados!"
+                "text": "“Grite alto, com todas as suas forças! Grite alto, como o som da trombeta! Fale ao meu povo, Israel, sobre sua rebeldia e seus pecados!"
               },
               {
                 "ref": "1 Coríntios 2:12–13",
@@ -910,7 +915,8 @@
                 "text": "Absolver o culpado e condenar o inocente são duas coisas detestáveis para o SENHOR."
               },
               {
-                "ref": "Deuteronômio 27:19"
+                "ref": "Deuteronômio 27:19",
+                "text": "‘Maldito quem negar justiça aos estrangeiros, aos órfãos ou às viúvas’. E todo o povo responderá: ‘Amém!’."
               }
             ]
           },
@@ -990,6 +996,7 @@
   "4": {
     "book": "Miqueias",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "O reino futuro do SENHOR",
@@ -1078,11 +1085,11 @@
               },
               {
                 "ref": "Ezequiel 39:26",
-                "text": "Quando voltarem para sua terra e viverem em segurança, sem que ninguém lhes cause medo, assumirão a responsabilidade por103 sua vergonha e infidelidade no passado."
+                "text": "Quando voltarem para sua terra e viverem em segurança, sem que ninguém lhes cause medo, assumirão a responsabilidade por sua vergonha e infidelidade no passado."
               },
               {
                 "ref": "Isaías 1:20",
-                "text": "Se, porém, se desviarem e se recusarem a ouvir, serão devorados pela espada. Eu, o SENHOR, falei!” Jerusalém, cidade infiel"
+                "text": "Se, porém, se desviarem e se recusarem a ouvir, serão devorados pela espada. Eu, o SENHOR, falei!”"
               }
             ]
           },
@@ -1171,7 +1178,7 @@
               },
               {
                 "ref": "Apocalipse 22:5",
-                "text": "E não haverá noite; não será necessária a luz da lâmpada nem a luz do sol, pois o Senhor Deus brilhará sobre eles. E reinarão para todo o ­sempre."
+                "text": "E não haverá noite; não será necessária a luz da lâmpada nem a luz do sol, pois o Senhor Deus brilhará sobre eles. E reinarão para todo o sempre."
               },
               {
                 "ref": "Zacarias 9:10",
@@ -1213,14 +1220,15 @@
             "crossReferences": [
               {
                 "ref": "Isaías 48:20",
-                "text": "Saiam do cativeiro! Deixem a Babilônia e os babilônios!144 Proclamem esta mensagem! Anunciem-na em alta voz para os confins da terra! O SENHOR resgatou seus servos, o povo de Israel."
+                "text": "Saiam do cativeiro! Deixem a Babilônia e os babilônios! Proclamem esta mensagem! Anunciem-na em alta voz para os confins da terra! O SENHOR resgatou seus servos, o povo de Israel."
               },
               {
                 "ref": "Isaías 43:14",
-                "text": "Assim diz o SENHOR, seu Redentor, o Santo de Israel: “Por sua causa, enviarei um exército contra a Babilônia; obrigarei os babilônios135 a fugir nos navios de que tanto se orgulham."
+                "text": "Assim diz o SENHOR, seu Redentor, o Santo de Israel: “Por sua causa, enviarei um exército contra a Babilônia; obrigarei os babilônios a fugir nos navios de que tanto se orgulham."
               },
               {
-                "ref": "2 Reis 20:18"
+                "ref": "2 Reis 20:18",
+                "text": "‘Até mesmo alguns de seus descendentes serão levados para o exílio. Eles se tornarão eunucos e servirão no palácio do rei da Babilônia’”."
               },
               {
                 "ref": "Oséias 13:13",
@@ -1276,7 +1284,7 @@
           },
           {
             "number": 13,
-            "text": "“Levante-se e esmague as nações, ó bela Sião!19 Pois eu lhe darei chifres de ferro e cascos de bronze, para que pisoteie muitas nações até despedaçá-las. Você dedicará ao SENHOR as riquezas que elas roubaram; dedicará seus tesouros ao Soberano de toda a terra.”",
+            "text": "“Levante-se e esmague as nações, ó bela Sião! Pois eu lhe darei chifres de ferro e cascos de bronze, para que pisoteie muitas nações até despedaçá-las. Você dedicará ao SENHOR as riquezas que elas roubaram; dedicará seus tesouros ao Soberano de toda a terra.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1304,12 +1312,13 @@
   "5": {
     "book": "Miqueias",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "",
         "verses": [
           {
-            "number": 120,
+            "number": 1,
             "text": "Mobilizem-se! Reúnam suas tropas! O inimigo cerca Jerusalém. Com uma vara ferirá o rosto do líder de Israel.",
             "isJesusWords": false,
             "crossReferences": []
@@ -1320,7 +1329,7 @@
         "title": "Um governante de Belém",
         "verses": [
           {
-            "number": 221,
+            "number": 2,
             "text": "Mas você, ó Belém Efrata, é apenas uma pequena vila entre todo o povo de Judá. E, no entanto, um governante de Israel, cujas origens são do passado distante, sairá de você em meu favor.",
             "isJesusWords": false,
             "crossReferences": []
@@ -1429,7 +1438,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 72:6",
-                "text": "Que o governo do rei seja como a chuva sobre a grama recém- cortada, como os aguaceiros que regam a terra."
+                "text": "Que o governo do rei seja como a chuva sobre a grama recém-cortada, como os aguaceiros que regam a terra."
               },
               {
                 "ref": "Isaías 44:3",
@@ -1456,7 +1465,7 @@
               },
               {
                 "ref": "Miqueias 4:13",
-                "text": "“Levante-se e esmague as nações, ó bela Sião!19 Pois eu lhe darei chifres de ferro e cascos de bronze, para que pisoteie muitas nações até despedaçá-las. Você dedicará ao SENHOR as riquezas que elas roubaram; dedicará se..."
+                "text": "“Levante-se e esmague as nações, ó bela Sião! Pois eu lhe darei chifres de ferro e cascos de bronze, para que pisoteie muitas nações até despedaçá-las. Você dedicará ao SENHOR as riquezas que elas roubaram; dedicará seus..."
               },
               {
                 "ref": "Zacarias 12:3",
@@ -1624,6 +1633,7 @@
   "6": {
     "book": "Miqueias",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "As acusações do SENHOR contra Israel",
@@ -1647,7 +1657,7 @@
               },
               {
                 "ref": "Ezequiel 36:1",
-                "text": "“Filho do homem, profetize aos montes de Israel e transmita- lhes esta mensagem: Ó montes de Israel, ouçam a palavra do SENHOR!"
+                "text": "“Filho do homem, profetize aos montes de Israel e transmita-lhes esta mensagem: Ó montes de Israel, ouçam a palavra do SENHOR!"
               }
             ]
           },
@@ -1658,7 +1668,7 @@
             "crossReferences": [
               {
                 "ref": "Oséias 12:2",
-                "text": "Agora o SENHOR apresenta acusações contra Judá; está prestes a castigar Jacó53 por sua conduta enganosa, e lhe retribuir por tudo que fez."
+                "text": "Agora o SENHOR apresenta acusações contra Judá; está prestes a castigar Jacó por sua conduta enganosa, e lhe retribuir por tudo que fez."
               },
               {
                 "ref": "Oséias 4:1",
@@ -1716,7 +1726,7 @@
               },
               {
                 "ref": "Isaías 63:9–12",
-                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou.175 Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
+                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou. Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
               }
             ]
           },
@@ -1842,7 +1852,7 @@
           },
           {
             "number": 10,
-            "text": "Que direi sobre as casas dos perversos, cheias de tesouros obtidos pelo engano? E quanto à prática repulsiva de calcular cereais com medidas falsas?25",
+            "text": "Que direi sobre as casas dos perversos, cheias de tesouros obtidos pelo engano? E quanto à prática repulsiva de calcular cereais com medidas falsas?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1900,7 +1910,8 @@
                 "text": "Pois sua língua dispara mentiras como flechas envenenadas; falam palavras amigáveis a seus vizinhos enquanto, no coração, tramam matá-los."
               },
               {
-                "ref": "Jeremias 9:2–6"
+                "ref": "Jeremias 9:2–6",
+                "text": "Quem dera pudesse ir para bem longe, morar numa cabana no deserto e me esquecer do meu povo! Pois todos são adúlteros, um bando de traidores."
               }
             ]
           },
@@ -2003,6 +2014,7 @@
   "7": {
     "book": "Miqueias",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Sofrimento transformado em esperança",
@@ -2128,7 +2140,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Mateus 10:35–36"
+                "ref": "Mateus 10:35–36",
+                "text": "‘Vim para pôr o homem contra seu pai, a filha contra sua mãe, e a nora contra sua sogra. Seus inimigos estarão em sua própria casa’."
               },
               {
                 "ref": "Lucas 12:53",
@@ -2181,7 +2194,8 @@
                 "text": "O SENHOR é minha luz e minha salvação; então, por que ter medo? O SENHOR é a fortaleza de minha vida; então, por que estremecer?"
               },
               {
-                "ref": "Isaías 9:2"
+                "ref": "Isaías 9:2",
+                "text": "O povo que anda na escuridão verá grande luz. Para os que vivem na terra de trevas profundas, uma luz brilhará."
               },
               {
                 "ref": "Salmos 112:4",
@@ -2324,7 +2338,7 @@
               },
               {
                 "ref": "Salmos 100:3",
-                "text": "Reconheçam que o SENHOR é Deus! Ele nos criou e a ele pertencemos;128 somos seu povo, o rebanho que ele pastoreia."
+                "text": "Reconheçam que o SENHOR é Deus! Ele nos criou e a ele pertencemos; somos seu povo, o rebanho que ele pastoreia."
               },
               {
                 "ref": "Isaías 40:11",
@@ -2366,7 +2380,7 @@
               },
               {
                 "ref": "Isaías 52:15",
-                "text": "Ele causará assombro em158 muitas nações; reis ficarão mudos diante dele, pois verão aquilo que ninguém lhes havia falado,"
+                "text": "Ele causará assombro em muitas nações; reis ficarão mudos diante dele, pois verão aquilo que ninguém lhes havia falado, entenderão aquilo que nunca tinham ouvido."
               },
               {
                 "ref": "Jó 29:9–10",
@@ -2449,7 +2463,7 @@
           },
           {
             "number": 20,
-            "text": "Tu nos mostrarás tua fidelidade e teu amor como prometeste há muito tempo a Abraão e a Jacó, nossos antepassados. 1 1.10a Gate tem som parecido com o termo hebraico para “contar”. 2 1.10b Bete-Leafra significa “casa do pó”. 3 1.11a Safir significa “agradável”. 4 1.11b Zaanã tem som parecido com o termo hebraico para “sair”. 5 1.11c Bete-Ezel significa “casa adjacente”. 6 1. Marote tem som parecido com o termo hebraico para “amargo”. 7 1.13a Laquis tem som parecido com o termo hebraico para “parelha de cavalos”. 8 1.13b Em hebraico, a filha de Sião. 9 1.14a Moresete tem som parecido com o termo hebraico para “presente” ou “dote”. 10 1.14b Aczibe tem som parecido com o termo hebraico para “engano”. 11 1.15a Maressa tem som parecido com o termo hebraico para “conquistador”. 12 1.15b Em hebraico, a glória. 13 2. Ou os profetas respondem; em hebraico, eles profetizam. 14 2. Em hebraico, ó casa de Jacó? Os nomes “Jacó” e “Israel” são usados de forma intercambiável ao longo de todo o Antigo Testamento e se referem, por vezes, ao patriarca e, em outras ocasiões, à nação. 15 2. Em hebraico, Jacó. Ver nota em 2.. 16 4.8a Em hebraico, Quanto a você, Migdal-Eder, / o Ofel da filha de Sião. 17 4.8b Em hebraico, da filha de Jerusalém. 18 4. Em hebraico, filha de Sião. 19 4. Em hebraico, Levante-se e debulhe, ó filha de Sião. 20 5. No texto hebraico, o versículo 5. é numerado 4.. 21 5. No texto hebraico, os versículos 5.2-15 são numerados 5.1-14. 22 5. Em hebraico, Jacó; também em 5.. Ver nota em 2.. 23 6. Em hebraico, Sitim. 24 6. Em hebraico, Ouçam a vara; / quem a nomeou? 25 6. Em hebraico, usar o efa curto? O efa era uma unidade para medir cereais. 26 7. Em hebraico, o rio. 27 7. Ou cercado por uma terra fértil.",
+            "text": "Tu nos mostrarás tua fidelidade e teu amor como prometeste há muito tempo a Abraão e a Jacó, nossos antepassados.",
             "isJesusWords": false,
             "crossReferences": [
               {

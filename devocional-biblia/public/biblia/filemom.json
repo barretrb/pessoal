@@ -2,13 +2,14 @@
   "1": {
     "book": "Filemom",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Paulo",
         "verses": [
           {
             "number": 1,
-            "text": "Eu, Paulo, prisioneiro de Cristo Jesus, escrevo esta carta, junto com nosso irmão Timóteo, a Filemom, nosso amado colaborador, 2à irmã Áfia, a Arquipo, nosso companheiro na luta, e à igreja que se reúne em sua casa.",
+            "text": "Eu, Paulo, prisioneiro de Cristo Jesus, escrevo esta carta, junto com nosso irmão Timóteo, a Filemom, nosso amado colaborador,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -30,6 +31,12 @@
             ]
           },
           {
+            "number": 2,
+            "text": "à irmã Áfia, a Arquipo, nosso companheiro na luta, e à igreja que se reúne em sua casa.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 3,
             "text": "Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz.",
             "isJesusWords": false,
@@ -43,7 +50,8 @@
                 "text": "Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz."
               },
               {
-                "ref": "2 Coríntios 13:14"
+                "ref": "2 Coríntios 13:14",
+                "text": "Que a graça do Senhor Jesus Cristo, o amor de Deus e a comunhão do Espírito Santo sejam com todos vocês."
               }
             ]
           }
@@ -113,7 +121,7 @@
               },
               {
                 "ref": "Colossenses 1:9",
-                "text": "Por isso, desde que ouvimos falar a seu ­respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
+                "text": "Por isso, desde que ouvimos falar a seu respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
               },
               {
                 "ref": "1 Pedro 1:5–8",
@@ -197,7 +205,7 @@
           },
           {
             "number": 10,
-            "text": "Suplico que demonstre bondade a meu filho Onésimo. Tornei- me pai dele na fé quando estava aqui na prisão.",
+            "text": "Suplico que demonstre bondade a meu filho Onésimo. Tornei-me pai dele na fé quando estava aqui na prisão.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -275,7 +283,7 @@
               },
               {
                 "ref": "Filipenses 1:7",
-                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas- novas."
+                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas-novas."
               },
               {
                 "ref": "1 Coríntios 16:17",
@@ -348,7 +356,7 @@
               },
               {
                 "ref": "1 Timóteo 6:2",
-                "text": "O fato de o senhor ser irmão na fé não é desculpa para deixarem de respeitá- lo. Pelo contrário, devem trabalhar ainda mais arduamente, pois seus esforços beneficiam outros irmãos amados. Falsos ensinos e riquezas verdad..."
+                "text": "O fato de o senhor ser irmão na fé não é desculpa para deixarem de respeitá-lo. Pelo contrário, devem trabalhar ainda mais arduamente, pois seus esforços beneficiam outros irmãos amados."
               },
               {
                 "ref": "1 Coríntios 7:22",
@@ -535,7 +543,7 @@
           },
           {
             "number": 25,
-            "text": "Que a graça de nosso Senhor Jesus Cristo esteja com o espírito de vocês. 1 1. Onésimo significa “útil”.",
+            "text": "Que a graça de nosso Senhor Jesus Cristo esteja com o espírito de vocês.",
             "isJesusWords": false,
             "crossReferences": [
               {

@@ -2,6 +2,7 @@
   "1": {
     "book": "Sofonias",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -363,7 +364,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 32:14",
-                "text": "O palácio será abandonado, e a cidade, sempre agitada, ficará vazia. Jumentos selvagens andarão soltos, e rebanhos pastarão nas fortalezas104 e nas torres de vigia,"
+                "text": "O palácio será abandonado, e a cidade, sempre agitada, ficará vazia. Jumentos selvagens andarão soltos, e rebanhos pastarão nas fortalezas e nas torres de vigia,"
               },
               {
                 "ref": "Isaías 2:12–15",
@@ -432,6 +433,7 @@
   "2": {
     "book": "Sofonias",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Chamado ao arrependimento",
@@ -497,7 +499,7 @@
               },
               {
                 "ref": "Salmos 76:9",
-                "text": "Tu te levantaste para julgar, ó Deus, para salvar os oprimidos da terra."
+                "text": "Tu te levantaste para julgar, ó Deus, para salvar os oprimidos da terra. Interlúdio"
               },
               {
                 "ref": "Jeremias 29:12–13",
@@ -719,11 +721,11 @@
               },
               {
                 "ref": "Jeremias 51:20–23",
-                "text": "“Você121 é meu martelo e minha espada”, diz o SENHOR. “Com você despedaçarei nações e destruirei muitos reinos."
+                "text": "“Você é meu martelo e minha espada”, diz o SENHOR. “Com você despedaçarei nações e destruirei muitos reinos."
               },
               {
                 "ref": "Isaías 43:3",
-                "text": "Pois eu sou o SENHOR, seu Deus, o Santo de Israel, seu Salvador. Dei o Egito como resgate por sua liberdade; em troca de você, dei a Etiópia134 e Sebá."
+                "text": "Pois eu sou o SENHOR, seu Deus, o Santo de Israel, seu Salvador. Dei o Egito como resgate por sua liberdade; em troca de você, dei a Etiópia e Sebá."
               }
             ]
           },
@@ -761,7 +763,7 @@
               },
               {
                 "ref": "Isaías 34:11–17",
-                "text": "Ali viverão a coruja do deserto e o mocho, o corujão e o corvo.108 Pois Deus medirá aquela terra com cuidado; ele a medirá para o caos e para a destruição."
+                "text": "Ali viverão a coruja do deserto e o mocho, o corujão e o corvo. Pois Deus medirá aquela terra com cuidado; ele a medirá para o caos e para a destruição."
               },
               {
                 "ref": "Amós 9:1",
@@ -803,6 +805,7 @@
   "3": {
     "book": "Sofonias",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "A rebeldia e a redenção de Jerusalém",
@@ -1108,7 +1111,7 @@
           },
           {
             "number": 14,
-            "text": "Cante, ó filha de Sião! Grite bem alto, ó Israel! Alegre-se e exulte de todo o coração, ó preciosa Jerusalém!10",
+            "text": "Cante, ó filha de Sião! Grite bem alto, ó Israel! Alegre-se e exulte de todo o coração, ó preciosa Jerusalém!",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1194,7 +1197,7 @@
               },
               {
                 "ref": "Isaías 62:4–5",
-                "text": "Nunca mais será chamada de “Cidade Abandonada”170 nem de “Terra Desolada”.171 Seu novo nome será “Cidade do Prazer de Deus”172 e “Esposa de Deus”,173 pois o SENHOR tem prazer em você e a tomará como esposa."
+                "text": "Nunca mais será chamada de “Cidade Abandonada” nem de “Terra Desolada”. Seu novo nome será “Cidade do Prazer de Deus” e “Esposa de Deus”, pois o SENHOR tem prazer em você e a tomará como esposa."
               }
             ]
           },
@@ -1246,7 +1249,7 @@
           },
           {
             "number": 20,
-            "text": "Naquele dia, reunirei vocês e os trarei para casa. Eu lhes darei honra e reconhecimento entre todas as nações da terra, e os restaurarei diante dos olhos delas. Eu, o SENHOR, falei!” 1 1. O significado do hebraico é incerto. 2 1. Em hebraico, Milcom, variação de Moloque; pode, ainda, significar rei deles. 3 1. Em hebraico, preparou um sacrifício e santificou seus convidados. 4 1. Ou segundo bairro, uma nova seção de Jerusalém. O hebraico traz o Mishneh. 5 1. Ou no vale; o hebraico traz a Maktesh. 6 1. Em hebraico, os que estão sedimentados como borra [de vinho]. 7 2. Em hebraico, quereteus. 8 2. Em hebraico, cuxitas. 9 3. Em hebraico, Cuxe. 10 3. Em hebraico, filha de Jerusalém. 11 3. Ou ele estará silencioso em seu amor; a Septuaginta e a versão siríaca trazem ele os renovará com seu amor. 12 3. O significado do hebraico é incerto.",
+            "text": "Naquele dia, reunirei vocês e os trarei para casa. Eu lhes darei honra e reconhecimento entre todas as nações da terra, e os restaurarei diante dos olhos delas. Eu, o SENHOR, falei!”",
             "isJesusWords": false,
             "crossReferences": [
               {

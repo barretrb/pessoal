@@ -2,6 +2,7 @@
   "1": {
     "book": "Colossenses",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Paulo",
@@ -17,11 +18,11 @@
               },
               {
                 "ref": "Filemom 1:1",
-                "text": "Eu, Paulo, prisioneiro de Cristo Jesus, escrevo esta carta, junto com nosso irmão Timóteo, a Filemom, nosso amado colaborador, 2à irmã Áfia, a Arquipo, nosso companheiro na luta, e à igreja que se reúne em sua casa."
+                "text": "Eu, Paulo, prisioneiro de Cristo Jesus, escrevo esta carta, junto com nosso irmão Timóteo, a Filemom, nosso amado colaborador,"
               },
               {
                 "ref": "1 Coríntios 1:1",
-                "text": "Eu, Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta, com nosso irmão Sóstenes, 2à igreja de Deus em Corinto, àqueles que ele santificou por meio de Cristo Jesus. Vocês foram cham..."
+                "text": "Eu, Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta, com nosso irmão Sóstenes,"
               },
               {
                 "ref": "Filipenses 1:1",
@@ -43,7 +44,8 @@
                 "text": "Eu, Paulo, apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta ao povo santo em Éfeso, seguidores fiéis de Cristo Jesus."
               },
               {
-                "ref": "1 Coríntios 1:2"
+                "ref": "1 Coríntios 1:2",
+                "text": "à igreja de Deus em Corinto, àqueles que ele santificou por meio de Cristo Jesus. Vocês foram chamados por Deus para ser seu povo santo junto com todos que, em toda parte, invocam o nome de nosso Senhor Jesus Cristo, Senhor deles e nosso."
               },
               {
                 "ref": "Romanos 1:7",
@@ -71,7 +73,7 @@
               },
               {
                 "ref": "Colossenses 1:9",
-                "text": "Por isso, desde que ouvimos falar a seu ­respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
+                "text": "Por isso, desde que ouvimos falar a seu respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
               },
               {
                 "ref": "Romanos 1:8–9",
@@ -104,12 +106,12 @@
           },
           {
             "number": 5,
-            "text": "que vêm da esperança confiante naquilo que lhes está reservado no céu. Vocês têm essa expectativa desde que ouviram pela primeira vez a verdade das boas- novas.",
+            "text": "que vêm da esperança confiante naquilo que lhes está reservado no céu. Vocês têm essa expectativa desde que ouviram pela primeira vez a verdade das boas-novas.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "1 Pedro 1:3–4",
-                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos."
+                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos. Agora temos uma viva esperança"
               },
               {
                 "ref": "Efésios 1:13",
@@ -196,7 +198,7 @@
           },
           {
             "number": 9,
-            "text": "Por isso, desde que ouvimos falar a seu ­respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual.",
+            "text": "Por isso, desde que ouvimos falar a seu respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -242,7 +244,7 @@
           },
           {
             "number": 11,
-            "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam.",
+            "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam. Que sejam cheios de alegria",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -262,12 +264,7 @@
                 "text": "mas ele disse: “Minha graça é tudo de que você precisa. Meu poder opera melhor na fraqueza”. Portanto, agora fico feliz de me orgulhar de minhas fraquezas, para que o poder de Deus opere por meu intermédio."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Que sejam cheios de alegria",
-        "verses": [
+          },
           {
             "number": 12,
             "text": "e sempre deem graças ao Pai. Ele os capacitou para participarem da herança que pertence ao seu povo santo, aqueles que vivem na luz.",
@@ -407,7 +404,7 @@
               },
               {
                 "ref": "João 17:5",
-                "text": "Agora, Pai, glorifica- me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
+                "text": "Agora, Pai, glorifica-me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
               }
             ]
           },
@@ -541,7 +538,7 @@
               },
               {
                 "ref": "Mateus 24:13–14",
-                "text": "mas quem se mantiver firme até o fim será salvo. As boas-novas a respeito do reino serão anunciadas em todo o mundo, para que todas as nações140 as ouçam; então, virá o fim."
+                "text": "mas quem se mantiver firme até o fim será salvo. As boas-novas a respeito do reino serão anunciadas em todo o mundo, para que todas as nações as ouçam; então, virá o fim."
               },
               {
                 "ref": "Gálatas 6:9",
@@ -680,7 +677,7 @@
               },
               {
                 "ref": "Efésios 1:19",
-                "text": "Também oro para que entendam a grandeza insuperável do poder de Deus para conosco, os que cremos."
+                "text": "Também oro para que entendam a grandeza insuperável do poder de Deus para conosco, os que cremos. É o mesmo poder grandioso"
               },
               {
                 "ref": "1 Coríntios 9:25–27",
@@ -688,7 +685,7 @@
               },
               {
                 "ref": "Efésios 3:7",
-                "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas- novas."
+                "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas-novas."
               }
             ]
           }
@@ -699,6 +696,7 @@
   "2": {
     "book": "Colossenses",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -949,7 +947,7 @@
               },
               {
                 "ref": "Filipenses 3:3",
-                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
+                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
               },
               {
                 "ref": "Romanos 6:6",
@@ -957,7 +955,7 @@
               },
               {
                 "ref": "Deuteronômio 30:6",
-                "text": "“O SENHOR, seu Deus, transformará55 o coração de vocês e de todos os seus descendentes, para que o amem de todo o coração e de toda a alma, e para que vivam!"
+                "text": "“O SENHOR, seu Deus, transformará o coração de vocês e de todos os seus descendentes, para que o amem de todo o coração e de toda a alma, e para que vivam!"
               }
             ]
           },
@@ -1244,6 +1242,7 @@
   "3": {
     "book": "Colossenses",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Instruções para a nova vida",
@@ -1709,7 +1708,7 @@
               },
               {
                 "ref": "Mateus 15:4–6",
-                "text": "Pois Deus ordenou: ‘Honre seu pai e sua mãe’81 e ‘Quem insultar seu pai ou sua mãe será executado’."
+                "text": "Pois Deus ordenou: ‘Honre seu pai e sua mãe’ e ‘Quem insultar seu pai ou sua mãe será executado’."
               }
             ]
           },
@@ -1724,7 +1723,7 @@
               },
               {
                 "ref": "Efésios 6:4",
-                "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem- nos com a disciplina e a instrução que vêm do Senhor."
+                "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem-nos com a disciplina e a instrução que vêm do Senhor."
               },
               {
                 "ref": "Salmos 103:13",
@@ -1770,7 +1769,7 @@
               },
               {
                 "ref": "Efésios 6:6–7",
-                "text": "Procurem agradá- los sempre, e não apenas quando eles estiverem observando. Como escravos de Cristo, façam a vontade de Deus de todo o coração. Trabalhem com entusiasmo, como se servissem ao Senhor, e não a homens."
+                "text": "Procurem agradá-los sempre, e não apenas quando eles estiverem observando. Como escravos de Cristo, façam a vontade de Deus de todo o coração. Trabalhem com entusiasmo, como se servissem ao Senhor, e não a homens."
               },
               {
                 "ref": "Romanos 14:8",
@@ -1778,7 +1777,7 @@
               },
               {
                 "ref": "2 Crônicas 31:21",
-                "text": "Em tudo que fez no serviço do templo de Deus e em seus esforços para obedecer à lei e aos mandamentos de Deus, Ezequias buscou seu Deus de todo o coração. Como resultado, foi muito bem- sucedido."
+                "text": "Em tudo que fez no serviço do templo de Deus e em seus esforços para obedecer à lei e aos mandamentos de Deus, Ezequias buscou seu Deus de todo o coração. Como resultado, foi muito bem-sucedido."
               }
             ]
           },
@@ -1835,6 +1834,7 @@
   "4": {
     "book": "Colossenses",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -2040,7 +2040,7 @@
             "crossReferences": [
               {
                 "ref": "Filemom 1:10–19",
-                "text": "Suplico que demonstre bondade a meu filho Onésimo. Tornei- me pai dele na fé quando estava aqui na prisão."
+                "text": "Suplico que demonstre bondade a meu filho Onésimo. Tornei-me pai dele na fé quando estava aqui na prisão."
               },
               {
                 "ref": "Colossenses 4:7",
@@ -2105,7 +2105,7 @@
               },
               {
                 "ref": "Colossenses 1:9",
-                "text": "Por isso, desde que ouvimos falar a seu ­respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
+                "text": "Por isso, desde que ouvimos falar a seu respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
               },
               {
                 "ref": "Colossenses 1:28",
@@ -2169,7 +2169,8 @@
                 "text": "Há uma porta inteiramente aberta para realizar um grande trabalho aqui, ainda que muitos se oponham a mim."
               },
               {
-                "ref": "Filemom 1:2"
+                "ref": "Filemom 1:2",
+                "text": "à irmã Áfia, a Arquipo, nosso companheiro na luta, e à igreja que se reúne em sua casa."
               }
             ]
           },
@@ -2194,11 +2195,12 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Filemom 1:2"
+                "ref": "Filemom 1:2",
+                "text": "à irmã Áfia, a Arquipo, nosso companheiro na luta, e à igreja que se reúne em sua casa."
               },
               {
                 "ref": "Atos 1:17",
-                "text": "Judas era um de nós e participava do ministério conosco”. 18(Ele comprou um campo com o dinheiro que recebeu por sua perversidade. Ao cair ali de cabeça, seu corpo se partiu ao meio, e seus intestinos se derramaram."
+                "text": "Judas era um de nós e participava do ministério conosco”."
               },
               {
                 "ref": "2 Timóteo 1:6",
@@ -2212,7 +2214,7 @@
           },
           {
             "number": 18,
-            "text": "Esta é minha saudação de próprio punho: Paulo. Lembrem-se de que estou na prisão. Que a graça de Deus esteja com vocês. 1 1. Ou tem ministrado em favor de vocês; alguns manuscritos trazem tem ministrado em nosso favor. 2 1. Alguns manuscritos acrescentam com seu sangue. 3 1. Ou é o primogênito de toda a criação. 4 1. Ou o primogênito dentre os mortos. 5 1. Ou perfeitos. 6 2. Ou nele habita corporalmente toda a plenitude da Divindade. 7 2. Em grego, o corpo da carne. 8 2.13 Em grego, da incircuncisão de sua carne. 9 2. Ou despojou. 10 2. Ou na adoração com anjos. 11 3. Alguns manuscritos trazem que é nossa vida. 12 3. Alguns manuscritos acrescentam sobre os que lhe desobedecem. 13 3.11a Em grego, grego. 14 3.11b Em grego, bárbaro, cita. 15 3. Ou sirvam a Cristo como seu Senhor. 16 4. Em grego, e temperadas com sal. 17 4. Em grego, os únicos da circuncisão. 18 4. Ou perfeitos.",
+            "text": "Esta é minha saudação de próprio punho: Paulo. Lembrem-se de que estou na prisão. Que a graça de Deus esteja com vocês.",
             "isJesusWords": false,
             "crossReferences": [
               {

@@ -2,6 +2,7 @@
   "1": {
     "book": "Deuteronômio",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Introdução ao primeiro discurso de Moisés",
@@ -13,7 +14,7 @@
             "crossReferences": [
               {
                 "ref": "1 Samuel 25:1",
-                "text": "Samuel morreu, e todo o Israel se reuniu para lamentar sua morte. Foi sepultado em Ramá, onde tinha vivido. Davi se enfurece contra Nabal Então Davi desceu para o deserto de Maom."
+                "text": "Samuel morreu, e todo o Israel se reuniu para lamentar sua morte. Foi sepultado em Ramá, onde tinha vivido."
               },
               {
                 "ref": "Josué 22:7",
@@ -59,7 +60,7 @@
             "crossReferences": [
               {
                 "ref": "Números 33:38",
-                "text": "Enquanto estavam ao pé do monte Hor, por ordem do SENHOR o sacerdote Arão subiu ao monte e morreu ali. Isso aconteceu no primeiro dia do quinto mês,103 quarenta anos depois que Israel saiu do Egito."
+                "text": "Enquanto estavam ao pé do monte Hor, por ordem do SENHOR o sacerdote Arão subiu ao monte e morreu ali. Isso aconteceu no primeiro dia do quinto mês, quarenta anos depois que Israel saiu do Egito."
               },
               {
                 "ref": "Números 20:1",
@@ -218,11 +219,11 @@
               },
               {
                 "ref": "Êxodo 32:13",
-                "text": "Lembra-te dos teus servos Abraão, Isaque e Jacó.101 Assumiste um compromisso com eles por meio de juramento, dizendo: ‘Tornarei seus descendentes tão numerosos quanto as estrelas do céu. Eu lhes darei toda esta terra que..."
+                "text": "Lembra-te dos teus servos Abraão, Isaque e Jacó. Assumiste um compromisso com eles por meio de juramento, dizendo: ‘Tornarei seus descendentes tão numerosos quanto as estrelas do céu. Eu lhes darei toda esta terra que lh..."
               },
               {
                 "ref": "Gênesis 22:17",
-                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar."
+                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar. Seus descendentes conquistarão as cidades de seus inimigos"
               },
               {
                 "ref": "Gênesis 15:5",
@@ -241,7 +242,7 @@
               },
               {
                 "ref": "Gênesis 22:17",
-                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar."
+                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar. Seus descendentes conquistarão as cidades de seus inimigos"
               },
               {
                 "ref": "Números 6:27",
@@ -330,12 +331,12 @@
           },
           {
             "number": 16,
-            "text": "“Naquela ocasião, ordenei aos juízes: ‘Deem atenção aos casos de seus irmãos israelitas e também dos estrangeiros que vivem entre vocês.",
+            "text": "“Naquela ocasião, ordenei aos juízes: ‘Deem atenção aos casos de seus irmãos israelitas e também dos estrangeiros que vivem entre vocês. Sejam completamente justos em todas as suas decisões",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "João 7:24",
-                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”. Jesus é o Messias?"
+                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”."
               },
               {
                 "ref": "Êxodo 23:2–3",
@@ -350,12 +351,7 @@
                 "text": "Ordeno solenemente, na presença de Deus, de Cristo Jesus e dos anjos eleitos que você obedeça a estas instruções sem tomar partido nem demonstrar favoritismo."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Sejam completamente justos em todas as suas decisões",
-        "verses": [
+          },
           {
             "number": 17,
             "text": "e imparciais em seus julgamentos. Cuidem tanto dos casos dos pobres como dos ricos. Não deixem que ninguém os intimide, pois Deus dará a decisão por seu intermédio. Tragam-me os casos que forem difíceis demais para vocês, e eu cuidarei deles’.",
@@ -590,7 +586,7 @@
               },
               {
                 "ref": "2 Samuel 21:16–22",
-                "text": "Isbibenobe era descendente de gigantes, e a ponta de sua lança de bronze pesava cerca de 3, quilos. Ele estava armado com uma espada nova e jurou que ia matar Davi."
+                "text": "Isbibenobe era descendente de gigantes, e a ponta de sua lança de bronze pesava cerca de 3,5 quilos. Ele estava armado com uma espada nova e jurou que ia matar Davi."
               },
               {
                 "ref": "Josué 14:8",
@@ -659,7 +655,7 @@
               },
               {
                 "ref": "Isaías 63:9",
-                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou.175 Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
+                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou. Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
               },
               {
                 "ref": "Oséias 11:3–4",
@@ -715,12 +711,12 @@
           },
           {
             "number": 34,
-            "text": "“Quando o SENHOR ouviu vocês se queixarem, ficou irado e, por isso, fez um juramento: 35‘Nenhum de vocês desta geração perversa viverá para ver a boa terra que eu jurei dar a seus antepassados.",
+            "text": "“Quando o SENHOR ouviu vocês se queixarem, ficou irado e, por isso, fez um juramento:",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Números 14:22–30",
-                "text": "nenhuma dessas pessoas entrará na terra. Todas elas viram a minha presença gloriosa e os sinais que realizei no Egito e no deserto. Repetidamente, porém, me puseram à prova, ­re-­ cusando-se a ouvir a minha voz."
+                "text": "nenhuma dessas pessoas entrará na terra. Todas elas viram a minha presença gloriosa e os sinais que realizei no Egito e no deserto. Repetidamente, porém, me puseram à prova, re- cusando-se a ouvir a minha voz."
               },
               {
                 "ref": "Hebreus 3:8–11",
@@ -735,6 +731,12 @@
                 "text": "Assim, jurei em minha ira: ‘Jamais entrarão em meu descanso’”."
               }
             ]
+          },
+          {
+            "number": 35,
+            "text": "‘Nenhum de vocês desta geração perversa viverá para ver a boa terra que eu jurei dar a seus antepassados.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 36,
@@ -778,7 +780,7 @@
               },
               {
                 "ref": "Salmos 106:32–33",
-                "text": "Também em Meribá, provocaram a ira do SENHOR, e causaram sérios problemas a Moisés. Fizeram Moisés se irar,140 e ele falou sem refletir."
+                "text": "Também em Meribá, provocaram a ira do SENHOR, e causaram sérios problemas a Moisés. Fizeram Moisés se irar, e ele falou sem refletir."
               }
             ]
           },
@@ -830,7 +832,7 @@
           },
           {
             "number": 40,
-            "text": "Quanto a vocês, deem meia- volta e retornem ao deserto, em direção ao mar Vermelho’.",
+            "text": "Quanto a vocês, deem meia-volta e retornem ao deserto, em direção ao mar Vermelho’.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -972,6 +974,7 @@
   "2": {
     "book": "Deuteronômio",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Recapitulação das andanças de Israel",
@@ -983,11 +986,11 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 1:40",
-                "text": "Quanto a vocês, deem meia- volta e retornem ao deserto, em direção ao mar Vermelho’."
+                "text": "Quanto a vocês, deem meia-volta e retornem ao deserto, em direção ao mar Vermelho’."
               },
               {
                 "ref": "Números 21:4",
-                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom."
+                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom. Mas o povo ficou impaciente"
               },
               {
                 "ref": "Números 14:25",
@@ -1001,7 +1004,13 @@
           },
           {
             "number": 2,
-            "text": "“Finalmente, o SENHOR me disse: 3‘Vocês andaram por esta região montanhosa tempo suficiente; agora, sigam para o norte.",
+            "text": "“Finalmente, o SENHOR me disse:",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 3,
+            "text": "‘Vocês andaram por esta região montanhosa tempo suficiente; agora, sigam para o norte.",
             "isJesusWords": false,
             "crossReferences": []
           },
@@ -1112,7 +1121,7 @@
               },
               {
                 "ref": "2 Reis 16:6",
-                "text": "Nessa época, o rei de Edom recupe­rou a cidade de Elate para os edomitas. Expulsou o povo de Judá e colocou edomitas para morarem ali, onde estão até hoje."
+                "text": "Nessa época, o rei de Edom recuperou a cidade de Elate para os edomitas. Expulsou o povo de Judá e colocou edomitas para morarem ali, onde estão até hoje."
               },
               {
                 "ref": "2 Reis 14:22",
@@ -1122,7 +1131,7 @@
           },
           {
             "number": 9,
-            "text": "o SENHOR nos advertiu: ‘Não perturbem os moabitas, os descendentes de Ló, nem comecem uma guerra contra eles. Eu dei a eles como propriedade a região de Ar, e não darei a vocês parte alguma do território deles’. 10(Antigamente, um povo chamado emins havia habitado na região de Ar. Eram tão fortes, numerosos e altos quanto os enaquins.",
+            "text": "o SENHOR nos advertiu: ‘Não perturbem os moabitas, os descendentes de Ló, nem comecem uma guerra contra eles. Eu dei a eles como propriedade a região de Ar, e não darei a vocês parte alguma do território deles’.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1142,6 +1151,12 @@
                 "text": "Não os perturbem, pois eu dei a eles como propriedade toda a região montanhosa ao redor do monte Seir, e não darei a vocês um metro sequer da terra deles."
               }
             ]
+          },
+          {
+            "number": 10,
+            "text": "(Antigamente, um povo chamado emins havia habitado na região de Ar. Eram tão fortes, numerosos e altos quanto os enaquins.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 11,
@@ -1219,7 +1234,7 @@
               },
               {
                 "ref": "Deuteronômio 1:34–35",
-                "text": "“Quando o SENHOR ouviu vocês se queixarem, ficou irado e, por isso, fez um juramento: 35‘Nenhum de vocês desta geração perversa viverá para ver a boa terra que eu jurei dar a seus antepassados."
+                "text": "“Quando o SENHOR ouviu vocês se queixarem, ficou irado e, por isso, fez um juramento: ‘Nenhum de vocês desta geração perversa viverá para ver a boa terra que eu jurei dar a seus antepassados."
               },
               {
                 "ref": "Salmos 95:11",
@@ -1271,18 +1286,24 @@
           },
           {
             "number": 17,
-            "text": "o SENHOR me disse: 18‘Hoje vocês atravessarão a fronteira com Moabe pela região de Ar",
+            "text": "o SENHOR me disse:",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 18,
+            "text": "‘Hoje vocês atravessarão a fronteira com Moabe pela região de Ar",
             "isJesusWords": false,
             "crossReferences": []
           },
           {
             "number": 19,
-            "text": "e se aproximarão da terra dos amonitas, os descendentes de Ló. Não os perturbem nem comecem uma guerra contra eles. Eu dei a eles como propriedade a terra de Amom, e não darei a vocês parte alguma do território deles’. 20(Antigamente, aquela região era considerada terra dos refains que haviam habitado ali, embora os amonitas os chamassem de zanzumins.",
+            "text": "e se aproximarão da terra dos amonitas, os descendentes de Ló. Não os perturbem nem comecem uma guerra contra eles. Eu dei a eles como propriedade a terra de Amom, e não darei a vocês parte alguma do território deles’.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Deuteronômio 2:9",
-                "text": "o SENHOR nos advertiu: ‘Não perturbem os moabitas, os descendentes de Ló, nem comecem uma guerra contra eles. Eu dei a eles como propriedade a região de Ar, e não darei a vocês parte alguma do território deles’. 10(Antig..."
+                "text": "o SENHOR nos advertiu: ‘Não perturbem os moabitas, os descendentes de Ló, nem comecem uma guerra contra eles. Eu dei a eles como propriedade a região de Ar, e não darei a vocês parte alguma do território deles’."
               },
               {
                 "ref": "Juízes 11:13–27",
@@ -1297,6 +1318,12 @@
                 "text": "Como resultado, as duas filhas de Ló engravidaram do próprio pai."
               }
             ]
+          },
+          {
+            "number": 20,
+            "text": "(Antigamente, aquela região era considerada terra dos refains que haviam habitado ali, embora os amonitas os chamassem de zanzumins.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 21,
@@ -1409,7 +1436,7 @@
               },
               {
                 "ref": "Êxodo 23:27",
-                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia- volta e fugirem."
+                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia-volta e fugirem."
               }
             ]
           }
@@ -1420,7 +1447,7 @@
         "verses": [
           {
             "number": 26,
-            "text": "“Do deserto de Quedemote, enviei embaixadores ao rei Seom de Hesbom com a seguinte proposta de paz: 27‘Deixe-nos atravessar seu território. Ficaremos na estrada principal e não nos desviaremos nem para um lado nem para o outro.",
+            "text": "“Do deserto de Quedemote, enviei embaixadores ao rei Seom de Hesbom com a seguinte proposta de paz:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1440,6 +1467,12 @@
                 "text": "“Quando vocês se aproximarem de uma cidade para atacá-la, primeiro proponham paz a seus habitantes. Se eles aceitarem suas condições e abrirem as portas, todo o povo dentro da cidade os servirá com trabalhos forçados."
               }
             ]
+          },
+          {
+            "number": 27,
+            "text": "‘Deixe-nos atravessar seu território. Ficaremos na estrada principal e não nos desviaremos nem para um lado nem para o outro.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 28,
@@ -1643,7 +1676,7 @@
               },
               {
                 "ref": "Deuteronômio 2:19",
-                "text": "e se aproximarão da terra dos amonitas, os descendentes de Ló. Não os perturbem nem comecem uma guerra contra eles. Eu dei a eles como propriedade a terra de Amom, e não darei a vocês parte alguma do território deles’. 2..."
+                "text": "e se aproximarão da terra dos amonitas, os descendentes de Ló. Não os perturbem nem comecem uma guerra contra eles. Eu dei a eles como propriedade a terra de Amom, e não darei a vocês parte alguma do território deles’."
               }
             ]
           }
@@ -1654,6 +1687,7 @@
   "3": {
     "book": "Deuteronômio",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Vitória sobre Ogue de Basã",
@@ -1734,7 +1768,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 4:13",
-                "text": "Ben-Geber, em Ramote-Gileade, incluindo as Cidades de Jair (assim chamadas por causa de Jair, da tribo de Manassés9), em Gileade, e na região de Argobe, em Basã, incluindo sessenta grandes cidades fortificadas com trancas de bronze nos portões."
+                "text": "Ben-Geber, em Ramote-Gileade, incluindo as Cidades de Jair (assim chamadas por causa de Jair, da tribo de Manassés), em Gileade, e na região de Argobe, em Basã, incluindo sessenta grandes cidades fortificadas com trancas de bronze nos portões."
               },
               {
                 "ref": "Josué 13:30–31",
@@ -1813,7 +1847,7 @@
           },
           {
             "number": 8,
-            "text": "“Assim, tomamos o território dos dois reis amorreus a leste do rio Jordão, desde o vale de Arnom até o monte Hermom. 9(Os sidônios chamam o monte Hermom de Siriom, enquanto os amorreus o chamam de Senir.)",
+            "text": "“Assim, tomamos o território dos dois reis amorreus a leste do rio Jordão, desde o vale de Arnom até o monte Hermom.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1831,8 +1865,14 @@
             ]
           },
           {
+            "number": 9,
+            "text": "(Os sidônios chamam o monte Hermom de Siriom, enquanto os amorreus o chamam de Senir.)",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 10,
-            "text": "A essa altura, havíamos conquistado todas as cidades do planalto e todo o território de Gileade e Basã, até as cidades de Salcá e Edrei, que faziam parte do reino de Ogue, em Basã.” 11(O rei Ogue de Basã foi o último sobrevivente dos refains. Sua cama era feita de ferro e media mais de quatro metros de comprimento e quase dois metros de largura. Ainda hoje é possível vê-la na cidade amonita de Rabá.) A divisão da terra a leste do Jordão",
+            "text": "A essa altura, havíamos conquistado todas as cidades do planalto e todo o território de Gileade e Basã, até as cidades de Salcá e Edrei, que faziam parte do reino de Ogue, em Basã.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1853,6 +1893,17 @@
               }
             ]
           },
+          {
+            "number": 11,
+            "text": "(O rei Ogue de Basã foi o último sobrevivente dos refains. Sua cama era feita de ferro e media mais de quatro metros de comprimento e quase dois metros de largura. Ainda hoje é possível vê-la na cidade amonita de Rabá.)",
+            "isJesusWords": false,
+            "crossReferences": []
+          }
+        ]
+      },
+      {
+        "title": "A divisão da terra a leste do Jordão",
+        "verses": [
           {
             "number": 12,
             "text": "“Quando tomamos posse da terra, dei às tribos de Rúben e Gade o território para além de Aroer, ao longo do vale de Arnom, e também metade do território de Gileade com suas cidades.",
@@ -2093,7 +2144,7 @@
           },
           {
             "number": 23,
-            "text": "“Também naquela ocasião, supliquei ao SENHOR: 24‘Ó SENHOR Soberano, tu apenas começaste a mostrar a este teu servo a tua grandeza e a força da tua mão. Existe algum deus no céu ou na terra capaz de realizar obras tão grandiosas e poderosas como as que tu realizas?",
+            "text": "“Também naquela ocasião, supliquei ao SENHOR:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2101,6 +2152,12 @@
                 "text": "Em três ocasiões, supliquei ao Senhor que o removesse,"
               }
             ]
+          },
+          {
+            "number": 24,
+            "text": "‘Ó SENHOR Soberano, tu apenas começaste a mostrar a este teu servo a tua grandeza e a força da tua mão. Existe algum deus no céu ou na terra capaz de realizar obras tão grandiosas e poderosas como as que tu realizas?",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 25,
@@ -2209,7 +2266,7 @@
               },
               {
                 "ref": "Números 33:48–49",
-                "text": "Saíram dos montes de Abarim e acamparam nas campinas de Moabe, junto ao rio Jordão, do lado oposto de Jericó. Junto ao rio Jordão, acamparam desde Bete-Jesimote até Abel- Sitim nas campinas de Moabe."
+                "text": "Saíram dos montes de Abarim e acamparam nas campinas de Moabe, junto ao rio Jordão, do lado oposto de Jericó. Junto ao rio Jordão, acamparam desde Bete-Jesimote até Abel-Sitim nas campinas de Moabe."
               }
             ]
           }
@@ -2220,6 +2277,7 @@
   "4": {
     "book": "Deuteronômio",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Moisés encoraja Israel a obedecer",
@@ -2235,7 +2293,7 @@
               },
               {
                 "ref": "Ezequiel 20:11",
-                "text": "Ali lhes dei meus decretos e estatutos, para que encontrassem vida ao praticá- los."
+                "text": "Ali lhes dei meus decretos e estatutos, para que encontrassem vida ao praticá-los."
               },
               {
                 "ref": "Deuteronômio 8:1",
@@ -2257,7 +2315,8 @@
                 "text": "Não acrescente nada às palavras dele; se o fizer, ele o repreenderá e mostrará que você é mentiroso."
               },
               {
-                "ref": "Deuteronômio 12:32"
+                "ref": "Deuteronômio 12:32",
+                "text": "“Portanto, tenham o cuidado de cumprir todas as ordens que lhes dou. Não acrescentem nem tirem coisa alguma.”"
               },
               {
                 "ref": "Apocalipse 22:18–19",
@@ -2409,7 +2468,7 @@
           },
           {
             "number": 9,
-            "text": "“Fiquem muito atentos! Cuidem para que não se esqueçam daquilo que viram com os próprios olhos. Não deixem que essas lembranças se apaguem de sua memória enquanto viverem. Passem- nas adiante a seus filhos e netos.",
+            "text": "“Fiquem muito atentos! Cuidem para que não se esqueçam daquilo que viram com os próprios olhos. Não deixem que essas lembranças se apaguem de sua memória enquanto viverem. Passem-nas adiante a seus filhos e netos.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2506,11 +2565,11 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 34:28",
-                "text": "Moisés permaneceu no monte com o SENHOR quarenta dias e quarenta noites. Durante todo esse tempo, não comeu pão nem bebeu água. E escreveu os termos da aliança, os dez mandamentos,112 nas tábuas de pedra."
+                "text": "Moisés permaneceu no monte com o SENHOR quarenta dias e quarenta noites. Durante todo esse tempo, não comeu pão nem bebeu água. E escreveu os termos da aliança, os dez mandamentos, nas tábuas de pedra."
               },
               {
                 "ref": "Êxodo 31:18",
-                "text": "Quando o SENHOR terminou de falar com Moisés no monte Sinai, entregou-lhe as duas tábuas de pedra gravadas com os termos da aliança,100 escritas pelo dedo de Deus."
+                "text": "Quando o SENHOR terminou de falar com Moisés no monte Sinai, entregou-lhe as duas tábuas de pedra gravadas com os termos da aliança, escritas pelo dedo de Deus."
               },
               {
                 "ref": "Deuteronômio 9:9–11",
@@ -2528,7 +2587,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Ezequiel 21:1–23"
+                "ref": "Ezequiel 21:1–23",
+                "text": "Recebi esta mensagem do SENHOR:"
               },
               {
                 "ref": "Salmos 105:44–45",
@@ -2665,7 +2725,7 @@
               },
               {
                 "ref": "Salmos 106:32–33",
-                "text": "Também em Meribá, provocaram a ira do SENHOR, e causaram sérios problemas a Moisés. Fizeram Moisés se irar,140 e ele falou sem refletir."
+                "text": "Também em Meribá, provocaram a ira do SENHOR, e causaram sérios problemas a Moisés. Fizeram Moisés se irar, e ele falou sem refletir."
               },
               {
                 "ref": "Deuteronômio 3:26",
@@ -2703,7 +2763,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 4:9",
-                "text": "“Fiquem muito atentos! Cuidem para que não se esqueçam daquilo que viram com os próprios olhos. Não deixem que essas lembranças se apaguem de sua memória enquanto viverem. Passem- nas adiante a seus filhos e netos."
+                "text": "“Fiquem muito atentos! Cuidem para que não se esqueçam daquilo que viram com os próprios olhos. Não deixem que essas lembranças se apaguem de sua memória enquanto viverem. Passem-nas adiante a seus filhos e netos."
               },
               {
                 "ref": "Ezequiel 16:59",
@@ -2923,7 +2983,7 @@
               },
               {
                 "ref": "Mateus 24:31",
-                "text": "Ele enviará seus anjos com um forte sopro de trombeta, e eles reunirão os escolhidos de todas as partes do mundo,144 de uma extremidade à outra do céu."
+                "text": "Ele enviará seus anjos com um forte sopro de trombeta, e eles reunirão os escolhidos de todas as partes do mundo, de uma extremidade à outra do céu."
               },
               {
                 "ref": "Deuteronômio 32:7",
@@ -3034,7 +3094,7 @@
               },
               {
                 "ref": "Isaías 63:9",
-                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou.175 Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
+                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou. Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
               },
               {
                 "ref": "Isaías 63:11–12",
@@ -3061,7 +3121,7 @@
               },
               {
                 "ref": "Êxodo 23:27–28",
-                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia- volta e fugirem."
+                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia-volta e fugirem."
               },
               {
                 "ref": "Salmos 44:2–3",
@@ -3173,7 +3233,7 @@
               },
               {
                 "ref": "1 Reis 4:13",
-                "text": "Ben-Geber, em Ramote-Gileade, incluindo as Cidades de Jair (assim chamadas por causa de Jair, da tribo de Manassés9), em Gileade, e na região de Argobe, em Basã, incluindo sessenta grandes cidades fortificadas com trancas de bronze nos portões."
+                "text": "Ben-Geber, em Ramote-Gileade, incluindo as Cidades de Jair (assim chamadas por causa de Jair, da tribo de Manassés), em Gileade, e na região de Argobe, em Basã, incluindo sessenta grandes cidades fortificadas com trancas de bronze nos portões."
               },
               {
                 "ref": "1 Crônicas 6:71",
@@ -3196,7 +3256,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 27:26"
+                "ref": "Deuteronômio 27:26",
+                "text": "‘Maldito quem não confirmar e cumprir os termos desta lei’. E todo o povo responderá: ‘Amém!’.”"
               },
               {
                 "ref": "Deuteronômio 27:3",
@@ -3283,7 +3344,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 3:9"
+                "ref": "Deuteronômio 3:9",
+                "text": "(Os sidônios chamam o monte Hermom de Siriom, enquanto os amorreus o chamam de Senir.)"
               },
               {
                 "ref": "Deuteronômio 2:36",
@@ -3325,6 +3387,7 @@
   "5": {
     "book": "Deuteronômio",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Dez mandamentos para a comunidade da aliança",
@@ -3455,7 +3518,7 @@
               },
               {
                 "ref": "Salmos 81:5–10",
-                "text": "Ele o ordenou como lei para Israel,109 quando atacou o Egito para nos libertar. Ouvi uma voz desconhecida dizer:"
+                "text": "Ele o ordenou como lei para Israel, quando atacou o Egito para nos libertar. Ouvi uma voz desconhecida dizer:"
               },
               {
                 "ref": "Deuteronômio 4:4",
@@ -3516,10 +3579,11 @@
               },
               {
                 "ref": "Êxodo 34:7",
-                "text": "Cubro de amor mil gerações108 e perdoo o mal, a rebeldia e o pecado. Contudo, não absolvo o culpado; trago as consequências do pecado dos pais sobre os filhos até a terceira e quarta geração”."
+                "text": "Cubro de amor mil gerações e perdoo o mal, a rebeldia e o pecado. Contudo, não absolvo o culpado; trago as consequências do pecado dos pais sobre os filhos até a terceira e quarta geração”."
               },
               {
-                "ref": "Números 14:18"
+                "ref": "Números 14:18",
+                "text": "‘O SENHOR é lento para se irar, é cheio de amor e perdoa todo tipo de pecado e rebeldia. Contudo, não absolve o culpado; traz as consequências do pecado dos pais sobre os filhos até a terceira e quarta geração’."
               },
               {
                 "ref": "Daniel 9:4–9",
@@ -3657,7 +3721,7 @@
               },
               {
                 "ref": "Isaías 63:9",
-                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou.175 Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
+                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou. Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
               }
             ]
           },
@@ -3791,7 +3855,7 @@
               },
               {
                 "ref": "Lucas 12:15",
-                "text": "Em seguida, disse: “Cuidado! Guardem- se de todo tipo de ganância. A vida de uma pessoa não é definida pela quantidade de seus bens”."
+                "text": "Em seguida, disse: “Cuidado! Guardem-se de todo tipo de ganância. A vida de uma pessoa não é definida pela quantidade de seus bens”."
               }
             ]
           },
@@ -3802,11 +3866,11 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 24:12",
-                "text": "Então o SENHOR disse a Moisés: “Suba ao monte para encontrar- se comigo. Fique lá e eu lhe darei tábuas de pedra nas quais gravei a lei e os mandamentos para ensinar ao povo”."
+                "text": "Então o SENHOR disse a Moisés: “Suba ao monte para encontrar-se comigo. Fique lá e eu lhe darei tábuas de pedra nas quais gravei a lei e os mandamentos para ensinar ao povo”."
               },
               {
                 "ref": "Êxodo 31:18",
-                "text": "Quando o SENHOR terminou de falar com Moisés no monte Sinai, entregou-lhe as duas tábuas de pedra gravadas com os termos da aliança,100 escritas pelo dedo de Deus."
+                "text": "Quando o SENHOR terminou de falar com Moisés no monte Sinai, entregou-lhe as duas tábuas de pedra gravadas com os termos da aliança, escritas pelo dedo de Deus."
               },
               {
                 "ref": "Deuteronômio 5:4",
@@ -3852,7 +3916,7 @@
               },
               {
                 "ref": "Gênesis 32:30",
-                "text": "Jacó chamou aquele lugar de Peniel,118 pois disse: “Vi Deus face a face e, no entanto, minha vida foi poupada”."
+                "text": "Jacó chamou aquele lugar de Peniel, pois disse: “Vi Deus face a face e, no entanto, minha vida foi poupada”."
               }
             ]
           },
@@ -3867,7 +3931,7 @@
               },
               {
                 "ref": "Gálatas 3:21–22",
-                "text": "Existe, portanto, algum conflito entre a lei e as promessas de Deus?21 De maneira nenhuma! Se a lei fosse capaz de nos conceder nova vida, seríamos declarados justos pela obediência a ela."
+                "text": "Existe, portanto, algum conflito entre a lei e as promessas de Deus? De maneira nenhuma! Se a lei fosse capaz de nos conceder nova vida, seríamos declarados justos pela obediência a ela."
               },
               {
                 "ref": "Deuteronômio 33:2",
@@ -3984,7 +4048,7 @@
               },
               {
                 "ref": "Êxodo 24:12",
-                "text": "Então o SENHOR disse a Moisés: “Suba ao monte para encontrar- se comigo. Fique lá e eu lhe darei tábuas de pedra nas quais gravei a lei e os mandamentos para ensinar ao povo”."
+                "text": "Então o SENHOR disse a Moisés: “Suba ao monte para encontrar-se comigo. Fique lá e eu lhe darei tábuas de pedra nas quais gravei a lei e os mandamentos para ensinar ao povo”."
               }
             ]
           },
@@ -4041,6 +4105,7 @@
   "6": {
     "book": "Deuteronômio",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "Chamado para compromisso total",
@@ -4064,7 +4129,7 @@
               },
               {
                 "ref": "Números 36:13",
-                "text": "Esses são os mandamentos e os estatutos que o SENHOR deu aos israelitas por meio de Moisés enquanto estavam acampados nas campinas de Moabe junto ao rio Jordão, do lado oposto de ­Jericó."
+                "text": "Esses são os mandamentos e os estatutos que o SENHOR deu aos israelitas por meio de Moisés enquanto estavam acampados nas campinas de Moabe junto ao rio Jordão, do lado oposto de Jericó."
               }
             ]
           },
@@ -4098,7 +4163,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 22:17",
-                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar."
+                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar. Seus descendentes conquistarão as cidades de seus inimigos"
               },
               {
                 "ref": "Êxodo 3:8",
@@ -4116,7 +4181,7 @@
           },
           {
             "number": 4,
-            "text": "“Ouça, ó Israel! O SENHOR, nosso Deus, o SENHOR é único!18",
+            "text": "“Ouça, ó Israel! O SENHOR, nosso Deus, o SENHOR é único!",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4194,7 +4259,7 @@
               },
               {
                 "ref": "Efésios 6:4",
-                "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem- nos com a disciplina e a instrução que vêm do Senhor."
+                "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem-nos com a disciplina e a instrução que vêm do Senhor."
               },
               {
                 "ref": "Salmos 78:4–6",
@@ -4240,7 +4305,7 @@
               },
               {
                 "ref": "Isaías 30:8",
-                "text": "Agora vá e escreva estas palavras; registre-as num livro."
+                "text": "Agora vá e escreva estas palavras; registre-as num livro. Elas permanecerão até o fim dos tempos como testemunha"
               },
               {
                 "ref": "Isaías 57:8",
@@ -4405,7 +4470,7 @@
               },
               {
                 "ref": "Mateus 4:7",
-                "text": "Jesus respondeu: “As Escrituras também ­dizem: ‘Não ponha à prova o Senhor, seu Deus’”."
+                "text": "Jesus respondeu: “As Escrituras também dizem: ‘Não ponha à prova o Senhor, seu Deus’”."
               },
               {
                 "ref": "Salmos 95:8–9",
@@ -4581,7 +4646,7 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 32:39",
-                "text": "Eu lhes darei um só coração e um só propósito: adorar- me para sempre, para o seu próprio bem e para o bem de seus descendentes."
+                "text": "Eu lhes darei um só coração e um só propósito: adorar-me para sempre, para o seu próprio bem e para o bem de seus descendentes."
               },
               {
                 "ref": "Salmos 41:2",
@@ -4627,6 +4692,7 @@
   "7": {
     "book": "Deuteronômio",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "O privilégio da santidade",
@@ -4807,7 +4873,7 @@
               },
               {
                 "ref": "Êxodo 32:13",
-                "text": "Lembra-te dos teus servos Abraão, Isaque e Jacó.101 Assumiste um compromisso com eles por meio de juramento, dizendo: ‘Tornarei seus descendentes tão numerosos quanto as estrelas do céu. Eu lhes darei toda esta terra que..."
+                "text": "Lembra-te dos teus servos Abraão, Isaque e Jacó. Assumiste um compromisso com eles por meio de juramento, dizendo: ‘Tornarei seus descendentes tão numerosos quanto as estrelas do céu. Eu lhes darei toda esta terra que lh..."
               },
               {
                 "ref": "Jeremias 31:3",
@@ -5216,6 +5282,7 @@
   "8": {
     "book": "Deuteronômio",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "Chamado para lembrar e obedecer",
@@ -5403,7 +5470,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 22:14",
-                "text": "“Trabalhei arduamente para providenciar os materiais para a construção do templo do SENHOR: 3.500 toneladas de ouro, 35.000 toneladas de prata155 e tanto ferro e bronze que não se pode pesar. Também juntei madeira e pedr..."
+                "text": "“Trabalhei arduamente para providenciar os materiais para a construção do templo do SENHOR: 3.500 toneladas de ouro, 35.000 toneladas de prata e tanto ferro e bronze que não se pode pesar. Também juntei madeira e pedra..."
               },
               {
                 "ref": "Josué 22:8",
@@ -5480,7 +5547,7 @@
               },
               {
                 "ref": "Deuteronômio 28:47",
-                "text": "Se não servirem ao SENHOR, seu Deus, com alegria e entusiasmo pelos muitos bene­fícios que receberam,"
+                "text": "Se não servirem ao SENHOR, seu Deus, com alegria e entusiasmo pelos muitos benefícios que receberam,"
               },
               {
                 "ref": "Oséias 13:5–6",
@@ -5499,7 +5566,7 @@
               },
               {
                 "ref": "Gênesis 13:1–5",
-                "text": "Abrão saiu do Egito e subiu para o Neguebe, junto com sua mulher, com Ló e com tudo que possuíam. 2(Abrão era muito rico e tinha muitos rebanhos, prata e ouro.)"
+                "text": "Abrão saiu do Egito e subiu para o Neguebe, junto com sua mulher, com Ló e com tudo que possuíam."
               },
               {
                 "ref": "Lucas 12:13–21",
@@ -5599,7 +5666,7 @@
               },
               {
                 "ref": "Isaías 10:8–14",
-                "text": "Ele dirá: ‘Em breve cada um de meus príncipes será rei. 9‘Destruímos Calno, como fizemos com Carquemis, Hamate caiu diante de nós, como aconteceu com Arpade, e derrotamos Samaria, como fizemos com Damasco."
+                "text": "Ele dirá: ‘Em breve cada um de meus príncipes será rei."
               }
             ]
           },
@@ -5671,6 +5738,7 @@
   "9": {
     "book": "Deuteronômio",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "Vitória pela graça de Deus",
@@ -5848,7 +5916,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 106:19–22",
-                "text": "No monte Sinai,138 fizeram um bezerro; prostraram-se diante de uma imagem de metal."
+                "text": "No monte Sinai, fizeram um bezerro; prostraram-se diante de uma imagem de metal."
               },
               {
                 "ref": "Êxodo 32:7–10",
@@ -5867,7 +5935,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 34:28",
-                "text": "Moisés permaneceu no monte com o SENHOR quarenta dias e quarenta noites. Durante todo esse tempo, não comeu pão nem bebeu água. E escreveu os termos da aliança, os dez mandamentos,112 nas tábuas de pedra."
+                "text": "Moisés permaneceu no monte com o SENHOR quarenta dias e quarenta noites. Durante todo esse tempo, não comeu pão nem bebeu água. E escreveu os termos da aliança, os dez mandamentos, nas tábuas de pedra."
               },
               {
                 "ref": "Êxodo 24:18",
@@ -5875,7 +5943,7 @@
               },
               {
                 "ref": "1 Reis 19:8",
-                "text": "Elias se levantou, comeu e bebeu, e o alimento lhe deu forças para uma jornada de quarenta dias e quarenta noites até o monte Sinai,109 o monte de Deus."
+                "text": "Elias se levantou, comeu e bebeu, e o alimento lhe deu forças para uma jornada de quarenta dias e quarenta noites até o monte Sinai, o monte de Deus."
               },
               {
                 "ref": "Mateus 4:2",
@@ -5890,7 +5958,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 31:18",
-                "text": "Quando o SENHOR terminou de falar com Moisés no monte Sinai, entregou-lhe as duas tábuas de pedra gravadas com os termos da aliança,100 escritas pelo dedo de Deus."
+                "text": "Quando o SENHOR terminou de falar com Moisés no monte Sinai, entregou-lhe as duas tábuas de pedra gravadas com os termos da aliança, escritas pelo dedo de Deus."
               },
               {
                 "ref": "Hebreus 8:10",
@@ -5994,7 +6062,7 @@
               },
               {
                 "ref": "Lucas 18:1–8",
-                "text": "Jesus contou a seus discípulos uma parábola para mostrar- lhes que deviam orar sempre e nunca desanimar."
+                "text": "Jesus contou a seus discípulos uma parábola para mostrar-lhes que deviam orar sempre e nunca desanimar."
               }
             ]
           },
@@ -6049,7 +6117,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 34:28",
-                "text": "Moisés permaneceu no monte com o SENHOR quarenta dias e quarenta noites. Durante todo esse tempo, não comeu pão nem bebeu água. E escreveu os termos da aliança, os dez mandamentos,112 nas tábuas de pedra."
+                "text": "Moisés permaneceu no monte com o SENHOR quarenta dias e quarenta noites. Durante todo esse tempo, não comeu pão nem bebeu água. E escreveu os termos da aliança, os dez mandamentos, nas tábuas de pedra."
               },
               {
                 "ref": "Deuteronômio 9:9",
@@ -6136,7 +6204,7 @@
           },
           {
             "number": 22,
-            "text": "“Vocês também provocaram a ira do SENHOR em Taberá, em Massá22 e em Quibrote-Hataavá.",
+            "text": "“Vocês também provocaram a ira do SENHOR em Taberá, em Massá e em Quibrote-Hataavá.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6248,7 +6316,7 @@
               },
               {
                 "ref": "Êxodo 32:13",
-                "text": "Lembra-te dos teus servos Abraão, Isaque e Jacó.101 Assumiste um compromisso com eles por meio de juramento, dizendo: ‘Tornarei seus descendentes tão numerosos quanto as estrelas do céu. Eu lhes darei toda esta terra que..."
+                "text": "Lembra-te dos teus servos Abraão, Isaque e Jacó. Assumiste um compromisso com eles por meio de juramento, dizendo: ‘Tornarei seus descendentes tão numerosos quanto as estrelas do céu. Eu lhes darei toda esta terra que lh..."
               },
               {
                 "ref": "Êxodo 6:3–8",
@@ -6262,7 +6330,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Números 14:16"
+                "ref": "Números 14:16",
+                "text": "‘O SENHOR não foi capaz de levá-los à terra que jurou lhes dar, por isso os matou no deserto’."
               },
               {
                 "ref": "Êxodo 32:12",
@@ -6300,6 +6369,7 @@
   "10": {
     "book": "Deuteronômio",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "Uma nova cópia da aliança",
@@ -6315,7 +6385,7 @@
               },
               {
                 "ref": "Êxodo 25:10–15",
-                "text": "“Faça para mim uma arca de madeira de acácia, com 1, metro de comprimento, 67, centímetros de largura e 67, centímetros de altura."
+                "text": "“Faça para mim uma arca de madeira de acácia, com 1,15 metro de comprimento, 67,5 centímetros de largura e 67,5 centímetros de altura."
               },
               {
                 "ref": "Hebreus 9:4",
@@ -6361,7 +6431,7 @@
               },
               {
                 "ref": "Êxodo 25:10",
-                "text": "“Faça para mim uma arca de madeira de acácia, com 1, metro de comprimento, 67, centímetros de largura e 67, centímetros de altura."
+                "text": "“Faça para mim uma arca de madeira de acácia, com 1,15 metro de comprimento, 67,5 centímetros de largura e 67,5 centímetros de altura."
               },
               {
                 "ref": "Deuteronômio 10:1",
@@ -6380,7 +6450,7 @@
               },
               {
                 "ref": "Êxodo 34:28",
-                "text": "Moisés permaneceu no monte com o SENHOR quarenta dias e quarenta noites. Durante todo esse tempo, não comeu pão nem bebeu água. E escreveu os termos da aliança, os dez mandamentos,112 nas tábuas de pedra."
+                "text": "Moisés permaneceu no monte com o SENHOR quarenta dias e quarenta noites. Durante todo esse tempo, não comeu pão nem bebeu água. E escreveu os termos da aliança, os dez mandamentos, nas tábuas de pedra."
               },
               {
                 "ref": "Deuteronômio 4:11–15",
@@ -6394,16 +6464,16 @@
           },
           {
             "number": 5,
-            "text": "Então virei-me, desci o monte e coloquei as tábuas na arca da aliança que eu tinha feito. As tábuas ainda estão dentro da arca, conforme o SENHOR me ordenou. 6(Os israelitas saíram dos poços do povo de Jacã25 e viajaram para Moserá, onde Arão morreu e foi sepultado. Eleazar, seu filho, serviu como sacerdote em seu lugar.",
+            "text": "Então virei-me, desci o monte e coloquei as tábuas na arca da aliança que eu tinha feito. As tábuas ainda estão dentro da arca, conforme o SENHOR me ordenou.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Êxodo 34:29",
-                "text": "Quando Moisés desceu do monte Sinai carregando as duas tábuas da aliança,113 não percebeu que seu rosto brilhava, pois ele havia falado com o SENHOR."
+                "text": "Quando Moisés desceu do monte Sinai carregando as duas tábuas da aliança, não percebeu que seu rosto brilhava, pois ele havia falado com o SENHOR."
               },
               {
                 "ref": "Êxodo 40:20",
-                "text": "Pegou as tábuas da aliança e as colocou144 dentro da arca. Prendeu à arca as varas para transportá-la e a cobriu com a tampa, o lugar de expiação."
+                "text": "Pegou as tábuas da aliança e as colocou dentro da arca. Prendeu à arca as varas para transportá-la e a cobriu com a tampa, o lugar de expiação."
               },
               {
                 "ref": "Deuteronômio 10:2",
@@ -6414,6 +6484,12 @@
                 "text": "Essas varas eram tão compridas que suas pontas podiam ser vistas do lugar santo, diante do lugar santíssimo, mas não de fora; e estão ali até hoje."
               }
             ]
+          },
+          {
+            "number": 6,
+            "text": "(Os israelitas saíram dos poços do povo de Jacã e viajaram para Moserá, onde Arão morreu e foi sepultado. Eleazar, seu filho, serviu como sacerdote em seu lugar.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 7,
@@ -6445,7 +6521,7 @@
               },
               {
                 "ref": "Números 6:23–26",
-                "text": "“Diga a Arão e a seus filhos que abençoem o povo de Israel com esta bênção especial: 24‘Que o SENHOR o abençoe e o proteja."
+                "text": "“Diga a Arão e a seus filhos que abençoem o povo de Israel com esta bênção especial:"
               }
             ]
           },
@@ -6487,7 +6563,7 @@
               },
               {
                 "ref": "Êxodo 34:28",
-                "text": "Moisés permaneceu no monte com o SENHOR quarenta dias e quarenta noites. Durante todo esse tempo, não comeu pão nem bebeu água. E escreveu os termos da aliança, os dez mandamentos,112 nas tábuas de pedra."
+                "text": "Moisés permaneceu no monte com o SENHOR quarenta dias e quarenta noites. Durante todo esse tempo, não comeu pão nem bebeu água. E escreveu os termos da aliança, os dez mandamentos, nas tábuas de pedra."
               },
               {
                 "ref": "Êxodo 33:17",
@@ -6545,7 +6621,7 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 32:39",
-                "text": "Eu lhes darei um só coração e um só propósito: adorar- me para sempre, para o seu próprio bem e para o bem de seus descendentes."
+                "text": "Eu lhes darei um só coração e um só propósito: adorar-me para sempre, para o seu próprio bem e para o bem de seus descendentes."
               },
               {
                 "ref": "Deuteronômio 6:24",
@@ -6614,7 +6690,7 @@
               },
               {
                 "ref": "Deuteronômio 30:6",
-                "text": "“O SENHOR, seu Deus, transformará55 o coração de vocês e de todos os seus descendentes, para que o amem de todo o coração e de toda a alma, e para que vivam!"
+                "text": "“O SENHOR, seu Deus, transformará o coração de vocês e de todos os seus descendentes, para que o amem de todo o coração e de toda a alma, e para que vivam!"
               },
               {
                 "ref": "Levítico 26:41",
@@ -6748,7 +6824,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 46:27",
-                "text": "Além deles, José teve dois filhos163 que nasceram no Egito, totalizando setenta164 membros da família de Jacó no Egito."
+                "text": "Além deles, José teve dois filhos que nasceram no Egito, totalizando setenta membros da família de Jacó no Egito."
               },
               {
                 "ref": "Êxodo 1:5",
@@ -6771,6 +6847,7 @@
   "11": {
     "book": "Deuteronômio",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -6920,7 +6997,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 150:2",
-                "text": "Sm 22.."
+                "text": "Louvem-no por seus feitos poderosos, louvem sua grandeza sem igual!"
               },
               {
                 "ref": "Salmos 145:12",
@@ -6994,7 +7071,7 @@
             "crossReferences": [
               {
                 "ref": "Zacarias 14:18",
-                "text": "Se o povo do Egito não quiser ir à festa, o SENHOR o castigará45 com as mesmas pragas que enviará sobre as outras nações que se recusarem a ir."
+                "text": "Se o povo do Egito não quiser ir à festa, o SENHOR o castigará com as mesmas pragas que enviará sobre as outras nações que se recusarem a ir."
               }
             ]
           },
@@ -7036,7 +7113,7 @@
               },
               {
                 "ref": "1 Reis 9:3",
-                "text": "O SENHOR lhe disse: “Ouvi sua oração e sua súplica. Consagrei este templo que você construiu, onde meu nome será honrado para sempre. Olharei continuamente para ele, com todo o meu ­coração."
+                "text": "O SENHOR lhe disse: “Ouvi sua oração e sua súplica. Consagrei este templo que você construiu, onde meu nome será honrado para sempre. Olharei continuamente para ele, com todo o meu coração."
               },
               {
                 "ref": "Salmos 34:15",
@@ -7273,7 +7350,7 @@
               },
               {
                 "ref": "Êxodo 23:27–30",
-                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia- volta e fugirem."
+                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia-volta e fugirem."
               },
               {
                 "ref": "Êxodo 34:11",
@@ -7299,7 +7376,8 @@
                 "text": "Estabelecerei os limites de seu território desde o mar Vermelho até o mar Mediterrâneo, e do deserto do leste até o rio Eufrates. Entregarei em suas mãos os povos que hoje vivem na terra e os expulsarei de diante de vocês."
               },
               {
-                "ref": "1 Reis 4:21"
+                "ref": "1 Reis 4:21",
+                "text": "Salomão governava sobre todos os reinos, desde o rio Eufrates, ao norte, até a terra dos filisteus e a fronteira do Egito, ao sul. Os povos conquistados enviavam tributos a Salomão e continuaram a servi-lo durante toda a vida."
               }
             ]
           },
@@ -7314,7 +7392,7 @@
               },
               {
                 "ref": "Êxodo 23:27",
-                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia- volta e fugirem."
+                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia-volta e fugirem."
               },
               {
                 "ref": "Josué 1:5",
@@ -7397,7 +7475,7 @@
           },
           {
             "number": 29,
-            "text": "“Quando o SENHOR, seu Deus, os fizer entrar na terra da qual em breve vocês tomarão posse, pronunciem a bênção no monte Gerizim e a maldição no monte Ebal. 30(Esses dois montes ficam a oeste do rio Jordão, na terra dos cananeus que vivem no vale do Jordão, perto da cidade de Gilgal, junto aos carvalhos de Moré.)",
+            "text": "“Quando o SENHOR, seu Deus, os fizer entrar na terra da qual em breve vocês tomarão posse, pronunciem a bênção no monte Gerizim e a maldição no monte Ebal.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -7409,6 +7487,12 @@
                 "text": "Então Josué construiu no monte Ebal um altar ao SENHOR, o Deus de Israel."
               }
             ]
+          },
+          {
+            "number": 30,
+            "text": "(Esses dois montes ficam a oeste do rio Jordão, na terra dos cananeus que vivem no vale do Jordão, perto da cidade de Gilgal, junto aos carvalhos de Moré.)",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 31,
@@ -7435,7 +7519,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 12:32"
+                "ref": "Deuteronômio 12:32",
+                "text": "“Portanto, tenham o cuidado de cumprir todas as ordens que lhes dou. Não acrescentem nem tirem coisa alguma.”"
               },
               {
                 "ref": "Mateus 28:20",
@@ -7458,6 +7543,7 @@
   "12": {
     "book": "Deuteronômio",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "O lugar de adoração escolhido pelo SENHOR",
@@ -8122,7 +8208,7 @@
           },
           {
             "number": 31,
-            "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacri­fícios a seus deuses.",
+            "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacrifícios a seus deuses.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -8144,7 +8230,7 @@
             ]
           },
           {
-            "number": 3230,
+            "number": 32,
             "text": "“Portanto, tenham o cuidado de cumprir todas as ordens que lhes dou. Não acrescentem nem tirem coisa alguma.”",
             "isJesusWords": false,
             "crossReferences": []
@@ -8156,12 +8242,13 @@
   "13": {
     "book": "Deuteronômio",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "Advertência acerca da idolatria",
         "verses": [
           {
-            "number": 131,
+            "number": 1,
             "text": "“Surgirão entre vocês profetas ou pessoas que têm sonhos sobre o futuro, e eles prometerão sinais ou milagres.",
             "isJesusWords": false,
             "crossReferences": []
@@ -8430,7 +8517,7 @@
               },
               {
                 "ref": "2 Coríntios 6:15",
-                "text": "Que harmonia pode haver entre Cristo e o diabo?17 Como alguém que crê pode se ligar a quem não crê?"
+                "text": "Que harmonia pode haver entre Cristo e o diabo? Como alguém que crê pode se ligar a quem não crê?"
               }
             ]
           },
@@ -8453,7 +8540,7 @@
               },
               {
                 "ref": "João 7:24",
-                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”. Jesus é o Messias?"
+                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”."
               }
             ]
           },
@@ -8556,6 +8643,7 @@
   "14": {
     "book": "Deuteronômio",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
         "title": "Animais cerimonialmente puros e impuros",
@@ -8728,7 +8816,7 @@
               },
               {
                 "ref": "2 Pedro 2:22",
-                "text": "Neles se confirmam os provérbios: “O cão volta a seu próprio vômito”12 e “A porca lavada volta a revolver-se na lama”."
+                "text": "Neles se confirmam os provérbios: “O cão volta a seu próprio vômito” e “A porca lavada volta a revolver-se na lama”."
               },
               {
                 "ref": "Isaías 66:3",
@@ -8766,7 +8854,7 @@
           },
           {
             "number": 12,
-            "text": "Estas são as criaturas voadoras que vocês não podem comer: o abutre-fouveiro, o abutre-barbudo, o abutre- fusco,",
+            "text": "Estas são as criaturas voadoras que vocês não podem comer: o abutre-fouveiro, o abutre-barbudo, o abutre-fusco,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -8941,7 +9029,7 @@
           },
           {
             "number": 25,
-            "text": "vendam a décima parte de suas colheitas e rebanhos, coloquem o dinheiro numa bolsa e levem- no ao lugar que o SENHOR, seu Deus, escolheu.",
+            "text": "vendam a décima parte de suas colheitas e rebanhos, coloquem o dinheiro numa bolsa e levem-no ao lugar que o SENHOR, seu Deus, escolheu.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9049,6 +9137,7 @@
   "15": {
     "book": "Deuteronômio",
     "chapter": "15",
+    "verified": true,
     "sections": [
       {
         "title": "O cancelamento das dívidas",
@@ -9182,7 +9271,8 @@
                 "text": "“Portanto, amem os seus inimigos, façam-lhes o bem e emprestem a eles sem esperar nada de volta. Então a recompensa que receberão do céu será grande e estarão agindo, de fato, como filhos do Altíssimo, pois ele é bondoso..."
               },
               {
-                "ref": "1 Reis 4:21"
+                "ref": "1 Reis 4:21",
+                "text": "Salomão governava sobre todos os reinos, desde o rio Eufrates, ao norte, até a terra dos filisteus e a fronteira do Egito, ao sul. Os povos conquistados enviavam tributos a Salomão e continuaram a servi-lo durante toda a vida."
               },
               {
                 "ref": "Provérbios 22:7",
@@ -9558,6 +9648,7 @@
   "16": {
     "book": "Deuteronômio",
     "chapter": "16",
+    "verified": true,
     "sections": [
       {
         "title": "A Páscoa e a Festa dos Pães sem Fermento",
@@ -9573,7 +9664,7 @@
               },
               {
                 "ref": "Êxodo 34:18",
-                "text": "“Celebre a Festa dos Pães sem Fermento. Durante sete dias, coma seu pão sem fermento, conforme eu lhe ordenei. Celebre essa festa anualmente no tempo determinado, no mês de abibe,109 pois é o aniversário de sua partida do Egito."
+                "text": "“Celebre a Festa dos Pães sem Fermento. Durante sete dias, coma seu pão sem fermento, conforme eu lhe ordenei. Celebre essa festa anualmente no tempo determinado, no mês de abibe, pois é o aniversário de sua partida do Egito."
               },
               {
                 "ref": "Números 28:16",
@@ -9619,7 +9710,7 @@
               },
               {
                 "ref": "Êxodo 34:18",
-                "text": "“Celebre a Festa dos Pães sem Fermento. Durante sete dias, coma seu pão sem fermento, conforme eu lhe ordenei. Celebre essa festa anualmente no tempo determinado, no mês de abibe,109 pois é o aniversário de sua partida do Egito."
+                "text": "“Celebre a Festa dos Pães sem Fermento. Durante sete dias, coma seu pão sem fermento, conforme eu lhe ordenei. Celebre essa festa anualmente no tempo determinado, no mês de abibe, pois é o aniversário de sua partida do Egito."
               },
               {
                 "ref": "Lucas 22:19",
@@ -9642,7 +9733,7 @@
               },
               {
                 "ref": "Êxodo 34:25",
-                "text": "“Não ofereça o sangue de meus sacrifícios com pão que contenha fermento. Não guarde até a manhã seguinte carne alguma do sacri­fício de Páscoa."
+                "text": "“Não ofereça o sangue de meus sacrifícios com pão que contenha fermento. Não guarde até a manhã seguinte carne alguma do sacrifício de Páscoa."
               }
             ]
           },
@@ -9714,7 +9805,7 @@
             "crossReferences": [
               {
                 "ref": "Levítico 23:36",
-                "text": "Durante sete dias, vocês apresentarão ofertas especiais para o SENHOR. No oitavo dia, haverá outra reunião sagrada, na qual apresentarão ofertas especiais para o SENHOR. Será uma ocasião solene, e ninguém fará nenhum tra..."
+                "text": "Durante sete dias, vocês apresentarão ofertas especiais para o SENHOR. No oitavo dia, haverá outra reunião sagrada, na qual apresentarão ofertas especiais para o SENHOR. Será uma ocasião solene, e ninguém fará nenhum trabalho habitual."
               },
               {
                 "ref": "Levítico 23:6–8",
@@ -9746,7 +9837,7 @@
               },
               {
                 "ref": "Êxodo 34:22",
-                "text": "“Celebre a Festa da Colheita110 com os primeiros frutos da colheita do trigo. Celebre também a Festa da Última Colheita111 no final da safra."
+                "text": "“Celebre a Festa da Colheita com os primeiros frutos da colheita do trigo. Celebre também a Festa da Última Colheita no final da safra."
               },
               {
                 "ref": "Atos 2:1",
@@ -9889,7 +9980,7 @@
               },
               {
                 "ref": "Levítico 23:36–42",
-                "text": "Durante sete dias, vocês apresentarão ofertas especiais para o SENHOR. No oitavo dia, haverá outra reunião sagrada, na qual apresentarão ofertas especiais para o SENHOR. Será uma ocasião solene, e ninguém fará nenhum tra..."
+                "text": "Durante sete dias, vocês apresentarão ofertas especiais para o SENHOR. No oitavo dia, haverá outra reunião sagrada, na qual apresentarão ofertas especiais para o SENHOR. Será uma ocasião solene, e ninguém fará nenhum trabalho habitual."
               },
               {
                 "ref": "Deuteronômio 16:10",
@@ -9959,7 +10050,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 23:4",
-                "text": "De todos os levitas, 24 mil foram designados para supervisionar o trabalho no templo do SENHOR, 6 mil para ser oficiais e juízes, 54 mil para ser guardas das portas e 4 mil para louvar o SENHOR com os instrumentos musicais que Davi fez para esse fim."
+                "text": "De todos os levitas, 24 mil foram designados para supervisionar o trabalho no templo do SENHOR, 6 mil para ser oficiais e juízes,"
               },
               {
                 "ref": "Êxodo 21:6",
@@ -10005,7 +10096,7 @@
             "crossReferences": [
               {
                 "ref": "Filipenses 4:8",
-                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem- se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
+                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem-se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
               },
               {
                 "ref": "Ezequiel 18:9",
@@ -10063,7 +10154,7 @@
               },
               {
                 "ref": "Deuteronômio 12:31",
-                "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacri­fícios a seus deuses."
+                "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacrifícios a seus deuses."
               }
             ]
           }
@@ -10074,6 +10165,7 @@
   "17": {
     "book": "Deuteronômio",
     "chapter": "17",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -10195,7 +10287,7 @@
           },
           {
             "number": 6,
-            "text": "Jamais exe­cutem alguém com base no depoimento de apenas uma testemunha. Deve sempre haver duas ou três testemunhas.",
+            "text": "Jamais executem alguém com base no depoimento de apenas uma testemunha. Deve sempre haver duas ou três testemunhas.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -10250,7 +10342,7 @@
               },
               {
                 "ref": "Ageu 2:11",
-                "text": "“Assim diz o SENHOR dos Exércitos. Pergunte aos sacerdotes sobre a lei: 12‘Se alguém levar em sua roupa a carne consagrada de um sacrifício, e se, por acaso, a roupa tocar num pão, num ensopado, em vinho, em azeite ou em..."
+                "text": "“Assim diz o SENHOR dos Exércitos. Pergunte aos sacerdotes sobre a lei:"
               },
               {
                 "ref": "Deuteronômio 1:17",
@@ -10277,7 +10369,7 @@
               },
               {
                 "ref": "Ageu 2:11",
-                "text": "“Assim diz o SENHOR dos Exércitos. Pergunte aos sacerdotes sobre a lei: 12‘Se alguém levar em sua roupa a carne consagrada de um sacrifício, e se, por acaso, a roupa tocar num pão, num ensopado, em vinho, em azeite ou em..."
+                "text": "“Assim diz o SENHOR dos Exércitos. Pergunte aos sacerdotes sobre a lei:"
               },
               {
                 "ref": "Jeremias 18:18",
@@ -10534,6 +10626,7 @@
   "18": {
     "book": "Deuteronômio",
     "chapter": "18",
+    "verified": true,
     "sections": [
       {
         "title": "Ofertas para os sacerdotes e levitas",
@@ -10943,7 +11036,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 13:1–5"
+                "ref": "Deuteronômio 13:1–5",
+                "text": "“Surgirão entre vocês profetas ou pessoas que têm sonhos sobre o futuro, e eles prometerão sinais ou milagres."
               },
               {
                 "ref": "Jeremias 27:15",
@@ -10996,7 +11090,8 @@
                 "text": "Naquele mesmo ano, o quarto ano do reinado de Zedequias, rei de Judá, no mês de agosto, Hananias, filho de Azur, um profeta de Gibeom, se dirigiu a mim publicamente no templo, diante de todos os sacerdotes e do povo, e disse:"
               },
               {
-                "ref": "Deuteronômio 13:1–2"
+                "ref": "Deuteronômio 13:1–2",
+                "text": "“Surgirão entre vocês profetas ou pessoas que têm sonhos sobre o futuro, e eles prometerão sinais ou milagres."
               }
             ]
           }
@@ -11007,6 +11102,7 @@
   "19": {
     "book": "Deuteronômio",
     "chapter": "19",
+    "verified": true,
     "sections": [
       {
         "title": "As cidades de refúgio",
@@ -11197,7 +11293,8 @@
                 "text": "“Obedeçam cuidadosamente a todos os mandamentos que lhes dou. Amem o SENHOR, seu Deus, andando em seus caminhos e apegando-se firmemente a ele."
               },
               {
-                "ref": "Deuteronômio 12:32"
+                "ref": "Deuteronômio 12:32",
+                "text": "“Portanto, tenham o cuidado de cumprir todas as ordens que lhes dou. Não acrescentem nem tirem coisa alguma.”"
               }
             ]
           },
@@ -11234,7 +11331,8 @@
                 "text": "“Se, contudo, alguém atacar uma pessoa e matá-la com um pedaço de ferro, é assassinato e o assassino deverá ser executado."
               },
               {
-                "ref": "Deuteronômio 27:24"
+                "ref": "Deuteronômio 27:24",
+                "text": "‘Maldito quem matar o seu próximo em segredo’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Números 35:24",
@@ -11299,7 +11397,8 @@
                 "text": "Não mude de lugar os antigos marcadores de divisa estabelecidos pelas gerações anteriores."
               },
               {
-                "ref": "Deuteronômio 27:17"
+                "ref": "Deuteronômio 27:17",
+                "text": "‘Maldito quem roubar a propriedade do próximo, movendo um marco de divisa’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Jó 24:2",
@@ -11322,11 +11421,11 @@
               },
               {
                 "ref": "Deuteronômio 17:6",
-                "text": "Jamais exe­cutem alguém com base no depoimento de apenas uma testemunha. Deve sempre haver duas ou três testemunhas."
+                "text": "Jamais executem alguém com base no depoimento de apenas uma testemunha. Deve sempre haver duas ou três testemunhas."
               },
               {
                 "ref": "2 Coríntios 13:1",
-                "text": "Co 16.3-4."
+                "text": "Esta é a terceira vez que irei visitá-los. “Os fatos a respeito de cada caso devem ser confirmados pelo depoimento de duas ou três testemunhas.”"
               },
               {
                 "ref": "Mateus 18:16",
@@ -11433,7 +11532,7 @@
               },
               {
                 "ref": "Deuteronômio 21:21",
-                "text": "Então todos os homens da ci­dade o executarão por apedrejamento. Desse modo, vocês eliminarão o mal do seu meio, e todo o ­Israel ficará sabendo disso e temerá.”"
+                "text": "Então todos os homens da cidade o executarão por apedrejamento. Desse modo, vocês eliminarão o mal do seu meio, e todo o Israel ficará sabendo disso e temerá.”"
               },
               {
                 "ref": "Romanos 13:3–4",
@@ -11475,6 +11574,7 @@
   "20": {
     "book": "Deuteronômio",
     "chapter": "20",
+    "verified": true,
     "sections": [
       {
         "title": "Normas acerca da guerra",
@@ -11737,7 +11837,7 @@
               },
               {
                 "ref": "Salmos 110:1",
-                "text": "O SENHOR disse ao meu Senhor:144 “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
+                "text": "O SENHOR disse ao meu Senhor: “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
               }
             ]
           },
@@ -11901,6 +12001,7 @@
   "21": {
     "book": "Deuteronômio",
     "chapter": "21",
+    "verified": true,
     "sections": [
       {
         "title": "Casos de homicídio não resolvido",
@@ -12118,7 +12219,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Provérbios 31:10"
+                "ref": "Provérbios 31:10",
+                "text": "Quem encontrará uma mulher virtuosa? Ela é mais preciosa que rubis."
               },
               {
                 "ref": "Provérbios 31:30",
@@ -12179,7 +12281,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 22:29",
-                "text": "o homem pagará ao pai da moça cinquenta peças de prata. Uma vez que ele humilhou a moça, se casará com ela e jamais poderá se divorciar. 3045 “Nenhum homem tomará por mulher alguém que foi esposa de seu pai, pois isso desonraria seu pai.”"
+                "text": "o homem pagará ao pai da moça cinquenta peças de prata. Uma vez que ele humilhou a moça, se casará com ela e jamais poderá se divorciar."
               },
               {
                 "ref": "Gênesis 34:2",
@@ -12289,13 +12391,13 @@
               },
               {
                 "ref": "Amós 4:11–12",
-                "text": "“Destruí algumas de suas cidades, como destruí13 Sodoma e Gomorra. Os que sobreviveram pareciam gravetos chamuscados, tirados do fogo. Nem assim vocês voltaram para mim”, diz o SENHOR."
+                "text": "“Destruí algumas de suas cidades, como destruí Sodoma e Gomorra. Os que sobreviveram pareciam gravetos chamuscados, tirados do fogo. Nem assim vocês voltaram para mim”, diz o SENHOR."
               }
             ]
           },
           {
             "number": 19,
-            "text": "o pai e a mãe levarão o filho até a porta da cidade e dirão às autoridades ali reunidas: 20‘Este nosso filho é teimoso e rebelde e se recusa a obedecer. É mau-caráter e vive bêbado’.",
+            "text": "o pai e a mãe levarão o filho até a porta da cidade e dirão às autoridades ali reunidas:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -12317,8 +12419,14 @@
             ]
           },
           {
+            "number": 20,
+            "text": "‘Este nosso filho é teimoso e rebelde e se recusa a obedecer. É mau-caráter e vive bêbado’.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 21,
-            "text": "Então todos os homens da ci­dade o executarão por apedrejamento. Desse modo, vocês eliminarão o mal do seu meio, e todo o ­Israel ficará sabendo disso e temerá.”",
+            "text": "Então todos os homens da cidade o executarão por apedrejamento. Desse modo, vocês eliminarão o mal do seu meio, e todo o Israel ficará sabendo disso e temerá.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -12355,7 +12463,7 @@
               },
               {
                 "ref": "Mateus 26:66",
-                "text": "Qual é o veredicto?”. “Culpado!”, responderam. “Ele merece ­morrer!”"
+                "text": "Qual é o veredicto?”. “Culpado!”, responderam. “Ele merece morrer!”"
               },
               {
                 "ref": "Deuteronômio 22:26",
@@ -12393,6 +12501,7 @@
   "22": {
     "book": "Deuteronômio",
     "chapter": "22",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -12597,7 +12706,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 23:5",
-                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios131 mais largos que de costume e vestem mantos com franjas mais longas."
+                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios mais largos que de costume e vestem mantos com franjas mais longas."
               },
               {
                 "ref": "Números 15:37–41",
@@ -12697,11 +12806,11 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 22:29",
-                "text": "o homem pagará ao pai da moça cinquenta peças de prata. Uma vez que ele humilhou a moça, se casará com ela e jamais poderá se divorciar. 3045 “Nenhum homem tomará por mulher alguém que foi esposa de seu pai, pois isso desonraria seu pai.”"
+                "text": "o homem pagará ao pai da moça cinquenta peças de prata. Uma vez que ele humilhou a moça, se casará com ela e jamais poderá se divorciar."
               },
               {
                 "ref": "Mateus 19:8–9",
-                "text": "Jesus respondeu: “Moisés permitiu o di­vórcio apenas como concessão, pois o coração de vocês é duro, mas não era esse o propósito original."
+                "text": "Jesus respondeu: “Moisés permitiu o divórcio apenas como concessão, pois o coração de vocês é duro, mas não era esse o propósito original."
               },
               {
                 "ref": "Deuteronômio 24:1–4",
@@ -12845,7 +12954,7 @@
           },
           {
             "number": 29,
-            "text": "o homem pagará ao pai da moça cinquenta peças de prata. Uma vez que ele humilhou a moça, se casará com ela e jamais poderá se divorciar. 3045 “Nenhum homem tomará por mulher alguém que foi esposa de seu pai, pois isso desonraria seu pai.”",
+            "text": "o homem pagará ao pai da moça cinquenta peças de prata. Uma vez que ele humilhou a moça, se casará com ela e jamais poderá se divorciar.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -12861,6 +12970,12 @@
                 "text": "Se depois do casamento ela não o agradar, liberte-a. Não a venda nem a trate como escrava, pois você a humilhou.”"
               }
             ]
+          },
+          {
+            "number": 30,
+            "text": "“Nenhum homem tomará por mulher alguém que foi esposa de seu pai, pois isso desonraria seu pai.”",
+            "isJesusWords": false,
+            "crossReferences": []
           }
         ]
       }
@@ -12869,12 +12984,13 @@
   "23": {
     "book": "Deuteronômio",
     "chapter": "23",
+    "verified": true,
     "sections": [
       {
         "title": "Normas acerca da adoração",
         "verses": [
           {
-            "number": 146,
+            "number": 1,
             "text": "“Se um homem tiver os testículos esmagados ou o membro amputado, não terá permissão de entrar nas reuniões sagradas do SENHOR.",
             "isJesusWords": false,
             "crossReferences": []
@@ -13027,7 +13143,8 @@
                 "text": "Não se curve diante deles nem os adore, pois eu, o SENHOR, seu Deus, sou um Deus zeloso. Trago as consequências do pecado dos pais sobre os filhos até a terceira e quarta geração dos que me rejeitam,"
               },
               {
-                "ref": "Deuteronômio 23:1–3"
+                "ref": "Deuteronômio 23:1–3",
+                "text": "“Se um homem tiver os testículos esmagados ou o membro amputado, não terá permissão de entrar nas reuniões sagradas do SENHOR."
               },
               {
                 "ref": "Efésios 2:12–13",
@@ -13165,7 +13282,7 @@
               },
               {
                 "ref": "Obadias 1:14",
-                "text": "Não deveria ter ficado nas encruzilhadas para matar os que tentavam escapar. Não deveria ter capturado e entregado os sobreviventes naquele tempo de aflição.” Edom é destruído, e Israel, restaurado"
+                "text": "Não deveria ter ficado nas encruzilhadas para matar os que tentavam escapar. Não deveria ter capturado e entregado os sobreviventes naquele tempo de aflição.”"
               }
             ]
           },
@@ -13211,7 +13328,7 @@
               },
               {
                 "ref": "1 Reis 22:46",
-                "text": "Ele expulsou da terra os prostitutos ­cultuais dos santuários idólatras que restaram do tempo de seu pai, Asa. 47(Naquela época, não havia rei em Edom, mas apenas um governador.)"
+                "text": "Ele expulsou da terra os prostitutos cultuais dos santuários idólatras que restaram do tempo de seu pai, Asa."
               }
             ]
           },
@@ -13302,7 +13419,8 @@
                 "text": "Cumprirei meus votos ao SENHOR na presença de todo o seu povo,"
               },
               {
-                "ref": "Números 30:1–16"
+                "ref": "Números 30:1–16",
+                "text": "Moisés mandou chamar os chefes das tribos de Israel e lhes disse: “Foi isto que o SENHOR ordenou:"
               }
             ]
           },
@@ -13397,6 +13515,7 @@
   "24": {
     "book": "Deuteronômio",
     "chapter": "24",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -13511,7 +13630,7 @@
               },
               {
                 "ref": "Lucas 12:15",
-                "text": "Em seguida, disse: “Cuidado! Guardem- se de todo tipo de ganância. A vida de uma pessoa não é definida pela quantidade de seus bens”."
+                "text": "Em seguida, disse: “Cuidado! Guardem-se de todo tipo de ganância. A vida de uma pessoa não é definida pela quantidade de seus bens”."
               },
               {
                 "ref": "Apocalipse 18:22",
@@ -13533,7 +13652,8 @@
                 "text": "“Quem sequestrar alguém será executado, quer a vítima seja encontrada em seu poder, quer ele a tenha vendido como escrava."
               },
               {
-                "ref": "Êxodo 22:1–4"
+                "ref": "Êxodo 22:1–4",
+                "text": "“Se alguém roubar um boi ou uma ovelha e matar o animal ou vendê-lo, o ladrão pagará cinco bois para cada boi roubado e quatro ovelhas para cada ovelha roubada."
               },
               {
                 "ref": "Apocalipse 18:13",
@@ -13674,7 +13794,7 @@
               },
               {
                 "ref": "Jó 24:10–11",
-                "text": "Os pobres andam nus por falta de roupas; colhem alimento para outros, enquanto passam fome. Espremem azeitonas para obter azeite, mas não podem prová- lo; pisam uvas para fazer vinho, enquanto passam sede."
+                "text": "Os pobres andam nus por falta de roupas; colhem alimento para outros, enquanto passam fome. Espremem azeitonas para obter azeite, mas não podem prová-lo; pisam uvas para fazer vinho, enquanto passam sede."
               }
             ]
           },
@@ -13720,7 +13840,7 @@
               },
               {
                 "ref": "2 Reis 14:5–6",
-                "text": "Quando Amazias se firmou no poder, exe­cutou os oficiais que haviam assassinado seu pai."
+                "text": "Quando Amazias se firmou no poder, executou os oficiais que haviam assassinado seu pai."
               }
             ]
           },
@@ -13738,7 +13858,8 @@
                 "text": "“Não negue a justiça ao pobre em um processo legal."
               },
               {
-                "ref": "Deuteronômio 27:19"
+                "ref": "Deuteronômio 27:19",
+                "text": "‘Maldito quem negar justiça aos estrangeiros, aos órfãos ou às viúvas’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Êxodo 22:21–22",
@@ -13848,6 +13969,7 @@
   "25": {
     "book": "Deuteronômio",
     "chapter": "25",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -13867,7 +13989,7 @@
               },
               {
                 "ref": "Deuteronômio 1:16–17",
-                "text": "“Naquela ocasião, ordenei aos juízes: ‘Deem atenção aos casos de seus irmãos israelitas e também dos estrangeiros que vivem entre vocês."
+                "text": "“Naquela ocasião, ordenei aos juízes: ‘Deem atenção aos casos de seus irmãos israelitas e também dos estrangeiros que vivem entre vocês. Sejam completamente justos em todas as suas decisões"
               },
               {
                 "ref": "Jeremias 21:12",
@@ -13974,7 +14096,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 21:19",
-                "text": "o pai e a mãe levarão o filho até a porta da cidade e dirão às autoridades ali reunidas: 20‘Este nosso filho é teimoso e rebelde e se recusa a obedecer. É mau-caráter e vive bêbado’."
+                "text": "o pai e a mãe levarão o filho até a porta da cidade e dirão às autoridades ali reunidas:"
               },
               {
                 "ref": "Salmos 9:5",
@@ -13992,7 +14114,7 @@
           },
           {
             "number": 7,
-            "text": "“Se, contudo, o homem se recusar a casar-se com a viúva de seu irmão, ela irá até a porta da cidade e dirá às autoridades ali reunidas: ‘O irmão de meu falecido esposo se recusa a preservar o nome do irmão em Israel. Não quer cumprir os deveres de cunhado, casando- se comigo’.",
+            "text": "“Se, contudo, o homem se recusar a casar-se com a viúva de seu irmão, ela irá até a porta da cidade e dirá às autoridades ali reunidas: ‘O irmão de meu falecido esposo se recusa a preservar o nome do irmão em Israel. Não quer cumprir os deveres de cunhado, casando-se comigo’.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14226,6 +14348,7 @@
   "26": {
     "book": "Deuteronômio",
     "chapter": "26",
+    "verified": true,
     "sections": [
       {
         "title": "Dízimos e ofertas das colheitas",
@@ -14329,7 +14452,7 @@
               },
               {
                 "ref": "Gênesis 46:27",
-                "text": "Além deles, José teve dois filhos163 que nasceram no Egito, totalizando setenta164 membros da família de Jacó no Egito."
+                "text": "Além deles, José teve dois filhos que nasceram no Egito, totalizando setenta membros da família de Jacó no Egito."
               },
               {
                 "ref": "Gênesis 31:20",
@@ -14352,7 +14475,7 @@
               },
               {
                 "ref": "Êxodo 1:14",
-                "text": "Tornaram a vida deles amarga, obrigando-os a preparar argamassa, produzir tijolos e fazer todo o trabalho nos campos. Eram cruéis em todas as suas ­exigências."
+                "text": "Tornaram a vida deles amarga, obrigando-os a preparar argamassa, produzir tijolos e fazer todo o trabalho nos campos. Eram cruéis em todas as suas exigências."
               },
               {
                 "ref": "Deuteronômio 4:20",
@@ -14671,6 +14794,7 @@
   "27": {
     "book": "Deuteronômio",
     "chapter": "27",
+    "verified": true,
     "sections": [
       {
         "title": "O altar no monte Ebal",
@@ -14751,7 +14875,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 11:29–30",
-                "text": "“Quando o SENHOR, seu Deus, os fizer entrar na terra da qual em breve vocês tomarão posse, pronunciem a bênção no monte Gerizim e a maldição no monte Ebal. 30(Esses dois montes ficam a oeste do rio Jordão, na terra dos c..."
+                "text": "“Quando o SENHOR, seu Deus, os fizer entrar na terra da qual em breve vocês tomarão posse, pronunciem a bênção no monte Gerizim e a maldição no monte Ebal."
               },
               {
                 "ref": "Josué 8:30–33",
@@ -14905,7 +15029,7 @@
               },
               {
                 "ref": "Deuteronômio 1:16",
-                "text": "“Naquela ocasião, ordenei aos juízes: ‘Deem atenção aos casos de seus irmãos israelitas e também dos estrangeiros que vivem entre vocês."
+                "text": "“Naquela ocasião, ordenei aos juízes: ‘Deem atenção aos casos de seus irmãos israelitas e também dos estrangeiros que vivem entre vocês. Sejam completamente justos em todas as suas decisões"
               }
             ]
           },
@@ -14920,7 +15044,7 @@
               },
               {
                 "ref": "Gênesis 30:24",
-                "text": "e o chamou de José,106 pois disse: “Que o SENHOR me acrescente ainda outro filho!”."
+                "text": "e o chamou de José, pois disse: “Que o SENHOR me acrescente ainda outro filho!”."
               },
               {
                 "ref": "Deuteronômio 11:26–29",
@@ -14928,7 +15052,7 @@
               },
               {
                 "ref": "Gênesis 35:18",
-                "text": "Raquel estava quase morrendo, mas, com seu último suspiro, chamou o menino de Benoni.128 O pai do bebê, no entanto, o chamou de Benjamim."
+                "text": "Raquel estava quase morrendo, mas, com seu último suspiro, chamou o menino de Benoni. O pai do bebê, no entanto, o chamou de Benjamim."
               }
             ]
           },
@@ -14943,7 +15067,7 @@
               },
               {
                 "ref": "Deuteronômio 11:29",
-                "text": "“Quando o SENHOR, seu Deus, os fizer entrar na terra da qual em breve vocês tomarão posse, pronunciem a bênção no monte Gerizim e a maldição no monte Ebal. 30(Esses dois montes ficam a oeste do rio Jordão, na terra dos c..."
+                "text": "“Quando o SENHOR, seu Deus, os fizer entrar na terra da qual em breve vocês tomarão posse, pronunciem a bênção no monte Gerizim e a maldição no monte Ebal."
               },
               {
                 "ref": "Josué 8:33",
@@ -14951,13 +15075,13 @@
               },
               {
                 "ref": "Gênesis 30:6–13",
-                "text": "Raquel o chamou de Dã,100 pois disse: “Deus me fez justiça! Ouviu meu pedido e me deu um filho!”."
+                "text": "Raquel o chamou de Dã, pois disse: “Deus me fez justiça! Ouviu meu pedido e me deu um filho!”."
               }
             ]
           },
           {
             "number": 14,
-            "text": "“Então os levitas dirão em alta voz a todo o povo de Israel: 15‘Maldito quem esculpir ou fundir um ídolo e o levantar em segredo. Os ídolos, trabalhos de artesãos, são detestáveis ao SENHOR’. E todo o povo responderá: ‘Amém!’. 16‘Maldito quem desonrar pai ou mãe’. E todo o povo responderá: ‘Amém!’. 17‘Maldito quem roubar a propriedade do próximo, movendo um marco de divisa’. E todo o povo responderá: ‘Amém!’. 18‘Maldito quem fizer o cego se desviar de seu caminho’. E todo o povo responderá: ‘Amém!’. 19‘Maldito quem negar justiça aos estrangeiros, aos órfãos ou às viúvas’. E todo o povo responderá: ‘Amém!’. 20‘Maldito quem tiver relações sexuais com a esposa de seu pai, pois desonrou seu pai’. E todo o povo responderá: ‘Amém!’. 21‘Maldito quem tiver relações sexuais com um animal’. E todo o povo responderá: ‘Amém!’. 22‘Maldito quem tiver relações sexuais com sua irmã, seja filha de seu pai ou de sua mãe’. E todo o povo responderá: ‘Amém!’. 23‘Maldito quem tiver relações sexuais com sua sogra’. E todo o povo responderá: ‘Amém!’. 24‘Maldito quem matar o seu próximo em segredo’. E todo o povo responderá: ‘Amém!’. 25‘Maldito quem aceitar pagamento para matar um inocente’. E todo o povo responderá: ‘Amém!’. 26‘Maldito quem não confirmar e cumprir os termos desta lei’. E todo o povo responderá: ‘Amém!’.”",
+            "text": "“Então os levitas dirão em alta voz a todo o povo de Israel:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14977,6 +15101,78 @@
                 "text": "Em seguida, os levitas Jesua, Bani, Serebias, Jamim, Acube, Sabetai, Hodias, Maaseias, Quelita, Azarias, Jozabade, Hanã e Pelaías instruíram o povo acerca da Lei, e todos permaneceram em seus lugares."
               }
             ]
+          },
+          {
+            "number": 15,
+            "text": "‘Maldito quem esculpir ou fundir um ídolo e o levantar em segredo. Os ídolos, trabalhos de artesãos, são detestáveis ao SENHOR’. E todo o povo responderá: ‘Amém!’.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 16,
+            "text": "‘Maldito quem desonrar pai ou mãe’. E todo o povo responderá: ‘Amém!’.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 17,
+            "text": "‘Maldito quem roubar a propriedade do próximo, movendo um marco de divisa’. E todo o povo responderá: ‘Amém!’.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 18,
+            "text": "‘Maldito quem fizer o cego se desviar de seu caminho’. E todo o povo responderá: ‘Amém!’.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 19,
+            "text": "‘Maldito quem negar justiça aos estrangeiros, aos órfãos ou às viúvas’. E todo o povo responderá: ‘Amém!’.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 20,
+            "text": "‘Maldito quem tiver relações sexuais com a esposa de seu pai, pois desonrou seu pai’. E todo o povo responderá: ‘Amém!’.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 21,
+            "text": "‘Maldito quem tiver relações sexuais com um animal’. E todo o povo responderá: ‘Amém!’.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 22,
+            "text": "‘Maldito quem tiver relações sexuais com sua irmã, seja filha de seu pai ou de sua mãe’. E todo o povo responderá: ‘Amém!’.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 23,
+            "text": "‘Maldito quem tiver relações sexuais com sua sogra’. E todo o povo responderá: ‘Amém!’.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 24,
+            "text": "‘Maldito quem matar o seu próximo em segredo’. E todo o povo responderá: ‘Amém!’.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 25,
+            "text": "‘Maldito quem aceitar pagamento para matar um inocente’. E todo o povo responderá: ‘Amém!’.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 26,
+            "text": "‘Maldito quem não confirmar e cumprir os termos desta lei’. E todo o povo responderá: ‘Amém!’.”",
+            "isJesusWords": false,
+            "crossReferences": []
           }
         ]
       }
@@ -14985,6 +15181,7 @@
   "28": {
     "book": "Deuteronômio",
     "chapter": "28",
+    "verified": true,
     "sections": [
       {
         "title": "Bênçãos resultantes da obediência",
@@ -15315,7 +15512,7 @@
             "crossReferences": [
               {
                 "ref": "Malaquias 2:2",
-                "text": "Escutem- me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência."
+                "text": "Escutem-me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência."
               },
               {
                 "ref": "Deuteronômio 28:2",
@@ -15430,7 +15627,7 @@
               },
               {
                 "ref": "Malaquias 2:2",
-                "text": "Escutem- me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência."
+                "text": "Escutem-me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência."
               },
               {
                 "ref": "Isaías 66:15",
@@ -15526,7 +15723,7 @@
               },
               {
                 "ref": "Amós 4:11",
-                "text": "“Destruí algumas de suas cidades, como destruí13 Sodoma e Gomorra. Os que sobreviveram pareciam gravetos chamuscados, tirados do fogo. Nem assim vocês voltaram para mim”, diz o SENHOR."
+                "text": "“Destruí algumas de suas cidades, como destruí Sodoma e Gomorra. Os que sobreviveram pareciam gravetos chamuscados, tirados do fogo. Nem assim vocês voltaram para mim”, diz o SENHOR."
               },
               {
                 "ref": "Jó 18:15–21",
@@ -15628,7 +15825,7 @@
           },
           {
             "number": 29,
-            "text": "Andarão tateando em plena luz do dia, como cegos na escuridão, mas não encontrarão o caminho. Serão oprimidos e roubados continuamente, e ninguém virá para socorrê- los.",
+            "text": "Andarão tateando em plena luz do dia, como cegos na escuridão, mas não encontrarão o caminho. Serão oprimidos e roubados continuamente, e ninguém virá para socorrê-los.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -15973,7 +16170,7 @@
               },
               {
                 "ref": "Isaías 1:20",
-                "text": "Se, porém, se desviarem e se recusarem a ouvir, serão devorados pela espada. Eu, o SENHOR, falei!” Jerusalém, cidade infiel"
+                "text": "Se, porém, se desviarem e se recusarem a ouvir, serão devorados pela espada. Eu, o SENHOR, falei!”"
               },
               {
                 "ref": "Isaías 65:14–15",
@@ -16010,7 +16207,7 @@
           },
           {
             "number": 47,
-            "text": "Se não servirem ao SENHOR, seu Deus, com alegria e entusiasmo pelos muitos bene­fícios que receberam,",
+            "text": "Se não servirem ao SENHOR, seu Deus, com alegria e entusiasmo pelos muitos benefícios que receberam,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -16088,10 +16285,11 @@
               },
               {
                 "ref": "2 Crônicas 36:17",
-                "text": "Então o SENHOR trouxe o rei da Babilônia contra eles. Os babilônios154 mataram os jovens e foram atrás deles até dentro do santuário. Não tiveram piedade nem dos rapazes, nem das moças, nem dos idosos e doentes. Deus os..."
+                "text": "Então o SENHOR trouxe o rei da Babilônia contra eles. Os babilônios mataram os jovens e foram atrás deles até dentro do santuário. Não tiveram piedade nem dos rapazes, nem das moças, nem dos idosos e doentes. Deus os entregou todos nas mãos do rei."
               },
               {
-                "ref": "Oséias 13:16"
+                "ref": "Oséias 13:16",
+                "text": "O povo de Samaria sofrerá as consequências de sua culpa, pois se rebelou contra seu Deus. Serão mortos pela espada inimiga; suas crianças serão despedaçadas, e suas mulheres grávidas, abertas ao meio.”"
               },
               {
                 "ref": "Provérbios 7:13",
@@ -16198,7 +16396,7 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 52:6",
-                "text": "Em 18 de julho, no décimo primeiro ano do reinado de Zedequias,126 a fome na cidade tinha se tornado tão severa que não havia mais nenhum alimento."
+                "text": "Em 18 de julho, no décimo primeiro ano do reinado de Zedequias, a fome na cidade tinha se tornado tão severa que não havia mais nenhum alimento."
               },
               {
                 "ref": "Jeremias 34:2",
@@ -16236,7 +16434,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 49:10",
-                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes,172 até que venha aquele a quem pertence,173 aquele que todas as nações honrarão."
+                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes, até que venha aquele a quem pertence, aquele que todas as nações honrarão."
               },
               {
                 "ref": "Isaías 49:15",
@@ -16484,12 +16682,13 @@
   "29": {
     "book": "Deuteronômio",
     "chapter": "29",
+    "verified": true,
     "sections": [
       {
         "title": "",
         "verses": [
           {
-            "number": 150,
+            "number": 1,
             "text": "Estes são os termos da aliança que o SENHOR ordenou que Moisés fizesse com os israelitas enquanto estavam na terra de Moabe, além da aliança que havia feito com eles no monte Sinai.",
             "isJesusWords": false,
             "crossReferences": []
@@ -16500,7 +16699,7 @@
         "title": "Moisés faz uma recapitulação da aliança",
         "verses": [
           {
-            "number": 252,
+            "number": 2,
             "text": "Moisés convocou todo o povo de Israel e lhe disse: “Vocês viram com os próprios olhos tudo que o SENHOR fez na terra do Egito ao faraó, a todos os seus servos e a toda a sua terra.",
             "isJesusWords": false,
             "crossReferences": []
@@ -16672,7 +16871,8 @@
                 "text": "Josias mandou chamar todas as autoridades de Judá e de Jerusalém."
               },
               {
-                "ref": "Neemias 9:38"
+                "ref": "Neemias 9:38",
+                "text": "O povo respondeu: “Em vista disso tudo, fazemos uma aliança solene e a registramos por escrito. Neste documento selado estão os nomes de nossos líderes, levitas e sacerdotes”."
               }
             ]
           },
@@ -16779,7 +16979,7 @@
               },
               {
                 "ref": "Jeremias 32:39",
-                "text": "Eu lhes darei um só coração e um só propósito: adorar- me para sempre, para o seu próprio bem e para o bem de seus descendentes."
+                "text": "Eu lhes darei um só coração e um só propósito: adorar-me para sempre, para o seu próprio bem e para o bem de seus descendentes."
               }
             ]
           },
@@ -16889,7 +17089,7 @@
               },
               {
                 "ref": "Mateus 25:32",
-                "text": "Todas as nações149 serão reunidas em sua presença, e ele separará as pessoas como um pastor separa as ovelhas dos bodes."
+                "text": "Todas as nações serão reunidas em sua presença, e ele separará as pessoas como um pastor separa as ovelhas dos bodes."
               },
               {
                 "ref": "Mateus 24:51",
@@ -16897,7 +17097,7 @@
               },
               {
                 "ref": "Josué 7:1–26",
-                "text": "Mas os israelitas violaram as instruções a respei­to das coisas separadas para o SENHOR. Um homem chamado Acã roubou algumas delas, e a ira do SENHOR se acendeu contra os israelitas. Acã era filho de Carmi, filho de Zimr..."
+                "text": "Mas os israelitas violaram as instruções a respeito das coisas separadas para o SENHOR. Um homem chamado Acã roubou algumas delas, e a ira do SENHOR se acendeu contra os israelitas. Acã era filho de Carmi, filho de Zimri..."
               }
             ]
           },
@@ -16987,7 +17187,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Jeremias 19:3–13"
+                "ref": "Jeremias 19:3–13",
+                "text": "‘Ouçam esta mensagem do SENHOR, reis de Judá e habitantes de Jerusalém! Assim diz o SENHOR dos Exércitos, o Deus de Israel: Trarei calamidade sobre este lugar, calamidade tão terrível que fará tinir os ouvidos de quem ouvir a respeito!"
               },
               {
                 "ref": "Deuteronômio 28:64",
@@ -17017,7 +17218,8 @@
                 "text": "“Mas, se vocês se recusarem a dar ouvidos ao SENHOR, seu Deus, e não cumprirem todos os mandamentos e decretos que hoje lhes dou, as seguintes maldições cairão sobre vocês e os atingirão:"
               },
               {
-                "ref": "Deuteronômio 27:15–26"
+                "ref": "Deuteronômio 27:15–26",
+                "text": "‘Maldito quem esculpir ou fundir um ídolo e o levantar em segredo. Os ídolos, trabalhos de artesãos, são detestáveis ao SENHOR’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Deuteronômio 29:20–21",
@@ -17040,7 +17242,7 @@
               },
               {
                 "ref": "Salmos 52:5",
-                "text": "Por isso, Deus o destruirá de uma vez por todas; ele o tirará de sua casa e o arrancará da terra dos vivos."
+                "text": "Por isso, Deus o destruirá de uma vez por todas; ele o tirará de sua casa e o arrancará da terra dos vivos. Interlúdio"
               },
               {
                 "ref": "Provérbios 2:22",
@@ -17078,6 +17280,7 @@
   "30": {
     "book": "Deuteronômio",
     "chapter": "30",
+    "verified": true,
     "sections": [
       {
         "title": "Chamado para voltar ao SENHOR",
@@ -17166,7 +17369,7 @@
               },
               {
                 "ref": "Ezequiel 39:25–29",
-                "text": "“Portanto, assim diz o SENHOR Soberano: Acabarei com o exílio de meu povo;102 terei compaixão de todo o Israel, pois tenho zelo por meu santo nome."
+                "text": "“Portanto, assim diz o SENHOR Soberano: Acabarei com o exílio de meu povo; terei compaixão de todo o Israel, pois tenho zelo por meu santo nome."
               },
               {
                 "ref": "Isaías 11:11–16",
@@ -17187,7 +17390,7 @@
           },
           {
             "number": 6,
-            "text": "“O SENHOR, seu Deus, transformará55 o coração de vocês e de todos os seus descendentes, para que o amem de todo o coração e de toda a alma, e para que vivam!",
+            "text": "“O SENHOR, seu Deus, transformará o coração de vocês e de todos os seus descendentes, para que o amem de todo o coração e de toda a alma, e para que vivam!",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -17200,7 +17403,7 @@
               },
               {
                 "ref": "Jeremias 32:39",
-                "text": "Eu lhes darei um só coração e um só propósito: adorar- me para sempre, para o seu próprio bem e para o bem de seus descendentes."
+                "text": "Eu lhes darei um só coração e um só propósito: adorar-me para sempre, para o seu próprio bem e para o bem de seus descendentes."
               },
               {
                 "ref": "Ezequiel 11:19–20",
@@ -17223,7 +17426,7 @@
               },
               {
                 "ref": "Jeremias 51:24–26",
-                "text": "“Retribuirei à Babilônia e aos habitantes daquela terra122 por todo o mal que fizeram ao meu povo em Sião”, diz o SENHOR."
+                "text": "“Retribuirei à Babilônia e aos habitantes daquela terra por todo o mal que fizeram ao meu povo em Sião”, diz o SENHOR."
               },
               {
                 "ref": "Ezequiel 25:12",
@@ -17312,7 +17515,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 45:19",
-                "text": "Não sussurro coisas obscuras em algum canto escondido, nem teria dito ao povo de Israel138 que me buscasse se não fosse possível me encontrar. Eu, o SENHOR falo apenas a verdade e declaro somente o que é certo."
+                "text": "Não sussurro coisas obscuras em algum canto escondido, nem teria dito ao povo de Israel que me buscasse se não fosse possível me encontrar. Eu, o SENHOR falo apenas a verdade e declaro somente o que é certo."
               },
               {
                 "ref": "Salmos 147:19–20",
@@ -17427,7 +17630,7 @@
               },
               {
                 "ref": "Deuteronômio 30:6",
-                "text": "“O SENHOR, seu Deus, transformará55 o coração de vocês e de todos os seus descendentes, para que o amem de todo o coração e de toda a alma, e para que vivam!"
+                "text": "“O SENHOR, seu Deus, transformará o coração de vocês e de todos os seus descendentes, para que o amem de todo o coração e de toda a alma, e para que vivam!"
               },
               {
                 "ref": "1 João 5:2–3",
@@ -17538,6 +17741,7 @@
   "31": {
     "book": "Deuteronômio",
     "chapter": "31",
+    "verified": true,
     "sections": [
       {
         "title": "Josué se torna o líder de Israel",
@@ -17553,7 +17757,7 @@
               },
               {
                 "ref": "Deuteronômio 31:30",
-                "text": "Então Moisés recitou a canção inteira diante de toda a comunidade"
+                "text": "Então Moisés recitou a canção inteira diante de toda a comunidade de Israel:"
               }
             ]
           },
@@ -17822,7 +18026,7 @@
               },
               {
                 "ref": "Efésios 6:4",
-                "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem- nos com a disciplina e a instrução que vêm do Senhor."
+                "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem-nos com a disciplina e a instrução que vêm do Senhor."
               },
               {
                 "ref": "Provérbios 22:6",
@@ -17869,7 +18073,7 @@
               },
               {
                 "ref": "Êxodo 40:38",
-                "text": "Durante o dia, a nuvem do SENHOR pairava no ar acima do tabernáculo e, à noite, fogo ardia dentro da nuvem, de modo que todo o povo de Israel podia vê- la. E isso ocorreu ao longo de todas as jornadas dos israelitas."
+                "text": "Durante o dia, a nuvem do SENHOR pairava no ar acima do tabernáculo e, à noite, fogo ardia dentro da nuvem, de modo que todo o povo de Israel podia vê-la. E isso ocorreu ao longo de todas as jornadas dos israelitas."
               },
               {
                 "ref": "Êxodo 33:9–10",
@@ -17919,7 +18123,7 @@
               },
               {
                 "ref": "2 Crônicas 15:2",
-                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça- me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
+                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça-me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
               }
             ]
           },
@@ -18166,7 +18370,7 @@
         "verses": [
           {
             "number": 30,
-            "text": "Então Moisés recitou a canção inteira diante de toda a comunidade",
+            "text": "Então Moisés recitou a canção inteira diante de toda a comunidade de Israel:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -18194,9 +18398,10 @@
   "32": {
     "book": "Deuteronômio",
     "chapter": "32",
+    "verified": true,
     "sections": [
       {
-        "title": "de Israel:",
+        "title": "",
         "verses": [
           {
             "number": 1,
@@ -18232,7 +18437,7 @@
               },
               {
                 "ref": "Salmos 72:6",
-                "text": "Que o governo do rei seja como a chuva sobre a grama recém- cortada, como os aguaceiros que regam a terra."
+                "text": "Que o governo do rei seja como a chuva sobre a grama recém-cortada, como os aguaceiros que regam a terra."
               },
               {
                 "ref": "Miqueias 5:7",
@@ -18255,11 +18460,11 @@
               },
               {
                 "ref": "Salmos 150:2",
-                "text": "Sm 22.."
+                "text": "Louvem-no por seus feitos poderosos, louvem sua grandeza sem igual!"
               },
               {
                 "ref": "Efésios 1:19",
-                "text": "Também oro para que entendam a grandeza insuperável do poder de Deus para conosco, os que cremos."
+                "text": "Também oro para que entendam a grandeza insuperável do poder de Deus para conosco, os que cremos. É o mesmo poder grandioso"
               },
               {
                 "ref": "Deuteronômio 5:24",
@@ -18320,7 +18525,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 63:16",
-                "text": "Certamente ainda és nosso Pai! Ainda que Abraão e Jacó176 nos deserdassem, continuarias, SENHOR, a ser nosso Pai; és nosso Redentor desde as eras passadas."
+                "text": "Certamente ainda és nosso Pai! Ainda que Abraão e Jacó nos deserdassem, continuarias, SENHOR, a ser nosso Pai; és nosso Redentor desde as eras passadas."
               },
               {
                 "ref": "1 João 3:1",
@@ -18434,7 +18639,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Êxodo 19:4"
+                "ref": "Êxodo 19:4",
+                "text": "‘Vocês viram o que fiz aos egípcios. Sabem como carreguei vocês sobre asas de águias e os trouxe para mim."
               },
               {
                 "ref": "Isaías 46:4",
@@ -18442,7 +18648,7 @@
               },
               {
                 "ref": "Isaías 63:9",
-                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou.175 Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
+                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou. Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
               },
               {
                 "ref": "Hebreus 11:3",
@@ -18515,7 +18721,7 @@
               },
               {
                 "ref": "Mateus 26:28–29",
-                "text": "porque este é o meu sangue, que confirma a aliança.150 Ele é derramado como sacrifício para perdoar os pecados de muitos."
+                "text": "porque este é o meu sangue, que confirma a aliança. Ele é derramado como sacrifício para perdoar os pecados de muitos."
               }
             ]
           },
@@ -18764,7 +18970,7 @@
               },
               {
                 "ref": "2 Crônicas 36:17",
-                "text": "Então o SENHOR trouxe o rei da Babilônia contra eles. Os babilônios154 mataram os jovens e foram atrás deles até dentro do santuário. Não tiveram piedade nem dos rapazes, nem das moças, nem dos idosos e doentes. Deus os..."
+                "text": "Então o SENHOR trouxe o rei da Babilônia contra eles. Os babilônios mataram os jovens e foram atrás deles até dentro do santuário. Não tiveram piedade nem dos rapazes, nem das moças, nem dos idosos e doentes. Deus os entregou todos nas mãos do rei."
               },
               {
                 "ref": "Jeremias 9:21",
@@ -18783,7 +18989,7 @@
               },
               {
                 "ref": "Isaías 63:16",
-                "text": "Certamente ainda és nosso Pai! Ainda que Abraão e Jacó176 nos deserdassem, continuarias, SENHOR, a ser nosso Pai; és nosso Redentor desde as eras passadas."
+                "text": "Certamente ainda és nosso Pai! Ainda que Abraão e Jacó nos deserdassem, continuarias, SENHOR, a ser nosso Pai; és nosso Redentor desde as eras passadas."
               },
               {
                 "ref": "Levítico 26:33",
@@ -18802,11 +19008,11 @@
             "crossReferences": [
               {
                 "ref": "Números 14:15–16",
-                "text": "Se exterminares todo este povo com um só golpe, as nações que ouviram falar de tua fama dirão: 16‘O SENHOR não foi capaz de levá-los à terra que jurou lhes dar, por isso os matou no deserto’."
+                "text": "Se exterminares todo este povo com um só golpe, as nações que ouviram falar de tua fama dirão: ‘O SENHOR não foi capaz de levá-los à terra que jurou lhes dar, por isso os matou no deserto’."
               },
               {
                 "ref": "Salmos 140:8",
-                "text": "SENHOR, não dês aos perversos o que desejam; não permitas que seus planos maldosos tenham sucesso, para que não se encham de orgulho."
+                "text": "SENHOR, não dês aos perversos o que desejam; não permitas que seus planos maldosos tenham sucesso, para que não se encham de orgulho. Interlúdio"
               },
               {
                 "ref": "Êxodo 32:12",
@@ -18948,7 +19154,7 @@
               },
               {
                 "ref": "Salmos 140:3",
-                "text": "Sua língua fere como uma serpente; veneno de víbora goteja de seus lábios."
+                "text": "Sua língua fere como uma serpente; veneno de víbora goteja de seus lábios. Interlúdio"
               },
               {
                 "ref": "Jeremias 8:14",
@@ -18971,7 +19177,7 @@
               },
               {
                 "ref": "Jeremias 2:22",
-                "text": "Por mais sabão ou soda que use, não consegue se limpar; ainda vejo a mancha de sua culpa. Eu, o SENHOR Soberano, falei!” Israel, esposa infiel"
+                "text": "Por mais sabão ou soda que use, não consegue se limpar; ainda vejo a mancha de sua culpa. Eu, o SENHOR Soberano, falei!”"
               },
               {
                 "ref": "Romanos 2:5",
@@ -19201,7 +19407,7 @@
               },
               {
                 "ref": "Deuteronômio 31:30",
-                "text": "Então Moisés recitou a canção inteira diante de toda a comunidade"
+                "text": "Então Moisés recitou a canção inteira diante de toda a comunidade de Israel:"
               }
             ]
           },
@@ -19307,7 +19513,7 @@
               },
               {
                 "ref": "Números 33:38",
-                "text": "Enquanto estavam ao pé do monte Hor, por ordem do SENHOR o sacerdote Arão subiu ao monte e morreu ali. Isso aconteceu no primeiro dia do quinto mês,103 quarenta anos depois que Israel saiu do Egito."
+                "text": "Enquanto estavam ao pé do monte Hor, por ordem do SENHOR o sacerdote Arão subiu ao monte e morreu ali. Isso aconteceu no primeiro dia do quinto mês, quarenta anos depois que Israel saiu do Egito."
               },
               {
                 "ref": "Números 20:24–29",
@@ -19334,7 +19540,7 @@
               },
               {
                 "ref": "Deuteronômio 3:23–27",
-                "text": "“Também naquela ocasião, supliquei ao SENHOR: 24‘Ó SENHOR Soberano, tu apenas começaste a mostrar a este teu servo a tua grandeza e a força da tua mão. Existe algum deus no céu ou na terra capaz de realizar obras tão gra..."
+                "text": "“Também naquela ocasião, supliquei ao SENHOR:"
               },
               {
                 "ref": "1 Reis 13:21–26",
@@ -19372,6 +19578,7 @@
   "33": {
     "book": "Deuteronômio",
     "chapter": "33",
+    "verified": true,
     "sections": [
       {
         "title": "Moisés abençoa o povo",
@@ -19410,7 +19617,7 @@
               },
               {
                 "ref": "Judas 1:14",
-                "text": "Enoque, que viveu na sétima geração depois de Adão, profetizou a respeito desses homens, dizendo: “Ouçam!"
+                "text": "Enoque, que viveu na sétima geração depois de Adão, profetizou a respeito desses homens, dizendo: “Ouçam! O Senhor vem com incontáveis milhares de santos"
               },
               {
                 "ref": "Apocalipse 5:11",
@@ -19636,7 +19843,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 15:2",
-                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça- me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
+                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça-me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
               },
               {
                 "ref": "Salmos 91:4",
@@ -19648,7 +19855,7 @@
               },
               {
                 "ref": "Isaías 51:16",
-                "text": "Pus minhas palavras em sua boca e o escondi em segurança em minha mão. Estendi151 os céus e lancei os alicerces da terra. Sou eu quem diz a Israel: ‘Tu és meu povo!’.”"
+                "text": "Pus minhas palavras em sua boca e o escondi em segurança em minha mão. Estendi os céus e lancei os alicerces da terra. Sou eu quem diz a Israel: ‘Tu és meu povo!’.”"
               }
             ]
           },
@@ -19931,7 +20138,7 @@
               },
               {
                 "ref": "Colossenses 1:11",
-                "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam."
+                "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam. Que sejam cheios de alegria"
               },
               {
                 "ref": "Isaías 40:29",
@@ -20042,6 +20249,7 @@
   "34": {
     "book": "Deuteronômio",
     "chapter": "34",
+    "verified": true,
     "sections": [
       {
         "title": "A morte de Moisés",
@@ -20111,7 +20319,7 @@
               },
               {
                 "ref": "Gênesis 19:22",
-                "text": "Mas vá logo! Fuja para ele, pois não posso fazer nada enquanto você não chegar lá.” (Isso explica por que a vila era conhecida como Zoar.70)"
+                "text": "Mas vá logo! Fuja para ele, pois não posso fazer nada enquanto você não chegar lá.” (Isso explica por que a vila era conhecida como Zoar.)"
               }
             ]
           },
@@ -20217,7 +20425,8 @@
                 "text": "Quando chegaram à eira de Atade, perto do rio Jordão, realizaram uma grande cerimônia fúnebre, com um período de sete dias de luto pelo pai de José."
               },
               {
-                "ref": "Atos 8:2"
+                "ref": "Atos 8:2",
+                "text": "(Alguns homens devotos vieram e, com grande tristeza, sepultaram Estêvão.)"
               }
             ]
           },
@@ -20292,7 +20501,7 @@
           },
           {
             "number": 12,
-            "text": "Com grande poder, Moisés realizou atos temíveis diante dos olhos de todo o Israel. 1 1. Em hebraico, na Arabá; também em 1.. 2 1. Em hebraico, Horebe, outro nome para o Sinai; também em 1.,. 3 1. No antigo calendário lunar hebraico, esse dia caía em janeiro ou fevereiro. 4 1. Em hebraico, a Sefelá. 5 1. Em hebraico, mar de juncos. 6 2. Em hebraico, mar de juncos. 7 2. Em hebraico, de Caftor. 8 3. Em hebraico, 9 côvados de comprimento e 4 côvados de largura. 9 3. Em hebraico, Havote-Jair. 10 3. Em hebraico, desde o Quinerete até o mar da Arabá, o mar Salgado. 11 4. Em hebraico, Horebe, outro nome para o Sinai; também em 4.. 12 4. Em hebraico, as dez palavras. 13 4. Ou a voz de um deus. 14 4. Conforme a versão siríaca (ver tb. 3.9); o hebraico traz Siom. 15 4. Em hebraico, Conquistaram a Arabá, do lado leste do Jordão, até o mar da Arabá. 16 5. Em hebraico, Horebe, outro nome para o Sinai. 17 5. Em hebraico, milhares. 18 6. Ou O SENHOR é nosso Deus, somente o SENHOR; ou O SENHOR, nosso Deus, é um só SENHOR; ou O SENHOR, nosso Deus, o SENHOR é um só; ou O SENHOR é nosso Deus, o SENHOR é um só. 19 7. Traduzido habitualmente como vespas. O significado do hebraico é incerto. 20 9. Em hebraico, Horebe, outro nome para o Sinai. 21 9.22a Taberá significa “lugar da queima”. Ver Nm 11.1-3. 22 9.22b Massá significa “prova”. Ver Êx 17.1-7. 23 9.22c Quibrote-Hataavá significa “túmulos da gula”. Ver Nm 11.31-34. 24 10. Em hebraico, as dez palavras. 25 10. Ou partiram de Beerote de Benê-Jacã. 26 10. Em hebraico, circuncidem o prepúcio do seu coração. 27 11. Em hebraico, mar de juncos. 28 11. Em hebraico, mar ocidental. 29 11. Em hebraico, na Arabá. 30 12. No texto hebraico, o versículo 12. é numerado 13.. 31 13. No texto hebraico, os versículos 13.1-18 são numerados 13.2-19. 32 14. A identificação de alguns dos animais, aves e insetos deste capítulo é incerta. 33 14. Ou hírace, ou arganaz. 34 15. Ou Se um hebreu, homem ou mulher, lhe for vendido. 35 16. Abibe, o primeiro mês no antigo calendário lunar hebraico, normalmente caía entre os meses de março e abril. 36 16. Em hebraico, Festa das Semanas; também em 16.. Chamada posteriormente de Festa de Pentecostes (ver At 2.1) e comemorada hoje com o nome Shavuot. 37 16. Ou Festa dos Tabernáculos; também em 16.. Chamada anteriormente de Festa da Última Colheita (ver Êx 23.16) e comemorada hoje com o nome Sucot. 38 18. Em hebraico, Horebe, outro nome para o Sinai. 39 19. Ou Façam um levantamento do território. 40 21. Ou empalado numa estaca; também em 21.. 41 21. A Septuaginta traz pois todo aquele que é pendurado num madeiro. Comparar com Gl 3.. 42 22. Em hebraico, não se esconda; também em 22.. 43 22. Em hebraico, 100 [siclos], cerca de 1, quilo. 44 22. Em hebraico, 50 siclos, cerca de 600 gramas. 45 22. No texto hebraico, o versículo 22. é numerado 23.. 46 23. No texto hebraico, os versículos 23.1-25 são numerados 23.2-26. 47 23. Em hebraico, em Arã-Naaraim. 48 23. Em hebraico, de um cachorro. 49 24. O termo hebraico usado aqui não se refere somente à hanseníase, mas também a diversas doenças de pele. 50 29.1a No texto hebraico, o versículo 29. é numerado 28.. 51 29.1b Em hebraico, Horebe, outro nome para o Sinai. 52 29. No texto hebraico, os versículos 29.2-29 são numerados 29.1-28. 53 29. É possível que o termo hebraico usado aqui (lit., coisas redondas) se refira a estrume. 54 30. Em hebraico, confins dos céus. 55 30. Em hebraico, circuncidará. 56 31. Conforme os manuscritos do mar Morto e a Septuaginta; o Texto Massorético traz Moisés foi e falou estas palavras. 57 32. O significado do hebraico é incerto. 58 32. Os manuscritos do mar Morto trazem o número dos filhos de Deus; a Septuaginta traz o número dos anjos de Deus. 59 32. Termo carinhoso para Israel. 60 32. Em hebraico, do Sheol. 61 32. A Septuaginta traz nossos inimigos são tolos. O significado do hebraico é incerto. 62 32.36 Ou se vingará em favor de. 63 32.43a Conforme os manuscritos do mar Morto e da Septuaginta; o Texto Massorético não traz as duas primeiras linhas. Comparar com Hb 1.. 64 32.43b Conforme a Septuaginta; o hebraico não traz essa linha. Comparar com Rm 15.. 65 32.43c Conforme os manuscritos do mar Morto e a Septuaginta; o Texto Massorético traz seus servos. 66 32.43d Conforme os manuscritos do mar Morto e a Septuaginta; o Texto Massorético não traz essa linha. 67 32. Em hebraico, Oseias, variante do nome Josué. 68 32. Em hebraico, montanhas de Abarim. 69 32. Em hebraico, águas de Meribá-Cades. 70 33.2a Conforme a Septuaginta e a versão siríaca; o hebraico traz sobre eles. 71 33.2b Ou veio com miríades de santos, desde o sul, desde as encostas do seu monte. O significado do hebraico é incerto. 72 33. Conforme a Septuaginta; o hebraico traz Por certo, amante dos povos. 73 33. Em hebraico, de Jacó. Os nomes “Jacó” e “Israel” são usados de forma intercambiável ao longo de todo o Antigo Testamento e se referem, por vezes, ao patriarca e, em outras ocasiões, à nação. 74 33. Termo carinhoso para Israel; também em 33.. 75 34. Em hebraico, mar ocidental. 76 34. O Pentateuco Samaritano e alguns manuscritos gregos trazem Eles o sepultaram.",
+            "text": "Com grande poder, Moisés realizou atos temíveis diante dos olhos de todo o Israel.",
             "isJesusWords": false,
             "crossReferences": [
               {

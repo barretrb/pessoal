@@ -2,6 +2,7 @@
   "1": {
     "book": "Zacarias",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Chamado para voltar ao SENHOR",
@@ -332,7 +333,7 @@
               },
               {
                 "ref": "Jeremias 51:24",
-                "text": "“Retribuirei à Babilônia e aos habitantes daquela terra122 por todo o mal que fizeram ao meu povo em Sião”, diz o SENHOR."
+                "text": "“Retribuirei à Babilônia e aos habitantes daquela terra por todo o mal que fizeram ao meu povo em Sião”, diz o SENHOR."
               },
               {
                 "ref": "Isaías 54:8",
@@ -396,7 +397,7 @@
         "title": "Quatro chifres e quatro ferreiros",
         "verses": [
           {
-            "number": 184,
+            "number": 18,
             "text": "Então levantei os olhos e vi quatro chifres de animais.",
             "isJesusWords": false,
             "crossReferences": []
@@ -420,7 +421,7 @@
               },
               {
                 "ref": "Esdras 4:7",
-                "text": "Mais tarde, durante o reinado de Artaxerxes, rei da Pérsia, os inimigos de Judá, liderados por Bislão, Mitredate e Tabeel, enviaram a Artaxerxes uma carta em aramaico, que foi traduzida para o rei. 819 O comandante Reum..."
+                "text": "Mais tarde, durante o reinado de Artaxerxes, rei da Pérsia, os inimigos de Judá, liderados por Bislão, Mitredate e Tabeel, enviaram a Artaxerxes uma carta em aramaico, que foi traduzida para o rei."
               }
             ]
           },
@@ -477,12 +478,13 @@
   "2": {
     "book": "Zacarias",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "A futura prosperidade de Jerusalém",
         "verses": [
           {
-            "number": 15,
+            "number": 1,
             "text": "Quando levantei os olhos outra vez, vi um homem segurando uma corda de medir.",
             "isJesusWords": false,
             "crossReferences": []
@@ -498,7 +500,7 @@
               },
               {
                 "ref": "Ezequiel 45:6",
-                "text": "“Junto à área santa maior haverá um faixa de terra com 12, quilômetros de comprimento e 2, quilômetros de largura.169 Ela será separada para uma cidade onde qualquer um em Israel poderá morar."
+                "text": "“Junto à área santa maior haverá um faixa de terra com 12,5 quilômetros de comprimento e 2,5 quilômetros de largura. Ela será separada para uma cidade onde qualquer um em Israel poderá morar."
               },
               {
                 "ref": "Apocalipse 21:15–17",
@@ -587,7 +589,7 @@
               },
               {
                 "ref": "Isaías 48:20",
-                "text": "Saiam do cativeiro! Deixem a Babilônia e os babilônios!144 Proclamem esta mensagem! Anunciem-na em alta voz para os confins da terra! O SENHOR resgatou seus servos, o povo de Israel."
+                "text": "Saiam do cativeiro! Deixem a Babilônia e os babilônios! Proclamem esta mensagem! Anunciem-na em alta voz para os confins da terra! O SENHOR resgatou seus servos, o povo de Israel."
               },
               {
                 "ref": "Isaías 52:11–12",
@@ -606,7 +608,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 48:20",
-                "text": "Saiam do cativeiro! Deixem a Babilônia e os babilônios!144 Proclamem esta mensagem! Anunciem-na em alta voz para os confins da terra! O SENHOR resgatou seus servos, o povo de Israel."
+                "text": "Saiam do cativeiro! Deixem a Babilônia e os babilônios! Proclamem esta mensagem! Anunciem-na em alta voz para os confins da terra! O SENHOR resgatou seus servos, o povo de Israel."
               },
               {
                 "ref": "Jeremias 51:6",
@@ -675,7 +677,7 @@
             "crossReferences": [
               {
                 "ref": "Zacarias 9:9",
-                "text": "Alegre-se, ó povo de Sião!29 Exulte, ó preciosa Jerusalém!30 Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
+                "text": "Alegre-se, ó povo de Sião! Exulte, ó preciosa Jerusalém! Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
               },
               {
                 "ref": "Zacarias 8:3",
@@ -710,7 +712,7 @@
               },
               {
                 "ref": "Isaías 45:14",
-                "text": "Assim diz o SENHOR: “Você governará os egípcios, os etíopes137 e os sabeus. Eles lhe trarão toda a sua mercadoria, e ela será sua. Caminharão atrás de você, como prisioneiros acorrentados; cairão de joelhos à sua frente..."
+                "text": "Assim diz o SENHOR: “Você governará os egípcios, os etíopes e os sabeus. Eles lhe trarão toda a sua mercadoria, e ela será sua. Caminharão atrás de você, como prisioneiros acorrentados; cairão de joelhos à sua frente e d..."
               }
             ]
           },
@@ -767,6 +769,7 @@
   "3": {
     "book": "Zacarias",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "A purificação do sumo sacerdote",
@@ -801,7 +804,7 @@
             "crossReferences": [
               {
                 "ref": "Amós 4:11",
-                "text": "“Destruí algumas de suas cidades, como destruí13 Sodoma e Gomorra. Os que sobreviveram pareciam gravetos chamuscados, tirados do fogo. Nem assim vocês voltaram para mim”, diz o SENHOR."
+                "text": "“Destruí algumas de suas cidades, como destruí Sodoma e Gomorra. Os que sobreviveram pareciam gravetos chamuscados, tirados do fogo. Nem assim vocês voltaram para mim”, diz o SENHOR."
               },
               {
                 "ref": "Judas 1:23",
@@ -916,7 +919,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 19:28",
-                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado113 e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
+                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
               },
               {
                 "ref": "2 Timóteo 4:1–2",
@@ -943,7 +946,7 @@
               },
               {
                 "ref": "Isaías 11:1",
-                "text": "Do tronco da linhagem de Jessé45 brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
+                "text": "Do tronco da linhagem de Jessé brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
               },
               {
                 "ref": "Zacarias 6:12",
@@ -1008,6 +1011,7 @@
   "4": {
     "book": "Zacarias",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Um candelabro e duas oliveiras",
@@ -1137,7 +1141,8 @@
                 "text": "“Sejam fortes e corajosos! Não tenham medo nem desanimem por causa do rei da Assíria e de seu exército poderoso, pois um poder muito maior está do nosso lado!"
               },
               {
-                "ref": "2 Coríntios 10:4–5"
+                "ref": "2 Coríntios 10:4–5",
+                "text": "Usamos as armas poderosas de Deus, e não as armas do mundo, para derrubar as fortalezas do raciocínio humano e acabar com os falsos argumentos."
               },
               {
                 "ref": "1 Coríntios 2:4–5",
@@ -1308,6 +1313,7 @@
   "5": {
     "book": "Zacarias",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Um rolo que voava",
@@ -1337,7 +1343,7 @@
           },
           {
             "number": 2,
-            "text": "“O que você vê?”, perguntou o anjo. “Vejo um rolo voando”, respondi. “Parece ter uns nove metros de comprimento e a metade disso de largura.”12",
+            "text": "“O que você vê?”, perguntou o anjo. “Vejo um rolo voando”, respondi. “Parece ter uns nove metros de comprimento e a metade disso de largura.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1354,7 +1360,7 @@
               },
               {
                 "ref": "Jeremias 1:11–14",
-                "text": "Então o SENHOR me disse: “O que você vê, Jeremias?”. Eu respondi: “Vejo o ramo de uma amen­doeira”."
+                "text": "Então o SENHOR me disse: “O que você vê, Jeremias?”. Eu respondi: “Vejo o ramo de uma amendoeira”."
               }
             ]
           },
@@ -1426,7 +1432,7 @@
           },
           {
             "number": 6,
-            "text": "“O que é?”, perguntei. Ele respondeu: “É um cesto para medir ­cereais e está cheio do pecado de todos que habitam a terra”.",
+            "text": "“O que é?”, perguntei. Ele respondeu: “É um cesto para medir cereais e está cheio do pecado de todos que habitam a terra”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1435,7 +1441,7 @@
               },
               {
                 "ref": "Ezequiel 44:10–11",
-                "text": "E os homens da tribo de Levi que me abandonaram quando Israel se afastou de mim para adorar ídolos163 sofrerão as consequências de seus pecados."
+                "text": "E os homens da tribo de Levi que me abandonaram quando Israel se afastou de mim para adorar ídolos sofrerão as consequências de seus pecados."
               }
             ]
           },
@@ -1553,6 +1559,7 @@
   "6": {
     "book": "Zacarias",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "Quatro carros de guerra",
@@ -1571,7 +1578,8 @@
                 "text": "Tudo que fizeram, porém, havia sido decidido de antemão pela tua vontade."
               },
               {
-                "ref": "Zacarias 1:18–19"
+                "ref": "Zacarias 1:18–19",
+                "text": "Então levantei os olhos e vi quatro chifres de animais."
               },
               {
                 "ref": "Zacarias 6:5",
@@ -1644,7 +1652,7 @@
               },
               {
                 "ref": "Zacarias 5:5–6",
-                "text": "Então o anjo que falava comigo se adiantou e disse: “Levante os olhos e veja o que está vindo”. “O que é?”, perguntei. Ele respondeu: “É um cesto para medir ­cereais e está cheio do pecado de todos que habitam a terra”."
+                "text": "Então o anjo que falava comigo se adiantou e disse: “Levante os olhos e veja o que está vindo”. “O que é?”, perguntei. Ele respondeu: “É um cesto para medir cereais e está cheio do pecado de todos que habitam a terra”."
               }
             ]
           },
@@ -1775,7 +1783,7 @@
               },
               {
                 "ref": "Esdras 8:26–30",
-                "text": "Pesei o tesouro ao entregá-lo, e seu total era: 22.750 quilos de prata, 3.500 quilos de utensílios de prata, 3.500 quilos de ouro, 2720 tigelas de ouro, cada uma pesando 8, quilos; 2 utensílios finos de bronze polido, tão valiosos como ouro."
+                "text": "Pesei o tesouro ao entregá-lo, e seu total era: 22.750 quilos de prata, 3.500 quilos de utensílios de prata, 3.500 quilos de ouro,"
               },
               {
                 "ref": "Romanos 15:25–26",
@@ -1825,7 +1833,7 @@
               },
               {
                 "ref": "Isaías 11:1",
-                "text": "Do tronco da linhagem de Jessé45 brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
+                "text": "Do tronco da linhagem de Jessé brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
               },
               {
                 "ref": "Jeremias 23:5",
@@ -1852,7 +1860,7 @@
               },
               {
                 "ref": "Isaías 11:10",
-                "text": "Naquele dia, o descendente de Jessé46 será uma bandeira de salvação para todo o mundo. As nações se reunirão junto a ele, e a terra onde ele habita será um lugar glorioso."
+                "text": "Naquele dia, o descendente de Jessé será uma bandeira de salvação para todo o mundo. As nações se reunirão junto a ele, e a terra onde ele habita será um lugar glorioso."
               }
             ]
           },
@@ -1909,6 +1917,7 @@
   "7": {
     "book": "Zacarias",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Chamado à justiça e à misericórdia",
@@ -1920,7 +1929,7 @@
             "crossReferences": [
               {
                 "ref": "Neemias 1:1",
-                "text": "Estas são as memórias de Neemias, filho de Hacalias. A preocupação de Neemias com Jerusalém No mês de quisleu, no vigésimo ano do reinado do rei Artaxerxes, eu estava na fortaleza de Susã."
+                "text": "Estas são as memórias de Neemias, filho de Hacalias."
               },
               {
                 "ref": "Esdras 6:14–15",
@@ -2046,7 +2055,7 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 17:26",
-                "text": "De todas as partes ao redor de Jerusalém, das cidades de Judá e Benjamim, das colinas do oeste, da região montanhosa e do Neguebe, virá gente para apresentar holocaustos e sacri­fícios. Trarão ofertas de cereal, incenso..."
+                "text": "De todas as partes ao redor de Jerusalém, das cidades de Judá e Benjamim, das colinas do oeste, da região montanhosa e do Neguebe, virá gente para apresentar holocaustos e sacrifícios. Trarão ofertas de cereal, incenso e..."
               },
               {
                 "ref": "Isaías 1:16–20",
@@ -2088,7 +2097,7 @@
               },
               {
                 "ref": "Salmos 82:2–4",
-                "text": "“Até quando tomarão decisões injustas que favorecem a causa dos perversos?"
+                "text": "“Até quando tomarão decisões injustas que favorecem a causa dos perversos? Interlúdio"
               },
               {
                 "ref": "Provérbios 21:3",
@@ -2222,6 +2231,7 @@
   "8": {
     "book": "Zacarias",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "Bênçãos prometidas para Jerusalém",
@@ -2298,7 +2308,7 @@
               },
               {
                 "ref": "Hebreus 12:22",
-                "text": "Vocês, porém, chegaram ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, aos incontáveis milhares de anjos em alegre reunião, 23à congregação dos filhos mais velhos, cujos nomes estão escritos no céu, e a Deus..."
+                "text": "Vocês, porém, chegaram ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, aos incontáveis milhares de anjos em alegre reunião,"
               },
               {
                 "ref": "Jó 5:26",
@@ -2643,7 +2653,7 @@
               },
               {
                 "ref": "Jeremias 52:4",
-                "text": "Assim, em 15 de janeiro,125 durante o nono ano de reinado de Zedequias, Nabucodonosor, rei de Babilônia, e todo o seu exército cercaram Jerusalém e construíram rampas de ataque contra os muros."
+                "text": "Assim, em 15 de janeiro, durante o nono ano de reinado de Zedequias, Nabucodonosor, rei de Babilônia, e todo o seu exército cercaram Jerusalém e construíram rampas de ataque contra os muros."
               }
             ]
           },
@@ -2727,7 +2737,7 @@
               },
               {
                 "ref": "Isaías 45:14",
-                "text": "Assim diz o SENHOR: “Você governará os egípcios, os etíopes137 e os sabeus. Eles lhe trarão toda a sua mercadoria, e ela será sua. Caminharão atrás de você, como prisioneiros acorrentados; cairão de joelhos à sua frente..."
+                "text": "Assim diz o SENHOR: “Você governará os egípcios, os etíopes e os sabeus. Eles lhe trarão toda a sua mercadoria, e ela será sua. Caminharão atrás de você, como prisioneiros acorrentados; cairão de joelhos à sua frente e d..."
               },
               {
                 "ref": "1 Coríntios 14:25",
@@ -2746,6 +2756,7 @@
   "9": {
     "book": "Zacarias",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "Julgamento contra os inimigos de Israel",
@@ -2941,7 +2952,7 @@
         "verses": [
           {
             "number": 9,
-            "text": "Alegre-se, ó povo de Sião!29 Exulte, ó preciosa Jerusalém!30 Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta.",
+            "text": "Alegre-se, ó povo de Sião! Exulte, ó preciosa Jerusalém! Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2954,7 +2965,7 @@
               },
               {
                 "ref": "João 12:13–16",
-                "text": "tomou ramos de palmeiras e saiu ao seu encontro, gritando: “Hosana!57 Bendito é o que vem em nome do Senhor! Bendito é o Rei de Israel!”."
+                "text": "tomou ramos de palmeiras e saiu ao seu encontro, gritando: “Hosana! Bendito é o que vem em nome do Senhor! Bendito é o Rei de Israel!”."
               },
               {
                 "ref": "Zacarias 2:10",
@@ -2980,7 +2991,8 @@
                 "text": "e, por meio dele, o Pai reconciliou consigo todas as coisas. Por meio do sangue do Filho na cruz, o Pai fez as pazes com todas as coisas, tanto nos céus como na terra."
               },
               {
-                "ref": "2 Coríntios 10:4–5"
+                "ref": "2 Coríntios 10:4–5",
+                "text": "Usamos as armas poderosas de Deus, e não as armas do mundo, para derrubar as fortalezas do raciocínio humano e acabar com os falsos argumentos."
               }
             ]
           },
@@ -3022,7 +3034,7 @@
               },
               {
                 "ref": "Lamentações 3:21–22",
-                "text": "Ainda ouso, porém, ter esperança quando me recordo disto: O amor do SENHOR não tem fim!12 Suas misericórdias são inesgotáveis."
+                "text": "Ainda ouso, porém, ter esperança quando me recordo disto: O amor do SENHOR não tem fim! Suas misericórdias são inesgotáveis."
               },
               {
                 "ref": "Hebreus 6:18",
@@ -3152,6 +3164,7 @@
   "10": {
     "book": "Zacarias",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "O SENHOR restaurará seu povo",
@@ -3335,7 +3348,8 @@
                 "text": "Como não se pode contar as estrelas no céu nem medir a areia na beira do mar, assim também tornarei incontáveis os descendentes de meu servo Davi e os levitas que me servem”."
               },
               {
-                "ref": "Oséias 1:10"
+                "ref": "Oséias 1:10",
+                "text": "“Virá o tempo, porém, em que o povo de Israel se tornará como a areia à beira do mar, que não se pode contar. Então, no lugar onde lhes foi dito: ‘Vocês não são meu povo’, se dirá: ‘Vocês são filhos do Deus vivo’."
               }
             ]
           },
@@ -3358,7 +3372,7 @@
               },
               {
                 "ref": "Isaías 65:9",
-                "text": "Preservarei um remanescente do povo de Israel183 e de Judá para possuir minha terra. Aqueles que eu escolhi a herdarão, e meus servos ali habitarão."
+                "text": "Preservarei um remanescente do povo de Israel e de Judá para possuir minha terra. Aqueles que eu escolhi a herdarão, e meus servos ali habitarão."
               }
             ]
           },
@@ -3438,6 +3452,7 @@
   "11": {
     "book": "Zacarias",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -3733,7 +3748,8 @@
                 "text": "Quando Judas, que o havia traído, viu que Jesus tinha sido condenado à morte, encheu-se de remorso e devolveu as trinta moedas de prata aos principais sacerdotes e líderes do povo,"
               },
               {
-                "ref": "Atos 1:18–19"
+                "ref": "Atos 1:18–19",
+                "text": "(Ele comprou um campo com o dinheiro que recebeu por sua perversidade. Ao cair ali de cabeça, seu corpo se partiu ao meio, e seus intestinos se derramaram."
               },
               {
                 "ref": "Isaías 53:2–3",
@@ -3844,6 +3860,7 @@
   "12": {
     "book": "Zacarias",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "O livramento futuro de Jerusalém",
@@ -3905,7 +3922,7 @@
               },
               {
                 "ref": "Zacarias 14:2–4",
-                "text": "Rs 25.."
+                "text": "Reunirei todas as nações para lutarem contra Jerusalém. A cidade será conquistada, as casas serão saqueadas, e as mulheres, violentadas. Metade da população será levada para o exílio, e o restante será deixado na cidade."
               },
               {
                 "ref": "Daniel 2:34–35",
@@ -4015,7 +4032,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Miqueias 5:2–4"
+                "ref": "Miqueias 5:2–4",
+                "text": "Mas você, ó Belém Efrata, é apenas uma pequena vila entre todo o povo de Judá. E, no entanto, um governante de Israel, cujas origens são do passado distante, sairá de você em meu favor."
               },
               {
                 "ref": "Joel 3:10",
@@ -4042,7 +4060,7 @@
               },
               {
                 "ref": "Zacarias 14:2–3",
-                "text": "Rs 25.. Então o SENHOR sairá para lutar contra essas nações, como fez no passado."
+                "text": "Reunirei todas as nações para lutarem contra Jerusalém. A cidade será conquistada, as casas serão saqueadas, e as mulheres, violentadas. Metade da população será levada para o exílio, e o restante será deixado na cidade."
               },
               {
                 "ref": "Ageu 2:22",
@@ -4072,7 +4090,8 @@
                 "text": "Um dos soldados, porém, furou seu lado com uma lança e, no mesmo instante, correu sangue com água."
               },
               {
-                "ref": "Joel 2:28–29"
+                "ref": "Joel 2:28–29",
+                "text": "“Então, depois que eu tiver feito essas coisas, derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os velhos terão sonhos, e os jovens terão visões."
               }
             ]
           },
@@ -4083,7 +4102,7 @@
             "crossReferences": [
               {
                 "ref": "2 Reis 23:29",
-                "text": "Durante o reinado de Josias, o faraó Neco, rei do Egito, foi ao rio Eufrates dar apoio ao rei da Assíria. O rei Josias e seu exército saíram para lutar contra ele, mas o faraó92 o matou quando se enfrentaram em Megido."
+                "text": "Durante o reinado de Josias, o faraó Neco, rei do Egito, foi ao rio Eufrates dar apoio ao rei da Assíria. O rei Josias e seu exército saíram para lutar contra ele, mas o faraó o matou quando se enfrentaram em Megido."
               },
               {
                 "ref": "2 Crônicas 35:24",
@@ -4106,7 +4125,7 @@
               },
               {
                 "ref": "1 Coríntios 7:5",
-                "text": "Não privem um ao outro de terem relações, a menos que ambos concordem em abster-se da intimidade sexual por certo tempo, a fim de se dedicarem de modo mais pleno à oração. Depois disso, unam- se novamente, para que Satan..."
+                "text": "Não privem um ao outro de terem relações, a menos que ambos concordem em abster-se da intimidade sexual por certo tempo, a fim de se dedicarem de modo mais pleno à oração. Depois disso, unam-se novamente, para que Sataná..."
               },
               {
                 "ref": "Êxodo 12:30",
@@ -4155,6 +4174,7 @@
   "13": {
     "book": "Zacarias",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "Uma fonte de purificação",
@@ -4301,11 +4321,11 @@
             "crossReferences": [
               {
                 "ref": "Marcos 14:27",
-                "text": "No caminho, Jesus disse: “Todos vocês me abandonarão, pois as Escrituras dizem: ‘Deus ferirá77 o pastor, e as ovelhas serão dispersas’."
+                "text": "No caminho, Jesus disse: “Todos vocês me abandonarão, pois as Escrituras dizem: ‘Deus ferirá o pastor, e as ovelhas serão dispersas’."
               },
               {
                 "ref": "Mateus 26:31",
-                "text": "No caminho, Jesus disse: “Esta noite todos vocês me abandonarão, pois as Escrituras dizem: ‘Deus ferirá151 o pastor, e as ovelhas do rebanho serão dispersas’."
+                "text": "No caminho, Jesus disse: “Esta noite todos vocês me abandonarão, pois as Escrituras dizem: ‘Deus ferirá o pastor, e as ovelhas do rebanho serão dispersas’."
               },
               {
                 "ref": "João 16:32",
@@ -4335,7 +4355,8 @@
                 "text": "Coloque uma terça parte no meio do desenho de Jerusalém e, depois de encenar o cerco à cidade, queime o cabelo ali. Espalhe outra terça parte ao redor do desenho e corte-a com a espada. Espalhe a terceira parte ao vento..."
               },
               {
-                "ref": "Malaquias 4:1–3"
+                "ref": "Malaquias 4:1–3",
+                "text": "Assim diz o SENHOR dos Exércitos: “O dia do julgamento se aproxima e arde como uma fornalha. Naquele dia, serão queimados como palha os arrogantes e os perversos. Serão consumidos, desde as raízes até os ramos."
               }
             ]
           },
@@ -4369,9 +4390,10 @@
   "14": {
     "book": "Zacarias",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
-        "title": "O SENHOR governará a terra",
+        "title": "O SENHOR governará a terra",
         "verses": [
           {
             "number": 1,
@@ -4472,7 +4494,7 @@
             "crossReferences": [
               {
                 "ref": "Judas 1:14–15",
-                "text": "Enoque, que viveu na sétima geração depois de Adão, profetizou a respeito desses homens, dizendo: “Ouçam! para julgar a todos. Convencerá os pecadores de seus atos perversos e dos insultos que pronunciaram contra ele”."
+                "text": "Enoque, que viveu na sétima geração depois de Adão, profetizou a respeito desses homens, dizendo: “Ouçam! O Senhor vem com incontáveis milhares de santos"
               },
               {
                 "ref": "Amós 1:1",
@@ -4518,7 +4540,7 @@
             "crossReferences": [
               {
                 "ref": "Apocalipse 22:5",
-                "text": "E não haverá noite; não será necessária a luz da lâmpada nem a luz do sol, pois o Senhor Deus brilhará sobre eles. E reinarão para todo o ­sempre."
+                "text": "E não haverá noite; não será necessária a luz da lâmpada nem a luz do sol, pois o Senhor Deus brilhará sobre eles. E reinarão para todo o sempre."
               },
               {
                 "ref": "Isaías 30:26",
@@ -4754,7 +4776,7 @@
           },
           {
             "number": 18,
-            "text": "Se o povo do Egito não quiser ir à festa, o SENHOR o castigará45 com as mesmas pragas que enviará sobre as outras nações que se recusarem a ir.",
+            "text": "Se o povo do Egito não quiser ir à festa, o SENHOR o castigará com as mesmas pragas que enviará sobre as outras nações que se recusarem a ir.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4807,7 +4829,7 @@
           },
           {
             "number": 21,
-            "text": "Na verdade, todas as panelas em Jerusalém e em Judá serão santas ao SENHOR dos Exércitos. Todos que vierem oferecer sacrifícios poderão usar qualquer uma delas para cozinhá-los. E, naquele dia, não haverá mais comerciantes no templo do SENHOR dos Exércitos. 1 1. Em hebraico, No oitavo mês, do antigo calendário lunar hebraico. Várias datas em Zacarias podem ser comparadas com datas de registros persas que sobreviveram ao tempo e relacionadas com precisão ao calendário moderno. Esse mês caiu entre outubro e novembro de 520 a.C. 2 1. Em hebraico, No vigésimo quarto dia do décimo primeiro mês, o mês de sebate, no segundo ano de Dario. O ano foi 519 a.C.; ver também nota em 1.. 3 1. Em hebraico, o cordão de medir será estendido sobre Jerusalém. 4 1. No texto hebraico, os versículos 1.18-21 são numerados 2.1-4. 5 2. No texto hebraico, os versículos 2.1-13 são numerados 2.5-17. 6 2. O significado do hebraico é incerto. 7 2. Em hebraico, ó filha de Sião. 8 3. Em hebraico, O satanás; também em 3.. 9 3.9 Em hebraico, sete olhos. 10 4. Ou As sete facetas (ver 3.9); o hebraico traz Estas sete. 11 4. Ou dois seres celestiais; o hebraico traz dois filhos de azeite novo. 12 5. Em hebraico, 20 côvados de comprimento e 10 côvados de largura. 13 5.6a Em hebraico, 1 efa, cerca de 20 litros; também em 5.,,,,. 14 5.6b Conforme a Septuaginta; o hebraico traz da aparência. 15 5. Em hebraico, terra de Sinar. 16 6. Ou os quatro ventos. 17 6. Em hebraico, vai atrás deles. 18 6. Ou Haverá um sacerdote junto a seu trono. 19 6.14a Conforme a versão siríaca; o hebraico traz Helém. Comparar com 6.. 20 6.14b Conforme a versão siríaca; o hebraico traz Hem. Comparar com 6.. 21 7. Em hebraico, No quarto dia do nono mês, o mês de quisleu, do antigo calendário lunar hebraico. O ano foi 518 a.C.; ver também nota em 1.. 22 7. Ou Betel-Sarezer havia enviado Regem-Meleque. 23 7.3 O templo havia sido destruído no quinto mês do antigo calendário lunar hebraico (em agosto de 586 a.C.); ver",
+            "text": "Na verdade, todas as panelas em Jerusalém e em Judá serão santas ao SENHOR dos Exércitos. Todos que vierem oferecer sacrifícios poderão usar qualquer uma delas para cozinhá-los. E, naquele dia, não haverá mais comerciantes no templo do SENHOR dos Exércitos.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4825,29 +4847,6 @@
               {
                 "ref": "Joel 3:17",
                 "text": "“Então vocês saberão que eu, o SENHOR, seu Deus, habito em Sião, meu santo monte. Jerusalém será santa, e exércitos estrangeiros não voltarão a conquistá-la."
-              }
-            ]
-          },
-          {
-            "number": 2,
-            "text": "Rs 25.. 24 7.5 No antigo calendário lunar hebraico, o quinto mês geralmente caía entre julho e agosto, e o sétimo, entre setembro e outubro; tanto o Dia da Expiação como a Festa das Cabanas eram celebrados no sétimo mês. 25 7. Em hebraico, e na Sefelá. 26 8. No antigo calendário lunar hebraico, o quarto mês geralmente caía entre junho e julho; o quinto, entre julho e agosto; o sétimo, entre setembro e outubro; e o décimo, entre dezembro e janeiro. 27 9. Ou pois os olhos do SENHOR estão voltados para toda a humanidade e também para todas as tribos de Israel. 28 9. Ou se tornarão líderes em Judá. 29 9.9a Em hebraico, filha de Sião. 30 9.9b Em hebraico, filha de Jerusalém. 31 9.10a Em hebraico, Efraim, referência a Israel, o reino do norte; também em 9.. 32 9.10b Em hebraico, do rio. 33 9. Em hebraico, os filhos de Javã. 34 10. Ou esses bodes. 35 10. Em hebraico, livrarei a casa de José. 36 10. Em hebraico, de Efraim. 37 10. Ou mar do Egito, referência ao mar Vermelho. 38 10. Em hebraico, No SENHOR. 39 11. A versão siríaca traz à tesouraria; também em 11.13b. Comparar com Mt 27.6-10. 40 12. Ou o Espírito. 41 13. Em hebraico, Que feridas são essas entre suas mãos? 42 14. Conforme a Septuaginta; o hebraico traz e todos os seus santos virão com vocês. 43 14.6 O significado do hebraico é incerto. 44 14. Em hebraico, metade para o mar oriental e metade para o mar ocidental. 45 14. Conforme alguns manuscritos hebraicos, a Septuaginta e a versão siríaca; o Texto Massorético traz não o castigará. 46 14. Em hebraico, cananeus.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Lucas 21:20–24",
-                "text": "“E, quando virem Jerusalém cercada de exércitos, saberão que chegou a hora de sua destruição."
-              },
-              {
-                "ref": "Isaías 13:16",
-                "text": "Suas crianças serão massacradas diante de seus olhos; suas casas serão saqueadas, e suas esposas, violentadas."
-              },
-              {
-                "ref": "Romanos 9:27–29",
-                "text": "E, a respeito de Israel, o profeta Isaías clamou: “Embora o povo de Israel seja numeroso como a areia do mar, apenas um remanescente será salvo."
-              },
-              {
-                "ref": "Mateus 24:19–22",
-                "text": "Que terríveis serão aqueles dias para as grávidas e para as mães que estiverem amamentando!"
               }
             ]
           }

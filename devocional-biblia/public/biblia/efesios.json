@@ -2,6 +2,7 @@
   "1": {
     "book": "Efésios",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Paulo",
@@ -21,7 +22,7 @@
               },
               {
                 "ref": "1 Coríntios 1:1–2",
-                "text": "Eu, Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta, com nosso irmão Sóstenes, 2à igreja de Deus em Corinto, àqueles que ele santificou por meio de Cristo Jesus. Vocês foram cham..."
+                "text": "Eu, Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta, com nosso irmão Sóstenes,"
               },
               {
                 "ref": "Romanos 1:1",
@@ -64,7 +65,7 @@
             "crossReferences": [
               {
                 "ref": "1 Pedro 1:3",
-                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos."
+                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos. Agora temos uma viva esperança"
               },
               {
                 "ref": "2 Coríntios 1:3",
@@ -302,7 +303,7 @@
               },
               {
                 "ref": "2 Timóteo 2:19",
-                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”."
               },
               {
                 "ref": "1 Tessalonicenses 2:13",
@@ -372,7 +373,7 @@
               },
               {
                 "ref": "Colossenses 1:9",
-                "text": "Por isso, desde que ouvimos falar a seu ­respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
+                "text": "Por isso, desde que ouvimos falar a seu respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
               },
               {
                 "ref": "2 Tessalonicenses 1:3",
@@ -399,7 +400,7 @@
               },
               {
                 "ref": "Colossenses 1:9–10",
-                "text": "Por isso, desde que ouvimos falar a seu ­respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
+                "text": "Por isso, desde que ouvimos falar a seu respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
               },
               {
                 "ref": "Provérbios 2:5",
@@ -432,12 +433,12 @@
           },
           {
             "number": 19,
-            "text": "Também oro para que entendam a grandeza insuperável do poder de Deus para conosco, os que cremos.",
+            "text": "Também oro para que entendam a grandeza insuperável do poder de Deus para conosco, os que cremos. É o mesmo poder grandioso",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Filipenses 2:13",
-                "text": "Pois Deus está agindo em vocês, dando- lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
+                "text": "Pois Deus está agindo em vocês, dando-lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
               },
               {
                 "ref": "Efésios 3:20",
@@ -452,12 +453,7 @@
                 "text": "Agora nós mesmos somos como vasos frágeis de barro que contêm esse grande tesouro. Assim, fica evidente que esse grande poder vem de Deus, e não de nós."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "É o mesmo poder grandioso",
-        "verses": [
+          },
           {
             "number": 20,
             "text": "que ressuscitou Cristo dos mortos e o fez sentar-se no lugar de honra, à direita de Deus, nos domínios celestiais.",
@@ -473,7 +469,7 @@
               },
               {
                 "ref": "Salmos 110:1",
-                "text": "O SENHOR disse ao meu Senhor:144 “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
+                "text": "O SENHOR disse ao meu Senhor: “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
               },
               {
                 "ref": "Hebreus 1:3",
@@ -557,6 +553,7 @@
   "2": {
     "book": "Efésios",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Nova vida com Cristo",
@@ -637,7 +634,7 @@
             "crossReferences": [
               {
                 "ref": "1 Pedro 1:3",
-                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos."
+                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos. Agora temos uma viva esperança"
               },
               {
                 "ref": "Efésios 1:7",
@@ -775,7 +772,7 @@
             "crossReferences": [
               {
                 "ref": "Filipenses 2:13",
-                "text": "Pois Deus está agindo em vocês, dando- lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
+                "text": "Pois Deus está agindo em vocês, dando-lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
               },
               {
                 "ref": "Colossenses 1:10",
@@ -834,7 +831,7 @@
               },
               {
                 "ref": "1 Pedro 1:3",
-                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos."
+                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos. Agora temos uma viva esperança"
               },
               {
                 "ref": "Jeremias 31:31–34",
@@ -1084,6 +1081,7 @@
   "3": {
     "book": "Efésios",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "O plano de Deus é revelado",
@@ -1126,7 +1124,7 @@
               },
               {
                 "ref": "Gálatas 1:15–16",
-                "text": "Contudo, ainda antes de eu nascer, Deus me escolheu e me chamou por sua graça. revelar seu Filho a mim, para que eu o anunciasse aos gentios. Quando isso aconteceu, não consultei ser humano algum."
+                "text": "Contudo, ainda antes de eu nascer, Deus me escolheu e me chamou por sua graça. Foi do agrado dele revelar seu Filho a mim, para que eu o anunciasse aos gentios. Quando isso aconteceu, não consultei ser humano algum."
               },
               {
                 "ref": "2 Timóteo 1:11",
@@ -1228,12 +1226,12 @@
           },
           {
             "number": 7,
-            "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas- novas.",
+            "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas-novas.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Efésios 1:19",
-                "text": "Também oro para que entendam a grandeza insuperável do poder de Deus para conosco, os que cremos."
+                "text": "Também oro para que entendam a grandeza insuperável do poder de Deus para conosco, os que cremos. É o mesmo poder grandioso"
               },
               {
                 "ref": "Efésios 3:20",
@@ -1445,7 +1443,7 @@
             "crossReferences": [
               {
                 "ref": "Colossenses 1:11",
-                "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam."
+                "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam. Que sejam cheios de alegria"
               },
               {
                 "ref": "Filipenses 4:13",
@@ -1583,6 +1581,7 @@
   "4": {
     "book": "Efésios",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Unidade no corpo",
@@ -2170,7 +2169,7 @@
               },
               {
                 "ref": "Salmos 4:4",
-                "text": "Não pequem ao permitir que a ira os controle; reflitam durante a noite e permaneçam em silêncio."
+                "text": "Não pequem ao permitir que a ira os controle; reflitam durante a noite e permaneçam em silêncio. Interlúdio"
               },
               {
                 "ref": "Salmos 37:8",
@@ -2327,6 +2326,7 @@
   "5": {
     "book": "Efésios",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Viver na luz",
@@ -2719,7 +2719,7 @@
               },
               {
                 "ref": "Colossenses 1:9",
-                "text": "Por isso, desde que ouvimos falar a seu ­respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
+                "text": "Por isso, desde que ouvimos falar a seu respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
               },
               {
                 "ref": "Efésios 5:15",
@@ -3033,7 +3033,7 @@
           },
           {
             "number": 31,
-            "text": "“Por isso o homem deixa pai e mãe e se une à sua mulher, e os dois se tornam um só.”17",
+            "text": "“Por isso o homem deixa pai e mãe e se une à sua mulher, e os dois se tornam um só.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3045,7 +3045,8 @@
                 "text": "e disse: ‘Por isso o homem deixa pai e mãe e se une à sua mulher, e os dois se tornam um só’."
               },
               {
-                "ref": "Marcos 10:7–8"
+                "ref": "Marcos 10:7–8",
+                "text": "‘Por isso o homem deixa pai e mãe e se une à sua mulher, e os dois se tornam um só’. Uma vez que já não são dois, mas um só,"
               },
               {
                 "ref": "1 Coríntios 6:16",
@@ -3106,6 +3107,7 @@
   "6": {
     "book": "Efésios",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "Filhos e pais",
@@ -3143,11 +3145,12 @@
                 "text": "“Honre seu pai e sua mãe. Assim você terá vida longa e plena na terra que o SENHOR, seu Deus, lhe dá."
               },
               {
-                "ref": "Deuteronômio 27:16"
+                "ref": "Deuteronômio 27:16",
+                "text": "‘Maldito quem desonrar pai ou mãe’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Mateus 15:4–6",
-                "text": "Pois Deus ordenou: ‘Honre seu pai e sua mãe’81 e ‘Quem insultar seu pai ou sua mãe será executado’."
+                "text": "Pois Deus ordenou: ‘Honre seu pai e sua mãe’ e ‘Quem insultar seu pai ou sua mãe será executado’."
               },
               {
                 "ref": "Provérbios 20:20",
@@ -3180,7 +3183,7 @@
           },
           {
             "number": 4,
-            "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem- nos com a disciplina e a instrução que vêm do Senhor.",
+            "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem-nos com a disciplina e a instrução que vêm do Senhor.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3231,7 +3234,7 @@
           },
           {
             "number": 6,
-            "text": "Procurem agradá- los sempre, e não apenas quando eles estiverem observando. Como escravos de Cristo, façam a vontade de Deus de todo o coração.",
+            "text": "Procurem agradá-los sempre, e não apenas quando eles estiverem observando. Como escravos de Cristo, façam a vontade de Deus de todo o coração.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3355,7 +3358,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Coríntios 10:4"
+                "ref": "2 Coríntios 10:4",
+                "text": "Usamos as armas poderosas de Deus, e não as armas do mundo, para derrubar as fortalezas do raciocínio humano e acabar com os falsos argumentos."
               },
               {
                 "ref": "Romanos 13:12",
@@ -3400,7 +3404,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Coríntios 10:4"
+                "ref": "2 Coríntios 10:4",
+                "text": "Usamos as armas poderosas de Deus, e não as armas do mundo, para derrubar as fortalezas do raciocínio humano e acabar com os falsos argumentos."
               },
               {
                 "ref": "Lucas 21:36",
@@ -3446,7 +3451,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 52:7",
-                "text": "Como são belos sobre os montes os pés do mensageiro que traz boas-novas, boas-novas de paz e salvação, de que o Deus de Israel156 reina!"
+                "text": "Como são belos sobre os montes os pés do mensageiro que traz boas-novas, boas-novas de paz e salvação, de que o Deus de Israel reina!"
               },
               {
                 "ref": "Romanos 10:15",
@@ -3635,7 +3640,7 @@
             "crossReferences": [
               {
                 "ref": "Gálatas 6:16",
-                "text": "Que a paz e a miseri­córdia de Deus estejam sobre todos os que vivem de acordo com esse princípio e sobre o Israel de Deus."
+                "text": "Que a paz e a misericórdia de Deus estejam sobre todos os que vivem de acordo com esse princípio e sobre o Israel de Deus."
               },
               {
                 "ref": "Gálatas 5:6",
@@ -3653,7 +3658,7 @@
           },
           {
             "number": 24,
-            "text": "Que a graça de Deus esteja eternamente sobre todos que amam nosso Senhor Jesus Cristo. 1 1. A maioria dos manuscritos mais antigos não traz em Éfeso. 2 1. Em grego, sobre nós no amado. 3 1. Ou nos tornamos herança de Deus. 4 1. Ou lhes dê o Espírito de sabedoria. 5 1. Ou chamou, ao seu povo santo, sua rica e gloriosa herança. 6 2.2 Em grego, obedecendo ao comandante do poder do ar. 7 3. Paulo retoma essa argumentação no versículo 14: “Quando penso em tudo isso, caio de joelhos e oro ao Pai...”. 8 3. Alguns manuscritos acrescentam de nosso Senhor Jesus Cristo. 9 3. Ou de quem todas as famílias nos céus e na terra recebem o nome. 10 4. Em grego, uma graça. 11 4. Sl 68.. 12 4. Alguns manuscritos trazem às partes inferiores da terra. 13 4. Sl 4.. 14 4. Em grego, dar graça. 15 5. Alguns manuscritos trazem os amou. 16 5. Ou à dissolução. 17 5. Gn 2.. 18 6.2-3 Ver Êx 20.; Dt 5.. 19 6. Alguns manuscritos trazem vocês não lutam. 20 6. Ou usem a prontidão para pregar as boas-novas de paz. 21 6. Em grego, explicar o mistério do evangelho; alguns manuscritos trazem apenas explicar o mistério.",
+            "text": "Que a graça de Deus esteja eternamente sobre todos que amam nosso Senhor Jesus Cristo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3662,7 +3667,7 @@
               },
               {
                 "ref": "1 Coríntios 16:22–23",
-                "text": "Se alguém não ama o Senhor, essa pessoa é maldita. Vem, nosso Senhor! Que a graça do Senhor Jesus esteja com ­vocês."
+                "text": "Se alguém não ama o Senhor, essa pessoa é maldita. Vem, nosso Senhor! Que a graça do Senhor Jesus esteja com vocês."
               },
               {
                 "ref": "Mateus 6:13",

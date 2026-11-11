@@ -2,6 +2,7 @@
   "1": {
     "book": "2 Samuel",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Davi é informado da morte de Saul",
@@ -70,7 +71,7 @@
               },
               {
                 "ref": "1 Samuel 31:1–6",
-                "text": "Cr 2.; 20.."
+                "text": "Enquanto isso, os filisteus atacaram Israel, e os israelitas fugiram deles. Muitos foram mortos nas encostas do monte Gilboa."
               },
               {
                 "ref": "1 Crônicas 10:1–6",
@@ -108,7 +109,7 @@
               },
               {
                 "ref": "1 Samuel 31:1–7",
-                "text": "Cr 2.; 20.."
+                "text": "Enquanto isso, os filisteus atacaram Israel, e os israelitas fugiram deles. Muitos foram mortos nas encostas do monte Gilboa."
               },
               {
                 "ref": "Lucas 10:31",
@@ -127,7 +128,7 @@
               },
               {
                 "ref": "Isaías 65:1",
-                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome,180 eu disse: ‘Aqui estou! Aqui estou!’."
+                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome, eu disse: ‘Aqui estou! Aqui estou!’."
               },
               {
                 "ref": "1 Samuel 22:12",
@@ -284,13 +285,13 @@
               },
               {
                 "ref": "Salmos 105:15",
-                "text": "“Não toquem em meu povo escolhido,133 não façam mal a meus profetas”."
+                "text": "“Não toquem em meu povo escolhido, não façam mal a meus profetas”."
               }
             ]
           },
           {
             "number": 15,
-            "text": "Então Davi chamou um de seus soldados e lhe ordenou: “Mate- o!”. O soldado feriu o amalequita com sua espada e o matou.",
+            "text": "Então Davi chamou um de seus soldados e lhe ordenou: “Mate-o!”. O soldado feriu o amalequita com sua espada e o matou.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -354,7 +355,7 @@
               },
               {
                 "ref": "Gênesis 50:11",
-                "text": "Os cananeus que moravam na região os viram chorar na eira de Atade e mudaram o nome do lugar (que fica próximo ao Jordão) para Abel-Mizraim,177 pois disseram: “Este é um lugar de lamento profundo para esses egípcios”."
+                "text": "Os cananeus que moravam na região os viram chorar na eira de Atade e mudaram o nome do lugar (que fica próximo ao Jordão) para Abel-Mizraim, pois disseram: “Este é um lugar de lamento profundo para esses egípcios”."
               },
               {
                 "ref": "Jeremias 9:17–21",
@@ -369,7 +370,7 @@
             "crossReferences": [
               {
                 "ref": "Josué 10:13",
-                "text": "O sol parou e a lua ficou onde estava, até que o povo tivesse derrotado seus inimigos. Acaso esse acontecimento não está registrado no Livro de Jasar?22 O sol parou no meio do céu e não se pôs por cerca de um dia inteiro."
+                "text": "O sol parou e a lua ficou onde estava, até que o povo tivesse derrotado seus inimigos. Acaso esse acontecimento não está registrado no Livro de Jasar? O sol parou no meio do céu e não se pôs por cerca de um dia inteiro."
               },
               {
                 "ref": "Gênesis 49:8",
@@ -434,7 +435,7 @@
             "crossReferences": [
               {
                 "ref": "1 Samuel 31:1",
-                "text": "Cr 2.; 20.."
+                "text": "Enquanto isso, os filisteus atacaram Israel, e os israelitas fugiram deles. Muitos foram mortos nas encostas do monte Gilboa."
               },
               {
                 "ref": "Isaías 21:5",
@@ -506,7 +507,8 @@
                 "text": "Acaso uma jovem se esquece de suas joias ou a noiva esconde seu vestido? Contudo, por anos a fio, meu povo se esqueceu de mim."
               },
               {
-                "ref": "Juízes 5:30"
+                "ref": "Juízes 5:30",
+                "text": "‘Devem estar repartindo os despojos que tomaram; uma ou duas moças para cada homem. Haverá túnicas coloridas para Sísera, túnicas coloridas e bordadas. Sem dúvida, no despojo haverá túnicas coloridas e bordadas dos dois lados’."
               },
               {
                 "ref": "1 Timóteo 2:9–10",
@@ -586,6 +588,7 @@
   "2": {
     "book": "2 Samuel",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Davi é ungido rei de Judá",
@@ -609,7 +612,7 @@
               },
               {
                 "ref": "Gênesis 32:2",
-                "text": "Ao vê-los, Jacó exclamou: “Este é o acampamento de Deus!”. Por isso, chamou o lugar de Maanaim.116 Jacó envia presentes a Esaú"
+                "text": "Ao vê-los, Jacó exclamou: “Este é o acampamento de Deus!”. Por isso, chamou o lugar de Maanaim."
               }
             ]
           },
@@ -651,7 +654,7 @@
               },
               {
                 "ref": "Josué 21:11–12",
-                "text": "Quiriate- Arba (isto é, Hebrom), na região montanhosa de Judá, com as pastagens ao redor. (Arba era antepassado de Enaque.)"
+                "text": "Quiriate-Arba (isto é, Hebrom), na região montanhosa de Judá, com as pastagens ao redor. (Arba era antepassado de Enaque.)"
               }
             ]
           },
@@ -763,11 +766,11 @@
               },
               {
                 "ref": "Gênesis 32:2",
-                "text": "Ao vê-los, Jacó exclamou: “Este é o acampamento de Deus!”. Por isso, chamou o lugar de Maanaim.116 Jacó envia presentes a Esaú"
+                "text": "Ao vê-los, Jacó exclamou: “Este é o acampamento de Deus!”. Por isso, chamou o lugar de Maanaim."
               },
               {
                 "ref": "2 Samuel 4:5–6",
-                "text": "Certo dia, Recabe e Baaná, filhos de Rimom, de Beerote, foram à casa de Isbosete por volta do meio-dia, quando ele estava descansando. A mulher que ficava à porta estava peneirando trigo, mas ficou sonolenta e cochilou."
+                "text": "Certo dia, Recabe e Baaná, filhos de Rimom, de Beerote, foram à casa de Isbosete por volta do meio-dia, quando ele estava descansando."
               },
               {
                 "ref": "1 Samuel 17:55",
@@ -852,7 +855,7 @@
               },
               {
                 "ref": "Gênesis 32:2",
-                "text": "Ao vê-los, Jacó exclamou: “Este é o acampamento de Deus!”. Por isso, chamou o lugar de Maanaim.116 Jacó envia presentes a Esaú"
+                "text": "Ao vê-los, Jacó exclamou: “Este é o acampamento de Deus!”. Por isso, chamou o lugar de Maanaim."
               },
               {
                 "ref": "2 Samuel 17:14",
@@ -1048,7 +1051,7 @@
               },
               {
                 "ref": "2 Samuel 4:6",
-                "text": "A mulher que ficava à porta estava peneirando trigo, mas ficou sonolenta e cochilou."
+                "text": "A mulher que ficava à porta estava peneirando trigo, mas ficou sonolenta e cochilou. Então Recabe e Baaná passaram por ela sem serem notados"
               }
             ]
           },
@@ -1088,7 +1091,7 @@
               },
               {
                 "ref": "Salmos 4:2",
-                "text": "Até quando vocês jogarão minha reputação na lama? Até quando farão acusações infundadas e continuarão a mentir?"
+                "text": "Até quando vocês jogarão minha reputação na lama? Até quando farão acusações infundadas e continuarão a mentir? Interlúdio"
               }
             ]
           },
@@ -1181,7 +1184,7 @@
               },
               {
                 "ref": "2 Samuel 5:1",
-                "text": "Então todas as tribos de Israel vieram a Hebrom para encontrar- se com Davi. “Somos do mesmo povo e raça”, disseram."
+                "text": "Então todas as tribos de Israel vieram a Hebrom para encontrar-se com Davi. “Somos do mesmo povo e raça”, disseram."
               },
               {
                 "ref": "2 Crônicas 16:14",
@@ -1200,6 +1203,7 @@
   "3": {
     "book": "2 Samuel",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -1420,7 +1424,7 @@
               },
               {
                 "ref": "2 Samuel 24:2",
-                "text": "Sm 21.9); o hebraico traz em Gibeá de Saul, o escolhido do SENHOR."
+                "text": "Então o rei disse a Joabe, comandante de seu exército: “Faça uma contagem de todas as tribos de Israel, desde Dã, ao norte, até Berseba, ao sul, para que eu saiba o número exato do povo”."
               },
               {
                 "ref": "2 Samuel 17:11",
@@ -1572,7 +1576,7 @@
               },
               {
                 "ref": "Salmos 89:3–4",
-                "text": "Tu disseste: “Fiz uma aliança com Davi, meu servo escolhido. A ele fiz este juramento: 4‘Estabelecerei seus descendentes como reis para sempre; eles se sentarão em seu trono de geração em geração’”."
+                "text": "Tu disseste: “Fiz uma aliança com Davi, meu servo escolhido. A ele fiz este juramento: ‘Estabelecerei seus descendentes como reis para sempre; eles se sentarão em seu trono de geração em geração’”. Interlúdio"
               },
               {
                 "ref": "1 Samuel 9:16",
@@ -1614,7 +1618,7 @@
               },
               {
                 "ref": "Gênesis 31:54",
-                "text": "Então Jacó ofereceu sacrifício a Deus na montanha e convidou todos para a refeição comemorativa. Depois de comerem, passaram a noite ali. 55114 Na manhã seguinte, Labão se levantou cedo, beijou seus netos e suas filhas e..."
+                "text": "Então Jacó ofereceu sacrifício a Deus na montanha e convidou todos para a refeição comemorativa. Depois de comerem, passaram a noite ali."
               }
             ]
           },
@@ -1743,7 +1747,8 @@
                 "text": "“Como vai, meu primo?”, disse Joabe, e o pegou pela barba com a mão direita, como se fosse beijá-lo."
               },
               {
-                "ref": "Deuteronômio 27:24"
+                "ref": "Deuteronômio 27:24",
+                "text": "‘Maldito quem matar o seu próximo em segredo’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "1 Reis 2:32",
@@ -1858,7 +1863,8 @@
                 "text": "Se o fiz, devo ser castigado pelos juízes, pois significa que neguei o Deus que está lá no alto."
               },
               {
-                "ref": "2 Samuel 18:33"
+                "ref": "2 Samuel 18:33",
+                "text": "O rei ficou muito abalado. Foi para o quarto que ficava sobre o portão da cidade e começou a chorar. Andando de um lado para o outro, clamava: “Ah, meu filho Absalão! Meu filho, meu filho Absalão! Quem me dera eu tivesse..."
               },
               {
                 "ref": "2 Samuel 1:12",
@@ -1885,7 +1891,7 @@
               },
               {
                 "ref": "Lucas 12:19–20",
-                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre- se!’."
+                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre-se!’."
               }
             ]
           },
@@ -2030,6 +2036,7 @@
   "4": {
     "book": "2 Samuel",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "O assassinato de Isbosete",
@@ -2082,7 +2089,7 @@
           },
           {
             "number": 3,
-            "text": "pois seus habitantes originais fugiram para Gitaim, onde ainda vivem como estrangeiros. 4(Jônatas, filho de Saul, tinha um filho chamado Mefibosete, que ficou aleijado quando era criança. Mefibosete tinha 5 anos quando chegou de Jezreel a notícia de que Saul e Jônatas haviam sido mortos na batalha. Ao ouvir isso, a ama do menino o tomou nos braços e fugiu. Na pressa, porém, deixou-o cair, e ele ficou aleijado.)",
+            "text": "pois seus habitantes originais fugiram para Gitaim, onde ainda vivem como estrangeiros.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2094,6 +2101,12 @@
                 "text": "Quando os israelitas do outro lado do vale de Jezreel e além do Jordão souberam que o exército israelita havia fugido e que Saul e seus filhos estavam mortos, abandonaram suas cidades e fugiram. Então os filisteus vieram e ocuparam essas cidades."
               }
             ]
+          },
+          {
+            "number": 4,
+            "text": "(Jônatas, filho de Saul, tinha um filho chamado Mefibosete, que ficou aleijado quando era criança. Mefibosete tinha 5 anos quando chegou de Jezreel a notícia de que Saul e Jônatas haviam sido mortos na batalha. Ao ouvir isso, a ama do menino o tomou nos braços e fugiu. Na pressa, porém, deixou-o cair, e ele ficou aleijado.)",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 5,
@@ -2120,7 +2133,7 @@
           },
           {
             "number": 6,
-            "text": "A mulher que ficava à porta estava peneirando trigo, mas ficou sonolenta e cochilou.",
+            "text": "A mulher que ficava à porta estava peneirando trigo, mas ficou sonolenta e cochilou. Então Recabe e Baaná passaram por ela sem serem notados",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2136,19 +2149,15 @@
                 "text": "Amasa não percebeu o punhal na mão esquerda dele, e Joabe o feriu no estômago, de modo que suas entranhas se derramaram no chão. Joabe não precisou feri-lo outra vez, pois Amasa morreu rapidamente. Joabe e seu irmão Abis..."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Então Recabe e Baaná passaram por ela sem serem notados",
-        "verses": [
+          },
           {
             "number": 7,
             "text": "e entraram na casa, onde encontraram Isbosete dormindo em sua cama. Eles o feriram e o mataram, e depois cortaram sua cabeça. Então, levando a cabeça, fugiram durante a noite pelo vale do Jordão.",
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Samuel 17:54"
+                "ref": "1 Samuel 17:54",
+                "text": "(Davi levou a cabeça do filisteu para Jerusalém, mas guardou as armas dele em sua própria tenda.)"
               },
               {
                 "ref": "Mateus 14:11",
@@ -2255,7 +2264,7 @@
               },
               {
                 "ref": "2 Samuel 1:15",
-                "text": "Então Davi chamou um de seus soldados e lhe ordenou: “Mate- o!”. O soldado feriu o amalequita com sua espada e o matou."
+                "text": "Então Davi chamou um de seus soldados e lhe ordenou: “Mate-o!”. O soldado feriu o amalequita com sua espada e o matou."
               },
               {
                 "ref": "Deuteronômio 21:22–23",
@@ -2274,13 +2283,14 @@
   "5": {
     "book": "2 Samuel",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Davi se torna rei de todo o Israel",
         "verses": [
           {
             "number": 1,
-            "text": "Então todas as tribos de Israel vieram a Hebrom para encontrar- se com Davi. “Somos do mesmo povo e raça”, disseram.",
+            "text": "Então todas as tribos de Israel vieram a Hebrom para encontrar-se com Davi. “Somos do mesmo povo e raça”, disseram.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2293,7 +2303,7 @@
               },
               {
                 "ref": "Gênesis 29:14",
-                "text": "Labão exclamou: “Você é, de fato, sangue do meu sangue!”. Jacó se casa com Lia e Raquel Quando Jacó estava na casa de Labão havia cerca de um mês,"
+                "text": "Labão exclamou: “Você é, de fato, sangue do meu sangue!”."
               },
               {
                 "ref": "Efésios 5:30",
@@ -2307,7 +2317,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Mateus 2:6"
+                "ref": "Mateus 2:6",
+                "text": "‘E você, Belém, na terra de Judá, não é a menor entre as principais cidades de Judá, pois de você virá um governante que será o pastor do meu povo, Israel’”."
               },
               {
                 "ref": "Miqueias 5:4",
@@ -2465,7 +2476,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 9:15",
-                "text": "Este é o relato do trabalho forçado que o rei Salomão impôs para a construção do templo do SENHOR, do palácio real, do aterro e do muro de Jerusalém, além das cidades de Hazor, Megido e Gezer. 16(O faraó, rei do Egito, h..."
+                "text": "Este é o relato do trabalho forçado que o rei Salomão impôs para a construção do templo do SENHOR, do palácio real, do aterro e do muro de Jerusalém, além das cidades de Hazor, Megido e Gezer."
               },
               {
                 "ref": "1 Reis 9:24",
@@ -2477,7 +2488,7 @@
               },
               {
                 "ref": "2 Crônicas 32:5",
-                "text": "Então Ezequias se dedicou a reparar todos os trechos onde o muro estava quebrado, construiu torres e fez outro muro do lado de fora do primeiro. Também reforçou o aterro139 da Cidade de Davi e fabricou grande quantidade de armas e escudos."
+                "text": "Então Ezequias se dedicou a reparar todos os trechos onde o muro estava quebrado, construiu torres e fez outro muro do lado de fora do primeiro. Também reforçou o aterro da Cidade de Davi e fabricou grande quantidade de armas e escudos."
               }
             ]
           },
@@ -2492,7 +2503,7 @@
               },
               {
                 "ref": "Salmos 46:11",
-                "text": "O SENHOR dos Exércitos está entre nós; o Deus de Jacó é nossa fortaleza."
+                "text": "O SENHOR dos Exércitos está entre nós; o Deus de Jacó é nossa fortaleza. Interlúdio"
               },
               {
                 "ref": "Romanos 8:31",
@@ -2514,7 +2525,8 @@
                 "text": "Hirão, rei de Tiro, enviou a Davi mensageiros com madeira de cedro, pedreiros e carpinteiros, para que lhe construíssem um palácio."
               },
               {
-                "ref": "1 Reis 5:1–2"
+                "ref": "1 Reis 5:1–2",
+                "text": "Hirão, rei de Tiro, sempre havia sido um fiel aliado de Davi. Quando soube que Salomão, filho de Davi, tinha sido ungido como o novo rei de Israel, Hirão mandou representantes para cumprimentá-lo."
               },
               {
                 "ref": "1 Reis 5:18",
@@ -2617,7 +2629,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 14:7",
-                "text": "Elisama, Eliada122 e Elifelete."
+                "text": "Elisama, Eliada e Elifelete."
               },
               {
                 "ref": "1 Crônicas 3:8",
@@ -2701,7 +2713,7 @@
           },
           {
             "number": 20,
-            "text": "Então Davi foi a Baal-Perazim e ali derrotou os filisteus, e exclamou: “O SENHOR irrompeu no meio de meus inimigos como uma violenta inundação!”. Por isso, chamou aquele lugar de Baal- Perazim.",
+            "text": "Então Davi foi a Baal-Perazim e ali derrotou os filisteus, e exclamou: “O SENHOR irrompeu no meio de meus inimigos como uma violenta inundação!”. Por isso, chamou aquele lugar de Baal-Perazim.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2744,7 +2756,7 @@
               },
               {
                 "ref": "1 Reis 20:22",
-                "text": "Depois disso, o profeta disse ao rei Acabe: “Prepare-se para outro ataque. Comece a planejar desde já, pois o rei da Síria voltará na virada do ano”.112 O segundo ataque de Ben-Hadade"
+                "text": "Depois disso, o profeta disse ao rei Acabe: “Prepare-se para outro ataque. Comece a planejar desde já, pois o rei da Síria voltará na virada do ano”."
               },
               {
                 "ref": "2 Samuel 5:18",
@@ -2790,7 +2802,7 @@
               },
               {
                 "ref": "Juízes 7:15",
-                "text": "Quando Gideão ouviu o sonho e sua interpretação, prostrou- se em adoração. Voltou para o acampamento de Israel e gritou: “Levantem-se! O SENHOR entregou o exército midianita em suas mãos!”."
+                "text": "Quando Gideão ouviu o sonho e sua interpretação, prostrou-se em adoração. Voltou para o acampamento de Israel e gritou: “Levantem-se! O SENHOR entregou o exército midianita em suas mãos!”."
               },
               {
                 "ref": "1 Samuel 14:9–12",
@@ -2824,6 +2836,7 @@
   "6": {
     "book": "2 Samuel",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "A arca é levada para Jerusalém",
@@ -2843,7 +2856,7 @@
               },
               {
                 "ref": "1 Crônicas 13:6–14",
-                "text": "Davi e todo o Israel foram a Baalá de Judá (também chamada de Quiriate-Jearim), a fim de buscar a arca de Deus, junto à qual era invocado o nome do SENHOR,119 que está entronizado entre os querubins."
+                "text": "Davi e todo o Israel foram a Baalá de Judá (também chamada de Quiriate-Jearim), a fim de buscar a arca de Deus, junto à qual era invocado o nome do SENHOR, que está entronizado entre os querubins."
               },
               {
                 "ref": "Salmos 132:1–6",
@@ -2853,7 +2866,7 @@
           },
           {
             "number": 2,
-            "text": "Partiu com eles para Baalá de Judá20 a fim de buscar a arca de Deus, junto à qual era invocado o nome do SENHOR dos Exércitos, que está entronizado entre os querubins.",
+            "text": "Partiu com eles para Baalá de Judá a fim de buscar a arca de Deus, junto à qual era invocado o nome do SENHOR dos Exércitos, que está entronizado entre os querubins.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2938,7 +2951,7 @@
               },
               {
                 "ref": "1 Crônicas 13:9",
-                "text": "Quando chegaram à eira de Nacom,120 os bois que puxavam a carroça tropeçaram, e Uzá estendeu a mão para segurar a arca."
+                "text": "Quando chegaram à eira de Nacom, os bois que puxavam a carroça tropeçaram, e Uzá estendeu a mão para segurar a arca."
               },
               {
                 "ref": "Números 4:19–20",
@@ -2984,7 +2997,7 @@
               },
               {
                 "ref": "1 Crônicas 13:11–12",
-                "text": "Davi ficou indignado porque a ira do SENHOR irrompeu contra Uzá e chamou aquele lugar de Perez-Uzá,121 como é conhecido até hoje. Davi teve medo do SENHOR e perguntou: “Como poderei levar a arca do SENHOR?”."
+                "text": "Davi ficou indignado porque a ira do SENHOR irrompeu contra Uzá e chamou aquele lugar de Perez-Uzá, como é conhecido até hoje. Davi teve medo do SENHOR e perguntou: “Como poderei levar a arca do SENHOR?”."
               }
             ]
           },
@@ -2995,11 +3008,11 @@
             "crossReferences": [
               {
                 "ref": "Salmos 119:120",
-                "text": "Estremeço de medo de ti; tenho temor reverente por teus estatutos. Áin"
+                "text": "Estremeço de medo de ti; tenho temor reverente por teus estatutos."
               },
               {
                 "ref": "1 Crônicas 13:11–12",
-                "text": "Davi ficou indignado porque a ira do SENHOR irrompeu contra Uzá e chamou aquele lugar de Perez-Uzá,121 como é conhecido até hoje. Davi teve medo do SENHOR e perguntou: “Como poderei levar a arca do SENHOR?”."
+                "text": "Davi ficou indignado porque a ira do SENHOR irrompeu contra Uzá e chamou aquele lugar de Perez-Uzá, como é conhecido até hoje. Davi teve medo do SENHOR e perguntou: “Como poderei levar a arca do SENHOR?”."
               },
               {
                 "ref": "Números 17:12–13",
@@ -3022,7 +3035,7 @@
               },
               {
                 "ref": "2 Samuel 4:3",
-                "text": "pois seus habitantes originais fugiram para Gitaim, onde ainda vivem como estrangeiros. 4(Jônatas, filho de Saul, tinha um filho chamado Mefibosete, que ficou aleijado quando era criança. Mefibosete tinha 5 anos quando c..."
+                "text": "pois seus habitantes originais fugiram para Gitaim, onde ainda vivem como estrangeiros."
               },
               {
                 "ref": "2 Samuel 15:19",
@@ -3030,13 +3043,13 @@
               },
               {
                 "ref": "1 Crônicas 15:18",
-                "text": "Foram escolhidos como seus ajudantes os seguintes homens: Zacarias, Jaaziel,126 Semiramote, Jeiel, Uni, Eliabe, Benaia, Maaseias, Matitias, Elifeleu, Micneias e os guardas das portas: Obede-Edom e Jeiel."
+                "text": "Foram escolhidos como seus ajudantes os seguintes homens: Zacarias, Jaaziel, Semiramote, Jeiel, Uni, Eliabe, Benaia, Maaseias, Matitias, Elifeleu, Micneias e os guardas das portas: Obede-Edom e Jeiel."
               }
             ]
           },
           {
             "number": 11,
-            "text": "A ­arca do SENHOR ficou na casa de Obede-Edom, em Gate, por três meses, e o SENHOR abençoou Obede- Edom e toda a sua família.",
+            "text": "A arca do SENHOR ficou na casa de Obede-Edom, em Gate, por três meses, e o SENHOR abençoou Obede-Edom e toda a sua família.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3045,7 +3058,7 @@
               },
               {
                 "ref": "Gênesis 30:27",
-                "text": "Labão respondeu: “Se mereço seu favor, fique. Eu enriqueci, pois107 o SENHOR me abençoou por sua causa."
+                "text": "Labão respondeu: “Se mereço seu favor, fique. Eu enriqueci, pois o SENHOR me abençoou por sua causa."
               },
               {
                 "ref": "Provérbios 3:9–10",
@@ -3141,7 +3154,7 @@
               },
               {
                 "ref": "1 Crônicas 15:25",
-                "text": "Então Davi, as autoridades de Israel e os generais do exército130 foram à casa de Obede-Edom a fim de trazer a arca da aliança do SENHOR para Jerusalém com grande celebração."
+                "text": "Então Davi, as autoridades de Israel e os generais do exército foram à casa de Obede-Edom a fim de trazer a arca da aliança do SENHOR para Jerusalém com grande celebração."
               },
               {
                 "ref": "Salmos 150:3",
@@ -3294,7 +3307,7 @@
           },
           {
             "number": 22,
-            "text": "Estou disposto a me tornar ainda mais desprezível e até mesmo a ser humilhado aos meus próprios olhos! Mas as ­servas que você mencionou certamente me considerarão digno de honra”.",
+            "text": "Estou disposto a me tornar ainda mais desprezível e até mesmo a ser humilhado aos meus próprios olhos! Mas as servas que você mencionou certamente me considerarão digno de honra”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3337,6 +3350,7 @@
   "7": {
     "book": "2 Samuel",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "A aliança do SENHOR com Davi",
@@ -3383,7 +3397,7 @@
               },
               {
                 "ref": "Ageu 1:4",
-                "text": "“Por que vocês vivem em casas luxuosas enquanto minha casa con-­ tinua em ruínas?"
+                "text": "“Por que vocês vivem em casas luxuosas enquanto minha casa con- tinua em ruínas?"
               }
             ]
           },
@@ -3406,7 +3420,7 @@
               },
               {
                 "ref": "2 Reis 4:27",
-                "text": "Mas, quando ela chegou ao homem de Deus no monte, abraçou os pés dele. Geazi quis afastá-la, mas o homem de Deus disse: “Deixe- a em paz. Ela está profundamente angustiada, mas o SENHOR não me revelou o motivo”."
+                "text": "Mas, quando ela chegou ao homem de Deus no monte, abraçou os pés dele. Geazi quis afastá-la, mas o homem de Deus disse: “Deixe-a em paz. Ela está profundamente angustiada, mas o SENHOR não me revelou o motivo”."
               }
             ]
           },
@@ -3447,7 +3461,8 @@
                 "text": "“Você sabe que meu pai, Davi, não pôde construir um templo em honra ao nome do SENHOR, seu Deus, por causa das muitas guerras que as nações vizinhas travaram contra ele. Não podia construir enquanto o SENHOR não lhe dess..."
               },
               {
-                "ref": "1 Reis 8:16–19"
+                "ref": "1 Reis 8:16–19",
+                "text": "‘Desde o dia em que tirei Israel, meu povo, do Egito, não escolhi nenhuma cidade das tribos de Israel como lugar onde deveria ser construído um templo em honra ao meu nome. Contudo, escolhi Davi para reinar sobre meu povo, Israel’”."
               }
             ]
           },
@@ -3457,7 +3472,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Reis 8:16"
+                "ref": "1 Reis 8:16",
+                "text": "‘Desde o dia em que tirei Israel, meu povo, do Egito, não escolhi nenhuma cidade das tribos de Israel como lugar onde deveria ser construído um templo em honra ao meu nome. Contudo, escolhi Davi para reinar sobre meu povo, Israel’”."
               },
               {
                 "ref": "Êxodo 40:18–19",
@@ -3492,7 +3508,7 @@
               },
               {
                 "ref": "João 21:15–17",
-                "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”.100 “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus."
+                "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”. “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus."
               }
             ]
           },
@@ -3691,7 +3707,7 @@
               },
               {
                 "ref": "Salmos 89:36–37",
-                "text": "Sua dinastia continuará para sempre, seu reino permanecerá como o sol. Será duradouro como a lua, minha fiel testemunha no céu”."
+                "text": "Sua dinastia continuará para sempre, seu reino permanecerá como o sol. Será duradouro como a lua, minha fiel testemunha no céu”. Interlúdio"
               },
               {
                 "ref": "2 Samuel 7:13",
@@ -3756,7 +3772,7 @@
           },
           {
             "number": 19,
-            "text": "E agora, Soberano SENHOR, como se isso não bastasse, dizes que dará a teu servo uma dinastia duradoura! Tratas a todos dessa forma, ó Soberano SENHOR?28",
+            "text": "E agora, Soberano SENHOR, como se isso não bastasse, dizes que dará a teu servo uma dinastia duradoura! Tratas a todos dessa forma, ó Soberano SENHOR?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3819,7 +3835,7 @@
               },
               {
                 "ref": "1 Coríntios 1:1",
-                "text": "Eu, Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta, com nosso irmão Sóstenes, 2à igreja de Deus em Corinto, àqueles que ele santificou por meio de Cristo Jesus. Vocês foram cham..."
+                "text": "Eu, Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta, com nosso irmão Sóstenes,"
               }
             ]
           },
@@ -3990,7 +4006,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Números 6:24–26"
+                "ref": "Números 6:24–26",
+                "text": "‘Que o SENHOR o abençoe e o proteja."
               },
               {
                 "ref": "1 Crônicas 17:27",
@@ -4013,6 +4030,7 @@
   "8": {
     "book": "2 Samuel",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "Vitórias militares de Davi",
@@ -4162,7 +4180,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 9:15–16",
-                "text": "O rei Salomão fez duzentos escudos grandes de ouro batido, cada um pesando 7, quilos."
+                "text": "O rei Salomão fez duzentos escudos grandes de ouro batido, cada um pesando 7,2 quilos."
               },
               {
                 "ref": "1 Crônicas 18:7",
@@ -4174,30 +4192,30 @@
               },
               {
                 "ref": "1 Reis 10:16–17",
-                "text": "O rei Salomão fez duzentos escudos grandes de ouro batido, cada um pesando 7, quilos."
+                "text": "O rei Salomão fez duzentos escudos grandes de ouro batido, cada um pesando 7,2 quilos."
               }
             ]
           },
           {
             "number": 8,
-            "text": "além de grande quantidade de bronze de Tebá32 e de Berotai, cidades que pertenciam a Hadadezer.",
+            "text": "além de grande quantidade de bronze de Tebá e de Berotai, cidades que pertenciam a Hadadezer.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "1 Crônicas 18:8",
-                "text": "bem como grande quantidade de bronze de Tebá135 e de Cum, cidades que pertenciam a Hadadezer. Mais tarde, Salomão derreteu o bronze e o usou para fazer o grande tanque de bronze chamado Mar, as colunas e os diversos utensílios de bronze do templo."
+                "text": "bem como grande quantidade de bronze de Tebá e de Cum, cidades que pertenciam a Hadadezer. Mais tarde, Salomão derreteu o bronze e o usou para fazer o grande tanque de bronze chamado Mar, as colunas e os diversos utensílios de bronze do templo."
               },
               {
                 "ref": "1 Crônicas 22:14",
-                "text": "“Trabalhei arduamente para providenciar os materiais para a construção do templo do SENHOR: 3.500 toneladas de ouro, 35.000 toneladas de prata155 e tanto ferro e bronze que não se pode pesar. Também juntei madeira e pedr..."
+                "text": "“Trabalhei arduamente para providenciar os materiais para a construção do templo do SENHOR: 3.500 toneladas de ouro, 35.000 toneladas de prata e tanto ferro e bronze que não se pode pesar. Também juntei madeira e pedra..."
               },
               {
                 "ref": "2 Crônicas 4:1–18",
-                "text": "Salomão também fez um altar de bronze com 9 metros de comprimento, 9 metros de largura e 4, metros de altura."
+                "text": "Salomão também fez um altar de bronze com 9 metros de comprimento, 9 metros de largura e 4,5 metros de altura."
               },
               {
                 "ref": "Ezequiel 47:16",
-                "text": "dali seguirá para Berota e Sibraim,193 que ficam na divisa entre Damasco e Hamate e, por fim, para Hazer-Haticom, na divisa com Haurã."
+                "text": "dali seguirá para Berota e Sibraim, que ficam na divisa entre Damasco e Hamate e, por fim, para Hazer-Haticom, na divisa com Haurã."
               }
             ]
           },
@@ -4216,7 +4234,7 @@
               },
               {
                 "ref": "1 Crônicas 18:9",
-                "text": "Quando Toí,136 rei de Hamate, soube que Davi tinha destruído todo o exército de Hadadezer, rei de Zobá,"
+                "text": "Quando Toí, rei de Hamate, soube que Davi tinha destruído todo o exército de Hadadezer, rei de Zobá,"
               },
               {
                 "ref": "Amós 6:2",
@@ -4231,7 +4249,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 18:10",
-                "text": "enviou seu filho Jorão137 para parabenizar Davi por sua campanha bem-sucedida. Hadadezer e Toí eram inimigos e sempre estavam em guerra. Jorão presenteou Davi com objetos de prata, ouro e bronze."
+                "text": "enviou seu filho Jorão para parabenizar Davi por sua campanha bem-sucedida. Hadadezer e Toí eram inimigos e sempre estavam em guerra. Jorão presenteou Davi com objetos de prata, ouro e bronze."
               },
               {
                 "ref": "1 Samuel 13:10",
@@ -4258,15 +4276,15 @@
               },
               {
                 "ref": "1 Crônicas 26:26–28",
-                "text": "Selemote e seus parentes eram encarregados dos tesouros que o rei Davi, os chefes das famílias, os generais e capitães174 e outros oficiais do exército haviam dedicado ao SENHOR."
+                "text": "Selemote e seus parentes eram encarregados dos tesouros que o rei Davi, os chefes das famílias, os generais e capitães e outros oficiais do exército haviam dedicado ao SENHOR."
               },
               {
                 "ref": "1 Crônicas 22:14–16",
-                "text": "“Trabalhei arduamente para providenciar os materiais para a construção do templo do SENHOR: 3.500 toneladas de ouro, 35.000 toneladas de prata155 e tanto ferro e bronze que não se pode pesar. Também juntei madeira e pedr..."
+                "text": "“Trabalhei arduamente para providenciar os materiais para a construção do templo do SENHOR: 3.500 toneladas de ouro, 35.000 toneladas de prata e tanto ferro e bronze que não se pode pesar. Também juntei madeira e pedra..."
               },
               {
                 "ref": "Miqueias 4:13",
-                "text": "“Levante-se e esmague as nações, ó bela Sião!19 Pois eu lhe darei chifres de ferro e cascos de bronze, para que pisoteie muitas nações até despedaçá-las. Você dedicará ao SENHOR as riquezas que elas roubaram; dedicará se..."
+                "text": "“Levante-se e esmague as nações, ó bela Sião! Pois eu lhe darei chifres de ferro e cascos de bronze, para que pisoteie muitas nações até despedaçá-las. Você dedicará ao SENHOR as riquezas que elas roubaram; dedicará seus..."
               }
             ]
           },
@@ -4396,7 +4414,7 @@
               },
               {
                 "ref": "1 Crônicas 18:16",
-                "text": "Zadoque, filho de Aitube, e Aimeleque,138 filho de Abiatar, eram sacerdotes. Seraías139 era o secretário da corte."
+                "text": "Zadoque, filho de Aitube, e Aimeleque, filho de Abiatar, eram sacerdotes. Seraías era o secretário da corte."
               }
             ]
           },
@@ -4419,7 +4437,7 @@
               },
               {
                 "ref": "1 Crônicas 18:17",
-                "text": "Benaia, filho de Joiada, era comandante da guarda pessoal do rei.140 E os filhos de Davi eram seus assistentes diretos."
+                "text": "Benaia, filho de Joiada, era comandante da guarda pessoal do rei. E os filhos de Davi eram seus assistentes diretos."
               }
             ]
           }
@@ -4430,6 +4448,7 @@
   "9": {
     "book": "2 Samuel",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "Davi trata Mefibosete com bondade",
@@ -4472,7 +4491,7 @@
               },
               {
                 "ref": "Gênesis 39:6",
-                "text": "Assim, Potifar entregou tudo que possuía aos cuidados de José e, tendo-o como administrador, não se preo-­ cupava com nada, exceto com o que iria comer. José era um rapaz muito bonito, de bela aparência,"
+                "text": "Assim, Potifar entregou tudo que possuía aos cuidados de José e, tendo-o como administrador, não se preo- cupava com nada, exceto com o que iria comer. José era um rapaz muito bonito, de bela aparência,"
               },
               {
                 "ref": "Gênesis 15:2–3",
@@ -4486,7 +4505,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Samuel 4:4"
+                "ref": "2 Samuel 4:4",
+                "text": "(Jônatas, filho de Saul, tinha um filho chamado Mefibosete, que ficou aleijado quando era criança. Mefibosete tinha 5 anos quando chegou de Jezreel a notícia de que Saul e Jônatas haviam sido mortos na batalha. Ao ouvir..."
               },
               {
                 "ref": "Tito 3:3–4",
@@ -4509,7 +4529,7 @@
             "crossReferences": [
               {
                 "ref": "2 Samuel 17:27–29",
-                "text": "Quando Davi chegou a Maanaim, foi recebido por Sobi, filho de Naás, de Rabá dos amonitas, e por Maquir, filho de Amiel, de Lo- Debar, e por Barzilai, de Rogelim, em Gileade."
+                "text": "Quando Davi chegou a Maanaim, foi recebido por Sobi, filho de Naás, de Rabá dos amonitas, e por Maquir, filho de Amiel, de Lo-Debar, e por Barzilai, de Rogelim, em Gileade."
               }
             ]
           },
@@ -4702,6 +4722,7 @@
   "10": {
     "book": "2 Samuel",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "Davi derrota os amonitas",
@@ -4717,7 +4738,7 @@
               },
               {
                 "ref": "1 Crônicas 19:1–19",
-                "text": "Algum tempo depois, morreu Naás, rei dos amonitas, e seu filho Hanum141 subiu ao trono."
+                "text": "Algum tempo depois, morreu Naás, rei dos amonitas, e seu filho Hanum subiu ao trono."
               },
               {
                 "ref": "Juízes 10:7–9",
@@ -4847,7 +4868,7 @@
             "crossReferences": [
               {
                 "ref": "2 Samuel 23:8–39",
-                "text": "Estes são os nomes dos guerreiros mais valentes de Davi. O primeiro era Jabesão, o hacmonita,102 líder dos Três,103 isto é, dos três guerreiros mais valentes dentre os soldados de Davi. Certa ocasião, usou sua lança para..."
+                "text": "Estes são os nomes dos guerreiros mais valentes de Davi. O primeiro era Jabesão, o hacmonita, líder dos Três, isto é, dos três guerreiros mais valentes dentre os soldados de Davi. Certa ocasião, usou sua lança para matar..."
               },
               {
                 "ref": "1 Crônicas 19:8–19",
@@ -4857,7 +4878,7 @@
           },
           {
             "number": 8,
-            "text": "As tropas amonitas avançaram e formaram sua frente de batalha à entrada da cidade, enquanto os sírios de Zobá e Reobe e os homens de Tobe e Maaca se posi-­ cionaram para lutar nos campos abertos.",
+            "text": "As tropas amonitas avançaram e formaram sua frente de batalha à entrada da cidade, enquanto os sírios de Zobá e Reobe e os homens de Tobe e Maaca se posi- cionaram para lutar nos campos abertos.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4908,11 +4929,11 @@
               },
               {
                 "ref": "2 Samuel 23:18",
-                "text": "Abisai, filho de Zeruia, irmão de Joabe, era líder dos Trinta.106 Certa ocasião, usou sua lança para matar trezentos soldados inimigos numa só batalha. Foi por causa de feitos como esse que ele se tornou tão famoso quanto os Três."
+                "text": "Abisai, filho de Zeruia, irmão de Joabe, era líder dos Trinta. Certa ocasião, usou sua lança para matar trezentos soldados inimigos numa só batalha. Foi por causa de feitos como esse que ele se tornou tão famoso quanto os Três."
               },
               {
                 "ref": "1 Crônicas 19:1",
-                "text": "Algum tempo depois, morreu Naás, rei dos amonitas, e seu filho Hanum141 subiu ao trono."
+                "text": "Algum tempo depois, morreu Naás, rei dos amonitas, e seu filho Hanum subiu ao trono."
               }
             ]
           },
@@ -5015,7 +5036,7 @@
             "crossReferences": [
               {
                 "ref": "Zacarias 14:2–3",
-                "text": "Rs 25.. Então o SENHOR sairá para lutar contra essas nações, como fez no passado."
+                "text": "Reunirei todas as nações para lutarem contra Jerusalém. A cidade será conquistada, as casas serão saqueadas, e as mulheres, violentadas. Metade da população será levada para o exílio, e o restante será deixado na cidade."
               },
               {
                 "ref": "Isaías 8:9–10",
@@ -5038,7 +5059,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 19:16",
-                "text": "Os sírios viram que não tinham como enfrentar Israel. Assim, enviaram mensageiros para convocar mais soldados do outro lado do rio Eufrates.143 Essas tropas eram conduzidas por Sobaque,144 comandante do exército de Hadadezer."
+                "text": "Os sírios viram que não tinham como enfrentar Israel. Assim, enviaram mensageiros para convocar mais soldados do outro lado do rio Eufrates. Essas tropas eram conduzidas por Sobaque, comandante do exército de Hadadezer."
               },
               {
                 "ref": "2 Samuel 8:3–8",
@@ -5118,6 +5139,7 @@
   "11": {
     "book": "2 Samuel",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "Davi e Bate-Seba",
@@ -5129,7 +5151,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 20:1",
-                "text": "No começo do ano,145 época em que os reis costumavam ir à guerra, Joabe conduziu o exército israelita em ataques bem- sucedidos contra a terra dos amonitas. Durante essas operações, cercou a cidade de Rabá, a atacou e a..."
+                "text": "No começo do ano, época em que os reis costumavam ir à guerra, Joabe conduziu o exército israelita em ataques bem-sucedidos contra a terra dos amonitas. Durante essas operações, cercou a cidade de Rabá, a atacou e a dest..."
               },
               {
                 "ref": "1 Reis 20:26",
@@ -5137,11 +5159,11 @@
               },
               {
                 "ref": "1 Reis 20:22",
-                "text": "Depois disso, o profeta disse ao rei Acabe: “Prepare-se para outro ataque. Comece a planejar desde já, pois o rei da Síria voltará na virada do ano”.112 O segundo ataque de Ben-Hadade"
+                "text": "Depois disso, o profeta disse ao rei Acabe: “Prepare-se para outro ataque. Comece a planejar desde já, pois o rei da Síria voltará na virada do ano”."
               },
               {
                 "ref": "2 Crônicas 36:10",
-                "text": "Na virada do ano,152 o rei Nabucodonosor levou Joaquim para a Babilônia. Nessa ocasião, também levou os tesouros do templo do SENHOR. Nabucodonosor nomeou Zedequias, tio153 de Joaquim, rei sobre Judá e sobre Jerusalém."
+                "text": "Na virada do ano, o rei Nabucodonosor levou Joaquim para a Babilônia. Nessa ocasião, também levou os tesouros do templo do SENHOR. Nabucodonosor nomeou Zedequias, tio de Joaquim, rei sobre Judá e sobre Jerusalém."
               }
             ]
           },
@@ -5296,7 +5318,7 @@
           },
           {
             "number": 9,
-            "text": "Urias, porém, não foi para casa. Passou a noite na entrada do pa­lácio com os guardas do rei.",
+            "text": "Urias, porém, não foi para casa. Passou a noite na entrada do palácio com os guardas do rei.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5350,7 +5372,7 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 2:22–23",
-                "text": "Por mais sabão ou soda que use, não consegue se limpar; ainda vejo a mancha de sua culpa. Eu, o SENHOR Soberano, falei!” Israel, esposa infiel"
+                "text": "Por mais sabão ou soda que use, não consegue se limpar; ainda vejo a mancha de sua culpa. Eu, o SENHOR Soberano, falei!”"
               },
               {
                 "ref": "Jeremias 2:37",
@@ -5400,7 +5422,8 @@
                 "text": "“O coração humano é mais enganoso que qualquer coisa e é extremamente perverso; quem sabe, de fato, o quanto é mau?"
               },
               {
-                "ref": "Jeremias 9:1–4"
+                "ref": "Jeremias 9:1–4",
+                "text": "Quem dera minha cabeça fosse uma represa, e meus olhos, uma fonte de lágrimas! Choraria dia e noite por meu povo que foi massacrado."
               },
               {
                 "ref": "Salmos 62:9",
@@ -5614,6 +5637,7 @@
   "12": {
     "book": "2 Samuel",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "Natã repreende Davi",
@@ -5735,7 +5759,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Êxodo 22:1"
+                "ref": "Êxodo 22:1",
+                "text": "“Se alguém roubar um boi ou uma ovelha e matar o animal ou vendê-lo, o ladrão pagará cinco bois para cada boi roubado e quatro ovelhas para cada ovelha roubada."
               },
               {
                 "ref": "Lucas 19:8",
@@ -5928,7 +5953,7 @@
               },
               {
                 "ref": "Isaías 52:5",
-                "text": "O que é isso?”, pergunta o SENHOR. “Por que meu povo foi escravizado novamente? Aqueles que os dominam gritam de alegria.154 Meu nome é blasfemado o dia inteiro."
+                "text": "O que é isso?”, pergunta o SENHOR. “Por que meu povo foi escravizado novamente? Aqueles que os dominam gritam de alegria. Meu nome é blasfemado o dia inteiro."
               },
               {
                 "ref": "Salmos 89:31–33",
@@ -6068,7 +6093,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 38:5",
-                "text": "“Volte a Ezequias e diga-lhe: Assim diz o SENHOR, o Deus de seu antepassado Davi: ‘Ouvi sua oração e vi suas lágrimas."
+                "text": "“Volte a Ezequias e diga-lhe: Assim diz o SENHOR, o Deus de seu antepassado Davi: ‘Ouvi sua oração e vi suas lágrimas. Acrescentarei quinze anos à sua vida"
               },
               {
                 "ref": "Isaías 38:1–3",
@@ -6091,7 +6116,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 37:35",
-                "text": "A família toda tentou consolá-lo, mas ele se recusava. “Descerei à sepultura139 lamentando a morte de meu filho”, dizia, e continuou a lamentar-se."
+                "text": "A família toda tentou consolá-lo, mas ele se recusava. “Descerei à sepultura lamentando a morte de meu filho”, dizia, e continuou a lamentar-se."
               },
               {
                 "ref": "Jó 30:23",
@@ -6109,7 +6134,7 @@
           },
           {
             "number": 24,
-            "text": "Então Davi consolou Bate-Seba, sua mulher, e teve relações com ela. Bate-Seba engravidou e deu à luz um filho, a quem Davi chamou Salomão.",
+            "text": "Então Davi consolou Bate-Seba, sua mulher, e teve relações com ela. Bate-Seba engravidou e deu à luz um filho, a quem Davi chamou Salomão. O SENHOR amou a criança",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6122,19 +6147,14 @@
               },
               {
                 "ref": "1 Crônicas 29:1",
-                "text": "Cr 24.22b), variação de Selomite; comparar com 23.."
+                "text": "O rei Davi se voltou para toda a comunidade e disse: “Meu filho Salomão, que Deus escolheu, ainda é jovem e inexperiente. O trabalho que ele tem pela frente é enorme, pois o templo que ele construirá não será para meros..."
               },
               {
                 "ref": "2 Samuel 7:12",
                 "text": "Pois, quando você morrer e for sepultado com seus antepassados, escolherei um de seus filhos, de sua própria descendência, e estabelecerei seu reino."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "O SENHOR amou a criança",
-        "verses": [
+          },
           {
             "number": 25,
             "text": "e enviou uma mensagem por meio do profeta Natã, dizendo que o menino devia se chamar Jedidias, conforme o SENHOR havia ordenado.",
@@ -6170,10 +6190,11 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 20:1–3",
-                "text": "No começo do ano,145 época em que os reis costumavam ir à guerra, Joabe conduziu o exército israelita em ataques bem- sucedidos contra a terra dos amonitas. Durante essas operações, cercou a cidade de Rabá, a atacou e a..."
+                "text": "No começo do ano, época em que os reis costumavam ir à guerra, Joabe conduziu o exército israelita em ataques bem-sucedidos contra a terra dos amonitas. Durante essas operações, cercou a cidade de Rabá, a atacou e a dest..."
               },
               {
-                "ref": "Deuteronômio 3:11"
+                "ref": "Deuteronômio 3:11",
+                "text": "(O rei Ogue de Basã foi o último sobrevivente dos refains. Sua cama era feita de ferro e media mais de quatro metros de comprimento e quase dois metros de largura. Ainda hoje é possível vê-la na cidade amonita de Rabá.)"
               },
               {
                 "ref": "2 Samuel 11:25",
@@ -6195,7 +6216,8 @@
                 "text": "um para Amom e sua capital, Rabá, e outro para Judá e Jerusalém, a cidade fortificada."
               },
               {
-                "ref": "Deuteronômio 3:11"
+                "ref": "Deuteronômio 3:11",
+                "text": "(O rei Ogue de Basã foi o último sobrevivente dos refains. Sua cama era feita de ferro e media mais de quatro metros de comprimento e quase dois metros de largura. Ainda hoje é possível vê-la na cidade amonita de Rabá.)"
               }
             ]
           },
@@ -6217,7 +6239,7 @@
             "crossReferences": [
               {
                 "ref": "2 Samuel 17:27",
-                "text": "Quando Davi chegou a Maanaim, foi recebido por Sobi, filho de Naás, de Rabá dos amonitas, e por Maquir, filho de Amiel, de Lo- Debar, e por Barzilai, de Rogelim, em Gileade."
+                "text": "Quando Davi chegou a Maanaim, foi recebido por Sobi, filho de Naás, de Rabá dos amonitas, e por Maquir, filho de Amiel, de Lo-Debar, e por Barzilai, de Rogelim, em Gileade."
               }
             ]
           },
@@ -6228,7 +6250,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 20:2",
-                "text": "Então Davi chegou a Rabá, removeu a coroa da cabeça do rei,146 e ela foi colocada sobre sua cabeça. A coroa era feita de ouro, enfeitada com pedras preciosas, e pesava cerca de 35 quilos.147 Davi tomou grande quantidade de despojos da cidade."
+                "text": "Então Davi chegou a Rabá, removeu a coroa da cabeça do rei, e ela foi colocada sobre sua cabeça. A coroa era feita de ouro, enfeitada com pedras preciosas, e pesava cerca de 35 quilos. Davi tomou grande quantidade de despojos da cidade."
               }
             ]
           },
@@ -6239,7 +6261,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 20:3",
-                "text": "Também tornou os habitantes de Rabá seus escravos e os obrigou a trabalhar com serras, picaretas e machados de ferro.148 Foi assim que Davi tratou o povo de todas as cidades amonitas. Então ele e todo o exército voltaram para Jerusalém."
+                "text": "Também tornou os habitantes de Rabá seus escravos e os obrigou a trabalhar com serras, picaretas e machados de ferro. Foi assim que Davi tratou o povo de todas as cidades amonitas. Então ele e todo o exército voltaram para Jerusalém."
               },
               {
                 "ref": "Amós 1:3",
@@ -6262,6 +6284,7 @@
   "13": {
     "book": "2 Samuel",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "Tamar é violentada",
@@ -6361,7 +6384,7 @@
             "crossReferences": [
               {
                 "ref": "Marcos 6:24–25",
-                "text": "Ela saiu e perguntou à mãe: “O que devo ­pedir?”. A mãe lhe disse: “Peça a cabeça de João ­Batista!”. A moça voltou depressa ao rei e disse: “Quero a cabeça de João Batista agora mesmo num prato!”."
+                "text": "Ela saiu e perguntou à mãe: “O que devo pedir?”. A mãe lhe disse: “Peça a cabeça de João Batista!”. A moça voltou depressa ao rei e disse: “Quero a cabeça de João Batista agora mesmo num prato!”."
               },
               {
                 "ref": "2 Samuel 16:21–2 Samuel 17:4",
@@ -6409,7 +6432,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 27:22"
+                "ref": "Deuteronômio 27:22",
+                "text": "‘Maldito quem tiver relações sexuais com sua irmã, seja filha de seu pai ou de sua mãe’. E todo o povo responderá: ‘Amém!’."
               }
             ]
           },
@@ -6543,11 +6567,12 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Juízes 5:30"
+                "ref": "Juízes 5:30",
+                "text": "‘Devem estar repartindo os despojos que tomaram; uma ou duas moças para cada homem. Haverá túnicas coloridas para Sísera, túnicas coloridas e bordadas. Sem dúvida, no despojo haverá túnicas coloridas e bordadas dos dois lados’."
               },
               {
                 "ref": "Gênesis 37:3",
-                "text": "Jacó135 amava José mais que a qualquer outro de seus filhos, pois José havia nascido quando Jacó era idoso. Por isso, certo dia Jacó encomendou um presente especial para José: uma linda túnica."
+                "text": "Jacó amava José mais que a qualquer outro de seus filhos, pois José havia nascido quando Jacó era idoso. Por isso, certo dia Jacó encomendou um presente especial para José: uma linda túnica."
               },
               {
                 "ref": "Gênesis 37:23",
@@ -6912,7 +6937,8 @@
                 "text": "Seus servos ficaram perplexos. “Não o entendemos”, disseram. “Enquanto a criança estava viva, o senhor chorou e jejuou. Agora que a criança morreu, o senhor parou de lamentar e voltou a comer.”"
               },
               {
-                "ref": "2 Samuel 18:33"
+                "ref": "2 Samuel 18:33",
+                "text": "O rei ficou muito abalado. Foi para o quarto que ficava sobre o portão da cidade e começou a chorar. Andando de um lado para o outro, clamava: “Ah, meu filho Absalão! Meu filho, meu filho Absalão! Quem me dera eu tivesse..."
               },
               {
                 "ref": "2 Samuel 13:15",
@@ -6969,7 +6995,7 @@
               },
               {
                 "ref": "Gênesis 37:35",
-                "text": "A família toda tentou consolá-lo, mas ele se recusava. “Descerei à sepultura139 lamentando a morte de meu filho”, dizia, e continuou a lamentar-se."
+                "text": "A família toda tentou consolá-lo, mas ele se recusava. “Descerei à sepultura lamentando a morte de meu filho”, dizia, e continuou a lamentar-se."
               },
               {
                 "ref": "Salmos 119:20",
@@ -6988,6 +7014,7 @@
   "14": {
     "book": "2 Samuel",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
         "title": "Joabe providencia o retorno de Absalão",
@@ -7049,7 +7076,7 @@
               },
               {
                 "ref": "Êxodo 4:15",
-                "text": "Fale com ele e diga as palavras que ele deve transmitir. Estarei com vocês dois quando falarem e os instruirei a ­respeito do que devem fazer."
+                "text": "Fale com ele e diga as palavras que ele deve transmitir. Estarei com vocês dois quando falarem e os instruirei a respeito do que devem fazer."
               },
               {
                 "ref": "Números 23:5",
@@ -7072,7 +7099,7 @@
               },
               {
                 "ref": "2 Reis 6:26–28",
-                "text": "Um dia, quando o rei de Israel caminhava pelos muros da cidade, uma mulher gritou para ele: “Ó meu senhor, o rei! Por favor, ajude- me!”."
+                "text": "Um dia, quando o rei de Israel caminhava pelos muros da cidade, uma mulher gritou para ele: “Ó meu senhor, o rei! Por favor, ajude-me!”."
               },
               {
                 "ref": "2 Samuel 1:2",
@@ -7125,7 +7152,7 @@
             "crossReferences": [
               {
                 "ref": "Números 35:19",
-                "text": "O parente mais próximo da vítima é responsável pela execução do assassino. Quando o encontrar, o vingador deverá exe­cutar o assassino."
+                "text": "O parente mais próximo da vítima é responsável pela execução do assassino. Quando o encontrar, o vingador deverá executar o assassino."
               },
               {
                 "ref": "Mateus 21:38",
@@ -7209,7 +7236,7 @@
               },
               {
                 "ref": "Números 35:19",
-                "text": "O parente mais próximo da vítima é responsável pela execução do assassino. Quando o encontrar, o vingador deverá exe­cutar o assassino."
+                "text": "O parente mais próximo da vítima é responsável pela execução do assassino. Quando o encontrar, o vingador deverá executar o assassino."
               },
               {
                 "ref": "Mateus 10:30",
@@ -7373,7 +7400,7 @@
               },
               {
                 "ref": "Êxodo 4:15",
-                "text": "Fale com ele e diga as palavras que ele deve transmitir. Estarei com vocês dois quando falarem e os instruirei a ­respeito do que devem fazer."
+                "text": "Fale com ele e diga as palavras que ele deve transmitir. Estarei com vocês dois quando falarem e os instruirei a respeito do que devem fazer."
               }
             ]
           },
@@ -7510,7 +7537,7 @@
           },
           {
             "number": 26,
-            "text": "Cortava o cabelo uma vez por ano por causa de seu peso: 2, quilos, segundo o peso real.",
+            "text": "Cortava o cabelo uma vez por ano por causa de seu peso: 2,4 quilos, segundo o peso real.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -7678,6 +7705,7 @@
   "15": {
     "book": "2 Samuel",
     "chapter": "15",
+    "verified": true,
     "sections": [
       {
         "title": "A rebelião de Absalão",
@@ -8003,7 +8031,7 @@
           },
           {
             "number": 15,
-            "text": "“O senhor tem o nosso apoio”, responderam seus conselheiros. “Faça o que lhe parecer ­melhor.”",
+            "text": "“O senhor tem o nosso apoio”, responderam seus conselheiros. “Faça o que lhe parecer melhor.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -8058,7 +8086,7 @@
               },
               {
                 "ref": "Salmos 3:1–2",
-                "text": "Ó SENHOR, tenho tantos inimigos; tanta gente é contra mim! São muitos os que dizem: “Deus nunca o livrará!”."
+                "text": "Ó SENHOR, tenho tantos inimigos; tanta gente é contra mim! São muitos os que dizem: “Deus nunca o livrará!”. Interlúdio"
               },
               {
                 "ref": "Salmos 66:12",
@@ -8077,7 +8105,7 @@
               },
               {
                 "ref": "1 Crônicas 18:17",
-                "text": "Benaia, filho de Joiada, era comandante da guarda pessoal do rei.140 E os filhos de Davi eram seus assistentes diretos."
+                "text": "Benaia, filho de Joiada, era comandante da guarda pessoal do rei. E os filhos de Davi eram seus assistentes diretos."
               },
               {
                 "ref": "1 Samuel 30:14",
@@ -8244,7 +8272,7 @@
               },
               {
                 "ref": "Isaías 62:4",
-                "text": "Nunca mais será chamada de “Cidade Abandonada”170 nem de “Terra Desolada”.171 Seu novo nome será “Cidade do Prazer de Deus”172 e “Esposa de Deus”,173 pois o SENHOR tem prazer em você e a tomará como esposa."
+                "text": "Nunca mais será chamada de “Cidade Abandonada” nem de “Terra Desolada”. Seu novo nome será “Cidade do Prazer de Deus” e “Esposa de Deus”, pois o SENHOR tem prazer em você e a tomará como esposa."
               }
             ]
           },
@@ -8254,7 +8282,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Samuel 9:9"
+                "ref": "1 Samuel 9:9",
+                "text": "(Naquele tempo, em Israel, quando alguém queria receber uma mensagem de Deus, dizia: “Vamos perguntar ao vidente”, pois os profetas de hoje eram chamados de videntes.)"
               },
               {
                 "ref": "2 Samuel 17:17",
@@ -8327,7 +8356,7 @@
               },
               {
                 "ref": "Ezequiel 24:17",
-                "text": "Sofra em si­lêncio, mas não lamente junto ao túmulo. Não des­cubra a cabeça nem tire as sandálias. Não siga os rituais de luto nem aceite comida de amigos que vierem consolá-lo”."
+                "text": "Sofra em silêncio, mas não lamente junto ao túmulo. Não descubra a cabeça nem tire as sandálias. Não siga os rituais de luto nem aceite comida de amigos que vierem consolá-lo”."
               }
             ]
           },
@@ -8463,6 +8492,7 @@
   "16": {
     "book": "2 Samuel",
     "chapter": "16",
+    "verified": true,
     "sections": [
       {
         "title": "Davi e Ziba",
@@ -8474,7 +8504,7 @@
             "crossReferences": [
               {
                 "ref": "1 Samuel 25:18",
-                "text": "Sem perder tempo, Abigail providenciou duzentos pães, duas vasilhas de couro cheias de vinho, cinco ovelhas preparadas, cinco cestos de grãos tostados, cem bolos de passas e duzentos bolos de figo."
+                "text": "Sem perder tempo, Abigail providenciou duzentos pães, duas vasilhas de couro cheias de vinho, cinco ovelhas preparadas, cinco cestos de grãos tostados, cem bolos de passas e duzentos bolos de figo. Colocou tudo em jumentos"
               },
               {
                 "ref": "2 Samuel 15:32",
@@ -8669,7 +8699,7 @@
             "crossReferences": [
               {
                 "ref": "2 Samuel 19:22",
-                "text": "“Quem pediu a opinião de vocês, filhos de Zeruia?”, disse Davi. “Por que agem como se fossem meus inimigos?82 Hoje não é um dia de execuções, pois hoje voltei a ser rei em Israel!”"
+                "text": "“Quem pediu a opinião de vocês, filhos de Zeruia?”, disse Davi. “Por que agem como se fossem meus inimigos? Hoje não é um dia de execuções, pois hoje voltei a ser rei em Israel!”"
               },
               {
                 "ref": "Romanos 9:20",
@@ -8757,7 +8787,7 @@
               },
               {
                 "ref": "2 Samuel 17:2",
-                "text": "Eu o alcançarei enquanto está exausto e desanimado. Farei que ele entre em pânico, e assim todos os seus soldados fugirão."
+                "text": "Eu o alcançarei enquanto está exausto e desanimado. Farei que ele entre em pânico, e assim todos os seus soldados fugirão. Então matarei apenas o rei"
               },
               {
                 "ref": "2 Samuel 17:29",
@@ -8842,7 +8872,7 @@
               },
               {
                 "ref": "2 Samuel 5:1–3",
-                "text": "Então todas as tribos de Israel vieram a Hebrom para encontrar- se com Davi. “Somos do mesmo povo e raça”, disseram."
+                "text": "Então todas as tribos de Israel vieram a Hebrom para encontrar-se com Davi. “Somos do mesmo povo e raça”, disseram."
               }
             ]
           },
@@ -8968,6 +8998,7 @@
   "17": {
     "book": "2 Samuel",
     "chapter": "17",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -8997,7 +9028,7 @@
           },
           {
             "number": 2,
-            "text": "Eu o alcançarei enquanto está exausto e desanimado. Farei que ele entre em pânico, e assim todos os seus soldados fugirão.",
+            "text": "Eu o alcançarei enquanto está exausto e desanimado. Farei que ele entre em pânico, e assim todos os seus soldados fugirão. Então matarei apenas o rei",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9017,12 +9048,7 @@
                 "text": "“Desperte, ó espada, contra meu pastor, o homem que é meu companheiro”, diz o SENHOR dos Exércitos. “Fira o pastor, e as ovelhas serão dispersas, e eu me voltarei contra os cordeiros."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Então matarei apenas o rei",
-        "verses": [
+          },
           {
             "number": 3,
             "text": "e trarei todo o exército para o senhor. A morte do homem a quem o senhor busca lhe trará de volta os demais. Assim, ficará em paz com todo o povo”.",
@@ -9182,7 +9208,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 22:17",
-                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar."
+                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar. Seus descendentes conquistarão as cidades de seus inimigos"
               },
               {
                 "ref": "Josué 11:4",
@@ -9194,7 +9220,7 @@
               },
               {
                 "ref": "Salmos 9:16",
-                "text": "O SENHOR é conhecido por sua justiça; os perversos são pegos nas próprias armadilhas."
+                "text": "O SENHOR é conhecido por sua justiça; os perversos são pegos nas próprias armadilhas. Interlúdio silencioso"
               }
             ]
           },
@@ -9205,7 +9231,7 @@
             "crossReferences": [
               {
                 "ref": "2 Reis 18:23",
-                "text": "“Vou lhes dizer uma coisa: Façam um acordo com meu senhor, o rei da Assíria. Eu lhes darei dois mil cavalos se forem capazes de encontrar homens em número suficiente para montá- los!"
+                "text": "“Vou lhes dizer uma coisa: Façam um acordo com meu senhor, o rei da Assíria. Eu lhes darei dois mil cavalos se forem capazes de encontrar homens em número suficiente para montá-los!"
               },
               {
                 "ref": "1 Reis 20:10",
@@ -9255,7 +9281,7 @@
               },
               {
                 "ref": "Isaías 8:10",
-                "text": "Convoquem conselhos de guerra, mas de nada adiantará; desenvolvam estratégias, mas não terão sucesso. Pois Deus está conosco!”33 Chamado para confiar no SENHOR"
+                "text": "Convoquem conselhos de guerra, mas de nada adiantará; desenvolvam estratégias, mas não terão sucesso. Pois Deus está conosco!”"
               }
             ]
           }
@@ -9446,7 +9472,7 @@
               },
               {
                 "ref": "Gênesis 32:2",
-                "text": "Ao vê-los, Jacó exclamou: “Este é o acampamento de Deus!”. Por isso, chamou o lugar de Maanaim.116 Jacó envia presentes a Esaú"
+                "text": "Ao vê-los, Jacó exclamou: “Este é o acampamento de Deus!”. Por isso, chamou o lugar de Maanaim."
               },
               {
                 "ref": "Josué 13:26",
@@ -9498,7 +9524,7 @@
           },
           {
             "number": 27,
-            "text": "Quando Davi chegou a Maanaim, foi recebido por Sobi, filho de Naás, de Rabá dos amonitas, e por Maquir, filho de Amiel, de Lo- Debar, e por Barzilai, de Rogelim, em Gileade.",
+            "text": "Quando Davi chegou a Maanaim, foi recebido por Sobi, filho de Naás, de Rabá dos amonitas, e por Maquir, filho de Amiel, de Lo-Debar, e por Barzilai, de Rogelim, em Gileade.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9538,7 +9564,7 @@
               },
               {
                 "ref": "1 Samuel 25:18",
-                "text": "Sem perder tempo, Abigail providenciou duzentos pães, duas vasilhas de couro cheias de vinho, cinco ovelhas preparadas, cinco cestos de grãos tostados, cem bolos de passas e duzentos bolos de figo."
+                "text": "Sem perder tempo, Abigail providenciou duzentos pães, duas vasilhas de couro cheias de vinho, cinco ovelhas preparadas, cinco cestos de grãos tostados, cem bolos de passas e duzentos bolos de figo. Colocou tudo em jumentos"
               }
             ]
           },
@@ -9572,6 +9598,7 @@
   "18": {
     "book": "2 Samuel",
     "chapter": "18",
+    "verified": true,
     "sections": [
       {
         "title": "A derrota e a morte de Absalão",
@@ -9759,7 +9786,7 @@
             "crossReferences": [
               {
                 "ref": "2 Samuel 14:26",
-                "text": "Cortava o cabelo uma vez por ano por causa de seu peso: 2, quilos, segundo o peso real."
+                "text": "Cortava o cabelo uma vez por ano por causa de seu peso: 2,4 quilos, segundo o peso real."
               },
               {
                 "ref": "Jó 31:3",
@@ -9790,7 +9817,7 @@
               },
               {
                 "ref": "2 Samuel 21:6",
-                "text": "Portanto, entregue- nos sete dos filhos de Saul, para que os executemos diante do SENHOR em Gibeá, no monte do SENHOR”. “Está bem”, disse o rei. “Farei o que me pedem.”"
+                "text": "Portanto, entregue-nos sete dos filhos de Saul, para que os executemos diante do SENHOR em Gibeá, no monte do SENHOR”. “Está bem”, disse o rei. “Farei o que me pedem.”"
               }
             ]
           },
@@ -9839,7 +9866,7 @@
               },
               {
                 "ref": "2 Samuel 1:15–16",
-                "text": "Então Davi chamou um de seus soldados e lhe ordenou: “Mate- o!”. O soldado feriu o amalequita com sua espada e o matou. Davi disse: “Você condenou a si mesmo ao confessar que matou o ungido do SENHOR”."
+                "text": "Então Davi chamou um de seus soldados e lhe ordenou: “Mate-o!”. O soldado feriu o amalequita com sua espada e o matou. Davi disse: “Você condenou a si mesmo ao confessar que matou o ungido do SENHOR”."
               },
               {
                 "ref": "2 Samuel 4:10–12",
@@ -10124,7 +10151,7 @@
               },
               {
                 "ref": "Apocalipse 19:1–3",
-                "text": "Depois disso, ouvi algo semelhante ao som de uma grande multidão clamando: “Aleluia!50 Salvação, glória e poder pertencem a nosso Deus."
+                "text": "Depois disso, ouvi algo semelhante ao som de uma grande multidão clamando: “Aleluia! Salvação, glória e poder pertencem a nosso Deus."
               }
             ]
           },
@@ -10200,7 +10227,7 @@
             ]
           },
           {
-            "number": 3378,
+            "number": 33,
             "text": "O rei ficou muito abalado. Foi para o quarto que ficava sobre o portão da cidade e começou a chorar. Andando de um lado para o outro, clamava: “Ah, meu filho Absalão! Meu filho, meu filho Absalão! Quem me dera eu tivesse morrido em seu lugar! Ah, Absalão, meu filho, meu filho!”.",
             "isJesusWords": false,
             "crossReferences": []
@@ -10212,12 +10239,13 @@
   "19": {
     "book": "2 Samuel",
     "chapter": "19",
+    "verified": true,
     "sections": [
       {
         "title": "Joabe repreende o rei",
         "verses": [
           {
-            "number": 179,
+            "number": 1,
             "text": "Logo chegou a Joabe a notícia de que o rei chorava e lamentava a morte de Absalão.",
             "isJesusWords": false,
             "crossReferences": []
@@ -10262,7 +10290,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Samuel 18:33"
+                "ref": "2 Samuel 18:33",
+                "text": "O rei ficou muito abalado. Foi para o quarto que ficava sobre o portão da cidade e começou a chorar. Andando de um lado para o outro, clamava: “Ah, meu filho Absalão! Meu filho, meu filho Absalão! Quem me dera eu tivesse..."
               },
               {
                 "ref": "2 Samuel 15:30",
@@ -10281,7 +10310,7 @@
               },
               {
                 "ref": "Salmos 3:8",
-                "text": "De ti, SENHOR, vem o livramento; abençoa o teu povo!"
+                "text": "De ti, SENHOR, vem o livramento; abençoa o teu povo! Interlúdio"
               },
               {
                 "ref": "Neemias 9:27",
@@ -10429,12 +10458,12 @@
           },
           {
             "number": 12,
-            "text": "Vocês são meus parentes, minha própria tribo, meu povo e minha raça!80 Então por que são os últimos a receber o rei de volta?’”.",
+            "text": "Vocês são meus parentes, minha própria tribo, meu povo e minha raça! Então por que são os últimos a receber o rei de volta?’”.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "2 Samuel 5:1",
-                "text": "Então todas as tribos de Israel vieram a Hebrom para encontrar- se com Davi. “Somos do mesmo povo e raça”, disseram."
+                "text": "Então todas as tribos de Israel vieram a Hebrom para encontrar-se com Davi. “Somos do mesmo povo e raça”, disseram."
               },
               {
                 "ref": "Efésios 5:30",
@@ -10560,7 +10589,31 @@
           },
           {
             "number": 18,
-            "text": "Atravessaram o rio, para ajudar a família do rei a chegar à outra margem e para fazer o que ele lhes solicitasse. Davi tem misericórdia de Simei Quando o rei estava prestes a atravessar o rio, Simei, filho de Gera, curvou-se diante dele e suplicou:",
+            "text": "Atravessaram o rio, para ajudar a família do rei a chegar à outra margem e para fazer o que ele lhes solicitasse.",
+            "isJesusWords": false,
+            "crossReferences": [
+              {
+                "ref": "Apocalipse 3:9",
+                "text": "Veja, obrigarei aqueles que pertencem à sinagoga de Satanás — os mentirosos que se dizem judeus, mas não são — a virem, prostrarem-se a seus pés e reconhecerem que amo você."
+              },
+              {
+                "ref": "Salmos 66:3",
+                "text": "Digam a Deus: “Como são notáveis os teus feitos! Teus inimigos rastejam diante do teu grande poder."
+              },
+              {
+                "ref": "Salmos 81:15",
+                "text": "Os que odeiam o SENHOR se encolheriam diante dele, condenados para sempre."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Davi tem misericórdia de Simei",
+        "verses": [
+          {
+            "number": 18,
+            "text": "Quando o rei estava prestes a atravessar o rio, Simei, filho de Gera, curvou-se diante dele e suplicou:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -10648,7 +10701,7 @@
           },
           {
             "number": 22,
-            "text": "“Quem pediu a opinião de vocês, filhos de Zeruia?”, disse Davi. “Por que agem como se fossem meus inimigos?82 Hoje não é um dia de execuções, pois hoje voltei a ser rei em Israel!”",
+            "text": "“Quem pediu a opinião de vocês, filhos de Zeruia?”, disse Davi. “Por que agem como se fossem meus inimigos? Hoje não é um dia de execuções, pois hoje voltei a ser rei em Israel!”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -10741,7 +10794,8 @@
                 "text": "Então o rei lhe perguntou: “Resta alguém da família de Saul? Se resta, gostaria de mostrar a bondade de Deus para com ele”. “Um dos filhos de Jônatas ainda está vivo”, respondeu Ziba. “Ele é aleijado dos dois pés.”"
               },
               {
-                "ref": "2 Samuel 4:4"
+                "ref": "2 Samuel 4:4",
+                "text": "(Jônatas, filho de Saul, tinha um filho chamado Mefibosete, que ficou aleijado quando era criança. Mefibosete tinha 5 anos quando chegou de Jezreel a notícia de que Saul e Jônatas haviam sido mortos na batalha. Ao ouvir..."
               },
               {
                 "ref": "2 Samuel 16:2–3",
@@ -10806,7 +10860,7 @@
               },
               {
                 "ref": "Salmos 82:2",
-                "text": "“Até quando tomarão decisões injustas que favorecem a causa dos perversos?"
+                "text": "“Até quando tomarão decisões injustas que favorecem a causa dos perversos? Interlúdio"
               },
               {
                 "ref": "Jó 19:16–17",
@@ -10861,7 +10915,7 @@
               },
               {
                 "ref": "2 Samuel 17:27–29",
-                "text": "Quando Davi chegou a Maanaim, foi recebido por Sobi, filho de Naás, de Rabá dos amonitas, e por Maquir, filho de Amiel, de Lo- Debar, e por Barzilai, de Rogelim, em Gileade."
+                "text": "Quando Davi chegou a Maanaim, foi recebido por Sobi, filho de Naás, de Rabá dos amonitas, e por Maquir, filho de Amiel, de Lo-Debar, e por Barzilai, de Rogelim, em Gileade."
               }
             ]
           },
@@ -11012,7 +11066,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Gênesis 31:55"
+                "ref": "Gênesis 31:55",
+                "text": "Na manhã seguinte, Labão se levantou cedo, beijou seus netos e suas filhas e os abençoou. Depois, partiu e voltou para casa."
               },
               {
                 "ref": "Rute 1:14",
@@ -11035,7 +11090,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 49:10",
-                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes,172 até que venha aquele a quem pertence,173 aquele que todas as nações honrarão."
+                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes, até que venha aquele a quem pertence, aquele que todas as nações honrarão."
               },
               {
                 "ref": "2 Samuel 19:11–15",
@@ -11043,7 +11098,7 @@
               },
               {
                 "ref": "Mateus 21:9",
-                "text": "E as pessoas, tanto as que iam à frente como as que o seguiam, gritavam: “Hosana,118 Filho de Davi! Bendito é o que vem em nome do Senhor! Hosana no mais alto céu!”."
+                "text": "E as pessoas, tanto as que iam à frente como as que o seguiam, gritavam: “Hosana, Filho de Davi! Bendito é o que vem em nome do Senhor! Hosana no mais alto céu!”."
               }
             ]
           }
@@ -11082,11 +11137,11 @@
             "crossReferences": [
               {
                 "ref": "2 Samuel 19:12",
-                "text": "Vocês são meus parentes, minha própria tribo, meu povo e minha raça!80 Então por que são os últimos a receber o rei de volta?’”."
+                "text": "Vocês são meus parentes, minha própria tribo, meu povo e minha raça! Então por que são os últimos a receber o rei de volta?’”."
               },
               {
                 "ref": "2 Samuel 5:1",
-                "text": "Então todas as tribos de Israel vieram a Hebrom para encontrar- se com Davi. “Somos do mesmo povo e raça”, disseram."
+                "text": "Então todas as tribos de Israel vieram a Hebrom para encontrar-se com Davi. “Somos do mesmo povo e raça”, disseram."
               },
               {
                 "ref": "1 Crônicas 2:3–17",
@@ -11105,7 +11160,7 @@
               },
               {
                 "ref": "2 Samuel 5:1",
-                "text": "Então todas as tribos de Israel vieram a Hebrom para encontrar- se com Davi. “Somos do mesmo povo e raça”, disseram."
+                "text": "Então todas as tribos de Israel vieram a Hebrom para encontrar-se com Davi. “Somos do mesmo povo e raça”, disseram."
               },
               {
                 "ref": "1 Reis 11:30–31",
@@ -11124,6 +11179,7 @@
   "20": {
     "book": "2 Samuel",
     "chapter": "20",
+    "verified": true,
     "sections": [
       {
         "title": "A rebelião de Seba",
@@ -11147,7 +11203,7 @@
               },
               {
                 "ref": "Lucas 19:27",
-                "text": "E, quanto a esses meus inimigos que não queriam que eu fosse seu rei, tragam- nos aqui e executem-nos na minha presença’”."
+                "text": "E, quanto a esses meus inimigos que não queriam que eu fosse seu rei, tragam-nos aqui e executem-nos na minha presença’”."
               }
             ]
           },
@@ -11364,7 +11420,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 9:16",
-                "text": "O SENHOR é conhecido por sua justiça; os perversos são pegos nas próprias armadilhas."
+                "text": "O SENHOR é conhecido por sua justiça; os perversos são pegos nas próprias armadilhas. Interlúdio silencioso"
               },
               {
                 "ref": "Provérbios 24:21–22",
@@ -11387,7 +11443,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 36:2",
-                "text": "Então o rei da Assíria enviou, de Laquis, seu comandante em chefe,112 junto com um grande exército, para confrontarem o rei Ezequias em Jerusalém. Os assírios se posicionaram ao lado do aqueduto que abastece o tanque sup..."
+                "text": "Então o rei da Assíria enviou, de Laquis, seu comandante em chefe, junto com um grande exército, para confrontarem o rei Ezequias em Jerusalém. Os assírios se posicionaram ao lado do aqueduto que abastece o tanque superi..."
               },
               {
                 "ref": "Marcos 10:46",
@@ -11428,7 +11484,7 @@
           },
           {
             "number": 15,
-            "text": "Quando os soldados de Joabe chegaram, cercaram Abel-Bete- Maaca. Construíram uma rampa junto às fortificações da cidade e começaram a derrubar o muro.",
+            "text": "Quando os soldados de Joabe chegaram, cercaram Abel-Bete-Maaca. Construíram uma rampa junto às fortificações da cidade e começaram a derrubar o muro.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -11555,7 +11611,7 @@
               },
               {
                 "ref": "2 Samuel 23:18",
-                "text": "Abisai, filho de Zeruia, irmão de Joabe, era líder dos Trinta.106 Certa ocasião, usou sua lança para matar trezentos soldados inimigos numa só batalha. Foi por causa de feitos como esse que ele se tornou tão famoso quanto os Três."
+                "text": "Abisai, filho de Zeruia, irmão de Joabe, era líder dos Trinta. Certa ocasião, usou sua lança para matar trezentos soldados inimigos numa só batalha. Foi por causa de feitos como esse que ele se tornou tão famoso quanto os Três."
               },
               {
                 "ref": "2 Samuel 20:1",
@@ -11643,7 +11699,7 @@
               },
               {
                 "ref": "1 Crônicas 18:16",
-                "text": "Zadoque, filho de Aitube, e Aimeleque,138 filho de Abiatar, eram sacerdotes. Seraías139 era o secretário da corte."
+                "text": "Zadoque, filho de Aitube, e Aimeleque, filho de Abiatar, eram sacerdotes. Seraías era o secretário da corte."
               }
             ]
           },
@@ -11662,7 +11718,7 @@
               },
               {
                 "ref": "Gênesis 41:45",
-                "text": "O faraó deu a José um nome egípcio: Zafenate-Paneia.143 Também lhe deu uma mulher, que se chamava Azenate. Ela era filha de Potífera, sacerdote de Om.144 Assim, José recebeu autoridade sobre todo o Egito."
+                "text": "O faraó deu a José um nome egípcio: Zafenate-Paneia. Também lhe deu uma mulher, que se chamava Azenate. Ela era filha de Potífera, sacerdote de Om. Assim, José recebeu autoridade sobre todo o Egito."
               },
               {
                 "ref": "Êxodo 24:11",
@@ -11677,6 +11733,7 @@
   "21": {
     "book": "2 Samuel",
     "chapter": "21",
+    "verified": true,
     "sections": [
       {
         "title": "Davi vinga os gibeonitas",
@@ -11790,7 +11847,7 @@
           },
           {
             "number": 6,
-            "text": "Portanto, entregue- nos sete dos filhos de Saul, para que os executemos diante do SENHOR em Gibeá, no monte do SENHOR”. “Está bem”, disse o rei. “Farei o que me pedem.”",
+            "text": "Portanto, entregue-nos sete dos filhos de Saul, para que os executemos diante do SENHOR em Gibeá, no monte do SENHOR”. “Está bem”, disse o rei. “Farei o que me pedem.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -11825,7 +11882,8 @@
                 "text": "trate minha família com esse amor leal, mesmo quando o SENHOR eliminar da face da terra todos os seus inimigos”."
               },
               {
-                "ref": "2 Samuel 4:4"
+                "ref": "2 Samuel 4:4",
+                "text": "(Jônatas, filho de Saul, tinha um filho chamado Mefibosete, que ficou aleijado quando era criança. Mefibosete tinha 5 anos quando chegou de Jezreel a notícia de que Saul e Jônatas haviam sido mortos na batalha. Ao ouvir..."
               },
               {
                 "ref": "2 Samuel 9:10",
@@ -11863,7 +11921,7 @@
               },
               {
                 "ref": "2 Samuel 21:6",
-                "text": "Portanto, entregue- nos sete dos filhos de Saul, para que os executemos diante do SENHOR em Gibeá, no monte do SENHOR”. “Está bem”, disse o rei. “Farei o que me pedem.”"
+                "text": "Portanto, entregue-nos sete dos filhos de Saul, para que os executemos diante do SENHOR em Gibeá, no monte do SENHOR”. “Está bem”, disse o rei. “Farei o que me pedem.”"
               },
               {
                 "ref": "Deuteronômio 21:1–9",
@@ -11916,7 +11974,7 @@
             "crossReferences": [
               {
                 "ref": "Josué 17:11",
-                "text": "As seguintes cidades dentro do território de Issacar e Aser foram entregues a Manassés: Bete-Sã, Ibleã, Dor (isto é, Nafote- Dor), En-Dor, Taanaque e Megido, cada uma com os assentamentos ao redor."
+                "text": "As seguintes cidades dentro do território de Issacar e Aser foram entregues a Manassés: Bete-Sã, Ibleã, Dor (isto é, Nafote-Dor), En-Dor, Taanaque e Megido, cada uma com os assentamentos ao redor."
               },
               {
                 "ref": "1 Samuel 31:10–13",
@@ -11945,7 +12003,7 @@
             "crossReferences": [
               {
                 "ref": "Josué 18:28",
-                "text": "Zela, Elefe, a cidade dos jebuseus (isto é, Jerusalém), Gibeá e Quiriate- Jearim; catorze cidades com os povoados ao redor. Essa foi a herança designada aos clãs da tribo de Benjamim."
+                "text": "Zela, Elefe, a cidade dos jebuseus (isto é, Jerusalém), Gibeá e Quiriate-Jearim; catorze cidades com os povoados ao redor. Essa foi a herança designada aos clãs da tribo de Benjamim."
               },
               {
                 "ref": "2 Samuel 24:25",
@@ -11991,7 +12049,7 @@
           },
           {
             "number": 16,
-            "text": "Isbibenobe era descendente de gigantes, e a ponta de sua lança de bronze pesava cerca de 3, quilos. Ele estava armado com uma espada nova e jurou que ia matar Davi.",
+            "text": "Isbibenobe era descendente de gigantes, e a ponta de sua lança de bronze pesava cerca de 3,5 quilos. Ele estava armado com uma espada nova e jurou que ia matar Davi.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -12042,7 +12100,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 11:29",
-                "text": "Sibecai, de Husate; Zalmom,108 de Aoí;"
+                "text": "Sibecai, de Husate; Zalmom, de Aoí;"
               },
               {
                 "ref": "2 Samuel 21:20",
@@ -12050,7 +12108,7 @@
               },
               {
                 "ref": "2 Samuel 21:16",
-                "text": "Isbibenobe era descendente de gigantes, e a ponta de sua lança de bronze pesava cerca de 3, quilos. Ele estava armado com uma espada nova e jurou que ia matar Davi."
+                "text": "Isbibenobe era descendente de gigantes, e a ponta de sua lança de bronze pesava cerca de 3,5 quilos. Ele estava armado com uma espada nova e jurou que ia matar Davi."
               },
               {
                 "ref": "1 Crônicas 27:11",
@@ -12084,7 +12142,7 @@
             "crossReferences": [
               {
                 "ref": "2 Samuel 21:16",
-                "text": "Isbibenobe era descendente de gigantes, e a ponta de sua lança de bronze pesava cerca de 3, quilos. Ele estava armado com uma espada nova e jurou que ia matar Davi."
+                "text": "Isbibenobe era descendente de gigantes, e a ponta de sua lança de bronze pesava cerca de 3,5 quilos. Ele estava armado com uma espada nova e jurou que ia matar Davi."
               },
               {
                 "ref": "2 Samuel 21:18",
@@ -12149,6 +12207,7 @@
   "22": {
     "book": "2 Samuel",
     "chapter": "22",
+    "verified": true,
     "sections": [
       {
         "title": "Cântico de louvor de Davi",
@@ -12275,7 +12334,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 116:3",
-                "text": "A morte me envolveu com suas cordas, e os terrores da sepultura148 me dominaram; não via outra coisa senão sofrimento e tristeza."
+                "text": "A morte me envolveu com suas cordas, e os terrores da sepultura me dominaram; não via outra coisa senão sofrimento e tristeza."
               },
               {
                 "ref": "Atos 2:24",
@@ -12283,7 +12342,7 @@
               },
               {
                 "ref": "Salmos 140:5",
-                "text": "Os orgulhosos me prepararam uma armadilha; estenderam uma rede e armaram ciladas ao longo do caminho."
+                "text": "Os orgulhosos me prepararam uma armadilha; estenderam uma rede e armaram ciladas ao longo do caminho. Interlúdio"
               },
               {
                 "ref": "Provérbios 13:14",
@@ -12501,7 +12560,7 @@
               },
               {
                 "ref": "Salmos 114:3–7",
-                "text": "O mar Vermelho147 os viu chegando e se abriu, e as águas do rio Jordão recuaram."
+                "text": "O mar Vermelho os viu chegando e se abriu, e as águas do rio Jordão recuaram."
               },
               {
                 "ref": "Habacuque 3:8–10",
@@ -12957,7 +13016,7 @@
               },
               {
                 "ref": "Gênesis 22:17",
-                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar."
+                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar. Seus descendentes conquistarão as cidades de seus inimigos"
               }
             ]
           },
@@ -13025,7 +13084,8 @@
                 "text": "O Senhor está à sua direita para protegê-lo; esmagará muitos reis no dia de sua ira. Castigarás as nações e encherá suas terras de cadáveres; esmagará cabeças por todo o mundo."
               },
               {
-                "ref": "Malaquias 4:1"
+                "ref": "Malaquias 4:1",
+                "text": "Assim diz o SENHOR dos Exércitos: “O dia do julgamento se aproxima e arde como uma fornalha. Naquele dia, serão queimados como palha os arrogantes e os perversos. Serão consumidos, desde as raízes até os ramos."
               }
             ]
           },
@@ -13044,7 +13104,7 @@
               },
               {
                 "ref": "Colossenses 1:11",
-                "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam."
+                "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam. Que sejam cheios de alegria"
               },
               {
                 "ref": "Isaías 60:14",
@@ -13059,7 +13119,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 23:27",
-                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia- volta e fugirem."
+                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia-volta e fugirem."
               },
               {
                 "ref": "Josué 10:24",
@@ -13071,7 +13131,7 @@
               },
               {
                 "ref": "Lucas 19:27",
-                "text": "E, quanto a esses meus inimigos que não queriam que eu fosse seu rei, tragam- nos aqui e executem-nos na minha presença’”."
+                "text": "E, quanto a esses meus inimigos que não queriam que eu fosse seu rei, tragam-nos aqui e executem-nos na minha presença’”."
               }
             ]
           },
@@ -13169,7 +13229,7 @@
           },
           {
             "number": 46,
-            "text": "Todos eles perdem a coragem e, tremendo,100 saem de suas fortalezas.",
+            "text": "Todos eles perdem a coragem e, tremendo, saem de suas fortalezas.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13224,7 +13284,7 @@
               },
               {
                 "ref": "Salmos 144:2",
-                "text": "Ele é meu aliado infalível e minha fortaleza, minha torre segura e meu libertador. Ele é meu escudo, em quem me refugio; faz as nações se sujeitarem158 a mim."
+                "text": "Ele é meu aliado infalível e minha fortaleza, minha torre segura e meu libertador. Ele é meu escudo, em quem me refugio; faz as nações se sujeitarem a mim."
               },
               {
                 "ref": "1 Samuel 25:39",
@@ -13312,13 +13372,14 @@
   "23": {
     "book": "2 Samuel",
     "chapter": "23",
+    "verified": true,
     "sections": [
       {
         "title": "Palavras finais de Davi",
         "verses": [
           {
             "number": 1,
-            "text": "Estas são as últimas palavras de Davi: “Isto é o que diz Davi, filho de Jessé; Davi, que foi tão exaltado, Davi, o homem ungido pelo Deus de Jacó, Davi, o amável salmista de Israel.101",
+            "text": "Estas são as últimas palavras de Davi: “Isto é o que diz Davi, filho de Jessé; Davi, que foi tão exaltado, Davi, o homem ungido pelo Deus de Jacó, Davi, o amável salmista de Israel.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13350,7 +13411,7 @@
               },
               {
                 "ref": "Mateus 22:43",
-                "text": "Jesus perguntou: “Então por que Davi, falando por meio do Espírito, chama o Cristo de ‘meu Senhor’? Pois Davi disse: 44‘O Senhor disse ao meu Senhor: Sente-se no lugar de honra à minha direita até que eu humilhe seus inimigos debaixo de seus pés’."
+                "text": "Jesus perguntou: “Então por que Davi, falando por meio do Espírito, chama o Cristo de ‘meu Senhor’? Pois Davi disse:"
               },
               {
                 "ref": "Marcos 12:36",
@@ -13364,7 +13425,7 @@
           },
           {
             "number": 3,
-            "text": "O Deus de Israel falou, a Rocha de Israel me disse: ‘Aquele que governa com justiça, que governa no temor de Deus, 4é como a luz da manhã ao nascer do sol, como a manhã sem nuvens, como o brilho do sol que faz crescer a grama nova depois da chuva’.",
+            "text": "O Deus de Israel falou, a Rocha de Israel me disse: ‘Aquele que governa com justiça, que governa no temor de Deus,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13384,6 +13445,12 @@
                 "text": "Ajuda-o a julgar teu povo corretamente; que os pobres sejam tratados com imparcialidade."
               }
             ]
+          },
+          {
+            "number": 4,
+            "text": "é como a luz da manhã ao nascer do sol, como a manhã sem nuvens, como o brilho do sol que faz crescer a grama nova depois da chuva’.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 5,
@@ -13461,7 +13528,7 @@
         "verses": [
           {
             "number": 8,
-            "text": "Estes são os nomes dos guerreiros mais valentes de Davi. O primeiro era Jabesão, o hacmonita,102 líder dos Três,103 isto é, dos três guerreiros mais valentes dentre os soldados de Davi. Certa ocasião, usou sua lança para matar oitocentos soldados inimigos numa só batalha.104",
+            "text": "Estes são os nomes dos guerreiros mais valentes de Davi. O primeiro era Jabesão, o hacmonita, líder dos Três, isto é, dos três guerreiros mais valentes dentre os soldados de Davi. Certa ocasião, usou sua lança para matar oitocentos soldados inimigos numa só batalha.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13489,7 +13556,7 @@
               },
               {
                 "ref": "1 Crônicas 11:12–14",
-                "text": "O segundo era Eleazar, filho de Dodai,100 descendente de Aoí."
+                "text": "O segundo era Eleazar, filho de Dodai, descendente de Aoí."
               },
               {
                 "ref": "1 Samuel 17:26",
@@ -13535,11 +13602,11 @@
               },
               {
                 "ref": "1 Crônicas 11:27",
-                "text": "Samá, de Harode;107 Helez, de Pelom;"
+                "text": "Samá, de Harode; Helez, de Pelom;"
               },
               {
                 "ref": "2 Samuel 23:33",
-                "text": "filho de Sage,115 de Harar; Aião, filho de Sarar, de Harar;"
+                "text": "filho de Sage, de Harar; Aião, filho de Sarar, de Harar;"
               }
             ]
           },
@@ -13558,7 +13625,7 @@
               },
               {
                 "ref": "Salmos 3:8",
-                "text": "De ti, SENHOR, vem o livramento; abençoa o teu povo!"
+                "text": "De ti, SENHOR, vem o livramento; abençoa o teu povo! Interlúdio"
               },
               {
                 "ref": "Salmos 44:2",
@@ -13656,7 +13723,7 @@
           },
           {
             "number": 17,
-            "text": "“Que o SENHOR não permita que eu beba desta água!”, exclamou. “Ela é tão preciosa quanto o sangue destes homens105 que arriscaram a vida para trazê-la.” E Davi não a bebeu. Esses são exemplos dos feitos desses três guerreiros.",
+            "text": "“Que o SENHOR não permita que eu beba desta água!”, exclamou. “Ela é tão preciosa quanto o sangue destes homens que arriscaram a vida para trazê-la.” E Davi não a bebeu. Esses são exemplos dos feitos desses três guerreiros.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13684,7 +13751,7 @@
         "verses": [
           {
             "number": 18,
-            "text": "Abisai, filho de Zeruia, irmão de Joabe, era líder dos Trinta.106 Certa ocasião, usou sua lança para matar trezentos soldados inimigos numa só batalha. Foi por causa de feitos como esse que ele se tornou tão famoso quanto os Três.",
+            "text": "Abisai, filho de Zeruia, irmão de Joabe, era líder dos Trinta. Certa ocasião, usou sua lança para matar trezentos soldados inimigos numa só batalha. Foi por causa de feitos como esse que ele se tornou tão famoso quanto os Três.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13697,7 +13764,7 @@
               },
               {
                 "ref": "1 Crônicas 11:20–21",
-                "text": "Abisai, irmão de Joabe, era o líder dos Trinta.103 Certa ocasião, usou sua lança para matar trezentos soldados inimigos numa só batalha. Foi por causa de feitos como esse que ele se tornou tão famoso quanto os Três."
+                "text": "Abisai, irmão de Joabe, era o líder dos Trinta. Certa ocasião, usou sua lança para matar trezentos soldados inimigos numa só batalha. Foi por causa de feitos como esse que ele se tornou tão famoso quanto os Três."
               },
               {
                 "ref": "1 Crônicas 2:16",
@@ -13707,7 +13774,7 @@
           },
           {
             "number": 19,
-            "text": "Abisai era o mais conhecido dos Trinta107 e era seu comandante, embora não fosse um dos Três.",
+            "text": "Abisai era o mais conhecido dos Trinta e era seu comandante, embora não fosse um dos Três.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13730,7 +13797,7 @@
           },
           {
             "number": 20,
-            "text": "Também havia Benaia, filho de Joiada, soldado valente108 de Cabzeel. Realizou muitos feitos heroicos, como matar dois grandes guerreiros109 de Moabe. Em outra ocasião, num dia de neve, perseguiu um leão até uma cova e o matou.",
+            "text": "Também havia Benaia, filho de Joiada, soldado valente de Cabzeel. Realizou muitos feitos heroicos, como matar dois grandes guerreiros de Moabe. Em outra ocasião, num dia de neve, perseguiu um leão até uma cova e o matou.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13747,7 +13814,7 @@
               },
               {
                 "ref": "1 Crônicas 11:22–24",
-                "text": "Também havia Benaia, filho de Joiada, soldado valente104 de Cabzeel. Realizou muitos feitos heroicos, como matar dois grandes guerreiros105 de Moabe. Em outra ocasião, num dia de neve, perseguiu um leão até uma cova e o matou."
+                "text": "Também havia Benaia, filho de Joiada, soldado valente de Cabzeel. Realizou muitos feitos heroicos, como matar dois grandes guerreiros de Moabe. Em outra ocasião, num dia de neve, perseguiu um leão até uma cova e o matou."
               }
             ]
           },
@@ -13762,11 +13829,11 @@
               },
               {
                 "ref": "1 Crônicas 11:23",
-                "text": "Uma vez, com apenas um cajado, matou um guerreiro egípcio de 2, metros106 de altura armado com uma lança da grossura de um eixo de tecelão. Benaia arrancou a lança da mão do egípcio e com ela o matou."
+                "text": "Uma vez, com apenas um cajado, matou um guerreiro egípcio de 2,25 metros de altura armado com uma lança da grossura de um eixo de tecelão. Benaia arrancou a lança da mão do egípcio e com ela o matou."
               },
               {
                 "ref": "1 Samuel 17:51",
-                "text": "Em seguida, correu até o filisteu, puxou da bainha a espada dele e a usou para matá-lo e cortar-lhe a cabeça. Israel derrota os filisteus Quando os filisteus viram que seu melhor guerreiro estava morto, deram meia-volta e fugiram."
+                "text": "Em seguida, correu até o filisteu, puxou da bainha a espada dele e a usou para matá-lo e cortar-lhe a cabeça."
               }
             ]
           },
@@ -13800,7 +13867,7 @@
               },
               {
                 "ref": "2 Samuel 8:8",
-                "text": "além de grande quantidade de bronze de Tebá32 e de Berotai, cidades que pertenciam a Hadadezer."
+                "text": "além de grande quantidade de bronze de Tebá e de Berotai, cidades que pertenciam a Hadadezer."
               },
               {
                 "ref": "1 Crônicas 27:6",
@@ -13834,7 +13901,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 11:27–28",
-                "text": "Samá, de Harode;107 Helez, de Pelom; Ira, filho de Iques, de Tecoa; Abiezer, de Anatote;"
+                "text": "Samá, de Harode; Helez, de Pelom; Ira, filho de Iques, de Tecoa; Abiezer, de Anatote;"
               },
               {
                 "ref": "Juízes 7:1",
@@ -13844,7 +13911,7 @@
           },
           {
             "number": 26,
-            "text": "Helez, de Pelom;110 Ira, filho de Iques, de Tecoa;",
+            "text": "Helez, de Pelom; Ira, filho de Iques, de Tecoa;",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13853,7 +13920,7 @@
               },
               {
                 "ref": "1 Crônicas 11:27–28",
-                "text": "Samá, de Harode;107 Helez, de Pelom; Ira, filho de Iques, de Tecoa; Abiezer, de Anatote;"
+                "text": "Samá, de Harode; Helez, de Pelom; Ira, filho de Iques, de Tecoa; Abiezer, de Anatote;"
               },
               {
                 "ref": "1 Crônicas 27:9–10",
@@ -13863,7 +13930,7 @@
           },
           {
             "number": 27,
-            "text": "Abiezer, de Anatote; Sibecai,111 de Husate;",
+            "text": "Abiezer, de Anatote; Sibecai, de Husate;",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13876,7 +13943,7 @@
               },
               {
                 "ref": "1 Crônicas 11:19",
-                "text": "“Que Deus não permita que eu beba desta água!”, exclamou. “Ela é tão preciosa quanto o sangue destes homens102 que arriscaram a vida para trazê- la.” E Davi não a bebeu. Esses são exemplos dos feitos desses três guerreiros."
+                "text": "“Que Deus não permita que eu beba desta água!”, exclamou. “Ela é tão preciosa quanto o sangue destes homens que arriscaram a vida para trazê-la.” E Davi não a bebeu. Esses são exemplos dos feitos desses três guerreiros."
               },
               {
                 "ref": "1 Crônicas 27:12",
@@ -13905,12 +13972,12 @@
           },
           {
             "number": 29,
-            "text": "Helede,112 filho de Baaná, de Netofate; Itai, filho de Ribai, de Gibeá, na terra de Benjamim;",
+            "text": "Helede, filho de Baaná, de Netofate; Itai, filho de Ribai, de Gibeá, na terra de Benjamim;",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Josué 18:28",
-                "text": "Zela, Elefe, a cidade dos jebuseus (isto é, Jerusalém), Gibeá e Quiriate- Jearim; catorze cidades com os povoados ao redor. Essa foi a herança designada aos clãs da tribo de Benjamim."
+                "text": "Zela, Elefe, a cidade dos jebuseus (isto é, Jerusalém), Gibeá e Quiriate-Jearim; catorze cidades com os povoados ao redor. Essa foi a herança designada aos clãs da tribo de Benjamim."
               },
               {
                 "ref": "1 Crônicas 11:30–31",
@@ -13918,13 +13985,13 @@
               },
               {
                 "ref": "1 Crônicas 27:15",
-                "text": "Helede,179 de Netofate, descendente de Otniel, era comandante da décima segunda divisão de 24 mil homens, de serviço durante o décimo segundo mês."
+                "text": "Helede, de Netofate, descendente de Otniel, era comandante da décima segunda divisão de 24 mil homens, de serviço durante o décimo segundo mês."
               }
             ]
           },
           {
             "number": 30,
-            "text": "Benaia, de Piratom; Hurai,113 de Naal-Gaás;114",
+            "text": "Benaia, de Piratom; Hurai, de Naal-Gaás;",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13937,7 +14004,7 @@
               },
               {
                 "ref": "Juízes 2:9",
-                "text": "Foi sepultado na terra que havia recebido como herança, em Timnate- Sera, na região montanhosa de Efraim, ao norte do monte Gaás."
+                "text": "Foi sepultado na terra que havia recebido como herança, em Timnate-Sera, na região montanhosa de Efraim, ao norte do monte Gaás."
               },
               {
                 "ref": "Josué 24:30",
@@ -13956,7 +14023,7 @@
               },
               {
                 "ref": "1 Crônicas 11:32–33",
-                "text": "Hurai, de Naal-Gaás;109 Abi-Albom,110 de Arbate; Azmavete, de Baurim;111 Eliaba, de Saalbom;"
+                "text": "Hurai, de Naal-Gaás; Abi-Albom, de Arbate; Azmavete, de Baurim; Eliaba, de Saalbom;"
               }
             ]
           },
@@ -13967,13 +14034,13 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 11:34",
-                "text": "os filhos de Jasém,112 de Gizom; Jônatas, filho de Sage, de Harar;"
+                "text": "os filhos de Jasém, de Gizom; Jônatas, filho de Sage, de Harar;"
               }
             ]
           },
           {
             "number": 33,
-            "text": "filho de Sage,115 de Harar; Aião, filho de Sarar, de Harar;",
+            "text": "filho de Sage, de Harar; Aião, filho de Sarar, de Harar;",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13982,11 +14049,11 @@
               },
               {
                 "ref": "1 Crônicas 11:35",
-                "text": "Aião, filho de Sarar,113 de Harar; Elifal, filho de Ur;"
+                "text": "Aião, filho de Sarar, de Harar; Elifal, filho de Ur;"
               },
               {
                 "ref": "1 Crônicas 11:27",
-                "text": "Samá, de Harode;107 Helez, de Pelom;"
+                "text": "Samá, de Harode; Helez, de Pelom;"
               }
             ]
           },
@@ -14016,7 +14083,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 11:37",
-                "text": "Hezro, do Carmelo; Paarai,114 filho de Ezbai;"
+                "text": "Hezro, do Carmelo; Paarai, filho de Ezbai;"
               },
               {
                 "ref": "Josué 15:55",
@@ -14050,7 +14117,7 @@
               },
               {
                 "ref": "1 Crônicas 11:37",
-                "text": "Hezro, do Carmelo; Paarai,114 filho de Ezbai;"
+                "text": "Hezro, do Carmelo; Paarai, filho de Ezbai;"
               },
               {
                 "ref": "2 Samuel 4:2",
@@ -14065,7 +14132,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 2:53",
-                "text": "e os clãs de Quiriate- Jearim: os itritas, os fateus, os sumateus e os misraeus, dos quais descenderam os povos de Zorá e Estaol."
+                "text": "e os clãs de Quiriate-Jearim: os itritas, os fateus, os sumateus e os misraeus, dos quais descenderam os povos de Zorá e Estaol."
               },
               {
                 "ref": "2 Samuel 20:26",
@@ -14107,6 +14174,7 @@
   "24": {
     "book": "2 Samuel",
     "chapter": "24",
+    "verified": true,
     "sections": [
       {
         "title": "Davi realiza um censo",
@@ -14118,7 +14186,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
+                "text": "Satanás se levantou contra Israel e incitou Davi a fazer um censo."
               },
               {
                 "ref": "1 Crônicas 27:23–24",
@@ -14228,7 +14296,7 @@
           },
           {
             "number": 6,
-            "text": "depois, a Gileade, na terra de Tatim-Hodsi116 e a Dã-Jaã, e deram a volta para Sidom.",
+            "text": "depois, a Gileade, na terra de Tatim-Hodsi e a Dã-Jaã, e deram a volta para Sidom.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14251,7 +14319,7 @@
           },
           {
             "number": 7,
-            "text": "Então chegaram à fortaleza de Tiro, e a todas as cidades dos heveus e dos cananeus. Por fim, dirigiram-se ao sul de Judá,117 até Berseba.",
+            "text": "Então chegaram à fortaleza de Tiro, e a todas as cidades dos heveus e dos cananeus. Por fim, dirigiram-se ao sul de Judá, até Berseba.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14331,7 +14399,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Samuel 9:9"
+                "ref": "1 Samuel 9:9",
+                "text": "(Naquele tempo, em Israel, quando alguém queria receber uma mensagem de Deus, dizia: “Vamos perguntar ao vidente”, pois os profetas de hoje eram chamados de videntes.)"
               },
               {
                 "ref": "1 Samuel 22:5",
@@ -14372,7 +14441,7 @@
           },
           {
             "number": 13,
-            "text": "Gade foi a Davi e lhe perguntou: “Qual destas opções você escolhe: três118 anos de fome por toda a terra, três meses fugindo de seus inimigos, ou três dias de praga intensa por toda a terra? Pense bem e decida o que devo responder àquele que me enviou”.",
+            "text": "Gade foi a Davi e lhe perguntou: “Qual destas opções você escolhe: três anos de fome por toda a terra, três meses fugindo de seus inimigos, ou três dias de praga intensa por toda a terra? Pense bem e decida o que devo responder àquele que me enviou”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14622,7 +14691,7 @@
           },
           {
             "number": 24,
-            "text": "O rei, porém, respondeu a Araúna: “Não! Faço questão de pagar por tudo. Não apresentarei ao SENHOR, meu Deus, holocaustos que nada me custaram”. Então Davi pagou cinquenta peças119 de prata pela eira e pelos bois.",
+            "text": "O rei, porém, respondeu a Araúna: “Não! Faço questão de pagar por tudo. Não apresentarei ao SENHOR, meu Deus, holocaustos que nada me custaram”. Então Davi pagou cinquenta peças de prata pela eira e pelos bois.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14645,7 +14714,7 @@
           },
           {
             "number": 25,
-            "text": "Davi construiu ali um altar ao SENHOR e ofereceu holocaustos e ofertas de paz. O SENHOR respondeu à sua oração em favor da terra, e a praga sobre Israel cessou. 1 1. Ou Livro do Justo. 2 1. O significado do hebraico é incerto. 3 2. Helcate-Hazurim significa “campo das espadas”. 4 2.29a Em hebraico, pela Arabá. 5 2.29b Ou prosseguiram pelo Bitrom. O significado do hebraico é incerto. 6 3.",
+            "text": "Davi construiu ali um altar ao SENHOR e ofereceu holocaustos e ofertas de paz. O SENHOR respondeu à sua oração em favor da terra, e a praga sobre Israel cessou.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14663,795 +14732,6 @@
               {
                 "ref": "Lamentações 3:32–33",
                 "text": "Embora traga tristeza, também mostra compaixão, por causa da grandeza de seu amor. Pois não tem prazer em afligir as pessoas, nem em lhes causar tristeza."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Conforme o texto paralelo em",
-        "verses": [
-          {
-            "number": 1,
-            "text": "Cr 3. (ver tb. Septuaginta, que traz Daluia, e o possível apoio dos manuscritos do mar Morto); o hebraico traz Quileabe. 7 3.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Conforme",
-        "verses": [
-          {
-            "number": 1,
-            "text": "Sm 25.; o hebraico traz Paltiel, variação de Palti. 8 3.29a O termo hebraico não se refere somente à hanseníase, mas também a diversas doenças de pele. 9 3.29b Ou que seja efeminado; o hebraico traz que manuseie um fuso. 10 4. Conforme a Septuaginta; o hebraico traz Entraram na casa como se fossem buscar trigo, mas o apunhalaram no estômago. Então Recabe e Baaná fugiram. 11 4. Em hebraico, pela Arabá. 12 5. Em hebraico, Somos seu osso e sua carne. 13 5.8a Ou Esses jebuseus ‘cegos’ e ‘aleijados’ me odeiam. 14 5.8b Ou com ganchos de escalar. O significado do hebraico é incerto. 15 5.8c O significado desse ditado é incerto. 16 5. Em hebraico, desde o Milo. O significado do hebraico é incerto. 17 5. Baal-Perazim significa “o Senhor que irrompe”. 18 5. Ou das amoreiras, ou dos bálsamos; também em 5.. A identificação da árvore é incerta. 19 5. Conforme a Septuaginta (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 15.16); o hebraico traz Geba. 20 6.2a Outro nome para Quiriate-Jearim; comparar com",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 13.. 21 6.2b Ou que é chamada pelo nome do SENHOR dos Exércitos. 22 6. Conforme os manuscritos do mar Morto e alguns manuscritos gregos; o Texto Massorético traz e o trouxeram da casa de Abinadabe, que ficava numa colina, com a arca de Deus. 23 6. Conforme os manuscritos do mar Morto e a Septuaginta (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 13.8); o Texto Massorético traz diante do SENHOR com toda espécie de madeira de cipreste. 24 6. Conforme os manuscritos do mar Morto; o Texto Massorético traz por causa de sua irreverência. 25 6. Perez-Uzá significa “irrompimento contra Uzá”. 26 6. Ou um pedaço de carne. O significado do hebraico é incerto. 27 7. Conforme alguns manuscritos hebraicos e a Septuaginta; o hebraico traz diante de você. 28 7. Ou Esta é tua instrução para toda a humanidade, ó Soberano SENHOR? 29 7. Conforme a Septuaginta (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 17.21); o hebraico traz Fizeste um nome para ti mesmo e milagres impressionantes para tua terra à vista de teu povo, que redimiste do Egito, das nações e de seus deuses. 30 8. Em hebraico, conquistando Metegue-Amá; comparar com",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 18.. 31 8. Conforme os manuscritos do mar Morto e a Septuaginta (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 18.4); o Texto Massorético traz capturou 1.700 cavaleiros. 32 8.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Conforme alguns manuscritos (ver tb",
-        "verses": [
-          {
-            "number": 1,
-            "text": "Cr 18.8); o hebraico traz Betá. 33 8. Conforme alguns manuscritos hebraicos, a Septuaginta e a versão siríaca (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 2,
-            "text": "Sm 8.;",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "2 Samuel 3:10",
-                "text": "Tomarei o reino da família de Saul e o entregarei a Davi. Estabelecerei o trono de Davi tanto sobre Israel como sobre Judá, desde Dã, ao norte, até Berseba, ao sul!”"
-              },
-              {
-                "ref": "Juízes 20:1",
-                "text": "Então todos os israelitas se uniram como um só homem, desde Dã, ao norte, até Berseba, ao sul, incluindo os que moravam na terra de Gileade. A comunidade toda se reuniu na presença do SENHOR, em Mispá."
-              },
-              {
-                "ref": "2 Samuel 20:23",
-                "text": "Joabe era o comandante de todo o exército de Israel. Benaia, filho de Joiada, era o comandante da guarda pessoal do rei."
-              },
-              {
-                "ref": "Jeremias 17:5",
-                "text": "Assim diz o SENHOR: “Maldito é quem confia nas pessoas, que se apoia na força humana e afasta seu coração do SENHOR."
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 18.11); a maioria dos manuscritos hebraicos traz Aram. 34 8. Conforme alguns manuscritos hebraicos, a Septuaginta e a versão siríaca (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 2,
-            "text": "Sm 8.;",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "2 Samuel 3:10",
-                "text": "Tomarei o reino da família de Saul e o entregarei a Davi. Estabelecerei o trono de Davi tanto sobre Israel como sobre Judá, desde Dã, ao norte, até Berseba, ao sul!”"
-              },
-              {
-                "ref": "Juízes 20:1",
-                "text": "Então todos os israelitas se uniram como um só homem, desde Dã, ao norte, até Berseba, ao sul, incluindo os que moravam na terra de Gileade. A comunidade toda se reuniu na presença do SENHOR, em Mispá."
-              },
-              {
-                "ref": "2 Samuel 20:23",
-                "text": "Joabe era o comandante de todo o exército de Israel. Benaia, filho de Joiada, era o comandante da guarda pessoal do rei."
-              },
-              {
-                "ref": "Jeremias 17:5",
-                "text": "Assim diz o SENHOR: “Maldito é quem confia nas pessoas, que se apoia na força humana e afasta seu coração do SENHOR."
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 18.12); a maioria dos manuscritos hebraicos traz sírios. 35 8.18a Em hebraico, dos queretitas e dos peletitas. 36 8.18b Em hebraico, sacerdotes; comparar com o texto paralelo em",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 18.. 37 9. Conforme a Septuaginta; o hebraico traz para o neto de seu senhor. 38 9. Conforme a Septuaginta; o hebraico traz à minha mesa. 39 10. Em hebraico, do rio. 40 10. Conforme alguns manuscritos gregos (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 19.18); o hebraico traz cavaleiros. 41 11. O primeiro dia do ano no antigo calendário lunar hebraico caía em março ou abril. 42 11. Em hebraico, e lave os pés, expressão que também pode indicar um banho cerimonial. 43 11. Ou em Sucote. 44 11. Em hebraico, filho de Jerubesete, variação de Jerubaal, outro nome para Gideão; ver Jz 6.. 45 12. Conforme os manuscritos do mar Morto; o Texto Massorético traz pelos inimigos do SENHOR. 46 12. Em hebraico, ungiu-se. 47 12.25a Jedidias significa “amado do SENHOR”. 48 12.25b Conforme a Septuaginta; o hebraico traz por causa do SENHOR. 49 12.30a Ou da cabeça de Milcom (cf. Septuaginta), deus dos amonitas também chamado de Moloque. 50 12.30b Em hebraico, 1 talento. 51 12.31a Ou Também tirou o povo de Rabá e os colocou sob. 52 12.31b Ou e os fez passar pelos fornos de tijolos. 53 13. Ou uma túnica com mangas, ou uma túnica com enfeites. O significado do hebraico é incerto. 54 13. Os manuscritos do mar Morto e a Septuaginta acrescentam mas não castigou seu filho Amnom porque o amava, pois ele era seu primeiro filho. 55 13. Alguns manuscritos gregos acrescentam Então Absalão preparou um banquete digno de um rei. 56 13. A Septuaginta acrescenta Ele correu para contar ao rei: “Vejo uma multidão vindo pela estrada de Horonaim, na encosta do monte”. 57 13. Ou desejava se reencontrar com Absalão. 58 14. Em hebraico, não se unja com óleo. 59 14. Em hebraico, 200 siclos. 60 15. Em hebraico, para correrem adiante dele. 61 15. Conforme a Septuaginta e a versão siríaca; o hebraico traz quarenta anos. 62 15. Conforme alguns manuscritos gregos; o hebraico não traz em Hebrom. 63 15. Em hebraico, os queretitas e os peletitas. 64 15. Em hebraico, e o lugar de sua habitação. 65 15. Em hebraico, da região desabitada. 66 16. Ou cachos de passas. 67 16.11 Em hebraico, este benjamita. 68 16. Conforme a Septuaginta e a versão siríaca; o hebraico traz veja minha iniquidade. 69 16. Conforme a Septuaginta (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 2,
-            "text": "Sm 17.16); o hebraico traz ao seu destino. 70 17. Em hebraico, da região desabitada. 71 17.25a Em hebraico, Itra, variação de Jéter. 72 17.25b Conforme alguns manuscritos gregos (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "2 Samuel 3:10",
-                "text": "Tomarei o reino da família de Saul e o entregarei a Davi. Estabelecerei o trono de Davi tanto sobre Israel como sobre Judá, desde Dã, ao norte, até Berseba, ao sul!”"
-              },
-              {
-                "ref": "Juízes 20:1",
-                "text": "Então todos os israelitas se uniram como um só homem, desde Dã, ao norte, até Berseba, ao sul, incluindo os que moravam na terra de Gileade. A comunidade toda se reuniu na presença do SENHOR, em Mispá."
-              },
-              {
-                "ref": "2 Samuel 20:23",
-                "text": "Joabe era o comandante de todo o exército de Israel. Benaia, filho de Joiada, era o comandante da guarda pessoal do rei."
-              },
-              {
-                "ref": "Jeremias 17:5",
-                "text": "Assim diz o SENHOR: “Maldito é quem confia nas pessoas, que se apoia na força humana e afasta seu coração do SENHOR."
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 2.17); o hebraico traz um israelita. 73 18. Em hebraico, nomeou comandantes de milhares e comandantes de centenas. 74 18. Conforme dois manuscritos hebraicos e alguns manuscritos gregos e latinos; a maioria dos manuscritos hebraicos traz O senhor ainda teria dez mil como nós. 75 18. Em hebraico, 10 [siclos], cerca de 120 gramas. 76 18. Em hebraico, 1.000 [siclos], cerca de 12 quilos. 77 18. Em hebraico, cuxita; também em 18.,,. 78 18. No texto hebraico, o versículo 18. é numerado 19.. 79 19. No texto hebraico, os versículos 19.1-43 são numerados 19.2-44. 80 19. Em hebraico, meu osso e minha carne; também em 19.. 81 19. Em hebraico, na casa de José. 82 19. Ou meus acusadores? 83 20. Em hebraico, os queretitas e os peletitas; também em 20.. 84 20. Em hebraico, Quando deu um passo à frente, [o punhal] caiu. 85 20. Conforme a Septuaginta e a Vulgata; o hebraico traz Todos os beritas. 86 20. Em hebraico, uma cidade que é mãe em Israel. 87 20. Conforme a Septuaginta (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Rs 4.; 5.14); o hebraico traz Adorão. 88 21. Conforme a Septuaginta (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 2,
-            "text": "Sm 21.9); o hebraico traz em Gibeá de Saul, o escolhido do SENHOR. 89 21. Conforme alguns manuscritos hebraicos e gregos e a versão siríaca (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "2 Samuel 3:10",
-                "text": "Tomarei o reino da família de Saul e o entregarei a Davi. Estabelecerei o trono de Davi tanto sobre Israel como sobre Judá, desde Dã, ao norte, até Berseba, ao sul!”"
-              },
-              {
-                "ref": "Juízes 20:1",
-                "text": "Então todos os israelitas se uniram como um só homem, desde Dã, ao norte, até Berseba, ao sul, incluindo os que moravam na terra de Gileade. A comunidade toda se reuniu na presença do SENHOR, em Mispá."
-              },
-              {
-                "ref": "2 Samuel 20:23",
-                "text": "Joabe era o comandante de todo o exército de Israel. Benaia, filho de Joiada, era o comandante da guarda pessoal do rei."
-              },
-              {
-                "ref": "Jeremias 17:5",
-                "text": "Assim diz o SENHOR: “Maldito é quem confia nas pessoas, que se apoia na força humana e afasta seu coração do SENHOR."
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Sm 18.19); a maioria dos manuscritos hebraicos traz Mical. 90 21.16a Ou descendente de Rafa; também em 21.,,. 91 21.16b Em hebraico, 300 [siclos]. 92 21.19a Conforme o texto paralelo em",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 20.; o hebraico traz filho de Jaaré-Oregim. 93 21.19b Conforme o texto paralelo em",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 20.; o hebraico traz matou Golias, de Gate. 94 21.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Conforme o texto paralelo em",
-        "verses": [
-          {
-            "number": 1,
-            "text": "Cr 20.; o hebraico traz um midianita. 95 21.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Conforme o texto paralelo em",
-        "verses": [
-          {
-            "number": 1,
-            "text": "Cr 20.; o hebraico traz Simei, variação de Simeia. 96 22. Em hebraico, Sheol. 97 22. Conforme alguns manuscritos hebraicos (ver tb. Sl 18.10); outros manuscritos hebraicos trazem surgia. 98 22. Ou relâmpagos. 99 22. Em hebraico, a palavra. 100 22. Conforme o texto paralelo em Sl 18.; o hebraico traz cingindo-se. 101 23. Ou o tema predileto dos cânticos de Israel, ou o predileto do Poderoso de Israel. 102 23.8a Conforme o texto paralelo em",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 11.; o hebraico traz Josebe-Bassebete, o tacmonita. 103 23.8b Conforme a Septuaginta e a Vulgata (ver tb.1Cr 11.11); o significado do hebraico é incerto. 104 23.8c Conforme alguns manuscritos gregos (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 11.1). O significado do hebraico é incerto, embora possa ser traduzido como Foi Adino, o esnita, que matou oitocentos homens de uma só vez. 105 23. Em hebraico, Acaso beberei do sangue destes homens? 106 23. Conforme alguns manuscritos hebraicos e a versão siríaca; a maioria dos manuscritos hebraicos traz dos Três. 107 23. Conforme a versão siríaca; o hebraico traz dos Três. 108 23.20a Ou filho de Joiada, filho de Isai. 109 23.20b Em hebraico, dois de Ariel. 110 23.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Conforme o texto paralelo em",
-        "verses": [
-          {
-            "number": 1,
-            "text": "Cr 11. (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 27.10); o hebraico traz Palti. 111 23. Conforme alguns manuscritos gregos (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 11.29); o hebraico traz Mebunai. 112 23. Conforme alguns manuscritos hebraicos (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 11.30); a maioria dos manuscritos hebraicos traz Helebe. 113 23.30a Conforme alguns manuscritos gregos (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 11.32); o hebraico traz Hidai. 114 23.30b Ou dos ribeiros de Gaás. 115 23.32-33 Conforme o texto paralelo em",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 11.; o hebraico traz Jônatas, Samá; a Septuaginta traz Jônatas, filho de Samá. 116 24. A Septuaginta traz a Gileade e a Cades, na terra dos hititas. 117 24. Ou ao Neguebe de Judá. 118 24. Conforme a Septuaginta (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 21.12); o hebraico traz sete. 119 24. Em hebraico, 50 siclos, cerca de 600 gramas.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
-              },
-              {
-                "ref": "1 Crônicas 27:23–24",
-                "text": "Quando Davi fez o censo, não contou os que tinham menos de 20 anos, pois o SENHOR havia prometido que os israelitas seriam numerosos como as estrelas no céu."
-              },
-              {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "1 Reis 22:20–23",
-                "text": "E o SENHOR perguntou: ‘Quem enganará Acabe para que vá à guerra contra Ramote-Gileade e seja morto ali?’. “Houve muitas sugestões,"
               }
             ]
           }

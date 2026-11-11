@@ -2,6 +2,7 @@
   "1": {
     "book": "Naum",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -91,7 +92,7 @@
               },
               {
                 "ref": "Salmos 106:9",
-                "text": "Ordenou que o mar Vermelho137 secasse e os conduziu pelas águas como por um deserto."
+                "text": "Ordenou que o mar Vermelho secasse e os conduziu pelas águas como por um deserto."
               },
               {
                 "ref": "Isaías 19:5–10",
@@ -99,7 +100,7 @@
               },
               {
                 "ref": "Salmos 114:3",
-                "text": "O mar Vermelho147 os viu chegando e se abriu, e as águas do rio Jordão recuaram."
+                "text": "O mar Vermelho os viu chegando e se abriu, e as águas do rio Jordão recuaram."
               }
             ]
           },
@@ -121,7 +122,8 @@
                 "text": "Olhei para os montes e para as colinas, e eles estremeciam e balançavam."
               },
               {
-                "ref": "Isaías 64:1–2"
+                "ref": "Isaías 64:1–2",
+                "text": "Quem dera abrisses os céus e descesses! Os montes tremeriam em tua presença!"
               }
             ]
           },
@@ -159,7 +161,7 @@
               },
               {
                 "ref": "2 Timóteo 2:19",
-                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”."
               },
               {
                 "ref": "Lamentações 3:25",
@@ -227,7 +229,8 @@
                 "text": "Até o melhor deles é como um espinheiro, e o mais honesto é perigoso como uma cerca de espinhos. Mas o dia anunciado se aproxima; está chegando a hora de seu castigo, um tempo de confusão."
               },
               {
-                "ref": "Malaquias 4:1"
+                "ref": "Malaquias 4:1",
+                "text": "Assim diz o SENHOR dos Exércitos: “O dia do julgamento se aproxima e arde como uma fornalha. Naquele dia, serão queimados como palha os arrogantes e os perversos. Serão consumidos, desde as raízes até os ramos."
               },
               {
                 "ref": "Naum 3:11",
@@ -332,7 +335,7 @@
             ]
           },
           {
-            "number": 152,
+            "number": 15,
             "text": "Vejam, um mensageiro vem pelas montanhas com boas notícias! Ele traz uma mensagem de paz. Celebrem suas festas, ó habitantes de Judá, e cumpram seus votos, pois seus inimigos perversos nunca mais invadirão sua terra; serão completamente destruídos.",
             "isJesusWords": false,
             "crossReferences": []
@@ -344,32 +347,16 @@
   "2": {
     "book": "Naum",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "A queda de Nínive",
         "verses": [
           {
-            "number": 13,
+            "number": 1,
             "text": "Ó Nínive, seu inimigo vem destruí-la. Guarde as muralhas! Vigie as estradas! Prepare suas defesas! Reúna suas forças!",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Jeremias 21:13",
-                "text": "Eu mesmo lutarei contra os habitantes de Jerusalém, essa fortaleza poderosa, contra o povo que diz: ‘Estamos seguros aqui; ninguém conseguirá entrar’."
-              },
-              {
-                "ref": "Naum 3:5",
-                "text": "“Sou seu inimigo!”, diz o SENHOR dos Exércitos. “Agora levantarei suas vestes e mostrarei às nações sua nudez e vergonha."
-              },
-              {
-                "ref": "Salmos 46:9",
-                "text": "Acaba com as guerras em toda a terra, quebra o arco e parte ao meio a lança, e destrói os escudos com fogo."
-              },
-              {
-                "ref": "2 Reis 19:23",
-                "text": "Por meio de seus mensageiros, desafiou o Senhor. Disse: ‘Com meus numerosos carros de guerra, conquistei os montes mais elevados, sim, os picos mais remotos do Líbano. Cortei seus cedros mais altos e seus melhores cipres..."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 2,
@@ -543,7 +530,7 @@
               },
               {
                 "ref": "2 Crônicas 36:10",
-                "text": "Na virada do ano,152 o rei Nabucodonosor levou Joaquim para a Babilônia. Nessa ocasião, também levou os tesouros do templo do SENHOR. Nabucodonosor nomeou Zedequias, tio153 de Joaquim, rei sobre Judá e sobre Jerusalém."
+                "text": "Na virada do ano, o rei Nabucodonosor levou Joaquim para a Babilônia. Nessa ocasião, também levou os tesouros do templo do SENHOR. Nabucodonosor nomeou Zedequias, tio de Joaquim, rei sobre Judá e sobre Jerusalém."
               }
             ]
           },
@@ -642,6 +629,7 @@
   "3": {
     "book": "Naum",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Julgamento do SENHOR contra Nínive",
@@ -688,7 +676,7 @@
               },
               {
                 "ref": "Juízes 5:22",
-                "text": "Os cascos dos cavalos martelavam o chão; galopavam, galopavam seus poderosos cavalos de guerra. 23‘Amaldiçoem os habitantes de Meroz’, disse o anjo do SENHOR. ‘Amaldiçoem duramente, pois não vieram ajudar o SENHOR, ajuda..."
+                "text": "Os cascos dos cavalos martelavam o chão; galopavam, galopavam seus poderosos cavalos de guerra."
               }
             ]
           },
@@ -711,7 +699,7 @@
               },
               {
                 "ref": "Isaías 37:36",
-                "text": "Naquela noite, o anjo do SENHOR foi ao acampamento assírio e matou 185 mil soldados assírios. Quando os sobreviventes122 acordaram na manhã seguinte, encontraram cadáveres por toda parte."
+                "text": "Naquela noite, o anjo do SENHOR foi ao acampamento assírio e matou 185 mil soldados assírios. Quando os sobreviventes acordaram na manhã seguinte, encontraram cadáveres por toda parte."
               }
             ]
           },
@@ -871,7 +859,8 @@
                 "text": "Quando eles foram invadidos, você se manteve afastado e não quis ajudá-los. Estrangeiros levaram a riqueza da nação e tiraram sortes para dividir Jerusalém, e você agiu como se fosse um deles."
               },
               {
-                "ref": "Oséias 13:16"
+                "ref": "Oséias 13:16",
+                "text": "O povo de Samaria sofrerá as consequências de sua culpa, pois se rebelou contra seu Deus. Serão mortos pela espada inimiga; suas crianças serão despedaçadas, e suas mulheres grávidas, abertas ao meio.”"
               }
             ]
           },
@@ -890,7 +879,7 @@
               },
               {
                 "ref": "Isaías 49:26",
-                "text": "Alimentarei seus inimigos com a própria carne deles, ficarão bêbados com rios do próprio sangue. Todo o mundo saberá que eu, o SENHOR, sou seu Salvador e seu Redentor,"
+                "text": "Alimentarei seus inimigos com a própria carne deles, ficarão bêbados com rios do próprio sangue. Todo o mundo saberá que eu, o SENHOR, sou seu Salvador e seu Redentor, o Poderoso de Israel”."
               },
               {
                 "ref": "Jeremias 4:5",
@@ -946,7 +935,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Naum 2:1"
+                "ref": "Naum 2:1",
+                "text": "Ó Nínive, seu inimigo vem destruí-la. Guarde as muralhas! Vigie as estradas! Prepare suas defesas! Reúna suas forças!"
               },
               {
                 "ref": "2 Crônicas 32:3–4",
@@ -1004,7 +994,7 @@
               },
               {
                 "ref": "Gênesis 22:17",
-                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar."
+                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar. Seus descendentes conquistarão as cidades de seus inimigos"
               }
             ]
           },
@@ -1030,7 +1020,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 22:17",
-                "text": "Então Micaías respondeu: “Vi todo o Israel espalhado pelos montes, como ovelhas sem pastor. E o SENHOR disse: ‘Seu líder foi morto.117 Mande-os para casa em paz’”."
+                "text": "Então Micaías respondeu: “Vi todo o Israel espalhado pelos montes, como ovelhas sem pastor. E o SENHOR disse: ‘Seu líder foi morto. Mande-os para casa em paz’”."
               },
               {
                 "ref": "Salmos 76:5–6",
@@ -1048,7 +1038,7 @@
           },
           {
             "number": 19,
-            "text": "Não há cura para sua ferida; ela é mortal. Todos que ouvirem sobre sua destruição baterão palmas de alegria. Onde se poderá encontrar alguém que não sofreu com sua constante crueldade? 1 1. Conforme a Septuaginta; o hebraico traz arrasará seu lugar. 2 1. No texto hebraico, o versículo 1. é numerado 2.. 3 2.1 No texto hebraico, os versículos 2.1-13 são numerados 2.2-14. 4 2. Em hebraico, leões jovens. 5 3. Em hebraico, Nô-Amom; também em 3.. 6 3. Em hebraico, Cuxe. 7 3. Ou príncipes. 8 3. Ou pastores.",
+            "text": "Não há cura para sua ferida; ela é mortal. Todos que ouvirem sobre sua destruição baterão palmas de alegria. Onde se poderá encontrar alguém que não sofreu com sua constante crueldade?",
             "isJesusWords": false,
             "crossReferences": [
               {

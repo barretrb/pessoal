@@ -2,6 +2,7 @@
   "1": {
     "book": "Ageu",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Chamado para reconstruir o templo",
@@ -69,7 +70,7 @@
           },
           {
             "number": 4,
-            "text": "“Por que vocês vivem em casas luxuosas enquanto minha casa con-­ tinua em ruínas?",
+            "text": "“Por que vocês vivem em casas luxuosas enquanto minha casa con- tinua em ruínas?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -185,7 +186,7 @@
             "crossReferences": [
               {
                 "ref": "Ageu 1:4",
-                "text": "“Por que vocês vivem em casas luxuosas enquanto minha casa con-­ tinua em ruínas?"
+                "text": "“Por que vocês vivem em casas luxuosas enquanto minha casa con- tinua em ruínas?"
               },
               {
                 "ref": "Ageu 2:16–17",
@@ -197,7 +198,7 @@
               },
               {
                 "ref": "Malaquias 2:2",
-                "text": "Escutem- me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência."
+                "text": "Escutem-me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência."
               }
             ]
           },
@@ -266,7 +267,8 @@
                 "text": "Em resposta, Zorobabel, filho de Sealtiel, e Jesua, filho de Jeozadaque, começaram outra vez a reconstruir o templo de Deus em Jerusalém. E os profetas de Deus estavam com eles e os auxiliavam."
               },
               {
-                "ref": "Salmos 112:1"
+                "ref": "Salmos 112:1",
+                "text": "Louvado seja o SENHOR! Como é feliz aquele que teme o SENHOR e tem prazer em obedecer a seus mandamentos!"
               },
               {
                 "ref": "Ageu 1:14",
@@ -304,7 +306,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 36:22",
-                "text": "No primeiro ano do reinado de Ciro, rei da Pérsia,156 o SENHOR cumpriu a profecia que havia anunciado por meio de Jeremias.157 O SENHOR despertou o coração de Ciro para registrar por escrito a seguinte proclamação e enviá-la a todo o seu reino:"
+                "text": "No primeiro ano do reinado de Ciro, rei da Pérsia, o SENHOR cumpriu a profecia que havia anunciado por meio de Jeremias. O SENHOR despertou o coração de Ciro para registrar por escrito a seguinte proclamação e enviá-la a todo o seu reino:"
               },
               {
                 "ref": "Hebreus 13:21",
@@ -350,6 +352,7 @@
   "2": {
     "book": "Ageu",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "O esplendor menor do novo templo",
@@ -379,7 +382,7 @@
           },
           {
             "number": 2,
-            "text": "“Diga ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque, e ao remanescente do povo: 3‘Algum de vocês se lembra deste templo em sua antiga glória? Como ele lhes parece agora, em comparação com o anterior? Deve parecer insignificante!",
+            "text": "“Diga ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque, e ao remanescente do povo:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -399,6 +402,12 @@
                 "text": "Ciro, rei da Pérsia, deu instruções a Mitredate, seu tesoureiro, para que contasse esses utensílios e os entregasse a Sesbazar, líder dos exilados que voltavam para Judá."
               }
             ]
+          },
+          {
+            "number": 3,
+            "text": "‘Algum de vocês se lembra deste templo em sua antiga glória? Como ele lhes parece agora, em comparação com o anterior? Deve parecer insignificante!",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 4,
@@ -564,7 +573,7 @@
           },
           {
             "number": 11,
-            "text": "“Assim diz o SENHOR dos Exércitos. Pergunte aos sacerdotes sobre a lei: 12‘Se alguém levar em sua roupa a carne consagrada de um sacrifício, e se, por acaso, a roupa tocar num pão, num ensopado, em vinho, em azeite ou em qualquer outro tipo de alimento, esse alimento também se tornará consagrado?’”. “Não”, responderam os sacerdotes.",
+            "text": "“Assim diz o SENHOR dos Exércitos. Pergunte aos sacerdotes sobre a lei:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -586,6 +595,12 @@
             ]
           },
           {
+            "number": 12,
+            "text": "‘Se alguém levar em sua roupa a carne consagrada de um sacrifício, e se, por acaso, a roupa tocar num pão, num ensopado, em vinho, em azeite ou em qualquer outro tipo de alimento, esse alimento também se tornará consagrado?’”. “Não”, responderam os sacerdotes.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 13,
             "text": "Em seguida, Ageu perguntou: “Se alguém se tornar cerimonialmente impuro ao tocar num cadáver e depois tocar num desses alimentos, o alimento ficará contaminado?”. “Sim”, responderam os sacerdotes.",
             "isJesusWords": false,
@@ -596,7 +611,7 @@
               },
               {
                 "ref": "Números 9:6–10",
-                "text": "Alguns dos homens, porém, estavam cerimonialmente impuros por terem tocado num cadáver, e não puderam celebrar a Páscoa naquele dia."
+                "text": "Alguns dos homens, porém, estavam cerimonialmente impuros por terem tocado num cadáver, e não puderam celebrar a Páscoa naquele dia. Eles se dirigiram a Moisés e Arão no mesmo dia"
               },
               {
                 "ref": "Números 5:2–3",
@@ -646,7 +661,7 @@
               },
               {
                 "ref": "Esdras 4:24",
-                "text": "Assim, a obra no templo de Deus em Jerusalém foi interrompida e"
+                "text": "Assim, a obra no templo de Deus em Jerusalém foi interrompida e ficou parada até o segundo ano do reinado de Dario, rei da Pérsia."
               },
               {
                 "ref": "Ageu 2:18",
@@ -669,7 +684,7 @@
               },
               {
                 "ref": "Malaquias 2:2",
-                "text": "Escutem- me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência."
+                "text": "Escutem-me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência."
               },
               {
                 "ref": "Ageu 1:9–11",
@@ -822,7 +837,7 @@
           },
           {
             "number": 23,
-            "text": "“Naquele dia, diz o SENHOR dos Exércitos, honrarei você, meu servo Zorobabel, filho de Sealtiel. Farei que você seja como um anel de selar em meu dedo, diz o SENHOR, pois eu o escolhi. Eu, o SENHOR dos Exércitos, falei!”. 1 1. Em hebraico, No primeiro dia do sexto mês, do antigo calendário lunar hebraico. Várias datas em Ageu podem ser confirmadas por datas em registros persas que sobreviveram ao tempo e relacionadas com precisão ao calendário moderno. O ano foi 520 a.C. 2 1. Em hebraico, no vigésimo quarto dia do sexto mês, do antigo calendário lunar hebraico. O ano foi 520 a.C.; ver também nota em 1.. 3 2. Em hebraico, no vigésimo primeiro dia do sétimo mês, do antigo calendário lunar hebraico. O ano foi 520 a.C.; ver também nota em 1.. 4 2. Em hebraico, No vigésimo quarto dia do nono mês, do antigo calendário lunar hebraico; também em 2.. O ano foi 520 a.C.; ver também nota em 1.. 5 2. Ou Neste 18 de dezembro, pensem no dia. 6 2. Ou A semente ainda está no celeiro? 7 2. Em hebraico, No vigésimo quarto dia do [nono] mês; ver nota em 2..",
+            "text": "“Naquele dia, diz o SENHOR dos Exércitos, honrarei você, meu servo Zorobabel, filho de Sealtiel. Farei que você seja como um anel de selar em meu dedo, diz o SENHOR, pois eu o escolhi. Eu, o SENHOR dos Exércitos, falei!”.",
             "isJesusWords": false,
             "crossReferences": [
               {

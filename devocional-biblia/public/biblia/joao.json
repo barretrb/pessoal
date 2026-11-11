@@ -2,6 +2,7 @@
   "1": {
     "book": "João",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Prólogo: Cristo, a Palavra eterna",
@@ -17,7 +18,7 @@
               },
               {
                 "ref": "João 17:5",
-                "text": "Agora, Pai, glorifica- me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
+                "text": "Agora, Pai, glorifica-me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
               },
               {
                 "ref": "Apocalipse 19:13",
@@ -128,7 +129,7 @@
               },
               {
                 "ref": "Isaías 40:3–5",
-                "text": "Ouçam! Uma voz clama: “Abram caminho no deserto para o SENHOR!127 Preparem para nosso Deus uma estrada reta na terra desolada!"
+                "text": "Ouçam! Uma voz clama: “Abram caminho no deserto para o SENHOR! Preparem para nosso Deus uma estrada reta na terra desolada!"
               },
               {
                 "ref": "João 1:33",
@@ -266,7 +267,7 @@
               },
               {
                 "ref": "2 Coríntios 6:17–18",
-                "text": "Portanto, afastem-se e separem-se deles, diz o Senhor. Não toquem em coisas impuras, e eu os receberei. Eu serei seu Pai, e vocês serão meus filhos e minhas filhas,"
+                "text": "Portanto, afastem-se e separem-se deles, diz o Senhor. Não toquem em coisas impuras, e eu os receberei. Eu serei seu Pai, e vocês serão meus filhos e minhas filhas, diz o Senhor Todo-poderoso”."
               }
             ]
           },
@@ -289,7 +290,7 @@
               },
               {
                 "ref": "1 Pedro 1:3",
-                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos."
+                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos. Agora temos uma viva esperança"
               }
             ]
           },
@@ -461,7 +462,7 @@
           },
           {
             "number": 21,
-            "text": "“Então quem é você?”, perguntaram eles. “É Elias?” “Não”, respondeu ele. “É o Profeta por quem temos esperado?”5 “Não.”",
+            "text": "“Então quem é você?”, perguntaram eles. “É Elias?” “Não”, respondeu ele. “É o Profeta por quem temos esperado?” “Não.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -489,7 +490,7 @@
             "crossReferences": [
               {
                 "ref": "2 Samuel 24:13",
-                "text": "Gade foi a Davi e lhe perguntou: “Qual destas opções você escolhe: três118 anos de fome por toda a terra, três meses fugindo de seus inimigos, ou três dias de praga intensa por toda a terra? Pense bem e decida o que devo..."
+                "text": "Gade foi a Davi e lhe perguntou: “Qual destas opções você escolhe: três anos de fome por toda a terra, três meses fugindo de seus inimigos, ou três dias de praga intensa por toda a terra? Pense bem e decida o que devo responder àquele que me enviou”."
               }
             ]
           },
@@ -500,15 +501,15 @@
             "crossReferences": [
               {
                 "ref": "Isaías 40:3–5",
-                "text": "Ouçam! Uma voz clama: “Abram caminho no deserto para o SENHOR!127 Preparem para nosso Deus uma estrada reta na terra desolada!"
+                "text": "Ouçam! Uma voz clama: “Abram caminho no deserto para o SENHOR! Preparem para nosso Deus uma estrada reta na terra desolada!"
               },
               {
                 "ref": "Marcos 1:3",
-                "text": "Ele é uma voz que clama no deserto: ‘Preparem o caminho para a vinda do Senhor!4 Abram a estrada para ele!’”."
+                "text": "Ele é uma voz que clama no deserto: ‘Preparem o caminho para a vinda do Senhor! Abram a estrada para ele!’”."
               },
               {
                 "ref": "Mateus 3:3",
-                "text": "O profeta Isaías se referia a João quando disse: “Ele é uma voz que clama no deserto: ‘Preparem o caminho para a vinda do Senhor!16 Abram a estrada para ele!’”."
+                "text": "O profeta Isaías se referia a João quando disse: “Ele é uma voz que clama no deserto: ‘Preparem o caminho para a vinda do Senhor! Abram a estrada para ele!’”."
               },
               {
                 "ref": "João 3:28",
@@ -805,7 +806,7 @@
               },
               {
                 "ref": "Isaías 65:1–2",
-                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome,180 eu disse: ‘Aqui estou! Aqui estou!’."
+                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome, eu disse: ‘Aqui estou! Aqui estou!’."
               },
               {
                 "ref": "Hebreus 12:2",
@@ -939,7 +940,7 @@
               },
               {
                 "ref": "João 21:15–17",
-                "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”.100 “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus."
+                "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”. “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus."
               },
               {
                 "ref": "1 Coríntios 15:5",
@@ -947,7 +948,7 @@
               },
               {
                 "ref": "Mateus 16:17–18",
-                "text": "Jesus disse: “Que grande privilégio você teve, Simão, filho de João!85 Foi meu Pai no céu quem lhe revelou isso. Nenhum ser humano saberia por si só."
+                "text": "Jesus disse: “Que grande privilégio você teve, Simão, filho de João! Foi meu Pai no céu quem lhe revelou isso. Nenhum ser humano saberia por si só."
               }
             ]
           }
@@ -971,7 +972,7 @@
               },
               {
                 "ref": "Isaías 65:1",
-                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome,180 eu disse: ‘Aqui estou! Aqui estou!’."
+                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome, eu disse: ‘Aqui estou! Aqui estou!’."
               },
               {
                 "ref": "Mateus 4:18–21",
@@ -1012,7 +1013,8 @@
                 "text": "Levantarei um profeta como você do meio de seus irmãos israelitas e porei minhas palavras em sua boca, e ele dirá ao povo tudo que eu lhe ordenar."
               },
               {
-                "ref": "Miqueias 5:2"
+                "ref": "Miqueias 5:2",
+                "text": "Mas você, ó Belém Efrata, é apenas uma pequena vila entre todo o povo de Judá. E, no entanto, um governante de Israel, cujas origens são do passado distante, sairá de você em meu favor."
               },
               {
                 "ref": "Lucas 24:27",
@@ -1108,11 +1110,11 @@
               },
               {
                 "ref": "Zacarias 9:9",
-                "text": "Alegre-se, ó povo de Sião!29 Exulte, ó preciosa Jerusalém!30 Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
+                "text": "Alegre-se, ó povo de Sião! Exulte, ó preciosa Jerusalém! Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
               },
               {
                 "ref": "João 12:13–15",
-                "text": "tomou ramos de palmeiras e saiu ao seu encontro, gritando: “Hosana!57 Bendito é o que vem em nome do Senhor! Bendito é o Rei de Israel!”."
+                "text": "tomou ramos de palmeiras e saiu ao seu encontro, gritando: “Hosana! Bendito é o que vem em nome do Senhor! Bendito é o Rei de Israel!”."
               }
             ]
           },
@@ -1169,6 +1171,7 @@
   "2": {
     "book": "João",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "O casamento em Caná",
@@ -1183,7 +1186,8 @@
                 "text": "Enquanto Jesus viajava pela Galileia, chegou a Caná, onde tinha transformado água em vinho. Perto dali, em Cafarnaum, havia um oficial do governo cujo filho estava muito doente."
               },
               {
-                "ref": "Provérbios 31:10–12"
+                "ref": "Provérbios 31:10–12",
+                "text": "Quem encontrará uma mulher virtuosa? Ela é mais preciosa que rubis."
               },
               {
                 "ref": "João 1:43",
@@ -1237,7 +1241,7 @@
               },
               {
                 "ref": "Mateus 26:28",
-                "text": "porque este é o meu sangue, que confirma a aliança.150 Ele é derramado como sacrifício para perdoar os pecados de muitos."
+                "text": "porque este é o meu sangue, que confirma a aliança. Ele é derramado como sacrifício para perdoar os pecados de muitos."
               }
             ]
           },
@@ -1306,7 +1310,7 @@
               },
               {
                 "ref": "Marcos 7:2–5",
-                "text": "Observaram que alguns de seus discípulos comiam sua refeição com as mãos impuras, ou seja, sem lavá-las. 3(Pois todos os judeus, sobretudo os fariseus, não comem sem antes lavar cuidadosamente as mãos, como exige a tradição dos líderes religiosos."
+                "text": "Observaram que alguns de seus discípulos comiam sua refeição com as mãos impuras, ou seja, sem lavá-las."
               }
             ]
           },
@@ -1505,7 +1509,8 @@
                 "text": "Então ele me disse: “Assim diz o SENHOR a Zorobabel: Não por força, nem por poder, mas pelo meu Espírito, diz o SENHOR dos Exércitos."
               },
               {
-                "ref": "2 Coríntios 10:4"
+                "ref": "2 Coríntios 10:4",
+                "text": "Usamos as armas poderosas de Deus, e não as armas do mundo, para derrubar as fortalezas do raciocínio humano e acabar com os falsos argumentos."
               }
             ]
           },
@@ -1566,7 +1571,7 @@
               },
               {
                 "ref": "João 6:30",
-                "text": "Eles responderam: “Se deseja que creiamos no senhor, mostre- nos um sinal. O que o senhor pode fazer?"
+                "text": "Eles responderam: “Se deseja que creiamos no senhor, mostre-nos um sinal. O que o senhor pode fazer?"
               }
             ]
           },
@@ -1700,7 +1705,7 @@
               },
               {
                 "ref": "Atos 1:24",
-                "text": "Em seguida, oraram: “Senhor, tu conheces cada coração."
+                "text": "Em seguida, oraram: “Senhor, tu conheces cada coração. Mostra-nos qual destes homens escolheste"
               }
             ]
           },
@@ -1734,6 +1739,7 @@
   "3": {
     "book": "João",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Nicodemos visita Jesus",
@@ -2583,6 +2589,7 @@
   "4": {
     "book": "João",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "A mulher samaritana junto ao poço",
@@ -2686,7 +2693,7 @@
               },
               {
                 "ref": "Gênesis 48:22",
-                "text": "Em razão de sua autoridade sobre seus irmãos, eu lhe dou uma porção a mais da terra,171 que tomei dos amorreus com a minha espada e o meu arco”."
+                "text": "Em razão de sua autoridade sobre seus irmãos, eu lhe dou uma porção a mais da terra, que tomei dos amorreus com a minha espada e o meu arco”."
               },
               {
                 "ref": "João 4:12",
@@ -2831,7 +2838,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 12:42",
-                "text": "A rainha de Sabá72 também se levantará contra esta geração no dia do juízo e a condenará, pois veio de uma terra distante para ouvir a sabedoria de Salomão; e vocês têm à sua frente alguém maior que Salomão!"
+                "text": "A rainha de Sabá também se levantará contra esta geração no dia do juízo e a condenará, pois veio de uma terra distante para ouvir a sabedoria de Salomão; e vocês têm à sua frente alguém maior que Salomão!"
               },
               {
                 "ref": "João 8:53",
@@ -3072,11 +3079,11 @@
             "crossReferences": [
               {
                 "ref": "Filipenses 3:3",
-                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
+                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
               },
               {
                 "ref": "Mateus 15:7–9",
-                "text": "Hipócritas! Isaías tinha razão quando assim profetizou a seu respeito: 8‘Este povo me honra com os lábios, mas o coração está longe de mim."
+                "text": "Hipócritas! Isaías tinha razão quando assim profetizou a seu respeito:"
               },
               {
                 "ref": "João 5:25",
@@ -3098,11 +3105,12 @@
                 "text": "Pois o Senhor é o Espírito, e onde está o Espírito do Senhor, ali há liberdade."
               },
               {
-                "ref": "Mateus 15:8–9"
+                "ref": "Mateus 15:8–9",
+                "text": "‘Este povo me honra com os lábios, mas o coração está longe de mim. Sua adoração é uma farsa, pois ensinam ideias humanas como se fossem mandamentos divinos’”."
               },
               {
                 "ref": "Filipenses 3:3",
-                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
+                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
               },
               {
                 "ref": "Salmos 51:17",
@@ -3152,15 +3160,10 @@
               },
               {
                 "ref": "Romanos 10:20–21",
-                "text": "E, mais tarde, Isaías se pronunciou com ou­sadia: “Fui encontrado por aqueles que não me procuravam. Revelei-me àqueles que não perguntavam por mim”."
+                "text": "E, mais tarde, Isaías se pronunciou com ousadia: “Fui encontrado por aqueles que não me procuravam. Revelei-me àqueles que não perguntavam por mim”."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Os campos estão prontos para a colheita",
-        "verses": [
+          },
           {
             "number": 27,
             "text": "Naquele momento, seus discípulos voltaram. Ficaram surpresos de encontrá-lo falando com uma mulher, mas nenhum deles se atreveu a perguntar: “O que o senhor quer?” ou “Por que conversa com ela?”.",
@@ -3467,7 +3470,7 @@
               },
               {
                 "ref": "Atos 8:12",
-                "text": "No entanto, quando Filipe lhes levou a mensagem sobre as boas- novas do reino de Deus e sobre o nome de Jesus Cristo, eles creram e, como resultado, muitos homens e mulheres foram batizados."
+                "text": "No entanto, quando Filipe lhes levou a mensagem sobre as boas-novas do reino de Deus e sobre o nome de Jesus Cristo, eles creram e, como resultado, muitos homens e mulheres foram batizados."
               }
             ]
           },
@@ -3529,7 +3532,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 13:57",
-                "text": "E sentiam- se muito ofendidos. Então Jesus lhes disse: “Um profeta recebe honra em toda parte, menos em sua cidade e entre sua própria família”."
+                "text": "E sentiam-se muito ofendidos. Então Jesus lhes disse: “Um profeta recebe honra em toda parte, menos em sua cidade e entre sua própria família”."
               },
               {
                 "ref": "Lucas 4:24",
@@ -3625,7 +3628,7 @@
               },
               {
                 "ref": "Hebreus 2:4",
-                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade. Jesus, o homem"
+                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade."
               },
               {
                 "ref": "Daniel 4:2",
@@ -3652,7 +3655,7 @@
               },
               {
                 "ref": "Salmos 88:10–12",
-                "text": "Será que tuas maravilhas têm algum uso para os mortos? Acaso os mortos se levantam e te louvam?"
+                "text": "Será que tuas maravilhas têm algum uso para os mortos? Acaso os mortos se levantam e te louvam? Interlúdio"
               }
             ]
           },
@@ -3754,6 +3757,7 @@
   "5": {
     "book": "João",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Jesus cura um homem no sábado",
@@ -3869,7 +3873,7 @@
               },
               {
                 "ref": "Atos 14:8",
-                "text": "Enquanto estavam em Listra, Paulo e Barnabé encontraram um homem com os pés aleijados. Sofria desse problema desde o nascimento e, portanto, nunca tinha andado."
+                "text": "Enquanto estavam em Listra, Paulo e Barnabé encontraram um homem com os pés aleijados. Sofria desse problema desde o nascimento e, portanto, nunca tinha andado. Estava sentado"
               }
             ]
           },
@@ -3892,7 +3896,7 @@
               },
               {
                 "ref": "Isaías 65:1",
-                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome,180 eu disse: ‘Aqui estou! Aqui estou!’."
+                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome, eu disse: ‘Aqui estou! Aqui estou!’."
               }
             ]
           },
@@ -4747,7 +4751,7 @@
           },
           {
             "number": 44,
-            "text": "Não é de admirar que não possam crer, pois vocês honram uns aos outros, mas não se importam com a honra que vem do único Deus!25",
+            "text": "Não é de admirar que não possam crer, pois vocês honram uns aos outros, mas não se importam com a honra que vem do único Deus!",
             "isJesusWords": true,
             "crossReferences": [
               {
@@ -4764,7 +4768,7 @@
               },
               {
                 "ref": "Mateus 23:5",
-                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios131 mais largos que de costume e vestem mantos com franjas mais longas."
+                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios mais largos que de costume e vestem mantos com franjas mais longas."
               }
             ]
           },
@@ -4836,6 +4840,7 @@
   "6": {
     "book": "João",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "A primeira multiplicação dos pães",
@@ -5173,7 +5178,7 @@
               },
               {
                 "ref": "Marcos 11:9",
-                "text": "E as pessoas, tanto as que iam à frente como as que o seguiam, gritavam: “Hosana!51 Bendito é o que vem em nome do Senhor!"
+                "text": "E as pessoas, tanto as que iam à frente como as que o seguiam, gritavam: “Hosana! Bendito é o que vem em nome do Senhor!"
               }
             ]
           }
@@ -5358,7 +5363,7 @@
               },
               {
                 "ref": "Marcos 6:53",
-                "text": "Depois de atravessarem o mar, chegaram a Genesaré."
+                "text": "Depois de atravessarem o mar, chegaram a Genesaré. Levaram o barco até a margem"
               },
               {
                 "ref": "Lucas 8:40",
@@ -5427,7 +5432,7 @@
               },
               {
                 "ref": "2 Timóteo 2:19",
-                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”."
               }
             ]
           },
@@ -5442,7 +5447,7 @@
               },
               {
                 "ref": "Mateus 19:16",
-                "text": "Um homem veio a Jesus com a seguinte pergunta: “Mestre,111 que boas ações devo fazer para obter a vida eterna?”."
+                "text": "Um homem veio a Jesus com a seguinte pergunta: “Mestre, que boas ações devo fazer para obter a vida eterna?”."
               },
               {
                 "ref": "Lucas 10:25",
@@ -5479,7 +5484,7 @@
           },
           {
             "number": 30,
-            "text": "Eles responderam: “Se deseja que creiamos no senhor, mostre- nos um sinal. O que o senhor pode fazer?",
+            "text": "Eles responderam: “Se deseja que creiamos no senhor, mostre-nos um sinal. O que o senhor pode fazer?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5565,7 +5570,7 @@
               },
               {
                 "ref": "1 Timóteo 1:15",
-                "text": "Esta é uma afirmação digna de confiança, e todos devem aceitá- la: “Cristo Jesus veio ao mundo para salvar os pecadores”, e eu sou o pior de todos."
+                "text": "Esta é uma afirmação digna de confiança, e todos devem aceitá-la: “Cristo Jesus veio ao mundo para salvar os pecadores”, e eu sou o pior de todos."
               }
             ]
           },
@@ -5653,7 +5658,7 @@
               },
               {
                 "ref": "2 Timóteo 2:19",
-                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”."
               }
             ]
           },
@@ -5898,7 +5903,7 @@
               },
               {
                 "ref": "1 Coríntios 11:24–25",
-                "text": "agradeceu a Deus,- ­ partiu-o e disse: “Este é meu corpo, que é entregue por vocês. Façam isto em memória de mim”."
+                "text": "agradeceu a Deus,- partiu-o e disse: “Este é meu corpo, que é entregue por vocês. Façam isto em memória de mim”."
               },
               {
                 "ref": "1 Coríntios 10:16–17",
@@ -6263,7 +6268,7 @@
             "crossReferences": [
               {
                 "ref": "2 Timóteo 2:19",
-                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”."
               },
               {
                 "ref": "João 10:26",
@@ -6447,6 +6452,7 @@
   "7": {
     "book": "João",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Jesus e seus irmãos",
@@ -6539,7 +6545,7 @@
               },
               {
                 "ref": "Mateus 23:5",
-                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios131 mais largos que de costume e vestem mantos com franjas mais longas."
+                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios mais largos que de costume e vestem mantos com franjas mais longas."
               }
             ]
           },
@@ -6718,7 +6724,7 @@
               },
               {
                 "ref": "Apocalipse 2:13",
-                "text": "“Conheço o lugar onde você vive, a cidade onde está o trono de Satanás. Ainda assim, você permanece leal a meu nome. Recusou- se a negar sua fé em mim até mesmo quando Antipas, minha testemunha fiel, foi morto onde vocês..."
+                "text": "“Conheço o lugar onde você vive, a cidade onde está o trono de Satanás. Ainda assim, você permanece leal a meu nome. Recusou-se a negar sua fé em mim até mesmo quando Antipas, minha testemunha fiel, foi morto onde vocês..."
               }
             ]
           },
@@ -6848,7 +6854,7 @@
               },
               {
                 "ref": "Mateus 12:14",
-                "text": "Então os fariseus convocaram uma reunião para tramar um modo de matá-lo. Jesus, o Servo escolhido de Deus"
+                "text": "Então os fariseus convocaram uma reunião para tramar um modo de matá-lo."
               },
               {
                 "ref": "Gálatas 6:13",
@@ -6909,7 +6915,7 @@
               },
               {
                 "ref": "Romanos 4:9–11",
-                "text": "Por acaso essa bênção é apenas para os judeus, ou se estende também aos gentios incircuncidados?20 Já dissemos que Deus considerou Abraão justo por meio de sua fé."
+                "text": "Por acaso essa bênção é apenas para os judeus, ou se estende também aos gentios incircuncidados? Já dissemos que Deus considerou Abraão justo por meio de sua fé."
               },
               {
                 "ref": "Gálatas 3:17",
@@ -6942,7 +6948,7 @@
           },
           {
             "number": 24,
-            "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”. Jesus é o Messias?",
+            "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”.",
             "isJesusWords": true,
             "crossReferences": [
               {
@@ -6962,7 +6968,12 @@
                 "text": "Absolver o culpado e condenar o inocente são duas coisas detestáveis para o SENHOR."
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "title": "Jesus é o Messias?",
+        "verses": [
           {
             "number": 25,
             "text": "Alguns do povo, que moravam em Jerusalém, começaram a perguntar uns aos outros: “Não é este o homem a quem procuram matar?",
@@ -7003,7 +7014,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Miqueias 5:2"
+                "ref": "Miqueias 5:2",
+                "text": "Mas você, ó Belém Efrata, é apenas uma pequena vila entre todo o povo de Judá. E, no entanto, um governante de Israel, cujas origens são do passado distante, sairá de você em meu favor."
               },
               {
                 "ref": "João 7:41–42",
@@ -7178,7 +7190,7 @@
           },
           {
             "number": 35,
-            "text": "Os judeus se perguntavam: “Para onde ele pretende ir? Será que planeja partir e ir aos judeus em outras terras?34 Talvez até ensine aos gregos!",
+            "text": "Os judeus se perguntavam: “Para onde ele pretende ir? Será que planeja partir e ir aos judeus em outras terras? Talvez até ensine aos gregos!",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -7275,10 +7287,12 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Atos 2:17"
+                "ref": "Atos 2:17",
+                "text": "‘Nos últimos dias’, disse Deus, ‘derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os jovens terão visões, e os velhos terão sonhos."
               },
               {
-                "ref": "Joel 2:28"
+                "ref": "Joel 2:28",
+                "text": "“Então, depois que eu tiver feito essas coisas, derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os velhos terão sonhos, e os jovens terão visões."
               },
               {
                 "ref": "João 14:16–17",
@@ -7306,7 +7320,7 @@
               },
               {
                 "ref": "João 1:21",
-                "text": "“Então quem é você?”, perguntaram eles. “É Elias?” “Não”, respondeu ele. “É o Profeta por quem temos esperado?”5 “Não.”"
+                "text": "“Então quem é você?”, perguntaram eles. “É Elias?” “Não”, respondeu ele. “É o Profeta por quem temos esperado?” “Não.”"
               },
               {
                 "ref": "João 6:14",
@@ -7339,11 +7353,12 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Miqueias 5:2"
+                "ref": "Miqueias 5:2",
+                "text": "Mas você, ó Belém Efrata, é apenas uma pequena vila entre todo o povo de Judá. E, no entanto, um governante de Israel, cujas origens são do passado distante, sairá de você em meu favor."
               },
               {
                 "ref": "Mateus 2:5",
-                "text": "Eles responderam: “Em Belém da Judeia, pois assim escreveu o profeta: 6‘E você, Belém, na terra de Judá, não é a menor entre as principais cidades de Judá, pois de você virá um governante que será o pastor do meu povo, Israel’”."
+                "text": "Eles responderam: “Em Belém da Judeia, pois assim escreveu o profeta:"
               },
               {
                 "ref": "Jeremias 23:5",
@@ -7373,7 +7388,8 @@
                 "text": "Vocês pensam que vim trazer paz à terra? Não! Eu vim causar divisão!"
               },
               {
-                "ref": "Mateus 10:35"
+                "ref": "Mateus 10:35",
+                "text": "‘Vim para pôr o homem contra seu pai, a filha contra sua mãe, e a nora contra sua sogra."
               }
             ]
           },
@@ -7445,7 +7461,7 @@
               },
               {
                 "ref": "2 Coríntios 6:8",
-                "text": "Servimos quer as pessoas nos honrem, quer nos desprezem, quer nos difamem, quer nos elogiem. Somos chamados de impostores, apesar de sermos honestos. 9 ­Somos tratados como desconhecidos, embora sejamos bem conhecidos. V..."
+                "text": "Servimos quer as pessoas nos honrem, quer nos desprezem, quer nos difamem, quer nos elogiem. Somos chamados de impostores, apesar de sermos honestos."
               },
               {
                 "ref": "Mateus 27:63",
@@ -7533,7 +7549,7 @@
               },
               {
                 "ref": "Atos 23:3",
-                "text": "Então Paulo lhe disse: “Deus o ferirá, seu grande hipócrita!115 Que espécie de juiz é o senhor, desrespeitando a lei ao mandar me agredir dessa forma?”."
+                "text": "Então Paulo lhe disse: “Deus o ferirá, seu grande hipócrita! Que espécie de juiz é o senhor, desrespeitando a lei ao mandar me agredir dessa forma?”."
               },
               {
                 "ref": "Deuteronômio 19:15–19",
@@ -7555,7 +7571,8 @@
                 "text": "“Nazaré!”, exclamou Natanael. “Pode vir alguma coisa boa de Nazaré?” “Venha e veja você mesmo”, respondeu Filipe."
               },
               {
-                "ref": "Isaías 9:1–2"
+                "ref": "Isaías 9:1–2",
+                "text": "Esse tempo de escuridão e desespero, no entanto, não durará para sempre. A terra de Zebulom e de Naftali será humilhada, mas no futuro a Galileia dos gentios, localizada junto à estrada entre o Jordão e o mar, se encherá de glória."
               },
               {
                 "ref": "Mateus 4:15–16",
@@ -7593,6 +7610,7 @@
   "8": {
     "book": "João",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "Uma mulher é pega em adultério",
@@ -7879,7 +7897,8 @@
                 "text": "“Escreva esta carta ao anjo da igreja em Laodiceia. Esta é a mensagem daquele que é o Amém, a testemunha fiel e verdadeira, a origem da criação de Deus:"
               },
               {
-                "ref": "Números 12:3"
+                "ref": "Números 12:3",
+                "text": "(Ora, Moisés era muito humilde, mais que qualquer outra pessoa na terra.)"
               }
             ]
           },
@@ -7898,7 +7917,7 @@
               },
               {
                 "ref": "João 7:24",
-                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”. Jesus é o Messias?"
+                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”."
               },
               {
                 "ref": "Romanos 2:1",
@@ -7940,7 +7959,7 @@
               },
               {
                 "ref": "Deuteronômio 17:6",
-                "text": "Jamais exe­cutem alguém com base no depoimento de apenas uma testemunha. Deve sempre haver duas ou três testemunhas."
+                "text": "Jamais executem alguém com base no depoimento de apenas uma testemunha. Deve sempre haver duas ou três testemunhas."
               },
               {
                 "ref": "Hebreus 10:28",
@@ -7971,7 +7990,7 @@
               },
               {
                 "ref": "Hebreus 2:4",
-                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade. Jesus, o homem"
+                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade."
               }
             ]
           },
@@ -8490,7 +8509,7 @@
               },
               {
                 "ref": "Isaías 63:16",
-                "text": "Certamente ainda és nosso Pai! Ainda que Abraão e Jacó176 nos deserdassem, continuarias, SENHOR, a ser nosso Pai; és nosso Redentor desde as eras passadas."
+                "text": "Certamente ainda és nosso Pai! Ainda que Abraão e Jacó nos deserdassem, continuarias, SENHOR, a ser nosso Pai; és nosso Redentor desde as eras passadas."
               },
               {
                 "ref": "João 8:38",
@@ -8655,7 +8674,7 @@
               },
               {
                 "ref": "Mateus 15:7",
-                "text": "Hipócritas! Isaías tinha razão quando assim profetizou a seu respeito: 8‘Este povo me honra com os lábios, mas o coração está longe de mim."
+                "text": "Hipócritas! Isaías tinha razão quando assim profetizou a seu respeito:"
               },
               {
                 "ref": "Tiago 2:19",
@@ -8860,7 +8879,7 @@
               },
               {
                 "ref": "João 17:5",
-                "text": "Agora, Pai, glorifica- me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
+                "text": "Agora, Pai, glorifica-me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
               },
               {
                 "ref": "João 1:1–2",
@@ -8898,9 +8917,10 @@
   "9": {
     "book": "João",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
-        "title": "Jesus cura um homem cego de nascença",
+        "title": "Jesus traz luz aos cegos",
         "verses": [
           {
             "number": 1,
@@ -9611,7 +9631,7 @@
               },
               {
                 "ref": "Romanos 10:20",
-                "text": "E, mais tarde, Isaías se pronunciou com ou­sadia: “Fui encontrado por aqueles que não me procuravam. Revelei-me àqueles que não perguntavam por mim”."
+                "text": "E, mais tarde, Isaías se pronunciou com ousadia: “Fui encontrado por aqueles que não me procuravam. Revelei-me àqueles que não perguntavam por mim”."
               },
               {
                 "ref": "1 João 4:15",
@@ -9764,9 +9784,10 @@
   "10": {
     "book": "João",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
-        "title": "O bom pastor e suas ovelhas",
+        "title": "O Bom Pastor e suas ovelhas",
         "verses": [
           {
             "number": 1,
@@ -9802,7 +9823,7 @@
               },
               {
                 "ref": "Atos 20:28",
-                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos,102 a fim de pastorearem sua igreja, comprada com seu próprio sangue."
+                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos, a fim de pastorearem sua igreja, comprada com seu próprio sangue."
               },
               {
                 "ref": "Salmos 23:1",
@@ -9825,7 +9846,7 @@
               },
               {
                 "ref": "2 Timóteo 2:19",
-                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”."
               },
               {
                 "ref": "João 10:4",
@@ -9994,7 +10015,7 @@
               },
               {
                 "ref": "1 Timóteo 1:15",
-                "text": "Esta é uma afirmação digna de confiança, e todos devem aceitá- la: “Cristo Jesus veio ao mundo para salvar os pecadores”, e eu sou o pior de todos."
+                "text": "Esta é uma afirmação digna de confiança, e todos devem aceitá-la: “Cristo Jesus veio ao mundo para salvar os pecadores”, e eu sou o pior de todos."
               }
             ]
           },
@@ -10074,7 +10095,7 @@
               },
               {
                 "ref": "2 Timóteo 2:19",
-                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”."
               },
               {
                 "ref": "João 10:11",
@@ -10243,7 +10264,7 @@
               },
               {
                 "ref": "Mateus 11:5",
-                "text": "os cegos veem, os aleijados andam, os leprosos são purificados, os surdos ouvem, os mortos são ressuscitados e as boas- novas são anunciadas aos pobres”."
+                "text": "os cegos veem, os aleijados andam, os leprosos são purificados, os surdos ouvem, os mortos são ressuscitados e as boas-novas são anunciadas aos pobres”."
               }
             ]
           }
@@ -10447,7 +10468,7 @@
               },
               {
                 "ref": "Mateus 28:19",
-                "text": "Portanto, vão e façam discípulos de todas as nações,170 batizando-os em nome do Pai, do Filho e do Espírito Santo."
+                "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo."
               }
             ]
           },
@@ -10535,7 +10556,7 @@
               },
               {
                 "ref": "Salmos 82:1",
-                "text": "Deus preside a assembleia dos céus; no meio dos seres celestiais,110 anuncia seu julgamento:"
+                "text": "Deus preside a assembleia dos céus; no meio dos seres celestiais, anuncia seu julgamento:"
               },
               {
                 "ref": "Êxodo 4:16",
@@ -10696,7 +10717,7 @@
               },
               {
                 "ref": "Mateus 4:23–25",
-                "text": "Jesus viajou por toda a região da Galileia, ensinando nas sinagogas, anunciando as ­boas-novas do reino e curando as pessoas de todo tipo de doenças."
+                "text": "Jesus viajou por toda a região da Galileia, ensinando nas sinagogas, anunciando as boas-novas do reino e curando as pessoas de todo tipo de doenças."
               }
             ]
           },
@@ -10722,6 +10743,7 @@
   "11": {
     "book": "João",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "A ressurreição de Lázaro",
@@ -10863,7 +10885,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 20:22–24",
-                "text": "“Agora, impelido pelo Espírito,100 vou a Jerusalém. Não sei o que me espera ali,"
+                "text": "“Agora, impelido pelo Espírito, vou a Jerusalém. Não sei o que me espera ali,"
               },
               {
                 "ref": "João 10:40–42",
@@ -11362,7 +11384,7 @@
               },
               {
                 "ref": "Gênesis 37:35",
-                "text": "A família toda tentou consolá-lo, mas ele se recusava. “Descerei à sepultura139 lamentando a morte de meu filho”, dizia, e continuou a lamentar-se."
+                "text": "A família toda tentou consolá-lo, mas ele se recusava. “Descerei à sepultura lamentando a morte de meu filho”, dizia, e continuou a lamentar-se."
               },
               {
                 "ref": "2 Samuel 12:16–18",
@@ -11408,7 +11430,7 @@
               },
               {
                 "ref": "João 12:27",
-                "text": "“Agora minha alma está angustiada. Acaso devo orar ‘Pai, salva- me desta hora’? Mas foi exatamente por esse motivo que eu vim!"
+                "text": "“Agora minha alma está angustiada. Acaso devo orar ‘Pai, salva-me desta hora’? Mas foi exatamente por esse motivo que eu vim!"
               },
               {
                 "ref": "Marcos 3:5",
@@ -11758,7 +11780,7 @@
               },
               {
                 "ref": "Zacarias 14:1–2",
-                "text": "Fiquem atentos, pois se aproxima o dia do SENHOR, em que seus bens serão saqueados diante de vocês! Rs 25.."
+                "text": "Fiquem atentos, pois se aproxima o dia do SENHOR, em que seus bens serão saqueados diante de vocês!"
               }
             ]
           },
@@ -11968,6 +11990,7 @@
   "12": {
     "book": "João",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "Jesus é ungido em Betânia",
@@ -12251,7 +12274,7 @@
           },
           {
             "number": 13,
-            "text": "tomou ramos de palmeiras e saiu ao seu encontro, gritando: “Hosana!57 Bendito é o que vem em nome do Senhor! Bendito é o Rei de Israel!”.",
+            "text": "tomou ramos de palmeiras e saiu ao seu encontro, gritando: “Hosana! Bendito é o que vem em nome do Senhor! Bendito é o Rei de Israel!”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -12264,7 +12287,7 @@
               },
               {
                 "ref": "Mateus 21:9–11",
-                "text": "E as pessoas, tanto as que iam à frente como as que o seguiam, gritavam: “Hosana,118 Filho de Davi! Bendito é o que vem em nome do Senhor! Hosana no mais alto céu!”."
+                "text": "E as pessoas, tanto as que iam à frente como as que o seguiam, gritavam: “Hosana, Filho de Davi! Bendito é o que vem em nome do Senhor! Hosana no mais alto céu!”."
               },
               {
                 "ref": "Lucas 19:35–38",
@@ -12279,7 +12302,7 @@
             "crossReferences": [
               {
                 "ref": "Zacarias 9:9",
-                "text": "Alegre-se, ó povo de Sião!29 Exulte, ó preciosa Jerusalém!30 Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
+                "text": "Alegre-se, ó povo de Sião! Exulte, ó preciosa Jerusalém! Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
               },
               {
                 "ref": "Marcos 11:1–7",
@@ -12302,11 +12325,11 @@
             "crossReferences": [
               {
                 "ref": "Zacarias 9:9",
-                "text": "Alegre-se, ó povo de Sião!29 Exulte, ó preciosa Jerusalém!30 Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
+                "text": "Alegre-se, ó povo de Sião! Exulte, ó preciosa Jerusalém! Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
               },
               {
                 "ref": "Isaías 62:11",
-                "text": "O SENHOR enviou esta mensagem até os confins da terra: “Digam ao povo de Sião:174 Vejam, seu Salvador se aproxima! Olhem, ele traz consigo sua recompensa!”."
+                "text": "O SENHOR enviou esta mensagem até os confins da terra: “Digam ao povo de Sião: Vejam, seu Salvador se aproxima! Olhem, ele traz consigo sua recompensa!”."
               },
               {
                 "ref": "Sofonias 3:16–17",
@@ -12410,11 +12433,11 @@
             "crossReferences": [
               {
                 "ref": "João 7:35",
-                "text": "Os judeus se perguntavam: “Para onde ele pretende ir? Será que planeja partir e ir aos judeus em outras terras?34 Talvez até ensine aos gregos!"
+                "text": "Os judeus se perguntavam: “Para onde ele pretende ir? Será que planeja partir e ir aos judeus em outras terras? Talvez até ensine aos gregos!"
               },
               {
                 "ref": "Isaías 11:10",
-                "text": "Naquele dia, o descendente de Jessé46 será uma bandeira de salvação para todo o mundo. As nações se reunirão junto a ele, e a terra onde ele habita será um lugar glorioso."
+                "text": "Naquele dia, o descendente de Jessé será uma bandeira de salvação para todo o mundo. As nações se reunirão junto a ele, e a terra onde ele habita será um lugar glorioso."
               },
               {
                 "ref": "Atos 17:4",
@@ -12566,7 +12589,7 @@
           },
           {
             "number": 27,
-            "text": "“Agora minha alma está angustiada. Acaso devo orar ‘Pai, salva- me desta hora’? Mas foi exatamente por esse motivo que eu vim!",
+            "text": "“Agora minha alma está angustiada. Acaso devo orar ‘Pai, salva-me desta hora’? Mas foi exatamente por esse motivo que eu vim!",
             "isJesusWords": true,
             "crossReferences": [
               {
@@ -12583,7 +12606,7 @@
               },
               {
                 "ref": "Mateus 26:42",
-                "text": "Então os deixou pela segunda vez e orou: “Meu Pai! Se não for possível afastar de mim este cálice152 sem que eu o beba, faça-se a tua vontade”."
+                "text": "Então os deixou pela segunda vez e orou: “Meu Pai! Se não for possível afastar de mim este cálice sem que eu o beba, faça-se a tua vontade”."
               }
             ]
           },
@@ -12598,7 +12621,7 @@
               },
               {
                 "ref": "Mateus 26:42",
-                "text": "Então os deixou pela segunda vez e orou: “Meu Pai! Se não for possível afastar de mim este cálice152 sem que eu o beba, faça-se a tua vontade”."
+                "text": "Então os deixou pela segunda vez e orou: “Meu Pai! Se não for possível afastar de mim este cálice sem que eu o beba, faça-se a tua vontade”."
               },
               {
                 "ref": "Apocalipse 5:9–14",
@@ -12829,7 +12852,7 @@
               },
               {
                 "ref": "Romanos 10:20",
-                "text": "E, mais tarde, Isaías se pronunciou com ou­sadia: “Fui encontrado por aqueles que não me procuravam. Revelei-me àqueles que não perguntavam por mim”."
+                "text": "E, mais tarde, Isaías se pronunciou com ousadia: “Fui encontrado por aqueles que não me procuravam. Revelei-me àqueles que não perguntavam por mim”."
               },
               {
                 "ref": "2 Coríntios 4:3–6",
@@ -12940,7 +12963,7 @@
               },
               {
                 "ref": "Mateus 23:5–7",
-                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios131 mais largos que de costume e vestem mantos com franjas mais longas."
+                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios mais largos que de costume e vestem mantos com franjas mais longas."
               },
               {
                 "ref": "João 5:41",
@@ -13036,7 +13059,7 @@
               },
               {
                 "ref": "1 Timóteo 1:15–16",
-                "text": "Esta é uma afirmação digna de confiança, e todos devem aceitá- la: “Cristo Jesus veio ao mundo para salvar os pecadores”, e eu sou o pior de todos."
+                "text": "Esta é uma afirmação digna de confiança, e todos devem aceitá-la: “Cristo Jesus veio ao mundo para salvar os pecadores”, e eu sou o pior de todos."
               },
               {
                 "ref": "1 João 4:14",
@@ -13120,6 +13143,7 @@
   "13": {
     "book": "João",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "Jesus lava os pés de seus discípulos",
@@ -13665,7 +13689,7 @@
               },
               {
                 "ref": "Atos 21:40",
-                "text": "O comandante concordou, de modo que Paulo ficou em pé na escadaria e fez sinal para o povo se calar. Logo, um silêncio profundo envolveu a multidão, e ele lhes falou em aramaico,109 o idioma deles."
+                "text": "O comandante concordou, de modo que Paulo ficou em pé na escadaria e fez sinal para o povo se calar. Logo, um silêncio profundo envolveu a multidão, e ele lhes falou em aramaico, o idioma deles."
               },
               {
                 "ref": "Atos 12:17",
@@ -13944,11 +13968,11 @@
               },
               {
                 "ref": "João 21:15",
-                "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”.100 “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus."
+                "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”. “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus."
               },
               {
                 "ref": "Marcos 14:27–31",
-                "text": "No caminho, Jesus disse: “Todos vocês me abandonarão, pois as Escrituras dizem: ‘Deus ferirá77 o pastor, e as ovelhas serão dispersas’."
+                "text": "No caminho, Jesus disse: “Todos vocês me abandonarão, pois as Escrituras dizem: ‘Deus ferirá o pastor, e as ovelhas serão dispersas’."
               }
             ]
           },
@@ -13982,6 +14006,7 @@
   "14": {
     "book": "João",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
         "title": "Jesus, o caminho para o Pai",
@@ -14227,7 +14252,7 @@
               },
               {
                 "ref": "Hebreus 2:4",
-                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade. Jesus, o homem"
+                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade."
               },
               {
                 "ref": "Atos 2:22",
@@ -14242,7 +14267,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 21:21",
-                "text": "Jesus respondeu: “Eu lhes digo a verdade: se vocês tiverem fé e não duvidarem, poderão fazer o mesmo que fiz com esta figueira, e muito mais. Poderão até dizer a este monte: ‘Levante-se e ­atire-se no mar’, e isso acontecerá."
+                "text": "Jesus respondeu: “Eu lhes digo a verdade: se vocês tiverem fé e não duvidarem, poderão fazer o mesmo que fiz com esta figueira, e muito mais. Poderão até dizer a este monte: ‘Levante-se e atire-se no mar’, e isso acontecerá."
               },
               {
                 "ref": "Marcos 16:17",
@@ -14691,6 +14716,7 @@
   "15": {
     "book": "João",
     "chapter": "15",
+    "verified": true,
     "sections": [
       {
         "title": "Jesus, a videira verdadeira",
@@ -15246,7 +15272,7 @@
           },
           {
             "number": 25,
-            "text": "Isso cumpre o que está registrado nas Escrituras deles: ‘Odiaram- me sem motivo’.",
+            "text": "Isso cumpre o que está registrado nas Escrituras deles: ‘Odiaram-me sem motivo’.",
             "isJesusWords": true,
             "crossReferences": [
               {
@@ -15263,7 +15289,7 @@
               },
               {
                 "ref": "2 Coríntios 11:7",
-                "text": "Será que fiz mal quando me humilhei e os honrei anunciando- lhes as boas-novas de Deus sem esperar nada em troca?"
+                "text": "Será que fiz mal quando me humilhei e os honrei anunciando-lhes as boas-novas de Deus sem esperar nada em troca?"
               }
             ]
           },
@@ -15320,9 +15346,10 @@
   "16": {
     "book": "João",
     "chapter": "16",
+    "verified": true,
     "sections": [
       {
-        "title": "A perseguição aos discípulos",
+        "title": "",
         "verses": [
           {
             "number": 1,
@@ -15339,7 +15366,7 @@
               },
               {
                 "ref": "Mateus 26:31–33",
-                "text": "No caminho, Jesus disse: “Esta noite todos vocês me abandonarão, pois as Escrituras dizem: ‘Deus ferirá151 o pastor, e as ovelhas do rebanho serão dispersas’."
+                "text": "No caminho, Jesus disse: “Esta noite todos vocês me abandonarão, pois as Escrituras dizem: ‘Deus ferirá o pastor, e as ovelhas do rebanho serão dispersas’."
               },
               {
                 "ref": "João 15:18–27",
@@ -16026,7 +16053,7 @@
               },
               {
                 "ref": "Mateus 26:31",
-                "text": "No caminho, Jesus disse: “Esta noite todos vocês me abandonarão, pois as Escrituras dizem: ‘Deus ferirá151 o pastor, e as ovelhas do rebanho serão dispersas’."
+                "text": "No caminho, Jesus disse: “Esta noite todos vocês me abandonarão, pois as Escrituras dizem: ‘Deus ferirá o pastor, e as ovelhas do rebanho serão dispersas’."
               },
               {
                 "ref": "João 8:29",
@@ -16034,7 +16061,7 @@
               },
               {
                 "ref": "Marcos 14:27",
-                "text": "No caminho, Jesus disse: “Todos vocês me abandonarão, pois as Escrituras dizem: ‘Deus ferirá77 o pastor, e as ovelhas serão dispersas’."
+                "text": "No caminho, Jesus disse: “Todos vocês me abandonarão, pois as Escrituras dizem: ‘Deus ferirá o pastor, e as ovelhas serão dispersas’."
               }
             ]
           },
@@ -16068,6 +16095,7 @@
   "17": {
     "book": "João",
     "chapter": "17",
+    "verified": true,
     "sections": [
       {
         "title": "A oração de Jesus",
@@ -16079,7 +16107,7 @@
             "crossReferences": [
               {
                 "ref": "João 17:4–5",
-                "text": "Eu te glorifiquei aqui na terra, completando a obra que me deste para realizar. Agora, Pai, glorifica- me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
+                "text": "Eu te glorifiquei aqui na terra, completando a obra que me deste para realizar. Agora, Pai, glorifica-me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
               },
               {
                 "ref": "Filipenses 2:9–11",
@@ -16166,7 +16194,7 @@
           },
           {
             "number": 5,
-            "text": "Agora, Pai, glorifica- me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo.",
+            "text": "Agora, Pai, glorifica-me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo.",
             "isJesusWords": true,
             "crossReferences": [
               {
@@ -16462,7 +16490,7 @@
               },
               {
                 "ref": "Efésios 3:7",
-                "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas- novas."
+                "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas-novas."
               }
             ]
           },
@@ -16592,7 +16620,7 @@
               },
               {
                 "ref": "João 17:5",
-                "text": "Agora, Pai, glorifica- me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
+                "text": "Agora, Pai, glorifica-me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
               },
               {
                 "ref": "2 Coríntios 4:6",
@@ -16657,6 +16685,7 @@
   "18": {
     "book": "João",
     "chapter": "18",
+    "verified": true,
     "sections": [
       {
         "title": "Jesus é traído e preso",
@@ -16718,7 +16747,7 @@
               },
               {
                 "ref": "Salmos 3:1–2",
-                "text": "Ó SENHOR, tenho tantos inimigos; tanta gente é contra mim! São muitos os que dizem: “Deus nunca o livrará!”."
+                "text": "Ó SENHOR, tenho tantos inimigos; tanta gente é contra mim! São muitos os que dizem: “Deus nunca o livrará!”. Interlúdio"
               },
               {
                 "ref": "Salmos 22:12",
@@ -16745,7 +16774,7 @@
               },
               {
                 "ref": "Atos 20:22–23",
-                "text": "“Agora, impelido pelo Espírito,100 vou a Jerusalém. Não sei o que me espera ali, senão que o Espírito Santo me diz, em todas as cidades, que tenho pela frente prisão e sofrimento."
+                "text": "“Agora, impelido pelo Espírito, vou a Jerusalém. Não sei o que me espera ali, senão que o Espírito Santo me diz, em todas as cidades, que tenho pela frente prisão e sofrimento."
               }
             ]
           },
@@ -16882,7 +16911,7 @@
               },
               {
                 "ref": "João 12:27–28",
-                "text": "“Agora minha alma está angustiada. Acaso devo orar ‘Pai, salva- me desta hora’? Mas foi exatamente por esse motivo que eu vim!"
+                "text": "“Agora minha alma está angustiada. Acaso devo orar ‘Pai, salva-me desta hora’? Mas foi exatamente por esse motivo que eu vim!"
               }
             ]
           },
@@ -17048,7 +17077,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 26:59–68",
-                "text": "Lá dentro, os principais sacerdotes e todo o conselho dos líderes do povo154 tentavam encontrar testemunhas que mentissem a respeito de Jesus, para que pudessem condená-lo à morte."
+                "text": "Lá dentro, os principais sacerdotes e todo o conselho dos líderes do povo tentavam encontrar testemunhas que mentissem a respeito de Jesus, para que pudessem condená-lo à morte."
               },
               {
                 "ref": "Lucas 22:63–71",
@@ -17079,7 +17108,7 @@
               },
               {
                 "ref": "Mateus 4:23",
-                "text": "Jesus viajou por toda a região da Galileia, ensinando nas sinagogas, anunciando as ­boas-novas do reino e curando as pessoas de todo tipo de doenças."
+                "text": "Jesus viajou por toda a região da Galileia, ensinando nas sinagogas, anunciando as boas-novas do reino e curando as pessoas de todo tipo de doenças."
               },
               {
                 "ref": "Lucas 21:37",
@@ -17102,7 +17131,7 @@
               },
               {
                 "ref": "Mateus 26:59–60",
-                "text": "Lá dentro, os principais sacerdotes e todo o conselho dos líderes do povo154 tentavam encontrar testemunhas que mentissem a respeito de Jesus, para que pudessem condená-lo à morte."
+                "text": "Lá dentro, os principais sacerdotes e todo o conselho dos líderes do povo tentavam encontrar testemunhas que mentissem a respeito de Jesus, para que pudessem condená-lo à morte."
               },
               {
                 "ref": "Atos 24:12–13",
@@ -17125,7 +17154,7 @@
               },
               {
                 "ref": "Mateus 26:67–68",
-                "text": "Então começaram a cuspir no rosto de Jesus e a dar-lhe socos. e zombavam: “Profetize para nós, Cristo! Quem foi que lhe bateu desta vez?”."
+                "text": "Então começaram a cuspir no rosto de Jesus e a dar-lhe socos. Alguns lhe davam tapas e zombavam: “Profetize para nós, Cristo! Quem foi que lhe bateu desta vez?”."
               },
               {
                 "ref": "Isaías 50:5–7",
@@ -17224,7 +17253,7 @@
           },
           {
             "number": 27,
-            "text": "Mais uma vez, Pedro negou. E, no mesmo instante, o galo ­cantou.",
+            "text": "Mais uma vez, Pedro negou. E, no mesmo instante, o galo cantou.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -17269,7 +17298,7 @@
               },
               {
                 "ref": "Mateus 27:27",
-                "text": "Alguns dos soldados do governador levaram Jesus ao quartel162 e chamaram todo o regimento."
+                "text": "Alguns dos soldados do governador levaram Jesus ao quartel e chamaram todo o regimento."
               }
             ]
           },
@@ -17376,11 +17405,11 @@
               },
               {
                 "ref": "João 12:13",
-                "text": "tomou ramos de palmeiras e saiu ao seu encontro, gritando: “Hosana!57 Bendito é o que vem em nome do Senhor! Bendito é o Rei de Israel!”."
+                "text": "tomou ramos de palmeiras e saiu ao seu encontro, gritando: “Hosana! Bendito é o que vem em nome do Senhor! Bendito é o Rei de Israel!”."
               },
               {
                 "ref": "Zacarias 9:9",
-                "text": "Alegre-se, ó povo de Sião!29 Exulte, ó preciosa Jerusalém!30 Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
+                "text": "Alegre-se, ó povo de Sião! Exulte, ó preciosa Jerusalém! Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
               },
               {
                 "ref": "João 19:12",
@@ -17465,7 +17494,35 @@
           },
           {
             "number": 38,
-            "text": "Pilatos perguntou: “Que é a verdade?”. Jesus é condenado à morte Depois que disse isso, Pilatos saiu outra vez para onde estava o povo e declarou: “Ele não é culpado de crime algum.",
+            "text": "Pilatos perguntou: “Que é a verdade?”.",
+            "isJesusWords": false,
+            "crossReferences": [
+              {
+                "ref": "João 19:4",
+                "text": "Pilatos saiu outra vez e disse ao povo: “Agora vou trazê-lo aqui para vocês, mas que fique bem claro: eu o considero inocente”."
+              },
+              {
+                "ref": "Lucas 23:4",
+                "text": "Pilatos se voltou para os principais sacerdotes e para a multidão e disse: “Não vejo crime algum neste homem!”."
+              },
+              {
+                "ref": "João 19:6",
+                "text": "Quando os principais sacerdotes e os guardas do templo o viram, começaram a gritar: “Crucifique-o! Crucifique-o!”. “Levem-no vocês e crucifiquem-no”, disse Pilatos. “Eu o considero inocente.”"
+              },
+              {
+                "ref": "Atos 17:32",
+                "text": "Quando ouviram Paulo falar da ressurreição dos mortos, alguns riram com desprezo. Outros, porém, disseram: “Queremos ouvir mais sobre isso em outra ocasião”."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Jesus é condenado à morte",
+        "verses": [
+          {
+            "number": 38,
+            "text": "Depois que disse isso, Pilatos saiu outra vez para onde estava o povo e declarou: “Ele não é culpado de crime algum.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -17539,9 +17596,10 @@
   "19": {
     "book": "João",
     "chapter": "19",
+    "verified": true,
     "sections": [
       {
-        "title": "Jesus é açoitado e ridicularizado",
+        "title": "",
         "verses": [
           {
             "number": 1,
@@ -17619,7 +17677,7 @@
             "crossReferences": [
               {
                 "ref": "João 18:38",
-                "text": "Pilatos perguntou: “Que é a verdade?”. Jesus é condenado à morte Depois que disse isso, Pilatos saiu outra vez para onde estava o povo e declarou: “Ele não é culpado de crime algum."
+                "text": "Pilatos perguntou: “Que é a verdade?”."
               },
               {
                 "ref": "João 19:6",
@@ -17749,7 +17807,7 @@
             "crossReferences": [
               {
                 "ref": "Daniel 3:14–15",
-                "text": "ele lhes disse: “Sadraque, Mesaque e Abede-Nego, é verdade que vocês se ­recusam a servir meus deuses e a adorar a estátua que levantei?"
+                "text": "ele lhes disse: “Sadraque, Mesaque e Abede-Nego, é verdade que vocês se recusam a servir meus deuses e a adorar a estátua que levantei?"
               },
               {
                 "ref": "Daniel 5:19",
@@ -17818,7 +17876,7 @@
               },
               {
                 "ref": "Mateus 27:19",
-                "text": "Nesse momento, enquanto Pilatos estava sentado no tribunal, sua esposa lhe mandou o seguinte recado: “Deixe esse homem inocente em paz. Na noite passada, tive um sonho a respei­to dele e fiquei muito perturbada”."
+                "text": "Nesse momento, enquanto Pilatos estava sentado no tribunal, sua esposa lhe mandou o seguinte recado: “Deixe esse homem inocente em paz. Na noite passada, tive um sonho a respeito dele e fiquei muito perturbada”."
               },
               {
                 "ref": "Salmos 94:20–21",
@@ -17837,7 +17895,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 27:62",
-                "text": "No dia seguinte, no sábado,169 os principais sacerdotes e os fariseus foram a Pilatos"
+                "text": "No dia seguinte, no sábado, os principais sacerdotes e os fariseus foram a Pilatos"
               },
               {
                 "ref": "João 19:5",
@@ -17872,7 +17930,7 @@
               },
               {
                 "ref": "Gênesis 49:10",
-                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes,172 até que venha aquele a quem pertence,173 aquele que todas as nações honrarão."
+                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes, até que venha aquele a quem pertence, aquele que todas as nações honrarão."
               }
             ]
           },
@@ -17957,7 +18015,7 @@
               },
               {
                 "ref": "Lucas 23:38",
-                "text": "Uma tabuleta presa acima dele dizia: “E R J ”."
+                "text": "Uma tabuleta presa acima dele dizia: “ESTE É O REI DOS JUDEUS”."
               },
               {
                 "ref": "Marcos 15:26",
@@ -17976,11 +18034,11 @@
             "crossReferences": [
               {
                 "ref": "Atos 22:2",
-                "text": "Quando o ouviram falar em aramaico,110 o silêncio foi ainda maior."
+                "text": "Quando o ouviram falar em aramaico, o silêncio foi ainda maior."
               },
               {
                 "ref": "Atos 26:14",
-                "text": "Todos nós caímos no chão, e eu ouvi uma voz que me dizia em aramaico:125 ‘Saulo, Saulo, por que você me persegue? Não adianta lutar contra minha vontade’."
+                "text": "Todos nós caímos no chão, e eu ouvi uma voz que me dizia em aramaico: ‘Saulo, Saulo, por que você me persegue? Não adianta lutar contra minha vontade’."
               },
               {
                 "ref": "João 5:2",
@@ -18026,7 +18084,7 @@
               },
               {
                 "ref": "Gênesis 43:14",
-                "text": "Que o Deus Todo-poderoso150 lhes conceda misericórdia quando estiverem diante daquele homem, para que ele liberte Simeão e deixe Benjamim voltar. Mas, se devo perder meus filhos, que assim seja”."
+                "text": "Que o Deus Todo-poderoso lhes conceda misericórdia quando estiverem diante daquele homem, para que ele liberte Simeão e deixe Benjamim voltar. Mas, se devo perder meus filhos, que assim seja”."
               }
             ]
           },
@@ -18049,7 +18107,7 @@
               },
               {
                 "ref": "Êxodo 39:22–23",
-                "text": "Bezalel fez de uma só peça de tecido azul o manto que é usado com o colete sacerdotal, com uma abertura no meio da peça para a cabeça de Arão. A abertura foi reforçada com uma gola,140 para que não se rasgasse."
+                "text": "Bezalel fez de uma só peça de tecido azul o manto que é usado com o colete sacerdotal, com uma abertura no meio da peça para a cabeça de Arão. A abertura foi reforçada com uma gola, para que não se rasgasse."
               }
             ]
           },
@@ -18260,7 +18318,7 @@
               },
               {
                 "ref": "1 Reis 18:33",
-                "text": "Empilhou lenha sobre o altar, cortou o novilho em pedaços e colocou os pedaços sobre a lenha."
+                "text": "Empilhou lenha sobre o altar, cortou o novilho em pedaços e colocou os pedaços sobre a lenha. Em seguida, ordenou: “Encham quatro jarras grandes com água e derramem a água sobre o holocausto e a lenha”."
               },
               {
                 "ref": "Lucas 8:53",
@@ -18483,6 +18541,7 @@
   "20": {
     "book": "João",
     "chapter": "20",
+    "verified": true,
     "sections": [
       {
         "title": "A ressurreição",
@@ -18585,7 +18644,7 @@
               },
               {
                 "ref": "João 21:15–17",
-                "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”.100 “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus."
+                "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”. “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus."
               },
               {
                 "ref": "João 18:25–27",
@@ -18819,7 +18878,7 @@
               },
               {
                 "ref": "1 Pedro 1:3",
-                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos."
+                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos. Agora temos uma viva esperança"
               }
             ]
           },
@@ -18916,7 +18975,7 @@
               },
               {
                 "ref": "Marcos 16:15–18",
-                "text": "Jesus lhes disse: “Vão ao mundo inteiro e anunciem as boas- novas a todos."
+                "text": "Jesus lhes disse: “Vão ao mundo inteiro e anunciem as boas-novas a todos."
               }
             ]
           },
@@ -18945,12 +19004,12 @@
           },
           {
             "number": 23,
-            "text": "Se vocês perdoarem os pecados de alguém, eles estarão perdoados. Se não perdoarem, eles não ­estarão perdoados”.",
+            "text": "Se vocês perdoarem os pecados de alguém, eles estarão perdoados. Se não perdoarem, eles não estarão perdoados”.",
             "isJesusWords": true,
             "crossReferences": [
               {
                 "ref": "Mateus 18:18",
-                "text": "“Eu lhes digo a verdade: o que vocês ligarem na terra terá sido ligado no céu,101 e o que desligarem na terra terá sido desligado no céu."
+                "text": "“Eu lhes digo a verdade: o que vocês ligarem na terra terá sido ligado no céu, e o que desligarem na terra terá sido desligado no céu."
               },
               {
                 "ref": "Mateus 16:19",
@@ -19001,7 +19060,7 @@
             "crossReferences": [
               {
                 "ref": "João 6:30",
-                "text": "Eles responderam: “Se deseja que creiamos no senhor, mostre- nos um sinal. O que o senhor pode fazer?"
+                "text": "Eles responderam: “Se deseja que creiamos no senhor, mostre-nos um sinal. O que o senhor pode fazer?"
               },
               {
                 "ref": "Marcos 16:11",
@@ -19167,6 +19226,7 @@
   "21": {
     "book": "João",
     "chapter": "21",
+    "verified": true,
     "sections": [
       {
         "title": "Epílogo: Jesus aparece a sete discípulos",
@@ -19338,7 +19398,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 3:11"
+                "ref": "Deuteronômio 3:11",
+                "text": "(O rei Ogue de Basã foi o último sobrevivente dos refains. Sua cama era feita de ferro e media mais de quatro metros de comprimento e quase dois metros de largura. Ainda hoje é possível vê-la na cidade amonita de Rabá.)"
               }
             ]
           },
@@ -19410,7 +19471,7 @@
               },
               {
                 "ref": "João 21:15",
-                "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”.100 “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus."
+                "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”. “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus."
               }
             ]
           },
@@ -19447,15 +19508,10 @@
                 "text": "Ao entardecer daquele primeiro dia da semana, os discípulos estavam reunidos com as portas trancadas, por medo dos líderes judeus. De repente, Jesus surgiu no meio deles e disse: “Paz seja com vocês!”."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Jesus restaura Pedro",
-        "verses": [
+          },
           {
             "number": 15,
-            "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”.100 “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus.",
+            "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”. “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus.",
             "isJesusWords": true,
             "crossReferences": [
               {
@@ -19483,7 +19539,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 20:28",
-                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos,102 a fim de pastorearem sua igreja, comprada com seu próprio sangue."
+                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos, a fim de pastorearem sua igreja, comprada com seu próprio sangue."
               },
               {
                 "ref": "1 Pedro 5:2",
@@ -19524,7 +19580,7 @@
           },
           {
             "number": 18,
-            "text": "“Eu lhe digo a verdade: quando você era jovem, podia agir como bem entendia; vestia-se e ia aonde queria. Mas, quando for velho, estenderá as mãos e outros o vestirão e o levarão101 aonde você não quer ir”.",
+            "text": "“Eu lhe digo a verdade: quando você era jovem, podia agir como bem entendia; vestia-se e ia aonde queria. Mas, quando for velho, estenderá as mãos e outros o vestirão e o levarão aonde você não quer ir”.",
             "isJesusWords": true,
             "crossReferences": [
               {
@@ -19563,12 +19619,7 @@
                 "text": "Minha grande expectativa e esperança é que eu jamais seja envergonhado, mas que continue a trabalhar corajosamente, como sempre fiz, de modo que Cristo seja honrado por meu intermédio, quer eu viva, quer eu morra."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Jesus e o discípulo amado",
-        "verses": [
+          },
           {
             "number": 20,
             "text": "Pedro se virou e viu atrás deles o discípulo a quem Jesus amava, aquele que havia se reclinado perto de Jesus durante a ceia e perguntado: “Senhor, quem o trairá?”.",
@@ -19681,13 +19732,13 @@
               },
               {
                 "ref": "3 João 1:12",
-                "text": "Todos, incluindo a própria verdade, falam bem de Demétrio. Nós dizemos o mesmo a ­respeito dele, e você sabe que falamos a verdade."
+                "text": "Todos, incluindo a própria verdade, falam bem de Demétrio. Nós dizemos o mesmo a respeito dele, e você sabe que falamos a verdade."
               }
             ]
           },
           {
             "number": 25,
-            "text": "Jesus também fez muitas outras coisas. Se todas fossem registradas, suponho que nem o mundo inteiro poderia conter todos os livros que seriam escritos. 1 1. Ou e a escuridão não a entendeu. 2 1. Em grego, não nasceram do sangue, nem da vontade da carne. 3 1. Alguns manuscritos trazem o Deus único. 4 1. Ou Messias. Tanto Messias (do hebraico) como Cristo (do grego) significam “ungido”. 5 1. Em grego, É o Profeta? Ver Dt 18.,; Ml 4.5-6. 6 1. Ou Eu sou uma voz que clama: “Preparem no deserto o caminho para a vinda do Senhor!”. Is 40.. 7 1. Ou em; também em 1.,. 8 1. Alguns manuscritos trazem o Escolhido de Deus. 9 1. Tanto Cefas (do aramaico) como Pedro (do grego) significam “pedra”. 10 2. Em grego, 2 ou 3 metretas. 11 2. Ou A preocupação com a casa de Deus será minha ruína. Sl 69.. 12 3. Ou nascer do alto; também em 3.,. 13 3. O termo grego para Espírito também pode ser traduzido como vento. Ver 3.. 14 3.6 Em grego, O que é nascido da carne é carne, e o que é nascido do Espírito é espírito. 15 3. Alguns manuscritos acrescentam que hoje está no céu. 16 3. Ou para que todo o que crer tenha a vida eterna nele. 17 3. Ou para que vejam Deus operar por meio de suas ações. 18 3. Alguns manuscritos trazem alguns judeus. 19 3. Alguns manuscritos não trazem e é superior a todos. 20 4. Alguns manuscritos trazem O Senhor. 21 4. Em grego, neste monte. 22 4. Ou no Espírito e em verdade, ou de maneira verdadeiramente espiritual; também em 4.. 23 5. Alguns manuscritos trazem Bet-zata; outros, Betsaida. 24 5.3-4 Alguns manuscritos não trazem a frase esperando um movimento da água e todo o versículo 4. 25 5. Alguns manuscritos trazem do único. 26 6. Em grego, 200 denários não seriam suficientes. Um denário equivalia ao salário de um dia de trabalho. 27 6. Ver Dt 18.,; Ml 4.5-6. 28 6. Em grego, 25 ou 30 estádios. 29 6. Êx 16.; Sl 78.. 30 6. Em grego, os profetas. Is 54.. 31 6. Em grego, A carne para nada aproveita. 32 6. Alguns manuscritos trazem o senhor é o Cristo, o santo de Deus; outros, o senhor é o Cristo, o Filho de Deus; e ainda outros, o senhor é o Cristo, o Filho do Deus vivo. 33 7. Alguns manuscritos não trazem ainda. 34 7. Ou aos judeus que vivem entre os gregos? 35 7. Ver Dt 18.,; Ml 4.5-6. 36 7. Ver Mq 5.. 37 7. Alguns manuscritos não trazem os versículos 7.53—8.. 38 8. Ver Dt 19.. 39 8. Alguns manuscritos trazem Se vocês são mesmo filhos de Abraão, sigam o exemplo dele. 40 8. Alguns manuscritos trazem Vocês dizem que ele é seu Deus. 41 8. Em grego, antes que Abraão fosse, eu sou. Ver Êx 3.. 42 9. Alguns manuscritos trazem Filho de Deus? 43 9.38-39a Alguns manuscritos não trazem o versículo 38 e o início do versículo 39. 44 10. Ou encontrará segurança. 45 10.29 Alguns manuscritos trazem pois aquilo que meu Pai me deu é mais poderoso que tudo; outros, pois, com respeito àquilo que meu Pai me deu, ele é mais poderoso que todos. 46 10.34a Em grego, A própria lei. 47 10.34b Sl 82.. 48 11. Episódio relatado no capítulo 12. 49 11. Em grego, Tomé, chamado Dídimo. 50 11. Em grego, uns 15 estádios. 51 11. Ou irou-se em seu espírito. 52 11. Em grego, o Sinédrio. 53 11. Ou nossa posição. Em grego, nosso lugar. 54 12. Em grego, 1 litra, medida equivalente a cerca de 340 gramas. 55 12. Em grego, 300 denários. 56 12. Ou haviam abandonado suas tradições. Em grego, haviam desertado. 57 12.13a Exclamação de louvor que, em sua forma hebraica, significa “Salva agora!”. 58 12.13b Sl 118.25-26; Sf 3.. 59 12.15a Em grego, filha de Sião. 60 12.15b Zc 9.. 61 12. Em grego, davam testemunho disso. 62 12. Em grego, o mundo. 63 12. Em grego, pela lei. 64 12. Is 53.. 65 12. Is 6.. 66 13. Ou lhes mostrou toda a plenitude do seu amor. 67 13. Ou o diabo já havia planejado que Judas, filho de Simão Iscariotes, trairia Jesus. 68 13. Sl 41.. 69 13. Em grego, angustiou-se em espírito. 70 13. Em grego, estava reclinado sobre o peito dele. Provavelmente João; ver também 19.; 20.; 21.. 71 13. Alguns manuscritos não incluem a primeira parte do versículo 32. 72 14. Ou eu lhes teria dito que vou preparar um lugar para vocês. 73 14. Alguns manuscritos trazem Se vocês realmente me conheceram, saberão quem é meu Pai. 74 14. Alguns manuscritos trazem obedecerão. 75 14. Ou Conselheiro, ou Consolador. O grego traz parakletos; também em 14.. 76 14. Alguns manuscritos trazem e está em vocês. 77 15. Em grego, na lei deles. Sl 35.; 69.. 78 15. Ou Conselheiro, ou Consolador. O grego traz parakletos. 79 16. Ou Conselheiro, ou Consolador. O grego traz parakletos. 80 16. Alguns manuscritos trazem do Pai. 81 17. Alguns manuscritos trazem tu me deste estes [discípulos]. 82 17. Alguns manuscritos trazem eu protegi aqueles que me deste, com o poder do teu nome. 83 18. Ou Jesus de Nazaré; também em 18.. 84 18. Ver Jo 6.; 17.. 85 18. Em grego, Pretório; também em 18.. 86 18. Em grego, Não temos permissão de executar ninguém. 87 18. Ver Jo 12.32-33. 88 19. Em grego, Pretório. 89 19. Ou Jesus de Nazaré. 90 19. Sl 22.. 91 19. Sl 22.; 69.. 92 19. Êx 12.; Nm 9.; Sl 34.. 93 19. Zc 12.. 94 19. Em grego, 100 litras. 95 19. Em grego, Por causa do dia judaico da preparação. 96 20. Em grego, Tomé, chamado Dídimo. 97 21. Outro nome para o mar da Galileia. 98 21. Em grego, Tomé, chamado Dídimo. 99 21. Em grego, 200 côvados. 100 21. Ou mais do que estes outros me amam? 101 21. Alguns manuscritos trazem outro o vestirá e o levará.",
+            "text": "Jesus também fez muitas outras coisas. Se todas fossem registradas, suponho que nem o mundo inteiro poderia conter todos os livros que seriam escritos.",
             "isJesusWords": false,
             "crossReferences": [
               {

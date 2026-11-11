@@ -2,6 +2,7 @@
   "1": {
     "book": "Ester",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "O banquete do rei",
@@ -21,7 +22,7 @@
               },
               {
                 "ref": "Ester 9:30",
-                "text": "Enviaram cartas a todos os judeus das 127 províncias do império de Xerxes, desejando- lhes paz e segurança."
+                "text": "Enviaram cartas a todos os judeus das 127 províncias do império de Xerxes, desejando-lhes paz e segurança."
               },
               {
                 "ref": "Ester 8:9",
@@ -36,7 +37,7 @@
             "crossReferences": [
               {
                 "ref": "Neemias 1:1",
-                "text": "Estas são as memórias de Neemias, filho de Hacalias. A preocupação de Neemias com Jerusalém No mês de quisleu, no vigésimo ano do reinado do rei Artaxerxes, eu estava na fortaleza de Susã."
+                "text": "Estas são as memórias de Neemias, filho de Hacalias."
               },
               {
                 "ref": "2 Samuel 7:1",
@@ -213,7 +214,7 @@
               },
               {
                 "ref": "Ester 7:9",
-                "text": "Harbona, um dos eunucos do rei, disse: “Hamã construiu uma forca de mais de vinte metros no pátio da casa dele. Pretendia usá- la para enforcar Mardoqueu, o homem que salvou o rei de ser assassinado”. “Usem-na para enforcar Hamã!”, ordenou o rei."
+                "text": "Harbona, um dos eunucos do rei, disse: “Hamã construiu uma forca de mais de vinte metros no pátio da casa dele. Pretendia usá-la para enforcar Mardoqueu, o homem que salvou o rei de ser assassinado”. “Usem-na para enforcar Hamã!”, ordenou o rei."
               },
               {
                 "ref": "Provérbios 20:1",
@@ -373,7 +374,7 @@
               },
               {
                 "ref": "Juízes 5:29",
-                "text": "“Suas acompanhantes mais sábias respondiam, e ela repetia estas palavras a si mesma: 30‘Devem estar repartindo os despojos que tomaram; uma ou duas moças para cada homem. Haverá túnicas coloridas para Sísera, túnicas col..."
+                "text": "“Suas acompanhantes mais sábias respondiam, e ela repetia estas palavras a si mesma:"
               }
             ]
           },
@@ -472,6 +473,7 @@
   "2": {
     "book": "Ester",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Ester se torna rainha",
@@ -552,7 +554,7 @@
               },
               {
                 "ref": "Mateus 20:16",
-                "text": "“Assim, os últimos serão os primeiros, e os primeiros serão os últimos”.115 Jesus prediz sua morte e ressurreição"
+                "text": "“Assim, os últimos serão os primeiros, e os primeiros serão os últimos”."
               },
               {
                 "ref": "Ester 3:9–10",
@@ -625,11 +627,11 @@
               },
               {
                 "ref": "2 Coríntios 6:18",
-                "text": "Eu serei seu Pai, e vocês serão meus filhos e minhas filhas,"
+                "text": "Eu serei seu Pai, e vocês serão meus filhos e minhas filhas, diz o Senhor Todo-poderoso”."
               },
               {
                 "ref": "Efésios 6:4",
-                "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem- nos com a disciplina e a instrução que vêm do Senhor."
+                "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem-nos com a disciplina e a instrução que vêm do Senhor."
               }
             ]
           },
@@ -732,7 +734,7 @@
               },
               {
                 "ref": "Isaías 57:9",
-                "text": "Foram até Moloque,162 com óleo de azeite e muitos perfumes, e enviaram para longe seus mensageiros, até mesmo ao mundo dos mortos."
+                "text": "Foram até Moloque, com óleo de azeite e muitos perfumes, e enviaram para longe seus mensageiros, até mesmo ao mundo dos mortos."
               },
               {
                 "ref": "Lucas 7:37–38",
@@ -762,7 +764,7 @@
               },
               {
                 "ref": "Gênesis 34:19",
-                "text": "Sem demora, Siquém fez o que tinham pedido, pois desejava ardentemente a filha de Jacó."
+                "text": "Sem demora, Siquém fez o que tinham pedido, pois desejava ardentemente a filha de Jacó. Siquém era o mais respeitado dos membros de sua família"
               },
               {
                 "ref": "Isaías 43:1",
@@ -955,7 +957,7 @@
               },
               {
                 "ref": "Filipenses 2:4",
-                "text": "Não- ­ procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios."
+                "text": "Não- procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios."
               }
             ]
           },
@@ -989,6 +991,7 @@
   "3": {
     "book": "Ester",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "A conspiração de Hamã contra os judeus",
@@ -1165,7 +1168,7 @@
               },
               {
                 "ref": "João 7:35",
-                "text": "Os judeus se perguntavam: “Para onde ele pretende ir? Será que planeja partir e ir aos judeus em outras terras?34 Talvez até ensine aos gregos!"
+                "text": "Os judeus se perguntavam: “Para onde ele pretende ir? Será que planeja partir e ir aos judeus em outras terras? Talvez até ensine aos gregos!"
               }
             ]
           },
@@ -1260,7 +1263,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 30:6",
-                "text": "Por ordem do rei, mensageiros foram enviados a todo o Israel e Judá. Levavam cartas que diziam: “Ó israelitas, voltem para o SENHOR, o Deus de Abraão, Isaque e Israel,133 para que ele se volte para nós, os poucos que sob..."
+                "text": "Por ordem do rei, mensageiros foram enviados a todo o Israel e Judá. Levavam cartas que diziam: “Ó israelitas, voltem para o SENHOR, o Deus de Abraão, Isaque e Israel, para que ele se volte para nós, os poucos que sobrev..."
               },
               {
                 "ref": "Ester 9:10",
@@ -1317,6 +1320,7 @@
   "4": {
     "book": "Ester",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Mardoqueu pede ajuda a Ester",
@@ -1424,7 +1428,7 @@
               },
               {
                 "ref": "Filipenses 2:4",
-                "text": "Não- ­ procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios."
+                "text": "Não- procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios."
               }
             ]
           },
@@ -1504,7 +1508,8 @@
                 "text": "No terceiro dia do jejum, Ester vestiu seus trajes reais e entrou no pátio interno do palácio, em frente do salão do rei. O rei estava sentado no trono, voltado para a entrada."
               },
               {
-                "ref": "Daniel 2:9"
+                "ref": "Daniel 2:9",
+                "text": "‘Se não me contarem qual foi o sonho, estão condenados!’. Por isso, conspiraram para me dizer mentiras, na esperança de que mudarei de ideia. Digam-me, porém, qual foi o sonho e então saberei que podem explicar o que ele significa”."
               },
               {
                 "ref": "Ester 8:4",
@@ -1615,6 +1620,7 @@
   "5": {
     "book": "Ester",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "O pedido de Ester ao rei",
@@ -1836,7 +1842,7 @@
               },
               {
                 "ref": "Lucas 12:19–20",
-                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre- se!’."
+                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre-se!’."
               },
               {
                 "ref": "1 Timóteo 6:17",
@@ -1859,7 +1865,7 @@
               },
               {
                 "ref": "Provérbios 7:22–23",
-                "text": "Ele a acompanhou de imediato, como boi que vai para o matadouro, como cervo que caiu na armadilha 23à espera da flecha que lhe atravessará o coração, como o pássaro que voa direto para o laço, sem saber que lhe custará a vida."
+                "text": "Ele a acompanhou de imediato, como boi que vai para o matadouro, como cervo que caiu na armadilha"
               },
               {
                 "ref": "1 Tessalonicenses 5:3",
@@ -1901,7 +1907,7 @@
               },
               {
                 "ref": "Ester 7:9–10",
-                "text": "Harbona, um dos eunucos do rei, disse: “Hamã construiu uma forca de mais de vinte metros no pátio da casa dele. Pretendia usá- la para enforcar Mardoqueu, o homem que salvou o rei de ser assassinado”. “Usem-na para enforcar Hamã!”, ordenou o rei."
+                "text": "Harbona, um dos eunucos do rei, disse: “Hamã construiu uma forca de mais de vinte metros no pátio da casa dele. Pretendia usá-la para enforcar Mardoqueu, o homem que salvou o rei de ser assassinado”. “Usem-na para enforcar Hamã!”, ordenou o rei."
               },
               {
                 "ref": "Salmos 37:14",
@@ -1920,6 +1926,7 @@
   "6": {
     "book": "Ester",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "O rei honra Mardoqueu",
@@ -2029,7 +2036,7 @@
               },
               {
                 "ref": "Isaías 62:4–5",
-                "text": "Nunca mais será chamada de “Cidade Abandonada”170 nem de “Terra Desolada”.171 Seu novo nome será “Cidade do Prazer de Deus”172 e “Esposa de Deus”,173 pois o SENHOR tem prazer em você e a tomará como esposa."
+                "text": "Nunca mais será chamada de “Cidade Abandonada” nem de “Terra Desolada”. Seu novo nome será “Cidade do Prazer de Deus” e “Esposa de Deus”, pois o SENHOR tem prazer em você e a tomará como esposa."
               }
             ]
           },
@@ -2086,7 +2093,7 @@
               },
               {
                 "ref": "Zacarias 9:9",
-                "text": "Alegre-se, ó povo de Sião!29 Exulte, ó preciosa Jerusalém!30 Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
+                "text": "Alegre-se, ó povo de Sião! Exulte, ó preciosa Jerusalém! Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
               }
             ]
           },
@@ -2132,7 +2139,7 @@
               },
               {
                 "ref": "Esdras 6:13",
-                "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar- Bozenai e seus companheiros obedeceram de imediato à ordem do rei Dario."
+                "text": "Tatenai, governador da província a oeste do rio Eufrates, Setar-Bozenai e seus companheiros obedeceram de imediato à ordem do rei Dario."
               }
             ]
           },
@@ -2208,6 +2215,7 @@
   "7": {
     "book": "Ester",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "O rei manda executar Hamã",
@@ -2386,7 +2394,7 @@
           },
           {
             "number": 9,
-            "text": "Harbona, um dos eunucos do rei, disse: “Hamã construiu uma forca de mais de vinte metros no pátio da casa dele. Pretendia usá- la para enforcar Mardoqueu, o homem que salvou o rei de ser assassinado”. “Usem-na para enforcar Hamã!”, ordenou o rei.",
+            "text": "Harbona, um dos eunucos do rei, disse: “Hamã construiu uma forca de mais de vinte metros no pátio da casa dele. Pretendia usá-la para enforcar Mardoqueu, o homem que salvou o rei de ser assassinado”. “Usem-na para enforcar Hamã!”, ordenou o rei.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2437,6 +2445,7 @@
   "8": {
     "book": "Ester",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "Um decreto em favor dos judeus",
@@ -2502,7 +2511,7 @@
               },
               {
                 "ref": "2 Reis 4:27",
-                "text": "Mas, quando ela chegou ao homem de Deus no monte, abraçou os pés dele. Geazi quis afastá-la, mas o homem de Deus disse: “Deixe- a em paz. Ela está profundamente angustiada, mas o SENHOR não me revelou o motivo”."
+                "text": "Mas, quando ela chegou ao homem de Deus no monte, abraçou os pés dele. Geazi quis afastá-la, mas o homem de Deus disse: “Deixe-a em paz. Ela está profundamente angustiada, mas o SENHOR não me revelou o motivo”."
               },
               {
                 "ref": "Hebreus 5:7",
@@ -2627,11 +2636,12 @@
                 "text": "Estes acontecimentos ocorreram nos dias do rei Xerxes, que reinou sobre 127 províncias, desde a Índia até a Etiópia."
               },
               {
-                "ref": "Daniel 6:1"
+                "ref": "Daniel 6:1",
+                "text": "O rei Dario resolveu dividir o reino em 120 províncias e nomeou um alto funcionário para governar cada uma delas."
               },
               {
                 "ref": "2 Reis 18:26",
-                "text": "Então Eliaquim, filho de Hilquias, Sebna e Joá disseram ao porta- voz: “Por favor, fale conosco em aramaico, pois entendemos bem essa língua. Não fale em hebraico, pois o povo sobre o muro o ouvirá”."
+                "text": "Então Eliaquim, filho de Hilquias, Sebna e Joá disseram ao porta-voz: “Por favor, fale conosco em aramaico, pois entendemos bem essa língua. Não fale em hebraico, pois o povo sobre o muro o ouvirá”."
               }
             ]
           },
@@ -2645,7 +2655,8 @@
                 "text": "Grandes caravanas de camelos cobrirão sua terra, camelos vindos de Midiã e de Efá. O povo de Sabá trará ouro e incenso e adorará o SENHOR."
               },
               {
-                "ref": "Daniel 4:1"
+                "ref": "Daniel 4:1",
+                "text": "O rei Nabucodonosor enviou esta mensagem a povos de todas as raças, nações e línguas em todo o mundo: “Paz e prosperidade!"
               },
               {
                 "ref": "Jeremias 51:21",
@@ -2718,7 +2729,7 @@
               },
               {
                 "ref": "Salmos 68:23",
-                "text": "Você, meu povo, lavará86 os pés no sangue deles, e até seus cães terão sua porção!”."
+                "text": "Você, meu povo, lavará os pés no sangue deles, e até seus cães terão sua porção!”."
               },
               {
                 "ref": "Salmos 92:10–11",
@@ -2825,6 +2836,7 @@
   "9": {
     "book": "Ester",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "A vitória dos judeus",
@@ -2889,7 +2901,8 @@
                 "text": "Em seguida, enviou mensageiros a todos os altos funcionários, oficiais, governadores, conselheiros, tesoureiros, juízes, magistrados e todas as autoridades das províncias para que viessem à dedicação da estátua que ele havia levantado."
               },
               {
-                "ref": "Daniel 6:1–2"
+                "ref": "Daniel 6:1–2",
+                "text": "O rei Dario resolveu dividir o reino em 120 províncias e nomeou um alto funcionário para governar cada uma delas."
               },
               {
                 "ref": "Ester 8:5",
@@ -3014,7 +3027,8 @@
                 "text": "Nessa visão eu estava na fortaleza de Susã, na província de Elão, em pé junto ao rio Ulai."
               },
               {
-                "ref": "Ester 9:18"
+                "ref": "Ester 9:18",
+                "text": "(Os judeus de Susã mataram seus inimigos nos dias 7 e 8 de março e descansaram no dia 9, fazendo dele um dia de festa e alegria.)"
               }
             ]
           },
@@ -3048,7 +3062,7 @@
               },
               {
                 "ref": "2 Samuel 21:6",
-                "text": "Portanto, entregue- nos sete dos filhos de Saul, para que os executemos diante do SENHOR em Gibeá, no monte do SENHOR”. “Está bem”, disse o rei. “Farei o que me pedem.”"
+                "text": "Portanto, entregue-nos sete dos filhos de Saul, para que os executemos diante do SENHOR em Gibeá, no monte do SENHOR”. “Está bem”, disse o rei. “Farei o que me pedem.”"
               },
               {
                 "ref": "2 Samuel 21:9",
@@ -3123,7 +3137,7 @@
           },
           {
             "number": 17,
-            "text": "Isso foi feito em todas as províncias no dia 7 de março, e no dia 822 descansaram e comemoraram sua vitória com um dia de festa e alegria. 18(Os judeus de Susã mataram seus inimigos nos dias 7 e 8 de março e descansaram no dia 9, fazendo dele um dia de festa e alegria.)",
+            "text": "Isso foi feito em todas as províncias no dia 7 de março, e no dia 8 descansaram e comemoraram sua vitória com um dia de festa e alegria.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3135,6 +3149,12 @@
                 "text": "instruindo-os a celebrar uma festa anual nesses dois dias."
               }
             ]
+          },
+          {
+            "number": 18,
+            "text": "(Os judeus de Susã mataram seus inimigos nos dias 7 e 8 de março e descansaram no dia 9, fazendo dele um dia de festa e alegria.)",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 19,
@@ -3202,10 +3222,11 @@
               },
               {
                 "ref": "Ester 9:17",
-                "text": "Isso foi feito em todas as províncias no dia 7 de março, e no dia 822 descansaram e comemoraram sua vitória com um dia de festa e alegria. 18(Os judeus de Susã mataram seus inimigos nos dias 7 e 8 de março e descansaram..."
+                "text": "Isso foi feito em todas as províncias no dia 7 de março, e no dia 8 descansaram e comemoraram sua vitória com um dia de festa e alegria."
               },
               {
-                "ref": "Ester 9:18"
+                "ref": "Ester 9:18",
+                "text": "(Os judeus de Susã mataram seus inimigos nos dias 7 e 8 de março e descansaram no dia 9, fazendo dele um dia de festa e alegria.)"
               }
             ]
           },
@@ -3291,7 +3312,7 @@
               },
               {
                 "ref": "Ezequiel 39:11",
-                "text": "“Nesse dia, prepararei um enorme cemitério para Gogue e suas multidões no vale dos Viajantes, a leste do mar Morto.100 Ele impedirá a passagem dos que viajam por ali, e eles mudarão o nome do lugar para vale das Multidões de Gogue."
+                "text": "“Nesse dia, prepararei um enorme cemitério para Gogue e suas multidões no vale dos Viajantes, a leste do mar Morto. Ele impedirá a passagem dos que viajam por ali, e eles mudarão o nome do lugar para vale das Multidões de Gogue."
               }
             ]
           },
@@ -3366,7 +3387,7 @@
           },
           {
             "number": 30,
-            "text": "Enviaram cartas a todos os judeus das 127 províncias do império de Xerxes, desejando- lhes paz e segurança.",
+            "text": "Enviaram cartas a todos os judeus das 127 províncias do império de Xerxes, desejando-lhes paz e segurança.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3424,6 +3445,7 @@
   "10": {
     "book": "Ester",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "A grandeza de Xerxes e de Mardoqueu",
@@ -3476,7 +3498,7 @@
           },
           {
             "number": 3,
-            "text": "O judeu Mardoqueu ocupou o cargo mais alto do reino, abaixo apenas do próprio rei Xerxes. Era muito importante entre os judeus, que o tinham em alta consideração, pois ele continuou a trabalhar para o bem de seu povo e a buscar o bem-estar de todos os seus descendentes. 1 1.1a Em hebraico, Assuero, outro nome para Xerxes; também em todo o livro de Ester. Xerxes reinou de 486 a 465 a.C. 2 1.1b Em hebraico, até Cuxe. 3 1. Ou e devia falar a língua de seu próprio povo. 4 2.6a Em hebraico, Ele. 5 2.6b Em hebraico, Jeconias, variação de Joaquim. 6 2. Ou para o segundo harém; também em 2.. 7 2. Em hebraico, no décimo mês, o mês de tebete. Vários acontecimentos em Ester podem ser confirmados por datas em registros persas que sobreviveram ao tempo e relacionados com precisão ao calendário moderno. Esse mês do antigo calendário lunar hebraico caiu entre dezembro de 479 a.C. e janeiro de 478 a.C. 8 2. Em hebraico, e que Mardoqueu estava sentado à porta do rei. 9 2. Em hebraico, Bigtã; comparar com 6.. 10 3.7a Em hebraico, No primeiro mês, o mês de nisã. Esse mês do antigo calendário lunar hebraico caiu entre abril e maio de 474 a.C.; ver também nota em 2.. 11 3.7b Conforme 3., que traz o décimo terceiro dia do décimo segundo mês, o mês de adar. O hebraico traz no décimo segundo mês, do antigo calendário lunar hebraico. O ano foi 473 a.C.; ver também nota em 2.. 12 3.9 Em hebraico, 10.000 talentos. 13 3. Em hebraico, no décimo terceiro dia do primeiro mês, do antigo calendário lunar hebraico. O ano foi 474 a.C.; ver também nota em 2.. 14 3. Em hebraico, o décimo terceiro dia do décimo segundo mês, do antigo calendário lunar hebraico. O ano foi 473 a.C.; ver também nota em 2.. 15 5. Em hebraico, 50 côvados, isto é, 22, metros. 16 7. Em hebraico, 50 côvados, isto é, 22, metros. 17 8.9a Em hebraico, no vigésimo terceiro dia do terceiro mês, o mês de sivã, do antigo calendário lunar hebraico. O ano foi 474 a.C.; ver também nota em 2.. 18 8.9b Em hebraico, até Cuxe. 19 8. Em hebraico, o décimo terceiro dia do décimo segundo mês, o mês de adar, do antigo calendário lunar hebraico. O ano foi 473 a.C.; ver também nota em 2.. 20 9. Em hebraico, no décimo terceiro dia do décimo segundo mês, o mês de adar, do antigo calendário lunar hebraico. O ano foi 473 a.C.; ver também nota em 2.. 21 9. Em hebraico, no décimo quarto dia do mês de adar, do antigo calendário lunar hebraico. O ano foi 473 a.C.; ver também nota em 2.. 22 9. Em hebraico, no décimo terceiro dia do mês de adar, e no décimo quarto dia, do antigo calendário lunar hebraico. O ano foi 473 a.C.; ver também nota em 2.. 23 9. Em hebraico, no décimo terceiro e no décimo quarto dia e descansaram no décimo quinto dia, do antigo calendário lunar hebraico. O ano foi 473 a.C.; ver também nota em 2.. 24 9. Esse dia do antigo calendário lunar hebraico caía entre fevereiro e março. 25 9. Em hebraico, no décimo quarto e no décimo quinto dias de adar, do antigo calendário lunar hebraico. 26 9. Em hebraico, Purim, do nome pur.",
+            "text": "O judeu Mardoqueu ocupou o cargo mais alto do reino, abaixo apenas do próprio rei Xerxes. Era muito importante entre os judeus, que o tinham em alta consideração, pois ele continuou a trabalhar para o bem de seu povo e a buscar o bem-estar de todos os seus descendentes.",
             "isJesusWords": false,
             "crossReferences": [
               {

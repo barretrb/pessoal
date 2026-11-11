@@ -2,6 +2,7 @@
   "1": {
     "book": "2 Pedro",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Pedro",
@@ -110,7 +111,7 @@
             "crossReferences": [
               {
                 "ref": "Filipenses 4:8",
-                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem- se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
+                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem-se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
               },
               {
                 "ref": "Provérbios 4:23",
@@ -128,7 +129,7 @@
           },
           {
             "number": 6,
-            "text": "ao conhecimento o domínio próprio; ao domínio próprio a perseverança; à perseverança a devoção a Deus; 7à devoção a Deus a fraternidade; e à fraternidade o amor.",
+            "text": "ao conhecimento o domínio próprio; ao domínio próprio a perseverança; à perseverança a devoção a Deus;",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -148,6 +149,12 @@
                 "text": "Deus, com seu poder divino, nos concede tudo de que necessitamos para uma vida de devoção, pelo conhecimento completo daquele que nos chamou para si por meio de sua glória e excelência."
               }
             ]
+          },
+          {
+            "number": 7,
+            "text": "à devoção a Deus a fraternidade; e à fraternidade o amor.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 8,
@@ -303,7 +310,7 @@
               },
               {
                 "ref": "João 21:18–19",
-                "text": "“Eu lhe digo a verdade: quando você era jovem, podia agir como bem entendia; vestia-se e ia aonde queria. Mas, quando for velho, estenderá as mãos e outros o vestirão e o levarão101 aonde você não quer ir”."
+                "text": "“Eu lhe digo a verdade: quando você era jovem, podia agir como bem entendia; vestia-se e ia aonde queria. Mas, quando for velho, estenderá as mãos e outros o vestirão e o levarão aonde você não quer ir”."
               },
               {
                 "ref": "Deuteronômio 31:14",
@@ -413,7 +420,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Isaías 9:2"
+                "ref": "Isaías 9:2",
+                "text": "O povo que anda na escuridão verá grande luz. Para os que vivem na terra de trevas profundas, uma luz brilhará."
               },
               {
                 "ref": "Salmos 119:105",
@@ -474,6 +482,7 @@
   "2": {
     "book": "2 Pedro",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "O perigo dos falsos mestres",
@@ -492,7 +501,8 @@
                 "text": "Pois alguns indivíduos perversos se infiltraram em seu meio sem serem notados, dizendo que a graça de Deus permite levar uma vida imoral. A condenação de tais pessoas foi registrada há muito tempo, pois negaram Jesus Cri..."
               },
               {
-                "ref": "Deuteronômio 13:1–3"
+                "ref": "Deuteronômio 13:1–3",
+                "text": "“Surgirão entre vocês profetas ou pessoas que têm sonhos sobre o futuro, e eles prometerão sinais ou milagres."
               },
               {
                 "ref": "2 Timóteo 4:3",
@@ -584,7 +594,7 @@
               },
               {
                 "ref": "Judas 1:14–15",
-                "text": "Enoque, que viveu na sétima geração depois de Adão, profetizou a respeito desses homens, dizendo: “Ouçam! para julgar a todos. Convencerá os pecadores de seus atos perversos e dos insultos que pronunciaram contra ele”."
+                "text": "Enoque, que viveu na sétima geração depois de Adão, profetizou a respeito desses homens, dizendo: “Ouçam! O Senhor vem com incontáveis milhares de santos"
               },
               {
                 "ref": "Lucas 17:26–27",
@@ -633,7 +643,8 @@
                 "text": "Meu coração está quebrantado por causa dos falsos profetas, e todos os meus ossos tremem. Cambaleio como um bêbado, como alguém vencido pelo vinho, por causa das santas palavras que o SENHOR pronunciou contra eles."
               },
               {
-                "ref": "Jeremias 9:1–6"
+                "ref": "Jeremias 9:1–6",
+                "text": "Quem dera minha cabeça fosse uma represa, e meus olhos, uma fonte de lágrimas! Choraria dia e noite por meu povo que foi massacrado."
               }
             ]
           },
@@ -832,7 +843,7 @@
               },
               {
                 "ref": "Atos 26:11",
-                "text": "Muitas vezes providenciei que fossem castigados nas sinagogas, a fim de obrigá- los a blasfemar. Eu me opunha a eles com tanta violência que os perseguia até em cidades estrangeiras."
+                "text": "Muitas vezes providenciei que fossem castigados nas sinagogas, a fim de obrigá-los a blasfemar. Eu me opunha a eles com tanta violência que os perseguia até em cidades estrangeiras."
               },
               {
                 "ref": "Eclesiastes 9:3",
@@ -840,7 +851,7 @@
               },
               {
                 "ref": "Eclesiastes 7:25",
-                "text": "Procurei por toda parte, decidido a encontrar sabedoria e entender a razão dos acontecimentos. Resolvi provar a mim mesmo que a perversidade é tolice, e a insensatez, ­loucura."
+                "text": "Procurei por toda parte, decidido a encontrar sabedoria e entender a razão dos acontecimentos. Resolvi provar a mim mesmo que a perversidade é tolice, e a insensatez, loucura."
               }
             ]
           },
@@ -961,7 +972,7 @@
           },
           {
             "number": 22,
-            "text": "Neles se confirmam os provérbios: “O cão volta a seu próprio vômito”12 e “A porca lavada volta a revolver-se na lama”.",
+            "text": "Neles se confirmam os provérbios: “O cão volta a seu próprio vômito” e “A porca lavada volta a revolver-se na lama”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -977,6 +988,7 @@
   "3": {
     "book": "2 Pedro",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "O dia do Senhor se aproxima",
@@ -1222,7 +1234,7 @@
               },
               {
                 "ref": "1 Timóteo 6:11",
-                "text": "Você, porém, que é um homem de Deus, ­fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão."
+                "text": "Você, porém, que é um homem de Deus, fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão."
               }
             ]
           },
@@ -1313,7 +1325,8 @@
                 "text": "Mas foi por isso que eu, o pior dos pecadores, recebi misericórdia, para que assim Cristo Jesus mostrasse quanto é paciente. Desse modo, sirvo de exemplo a todos que vierem a crer nele para a vida eterna."
               },
               {
-                "ref": "1 Pedro 3:20"
+                "ref": "1 Pedro 3:20",
+                "text": "àqueles que, muito tempo atrás, desobedeceram a Deus quando ele esperou pacientemente enquanto Noé construía sua embarcação. Apenas oito pessoas foram salvas por meio da água do dilúvio,"
               }
             ]
           },
@@ -1370,7 +1383,7 @@
           },
           {
             "number": 18,
-            "text": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, agora e para sempre! Amém. 1 1. Em grego, Simeão. 2 1. Em grego, enquanto eu estiver nesta tenda [ou tabernáculo]. 3 1. Em grego, em breve, deixarei minha tenda [ou tabernáculo]. 4 1. Mt 17.; Mc 9.; Lc 9.. 5 1. Ou nasça. 6 1. Ou é uma questão de interpretação pessoal. 7 2.4a Em grego, Tártaro. 8 2.4b Alguns manuscritos trazem em cadeias de escuridão. 9 2. Em grego, seres gloriosos, provável referência aos anjos caídos. 10 2. Ou em. 11 2. Alguns manuscritos trazem Bosor. 12 2. Pv 26.. 13 3. Alguns manuscritos trazem serão queimados; um manuscrito antigo traz se encontrarão destruídos.",
+            "text": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, agora e para sempre! Amém.",
             "isJesusWords": false,
             "crossReferences": [
               {

@@ -2,6 +2,7 @@
   "1": {
     "book": "Filipenses",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Paulo",
@@ -87,7 +88,7 @@
               },
               {
                 "ref": "Romanos 1:9",
-                "text": "O Deus a quem sirvo em meu espírito, anunciando as boas- novas a respeito de seu Filho, sabe como nunca deixo de me lembrar de vocês"
+                "text": "O Deus a quem sirvo em meu espírito, anunciando as boas-novas a respeito de seu Filho, sabe como nunca deixo de me lembrar de vocês"
               },
               {
                 "ref": "2 João 1:4",
@@ -106,7 +107,7 @@
             "crossReferences": [
               {
                 "ref": "Filipenses 4:14–15",
-                "text": "Mesmo assim, vocês fizeram bem em me ajudar na dificuldade pela qual estou ­passando."
+                "text": "Mesmo assim, vocês fizeram bem em me ajudar na dificuldade pela qual estou passando."
               },
               {
                 "ref": "Hebreus 3:14",
@@ -114,7 +115,7 @@
               },
               {
                 "ref": "Filipenses 1:7",
-                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas- novas."
+                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas-novas."
               },
               {
                 "ref": "Filemom 1:17",
@@ -133,7 +134,7 @@
               },
               {
                 "ref": "Filipenses 2:13",
-                "text": "Pois Deus está agindo em vocês, dando- lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
+                "text": "Pois Deus está agindo em vocês, dando-lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
               },
               {
                 "ref": "Efésios 4:12",
@@ -147,7 +148,7 @@
           },
           {
             "number": 7,
-            "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas- novas.",
+            "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas-novas.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -175,7 +176,7 @@
             "crossReferences": [
               {
                 "ref": "Romanos 1:9",
-                "text": "O Deus a quem sirvo em meu espírito, anunciando as boas- novas a respeito de seu Filho, sabe como nunca deixo de me lembrar de vocês"
+                "text": "O Deus a quem sirvo em meu espírito, anunciando as boas-novas a respeito de seu Filho, sabe como nunca deixo de me lembrar de vocês"
               },
               {
                 "ref": "Filipenses 4:1",
@@ -202,7 +203,7 @@
               },
               {
                 "ref": "Colossenses 1:9",
-                "text": "Por isso, desde que ouvimos falar a seu ­respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
+                "text": "Por isso, desde que ouvimos falar a seu respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
               },
               {
                 "ref": "2 Pedro 1:5–6",
@@ -330,7 +331,7 @@
               },
               {
                 "ref": "Filipenses 1:7",
-                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas- novas."
+                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas-novas."
               }
             ]
           },
@@ -372,7 +373,7 @@
               },
               {
                 "ref": "Filipenses 1:7",
-                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas- novas."
+                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas-novas."
               },
               {
                 "ref": "Filipenses 1:10",
@@ -607,7 +608,7 @@
               },
               {
                 "ref": "Filipenses 3:3",
-                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
+                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
               },
               {
                 "ref": "Filipenses 4:4",
@@ -719,6 +720,7 @@
   "2": {
     "book": "Filipenses",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Tenham a atitude de Cristo",
@@ -741,7 +743,8 @@
                 "text": "Amados, continuemos a amar uns aos outros, pois o amor vem de Deus. Quem ama é nascido de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor."
               },
               {
-                "ref": "2 Coríntios 13:14"
+                "ref": "2 Coríntios 13:14",
+                "text": "Que a graça do Senhor Jesus Cristo, o amor de Deus e a comunhão do Espírito Santo sejam com todos vocês."
               }
             ]
           },
@@ -764,7 +767,7 @@
               },
               {
                 "ref": "2 Coríntios 13:11",
-                "text": "Irmãos, encerro minha carta com estas últimas palavras: Alegrem- se. Cresçam até alcançar a maturidade. Encorajem-se mutuamente. Vivam em harmonia e paz. Então o Deus de amor e paz estará com vocês."
+                "text": "Irmãos, encerro minha carta com estas últimas palavras: Alegrem-se. Cresçam até alcançar a maturidade. Encorajem-se mutuamente. Vivam em harmonia e paz. Então o Deus de amor e paz estará com vocês."
               }
             ]
           },
@@ -793,7 +796,7 @@
           },
           {
             "number": 4,
-            "text": "Não- ­ procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios.",
+            "text": "Não- procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -856,7 +859,7 @@
               },
               {
                 "ref": "João 17:5",
-                "text": "Agora, Pai, glorifica- me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
+                "text": "Agora, Pai, glorifica-me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
               }
             ]
           },
@@ -1005,7 +1008,7 @@
           },
           {
             "number": 13,
-            "text": "Pois Deus está agindo em vocês, dando- lhes o desejo e o poder de realizarem aquilo que é do agrado dele.",
+            "text": "Pois Deus está agindo em vocês, dando-lhes o desejo e o poder de realizarem aquilo que é do agrado dele.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1207,7 +1210,7 @@
               },
               {
                 "ref": "Filipenses 2:4",
-                "text": "Não- ­ procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios."
+                "text": "Não- procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios."
               },
               {
                 "ref": "Mateus 16:24",
@@ -1292,7 +1295,7 @@
               },
               {
                 "ref": "Filemom 1:1–2",
-                "text": "Eu, Paulo, prisioneiro de Cristo Jesus, escrevo esta carta, junto com nosso irmão Timóteo, a Filemom, nosso amado colaborador, 2à irmã Áfia, a Arquipo, nosso companheiro na luta, e à igreja que se reúne em sua casa."
+                "text": "Eu, Paulo, prisioneiro de Cristo Jesus, escrevo esta carta, junto com nosso irmão Timóteo, a Filemom, nosso amado colaborador, à irmã Áfia, a Arquipo, nosso companheiro na luta, e à igreja que se reúne em sua casa."
               },
               {
                 "ref": "Filipenses 4:3",
@@ -1426,6 +1429,7 @@
   "3": {
     "book": "Filipenses",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "O valor inestimável de conhecer a Cristo",
@@ -1478,7 +1482,7 @@
           },
           {
             "number": 3,
-            "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,",
+            "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1487,7 +1491,7 @@
               },
               {
                 "ref": "Deuteronômio 30:6",
-                "text": "“O SENHOR, seu Deus, transformará55 o coração de vocês e de todos os seus descendentes, para que o amem de todo o coração e de toda a alma, e para que vivam!"
+                "text": "“O SENHOR, seu Deus, transformará o coração de vocês e de todos os seus descendentes, para que o amem de todo o coração e de toda a alma, e para que vivam!"
               },
               {
                 "ref": "Romanos 7:6",
@@ -1617,7 +1621,7 @@
               },
               {
                 "ref": "Gálatas 2:16",
-                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em ­Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque..."
+                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque o..."
               },
               {
                 "ref": "Romanos 4:13–15",
@@ -1644,7 +1648,7 @@
               },
               {
                 "ref": "Romanos 8:17",
-                "text": "Se somos seus filhos, então somos seus herdeiros e, portanto, co- herdeiros com Cristo. Se de fato participamos de seu sofrimento, participaremos também de sua glória."
+                "text": "Se somos seus filhos, então somos seus herdeiros e, portanto, co-herdeiros com Cristo. Se de fato participamos de seu sofrimento, participaremos também de sua glória."
               }
             ]
           },
@@ -1683,7 +1687,7 @@
             "crossReferences": [
               {
                 "ref": "1 Timóteo 6:11–12",
-                "text": "Você, porém, que é um homem de Deus, ­fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão."
+                "text": "Você, porém, que é um homem de Deus, fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão."
               },
               {
                 "ref": "2 Pedro 1:5–8",
@@ -1779,7 +1783,7 @@
               },
               {
                 "ref": "Apocalipse 3:3",
-                "text": "Lembre-se do que ouviu e no que acreditou no princípio; agarre-se a isso com firmeza. Arrependa- se. Se não despertar, virei subitamente até você, como um ladrão."
+                "text": "Lembre-se do que ouviu e no que acreditou no princípio; agarre-se a isso com firmeza. Arrependa-se. Se não despertar, virei subitamente até você, como um ladrão."
               },
               {
                 "ref": "Apocalipse 2:4–5",
@@ -1879,7 +1883,7 @@
               },
               {
                 "ref": "Hebreus 12:22",
-                "text": "Vocês, porém, chegaram ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, aos incontáveis milhares de anjos em alegre reunião, 23à congregação dos filhos mais velhos, cujos nomes estão escritos no céu, e a Deus..."
+                "text": "Vocês, porém, chegaram ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, aos incontáveis milhares de anjos em alegre reunião,"
               }
             ]
           },
@@ -1913,6 +1917,7 @@
   "4": {
     "book": "Filipenses",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -2085,7 +2090,7 @@
           },
           {
             "number": 8,
-            "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem- se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor.",
+            "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem-se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2218,7 +2223,7 @@
               },
               {
                 "ref": "Colossenses 1:11",
-                "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam."
+                "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam. Que sejam cheios de alegria"
               },
               {
                 "ref": "Efésios 6:10",
@@ -2228,7 +2233,7 @@
           },
           {
             "number": 14,
-            "text": "Mesmo assim, vocês fizeram bem em me ajudar na dificuldade pela qual estou ­passando.",
+            "text": "Mesmo assim, vocês fizeram bem em me ajudar na dificuldade pela qual estou passando.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2237,7 +2242,7 @@
               },
               {
                 "ref": "Filipenses 1:7",
-                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas- novas."
+                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas-novas."
               },
               {
                 "ref": "Hebreus 10:34",
@@ -2279,7 +2284,7 @@
             "crossReferences": [
               {
                 "ref": "1 Tessalonicenses 2:9",
-                "text": "Não se lembram, irmãos, de como trabalhamos arduamente entre vocês? Noite e dia nos esforçamos para obter sustento, a fim de não sermos um peso para ninguém enquanto lhes anunciávamos as boas- novas de Deus."
+                "text": "Não se lembram, irmãos, de como trabalhamos arduamente entre vocês? Noite e dia nos esforçamos para obter sustento, a fim de não sermos um peso para ninguém enquanto lhes anunciávamos as boas-novas de Deus."
               },
               {
                 "ref": "Atos 17:1",
@@ -2287,7 +2292,7 @@
               },
               {
                 "ref": "1 Tessalonicenses 2:18",
-                "text": "Queríamos muito visitá- los, e eu, Paulo, tentei não apenas uma vez, mas duas; Satanás, porém, nos impediu."
+                "text": "Queríamos muito visitá-los, e eu, Paulo, tentei não apenas uma vez, mas duas; Satanás, porém, nos impediu."
               }
             ]
           },
@@ -2436,11 +2441,12 @@
           },
           {
             "number": 23,
-            "text": "Que a graça do Senhor Jesus Cristo seja com o espírito de vocês. 1 1.1a Ou supervisores. 2 1.1b Ou servidores. 3 1. Em grego, todo o Pretório. 4 1. Alguns manuscritos não trazem de Deus. 5 2. Ou Existindo em forma de Deus. 6 2.7a Ou assumiu a forma de escravo. 7 2.7b Algumas traduções colocam essa frase no versículo 8. 8 3. Alguns manuscritos trazem adoramos a Deus em espírito; um manuscrito antigo traz adoramos em espírito. 9 3. Alguns manuscritos trazem ainda não a alcancei. 10 4. Ou fiel Sízigo. 11 4. Em grego, o Senhor está próximo. 12 4. Em grego, por meio daquele. 13 4. Ou os que trabalham no palácio de César. 14 4. Alguns manuscritos acrescentam Amém.",
+            "text": "Que a graça do Senhor Jesus Cristo seja com o espírito de vocês.",
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Coríntios 13:14"
+                "ref": "2 Coríntios 13:14",
+                "text": "Que a graça do Senhor Jesus Cristo, o amor de Deus e a comunhão do Espírito Santo sejam com todos vocês."
               },
               {
                 "ref": "Romanos 16:20",

@@ -2,6 +2,7 @@
   "1": {
     "book": "Eclesiastes",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -53,7 +54,7 @@
               },
               {
                 "ref": "Salmos 39:5–6",
-                "text": "A vida que me deste não é mais longa que alguns palmos, e diante de ti toda a minha existência não passa de um momento; na verdade, o ser humano não passa de um sopro”."
+                "text": "A vida que me deste não é mais longa que alguns palmos, e diante de ti toda a minha existência não passa de um momento; na verdade, o ser humano não passa de um sopro”. Interlúdio"
               }
             ]
           },
@@ -314,7 +315,7 @@
               },
               {
                 "ref": "Salmos 39:5–6",
-                "text": "A vida que me deste não é mais longa que alguns palmos, e diante de ti toda a minha existência não passa de um momento; na verdade, o ser humano não passa de um sopro”."
+                "text": "A vida que me deste não é mais longa que alguns palmos, e diante de ti toda a minha existência não passa de um momento; na verdade, o ser humano não passa de um sopro”. Interlúdio"
               },
               {
                 "ref": "1 Reis 4:30–32",
@@ -364,7 +365,7 @@
               },
               {
                 "ref": "Salmos 4:4",
-                "text": "Não pequem ao permitir que a ira os controle; reflitam durante a noite e permaneçam em silêncio."
+                "text": "Não pequem ao permitir que a ira os controle; reflitam durante a noite e permaneçam em silêncio. Interlúdio"
               }
             ]
           },
@@ -375,7 +376,7 @@
             "crossReferences": [
               {
                 "ref": "Eclesiastes 2:3",
-                "text": "Depois de pensar muito, resolvi me animar com vinho. E, enquanto ainda buscava a sabedoria, apeguei- me à insensatez. Assim, procurei experimentar o que haveria de melhor para as pessoas em sua curta vida debaixo do sol."
+                "text": "Depois de pensar muito, resolvi me animar com vinho. E, enquanto ainda buscava a sabedoria, apeguei-me à insensatez. Assim, procurei experimentar o que haveria de melhor para as pessoas em sua curta vida debaixo do sol."
               },
               {
                 "ref": "1 Tessalonicenses 5:21",
@@ -421,6 +422,7 @@
   "2": {
     "book": "Eclesiastes",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "A inutilidade dos prazeres",
@@ -432,7 +434,7 @@
             "crossReferences": [
               {
                 "ref": "Lucas 12:19",
-                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre- se!’."
+                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre-se!’."
               },
               {
                 "ref": "Eclesiastes 8:15",
@@ -473,7 +475,7 @@
           },
           {
             "number": 3,
-            "text": "Depois de pensar muito, resolvi me animar com vinho. E, enquanto ainda buscava a sabedoria, apeguei- me à insensatez. Assim, procurei experimentar o que haveria de melhor para as pessoas em sua curta vida debaixo do sol.",
+            "text": "Depois de pensar muito, resolvi me animar com vinho. E, enquanto ainda buscava a sabedoria, apeguei-me à insensatez. Assim, procurei experimentar o que haveria de melhor para as pessoas em sua curta vida debaixo do sol.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -577,7 +579,8 @@
                 "text": "Ao todo, os servidores do templo e os descendentes dos servos de Salomão eram 392."
               },
               {
-                "ref": "Gênesis 13:2"
+                "ref": "Gênesis 13:2",
+                "text": "(Abrão era muito rico e tinha muitos rebanhos, prata e ouro.)"
               },
               {
                 "ref": "2 Crônicas 32:27–29",
@@ -592,7 +595,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 10:10",
-                "text": "Então ela presenteou o rei com 4.200 quilos de ouro, especiarias em grande quantidade e pedras preciosas. Nunca mais foram recebidas tantas especiarias quanto as que a rainha de Sabá deu ao rei Salomão. 11(Além disso, os..."
+                "text": "Então ela presenteou o rei com 4.200 quilos de ouro, especiarias em grande quantidade e pedras preciosas. Nunca mais foram recebidas tantas especiarias quanto as que a rainha de Sabá deu ao rei Salomão."
               },
               {
                 "ref": "2 Samuel 19:35",
@@ -684,7 +687,7 @@
         "verses": [
           {
             "number": 12,
-            "text": "Então resolvi comparar a sabedoria com a loucura e a insensatez (pois quem pode fazê-lo melhor que eu, o rei?2).",
+            "text": "Então resolvi comparar a sabedoria com a loucura e a insensatez (pois quem pode fazê-lo melhor que eu, o rei?).",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -693,7 +696,7 @@
               },
               {
                 "ref": "Eclesiastes 7:25",
-                "text": "Procurei por toda parte, decidido a encontrar sabedoria e entender a razão dos acontecimentos. Resolvi provar a mim mesmo que a perversidade é tolice, e a insensatez, ­loucura."
+                "text": "Procurei por toda parte, decidido a encontrar sabedoria e entender a razão dos acontecimentos. Resolvi provar a mim mesmo que a perversidade é tolice, e a insensatez, loucura."
               },
               {
                 "ref": "Eclesiastes 1:9–10",
@@ -743,7 +746,7 @@
               },
               {
                 "ref": "Eclesiastes 3:19",
-                "text": "Pois tanto pessoas como animais têm o mesmo destino: ambos respi­ram e ambos morrem. As pessoas não têm vantagem alguma sobre os animais. Isso não faz o menor sentido!"
+                "text": "Pois tanto pessoas como animais têm o mesmo destino: ambos respiram e ambos morrem. As pessoas não têm vantagem alguma sobre os animais. Isso não faz o menor sentido!"
               }
             ]
           },
@@ -974,13 +977,13 @@
               },
               {
                 "ref": "1 Coríntios 15:32",
-                "text": "E, se não haverá ressurreição dos mortos, de que me adiantou ter lutado contra feras, isto é, aquela gente de Éfeso?63 Se não há ressurreição, “comamos e bebamos, porque amanhã morreremos!”."
+                "text": "E, se não haverá ressurreição dos mortos, de que me adiantou ter lutado contra feras, isto é, aquela gente de Éfeso? Se não há ressurreição, “comamos e bebamos, porque amanhã morreremos!”."
               }
             ]
           },
           {
             "number": 25,
-            "text": "Pois quem pode comer ou desfrutar algo sem ele?3",
+            "text": "Pois quem pode comer ou desfrutar algo sem ele?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -988,7 +991,8 @@
                 "text": "Disse a mim mesmo: “Venha, vamos experimentar o prazer; vamos procurar as coisas boas da vida!”. Descobri, porém, que isso também não fazia sentido."
               },
               {
-                "ref": "1 Reis 4:21–24"
+                "ref": "1 Reis 4:21–24",
+                "text": "Salomão governava sobre todos os reinos, desde o rio Eufrates, ao norte, até a terra dos filisteus e a fronteira do Egito, ao sul. Os povos conquistados enviavam tributos a Salomão e continuaram a servi-lo durante toda a vida."
               }
             ]
           },
@@ -1022,6 +1026,7 @@
   "3": {
     "book": "Eclesiastes",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Tudo tem seu tempo",
@@ -1252,7 +1257,7 @@
               },
               {
                 "ref": "1 Tessalonicenses 2:9",
-                "text": "Não se lembram, irmãos, de como trabalhamos arduamente entre vocês? Noite e dia nos esforçamos para obter sustento, a fim de não sermos um peso para ninguém enquanto lhes anunciávamos as boas- novas de Deus."
+                "text": "Não se lembram, irmãos, de como trabalhamos arduamente entre vocês? Noite e dia nos esforçamos para obter sustento, a fim de não sermos um peso para ninguém enquanto lhes anunciávamos as boas-novas de Deus."
               }
             ]
           },
@@ -1439,7 +1444,7 @@
           },
           {
             "number": 19,
-            "text": "Pois tanto pessoas como animais têm o mesmo destino: ambos respi­ram e ambos morrem. As pessoas não têm vantagem alguma sobre os animais. Isso não faz o menor sentido!",
+            "text": "Pois tanto pessoas como animais têm o mesmo destino: ambos respiram e ambos morrem. As pessoas não têm vantagem alguma sobre os animais. Isso não faz o menor sentido!",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1536,6 +1541,7 @@
   "4": {
     "book": "Eclesiastes",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -1885,35 +1891,19 @@
   "5": {
     "book": "Eclesiastes",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Instruções para se aproximar de Deus",
         "verses": [
           {
-            "number": 17,
+            "number": 1,
             "text": "Quando você entrar na casa de Deus, tome cuidado com o que faz e ouça com atenção. Age mal quem apresenta ofertas a Deus sem pensar.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Salmos 127:2",
-                "text": "É inútil trabalhar tanto, desde a madrugada até tarde da noite, e se preocupar em conseguir o alimento, pois Deus cuida de seus amados enquanto dormem."
-              },
-              {
-                "ref": "2 Crônicas 16:10–12",
-                "text": "Asa se irou tanto com o vidente por lhe ter dito isso que mandou prendê-lo e colocá-lo no tronco. Nessa época, Asa também começou a oprimir duramente alguns do povo."
-              },
-              {
-                "ref": "2 Reis 5:27",
-                "text": "Por isso, você e seus descendentes sofrerão da lepra de Naamã para sempre”. Quando Geazi saiu dali, seu corpo estava coberto de lepra; sua pele estava branca como a neve."
-              },
-              {
-                "ref": "2 Reis 1:6",
-                "text": "Eles responderam: “Um homem veio ao nosso encontro e nos instruiu a voltarmos ao rei e lhe darmos esta mensagem: ‘Assim diz o SENHOR: Acaso não há Deus em Israel? Por que enviou seus homens para consultar Baal-Zebube, o..."
-              }
-            ]
+            "crossReferences": []
           },
           {
-            "number": 28,
+            "number": 2,
             "text": "Não se precipite em fazer promessas nem em apresentar suas questões a Deus. Afinal, Deus está nos céus, e você, na terra; portanto, fale pouco.",
             "isJesusWords": false,
             "crossReferences": []
@@ -2001,7 +1991,8 @@
                 "text": "É verdade que todos nós cometemos muitos erros. Se pudéssemos controlar a língua, seríamos perfeitos, capazes de nos controlar em todos os outros sentidos."
               },
               {
-                "ref": "Eclesiastes 5:1–2"
+                "ref": "Eclesiastes 5:1–2",
+                "text": "Quando você entrar na casa de Deus, tome cuidado com o que faz e ouça com atenção. Age mal quem apresenta ofertas a Deus sem pensar."
               }
             ]
           },
@@ -2090,11 +2081,11 @@
               },
               {
                 "ref": "Mateus 6:24",
-                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”48 Ensino sobre a preocupação"
+                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”"
               },
               {
                 "ref": "Lucas 12:15",
-                "text": "Em seguida, disse: “Cuidado! Guardem- se de todo tipo de ganância. A vida de uma pessoa não é definida pela quantidade de seus bens”."
+                "text": "Em seguida, disse: “Cuidado! Guardem-se de todo tipo de ganância. A vida de uma pessoa não é definida pela quantidade de seus bens”."
               },
               {
                 "ref": "Mateus 6:19",
@@ -2339,6 +2330,7 @@
   "6": {
     "book": "Eclesiastes",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -2505,7 +2497,7 @@
           },
           {
             "number": 9,
-            "text": "Aproveite o que você tem em vez de desejar o que não tem. Querer cada vez mais não faz sentido; é como correr atrás do vento. O futuro: definido e desconhecido",
+            "text": "Aproveite o que você tem em vez de desejar o que não tem. Querer cada vez mais não faz sentido; é como correr atrás do vento.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2525,7 +2517,12 @@
                 "text": "“Há muito tempo, quebrei o jugo que o oprimia e despedacei as correntes de sua escravidão. Ainda assim, você disse: ‘Jamais o servirei’. No alto dos montes e debaixo de toda árvore verdejante, você se prostituiu ao se curvar para ídolos."
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "title": "O futuro: definido e desconhecido",
+        "verses": [
           {
             "number": 10,
             "text": "Tudo já foi decidido; sabia-se há muito tempo o que cada pessoa seria. Portanto, não adianta discutir com Deus sobre nosso destino.",
@@ -2563,7 +2560,8 @@
                 "text": "Sonhar demais é inútil, assim como falar muito. Em vez disso, tema a Deus."
               },
               {
-                "ref": "Oséias 12:1"
+                "ref": "Oséias 12:1",
+                "text": "O povo de Israel se alimenta de vento; corre atrás do vento leste o dia todo. Acumula mentiras e violência, faz acordos com a Assíria e, ao mesmo tempo, envia azeite para comprar o apoio do Egito."
               },
               {
                 "ref": "Salmos 73:6",
@@ -2601,6 +2599,7 @@
   "7": {
     "book": "Eclesiastes",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Sabedoria para a vida",
@@ -2658,7 +2657,7 @@
             "crossReferences": [
               {
                 "ref": "2 Coríntios 7:9–11",
-                "text": "Agora, porém, alegro-me por ­tê-la ­enviado, não pela tristeza que causou, mas porque a dor os levou ao arrependimento. Foi o tipo de tristeza que Deus espera de seu povo, portanto não lhes causamos mal algum."
+                "text": "Agora, porém, alegro-me por tê-la enviado, não pela tristeza que causou, mas porque a dor os levou ao arrependimento. Foi o tipo de tristeza que Deus espera de seu povo, portanto não lhes causamos mal algum."
               },
               {
                 "ref": "Romanos 5:3–4",
@@ -3035,7 +3034,7 @@
               },
               {
                 "ref": "Colossenses 1:9–11",
-                "text": "Por isso, desde que ouvimos falar a seu ­respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
+                "text": "Por isso, desde que ouvimos falar a seu respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
               },
               {
                 "ref": "Eclesiastes 9:13–18",
@@ -3072,7 +3071,7 @@
           },
           {
             "number": 21,
-            "text": "Não escute a conversa alheia às escondidas; pode ser que ouça seu servo falar mal a seu ­respeito.",
+            "text": "Não escute a conversa alheia às escondidas; pode ser que ouça seu servo falar mal a seu respeito.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3164,7 +3163,7 @@
           },
           {
             "number": 25,
-            "text": "Procurei por toda parte, decidido a encontrar sabedoria e entender a razão dos acontecimentos. Resolvi provar a mim mesmo que a perversidade é tolice, e a insensatez, ­loucura.",
+            "text": "Procurei por toda parte, decidido a encontrar sabedoria e entender a razão dos acontecimentos. Resolvi provar a mim mesmo que a perversidade é tolice, e a insensatez, loucura.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3242,7 +3241,7 @@
               },
               {
                 "ref": "Isaías 26:9",
-                "text": "À noite eu te procuro, ó Deus; pela manhã92 te busco de todo o coração. Pois só quando vens julgar a terra as pessoas aprendem a justiça."
+                "text": "À noite eu te procuro, ó Deus; pela manhã te busco de todo o coração. Pois só quando vens julgar a terra as pessoas aprendem a justiça."
               }
             ]
           },
@@ -3276,6 +3275,7 @@
   "8": {
     "book": "Eclesiastes",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -3457,7 +3457,7 @@
               },
               {
                 "ref": "Salmos 89:48",
-                "text": "Ninguém vive para sempre, todos morrem; ninguém escapa das garras da sepultura.125 Interlúdio"
+                "text": "Ninguém vive para sempre, todos morrem; ninguém escapa das garras da sepultura. Interlúdio"
               },
               {
                 "ref": "Hebreus 9:27",
@@ -3688,6 +3688,7 @@
   "9": {
     "book": "Eclesiastes",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "A morte chega para todos",
@@ -3776,11 +3777,11 @@
               },
               {
                 "ref": "Isaías 38:18",
-                "text": "Pois os mortos126 não podem exaltar-te; não podem entoar louvores. Aqueles que descem à cova já não podem esperar em tua fidelidade."
+                "text": "Pois os mortos não podem exaltar-te; não podem entoar louvores. Aqueles que descem à cova já não podem esperar em tua fidelidade."
               },
               {
                 "ref": "Lamentações 3:21–22",
-                "text": "Ainda ouso, porém, ter esperança quando me recordo disto: O amor do SENHOR não tem fim!12 Suas misericórdias são inesgotáveis."
+                "text": "Ainda ouso, porém, ter esperança quando me recordo disto: O amor do SENHOR não tem fim! Suas misericórdias são inesgotáveis."
               }
             ]
           },
@@ -3803,7 +3804,7 @@
               },
               {
                 "ref": "Salmos 88:10–12",
-                "text": "Será que tuas maravilhas têm algum uso para os mortos? Acaso os mortos se levantam e te louvam?"
+                "text": "Será que tuas maravilhas têm algum uso para os mortos? Acaso os mortos se levantam e te louvam? Interlúdio"
               }
             ]
           },
@@ -4007,7 +4008,7 @@
               },
               {
                 "ref": "2 Samuel 20:15–22",
-                "text": "Quando os soldados de Joabe chegaram, cercaram Abel-Bete- Maaca. Construíram uma rampa junto às fortificações da cidade e começaram a derrubar o muro."
+                "text": "Quando os soldados de Joabe chegaram, cercaram Abel-Bete-Maaca. Construíram uma rampa junto às fortificações da cidade e começaram a derrubar o muro."
               }
             ]
           },
@@ -4087,7 +4088,7 @@
             "crossReferences": [
               {
                 "ref": "Josué 7:1",
-                "text": "Mas os israelitas violaram as instruções a respei­to das coisas separadas para o SENHOR. Um homem chamado Acã roubou algumas delas, e a ira do SENHOR se acendeu contra os israelitas. Acã era filho de Carmi, filho de Zimr..."
+                "text": "Mas os israelitas violaram as instruções a respeito das coisas separadas para o SENHOR. Um homem chamado Acã roubou algumas delas, e a ira do SENHOR se acendeu contra os israelitas. Acã era filho de Carmi, filho de Zimri..."
               },
               {
                 "ref": "Josué 7:11–12",
@@ -4110,6 +4111,7 @@
   "10": {
     "book": "Eclesiastes",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -4209,7 +4211,7 @@
         "verses": [
           {
             "number": 5,
-            "text": "Observei outro mal debaixo do sol.",
+            "text": "Observei outro mal debaixo do sol. Governantes cometem um erro grave",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4221,12 +4223,7 @@
                 "text": "Vi debaixo do sol outra grande tragédia que pesa sobre a humanidade."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Governantes cometem um erro grave",
-        "verses": [
+          },
           {
             "number": 6,
             "text": "quando dão grande autoridade aos tolos e colocam pessoas valorosas em cargos inferiores.",
@@ -4547,7 +4544,7 @@
               },
               {
                 "ref": "Eclesiastes 7:21–22",
-                "text": "Não escute a conversa alheia às escondidas; pode ser que ouça seu servo falar mal a seu ­respeito. Pois você sabe que muitas vezes você mesmo falou mal de outros."
+                "text": "Não escute a conversa alheia às escondidas; pode ser que ouça seu servo falar mal a seu respeito. Pois você sabe que muitas vezes você mesmo falou mal de outros."
               }
             ]
           }
@@ -4558,6 +4555,7 @@
   "11": {
     "book": "Eclesiastes",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "As incertezas da vida",
@@ -4726,7 +4724,7 @@
           },
           {
             "number": 8,
-            "text": "Se você chegar à velhice, desfrute cada dia de sua vida. Lembre- se, porém, que haverá muitos dias sombrios. Nada do que ainda está por vir faz sentido.",
+            "text": "Se você chegar à velhice, desfrute cada dia de sua vida. Lembre-se, porém, que haverá muitos dias sombrios. Nada do que ainda está por vir faz sentido.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4800,6 +4798,7 @@
   "12": {
     "book": "Eclesiastes",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -4815,7 +4814,7 @@
               },
               {
                 "ref": "Eclesiastes 11:8",
-                "text": "Se você chegar à velhice, desfrute cada dia de sua vida. Lembre- se, porém, que haverá muitos dias sombrios. Nada do que ainda está por vir faz sentido."
+                "text": "Se você chegar à velhice, desfrute cada dia de sua vida. Lembre-se, porém, que haverá muitos dias sombrios. Nada do que ainda está por vir faz sentido."
               },
               {
                 "ref": "Salmos 71:17–18",
@@ -4988,11 +4987,11 @@
               },
               {
                 "ref": "Provérbios 25:1",
-                "text": "Estes são mais provérbios de Salomão, reu­nidos pelos conselheiros de Ezequias, rei de Judá."
+                "text": "Estes são mais provérbios de Salomão, reunidos pelos conselheiros de Ezequias, rei de Judá."
               },
               {
                 "ref": "1 Reis 10:8",
-                "text": "Como deve ser feliz o seu povo!73 Que privilégio para seus oficiais estarem em sua presença todos os dias, ouvindo sua sabedoria!"
+                "text": "Como deve ser feliz o seu povo! Que privilégio para seus oficiais estarem em sua presença todos os dias, ouvindo sua sabedoria!"
               }
             ]
           },
@@ -5003,11 +5002,11 @@
             "crossReferences": [
               {
                 "ref": "Colossenses 1:5",
-                "text": "que vêm da esperança confiante naquilo que lhes está reservado no céu. Vocês têm essa expectativa desde que ouviram pela primeira vez a verdade das boas- novas."
+                "text": "que vêm da esperança confiante naquilo que lhes está reservado no céu. Vocês têm essa expectativa desde que ouviram pela primeira vez a verdade das boas-novas."
               },
               {
                 "ref": "1 Timóteo 1:15",
-                "text": "Esta é uma afirmação digna de confiança, e todos devem aceitá- la: “Cristo Jesus veio ao mundo para salvar os pecadores”, e eu sou o pior de todos."
+                "text": "Esta é uma afirmação digna de confiança, e todos devem aceitá-la: “Cristo Jesus veio ao mundo para salvar os pecadores”, e eu sou o pior de todos."
               },
               {
                 "ref": "Provérbios 16:21–24",
@@ -5021,7 +5020,7 @@
           },
           {
             "number": 11,
-            "text": "As palavras do sábio são como hastes de ferro, e a coleção de seus ditados, como pregos bem fixados, que o pastor usa para conduzir as ­ovelhas.",
+            "text": "As palavras do sábio são como hastes de ferro, e a coleção de seus ditados, como pregos bem fixados, que o pastor usa para conduzir as ovelhas.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5090,7 +5089,7 @@
           },
           {
             "number": 14,
-            "text": "Deus nos julgará por todos os nossos atos, incluindo o que fazemos em segredo, seja o bem, seja o mal. 1 1. Em hebraico, Qoheleth; o termo é traduzido como “o Mestre” em todo o livro de Eclesiastes. 2 2. O significado do hebraico é incerto. 3 2. Conforme a Septuaginta e a versão siríaca; o hebraico traz sem mim? 4 3. Ou ambos têm o mesmo espírito. 5 4. Em hebraico, do segundo jovem. 6 4. Em hebraico, Não há fim para todo o povo, para todos que estão diante dele. 7 5.1 No texto hebraico, o versículo 5. é numerado 4.. 8 5. No texto hebraico, os versículos 5.2-20 são numerados 5.1-19. 9 5.8-9 Ou Pois um oficial vigia sobre o outro, e há oficiais superiores acima destes.",
+            "text": "Deus nos julgará por todos os nossos atos, incluindo o que fazemos em segredo, seja o bem, seja o mal.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5108,29 +5107,6 @@
               {
                 "ref": "1 Coríntios 4:5",
                 "text": "Portanto, não julguem ninguém antes do tempo, antes que o Senhor volte. Pois ele trará à luz nossos segredos mais obscuros e revelará nossas intenções mais íntimas. Então Deus dará a cada um a devida aprovação."
-              }
-            ]
-          },
-          {
-            "number": 9,
-            "text": "A terra se beneficia de um rei que cultiva a terra. O significado do hebraico é incerto. 10 7. Ou seguirá ambas as coisas. 11 7. Em hebraico, uma mulher. 12 8. Ou Ninguém pode controlar o vento. 13 8. Conforme alguns manuscritos hebraicos e a Septuaginta; a maioria dos manuscritos hebraicos traz são esquecidos. 14 9.2a Conforme a Septuaginta, a versão siríaca e a Vulgata; o hebraico não traz ou má. 15 9.2b Em hebraico, ofereça sacrifícios ou não. 16 9. Em hebraico, ao Sheol. 17 10. Ou ricos. 18 10. Ou uma criança, ou um servo. 19 11. Ou Dê com generosidade, / pois mais adiante suas dádivas voltarão para você. 20 11. Em hebraico, entre sete ou mesmo oito. 21 11. Alguns manuscritos trazem Assim como é impossível entender como o bebê recebe o fôlego da vida no ventre da mãe. 22 12. Em hebraico, antes que os guardas da casa tremam, os homens fortes se encurvem, os moedores cessem porque são poucos e os que olham pela janela se escureçam. 23 12. Em hebraico, antes que as portas da rua se fechem e o som da moedura diminua. 24 12. Em hebraico, antes que a alcaparra perca o efeito. 25 12. Ou procurou escrever o que era correto e verdadeiro.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Reis 4:32",
-                "text": "Compôs 3.000 provérbios e escreveu 1.005 canções."
-              },
-              {
-                "ref": "Provérbios 1:1",
-                "text": "Estes são os provérbios de Salomão, filho de Davi, rei de Israel."
-              },
-              {
-                "ref": "Provérbios 25:1",
-                "text": "Estes são mais provérbios de Salomão, reu­nidos pelos conselheiros de Ezequias, rei de Judá."
-              },
-              {
-                "ref": "1 Reis 10:8",
-                "text": "Como deve ser feliz o seu povo!73 Que privilégio para seus oficiais estarem em sua presença todos os dias, ouvindo sua sabedoria!"
               }
             ]
           }

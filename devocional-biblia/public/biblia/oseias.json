@@ -2,6 +2,7 @@
   "1": {
     "book": "Oseias",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -36,7 +37,7 @@
         "verses": [
           {
             "number": 2,
-            "text": "Quando o SENHOR começou a falar a Israel por meio de Oseias, disse- lhe: “Vá e case-se com uma prostituta, para que os filhos dela sejam concebidos em prostituição. Isso mostrará como Israel agiu como prostituta ao afastar-se do SENHOR”.",
+            "text": "Quando o SENHOR começou a falar a Israel por meio de Oseias, disse-lhe: “Vá e case-se com uma prostituta, para que os filhos dela sejam concebidos em prostituição. Isso mostrará como Israel agiu como prostituta ao afastar-se do SENHOR”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -87,7 +88,7 @@
               },
               {
                 "ref": "Oséias 1:9",
-                "text": "E o SENHOR disse: “Dê-lhe o nome de Lo-Ami, ‘Não Meu Povo’, pois Israel não é meu povo, e eu não sou seu Deus. 103 “Virá o tempo, porém, em que o povo de Israel se tornará como a areia à beira do mar, que não se pode con..."
+                "text": "E o SENHOR disse: “Dê-lhe o nome de Lo-Ami, ‘Não Meu Povo’, pois Israel não é meu povo, e eu não sou seu Deus."
               }
             ]
           },
@@ -116,7 +117,7 @@
           },
           {
             "number": 6,
-            "text": "Pouco tempo depois, Gômer engravidou novamente e deu à luz uma filha. O SENHOR disse a Oseias: “Dê à sua filha o nome de Lo- Ruama, ‘Não Amada’, pois não mostrarei mais amor ao povo de Israel, nem lhe perdoarei.",
+            "text": "Pouco tempo depois, Gômer engravidou novamente e deu à luz uma filha. O SENHOR disse a Oseias: “Dê à sua filha o nome de Lo-Ruama, ‘Não Amada’, pois não mostrarei mais amor ao povo de Israel, nem lhe perdoarei.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -173,7 +174,7 @@
           },
           {
             "number": 9,
-            "text": "E o SENHOR disse: “Dê-lhe o nome de Lo-Ami, ‘Não Meu Povo’, pois Israel não é meu povo, e eu não sou seu Deus. 103 “Virá o tempo, porém, em que o povo de Israel se tornará como a areia à beira do mar, que não se pode contar. Então, no lugar onde lhes foi dito: ‘Vocês não são meu povo’, se dirá: ‘Vocês são filhos do Deus vivo’.",
+            "text": "E o SENHOR disse: “Dê-lhe o nome de Lo-Ami, ‘Não Meu Povo’, pois Israel não é meu povo, e eu não sou seu Deus.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -183,8 +184,14 @@
             ]
           },
           {
+            "number": 10,
+            "text": "“Virá o tempo, porém, em que o povo de Israel se tornará como a areia à beira do mar, que não se pode contar. Então, no lugar onde lhes foi dito: ‘Vocês não são meu povo’, se dirá: ‘Vocês são filhos do Deus vivo’.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 11,
-            "text": "Nesse tempo, o povo de Judá e o povo de Israel se unirão. Escolherão para si um só líder e voltarão juntos do exílio.",
+            "text": "Nesse tempo, o povo de Judá e o povo de Israel se unirão. Escolherão para si um só líder e voltarão juntos do exílio. Que grande dia será o dia em que Deus semear seu povo novamente em sua terra!",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -212,32 +219,16 @@
   "2": {
     "book": "Oseias",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
-        "title": "sua terra!4",
+        "title": "",
         "verses": [
           {
-            "number": 15,
+            "number": 1,
             "text": "“Nesse dia, vocês chamarão seus irmãos de Ami, ‘Meu Povo’, e chamarão suas irmãs de Ruama, ‘Minhas Amadas’.”",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Jeremias 2:2",
-                "text": "“Vá e proclame esta mensagem para Jerusalém. Assim diz o SENHOR: “Lembro-me de como você desejava me agradar, quando era uma jovem noiva, muito tempo atrás. Você me amava e me seguia até mesmo no deserto."
-              },
-              {
-                "ref": "Ezequiel 28:26",
-                "text": "Eles viverão em segurança em Israel, construirão casas e plantarão vinhedos. E, quando eu castigar as nações vizinhas que os trataram com desprezo, eles saberão que eu sou o SENHOR, seu Deus”."
-              },
-              {
-                "ref": "Oséias 11:1",
-                "text": "“Quando Israel era menino, eu o amei, e do Egito chamei meu filho."
-              },
-              {
-                "ref": "Josué 7:26",
-                "text": "Ergueram sobre Acã um grande monte de pedras que continua lá até hoje. Por isso, desde então, aquele lugar é chamado de vale de Acor. Com isso, a ira ardente do SENHOR se apagou."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -301,7 +292,7 @@
               },
               {
                 "ref": "Oséias 1:2",
-                "text": "Quando o SENHOR começou a falar a Israel por meio de Oseias, disse- lhe: “Vá e case-se com uma prostituta, para que os filhos dela sejam concebidos em prostituição. Isso mostrará como Israel agiu como prostituta ao afastar-se do SENHOR”."
+                "text": "Quando o SENHOR começou a falar a Israel por meio de Oseias, disse-lhe: “Vá e case-se com uma prostituta, para que os filhos dela sejam concebidos em prostituição. Isso mostrará como Israel agiu como prostituta ao afastar-se do SENHOR”."
               },
               {
                 "ref": "Ezequiel 9:10",
@@ -320,7 +311,7 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 44:17–18",
-                "text": "Faremos o que bem entendermos. Queimaremos incenso e apresentaremos ofertas derramadas para a Rai­nha do Céu, como nós, nossos antepassados e nossos reis e oficiais sempre fizemos nas cidades de Judá e nas ruas de Jerusa..."
+                "text": "Faremos o que bem entendermos. Queimaremos incenso e apresentaremos ofertas derramadas para a Rainha do Céu, como nós, nossos antepassados e nossos reis e oficiais sempre fizemos nas cidades de Judá e nas ruas de Jerusal..."
               },
               {
                 "ref": "Isaías 1:21",
@@ -720,7 +711,7 @@
               },
               {
                 "ref": "Oséias 1:11",
-                "text": "Nesse tempo, o povo de Judá e o povo de Israel se unirão. Escolherão para si um só líder e voltarão juntos do exílio."
+                "text": "Nesse tempo, o povo de Judá e o povo de Israel se unirão. Escolherão para si um só líder e voltarão juntos do exílio. Que grande dia será o dia em que Deus semear seu povo novamente em sua terra!"
               },
               {
                 "ref": "Oséias 1:4",
@@ -751,7 +742,7 @@
               },
               {
                 "ref": "Oséias 1:9–10",
-                "text": "E o SENHOR disse: “Dê-lhe o nome de Lo-Ami, ‘Não Meu Povo’, pois Israel não é meu povo, e eu não sou seu Deus. 103 “Virá o tempo, porém, em que o povo de Israel se tornará como a areia à beira do mar, que não se pode con..."
+                "text": "E o SENHOR disse: “Dê-lhe o nome de Lo-Ami, ‘Não Meu Povo’, pois Israel não é meu povo, e eu não sou seu Deus."
               }
             ]
           }
@@ -762,6 +753,7 @@
   "3": {
     "book": "Oseias",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "A esposa de Oseias é redimida",
@@ -800,7 +792,7 @@
               },
               {
                 "ref": "Ezequiel 45:11",
-                "text": "O ômer171 será a unidade padrão para medir volume, e o efa e o bato172 medirão, cada um, um décimo de ômer."
+                "text": "O ômer será a unidade padrão para medir volume, e o efa e o bato medirão, cada um, um décimo de ômer."
               },
               {
                 "ref": "Levítico 27:16",
@@ -838,7 +830,7 @@
               },
               {
                 "ref": "2 Crônicas 15:2",
-                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça- me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
+                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça-me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
               },
               {
                 "ref": "Daniel 9:27",
@@ -876,6 +868,7 @@
   "4": {
     "book": "Oseias",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Acusações do SENHOR contra Israel",
@@ -951,7 +944,7 @@
           },
           {
             "number": 4,
-            "text": "“Não apontem o dedo para outra pessoa, não tentem escapar da culpa! Minha queixa é contra vocês, sacerdotes!18",
+            "text": "“Não apontem o dedo para outra pessoa, não tentem escapar da culpa! Minha queixa é contra vocês, sacerdotes!",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1324,6 +1317,7 @@
   "5": {
     "book": "Oseias",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "O fracasso dos líderes de Israel",
@@ -1491,7 +1485,7 @@
           },
           {
             "number": 8,
-            "text": "“Soem o alarme em Gibeá! Toquem a trombeta em Ramá! Deem o grito de guerra em Bete-Áven!25 Entrem na batalha, guerreiros de Benjamim!",
+            "text": "“Soem o alarme em Gibeá! Toquem a trombeta em Ramá! Deem o grito de guerra em Bete-Áven! Entrem na batalha, guerreiros de Benjamim!",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1531,7 +1525,7 @@
               },
               {
                 "ref": "Isaías 28:1–4",
-                "text": "Que aflição espera a orgulhosa cidade de Samaria, a coroa gloriosa dos bêbados de Israel!96 Fica na parte alta de um vale fértil, mas sua beleza gloriosa murchará como uma flor. Ela é o orgulho de um povo que o vinho derrubou."
+                "text": "Que aflição espera a orgulhosa cidade de Samaria, a coroa gloriosa dos bêbados de Israel! Fica na parte alta de um vale fértil, mas sua beleza gloriosa murchará como uma flor. Ela é o orgulho de um povo que o vinho derrubou."
               }
             ]
           },
@@ -1553,7 +1547,8 @@
                 "text": "Portanto, todos que forem fiéis orem a ti enquanto há tempo, para que não se afoguem quando vier a inundação."
               },
               {
-                "ref": "Deuteronômio 27:17"
+                "ref": "Deuteronômio 27:17",
+                "text": "‘Maldito quem roubar a propriedade do próximo, movendo um marco de divisa’. E todo o povo responderá: ‘Amém!’."
               }
             ]
           },
@@ -1621,7 +1616,8 @@
                 "text": "Então Tiglate-Pileser, rei da Assíria, invadiu a terra de Israel. Contudo, Menaém lhe pagou 35 toneladas de prata a fim de obter seu apoio e firmar-se no poder."
               },
               {
-                "ref": "Oséias 12:1"
+                "ref": "Oséias 12:1",
+                "text": "O povo de Israel se alimenta de vento; corre atrás do vento leste o dia todo. Acumula mentiras e violência, faz acordos com a Assíria e, ao mesmo tempo, envia azeite para comprar o apoio do Egito."
               }
             ]
           },
@@ -1678,6 +1674,7 @@
   "6": {
     "book": "Oseias",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "Chamado ao arrependimento",
@@ -1747,7 +1744,7 @@
               },
               {
                 "ref": "Salmos 72:6",
-                "text": "Que o governo do rei seja como a chuva sobre a grama recém- cortada, como os aguaceiros que regam a terra."
+                "text": "Que o governo do rei seja como a chuva sobre a grama recém-cortada, como os aguaceiros que regam a terra."
               }
             ]
           },
@@ -1942,6 +1939,7 @@
   "7": {
     "book": "Oseias",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Israel ama a maldade",
@@ -2021,7 +2019,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Jeremias 9:2"
+                "ref": "Jeremias 9:2",
+                "text": "Quem dera pudesse ir para bem longe, morar numa cabana no deserto e me esquecer do meu povo! Pois todos são adúlteros, um bando de traidores."
               },
               {
                 "ref": "Jeremias 5:7–8",
@@ -2029,7 +2028,7 @@
               },
               {
                 "ref": "Tiago 4:4",
-                "text": "Adúlteros!14 Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam- se inimigos de Deus."
+                "text": "Adúlteros! Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam-se inimigos de Deus."
               },
               {
                 "ref": "Oséias 7:6–7",
@@ -2048,7 +2047,7 @@
               },
               {
                 "ref": "Isaías 28:1",
-                "text": "Que aflição espera a orgulhosa cidade de Samaria, a coroa gloriosa dos bêbados de Israel!96 Fica na parte alta de um vale fértil, mas sua beleza gloriosa murchará como uma flor. Ela é o orgulho de um povo que o vinho derrubou."
+                "text": "Que aflição espera a orgulhosa cidade de Samaria, a coroa gloriosa dos bêbados de Israel! Fica na parte alta de um vale fértil, mas sua beleza gloriosa murchará como uma flor. Ela é o orgulho de um povo que o vinho derrubou."
               },
               {
                 "ref": "Efésios 5:18",
@@ -2185,7 +2184,8 @@
                 "text": "“Quando Israel e Judá viram como estavam doentes, Israel se voltou para a Assíria, para seu grande rei, mas ele não foi capaz de curá-lo."
               },
               {
-                "ref": "Oséias 12:1"
+                "ref": "Oséias 12:1",
+                "text": "O povo de Israel se alimenta de vento; corre atrás do vento leste o dia todo. Acumula mentiras e violência, faz acordos com a Assíria e, ao mesmo tempo, envia azeite para comprar o apoio do Egito."
               },
               {
                 "ref": "Jeremias 2:18",
@@ -2238,7 +2238,8 @@
                 "text": "“Que aflição os espera, mestres da lei e fariseus! Hipócritas! Fecham a porta do reino dos céus na cara das pessoas. Vocês mesmos não entram e não permitem que os outros entrem."
               },
               {
-                "ref": "Oséias 11:12"
+                "ref": "Oséias 11:12",
+                "text": "Israel me cerca de mentiras e traições, mas Judá ainda obedece a Deus e é fiel ao Santo."
               }
             ]
           },
@@ -2318,6 +2319,7 @@
   "8": {
     "book": "Oseias",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "Israel colhe vendaval",
@@ -2341,7 +2343,7 @@
               },
               {
                 "ref": "Oséias 5:8",
-                "text": "“Soem o alarme em Gibeá! Toquem a trombeta em Ramá! Deem o grito de guerra em Bete-Áven!25 Entrem na batalha, guerreiros de Benjamim!"
+                "text": "“Soem o alarme em Gibeá! Toquem a trombeta em Ramá! Deem o grito de guerra em Bete-Áven! Entrem na batalha, guerreiros de Benjamim!"
               }
             ]
           },
@@ -2398,7 +2400,7 @@
             "crossReferences": [
               {
                 "ref": "Oséias 13:9–10",
-                "text": "“Ó Israel, você está prestes a ser destruído por mim, seu único ajudador. Agora, onde está57 seu rei? Que ele salve suas cidades! Onde estão os líderes da terra, os reis e os príncipes que vocês exigiram de mim?"
+                "text": "“Ó Israel, você está prestes a ser destruído por mim, seu único ajudador. Agora, onde está seu rei? Que ele salve suas cidades! Onde estão os líderes da terra, os reis e os príncipes que vocês exigiram de mim?"
               },
               {
                 "ref": "2 Reis 15:10–30",
@@ -2651,6 +2653,7 @@
   "9": {
     "book": "Oseias",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "Oseias anuncia o castigo de Israel",
@@ -2666,7 +2669,7 @@
               },
               {
                 "ref": "Jeremias 44:17",
-                "text": "Faremos o que bem entendermos. Queimaremos incenso e apresentaremos ofertas derramadas para a Rai­nha do Céu, como nós, nossos antepassados e nossos reis e oficiais sempre fizemos nas cidades de Judá e nas ruas de Jerusa..."
+                "text": "Faremos o que bem entendermos. Queimaremos incenso e apresentaremos ofertas derramadas para a Rainha do Céu, como nós, nossos antepassados e nossos reis e oficiais sempre fizemos nas cidades de Judá e nas ruas de Jerusal..."
               },
               {
                 "ref": "Oséias 4:12",
@@ -2896,7 +2899,7 @@
               },
               {
                 "ref": "Gênesis 41:52",
-                "text": "José chamou o segundo filho de Efraim,146 pois disse: “Deus me fez prosperar na terra da minha aflição”."
+                "text": "José chamou o segundo filho de Efraim, pois disse: “Deus me fez prosperar na terra da minha aflição”."
               },
               {
                 "ref": "Oséias 10:5",
@@ -2946,7 +2949,7 @@
               },
               {
                 "ref": "Ezequiel 27:3",
-                "text": "essa cidade que é entrada para o mar, que estabelece relações comerciais com muitas nações. Transmita- lhe a seguinte mensagem do SENHOR Soberano: “Ó cidade de Tiro, você se gloriava: ‘Minha beleza é perfeita!’."
+                "text": "essa cidade que é entrada para o mar, que estabelece relações comerciais com muitas nações. Transmita-lhe a seguinte mensagem do SENHOR Soberano: “Ó cidade de Tiro, você se gloriava: ‘Minha beleza é perfeita!’."
               },
               {
                 "ref": "2 Reis 15:16",
@@ -3053,6 +3056,7 @@
   "10": {
     "book": "Oseias",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "O julgamento do SENHOR contra Israel",
@@ -3095,7 +3099,7 @@
               },
               {
                 "ref": "Tiago 4:4",
-                "text": "Adúlteros!14 Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam- se inimigos de Deus."
+                "text": "Adúlteros! Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam-se inimigos de Deus."
               },
               {
                 "ref": "Lucas 16:13",
@@ -3118,7 +3122,7 @@
               },
               {
                 "ref": "Gênesis 49:10",
-                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes,172 até que venha aquele a quem pertence,173 aquele que todas as nações honrarão."
+                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes, até que venha aquele a quem pertence, aquele que todas as nações honrarão."
               },
               {
                 "ref": "Miqueias 4:9",
@@ -3160,7 +3164,7 @@
               },
               {
                 "ref": "Oséias 5:8",
-                "text": "“Soem o alarme em Gibeá! Toquem a trombeta em Ramá! Deem o grito de guerra em Bete-Áven!25 Entrem na batalha, guerreiros de Benjamim!"
+                "text": "“Soem o alarme em Gibeá! Toquem a trombeta em Ramá! Deem o grito de guerra em Bete-Áven! Entrem na batalha, guerreiros de Benjamim!"
               },
               {
                 "ref": "2 Reis 23:5",
@@ -3362,7 +3366,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Oséias 13:16"
+                "ref": "Oséias 13:16",
+                "text": "O povo de Samaria sofrerá as consequências de sua culpa, pois se rebelou contra seu Deus. Serão mortos pela espada inimiga; suas crianças serão despedaçadas, e suas mulheres grávidas, abertas ao meio.”"
               },
               {
                 "ref": "2 Reis 18:9–10",
@@ -3408,9 +3413,10 @@
   "11": {
     "book": "Oseias",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
-        "title": "O amor do SENHOR por Israel",
+        "title": "O amor do SENHOR por Israel",
         "verses": [
           {
             "number": 1,
@@ -3533,7 +3539,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Oséias 13:16"
+                "ref": "Oséias 13:16",
+                "text": "O povo de Samaria sofrerá as consequências de sua culpa, pois se rebelou contra seu Deus. Serão mortos pela espada inimiga; suas crianças serão despedaçadas, e suas mulheres grávidas, abertas ao meio.”"
               },
               {
                 "ref": "Oséias 10:14",
@@ -3670,8 +3677,8 @@
         "title": "Acusações contra Israel e Judá",
         "verses": [
           {
-            "number": 1249,
-            "text": "Israel me cerca de mentiras e traições, mas Judá ainda obedece a Deus",
+            "number": 12,
+            "text": "Israel me cerca de mentiras e traições, mas Judá ainda obedece a Deus e é fiel ao Santo.",
             "isJesusWords": false,
             "crossReferences": []
           }
@@ -3682,19 +3689,20 @@
   "12": {
     "book": "Oseias",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
-        "title": "e é fiel ao Santo.50",
+        "title": "",
         "verses": [
           {
-            "number": 151,
+            "number": 1,
             "text": "O povo de Israel se alimenta de vento; corre atrás do vento leste o dia todo. Acumula mentiras e violência, faz acordos com a Assíria e, ao mesmo tempo, envia azeite para comprar o apoio do Egito.",
             "isJesusWords": false,
             "crossReferences": []
           },
           {
             "number": 2,
-            "text": "Agora o SENHOR apresenta acusações contra Judá; está prestes a castigar Jacó53 por sua conduta enganosa, e lhe retribuir por tudo que fez.",
+            "text": "Agora o SENHOR apresenta acusações contra Judá; está prestes a castigar Jacó por sua conduta enganosa, e lhe retribuir por tudo que fez.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3711,7 +3719,7 @@
               },
               {
                 "ref": "Isaías 8:7–8",
-                "text": "Portanto, o Senhor fará vir sobre eles uma grande inundação do rio Eufrates: o rei da Assíria com toda a sua glória. e cobrirá Judá até o pescoço. Abrirá as asas e submergirá sua terra de um extremo ao outro, ó Emanuel."
+                "text": "Portanto, o Senhor fará vir sobre eles uma grande inundação do rio Eufrates: o rei da Assíria com toda a sua glória. A inundação fará transbordar todos os seus canais"
               }
             ]
           },
@@ -3745,7 +3753,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 35:15",
-                "text": "Chamou o lugar de Betel,127 pois ali Deus lhe havia falado."
+                "text": "Chamou o lugar de Betel, pois ali Deus lhe havia falado."
               },
               {
                 "ref": "Malaquias 3:1",
@@ -3780,7 +3788,7 @@
               },
               {
                 "ref": "Gênesis 32:30",
-                "text": "Jacó chamou aquele lugar de Peniel,118 pois disse: “Vi Deus face a face e, no entanto, minha vida foi poupada”."
+                "text": "Jacó chamou aquele lugar de Peniel, pois disse: “Vi Deus face a face e, no entanto, minha vida foi poupada”."
               }
             ]
           },
@@ -3799,7 +3807,7 @@
               },
               {
                 "ref": "Oséias 14:1",
-                "text": "Co 15.."
+                "text": "Volte, ó Israel, para o SENHOR, seu Deus, pois seus pecados causaram sua queda."
               },
               {
                 "ref": "Lamentações 3:25–26",
@@ -3894,7 +3902,8 @@
                 "text": "o SENHOR disse a Isaías, filho de Amoz: “Tire o pano de saco que você está vestindo e as sandálias que está calçando”. Isaías obedeceu e passou a andar nu e descalço."
               },
               {
-                "ref": "Joel 2:28"
+                "ref": "Joel 2:28",
+                "text": "“Então, depois que eu tiver feito essas coisas, derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os velhos terão sonhos, e os jovens terão visões."
               }
             ]
           },
@@ -3993,6 +4002,7 @@
   "13": {
     "book": "Oseias",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "A ira do SENHOR contra Israel",
@@ -4206,7 +4216,7 @@
           },
           {
             "number": 10,
-            "text": "Agora, onde está57 seu rei? Que ele salve suas cidades! Onde estão os líderes da terra, os reis e os príncipes que vocês exigiram de mim?",
+            "text": "Agora, onde está seu rei? Que ele salve suas cidades! Onde estão os líderes da terra, os reis e os príncipes que vocês exigiram de mim?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4298,7 +4308,7 @@
           },
           {
             "number": 14,
-            "text": "“Devo resgatá-los da sepultura?58 Devo redimi-los da morte? Ó morte, traga seus horrores! Ó sepultura, traga suas pragas!59 Pois não terei compaixão deles.",
+            "text": "“Devo resgatá-los da sepultura? Devo redimi-los da morte? Ó morte, traga seus horrores! Ó sepultura, traga suas pragas! Pois não terei compaixão deles.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4315,7 +4325,7 @@
               },
               {
                 "ref": "Salmos 49:15",
-                "text": "Quanto a mim, Deus resgatará minha vida e me livrará do poder da sepultura."
+                "text": "Quanto a mim, Deus resgatará minha vida e me livrará do poder da sepultura. Interlúdio"
               }
             ]
           },
@@ -4338,12 +4348,12 @@
               },
               {
                 "ref": "Gênesis 41:52",
-                "text": "José chamou o segundo filho de Efraim,146 pois disse: “Deus me fez prosperar na terra da minha aflição”."
+                "text": "José chamou o segundo filho de Efraim, pois disse: “Deus me fez prosperar na terra da minha aflição”."
               }
             ]
           },
           {
-            "number": 1660,
+            "number": 16,
             "text": "O povo de Samaria sofrerá as consequências de sua culpa, pois se rebelou contra seu Deus. Serão mortos pela espada inimiga; suas crianças serão despedaçadas, e suas mulheres grávidas, abertas ao meio.”",
             "isJesusWords": false,
             "crossReferences": []
@@ -4355,15 +4365,33 @@
   "14": {
     "book": "Oseias",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
         "title": "Cura para os arrependidos",
         "verses": [
           {
-            "number": 161,
+            "number": 1,
             "text": "Volte, ó Israel, para o SENHOR, seu Deus, pois seus pecados causaram sua queda.",
             "isJesusWords": false,
-            "crossReferences": []
+            "crossReferences": [
+              {
+                "ref": "Joel 2:12–13",
+                "text": "Por isso, o SENHOR diz: “Voltem para mim de todo o coração, venham a mim com jejum, choro e lamento!"
+              },
+              {
+                "ref": "Oséias 6:1",
+                "text": "“Venham, voltemos para o SENHOR! Ele nos despedaçou, agora irá nos sarar. Ele nos feriu, agora nos fará curativos."
+              },
+              {
+                "ref": "Oséias 12:6",
+                "text": "Portanto, voltem para seu Deus; pratiquem o amor e a justiça e confiem sempre nele."
+              },
+              {
+                "ref": "2 Crônicas 30:6–9",
+                "text": "Por ordem do rei, mensageiros foram enviados a todo o Israel e Judá. Levavam cartas que diziam: “Ó israelitas, voltem para o SENHOR, o Deus de Abraão, Isaque e Israel, para que ele se volte para nós, os poucos que sobrev..."
+              }
+            ]
           },
           {
             "number": 2,
@@ -4453,7 +4481,7 @@
               },
               {
                 "ref": "Mateus 6:28",
-                "text": "“E por que se preocupar com a roupa? Observem como crescem os lírios do campo."
+                "text": "“E por que se preocupar com a roupa? Observem como crescem os lírios do campo. Não trabalham nem fazem roupas"
               }
             ]
           },
@@ -4528,7 +4556,7 @@
           },
           {
             "number": 9,
-            "text": "Quem for sábio, entenda estas coisas; quem tiver discernimento, ouça com atenção. Os caminhos do SENHOR são retos, e neles andam os justos. Mas, nesses mesmos caminhos, os pecadores tropeçam e caem. 1 1. Em hebraico, Joás, variação de Jeoás. 2 1. Ou uma mulher promíscua. 3 1. No texto hebraico, os versículos 1.10-11 são numerados 2.1-2. 4 1. Em hebraico, o dia de Jezreel. Ver 1.. 5 2. No texto hebraico, os versículos 2.1-23 são numerados 2.3-25. 6 2. Vale de Acor significa “vale da aflição”. 7 2. Em hebraico, ‘meu baal’. 8 2. Em hebraico, Jezreel; ver 1.. 9 2.23a Em hebraico, Lo-Ruama; ver 1.. 10 2.23b Em hebraico, Lo-Ami; ver 1.. 11 3.1a Ou Vá e ame uma mulher que comete adultério. 12 3.1b Em hebraico, ame seus bolos de passas. 13 3.2a Em hebraico, 15 [siclos] de prata, cerca de 170 gramas. 14 3.2b Conforme a Septuaginta, que traz 1 ômer de cevada e 1 odre de vinho; o hebraico traz 1 ômer de cevada [220 litros] e 1 letek [110 litros] de cevada. 15 3. Ou e eu viverei com você. 16 3. Em hebraico, colete sacerdotal. 17 3. Em hebraico, e Davi, seu rei. 18 4. O significado do hebraico é incerto. 19 4. Conforme a versão siríaca e uma antiga tradição hebraica; o Texto Massorético traz Transformarei sua glória em vergonha. 20 4. Bete-Áven significa “casa da perversidade”; aqui é outro nome para Betel, isto é, “casa de Deus”. 21 4. Em hebraico, Efraim, referência a Israel, o reino do norte. 22 4. Conforme a Septuaginta; o significado do hebraico é incerto. 23 5. O significado do hebraico é incerto. 24 5. O significado do hebraico é incerto. 25 5. Bete-Áven significa “casa da perversidade”; aqui é outro nome para Betel, isto é, “casa de Deus”. 26 5. Em hebraico, Efraim, referência a Israel, o reino do norte; também em 5.,,,. 27 5. Em hebraico, são como os que mudam um marco de limite. 28 5. Ou está decidido a seguir ordens humanas. O significado do hebraico é incerto. 29 6.2a Em hebraico, Depois de dois dias. 30 6.2b Em hebraico, no terceiro dia. 31 6. Em hebraico, Efraim, referência a Israel, o reino do norte. 32 6.6a A Septuaginta traduz esse termo hebraico como demonstrem misericórdia. Comparar com Mt 9.; 12.. 33 6.6b Em hebraico, que conheçam a Deus. 34 6. Ou Em Adão. 35 7. Em hebraico, os pecados de Efraim, referência a Israel, o reino do norte; também em 7.,. 36 7. Em hebraico, Seu padeiro dorme. 37 7. O significado do hebraico é incerto. 38 7. Conforme a Septuaginta; o hebraico traz Reúnem-se. 39 8. Em hebraico, Efraim, referência a Israel, o reino do norte; também em 8.. 40 9. Mênfis era a capital do norte do Egito. 41 9. Em hebraico, Efraim, referência a Israel, o reino do norte; também em 9.,,. 42 10.5a Bete-Áven significa “casa da perversidade”; aqui é outro nome para Betel, isto é, “casa de Deus”. 43 10.5b Ou será levada para o exílio. 44 10. Referência a Bete-Áven; ver 10.5a e respectiva nota. 45 10.11a Em hebraico, Efraim, referência a Israel, o reino do norte. 46 10.11b Em hebraico, Jacó. Os nomes “Jacó” e “Israel” são usados de forma intercambiável ao longo de todo o Antigo Testamento e se referem, por vezes, ao patriarca e, em outras ocasiões, à nação. 47 11. Conforme a Septuaginta; o hebraico traz quanto mais eles o chamavam, mais ele se afastava deles. 48 11. Em hebraico, Efraim, referência a Israel, o reino do norte; também em 11.,,. 49 11.12a No texto hebraico, o versículo 11. é numerado 12.. 50 11.12b Ou e Judá é rebelde contra Deus, o Santo fiel. O significado do hebraico é incerto. 51 12.1a No texto hebraico, os versículos 12.1-14 são numerados 12.2-15. 52 12.1b Em hebraico, Efraim, referência a Israel, o reino do norte; também em 12.,. 53 12. O nome Jacó tem um som parecido com o termo hebraico para “enganador”. 54 12. Conforme a Septuaginta e a versão siríaca; o hebraico traz conosco. 55 12. Em hebraico, Israel cuidou. Ver nota em 10.11b. 56 12. Em hebraico, tirou Israel do Egito. Ver nota em 10.11b. 57 13. Conforme a Septuaginta, a versão siríaca e a Vulgata; o hebraico traz eu serei. 58 13.14a Em hebraico, Sheol; também em 13.14b. 59 13.14b A Septuaginta traz Ó morte, onde está seu castigo? / Ó sepultura [Hades], onde está seu aguilhão?",
+            "text": "Quem for sábio, entenda estas coisas; quem tiver discernimento, ouça com atenção. Os caminhos do SENHOR são retos, e neles andam os justos. Mas, nesses mesmos caminhos, os pecadores tropeçam e caem.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4546,34 +4574,6 @@
               {
                 "ref": "Daniel 12:10",
                 "text": "Muitos serão purificados, limpos e refinados por essas provações. Os perversos, porém, continuarão em sua perversidade, e nenhum deles entenderá. Somente os sábios compreenderão seu significado."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Comparar com",
-        "verses": [
-          {
-            "number": 1,
-            "text": "Co 15.. 60 13. No texto hebraico, o versículo 13. é numerado 14.. 61 14. No texto hebraico, os versículos 14.1-9 são numerados 14.2-10. 62 14. Conforme a Septuaginta e a versão siríaca, que trazem para que retribuamos os frutos de nossos lábios; o hebraico traz para que retribuamos os touros de nossos lábios. 63 14. Em hebraico, Efraim, referência a Israel, o reino do norte.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Joel 2:12–13",
-                "text": "Por isso, o SENHOR diz: “Voltem para mim de todo o coração, venham a mim com jejum, choro e lamento!"
-              },
-              {
-                "ref": "Oséias 6:1",
-                "text": "“Venham, voltemos para o SENHOR! Ele nos despedaçou, agora irá nos sarar. Ele nos feriu, agora nos fará curativos."
-              },
-              {
-                "ref": "Oséias 12:6",
-                "text": "Portanto, voltem para seu Deus; pratiquem o amor e a justiça e confiem sempre nele."
-              },
-              {
-                "ref": "2 Crônicas 30:6–9",
-                "text": "Por ordem do rei, mensageiros foram enviados a todo o Israel e Judá. Levavam cartas que diziam: “Ó israelitas, voltem para o SENHOR, o Deus de Abraão, Isaque e Israel,133 para que ele se volte para nós, os poucos que sob..."
               }
             ]
           }

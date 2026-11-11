@@ -2,6 +2,7 @@
   "1": {
     "book": "Josué",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "A ordem de Deus a Josué",
@@ -304,7 +305,7 @@
             "crossReferences": [
               {
                 "ref": "Filipenses 2:4",
-                "text": "Não- ­ procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios."
+                "text": "Não- procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios."
               },
               {
                 "ref": "Números 32:17–22",
@@ -396,6 +397,7 @@
   "2": {
     "book": "Josué",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Raabe ajuda os espiões israelitas",
@@ -583,7 +585,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 23:27",
-                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia- volta e fugirem."
+                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia-volta e fugirem."
               },
               {
                 "ref": "Deuteronômio 2:25",
@@ -747,7 +749,8 @@
                 "text": "Os espiões subiram até a região montanhosa e ali ficaram por três dias. Seus perseguidores os procuraram por todo o caminho, mas não os encontraram e voltaram."
               },
               {
-                "ref": "1 Samuel 23:29"
+                "ref": "1 Samuel 23:29",
+                "text": "Depois, Davi saiu dali e foi viver nas fortalezas da região de En-Gedi."
               }
             ]
           },
@@ -816,7 +819,7 @@
               },
               {
                 "ref": "Atos 18:6",
-                "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição!91 Eu sou inocente. De agora em diante, pregarei aos gentios”."
+                "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição! Eu sou inocente. De agora em diante, pregarei aos gentios”."
               }
             ]
           },
@@ -861,7 +864,7 @@
               },
               {
                 "ref": "Salmos 32:6–7",
-                "text": "Portanto, todos que forem fiéis orem a ti enquanto há tempo, para que não se afoguem quando vier a inundação. Pois és meu esconderijo; tu me guardas da aflição e me cercas de cânticos de vitória."
+                "text": "Portanto, todos que forem fiéis orem a ti enquanto há tempo, para que não se afoguem quando vier a inundação. Pois és meu esconderijo; tu me guardas da aflição e me cercas de cânticos de vitória. Interlúdio"
               },
               {
                 "ref": "1 Samuel 19:10–12",
@@ -914,6 +917,7 @@
   "3": {
     "book": "Josué",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Israel atravessa o Jordão",
@@ -1028,7 +1032,7 @@
             "crossReferences": [
               {
                 "ref": "Números 14:15",
-                "text": "Se exterminares todo este povo com um só golpe, as nações que ouviram falar de tua fama dirão: 16‘O SENHOR não foi capaz de levá-los à terra que jurou lhes dar, por isso os matou no deserto’."
+                "text": "Se exterminares todo este povo com um só golpe, as nações que ouviram falar de tua fama dirão:"
               },
               {
                 "ref": "Miqueias 2:13",
@@ -1147,7 +1151,7 @@
               },
               {
                 "ref": "Miqueias 4:13",
-                "text": "“Levante-se e esmague as nações, ó bela Sião!19 Pois eu lhe darei chifres de ferro e cascos de bronze, para que pisoteie muitas nações até despedaçá-las. Você dedicará ao SENHOR as riquezas que elas roubaram; dedicará se..."
+                "text": "“Levante-se e esmague as nações, ó bela Sião! Pois eu lhe darei chifres de ferro e cascos de bronze, para que pisoteie muitas nações até despedaçá-las. Você dedicará ao SENHOR as riquezas que elas roubaram; dedicará seus..."
               }
             ]
           },
@@ -1292,6 +1296,7 @@
   "4": {
     "book": "Josué",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Os monumentos da travessia do Jordão",
@@ -1559,7 +1564,7 @@
               },
               {
                 "ref": "2 Reis 25:5",
-                "text": "Contudo, o exército babilônio103 perseguiu o rei e o alcançou nas planícies de Jericó, pois todos os seus soldados o haviam abandonado e se dispersado."
+                "text": "Contudo, o exército babilônio perseguiu o rei e o alcançou nas planícies de Jericó, pois todos os seus soldados o haviam abandonado e se dispersado."
               }
             ]
           },
@@ -1630,7 +1635,7 @@
               },
               {
                 "ref": "Daniel 3:26",
-                "text": "Então Nabucodonosor se aproximou o máximo que pôde da porta da fornalha ardente e gritou: “Sadraque, Mesaque e Abede- Nego, servos do Deus Altíssimo, saiam! Venham aqui!”. E Sadraque, Mesaque e Abede-Nego saíram do meio do fogo."
+                "text": "Então Nabucodonosor se aproximou o máximo que pôde da porta da fornalha ardente e gritou: “Sadraque, Mesaque e Abede-Nego, servos do Deus Altíssimo, saiam! Venham aqui!”. E Sadraque, Mesaque e Abede-Nego saíram do meio do fogo."
               }
             ]
           },
@@ -1790,6 +1795,7 @@
   "5": {
     "book": "Josué",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -1829,7 +1835,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 30:6",
-                "text": "“O SENHOR, seu Deus, transformará55 o coração de vocês e de todos os seus descendentes, para que o amem de todo o coração e de toda a alma, e para que vivam!"
+                "text": "“O SENHOR, seu Deus, transformará o coração de vocês e de todos os seus descendentes, para que o amem de todo o coração e de toda a alma, e para que vivam!"
               },
               {
                 "ref": "Deuteronômio 10:16",
@@ -1837,7 +1843,7 @@
               },
               {
                 "ref": "Êxodo 4:25",
-                "text": "Mas Zípora pegou uma faca de pedra e circuncidou seu filho. Com o prepúcio, tocou os pés de Moisés e lhe disse: “Agora você é para mim um marido de sangue”. 26(Quando disse “um marido de sangue”, estava se referindo à ci..."
+                "text": "Mas Zípora pegou uma faca de pedra e circuncidou seu filho. Com o prepúcio, tocou os pés de Moisés e lhe disse: “Agora você é para mim um marido de sangue”."
               },
               {
                 "ref": "Romanos 4:11",
@@ -2031,7 +2037,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 16:35",
-                "text": "Os israelitas comeram maná durante quarenta anos, até chegarem à terra onde se estabeleceriam. Comeram maná até chegarem à fronteira da terra de Canaã. 36(A vasilha usada para medir o maná continha um ômer, que era a décima parte da medida padrão.42)"
+                "text": "Os israelitas comeram maná durante quarenta anos, até chegarem à terra onde se estabeleceriam. Comeram maná até chegarem à fronteira da terra de Canaã."
               },
               {
                 "ref": "Neemias 9:20–21",
@@ -2104,7 +2110,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Atos 7:32–33"
+                "ref": "Atos 7:32–33",
+                "text": "‘Eu sou o Deus de seus antepassados, o Deus de Abraão, de Isaque e de Jacó’. Moisés tremia de medo e não tinha coragem de olhar. “Então o Senhor lhe disse: ‘Tire as sandálias, pois você está pisando em terra santa."
               },
               {
                 "ref": "Êxodo 3:5",
@@ -2123,6 +2130,7 @@
   "6": {
     "book": "Josué",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "A queda de Jericó",
@@ -2225,7 +2233,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Coríntios 10:4–5"
+                "ref": "2 Coríntios 10:4–5",
+                "text": "Usamos as armas poderosas de Deus, e não as armas do mundo, para derrubar as fortalezas do raciocínio humano e acabar com os falsos argumentos."
               },
               {
                 "ref": "Hebreus 11:30",
@@ -2431,7 +2440,7 @@
               },
               {
                 "ref": "Mateus 28:1",
-                "text": "Cr 3.."
+                "text": "Depois do sábado, no primeiro dia da semana, bem cedo, Maria Madalena e a outra Maria foram visitar o túmulo."
               }
             ]
           },
@@ -2473,7 +2482,7 @@
               },
               {
                 "ref": "Miqueias 4:13",
-                "text": "“Levante-se e esmague as nações, ó bela Sião!19 Pois eu lhe darei chifres de ferro e cascos de bronze, para que pisoteie muitas nações até despedaçá-las. Você dedicará ao SENHOR as riquezas que elas roubaram; dedicará se..."
+                "text": "“Levante-se e esmague as nações, ó bela Sião! Pois eu lhe darei chifres de ferro e cascos de bronze, para que pisoteie muitas nações até despedaçá-las. Você dedicará ao SENHOR as riquezas que elas roubaram; dedicará seus..."
               },
               {
                 "ref": "Hebreus 11:31",
@@ -2496,7 +2505,7 @@
               },
               {
                 "ref": "Josué 7:1",
-                "text": "Mas os israelitas violaram as instruções a respei­to das coisas separadas para o SENHOR. Um homem chamado Acã roubou algumas delas, e a ira do SENHOR se acendeu contra os israelitas. Acã era filho de Carmi, filho de Zimr..."
+                "text": "Mas os israelitas violaram as instruções a respeito das coisas separadas para o SENHOR. Um homem chamado Acã roubou algumas delas, e a ira do SENHOR se acendeu contra os israelitas. Acã era filho de Carmi, filho de Zimri..."
               },
               {
                 "ref": "Josué 7:11–12",
@@ -2537,7 +2546,8 @@
                 "text": "Pela fé, o povo marchou ao redor de Jericó durante sete dias, e suas muralhas caíram."
               },
               {
-                "ref": "2 Coríntios 10:4–5"
+                "ref": "2 Coríntios 10:4–5",
+                "text": "Usamos as armas poderosas de Deus, e não as armas do mundo, para derrubar as fortalezas do raciocínio humano e acabar com os falsos argumentos."
               },
               {
                 "ref": "Josué 6:5",
@@ -2625,7 +2635,7 @@
               },
               {
                 "ref": "2 Reis 25:9",
-                "text": "Queimou o templo do SENHOR, o palácio real e todas as casas de Jerusalém. Pôs fogo em todos os edifícios importantes105 da cidade."
+                "text": "Queimou o templo do SENHOR, o palácio real e todas as casas de Jerusalém. Pôs fogo em todos os edifícios importantes da cidade."
               },
               {
                 "ref": "Apocalipse 17:16",
@@ -2713,13 +2723,14 @@
   "7": {
     "book": "Josué",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Ai derrota os israelitas",
         "verses": [
           {
             "number": 1,
-            "text": "Mas os israelitas violaram as instruções a respei­to das coisas separadas para o SENHOR. Um homem chamado Acã roubou algumas delas, e a ira do SENHOR se acendeu contra os israelitas. Acã era filho de Carmi, filho de Zimri, filho de Zerá, da tribo de Judá.",
+            "text": "Mas os israelitas violaram as instruções a respeito das coisas separadas para o SENHOR. Um homem chamado Acã roubou algumas delas, e a ira do SENHOR se acendeu contra os israelitas. Acã era filho de Carmi, filho de Zimri, filho de Zerá, da tribo de Judá.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2732,7 +2743,7 @@
               },
               {
                 "ref": "1 Crônicas 2:6–7",
-                "text": "Os filhos de Zerá foram: Zinri, Etã, Hemã, Calcol e Darda, cinco ao todo. O filho de Carmi se chamava Acã26 e trouxe calamidade sobre Israel ao tomar para si despojos consagrados para o SENHOR."
+                "text": "Os filhos de Zerá foram: Zinri, Etã, Hemã, Calcol e Darda, cinco ao todo. O filho de Carmi se chamava Acã e trouxe calamidade sobre Israel ao tomar para si despojos consagrados para o SENHOR."
               },
               {
                 "ref": "Josué 7:20–21",
@@ -2755,7 +2766,7 @@
               },
               {
                 "ref": "1 Samuel 14:23",
-                "text": "Assim, o SENHOR livrou Israel naquele dia, e a batalha continuou até além de Bete- Áven."
+                "text": "Assim, o SENHOR livrou Israel naquele dia, e a batalha continuou até além de Bete-Áven."
               },
               {
                 "ref": "1 Samuel 13:5",
@@ -2893,7 +2904,7 @@
               },
               {
                 "ref": "Habacuque 2:1",
-                "text": "Subirei até minha torre de vigia e ficarei de guarda. Ali esperarei para ver o que ele diz, que resposta dará4 à minha queixa."
+                "text": "Subirei até minha torre de vigia e ficarei de guarda. Ali esperarei para ver o que ele diz, que resposta dará à minha queixa."
               }
             ]
           },
@@ -3031,7 +3042,7 @@
               },
               {
                 "ref": "Atos 1:24–26",
-                "text": "Em seguida, oraram: “Senhor, tu conheces cada coração."
+                "text": "Em seguida, oraram: “Senhor, tu conheces cada coração. Mostra-nos qual destes homens escolheste"
               }
             ]
           },
@@ -3147,7 +3158,7 @@
               },
               {
                 "ref": "2 Crônicas 30:22",
-                "text": "Ezequias elogiou todos os levitas pela aptidão que demonstraram no serviço ao SENHOR. A celebração prosseguiu por sete dias. Apresentaram ofertas de paz, e o povo agradeceu ao SENHOR, o Deus de seus ­antepassados."
+                "text": "Ezequias elogiou todos os levitas pela aptidão que demonstraram no serviço ao SENHOR. A celebração prosseguiu por sete dias. Apresentaram ofertas de paz, e o povo agradeceu ao SENHOR, o Deus de seus antepassados."
               }
             ]
           },
@@ -3185,7 +3196,7 @@
               },
               {
                 "ref": "Lucas 12:15",
-                "text": "Em seguida, disse: “Cuidado! Guardem- se de todo tipo de ganância. A vida de uma pessoa não é definida pela quantidade de seus bens”."
+                "text": "Em seguida, disse: “Cuidado! Guardem-se de todo tipo de ganância. A vida de uma pessoa não é definida pela quantidade de seus bens”."
               },
               {
                 "ref": "Salmos 119:37",
@@ -3253,7 +3264,7 @@
               },
               {
                 "ref": "1 Crônicas 2:7",
-                "text": "O filho de Carmi se chamava Acã26 e trouxe calamidade sobre Israel ao tomar para si despojos consagrados para o SENHOR."
+                "text": "O filho de Carmi se chamava Acã e trouxe calamidade sobre Israel ao tomar para si despojos consagrados para o SENHOR."
               },
               {
                 "ref": "Levítico 24:14",
@@ -3295,6 +3306,7 @@
   "8": {
     "book": "Josué",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "Os israelitas derrotam Ai",
@@ -3618,7 +3630,7 @@
               },
               {
                 "ref": "Salmos 9:16",
-                "text": "O SENHOR é conhecido por sua justiça; os perversos são pegos nas próprias armadilhas."
+                "text": "O SENHOR é conhecido por sua justiça; os perversos são pegos nas próprias armadilhas. Interlúdio silencioso"
               }
             ]
           },
@@ -3647,7 +3659,7 @@
           },
           {
             "number": 18,
-            "text": "Então o SENHOR disse a Josué: “Aponte para Ai a lança que você tem na mão, pois eu lhe entregarei a cidade”.",
+            "text": "Então o SENHOR disse a Josué: “Aponte para Ai a lança que você tem na mão, pois eu lhe entregarei a cidade”. Josué fez conforme ordenado",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3659,19 +3671,15 @@
                 "text": "pois agitam os punhos contra Deus e desafiam arrogantemente o Todo-poderoso."
               },
               {
-                "ref": "Êxodo 8:5"
+                "ref": "Êxodo 8:5",
+                "text": "O SENHOR também disse a Moisés: “Diga a Arão: ‘Estenda a vara que traz em sua mão sobre todos os rios, canais e açudes do Egito e faça subir rãs sobre toda a terra’”."
               },
               {
                 "ref": "Êxodo 14:16",
                 "text": "Tome sua vara e estenda a mão sobre o mar. Divida as águas para que os israelitas atravessem pelo meio do mar, em terra seca."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Josué fez conforme ordenado",
-        "verses": [
+          },
           {
             "number": 19,
             "text": "e, assim que deu esse sinal, todos os homens da emboscada saíram correndo de sua posição e invadiram a cidade. Em pouco tempo, eles a capturaram e a incendiaram.",
@@ -3808,7 +3816,7 @@
               },
               {
                 "ref": "Josué 8:18",
-                "text": "Então o SENHOR disse a Josué: “Aponte para Ai a lança que você tem na mão, pois eu lhe entregarei a cidade”."
+                "text": "Então o SENHOR disse a Josué: “Aponte para Ai a lança que você tem na mão, pois eu lhe entregarei a cidade”. Josué fez conforme ordenado"
               }
             ]
           },
@@ -3954,7 +3962,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 11:29",
-                "text": "“Quando o SENHOR, seu Deus, os fizer entrar na terra da qual em breve vocês tomarão posse, pronunciem a bênção no monte Gerizim e a maldição no monte Ebal. 30(Esses dois montes ficam a oeste do rio Jordão, na terra dos c..."
+                "text": "“Quando o SENHOR, seu Deus, os fizer entrar na terra da qual em breve vocês tomarão posse, pronunciem a bênção no monte Gerizim e a maldição no monte Ebal."
               },
               {
                 "ref": "Deuteronômio 31:12",
@@ -4023,6 +4031,7 @@
   "9": {
     "book": "Josué",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "Os gibeonitas enganam Israel",
@@ -4203,7 +4212,7 @@
               },
               {
                 "ref": "Josué 9:11",
-                "text": "Por isso, nossos líderes e todo o nosso povo nos instruíram: ‘Levem provisões para uma viagem longa. Vão encontrar- se com os israelitas e digam-lhes: Somos seus servos; por favor, façam um tratado conosco’."
+                "text": "Por isso, nossos líderes e todo o nosso povo nos instruíram: ‘Levem provisões para uma viagem longa. Vão encontrar-se com os israelitas e digam-lhes: Somos seus servos; por favor, façam um tratado conosco’."
               },
               {
                 "ref": "Josué 9:27",
@@ -4259,7 +4268,7 @@
           },
           {
             "number": 11,
-            "text": "Por isso, nossos líderes e todo o nosso povo nos instruíram: ‘Levem provisões para uma viagem longa. Vão encontrar- se com os israelitas e digam-lhes: Somos seus servos; por favor, façam um tratado conosco’.",
+            "text": "Por isso, nossos líderes e todo o nosso povo nos instruíram: ‘Levem provisões para uma viagem longa. Vão encontrar-se com os israelitas e digam-lhes: Somos seus servos; por favor, façam um tratado conosco’.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4408,7 +4417,8 @@
                 "text": "No fim, todos têm o mesmo destino, seja a pessoa justa ou perversa, boa ou má, cerimonialmente pura ou impura, religiosa ou não. Ocorre o mesmo à pessoa de bem e ao pecador; aquele que faz promessas a Deus é tratado como o que teme fazê-lo."
               },
               {
-                "ref": "Eclesiastes 5:2"
+                "ref": "Eclesiastes 5:2",
+                "text": "Não se precipite em fazer promessas nem em apresentar suas questões a Deus. Afinal, Deus está nos céus, e você, na terra; portanto, fale pouco."
               },
               {
                 "ref": "2 Samuel 21:7",
@@ -4569,7 +4579,7 @@
               },
               {
                 "ref": "Juízes 10:15",
-                "text": "Mas os israelitas suplicaram ao SENHOR: “Sim, pecamos! Castiga- nos como te parecer melhor, mas livra-nos hoje de nossos inimigos”."
+                "text": "Mas os israelitas suplicaram ao SENHOR: “Sim, pecamos! Castiga-nos como te parecer melhor, mas livra-nos hoje de nossos inimigos”."
               },
               {
                 "ref": "Isaías 47:6",
@@ -4601,6 +4611,7 @@
   "10": {
     "book": "Josué",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "Israel derrota os exércitos do sul",
@@ -4865,7 +4876,7 @@
               },
               {
                 "ref": "Isaías 38:8",
-                "text": "Farei a sombra do sol recuar dez graus no relógio de sol123 de Acaz’”. Então a sombra no relógio de sol de Acaz recuou dez graus."
+                "text": "Farei a sombra do sol recuar dez graus no relógio de sol de Acaz’”. Então a sombra no relógio de sol de Acaz recuou dez graus."
               },
               {
                 "ref": "Isaías 60:20",
@@ -4873,13 +4884,13 @@
               },
               {
                 "ref": "Josué 10:13",
-                "text": "O sol parou e a lua ficou onde estava, até que o povo tivesse derrotado seus inimigos. Acaso esse acontecimento não está registrado no Livro de Jasar?22 O sol parou no meio do céu e não se pôs por cerca de um dia inteiro."
+                "text": "O sol parou e a lua ficou onde estava, até que o povo tivesse derrotado seus inimigos. Acaso esse acontecimento não está registrado no Livro de Jasar? O sol parou no meio do céu e não se pôs por cerca de um dia inteiro."
               }
             ]
           },
           {
             "number": 13,
-            "text": "O sol parou e a lua ficou onde estava, até que o povo tivesse derrotado seus inimigos. Acaso esse acontecimento não está registrado no Livro de Jasar?22 O sol parou no meio do céu e não se pôs por cerca de um dia inteiro.",
+            "text": "O sol parou e a lua ficou onde estava, até que o povo tivesse derrotado seus inimigos. Acaso esse acontecimento não está registrado no Livro de Jasar? O sol parou no meio do céu e não se pôs por cerca de um dia inteiro.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4888,7 +4899,7 @@
               },
               {
                 "ref": "Isaías 38:8",
-                "text": "Farei a sombra do sol recuar dez graus no relógio de sol123 de Acaz’”. Então a sombra no relógio de sol de Acaz recuou dez graus."
+                "text": "Farei a sombra do sol recuar dez graus no relógio de sol de Acaz’”. Então a sombra no relógio de sol de Acaz recuou dez graus."
               },
               {
                 "ref": "Josué 10:14",
@@ -5114,7 +5125,7 @@
               },
               {
                 "ref": "Salmos 110:1",
-                "text": "O SENHOR disse ao meu Senhor:144 “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
+                "text": "O SENHOR disse ao meu Senhor: “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
               }
             ]
           },
@@ -5326,7 +5337,7 @@
               },
               {
                 "ref": "1 Reis 9:15–17",
-                "text": "Este é o relato do trabalho forçado que o rei Salomão impôs para a construção do templo do SENHOR, do palácio real, do aterro e do muro de Jerusalém, além das cidades de Hazor, Megido e Gezer. 16(O faraó, rei do Egito, h..."
+                "text": "Este é o relato do trabalho forçado que o rei Salomão impôs para a construção do templo do SENHOR, do palácio real, do aterro e do muro de Jerusalém, além das cidades de Hazor, Megido e Gezer."
               }
             ]
           },
@@ -5517,7 +5528,7 @@
               },
               {
                 "ref": "Salmos 46:7",
-                "text": "O SENHOR dos Exércitos está entre nós; o Deus de Jacó é nossa fortaleza."
+                "text": "O SENHOR dos Exércitos está entre nós; o Deus de Jacó é nossa fortaleza. Interlúdio"
               },
               {
                 "ref": "Salmos 80:3",
@@ -5555,6 +5566,7 @@
   "11": {
     "book": "Josué",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "Israel derrota os exércitos do norte",
@@ -5593,11 +5605,11 @@
               },
               {
                 "ref": "Juízes 1:27",
-                "text": "A tribo de Manassés, porém, não expulsou os habitantes de Bete- Sã, Taanaque, Dor, Ibleã e Megido, nem dos povoados ao seu redor, pois os cananeus estavam decididos a permanecer naquela região."
+                "text": "A tribo de Manassés, porém, não expulsou os habitantes de Bete-Sã, Taanaque, Dor, Ibleã e Megido, nem dos povoados ao seu redor, pois os cananeus estavam decididos a permanecer naquela região."
               },
               {
                 "ref": "Josué 17:11",
-                "text": "As seguintes cidades dentro do território de Issacar e Aser foram entregues a Manassés: Bete-Sã, Ibleã, Dor (isto é, Nafote- Dor), En-Dor, Taanaque e Megido, cada uma com os assentamentos ao redor."
+                "text": "As seguintes cidades dentro do território de Issacar e Aser foram entregues a Manassés: Bete-Sã, Ibleã, Dor (isto é, Nafote-Dor), En-Dor, Taanaque e Megido, cada uma com os assentamentos ao redor."
               },
               {
                 "ref": "Números 34:11",
@@ -5616,7 +5628,7 @@
               },
               {
                 "ref": "Gênesis 31:49",
-                "text": "Também foi chamado de Mispá,112 pois Labão disse: “Vigie o SENHOR a você e a mim para garantir que guardaremos esta aliança quando estivermos longe um do outro."
+                "text": "Também foi chamado de Mispá, pois Labão disse: “Vigie o SENHOR a você e a mim para garantir que guardaremos esta aliança quando estivermos longe um do outro."
               },
               {
                 "ref": "Josué 18:26",
@@ -5643,7 +5655,7 @@
               },
               {
                 "ref": "Gênesis 22:17",
-                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar."
+                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar. Seus descendentes conquistarão as cidades de seus inimigos"
               },
               {
                 "ref": "Gênesis 32:12",
@@ -5917,7 +5929,7 @@
               },
               {
                 "ref": "Josué 14:7–10",
-                "text": "Eu tinha 40 anos quando Moisés, servo do SENHOR, me enviou de Cades- Barneia para fazer o reconhecimento da terra de Canaã. Eu voltei e lhe dei um relatório verdadeiro,"
+                "text": "Eu tinha 40 anos quando Moisés, servo do SENHOR, me enviou de Cades-Barneia para fazer o reconhecimento da terra de Canaã. Eu voltei e lhe dei um relatório verdadeiro,"
               }
             ]
           },
@@ -6020,7 +6032,7 @@
               },
               {
                 "ref": "Êxodo 23:27–31",
-                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia- volta e fugirem."
+                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia-volta e fugirem."
               }
             ]
           }
@@ -6031,6 +6043,7 @@
   "12": {
     "book": "Josué",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "Reis derrotados a leste do Jordão",
@@ -6042,7 +6055,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 3:8–9",
-                "text": "“Assim, tomamos o território dos dois reis amorreus a leste do rio Jordão, desde o vale de Arnom até o monte Hermom. 9(Os sidônios chamam o monte Hermom de Siriom, enquanto os amorreus o chamam de Senir.)"
+                "text": "“Assim, tomamos o território dos dois reis amorreus a leste do rio Jordão, desde o vale de Arnom até o monte Hermom. (Os sidônios chamam o monte Hermom de Siriom, enquanto os amorreus o chamam de Senir.)"
               },
               {
                 "ref": "Juízes 11:18",
@@ -6123,7 +6136,7 @@
               },
               {
                 "ref": "Deuteronômio 3:10–11",
-                "text": "A essa altura, havíamos conquistado todas as cidades do planalto e todo o território de Gileade e Basã, até as cidades de Salcá e Edrei, que faziam parte do reino de Ogue, em Basã.” 11(O rei Ogue de Basã foi o último sob..."
+                "text": "A essa altura, havíamos conquistado todas as cidades do planalto e todo o território de Gileade e Basã, até as cidades de Salcá e Edrei, que faziam parte do reino de Ogue, em Basã.”"
               }
             ]
           },
@@ -6146,7 +6159,7 @@
               },
               {
                 "ref": "Deuteronômio 3:8–10",
-                "text": "“Assim, tomamos o território dos dois reis amorreus a leste do rio Jordão, desde o vale de Arnom até o monte Hermom. 9(Os sidônios chamam o monte Hermom de Siriom, enquanto os amorreus o chamam de Senir.)"
+                "text": "“Assim, tomamos o território dos dois reis amorreus a leste do rio Jordão, desde o vale de Arnom até o monte Hermom."
               }
             ]
           },
@@ -6168,7 +6181,8 @@
                 "text": "e o povo de Israel massacrou pela espada os amorreus e ocupou seu território desde o rio Arnom até o rio Jaboque. Avançaram apenas até a fronteira com os amonitas, pois a divisa era fortificada."
               },
               {
-                "ref": "Deuteronômio 3:11–17"
+                "ref": "Deuteronômio 3:11–17",
+                "text": "(O rei Ogue de Basã foi o último sobrevivente dos refains. Sua cama era feita de ferro e media mais de quatro metros de comprimento e quase dois metros de largura. Ainda hoje é possível vê-la na cidade amonita de Rabá.)"
               }
             ]
           }
@@ -6409,7 +6423,7 @@
               },
               {
                 "ref": "1 Samuel 4:1",
-                "text": "E as palavras de Samuel chegavam a todo o povo de Israel. Os filisteus tomam a arca Naquele tempo, Israel estava em guerra com os filisteus. O exército israelita tinha acampado perto de Ebenézer, e os filisteus acamparam em Afeque."
+                "text": "E as palavras de Samuel chegavam a todo o povo de Israel."
               },
               {
                 "ref": "Isaías 33:9",
@@ -6466,7 +6480,7 @@
             "crossReferences": [
               {
                 "ref": "Josué 17:11",
-                "text": "As seguintes cidades dentro do território de Issacar e Aser foram entregues a Manassés: Bete-Sã, Ibleã, Dor (isto é, Nafote- Dor), En-Dor, Taanaque e Megido, cada uma com os assentamentos ao redor."
+                "text": "As seguintes cidades dentro do território de Issacar e Aser foram entregues a Manassés: Bete-Sã, Ibleã, Dor (isto é, Nafote-Dor), En-Dor, Taanaque e Megido, cada uma com os assentamentos ao redor."
               },
               {
                 "ref": "Juízes 5:19",
@@ -6478,7 +6492,7 @@
               },
               {
                 "ref": "2 Reis 23:29–30",
-                "text": "Durante o reinado de Josias, o faraó Neco, rei do Egito, foi ao rio Eufrates dar apoio ao rei da Assíria. O rei Josias e seu exército saíram para lutar contra ele, mas o faraó92 o matou quando se enfrentaram em Megido."
+                "text": "Durante o reinado de Josias, o faraó Neco, rei do Egito, foi ao rio Eufrates dar apoio ao rei da Assíria. O rei Josias e seu exército saíram para lutar contra ele, mas o faraó o matou quando se enfrentaram em Megido."
               }
             ]
           },
@@ -6523,7 +6537,8 @@
                 "text": "O povo atravessou o Jordão no décimo dia do primeiro mês e acampou em Gilgal, a leste de Jericó."
               },
               {
-                "ref": "Isaías 9:1"
+                "ref": "Isaías 9:1",
+                "text": "Esse tempo de escuridão e desespero, no entanto, não durará para sempre. A terra de Zebulom e de Naftali será humilhada, mas no futuro a Galileia dos gentios, localizada junto à estrada entre o Jordão e o mar, se encherá de glória."
               }
             ]
           },
@@ -6553,6 +6568,7 @@
   "13": {
     "book": "Josué",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "A terra ainda por conquistar",
@@ -6641,7 +6657,7 @@
               },
               {
                 "ref": "1 Samuel 4:1",
-                "text": "E as palavras de Samuel chegavam a todo o povo de Israel. Os filisteus tomam a arca Naquele tempo, Israel estava em guerra com os filisteus. O exército israelita tinha acampado perto de Ebenézer, e os filisteus acamparam em Afeque."
+                "text": "E as palavras de Samuel chegavam a todo o povo de Israel."
               },
               {
                 "ref": "Josué 11:3",
@@ -6786,7 +6802,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Crônicas 2:23"
+                "ref": "1 Crônicas 2:23",
+                "text": "(Contudo, Gesur e Arã tomaram as Cidades de Jair, além de Quenate e os sessenta povoados ao redor.) Todos esses foram descendentes de Maquir, pai de Gileade."
               },
               {
                 "ref": "Deuteronômio 4:47–48",
@@ -6817,7 +6834,7 @@
               },
               {
                 "ref": "Deuteronômio 3:10–11",
-                "text": "A essa altura, havíamos conquistado todas as cidades do planalto e todo o território de Gileade e Basã, até as cidades de Salcá e Edrei, que faziam parte do reino de Ogue, em Basã.” 11(O rei Ogue de Basã foi o último sob..."
+                "text": "A essa altura, havíamos conquistado todas as cidades do planalto e todo o território de Gileade e Basã, até as cidades de Salcá e Edrei, que faziam parte do reino de Ogue, em Basã.”"
               }
             ]
           },
@@ -7006,7 +7023,7 @@
               },
               {
                 "ref": "Deuteronômio 3:10",
-                "text": "A essa altura, havíamos conquistado todas as cidades do planalto e todo o território de Gileade e Basã, até as cidades de Salcá e Edrei, que faziam parte do reino de Ogue, em Basã.” 11(O rei Ogue de Basã foi o último sob..."
+                "text": "A essa altura, havíamos conquistado todas as cidades do planalto e todo o território de Gileade e Basã, até as cidades de Salcá e Edrei, que faziam parte do reino de Ogue, em Basã.”"
               },
               {
                 "ref": "Números 21:24–35",
@@ -7086,7 +7103,8 @@
                 "text": "No começo do ano, época em que os reis costumavam ir à guerra, Davi enviou Joabe e as tropas israelitas para lutarem contra os amonitas. Eles destruíram o exército inimigo e cercaram a cidade de Rabá. Mas Davi ficou em Jerusalém."
               },
               {
-                "ref": "Deuteronômio 3:11"
+                "ref": "Deuteronômio 3:11",
+                "text": "(O rei Ogue de Basã foi o último sobrevivente dos refains. Sua cama era feita de ferro e media mais de quatro metros de comprimento e quase dois metros de largura. Ainda hoje é possível vê-la na cidade amonita de Rabá.)"
               }
             ]
           },
@@ -7097,7 +7115,7 @@
             "crossReferences": [
               {
                 "ref": "2 Samuel 17:27",
-                "text": "Quando Davi chegou a Maanaim, foi recebido por Sobi, filho de Naás, de Rabá dos amonitas, e por Maquir, filho de Amiel, de Lo- Debar, e por Barzilai, de Rogelim, em Gileade."
+                "text": "Quando Davi chegou a Maanaim, foi recebido por Sobi, filho de Naás, de Rabá dos amonitas, e por Maquir, filho de Amiel, de Lo-Debar, e por Barzilai, de Rogelim, em Gileade."
               },
               {
                 "ref": "2 Samuel 2:8",
@@ -7128,7 +7146,7 @@
               },
               {
                 "ref": "Números 32:36",
-                "text": "Bete-Ninra e Bete- Harã, e todas eram cidades fortificadas e com currais para os rebanhos."
+                "text": "Bete-Ninra e Bete-Harã, e todas eram cidades fortificadas e com currais para os rebanhos."
               },
               {
                 "ref": "Deuteronômio 3:17",
@@ -7254,6 +7272,7 @@
   "14": {
     "book": "Josué",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
         "title": "A terra dividida a oeste do Jordão",
@@ -7322,7 +7341,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 48:5",
-                "text": "“Agora, tomo para mim, como meus próprios filhos, seus dois rapazes, Efraim e Manassés, ­nascidos aqui na terra do Egito antes de minha chegada. Eles serão meus filhos, como são Rúben e Simeão."
+                "text": "“Agora, tomo para mim, como meus próprios filhos, seus dois rapazes, Efraim e Manassés, nascidos aqui na terra do Egito antes de minha chegada. Eles serão meus filhos, como são Rúben e Simeão."
               },
               {
                 "ref": "1 Crônicas 5:1–2",
@@ -7383,7 +7402,7 @@
           },
           {
             "number": 7,
-            "text": "Eu tinha 40 anos quando Moisés, servo do SENHOR, me enviou de Cades- Barneia para fazer o reconhecimento da terra de Canaã. Eu voltei e lhe dei um relatório verdadeiro,",
+            "text": "Eu tinha 40 anos quando Moisés, servo do SENHOR, me enviou de Cades-Barneia para fazer o reconhecimento da terra de Canaã. Eu voltei e lhe dei um relatório verdadeiro,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -7442,7 +7461,7 @@
               },
               {
                 "ref": "Números 14:22–24",
-                "text": "nenhuma dessas pessoas entrará na terra. Todas elas viram a minha presença gloriosa e os sinais que realizei no Egito e no deserto. Repetidamente, porém, me puseram à prova, ­re-­ cusando-se a ouvir a minha voz."
+                "text": "nenhuma dessas pessoas entrará na terra. Todas elas viram a minha presença gloriosa e os sinais que realizei no Egito e no deserto. Repetidamente, porém, me puseram à prova, re- cusando-se a ouvir a minha voz."
               },
               {
                 "ref": "Números 13:22",
@@ -7534,7 +7553,7 @@
               },
               {
                 "ref": "Josué 21:11–12",
-                "text": "Quiriate- Arba (isto é, Hebrom), na região montanhosa de Judá, com as pastagens ao redor. (Arba era antepassado de Enaque.)"
+                "text": "Quiriate-Arba (isto é, Hebrom), na região montanhosa de Judá, com as pastagens ao redor. (Arba era antepassado de Enaque.)"
               }
             ]
           },
@@ -7564,7 +7583,7 @@
               },
               {
                 "ref": "Gênesis 23:2",
-                "text": "morreu em Quiriate- Arba (hoje chamada Hebrom), na terra de Canaã. Abraão lamentou a morte de Sara e chorou por ela."
+                "text": "morreu em Quiriate-Arba (hoje chamada Hebrom), na terra de Canaã. Abraão lamentou a morte de Sara e chorou por ela."
               },
               {
                 "ref": "Josué 15:13",
@@ -7583,6 +7602,7 @@
   "15": {
     "book": "Josué",
     "chapter": "15",
+    "verified": true,
     "sections": [
       {
         "title": "A terra entregue à tribo de Judá",
@@ -7602,7 +7622,7 @@
               },
               {
                 "ref": "Ezequiel 47:19",
-                "text": "“A fronteira sul se estenderá de Tamar até as águas de Meribá, em Cades,196 e de lá seguirá o curso do ribeiro do Egito até o Mediterrâneo. Essa será a fronteira sul."
+                "text": "“A fronteira sul se estenderá de Tamar até as águas de Meribá, em Cades, e de lá seguirá o curso do ribeiro do Egito até o Mediterrâneo. Essa será a fronteira sul."
               },
               {
                 "ref": "Josué 14:2",
@@ -7625,7 +7645,7 @@
               },
               {
                 "ref": "Ezequiel 47:8",
-                "text": "Então ele me disse: “Este rio corre para o leste, pelo deserto, até o vale do mar Morto.190 Sua água tornará pura a água salgada do mar Morto."
+                "text": "Então ele me disse: “Este rio corre para o leste, pelo deserto, até o vale do mar Morto. Sua água tornará pura a água salgada do mar Morto."
               },
               {
                 "ref": "Josué 3:16",
@@ -7635,12 +7655,12 @@
           },
           {
             "number": 3,
-            "text": "seguia para o sul pela ladeira do Escorpião, passando pelo deserto de Zim e prosseguindo até Hezrom, ao sul de Cades- Barneia. Então subia até Adar e fazia uma curva em direção a Carca.",
+            "text": "seguia para o sul pela ladeira do Escorpião, passando pelo deserto de Zim e prosseguindo até Hezrom, ao sul de Cades-Barneia. Então subia até Adar e fazia uma curva em direção a Carca.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Números 34:4",
-                "text": "Ela se estenderá pelo sul, passando pela ladeira do Escorpião,106 em direção a Zim. Seu extremo ao sul será Cades- Barneia, de onde seguirá até Hazar-Adar e, de lá, até Azmom."
+                "text": "Ela se estenderá pelo sul, passando pela ladeira do Escorpião, em direção a Zim. Seu extremo ao sul será Cades-Barneia, de onde seguirá até Hazar-Adar e, de lá, até Azmom."
               },
               {
                 "ref": "Juízes 1:36",
@@ -7690,7 +7710,7 @@
               },
               {
                 "ref": "Josué 18:15–19",
-                "text": "A divisa ao sul começava nos arredores de Quiriate-Jearim."
+                "text": "A divisa ao sul começava nos arredores de Quiriate-Jearim. Desse ponto a oeste se estendia até a fonte nas águas de Neftoa"
               },
               {
                 "ref": "Números 34:10",
@@ -7766,11 +7786,11 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 13:6",
-                "text": "Davi e todo o Israel foram a Baalá de Judá (também chamada de Quiriate-Jearim), a fim de buscar a arca de Deus, junto à qual era invocado o nome do SENHOR,119 que está entronizado entre os querubins."
+                "text": "Davi e todo o Israel foram a Baalá de Judá (também chamada de Quiriate-Jearim), a fim de buscar a arca de Deus, junto à qual era invocado o nome do SENHOR, que está entronizado entre os querubins."
               },
               {
                 "ref": "Josué 18:15",
-                "text": "A divisa ao sul começava nos arredores de Quiriate-Jearim."
+                "text": "A divisa ao sul começava nos arredores de Quiriate-Jearim. Desse ponto a oeste se estendia até a fonte nas águas de Neftoa"
               },
               {
                 "ref": "Juízes 18:12",
@@ -7801,7 +7821,7 @@
               },
               {
                 "ref": "1 Samuel 6:12–21",
-                "text": "E, de fato, as vacas não se desviaram nem para um lado nem para o outro, mas seguiram direto pela estrada para Bete-Semes, mugindo por todo o caminho. Os governantes filisteus as acompanharam até a fronteira de Bete- Semes."
+                "text": "E, de fato, as vacas não se desviaram nem para um lado nem para o outro, mas seguiram direto pela estrada para Bete-Semes, mugindo por todo o caminho. Os governantes filisteus as acompanharam até a fronteira de Bete-Semes."
               }
             ]
           },
@@ -7871,7 +7891,7 @@
               },
               {
                 "ref": "Deuteronômio 1:34–36",
-                "text": "“Quando o SENHOR ouviu vocês se queixarem, ficou irado e, por isso, fez um juramento: 35‘Nenhum de vocês desta geração perversa viverá para ver a boa terra que eu jurei dar a seus antepassados."
+                "text": "“Quando o SENHOR ouviu vocês se queixarem, ficou irado e, por isso, fez um juramento:"
               },
               {
                 "ref": "Números 13:30",
@@ -8024,7 +8044,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 35:21",
-                "text": "Então Jacó130 seguiu viagem e acampou além de Migdal-Éder."
+                "text": "Então Jacó seguiu viagem e acampou além de Migdal-Éder."
               },
               {
                 "ref": "Neemias 11:25",
@@ -8095,7 +8115,7 @@
           },
           {
             "number": 27,
-            "text": "Hazar- Gada, Hesmom, Bete-Pelete,",
+            "text": "Hazar-Gada, Hesmom, Bete-Pelete,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -8564,7 +8584,7 @@
             "crossReferences": [
               {
                 "ref": "1 Samuel 4:1",
-                "text": "E as palavras de Samuel chegavam a todo o povo de Israel. Os filisteus tomam a arca Naquele tempo, Israel estava em guerra com os filisteus. O exército israelita tinha acampado perto de Ebenézer, e os filisteus acamparam em Afeque."
+                "text": "E as palavras de Samuel chegavam a todo o povo de Israel."
               },
               {
                 "ref": "Josué 15:34",
@@ -8587,7 +8607,7 @@
               },
               {
                 "ref": "Gênesis 23:2",
-                "text": "morreu em Quiriate- Arba (hoje chamada Hebrom), na terra de Canaã. Abraão lamentou a morte de Sara e chorou por ela."
+                "text": "morreu em Quiriate-Arba (hoje chamada Hebrom), na terra de Canaã. Abraão lamentou a morte de Sara e chorou por ela."
               },
               {
                 "ref": "Josué 14:15",
@@ -8713,7 +8733,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Samuel 23:29"
+                "ref": "1 Samuel 23:29",
+                "text": "Depois, Davi saiu dali e foi viver nas fortalezas da região de En-Gedi."
               },
               {
                 "ref": "2 Crônicas 20:2",
@@ -8751,6 +8772,7 @@
   "16": {
     "book": "Josué",
     "chapter": "16",
+    "verified": true,
     "sections": [
       {
         "title": "A terra entregue a Efraim e a Manassés ocidental",
@@ -8945,7 +8967,8 @@
                 "text": "Mais tarde, quando os israelitas se tornaram fortes o suficiente, submeteram os cananeus a trabalhos forçados, mas não os expulsaram completamente."
               },
               {
-                "ref": "1 Reis 9:16"
+                "ref": "1 Reis 9:16",
+                "text": "(O faraó, rei do Egito, havia atacado e conquistado Gezer. Matou seus habitantes cananeus, incendiou a cidade e a deu como presente à sua filha quando ela se casou com Salomão."
               }
             ]
           }
@@ -8956,6 +8979,7 @@
   "17": {
     "book": "Josué",
     "chapter": "17",
+    "verified": true,
     "sections": [
       {
         "title": "A terra entregue a Manassés ocidental",
@@ -8967,7 +8991,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 41:51",
-                "text": "José chamou o filho mais velho de Manassés,145 pois disse: “Deus me fez esquecer todas as minhas dificuldades e toda a família de meu pai”."
+                "text": "José chamou o filho mais velho de Manassés, pois disse: “Deus me fez esquecer todas as minhas dificuldades e toda a família de meu pai”."
               },
               {
                 "ref": "Números 26:29",
@@ -9012,7 +9036,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Números 26:33"
+                "ref": "Números 26:33",
+                "text": "(Zelofeade, um dos descendentes de Héfer, não teve filhos, mas suas filhas se chamavam Maala, Noa, Hogla, Milca e Tirza.)"
               },
               {
                 "ref": "Números 27:1",
@@ -9020,7 +9045,7 @@
               },
               {
                 "ref": "Números 36:2–11",
-                "text": "Tm 2.."
+                "text": "Disseram eles: “O SENHOR o instruiu a repartir a terra por sorteio entre os israelitas. O SENHOR também o instruiu a entregar a herança que pertencia a nosso irmão Zelofeade às filhas dele."
               }
             ]
           },
@@ -9054,7 +9079,7 @@
             "crossReferences": [
               {
                 "ref": "Números 32:30–42",
-                "text": "Mas, se eles se re­cusarem a armar-se e atravessar o rio com vocês, serão obrigados a aceitar uma porção de terra com o restante de vocês em Canaã”."
+                "text": "Mas, se eles se recusarem a armar-se e atravessar o rio com vocês, serão obrigados a aceitar uma porção de terra com o restante de vocês em Canaã”."
               },
               {
                 "ref": "Josué 17:14",
@@ -9158,7 +9183,7 @@
           },
           {
             "number": 11,
-            "text": "As seguintes cidades dentro do território de Issacar e Aser foram entregues a Manassés: Bete-Sã, Ibleã, Dor (isto é, Nafote- Dor), En-Dor, Taanaque e Megido, cada uma com os assentamentos ao redor.",
+            "text": "As seguintes cidades dentro do território de Issacar e Aser foram entregues a Manassés: Bete-Sã, Ibleã, Dor (isto é, Nafote-Dor), En-Dor, Taanaque e Megido, cada uma com os assentamentos ao redor.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9167,7 +9192,7 @@
               },
               {
                 "ref": "Juízes 1:27",
-                "text": "A tribo de Manassés, porém, não expulsou os habitantes de Bete- Sã, Taanaque, Dor, Ibleã e Megido, nem dos povoados ao seu redor, pois os cananeus estavam decididos a permanecer naquela região."
+                "text": "A tribo de Manassés, porém, não expulsou os habitantes de Bete-Sã, Taanaque, Dor, Ibleã e Megido, nem dos povoados ao seu redor, pois os cananeus estavam decididos a permanecer naquela região."
               },
               {
                 "ref": "2 Reis 9:27",
@@ -9190,7 +9215,7 @@
               },
               {
                 "ref": "Juízes 1:27–28",
-                "text": "A tribo de Manassés, porém, não expulsou os habitantes de Bete- Sã, Taanaque, Dor, Ibleã e Megido, nem dos povoados ao seu redor, pois os cananeus estavam decididos a permanecer naquela região."
+                "text": "A tribo de Manassés, porém, não expulsou os habitantes de Bete-Sã, Taanaque, Dor, Ibleã e Megido, nem dos povoados ao seu redor, pois os cananeus estavam decididos a permanecer naquela região."
               },
               {
                 "ref": "Números 33:52–56",
@@ -9236,7 +9261,7 @@
               },
               {
                 "ref": "Gênesis 48:22",
-                "text": "Em razão de sua autoridade sobre seus irmãos, eu lhe dou uma porção a mais da terra,171 que tomei dos amorreus com a minha espada e o meu arco”."
+                "text": "Em razão de sua autoridade sobre seus irmãos, eu lhe dou uma porção a mais da terra, que tomei dos amorreus com a minha espada e o meu arco”."
               },
               {
                 "ref": "Números 26:34–37",
@@ -9339,6 +9364,7 @@
   "18": {
     "book": "Josué",
     "chapter": "18",
+    "verified": true,
     "sections": [
       {
         "title": "Distribuição do restante da terra",
@@ -9498,7 +9524,7 @@
               },
               {
                 "ref": "Atos 1:24–26",
-                "text": "Em seguida, oraram: “Senhor, tu conheces cada coração."
+                "text": "Em seguida, oraram: “Senhor, tu conheces cada coração. Mostra-nos qual destes homens escolheste"
               },
               {
                 "ref": "Josué 15:1",
@@ -9625,7 +9651,7 @@
               },
               {
                 "ref": "2 Samuel 6:2",
-                "text": "Partiu com eles para Baalá de Judá20 a fim de buscar a arca de Deus, junto à qual era invocado o nome do SENHOR dos Exércitos, que está entronizado entre os querubins."
+                "text": "Partiu com eles para Baalá de Judá a fim de buscar a arca de Deus, junto à qual era invocado o nome do SENHOR dos Exércitos, que está entronizado entre os querubins."
               },
               {
                 "ref": "1 Crônicas 13:5–6",
@@ -9639,7 +9665,7 @@
           },
           {
             "number": 15,
-            "text": "A divisa ao sul começava nos arredores de Quiriate-Jearim.",
+            "text": "A divisa ao sul começava nos arredores de Quiriate-Jearim. Desse ponto a oeste se estendia até a fonte nas águas de Neftoa",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9647,12 +9673,7 @@
                 "text": "A divisa prosseguia do alto do monte para a fonte nas águas de Neftoa, até as cidades do monte Efrom. Então fazia uma curva em direção a Baalá (isto é, Quiriate-Jearim)."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Desse ponto a oeste se estendia até a fonte nas águas de Neftoa",
-        "verses": [
+          },
           {
             "number": 16,
             "text": "e descia até o pé do monte que fica junto ao vale de Ben-Hinom, ao norte do vale de Refaim. Descia pelo vale de Hinom, atravessando a encosta sul da cidade onde habitavam os jebuseus, e continuava até En-Rogel.",
@@ -9875,7 +9896,7 @@
           },
           {
             "number": 28,
-            "text": "Zela, Elefe, a cidade dos jebuseus (isto é, Jerusalém), Gibeá e Quiriate- Jearim; catorze cidades com os povoados ao redor. Essa foi a herança designada aos clãs da tribo de Benjamim.",
+            "text": "Zela, Elefe, a cidade dos jebuseus (isto é, Jerusalém), Gibeá e Quiriate-Jearim; catorze cidades com os povoados ao redor. Essa foi a herança designada aos clãs da tribo de Benjamim.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9903,6 +9924,7 @@
   "19": {
     "book": "Josué",
     "chapter": "19",
+    "verified": true,
     "sections": [
       {
         "title": "A terra entregue a Simeão",
@@ -9990,7 +10012,7 @@
               },
               {
                 "ref": "1 Crônicas 4:31",
-                "text": "Bete-Marcabote, Hazar-Susim, Bete- Biri e Saaraim. Essas cidades permaneceram sob seu controle até o tempo do rei Davi."
+                "text": "Bete-Marcabote, Hazar-Susim, Bete-Biri e Saaraim. Essas cidades permaneceram sob seu controle até o tempo do rei Davi."
               },
               {
                 "ref": "Josué 15:31",
@@ -10346,7 +10368,7 @@
           },
           {
             "number": 27,
-            "text": "depois fazia uma curva para o leste, em direção a Bete-Dagom, se estendia até Zebulom, no vale de Iftá- El, ia para o norte, até Bete-Emeque e Neiel. Dali prosseguia para Cabul, ao norte,",
+            "text": "depois fazia uma curva para o leste, em direção a Bete-Dagom, se estendia até Zebulom, no vale de Iftá-El, ia para o norte, até Bete-Emeque e Neiel. Dali prosseguia para Cabul, ao norte,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -10420,7 +10442,7 @@
               },
               {
                 "ref": "1 Samuel 4:1",
-                "text": "E as palavras de Samuel chegavam a todo o povo de Israel. Os filisteus tomam a arca Naquele tempo, Israel estava em guerra com os filisteus. O exército israelita tinha acampado perto de Ebenézer, e os filisteus acamparam em Afeque."
+                "text": "E as palavras de Samuel chegavam a todo o povo de Israel."
               },
               {
                 "ref": "Números 13:11",
@@ -10662,7 +10684,7 @@
               },
               {
                 "ref": "Josué 21:24",
-                "text": "Aijalom e Gate- Rimom; foram quatro cidades."
+                "text": "Aijalom e Gate-Rimom; foram quatro cidades."
               }
             ]
           },
@@ -10714,12 +10736,12 @@
           },
           {
             "number": 45,
-            "text": "Jeúde, Bene-Beraque, Gate- Rimom,",
+            "text": "Jeúde, Bene-Beraque, Gate-Rimom,",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Josué 21:24",
-                "text": "Aijalom e Gate- Rimom; foram quatro cidades."
+                "text": "Aijalom e Gate-Rimom; foram quatro cidades."
               }
             ]
           },
@@ -10794,7 +10816,7 @@
               },
               {
                 "ref": "Juízes 2:9",
-                "text": "Foi sepultado na terra que havia recebido como herança, em Timnate- Sera, na região montanhosa de Efraim, ao norte do monte Gaás."
+                "text": "Foi sepultado na terra que havia recebido como herança, em Timnate-Sera, na região montanhosa de Efraim, ao norte do monte Gaás."
               },
               {
                 "ref": "1 Crônicas 7:24",
@@ -10832,6 +10854,7 @@
   "20": {
     "book": "Josué",
     "chapter": "20",
+    "verified": true,
     "sections": [
       {
         "title": "As cidades de refúgio",
@@ -10901,7 +10924,7 @@
               },
               {
                 "ref": "Números 35:19",
-                "text": "O parente mais próximo da vítima é responsável pela execução do assassino. Quando o encontrar, o vingador deverá exe­cutar o assassino."
+                "text": "O parente mais próximo da vítima é responsável pela execução do assassino. Quando o encontrar, o vingador deverá executar o assassino."
               }
             ]
           },
@@ -10969,7 +10992,7 @@
             "crossReferences": [
               {
                 "ref": "Josué 21:11",
-                "text": "Quiriate- Arba (isto é, Hebrom), na região montanhosa de Judá, com as pastagens ao redor. (Arba era antepassado de Enaque.)"
+                "text": "Quiriate-Arba (isto é, Hebrom), na região montanhosa de Judá, com as pastagens ao redor. (Arba era antepassado de Enaque.)"
               },
               {
                 "ref": "1 Crônicas 6:76",
@@ -11034,6 +11057,7 @@
   "21": {
     "book": "Josué",
     "chapter": "21",
+    "verified": true,
     "sections": [
       {
         "title": "As cidades entregues aos levitas",
@@ -11183,7 +11207,7 @@
               },
               {
                 "ref": "Êxodo 6:19",
-                "text": "Os descendentes de Merari foram: Mali e Musi. Estes são os clãs dos levitas, conforme rela­cionados nos registros de família."
+                "text": "Os descendentes de Merari foram: Mali e Musi. Estes são os clãs dos levitas, conforme relacionados nos registros de família."
               },
               {
                 "ref": "1 Crônicas 6:77–81",
@@ -11254,7 +11278,7 @@
           },
           {
             "number": 11,
-            "text": "Quiriate- Arba (isto é, Hebrom), na região montanhosa de Judá, com as pastagens ao redor. (Arba era antepassado de Enaque.)",
+            "text": "Quiriate-Arba (isto é, Hebrom), na região montanhosa de Judá, com as pastagens ao redor. (Arba era antepassado de Enaque.)",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -11271,7 +11295,7 @@
               },
               {
                 "ref": "2 Samuel 5:1–5",
-                "text": "Então todas as tribos de Israel vieram a Hebrom para encontrar- se com Davi. “Somos do mesmo povo e raça”, disseram."
+                "text": "Então todas as tribos de Israel vieram a Hebrom para encontrar-se com Davi. “Somos do mesmo povo e raça”, disseram."
               }
             ]
           },
@@ -11370,11 +11394,11 @@
               },
               {
                 "ref": "1 Crônicas 6:59",
-                "text": "Aim, Jutá69 e Bete-Semes."
+                "text": "Aim, Jutá e Bete-Semes."
               },
               {
                 "ref": "1 Samuel 6:12",
-                "text": "E, de fato, as vacas não se desviaram nem para um lado nem para o outro, mas seguiram direto pela estrada para Bete-Semes, mugindo por todo o caminho. Os governantes filisteus as acompanharam até a fronteira de Bete- Semes."
+                "text": "E, de fato, as vacas não se desviaram nem para um lado nem para o outro, mas seguiram direto pela estrada para Bete-Semes, mugindo por todo o caminho. Os governantes filisteus as acompanharam até a fronteira de Bete-Semes."
               }
             ]
           },
@@ -11499,13 +11523,13 @@
             "crossReferences": [
               {
                 "ref": "Josué 19:44–45",
-                "text": "Elteque, Gibetom, Baalate, Jeúde, Bene-Beraque, Gate- Rimom,"
+                "text": "Elteque, Gibetom, Baalate, Jeúde, Bene-Beraque, Gate-Rimom,"
               }
             ]
           },
           {
             "number": 24,
-            "text": "Aijalom e Gate- Rimom; foram quatro cidades.",
+            "text": "Aijalom e Gate-Rimom; foram quatro cidades.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -11533,7 +11557,7 @@
               },
               {
                 "ref": "Josué 17:11",
-                "text": "As seguintes cidades dentro do território de Issacar e Aser foram entregues a Manassés: Bete-Sã, Ibleã, Dor (isto é, Nafote- Dor), En-Dor, Taanaque e Megido, cada uma com os assentamentos ao redor."
+                "text": "As seguintes cidades dentro do território de Issacar e Aser foram entregues a Manassés: Bete-Sã, Ibleã, Dor (isto é, Nafote-Dor), En-Dor, Taanaque e Megido, cada uma com os assentamentos ao redor."
               }
             ]
           },
@@ -11737,7 +11761,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 2:26",
-                "text": "“Do deserto de Quedemote, enviei embaixadores ao rei Seom de Hesbom com a seguinte proposta de paz: 27‘Deixe-nos atravessar seu território. Ficaremos na estrada principal e não nos desviaremos nem para um lado nem para o outro."
+                "text": "“Do deserto de Quedemote, enviei embaixadores ao rei Seom de Hesbom com a seguinte proposta de paz:"
               },
               {
                 "ref": "Josué 13:18",
@@ -11752,7 +11776,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 32:2",
-                "text": "Ao vê-los, Jacó exclamou: “Este é o acampamento de Deus!”. Por isso, chamou o lugar de Maanaim.116 Jacó envia presentes a Esaú"
+                "text": "Ao vê-los, Jacó exclamou: “Este é o acampamento de Deus!”. Por isso, chamou o lugar de Maanaim."
               },
               {
                 "ref": "2 Samuel 19:32",
@@ -11779,7 +11803,7 @@
               },
               {
                 "ref": "Jeremias 48:32",
-                "text": "“Habitantes de Sibma, cheia de videiras, chorarei por vocês mais do que chorei por Jazer. Seus ramos se estendiam até o mar Morto,106 mas o destruidor acabou com tudo; colheu suas uvas e seus frutos de verão."
+                "text": "“Habitantes de Sibma, cheia de videiras, chorarei por vocês mais do que chorei por Jazer. Seus ramos se estendiam até o mar Morto, mas o destruidor acabou com tudo; colheu suas uvas e seus frutos de verão."
               },
               {
                 "ref": "Números 21:26–30",
@@ -11842,7 +11866,7 @@
               },
               {
                 "ref": "Êxodo 23:27–31",
-                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia- volta e fugirem."
+                "text": "“Enviarei pavor à sua frente e criarei pânico entre os povos cujas terras vocês invadirem. Farei todos os seus inimigos darem meia-volta e fugirem."
               },
               {
                 "ref": "Salmos 106:42–45",
@@ -11903,6 +11927,7 @@
   "22": {
     "book": "Josué",
     "chapter": "22",
+    "verified": true,
     "sections": [
       {
         "title": "As tribos do leste voltam para casa",
@@ -12152,7 +12177,7 @@
               },
               {
                 "ref": "Gálatas 4:17–18",
-                "text": "Esses falsos mestres estão extremamente ansiosos para agradá- los, mas suas intenções não são boas. Querem afastá-los de mim para que dependam deles."
+                "text": "Esses falsos mestres estão extremamente ansiosos para agradá-los, mas suas intenções não são boas. Querem afastá-los de mim para que dependam deles."
               },
               {
                 "ref": "Atos 11:2–3",
@@ -12270,7 +12295,7 @@
               },
               {
                 "ref": "Josué 7:1",
-                "text": "Mas os israelitas violaram as instruções a respei­to das coisas separadas para o SENHOR. Um homem chamado Acã roubou algumas delas, e a ira do SENHOR se acendeu contra os israelitas. Acã era filho de Carmi, filho de Zimr..."
+                "text": "Mas os israelitas violaram as instruções a respeito das coisas separadas para o SENHOR. Um homem chamado Acã roubou algumas delas, e a ira do SENHOR se acendeu contra os israelitas. Acã era filho de Carmi, filho de Zimri..."
               },
               {
                 "ref": "2 Crônicas 34:33",
@@ -12308,7 +12333,7 @@
             "crossReferences": [
               {
                 "ref": "Josué 7:1",
-                "text": "Mas os israelitas violaram as instruções a respei­to das coisas separadas para o SENHOR. Um homem chamado Acã roubou algumas delas, e a ira do SENHOR se acendeu contra os israelitas. Acã era filho de Carmi, filho de Zimr..."
+                "text": "Mas os israelitas violaram as instruções a respeito das coisas separadas para o SENHOR. Um homem chamado Acã roubou algumas delas, e a ira do SENHOR se acendeu contra os israelitas. Acã era filho de Carmi, filho de Zimri..."
               },
               {
                 "ref": "Josué 7:5",
@@ -12496,11 +12521,11 @@
               },
               {
                 "ref": "Ezequiel 43:10–11",
-                "text": "“Filho do homem, descreva para o povo de Israel o templo que lhe mostrei, para que eles se envergonhem de todos os seus pecados."
+                "text": "“Filho do homem, descreva para o povo de Israel o templo que lhe mostrei, para que eles se envergonhem de todos os seus pecados. Que eles estudem a planta do templo"
               },
               {
                 "ref": "2 Reis 16:10",
-                "text": "Então o rei Acaz foi a Damasco para encontrar-se com Tiglate- Pileser, rei da Assíria. Enquanto estava lá, viu o altar da cidade e enviou ao sacerdote Urias um modelo e um desenho detalhado do altar."
+                "text": "Então o rei Acaz foi a Damasco para encontrar-se com Tiglate-Pileser, rei da Assíria. Enquanto estava lá, viu o altar da cidade e enviou ao sacerdote Urias um modelo e um desenho detalhado do altar."
               }
             ]
           },
@@ -12557,7 +12582,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 15:2",
-                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça- me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
+                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça-me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
               },
               {
                 "ref": "Levítico 26:11–12",
@@ -12595,7 +12620,7 @@
             "crossReferences": [
               {
                 "ref": "Daniel 2:19",
-                "text": "Naquela noite, o segredo foi revelado a Daniel numa visão."
+                "text": "Naquela noite, o segredo foi revelado a Daniel numa visão. Então Daniel louvou o Deus dos céus"
               },
               {
                 "ref": "Lucas 2:28",
@@ -12641,6 +12666,7 @@
   "23": {
     "book": "Josué",
     "chapter": "23",
+    "verified": true,
     "sections": [
       {
         "title": "As palavras finais de Josué a Israel",
@@ -12675,11 +12701,11 @@
             "crossReferences": [
               {
                 "ref": "Josué 24:1",
-                "text": "Cr 2.; o hebraico traz Zabdi; também em 7.,."
+                "text": "Então Josué reuniu todas as tribos de Israel em Siquém. Convocou também os líderes, os chefes, os juízes e os oficiais de Israel, e todos vieram e se apresentaram diante de Deus."
               },
               {
                 "ref": "1 Crônicas 28:1",
-                "text": "Davi convocou todos os oficiais de Israel para irem a Jerusalém: os líderes das tribos, os comandantes das divisões do exército, os generais e os capitães,181 os administradores das propriedades e dos rebanhos do rei, os..."
+                "text": "Davi convocou todos os oficiais de Israel para irem a Jerusalém: os líderes das tribos, os comandantes das divisões do exército, os generais e os capitães, os administradores das propriedades e dos rebanhos do rei, os of..."
               },
               {
                 "ref": "Deuteronômio 31:28",
@@ -12997,7 +13023,7 @@
               },
               {
                 "ref": "2 Reis 24:20",
-                "text": "Estas coisas aconteceram por causa da ira do SENHOR contra o povo de Jerusalém e de Judá. Por fim, ele os expulsou de sua presença e os mandou para o exílio. A queda de Jerusalém Zedequias se rebelou contra o rei da Babilônia."
+                "text": "Estas coisas aconteceram por causa da ira do SENHOR contra o povo de Jerusalém e de Judá. Por fim, ele os expulsou de sua presença e os mandou para o exílio."
               }
             ]
           }
@@ -13008,6 +13034,7 @@
   "24": {
     "book": "Josué",
     "chapter": "24",
+    "verified": true,
     "sections": [
       {
         "title": "A renovação da aliança do SENHOR",
@@ -13046,7 +13073,7 @@
               },
               {
                 "ref": "Ezequiel 16:3",
-                "text": "Transmita- lhe esta mensagem do SENHOR Soberano: Você não passa de uma cananeia! Seu pai era amorreu, e sua mãe era hitita."
+                "text": "Transmita-lhe esta mensagem do SENHOR Soberano: Você não passa de uma cananeia! Seu pai era amorreu, e sua mãe era hitita."
               },
               {
                 "ref": "Gênesis 31:30",
@@ -13146,7 +13173,7 @@
               },
               {
                 "ref": "Salmos 136:13–15",
-                "text": "Deem graças àquele que abriu o mar Vermelho153 ao meio. Seu amor dura para sempre!"
+                "text": "Deem graças àquele que abriu o mar Vermelho ao meio. Seu amor dura para sempre!"
               }
             ]
           },
@@ -13382,7 +13409,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Êxodo 19:4"
+                "ref": "Êxodo 19:4",
+                "text": "‘Vocês viram o que fiz aos egípcios. Sabem como carreguei vocês sobre asas de águias e os trouxe para mim."
               },
               {
                 "ref": "Isaías 63:7–14",
@@ -13532,7 +13560,7 @@
               },
               {
                 "ref": "Juízes 10:15–16",
-                "text": "Mas os israelitas suplicaram ao SENHOR: “Sim, pecamos! Castiga- nos como te parecer melhor, mas livra-nos hoje de nossos inimigos”."
+                "text": "Mas os israelitas suplicaram ao SENHOR: “Sim, pecamos! Castiga-nos como te parecer melhor, mas livra-nos hoje de nossos inimigos”."
               }
             ]
           },
@@ -13561,7 +13589,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Neemias 9:38"
+                "ref": "Neemias 9:38",
+                "text": "O povo respondeu: “Em vista disso tudo, fazemos uma aliança solene e a registramos por escrito. Neste documento selado estão os nomes de nossos líderes, levitas e sacerdotes”."
               },
               {
                 "ref": "Êxodo 15:25",
@@ -13673,11 +13702,11 @@
               },
               {
                 "ref": "2 Samuel 23:30",
-                "text": "Benaia, de Piratom; Hurai,113 de Naal-Gaás;"
+                "text": "Benaia, de Piratom; Hurai, de Naal-Gaás;"
               },
               {
                 "ref": "Juízes 2:9",
-                "text": "Foi sepultado na terra que havia recebido como herança, em Timnate- Sera, na região montanhosa de Efraim, ao norte do monte Gaás."
+                "text": "Foi sepultado na terra que havia recebido como herança, em Timnate-Sera, na região montanhosa de Efraim, ao norte do monte Gaás."
               }
             ]
           },
@@ -13729,7 +13758,7 @@
           },
           {
             "number": 33,
-            "text": "Eleazar, filho de Arão, também morreu. Foi sepultado na região montanhosa de Efraim, na cidade de Gibeá, que havia sido entregue a seu filho, Fineias. 1 1. Em hebraico, mar Grande. 2 2. Em hebraico, mar de juncos. 3 3. Em hebraico, 2.000 côvados, cerca de 900 metros. 4 3. Em hebraico, para o mar da Arabá, o mar Salgado. 5 4. Em hebraico, a arca do testemunho. 6 4. No antigo calendário lunar hebraico, esse dia caía no final de março, em abril ou no início de maio. 7 4. Em hebraico, mar de juncos. 8 5. Gibeate-Aralote significa “colina dos prepúcios”. 9 5. O som de Gilgal é semelhante ao do termo hebraico galal, traduzido aqui por “lancei fora”. 10 5. No antigo calendário lunar hebraico, esse dia caía no final de março, em abril ou no início de maio. 11 7.",
+            "text": "Eleazar, filho de Arão, também morreu. Foi sepultado na região montanhosa de Efraim, na cidade de Gibeá, que havia sido entregue a seu filho, Fineias.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13747,57 +13776,6 @@
               {
                 "ref": "Números 3:32",
                 "text": "Eleazar, filho do sacerdote Arão, era o líder principal de todos os levitas e responsável pela supervisão do santuário."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Conforme o texto paralelo em",
-        "verses": [
-          {
-            "number": 1,
-            "text": "Cr 2.; o hebraico traz Zabdi; também em 7.,. 12 7. Ou até Sebarim. 13 7.21a Em hebraico, de Sinear. 14 7.21b Em hebraico, 200 siclos. 15 7.21c Em hebraico, 50 siclos. 16 7. Acor significa “desgraça”. 17 8. Em hebraico, a Arabá. 18 8. Ai significa “ruína”. 19 8. Êx 20.; Dt 27.5-6. 20 9.1a Em hebraico, na Sefelá. 21 9.1b Em hebraico, mar Grande. 22 10. Ou Livro dos Justos. 23 10. Em hebraico, a Sefelá. 24 11.2a Em hebraico, da Arabá, ao sul de Quinerete. 25 11.2b Em hebraico, Sefelá; também em 11.. 26 11. Em hebraico, a Arabá. 27 12. Em hebraico, a Arabá; também em 12.,. 28 12. Em hebraico, desde o mar de Quinerete até o mar da Arabá, o mar Salgado. 29 12. Em hebraico, a Sefelá. 30 12.23a Em hebraico, Nafate-Dor, variação de Nafote-Dor. 31 12.23b A Septuaginta traz Goim, na Galileia. 32 13. Em hebraico, em frente de. 33 13. Em hebraico, Li-Debir, aparentemente uma variação de Lo-Debar (comparar com",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Josué 23:2",
-                "text": "convocou todo o Israel, com seus líderes, chefes, juízes e oficiais, e disse: “Já estou bem idoso."
-              },
-              {
-                "ref": "1 Samuel 10:19",
-                "text": "Mas, apesar de eu ter resgatado vocês de suas angústias e aflições, hoje vocês rejeitaram seu Deus e disseram: ‘Queremos um rei!’. Agora, portanto, apresentem-se diante do SENHOR, de acordo com suas tribos e seus clãs”."
-              },
-              {
-                "ref": "Atos 10:33",
-                "text": "Assim, mandei buscá-lo de imediato, e foi bom que tenha vindo. Agora estamos todos aqui, esperando diante de Deus para ouvir a mensagem que o Senhor mandou que você nos trouxesse”."
-              },
-              {
-                "ref": "1 Reis 12:1",
-                "text": "Roboão foi a Siquém, onde todo o Israel havia se reunido para proclamá-lo rei."
-              }
-            ]
-          },
-          {
-            "number": 2,
-            "text": "Sm 9.; 17.; Am 6.13). 34 13. Em hebraico, mar de Quinerete. 35 15. Em hebraico, mar Salgado; também em 15.. 36 15. Ou ladeira de Acrabim. 37 15.4a Em hebraico, mar; também em 15.. 38 15.4b Em hebraico, de vocês. 39 15. Ou fonte de Me-Neftoa. 40 15. Em hebraico, mar Grande; também em 15.. 41 15. Alguns manuscritos gregos trazem ele insistiu para que ela. 42 15. Em hebraico, na Sefelá. 43 16. Conforme a Septuaginta (ver tb. 18.13); o hebraico traz De Betel até Luz. 44 16. Em hebraico, mar; também em 16.,. 45 17. Em hebraico, mar; também em 17.. 46 17.11a Em hebraico, Bete-Seã, variação de Bete-Sã; também em 17.. 47 17.11b O significado do hebraico é incerto. 48 18. Ou fonte de Me-Neftoa. 49 18. Em hebraico, de onde se avista a Arabá, ou de onde se avista Bete-Arabá. 50 18. Em hebraico, mar Salgado. 51 18. Conforme a Septuaginta; o hebraico traz Quiriate. 52 19. Conforme alguns manuscritos hebraicos (ver tb. 21.30); a maioria dos manuscritos hebraicos traz Ebrom. 53 19. Em hebraico, mar. 54 19. Em hebraico, e a Judá, no rio Jordão. 55 19. Ou tiveram dificuldade em manter a posse de sua terra. 56 22. Ou ao círculo de pedras; também em 22.. 57 22. Alguns manuscritos não trazem Testemunho. 58 23. Em hebraico, mar Grande. 59 24. Em hebraico, do rio; também em 24.,,. 60 24. Em hebraico, mar de juncos. 61 24. Traduzido habitualmente como vespas. O significado do hebraico é incerto. 62 24.32 Em hebraico, 100 quesitas; não se sabe mais o valor ou o peso da quesita.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Josué 24:15",
-                "text": "Mas, se vocês se recusarem a servir ao SENHOR, escolham hoje a quem servirão. Escolherão servir os deuses aos quais seus antepassados serviam além do Eufrates? Ou os deuses dos amorreus, em cuja terra vocês habitam? Quan..."
-              },
-              {
-                "ref": "Ezequiel 16:3",
-                "text": "Transmita- lhe esta mensagem do SENHOR Soberano: Você não passa de uma cananeia! Seu pai era amorreu, e sua mãe era hitita."
-              },
-              {
-                "ref": "Gênesis 31:30",
-                "text": "Entendo sua vontade de partir e seu desejo de voltar à casa de seu pai. Mas por que roubou meus deuses?”"
-              },
-              {
-                "ref": "Gênesis 31:32",
-                "text": "Quanto a seus deuses, veja se consegue encontrá-los, e quem os tiver roubado deve morrer! Se encontrar qualquer outra coisa que lhe pertença, identifique-a diante de todos estes nossos parentes, e eu a devolverei”. Jacó..."
               }
             ]
           }

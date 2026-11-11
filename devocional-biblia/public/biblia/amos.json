@@ -2,6 +2,7 @@
   "1": {
     "book": "Amós",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -64,7 +65,7 @@
             "crossReferences": [
               {
                 "ref": "2 Reis 10:32–33",
-                "text": "Naquele tempo, o SENHOR começou a reduzir o território de Israel."
+                "text": "Naquele tempo, o SENHOR começou a reduzir o território de Israel. O rei Hazael conquistou várias regiões do reino"
               },
               {
                 "ref": "Amós 2:6",
@@ -137,7 +138,7 @@
               },
               {
                 "ref": "2 Crônicas 28:18",
-                "text": "Os filisteus haviam atacado cidades nas colinas de Judá127 e no Neguebe. Conquistaram e ocuparam Bete-Semes, Aijalom e Gederote, além de Socó, Timna e Ginzo, com seus povoados."
+                "text": "Os filisteus haviam atacado cidades nas colinas de Judá e no Neguebe. Conquistaram e ocuparam Bete-Semes, Aijalom e Gederote, além de Socó, Timna e Ginzo, com seus povoados."
               },
               {
                 "ref": "Obadias 1:11",
@@ -293,7 +294,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Oséias 13:16"
+                "ref": "Oséias 13:16",
+                "text": "O povo de Samaria sofrerá as consequências de sua culpa, pois se rebelou contra seu Deus. Serão mortos pela espada inimiga; suas crianças serão despedaçadas, e suas mulheres grávidas, abertas ao meio.”"
               },
               {
                 "ref": "Ezequiel 25:2–7",
@@ -301,7 +303,7 @@
               },
               {
                 "ref": "Jeremias 49:1–6",
-                "text": "Esta é a mensagem acerca dos amonitas. Assim diz o SENHOR: “Acaso não há descendentes de Israel para herdar a terra de Gade? Por que vocês, que adoram Moloque,107 habitam nas cidades de Gade?"
+                "text": "Esta é a mensagem acerca dos amonitas. Assim diz o SENHOR: “Acaso não há descendentes de Israel para herdar a terra de Gade? Por que vocês, que adoram Moloque, habitam nas cidades de Gade?"
               },
               {
                 "ref": "Ezequiel 35:10",
@@ -323,7 +325,8 @@
                 "text": "Está chegando o dia”, diz o SENHOR, “em que farei soar o grito de guerra contra a cidade de Rabá. Ela se tornará um monte de ruínas, e os povoados vizinhos serão queimados. Então Israel tomará de volta as terras que vocês tiraram dele”, diz o SENHOR."
               },
               {
-                "ref": "Deuteronômio 3:11"
+                "ref": "Deuteronômio 3:11",
+                "text": "(O rei Ogue de Basã foi o último sobrevivente dos refains. Sua cama era feita de ferro e media mais de quatro metros de comprimento e quase dois metros de largura. Ainda hoje é possível vê-la na cidade amonita de Rabá.)"
               },
               {
                 "ref": "Isaías 30:30",
@@ -349,6 +352,7 @@
   "2": {
     "book": "Amós",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -368,7 +372,7 @@
               },
               {
                 "ref": "Ezequiel 25:8–9",
-                "text": "“Assim diz o SENHOR Soberano: Porque o povo de Moabe disse que Judá é como todas as outras nações, abrirei seu lado leste e acabarei com as imponentes cidades de sua fronteira: Bete-Jesimote, Baal- Meom e Quiriataim."
+                "text": "“Assim diz o SENHOR Soberano: Porque o povo de Moabe disse que Judá é como todas as outras nações, abrirei seu lado leste e acabarei com as imponentes cidades de sua fronteira: Bete-Jesimote, Baal-Meom e Quiriataim."
               },
               {
                 "ref": "Isaías 25:10",
@@ -446,7 +450,7 @@
               },
               {
                 "ref": "Oséias 12:2",
-                "text": "Agora o SENHOR apresenta acusações contra Judá; está prestes a castigar Jacó53 por sua conduta enganosa, e lhe retribuir por tudo que fez."
+                "text": "Agora o SENHOR apresenta acusações contra Judá; está prestes a castigar Jacó por sua conduta enganosa, e lhe retribuir por tudo que fez."
               }
             ]
           },
@@ -548,14 +552,16 @@
                 "text": "Por baixo, suas raízes secarão; por cima, seus ramos murcharão."
               },
               {
-                "ref": "Malaquias 4:1"
+                "ref": "Malaquias 4:1",
+                "text": "Assim diz o SENHOR dos Exércitos: “O dia do julgamento se aproxima e arde como uma fornalha. Naquele dia, serão queimados como palha os arrogantes e os perversos. Serão consumidos, desde as raízes até os ramos."
               },
               {
                 "ref": "Deuteronômio 2:24–33",
                 "text": "“Então o SENHOR disse: ‘Mexam-se! Atravessem o vale de Arnom. Vejam, eu lhes entregarei o amorreu Seom, rei de Hesbom, e lhes darei a terra dele. Ataquem-no e comecem a tomar posse daquele território."
               },
               {
-                "ref": "Deuteronômio 3:11"
+                "ref": "Deuteronômio 3:11",
+                "text": "(O rei Ogue de Basã foi o último sobrevivente dos refains. Sua cama era feita de ferro e media mais de quatro metros de comprimento e quase dois metros de largura. Ainda hoje é possível vê-la na cidade amonita de Rabá.)"
               }
             ]
           },
@@ -719,6 +725,7 @@
   "3": {
     "book": "Amós",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -765,7 +772,7 @@
               },
               {
                 "ref": "1 Pedro 4:17",
-                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas- novas de Deus!"
+                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas-novas de Deus!"
               }
             ]
           }
@@ -1042,7 +1049,7 @@
               },
               {
                 "ref": "2 Crônicas 34:6–7",
-                "text": "Fez a mesma coisa nas cidades de Manassés, Efraim e Simeão, e até na distante Naftali, bem como nas ruínas142 ao seu redor."
+                "text": "Fez a mesma coisa nas cidades de Manassés, Efraim e Simeão, e até na distante Naftali, bem como nas ruínas ao seu redor."
               }
             ]
           },
@@ -1076,6 +1083,7 @@
   "4": {
     "book": "Amós",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Israel não aprende",
@@ -1312,7 +1320,7 @@
           },
           {
             "number": 11,
-            "text": "“Destruí algumas de suas cidades, como destruí13 Sodoma e Gomorra. Os que sobreviveram pareciam gravetos chamuscados, tirados do fogo. Nem assim vocês voltaram para mim”, diz o SENHOR.",
+            "text": "“Destruí algumas de suas cidades, como destruí Sodoma e Gomorra. Os que sobreviveram pareciam gravetos chamuscados, tirados do fogo. Nem assim vocês voltaram para mim”, diz o SENHOR.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1386,6 +1394,7 @@
   "5": {
     "book": "Amós",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Chamado ao arrependimento",
@@ -1424,7 +1433,7 @@
               },
               {
                 "ref": "Oséias 14:1",
-                "text": "Co 15.."
+                "text": "Volte, ó Israel, para o SENHOR, seu Deus, pois seus pecados causaram sua queda."
               },
               {
                 "ref": "2 Reis 17:16",
@@ -1474,7 +1483,7 @@
               },
               {
                 "ref": "2 Crônicas 15:2",
-                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça- me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
+                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça-me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
               },
               {
                 "ref": "Isaías 55:3",
@@ -1708,7 +1717,7 @@
               },
               {
                 "ref": "Filipenses 4:8–9",
-                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem- se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
+                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem-se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
               }
             ]
           },
@@ -1804,7 +1813,8 @@
                 "text": "Em toda a história, nunca houve uma ocasião de tanto terror; será um tempo de angústia para Israel. No final, porém, ele será resgatado!"
               },
               {
-                "ref": "Malaquias 4:1"
+                "ref": "Malaquias 4:1",
+                "text": "Assim diz o SENHOR dos Exércitos: “O dia do julgamento se aproxima e arde como uma fornalha. Naquele dia, serão queimados como palha os arrogantes e os perversos. Serão consumidos, desde as raízes até os ramos."
               }
             ]
           },
@@ -2018,6 +2028,7 @@
   "6": {
     "book": "Amós",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -2110,7 +2121,7 @@
               },
               {
                 "ref": "Lucas 12:19–20",
-                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre- se!’."
+                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre-se!’."
               }
             ]
           },
@@ -2185,7 +2196,7 @@
           },
           {
             "number": 8,
-            "text": "O SENHOR Soberano jurou por seu próprio nome, e é isto que ele, o SENHOR, o Deus dos Exércitos, diz: “Não suporto a arrogância de Israel e odeio suas fortalezas. Entregarei esta cidade e tudo que nela há a seus inimigos”. 9(Se restarem dez homens numa casa, todos morrerão.",
+            "text": "O SENHOR Soberano jurou por seu próprio nome, e é isto que ele, o SENHOR, o Deus dos Exércitos, diz: “Não suporto a arrogância de Israel e odeio suas fortalezas. Entregarei esta cidade e tudo que nela há a seus inimigos”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2207,8 +2218,14 @@
             ]
           },
           {
+            "number": 9,
+            "text": "(Se restarem dez homens numa casa, todos morrerão.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 10,
-            "text": "E, quando um parente responsável por sepultar os mortos entrar na casa para tirá-los de lá, perguntará ao que restou: “Há mais alguém com você?”. E, quando o sobrevivente começar a responder: “Não, eu juro pelo...”, o parente o interromperá e dirá: “Pare!21 Nem sequer mencione o nome do SENHOR”.)",
+            "text": "E, quando um parente responsável por sepultar os mortos entrar na casa para tirá-los de lá, perguntará ao que restou: “Há mais alguém com você?”. E, quando o sobrevivente começar a responder: “Não, eu juro pelo...”, o parente o interromperá e dirá: “Pare! Nem sequer mencione o nome do SENHOR”.)",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2244,11 +2261,11 @@
               },
               {
                 "ref": "2 Reis 25:9",
-                "text": "Queimou o templo do SENHOR, o palácio real e todas as casas de Jerusalém. Pôs fogo em todos os edifícios importantes105 da cidade."
+                "text": "Queimou o templo do SENHOR, o palácio real e todas as casas de Jerusalém. Pôs fogo em todos os edifícios importantes da cidade."
               },
               {
                 "ref": "Amós 6:8",
-                "text": "O SENHOR Soberano jurou por seu próprio nome, e é isto que ele, o SENHOR, o Deus dos Exércitos, diz: “Não suporto a arrogância de Israel e odeio suas fortalezas. Entregarei esta cidade e tudo que nela há a seus inimigos”..."
+                "text": "O SENHOR Soberano jurou por seu próprio nome, e é isto que ele, o SENHOR, o Deus dos Exércitos, diz: “Não suporto a arrogância de Israel e odeio suas fortalezas. Entregarei esta cidade e tudo que nela há a seus inimigos”."
               }
             ]
           },
@@ -2286,7 +2303,7 @@
               },
               {
                 "ref": "Lucas 12:19–20",
-                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre- se!’."
+                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre-se!’."
               },
               {
                 "ref": "2 Reis 14:25",
@@ -2328,6 +2345,7 @@
   "7": {
     "book": "Amós",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Visão dos gafanhotos",
@@ -2362,7 +2380,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 37:4",
-                "text": "Contudo, talvez o SENHOR, seu Deus, tenha ouvido o porta-voz116 que o rei da Assíria enviou para desafiar o Deus vivo e o castigue por suas palavras. Por favor, ore por nós que restamos!’”."
+                "text": "Contudo, talvez o SENHOR, seu Deus, tenha ouvido o porta-voz que o rei da Assíria enviou para desafiar o Deus vivo e o castigue por suas palavras. Por favor, ore por nós que restamos!’”."
               },
               {
                 "ref": "Ezequiel 11:13",
@@ -2537,7 +2555,7 @@
               },
               {
                 "ref": "Gênesis 46:1",
-                "text": "Jacó157 partiu para o Egito com todos os seus bens. Quando chegou a Berseba, ofereceu sacrifícios ao Deus de Isaque, seu pai."
+                "text": "Jacó partiu para o Egito com todos os seus bens. Quando chegou a Berseba, ofereceu sacrifícios ao Deus de Isaque, seu pai."
               },
               {
                 "ref": "Amós 8:14",
@@ -2745,6 +2763,7 @@
   "8": {
     "book": "Amós",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "Visão das frutas maduras",
@@ -2787,7 +2806,7 @@
               },
               {
                 "ref": "Jeremias 1:11–14",
-                "text": "Então o SENHOR me disse: “O que você vê, Jeremias?”. Eu respondi: “Vejo o ramo de uma amen­doeira”."
+                "text": "Então o SENHOR me disse: “O que você vê, Jeremias?”. Eu respondi: “Vejo o ramo de uma amendoeira”."
               }
             ]
           },
@@ -2801,7 +2820,8 @@
                 "text": "Chega de seus ruidosos cânticos de louvor! Não ouvirei a música de suas harpas."
               },
               {
-                "ref": "Amós 6:9–10"
+                "ref": "Amós 6:9–10",
+                "text": "(Se restarem dez homens numa casa, todos morrerão."
               },
               {
                 "ref": "Jeremias 9:21–22",
@@ -2889,7 +2909,7 @@
             "crossReferences": [
               {
                 "ref": "Amós 6:8",
-                "text": "O SENHOR Soberano jurou por seu próprio nome, e é isto que ele, o SENHOR, o Deus dos Exércitos, diz: “Não suporto a arrogância de Israel e odeio suas fortalezas. Entregarei esta cidade e tudo que nela há a seus inimigos”..."
+                "text": "O SENHOR Soberano jurou por seu próprio nome, e é isto que ele, o SENHOR, o Deus dos Exércitos, diz: “Não suporto a arrogância de Israel e odeio suas fortalezas. Entregarei esta cidade e tudo que nela há a seus inimigos”."
               },
               {
                 "ref": "Oséias 9:9",
@@ -3073,6 +3093,7 @@
   "9": {
     "book": "Amós",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "Visão de Deus junto ao altar",
@@ -3096,7 +3117,7 @@
               },
               {
                 "ref": "Habacuque 3:13",
-                "text": "Saíste para resgatar teu povo, para libertar teus ungidos. Esmagaste a cabeça dos perversos e os descobriste até os ossos."
+                "text": "Saíste para resgatar teu povo, para libertar teus ungidos. Esmagaste a cabeça dos perversos e os descobriste até os ossos. Interlúdio"
               }
             ]
           },
@@ -3183,7 +3204,8 @@
                 "text": "Vejam, o SENHOR se aproxima! Ele deixa seu trono nos céus e pisa sobre os lugares altos da terra. Os montes se derretem sob seus pés e escorrem para os vales, como cera no fogo, como água que desce pela encosta."
               },
               {
-                "ref": "Isaías 64:1"
+                "ref": "Isaías 64:1",
+                "text": "Quem dera abrisses os céus e descesses! Os montes tremeriam em tua presença!"
               },
               {
                 "ref": "Salmos 46:6",
@@ -3318,7 +3340,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 15:15–17",
-                "text": "E isso está em pleno acordo com o que disseram os profetas. Como está escrito: 16‘Depois disso voltarei e restaurarei a tenda caída de Davi. Reconstruirei suas ruínas e a restaurarei,"
+                "text": "E isso está em pleno acordo com o que disseram os profetas. Como está escrito:"
               },
               {
                 "ref": "Jeremias 33:14–16",
@@ -3349,7 +3371,7 @@
               },
               {
                 "ref": "Isaías 65:1",
-                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome,180 eu disse: ‘Aqui estou! Aqui estou!’."
+                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome, eu disse: ‘Aqui estou! Aqui estou!’."
               },
               {
                 "ref": "Jeremias 14:9",
@@ -3405,7 +3427,7 @@
           },
           {
             "number": 15,
-            "text": "Eu os plantarei firmemente ali, em sua própria terra. Nunca mais serão arrancados da terra que lhes dei”, diz o SENHOR, seu Deus. 1 1. Em hebraico, Joás, variação de Jeoás. 2 1. Em hebraico, cometeram três pecados, até quatro; também em 1.,.,. 3 1. Em hebraico, malcam, possível referência ao deus Moloque. 4 2. Em hebraico, cometeram três pecados, até quatro; também em 2.,. 5 2. Ou seu Deus. 6 3. Em hebraico, de Asdode. 7 3. O significado do hebraico é incerto. 8 3. Em hebraico, toda a casa de Jacó. Os nomes “Jacó” e “Israel” são usados de forma intercambiável ao longo de todo o Antigo Testamento e se referem, por vezes, ao patriarca e, em outras ocasiões, à nação. 9 4. Em hebraico, vacas de Basã. 10 4. Ou atiradas na direção do Harmom, possível referência ao monte Hermom. 11 4. Em hebraico, quando ainda faltavam três meses para a colheita. 12 4. Ou e matei seus cavalos capturados. 13 4. Em hebraico, como quando Deus destruiu. 14 5. Em hebraico, pela casa de José. 15 5. Em hebraico, remanescente de José. 16 5.26-27 A Septuaginta traz Não, vocês carregaram o santuário de Moloque, a estrela de seu deus Refã e as imagens que vocês fizeram para si mesmos. Por isso eu os enviarei para o exílio, para uma terra a leste de Damasco. Comparar com At 7.. 17 6.1 Em hebraico, em Sião. 18 6. Em hebraico, de José. 19 6. Em hebraico, de Jacó. Ver nota em 3.. 20 6.10a Ou queimar os mortos. O significado do hebraico é incerto. 21 6.10b O significado do hebraico é incerto. 22 6.13a Lo-Debar significa “nada”. 23 6.13b Carnaim significa “chifres”, termo que simboliza força. 24 7. Em hebraico, Jacó; também em 7.. Ver nota em 3.. 25 7. Em hebraico, de Isaque. 26 7. Ou Não sou profeta nem filho de profeta. 27 7. Em hebraico, contra a casa de Isaque. 28 8. Em hebraico, tornam pequeno o efa e grande o siclo, e negociam falsamente ao usarem balanças enganosas. 29 8. Em hebraico, de Jacó. Ver nota em 3.. 30 8. Em hebraico, do norte ao leste. 31 8. Em hebraico, do caminho de Berseba. 32 9. Em hebraico, Sheol. 33 9.7a Em hebraico, os cuxitas? 34 9.7b Em hebraico, Caftor. 35 9. Em hebraico, casa de Jacó. Ver nota em 3.. 36 9.11b-12 A Septuaginta traz e restaurarei sua antiga glória, / para que o restante da humanidade, incluindo os gentios, / todos os que chamei para serem meus, me busquem. Comparar com At 15.16- 17.",
+            "text": "Eu os plantarei firmemente ali, em sua própria terra. Nunca mais serão arrancados da terra que lhes dei”, diz o SENHOR, seu Deus.",
             "isJesusWords": false,
             "crossReferences": [
               {

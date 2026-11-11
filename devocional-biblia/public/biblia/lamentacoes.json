@@ -2,32 +2,16 @@
   "1": {
     "book": "Lamentações",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Grande tristeza em Jerusalém",
         "verses": [
           {
-            "number": 11,
+            "number": 1,
             "text": "A cidade que antes era cheia de gente agora está deserta. Antes era grande entre as nações, agora está sozinha, como uma viúva. Antes era rainha de toda a terra, agora é escrava.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Jeremias 52:6",
-                "text": "Em 18 de julho, no décimo primeiro ano do reinado de Zedequias,126 a fome na cidade tinha se tornado tão severa que não havia mais nenhum alimento."
-              },
-              {
-                "ref": "Lamentações 2:12",
-                "text": "Clamam às mães: “Estamos com fome e sede!”. Desfalecem nas ruas, como o guerreiro ferido na batalha. Lutam para respirar e morrem lentamente nos braços maternos."
-              },
-              {
-                "ref": "Jeremias 38:9",
-                "text": "“Ó meu senhor, o rei”, disse, “estes homens fizeram muito mal em colocar o profeta Jeremias no poço. Logo ele morrerá de fome, pois não há mais pão na cidade.”"
-              },
-              {
-                "ref": "Deuteronômio 28:52–57",
-                "text": "Atacarão suas cidades até derrubarem todos os muros fortificados de sua terra, as muralhas nas quais vocês confiavam como proteção. Atacarão todas as cidades da terra que o SENHOR, seu Deus, lhes dá."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 2,
@@ -243,7 +227,7 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 52:6",
-                "text": "Em 18 de julho, no décimo primeiro ano do reinado de Zedequias,126 a fome na cidade tinha se tornado tão severa que não havia mais nenhum alimento."
+                "text": "Em 18 de julho, no décimo primeiro ano do reinado de Zedequias, a fome na cidade tinha se tornado tão severa que não havia mais nenhum alimento."
               },
               {
                 "ref": "Lamentações 2:12",
@@ -519,6 +503,7 @@
   "2": {
     "book": "Lamentações",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "A ira de Deus pelo pecado",
@@ -630,7 +615,7 @@
               },
               {
                 "ref": "2 Reis 25:9",
-                "text": "Queimou o templo do SENHOR, o palácio real e todas as casas de Jerusalém. Pôs fogo em todos os edifícios importantes105 da cidade."
+                "text": "Queimou o templo do SENHOR, o palácio real e todas as casas de Jerusalém. Pôs fogo em todos os edifícios importantes da cidade."
               },
               {
                 "ref": "Jeremias 52:13",
@@ -703,7 +688,7 @@
               },
               {
                 "ref": "Isaías 34:11",
-                "text": "Ali viverão a coruja do deserto e o mocho, o corujão e o corvo.108 Pois Deus medirá aquela terra com cuidado; ele a medirá para o caos e para a destruição."
+                "text": "Ali viverão a coruja do deserto e o mocho, o corujão e o corvo. Pois Deus medirá aquela terra com cuidado; ele a medirá para o caos e para a destruição."
               }
             ]
           },
@@ -810,7 +795,7 @@
               },
               {
                 "ref": "2 Samuel 5:20",
-                "text": "Então Davi foi a Baal-Perazim e ali derrotou os filisteus, e exclamou: “O SENHOR irrompeu no meio de meus inimigos como uma violenta inundação!”. Por isso, chamou aquele lugar de Baal- Perazim."
+                "text": "Então Davi foi a Baal-Perazim e ali derrotou os filisteus, e exclamou: “O SENHOR irrompeu no meio de meus inimigos como uma violenta inundação!”. Por isso, chamou aquele lugar de Baal-Perazim."
               }
             ]
           },
@@ -829,7 +814,7 @@
               },
               {
                 "ref": "Isaías 58:1",
-                "text": "“Grite alto, com todas as suas forças! Grite alto, como o som da trombeta! Fale ao meu povo, Israel,164 sobre sua rebeldia e seus pecados!"
+                "text": "“Grite alto, com todas as suas forças! Grite alto, como o som da trombeta! Fale ao meu povo, Israel, sobre sua rebeldia e seus pecados!"
               },
               {
                 "ref": "Miqueias 3:5–7",
@@ -916,7 +901,8 @@
                 "text": "Oro de todo o coração; responde-me, SENHOR! Obedecerei a teus decretos."
               },
               {
-                "ref": "Jeremias 9:1"
+                "ref": "Jeremias 9:1",
+                "text": "Quem dera minha cabeça fosse uma represa, e meus olhos, uma fonte de lágrimas! Choraria dia e noite por meu povo que foi massacrado."
               },
               {
                 "ref": "Lamentações 2:8",
@@ -935,7 +921,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 62:8",
-                "text": "Ó meu povo, confie nele em todo tempo; derrame o coração diante dele, pois Deus é nosso refúgio."
+                "text": "Ó meu povo, confie nele em todo tempo; derrame o coração diante dele, pois Deus é nosso refúgio. Interlúdio"
               },
               {
                 "ref": "Salmos 119:147–148",
@@ -943,7 +929,7 @@
               },
               {
                 "ref": "Isaías 26:9",
-                "text": "À noite eu te procuro, ó Deus; pela manhã92 te busco de todo o coração. Pois só quando vens julgar a terra as pessoas aprendem a justiça."
+                "text": "À noite eu te procuro, ó Deus; pela manhã te busco de todo o coração. Pois só quando vens julgar a terra as pessoas aprendem a justiça."
               },
               {
                 "ref": "Marcos 1:35",
@@ -981,7 +967,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 36:17",
-                "text": "Então o SENHOR trouxe o rei da Babilônia contra eles. Os babilônios154 mataram os jovens e foram atrás deles até dentro do santuário. Não tiveram piedade nem dos rapazes, nem das moças, nem dos idosos e doentes. Deus os..."
+                "text": "Então o SENHOR trouxe o rei da Babilônia contra eles. Os babilônios mataram os jovens e foram atrás deles até dentro do santuário. Não tiveram piedade nem dos rapazes, nem das moças, nem dos idosos e doentes. Deus os entregou todos nas mãos do rei."
               },
               {
                 "ref": "Zacarias 11:6",
@@ -1027,6 +1013,7 @@
   "3": {
     "book": "Lamentações",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Esperança na fidelidade do SENHOR",
@@ -1038,7 +1025,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 88:7",
-                "text": "Tua ira pesa sobre mim; uma após a outra, tuas ondas me encobrem."
+                "text": "Tua ira pesa sobre mim; uma após a outra, tuas ondas me encobrem. Interlúdio"
               },
               {
                 "ref": "Jó 19:21",
@@ -1207,7 +1194,7 @@
               },
               {
                 "ref": "Mateus 27:46",
-                "text": "Por volta das três da tarde, Jesus clamou em alta voz: “Eli, Eli,165 lamá sabactâni?”, que quer dizer: “Meu Deus, meu Deus, por que me abandonaste?”."
+                "text": "Por volta das três da tarde, Jesus clamou em alta voz: “Eli, Eli, lamá sabactâni?”, que quer dizer: “Meu Deus, meu Deus, por que me abandonaste?”."
               }
             ]
           },
@@ -1504,7 +1491,7 @@
           },
           {
             "number": 22,
-            "text": "O amor do SENHOR não tem fim!12 Suas misericórdias são inesgotáveis.",
+            "text": "O amor do SENHOR não tem fim! Suas misericórdias são inesgotáveis.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1678,7 +1665,7 @@
               },
               {
                 "ref": "Jó 42:5–6",
-                "text": "Antes, eu só te conhecia de ouvir falar; agora, eu te vi com meus próprios olhos. Retiro tudo que disse e me sento arrependido no pó e nas cinzas”. Conclusão: o SENHOR abençoa Jó"
+                "text": "Antes, eu só te conhecia de ouvir falar; agora, eu te vi com meus próprios olhos. Retiro tudo que disse e me sento arrependido no pó e nas cinzas”."
               },
               {
                 "ref": "Ezequiel 16:63",
@@ -1705,7 +1692,7 @@
               },
               {
                 "ref": "Mateus 26:67",
-                "text": "Então começaram a cuspir no rosto de Jesus e a dar-lhe socos."
+                "text": "Então começaram a cuspir no rosto de Jesus e a dar-lhe socos. Alguns lhe davam tapas"
               }
             ]
           },
@@ -1927,7 +1914,7 @@
               },
               {
                 "ref": "Salmos 4:4",
-                "text": "Não pequem ao permitir que a ira os controle; reflitam durante a noite e permaneçam em silêncio."
+                "text": "Não pequem ao permitir que a ira os controle; reflitam durante a noite e permaneçam em silêncio. Interlúdio"
               },
               {
                 "ref": "Joel 2:12–13",
@@ -2106,7 +2093,8 @@
                 "text": "Chorei até que não tivesse mais lágrimas; meu coração está aflito. Meu espírito se derrama de angústia, quando vejo a calamidade de meu povo. Crianças pequenas e bebês desfalecem e morrem nas ruas."
               },
               {
-                "ref": "Jeremias 9:1"
+                "ref": "Jeremias 9:1",
+                "text": "Quem dera minha cabeça fosse uma represa, e meus olhos, uma fonte de lágrimas! Choraria dia e noite por meu povo que foi massacrado."
               },
               {
                 "ref": "Lamentações 2:18",
@@ -2148,7 +2136,7 @@
               },
               {
                 "ref": "Salmos 80:14–16",
-                "text": "Ó Deus dos Exércitos, suplicamos que voltes! Olha dos céus e vê a nossa aflição."
+                "text": "Ó Deus dos Exércitos, suplicamos que voltes! Olha dos céus e vê a nossa aflição. Cuida desta videira"
               },
               {
                 "ref": "Lamentações 5:1",
@@ -2198,7 +2186,7 @@
               },
               {
                 "ref": "João 15:25",
-                "text": "Isso cumpre o que está registrado nas Escrituras deles: ‘Odiaram- me sem motivo’."
+                "text": "Isso cumpre o que está registrado nas Escrituras deles: ‘Odiaram-me sem motivo’."
               }
             ]
           },
@@ -2263,7 +2251,7 @@
               },
               {
                 "ref": "Salmos 116:3–4",
-                "text": "A morte me envolveu com suas cordas, e os terrores da sepultura148 me dominaram; não via outra coisa senão sofrimento e tristeza. Então clamei pelo nome do SENHOR: “Livra-me, SENHOR!”."
+                "text": "A morte me envolveu com suas cordas, e os terrores da sepultura me dominaram; não via outra coisa senão sofrimento e tristeza. Então clamei pelo nome do SENHOR: “Livra-me, SENHOR!”."
               },
               {
                 "ref": "Jonas 2:2–4",
@@ -2282,7 +2270,7 @@
               },
               {
                 "ref": "Isaías 38:5",
-                "text": "“Volte a Ezequias e diga-lhe: Assim diz o SENHOR, o Deus de seu antepassado Davi: ‘Ouvi sua oração e vi suas lágrimas."
+                "text": "“Volte a Ezequias e diga-lhe: Assim diz o SENHOR, o Deus de seu antepassado Davi: ‘Ouvi sua oração e vi suas lágrimas. Acrescentarei quinze anos à sua vida"
               },
               {
                 "ref": "Salmos 88:13–14",
@@ -2355,7 +2343,7 @@
               },
               {
                 "ref": "Gênesis 31:42",
-                "text": "De fato, se o Deus de meu pai não estivesse comigo, o Deus de Abraão e o Deus temível de Isaque,110 o senhor teria me mandado embora de mãos vazias. Mas Deus viu como fui maltratado, apesar de meu árduo trabalho. Por iss..."
+                "text": "De fato, se o Deus de meu pai não estivesse comigo, o Deus de Abraão e o Deus temível de Isaque, o senhor teria me mandado embora de mãos vazias. Mas Deus viu como fui maltratado, apesar de meu árduo trabalho. Por isso e..."
               },
               {
                 "ref": "1 Pedro 2:23",
@@ -2420,7 +2408,7 @@
               },
               {
                 "ref": "Salmos 140:3",
-                "text": "Sua língua fere como uma serpente; veneno de víbora goteja de seus lábios."
+                "text": "Sua língua fere como uma serpente; veneno de víbora goteja de seus lábios. Interlúdio"
               },
               {
                 "ref": "Salmos 59:12",
@@ -2488,7 +2476,8 @@
                 "text": "Se alguém não ama o Senhor, essa pessoa é maldita. Vem, nosso Senhor!"
               },
               {
-                "ref": "Deuteronômio 27:15–26"
+                "ref": "Deuteronômio 27:15–26",
+                "text": "‘Maldito quem esculpir ou fundir um ídolo e o levantar em segredo. Os ídolos, trabalhos de artesãos, são detestáveis ao SENHOR’. E todo o povo responderá: ‘Amém!’."
               }
             ]
           },
@@ -2522,9 +2511,10 @@
   "4": {
     "book": "Lamentações",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
-        "title": "A ira do SENHOR é satisfeita",
+        "title": "A ira do SENHOR é satisfeita",
         "verses": [
           {
             "number": 1,
@@ -2748,7 +2738,7 @@
               },
               {
                 "ref": "2 Reis 6:26–29",
-                "text": "Um dia, quando o rei de Israel caminhava pelos muros da cidade, uma mulher gritou para ele: “Ó meu senhor, o rei! Por favor, ajude- me!”."
+                "text": "Um dia, quando o rei de Israel caminhava pelos muros da cidade, uma mulher gritou para ele: “Ó meu senhor, o rei! Por favor, ajude-me!”."
               },
               {
                 "ref": "Jeremias 19:9",
@@ -3027,6 +3017,7 @@
   "5": {
     "book": "Lamentações",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Súplica por restauração",
@@ -3134,7 +3125,7 @@
               },
               {
                 "ref": "Jeremias 27:11–12",
-                "text": "Mas a nação que se sujeitar ao rei da Babilônia poderá continuar em sua terra e ­cultivá-la. Eu, o SENHOR, falei!’”."
+                "text": "Mas a nação que se sujeitar ao rei da Babilônia poderá continuar em sua terra e cultivá-la. Eu, o SENHOR, falei!’”."
               },
               {
                 "ref": "Jeremias 28:14",
@@ -3148,7 +3139,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Oséias 12:1"
+                "ref": "Oséias 12:1",
+                "text": "O povo de Israel se alimenta de vento; corre atrás do vento leste o dia todo. Acumula mentiras e violência, faz acordos com a Assíria e, ao mesmo tempo, envia azeite para comprar o apoio do Egito."
               },
               {
                 "ref": "Oséias 9:3",
@@ -3229,7 +3221,7 @@
               },
               {
                 "ref": "2 Samuel 23:17",
-                "text": "“Que o SENHOR não permita que eu beba desta água!”, exclamou. “Ela é tão preciosa quanto o sangue destes homens105 que arriscaram a vida para trazê-la.” E Davi não a bebeu. Esses são exemplos dos feitos desses três guerreiros."
+                "text": "“Que o SENHOR não permita que eu beba desta água!”, exclamou. “Ela é tão preciosa quanto o sangue destes homens que arriscaram a vida para trazê-la.” E Davi não a bebeu. Esses são exemplos dos feitos desses três guerreiros."
               }
             ]
           },
@@ -3267,7 +3259,7 @@
               },
               {
                 "ref": "Zacarias 14:2",
-                "text": "Rs 25.."
+                "text": "Reunirei todas as nações para lutarem contra Jerusalém. A cidade será conquistada, as casas serão saqueadas, e as mulheres, violentadas. Metade da população será levada para o exílio, e o restante será deixado na cidade."
               },
               {
                 "ref": "Deuteronômio 28:30",
@@ -3507,12 +3499,12 @@
           },
           {
             "number": 22,
-            "text": "Ou será que nos rejeitaste completamente? Ainda estás irado conosco? 1 1 Cada um dos 4 primeiros capítulos do livro é um acróstico, apresentado na sequência do alfabeto hebraico. A primeira palavra de cada versículo começa com uma letra hebraica sucessiva. Os capítulos 1, 2 e 4 têm um versículo para cada uma das 22 letras hebraicas. O capítulo 3 tem 22 estrofes de 3 versículos cada. Embora o capítulo 5 tenha 22 versículos, não é um acróstico. 2 1.6 Em hebraico, A filha de Sião. 3 1. Em hebraico, a filha virgem de Judá. 4 1. Em hebraico, Jacó. Os nomes “Jacó” e “Israel” são usados de forma intercambiável ao longo de todo o Antigo Testamento e se referem, por vezes, ao patriarca e, em outras ocasiões, à nação. 5 2.1a Em hebraico, a filha de Sião; também em 2.,,,. 6 2.1b Em hebraico, do suporte de seus pés. 7 2.2a Em hebraico, Jacó; também em 2.3b. Ver nota em 1.. 8 2.2b Em hebraico, da filha de Judá; também em 2.. 9 2. Em hebraico, da filha de Jerusalém. 10 2. Em hebraico, Seu coração chorou. 11 3. Ou É absinto e fel. 12 3. Conforme a versão siríaca; o hebraico traz O SENHOR nos guarda da destruição. 13 4. Ou O castigo. 14 4. Ou lápis-lazúlis. 15 4. Em hebraico, Ó filha de Sião.",
+            "text": "Ou será que nos rejeitaste completamente? Ainda estás irado conosco?",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Oséias 1:6",
-                "text": "Pouco tempo depois, Gômer engravidou novamente e deu à luz uma filha. O SENHOR disse a Oseias: “Dê à sua filha o nome de Lo- Ruama, ‘Não Amada’, pois não mostrarei mais amor ao povo de Israel, nem lhe perdoarei."
+                "text": "Pouco tempo depois, Gômer engravidou novamente e deu à luz uma filha. O SENHOR disse a Oseias: “Dê à sua filha o nome de Lo-Ruama, ‘Não Amada’, pois não mostrarei mais amor ao povo de Israel, nem lhe perdoarei."
               },
               {
                 "ref": "Salmos 60:1–2",

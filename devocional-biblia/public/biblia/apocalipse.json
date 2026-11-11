@@ -2,6 +2,7 @@
   "1": {
     "book": "Apocalipse",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Prólogo",
@@ -475,6 +476,7 @@
   "2": {
     "book": "Apocalipse",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Mensagem à igreja em Éfeso",
@@ -573,7 +575,7 @@
           },
           {
             "number": 5,
-            "text": "Veja até onde você caiu! Arrependa- se e volte a praticar as obras que no início praticava. Do contrário, virei até você e tirarei seu candelabro de seu lugar entre as igrejas.",
+            "text": "Veja até onde você caiu! Arrependa-se e volte a praticar as obras que no início praticava. Do contrário, virei até você e tirarei seu candelabro de seu lugar entre as igrejas.",
             "isJesusWords": true,
             "crossReferences": [
               {
@@ -586,7 +588,7 @@
               },
               {
                 "ref": "Oséias 14:1",
-                "text": "Co 15.."
+                "text": "Volte, ó Israel, para o SENHOR, seu Deus, pois seus pecados causaram sua queda."
               },
               {
                 "ref": "Atos 17:30–31",
@@ -759,7 +761,7 @@
           },
           {
             "number": 13,
-            "text": "“Conheço o lugar onde você vive, a cidade onde está o trono de Satanás. Ainda assim, você permanece leal a meu nome. Recusou- se a negar sua fé em mim até mesmo quando Antipas, minha testemunha fiel, foi morto onde vocês vivem, o lugar de habitação de Satanás.",
+            "text": "“Conheço o lugar onde você vive, a cidade onde está o trono de Satanás. Ainda assim, você permanece leal a meu nome. Recusou-se a negar sua fé em mim até mesmo quando Antipas, minha testemunha fiel, foi morto onde vocês vivem, o lugar de habitação de Satanás.",
             "isJesusWords": true,
             "crossReferences": [
               {
@@ -833,7 +835,7 @@
               },
               {
                 "ref": "Apocalipse 2:5",
-                "text": "Veja até onde você caiu! Arrependa- se e volte a praticar as obras que no início praticava. Do contrário, virei até você e tirarei seu candelabro de seu lugar entre as igrejas."
+                "text": "Veja até onde você caiu! Arrependa-se e volte a praticar as obras que no início praticava. Do contrário, virei até você e tirarei seu candelabro de seu lugar entre as igrejas."
               }
             ]
           },
@@ -902,7 +904,8 @@
                 "text": "Todo ramo que, estando em mim, não dá fruto, ele corta. Todo ramo que dá fruto, ele poda, para que produza ainda mais."
               },
               {
-                "ref": "2 Pedro 1:7"
+                "ref": "2 Pedro 1:7",
+                "text": "à devoção a Deus a fraternidade; e à fraternidade o amor."
               },
               {
                 "ref": "2 Tessalonicenses 1:3",
@@ -925,7 +928,7 @@
               },
               {
                 "ref": "1 Coríntios 10:18–21",
-                "text": "Pensem no povo de Israel. Acaso os que comiam dos sacri­fícios não partilhavam do mesmo altar?"
+                "text": "Pensem no povo de Israel. Acaso os que comiam dos sacrifícios não partilhavam do mesmo altar?"
               },
               {
                 "ref": "Atos 15:29",
@@ -998,7 +1001,7 @@
               },
               {
                 "ref": "Atos 1:24",
-                "text": "Em seguida, oraram: “Senhor, tu conheces cada coração."
+                "text": "Em seguida, oraram: “Senhor, tu conheces cada coração. Mostra-nos qual destes homens escolheste"
               }
             ]
           },
@@ -1032,7 +1035,7 @@
             "crossReferences": [
               {
                 "ref": "Apocalipse 3:3",
-                "text": "Lembre-se do que ouviu e no que acreditou no princípio; agarre-se a isso com firmeza. Arrependa- se. Se não despertar, virei subitamente até você, como um ladrão."
+                "text": "Lembre-se do que ouviu e no que acreditou no princípio; agarre-se a isso com firmeza. Arrependa-se. Se não despertar, virei subitamente até você, como um ladrão."
               },
               {
                 "ref": "Apocalipse 3:11",
@@ -1078,7 +1081,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 2:8–9",
-                "text": "Basta pedir e lhe darei as nações como herança, a terra inteira como sua propriedade. Você as quebrará3 com cetro de ferro e as despedaçará como vasos de barro’”."
+                "text": "Basta pedir e lhe darei as nações como herança, a terra inteira como sua propriedade. Você as quebrará com cetro de ferro e as despedaçará como vasos de barro’”."
               },
               {
                 "ref": "Apocalipse 12:5",
@@ -1096,7 +1099,7 @@
           },
           {
             "number": 28,
-            "text": "Ele terá a mesma autoridade que recebi de meu Pai, e também lhe darei a estrela da ­manhã.",
+            "text": "Ele terá a mesma autoridade que recebi de meu Pai, e também lhe darei a estrela da manhã.",
             "isJesusWords": true,
             "crossReferences": [
               {
@@ -1131,6 +1134,7 @@
   "3": {
     "book": "Apocalipse",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Mensagem à igreja em Sardes",
@@ -1183,12 +1187,12 @@
           },
           {
             "number": 3,
-            "text": "Lembre-se do que ouviu e no que acreditou no princípio; agarre-se a isso com firmeza. Arrependa- se. Se não despertar, virei subitamente até você, como um ladrão.",
+            "text": "Lembre-se do que ouviu e no que acreditou no princípio; agarre-se a isso com firmeza. Arrependa-se. Se não despertar, virei subitamente até você, como um ladrão.",
             "isJesusWords": true,
             "crossReferences": [
               {
                 "ref": "Apocalipse 2:5",
-                "text": "Veja até onde você caiu! Arrependa- se e volte a praticar as obras que no início praticava. Do contrário, virei até você e tirarei seu candelabro de seu lugar entre as igrejas."
+                "text": "Veja até onde você caiu! Arrependa-se e volte a praticar as obras que no início praticava. Do contrário, virei até você e tirarei seu candelabro de seu lugar entre as igrejas."
               },
               {
                 "ref": "2 Pedro 3:10",
@@ -1454,7 +1458,7 @@
               },
               {
                 "ref": "Mateus 6:24",
-                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”48 Ensino sobre a preocupação"
+                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”"
               },
               {
                 "ref": "1 Reis 18:21",
@@ -1473,7 +1477,7 @@
             "crossReferences": [
               {
                 "ref": "Apocalipse 2:5",
-                "text": "Veja até onde você caiu! Arrependa- se e volte a praticar as obras que no início praticava. Do contrário, virei até você e tirarei seu candelabro de seu lugar entre as igrejas."
+                "text": "Veja até onde você caiu! Arrependa-se e volte a praticar as obras que no início praticava. Do contrário, virei até você e tirarei seu candelabro de seu lugar entre as igrejas."
               },
               {
                 "ref": "Zacarias 11:8–9",
@@ -1588,7 +1592,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 19:28",
-                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado113 e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
+                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
               },
               {
                 "ref": "2 Timóteo 2:12",
@@ -1626,6 +1630,7 @@
   "4": {
     "book": "Apocalipse",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Adoração no céu",
@@ -1641,7 +1646,7 @@
               },
               {
                 "ref": "Êxodo 24:12",
-                "text": "Então o SENHOR disse a Moisés: “Suba ao monte para encontrar- se comigo. Fique lá e eu lhe darei tábuas de pedra nas quais gravei a lei e os mandamentos para ensinar ao povo”."
+                "text": "Então o SENHOR disse a Moisés: “Suba ao monte para encontrar-se comigo. Fique lá e eu lhe darei tábuas de pedra nas quais gravei a lei e os mandamentos para ensinar ao povo”."
               },
               {
                 "ref": "Apocalipse 1:19",
@@ -1706,7 +1711,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 19:28",
-                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado113 e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
+                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
               },
               {
                 "ref": "Apocalipse 11:16",
@@ -1752,7 +1757,7 @@
             "crossReferences": [
               {
                 "ref": "Apocalipse 15:2",
-                "text": "Vi diante de mim algo semelhante a um mar de vidro misturado com fogo. Nele estavam em pé todos os que haviam vencido a besta, sua estátua e o número que representa seu nome."
+                "text": "Vi diante de mim algo semelhante a um mar de vidro misturado com fogo. Nele estavam em pé todos os que haviam vencido a besta, sua estátua e o número que representa seu nome. Todos seguravam harpas que Deus lhes tinha dado"
               },
               {
                 "ref": "Apocalipse 5:6",
@@ -1890,6 +1895,7 @@
   "5": {
     "book": "Apocalipse",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "O Cordeiro abre o livro",
@@ -1955,7 +1961,7 @@
               },
               {
                 "ref": "Isaías 40:13–14",
-                "text": "Quem pode orientar o Espírito do SENHOR?130 Quem sabe o suficiente para aconselhá-lo ou instruí-lo?"
+                "text": "Quem pode orientar o Espírito do SENHOR? Quem sabe o suficiente para aconselhá-lo ou instruí-lo?"
               },
               {
                 "ref": "Isaías 41:28",
@@ -1985,7 +1991,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 11:1",
-                "text": "Do tronco da linhagem de Jessé45 brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
+                "text": "Do tronco da linhagem de Jessé brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
               },
               {
                 "ref": "Jeremias 23:5–6",
@@ -2077,7 +2083,7 @@
               },
               {
                 "ref": "Mateus 26:28",
-                "text": "porque este é o meu sangue, que confirma a aliança.150 Ele é derramado como sacrifício para perdoar os pecados de muitos."
+                "text": "porque este é o meu sangue, que confirma a aliança. Ele é derramado como sacrifício para perdoar os pecados de muitos."
               },
               {
                 "ref": "Romanos 3:24–26",
@@ -2119,7 +2125,7 @@
               },
               {
                 "ref": "Hebreus 12:22",
-                "text": "Vocês, porém, chegaram ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, aos incontáveis milhares de anjos em alegre reunião, 23à congregação dos filhos mais velhos, cujos nomes estão escritos no céu, e a Deus..."
+                "text": "Vocês, porém, chegaram ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, aos incontáveis milhares de anjos em alegre reunião,"
               },
               {
                 "ref": "Salmos 148:2",
@@ -2142,7 +2148,7 @@
               },
               {
                 "ref": "Apocalipse 19:1",
-                "text": "Depois disso, ouvi algo semelhante ao som de uma grande multidão clamando: “Aleluia!50 Salvação, glória e poder pertencem a nosso Deus."
+                "text": "Depois disso, ouvi algo semelhante ao som de uma grande multidão clamando: “Aleluia! Salvação, glória e poder pertencem a nosso Deus."
               },
               {
                 "ref": "João 17:2",
@@ -2199,6 +2205,7 @@
   "6": {
     "book": "Apocalipse",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "O Cordeiro abre os seis primeiros selos",
@@ -2271,7 +2278,7 @@
               },
               {
                 "ref": "Mateus 10:34",
-                "text": "“Não imaginem que vim trazer paz à terra! Não vim trazer paz, mas a espada. 35‘Vim para pôr o homem contra seu pai, a filha contra sua mãe, e a nora contra sua sogra."
+                "text": "“Não imaginem que vim trazer paz à terra! Não vim trazer paz, mas a espada."
               },
               {
                 "ref": "Apocalipse 13:10",
@@ -2351,7 +2358,7 @@
             "crossReferences": [
               {
                 "ref": "Oséias 13:14",
-                "text": "“Devo resgatá-los da sepultura?58 Devo redimi-los da morte? Ó morte, traga seus horrores! Ó sepultura, traga suas pragas!59 Pois não terei compaixão deles."
+                "text": "“Devo resgatá-los da sepultura? Devo redimi-los da morte? Ó morte, traga seus horrores! Ó sepultura, traga suas pragas! Pois não terei compaixão deles."
               },
               {
                 "ref": "Jeremias 15:2–3",
@@ -2581,6 +2588,7 @@
   "7": {
     "book": "Apocalipse",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Os servos de Deus são selados",
@@ -2592,7 +2600,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 24:31",
-                "text": "Ele enviará seus anjos com um forte sopro de trombeta, e eles reunirão os escolhidos de todas as partes do mundo,144 de uma extremidade à outra do céu."
+                "text": "Ele enviará seus anjos com um forte sopro de trombeta, e eles reunirão os escolhidos de todas as partes do mundo, de uma extremidade à outra do céu."
               },
               {
                 "ref": "Daniel 7:2",
@@ -2673,7 +2681,7 @@
               },
               {
                 "ref": "Mateus 19:28",
-                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado113 e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
+                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
               }
             ]
           },
@@ -2726,7 +2734,7 @@
               },
               {
                 "ref": "Gênesis 30:18",
-                "text": "Chamou-o de Issacar,104 pois disse: “Deus me recompensou porque entreguei minha serva por mulher a meu marido”."
+                "text": "Chamou-o de Issacar, pois disse: “Deus me recompensou porque entreguei minha serva por mulher a meu marido”."
               },
               {
                 "ref": "Êxodo 6:16",
@@ -2741,7 +2749,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 30:24",
-                "text": "e o chamou de José,106 pois disse: “Que o SENHOR me acrescente ainda outro filho!”."
+                "text": "e o chamou de José, pois disse: “Que o SENHOR me acrescente ainda outro filho!”."
               },
               {
                 "ref": "Números 1:36",
@@ -2773,7 +2781,7 @@
               },
               {
                 "ref": "João 12:13",
-                "text": "tomou ramos de palmeiras e saiu ao seu encontro, gritando: “Hosana!57 Bendito é o que vem em nome do Senhor! Bendito é o Rei de Israel!”."
+                "text": "tomou ramos de palmeiras e saiu ao seu encontro, gritando: “Hosana! Bendito é o que vem em nome do Senhor! Bendito é o Rei de Israel!”."
               },
               {
                 "ref": "Salmos 117:1–2",
@@ -2792,11 +2800,11 @@
             "crossReferences": [
               {
                 "ref": "Apocalipse 19:1",
-                "text": "Depois disso, ouvi algo semelhante ao som de uma grande multidão clamando: “Aleluia!50 Salvação, glória e poder pertencem a nosso Deus."
+                "text": "Depois disso, ouvi algo semelhante ao som de uma grande multidão clamando: “Aleluia! Salvação, glória e poder pertencem a nosso Deus."
               },
               {
                 "ref": "Salmos 3:8",
-                "text": "De ti, SENHOR, vem o livramento; abençoa o teu povo!"
+                "text": "De ti, SENHOR, vem o livramento; abençoa o teu povo! Interlúdio"
               },
               {
                 "ref": "Isaías 45:21",
@@ -2976,6 +2984,7 @@
   "8": {
     "book": "Apocalipse",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "O Cordeiro abre o sétimo selo",
@@ -3149,7 +3158,7 @@
               },
               {
                 "ref": "Marcos 11:23",
-                "text": "Eu lhes digo a verdade: vocês poderão dizer a este monte: ‘Levante-se e atire- se no mar’, e isso acontecerá. É preciso, no entanto, crer que acontecerá, e não ter nenhuma dúvida em seu coração."
+                "text": "Eu lhes digo a verdade: vocês poderão dizer a este monte: ‘Levante-se e atire-se no mar’, e isso acontecerá. É preciso, no entanto, crer que acontecerá, e não ter nenhuma dúvida em seu coração."
               },
               {
                 "ref": "Apocalipse 8:7",
@@ -3279,6 +3288,7 @@
   "9": {
     "book": "Apocalipse",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "A quinta trombeta traz o primeiro terror",
@@ -3750,6 +3760,7 @@
   "10": {
     "book": "Apocalipse",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "O anjo e o livrinho",
@@ -4006,6 +4017,7 @@
   "11": {
     "book": "Apocalipse",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "As duas testemunhas",
@@ -4024,11 +4036,12 @@
                 "text": "Quando o homem terminou de medir a área interna do templo, ele me levou para fora pela porta leste a fim de medir toda a área ao redor."
               },
               {
-                "ref": "Zacarias 2:1–2"
+                "ref": "Zacarias 2:1–2",
+                "text": "Quando levantei os olhos outra vez, vi um homem segurando uma corda de medir. “Aonde você vai?”, perguntei. Ele respondeu: “Vou medir Jerusalém para saber sua largura e seu comprimento”."
               },
               {
                 "ref": "Ezequiel 40:1–48",
-                "text": "Em 28 de abril,104 no vigésimo quinto ano de nosso exílio, catorze anos depois da queda de Jerusalém, a mão do SENHOR veio sobre mim, e ele me levou para lá."
+                "text": "Em 28 de abril, no vigésimo quinto ano de nosso exílio, catorze anos depois da queda de Jerusalém, a mão do SENHOR veio sobre mim, e ele me levou para lá."
               }
             ]
           },
@@ -4450,6 +4463,7 @@
   "12": {
     "book": "Apocalipse",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "A mulher e o dragão",
@@ -4561,7 +4575,7 @@
               },
               {
                 "ref": "Salmos 2:9–10",
-                "text": "Você as quebrará3 com cetro de ferro e as despedaçará como vasos de barro’”. Portanto, reis, sejam prudentes! Aceitem a advertência, governantes da terra!"
+                "text": "Você as quebrará com cetro de ferro e as despedaçará como vasos de barro’”. Portanto, reis, sejam prudentes! Aceitem a advertência, governantes da terra!"
               },
               {
                 "ref": "Isaías 7:14",
@@ -4737,7 +4751,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 3:15",
-                "text": "Farei que haja inimizade entre você e a mulher, e entre a sua descendência e o descendente dela. Ele lhe ferirá12 a cabeça, e você lhe ferirá o calcanhar”."
+                "text": "Farei que haja inimizade entre você e a mulher, e entre a sua descendência e o descendente dela. Ele lhe ferirá a cabeça, e você lhe ferirá o calcanhar”."
               },
               {
                 "ref": "João 16:33",
@@ -4759,7 +4773,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Êxodo 19:4"
+                "ref": "Êxodo 19:4",
+                "text": "‘Vocês viram o que fiz aos egípcios. Sabem como carreguei vocês sobre asas de águias e os trouxe para mim."
               },
               {
                 "ref": "Isaías 40:31",
@@ -4782,7 +4797,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 8:7",
-                "text": "Portanto, o Senhor fará vir sobre eles uma grande inundação do rio Eufrates: o rei da Assíria com toda a sua glória."
+                "text": "Portanto, o Senhor fará vir sobre eles uma grande inundação do rio Eufrates: o rei da Assíria com toda a sua glória. A inundação fará transbordar todos os seus canais"
               },
               {
                 "ref": "Salmos 18:4",
@@ -4824,7 +4839,7 @@
               },
               {
                 "ref": "Gênesis 3:15",
-                "text": "Farei que haja inimizade entre você e a mulher, e entre a sua descendência e o descendente dela. Ele lhe ferirá12 a cabeça, e você lhe ferirá o calcanhar”."
+                "text": "Farei que haja inimizade entre você e a mulher, e entre a sua descendência e o descendente dela. Ele lhe ferirá a cabeça, e você lhe ferirá o calcanhar”."
               },
               {
                 "ref": "Apocalipse 6:9",
@@ -4838,7 +4853,7 @@
           },
           {
             "number": 18,
-            "text": "Então o dragão se colocou em pé34 na praia, junto ao mar.",
+            "text": "Então o dragão se colocou em pé na praia, junto ao mar.",
             "isJesusWords": false,
             "crossReferences": []
           }
@@ -4849,6 +4864,7 @@
   "13": {
     "book": "Apocalipse",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "A besta que saiu do mar",
@@ -5071,7 +5087,7 @@
               },
               {
                 "ref": "Isaías 33:1",
-                "text": "Que aflição espera vocês, assírios, que destroem os outros,105 mas nunca foram destruídos! Traem outros, mas nunca foram traídos. Quando terminarem de destruir, serão destruídos. Quando terminarem de trair, serão traídos."
+                "text": "Que aflição espera vocês, assírios, que destroem os outros, mas nunca foram destruídos! Traem outros, mas nunca foram traídos. Quando terminarem de destruir, serão destruídos. Quando terminarem de trair, serão traídos."
               },
               {
                 "ref": "Apocalipse 14:12",
@@ -5244,7 +5260,7 @@
             "crossReferences": [
               {
                 "ref": "Apocalipse 15:2",
-                "text": "Vi diante de mim algo semelhante a um mar de vidro misturado com fogo. Nele estavam em pé todos os que haviam vencido a besta, sua estátua e o número que representa seu nome."
+                "text": "Vi diante de mim algo semelhante a um mar de vidro misturado com fogo. Nele estavam em pé todos os que haviam vencido a besta, sua estátua e o número que representa seu nome. Todos seguravam harpas que Deus lhes tinha dado"
               },
               {
                 "ref": "Apocalipse 17:9",
@@ -5256,7 +5272,7 @@
               },
               {
                 "ref": "Marcos 13:14",
-                "text": "“Chegará o dia em que vocês verão a ‘terrível profanação’69 no lugar onde não deveria estar. (Leitor, preste atenção!) Então, quem estiver na Judeia, fuja para os montes."
+                "text": "“Chegará o dia em que vocês verão a ‘terrível profanação’ no lugar onde não deveria estar. (Leitor, preste atenção!) Então, quem estiver na Judeia, fuja para os montes."
               }
             ]
           }
@@ -5267,6 +5283,7 @@
   "14": {
     "book": "Apocalipse",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
         "title": "O Cordeiro e os 144 mil",
@@ -5393,12 +5410,12 @@
         "verses": [
           {
             "number": 6,
-            "text": "Vi outro anjo que voava no ponto mais alto do céu, levando as boas- novas eternas para anunciá-las aos habitantes da terra, a toda nação, tribo, língua e povo.",
+            "text": "Vi outro anjo que voava no ponto mais alto do céu, levando as boas-novas eternas para anunciá-las aos habitantes da terra, a toda nação, tribo, língua e povo.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Marcos 16:15",
-                "text": "Jesus lhes disse: “Vão ao mundo inteiro e anunciem as boas- novas a todos."
+                "text": "Jesus lhes disse: “Vão ao mundo inteiro e anunciem as boas-novas a todos."
               },
               {
                 "ref": "Efésios 3:9–11",
@@ -5471,7 +5488,7 @@
               },
               {
                 "ref": "Apocalipse 14:6–8",
-                "text": "Vi outro anjo que voava no ponto mais alto do céu, levando as boas- novas eternas para anunciá-las aos habitantes da terra, a toda nação, tribo, língua e povo."
+                "text": "Vi outro anjo que voava no ponto mais alto do céu, levando as boas-novas eternas para anunciá-las aos habitantes da terra, a toda nação, tribo, língua e povo."
               },
               {
                 "ref": "Jeremias 44:4",
@@ -5736,6 +5753,7 @@
   "15": {
     "book": "Apocalipse",
     "chapter": "15",
+    "verified": true,
     "sections": [
       {
         "title": "O cântico de Moisés e do Cordeiro",
@@ -5765,7 +5783,7 @@
           },
           {
             "number": 2,
-            "text": "Vi diante de mim algo semelhante a um mar de vidro misturado com fogo. Nele estavam em pé todos os que haviam vencido a besta, sua estátua e o número que representa seu nome.",
+            "text": "Vi diante de mim algo semelhante a um mar de vidro misturado com fogo. Nele estavam em pé todos os que haviam vencido a besta, sua estátua e o número que representa seu nome. Todos seguravam harpas que Deus lhes tinha dado",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5785,12 +5803,7 @@
                 "text": "“Eu batizo com água aqueles que se arrependem. Depois de mim, porém, virá alguém mais poderoso que eu, alguém muito superior, cujas sandálias não sou digno de carregar. Ele os batizará com o Espírito Santo e com fogo."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Todos seguravam harpas que Deus lhes tinha dado",
-        "verses": [
+          },
           {
             "number": 3,
             "text": "e entoavam o cântico de Moisés, servo de Deus, e o cântico do Cordeiro: “Grandes e maravilhosas são as tuas obras, ó Senhor Deus, o Todo-poderoso. Justos e verdadeiros são os teus caminhos, ó Rei das nações.",
@@ -5861,7 +5874,7 @@
               },
               {
                 "ref": "Êxodo 38:21",
-                "text": "Esta é uma relação dos materiais usados na construção do tabernáculo, o santuário da aliança.131 Os levitas registraram os valores totais conforme Moisés os havia instruído, e Itamar, filho do sacerdote Arão, supervisionou esse trabalho."
+                "text": "Esta é uma relação dos materiais usados na construção do tabernáculo, o santuário da aliança. Os levitas registraram os valores totais conforme Moisés os havia instruído, e Itamar, filho do sacerdote Arão, supervisionou esse trabalho."
               }
             ]
           },
@@ -5941,6 +5954,7 @@
   "16": {
     "book": "Apocalipse",
     "chapter": "16",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -6067,7 +6081,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 49:26",
-                "text": "Alimentarei seus inimigos com a própria carne deles, ficarão bêbados com rios do próprio sangue. Todo o mundo saberá que eu, o SENHOR, sou seu Salvador e seu Redentor,"
+                "text": "Alimentarei seus inimigos com a própria carne deles, ficarão bêbados com rios do próprio sangue. Todo o mundo saberá que eu, o SENHOR, sou seu Salvador e seu Redentor, o Poderoso de Israel”."
               },
               {
                 "ref": "Apocalipse 6:10–11",
@@ -6102,7 +6116,7 @@
               },
               {
                 "ref": "Ezequiel 10:7",
-                "text": "Em seguida, um dos querubins estendeu a mão e pegou algumas brasas ardentes do fogo que estava entre os querubins. Colocou as brasas nas mãos do homem vestido de linho, e o homem as recebeu e saiu. 8(Todos os querubins t..."
+                "text": "Em seguida, um dos querubins estendeu a mão e pegou algumas brasas ardentes do fogo que estava entre os querubins. Colocou as brasas nas mãos do homem vestido de linho, e o homem as recebeu e saiu."
               }
             ]
           },
@@ -6309,7 +6323,7 @@
               },
               {
                 "ref": "2 Reis 23:29–30",
-                "text": "Durante o reinado de Josias, o faraó Neco, rei do Egito, foi ao rio Eufrates dar apoio ao rei da Assíria. O rei Josias e seu exército saíram para lutar contra ele, mas o faraó92 o matou quando se enfrentaram em Megido."
+                "text": "Durante o reinado de Josias, o faraó Neco, rei do Egito, foi ao rio Eufrates dar apoio ao rei da Assíria. O rei Josias e seu exército saíram para lutar contra ele, mas o faraó o matou quando se enfrentaram em Megido."
               }
             ]
           },
@@ -6435,6 +6449,7 @@
   "17": {
     "book": "Apocalipse",
     "chapter": "17",
+    "verified": true,
     "sections": [
       {
         "title": "A grande prostituta",
@@ -6686,7 +6701,8 @@
                 "text": "Seus dez chifres são dez reis que governarão esse império. Então surgirá outro rei, diferente dos dez, que subjugará três reis."
               },
               {
-                "ref": "Zacarias 1:18–21"
+                "ref": "Zacarias 1:18–21",
+                "text": "Então levantei os olhos e vi quatro chifres de animais."
               }
             ]
           },
@@ -6747,7 +6763,7 @@
               },
               {
                 "ref": "Isaías 8:7–8",
-                "text": "Portanto, o Senhor fará vir sobre eles uma grande inundação do rio Eufrates: o rei da Assíria com toda a sua glória. e cobrirá Judá até o pescoço. Abrirá as asas e submergirá sua terra de um extremo ao outro, ó Emanuel."
+                "text": "Portanto, o Senhor fará vir sobre eles uma grande inundação do rio Eufrates: o rei da Assíria com toda a sua glória. A inundação fará transbordar todos os seus canais"
               },
               {
                 "ref": "Jeremias 51:55",
@@ -6835,6 +6851,7 @@
   "18": {
     "book": "Apocalipse",
     "chapter": "18",
+    "verified": true,
     "sections": [
       {
         "title": "A queda da Babilônia",
@@ -6991,7 +7008,8 @@
                 "text": "Essa é a cidade barulhenta, que antes vivia em segurança. Dizia com orgulho: “Sou a mais poderosa das cidades! Não há outra igual a mim!”. Agora, porém, vejam como ficou em ruínas, morada de animais selvagens. Todos que..."
               },
               {
-                "ref": "Lamentações 1:1"
+                "ref": "Lamentações 1:1",
+                "text": "A cidade que antes era cheia de gente agora está deserta. Antes era grande entre as nações, agora está sozinha, como uma viúva. Antes era rainha de toda a terra, agora é escrava."
               },
               {
                 "ref": "Ezequiel 28:2–10",
@@ -7109,7 +7127,8 @@
                 "text": "Escolham minha instrução em vez da prata e o conhecimento em vez do ouro puro. Pois a sabedoria vale muito mais que rubis; nada do que você deseja se compara a ela."
               },
               {
-                "ref": "1 Reis 10:11–12"
+                "ref": "1 Reis 10:11–12",
+                "text": "(Além disso, os navios de Hirão trouxeram ouro de Ofir e grandes carregamentos de madeira de sândalo e pedras preciosas."
               }
             ]
           },
@@ -7396,13 +7415,14 @@
   "19": {
     "book": "Apocalipse",
     "chapter": "19",
+    "verified": true,
     "sections": [
       {
         "title": "Cântico de vitória no céu",
         "verses": [
           {
             "number": 1,
-            "text": "Depois disso, ouvi algo semelhante ao som de uma grande multidão clamando: “Aleluia!50 Salvação, glória e poder pertencem a nosso Deus.",
+            "text": "Depois disso, ouvi algo semelhante ao som de uma grande multidão clamando: “Aleluia! Salvação, glória e poder pertencem a nosso Deus.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -7614,7 +7634,7 @@
             "crossReferences": [
               {
                 "ref": "Apocalipse 22:8–9",
-                "text": "Eu, João, sou aquele que ouviu e viu todas essas coisas. E, quando as ouvi e vi, caí aos pés do anjo que as mostrou a mim, a fim de adorá- lo."
+                "text": "Eu, João, sou aquele que ouviu e viu todas essas coisas. E, quando as ouvi e vi, caí aos pés do anjo que as mostrou a mim, a fim de adorá-lo."
               },
               {
                 "ref": "Atos 10:25–26",
@@ -7711,7 +7731,7 @@
             "crossReferences": [
               {
                 "ref": "Judas 1:14",
-                "text": "Enoque, que viveu na sétima geração depois de Adão, profetizou a respeito desses homens, dizendo: “Ouçam!"
+                "text": "Enoque, que viveu na sétima geração depois de Adão, profetizou a respeito desses homens, dizendo: “Ouçam! O Senhor vem com incontáveis milhares de santos"
               },
               {
                 "ref": "Apocalipse 7:9",
@@ -7895,6 +7915,7 @@
   "20": {
     "book": "Apocalipse",
     "chapter": "20",
+    "verified": true,
     "sections": [
       {
         "title": "Os mil anos",
@@ -7983,7 +8004,7 @@
               },
               {
                 "ref": "Mateus 19:28",
-                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado113 e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
+                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
               },
               {
                 "ref": "1 Coríntios 6:2–3",
@@ -8188,7 +8209,7 @@
               },
               {
                 "ref": "Oséias 13:14",
-                "text": "“Devo resgatá-los da sepultura?58 Devo redimi-los da morte? Ó morte, traga seus horrores! Ó sepultura, traga suas pragas!59 Pois não terei compaixão deles."
+                "text": "“Devo resgatá-los da sepultura? Devo redimi-los da morte? Ó morte, traga seus horrores! Ó sepultura, traga suas pragas! Pois não terei compaixão deles."
               },
               {
                 "ref": "1 Coríntios 15:50–58",
@@ -8215,7 +8236,7 @@
               },
               {
                 "ref": "Oséias 13:14",
-                "text": "“Devo resgatá-los da sepultura?58 Devo redimi-los da morte? Ó morte, traga seus horrores! Ó sepultura, traga suas pragas!59 Pois não terei compaixão deles."
+                "text": "“Devo resgatá-los da sepultura? Devo redimi-los da morte? Ó morte, traga seus horrores! Ó sepultura, traga suas pragas! Pois não terei compaixão deles."
               }
             ]
           },
@@ -8249,6 +8270,7 @@
   "21": {
     "book": "Apocalipse",
     "chapter": "21",
+    "verified": true,
     "sections": [
       {
         "title": "A nova Jerusalém",
@@ -8398,7 +8420,7 @@
             "crossReferences": [
               {
                 "ref": "2 Coríntios 6:18",
-                "text": "Eu serei seu Pai, e vocês serão meus filhos e minhas filhas,"
+                "text": "Eu serei seu Pai, e vocês serão meus filhos e minhas filhas, diz o Senhor Todo-poderoso”."
               },
               {
                 "ref": "Hebreus 8:10",
@@ -8482,7 +8504,7 @@
             "crossReferences": [
               {
                 "ref": "Apocalipse 22:5",
-                "text": "E não haverá noite; não será necessária a luz da lâmpada nem a luz do sol, pois o Senhor Deus brilhará sobre eles. E reinarão para todo o ­sempre."
+                "text": "E não haverá noite; não será necessária a luz da lâmpada nem a luz do sol, pois o Senhor Deus brilhará sobre eles. E reinarão para todo o sempre."
               },
               {
                 "ref": "Apocalipse 4:6",
@@ -8561,7 +8583,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Zacarias 2:1"
+                "ref": "Zacarias 2:1",
+                "text": "Quando levantei os olhos outra vez, vi um homem segurando uma corda de medir."
               },
               {
                 "ref": "Apocalipse 11:1–2",
@@ -8569,11 +8592,11 @@
               },
               {
                 "ref": "Ezequiel 41:1–5",
-                "text": "Depois disso, o homem me levou ao santuário do templo. Mediu as paredes de cada lado de sua porta,130 e tinham 3 metros131 de espessura."
+                "text": "Depois disso, o homem me levou ao santuário do templo. Mediu as paredes de cada lado de sua porta, e tinham 3 metros de espessura."
               },
               {
                 "ref": "Êxodo 40:3–5",
-                "text": "Coloque a arca da aliança143 dentro dele e pendure a cortina interna para proteger a arca."
+                "text": "Coloque a arca da aliança dentro dele e pendure a cortina interna para proteger a arca."
               }
             ]
           },
@@ -8584,11 +8607,11 @@
             "crossReferences": [
               {
                 "ref": "Ezequiel 48:35",
-                "text": "“A distância ao redor de toda a cidade será de 9 quilômetros.208 E, daquele dia em diante, o nome da cidade será ‘O SENHOR Está Ali’”."
+                "text": "“A distância ao redor de toda a cidade será de 9 quilômetros. E, daquele dia em diante, o nome da cidade será ‘O SENHOR Está Ali’”."
               },
               {
                 "ref": "Ezequiel 48:8–20",
-                "text": "“Ao sul de Judá fica a terra separada para um propósito especial. Ela terá 12, quilômetros197 de largura e terá as mesmas fronteiras a leste e a oeste que os territórios das tribos. No centro dela estará o templo."
+                "text": "“Ao sul de Judá fica a terra separada para um propósito especial. Ela terá 12,5 quilômetros de largura e terá as mesmas fronteiras a leste e a oeste que os territórios das tribos. No centro dela estará o templo."
               }
             ]
           },
@@ -8598,7 +8621,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 3:11"
+                "ref": "Deuteronômio 3:11",
+                "text": "(O rei Ogue de Basã foi o último sobrevivente dos refains. Sua cama era feita de ferro e media mais de quatro metros de comprimento e quase dois metros de largura. Ainda hoje é possível vê-la na cidade amonita de Rabá.)"
               },
               {
                 "ref": "Apocalipse 21:9",
@@ -8692,7 +8716,7 @@
           },
           {
             "number": 22,
-            "text": "Não vi templo algum na cidade, pois o Senhor Deus, o Todo- poderoso, e o Cordeiro são seu templo.",
+            "text": "Não vi templo algum na cidade, pois o Senhor Deus, o Todo-poderoso, e o Cordeiro são seu templo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -8709,7 +8733,7 @@
               },
               {
                 "ref": "Isaías 66:1",
-                "text": "Co 2.."
+                "text": "Assim diz o SENHOR: “O céu é meu trono, e a terra é o suporte de meus pés. Acaso construiriam para mim um templo assim tão bom? Que lugar de descanso me poderiam fazer?"
               }
             ]
           },
@@ -8724,7 +8748,7 @@
               },
               {
                 "ref": "Apocalipse 22:5",
-                "text": "E não haverá noite; não será necessária a luz da lâmpada nem a luz do sol, pois o Senhor Deus brilhará sobre eles. E reinarão para todo o ­sempre."
+                "text": "E não haverá noite; não será necessária a luz da lâmpada nem a luz do sol, pois o Senhor Deus brilhará sobre eles. E reinarão para todo o sempre."
               },
               {
                 "ref": "João 1:9",
@@ -8774,7 +8798,7 @@
               },
               {
                 "ref": "Apocalipse 22:5",
-                "text": "E não haverá noite; não será necessária a luz da lâmpada nem a luz do sol, pois o Senhor Deus brilhará sobre eles. E reinarão para todo o ­sempre."
+                "text": "E não haverá noite; não será necessária a luz da lâmpada nem a luz do sol, pois o Senhor Deus brilhará sobre eles. E reinarão para todo o sempre."
               },
               {
                 "ref": "Isaías 60:20",
@@ -8823,6 +8847,7 @@
   "22": {
     "book": "Apocalipse",
     "chapter": "22",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -8869,7 +8894,7 @@
               },
               {
                 "ref": "Ezequiel 47:8–12",
-                "text": "Então ele me disse: “Este rio corre para o leste, pelo deserto, até o vale do mar Morto.190 Sua água tornará pura a água salgada do mar Morto."
+                "text": "Então ele me disse: “Este rio corre para o leste, pelo deserto, até o vale do mar Morto. Sua água tornará pura a água salgada do mar Morto."
               }
             ]
           },
@@ -8921,7 +8946,7 @@
           },
           {
             "number": 5,
-            "text": "E não haverá noite; não será necessária a luz da lâmpada nem a luz do sol, pois o Senhor Deus brilhará sobre eles. E reinarão para todo o ­sempre.",
+            "text": "E não haverá noite; não será necessária a luz da lâmpada nem a luz do sol, pois o Senhor Deus brilhará sobre eles. E reinarão para todo o sempre.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -8972,7 +8997,7 @@
         "verses": [
           {
             "number": 7,
-            "text": "“Vejam, eu venho em breve! Felizes aqueles que obedecem às palavras da profecia registrada neste livro.”62",
+            "text": "“Vejam, eu venho em breve! Felizes aqueles que obedecem às palavras da profecia registrada neste livro.”",
             "isJesusWords": true,
             "crossReferences": [
               {
@@ -8987,7 +9012,7 @@
           },
           {
             "number": 8,
-            "text": "Eu, João, sou aquele que ouviu e viu todas essas coisas. E, quando as ouvi e vi, caí aos pés do anjo que as mostrou a mim, a fim de adorá- lo.",
+            "text": "Eu, João, sou aquele que ouviu e viu todas essas coisas. E, quando as ouvi e vi, caí aos pés do anjo que as mostrou a mim, a fim de adorá-lo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9080,7 +9105,7 @@
               },
               {
                 "ref": "Isaías 62:11",
-                "text": "O SENHOR enviou esta mensagem até os confins da terra: “Digam ao povo de Sião:174 Vejam, seu Salvador se aproxima! Olhem, ele traz consigo sua recompensa!”."
+                "text": "O SENHOR enviou esta mensagem até os confins da terra: “Digam ao povo de Sião: Vejam, seu Salvador se aproxima! Olhem, ele traz consigo sua recompensa!”."
               },
               {
                 "ref": "Isaías 40:10",
@@ -9176,7 +9201,7 @@
               },
               {
                 "ref": "Isaías 11:1",
-                "text": "Do tronco da linhagem de Jessé45 brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
+                "text": "Do tronco da linhagem de Jessé brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
               },
               {
                 "ref": "Romanos 1:3–4",
@@ -9213,7 +9238,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 12:32"
+                "ref": "Deuteronômio 12:32",
+                "text": "“Portanto, tenham o cuidado de cumprir todas as ordens que lhes dou. Não acrescentem nem tirem coisa alguma.”"
               },
               {
                 "ref": "Deuteronômio 4:2",
@@ -9277,7 +9303,7 @@
           },
           {
             "number": 21,
-            "text": "Que a graça do Senhor Jesus esteja com todos. 1 1. Ou repentinamente, ou rapidamente. 2 1. Província romana situada na região que hoje corresponde ao oeste da Turquia. 3 1. Referência à primeira e à última letra do alfabeto grego. 4 1. Ou em espírito. 5 1. Ou num rolo. 6 1. Ou semelhante a um filho de homem. Ver Dn 7.. “Filho do Homem” é um título que Jesus usa para si mesmo. 7 1. Ou da sepultura. Em grego, do Hades. 8 1. Ou os mensageiros. 9 2. Ou mensageiro; também em 2.,,. 10 2. Ou seus seguidores. 11 2.26-27 Sl 2.8-9, conforme a Septuaginta. 12 3. Ou mensageiro; também em 3.,. 13 3. Is 22.. 14 3. Ou repentinamente, ou rapidamente. 15 3. Ou o governante, ou o princípio. 16 4. Ou em espírito. 17 5. Ou rolo; também em 5.,,,,,,. 18 5. Em grego, a raiz de Davi. Ver Is 11.. 19 5. Alguns manuscritos trazem elas estão reinando. 20 6. Ou rolo. 21 6.6a Em grego, 1 choinix de trigo por 1 denário e 3 choinix de cevada por 1 denário. O choinix correspondia a pouco mais de 1 litro, e o denário, ao salário por um dia completo de trabalho. 22 6.6b Ou danifique. 23 6.8a Ou pálido. 24 6.8b Ou a sepultura. Em grego, o Hades. 25 6.8c Em grego, morte. 26 7. Ou do grande sofrimento. 27 8. Em grego, Absinto. 28 9. Abadom e Apoliom significam “o Destruidor”. 29 10. Ou pequeno rolo; também em 10.,,. 30 10. Em grego, Sele. 31 11. Ou Messias. Tanto Messias (do hebraico) como Cristo (do grego) significam “ungido”. 32 12. Ou Messias. 33 12. Ou três anos e meio. Ver Dn 7.. 34 12. Em grego, ele se colocou em pé; alguns manuscritos trazem eu me coloquei em pé. Em algumas traduções, toda a frase aparece em 13.. 35 13. Ou seu nome e seu tabernáculo, que estão no céu. 36 13. Ou os que não estavam escritos no Livro da Vida antes da criação do mundo, o Livro que pertence ao Cordeiro que foi morto. 37 14.4a Em grego, São virgens que não se macularam com mulheres. 38 14.4b Em grego, primícias. 39 14. Ou semelhante a um filho de homem. Ver Dn 7.. “Filho do Homem” é um título que Jesus usa para si mesmo. 40 14. Em grego, 1.600 estádios. 41 15. Alguns manuscritos trazem Rei das eras. 42 16. Em grego, E ouvi o altar. 43 16. Em grego, roíam a língua. 44 16. Em grego, 1 talento. 45 17. Ou em espírito. 46 18. Alguns manuscritos condensam as duas linhas e trazem covil de toda ave impura e detestável. 47 18. Alguns manuscritos trazem beberam do. 48 18.6a Ou deem um castigo igual a. 49 18.6b Ou a mesma porção. 50 19. Transliteração de um termo hebraico que significa “Louvado seja o SENHOR”; também em 19.,,. 51 19. Alguns manuscritos trazem o Senhor Deus. 52 19. Ou Em seu manto e em sua coxa. 53 20. Ou a sepultura. Em grego, o Hades; também em 20.. 54 21. Alguns manuscritos acrescentam o Deus deles. 55 21. Ou em espírito. 56 21. Em grego, 12.000 estádios. 57 21. Em grego, 144 côvados. 58 21. A identificação de algumas dessas pedras é incerta. 59 21. Ou Nada cerimonialmente impuro. 60 22. Ou doze espécies. 61 22. Ou repentinamente, ou rapidamente; também em 22.,,. 62 22. Ou rolo; também em 22.,,,. 63 22. Em grego, Eu sou a raiz e o descendente de Davi. 64 22. Alguns manuscritos trazem esteja com todos vocês; outros, esteja com todo o povo santo.",
+            "text": "Que a graça do Senhor Jesus esteja com todos.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9289,7 +9315,8 @@
                 "text": "Em breve o Deus da paz esmagará Satanás sob os pés de vocês. Que a graça de nosso Senhor Jesus seja com vocês."
               },
               {
-                "ref": "2 Coríntios 13:14"
+                "ref": "2 Coríntios 13:14",
+                "text": "Que a graça do Senhor Jesus Cristo, o amor de Deus e a comunhão do Espírito Santo sejam com todos vocês."
               },
               {
                 "ref": "Efésios 6:23–24",

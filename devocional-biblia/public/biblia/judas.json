@@ -2,6 +2,7 @@
   "1": {
     "book": "Judas",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Judas",
@@ -59,7 +60,7 @@
         "verses": [
           {
             "number": 3,
-            "text": "Amados, embora planejasse escrever-lhes com todo empenho sobre a salvação que compartilhamos, entendo agora que devo escrever a- ­ respeito de outro assunto e insistir que defendam a fé que, de uma vez por todas, foi confiada ao povo santo.",
+            "text": "Amados, embora planejasse escrever-lhes com todo empenho sobre a salvação que compartilhamos, entendo agora que devo escrever a- respeito de outro assunto e insistir que defendam a fé que, de uma vez por todas, foi confiada ao povo santo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -304,7 +305,7 @@
           },
           {
             "number": 14,
-            "text": "Enoque, que viveu na sétima geração depois de Adão, profetizou a respeito desses homens, dizendo: “Ouçam!",
+            "text": "Enoque, que viveu na sétima geração depois de Adão, profetizou a respeito desses homens, dizendo: “Ouçam! O Senhor vem com incontáveis milhares de santos",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -324,12 +325,7 @@
                 "text": "Deus concederá descanso a vocês, que são afligidos, e também a nós, na revelação do Senhor Jesus, quando ele vier do céu. Virá com seus anjos poderosos,"
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "O Senhor vem com incontáveis milhares de santos",
-        "verses": [
+          },
           {
             "number": 15,
             "text": "para julgar a todos. Convencerá os pecadores de seus atos perversos e dos insultos que pronunciaram contra ele”.",
@@ -572,7 +568,7 @@
           },
           {
             "number": 25,
-            "text": "Toda a glória seja àquele que é o único Deus, nosso Salvador por meio de Jesus Cristo, nosso Senhor. Glória, majestade, poder e autoridade lhe pertencem desde antes de todos os tempos, agora e para sempre! Amém. 1 1. Ou os guarda para Jesus Cristo. 2 1. Vários manuscritos trazem Jesus, outros, Deus, e ainda outros, Cristo; um deles traz Deus Cristo. 3 1. Em grego, dos seres gloriosos, provável referência aos anjos caídos. 4 1. Ou são como manchas que podem contaminá-los. 5 1.14-15 Citação proveniente da literatura intertestamentária: Enoque 1.. 6 1. Em grego, orem no Espírito Santo. 7 1. Ou amor a Deus. 8 1. Alguns manuscritos trazem Repreendam aqueles. 9 1.22-23a Alguns manuscritos trazem apenas duas categorias de pessoas: 1) aqueles que vacilam na fé e, portanto, precisam ser resgatados das chamas de julgamento; 2) aqueles que precisam de misericórdia. 10 1.23b Em grego, com temor, odiando até mesmo as roupas manchadas pela carne.",
+            "text": "Toda a glória seja àquele que é o único Deus, nosso Salvador por meio de Jesus Cristo, nosso Senhor. Glória, majestade, poder e autoridade lhe pertencem desde antes de todos os tempos, agora e para sempre! Amém.",
             "isJesusWords": false,
             "crossReferences": [
               {

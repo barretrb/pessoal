@@ -2,6 +2,7 @@
   "1": {
     "book": "1 Tessalonicenses",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Paulo",
@@ -191,7 +192,7 @@
               },
               {
                 "ref": "3 João 1:12",
-                "text": "Todos, incluindo a própria verdade, falam bem de Demétrio. Nós dizemos o mesmo a ­respeito dele, e você sabe que falamos a verdade."
+                "text": "Todos, incluindo a própria verdade, falam bem de Demétrio. Nós dizemos o mesmo a respeito dele, e você sabe que falamos a verdade."
               }
             ]
           },
@@ -248,6 +249,7 @@
   "2": {
     "book": "1 Tessalonicenses",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Paulo recorda sua visita",
@@ -351,7 +353,7 @@
             "crossReferences": [
               {
                 "ref": "Romanos 1:9",
-                "text": "O Deus a quem sirvo em meu espírito, anunciando as boas- novas a respeito de seu Filho, sabe como nunca deixo de me lembrar de vocês"
+                "text": "O Deus a quem sirvo em meu espírito, anunciando as boas-novas a respeito de seu Filho, sabe como nunca deixo de me lembrar de vocês"
               },
               {
                 "ref": "2 Coríntios 12:17",
@@ -438,7 +440,7 @@
           },
           {
             "number": 9,
-            "text": "Não se lembram, irmãos, de como trabalhamos arduamente entre vocês? Noite e dia nos esforçamos para obter sustento, a fim de não sermos um peso para ninguém enquanto lhes anunciávamos as boas- novas de Deus.",
+            "text": "Não se lembram, irmãos, de como trabalhamos arduamente entre vocês? Noite e dia nos esforçamos para obter sustento, a fim de não sermos um peso para ninguém enquanto lhes anunciávamos as boas-novas de Deus.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -455,7 +457,7 @@
               },
               {
                 "ref": "2 Coríntios 12:13–14",
-                "text": "A única coisa que não fiz, e que faço nas outras igrejas, foi me tornar um peso para vocês. Perdoem- me por essa injustiça!"
+                "text": "A única coisa que não fiz, e que faço nas outras igrejas, foi me tornar um peso para vocês. Perdoem-me por essa injustiça!"
               }
             ]
           },
@@ -489,7 +491,7 @@
             "crossReferences": [
               {
                 "ref": "1 Coríntios 4:14–15",
-                "text": "Não escrevo estas coisas para envergonhá-los, mas para adverti- los como meus filhos amados."
+                "text": "Não escrevo estas coisas para envergonhá-los, mas para adverti-los como meus filhos amados."
               },
               {
                 "ref": "Hebreus 13:22",
@@ -650,7 +652,7 @@
           },
           {
             "number": 18,
-            "text": "Queríamos muito visitá- los, e eu, Paulo, tentei não apenas uma vez, mas duas; Satanás, porém, nos impediu.",
+            "text": "Queríamos muito visitá-los, e eu, Paulo, tentei não apenas uma vez, mas duas; Satanás, porém, nos impediu.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -716,6 +718,7 @@
   "3": {
     "book": "1 Tessalonicenses",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -846,7 +849,7 @@
               },
               {
                 "ref": "Isaías 52:7",
-                "text": "Como são belos sobre os montes os pés do mensageiro que traz boas-novas, boas-novas de paz e salvação, de que o Deus de Israel156 reina!"
+                "text": "Como são belos sobre os montes os pés do mensageiro que traz boas-novas, boas-novas de paz e salvação, de que o Deus de Israel reina!"
               },
               {
                 "ref": "Provérbios 25:25",
@@ -911,7 +914,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 96:12–13",
-                "text": "Os campos e suas colheitas gritem de alegria! diante do SENHOR, pois ele vem; ele vem julgar a terra. Julgará o mundo com justiça e as nações, com sua verdade."
+                "text": "Os campos e suas colheitas gritem de alegria! As árvores do bosque exultem diante do SENHOR, pois ele vem; ele vem julgar a terra. Julgará o mundo com justiça e as nações, com sua verdade."
               },
               {
                 "ref": "2 Coríntios 9:15",
@@ -1026,6 +1029,7 @@
   "4": {
     "book": "1 Tessalonicenses",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Uma vida dedicada a agradar a Deus",
@@ -1452,6 +1456,7 @@
   "5": {
     "book": "1 Tessalonicenses",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -1471,7 +1476,7 @@
               },
               {
                 "ref": "Mateus 24:36",
-                "text": "“Contudo, ninguém sabe o dia nem a hora em que essas coisas acontecerão, nem mesmo os anjos no céu, nem o Filho.146 Somente o Pai sabe."
+                "text": "“Contudo, ninguém sabe o dia nem a hora em que essas coisas acontecerão, nem mesmo os anjos no céu, nem o Filho. Somente o Pai sabe."
               },
               {
                 "ref": "Mateus 24:3",
@@ -1494,7 +1499,7 @@
               },
               {
                 "ref": "Apocalipse 3:3",
-                "text": "Lembre-se do que ouviu e no que acreditou no princípio; agarre-se a isso com firmeza. Arrependa- se. Se não despertar, virei subitamente até você, como um ladrão."
+                "text": "Lembre-se do que ouviu e no que acreditou no princípio; agarre-se a isso com firmeza. Arrependa-se. Se não despertar, virei subitamente até você, como um ladrão."
               },
               {
                 "ref": "Mateus 24:42–44",
@@ -1586,7 +1591,7 @@
               },
               {
                 "ref": "Lucas 22:46",
-                "text": "“Por que vocês dormem?”, perguntou ele. “Levantem-se e orem para que não cedam à ­tentação.”"
+                "text": "“Por que vocês dormem?”, perguntou ele. “Levantem-se e orem para que não cedam à tentação.”"
               },
               {
                 "ref": "1 Pedro 5:8",
@@ -1848,7 +1853,7 @@
               },
               {
                 "ref": "Lucas 18:1",
-                "text": "Jesus contou a seus discípulos uma parábola para mostrar- lhes que deviam orar sempre e nunca desanimar."
+                "text": "Jesus contou a seus discípulos uma parábola para mostrar-lhes que deviam orar sempre e nunca desanimar."
               }
             ]
           },
@@ -1955,7 +1960,7 @@
               },
               {
                 "ref": "Filipenses 4:8",
-                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem- se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
+                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem-se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
               },
               {
                 "ref": "2 Coríntios 8:20–21",
@@ -2081,7 +2086,7 @@
           },
           {
             "number": 28,
-            "text": "Que a graça de nosso Senhor Jesus Cristo esteja com vocês. 1 1. Em grego, Silvano, a forma grega desse nome. 2 1. Ou com o poder do Espírito Santo, para que tenham plena certeza. 3 1.7 Macedônia e Acaia eram, respectivamente, a região norte e a região sul da Grécia. 4 2.7a Alguns manuscritos trazem fomos amáveis. 5 2.7b Em grego, ama. 6 3. Alguns manuscritos trazem servo de Deus; outros, colaborador; outros ainda, e servo e colaborador de Deus; e ainda outros, servo de Deus e nosso colaborador. 7 4. Ou saber como tomar uma esposa para si, ou aprender a viver com sua própria esposa; o grego traz saber como possuir seu próprio vaso. 8 4. Em grego, aos que adormeceram; também em 4.,.",
+            "text": "Que a graça de nosso Senhor Jesus Cristo esteja com vocês.",
             "isJesusWords": false,
             "crossReferences": [
               {

@@ -2,13 +2,14 @@
   "1": {
     "book": "1 Coríntios",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Paulo",
         "verses": [
           {
             "number": 1,
-            "text": "Eu, Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta, com nosso irmão Sóstenes, 2à igreja de Deus em Corinto, àqueles que ele santificou por meio de Cristo Jesus. Vocês foram chamados por Deus para ser seu povo santo junto com todos que, em toda parte, invocam o nome de nosso Senhor Jesus Cristo, Senhor deles e nosso.",
+            "text": "Eu, Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta, com nosso irmão Sóstenes,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -28,6 +29,12 @@
                 "text": "A multidão agarrou Sóstenes, o novo líder da sinagoga, e o espancou ali mesmo, no tribunal. Gálio, no entanto, não se importou com isso."
               }
             ]
+          },
+          {
+            "number": 2,
+            "text": "à igreja de Deus em Corinto, àqueles que ele santificou por meio de Cristo Jesus. Vocês foram chamados por Deus para ser seu povo santo junto com todos que, em toda parte, invocam o nome de nosso Senhor Jesus Cristo, Senhor deles e nosso.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 3,
@@ -230,7 +237,7 @@
             "crossReferences": [
               {
                 "ref": "2 Timóteo 2:23–25",
-                "text": "Digo mais uma vez: não se envolva em ­discussões tolas e ignorantes que só servem para gerar brigas."
+                "text": "Digo mais uma vez: não se envolva em discussões tolas e ignorantes que só servem para gerar brigas."
               },
               {
                 "ref": "Provérbios 18:6",
@@ -241,7 +248,8 @@
                 "text": "Não nos tornemos orgulhosos, provocando e invejando uns aos outros."
               },
               {
-                "ref": "1 Timóteo 6:4"
+                "ref": "1 Timóteo 6:4",
+                "text": "é arrogante e sem entendimento. Vive com o desejo doentio de discutir o significado das palavras e provoca contendas que resultam em inveja, divisão, difamação e suspeitas malignas."
               }
             ]
           },
@@ -678,7 +686,8 @@
                 "text": "Agora, portanto, já não há nenhuma condenação para os que estão em Cristo Jesus."
               },
               {
-                "ref": "1 Coríntios 1:2"
+                "ref": "1 Coríntios 1:2",
+                "text": "à igreja de Deus em Corinto, àqueles que ele santificou por meio de Cristo Jesus. Vocês foram chamados por Deus para ser seu povo santo junto com todos que, em toda parte, invocam o nome de nosso Senhor Jesus Cristo, Senhor deles e nosso."
               }
             ]
           },
@@ -697,7 +706,7 @@
               },
               {
                 "ref": "Filipenses 3:3",
-                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
+                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
               },
               {
                 "ref": "Salmos 105:3",
@@ -712,6 +721,7 @@
   "2": {
     "book": "1 Coríntios",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "A mensagem de sabedoria de Paulo",
@@ -1068,7 +1078,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 40:13–14",
-                "text": "Quem pode orientar o Espírito do SENHOR?130 Quem sabe o suficiente para aconselhá-lo ou instruí-lo?"
+                "text": "Quem pode orientar o Espírito do SENHOR? Quem sabe o suficiente para aconselhá-lo ou instruí-lo?"
               },
               {
                 "ref": "Romanos 11:34",
@@ -1091,6 +1101,7 @@
   "3": {
     "book": "1 Coríntios",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Paulo e Apolo, servos de Cristo",
@@ -1332,7 +1343,7 @@
               },
               {
                 "ref": "2 Timóteo 2:19",
-                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”."
               },
               {
                 "ref": "Atos 4:11–12",
@@ -1434,7 +1445,7 @@
           },
           {
             "number": 16,
-            "text": "Vocês não entendem que são o templo de Deus e que o Espírito de Deus habita em vocês?14",
+            "text": "Vocês não entendem que são o templo de Deus e que o Espírito de Deus habita em vocês?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1623,6 +1634,7 @@
   "4": {
     "book": "1 Coríntios",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "O relacionamento de Paulo com os coríntios",
@@ -1680,7 +1692,7 @@
             "crossReferences": [
               {
                 "ref": "João 7:24",
-                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”. Jesus é o Messias?"
+                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”."
               },
               {
                 "ref": "1 Coríntios 2:15",
@@ -1920,7 +1932,7 @@
           },
           {
             "number": 14,
-            "text": "Não escrevo estas coisas para envergonhá-los, mas para adverti- los como meus filhos amados.",
+            "text": "Não escrevo estas coisas para envergonhá-los, mas para adverti-los como meus filhos amados.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2036,7 +2048,7 @@
             "crossReferences": [
               {
                 "ref": "2 Coríntios 13:1–4",
-                "text": "Co 16.3-4."
+                "text": "Esta é a terceira vez que irei visitá-los. “Os fatos a respeito de cada caso devem ser confirmados pelo depoimento de duas ou três testemunhas.”"
               },
               {
                 "ref": "Atos 18:21",
@@ -2066,7 +2078,8 @@
                 "text": "Pois, quando lhes apresentamos as boas-novas, não o fizemos apenas com palavras, mas também com poder, visto que o Espírito Santo lhes deu plena certeza de que era verdade o que lhes dizíamos. E vocês sabem como nos comp..."
               },
               {
-                "ref": "2 Coríntios 10:4–5"
+                "ref": "2 Coríntios 10:4–5",
+                "text": "Usamos as armas poderosas de Deus, e não as armas do mundo, para derrubar as fortalezas do raciocínio humano e acabar com os falsos argumentos."
               },
               {
                 "ref": "Romanos 14:17",
@@ -2081,7 +2094,7 @@
             "crossReferences": [
               {
                 "ref": "2 Coríntios 13:2",
-                "text": "Sm 7.."
+                "text": "Em minha segunda visita, já adverti aqueles que estavam em pecado. Agora, como naquela ocasião, volto a adverti-los e também os demais de que, da próxima vez, não os pouparei."
               },
               {
                 "ref": "2 Coríntios 13:10",
@@ -2104,6 +2117,7 @@
   "5": {
     "book": "1 Coríntios",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Paulo confronta a imoralidade e o orgulho",
@@ -2169,7 +2183,7 @@
               },
               {
                 "ref": "2 Coríntios 13:2",
-                "text": "Sm 7.."
+                "text": "Em minha segunda visita, já adverti aqueles que estavam em pecado. Agora, como naquela ocasião, volto a adverti-los e também os demais de que, da próxima vez, não os pouparei."
               },
               {
                 "ref": "2 Coríntios 10:11",
@@ -2184,7 +2198,7 @@
             "crossReferences": [
               {
                 "ref": "João 20:23",
-                "text": "Se vocês perdoarem os pecados de alguém, eles estarão perdoados. Se não perdoarem, eles não ­estarão perdoados”."
+                "text": "Se vocês perdoarem os pecados de alguém, eles estarão perdoados. Se não perdoarem, eles não estarão perdoados”."
               },
               {
                 "ref": "2 Coríntios 13:3",
@@ -2322,7 +2336,7 @@
             "crossReferences": [
               {
                 "ref": "1 Coríntios 10:27",
-                "text": "Se um descrente os convidar para uma refeição, aceitem o convite se desejarem. Comam o que lhes oferecerem, sem questionar nada por motivo de consciência. 28(Mas, se alguém lhes disser: “Esta carne foi oferecida a um ído..."
+                "text": "Se um descrente os convidar para uma refeição, aceitem o convite se desejarem. Comam o que lhes oferecerem, sem questionar nada por motivo de consciência."
               },
               {
                 "ref": "João 17:15–16",
@@ -2414,6 +2428,7 @@
   "6": {
     "book": "1 Coríntios",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "Ações judiciais contra irmãos",
@@ -2425,7 +2440,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 18:15–17",
-                "text": "“Se um irmão pecar contra você,100 fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
+                "text": "“Se um irmão pecar contra você, fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
               },
               {
                 "ref": "Atos 19:38",
@@ -2448,7 +2463,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 19:28",
-                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado113 e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
+                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
               },
               {
                 "ref": "Daniel 7:22",
@@ -2479,7 +2494,7 @@
               },
               {
                 "ref": "1 Coríntios 6:4",
-                "text": "Se vocês têm conflitos legais, por que levá- los para fora da igreja, a juízes que não fazem parte dela?"
+                "text": "Se vocês têm conflitos legais, por que levá-los para fora da igreja, a juízes que não fazem parte dela?"
               },
               {
                 "ref": "Lucas 8:14",
@@ -2489,7 +2504,7 @@
           },
           {
             "number": 4,
-            "text": "Se vocês têm conflitos legais, por que levá- los para fora da igreja, a juízes que não fazem parte dela?",
+            "text": "Se vocês têm conflitos legais, por que levá-los para fora da igreja, a juízes que não fazem parte dela?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2513,7 +2528,7 @@
               },
               {
                 "ref": "1 Coríntios 4:14",
-                "text": "Não escrevo estas coisas para envergonhá-los, mas para adverti- los como meus filhos amados."
+                "text": "Não escrevo estas coisas para envergonhá-los, mas para adverti-los como meus filhos amados."
               },
               {
                 "ref": "Tiago 3:13–18",
@@ -2654,7 +2669,8 @@
                 "text": "Portanto, façam morrer as coisas pecaminosas e terrenas que estão dentro de vocês. Fiquem longe da imoralidade sexual, da impureza, da paixão sensual, dos desejos maus e da ganância, que é idolatria."
               },
               {
-                "ref": "1 Coríntios 1:2"
+                "ref": "1 Coríntios 1:2",
+                "text": "à igreja de Deus em Corinto, àqueles que ele santificou por meio de Cristo Jesus. Vocês foram chamados por Deus para ser seu povo santo junto com todos que, em toda parte, invocam o nome de nosso Senhor Jesus Cristo, Senhor deles e nosso."
               },
               {
                 "ref": "Romanos 6:17–19",
@@ -2674,7 +2690,7 @@
             "crossReferences": [
               {
                 "ref": "1 Coríntios 10:23–33",
-                "text": "“Tudo é permitido”, mas nem tudo convém. “Tudo é permitido”, mas nem tudo traz bene­fícios."
+                "text": "“Tudo é permitido”, mas nem tudo convém. “Tudo é permitido”, mas nem tudo traz benefícios."
               },
               {
                 "ref": "1 Coríntios 9:27",
@@ -2728,7 +2744,7 @@
               },
               {
                 "ref": "Efésios 1:19–20",
-                "text": "Também oro para que entendam a grandeza insuperável do poder de Deus para conosco, os que cremos. que ressuscitou Cristo dos mortos e o fez sentar-se no lugar de honra, à direita de Deus, nos domínios celestiais."
+                "text": "Também oro para que entendam a grandeza insuperável do poder de Deus para conosco, os que cremos. É o mesmo poder grandioso"
               },
               {
                 "ref": "Filipenses 3:21",
@@ -2881,6 +2897,7 @@
   "7": {
     "book": "1 Coríntios",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Instruções sobre o casamento",
@@ -2967,7 +2984,7 @@
           },
           {
             "number": 5,
-            "text": "Não privem um ao outro de terem relações, a menos que ambos concordem em abster-se da intimidade sexual por certo tempo, a fim de se dedicarem de modo mais pleno à oração. Depois disso, unam- se novamente, para que Satanás não os tente por causa de sua falta de domínio próprio.",
+            "text": "Não privem um ao outro de terem relações, a menos que ambos concordem em abster-se da intimidade sexual por certo tempo, a fim de se dedicarem de modo mais pleno à oração. Depois disso, unam-se novamente, para que Satanás não os tente por causa de sua falta de domínio próprio.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3190,7 +3207,7 @@
               },
               {
                 "ref": "2 Coríntios 13:11",
-                "text": "Irmãos, encerro minha carta com estas últimas palavras: Alegrem- se. Cresçam até alcançar a maturidade. Encorajem-se mutuamente. Vivam em harmonia e paz. Então o Deus de amor e paz estará com vocês."
+                "text": "Irmãos, encerro minha carta com estas últimas palavras: Alegrem-se. Cresçam até alcançar a maturidade. Encorajem-se mutuamente. Vivam em harmonia e paz. Então o Deus de amor e paz estará com vocês."
               },
               {
                 "ref": "Mateus 12:50",
@@ -3200,7 +3217,7 @@
           },
           {
             "number": 16,
-            "text": "Você, esposa, como sabe que seu marido poderia ser salvo por sua causa? E você, marido, como sabe que sua esposa poderia ser salva por sua causa?27",
+            "text": "Você, esposa, como sabe que seu marido poderia ser salvo por sua causa? E você, marido, como sabe que sua esposa poderia ser salva por sua causa?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3443,7 +3460,7 @@
               },
               {
                 "ref": "1 Pedro 4:17",
-                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas- novas de Deus!"
+                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas-novas de Deus!"
               },
               {
                 "ref": "Lucas 23:28–29",
@@ -3485,7 +3502,7 @@
               },
               {
                 "ref": "2 Coríntios 1:23",
-                "text": "Agora, invoco a Deus como testemunha de que foi para poupá- los que ainda não voltei a Corinto."
+                "text": "Agora, invoco a Deus como testemunha de que foi para poupá-los que ainda não voltei a Corinto."
               }
             ]
           },
@@ -3646,7 +3663,7 @@
               },
               {
                 "ref": "Filipenses 4:8",
-                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem- se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
+                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem-se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
               }
             ]
           },
@@ -3760,6 +3777,7 @@
   "8": {
     "book": "1 Coríntios",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "Comida sacrificada a ídolos",
@@ -3829,7 +3847,7 @@
               },
               {
                 "ref": "2 Timóteo 2:19",
-                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”."
               }
             ]
           },
@@ -3908,7 +3926,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Coríntios 10:28–29"
+                "ref": "1 Coríntios 10:28–29",
+                "text": "(Mas, se alguém lhes disser: “Esta carne foi oferecida a um ídolo”, não a comam por respeito à consciência da pessoa que os avisou."
               },
               {
                 "ref": "Romanos 14:14",
@@ -3976,7 +3995,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Coríntios 10:28–29"
+                "ref": "1 Coríntios 10:28–29",
+                "text": "(Mas, se alguém lhes disser: “Esta carne foi oferecida a um ídolo”, não a comam por respeito à consciência da pessoa que os avisou."
               },
               {
                 "ref": "1 Coríntios 10:20–21",
@@ -4068,6 +4088,7 @@
   "9": {
     "book": "1 Coríntios",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "Paulo abre mão de seus direitos",
@@ -4133,7 +4154,7 @@
               },
               {
                 "ref": "Filipenses 1:7",
-                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas- novas."
+                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas-novas."
               }
             ]
           },
@@ -4162,7 +4183,7 @@
           },
           {
             "number": 5,
-            "text": "Não temos o direito de levar conosco uma esposa crente, como fazem os outros apóstolos, e como fazem os irmãos do Senhor e Pedro?37",
+            "text": "Não temos o direito de levar conosco uma esposa crente, como fazem os outros apóstolos, e como fazem os irmãos do Senhor e Pedro?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4198,7 +4219,7 @@
               },
               {
                 "ref": "1 Tessalonicenses 2:9",
-                "text": "Não se lembram, irmãos, de como trabalhamos arduamente entre vocês? Noite e dia nos esforçamos para obter sustento, a fim de não sermos um peso para ninguém enquanto lhes anunciávamos as boas- novas de Deus."
+                "text": "Não se lembram, irmãos, de como trabalhamos arduamente entre vocês? Noite e dia nos esforçamos para obter sustento, a fim de não sermos um peso para ninguém enquanto lhes anunciávamos as boas-novas de Deus."
               },
               {
                 "ref": "Atos 18:3",
@@ -4290,7 +4311,7 @@
               },
               {
                 "ref": "Romanos 4:23–24",
-                "text": "E, quando Deus considerou Abraão justo, não o fez apenas para benefício dele."
+                "text": "E, quando Deus considerou Abraão justo, não o fez apenas para benefício dele. As Escrituras dizem"
               },
               {
                 "ref": "João 4:35–38",
@@ -4340,7 +4361,7 @@
               },
               {
                 "ref": "2 Coríntios 11:7–10",
-                "text": "Será que fiz mal quando me humilhei e os honrei anunciando- lhes as boas-novas de Deus sem esperar nada em troca?"
+                "text": "Será que fiz mal quando me humilhei e os honrei anunciando-lhes as boas-novas de Deus sem esperar nada em troca?"
               }
             ]
           },
@@ -4397,7 +4418,7 @@
             "crossReferences": [
               {
                 "ref": "1 Tessalonicenses 2:9",
-                "text": "Não se lembram, irmãos, de como trabalhamos arduamente entre vocês? Noite e dia nos esforçamos para obter sustento, a fim de não sermos um peso para ninguém enquanto lhes anunciávamos as boas- novas de Deus."
+                "text": "Não se lembram, irmãos, de como trabalhamos arduamente entre vocês? Noite e dia nos esforçamos para obter sustento, a fim de não sermos um peso para ninguém enquanto lhes anunciávamos as boas-novas de Deus."
               },
               {
                 "ref": "2 Tessalonicenses 3:8",
@@ -4466,7 +4487,7 @@
             "crossReferences": [
               {
                 "ref": "2 Coríntios 11:7–9",
-                "text": "Será que fiz mal quando me humilhei e os honrei anunciando- lhes as boas-novas de Deus sem esperar nada em troca?"
+                "text": "Será que fiz mal quando me humilhei e os honrei anunciando-lhes as boas-novas de Deus sem esperar nada em troca?"
               },
               {
                 "ref": "2 Tessalonicenses 3:8–9",
@@ -4493,7 +4514,7 @@
               },
               {
                 "ref": "Mateus 18:15",
-                "text": "“Se um irmão pecar contra você,100 fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
+                "text": "“Se um irmão pecar contra você, fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
               },
               {
                 "ref": "1 Coríntios 10:33",
@@ -4696,6 +4717,7 @@
   "10": {
     "book": "1 Coríntios",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "Lições da idolatria de Israel",
@@ -4765,7 +4787,7 @@
               },
               {
                 "ref": "Êxodo 16:35",
-                "text": "Os israelitas comeram maná durante quarenta anos, até chegarem à terra onde se estabeleceriam. Comeram maná até chegarem à fronteira da terra de Canaã. 36(A vasilha usada para medir o maná continha um ômer, que era a décima parte da medida padrão.42)"
+                "text": "Os israelitas comeram maná durante quarenta anos, até chegarem à terra onde se estabeleceriam. Comeram maná até chegarem à fronteira da terra de Canaã."
               }
             ]
           },
@@ -4849,7 +4871,7 @@
               },
               {
                 "ref": "Salmos 106:19–20",
-                "text": "No monte Sinai,138 fizeram um bezerro; prostraram-se diante de uma imagem de metal. Trocaram seu Deus glorioso pela estátua de um boi que come capim."
+                "text": "No monte Sinai, fizeram um bezerro; prostraram-se diante de uma imagem de metal. Trocaram seu Deus glorioso pela estátua de um boi que come capim."
               },
               {
                 "ref": "1 Coríntios 6:9",
@@ -4926,7 +4948,7 @@
               },
               {
                 "ref": "1 Crônicas 21:15",
-                "text": "E Deus enviou um anjo para destruir Jerusalém. Mas, quando o anjo estava prestes a fazê-lo, o SENHOR teve compaixão e disse ao anjo da morte: “Pare! Já basta!”. Naquele momento, o anjo do SENHOR estava perto da eira de Araúna,152 o jebuseu."
+                "text": "E Deus enviou um anjo para destruir Jerusalém. Mas, quando o anjo estava prestes a fazê-lo, o SENHOR teve compaixão e disse ao anjo da morte: “Pare! Já basta!”. Naquele momento, o anjo do SENHOR estava perto da eira de Araúna, o jebuseu."
               }
             ]
           },
@@ -5093,16 +5115,16 @@
           },
           {
             "number": 18,
-            "text": "Pensem no povo de Israel. Acaso os que comiam dos sacri­fícios não partilhavam do mesmo altar?",
+            "text": "Pensem no povo de Israel. Acaso os que comiam dos sacrifícios não partilhavam do mesmo altar?",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Gálatas 6:16",
-                "text": "Que a paz e a miseri­córdia de Deus estejam sobre todos os que vivem de acordo com esse princípio e sobre o Israel de Deus."
+                "text": "Que a paz e a misericórdia de Deus estejam sobre todos os que vivem de acordo com esse princípio e sobre o Israel de Deus."
               },
               {
                 "ref": "Filipenses 3:3–5",
-                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
+                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
               },
               {
                 "ref": "Levítico 3:11",
@@ -5167,7 +5189,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 6:24",
-                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”48 Ensino sobre a preocupação"
+                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”"
               },
               {
                 "ref": "1 Reis 18:21",
@@ -5175,7 +5197,7 @@
               },
               {
                 "ref": "2 Coríntios 6:15–17",
-                "text": "Que harmonia pode haver entre Cristo e o diabo?17 Como alguém que crê pode se ligar a quem não crê?"
+                "text": "Que harmonia pode haver entre Cristo e o diabo? Como alguém que crê pode se ligar a quem não crê?"
               },
               {
                 "ref": "Isaías 65:11",
@@ -5208,7 +5230,7 @@
           },
           {
             "number": 23,
-            "text": "“Tudo é permitido”, mas nem tudo convém. “Tudo é permitido”, mas nem tudo traz bene­fícios.",
+            "text": "“Tudo é permitido”, mas nem tudo convém. “Tudo é permitido”, mas nem tudo traz benefícios.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5240,7 +5262,7 @@
               },
               {
                 "ref": "Filipenses 2:4–5",
-                "text": "Não- ­ procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios. Tenham a mesma atitude demonstrada por Cristo Jesus."
+                "text": "Não- procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios. Tenham a mesma atitude demonstrada por Cristo Jesus."
               },
               {
                 "ref": "1 Coríntios 10:33",
@@ -5300,7 +5322,7 @@
           },
           {
             "number": 27,
-            "text": "Se um descrente os convidar para uma refeição, aceitem o convite se desejarem. Comam o que lhes oferecerem, sem questionar nada por motivo de consciência. 28(Mas, se alguém lhes disser: “Esta carne foi oferecida a um ídolo”, não a comam por respeito à consciência da pessoa que os avisou.",
+            "text": "Se um descrente os convidar para uma refeição, aceitem o convite se desejarem. Comam o que lhes oferecerem, sem questionar nada por motivo de consciência.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5320,6 +5342,12 @@
                 "text": "Assim, conhecendo o temor ao Senhor, procuramos persuadir outros. Deus sabe que somos sinceros, e espero que vocês também o saibam."
               }
             ]
+          },
+          {
+            "number": 28,
+            "text": "(Mas, se alguém lhes disser: “Esta carne foi oferecida a um ídolo”, não a comam por respeito à consciência da pessoa que os avisou.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 29,
@@ -5389,7 +5417,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 20:28",
-                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos,102 a fim de pastorearem sua igreja, comprada com seu próprio sangue."
+                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos, a fim de pastorearem sua igreja, comprada com seu próprio sangue."
               },
               {
                 "ref": "1 Coríntios 10:33",
@@ -5435,6 +5463,7 @@
   "11": {
     "book": "1 Coríntios",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -5550,7 +5579,8 @@
                 "text": "A profetisa Ana, filha de Fanuel, da tribo de Aser, também estava no templo. Era muito idosa e havia perdido o marido depois de sete anos de casados"
               },
               {
-                "ref": "Atos 2:17"
+                "ref": "Atos 2:17",
+                "text": "‘Nos últimos dias’, disse Deus, ‘derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os jovens terão visões, e os velhos terão sonhos."
               },
               {
                 "ref": "1 Coríntios 14:34",
@@ -5702,7 +5732,7 @@
               },
               {
                 "ref": "João 7:24",
-                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”. Jesus é o Messias?"
+                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”."
               }
             ]
           },
@@ -5713,7 +5743,7 @@
             "crossReferences": [
               {
                 "ref": "2 Samuel 14:26",
-                "text": "Cortava o cabelo uma vez por ano por causa de seu peso: 2, quilos, segundo o peso real."
+                "text": "Cortava o cabelo uma vez por ano por causa de seu peso: 2,4 quilos, segundo o peso real."
               },
               {
                 "ref": "1 Coríntios 14:35",
@@ -5743,7 +5773,7 @@
               },
               {
                 "ref": "1 Timóteo 6:3–4",
-                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente 4é arrogante e sem entendimento. Vive com o desejo doentio d..."
+                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente"
               },
               {
                 "ref": "1 Tessalonicenses 2:14",
@@ -5886,7 +5916,7 @@
               },
               {
                 "ref": "Atos 20:28",
-                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos,102 a fim de pastorearem sua igreja, comprada com seu próprio sangue."
+                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos, a fim de pastorearem sua igreja, comprada com seu próprio sangue."
               },
               {
                 "ref": "Tiago 2:5–6",
@@ -5923,7 +5953,7 @@
           },
           {
             "number": 24,
-            "text": "agradeceu a Deus,- ­ partiu-o e disse: “Este é meu corpo, que é entregue por vocês. Façam isto em memória de mim”.",
+            "text": "agradeceu a Deus,- partiu-o e disse: “Este é meu corpo, que é entregue por vocês. Façam isto em memória de mim”.",
             "isJesusWords": true,
             "crossReferences": [
               {
@@ -6097,7 +6127,7 @@
               },
               {
                 "ref": "Apocalipse 2:5",
-                "text": "Veja até onde você caiu! Arrependa- se e volte a praticar as obras que no início praticava. Do contrário, virei até você e tirarei seu candelabro de seu lugar entre as igrejas."
+                "text": "Veja até onde você caiu! Arrependa-se e volte a praticar as obras que no início praticava. Do contrário, virei até você e tirarei seu candelabro de seu lugar entre as igrejas."
               },
               {
                 "ref": "1 Coríntios 11:28",
@@ -6160,6 +6190,7 @@
   "12": {
     "book": "1 Coríntios",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "Dons espirituais",
@@ -6221,7 +6252,7 @@
               },
               {
                 "ref": "Mateus 16:16–17",
-                "text": "Simão Pedro respondeu: “O senhor é o Cristo, o Filho do Deus vivo!”. Jesus disse: “Que grande privilégio você teve, Simão, filho de João!85 Foi meu Pai no céu quem lhe revelou isso. Nenhum ser humano saberia por si só."
+                "text": "Simão Pedro respondeu: “O senhor é o Cristo, o Filho do Deus vivo!”. Jesus disse: “Que grande privilégio você teve, Simão, filho de João! Foi meu Pai no céu quem lhe revelou isso. Nenhum ser humano saberia por si só."
               },
               {
                 "ref": "2 Coríntios 3:5",
@@ -6248,7 +6279,7 @@
               },
               {
                 "ref": "Hebreus 2:4",
-                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade. Jesus, o homem"
+                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade."
               }
             ]
           },
@@ -6397,7 +6428,7 @@
             "crossReferences": [
               {
                 "ref": "Hebreus 2:4",
-                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade. Jesus, o homem"
+                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade."
               },
               {
                 "ref": "1 Coríntios 12:4",
@@ -6608,7 +6639,7 @@
               },
               {
                 "ref": "Esdras 10:1–5",
-                "text": "Cr 6.6-10."
+                "text": "Enquanto Esdras orava e fazia essa confissão, chorando e com o rosto no chão diante do templo de Deus, uma grande multidão de israelitas — homens, mulheres e crianças — se reuniu e chorou amargamente com ele."
               },
               {
                 "ref": "Jó 29:11",
@@ -6676,7 +6707,7 @@
             "crossReferences": [
               {
                 "ref": "2 Coríntios 13:11",
-                "text": "Irmãos, encerro minha carta com estas últimas palavras: Alegrem- se. Cresçam até alcançar a maturidade. Encorajem-se mutuamente. Vivam em harmonia e paz. Então o Deus de amor e paz estará com vocês."
+                "text": "Irmãos, encerro minha carta com estas últimas palavras: Alegrem-se. Cresçam até alcançar a maturidade. Encorajem-se mutuamente. Vivam em harmonia e paz. Então o Deus de amor e paz estará com vocês."
               },
               {
                 "ref": "1 Coríntios 1:10–12",
@@ -6817,6 +6848,7 @@
   "13": {
     "book": "1 Coríntios",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "O mais importante é o amor",
@@ -6882,7 +6914,7 @@
               },
               {
                 "ref": "Mateus 23:5",
-                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios131 mais largos que de costume e vestem mantos com franjas mais longas."
+                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios mais largos que de costume e vestem mantos com franjas mais longas."
               },
               {
                 "ref": "Mateus 6:1–4",
@@ -7127,6 +7159,7 @@
   "14": {
     "book": "1 Coríntios",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
         "title": "Os dons de línguas e de profecia",
@@ -7625,7 +7658,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 45:14",
-                "text": "Assim diz o SENHOR: “Você governará os egípcios, os etíopes137 e os sabeus. Eles lhe trarão toda a sua mercadoria, e ela será sua. Caminharão atrás de você, como prisioneiros acorrentados; cairão de joelhos à sua frente..."
+                "text": "Assim diz o SENHOR: “Você governará os egípcios, os etíopes e os sabeus. Eles lhe trarão toda a sua mercadoria, e ela será sua. Caminharão atrás de você, como prisioneiros acorrentados; cairão de joelhos à sua frente e d..."
               },
               {
                 "ref": "Zacarias 8:23",
@@ -7917,7 +7950,7 @@
               },
               {
                 "ref": "1 Timóteo 6:3–5",
-                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente 4é arrogante e sem entendimento. Vive com o desejo doentio d..."
+                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente"
               }
             ]
           },
@@ -7970,6 +8003,7 @@
   "15": {
     "book": "1 Coríntios",
     "chapter": "15",
+    "verified": true,
     "sections": [
       {
         "title": "A ressurreição de Cristo",
@@ -8058,7 +8092,7 @@
               },
               {
                 "ref": "Salmos 16:10–11",
-                "text": "Pois tu não deixarás minha alma entre os mortos, nem permitirás que teu santo apodreça no túmulo. Tu me mostrarás o caminho da vida e me darás a alegria de tua presença"
+                "text": "Pois tu não deixarás minha alma entre os mortos, nem permitirás que teu santo apodreça no túmulo. Tu me mostrarás o caminho da vida e me darás a alegria de tua presença e o prazer de viver contigo para sempre."
               },
               {
                 "ref": "Atos 26:22–23",
@@ -8165,7 +8199,7 @@
             "crossReferences": [
               {
                 "ref": "Efésios 3:7–8",
-                "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas- novas."
+                "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas-novas."
               },
               {
                 "ref": "1 Timóteo 1:13–15",
@@ -8192,7 +8226,7 @@
               },
               {
                 "ref": "Filipenses 2:13",
-                "text": "Pois Deus está agindo em vocês, dando- lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
+                "text": "Pois Deus está agindo em vocês, dando-lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
               },
               {
                 "ref": "2 Coríntios 3:5",
@@ -8200,7 +8234,7 @@
               },
               {
                 "ref": "Efésios 3:7–8",
-                "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas- novas."
+                "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas-novas."
               }
             ]
           },
@@ -8346,7 +8380,7 @@
               },
               {
                 "ref": "1 Pedro 1:3",
-                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos."
+                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos. Agora temos uma viva esperança"
               },
               {
                 "ref": "1 Coríntios 15:14",
@@ -8423,7 +8457,7 @@
               },
               {
                 "ref": "1 Pedro 1:3",
-                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos."
+                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos. Agora temos uma viva esperança"
               }
             ]
           },
@@ -8526,14 +8560,15 @@
             "crossReferences": [
               {
                 "ref": "Salmos 110:1",
-                "text": "O SENHOR disse ao meu Senhor:144 “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
+                "text": "O SENHOR disse ao meu Senhor: “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
               },
               {
                 "ref": "Hebreus 10:12–13",
                 "text": "Nosso Sumo Sacerdote, porém, ofereceu a si mesmo como único sacrifício pelos pecados, válido para sempre. Então, sentou-se no lugar de honra à direita de Deus"
               },
               {
-                "ref": "Mateus 22:44"
+                "ref": "Mateus 22:44",
+                "text": "‘O Senhor disse ao meu Senhor: Sente-se no lugar de honra à minha direita até que eu humilhe seus inimigos debaixo de seus pés’."
               },
               {
                 "ref": "Hebreus 1:13",
@@ -8629,7 +8664,7 @@
               },
               {
                 "ref": "1 Coríntios 15:32",
-                "text": "E, se não haverá ressurreição dos mortos, de que me adiantou ter lutado contra feras, isto é, aquela gente de Éfeso?63 Se não há ressurreição, “comamos e bebamos, porque amanhã morreremos!”."
+                "text": "E, se não haverá ressurreição dos mortos, de que me adiantou ter lutado contra feras, isto é, aquela gente de Éfeso? Se não há ressurreição, “comamos e bebamos, porque amanhã morreremos!”."
               }
             ]
           },
@@ -8639,7 +8674,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Coríntios 6:9"
+                "ref": "2 Coríntios 6:9",
+                "text": "Somos tratados como desconhecidos, embora sejamos bem conhecidos. Vivemos à beira da morte, mas ainda estamos vivos. Fomos espancados, mas não mortos."
               },
               {
                 "ref": "2 Coríntios 11:23–27",
@@ -8674,13 +8710,13 @@
               },
               {
                 "ref": "Filipenses 3:3",
-                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
+                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
               }
             ]
           },
           {
             "number": 32,
-            "text": "E, se não haverá ressurreição dos mortos, de que me adiantou ter lutado contra feras, isto é, aquela gente de Éfeso?63 Se não há ressurreição, “comamos e bebamos, porque amanhã morreremos!”.",
+            "text": "E, se não haverá ressurreição dos mortos, de que me adiantou ter lutado contra feras, isto é, aquela gente de Éfeso? Se não há ressurreição, “comamos e bebamos, porque amanhã morreremos!”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -8689,7 +8725,7 @@
               },
               {
                 "ref": "Lucas 12:19",
-                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre- se!’."
+                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre-se!’."
               },
               {
                 "ref": "Isaías 56:12",
@@ -9076,7 +9112,7 @@
               },
               {
                 "ref": "Mateus 16:17",
-                "text": "Jesus disse: “Que grande privilégio você teve, Simão, filho de João!85 Foi meu Pai no céu quem lhe revelou isso. Nenhum ser humano saberia por si só."
+                "text": "Jesus disse: “Que grande privilégio você teve, Simão, filho de João! Foi meu Pai no céu quem lhe revelou isso. Nenhum ser humano saberia por si só."
               },
               {
                 "ref": "2 Coríntios 5:1",
@@ -9122,7 +9158,7 @@
               },
               {
                 "ref": "Mateus 24:31",
-                "text": "Ele enviará seus anjos com um forte sopro de trombeta, e eles reunirão os escolhidos de todas as partes do mundo,144 de uma extremidade à outra do céu."
+                "text": "Ele enviará seus anjos com um forte sopro de trombeta, e eles reunirão os escolhidos de todas as partes do mundo, de uma extremidade à outra do céu."
               },
               {
                 "ref": "João 5:28",
@@ -9187,11 +9223,11 @@
             "crossReferences": [
               {
                 "ref": "Oséias 13:14",
-                "text": "“Devo resgatá-los da sepultura?58 Devo redimi-los da morte? Ó morte, traga seus horrores! Ó sepultura, traga suas pragas!59 Pois não terei compaixão deles."
+                "text": "“Devo resgatá-los da sepultura? Devo redimi-los da morte? Ó morte, traga seus horrores! Ó sepultura, traga suas pragas! Pois não terei compaixão deles."
               },
               {
                 "ref": "Salmos 89:48",
-                "text": "Ninguém vive para sempre, todos morrem; ninguém escapa das garras da sepultura.125 Interlúdio"
+                "text": "Ninguém vive para sempre, todos morrem; ninguém escapa das garras da sepultura. Interlúdio"
               },
               {
                 "ref": "Romanos 5:14",
@@ -9279,6 +9315,7 @@
   "16": {
     "book": "1 Coríntios",
     "chapter": "16",
+    "verified": true,
     "sections": [
       {
         "title": "A oferta para Jerusalém",
@@ -9717,7 +9754,8 @@
                 "text": "Deem minhas saudações a Priscila e Áquila, meus colaboradores no serviço de Cristo Jesus."
               },
               {
-                "ref": "Filemom 1:2"
+                "ref": "Filemom 1:2",
+                "text": "à irmã Áfia, a Arquipo, nosso companheiro na luta, e à igreja que se reúne em sua casa."
               }
             ]
           },
@@ -9769,7 +9807,7 @@
           },
           {
             "number": 22,
-            "text": "Se alguém não ama o Senhor, essa pessoa é maldita. Vem, nosso Senhor!75",
+            "text": "Se alguém não ama o Senhor, essa pessoa é maldita. Vem, nosso Senhor!",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9792,7 +9830,7 @@
           },
           {
             "number": 23,
-            "text": "Que a graça do Senhor Jesus esteja com ­vocês.",
+            "text": "Que a graça do Senhor Jesus esteja com vocês.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9807,7 +9845,7 @@
           },
           {
             "number": 24,
-            "text": "Envio meu amor a todos vocês em Cristo Jesus. 1 1. Corinto era a capital da Acaia, a região sul da península grega. 2 1. Em grego, Cefas. 3 1. Is 29.. 4 1. Em grego, gregos; também em 1.. 5 1. Ou de nobre nascimento. 6 1. Ou Deus escolheu pessoas de origem humilde. 7 1. Jr 9.. 8 2. Em grego, o mistério de Deus; alguns manuscritos trazem o testemunho de Deus. 9 2. Em grego, falamos a sabedoria de Deus em mistério. 10 2. Is 64.. 11 2. Alguns manuscritos trazem Pois. 12 2. Ou explicando verdades espirituais em linguagem espiritual, ou usando palavras do Espírito para explicar verdades espirituais. 13 2. Is 40., conforme a Septuaginta. 14 3. Ou entre vocês. 15 3. Jó 5.. 16 3. Sl 94.. 17 3. Em grego, Cefas. 18 5. Em grego, a esposa de seu pai. 19 5. Ou no Espírito. 20 5. Ou Em nome do Senhor Jesus, convoquem uma reunião. 21 5.5a Ou para que os feitos da natureza humana sejam destruídos e o espírito seja preservado. 22 5.5b Alguns manuscritos trazem o Senhor Jesus; outros, nosso Senhor Jesus Cristo. 23 5. Ver Dt 17.. 24 6. Gn 2.. 25 7. Ver Mt 5.; 19.; Mc 10.11-12; Lc 16.. 26 7. Alguns manuscritos trazem nos chamou. 27 7. Ou Você, esposa, não sabe que seu marido poderia ser salvo por sua causa? E você, marido, não sabe que sua esposa poderia ser salva por sua causa? 28 7.23 Em grego, não se tornem escravos de homens. 29 7. Em grego, sobre as virgens. 30 7. Ou as pressões da vida. 31 7. Em grego, uma virgem. 32 7.36-38 Ou",
+            "text": "Envio meu amor a todos vocês em Cristo Jesus.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9827,24 +9865,6 @@
                 "text": "Pois, se louvarem apenas no espírito, como poderão louvar com vocês aqueles que não os entendem? Como poderão agradecer com vocês se não entendem o que estão dizendo?"
               }
             ]
-          },
-          {
-            "number": 36,
-            "text": "Se, contudo, alguém acredita que não está tratando sua filha de forma adequada, visto que ela já passou da idade de casar, faça como planejou. Não é pecado dá-la em casamento; deixe-a casar.",
-            "isJesusWords": false,
-            "crossReferences": []
-          },
-          {
-            "number": 37,
-            "text": "No entanto, se está determinado a manter sua filha solteira, e não tem necessidade ou obrigação, e julga que isso é o melhor, fará bem se não a der em casamento.",
-            "isJesusWords": false,
-            "crossReferences": []
-          },
-          {
-            "number": 38,
-            "text": "Assim, quem dá sua filha em casamento faz bem, e quem não a dá faz melhor ainda. 33 7. Em grego, desde que no Senhor. 34 8. Ou será destruído. 35 9. Em grego, aos que me julgam. 36 9.5a Em grego, uma irmã esposa. 37 9.5b Em grego, Cefas. 38 9. Dt 25.. 39 9. Em grego, os que não têm lei. 40 10. Êx 32.. 41 10. Alguns manuscritos trazem o Senhor. 42 10. Sl 24.. 43 10. Em grego, nem os gregos. 44 11. Em grego, deve ter uma autoridade sobre sua cabeça. 45 11. Em grego, que é para vocês; alguns manuscritos trazem que é partido para vocês. 46 11.23-25 Ver Lc 22.19-20. 47 11. Ou é responsável por. 48 11. Em grego, o corpo; alguns manuscritos trazem o corpo do Senhor. 49 12. Ou sobre as coisas espirituais, ou sobre as pessoas espirituais; o grego traz sobre os espirituais. 50 12. Em grego, gentios. 51 12.8a Ou uma palavra de sabedoria. 52 12.8b Ou uma palavra de conhecimento. 53 12. Ou em diferentes tipos de línguas; também em 12.,. 54 12. Em grego, gregos. 55 13. Alguns manuscritos trazem entregasse meu corpo, de modo que me gloriasse. 56 14. Ou no Espírito; também em 14.,. 57 14.21a Em grego, está escrito na lei. 58 14.21b Is 28.11-12. 59 14. A frase como em todas as reuniões do povo santo também pode ser o começo de 14.. 60 14. Alguns manuscritos trazem Se alguém ignorar isso, que permaneça na ignorância. 61 15. Em grego, Cefas. 62 15. Sl 8.. 63 15.32a Em grego, lutar contra as feras em Éfeso. 64 15.32b Is 22.. 65 15. Gn 2.. 66 15. Alguns manuscritos dizem sejamos. 67 15. Is 25.. 68 15. Os 13., conforme a Septuaginta. 69 16. A Macedônia ficava na região norte da Grécia. 70 16. Em grego, Sejam homens. 71 16.15a Em grego, o primeiro fruto. 72 16.15b A Acaia era a região sul da península grega. 73 16.19a A Ásia era uma província romana na região que hoje corresponde ao oeste da Turquia. 74 16.19b Em grego, Prisca. 75 16. Do aramaico, Marana tha. Alguns manuscritos trazem Maran atha, “Nosso Senhor veio”. 76 16. Alguns manuscritos acrescentam Amém.",
-            "isJesusWords": false,
-            "crossReferences": []
           }
         ]
       }

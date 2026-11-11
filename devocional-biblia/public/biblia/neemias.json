@@ -2,17 +2,47 @@
   "1": {
     "book": "Neemias",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "",
         "verses": [
           {
             "number": 1,
-            "text": "Estas são as memórias de Neemias, filho de Hacalias. A preocupação de Neemias com Jerusalém No mês de quisleu, no vigésimo ano do reinado do rei Artaxerxes, eu estava na fortaleza de Susã.",
+            "text": "Estas são as memórias de Neemias, filho de Hacalias.",
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Neemias 10:1"
+                "ref": "Neemias 10:1",
+                "text": "Os que assinaram e selaram o documento foram: O governador Neemias, filho de Hacalias, e Zedequias."
+              },
+              {
+                "ref": "Zacarias 7:1",
+                "text": "Em 7 de dezembro do quarto ano do reinado de Dario, o SENHOR deu outra mensagem a Zacarias."
+              },
+              {
+                "ref": "Ester 1:2",
+                "text": "Do trono real na fortaleza de Susã, Xerxes governava seu império."
+              },
+              {
+                "ref": "Daniel 8:2",
+                "text": "Nessa visão eu estava na fortaleza de Susã, na província de Elão, em pé junto ao rio Ulai."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "A preocupação de Neemias com Jerusalém",
+        "verses": [
+          {
+            "number": 1,
+            "text": "No mês de quisleu, no vigésimo ano do reinado do rei Artaxerxes, eu estava na fortaleza de Susã.",
+            "isJesusWords": false,
+            "crossReferences": [
+              {
+                "ref": "Neemias 10:1",
+                "text": "Os que assinaram e selaram o documento foram: O governador Neemias, filho de Hacalias, e Zedequias."
               },
               {
                 "ref": "Zacarias 7:1",
@@ -30,7 +60,7 @@
           },
           {
             "number": 2,
-            "text": "Hanani, um de meus irmãos, veio me visitar com alguns homens que haviam chegado de Judá. Perguntei- lhes a respeito dos judeus que haviam regressado do cativeiro e da situação em Jerusalém.",
+            "text": "Hanani, um de meus irmãos, veio me visitar com alguns homens que haviam chegado de Judá. Perguntei-lhes a respeito dos judeus que haviam regressado do cativeiro e da situação em Jerusalém.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -89,7 +119,7 @@
               },
               {
                 "ref": "Esdras 10:1",
-                "text": "Cr 6.6-10."
+                "text": "Enquanto Esdras orava e fazia essa confissão, chorando e com o rosto no chão diante do templo de Deus, uma grande multidão de israelitas — homens, mulheres e crianças — se reuniu e chorou amargamente com ele."
               },
               {
                 "ref": "Salmos 102:13–14",
@@ -265,6 +295,7 @@
   "2": {
     "book": "Neemias",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Neemias recebe permissão para ir a Jerusalém",
@@ -284,7 +315,7 @@
               },
               {
                 "ref": "Neemias 1:1",
-                "text": "Estas são as memórias de Neemias, filho de Hacalias. A preocupação de Neemias com Jerusalém No mês de quisleu, no vigésimo ano do reinado do rei Artaxerxes, eu estava na fortaleza de Susã."
+                "text": "Estas são as memórias de Neemias, filho de Hacalias."
               },
               {
                 "ref": "Ester 3:7",
@@ -462,7 +493,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Neemias 4:7"
+                "ref": "Neemias 4:7",
+                "text": "No entanto, quando Sambalate, Tobias, os árabes, os amonitas e os asdoditas souberam que a obra avançava e que as brechas no muro de Jerusalém estavam sendo fechadas, encheram-se de ira."
               },
               {
                 "ref": "Neemias 2:19",
@@ -555,7 +587,7 @@
               },
               {
                 "ref": "2 Crônicas 32:30",
-                "text": "Bloqueou a fonte superior de Giom e trouxe a água por um túnel para o lado oeste da Cidade de Davi. Ezequias foi bem- sucedido em tudo que fez."
+                "text": "Bloqueou a fonte superior de Giom e trouxe a água por um túnel para o lado oeste da Cidade de Davi. Ezequias foi bem-sucedido em tudo que fez."
               },
               {
                 "ref": "2 Reis 18:17",
@@ -627,7 +659,7 @@
             "crossReferences": [
               {
                 "ref": "Filipenses 2:13",
-                "text": "Pois Deus está agindo em vocês, dando- lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
+                "text": "Pois Deus está agindo em vocês, dando-lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
               },
               {
                 "ref": "Efésios 6:10",
@@ -639,7 +671,7 @@
               },
               {
                 "ref": "2 Crônicas 32:5",
-                "text": "Então Ezequias se dedicou a reparar todos os trechos onde o muro estava quebrado, construiu torres e fez outro muro do lado de fora do primeiro. Também reforçou o aterro139 da Cidade de Davi e fabricou grande quantidade de armas e escudos."
+                "text": "Então Ezequias se dedicou a reparar todos os trechos onde o muro estava quebrado, construiu torres e fez outro muro do lado de fora do primeiro. Também reforçou o aterro da Cidade de Davi e fabricou grande quantidade de armas e escudos."
               }
             ]
           },
@@ -696,6 +728,7 @@
   "3": {
     "book": "Neemias",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "A reconstrução do muro de Jerusalém",
@@ -802,7 +835,8 @@
                 "text": "Por isso, mandou trazer de Tecoa uma mulher conhecida por sua sabedoria. Disse-lhe: “Finja que está de luto; vista roupas de luto e não se perfume. Aja como uma mulher que está lamentando a morte de alguém há muito tempo."
               },
               {
-                "ref": "Juízes 5:23"
+                "ref": "Juízes 5:23",
+                "text": "‘Amaldiçoem os habitantes de Meroz’, disse o anjo do SENHOR. ‘Amaldiçoem duramente, pois não vieram ajudar o SENHOR, ajudar o SENHOR contra fortes guerreiros.’"
               },
               {
                 "ref": "Jeremias 27:2",
@@ -859,7 +893,7 @@
               },
               {
                 "ref": "Gênesis 50:2",
-                "text": "Em seguida, deu ordens aos médicos que o serviam para que embalsamassem o corpo de seu pai, e Jacó176 foi embalsamado."
+                "text": "Em seguida, deu ordens aos médicos que o serviam para que embalsamassem o corpo de seu pai, e Jacó foi embalsamado."
               },
               {
                 "ref": "Êxodo 30:25",
@@ -903,7 +937,7 @@
           },
           {
             "number": 11,
-            "text": "Em seguida vinham Malquias, filho de Harim, e Hassube, filho de Paate- Moabe, que consertaram outra parte do muro e a torre dos Fornos.",
+            "text": "Em seguida vinham Malquias, filho de Harim, e Hassube, filho de Paate-Moabe, que consertaram outra parte do muro e a torre dos Fornos.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1050,7 +1084,7 @@
               },
               {
                 "ref": "1 Crônicas 23:4",
-                "text": "De todos os levitas, 24 mil foram designados para supervisionar o trabalho no templo do SENHOR, 6 mil para ser oficiais e juízes, 54 mil para ser guardas das portas e 4 mil para louvar o SENHOR com os instrumentos musicais que Davi fez para esse fim."
+                "text": "De todos os levitas, 24 mil foram designados para supervisionar o trabalho no templo do SENHOR, 6 mil para ser oficiais e juízes,"
               },
               {
                 "ref": "Neemias 3:16",
@@ -1171,7 +1205,7 @@
               },
               {
                 "ref": "Neemias 3:11",
-                "text": "Em seguida vinham Malquias, filho de Harim, e Hassube, filho de Paate- Moabe, que consertaram outra parte do muro e a torre dos Fornos."
+                "text": "Em seguida vinham Malquias, filho de Harim, e Hassube, filho de Paate-Moabe, que consertaram outra parte do muro e a torre dos Fornos."
               },
               {
                 "ref": "Neemias 3:27",
@@ -1274,7 +1308,7 @@
               },
               {
                 "ref": "Jeremias 19:2",
-                "text": "Vá ao depósito de lixo no vale de Ben-Hinom, que fica junto ao portão dos Cacos, e proclame esta mensagem: 3‘Ouçam esta mensagem do SENHOR, reis de Judá e habitantes de Jerusalém! Assim diz o SENHOR dos Exércitos, o Deus..."
+                "text": "Vá ao depósito de lixo no vale de Ben-Hinom, que fica junto ao portão dos Cacos, e proclame esta mensagem:"
               },
               {
                 "ref": "Neemias 7:40",
@@ -1350,19 +1384,20 @@
   "4": {
     "book": "Neemias",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Inimigos se opõem à reconstrução",
         "verses": [
           {
-            "number": 113,
+            "number": 1,
             "text": "Sambalate ficou furioso quando soube que estávamos reconstruindo o muro. Indignou-se e zombou dos judeus.",
             "isJesusWords": false,
             "crossReferences": []
           },
           {
             "number": 2,
-            "text": "Disse na presença de seus companheiros e dos oficiais do exército samaritano: “O que esse punhado de judeus fracos pensa que está fazendo? Imaginam que serão capazes de construir o muro em um dia só porque ofereceram alguns sacrifícios?14 Pensam que podem fazer algo com as pedras queimadas que tiraram de um monte de entulho?”.",
+            "text": "Disse na presença de seus companheiros e dos oficiais do exército samaritano: “O que esse punhado de judeus fracos pensa que está fazendo? Imaginam que serão capazes de construir o muro em um dia só porque ofereceram alguns sacrifícios? Pensam que podem fazer algo com as pedras queimadas que tiraram de um monte de entulho?”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1459,7 +1494,7 @@
             "crossReferences": [
               {
                 "ref": "Filipenses 2:13",
-                "text": "Pois Deus está agindo em vocês, dando- lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
+                "text": "Pois Deus está agindo em vocês, dando-lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
               },
               {
                 "ref": "Neemias 6:15",
@@ -1476,7 +1511,7 @@
             ]
           },
           {
-            "number": 716,
+            "number": 7,
             "text": "No entanto, quando Sambalate, Tobias, os árabes, os amonitas e os asdoditas souberam que a obra avançava e que as brechas no muro de Jerusalém estavam sendo fechadas, encheram-se de ira.",
             "isJesusWords": false,
             "crossReferences": []
@@ -1588,7 +1623,7 @@
               },
               {
                 "ref": "Números 14:22",
-                "text": "nenhuma dessas pessoas entrará na terra. Todas elas viram a minha presença gloriosa e os sinais que realizei no Egito e no deserto. Repetidamente, porém, me puseram à prova, ­re-­ cusando-se a ouvir a minha voz."
+                "text": "nenhuma dessas pessoas entrará na terra. Todas elas viram a minha presença gloriosa e os sinais que realizei no Egito e no deserto. Repetidamente, porém, me puseram à prova, re- cusando-se a ouvir a minha voz."
               },
               {
                 "ref": "Gênesis 31:41",
@@ -1807,6 +1842,7 @@
   "5": {
     "book": "Neemias",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Neemias defende os oprimidos",
@@ -1841,7 +1877,7 @@
             "crossReferences": [
               {
                 "ref": "Malaquias 2:2",
-                "text": "Escutem- me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência."
+                "text": "Escutem-me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência."
               },
               {
                 "ref": "Salmos 128:2–4",
@@ -1899,7 +1935,7 @@
               },
               {
                 "ref": "Neemias 9:37",
-                "text": "A grande produção desta terra se acumula nas mãos dos reis que puseste sobre nós por causa de nossos pecados. Eles têm poder sobre nós e sobre nossos rebanhos. Nós lhes servimos como eles querem e estamos em grande angús..."
+                "text": "A grande produção desta terra se acumula nas mãos dos reis que puseste sobre nós por causa de nossos pecados. Eles têm poder sobre nós e sobre nossos rebanhos. Nós lhes servimos como eles querem e estamos em grande angústia”."
               }
             ]
           },
@@ -1922,7 +1958,7 @@
               },
               {
                 "ref": "Gênesis 37:27",
-                "text": "Em vez de matá-lo, vamos vendê- lo aos negociantes ismaelitas. Afinal, ele é nosso irmão, sangue do nosso sangue!”. Seus irmãos concordaram."
+                "text": "Em vez de matá-lo, vamos vendê-lo aos negociantes ismaelitas. Afinal, ele é nosso irmão, sangue do nosso sangue!”. Seus irmãos concordaram."
               }
             ]
           },
@@ -1983,7 +2019,7 @@
               },
               {
                 "ref": "Mateus 25:15",
-                "text": "dividindo-o de forma proporcional à capacidade deles: ao primeiro entregou cinco talentos;147 ao segundo, dois talentos; e ao último, um talento. Então foi viajar."
+                "text": "dividindo-o de forma proporcional à capacidade deles: ao primeiro entregou cinco talentos; ao segundo, dois talentos; e ao último, um talento. Então foi viajar."
               },
               {
                 "ref": "2 Coríntios 8:12",
@@ -2094,7 +2130,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 18:6",
-                "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição!91 Eu sou inocente. De agora em diante, pregarei aos gentios”."
+                "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição! Eu sou inocente. De agora em diante, pregarei aos gentios”."
               },
               {
                 "ref": "Zacarias 5:3–4",
@@ -2255,6 +2291,7 @@
   "6": {
     "book": "Neemias",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "A oposição continua",
@@ -2362,7 +2399,7 @@
               },
               {
                 "ref": "2 Reis 18:26–28",
-                "text": "Então Eliaquim, filho de Hilquias, Sebna e Joá disseram ao porta- voz: “Por favor, fale conosco em aramaico, pois entendemos bem essa língua. Não fale em hebraico, pois o povo sobre o muro o ouvirá”."
+                "text": "Então Eliaquim, filho de Hilquias, Sebna e Joá disseram ao porta-voz: “Por favor, fale conosco em aramaico, pois entendemos bem essa língua. Não fale em hebraico, pois o povo sobre o muro o ouvirá”."
               },
               {
                 "ref": "Efésios 6:11",
@@ -2592,7 +2629,8 @@
                 "text": "Ele é como a árvore plantada à margem do rio, que dá seu fruto no tempo certo. Suas folhas nunca murcham, e ele prospera em tudo que faz."
               },
               {
-                "ref": "Neemias 4:1–2"
+                "ref": "Neemias 4:1–2",
+                "text": "Sambalate ficou furioso quando soube que estávamos reconstruindo o muro. Indignou-se e zombou dos judeus."
               },
               {
                 "ref": "Daniel 9:25",
@@ -2618,10 +2656,12 @@
                 "text": "Quando todos os reis amorreus a oeste do Jordão e todos os reis cananeus que viviam junto ao mar souberam como o SENHOR havia secado o Jordão para que os israelitas atravessassem, perderam o ânimo e se encheram de medo por causa deles."
               },
               {
-                "ref": "Neemias 4:7"
+                "ref": "Neemias 4:7",
+                "text": "No entanto, quando Sambalate, Tobias, os árabes, os amonitas e os asdoditas souberam que a obra avançava e que as brechas no muro de Jerusalém estavam sendo fechadas, encheram-se de ira."
               },
               {
-                "ref": "Neemias 4:1"
+                "ref": "Neemias 4:1",
+                "text": "Sambalate ficou furioso quando soube que estávamos reconstruindo o muro. Indignou-se e zombou dos judeus."
               }
             ]
           },
@@ -2701,6 +2741,7 @@
   "7": {
     "book": "Neemias",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -2735,7 +2776,7 @@
             "crossReferences": [
               {
                 "ref": "Neemias 1:2",
-                "text": "Hanani, um de meus irmãos, veio me visitar com alguns homens que haviam chegado de Judá. Perguntei- lhes a respeito dos judeus que haviam regressado do cativeiro e da situação em Jerusalém."
+                "text": "Hanani, um de meus irmãos, veio me visitar com alguns homens que haviam chegado de Judá. Perguntei-lhes a respeito dos judeus que haviam regressado do cativeiro e da situação em Jerusalém."
               },
               {
                 "ref": "Salmos 101:6",
@@ -2786,7 +2827,7 @@
             "crossReferences": [
               {
                 "ref": "Ageu 1:4–6",
-                "text": "“Por que vocês vivem em casas luxuosas enquanto minha casa con-­ tinua em ruínas?"
+                "text": "“Por que vocês vivem em casas luxuosas enquanto minha casa con- tinua em ruínas?"
               },
               {
                 "ref": "Mateus 6:33",
@@ -2809,7 +2850,7 @@
               },
               {
                 "ref": "1 Crônicas 9:1–9",
-                "text": "Todo o Israel foi listado nos registros genealógicos do Livro dos Reis de Israel. Os exilados que voltaram O povo de Judá foi exilado na Babilônia por causa de sua infidelidade."
+                "text": "Todo o Israel foi listado nos registros genealógicos do Livro dos Reis de Israel."
               },
               {
                 "ref": "2 Coríntios 8:16",
@@ -2873,7 +2914,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Esdras 8:3"
+                "ref": "Esdras 8:3",
+                "text": "descendente de Secanias; da família de Parós: Zacarias e 150 homens registrados com ele;"
               },
               {
                 "ref": "Neemias 10:25",
@@ -3591,7 +3633,7 @@
           },
           {
             "number": 61,
-            "text": "Nessa ocasião, outro grupo regressou das cidades de Tel-Melá, Tel-Harsa, Querube, Adã40 e Imer. Contudo, não puderam comprovar que eles ou suas famílias eram descendentes de Israel.",
+            "text": "Nessa ocasião, outro grupo regressou das cidades de Tel-Melá, Tel-Harsa, Querube, Adã e Imer. Contudo, não puderam comprovar que eles ou suas famílias eram descendentes de Israel.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3630,7 +3672,7 @@
               },
               {
                 "ref": "2 Samuel 17:27",
-                "text": "Quando Davi chegou a Maanaim, foi recebido por Sobi, filho de Naás, de Rabá dos amonitas, e por Maquir, filho de Amiel, de Lo- Debar, e por Barzilai, de Rogelim, em Gileade."
+                "text": "Quando Davi chegou a Maanaim, foi recebido por Sobi, filho de Naás, de Rabá dos amonitas, e por Maquir, filho de Amiel, de Lo-Debar, e por Barzilai, de Rogelim, em Gileade."
               }
             ]
           },
@@ -3641,7 +3683,7 @@
             "crossReferences": [
               {
                 "ref": "1 Crônicas 9:1",
-                "text": "Todo o Israel foi listado nos registros genealógicos do Livro dos Reis de Israel. Os exilados que voltaram O povo de Judá foi exilado na Babilônia por causa de sua infidelidade."
+                "text": "Todo o Israel foi listado nos registros genealógicos do Livro dos Reis de Israel."
               },
               {
                 "ref": "Neemias 7:5",
@@ -3675,7 +3717,8 @@
                 "text": "A respeito da tribo de Levi, disse: “Ó SENHOR, deste o Tumim e o Urim, as sortes sagradas, a teus servos fiéis. Tu os provaste em Massá e lutaste com eles junto às águas de Meribá."
               },
               {
-                "ref": "Neemias 10:1"
+                "ref": "Neemias 10:1",
+                "text": "Os que assinaram e selaram o documento foram: O governador Neemias, filho de Hacalias, e Zedequias."
               }
             ]
           },
@@ -3711,18 +3754,24 @@
           },
           {
             "number": 68,
-            "text": "Levaram consigo 736 cavalos, 245 mulas, 69435 camelos e 6.720 jumentos.",
+            "text": "Levaram consigo 736 cavalos, 245 mulas,",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Esdras 2:66–67",
-                "text": "Levaram consigo 736 cavalos, 245 mulas, 67435 camelos e 6.720 jumentos."
+                "text": "Levaram consigo 736 cavalos, 245 mulas, 435 camelos e 6.720 jumentos."
               }
             ]
           },
           {
+            "number": 69,
+            "text": "435 camelos e 6.720 jumentos.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 70,
-            "text": "Alguns dos chefes das famílias fizeram donativos para a obra. O governador deu à tesouraria o total de 8, quilos de ouro, 50 bacias de ouro e 530 vestes para os sacerdotes.",
+            "text": "Alguns dos chefes das famílias fizeram donativos para a obra. O governador deu à tesouraria o total de 8,6 quilos de ouro, 50 bacias de ouro e 530 vestes para os sacerdotes.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3799,6 +3848,7 @@
   "8": {
     "book": "Neemias",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "Esdras faz a leitura da Lei",
@@ -3990,7 +4040,7 @@
             "crossReferences": [
               {
                 "ref": "Neemias 7:70",
-                "text": "Alguns dos chefes das famílias fizeram donativos para a obra. O governador deu à tesouraria o total de 8, quilos de ouro, 50 bacias de ouro e 530 vestes para os sacerdotes."
+                "text": "Alguns dos chefes das famílias fizeram donativos para a obra. O governador deu à tesouraria o total de 8,6 quilos de ouro, 50 bacias de ouro e 530 vestes para os sacerdotes."
               },
               {
                 "ref": "Neemias 7:65",
@@ -4190,11 +4240,11 @@
             "crossReferences": [
               {
                 "ref": "Números 29:35",
-                "text": "“No oitavo dia da festa, declarem uma ­reunião solene. Não façam nenhum trabalho habitual nesse dia."
+                "text": "“No oitavo dia da festa, declarem uma reunião solene. Não façam nenhum trabalho habitual nesse dia."
               },
               {
                 "ref": "Levítico 23:36",
-                "text": "Durante sete dias, vocês apresentarão ofertas especiais para o SENHOR. No oitavo dia, haverá outra reunião sagrada, na qual apresentarão ofertas especiais para o SENHOR. Será uma ocasião solene, e ninguém fará nenhum tra..."
+                "text": "Durante sete dias, vocês apresentarão ofertas especiais para o SENHOR. No oitavo dia, haverá outra reunião sagrada, na qual apresentarão ofertas especiais para o SENHOR. Será uma ocasião solene, e ninguém fará nenhum trabalho habitual."
               },
               {
                 "ref": "Deuteronômio 31:10–13",
@@ -4213,6 +4263,7 @@
   "9": {
     "book": "Neemias",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "O povo confessa seus pecados",
@@ -4297,7 +4348,7 @@
               },
               {
                 "ref": "Salmos 3:4",
-                "text": "Clamei ao SENHOR, e ele me respondeu de seu santo monte."
+                "text": "Clamei ao SENHOR, e ele me respondeu de seu santo monte. Interlúdio"
               }
             ]
           },
@@ -4316,7 +4367,7 @@
               },
               {
                 "ref": "1 Pedro 1:3",
-                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos."
+                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos. Agora temos uma viva esperança"
               },
               {
                 "ref": "Salmos 72:18–19",
@@ -4500,7 +4551,7 @@
               },
               {
                 "ref": "Salmos 119:127–128",
-                "text": "Por isso amo teus mandamentos, mais que o ouro, mais que o ouro puro. Cada um de teus mandamentos é reto; por isso, odeio todo caminho falso. Pê"
+                "text": "Por isso amo teus mandamentos, mais que o ouro, mais que o ouro puro. Cada um de teus mandamentos é reto; por isso, odeio todo caminho falso."
               },
               {
                 "ref": "Êxodo 19:11",
@@ -4607,7 +4658,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 106:19–23",
-                "text": "No monte Sinai,138 fizeram um bezerro; prostraram-se diante de uma imagem de metal."
+                "text": "No monte Sinai, fizeram um bezerro; prostraram-se diante de uma imagem de metal."
               },
               {
                 "ref": "Êxodo 32:4–8",
@@ -4688,7 +4739,7 @@
               },
               {
                 "ref": "Êxodo 16:35",
-                "text": "Os israelitas comeram maná durante quarenta anos, até chegarem à terra onde se estabeleceriam. Comeram maná até chegarem à fronteira da terra de Canaã. 36(A vasilha usada para medir o maná continha um ômer, que era a décima parte da medida padrão.42)"
+                "text": "Os israelitas comeram maná durante quarenta anos, até chegarem à terra onde se estabeleceriam. Comeram maná até chegarem à fronteira da terra de Canaã."
               }
             ]
           },
@@ -4722,7 +4773,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 22:17",
-                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar."
+                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar. Seus descendentes conquistarão as cidades de seus inimigos"
               },
               {
                 "ref": "Gênesis 15:5",
@@ -4878,7 +4929,7 @@
           },
           {
             "number": 30,
-            "text": "Por muitos anos, foste paciente com eles. Enviaste teu Espírito, que os advertiu por meio dos profetas. Ainda assim, eles se re­cusaram a ouvir. Por isso, mais uma vez, permitiste que os povos da terra os dominassem.",
+            "text": "Por muitos anos, foste paciente com eles. Enviaste teu Espírito, que os advertiu por meio dos profetas. Ainda assim, eles se recusaram a ouvir. Por isso, mais uma vez, permitiste que os povos da terra os dominassem.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4906,7 +4957,7 @@
             "crossReferences": [
               {
                 "ref": "Lamentações 3:22",
-                "text": "O amor do SENHOR não tem fim!12 Suas misericórdias são inesgotáveis."
+                "text": "O amor do SENHOR não tem fim! Suas misericórdias são inesgotáveis."
               },
               {
                 "ref": "Jeremias 4:27",
@@ -4998,7 +5049,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 28:47",
-                "text": "Se não servirem ao SENHOR, seu Deus, com alegria e entusiasmo pelos muitos bene­fícios que receberam,"
+                "text": "Se não servirem ao SENHOR, seu Deus, com alegria e entusiasmo pelos muitos benefícios que receberam,"
               },
               {
                 "ref": "Deuteronômio 32:12–15",
@@ -5035,7 +5086,7 @@
           },
           {
             "number": 37,
-            "text": "A grande produção desta terra se acumula nas mãos dos reis que puseste sobre nós por causa de nossos pecados. Eles têm poder sobre nós e sobre nossos rebanhos. Nós lhes servimos como eles querem e estamos em grande angústia”. O povo concorda em obedecer 3858 O povo respondeu: “Em vista disso tudo, fazemos uma aliança solene e a registramos por escrito. Neste documento selado estão os nomes de nossos líderes, levitas e sacerdotes”.",
+            "text": "A grande produção desta terra se acumula nas mãos dos reis que puseste sobre nós por causa de nossos pecados. Eles têm poder sobre nós e sobre nossos rebanhos. Nós lhes servimos como eles querem e estamos em grande angústia”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5057,18 +5108,30 @@
             ]
           }
         ]
+      },
+      {
+        "title": "O povo concorda em obedecer",
+        "verses": [
+          {
+            "number": 38,
+            "text": "O povo respondeu: “Em vista disso tudo, fazemos uma aliança solene e a registramos por escrito. Neste documento selado estão os nomes de nossos líderes, levitas e sacerdotes”.",
+            "isJesusWords": false,
+            "crossReferences": []
+          }
+        ]
       }
     ]
   },
   "10": {
     "book": "Neemias",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "",
         "verses": [
           {
-            "number": 160,
+            "number": 1,
             "text": "Os que assinaram e selaram o documento foram: O governador Neemias, filho de Hacalias, e Zedequias.",
             "isJesusWords": false,
             "crossReferences": []
@@ -5107,7 +5170,7 @@
               },
               {
                 "ref": "Neemias 3:11",
-                "text": "Em seguida vinham Malquias, filho de Harim, e Hassube, filho de Paate- Moabe, que consertaram outra parte do muro e a torre dos Fornos."
+                "text": "Em seguida vinham Malquias, filho de Harim, e Hassube, filho de Paate-Moabe, que consertaram outra parte do muro e a torre dos Fornos."
               }
             ]
           },
@@ -5145,7 +5208,7 @@
               },
               {
                 "ref": "Neemias 3:11",
-                "text": "Em seguida vinham Malquias, filho de Harim, e Hassube, filho de Paate- Moabe, que consertaram outra parte do muro e a torre dos Fornos."
+                "text": "Em seguida vinham Malquias, filho de Harim, e Hassube, filho de Paate-Moabe, que consertaram outra parte do muro e a torre dos Fornos."
               },
               {
                 "ref": "Neemias 3:21",
@@ -5316,7 +5379,7 @@
               },
               {
                 "ref": "Neemias 3:11",
-                "text": "Em seguida vinham Malquias, filho de Harim, e Hassube, filho de Paate- Moabe, que consertaram outra parte do muro e a torre dos Fornos."
+                "text": "Em seguida vinham Malquias, filho de Harim, e Hassube, filho de Paate-Moabe, que consertaram outra parte do muro e a torre dos Fornos."
               }
             ]
           },
@@ -5400,7 +5463,7 @@
               },
               {
                 "ref": "Esdras 10:15",
-                "text": "Os únicos que se opuseram à proposta foram Jônatas, filho de Asael, e Jazeías, filho de Tic­vá, apoiados por Mesulão e pelo levita Sabetai."
+                "text": "Os únicos que se opuseram à proposta foram Jônatas, filho de Asael, e Jazeías, filho de Ticvá, apoiados por Mesulão e pelo levita Sabetai."
               },
               {
                 "ref": "Neemias 8:4",
@@ -5493,7 +5556,8 @@
                 "text": "Quando jurasse por meu nome e dissesse: ‘Tão certo como vive o SENHOR’, poderia fazê-lo em verdade, justiça e retidão. Então você seria uma bênção para as nações do mundo, e todos os povos viriam e louvariam meu nome.”"
               },
               {
-                "ref": "Eclesiastes 5:2"
+                "ref": "Eclesiastes 5:2",
+                "text": "Não se precipite em fazer promessas nem em apresentar suas questões a Deus. Afinal, Deus está nos céus, e você, na terra; portanto, fale pouco."
               }
             ]
           },
@@ -5757,6 +5821,7 @@
   "11": {
     "book": "Neemias",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "O repovoamento de Jerusalém",
@@ -5826,7 +5891,7 @@
               },
               {
                 "ref": "1 Crônicas 9:1–34",
-                "text": "Todo o Israel foi listado nos registros genealógicos do Livro dos Reis de Israel. Os exilados que voltaram O povo de Judá foi exilado na Babilônia por causa de sua infidelidade."
+                "text": "Todo o Israel foi listado nos registros genealógicos do Livro dos Reis de Israel."
               }
             ]
           },
@@ -6044,7 +6109,7 @@
               },
               {
                 "ref": "1 Crônicas 26:29",
-                "text": "Do clã de Isar, Quenanias e seus filhos receberam as responsabilidades administrativas176 de Israel como oficiais e juízes."
+                "text": "Do clã de Isar, Quenanias e seus filhos receberam as responsabilidades administrativas de Israel como oficiais e juízes."
               },
               {
                 "ref": "Atos 6:2–3",
@@ -6208,7 +6273,7 @@
               },
               {
                 "ref": "1 Crônicas 18:17",
-                "text": "Benaia, filho de Joiada, era comandante da guarda pessoal do rei.140 E os filhos de Davi eram seus assistentes diretos."
+                "text": "Benaia, filho de Joiada, era comandante da guarda pessoal do rei. E os filhos de Davi eram seus assistentes diretos."
               },
               {
                 "ref": "Números 26:20",
@@ -6242,7 +6307,7 @@
             "crossReferences": [
               {
                 "ref": "Josué 15:26–27",
-                "text": "Amã, Sema, Moladá, Hazar- Gada, Hesmom, Bete-Pelete,"
+                "text": "Amã, Sema, Moladá, Hazar-Gada, Hesmom, Bete-Pelete,"
               },
               {
                 "ref": "Josué 19:2",
@@ -6367,7 +6432,8 @@
                 "text": "Anatote e Almom; foram quatro cidades."
               },
               {
-                "ref": "1 Samuel 21:1"
+                "ref": "1 Samuel 21:1",
+                "text": "Davi foi à cidade de Nobe para encontrar-se com o sacerdote Aimeleque. Ao vê-lo, Aimeleque tremeu. “Por que você está sozinho?”, perguntou. “Por que ninguém o acompanhou?”"
               },
               {
                 "ref": "Isaías 10:30",
@@ -6386,7 +6452,7 @@
             "crossReferences": [
               {
                 "ref": "2 Samuel 4:3",
-                "text": "pois seus habitantes originais fugiram para Gitaim, onde ainda vivem como estrangeiros. 4(Jônatas, filho de Saul, tinha um filho chamado Mefibosete, que ficou aleijado quando era criança. Mefibosete tinha 5 anos quando c..."
+                "text": "pois seus habitantes originais fugiram para Gitaim, onde ainda vivem como estrangeiros."
               },
               {
                 "ref": "1 Samuel 7:17",
@@ -6409,7 +6475,7 @@
             "crossReferences": [
               {
                 "ref": "1 Samuel 13:18",
-                "text": "outro foi para oeste, a Bete- Horom, e o terceiro rumou para a fronteira acima do vale de Zeboim, na direção do deserto."
+                "text": "outro foi para oeste, a Bete-Horom, e o terceiro rumou para a fronteira acima do vale de Zeboim, na direção do deserto."
               }
             ]
           },
@@ -6458,6 +6524,7 @@
   "12": {
     "book": "Neemias",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "A lista dos sacerdotes e dos levitas",
@@ -6923,7 +6990,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 11:30"
+                "ref": "Deuteronômio 11:30",
+                "text": "(Esses dois montes ficam a oeste do rio Jordão, na terra dos cananeus que vivem no vale do Jordão, perto da cidade de Gilgal, junto aos carvalhos de Moré.)"
               },
               {
                 "ref": "Esdras 2:24",
@@ -6946,7 +7014,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 19:10",
-                "text": "Então o SENHOR disse a Moisés: “Desça e consagre o povo, hoje e amanhã."
+                "text": "Então o SENHOR disse a Moisés: “Desça e consagre o povo, hoje e amanhã. Providencie que eles lavem suas roupas"
               },
               {
                 "ref": "Esdras 6:21",
@@ -6977,7 +7045,7 @@
               },
               {
                 "ref": "1 Crônicas 28:1",
-                "text": "Davi convocou todos os oficiais de Israel para irem a Jerusalém: os líderes das tribos, os comandantes das divisões do exército, os generais e os capitães,181 os administradores das propriedades e dos rebanhos do rei, os..."
+                "text": "Davi convocou todos os oficiais de Israel para irem a Jerusalém: os líderes das tribos, os comandantes das divisões do exército, os generais e os capitães, os administradores das propriedades e dos rebanhos do rei, os of..."
               },
               {
                 "ref": "2 Crônicas 5:2",
@@ -7050,7 +7118,8 @@
                 "text": "Estes foram os chefes das famílias dos levitas: Hasabias, Serebias, Jesua, Binui, Cadmiel e outros companheiros que ficavam em frente deles durante as cerimônias de louvor e ação de graças; um lado respondia ao outro, co..."
               },
               {
-                "ref": "1 Crônicas 23:5"
+                "ref": "1 Crônicas 23:5",
+                "text": "4 mil para ser guardas das portas e 4 mil para louvar o SENHOR com os instrumentos musicais que Davi fez para esse fim."
               },
               {
                 "ref": "2 Crônicas 8:14",
@@ -7092,7 +7161,7 @@
               },
               {
                 "ref": "Neemias 3:11",
-                "text": "Em seguida vinham Malquias, filho de Harim, e Hassube, filho de Paate- Moabe, que consertaram outra parte do muro e a torre dos Fornos."
+                "text": "Em seguida vinham Malquias, filho de Harim, e Hassube, filho de Paate-Moabe, que consertaram outra parte do muro e a torre dos Fornos."
               },
               {
                 "ref": "Neemias 12:31",
@@ -7307,6 +7376,7 @@
   "13": {
     "book": "Neemias",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "As diversas reformas realizadas por Neemias",
@@ -7382,7 +7452,7 @@
           },
           {
             "number": 4,
-            "text": "Antes disso, o sacerdote Eliasibe havia sido nomeado para supervisionar os depósitos no templo de nosso Deus.",
+            "text": "Antes disso, o sacerdote Eliasibe havia sido nomeado para supervisionar os depósitos no templo de nosso Deus. Ele era parente de Tobias",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -7394,12 +7464,7 @@
                 "text": "Um dos filhos de Joiada, filho do sumo sacerdote Eliasibe, havia se casado com uma filha de Sambalate, o horonita, por isso o expulsei de minha presença."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Ele era parente de Tobias",
-        "verses": [
+          },
           {
             "number": 5,
             "text": "e tinha colocado à disposição dele uma grande sala junto ao templo. Anteriormente, esse lugar era usado para armazenar as ofertas de cereal, o incenso, diversos utensílios do templo e os dízimos dos cereais, do vinho novo e do azeite (prescritos para os levitas, os cantores e os guardas das portas), e também as ofertas para os sacerdotes.",
@@ -7480,7 +7545,7 @@
               },
               {
                 "ref": "Esdras 10:1",
-                "text": "Cr 6.6-10."
+                "text": "Enquanto Esdras orava e fazia essa confissão, chorando e com o rosto no chão diante do templo de Deus, uma grande multidão de israelitas — homens, mulheres e crianças — se reuniu e chorou amargamente com ele."
               },
               {
                 "ref": "Marcos 11:15–17",
@@ -7914,7 +7979,7 @@
               },
               {
                 "ref": "Números 16:9–10",
-                "text": "Acaso lhes parece de pouca importância que o Deus de Israel os tenha escolhido dentre toda a comunidade de Israel para estar perto dele a fim de trabalharem no taberná­culo do SENHOR e estarem perante a comunidade para servi-la?"
+                "text": "Acaso lhes parece de pouca importância que o Deus de Israel os tenha escolhido dentre toda a comunidade de Israel para estar perto dele a fim de trabalharem no tabernáculo do SENHOR e estarem perante a comunidade para servi-la?"
               },
               {
                 "ref": "Malaquias 2:4–8",
@@ -7943,7 +8008,7 @@
           },
           {
             "number": 31,
-            "text": "Também me certifiquei de que a provisão de lenha para o altar e os primeiros frutos da colheita fossem trazidos nas datas estabelecidas. Lembra-te disso em meu favor, ó meu Deus. 1 1. Em hebraico, No mês de quisleu do vigésimo ano. Vários acontecimentos em Neemias podem ser confirmados por datas em registros persas que sobreviveram ao tempo e relacionados com precisão ao calendário moderno. Esse mês do antigo calendário lunar hebraico caiu entre novembro e dezembro de 446 a.C. O vigésimo ano provavelmente se refere ao reinado de Artaxerxes I; comparar com 2.; 5.. 2 1. Em hebraico, dos céus. 3 1. Em hebraico, hoje aos olhos deste homem. 4 2. Esse mês do antigo calendário lunar hebraico caiu entre abril e maio de 445 a.C. 5 2. Em hebraico, província além do rio; também em 2.. 6 2. Ou poço da Serpente. 7 2. Em hebraico, pelo vale. 8 3. Ou porta de Mishneh, ou porta de Jesana. 9 3. Em hebraico, província além do rio. 10 3. Em hebraico, 1.000 côvados. 11 3. Em hebraico, tanque de Selá, outro nome para o tanque de Siloé. 12 3. Conforme alguns manuscritos hebraicos, alguns manuscritos gregos e a versão siríaca (ver tb. 3.; 10.9); a maioria dos manuscritos hebraicos traz Bavai. 13 4. No texto hebraico, os versículos 4.1-6 são numerados 3.33-38. 14 4. O significado do hebraico é incerto. 15 4. Ou porque lançaram insultos no rosto. 16 4. No texto hebraico, os versículos 4.7-23 são numerados 4.1-17. 17 4. O significado do hebraico é incerto. 18 4. Ou Cada um carregava sua arma na mão direita. O significado do hebraico é incerto. 19 5. Isto é, de 445 a 433 a.C. 20 5. Em hebraico, 40 siclos, cerca de 480 gramas. 21 6. Conforme a Septuaginta; o hebraico traz em Quefirim. 22 6. Em hebraico, Gasmu, variação de Gesém. 23 6. Conforme a Septuaginta; o hebraico traz Mas, agora, fortalece minhas mãos. 24 6. Em hebraico, no vigésimo quinto dia do mês de elul, do antigo calendário lunar hebraico. O ano foi 445 a.C.; ver também nota em 1.. 25 7. Ou Mantenham as portas de Jerusalém fechadas até que o sol esteja quente. 26 7.7a Conforme o texto paralelo em Ed 2.; o hebraico traz Azarias. 27 7.7b Conforme o texto paralelo em Ed 2.; o hebraico traz Raamias. 28 7.7c Conforme o texto paralelo em Ed 2.; o hebraico traz Misperete. 29 7.7d Conforme o texto paralelo em Ed 2.; o hebraico traz Neum. 30 7. Conforme o texto paralelo em Ed 2.; o hebraico traz Binui. 31 7. Conforme o texto paralelo em Ed 2.; o hebraico traz Harife. 32 7. Conforme o texto paralelo em Ed 2.; o hebraico traz Gibeão. 33 7. Ou do outro Nebo. 34 7.34 Ou do outro Elão. 35 7. Conforme o texto paralelo em Ed 2.; o hebraico traz Hodeva. 36 7. Conforme o texto paralelo em Ed 2.; o hebraico traz Nefusesim. 37 7. Conforme o texto paralelo em Ed 2.; o hebraico traz Baslite. 38 7. Conforme o texto paralelo em Ed 2.; o hebraico traz Perida. 39 7. Conforme o texto paralelo em Ed 2.; o hebraico traz Amom. 40 7. Conforme o texto paralelo em Ed 2.; o hebraico traz Adom. 41 7. Conforme alguns manuscritos hebraicos (ver tb. Ed 2.66); a maioria dos manuscritos hebraicos não traz este versículo. No texto hebraico, os versículos 7.69-73 são numerados 7.68-72. 42 7. Em hebraico, 1.000 dáricos de ouro. 43 7.71a Em hebraico, 20.000 dáricos; também em 7.. 44 7.71b Em hebraico, 2.200 minas. 45 7. Em hebraico, 2.000 minas. 46 8.1a Em hebraico, No sétimo mês. Esse mês do antigo calendário lunar hebraico caiu entre outubro e novembro de 445 a.C. 47 8.1b No texto hebraico, a primeira parte do versículo é numerada 7.. 48 8. Em hebraico, no primeiro dia do sétimo mês, do antigo calendário lunar hebraico. O ano foi 445 a.C.; ver também nota em 1.. 49 8. Em hebraico, ele. 50 8. Em hebraico, No segundo dia, do sétimo mês do antigo calendário lunar hebraico. O ano foi 445 a.C.; ver também notas em 1. e 8.. 51 8. Em hebraico, no sétimo mês. Esse mês do antigo calendário lunar hebraico geralmente caía entre setembro e outubro. Ver Lv 23.39-43. 52 8. Ou pinho; o hebraico traz árvore de azeite. 53 8. O hebraico traz Jesua, variação de Josué. 54 9. Em hebraico, No vigésimo quarto dia desse mesmo mês, o sétimo mês do antigo calendário lunar hebraico. O ano foi 445 a.C.; ver também notas em 1. e 8.. 55 9. Em hebraico, Por um quarto de dia; também em 9.3b. 56 9. Em hebraico, mar de juncos. 57 9. Conforme a Septuaginta; o hebraico traz em sua rebelião. 58 9.38a No texto hebraico, o versículo 9. é numerado 10.. 59 9.38b Ou Apesar disso tudo. 60 10. No texto hebraico, os versículos 10.1-39 são numerados 10.2-40. 61 10. Em hebraico, o imposto de um terço de siclo. 62 11. Em hebraico, filho do silonita. 63 11. Ge-Harasim quer dizer “vale dos artesãos”. 64 12. Em hebraico, Reum; comparar com 7.; 12.; Ed 2.. 65 12. Conforme alguns manuscritos hebraicos e a Vulgata (ver tb. 12.16); a maioria dos manuscritos hebraicos traz Ginetoi. 66 12. Em hebraico, Miamim, Maadias; comparar com 12.. 67 12. Em hebraico, Jônatas; comparar com 12.. 68 12. Conforme alguns manuscritos hebraicos e gregos e a versão siríaca (ver tb. 12.3); a maioria dos manuscritos hebraicos traz Sebanias. 69 12. Conforme alguns manuscritos gregos (ver tb. 12.3); o hebraico traz Meraiote. 70 12. O hebraico não traz o nome desse chefe de família. 71 12. Em hebraico Salai; comparar com 12.. 72 12. Provavelmente Dario II, que reinou de 423 a 404 a.C., ou talvez Dario III, que reinou de 336 a 331 a.C. 73 12. Em hebraico, descendente; comparar com 12.10-11. 74 12. Em hebraico, filho de [i.e., ben], que provavelmente deve ser lido aqui como o nome próprio Binui; comparar com Ed 3. e respectiva nota. 75 12. Em hebraico, Jozadaque, variação de Jeozadaque. 76 12. Em hebraico, para a direita. 77 12. Em hebraico, para a esquerda. 78 12. Ou porta de Mishneh, ou porta de Jesana. 79 13. Ver Dt 23.3-6. 80 13. Artaxerxes, rei da Pérsia, é identificado como rei da Babilônia porque a Pérsia havia conquistado o império babilônico. O trigésimo segundo ano de Artaxerxes foi 433 a.C.",
+            "text": "Também me certifiquei de que a provisão de lenha para o altar e os primeiros frutos da colheita fossem trazidos nas datas estabelecidas. Lembra-te disso em meu favor, ó meu Deus.",
             "isJesusWords": false,
             "crossReferences": [
               {

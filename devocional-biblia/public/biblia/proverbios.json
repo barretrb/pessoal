@@ -2,6 +2,7 @@
   "1": {
     "book": "Provérbios",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "A finalidade dos provérbios",
@@ -17,7 +18,7 @@
               },
               {
                 "ref": "1 Crônicas 22:9",
-                "text": "Contudo, você terá um filho que será um homem de paz. Darei a ele descanso de seus inimigos de todas as terras vizinhas. Seu nome será Salomão,154 e darei paz e tranquilidade a Israel durante seu reinado."
+                "text": "Contudo, você terá um filho que será um homem de paz. Darei a ele descanso de seus inimigos de todas as terras vizinhas. Seu nome será Salomão, e darei paz e tranquilidade a Israel durante seu reinado."
               },
               {
                 "ref": "1 Crônicas 28:5",
@@ -54,7 +55,7 @@
           },
           {
             "number": 3,
-            "text": "Sua finalidade é ensinar-lhes uma vida disciplinada e bem- sucedida e ajudá-las a fazer o que é certo, justo e imparcial.",
+            "text": "Sua finalidade é ensinar-lhes uma vida disciplinada e bem-sucedida e ajudá-las a fazer o que é certo, justo e imparcial.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -146,7 +147,7 @@
           },
           {
             "number": 7,
-            "text": "O temor do SENHOR é o princípio do conhecimento, mas os tolos desprezam a sabedoria e a disciplina. O conselho de um pai: adquira sabedoria",
+            "text": "O temor do SENHOR é o princípio do conhecimento, mas os tolos desprezam a sabedoria e a disciplina.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -166,7 +167,12 @@
                 "text": "Aqui termina meu relato. Esta é minha conclusão: tema a Deus e obedeça a seus mandamentos, pois esse é o dever de todos."
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "title": "O conselho de um pai: adquira sabedoria",
+        "verses": [
           {
             "number": 8,
             "text": "Meu filho, preste atenção à correção de seu pai e não deixe de lado a instrução de sua mãe.",
@@ -293,7 +299,7 @@
               },
               {
                 "ref": "Lucas 12:15",
-                "text": "Em seguida, disse: “Cuidado! Guardem- se de todo tipo de ganância. A vida de uma pessoa não é definida pela quantidade de seus bens”."
+                "text": "Em seguida, disse: “Cuidado! Guardem-se de todo tipo de ganância. A vida de uma pessoa não é definida pela quantidade de seus bens”."
               },
               {
                 "ref": "Jó 24:2–3",
@@ -371,7 +377,8 @@
                 "text": "Até a cegonha que voa pelos céus sabe a época de migrar, assim como a rolinha, a andorinha e o grou; todos voltam no tempo certo a cada ano. Meu povo, contudo, não conhece os decretos do SENHOR."
               },
               {
-                "ref": "Provérbios 7:23"
+                "ref": "Provérbios 7:23",
+                "text": "à espera da flecha que lhe atravessará o coração, como o pássaro que voa direto para o laço, sem saber que lhe custará a vida."
               },
               {
                 "ref": "Isaías 1:3",
@@ -386,7 +393,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 9:16",
-                "text": "O SENHOR é conhecido por sua justiça; os perversos são pegos nas próprias armadilhas."
+                "text": "O SENHOR é conhecido por sua justiça; os perversos são pegos nas próprias armadilhas. Interlúdio silencioso"
               },
               {
                 "ref": "Ester 7:10",
@@ -759,6 +766,7 @@
   "2": {
     "book": "Provérbios",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Os benefícios da sabedoria",
@@ -774,7 +782,7 @@
               },
               {
                 "ref": "Provérbios 1:3",
-                "text": "Sua finalidade é ensinar-lhes uma vida disciplinada e bem- sucedida e ajudá-las a fazer o que é certo, justo e imparcial."
+                "text": "Sua finalidade é ensinar-lhes uma vida disciplinada e bem-sucedida e ajudá-las a fazer o que é certo, justo e imparcial."
               },
               {
                 "ref": "João 12:47–48",
@@ -862,7 +870,7 @@
             "crossReferences": [
               {
                 "ref": "Provérbios 1:7",
-                "text": "O temor do SENHOR é o princípio do conhecimento, mas os tolos desprezam a sabedoria e a disciplina. O conselho de um pai: adquira sabedoria"
+                "text": "O temor do SENHOR é o princípio do conhecimento, mas os tolos desprezam a sabedoria e a disciplina."
               },
               {
                 "ref": "Jeremias 24:7",
@@ -1253,7 +1261,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 52:5",
-                "text": "Por isso, Deus o destruirá de uma vez por todas; ele o tirará de sua casa e o arrancará da terra dos vivos."
+                "text": "Por isso, Deus o destruirá de uma vez por todas; ele o tirará de sua casa e o arrancará da terra dos vivos. Interlúdio"
               },
               {
                 "ref": "Isaías 3:10–11",
@@ -1276,6 +1284,7 @@
   "3": {
     "book": "Provérbios",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Confiança no SENHOR",
@@ -1594,7 +1603,7 @@
               },
               {
                 "ref": "Jó 28:13–19",
-                "text": "Ninguém sabe onde encontrá-la, pois ela não se acha entre os vivos. 14‘Não está aqui’, diz o abismo, ‘Nem aqui’, diz o mar."
+                "text": "Ninguém sabe onde encontrá-la, pois ela não se acha entre os vivos."
               },
               {
                 "ref": "Apocalipse 3:18",
@@ -1612,7 +1621,8 @@
                 "text": "Pois a sabedoria vale muito mais que rubis; nada do que você deseja se compara a ela."
               },
               {
-                "ref": "Provérbios 31:10"
+                "ref": "Provérbios 31:10",
+                "text": "Quem encontrará uma mulher virtuosa? Ela é mais preciosa que rubis."
               },
               {
                 "ref": "Romanos 8:18",
@@ -1662,7 +1672,7 @@
               },
               {
                 "ref": "Filipenses 4:8–9",
-                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem- se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
+                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem-se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
               },
               {
                 "ref": "Provérbios 2:10",
@@ -2091,6 +2101,7 @@
   "4": {
     "book": "Provérbios",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "O conselho sábio de um pai",
@@ -2152,11 +2163,11 @@
               },
               {
                 "ref": "1 Crônicas 29:1",
-                "text": "Cr 24.22b), variação de Selomite; comparar com 23.."
+                "text": "O rei Davi se voltou para toda a comunidade e disse: “Meu filho Salomão, que Deus escolheu, ainda é jovem e inexperiente. O trabalho que ele tem pela frente é enorme, pois o templo que ele construirá não será para meros..."
               },
               {
                 "ref": "2 Samuel 12:24–25",
-                "text": "Então Davi consolou Bate-Seba, sua mulher, e teve relações com ela. Bate-Seba engravidou e deu à luz um filho, a quem Davi chamou Salomão."
+                "text": "Então Davi consolou Bate-Seba, sua mulher, e teve relações com ela. Bate-Seba engravidou e deu à luz um filho, a quem Davi chamou Salomão. O SENHOR amou a criança"
               },
               {
                 "ref": "Romanos 12:16",
@@ -2175,7 +2186,7 @@
               },
               {
                 "ref": "Efésios 6:4",
-                "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem- nos com a disciplina e a instrução que vêm do Senhor."
+                "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem-nos com a disciplina e a instrução que vêm do Senhor."
               },
               {
                 "ref": "João 12:50",
@@ -2336,7 +2347,7 @@
               },
               {
                 "ref": "Eclesiastes 12:9",
-                "text": "A terra se beneficia de um rei que cultiva a terra. O significado do hebraico é incerto."
+                "text": "O Mestre era considerado sábio e ensinou ao povo tudo que sabia. Com muita atenção, ouviu, examinou e organizou muitos provérbios."
               },
               {
                 "ref": "Provérbios 8:9",
@@ -2723,6 +2734,7 @@
   "5": {
     "book": "Provérbios",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Evite mulheres imorais",
@@ -2845,7 +2857,7 @@
               },
               {
                 "ref": "Salmos 16:11",
-                "text": "Tu me mostrarás o caminho da vida e me darás a alegria de tua presença"
+                "text": "Tu me mostrarás o caminho da vida e me darás a alegria de tua presença e o prazer de viver contigo para sempre."
               },
               {
                 "ref": "Provérbios 5:21",
@@ -3058,7 +3070,7 @@
           },
           {
             "number": 16,
-            "text": "Por que derramar pelas ruas a água de suas fontes, ao ter sexo com qualquer mulher?6",
+            "text": "Por que derramar pelas ruas a água de suas fontes, ao ter sexo com qualquer mulher?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3226,6 +3238,7 @@
   "6": {
     "book": "Provérbios",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "Lições para a vida diária",
@@ -3306,7 +3319,7 @@
               },
               {
                 "ref": "Marcos 13:35–36",
-                "text": "Vocês também devem vigiar! Pois não sabem quando o dono da casa voltará: à tarde, à meia- noite, de madrugada ou ao amanhecer. Que ele não os encontre dormindo quando chegar sem aviso."
+                "text": "Vocês também devem vigiar! Pois não sabem quando o dono da casa voltará: à tarde, à meia-noite, de madrugada ou ao amanhecer. Que ele não os encontre dormindo quando chegar sem aviso."
               },
               {
                 "ref": "Eclesiastes 9:10",
@@ -3497,7 +3510,7 @@
               },
               {
                 "ref": "Jó 15:12",
-                "text": "O que o fez perder a razão?"
+                "text": "O que o fez perder a razão? Por que seus olhos chegam a faiscar"
               },
               {
                 "ref": "Provérbios 10:10",
@@ -3657,7 +3670,8 @@
                 "text": "Filhos, obedeçam a seus pais no Senhor, porque isso é o certo a fazer."
               },
               {
-                "ref": "Deuteronômio 27:16"
+                "ref": "Deuteronômio 27:16",
+                "text": "‘Maldito quem desonrar pai ou mãe’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Provérbios 7:1–4",
@@ -3876,7 +3890,8 @@
                 "text": "Enquanto isso, Zaqueu se levantou e disse: “Senhor, darei metade das minhas riquezas aos pobres. E, se explorei alguém na cobrança de impostos, devolverei quatro vezes mais!”."
               },
               {
-                "ref": "Êxodo 22:1–4"
+                "ref": "Êxodo 22:1–4",
+                "text": "“Se alguém roubar um boi ou uma ovelha e matar o animal ou vendê-lo, o ladrão pagará cinco bois para cada boi roubado e quatro ovelhas para cada ovelha roubada."
               },
               {
                 "ref": "2 Samuel 12:6",
@@ -3903,7 +3918,7 @@
               },
               {
                 "ref": "Provérbios 7:22–23",
-                "text": "Ele a acompanhou de imediato, como boi que vai para o matadouro, como cervo que caiu na armadilha 23à espera da flecha que lhe atravessará o coração, como o pássaro que voa direto para o laço, sem saber que lhe custará a vida."
+                "text": "Ele a acompanhou de imediato, como boi que vai para o matadouro, como cervo que caiu na armadilha"
               },
               {
                 "ref": "Romanos 1:22–24",
@@ -3987,6 +4002,7 @@
   "7": {
     "book": "Provérbios",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Outra advertência sobre mulheres imorais",
@@ -4227,7 +4243,8 @@
                 "text": "a viver com sabedoria e pureza, a trabalhar no lar, a fazer o bem e a ser submissas ao marido. Assim, não envergonharão a palavra de Deus."
               },
               {
-                "ref": "Provérbios 31:10–31"
+                "ref": "Provérbios 31:10–31",
+                "text": "Quem encontrará uma mulher virtuosa? Ela é mais preciosa que rubis."
               },
               {
                 "ref": "1 Timóteo 5:13–14",
@@ -4391,7 +4408,7 @@
               },
               {
                 "ref": "Mateus 20:11",
-                "text": "Ao receber o pagamento, queixaram-se ao proprietário: 12‘Aqueles trabalharam apenas uma hora e, no entanto, o senhor lhes pagou a mesma quantia que a nós, que trabalhamos o dia todo no calor intenso’."
+                "text": "Ao receber o pagamento, queixaram-se ao proprietário:"
               },
               {
                 "ref": "Mateus 24:43",
@@ -4439,7 +4456,7 @@
           },
           {
             "number": 22,
-            "text": "Ele a acompanhou de imediato, como boi que vai para o matadouro, como cervo que caiu na armadilha 23à espera da flecha que lhe atravessará o coração, como o pássaro que voa direto para o laço, sem saber que lhe custará a vida.",
+            "text": "Ele a acompanhou de imediato, como boi que vai para o matadouro, como cervo que caiu na armadilha",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4459,6 +4476,12 @@
                 "text": "Mandou prender o profeta Jeremias e ordenou que o açoitassem e o pusessem no tronco junto à porta de Benjamim, no templo do SENHOR."
               }
             ]
+          },
+          {
+            "number": 23,
+            "text": "à espera da flecha que lhe atravessará o coração, como o pássaro que voa direto para o laço, sem saber que lhe custará a vida.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 24,
@@ -4559,6 +4582,7 @@
   "8": {
     "book": "Provérbios",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "A Sabedoria pede para ser ouvida",
@@ -4574,7 +4598,7 @@
               },
               {
                 "ref": "Mateus 3:3",
-                "text": "O profeta Isaías se referia a João quando disse: “Ele é uma voz que clama no deserto: ‘Preparem o caminho para a vinda do Senhor!16 Abram a estrada para ele!’”."
+                "text": "O profeta Isaías se referia a João quando disse: “Ele é uma voz que clama no deserto: ‘Preparem o caminho para a vinda do Senhor! Abram a estrada para ele!’”."
               },
               {
                 "ref": "João 7:37",
@@ -5018,7 +5042,7 @@
               },
               {
                 "ref": "Gênesis 15:14",
-                "text": "Mas eu castigarei a nação que os escravizar e, por fim, eles sairão de lá com grande riqueza. 15(Você, por sua vez, morrerá em paz e será sepultado em idade avançada.)"
+                "text": "Mas eu castigarei a nação que os escravizar e, por fim, eles sairão de lá com grande riqueza."
               },
               {
                 "ref": "Mateus 25:46",
@@ -5059,7 +5083,8 @@
                 "text": "Pai, quero que os que me deste estejam comigo onde estou. Então eles verão toda a glória que me deste, porque me amaste antes mesmo do princípio do mundo."
               },
               {
-                "ref": "Miqueias 5:2"
+                "ref": "Miqueias 5:2",
+                "text": "Mas você, ó Belém Efrata, é apenas uma pequena vila entre todo o povo de Judá. E, no entanto, um governante de Israel, cujas origens são do passado distante, sairá de você em meu favor."
               },
               {
                 "ref": "Gênesis 1:26",
@@ -5067,7 +5092,7 @@
               },
               {
                 "ref": "João 17:5",
-                "text": "Agora, Pai, glorifica- me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
+                "text": "Agora, Pai, glorifica-me e leva-me para junto de ti, para a glória que tive a teu lado antes do princípio do mundo."
               }
             ]
           },
@@ -5365,6 +5390,7 @@
   "9": {
     "book": "Provérbios",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -5472,7 +5498,7 @@
               },
               {
                 "ref": "Cânticos 5:1",
-                "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite. As mulheres de Jerusalém Comam e bebam, amado e amada! Sim, bebam de seu amor quanto puderem!"
+                "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite."
               },
               {
                 "ref": "Provérbios 9:17",
@@ -5591,7 +5617,7 @@
               },
               {
                 "ref": "Provérbios 1:7",
-                "text": "O temor do SENHOR é o princípio do conhecimento, mas os tolos desprezam a sabedoria e a disciplina. O conselho de um pai: adquira sabedoria"
+                "text": "O temor do SENHOR é o princípio do conhecimento, mas os tolos desprezam a sabedoria e a disciplina."
               },
               {
                 "ref": "Eclesiastes 12:13",
@@ -5664,7 +5690,8 @@
                 "text": "Pois ela não se interessa pelo caminho da vida; não se dá conta de que anda sem rumo por uma trilha tortuosa."
               },
               {
-                "ref": "1 Timóteo 6:4"
+                "ref": "1 Timóteo 6:4",
+                "text": "é arrogante e sem entendimento. Vive com o desejo doentio de discutir o significado das palavras e provoca contendas que resultam em inveja, divisão, difamação e suspeitas malignas."
               },
               {
                 "ref": "Provérbios 21:9",
@@ -5766,6 +5793,7 @@
   "10": {
     "book": "Provérbios",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "Provérbios de Salomão",
@@ -5785,7 +5813,7 @@
               },
               {
                 "ref": "Eclesiastes 12:9",
-                "text": "A terra se beneficia de um rei que cultiva a terra. O significado do hebraico é incerto."
+                "text": "O Mestre era considerado sábio e ensinou ao povo tudo que sabia. Com muita atenção, ouviu, examinou e organizou muitos provérbios."
               },
               {
                 "ref": "Eclesiastes 2:19",
@@ -6505,6 +6533,7 @@
   "11": {
     "book": "Provérbios",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -6612,7 +6641,7 @@
               },
               {
                 "ref": "Salmos 9:15–16",
-                "text": "As nações caíram na cova que abriram; seus pés ficaram presos no laço que esconderam. O SENHOR é conhecido por sua justiça; os perversos são pegos nas próprias armadilhas."
+                "text": "As nações caíram na cova que abriram; seus pés ficaram presos no laço que esconderam. O SENHOR é conhecido por sua justiça; os perversos são pegos nas próprias armadilhas. Interlúdio silencioso"
               },
               {
                 "ref": "Provérbios 11:3",
@@ -6685,11 +6714,11 @@
               },
               {
                 "ref": "Ester 7:9–10",
-                "text": "Harbona, um dos eunucos do rei, disse: “Hamã construiu uma forca de mais de vinte metros no pátio da casa dele. Pretendia usá- la para enforcar Mardoqueu, o homem que salvou o rei de ser assassinado”. “Usem-na para enforcar Hamã!”, ordenou o rei."
+                "text": "Harbona, um dos eunucos do rei, disse: “Hamã construiu uma forca de mais de vinte metros no pátio da casa dele. Pretendia usá-la para enforcar Mardoqueu, o homem que salvou o rei de ser assassinado”. “Usem-na para enforcar Hamã!”, ordenou o rei."
               },
               {
                 "ref": "Isaías 43:3–4",
-                "text": "Pois eu sou o SENHOR, seu Deus, o Santo de Israel, seu Salvador. Dei o Egito como resgate por sua liberdade; em troca de você, dei a Etiópia134 e Sebá."
+                "text": "Pois eu sou o SENHOR, seu Deus, o Santo de Israel, seu Salvador. Dei o Egito como resgate por sua liberdade; em troca de você, dei a Etiópia e Sebá."
               }
             ]
           },
@@ -6975,7 +7004,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Salmos 112:1–2"
+                "ref": "Salmos 112:1–2",
+                "text": "Louvado seja o SENHOR! Como é feliz aquele que teme o SENHOR e tem prazer em obedecer a seus mandamentos! Seus filhos serão bem-sucedidos em toda a terra; uma geração inteira de justos será abençoada."
               },
               {
                 "ref": "Atos 2:39",
@@ -6983,7 +7013,7 @@
               },
               {
                 "ref": "Jeremias 32:39",
-                "text": "Eu lhes darei um só coração e um só propósito: adorar- me para sempre, para o seu próprio bem e para o bem de seus descendentes."
+                "text": "Eu lhes darei um só coração e um só propósito: adorar-me para sempre, para o seu próprio bem e para o bem de seus descendentes."
               },
               {
                 "ref": "Salmos 37:26",
@@ -7121,7 +7151,7 @@
               },
               {
                 "ref": "Salmos 57:6",
-                "text": "Meus inimigos me prepararam uma armadilha; estou exausto de tanta angústia. Abriram uma cova profunda em meu caminho, mas eles próprios caíram nela."
+                "text": "Meus inimigos me prepararam uma armadilha; estou exausto de tanta angústia. Abriram uma cova profunda em meu caminho, mas eles próprios caíram nela. Interlúdio"
               },
               {
                 "ref": "Ester 7:10",
@@ -7200,12 +7230,12 @@
           },
           {
             "number": 31,
-            "text": "Se o justo recebe o que merece aqui na terra,",
+            "text": "Se o justo recebe o que merece aqui na terra, quanto mais o pecador perverso.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "1 Pedro 4:17–18",
-                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas- novas de Deus!"
+                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas-novas de Deus!"
               },
               {
                 "ref": "Jeremias 25:29",
@@ -7228,9 +7258,10 @@
   "12": {
     "book": "Provérbios",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
-        "title": "quanto mais o pecador perverso.15",
+        "title": "",
         "verses": [
           {
             "number": 1,
@@ -7307,7 +7338,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Provérbios 31:10–25"
+                "ref": "Provérbios 31:10–25",
+                "text": "Quem encontrará uma mulher virtuosa? Ela é mais preciosa que rubis."
               },
               {
                 "ref": "Provérbios 14:1",
@@ -7610,7 +7642,7 @@
               },
               {
                 "ref": "Mateus 26:59",
-                "text": "Lá dentro, os principais sacerdotes e todo o conselho dos líderes do povo154 tentavam encontrar testemunhas que mentissem a respeito de Jesus, para que pudessem condená-lo à morte."
+                "text": "Lá dentro, os principais sacerdotes e todo o conselho dos líderes do povo tentavam encontrar testemunhas que mentissem a respeito de Jesus, para que pudessem condená-lo à morte."
               }
             ]
           },
@@ -7648,7 +7680,7 @@
               },
               {
                 "ref": "Salmos 52:4–5",
-                "text": "Você gosta de destruir os outros com suas palavras, seu mentiroso! Por isso, Deus o destruirá de uma vez por todas; ele o tirará de sua casa e o arrancará da terra dos vivos."
+                "text": "Você gosta de destruir os outros com suas palavras, seu mentiroso! Por isso, Deus o destruirá de uma vez por todas; ele o tirará de sua casa e o arrancará da terra dos vivos. Interlúdio"
               },
               {
                 "ref": "Jó 20:5",
@@ -7870,6 +7902,7 @@
   "13": {
     "book": "Provérbios",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -7889,7 +7922,7 @@
               },
               {
                 "ref": "1 Samuel 2:25",
-                "text": "Se alguém peca contra outra pessoa, Deus poderá12 intervir em favor do culpado. Mas, se alguém peca contra o SENHOR, quem poderá interceder?”. Contudo, os filhos de Eli não deram atenção ao pai, pois o SENHOR já havia decidido matá-los."
+                "text": "Se alguém peca contra outra pessoa, Deus poderá intervir em favor do culpado. Mas, se alguém peca contra o SENHOR, quem poderá interceder?”. Contudo, os filhos de Eli não deram atenção ao pai, pois o SENHOR já havia decidido matá-los."
               },
               {
                 "ref": "Isaías 28:14–15",
@@ -8095,7 +8128,8 @@
                 "text": "O insensato pensa que sua conduta é correta, mas o sábio dá ouvidos aos conselhos. O insensato se ira com facilidade, mas o sábio ignora a ofensa."
               },
               {
-                "ref": "1 Timóteo 6:4"
+                "ref": "1 Timóteo 6:4",
+                "text": "é arrogante e sem entendimento. Vive com o desejo doentio de discutir o significado das palavras e provoca contendas que resultam em inveja, divisão, difamação e suspeitas malignas."
               },
               {
                 "ref": "Tiago 4:1",
@@ -8306,7 +8340,7 @@
               },
               {
                 "ref": "2 Timóteo 2:19",
-                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”."
               }
             ]
           },
@@ -8451,6 +8485,7 @@
   "14": {
     "book": "Provérbios",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -8461,7 +8496,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Provérbios 31:10–31"
+                "ref": "Provérbios 31:10–31",
+                "text": "Quem encontrará uma mulher virtuosa? Ela é mais preciosa que rubis."
               },
               {
                 "ref": "Provérbios 24:3–4",
@@ -8630,7 +8666,7 @@
               },
               {
                 "ref": "Colossenses 1:9–10",
-                "text": "Por isso, desde que ouvimos falar a seu ­respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
+                "text": "Por isso, desde que ouvimos falar a seu respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
               }
             ]
           },
@@ -8998,7 +9034,7 @@
               },
               {
                 "ref": "Lucas 12:19–20",
-                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre- se!’."
+                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre-se!’."
               }
             ]
           },
@@ -9036,7 +9072,7 @@
               },
               {
                 "ref": "Jeremias 32:39–40",
-                "text": "Eu lhes darei um só coração e um só propósito: adorar- me para sempre, para o seu próprio bem e para o bem de seus descendentes."
+                "text": "Eu lhes darei um só coração e um só propósito: adorar-me para sempre, para o seu próprio bem e para o bem de seus descendentes."
               },
               {
                 "ref": "Salmos 115:13–14",
@@ -9078,7 +9114,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 4:20–21",
-                "text": "O povo de Judá e Israel era tão numeroso quanto a areia na beira do mar. Todos estavam muito contentes, e tinham comida e bebida com fartura. 2112 Salomão governava sobre todos os reinos, desde o rio Eufrates, ao norte..."
+                "text": "O povo de Judá e Israel era tão numeroso quanto a areia na beira do mar. Todos estavam muito contentes, e tinham comida e bebida com fartura."
               },
               {
                 "ref": "Êxodo 1:22",
@@ -9090,7 +9126,7 @@
               },
               {
                 "ref": "Êxodo 1:12",
-                "text": "Porém, quanto mais eram oprimidos, mais os israelitas se multiplicavam e se espalhavam, e mais preocupados os ­egípcios ficavam."
+                "text": "Porém, quanto mais eram oprimidos, mais os israelitas se multiplicavam e se espalhavam, e mais preocupados os egípcios ficavam."
               }
             ]
           },
@@ -9258,6 +9294,7 @@
   "15": {
     "book": "Provérbios",
     "chapter": "15",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -9453,7 +9490,7 @@
             "crossReferences": [
               {
                 "ref": "1 Timóteo 6:11",
-                "text": "Você, porém, que é um homem de Deus, ­fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão."
+                "text": "Você, porém, que é um homem de Deus, fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão."
               },
               {
                 "ref": "Provérbios 21:21",
@@ -9507,7 +9544,7 @@
               },
               {
                 "ref": "Salmos 139:8",
-                "text": "Se subo aos céus, lá estás; se desço ao mundo dos mortos,154 lá estás também."
+                "text": "Se subo aos céus, lá estás; se desço ao mundo dos mortos, lá estás também."
               },
               {
                 "ref": "Jó 26:6",
@@ -9798,7 +9835,7 @@
               },
               {
                 "ref": "Salmos 16:11",
-                "text": "Tu me mostrarás o caminho da vida e me darás a alegria de tua presença"
+                "text": "Tu me mostrarás o caminho da vida e me darás a alegria de tua presença e o prazer de viver contigo para sempre."
               },
               {
                 "ref": "Mateus 7:14",
@@ -9893,7 +9930,8 @@
                 "text": "O tolo mostra toda a sua ira, mas o sábio a controla em silêncio."
               },
               {
-                "ref": "Eclesiastes 5:2"
+                "ref": "Eclesiastes 5:2",
+                "text": "Não se precipite em fazer promessas nem em apresentar suas questões a Deus. Afinal, Deus está nos céus, e você, na terra; portanto, fale pouco."
               },
               {
                 "ref": "Provérbios 16:23",
@@ -9935,7 +9973,7 @@
               },
               {
                 "ref": "Apocalipse 22:5",
-                "text": "E não haverá noite; não será necessária a luz da lâmpada nem a luz do sol, pois o Senhor Deus brilhará sobre eles. E reinarão para todo o ­sempre."
+                "text": "E não haverá noite; não será necessária a luz da lâmpada nem a luz do sol, pois o Senhor Deus brilhará sobre eles. E reinarão para todo o sempre."
               },
               {
                 "ref": "Provérbios 25:25",
@@ -9985,7 +10023,7 @@
               },
               {
                 "ref": "Provérbios 1:7",
-                "text": "O temor do SENHOR é o princípio do conhecimento, mas os tolos desprezam a sabedoria e a disciplina. O conselho de um pai: adquira sabedoria"
+                "text": "O temor do SENHOR é o princípio do conhecimento, mas os tolos desprezam a sabedoria e a disciplina."
               },
               {
                 "ref": "Isaías 1:5",
@@ -10008,7 +10046,7 @@
               },
               {
                 "ref": "Provérbios 1:7",
-                "text": "O temor do SENHOR é o princípio do conhecimento, mas os tolos desprezam a sabedoria e a disciplina. O conselho de um pai: adquira sabedoria"
+                "text": "O temor do SENHOR é o princípio do conhecimento, mas os tolos desprezam a sabedoria e a disciplina."
               },
               {
                 "ref": "Salmos 34:11",
@@ -10023,6 +10061,7 @@
   "16": {
     "book": "Provérbios",
     "chapter": "16",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -10046,7 +10085,7 @@
               },
               {
                 "ref": "Filipenses 2:13",
-                "text": "Pois Deus está agindo em vocês, dando- lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
+                "text": "Pois Deus está agindo em vocês, dando-lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
               }
             ]
           },
@@ -10249,7 +10288,7 @@
               },
               {
                 "ref": "Gênesis 44:5",
-                "text": "Por que roubaram o copo de prata151 do meu senhor, que ele usa para prever o futuro? Vocês agiram muito mal!’”."
+                "text": "Por que roubaram o copo de prata do meu senhor, que ele usa para prever o futuro? Vocês agiram muito mal!’”."
               },
               {
                 "ref": "Provérbios 16:12–13",
@@ -10352,7 +10391,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 72:6",
-                "text": "Que o governo do rei seja como a chuva sobre a grama recém- cortada, como os aguaceiros que regam a terra."
+                "text": "Que o governo do rei seja como a chuva sobre a grama recém-cortada, como os aguaceiros que regam a terra."
               },
               {
                 "ref": "Jó 29:23–24",
@@ -10789,6 +10828,7 @@
   "17": {
     "book": "Provérbios",
     "chapter": "17",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -10950,7 +10990,7 @@
               },
               {
                 "ref": "2 Samuel 23:3",
-                "text": "O Deus de Israel falou, a Rocha de Israel me disse: ‘Aquele que governa com justiça, que governa no temor de Deus, 4é como a luz da manhã ao nascer do sol, como a manhã sem nuvens, como o brilho do sol que faz crescer a grama nova depois da chuva’."
+                "text": "O Deus de Israel falou, a Rocha de Israel me disse: ‘Aquele que governa com justiça, que governa no temor de Deus,"
               }
             ]
           },
@@ -11103,7 +11143,7 @@
               },
               {
                 "ref": "2 Timóteo 2:23–24",
-                "text": "Digo mais uma vez: não se envolva em ­discussões tolas e ignorantes que só servem para gerar brigas. O servo do Senhor não deve viver brigando, mas ser amável com todos, apto a ensinar e paciente."
+                "text": "Digo mais uma vez: não se envolva em discussões tolas e ignorantes que só servem para gerar brigas. O servo do Senhor não deve viver brigando, mas ser amável com todos, apto a ensinar e paciente."
               },
               {
                 "ref": "1 Tessalonicenses 4:11",
@@ -11152,7 +11192,8 @@
                 "text": "Como seria bom se o coração deles fosse sempre assim, se estivessem dispostos a me temer e a obedecer a todos os meus mandamentos! Tudo iria bem com eles e seus descendentes para sempre."
               },
               {
-                "ref": "Atos 28:26–27"
+                "ref": "Atos 28:26–27",
+                "text": "‘Vá e diga a este povo: Quando ouvirem o que digo, não entenderão. Quando virem o que faço, não compreenderão."
               }
             ]
           },
@@ -11431,6 +11472,7 @@
   "18": {
     "book": "Provérbios",
     "chapter": "18",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -11465,7 +11507,7 @@
             "crossReferences": [
               {
                 "ref": "Provérbios 1:7",
-                "text": "O temor do SENHOR é o princípio do conhecimento, mas os tolos desprezam a sabedoria e a disciplina. O conselho de um pai: adquira sabedoria"
+                "text": "O temor do SENHOR é o princípio do conhecimento, mas os tolos desprezam a sabedoria e a disciplina."
               },
               {
                 "ref": "Provérbios 12:23",
@@ -11542,7 +11584,7 @@
               },
               {
                 "ref": "Salmos 82:2",
-                "text": "“Até quando tomarão decisões injustas que favorecem a causa dos perversos?"
+                "text": "“Até quando tomarão decisões injustas que favorecem a causa dos perversos? Interlúdio"
               },
               {
                 "ref": "Provérbios 28:21",
@@ -11653,7 +11695,7 @@
               },
               {
                 "ref": "Salmos 144:2",
-                "text": "Ele é meu aliado infalível e minha fortaleza, minha torre segura e meu libertador. Ele é meu escudo, em quem me refugio; faz as nações se sujeitarem158 a mim."
+                "text": "Ele é meu aliado infalível e minha fortaleza, minha torre segura e meu libertador. Ele é meu escudo, em quem me refugio; faz as nações se sujeitarem a mim."
               }
             ]
           },
@@ -11672,11 +11714,11 @@
               },
               {
                 "ref": "Salmos 52:5–7",
-                "text": "Por isso, Deus o destruirá de uma vez por todas; ele o tirará de sua casa e o arrancará da terra dos vivos."
+                "text": "Por isso, Deus o destruirá de uma vez por todas; ele o tirará de sua casa e o arrancará da terra dos vivos. Interlúdio"
               },
               {
                 "ref": "Lucas 12:19–21",
-                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre- se!’."
+                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre-se!’."
               }
             ]
           },
@@ -11904,7 +11946,8 @@
                 "text": "Os pais deixam casas e riquezas como herança para os filhos, mas apenas o SENHOR pode dar uma esposa prudente."
               },
               {
-                "ref": "Provérbios 31:10–31"
+                "ref": "Provérbios 31:10–31",
+                "text": "Quem encontrará uma mulher virtuosa? Ela é mais preciosa que rubis."
               },
               {
                 "ref": "Eclesiastes 9:9",
@@ -11969,6 +12012,7 @@
   "19": {
     "book": "Provérbios",
     "chapter": "19",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -12282,7 +12326,8 @@
                 "text": "O homem que encontra uma esposa encontra um bem precioso e recebe o favor do SENHOR."
               },
               {
-                "ref": "Provérbios 31:10–31"
+                "ref": "Provérbios 31:10–31",
+                "text": "Quem encontrará uma mulher virtuosa? Ela é mais preciosa que rubis."
               },
               {
                 "ref": "Tiago 1:17",
@@ -12573,7 +12618,7 @@
             "crossReferences": [
               {
                 "ref": "1 Timóteo 6:3–5",
-                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente 4é arrogante e sem entendimento. Vive com o desejo doentio d..."
+                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente"
               },
               {
                 "ref": "Marcos 4:24",
@@ -12631,7 +12676,7 @@
               },
               {
                 "ref": "Atos 13:40–41",
-                "text": "Por isso, tomem cuidado para que não se apliquem a vocês as palavras dos profetas: 41‘Olhem, zombadores; fiquem admirados e morram! Pois faço algo em seus dias, algo em que vocês não acreditariam mesmo que lhes contassem’”."
+                "text": "Por isso, tomem cuidado para que não se apliquem a vocês as palavras dos profetas:"
               }
             ]
           }
@@ -12642,6 +12687,7 @@
   "20": {
     "book": "Provérbios",
     "chapter": "20",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -12795,7 +12841,7 @@
               },
               {
                 "ref": "Jeremias 32:39",
-                "text": "Eu lhes darei um só coração e um só propósito: adorar- me para sempre, para o seu próprio bem e para o bem de seus descendentes."
+                "text": "Eu lhes darei um só coração e um só propósito: adorar-me para sempre, para o seu próprio bem e para o bem de seus descendentes."
               },
               {
                 "ref": "2 Coríntios 1:12",
@@ -12975,7 +13021,7 @@
               },
               {
                 "ref": "Eclesiastes 12:9–11",
-                "text": "A terra se beneficia de um rei que cultiva a terra. O significado do hebraico é incerto."
+                "text": "O Mestre era considerado sábio e ensinou ao povo tudo que sabia. Com muita atenção, ouviu, examinou e organizou muitos provérbios."
               }
             ]
           },
@@ -13327,6 +13373,7 @@
   "21": {
     "book": "Provérbios",
     "chapter": "21",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -13572,7 +13619,7 @@
               },
               {
                 "ref": "Deuteronômio 21:21",
-                "text": "Então todos os homens da ci­dade o executarão por apedrejamento. Desse modo, vocês eliminarão o mal do seu meio, e todo o ­Israel ficará sabendo disso e temerá.”"
+                "text": "Então todos os homens da cidade o executarão por apedrejamento. Desse modo, vocês eliminarão o mal do seu meio, e todo o Israel ficará sabendo disso e temerá.”"
               }
             ]
           },
@@ -13725,7 +13772,7 @@
               },
               {
                 "ref": "Isaías 43:3–4",
-                "text": "Pois eu sou o SENHOR, seu Deus, o Santo de Israel, seu Salvador. Dei o Egito como resgate por sua liberdade; em troca de você, dei a Etiópia134 e Sebá."
+                "text": "Pois eu sou o SENHOR, seu Deus, o Santo de Israel, seu Salvador. Dei o Egito como resgate por sua liberdade; em troca de você, dei a Etiópia e Sebá."
               },
               {
                 "ref": "Isaías 53:4–5",
@@ -13748,14 +13795,15 @@
               },
               {
                 "ref": "Salmos 55:6–7",
-                "text": "Quem dera eu tivesse asas como a pomba; voaria para longe e encontraria descanso. Sim, fugiria para bem longe, para o sossego do deserto."
+                "text": "Quem dera eu tivesse asas como a pomba; voaria para longe e encontraria descanso. Sim, fugiria para bem longe, para o sossego do deserto. Interlúdio"
               },
               {
                 "ref": "Salmos 120:5–6",
                 "text": "Como sofro na distante Meseque! É doloroso viver entre os moradores de Quedar! Estou cansado de habitar entre os que odeiam a paz."
               },
               {
-                "ref": "Jeremias 9:2"
+                "ref": "Jeremias 9:2",
+                "text": "Quem dera pudesse ir para bem longe, morar numa cabana no deserto e me esquecer do meu povo! Pois todos são adúlteros, um bando de traidores."
               }
             ]
           },
@@ -14038,6 +14086,7 @@
   "22": {
     "book": "Provérbios",
     "chapter": "22",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -14160,7 +14209,7 @@
             "crossReferences": [
               {
                 "ref": "Efésios 6:4",
-                "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem- nos com a disciplina e a instrução que vêm do Senhor."
+                "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem-nos com a disciplina e a instrução que vêm do Senhor."
               },
               {
                 "ref": "Deuteronômio 6:7",
@@ -14422,7 +14471,7 @@
               },
               {
                 "ref": "Eclesiastes 7:25",
-                "text": "Procurei por toda parte, decidido a encontrar sabedoria e entender a razão dos acontecimentos. Resolvi provar a mim mesmo que a perversidade é tolice, e a insensatez, ­loucura."
+                "text": "Procurei por toda parte, decidido a encontrar sabedoria e entender a razão dos acontecimentos. Resolvi provar a mim mesmo que a perversidade é tolice, e a insensatez, loucura."
               },
               {
                 "ref": "Provérbios 2:2–5",
@@ -14460,7 +14509,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 62:8",
-                "text": "Ó meu povo, confie nele em todo tempo; derrame o coração diante dele, pois Deus é nosso refúgio."
+                "text": "Ó meu povo, confie nele em todo tempo; derrame o coração diante dele, pois Deus é nosso refúgio. Interlúdio"
               },
               {
                 "ref": "Isaías 12:2",
@@ -14654,7 +14703,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 27:17"
+                "ref": "Deuteronômio 27:17",
+                "text": "‘Maldito quem roubar a propriedade do próximo, movendo um marco de divisa’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Deuteronômio 19:14",
@@ -14700,13 +14750,14 @@
   "23": {
     "book": "Provérbios",
     "chapter": "23",
+    "verified": true,
     "sections": [
       {
         "title": "",
         "verses": [
           {
             "number": 1,
-            "text": "Quando se sentar para comer com uma autoridade, preste atenção a quem está32 diante de você.",
+            "text": "Quando se sentar para comer com uma autoridade, preste atenção a quem está diante de você.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14913,7 +14964,8 @@
                 "text": "Assim diz o SENHOR: Sejam imparciais e justos. Ajudem os que são explorados e livrem-nos de seus opressores. Abandonem suas maldades: não maltratem os estrangeiros, nem os órfãos, nem as viúvas e parem de matar inocentes!"
               },
               {
-                "ref": "Deuteronômio 27:17"
+                "ref": "Deuteronômio 27:17",
+                "text": "‘Maldito quem roubar a propriedade do próximo, movendo um marco de divisa’. E todo o povo responderá: ‘Amém!’."
               }
             ]
           },
@@ -15460,7 +15512,7 @@
               },
               {
                 "ref": "1 Coríntios 15:32–34",
-                "text": "E, se não haverá ressurreição dos mortos, de que me adiantou ter lutado contra feras, isto é, aquela gente de Éfeso?63 Se não há ressurreição, “comamos e bebamos, porque amanhã morreremos!”."
+                "text": "E, se não haverá ressurreição dos mortos, de que me adiantou ter lutado contra feras, isto é, aquela gente de Éfeso? Se não há ressurreição, “comamos e bebamos, porque amanhã morreremos!”."
               },
               {
                 "ref": "Isaías 22:13",
@@ -15475,6 +15527,7 @@
   "24": {
     "book": "Provérbios",
     "chapter": "24",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -15582,7 +15635,7 @@
               },
               {
                 "ref": "Colossenses 1:11",
-                "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam."
+                "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam. Que sejam cheios de alegria"
               },
               {
                 "ref": "Provérbios 8:14",
@@ -15728,7 +15781,7 @@
               },
               {
                 "ref": "Jó 29:17",
-                "text": "Quebrava as mandíbulas dos ímpios e de seus dentes resgatava as vítimas. 18‘Por certo morrerei rodeado por minha família’, pensava, ‘depois de uma vida longa e boa."
+                "text": "Quebrava as mandíbulas dos ímpios e de seus dentes resgatava as vítimas."
               }
             ]
           },
@@ -15766,7 +15819,7 @@
               },
               {
                 "ref": "Cânticos 5:1",
-                "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite. As mulheres de Jerusalém Comam e bebam, amado e amada! Sim, bebam de seu amor quanto puderem!"
+                "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite."
               },
               {
                 "ref": "Provérbios 25:16",
@@ -16001,7 +16054,7 @@
               },
               {
                 "ref": "João 7:24",
-                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”. Jesus é o Messias?"
+                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”."
               }
             ]
           },
@@ -16112,7 +16165,7 @@
               },
               {
                 "ref": "Mateus 26:59–60",
-                "text": "Lá dentro, os principais sacerdotes e todo o conselho dos líderes do povo154 tentavam encontrar testemunhas que mentissem a respeito de Jesus, para que pudessem condená-lo à morte."
+                "text": "Lá dentro, os principais sacerdotes e todo o conselho dos líderes do povo tentavam encontrar testemunhas que mentissem a respeito de Jesus, para que pudessem condená-lo à morte."
               }
             ]
           },
@@ -16200,7 +16253,7 @@
               },
               {
                 "ref": "Salmos 4:4",
-                "text": "Não pequem ao permitir que a ira os controle; reflitam durante a noite e permaneçam em silêncio."
+                "text": "Não pequem ao permitir que a ira os controle; reflitam durante a noite e permaneçam em silêncio. Interlúdio"
               },
               {
                 "ref": "Lucas 2:19",
@@ -16253,13 +16306,14 @@
   "25": {
     "book": "Provérbios",
     "chapter": "25",
+    "verified": true,
     "sections": [
       {
         "title": "Mais provérbios de Salomão",
         "verses": [
           {
             "number": 1,
-            "text": "Estes são mais provérbios de Salomão, reu­nidos pelos conselheiros de Ezequias, rei de Judá.",
+            "text": "Estes são mais provérbios de Salomão, reunidos pelos conselheiros de Ezequias, rei de Judá.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -16666,7 +16720,7 @@
               },
               {
                 "ref": "2 Crônicas 28:20–21",
-                "text": "Quando Tiglate-Pileser,129 rei da Assíria, chegou, atacou Acaz em vez de ajudá-lo."
+                "text": "Quando Tiglate-Pileser, rei da Assíria, chegou, atacou Acaz em vez de ajudá-lo."
               }
             ]
           },
@@ -16865,7 +16919,7 @@
               },
               {
                 "ref": "2 Crônicas 32:5",
-                "text": "Então Ezequias se dedicou a reparar todos os trechos onde o muro estava quebrado, construiu torres e fez outro muro do lado de fora do primeiro. Também reforçou o aterro139 da Cidade de Davi e fabricou grande quantidade de armas e escudos."
+                "text": "Então Ezequias se dedicou a reparar todos os trechos onde o muro estava quebrado, construiu torres e fez outro muro do lado de fora do primeiro. Também reforçou o aterro da Cidade de Davi e fabricou grande quantidade de armas e escudos."
               }
             ]
           }
@@ -16876,6 +16930,7 @@
   "26": {
     "book": "Provérbios",
     "chapter": "26",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -16945,7 +17000,7 @@
               },
               {
                 "ref": "2 Coríntios 13:2",
-                "text": "Sm 7.."
+                "text": "Em minha segunda visita, já adverti aqueles que estavam em pecado. Agora, como naquela ocasião, volto a adverti-los e também os demais de que, da próxima vez, não os pouparei."
               }
             ]
           },
@@ -17082,7 +17137,7 @@
               },
               {
                 "ref": "Provérbios 11:31",
-                "text": "Se o justo recebe o que merece aqui na terra,"
+                "text": "Se o justo recebe o que merece aqui na terra, quanto mais o pecador perverso."
               }
             ]
           },
@@ -17093,7 +17148,7 @@
             "crossReferences": [
               {
                 "ref": "2 Pedro 2:22",
-                "text": "Neles se confirmam os provérbios: “O cão volta a seu próprio vômito”12 e “A porca lavada volta a revolver-se na lama”."
+                "text": "Neles se confirmam os provérbios: “O cão volta a seu próprio vômito” e “A porca lavada volta a revolver-se na lama”."
               },
               {
                 "ref": "Mateus 12:45",
@@ -17211,7 +17266,7 @@
               },
               {
                 "ref": "2 Timóteo 2:23–24",
-                "text": "Digo mais uma vez: não se envolva em ­discussões tolas e ignorantes que só servem para gerar brigas. O servo do Senhor não deve viver brigando, mas ser amável com todos, apto a ensinar e paciente."
+                "text": "Digo mais uma vez: não se envolva em discussões tolas e ignorantes que só servem para gerar brigas. O servo do Senhor não deve viver brigando, mas ser amável com todos, apto a ensinar e paciente."
               },
               {
                 "ref": "Provérbios 18:6",
@@ -17237,7 +17292,8 @@
                 "text": "Mas tenham cuidado, vocês que vivem em sua própria luz e se aquecem em seu próprio fogo. Esta é a recompensa que receberão de mim: em breve cairão em grande tormento."
               },
               {
-                "ref": "Provérbios 7:23"
+                "ref": "Provérbios 7:23",
+                "text": "à espera da flecha que lhe atravessará o coração, como o pássaro que voa direto para o laço, sem saber que lhe custará a vida."
               },
               {
                 "ref": "Gênesis 49:23",
@@ -17393,7 +17449,8 @@
                 "text": "Não me arrastes com os perversos, com os que praticam o mal, que dirigem palavras amigáveis ao próximo, enquanto tramam maldades no coração."
               },
               {
-                "ref": "Jeremias 9:2–8"
+                "ref": "Jeremias 9:2–8",
+                "text": "Quem dera pudesse ir para bem longe, morar numa cabana no deserto e me esquecer do meu povo! Pois todos são adúlteros, um bando de traidores."
               }
             ]
           },
@@ -17473,6 +17530,7 @@
   "27": {
     "book": "Provérbios",
     "chapter": "27",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -17488,7 +17546,7 @@
               },
               {
                 "ref": "Lucas 12:19–20",
-                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre- se!’."
+                "text": "Então direi a mim mesmo: Amigo, você guardou o suficiente para muitos anos. Agora descanse! Coma, beba e alegre-se!’."
               },
               {
                 "ref": "2 Coríntios 6:2",
@@ -17588,7 +17646,7 @@
               },
               {
                 "ref": "Mateus 18:15",
-                "text": "“Se um irmão pecar contra você,100 fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
+                "text": "“Se um irmão pecar contra você, fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
               }
             ]
           },
@@ -17703,7 +17761,7 @@
               },
               {
                 "ref": "1 Reis 12:6–8",
-                "text": "O rei Roboão discutiu o assunto com os homens mais velhos que haviam sido conselheiros de seu pai, Salomão. “O que vocês aconselham?”, perguntou ele. “Como devo responder a este ­povo?”"
+                "text": "O rei Roboão discutiu o assunto com os homens mais velhos que haviam sido conselheiros de seu pai, Salomão. “O que vocês aconselham?”, perguntou ele. “Como devo responder a este povo?”"
               }
             ]
           },
@@ -17940,7 +17998,7 @@
               },
               {
                 "ref": "Malaquias 3:3",
-                "text": "Ele se sentará como refinador de prata e queimará toda impureza. Purificará os levitas e os refinará como ouro e prata, para que voltem a oferecer sacri­fícios aceitáveis ao SENHOR."
+                "text": "Ele se sentará como refinador de prata e queimará toda impureza. Purificará os levitas e os refinará como ouro e prata, para que voltem a oferecer sacrifícios aceitáveis ao SENHOR."
               }
             ]
           },
@@ -17978,7 +18036,7 @@
               },
               {
                 "ref": "João 21:15–17",
-                "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”.100 “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus."
+                "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”. “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus."
               },
               {
                 "ref": "Gênesis 33:13",
@@ -17986,7 +18044,7 @@
               },
               {
                 "ref": "2 Crônicas 26:10",
-                "text": "Também construiu fortalezas no deserto e cavou muitas cisternas, pois tinha grandes rebanhos nas colinas de Judá122 e na planície. Era um homem que amava a terra. Tinha muitos trabalhadores que cuidavam de seus campos e..."
+                "text": "Também construiu fortalezas no deserto e cavou muitas cisternas, pois tinha grandes rebanhos nas colinas de Judá e na planície. Era um homem que amava a terra. Tinha muitos trabalhadores que cuidavam de seus campos e vin..."
               }
             ]
           },
@@ -18061,6 +18119,7 @@
   "28": {
     "book": "Provérbios",
     "chapter": "28",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -18118,7 +18177,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 18:28–30",
-                "text": "“No entanto, quando o servo saiu da presença do senhor, foi procurar outro servo que trabalhava com ele e que lhe devia cem moedas de prata.106 Agarrou-o pelo pescoço e exigiu que ele pagasse de imediato."
+                "text": "“No entanto, quando o servo saiu da presença do senhor, foi procurar outro servo que trabalhava com ele e que lhe devia cem moedas de prata. Agarrou-o pelo pescoço e exigiu que ele pagasse de imediato."
               }
             ]
           },
@@ -18367,7 +18426,7 @@
               },
               {
                 "ref": "Isaías 66:2",
-                "text": "Co 6.."
+                "text": "Minhas mãos criaram os céus e a terra; eles e tudo que neles há são meus. Eu, o SENHOR, falei! “Abençoarei os de coração humilde e oprimido, os que tremem diante de minha palavra."
               },
               {
                 "ref": "Jeremias 32:40",
@@ -18436,7 +18495,7 @@
               },
               {
                 "ref": "Êxodo 21:14",
-                "text": "Se, contudo, alguém matar outra pessoa intencional­mente, o assassino será preso e executado, mesmo que tenha buscado refúgio em meu altar."
+                "text": "Se, contudo, alguém matar outra pessoa intencionalmente, o assassino será preso e executado, mesmo que tenha buscado refúgio em meu altar."
               },
               {
                 "ref": "Números 35:14–34",
@@ -18463,7 +18522,7 @@
               },
               {
                 "ref": "Apocalipse 3:3",
-                "text": "Lembre-se do que ouviu e no que acreditou no princípio; agarre-se a isso com firmeza. Arrependa- se. Se não despertar, virei subitamente até você, como um ladrão."
+                "text": "Lembre-se do que ouviu e no que acreditou no princípio; agarre-se a isso com firmeza. Arrependa-se. Se não despertar, virei subitamente até você, como um ladrão."
               }
             ]
           },
@@ -18520,7 +18579,7 @@
             "crossReferences": [
               {
                 "ref": "Ezequiel 13:19",
-                "text": "Vocês me desonram no meio de meu povo em troca de uns punhados de cevada ou um pedaço de pão. Quando mentem ao meu povo, que gosta de ouvir mentiras, vocês matam aqueles que não ­deviam morrer e prometem vida àqueles que não deviam viver."
+                "text": "Vocês me desonram no meio de meu povo em troca de uns punhados de cevada ou um pedaço de pão. Quando mentem ao meu povo, que gosta de ouvir mentiras, vocês matam aqueles que não deviam morrer e prometem vida àqueles que não deviam viver."
               },
               {
                 "ref": "Provérbios 18:5",
@@ -18570,7 +18629,7 @@
               },
               {
                 "ref": "Mateus 18:15",
-                "text": "“Se um irmão pecar contra você,100 fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
+                "text": "“Se um irmão pecar contra você, fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
               },
               {
                 "ref": "Salmos 141:5",
@@ -18589,7 +18648,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 15:4–6",
-                "text": "Pois Deus ordenou: ‘Honre seu pai e sua mãe’81 e ‘Quem insultar seu pai ou sua mãe será executado’."
+                "text": "Pois Deus ordenou: ‘Honre seu pai e sua mãe’ e ‘Quem insultar seu pai ou sua mãe será executado’."
               },
               {
                 "ref": "Provérbios 19:26",
@@ -18704,6 +18763,7 @@
   "29": {
     "book": "Provérbios",
     "chapter": "29",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -18723,7 +18783,7 @@
               },
               {
                 "ref": "1 Samuel 2:25",
-                "text": "Se alguém peca contra outra pessoa, Deus poderá12 intervir em favor do culpado. Mas, se alguém peca contra o SENHOR, quem poderá interceder?”. Contudo, os filhos de Eli não deram atenção ao pai, pois o SENHOR já havia decidido matá-los."
+                "text": "Se alguém peca contra outra pessoa, Deus poderá intervir em favor do culpado. Mas, se alguém peca contra o SENHOR, quem poderá interceder?”. Contudo, os filhos de Eli não deram atenção ao pai, pois o SENHOR já havia decidido matá-los."
               },
               {
                 "ref": "Zacarias 7:11–14",
@@ -18750,7 +18810,7 @@
               },
               {
                 "ref": "Eclesiastes 10:5",
-                "text": "Observei outro mal debaixo do sol."
+                "text": "Observei outro mal debaixo do sol. Governantes cometem um erro grave"
               }
             ]
           },
@@ -18910,7 +18970,8 @@
                 "text": "“Não deem o que é santo aos cães, nem joguem pérolas aos porcos; pois os porcos pisotearão as pérolas, e os cães se voltarão contra vocês e os atacarão.”"
               },
               {
-                "ref": "Mateus 11:17–19"
+                "ref": "Mateus 11:17–19",
+                "text": "‘Tocamos flauta, e vocês não dançaram; entoamos lamentos, e vocês não se entristeceram’."
               }
             ]
           },
@@ -19150,7 +19211,8 @@
                 "text": "Quem tem entendimento controla sua raiva; quem se ira facilmente demonstra grande insensatez."
               },
               {
-                "ref": "Eclesiastes 5:2"
+                "ref": "Eclesiastes 5:2",
+                "text": "Não se precipite em fazer promessas nem em apresentar suas questões a Deus. Afinal, Deus está nos céus, e você, na terra; portanto, fale pouco."
               }
             ]
           },
@@ -19215,7 +19277,7 @@
               },
               {
                 "ref": "Isaías 66:2",
-                "text": "Co 6.."
+                "text": "Minhas mãos criaram os céus e a terra; eles e tudo que neles há são meus. Eu, o SENHOR, falei! “Abençoarei os de coração humilde e oprimido, os que tremem diante de minha palavra."
               }
             ]
           },
@@ -19318,6 +19380,7 @@
   "30": {
     "book": "Provérbios",
     "chapter": "30",
+    "verified": true,
     "sections": [
       {
         "title": "Ditados de Agur",
@@ -19329,7 +19392,7 @@
             "crossReferences": [
               {
                 "ref": "Provérbios 31:1",
-                "text": "Pe 4.."
+                "text": "Os ditados do rei Lemuel contêm esta mensagem, que sua mãe lhe ensinou:"
               },
               {
                 "ref": "2 Pedro 1:19–21",
@@ -19435,7 +19498,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 12:32"
+                "ref": "Deuteronômio 12:32",
+                "text": "“Portanto, tenham o cuidado de cumprir todas as ordens que lhes dou. Não acrescentem nem tirem coisa alguma.”"
               },
               {
                 "ref": "Deuteronômio 4:2",
@@ -19470,7 +19534,7 @@
               },
               {
                 "ref": "Salmos 21:2",
-                "text": "Concedeste o desejo de seu coração e não negaste nada do que ele pediu."
+                "text": "Concedeste o desejo de seu coração e não negaste nada do que ele pediu. Interlúdio"
               }
             ]
           },
@@ -19527,7 +19591,7 @@
             "crossReferences": [
               {
                 "ref": "Eclesiastes 7:21",
-                "text": "Não escute a conversa alheia às escondidas; pode ser que ouça seu servo falar mal a seu ­respeito."
+                "text": "Não escute a conversa alheia às escondidas; pode ser que ouça seu servo falar mal a seu respeito."
               },
               {
                 "ref": "Romanos 14:4",
@@ -19557,7 +19621,8 @@
                 "text": "O olho de quem zomba do pai e despreza as instruções da mãe será arrancado pelos corvos do vale e devorado pelos abutres."
               },
               {
-                "ref": "Deuteronômio 27:16"
+                "ref": "Deuteronômio 27:16",
+                "text": "‘Maldito quem desonrar pai ou mãe’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Êxodo 21:17",
@@ -19626,7 +19691,7 @@
               },
               {
                 "ref": "Jó 29:17",
-                "text": "Quebrava as mandíbulas dos ímpios e de seus dentes resgatava as vítimas. 18‘Por certo morrerei rodeado por minha família’, pensava, ‘depois de uma vida longa e boa."
+                "text": "Quebrava as mandíbulas dos ímpios e de seus dentes resgatava as vítimas."
               },
               {
                 "ref": "Apocalipse 9:8",
@@ -19974,6 +20039,7 @@
   "31": {
     "book": "Provérbios",
     "chapter": "31",
+    "verified": true,
     "sections": [
       {
         "title": "Ditados do rei Lemuel",
@@ -20153,7 +20219,7 @@
               },
               {
                 "ref": "Deuteronômio 1:16",
-                "text": "“Naquela ocasião, ordenei aos juízes: ‘Deem atenção aos casos de seus irmãos israelitas e também dos estrangeiros que vivem entre vocês."
+                "text": "“Naquela ocasião, ordenei aos juízes: ‘Deem atenção aos casos de seus irmãos israelitas e também dos estrangeiros que vivem entre vocês. Sejam completamente justos em todas as suas decisões"
               }
             ]
           }
@@ -20163,7 +20229,7 @@
         "title": "A mulher virtuosa",
         "verses": [
           {
-            "number": 1052,
+            "number": 10,
             "text": "Quem encontrará uma mulher virtuosa? Ela é mais preciosa que rubis.",
             "isJesusWords": false,
             "crossReferences": []
@@ -20190,7 +20256,7 @@
             "crossReferences": [
               {
                 "ref": "1 Samuel 25:18–22",
-                "text": "Sem perder tempo, Abigail providenciou duzentos pães, duas vasilhas de couro cheias de vinho, cinco ovelhas preparadas, cinco cestos de grãos tostados, cem bolos de passas e duzentos bolos de figo."
+                "text": "Sem perder tempo, Abigail providenciou duzentos pães, duas vasilhas de couro cheias de vinho, cinco ovelhas preparadas, cinco cestos de grãos tostados, cem bolos de passas e duzentos bolos de figo. Colocou tudo em jumentos"
               },
               {
                 "ref": "1 Samuel 25:26–27",
@@ -20232,7 +20298,7 @@
               },
               {
                 "ref": "Ezequiel 27:3–36",
-                "text": "essa cidade que é entrada para o mar, que estabelece relações comerciais com muitas nações. Transmita- lhe a seguinte mensagem do SENHOR Soberano: “Ó cidade de Tiro, você se gloriava: ‘Minha beleza é perfeita!’."
+                "text": "essa cidade que é entrada para o mar, que estabelece relações comerciais com muitas nações. Transmita-lhe a seguinte mensagem do SENHOR Soberano: “Ó cidade de Tiro, você se gloriava: ‘Minha beleza é perfeita!’."
               }
             ]
           },
@@ -20308,7 +20374,7 @@
             "crossReferences": [
               {
                 "ref": "1 Tessalonicenses 2:9",
-                "text": "Não se lembram, irmãos, de como trabalhamos arduamente entre vocês? Noite e dia nos esforçamos para obter sustento, a fim de não sermos um peso para ninguém enquanto lhes anunciávamos as boas- novas de Deus."
+                "text": "Não se lembram, irmãos, de como trabalhamos arduamente entre vocês? Noite e dia nos esforçamos para obter sustento, a fim de não sermos um peso para ninguém enquanto lhes anunciávamos as boas-novas de Deus."
               },
               {
                 "ref": "Mateus 25:3–10",
@@ -20560,7 +20626,7 @@
             "crossReferences": [
               {
                 "ref": "Provérbios 1:7",
-                "text": "O temor do SENHOR é o princípio do conhecimento, mas os tolos desprezam a sabedoria e a disciplina. O conselho de um pai: adquira sabedoria"
+                "text": "O temor do SENHOR é o princípio do conhecimento, mas os tolos desprezam a sabedoria e a disciplina."
               },
               {
                 "ref": "1 Pedro 3:4–5",
@@ -20578,7 +20644,7 @@
           },
           {
             "number": 31,
-            "text": "Recompensem-na por tudo que ela faz; que suas obras a elogiem publicamente. 1 1. Em hebraico, o Sheol. 2 2. Em hebraico, para os espíritos dos mortos. 3 3. A Septuaginta traz e castiga a quem ele aceita como filho. Comparar com Hb 12.. 4 5. Em hebraico, ao Sheol. 5 5. Em hebraico, Beba água de sua própria cisterna, / água que brota de seu próprio poço. 6 5.16 hebraico, Por que derramar suas fontes nas ruas, / seus riachos nas praças da cidade? 7 6. Em hebraico, a prostituta o reduzirá a um pedaço de pão. 8 7. Em hebraico, quando a lua estiver cheia. 9 7. Conforme a Septuaginta e a versão siríaca; o hebraico traz como as algemas para a disciplina do tolo. 10 7. Em hebraico, o Sheol. 11 8. Alguns manuscritos hebraicos e a Septuaginta trazem e os nobres são juízes sobre a terra. 12 9. Em hebraico, do Sheol. 13 10. Conforme a Septuaginta; o hebraico traz mas o insensato que não mede o que diz causa a própria ruína. 14 11. Ou quem ganha almas é sábio. 15 11. A Septuaginta traz Se o justo é salvo por um triz, / o que será do pecador perverso?",
+            "text": "Recompensem-na por tudo que ela faz; que suas obras a elogiem publicamente.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -20591,63 +20657,11 @@
               },
               {
                 "ref": "Romanos 16:1–4",
-                "text": "Rs 19.."
+                "text": "Recomendo-lhes nossa irmã Febe, que serve à igreja em Cencreia."
               },
               {
                 "ref": "Mateus 7:16",
                 "text": "Vocês os identificarão por seus frutos. É possível colher uvas de espinheiros ou figos de ervas daninhas?"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Comparar com",
-        "verses": [
-          {
-            "number": 1,
-            "text": "Pe 4.. 16 12. Ou O justo é cauteloso nas amizades, ou O justo é livrado do mal. O significado do hebraico é incerto. 17 13. Conforme a Septuaginta; o hebraico traz o caminho do desleal é duradouro. 18 14. Em hebraico, O sábio teme. 19 14. Ou herdam a insensatez. 20 14. Conforme a Septuaginta e a versão siríaca; o hebraico omite não. 21 15. Em hebraico, O Sheol e o Abadom. 22 15. Em hebraico, o Sheol. 23 19. Ou mas não se exceda a ponto de matá-lo. 24 20. Em hebraico, Uma pedra e uma pedra, um efa e um efa. 25 20. A tradição oral hebraica traz de uma mulher promíscua. 26 20. Ou O espírito humano é a luz do SENHOR. 27 20. O significado do hebraico é incerto. 28 21. Conforme a Septuaginta; o hebraico traz é neblina para quem procura a morte. 29 21. Ou O homem justo. 30 22. A Septuaginta inclui outro provérbio: Deus abençoa o homem que dá com alegria, / mas as obras inúteis chegarão ao fim.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Provérbios 6:20",
-                "text": "Meu filho, obedeça aos mandamentos de seu pai e não deixe de lado a instrução de sua mãe."
-              },
-              {
-                "ref": "Provérbios 1:8",
-                "text": "Meu filho, preste atenção à correção de seu pai e não deixe de lado a instrução de sua mãe."
-              },
-              {
-                "ref": "2 Timóteo 1:5",
-                "text": "Lembro-me de sua fé sincera, como era a de sua avó, Loide, e de sua mãe, Eunice, e sei que em você essa mesma fé continua firme."
-              },
-              {
-                "ref": "2 Timóteo 3:15",
-                "text": "Desde a infância lhe foram ensinadas as Sagradas Escrituras, que lhe deram sabedoria para receber a salvação que vem pela fé em Cristo Jesus."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Comparar com",
-        "verses": [
-          {
-            "number": 2,
-            "text": "Co 9.. 31 22. Ou ditados excelentes; o significado do hebraico é incerto. 32 23. Ou no que for colocado. 33 23.2 hebraico, ponha uma faca na garganta. 34 23. O significado do hebraico é incerto. 35 23. Ou redentor. 36 23. Em hebraico, do Sheol. 37 24. Conforme a Septuaginta; o hebraico traz O homem sábio é força. 38 25. Conforme a Septuaginta; o hebraico traz derramar vinagre sobre a soda. 39 26. Conforme a Septuaginta; o hebraico traz ardentes. 40 26. Em hebraico, de sete males. 41 27. Conforme a Septuaginta e a Vulgata (ver tb. Pv 20.16); o hebraico traz de uma mulher promíscua. 42 27. Em hebraico, O Sheol e o Abadom. 43 27. Ou pela bajulação. 44 28. Ou Quem teme o SENHOR; o hebraico traz Aquele que teme. 45 29. Ou Os sanguinários odeiam o íntegro / e procuram matar os justos; o hebraico traz Os sanguinários odeiam o íntegro; / quanto aos justos, eles procuram sua vida. 46 30.1a Ou filho de Jaque, de Massá; ou filho de Jaque, um oráculo. 47 30.1b Ou O homem declara isto a Itiel, / a Itiel e a Ucal. 48 30.15 hebraico, tem duas filhas que gritam: “Dá, dá!”. 49 30. Em hebraico, o Sheol. 50 30. Ou híraces, ou arganazes. 51 31. Ou de Lemuel, rei de Massá; ou do rei Lemuel, um oráculo. 52 31. Os versículos 10-31 formam um poema acróstico; cada versículo começa com uma letra sucessiva do alfabeto hebraico. 53 31. Conforme a Septuaginta e a Vulgata; o hebraico traz escarlates.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Isaías 49:15",
-                "text": "“Pode a mãe se esquecer do filho que ainda mama? Pode deixar de sentir amor pelo filho que ela deu à luz? Mesmo que isso fosse possível, eu não me esqueceria de vocês!"
-              },
-              {
-                "ref": "1 Samuel 1:11",
-                "text": "Então fez o seguinte voto: “Ó SENHOR dos Exércitos, se olhares com atenção para o sofrimento de tua serva, se responderes à minha oração e me deres um filho, eu o dedicarei para sempre ao SENHOR, e o cabelo dele nunca será cortado”."
-              },
-              {
-                "ref": "1 Samuel 1:28",
-                "text": "Agora, eu o dedico ao SENHOR. Por toda a sua vida ele pertencerá ao SENHOR”. E ali adoraram o SENHOR."
               }
             ]
           }

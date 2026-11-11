@@ -2,6 +2,7 @@
   "1": {
     "book": "Rute",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "A família de Elimeleque se muda para Moabe",
@@ -39,7 +40,8 @@
                 "text": "Assim, Raquel morreu e foi sepultada junto ao caminho para Efrata (ou seja, Belém)."
               },
               {
-                "ref": "Miqueias 5:2"
+                "ref": "Miqueias 5:2",
+                "text": "Mas você, ó Belém Efrata, é apenas uma pequena vila entre todo o povo de Judá. E, no entanto, um governante de Israel, cujas origens são do passado distante, sairá de você em meu favor."
               },
               {
                 "ref": "1 Samuel 17:21",
@@ -277,7 +279,7 @@
               },
               {
                 "ref": "Salmos 32:4",
-                "text": "Dia e noite, tua mão pesava sobre mim; minha força evaporou como água no calor do verão."
+                "text": "Dia e noite, tua mão pesava sobre mim; minha força evaporou como água no calor do verão. Interlúdio"
               },
               {
                 "ref": "Juízes 2:15",
@@ -475,7 +477,8 @@
                 "text": "Os homens de Gibeom os executaram no monte, diante do SENHOR. Os sete foram mortos ao mesmo tempo, no início da colheita da cevada."
               },
               {
-                "ref": "Êxodo 9:31–32"
+                "ref": "Êxodo 9:31–32",
+                "text": "(Todo o linho e a cevada foram destruídos pelo granizo, pois a cevada estava na espiga, e o linho, em flor. O trigo comum e o trigo candeal, porém, foram poupados, pois ainda não tinham brotado do solo.)"
               }
             ]
           }
@@ -486,6 +489,7 @@
   "2": {
     "book": "Rute",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Rute trabalha no campo de Boaz",
@@ -547,7 +551,7 @@
               },
               {
                 "ref": "Mateus 10:29",
-                "text": "Quanto custam dois pardais? Uma moeda de cobre?61 No entanto, nenhum deles cai no chão sem o conhecimento de seu Pai."
+                "text": "Quanto custam dois pardais? Uma moeda de cobre? No entanto, nenhum deles cai no chão sem o conhecimento de seu Pai."
               },
               {
                 "ref": "Lucas 10:31",
@@ -685,7 +689,7 @@
               },
               {
                 "ref": "Salmos 105:15",
-                "text": "“Não toquem em meu povo escolhido,133 não façam mal a meus profetas”."
+                "text": "“Não toquem em meu povo escolhido, não façam mal a meus profetas”."
               }
             ]
           },
@@ -849,10 +853,11 @@
               },
               {
                 "ref": "Ezequiel 45:11–12",
-                "text": "O ômer171 será a unidade padrão para medir volume, e o efa e o bato172 medirão, cada um, um décimo de ômer."
+                "text": "O ômer será a unidade padrão para medir volume, e o efa e o bato medirão, cada um, um décimo de ômer."
               },
               {
-                "ref": "Êxodo 16:36"
+                "ref": "Êxodo 16:36",
+                "text": "(A vasilha usada para medir o maná continha um ômer, que era a décima parte da medida padrão.)"
               }
             ]
           },
@@ -985,6 +990,7 @@
   "3": {
     "book": "Rute",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "O encontro na eira",
@@ -1122,7 +1128,7 @@
               },
               {
                 "ref": "Juízes 19:9",
-                "text": "Mais tarde, quando o homem, a con­cubina e o servo se preparavam para partir, o sogro disse: “Já está escurecendo. Passe a noite aqui e alegre seu coração. Amanhã você pode levantar cedo e partir”."
+                "text": "Mais tarde, quando o homem, a concubina e o servo se preparavam para partir, o sogro disse: “Já está escurecendo. Passe a noite aqui e alegre seu coração. Amanhã você pode levantar cedo e partir”."
               },
               {
                 "ref": "2 Samuel 13:28",
@@ -1192,7 +1198,8 @@
                 "text": "“Há muitas mulheres virtuosas neste mundo, mas você supera todas elas!”."
               },
               {
-                "ref": "Provérbios 31:10"
+                "ref": "Provérbios 31:10",
+                "text": "Quem encontrará uma mulher virtuosa? Ela é mais preciosa que rubis."
               },
               {
                 "ref": "Provérbios 12:4",
@@ -1244,7 +1251,7 @@
           },
           {
             "number": 14,
-            "text": "Rute ficou deitada aos pés de Boaz até de manhã, mas levantou- se antes de raiar o dia, pois Boaz tinha dito: “Ninguém deve saber que uma mulher esteve na eira”.",
+            "text": "Rute ficou deitada aos pés de Boaz até de manhã, mas levantou-se antes de raiar o dia, pois Boaz tinha dito: “Ninguém deve saber que uma mulher esteve na eira”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1282,15 +1289,10 @@
           },
           {
             "number": 16,
-            "text": "Quando Rute voltou à sua sogra, ela lhe perguntou: “Como foi, minha filha?”.",
+            "text": "Quando Rute voltou à sua sogra, ela lhe perguntou: “Como foi, minha filha?”. Rute contou a Noemi tudo que Boaz havia feito",
             "isJesusWords": false,
             "crossReferences": []
-          }
-        ]
-      },
-      {
-        "title": "Rute contou a Noemi tudo que Boaz havia feito",
-        "verses": [
+          },
           {
             "number": 17,
             "text": "e acrescentou: “Ele me deu estas seis medidas de cevada e disse: ‘Não volte para sua sogra de mãos vazias’”.",
@@ -1312,7 +1314,7 @@
               },
               {
                 "ref": "Isaías 30:7",
-                "text": "as promessas do Egito não têm valor algum! Por isso eu o chamo de Raabe, o Dragão Inofensivo.102 Advertência para o povo rebelde de Judá"
+                "text": "as promessas do Egito não têm valor algum! Por isso eu o chamo de Raabe, o Dragão Inofensivo."
               }
             ]
           }
@@ -1323,6 +1325,7 @@
   "4": {
     "book": "Rute",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Boaz se casa com Rute",
@@ -1519,10 +1522,12 @@
                 "text": "Lia engravidou e deu à luz um filho. Chamou-o de Rúben, pois disse: “O SENHOR viu minha infelicidade, e agora meu marido me amará”."
               },
               {
-                "ref": "Mateus 2:6"
+                "ref": "Mateus 2:6",
+                "text": "‘E você, Belém, na terra de Judá, não é a menor entre as principais cidades de Judá, pois de você virá um governante que será o pastor do meu povo, Israel’”."
               },
               {
-                "ref": "Miqueias 5:2"
+                "ref": "Miqueias 5:2",
+                "text": "Mas você, ó Belém Efrata, é apenas uma pequena vila entre todo o povo de Judá. E, no entanto, um governante de Israel, cujas origens são do passado distante, sairá de você em meu favor."
               },
               {
                 "ref": "Gênesis 35:16–20",
@@ -1600,7 +1605,7 @@
               },
               {
                 "ref": "Isaías 11:1–4",
-                "text": "Do tronco da linhagem de Jessé45 brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
+                "text": "Do tronco da linhagem de Jessé brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
               }
             ]
           },
@@ -1663,7 +1668,7 @@
               },
               {
                 "ref": "1 Crônicas 4:1",
-                "text": "Os descendentes de Judá foram: Perez, Hez­rom, Carmi, Hur e Sobal."
+                "text": "Os descendentes de Judá foram: Perez, Hezrom, Carmi, Hur e Sobal."
               }
             ]
           },
@@ -1726,7 +1731,7 @@
           },
           {
             "number": 22,
-            "text": "Obede gerou Jessé. Jessé gerou Davi. 1 1. Noemi significa “agradável”; Mara significa “amarga”. 2 2. Em hebraico, quase 1 efa, cerca de 20 litros. 3 3. Em hebraico, Estenda suas asas. 4 3.15a Quantidade desconhecida; também em 3.. 5 3.15b A maioria dos manuscritos hebraicos traz ele; vários manuscritos hebraicos, a versão siríaca e a Vulgata trazem ela. 6 4. Conforme alguns manuscritos gregos (ver tb. 4.21); o hebraico traz Salma.",
+            "text": "Obede gerou Jessé. Jessé gerou Davi.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1739,7 +1744,7 @@
               },
               {
                 "ref": "Isaías 11:1",
-                "text": "Do tronco da linhagem de Jessé45 brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
+                "text": "Do tronco da linhagem de Jessé brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
               },
               {
                 "ref": "1 Crônicas 2:15",

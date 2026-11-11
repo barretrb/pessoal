@@ -2,6 +2,7 @@
   "1": {
     "book": "Juízes",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Judá e Simeão conquistam a terra",
@@ -283,7 +284,7 @@
               },
               {
                 "ref": "1 Samuel 25:18",
-                "text": "Sem perder tempo, Abigail providenciou duzentos pães, duas vasilhas de couro cheias de vinho, cinco ovelhas preparadas, cinco cestos de grãos tostados, cem bolos de passas e duzentos bolos de figo."
+                "text": "Sem perder tempo, Abigail providenciou duzentos pães, duas vasilhas de couro cheias de vinho, cinco ovelhas preparadas, cinco cestos de grãos tostados, cem bolos de passas e duzentos bolos de figo. Colocou tudo em jumentos"
               },
               {
                 "ref": "1 Samuel 25:27",
@@ -468,7 +469,7 @@
               },
               {
                 "ref": "Gênesis 48:3",
-                "text": "Jacó disse a José: “O Deus Todo-poderoso169 me apareceu em Luz, na terra de Canaã, e me abençoou."
+                "text": "Jacó disse a José: “O Deus Todo-poderoso me apareceu em Luz, na terra de Canaã, e me abençoou."
               },
               {
                 "ref": "Juízes 18:2",
@@ -523,7 +524,7 @@
           },
           {
             "number": 27,
-            "text": "A tribo de Manassés, porém, não expulsou os habitantes de Bete- Sã, Taanaque, Dor, Ibleã e Megido, nem dos povoados ao seu redor, pois os cananeus estavam decididos a permanecer naquela região.",
+            "text": "A tribo de Manassés, porém, não expulsou os habitantes de Bete-Sã, Taanaque, Dor, Ibleã e Megido, nem dos povoados ao seu redor, pois os cananeus estavam decididos a permanecer naquela região.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -536,7 +537,7 @@
               },
               {
                 "ref": "Josué 17:11–13",
-                "text": "As seguintes cidades dentro do território de Issacar e Aser foram entregues a Manassés: Bete-Sã, Ibleã, Dor (isto é, Nafote- Dor), En-Dor, Taanaque e Megido, cada uma com os assentamentos ao redor."
+                "text": "As seguintes cidades dentro do território de Issacar e Aser foram entregues a Manassés: Bete-Sã, Ibleã, Dor (isto é, Nafote-Dor), En-Dor, Taanaque e Megido, cada uma com os assentamentos ao redor."
               },
               {
                 "ref": "1 Samuel 15:9",
@@ -577,7 +578,8 @@
                 "text": "Eles não expulsaram os cananeus de Gezer, de modo que os habitantes de Gezer vivem até hoje no meio de Efraim, submetidos a trabalhos forçados."
               },
               {
-                "ref": "1 Reis 9:16"
+                "ref": "1 Reis 9:16",
+                "text": "(O faraó, rei do Egito, havia atacado e conquistado Gezer. Matou seus habitantes cananeus, incendiou a cidade e a deu como presente à sua filha quando ela se casou com Salomão."
               }
             ]
           },
@@ -682,7 +684,7 @@
             "crossReferences": [
               {
                 "ref": "Números 34:4",
-                "text": "Ela se estenderá pelo sul, passando pela ladeira do Escorpião,106 em direção a Zim. Seu extremo ao sul será Cades- Barneia, de onde seguirá até Hazar-Adar e, de lá, até Azmom."
+                "text": "Ela se estenderá pelo sul, passando pela ladeira do Escorpião, em direção a Zim. Seu extremo ao sul será Cades-Barneia, de onde seguirá até Hazar-Adar e, de lá, até Azmom."
               },
               {
                 "ref": "Josué 15:2–3",
@@ -697,6 +699,7 @@
   "2": {
     "book": "Juízes",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "O anjo do SENHOR aparece em Boquim",
@@ -872,7 +875,7 @@
           },
           {
             "number": 9,
-            "text": "Foi sepultado na terra que havia recebido como herança, em Timnate- Sera, na região montanhosa de Efraim, ao norte do monte Gaás.",
+            "text": "Foi sepultado na terra que havia recebido como herança, em Timnate-Sera, na região montanhosa de Efraim, ao norte do monte Gaás.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1207,6 +1210,7 @@
   "3": {
     "book": "Juízes",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "As nações que ficaram em Canaã",
@@ -1365,7 +1369,7 @@
               },
               {
                 "ref": "Deuteronômio 4:9",
-                "text": "“Fiquem muito atentos! Cuidem para que não se esqueçam daquilo que viram com os próprios olhos. Não deixem que essas lembranças se apaguem de sua memória enquanto viverem. Passem- nas adiante a seus filhos e netos."
+                "text": "“Fiquem muito atentos! Cuidem para que não se esqueçam daquilo que viram com os próprios olhos. Não deixem que essas lembranças se apaguem de sua memória enquanto viverem. Passem-nas adiante a seus filhos e netos."
               },
               {
                 "ref": "2 Reis 23:6",
@@ -1425,7 +1429,7 @@
           },
           {
             "number": 10,
-            "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã- Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos.",
+            "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã-Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1535,7 +1539,7 @@
               },
               {
                 "ref": "Deuteronômio 28:47–48",
-                "text": "Se não servirem ao SENHOR, seu Deus, com alegria e entusiasmo pelos muitos bene­fícios que receberam,"
+                "text": "Se não servirem ao SENHOR, seu Deus, com alegria e entusiasmo pelos muitos benefícios que receberam,"
               }
             ]
           },
@@ -1558,7 +1562,7 @@
               },
               {
                 "ref": "Jeremias 33:3",
-                "text": "Pergunte- me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
+                "text": "Pergunte-me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
               }
             ]
           },
@@ -1719,7 +1723,7 @@
             "crossReferences": [
               {
                 "ref": "2 Samuel 4:6",
-                "text": "A mulher que ficava à porta estava peneirando trigo, mas ficou sonolenta e cochilou."
+                "text": "A mulher que ficava à porta estava peneirando trigo, mas ficou sonolenta e cochilou. Então Recabe e Baaná passaram por ela sem serem notados"
               },
               {
                 "ref": "2 Reis 9:10",
@@ -1846,6 +1850,7 @@
   "4": {
     "book": "Juízes",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Débora se torna juíza de Israel",
@@ -1884,7 +1889,7 @@
               },
               {
                 "ref": "Juízes 4:16",
-                "text": "Baraque perseguiu os carros de guerra e o exército inimigo até Harosete- Hagoim e matou todos os guerreiros de Sísera. Nenhum deles escapou."
+                "text": "Baraque perseguiu os carros de guerra e o exército inimigo até Harosete-Hagoim e matou todos os guerreiros de Sísera. Nenhum deles escapou."
               },
               {
                 "ref": "Juízes 4:13",
@@ -2181,7 +2186,7 @@
           },
           {
             "number": 16,
-            "text": "Baraque perseguiu os carros de guerra e o exército inimigo até Harosete- Hagoim e matou todos os guerreiros de Sísera. Nenhum deles escapou.",
+            "text": "Baraque perseguiu os carros de guerra e o exército inimigo até Harosete-Hagoim e matou todos os guerreiros de Sísera. Nenhum deles escapou.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2353,6 +2358,7 @@
   "5": {
     "book": "Juízes",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "O cântico de Débora",
@@ -2368,7 +2374,7 @@
               },
               {
                 "ref": "Apocalipse 19:1–3",
-                "text": "Depois disso, ouvi algo semelhante ao som de uma grande multidão clamando: “Aleluia!50 Salvação, glória e poder pertencem a nosso Deus."
+                "text": "Depois disso, ouvi algo semelhante ao som de uma grande multidão clamando: “Aleluia! Salvação, glória e poder pertencem a nosso Deus."
               },
               {
                 "ref": "Isaías 12:1–6",
@@ -2399,7 +2405,7 @@
               },
               {
                 "ref": "Filipenses 2:13",
-                "text": "Pois Deus está agindo em vocês, dando- lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
+                "text": "Pois Deus está agindo em vocês, dando-lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
               }
             ]
           },
@@ -2467,7 +2473,8 @@
                 "text": "Em sua presença, os montes tremem e as colinas se derretem; a terra estremece e seus habitantes são destruídos."
               },
               {
-                "ref": "Isaías 64:1–3"
+                "ref": "Isaías 64:1–3",
+                "text": "Quem dera abrisses os céus e descesses! Os montes tremeriam em tua presença!"
               }
             ]
           },
@@ -2482,7 +2489,7 @@
               },
               {
                 "ref": "Isaías 33:8",
-                "text": "Suas estradas estão desertas; ninguém mais viaja por elas. Quebraram o tratado de paz e não se importam com as promessas que fizeram perante testemunhas;106 não têm respeito por ninguém."
+                "text": "Suas estradas estão desertas; ninguém mais viaja por elas. Quebraram o tratado de paz e não se importam com as promessas que fizeram perante testemunhas; não têm respeito por ninguém."
               },
               {
                 "ref": "Lamentações 1:4",
@@ -2720,7 +2727,7 @@
               },
               {
                 "ref": "Salmos 4:4",
-                "text": "Não pequem ao permitir que a ira os controle; reflitam durante a noite e permaneçam em silêncio."
+                "text": "Não pequem ao permitir que a ira os controle; reflitam durante a noite e permaneçam em silêncio. Interlúdio"
               }
             ]
           },
@@ -2773,10 +2780,11 @@
             "crossReferences": [
               {
                 "ref": "Juízes 1:27",
-                "text": "A tribo de Manassés, porém, não expulsou os habitantes de Bete- Sã, Taanaque, Dor, Ibleã e Megido, nem dos povoados ao seu redor, pois os cananeus estavam decididos a permanecer naquela região."
+                "text": "A tribo de Manassés, porém, não expulsou os habitantes de Bete-Sã, Taanaque, Dor, Ibleã e Megido, nem dos povoados ao seu redor, pois os cananeus estavam decididos a permanecer naquela região."
               },
               {
-                "ref": "Juízes 5:30"
+                "ref": "Juízes 5:30",
+                "text": "‘Devem estar repartindo os despojos que tomaram; uma ou duas moças para cada homem. Haverá túnicas coloridas para Sísera, túnicas coloridas e bordadas. Sem dúvida, no despojo haverá túnicas coloridas e bordadas dos dois lados’."
               },
               {
                 "ref": "1 Reis 4:12",
@@ -2836,7 +2844,7 @@
           },
           {
             "number": 22,
-            "text": "Os cascos dos cavalos martelavam o chão; galopavam, galopavam seus poderosos cavalos de guerra. 23‘Amaldiçoem os habitantes de Meroz’, disse o anjo do SENHOR. ‘Amaldiçoem duramente, pois não vieram ajudar o SENHOR, ajudar o SENHOR contra fortes guerreiros.’",
+            "text": "Os cascos dos cavalos martelavam o chão; galopavam, galopavam seus poderosos cavalos de guerra.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2845,7 +2853,7 @@
               },
               {
                 "ref": "Miqueias 4:13",
-                "text": "“Levante-se e esmague as nações, ó bela Sião!19 Pois eu lhe darei chifres de ferro e cascos de bronze, para que pisoteie muitas nações até despedaçá-las. Você dedicará ao SENHOR as riquezas que elas roubaram; dedicará se..."
+                "text": "“Levante-se e esmague as nações, ó bela Sião! Pois eu lhe darei chifres de ferro e cascos de bronze, para que pisoteie muitas nações até despedaçá-las. Você dedicará ao SENHOR as riquezas que elas roubaram; dedicará seus..."
               },
               {
                 "ref": "Salmos 147:10–11",
@@ -2856,6 +2864,12 @@
                 "text": "Suas flechas estarão afiadas, seus arcos, prontos para a batalha. Os cascos de seus cavalos soltarão faíscas, as rodas de seus carros girarão como um turbilhão."
               }
             ]
+          },
+          {
+            "number": 23,
+            "text": "‘Amaldiçoem os habitantes de Meroz’, disse o anjo do SENHOR. ‘Amaldiçoem duramente, pois não vieram ajudar o SENHOR, ajudar o SENHOR contra fortes guerreiros.’",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 24,
@@ -2954,7 +2968,7 @@
           },
           {
             "number": 29,
-            "text": "“Suas acompanhantes mais sábias respondiam, e ela repetia estas palavras a si mesma: 30‘Devem estar repartindo os despojos que tomaram; uma ou duas moças para cada homem. Haverá túnicas coloridas para Sísera, túnicas coloridas e bordadas. Sem dúvida, no despojo haverá túnicas coloridas e bordadas dos dois lados’.",
+            "text": "“Suas acompanhantes mais sábias respondiam, e ela repetia estas palavras a si mesma:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2962,6 +2976,12 @@
                 "text": "Antes de terminar este dia, as esposas dos nobres do rei em toda a Pérsia e a Média saberão o que a rainha fez e começarão a tratar o marido da mesma forma. Haverá grande desprezo e indignação sem fim."
               }
             ]
+          },
+          {
+            "number": 30,
+            "text": "‘Devem estar repartindo os despojos que tomaram; uma ou duas moças para cada homem. Haverá túnicas coloridas para Sísera, túnicas coloridas e bordadas. Sem dúvida, no despojo haverá túnicas coloridas e bordadas dos dois lados’.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 31,
@@ -2973,7 +2993,8 @@
                 "text": "Tornará sua inocência radiante como o amanhecer, e a justiça de sua causa, como o sol do meio-dia."
               },
               {
-                "ref": "2 Samuel 23:4"
+                "ref": "2 Samuel 23:4",
+                "text": "é como a luz da manhã ao nascer do sol, como a manhã sem nuvens, como o brilho do sol que faz crescer a grama nova depois da chuva’."
               },
               {
                 "ref": "Salmos 19:4–5",
@@ -2992,6 +3013,7 @@
   "6": {
     "book": "Juízes",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "Gideão se torna juiz de Israel",
@@ -3168,7 +3190,7 @@
               },
               {
                 "ref": "Isaías 63:9–14",
-                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou.175 Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
+                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou. Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
               },
               {
                 "ref": "Juízes 2:1–3",
@@ -3267,11 +3289,11 @@
               },
               {
                 "ref": "2 Crônicas 15:2",
-                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça- me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
+                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça-me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
               },
               {
                 "ref": "Isaías 59:1–2",
-                "text": "Ouçam! O braço do SENHOR não é fraco demais para salvá- los, nem seu ouvido é surdo para ouvi-los. Foram suas maldades que os separaram de Deus; por causa de seus pecados, ele se afastou e já não os ouvirá."
+                "text": "Ouçam! O braço do SENHOR não é fraco demais para salvá-los, nem seu ouvido é surdo para ouvi-los. Foram suas maldades que os separaram de Deus; por causa de seus pecados, ele se afastou e já não os ouvirá."
               },
               {
                 "ref": "Salmos 44:1",
@@ -3350,7 +3372,7 @@
           },
           {
             "number": 17,
-            "text": "Gideão respondeu: “Se, de fato, posso contar com tua ajuda, dá- me um sinal de que é mesmo o SENHOR quem fala comigo.",
+            "text": "Gideão respondeu: “Se, de fato, posso contar com tua ajuda, dá-me um sinal de que é mesmo o SENHOR quem fala comigo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3420,7 +3442,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 18:33–34",
-                "text": "Empilhou lenha sobre o altar, cortou o novilho em pedaços e colocou os pedaços sobre a lenha."
+                "text": "Empilhou lenha sobre o altar, cortou o novilho em pedaços e colocou os pedaços sobre a lenha. Em seguida, ordenou: “Encham quatro jarras grandes com água e derramem a água sobre o holocausto e a lenha”."
               },
               {
                 "ref": "Juízes 13:19",
@@ -3458,7 +3480,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 32:30",
-                "text": "Jacó chamou aquele lugar de Peniel,118 pois disse: “Vi Deus face a face e, no entanto, minha vida foi poupada”."
+                "text": "Jacó chamou aquele lugar de Peniel, pois disse: “Vi Deus face a face e, no entanto, minha vida foi poupada”."
               },
               {
                 "ref": "Êxodo 33:20",
@@ -3512,7 +3534,7 @@
               },
               {
                 "ref": "Ezequiel 48:35",
-                "text": "“A distância ao redor de toda a cidade será de 9 quilômetros.208 E, daquele dia em diante, o nome da cidade será ‘O SENHOR Está Ali’”."
+                "text": "“A distância ao redor de toda a cidade será de 9 quilômetros. E, daquele dia em diante, o nome da cidade será ‘O SENHOR Está Ali’”."
               },
               {
                 "ref": "Juízes 8:32",
@@ -3531,7 +3553,7 @@
               },
               {
                 "ref": "2 Coríntios 6:15–17",
-                "text": "Que harmonia pode haver entre Cristo e o diabo?17 Como alguém que crê pode se ligar a quem não crê?"
+                "text": "Que harmonia pode haver entre Cristo e o diabo? Como alguém que crê pode se ligar a quem não crê?"
               },
               {
                 "ref": "Juízes 3:7",
@@ -3634,7 +3656,7 @@
               },
               {
                 "ref": "Jeremias 50:38",
-                "text": "A seca115 virá até mesmo sobre suas fontes de água, e elas secarão. Por que tudo isso acontecerá? Porque toda a terra se encheu de ídolos, e o povo está enlouquecido por eles."
+                "text": "A seca virá até mesmo sobre suas fontes de água, e elas secarão. Por que tudo isso acontecerá? Porque toda a terra se encheu de ídolos, e o povo está enlouquecido por eles."
               }
             ]
           },
@@ -3731,7 +3753,7 @@
               },
               {
                 "ref": "Juízes 3:10",
-                "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã- Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos."
+                "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã-Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos."
               }
             ]
           },
@@ -3746,7 +3768,7 @@
               },
               {
                 "ref": "2 Crônicas 30:6–12",
-                "text": "Por ordem do rei, mensageiros foram enviados a todo o Israel e Judá. Levavam cartas que diziam: “Ó israelitas, voltem para o SENHOR, o Deus de Abraão, Isaque e Israel,133 para que ele se volte para nós, os poucos que sob..."
+                "text": "Por ordem do rei, mensageiros foram enviados a todo o Israel e Judá. Levavam cartas que diziam: “Ó israelitas, voltem para o SENHOR, o Deus de Abraão, Isaque e Israel, para que ele se volte para nós, os poucos que sobrev..."
               }
             ]
           },
@@ -3792,7 +3814,7 @@
               },
               {
                 "ref": "Salmos 72:6",
-                "text": "Que o governo do rei seja como a chuva sobre a grama recém- cortada, como os aguaceiros que regam a terra."
+                "text": "Que o governo do rei seja como a chuva sobre a grama recém-cortada, como os aguaceiros que regam a terra."
               }
             ]
           },
@@ -3848,6 +3870,7 @@
   "7": {
     "book": "Juízes",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Gideão derrota os midianitas",
@@ -3870,7 +3893,8 @@
                 "text": "Tudo que fizer, faça bem feito, pois quando descer à sepultura não haverá trabalho, nem planos, nem conhecimento, nem sabedoria."
               },
               {
-                "ref": "Deuteronômio 11:30"
+                "ref": "Deuteronômio 11:30",
+                "text": "(Esses dois montes ficam a oeste do rio Jordão, na terra dos cananeus que vivem no vale do Jordão, perto da cidade de Gilgal, junto aos carvalhos de Moré.)"
               }
             ]
           },
@@ -3912,7 +3936,7 @@
               },
               {
                 "ref": "Mateus 20:16",
-                "text": "“Assim, os últimos serão os primeiros, e os primeiros serão os últimos”.115 Jesus prediz sua morte e ressurreição"
+                "text": "“Assim, os últimos serão os primeiros, e os primeiros serão os últimos”."
               },
               {
                 "ref": "Apocalipse 21:8",
@@ -4139,19 +4163,20 @@
           },
           {
             "number": 15,
-            "text": "Quando Gideão ouviu o sonho e sua interpretação, prostrou- se em adoração. Voltou para o acampamento de Israel e gritou: “Levantem-se! O SENHOR entregou o exército midianita em suas mãos!”.",
+            "text": "Quando Gideão ouviu o sonho e sua interpretação, prostrou-se em adoração. Voltou para o acampamento de Israel e gritou: “Levantem-se! O SENHOR entregou o exército midianita em suas mãos!”.",
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Coríntios 10:4–6"
+                "ref": "2 Coríntios 10:4–6",
+                "text": "Usamos as armas poderosas de Deus, e não as armas do mundo, para derrubar as fortalezas do raciocínio humano e acabar com os falsos argumentos."
               },
               {
                 "ref": "Gênesis 24:48",
-                "text": "“Depois, prostrei-me e adorei o SENHOR. Louvei o SENHOR, Deus do meu senhor Abraão, pois ele havia me conduzido até a sobrinha- neta do meu senhor, para que ela seja mulher do filho do meu senhor."
+                "text": "“Depois, prostrei-me e adorei o SENHOR. Louvei o SENHOR, Deus do meu senhor Abraão, pois ele havia me conduzido até a sobrinha-neta do meu senhor, para que ela seja mulher do filho do meu senhor."
               },
               {
                 "ref": "Gênesis 40:8",
-                "text": "Eles responderam: “Esta noite, nós dois tivemos sonhos, mas ninguém sabe nos dizer o que significam”. “A interpretação dos sonhos vem de Deus”, disse José. “Contem- me o que sonharam.”"
+                "text": "Eles responderam: “Esta noite, nós dois tivemos sonhos, mas ninguém sabe nos dizer o que significam”. “A interpretação dos sonhos vem de Deus”, disse José. “Contem-me o que sonharam.”"
               },
               {
                 "ref": "Juízes 4:14",
@@ -4219,7 +4244,7 @@
               },
               {
                 "ref": "Salmos 2:9",
-                "text": "Você as quebrará3 com cetro de ferro e as despedaçará como vasos de barro’”."
+                "text": "Você as quebrará com cetro de ferro e as despedaçará como vasos de barro’”."
               },
               {
                 "ref": "Apocalipse 16:15",
@@ -4368,6 +4393,7 @@
   "8": {
     "book": "Juízes",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "Gideão mata Zeba e Zalmuna",
@@ -4483,7 +4509,7 @@
               },
               {
                 "ref": "1 Samuel 25:18",
-                "text": "Sem perder tempo, Abigail providenciou duzentos pães, duas vasilhas de couro cheias de vinho, cinco ovelhas preparadas, cinco cestos de grãos tostados, cem bolos de passas e duzentos bolos de figo."
+                "text": "Sem perder tempo, Abigail providenciou duzentos pães, duas vasilhas de couro cheias de vinho, cinco ovelhas preparadas, cinco cestos de grãos tostados, cem bolos de passas e duzentos bolos de figo. Colocou tudo em jumentos"
               }
             ]
           },
@@ -4517,7 +4543,7 @@
             "crossReferences": [
               {
                 "ref": "Juízes 7:15",
-                "text": "Quando Gideão ouviu o sonho e sua interpretação, prostrou- se em adoração. Voltou para o acampamento de Israel e gritou: “Levantem-se! O SENHOR entregou o exército midianita em suas mãos!”."
+                "text": "Quando Gideão ouviu o sonho e sua interpretação, prostrou-se em adoração. Voltou para o acampamento de Israel e gritou: “Levantem-se! O SENHOR entregou o exército midianita em suas mãos!”."
               }
             ]
           },
@@ -4528,7 +4554,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 32:30–31",
-                "text": "Jacó chamou aquele lugar de Peniel,118 pois disse: “Vi Deus face a face e, no entanto, minha vida foi poupada”."
+                "text": "Jacó chamou aquele lugar de Peniel, pois disse: “Vi Deus face a face e, no entanto, minha vida foi poupada”. O sol estava nascendo quando Jacó partiu de Peniel, mancando por causa do quadril deslocado."
               },
               {
                 "ref": "1 Reis 12:25",
@@ -4633,7 +4659,7 @@
             "crossReferences": [
               {
                 "ref": "1 Samuel 30:11–15",
-                "text": "No caminho, encontraram um rapaz ­egípcio num campo e o levaram até Davi. Deram-lhe um pouco de pão para comer e água para beber."
+                "text": "No caminho, encontraram um rapaz egípcio num campo e o levaram até Davi. Deram-lhe um pouco de pão para comer e água para beber."
               },
               {
                 "ref": "Juízes 1:24–25",
@@ -4720,7 +4746,7 @@
             "crossReferences": [
               {
                 "ref": "Números 35:19",
-                "text": "O parente mais próximo da vítima é responsável pela execução do assassino. Quando o encontrar, o vingador deverá exe­cutar o assassino."
+                "text": "O parente mais próximo da vítima é responsável pela execução do assassino. Quando o encontrar, o vingador deverá executar o assassino."
               },
               {
                 "ref": "Rute 3:13",
@@ -4734,7 +4760,7 @@
           },
           {
             "number": 20,
-            "text": "Gideão se voltou para Jéter, seu filho mais velho, e disse: “Mate- os!”. Mas Jéter não tirou sua espada, pois ainda era jovem e teve medo.",
+            "text": "Gideão se voltou para Jéter, seu filho mais velho, e disse: “Mate-os!”. Mas Jéter não tirou sua espada, pois ainda era jovem e teve medo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4753,7 +4779,7 @@
           },
           {
             "number": 21,
-            "text": "Então Zeba e Zalmuna disseram a Gideão: “Seja homem! Mate- nos você mesmo!”. Gideão os matou e tirou os enfeites que estavam no pescoço dos camelos deles.",
+            "text": "Então Zeba e Zalmuna disseram a Gideão: “Seja homem! Mate-nos você mesmo!”. Gideão os matou e tirou os enfeites que estavam no pescoço dos camelos deles.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4836,7 +4862,7 @@
               },
               {
                 "ref": "Gênesis 37:28",
-                "text": "Então, quando os ismaelitas, que eram negociantes midianitas, se aproximaram, os irmãos de José o tiraram da cisterna e o venderam para eles por vinte peças138 de prata. E os negociantes o levaram para o Egito."
+                "text": "Então, quando os ismaelitas, que eram negociantes midianitas, se aproximaram, os irmãos de José o tiraram da cisterna e o venderam para eles por vinte peças de prata. E os negociantes o levaram para o Egito."
               },
               {
                 "ref": "Êxodo 32:3",
@@ -5053,7 +5079,7 @@
               },
               {
                 "ref": "Deuteronômio 4:9",
-                "text": "“Fiquem muito atentos! Cuidem para que não se esqueçam daquilo que viram com os próprios olhos. Não deixem que essas lembranças se apaguem de sua memória enquanto viverem. Passem- nas adiante a seus filhos e netos."
+                "text": "“Fiquem muito atentos! Cuidem para que não se esqueçam daquilo que viram com os próprios olhos. Não deixem que essas lembranças se apaguem de sua memória enquanto viverem. Passem-nas adiante a seus filhos e netos."
               },
               {
                 "ref": "Jeremias 2:32",
@@ -5087,6 +5113,7 @@
   "9": {
     "book": "Juízes",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "Abimeleque governa sobre Siquém",
@@ -5125,7 +5152,7 @@
               },
               {
                 "ref": "Gênesis 29:14",
-                "text": "Labão exclamou: “Você é, de fato, sangue do meu sangue!”. Jacó se casa com Lia e Raquel Quando Jacó estava na casa de Labão havia cerca de um mês,"
+                "text": "Labão exclamou: “Você é, de fato, sangue do meu sangue!”."
               },
               {
                 "ref": "Hebreus 2:14",
@@ -5237,7 +5264,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 11:29",
-                "text": "“Quando o SENHOR, seu Deus, os fizer entrar na terra da qual em breve vocês tomarão posse, pronunciem a bênção no monte Gerizim e a maldição no monte Ebal. 30(Esses dois montes ficam a oeste do rio Jordão, na terra dos c..."
+                "text": "“Quando o SENHOR, seu Deus, os fizer entrar na terra da qual em breve vocês tomarão posse, pronunciem a bênção no monte Gerizim e a maldição no monte Ebal."
               },
               {
                 "ref": "Deuteronômio 27:12",
@@ -5272,7 +5299,7 @@
               },
               {
                 "ref": "Ezequiel 17:3–10",
-                "text": "Transmita-lhes a seguinte mensagem do SENHOR Soberano: “Uma grande águia, com asas grandes e penas longas, coberta com plumagem de várias cores, veio ao Líbano."
+                "text": "Transmita-lhes a seguinte mensagem do SENHOR Soberano: “Uma grande águia, com asas grandes e penas longas, coberta com plumagem de várias cores, veio ao Líbano. Agarrou a ponta de um cedro"
               }
             ]
           },
@@ -5452,7 +5479,7 @@
               },
               {
                 "ref": "Filipenses 3:3",
-                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
+                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
               },
               {
                 "ref": "Tiago 4:16",
@@ -5525,7 +5552,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 33:1",
-                "text": "Que aflição espera vocês, assírios, que destroem os outros,105 mas nunca foram destruídos! Traem outros, mas nunca foram traídos. Quando terminarem de destruir, serão destruídos. Quando terminarem de trair, serão traídos."
+                "text": "Que aflição espera vocês, assírios, que destroem os outros, mas nunca foram destruídos! Traem outros, mas nunca foram traídos. Quando terminarem de destruir, serão destruídos. Quando terminarem de trair, serão traídos."
               },
               {
                 "ref": "Isaías 19:14",
@@ -5655,7 +5682,7 @@
               },
               {
                 "ref": "2 Reis 18:23",
-                "text": "“Vou lhes dizer uma coisa: Façam um acordo com meu senhor, o rei da Assíria. Eu lhes darei dois mil cavalos se forem capazes de encontrar homens em número suficiente para montá- los!"
+                "text": "“Vou lhes dizer uma coisa: Façam um acordo com meu senhor, o rei da Assíria. Eu lhes darei dois mil cavalos se forem capazes de encontrar homens em número suficiente para montá-los!"
               },
               {
                 "ref": "2 Samuel 2:14–17",
@@ -5680,7 +5707,7 @@
           },
           {
             "number": 31,
-            "text": "Enviou mensageiros a Abimeleque em Arumá28 para lhe dizer: “Gaal, filho de Ebede, e seus irmãos se mudaram para Siquém e estão instigando a cidade a se rebelar contra você.",
+            "text": "Enviou mensageiros a Abimeleque em Arumá para lhe dizer: “Gaal, filho de Ebede, e seus irmãos se mudaram para Siquém e estão instigando a cidade a se rebelar contra você.",
             "isJesusWords": false,
             "crossReferences": []
           },
@@ -6121,6 +6148,7 @@
   "10": {
     "book": "Juízes",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "Tolá se torna juiz de Israel",
@@ -6281,7 +6309,7 @@
           },
           {
             "number": 9,
-            "text": "Os amonitas também atravessaram para o lado oeste do Jordão e atacaram as tribos de Judá, Benjamim e Efraim.",
+            "text": "Os amonitas também atravessaram para o lado oeste do Jordão e atacaram as tribos de Judá, Benjamim e Efraim. Os israelitas ficaram muito angustiados",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6301,12 +6329,7 @@
                 "text": "Sempre que os israelitas faziam o plantio, saqueadores de Midiã, de Amaleque e de outros povos do leste atacavam Israel,"
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Os israelitas ficaram muito angustiados",
-        "verses": [
+          },
           {
             "number": 10,
             "text": "e, por fim, pediram socorro ao SENHOR. “Pecamos contra ti”, disseram, “pois abandonamos nosso Deus e servimos às imagens de Baal!”",
@@ -6337,7 +6360,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 14:30",
-                "text": "Foi assim que o SENHOR libertou Israel das mãos dos ­egípcios naquele dia, e os israelitas conseguiam ver os cadáveres dos egípcios na praia."
+                "text": "Foi assim que o SENHOR libertou Israel das mãos dos egípcios naquele dia, e os israelitas conseguiam ver os cadáveres dos egípcios na praia."
               },
               {
                 "ref": "Números 21:21–25",
@@ -6424,7 +6447,7 @@
           },
           {
             "number": 15,
-            "text": "Mas os israelitas suplicaram ao SENHOR: “Sim, pecamos! Castiga- nos como te parecer melhor, mas livra-nos hoje de nossos inimigos”.",
+            "text": "Mas os israelitas suplicaram ao SENHOR: “Sim, pecamos! Castiga-nos como te parecer melhor, mas livra-nos hoje de nossos inimigos”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6452,7 +6475,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 63:9",
-                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou.175 Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
+                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou. Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
               },
               {
                 "ref": "Salmos 106:44–45",
@@ -6479,7 +6502,7 @@
               },
               {
                 "ref": "Gênesis 31:49",
-                "text": "Também foi chamado de Mispá,112 pois Labão disse: “Vigie o SENHOR a você e a mim para garantir que guardaremos esta aliança quando estivermos longe um do outro."
+                "text": "Também foi chamado de Mispá, pois Labão disse: “Vigie o SENHOR a você e a mim para garantir que guardaremos esta aliança quando estivermos longe um do outro."
               },
               {
                 "ref": "Juízes 11:11",
@@ -6517,6 +6540,7 @@
   "11": {
     "book": "Juízes",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "Jefté se torna juiz de Israel",
@@ -6578,7 +6602,7 @@
               },
               {
                 "ref": "2 Samuel 10:8",
-                "text": "As tropas amonitas avançaram e formaram sua frente de batalha à entrada da cidade, enquanto os sírios de Zobá e Reobe e os homens de Tobe e Maaca se posi-­ cionaram para lutar nos campos abertos."
+                "text": "As tropas amonitas avançaram e formaram sua frente de batalha à entrada da cidade, enquanto os sírios de Zobá e Reobe e os homens de Tobe e Maaca se posi- cionaram para lutar nos campos abertos."
               },
               {
                 "ref": "2 Samuel 10:6",
@@ -6593,7 +6617,7 @@
             "crossReferences": [
               {
                 "ref": "Juízes 10:9",
-                "text": "Os amonitas também atravessaram para o lado oeste do Jordão e atacaram as tribos de Judá, Benjamim e Efraim."
+                "text": "Os amonitas também atravessaram para o lado oeste do Jordão e atacaram as tribos de Judá, Benjamim e Efraim. Os israelitas ficaram muito angustiados"
               }
             ]
           },
@@ -6745,7 +6769,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 18:15–16",
-                "text": "“Se um irmão pecar contra você,100 fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
+                "text": "“Se um irmão pecar contra você, fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
               },
               {
                 "ref": "Provérbios 25:8–9",
@@ -6753,7 +6777,7 @@
               },
               {
                 "ref": "Deuteronômio 2:26",
-                "text": "“Do deserto de Quedemote, enviei embaixadores ao rei Seom de Hesbom com a seguinte proposta de paz: 27‘Deixe-nos atravessar seu território. Ficaremos na estrada principal e não nos desviaremos nem para um lado nem para o outro."
+                "text": "“Do deserto de Quedemote, enviei embaixadores ao rei Seom de Hesbom com a seguinte proposta de paz:"
               },
               {
                 "ref": "Números 20:14",
@@ -6814,11 +6838,11 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 2:19",
-                "text": "e se aproximarão da terra dos amonitas, os descendentes de Ló. Não os perturbem nem comecem uma guerra contra eles. Eu dei a eles como propriedade a terra de Amom, e não darei a vocês parte alguma do território deles’. 2..."
+                "text": "e se aproximarão da terra dos amonitas, os descendentes de Ló. Não os perturbem nem comecem uma guerra contra eles. Eu dei a eles como propriedade a terra de Amom, e não darei a vocês parte alguma do território deles’."
               },
               {
                 "ref": "Deuteronômio 2:9",
-                "text": "o SENHOR nos advertiu: ‘Não perturbem os moabitas, os descendentes de Ló, nem comecem uma guerra contra eles. Eu dei a eles como propriedade a região de Ar, e não darei a vocês parte alguma do território deles’. 10(Antig..."
+                "text": "o SENHOR nos advertiu: ‘Não perturbem os moabitas, os descendentes de Ló, nem comecem uma guerra contra eles. Eu dei a eles como propriedade a região de Ar, e não darei a vocês parte alguma do território deles’."
               },
               {
                 "ref": "Atos 24:12–13",
@@ -6841,7 +6865,7 @@
               },
               {
                 "ref": "Deuteronômio 1:40",
-                "text": "Quanto a vocês, deem meia- volta e retornem ao deserto, em direção ao mar Vermelho’."
+                "text": "Quanto a vocês, deem meia-volta e retornem ao deserto, em direção ao mar Vermelho’."
               },
               {
                 "ref": "Números 13:26",
@@ -6887,7 +6911,7 @@
               },
               {
                 "ref": "Números 21:4–13",
-                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom."
+                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom. Mas o povo ficou impaciente"
               },
               {
                 "ref": "Números 33:37–44",
@@ -6910,7 +6934,7 @@
               },
               {
                 "ref": "Deuteronômio 2:26–36",
-                "text": "“Do deserto de Quedemote, enviei embaixadores ao rei Seom de Hesbom com a seguinte proposta de paz: 27‘Deixe-nos atravessar seu território. Ficaremos na estrada principal e não nos desviaremos nem para um lado nem para o outro."
+                "text": "“Do deserto de Quedemote, enviei embaixadores ao rei Seom de Hesbom com a seguinte proposta de paz:"
               },
               {
                 "ref": "Números 21:21–35",
@@ -6986,7 +7010,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 48:22",
-                "text": "Em razão de sua autoridade sobre seus irmãos, eu lhe dou uma porção a mais da terra,171 que tomei dos amorreus com a minha espada e o meu arco”."
+                "text": "Em razão de sua autoridade sobre seus irmãos, eu lhe dou uma porção a mais da terra, que tomei dos amorreus com a minha espada e o meu arco”."
               },
               {
                 "ref": "Josué 5:1",
@@ -7117,7 +7141,7 @@
             "crossReferences": [
               {
                 "ref": "Juízes 3:10",
-                "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã- Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos."
+                "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã-Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos."
               },
               {
                 "ref": "Números 11:25",
@@ -7190,7 +7214,7 @@
               },
               {
                 "ref": "Juízes 3:10",
-                "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã- Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos."
+                "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã-Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos."
               },
               {
                 "ref": "Juízes 2:18",
@@ -7348,6 +7372,7 @@
   "12": {
     "book": "Juízes",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "Efraim luta contra Jefté",
@@ -7512,7 +7537,8 @@
                 "text": "Jesus nasceu em Belém, na Judeia, durante o reinado de Herodes. Por esse tempo, alguns sábios das terras do Oriente chegaram a Jerusalém"
               },
               {
-                "ref": "Miqueias 5:2"
+                "ref": "Miqueias 5:2",
+                "text": "Mas você, ó Belém Efrata, é apenas uma pequena vila entre todo o povo de Judá. E, no entanto, um governante de Israel, cujas origens são do passado distante, sairá de você em meu favor."
               }
             ]
           },
@@ -7579,7 +7605,7 @@
             "crossReferences": [
               {
                 "ref": "2 Samuel 23:30",
-                "text": "Benaia, de Piratom; Hurai,113 de Naal-Gaás;"
+                "text": "Benaia, de Piratom; Hurai, de Naal-Gaás;"
               }
             ]
           },
@@ -7613,7 +7639,7 @@
               },
               {
                 "ref": "2 Samuel 23:30",
-                "text": "Benaia, de Piratom; Hurai,113 de Naal-Gaás;"
+                "text": "Benaia, de Piratom; Hurai, de Naal-Gaás;"
               },
               {
                 "ref": "Gênesis 14:7",
@@ -7628,6 +7654,7 @@
   "13": {
     "book": "Juízes",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "O nascimento de Sansão",
@@ -7852,7 +7879,7 @@
               },
               {
                 "ref": "Efésios 6:4",
-                "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem- nos com a disciplina e a instrução que vêm do Senhor."
+                "text": "Pais, não tratem seus filhos de modo a irritá-los; antes, eduquem-nos com a disciplina e a instrução que vêm do Senhor."
               },
               {
                 "ref": "Provérbios 4:4",
@@ -7880,7 +7907,8 @@
                 "text": "Sua mãe, porém, disse aos empregados: “Façam tudo que ele mandar”."
               },
               {
-                "ref": "Deuteronômio 12:32"
+                "ref": "Deuteronômio 12:32",
+                "text": "“Portanto, tenham o cuidado de cumprir todas as ordens que lhes dou. Não acrescentem nem tirem coisa alguma.”"
               },
               {
                 "ref": "João 15:14",
@@ -8000,7 +8028,7 @@
           },
           {
             "number": 21,
-            "text": "O anjo do SENHOR não voltou a aparecer a Manoá e sua esposa.",
+            "text": "O anjo do SENHOR não voltou a aparecer a Manoá e sua esposa. Então Manoá finalmente percebeu que era o anjo do SENHOR",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -8016,12 +8044,7 @@
                 "text": "Sim, lutou com o anjo e venceu; chorou e suplicou-lhe que o abençoasse. Ali em Betel, encontrou Deus, e Deus falou com ele. O SENHOR Deus dos Exércitos, o SENHOR é seu nome!"
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Então Manoá finalmente percebeu que era o anjo do SENHOR",
-        "verses": [
+          },
           {
             "number": 22,
             "text": "e disse à sua esposa: “Com certeza vamos morrer, pois vimos a Deus!”.",
@@ -8029,7 +8052,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 32:30",
-                "text": "Jacó chamou aquele lugar de Peniel,118 pois disse: “Vi Deus face a face e, no entanto, minha vida foi poupada”."
+                "text": "Jacó chamou aquele lugar de Peniel, pois disse: “Vi Deus face a face e, no entanto, minha vida foi poupada”."
               },
               {
                 "ref": "Deuteronômio 5:26",
@@ -8098,7 +8121,7 @@
             "crossReferences": [
               {
                 "ref": "Juízes 3:10",
-                "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã- Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos."
+                "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã-Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos."
               },
               {
                 "ref": "Josué 15:33",
@@ -8121,6 +8144,7 @@
   "14": {
     "book": "Juízes",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
         "title": "O enigma de Sansão",
@@ -8155,7 +8179,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 34:4",
-                "text": "Disse a seu pai, Hamor: “Consiga- me essa moça, pois quero me casar com ela”."
+                "text": "Disse a seu pai, Hamor: “Consiga-me essa moça, pois quero me casar com ela”."
               },
               {
                 "ref": "Gênesis 24:2–3",
@@ -8232,11 +8256,11 @@
               },
               {
                 "ref": "2 Samuel 23:20",
-                "text": "Também havia Benaia, filho de Joiada, soldado valente108 de Cabzeel. Realizou muitos feitos heroicos, como matar dois grandes guerreiros109 de Moabe. Em outra ocasião, num dia de neve, perseguiu um leão até uma cova e o matou."
+                "text": "Também havia Benaia, filho de Joiada, soldado valente de Cabzeel. Realizou muitos feitos heroicos, como matar dois grandes guerreiros de Moabe. Em outra ocasião, num dia de neve, perseguiu um leão até uma cova e o matou."
               },
               {
                 "ref": "1 Crônicas 11:22",
-                "text": "Também havia Benaia, filho de Joiada, soldado valente104 de Cabzeel. Realizou muitos feitos heroicos, como matar dois grandes guerreiros105 de Moabe. Em outra ocasião, num dia de neve, perseguiu um leão até uma cova e o matou."
+                "text": "Também havia Benaia, filho de Joiada, soldado valente de Cabzeel. Realizou muitos feitos heroicos, como matar dois grandes guerreiros de Moabe. Em outra ocasião, num dia de neve, perseguiu um leão até uma cova e o matou."
               }
             ]
           },
@@ -8251,7 +8275,7 @@
               },
               {
                 "ref": "Juízes 3:10",
-                "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã- Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos."
+                "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã-Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos."
               },
               {
                 "ref": "Juízes 13:25",
@@ -8484,7 +8508,7 @@
             "crossReferences": [
               {
                 "ref": "Juízes 3:10",
-                "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã- Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos."
+                "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã-Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos."
               },
               {
                 "ref": "Juízes 13:25",
@@ -8530,6 +8554,7 @@
   "15": {
     "book": "Juízes",
     "chapter": "15",
+    "verified": true,
     "sections": [
       {
         "title": "Sansão se vinga dos filisteus",
@@ -8758,7 +8783,7 @@
               },
               {
                 "ref": "Juízes 8:21",
-                "text": "Então Zeba e Zalmuna disseram a Gideão: “Seja homem! Mate- nos você mesmo!”. Gideão os matou e tirou os enfeites que estavam no pescoço dos camelos deles."
+                "text": "Então Zeba e Zalmuna disseram a Gideão: “Seja homem! Mate-nos você mesmo!”. Gideão os matou e tirou os enfeites que estavam no pescoço dos camelos deles."
               }
             ]
           },
@@ -8792,7 +8817,7 @@
               },
               {
                 "ref": "Juízes 3:10",
-                "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã- Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos."
+                "text": "O Espírito do SENHOR veio sobre Otoniel, e ele se tornou juiz de Israel. Otoniel guerreou contra Cusã-Risataim, rei de Arã, e o derrotou, pois o SENHOR o entregou em suas mãos."
               },
               {
                 "ref": "1 Samuel 11:6",
@@ -8852,7 +8877,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 3:7–8",
-                "text": "Levanta-te, SENHOR! Salva-me, Deus meu! Acerta meus inimigos no queixo e quebra os dentes dos perversos. De ti, SENHOR, vem o livramento; abençoa o teu povo!"
+                "text": "Levanta-te, SENHOR! Salva-me, Deus meu! Acerta meus inimigos no queixo e quebra os dentes dos perversos. De ti, SENHOR, vem o livramento; abençoa o teu povo! Interlúdio"
               },
               {
                 "ref": "2 Coríntios 12:7–8",
@@ -8921,6 +8946,7 @@
   "16": {
     "book": "Juízes",
     "chapter": "16",
+    "verified": true,
     "sections": [
       {
         "title": "Sansão leva embora os portões de Gaza",
@@ -9578,6 +9604,7 @@
   "17": {
     "book": "Juízes",
     "chapter": "17",
+    "verified": true,
     "sections": [
       {
         "title": "Os ídolos de Mica",
@@ -9726,11 +9753,12 @@
                 "text": "Nos dias em que os juízes governavam Israel, houve grande fome na terra. Por isso, um homem deixou seu lar, em Belém de Judá, e foi morar na terra de Moabe, levando consigo esposa e dois filhos."
               },
               {
-                "ref": "Miqueias 5:2"
+                "ref": "Miqueias 5:2",
+                "text": "Mas você, ó Belém Efrata, é apenas uma pequena vila entre todo o povo de Judá. E, no entanto, um governante de Israel, cujas origens são do passado distante, sairá de você em meu favor."
               },
               {
                 "ref": "Mateus 2:5–6",
-                "text": "Eles responderam: “Em Belém da Judeia, pois assim escreveu o profeta: 6‘E você, Belém, na terra de Judá, não é a menor entre as principais cidades de Judá, pois de você virá um governante que será o pastor do meu povo, Israel’”."
+                "text": "Eles responderam: “Em Belém da Judeia, pois assim escreveu o profeta:"
               }
             ]
           },
@@ -9850,6 +9878,7 @@
   "18": {
     "book": "Juízes",
     "chapter": "18",
+    "verified": true,
     "sections": [
       {
         "title": "Idolatria na tribo de Dã",
@@ -9926,7 +9955,7 @@
             "crossReferences": [
               {
                 "ref": "Ezequiel 13:19",
-                "text": "Vocês me desonram no meio de meu povo em troca de uns punhados de cevada ou um pedaço de pão. Quando mentem ao meu povo, que gosta de ouvir mentiras, vocês matam aqueles que não ­deviam morrer e prometem vida àqueles que não deviam viver."
+                "text": "Vocês me desonram no meio de meu povo em troca de uns punhados de cevada ou um pedaço de pão. Quando mentem ao meu povo, que gosta de ouvir mentiras, vocês matam aqueles que não deviam morrer e prometem vida àqueles que não deviam viver."
               },
               {
                 "ref": "Juízes 17:10",
@@ -9944,7 +9973,7 @@
           },
           {
             "number": 5,
-            "text": "Então eles disseram: “Pergunte a Deus se nossa viagem será bem- sucedida”.",
+            "text": "Então eles disseram: “Pergunte a Deus se nossa viagem será bem-sucedida”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -10440,7 +10469,7 @@
               },
               {
                 "ref": "Gênesis 30:6",
-                "text": "Raquel o chamou de Dã,100 pois disse: “Deus me fez justiça! Ouviu meu pedido e me deu um filho!”."
+                "text": "Raquel o chamou de Dã, pois disse: “Deus me fez justiça! Ouviu meu pedido e me deu um filho!”."
               }
             ]
           },
@@ -10497,6 +10526,7 @@
   "19": {
     "book": "Juízes",
     "chapter": "19",
+    "verified": true,
     "sections": [
       {
         "title": "O levita e sua concubina",
@@ -10515,7 +10545,8 @@
                 "text": "Havia saído de Belém à procura de outro lugar para morar. Em sua viagem, chegou à região montanhosa de Efraim e aconteceu de parar na casa de Mica."
               },
               {
-                "ref": "Mateus 2:6"
+                "ref": "Mateus 2:6",
+                "text": "‘E você, Belém, na terra de Judá, não é a menor entre as principais cidades de Judá, pois de você virá um governante que será o pastor do meu povo, Israel’”."
               },
               {
                 "ref": "Josué 24:30",
@@ -10614,7 +10645,7 @@
               },
               {
                 "ref": "Juízes 19:9",
-                "text": "Mais tarde, quando o homem, a con­cubina e o servo se preparavam para partir, o sogro disse: “Já está escurecendo. Passe a noite aqui e alegre seu coração. Amanhã você pode levantar cedo e partir”."
+                "text": "Mais tarde, quando o homem, a concubina e o servo se preparavam para partir, o sogro disse: “Já está escurecendo. Passe a noite aqui e alegre seu coração. Amanhã você pode levantar cedo e partir”."
               },
               {
                 "ref": "Ester 1:10",
@@ -10646,7 +10677,7 @@
           },
           {
             "number": 9,
-            "text": "Mais tarde, quando o homem, a con­cubina e o servo se preparavam para partir, o sogro disse: “Já está escurecendo. Passe a noite aqui e alegre seu coração. Amanhã você pode levantar cedo e partir”.",
+            "text": "Mais tarde, quando o homem, a concubina e o servo se preparavam para partir, o sogro disse: “Já está escurecendo. Passe a noite aqui e alegre seu coração. Amanhã você pode levantar cedo e partir”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -10728,7 +10759,7 @@
               },
               {
                 "ref": "Oséias 5:8",
-                "text": "“Soem o alarme em Gibeá! Toquem a trombeta em Ramá! Deem o grito de guerra em Bete-Áven!25 Entrem na batalha, guerreiros de Benjamim!"
+                "text": "“Soem o alarme em Gibeá! Toquem a trombeta em Ramá! Deem o grito de guerra em Bete-Áven! Entrem na batalha, guerreiros de Benjamim!"
               }
             ]
           },
@@ -10743,7 +10774,7 @@
               },
               {
                 "ref": "Oséias 5:8",
-                "text": "“Soem o alarme em Gibeá! Toquem a trombeta em Ramá! Deem o grito de guerra em Bete-Áven!25 Entrem na batalha, guerreiros de Benjamim!"
+                "text": "“Soem o alarme em Gibeá! Toquem a trombeta em Ramá! Deem o grito de guerra em Bete-Áven! Entrem na batalha, guerreiros de Benjamim!"
               },
               {
                 "ref": "1 Samuel 10:26",
@@ -10785,7 +10816,7 @@
               },
               {
                 "ref": "Hebreus 13:2",
-                "text": "Sm 7.."
+                "text": "Não se esqueçam de demonstrar hospitalidade, porque alguns, sem o saber, hospedaram anjos."
               },
               {
                 "ref": "Mateus 25:35",
@@ -11117,6 +11148,7 @@
   "20": {
     "book": "Juízes",
     "chapter": "20",
+    "verified": true,
     "sections": [
       {
         "title": "Guerra entre Israel e Benjamim",
@@ -11318,7 +11350,7 @@
           },
           {
             "number": 10,
-            "text": "A décima parte dos homens de cada tribo ficará responsável por providenciar a alimentação dos guerreiros, e o restante se vingará de Gibeá52 de Benjamim por esse ato vergonhoso cometido em Israel”.",
+            "text": "A décima parte dos homens de cada tribo ficará responsável por providenciar a alimentação dos guerreiros, e o restante se vingará de Gibeá de Benjamim por esse ato vergonhoso cometido em Israel”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -11657,7 +11689,7 @@
               },
               {
                 "ref": "Esdras 8:21",
-                "text": "Ali, junto ao canal de Aava, ordenei que todos nós jejuássemos e nos humilhássemos diante de nosso Deus. Oramos para que ele nos propor­cionasse uma viagem segura e nos protegesse, como também a nossos filhos e a nossos bens."
+                "text": "Ali, junto ao canal de Aava, ordenei que todos nós jejuássemos e nos humilhássemos diante de nosso Deus. Oramos para que ele nos proporcionasse uma viagem segura e nos protegesse, como também a nossos filhos e a nossos bens."
               },
               {
                 "ref": "Esdras 9:4–5",
@@ -11777,7 +11809,7 @@
             "crossReferences": [
               {
                 "ref": "Josué 8:18–22",
-                "text": "Então o SENHOR disse a Josué: “Aponte para Ai a lança que você tem na mão, pois eu lhe entregarei a cidade”."
+                "text": "Então o SENHOR disse a Josué: “Aponte para Ai a lança que você tem na mão, pois eu lhe entregarei a cidade”. Josué fez conforme ordenado"
               }
             ]
           },
@@ -12069,6 +12101,7 @@
   "21": {
     "book": "Juízes",
     "chapter": "21",
+    "verified": true,
     "sections": [
       {
         "title": "Esposas para os homens de Benjamim",
@@ -12091,7 +12124,8 @@
                 "text": "E prometeu, sob juramento: “Eu lhe darei o que pedir, até metade do meu reino!”."
               },
               {
-                "ref": "Eclesiastes 5:2"
+                "ref": "Eclesiastes 5:2",
+                "text": "Não se precipite em fazer promessas nem em apresentar suas questões a Deus. Afinal, Deus está nos céus, e você, na terra; portanto, fale pouco."
               }
             ]
           },
@@ -12156,7 +12190,7 @@
               },
               {
                 "ref": "Salmos 78:34–35",
-                "text": "Quando Deus começou a matá-los, finalmente o buscaram; arrependeram-se e levaram Deus a sério. Então lembraram que Deus era sua rocha, que o Deus Altíssimo104 era seu redentor."
+                "text": "Quando Deus começou a matá-los, finalmente o buscaram; arrependeram-se e levaram Deus a sério. Então lembraram que Deus era sua rocha, que o Deus Altíssimo era seu redentor."
               },
               {
                 "ref": "Êxodo 20:24–25",
@@ -12170,7 +12204,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Juízes 5:23"
+                "ref": "Juízes 5:23",
+                "text": "‘Amaldiçoem os habitantes de Meroz’, disse o anjo do SENHOR. ‘Amaldiçoem duramente, pois não vieram ajudar o SENHOR, ajudar o SENHOR contra fortes guerreiros.’"
               },
               {
                 "ref": "Jeremias 48:10",
@@ -12257,7 +12292,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Juízes 5:23"
+                "ref": "Juízes 5:23",
+                "text": "‘Amaldiçoem os habitantes de Meroz’, disse o anjo do SENHOR. ‘Amaldiçoem duramente, pois não vieram ajudar o SENHOR, ajudar o SENHOR contra fortes guerreiros.’"
               }
             ]
           },
@@ -12275,7 +12311,8 @@
                 "text": "Pegou dois bois, cortou-os em pedaços e enviou mensageiros para levá-los a todo o Israel com o seguinte aviso: “Isto é o que acontecerá aos bois de quem se recusar a seguir Saul e Samuel na batalha!”. E o terror do SENHO..."
               },
               {
-                "ref": "Juízes 5:23"
+                "ref": "Juízes 5:23",
+                "text": "‘Amaldiçoem os habitantes de Meroz’, disse o anjo do SENHOR. ‘Amaldiçoem duramente, pois não vieram ajudar o SENHOR, ajudar o SENHOR contra fortes guerreiros.’"
               },
               {
                 "ref": "Deuteronômio 13:15",
@@ -12476,7 +12513,7 @@
           },
           {
             "number": 22,
-            "text": "E quando os pais e os irmãos delas vierem se queixar a nós, diremos: ‘Por favor, tenham compaixão. Deixem que fiquem com suas filhas, pois não encontramos esposas para todos eles quando destruímos Jabes-Gileade. E vocês não são culpados de quebrarem seu juramento, pois, na verdade, não deram suas filhas para eles em ­casamento’”.",
+            "text": "E quando os pais e os irmãos delas vierem se queixar a nós, diremos: ‘Por favor, tenham compaixão. Deixem que fiquem com suas filhas, pois não encontramos esposas para todos eles quando destruímos Jabes-Gileade. E vocês não são culpados de quebrarem seu juramento, pois, na verdade, não deram suas filhas para eles em casamento’”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -12489,7 +12526,7 @@
               },
               {
                 "ref": "Marcos 10:6–8",
-                "text": "mas ‘Deus os fez homem e mulher’45 desde o princípio da criação. 7‘Por isso o homem deixa pai e mãe e se une à sua mulher,"
+                "text": "mas ‘Deus os fez homem e mulher’ desde o princípio da criação."
               },
               {
                 "ref": "1 Coríntios 7:2",
@@ -12521,7 +12558,7 @@
           },
           {
             "number": 25,
-            "text": "Naqueles dias, Israel não tinha rei; cada um fazia o que parecia certo a seus próprios olhos. 1 1. Em hebraico, na Sefelá. 2 1. A Septuaginta e a Vulgata trazem ele insistiu para que ela. 3 1. Hormá significa “destruição”. 4 1. Em hebraico, Bete-Seã, variação de Bete-Sã. 5 1. Ou ladeira de Acrabim. 6 2. Em hebraico, estarão em seu lado; comparar com Nm 33.. 7 2. Boquim significa “pranteadores”. 8 2. Conforme o texto paralelo em Js 24.; o hebraico traz Timnate-Heres, variação de Timnate- Sera. 9 3. Arã-Naaraim significa “Arã dos dois rios”; acredita-se que ficava entre os rios Eufrates e Bali, na região noroeste da Mesopotâmia. 10 3. Em hebraico, 1 gômede; não se sabe o valor exato dessa medida de comprimento. 11 3. Ou e o punhal saiu por trás. 12 3. O significado do hebraico é incerto. 13 4. Ou sogro. 14 5. Ou as caravanas cessaram. 15 5. Ou até que eu, Débora, me levantei. 16 5. Ou Sobreviventes, dominem os poderosos. O significado do hebraico é incerto. 17 5. Conforme alguns manuscritos hebraicos e a versão siríaca, que trazem sondagens do coração; o Texto Massorético traz resolução do coração. 18 6. Em hebraico, 1 efa. 19 6. Javé-Shalom significa “o SENHOR é paz”. 20 7. Em hebraico, pode deixar o monte Gileade. A identificação do monte Gileade é incerta neste contexto. Talvez seja usado aqui como outro nome para o monte Gilboa. 21 7. Em hebraico, No começo da segunda vigília. 22 8. Em hebraico, Penuel, variação de Peniel; também em 8.,. 23 8. Em hebraico, 1.700 [siclos]. 24 8. Em hebraico, Jerubaal; ver 6.. 25 9. Em hebraico, Jerubaal (ver 6.32); também em 9.,,,,,. 26 9. O significado do hebraico é incerto. 27 9. Em hebraico, Quem é Siquém? 28 9. Ou em segredo. 29 9.37a Ou do centro da terra. 30 9.37b Em hebraico, Elom-Meonenim. 31 9. Em hebraico, El-Berite, outro nome para Baal-Berite; comparar com 9.. 32 10. Em hebraico, Havote-Jair. 33 11. Em hebraico, mar de juncos. 34 14. Em hebraico, filisteus incircuncisos. 35 14. Em hebraico, Quando eles. 36 14. Conforme a Septuaginta; o hebraico traz sétimo. 37 15. Ramate-Leí significa “colina da queixada”. 38 15. En-Hacoré significa “a fonte daquele que clamou”. 39 16. Conforme a Septuaginta, a versão siríaca e a Vulgata; o hebraico não traz Logo correu a notícia. 40 16. Em hebraico, 1.100 [siclos], cerca de 13, quilos. 41 16.13-14 Conforme a Septuaginta e a Vulgata; o hebraico não traz todo o trecho eu ficaria tão fraco como qualquer outro homem. [...] Depois, prendeu-o com o pino do tear. 42 16. Ou começou a atormentá-lo. A Septuaginta traz ele começou a enfraquecer. 43 17. Em hebraico, 1.100 [siclos], cerca de 13, quilos. 44 17. Em hebraico, 10 [siclos], cerca de 120 gramas. 45 18. Maané-Dã significa “o acampamento de Dã”. 46 18. Em hebraico, Israel. Os nomes “Jacó” e “Israel” são usados de forma intercambiável ao longo de todo o Antigo Testamento e se referem, por vezes, ao patriarca e, em outras ocasiões, à nação. 47 18. Conforme antiga tradição hebraica, alguns manuscritos gregos e a Vulgata; o Texto Massorético traz filho de Manassés. 48 19. Ou foi infiel a ele. 49 19. Conforme a Septuaginta (ver tb. 19.29); o hebraico traz agora estou indo para o tabernáculo do SENHOR. 50 19. A Septuaginta acrescenta pois ela estava morta. 51 20.10a Em hebraico, dez homens para cada cem, cem homens para cada mil e mil homens para cada dez mil. 52 20.10b Em hebraico, Geba, neste caso uma variação de Gibeá; também em 20.. 53 20. Conforme a Septuaginta, a versão siríaca e a Vulgata; o hebraico traz escondidos no espaço aberto. 54 20. Ou e as pessoas que saíram das cidades vizinhas também foram mortas. 55 20. O significado do hebraico é incerto.",
+            "text": "Naqueles dias, Israel não tinha rei; cada um fazia o que parecia certo a seus próprios olhos.",
             "isJesusWords": false,
             "crossReferences": [
               {

@@ -2,6 +2,7 @@
   "1": {
     "book": "Romanos",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Paulo",
@@ -21,7 +22,7 @@
               },
               {
                 "ref": "1 Coríntios 1:1",
-                "text": "Eu, Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta, com nosso irmão Sóstenes, 2à igreja de Deus em Corinto, àqueles que ele santificou por meio de Cristo Jesus. Vocês foram cham..."
+                "text": "Eu, Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta, com nosso irmão Sóstenes,"
               },
               {
                 "ref": "Jeremias 1:5",
@@ -90,7 +91,7 @@
               },
               {
                 "ref": "Efésios 1:19–23",
-                "text": "Também oro para que entendam a grandeza insuperável do poder de Deus para conosco, os que cremos."
+                "text": "Também oro para que entendam a grandeza insuperável do poder de Deus para conosco, os que cremos. É o mesmo poder grandioso"
               },
               {
                 "ref": "2 Coríntios 13:4",
@@ -197,7 +198,7 @@
           },
           {
             "number": 9,
-            "text": "O Deus a quem sirvo em meu espírito, anunciando as boas- novas a respeito de seu Filho, sabe como nunca deixo de me lembrar de vocês",
+            "text": "O Deus a quem sirvo em meu espírito, anunciando as boas-novas a respeito de seu Filho, sabe como nunca deixo de me lembrar de vocês",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -306,7 +307,7 @@
               },
               {
                 "ref": "1 Tessalonicenses 2:18",
-                "text": "Queríamos muito visitá- los, e eu, Paulo, tentei não apenas uma vez, mas duas; Satanás, porém, nos impediu."
+                "text": "Queríamos muito visitá-los, e eu, Paulo, tentei não apenas uma vez, mas duas; Satanás, porém, nos impediu."
               }
             ]
           },
@@ -755,6 +756,7 @@
   "2": {
     "book": "Romanos",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "O julgamento de Deus",
@@ -931,7 +933,7 @@
               },
               {
                 "ref": "1 Timóteo 6:3–4",
-                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente 4é arrogante e sem entendimento. Vive com o desejo doentio d..."
+                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente"
               },
               {
                 "ref": "João 3:18–21",
@@ -939,7 +941,7 @@
               },
               {
                 "ref": "1 Pedro 4:17",
-                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas- novas de Deus!"
+                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas-novas de Deus!"
               }
             ]
           },
@@ -950,7 +952,7 @@
             "crossReferences": [
               {
                 "ref": "1 Pedro 4:17",
-                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas- novas de Deus!"
+                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas-novas de Deus!"
               },
               {
                 "ref": "Romanos 3:29–30",
@@ -1031,7 +1033,7 @@
               },
               {
                 "ref": "Gálatas 2:16–19",
-                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em ­Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque..."
+                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque o..."
               }
             ]
           },
@@ -1304,7 +1306,7 @@
               },
               {
                 "ref": "Isaías 52:5",
-                "text": "O que é isso?”, pergunta o SENHOR. “Por que meu povo foi escravizado novamente? Aqueles que os dominam gritam de alegria.154 Meu nome é blasfemado o dia inteiro."
+                "text": "O que é isso?”, pergunta o SENHOR. “Por que meu povo foi escravizado novamente? Aqueles que os dominam gritam de alegria. Meu nome é blasfemado o dia inteiro."
               },
               {
                 "ref": "2 Pedro 2:2",
@@ -1415,11 +1417,11 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 30:6",
-                "text": "“O SENHOR, seu Deus, transformará55 o coração de vocês e de todos os seus descendentes, para que o amem de todo o coração e de toda a alma, e para que vivam!"
+                "text": "“O SENHOR, seu Deus, transformará o coração de vocês e de todos os seus descendentes, para que o amem de todo o coração e de toda a alma, e para que vivam!"
               },
               {
                 "ref": "Filipenses 3:3",
-                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
+                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
               },
               {
                 "ref": "Deuteronômio 10:16",
@@ -1438,6 +1440,7 @@
   "3": {
     "book": "Romanos",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "A fidelidade de Deus",
@@ -1702,7 +1705,7 @@
           },
           {
             "number": 12,
-            "text": "Todos se desviaram, todos se tornaram inúteis. Ninguém faz o bem, nem um sequer.”10",
+            "text": "Todos se desviaram, todos se tornaram inúteis. Ninguém faz o bem, nem um sequer.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1725,7 +1728,7 @@
           },
           {
             "number": 13,
-            "text": "“Sua conversa é repulsiva, como o odor de um túmulo aberto; sua língua é cheia de mentiras.” “Veneno de serpentes goteja de seus lábios.”11",
+            "text": "“Sua conversa é repulsiva, como o odor de um túmulo aberto; sua língua é cheia de mentiras.” “Veneno de serpentes goteja de seus lábios.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1734,7 +1737,7 @@
               },
               {
                 "ref": "Salmos 140:3",
-                "text": "Sua língua fere como uma serpente; veneno de víbora goteja de seus lábios."
+                "text": "Sua língua fere como uma serpente; veneno de víbora goteja de seus lábios. Interlúdio"
               },
               {
                 "ref": "Mateus 23:27–28",
@@ -1748,7 +1751,7 @@
           },
           {
             "number": 14,
-            "text": "“Sua boca é cheia de maldição e amargura.”12",
+            "text": "“Sua boca é cheia de maldição e amargura.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1805,7 +1808,7 @@
           },
           {
             "number": 17,
-            "text": "Não sabem onde encontrar paz.”13",
+            "text": "Não sabem onde encontrar paz.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1828,7 +1831,7 @@
           },
           {
             "number": 18,
-            "text": "“Não têm o menor temor de Deus.”14",
+            "text": "“Não têm o menor temor de Deus.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1879,7 +1882,7 @@
             "crossReferences": [
               {
                 "ref": "Gálatas 2:16",
-                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em ­Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque..."
+                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque o..."
               },
               {
                 "ref": "Atos 13:39",
@@ -1938,7 +1941,7 @@
               },
               {
                 "ref": "Gálatas 2:16",
-                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em ­Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque..."
+                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque o..."
               },
               {
                 "ref": "Romanos 8:1",
@@ -2122,7 +2125,7 @@
               },
               {
                 "ref": "Filipenses 3:3",
-                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
+                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
               },
               {
                 "ref": "Colossenses 2:10–11",
@@ -2160,6 +2163,7 @@
   "4": {
     "book": "Romanos",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Abraão como exemplo de fé",
@@ -2229,7 +2233,7 @@
               },
               {
                 "ref": "Romanos 4:9",
-                "text": "Por acaso essa bênção é apenas para os judeus, ou se estende também aos gentios incircuncidados?20 Já dissemos que Deus considerou Abraão justo por meio de sua fé."
+                "text": "Por acaso essa bênção é apenas para os judeus, ou se estende também aos gentios incircuncidados? Já dissemos que Deus considerou Abraão justo por meio de sua fé."
               }
             ]
           },
@@ -2350,7 +2354,7 @@
           },
           {
             "number": 9,
-            "text": "Por acaso essa bênção é apenas para os judeus, ou se estende também aos gentios incircuncidados?20 Já dissemos que Deus considerou Abraão justo por meio de sua fé.",
+            "text": "Por acaso essa bênção é apenas para os judeus, ou se estende também aos gentios incircuncidados? Já dissemos que Deus considerou Abraão justo por meio de sua fé.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2455,7 +2459,7 @@
               },
               {
                 "ref": "Gênesis 22:17–18",
-                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar."
+                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar. Seus descendentes conquistarão as cidades de seus inimigos"
               },
               {
                 "ref": "Romanos 9:8",
@@ -2664,7 +2668,7 @@
           },
           {
             "number": 23,
-            "text": "E, quando Deus considerou Abraão justo, não o fez apenas para benefício dele.",
+            "text": "E, quando Deus considerou Abraão justo, não o fez apenas para benefício dele. As Escrituras dizem",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2684,12 +2688,7 @@
                 "text": "Tais coisas aconteceram como advertência para nós, a fim de que não cobicemos o que é mau, como eles cobiçaram,"
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "As Escrituras dizem",
-        "verses": [
+          },
           {
             "number": 24,
             "text": "que foi também para nosso benefício, pois elas garantem que também seremos considerados justos por crermos naquele que ressuscitou dos mortos a Jesus, nosso Senhor.",
@@ -2743,6 +2742,7 @@
   "5": {
     "book": "Romanos",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "A fé produz alegria",
@@ -3242,6 +3242,7 @@
   "6": {
     "book": "Romanos",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "Libertos do poder do pecado",
@@ -3478,7 +3479,7 @@
           },
           {
             "number": 11,
-            "text": "Da mesma forma, considerem- se mortos para o poder do pecado e vivos para Deus em Cristo Jesus.",
+            "text": "Da mesma forma, considerem-se mortos para o poder do pecado e vivos para Deus em Cristo Jesus.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3606,7 +3607,7 @@
               },
               {
                 "ref": "Mateus 6:24",
-                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”48 Ensino sobre a preocupação"
+                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”"
               },
               {
                 "ref": "Josué 24:15",
@@ -3774,6 +3775,7 @@
   "7": {
     "book": "Romanos",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Libertos da lei",
@@ -3839,7 +3841,7 @@
               },
               {
                 "ref": "Marcos 10:6–12",
-                "text": "mas ‘Deus os fez homem e mulher’45 desde o princípio da criação. 7‘Por isso o homem deixa pai e mãe e se une à sua mulher,"
+                "text": "mas ‘Deus os fez homem e mulher’ desde o princípio da criação."
               },
               {
                 "ref": "João 8:3–5",
@@ -4070,7 +4072,7 @@
               },
               {
                 "ref": "Gálatas 3:21",
-                "text": "Existe, portanto, algum conflito entre a lei e as promessas de Deus?21 De maneira nenhuma! Se a lei fosse capaz de nos conceder nova vida, seríamos declarados justos pela obediência a ela."
+                "text": "Existe, portanto, algum conflito entre a lei e as promessas de Deus? De maneira nenhuma! Se a lei fosse capaz de nos conceder nova vida, seríamos declarados justos pela obediência a ela."
               },
               {
                 "ref": "Romanos 7:8–11",
@@ -4152,7 +4154,7 @@
               },
               {
                 "ref": "Salmos 119:127–128",
-                "text": "Por isso amo teus mandamentos, mais que o ouro, mais que o ouro puro. Cada um de teus mandamentos é reto; por isso, odeio todo caminho falso. Pê"
+                "text": "Por isso amo teus mandamentos, mais que o ouro, mais que o ouro puro. Cada um de teus mandamentos é reto; por isso, odeio todo caminho falso."
               }
             ]
           },
@@ -4346,6 +4348,7 @@
   "8": {
     "book": "Romanos",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "A vida no Espírito",
@@ -4503,7 +4506,7 @@
               },
               {
                 "ref": "Tiago 4:4",
-                "text": "Adúlteros!14 Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam- se inimigos de Deus."
+                "text": "Adúlteros! Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam-se inimigos de Deus."
               },
               {
                 "ref": "Efésios 4:18–19",
@@ -4599,7 +4602,7 @@
               },
               {
                 "ref": "Efésios 1:19–20",
-                "text": "Também oro para que entendam a grandeza insuperável do poder de Deus para conosco, os que cremos. que ressuscitou Cristo dos mortos e o fez sentar-se no lugar de honra, à direita de Deus, nos domínios celestiais."
+                "text": "Também oro para que entendam a grandeza insuperável do poder de Deus para conosco, os que cremos. É o mesmo poder grandioso"
               }
             ]
           },
@@ -4720,7 +4723,7 @@
           },
           {
             "number": 17,
-            "text": "Se somos seus filhos, então somos seus herdeiros e, portanto, co- herdeiros com Cristo. Se de fato participamos de seu sofrimento, participaremos também de sua glória.",
+            "text": "Se somos seus filhos, então somos seus herdeiros e, portanto, co-herdeiros com Cristo. Se de fato participamos de seu sofrimento, participaremos também de sua glória.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5153,7 +5156,7 @@
               },
               {
                 "ref": "Salmos 103:17",
-                "text": "Mas o amor do SENHOR por aqueles que o temem dura de eternidade a eternidade."
+                "text": "Mas o amor do SENHOR por aqueles que o temem dura de eternidade a eternidade. Sua justiça se estende até os filhos dos filhos"
               },
               {
                 "ref": "João 16:33",
@@ -5264,6 +5267,7 @@
   "9": {
     "book": "Romanos",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "Deus escolhe Israel",
@@ -5279,7 +5283,7 @@
               },
               {
                 "ref": "Romanos 1:9",
-                "text": "O Deus a quem sirvo em meu espírito, anunciando as boas- novas a respeito de seu Filho, sabe como nunca deixo de me lembrar de vocês"
+                "text": "O Deus a quem sirvo em meu espírito, anunciando as boas-novas a respeito de seu Filho, sabe como nunca deixo de me lembrar de vocês"
               },
               {
                 "ref": "Gálatas 1:20",
@@ -5394,7 +5398,7 @@
               },
               {
                 "ref": "Gálatas 6:16",
-                "text": "Que a paz e a miseri­córdia de Deus estejam sobre todos os que vivem de acordo com esse princípio e sobre o Israel de Deus."
+                "text": "Que a paz e a misericórdia de Deus estejam sobre todos os que vivem de acordo com esse princípio e sobre o Israel de Deus."
               },
               {
                 "ref": "Romanos 11:1–2",
@@ -5531,7 +5535,8 @@
                 "text": "Os dois bebês lutavam um com o outro no ventre da mãe, de modo que ela consultou o SENHOR a esse respeito. “Por que isso está acontecendo comigo?”, perguntou ela."
               },
               {
-                "ref": "1 Reis 22:47"
+                "ref": "1 Reis 22:47",
+                "text": "(Naquela época, não havia rei em Edom, mas apenas um governador.)"
               }
             ]
           },
@@ -5580,7 +5585,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 33:19",
-                "text": "O SENHOR respondeu: “Farei passar diante de você toda a minha bondade e anunciarei diante de você o meu nome, Javé.106 Pois terei misericórdia de quem eu quiser, e mostrarei compaixão a quem eu quiser."
+                "text": "O SENHOR respondeu: “Farei passar diante de você toda a minha bondade e anunciarei diante de você o meu nome, Javé. Pois terei misericórdia de quem eu quiser, e mostrarei compaixão a quem eu quiser."
               },
               {
                 "ref": "Romanos 9:16",
@@ -5615,7 +5620,7 @@
               },
               {
                 "ref": "Filipenses 2:13",
-                "text": "Pois Deus está agindo em vocês, dando- lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
+                "text": "Pois Deus está agindo em vocês, dando-lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
               }
             ]
           },
@@ -5833,7 +5838,7 @@
             "crossReferences": [
               {
                 "ref": "Oséias 1:9–10",
-                "text": "E o SENHOR disse: “Dê-lhe o nome de Lo-Ami, ‘Não Meu Povo’, pois Israel não é meu povo, e eu não sou seu Deus. 103 “Virá o tempo, porém, em que o povo de Israel se tornará como a areia à beira do mar, que não se pode con..."
+                "text": "E o SENHOR disse: “Dê-lhe o nome de Lo-Ami, ‘Não Meu Povo’, pois Israel não é meu povo, e eu não sou seu Deus."
               },
               {
                 "ref": "1 João 3:1–3",
@@ -5867,7 +5872,8 @@
                 "text": "Se o SENHOR dos Exércitos não houvesse poupado alguns de nós, teríamos sido exterminados como Sodoma e destruídos como Gomorra."
               },
               {
-                "ref": "Oséias 1:10"
+                "ref": "Oséias 1:10",
+                "text": "“Virá o tempo, porém, em que o povo de Israel se tornará como a areia à beira do mar, que não se pode contar. Então, no lugar onde lhes foi dito: ‘Vocês não são meu povo’, se dirá: ‘Vocês são filhos do Deus vivo’."
               }
             ]
           },
@@ -5909,7 +5915,7 @@
               },
               {
                 "ref": "Amós 4:11",
-                "text": "“Destruí algumas de suas cidades, como destruí13 Sodoma e Gomorra. Os que sobreviveram pareciam gravetos chamuscados, tirados do fogo. Nem assim vocês voltaram para mim”, diz o SENHOR."
+                "text": "“Destruí algumas de suas cidades, como destruí Sodoma e Gomorra. Os que sobreviveram pareciam gravetos chamuscados, tirados do fogo. Nem assim vocês voltaram para mim”, diz o SENHOR."
               },
               {
                 "ref": "Tiago 5:4",
@@ -5937,7 +5943,7 @@
               },
               {
                 "ref": "Gálatas 2:16",
-                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em ­Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque..."
+                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque o..."
               },
               {
                 "ref": "Romanos 4:11",
@@ -5993,7 +5999,7 @@
           },
           {
             "number": 33,
-            "text": "e a esse respeito as Escrituras afirmam: “Ponho em Sião uma pedra que os faz tropeçar, uma rocha que os faz cair.",
+            "text": "e a esse respeito as Escrituras afirmam: “Ponho em Sião uma pedra que os faz tropeçar, uma rocha que os faz cair. Mas quem confiar nele jamais será envergonhado”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6021,9 +6027,10 @@
   "10": {
     "book": "Romanos",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
-        "title": "jamais será envergonhado”.52",
+        "title": "",
         "verses": [
           {
             "number": 1,
@@ -6133,7 +6140,7 @@
               },
               {
                 "ref": "Ezequiel 20:11",
-                "text": "Ali lhes dei meus decretos e estatutos, para que encontrassem vida ao praticá- los."
+                "text": "Ali lhes dei meus decretos e estatutos, para que encontrassem vida ao praticá-los."
               },
               {
                 "ref": "Neemias 9:29",
@@ -6248,7 +6255,7 @@
               },
               {
                 "ref": "Gálatas 2:16",
-                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em ­Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque..."
+                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque o..."
               },
               {
                 "ref": "João 1:12–13",
@@ -6267,7 +6274,7 @@
               },
               {
                 "ref": "Romanos 9:33",
-                "text": "e a esse respeito as Escrituras afirmam: “Ponho em Sião uma pedra que os faz tropeçar, uma rocha que os faz cair."
+                "text": "e a esse respeito as Escrituras afirmam: “Ponho em Sião uma pedra que os faz tropeçar, uma rocha que os faz cair. Mas quem confiar nele jamais será envergonhado”."
               },
               {
                 "ref": "1 Pedro 2:6",
@@ -6324,7 +6331,7 @@
             "crossReferences": [
               {
                 "ref": "Marcos 16:15–16",
-                "text": "Jesus lhes disse: “Vão ao mundo inteiro e anunciem as boas- novas a todos. Quem crer e for batizado será salvo, mas quem se recusar a crer será condenado."
+                "text": "Jesus lhes disse: “Vão ao mundo inteiro e anunciem as boas-novas a todos. Quem crer e for batizado será salvo, mas quem se recusar a crer será condenado."
               },
               {
                 "ref": "Atos 26:17–18",
@@ -6347,10 +6354,11 @@
             "crossReferences": [
               {
                 "ref": "Isaías 52:7",
-                "text": "Como são belos sobre os montes os pés do mensageiro que traz boas-novas, boas-novas de paz e salvação, de que o Deus de Israel156 reina!"
+                "text": "Como são belos sobre os montes os pés do mensageiro que traz boas-novas, boas-novas de paz e salvação, de que o Deus de Israel reina!"
               },
               {
-                "ref": "Naum 1:15"
+                "ref": "Naum 1:15",
+                "text": "Vejam, um mensageiro vem pelas montanhas com boas notícias! Ele traz uma mensagem de paz. Celebrem suas festas, ó habitantes de Judá, e cumpram seus votos, pois seus inimigos perversos nunca mais invadirão sua terra; serão completamente destruídos."
               },
               {
                 "ref": "Efésios 2:17",
@@ -6423,7 +6431,7 @@
               },
               {
                 "ref": "Mateus 24:14",
-                "text": "As boas-novas a respeito do reino serão anunciadas em todo o mundo, para que todas as nações140 as ouçam; então, virá o fim."
+                "text": "As boas-novas a respeito do reino serão anunciadas em todo o mundo, para que todas as nações as ouçam; então, virá o fim."
               },
               {
                 "ref": "1 Tessalonicenses 1:8",
@@ -6456,12 +6464,12 @@
           },
           {
             "number": 20,
-            "text": "E, mais tarde, Isaías se pronunciou com ou­sadia: “Fui encontrado por aqueles que não me procuravam. Revelei-me àqueles que não perguntavam por mim”.",
+            "text": "E, mais tarde, Isaías se pronunciou com ousadia: “Fui encontrado por aqueles que não me procuravam. Revelei-me àqueles que não perguntavam por mim”.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Isaías 65:1–2",
-                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome,180 eu disse: ‘Aqui estou! Aqui estou!’."
+                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome, eu disse: ‘Aqui estou! Aqui estou!’."
               },
               {
                 "ref": "Romanos 9:30",
@@ -6484,7 +6492,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 65:2–5",
-                "text": "O dia todo abri os braços para um povo rebelde,181 mas eles seguiram seus caminhos perversos e suas ideias distorcidas."
+                "text": "O dia todo abri os braços para um povo rebelde, mas eles seguiram seus caminhos perversos e suas ideias distorcidas."
               },
               {
                 "ref": "Neemias 9:26",
@@ -6507,6 +6515,7 @@
   "11": {
     "book": "Romanos",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "A misericórdia de Deus para com Israel",
@@ -6595,7 +6604,7 @@
               },
               {
                 "ref": "2 Reis 10:19–20",
-                "text": "Portanto, convoquem todos os profetas e adoradores de Baal e reúnam todos os seus sacerdotes. Todos devem vir, pois vou oferecer um grande sacri­fício a Baal. Quem não comparecer será morto”. O plano astuto de Jeú, porém..."
+                "text": "Portanto, convoquem todos os profetas e adoradores de Baal e reúnam todos os seus sacerdotes. Todos devem vir, pois vou oferecer um grande sacrifício a Baal. Quem não comparecer será morto”. O plano astuto de Jeú, porém..."
               },
               {
                 "ref": "Sofonias 1:4",
@@ -6969,7 +6978,7 @@
           },
           {
             "number": 21,
-            "text": "Pois, se Deus não poupou os ramos naturais, também não poupará70 vocês.",
+            "text": "Pois, se Deus não poupou os ramos naturais, também não poupará vocês.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -7082,7 +7091,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 59:20",
-                "text": "“O Redentor virá a Jerusalém para resgatar em Israel aqueles que se afastaram de seus pecados”,166 diz o SENHOR."
+                "text": "“O Redentor virá a Jerusalém para resgatar em Israel aqueles que se afastaram de seus pecados”, diz o SENHOR."
               },
               {
                 "ref": "Jeremias 31:31–37",
@@ -7257,12 +7266,12 @@
           },
           {
             "number": 34,
-            "text": "“Pois quem conhece os pensamentos do Senhor? Quem sabe o suficiente para aconselhá-lo?”74",
+            "text": "“Pois quem conhece os pensamentos do Senhor? Quem sabe o suficiente para aconselhá-lo?”",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Isaías 40:13",
-                "text": "Quem pode orientar o Espírito do SENHOR?130 Quem sabe o suficiente para aconselhá-lo ou instruí-lo?"
+                "text": "Quem pode orientar o Espírito do SENHOR? Quem sabe o suficiente para aconselhá-lo ou instruí-lo?"
               },
               {
                 "ref": "1 Coríntios 2:16",
@@ -7280,7 +7289,7 @@
           },
           {
             "number": 35,
-            "text": "“Quem lhe deu primeiro alguma coisa, para que ele precise depois retribuir?”75",
+            "text": "“Quem lhe deu primeiro alguma coisa, para que ele precise depois retribuir?”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -7327,6 +7336,7 @@
   "12": {
     "book": "Romanos",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "Sacrifício vivo para Deus",
@@ -7599,7 +7609,7 @@
               },
               {
                 "ref": "Salmos 62:8",
-                "text": "Ó meu povo, confie nele em todo tempo; derrame o coração diante dele, pois Deus é nosso refúgio."
+                "text": "Ó meu povo, confie nele em todo tempo; derrame o coração diante dele, pois Deus é nosso refúgio. Interlúdio"
               },
               {
                 "ref": "Romanos 5:2–4",
@@ -7741,7 +7751,7 @@
               },
               {
                 "ref": "2 Coríntios 13:11",
-                "text": "Irmãos, encerro minha carta com estas últimas palavras: Alegrem- se. Cresçam até alcançar a maturidade. Encorajem-se mutuamente. Vivam em harmonia e paz. Então o Deus de amor e paz estará com vocês."
+                "text": "Irmãos, encerro minha carta com estas últimas palavras: Alegrem-se. Cresçam até alcançar a maturidade. Encorajem-se mutuamente. Vivam em harmonia e paz. Então o Deus de amor e paz estará com vocês."
               }
             ]
           },
@@ -7817,6 +7827,7 @@
   "13": {
     "book": "Romanos",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "Respeito pelas autoridades",
@@ -7998,7 +8009,7 @@
               },
               {
                 "ref": "Mateus 22:39–40",
-                "text": "O segundo é igualmente importante: ‘Ame o seu próximo como a si mesmo’. Toda a lei e todas as exigências dos profetas se baseiam nesses dois mandamentos”. De quem o Cristo é filho?"
+                "text": "O segundo é igualmente importante: ‘Ame o seu próximo como a si mesmo’. Toda a lei e todas as exigências dos profetas se baseiam nesses dois mandamentos”."
               },
               {
                 "ref": "Gálatas 5:14",
@@ -8044,7 +8055,7 @@
               },
               {
                 "ref": "Mateus 22:39–40",
-                "text": "O segundo é igualmente importante: ‘Ame o seu próximo como a si mesmo’. Toda a lei e todas as exigências dos profetas se baseiam nesses dois mandamentos”. De quem o Cristo é filho?"
+                "text": "O segundo é igualmente importante: ‘Ame o seu próximo como a si mesmo’. Toda a lei e todas as exigências dos profetas se baseiam nesses dois mandamentos”."
               },
               {
                 "ref": "1 Coríntios 13:4–7",
@@ -8151,6 +8162,7 @@
   "14": {
     "book": "Romanos",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
         "title": "Não julguem uns aos outros",
@@ -8691,6 +8703,7 @@
   "15": {
     "book": "Romanos",
     "chapter": "15",
+    "verified": true,
     "sections": [
       {
         "title": "Vivam para ajudar e edificar os outros",
@@ -8733,7 +8746,7 @@
               },
               {
                 "ref": "Filipenses 2:4–5",
-                "text": "Não- ­ procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios. Tenham a mesma atitude demonstrada por Cristo Jesus."
+                "text": "Não- procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios. Tenham a mesma atitude demonstrada por Cristo Jesus."
               },
               {
                 "ref": "1 Coríntios 10:33–1 Coríntios 11:1",
@@ -8779,7 +8792,7 @@
               },
               {
                 "ref": "Romanos 4:23–24",
-                "text": "E, quando Deus considerou Abraão justo, não o fez apenas para benefício dele."
+                "text": "E, quando Deus considerou Abraão justo, não o fez apenas para benefício dele. As Escrituras dizem"
               },
               {
                 "ref": "2 Pedro 1:20–21",
@@ -8798,7 +8811,7 @@
               },
               {
                 "ref": "Filipenses 2:4–5",
-                "text": "Não- ­ procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios. Tenham a mesma atitude demonstrada por Cristo Jesus."
+                "text": "Não- procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios. Tenham a mesma atitude demonstrada por Cristo Jesus."
               },
               {
                 "ref": "1 Pedro 3:8",
@@ -8909,7 +8922,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 67:3–4",
-                "text": "Que os povos te louvem, ó Deus, sim, que todos os povos te louvem. Que o mundo inteiro cante de alegria, pois governas os povos com justiça e guias as nações de toda a terra."
+                "text": "Que os povos te louvem, ó Deus, sim, que todos os povos te louvem. Que o mundo inteiro cante de alegria, pois governas os povos com justiça e guias as nações de toda a terra. Interlúdio"
               },
               {
                 "ref": "Deuteronômio 32:43",
@@ -8943,11 +8956,11 @@
             "crossReferences": [
               {
                 "ref": "Isaías 11:10",
-                "text": "Naquele dia, o descendente de Jessé46 será uma bandeira de salvação para todo o mundo. As nações se reunirão junto a ele, e a terra onde ele habita será um lugar glorioso."
+                "text": "Naquele dia, o descendente de Jessé será uma bandeira de salvação para todo o mundo. As nações se reunirão junto a ele, e a terra onde ele habita será um lugar glorioso."
               },
               {
                 "ref": "Isaías 11:1",
-                "text": "Do tronco da linhagem de Jessé45 brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
+                "text": "Do tronco da linhagem de Jessé brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
               },
               {
                 "ref": "Mateus 12:21",
@@ -9071,11 +9084,11 @@
               },
               {
                 "ref": "Filipenses 3:3",
-                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
+                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
               },
               {
                 "ref": "Hebreus 5:1",
-                "text": "Todo sumo sacerdote é um homem escolhido para representar outras pessoas nas coisas referentes a Deus."
+                "text": "Todo sumo sacerdote é um homem escolhido para representar outras pessoas nas coisas referentes a Deus. Ele apresenta ofertas e sacrifícios pelos pecados"
               }
             ]
           },
@@ -9113,7 +9126,7 @@
               },
               {
                 "ref": "Hebreus 2:4",
-                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade. Jesus, o homem"
+                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade."
               },
               {
                 "ref": "Gálatas 3:5",
@@ -9151,11 +9164,11 @@
             "crossReferences": [
               {
                 "ref": "Isaías 52:15",
-                "text": "Ele causará assombro em158 muitas nações; reis ficarão mudos diante dele, pois verão aquilo que ninguém lhes havia falado,"
+                "text": "Ele causará assombro em muitas nações; reis ficarão mudos diante dele, pois verão aquilo que ninguém lhes havia falado, entenderão aquilo que nunca tinham ouvido."
               },
               {
                 "ref": "Isaías 65:1",
-                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome,180 eu disse: ‘Aqui estou! Aqui estou!’."
+                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome, eu disse: ‘Aqui estou! Aqui estou!’."
               }
             ]
           },
@@ -9336,7 +9349,7 @@
               },
               {
                 "ref": "Salmos 16:11",
-                "text": "Tu me mostrarás o caminho da vida e me darás a alegria de tua presença"
+                "text": "Tu me mostrarás o caminho da vida e me darás a alegria de tua presença e o prazer de viver contigo para sempre."
               }
             ]
           },
@@ -9416,7 +9429,7 @@
             "crossReferences": [
               {
                 "ref": "2 Coríntios 13:11",
-                "text": "Irmãos, encerro minha carta com estas últimas palavras: Alegrem- se. Cresçam até alcançar a maturidade. Encorajem-se mutuamente. Vivam em harmonia e paz. Então o Deus de amor e paz estará com vocês."
+                "text": "Irmãos, encerro minha carta com estas últimas palavras: Alegrem-se. Cresçam até alcançar a maturidade. Encorajem-se mutuamente. Vivam em harmonia e paz. Então o Deus de amor e paz estará com vocês."
               },
               {
                 "ref": "Filipenses 4:9",
@@ -9439,6 +9452,7 @@
   "16": {
     "book": "Romanos",
     "chapter": "16",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Paulo a seus amigos",
@@ -9549,7 +9563,8 @@
                 "text": "As igrejas aqui na província da Ásia enviam saudações no Senhor. Também os saúdam Áquila e Priscila e todos da igreja que se reúne na casa deles."
               },
               {
-                "ref": "Filemom 1:2"
+                "ref": "Filemom 1:2",
+                "text": "à irmã Áfia, a Arquipo, nosso companheiro na luta, e à igreja que se reúne em sua casa."
               },
               {
                 "ref": "1 Coríntios 16:15",
@@ -9810,7 +9825,7 @@
               },
               {
                 "ref": "1 Timóteo 6:3–5",
-                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente 4é arrogante e sem entendimento. Vive com o desejo doentio d..."
+                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente"
               }
             ]
           },
@@ -9875,7 +9890,7 @@
               },
               {
                 "ref": "Gênesis 3:15",
-                "text": "Farei que haja inimizade entre você e a mulher, e entre a sua descendência e o descendente dela. Ele lhe ferirá12 a cabeça, e você lhe ferirá o calcanhar”."
+                "text": "Farei que haja inimizade entre você e a mulher, e entre a sua descendência e o descendente dela. Ele lhe ferirá a cabeça, e você lhe ferirá o calcanhar”."
               },
               {
                 "ref": "Malaquias 4:3",
@@ -9954,7 +9969,7 @@
           },
           {
             "number": 24,
-            "text": "Que a graça de nosso Senhor Jesus Cristo seja com todos vocês. Amém.100",
+            "text": "Que a graça de nosso Senhor Jesus Cristo seja com todos vocês. Amém.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -10015,7 +10030,7 @@
           },
           {
             "number": 27,
-            "text": "Toda a glória para sempre ao Deus único e sábio, por meio de Jesus Cristo. Amém.101 1 1. Ou ele ficou estabelecido como. 2 1. Em grego, os gregos. 3 1. Hc 2.. 4 1. Ou que suprimem a verdade com sua maldade. 5 2. Em grego, os gregos; também em 2.. 6 2. Is 52., conforme a Septuaginta. 7 3. Em grego, foram confiados os ­oráculos de Deus. 8 3. Sl 51., conforme a Septuaginta. 9 3. Em grego, gregos. 10 3.10-12 Sl 14.1-3; 53.1-3, conforme a Septuaginta. 11 3. Sl 5., conforme a Septuaginta; Sl 140.. 12 3. Sl 10., conforme a Septuaginta. 13 3.15-17 Is 59.7-8. 14 3. Sl 36.. 15 3. Em grego, na lei. 16 3. Ou lugar de expiação. 17 3.30 Em grego, tanto circuncidados como incircuncidados. 18 4. Gn 15.. 19 4.7-8 Sl 32.1-2, conforme a Septuaginta. 20 4. Em grego, essa bênção é apenas para os circuncidados, ou é também para os incircuncidados? 21 4. Gn 17.. 22 4. Gn 15.. 23 5. Alguns manuscritos trazem tenhamos paz. 24 6. Em grego, por causa da fraqueza de sua carne. 25 7. Em grego, Quando estávamos na carne. 26 7. Êx 20.; Dt 5.. 27 7. Em grego, pois sou carnal. 28 7. Em grego, minha carne; também em 7.. 29 8. Alguns manuscritos trazem me libertou. 30 8. Em grego, carne; também em 8.,,,,,,. 31 8.15a Em grego, mas vocês receberam espírito de adoção como filhos. 32 8.15b Aba é um termo aramaico para “pai”. 33 8. Ou o próprio Espírito testemunha com o nosso espírito. 34 8. Em grego, aguardamos ansiosamente a adoção como filhos. 35 8. Ou E sabemos que todas as coisas cooperam para o bem daqueles que amam a Deus. 36 8. Sl 44.. 37 8. Em grego, nem governantes. 38 9. Em grego, meus irmãos. 39 9. Em grego, para a adoção como filhos. 40 9. Ou Que Deus, aquele que governa sobre todas as coisas, seja louvado para sempre! Amém. 41 9. Gn 21.. 42 9. Gn 18.,. 43 9. Gn 25.. 44 9. Ml 1.2-3. 45 9. Êx 33.. 46 9. Êx 9., conforme a Septuaginta. 47 9. Ou prontos para a ruína. 48 9. Os 2.. 49 9. Os 1.. 50 9.27-28 Is 10.22-23, conforme a Septuaginta. 51 9. Is 1., conforme a Septuaginta. 52 9. Is 8.; 28., conforme a Septuaginta. 53 10. Ou Cristo é o fim da lei. 54 10. Ver Lv 18.. 55 10.6-8 Dt 30.12-14. 56 10. Is 28., conforme a Septuaginta. 57 10. Em grego, e gregos. 58 10. Jl 2.. 59 10. Is 52.. 60 10. Is 53.. 61 10. Sl 19.. 62 10. Dt 32.. 63 10. Is 65., conforme a Septuaginta. 64 10. Is 65., conforme a Septuaginta. 65 11.",
+            "text": "Toda a glória para sempre ao Deus único e sábio, por meio de Jesus Cristo. Amém.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -10033,52 +10048,6 @@
               {
                 "ref": "Romanos 11:33–34",
                 "text": "Como são grandes as riquezas, a sabedoria e o conhecimento de Deus! É impossível entendermos suas decisões e seus caminhos! “Pois quem conhece os pensamentos do Senhor? Quem sabe o suficiente para aconselhá-lo?”"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Rs 19.,. 66 11.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Atos 18:18",
-                "text": "Paulo ainda permaneceu em Corinto por algum tempo. Então se despediu dos irmãos e foi a Cencreia, onde raspou a cabeça, de acordo com o costume judaico para marcar o fim de um voto. Em seguida, partiu de navio para a Sír..."
-              },
-              {
-                "ref": "1 Pedro 1:22–23",
-                "text": "Uma vez que vocês foram purificados de seus pecados quando obedeceram à verdade, tenham como alvo agora o amor fraternal sem fingimento. Amem uns aos outros sinceramente, de todo o coração."
-              },
-              {
-                "ref": "1 Timóteo 5:9–10",
-                "text": "A viúva incluída na lista para receber sustento deve ter pelo menos sessenta anos e ter sido esposa de um só marido."
-              },
-              {
-                "ref": "Tiago 2:15",
-                "text": "Se um irmão ou uma irmã necessitar de alimento ou de roupa,"
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Rs 19.. 67 11. Em grego, pois um remanescente permaneceu. 68 11. Is 29.; Dt 29.. 69 11.9-10 Sl 69.22-23, conforme a Septuaginta. 70 11. Alguns manuscritos trazem é possível que não poupe. 71 11. Em grego, Jacó. 72 11.26-27 Is 59.20-21; 27., conforme a Septuaginta. 73 11. Alguns manuscritos trazem agora participem; outros, algum dia participem. 74 11. Is 40., conforme a Septuaginta. 75 11. Ver Jó 41.. 76 12. Ou Essa é sua adoração espiritual, ou Esse é seu culto racional. 77 12.3 Ou a fé que Deus lhes deu, ou a medida de nossa fé dada por Deus. 78 12. Ou mas sirvam ao Senhor com espírito zeloso, ou mas deixem que o Espírito os anime ao servirem ao Senhor. 79 12. Dt 32.. 80 12. Pv 25.21-22. 81 13.9a Êx 20.13-15,. 82 13.9b Lv 19.. 83 14.11a Is 49.. 84 14.11b Ou declarará louvor a Deus. Is 45., conforme a Septuaginta. 85 14. Alguns manuscritos acrescentam ou se escandalizar ou se enfraquecer. 86 14. Alguns manuscritos inserem aqui a passagem de 16.25-27. 87 15. Sl 69.. 88 15. Em grego, como servo da circuncisão. 89 15. Sl 18.. 90 15. Dt 32.. 91 15. Sl 117.. 92 15.12a Em grego, a raiz de Jessé. Davi era filho de Jessé. 93 15.12b Is 11., conforme a Septuaginta. 94 15.19a Alguns manuscritos trazem Espírito; outros, Espírito Santo. 95 15.19b O Ilírico era uma região situada ao nordeste da Itália. 96 15. Is 52., conforme a Septuaginta. 97 15. Macedônia e Acaia eram as regiões norte e sul da Grécia. 98 15. Em grego, o ministério; alguns manuscritos trazem o presente. 99 15. Alguns manuscritos não trazem Amém; outros inserem aqui a passagem de 16.25-27. 100 16. Alguns manuscritos não trazem o versículo 24. 101 16.25-27 Vários manuscritos inserem a doxologia (apresentada aqui como 16.25-27) depois de 14. ou depois de 16..",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Atos 18:18",
-                "text": "Paulo ainda permaneceu em Corinto por algum tempo. Então se despediu dos irmãos e foi a Cencreia, onde raspou a cabeça, de acordo com o costume judaico para marcar o fim de um voto. Em seguida, partiu de navio para a Sír..."
-              },
-              {
-                "ref": "1 Pedro 1:22–23",
-                "text": "Uma vez que vocês foram purificados de seus pecados quando obedeceram à verdade, tenham como alvo agora o amor fraternal sem fingimento. Amem uns aos outros sinceramente, de todo o coração."
-              },
-              {
-                "ref": "1 Timóteo 5:9–10",
-                "text": "A viúva incluída na lista para receber sustento deve ter pelo menos sessenta anos e ter sido esposa de um só marido."
-              },
-              {
-                "ref": "Tiago 2:15",
-                "text": "Se um irmão ou uma irmã necessitar de alimento ou de roupa,"
               }
             ]
           }

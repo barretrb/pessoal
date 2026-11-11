@@ -2,6 +2,7 @@
   "1": {
     "book": "3 João",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações",
@@ -168,7 +169,7 @@
               },
               {
                 "ref": "2 Coríntios 11:7–9",
-                "text": "Será que fiz mal quando me humilhei e os honrei anunciando- lhes as boas-novas de Deus sem esperar nada em troca?"
+                "text": "Será que fiz mal quando me humilhei e os honrei anunciando-lhes as boas-novas de Deus sem esperar nada em troca?"
               }
             ]
           },
@@ -233,7 +234,7 @@
               },
               {
                 "ref": "2 Coríntios 13:2",
-                "text": "Sm 7.."
+                "text": "Em minha segunda visita, já adverti aqueles que estavam em pecado. Agora, como naquela ocasião, volto a adverti-los e também os demais de que, da próxima vez, não os pouparei."
               },
               {
                 "ref": "Provérbios 10:8",
@@ -266,7 +267,7 @@
           },
           {
             "number": 12,
-            "text": "Todos, incluindo a própria verdade, falam bem de Demétrio. Nós dizemos o mesmo a ­respeito dele, e você sabe que falamos a verdade.",
+            "text": "Todos, incluindo a própria verdade, falam bem de Demétrio. Nós dizemos o mesmo a respeito dele, e você sabe que falamos a verdade.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -328,7 +329,7 @@
           },
           {
             "number": 15,
-            "text": "A paz seja com você. Seus amigos daqui mandam lembranças. Por favor, envie minhas saudações pessoais a cada um dos amigos daí. 1 1. Ou ancião. 2 1.7a Em grego, eles saíram por causa do Nome. 3 1.7b Em grego, dos gentios. 4 1. Em grego, não viu a Deus. 5 1. Em algumas traduções o versículo 15 faz parte do 14.",
+            "text": "A paz seja com você. Seus amigos daqui mandam lembranças. Por favor, envie minhas saudações pessoais a cada um dos amigos daí.",
             "isJesusWords": false,
             "crossReferences": [
               {

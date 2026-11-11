@@ -2,6 +2,7 @@
   "1": {
     "book": "1 Timóteo",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Paulo",
@@ -44,7 +45,7 @@
               },
               {
                 "ref": "1 Coríntios 4:14–17",
-                "text": "Não escrevo estas coisas para envergonhá-los, mas para adverti- los como meus filhos amados."
+                "text": "Não escrevo estas coisas para envergonhá-los, mas para adverti-los como meus filhos amados."
               },
               {
                 "ref": "Filipenses 2:19–22",
@@ -64,7 +65,7 @@
             "crossReferences": [
               {
                 "ref": "1 Timóteo 6:3",
-                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente 4é arrogante e sem entendimento. Vive com o desejo doentio d..."
+                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente"
               },
               {
                 "ref": "Gálatas 1:6–7",
@@ -137,7 +138,7 @@
               },
               {
                 "ref": "2 Timóteo 2:23–24",
-                "text": "Digo mais uma vez: não se envolva em ­discussões tolas e ignorantes que só servem para gerar brigas. O servo do Senhor não deve viver brigando, mas ser amável com todos, apto a ensinar e paciente."
+                "text": "Digo mais uma vez: não se envolva em discussões tolas e ignorantes que só servem para gerar brigas. O servo do Senhor não deve viver brigando, mas ser amável com todos, apto a ensinar e paciente."
               },
               {
                 "ref": "Tito 3:9",
@@ -163,7 +164,8 @@
                 "text": "Os falsos mestres são como criaturas irracionais movidas pelo instinto, que nascem para apanhar e morrer. Nada sabem sobre aqueles a quem insultam e, como animais, serão destruídos por sua própria corrupção."
               },
               {
-                "ref": "1 Timóteo 6:4"
+                "ref": "1 Timóteo 6:4",
+                "text": "é arrogante e sem entendimento. Vive com o desejo doentio de discutir o significado das palavras e provoca contendas que resultam em inveja, divisão, difamação e suspeitas malignas."
               },
               {
                 "ref": "Gálatas 3:5",
@@ -333,13 +335,13 @@
               },
               {
                 "ref": "1 Pedro 1:3",
-                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos."
+                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos. Agora temos uma viva esperança"
               }
             ]
           },
           {
             "number": 15,
-            "text": "Esta é uma afirmação digna de confiança, e todos devem aceitá- la: “Cristo Jesus veio ao mundo para salvar os pecadores”, e eu sou o pior de todos.",
+            "text": "Esta é uma afirmação digna de confiança, e todos devem aceitá-la: “Cristo Jesus veio ao mundo para salvar os pecadores”, e eu sou o pior de todos.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -487,6 +489,7 @@
   "2": {
     "book": "1 Timóteo",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Instruções a respeito do culto",
@@ -648,7 +651,7 @@
               },
               {
                 "ref": "Efésios 3:7–8",
-                "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas- novas."
+                "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas-novas."
               }
             ]
           },
@@ -812,7 +815,7 @@
               },
               {
                 "ref": "Gênesis 3:15–16",
-                "text": "Farei que haja inimizade entre você e a mulher, e entre a sua descendência e o descendente dela. Ele lhe ferirá12 a cabeça, e você lhe ferirá o calcanhar”."
+                "text": "Farei que haja inimizade entre você e a mulher, e entre a sua descendência e o descendente dela. Ele lhe ferirá a cabeça, e você lhe ferirá o calcanhar”."
               },
               {
                 "ref": "1 Timóteo 1:5",
@@ -827,6 +830,7 @@
   "3": {
     "book": "1 Timóteo",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Os líderes da igreja",
@@ -842,7 +846,7 @@
               },
               {
                 "ref": "Atos 20:28",
-                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos,102 a fim de pastorearem sua igreja, comprada com seu próprio sangue."
+                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos, a fim de pastorearem sua igreja, comprada com seu próprio sangue."
               },
               {
                 "ref": "1 Pedro 5:2",
@@ -938,7 +942,7 @@
               },
               {
                 "ref": "Atos 20:28",
-                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos,102 a fim de pastorearem sua igreja, comprada com seu próprio sangue."
+                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos, a fim de pastorearem sua igreja, comprada com seu próprio sangue."
               },
               {
                 "ref": "Efésios 5:32",
@@ -952,7 +956,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Timóteo 6:4"
+                "ref": "1 Timóteo 6:4",
+                "text": "é arrogante e sem entendimento. Vive com o desejo doentio de discutir o significado das palavras e provoca contendas que resultam em inveja, divisão, difamação e suspeitas malignas."
               },
               {
                 "ref": "Hebreus 5:12–13",
@@ -1210,6 +1215,7 @@
   "4": {
     "book": "1 Timóteo",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Advertências acerca dos falsos mestres",
@@ -1302,7 +1308,7 @@
               },
               {
                 "ref": "1 Coríntios 10:23",
-                "text": "“Tudo é permitido”, mas nem tudo convém. “Tudo é permitido”, mas nem tudo traz bene­fícios."
+                "text": "“Tudo é permitido”, mas nem tudo convém. “Tudo é permitido”, mas nem tudo traz benefícios."
               }
             ]
           },
@@ -1410,7 +1416,7 @@
             "crossReferences": [
               {
                 "ref": "1 Timóteo 1:15",
-                "text": "Esta é uma afirmação digna de confiança, e todos devem aceitá- la: “Cristo Jesus veio ao mundo para salvar os pecadores”, e eu sou o pior de todos."
+                "text": "Esta é uma afirmação digna de confiança, e todos devem aceitá-la: “Cristo Jesus veio ao mundo para salvar os pecadores”, e eu sou o pior de todos."
               }
             ]
           },
@@ -1444,7 +1450,7 @@
             "crossReferences": [
               {
                 "ref": "1 Timóteo 6:2",
-                "text": "O fato de o senhor ser irmão na fé não é desculpa para deixarem de respeitá- lo. Pelo contrário, devem trabalhar ainda mais arduamente, pois seus esforços beneficiam outros irmãos amados. Falsos ensinos e riquezas verdad..."
+                "text": "O fato de o senhor ser irmão na fé não é desculpa para deixarem de respeitá-lo. Pelo contrário, devem trabalhar ainda mais arduamente, pois seus esforços beneficiam outros irmãos amados."
               },
               {
                 "ref": "2 Timóteo 4:2",
@@ -1582,6 +1588,7 @@
   "5": {
     "book": "1 Timóteo",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Conselhos a respeito de viúvas, líderes e escravos",
@@ -1624,7 +1631,7 @@
               },
               {
                 "ref": "Filipenses 4:8",
-                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem- se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
+                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem-se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
               },
               {
                 "ref": "1 Timóteo 5:3",
@@ -1638,7 +1645,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 27:19"
+                "ref": "Deuteronômio 27:19",
+                "text": "‘Maldito quem negar justiça aos estrangeiros, aos órfãos ou às viúvas’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Deuteronômio 14:29",
@@ -1665,7 +1673,7 @@
               },
               {
                 "ref": "Mateus 15:4–6",
-                "text": "Pois Deus ordenou: ‘Honre seu pai e sua mãe’81 e ‘Quem insultar seu pai ou sua mãe será executado’."
+                "text": "Pois Deus ordenou: ‘Honre seu pai e sua mãe’ e ‘Quem insultar seu pai ou sua mãe será executado’."
               },
               {
                 "ref": "João 19:26–27",
@@ -1853,7 +1861,7 @@
               },
               {
                 "ref": "1 Pedro 4:17",
-                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas- novas de Deus!"
+                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas-novas de Deus!"
               },
               {
                 "ref": "1 Coríntios 11:34",
@@ -2006,11 +2014,11 @@
               },
               {
                 "ref": "2 Coríntios 13:1",
-                "text": "Co 16.3-4."
+                "text": "Esta é a terceira vez que irei visitá-los. “Os fatos a respeito de cada caso devem ser confirmados pelo depoimento de duas ou três testemunhas.”"
               },
               {
                 "ref": "Deuteronômio 17:6",
-                "text": "Jamais exe­cutem alguém com base no depoimento de apenas uma testemunha. Deve sempre haver duas ou três testemunhas."
+                "text": "Jamais executem alguém com base no depoimento de apenas uma testemunha. Deve sempre haver duas ou três testemunhas."
               }
             ]
           },
@@ -2048,7 +2056,7 @@
               },
               {
                 "ref": "1 Timóteo 6:13",
-                "text": "Diante de Deus, que a todos dá vida, e de Cristo Jesus, que deu bom testemunho perante Pôncio Pilatos, ­encarrego-o"
+                "text": "Diante de Deus, que a todos dá vida, e de Cristo Jesus, que deu bom testemunho perante Pôncio Pilatos, encarrego-o"
               },
               {
                 "ref": "2 Pedro 2:4",
@@ -2159,6 +2167,7 @@
   "6": {
     "book": "1 Timóteo",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -2188,7 +2197,35 @@
           },
           {
             "number": 2,
-            "text": "O fato de o senhor ser irmão na fé não é desculpa para deixarem de respeitá- lo. Pelo contrário, devem trabalhar ainda mais arduamente, pois seus esforços beneficiam outros irmãos amados. Falsos ensinos e riquezas verdadeiras Ensine estas coisas e incentive todos a obedecer-lhes.",
+            "text": "O fato de o senhor ser irmão na fé não é desculpa para deixarem de respeitá-lo. Pelo contrário, devem trabalhar ainda mais arduamente, pois seus esforços beneficiam outros irmãos amados.",
+            "isJesusWords": false,
+            "crossReferences": [
+              {
+                "ref": "Colossenses 4:1",
+                "text": "Senhores, sejam justos e imparciais com seus escravos. Lembrem-se de que vocês também têm um Senhor no céu."
+              },
+              {
+                "ref": "1 Timóteo 4:11",
+                "text": "Ensine estas coisas e insista nelas."
+              },
+              {
+                "ref": "Gênesis 16:4–5",
+                "text": "Abrão teve relações com Hagar, e ela engravidou. Quando Hagar soube que estava grávida, começou a tratar Sarai, sua senhora, com desprezo."
+              },
+              {
+                "ref": "Judas 1:8",
+                "text": "Da mesma forma, essas pessoas, afirmando ter autoridade com base em sonhos, vivem de modo imoral, desprezam a autoridade e zombam dos seres sobrenaturais."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Falsos ensinos e riquezas verdadeiras",
+        "verses": [
+          {
+            "number": 2,
+            "text": "Ensine estas coisas e incentive todos a obedecer-lhes.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2211,7 +2248,7 @@
           },
           {
             "number": 3,
-            "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente 4é arrogante e sem entendimento. Vive com o desejo doentio de discutir o significado das palavras e provoca contendas que resultam em inveja, divisão, difamação e suspeitas malignas.",
+            "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2231,6 +2268,12 @@
                 "text": "E agora, irmãos, peço-lhes que tomem cuidado com aqueles que causam divisões e perturbam a fé, ensinando coisas contrárias ao que vocês aprenderam. Fiquem longe deles."
               }
             ]
+          },
+          {
+            "number": 4,
+            "text": "é arrogante e sem entendimento. Vive com o desejo doentio de discutir o significado das palavras e provoca contendas que resultam em inveja, divisão, difamação e suspeitas malignas.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 5,
@@ -2377,7 +2420,7 @@
         "verses": [
           {
             "number": 11,
-            "text": "Você, porém, que é um homem de Deus, ­fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão.",
+            "text": "Você, porém, que é um homem de Deus, fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2423,7 +2466,7 @@
           },
           {
             "number": 13,
-            "text": "Diante de Deus, que a todos dá vida, e de Cristo Jesus, que deu bom testemunho perante Pôncio Pilatos, ­encarrego-o",
+            "text": "Diante de Deus, que a todos dá vida, e de Cristo Jesus, que deu bom testemunho perante Pôncio Pilatos, encarrego-o",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2574,7 +2617,7 @@
               },
               {
                 "ref": "2 Timóteo 2:19",
-                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”."
               },
               {
                 "ref": "Lucas 16:9",
@@ -2607,7 +2650,7 @@
           },
           {
             "number": 21,
-            "text": "Alguns se desviaram da fé por seguirem essas tolices. Que a graça de Deus esteja com vocês. 1 1. Ou traficantes de escravos. 2 2. Ou orem em trajes discretos. 3 2. Ou ensinem aos homens nem usurpem sua autoridade. 4 2. Ou serão salvas ao aceitarem seu papel de mãe. 5 3. Ou supervisor; também em 3.. 6 3. Ou ser fiel à esposa, ou ter se casado somente uma vez; também em 3.. 7 3. Ou poderia cair no mesmo julgamento que o diabo. 8 3. Ou servidores; também em 3.,,. 9 3. Ou suas esposas, isto é, as mulheres dos diáconos. 10 3.16a Em grego, grande mistério da piedade. 11 3.16b Em grego, Aquele que; alguns manuscritos trazem Deus. 12 4. Em grego, está cauterizada. 13 4. Ou se torna santo. 14 4. Alguns manuscritos trazem continuamos a sofrer. 15 4. Em grego, dedique-se à leitura. 16 4. Ou anciãos. 17 5. Ou a um ancião, ou a um presbítero. 18 5. Ou Honre. 19 5. Ou ter sido fiel ao marido, ou ter se casado somente uma vez. 20 5. Em grego, lavou os pés do povo santo. 21 5.17a Ou anciãos. 22 5.17b Ou honorários em dobro. 23 5. Dt 25.; Lc 10.. 24 5.. Ou ancião. 25 5. Em grego, em impor as mãos.",
+            "text": "Alguns se desviaram da fé por seguirem essas tolices. Que a graça de Deus esteja com vocês.",
             "isJesusWords": false,
             "crossReferences": [
               {

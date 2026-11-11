@@ -2,6 +2,7 @@
   "1": {
     "book": "1 Pedro",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Pedro",
@@ -59,7 +60,7 @@
         "verses": [
           {
             "number": 3,
-            "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos.",
+            "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos. Agora temos uma viva esperança",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -79,12 +80,7 @@
                 "text": "Mas, Quando Deus, nosso Salvador, revelou sua bondade e seu amor,"
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Agora temos uma viva esperança",
-        "verses": [
+          },
           {
             "number": 4,
             "text": "e uma herança imperecível, pura e imaculada, que não muda nem se deteriora, guardada para vocês no céu.",
@@ -526,7 +522,7 @@
             "crossReferences": [
               {
                 "ref": "1 Pedro 1:3",
-                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos."
+                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos. Agora temos uma viva esperança"
               },
               {
                 "ref": "Hebreus 4:12",
@@ -595,6 +591,7 @@
   "2": {
     "book": "1 Pedro",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -813,7 +810,7 @@
           },
           {
             "number": 10,
-            "text": "“Antes vocês não tinham identidade como povo, agora são povo de Deus. Antes não haviam recebido misericórdia, agora receberam misericórdia de Deus.”10",
+            "text": "“Antes vocês não tinham identidade como povo, agora são povo de Deus. Antes não haviam recebido misericórdia, agora receberam misericórdia de Deus.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -826,7 +823,7 @@
               },
               {
                 "ref": "Oséias 1:9–10",
-                "text": "E o SENHOR disse: “Dê-lhe o nome de Lo-Ami, ‘Não Meu Povo’, pois Israel não é meu povo, e eu não sou seu Deus. 103 “Virá o tempo, porém, em que o povo de Israel se tornará como a areia à beira do mar, que não se pode con..."
+                "text": "E o SENHOR disse: “Dê-lhe o nome de Lo-Ami, ‘Não Meu Povo’, pois Israel não é meu povo, e eu não sou seu Deus."
               },
               {
                 "ref": "Hebreus 4:16",
@@ -1146,7 +1143,7 @@
               },
               {
                 "ref": "Romanos 6:11",
-                "text": "Da mesma forma, considerem- se mortos para o poder do pecado e vivos para Deus em Cristo Jesus."
+                "text": "Da mesma forma, considerem-se mortos para o poder do pecado e vivos para Deus em Cristo Jesus."
               },
               {
                 "ref": "Apocalipse 22:2",
@@ -1169,11 +1166,11 @@
               },
               {
                 "ref": "Lucas 15:4–6",
-                "text": "“Se um homem tiver cem ovelhas e uma delas se perder, o que acham que ele fará? Não deixará as outras noventa e nove no pasto e buscará a perdida até encontrá- la?"
+                "text": "“Se um homem tiver cem ovelhas e uma delas se perder, o que acham que ele fará? Não deixará as outras noventa e nove no pasto e buscará a perdida até encontrá-la?"
               },
               {
                 "ref": "Atos 20:28",
-                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos,102 a fim de pastorearem sua igreja, comprada com seu próprio sangue."
+                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos, a fim de pastorearem sua igreja, comprada com seu próprio sangue."
               }
             ]
           }
@@ -1184,6 +1181,7 @@
   "3": {
     "book": "1 Pedro",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Instruções para as esposas",
@@ -1378,7 +1376,7 @@
               },
               {
                 "ref": "Filipenses 4:8–9",
-                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem- se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
+                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem-se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
               }
             ]
           },
@@ -1619,7 +1617,7 @@
           },
           {
             "number": 19,
-            "text": "por meio do qual pregou aos espíritos em prisão, 20àqueles que, muito tempo atrás, desobedeceram a Deus quando ele esperou pacientemente enquanto Noé construía sua embarcação. Apenas oito pessoas foram salvas por meio da água do dilúvio,",
+            "text": "por meio do qual pregou aos espíritos em prisão,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1636,9 +1634,15 @@
               },
               {
                 "ref": "Neemias 9:30",
-                "text": "Por muitos anos, foste paciente com eles. Enviaste teu Espírito, que os advertiu por meio dos profetas. Ainda assim, eles se re­cusaram a ouvir. Por isso, mais uma vez, permitiste que os povos da terra os dominassem."
+                "text": "Por muitos anos, foste paciente com eles. Enviaste teu Espírito, que os advertiu por meio dos profetas. Ainda assim, eles se recusaram a ouvir. Por isso, mais uma vez, permitiste que os povos da terra os dominassem."
               }
             ]
+          },
+          {
+            "number": 20,
+            "text": "àqueles que, muito tempo atrás, desobedeceram a Deus quando ele esperou pacientemente enquanto Noé construía sua embarcação. Apenas oito pessoas foram salvas por meio da água do dilúvio,",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 21,
@@ -1693,6 +1697,7 @@
   "4": {
     "book": "1 Pedro",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "A vida dedicada a Deus",
@@ -1716,7 +1721,7 @@
               },
               {
                 "ref": "Romanos 6:11",
-                "text": "Da mesma forma, considerem- se mortos para o poder do pecado e vivos para Deus em Cristo Jesus."
+                "text": "Da mesma forma, considerem-se mortos para o poder do pecado e vivos para Deus em Cristo Jesus."
               }
             ]
           },
@@ -1739,7 +1744,7 @@
               },
               {
                 "ref": "Efésios 6:6",
-                "text": "Procurem agradá- los sempre, e não apenas quando eles estiverem observando. Como escravos de Cristo, façam a vontade de Deus de todo o coração."
+                "text": "Procurem agradá-los sempre, e não apenas quando eles estiverem observando. Como escravos de Cristo, façam a vontade de Deus de todo o coração."
               }
             ]
           },
@@ -1785,7 +1790,7 @@
               },
               {
                 "ref": "Atos 18:6",
-                "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição!91 Eu sou inocente. De agora em diante, pregarei aos gentios”."
+                "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição! Eu sou inocente. De agora em diante, pregarei aos gentios”."
               }
             ]
           },
@@ -1823,7 +1828,7 @@
               },
               {
                 "ref": "1 Pedro 3:19",
-                "text": "por meio do qual pregou aos espíritos em prisão, 20àqueles que, muito tempo atrás, desobedeceram a Deus quando ele esperou pacientemente enquanto Noé construía sua embarcação. Apenas oito pessoas foram salvas por meio da água do dilúvio,"
+                "text": "por meio do qual pregou aos espíritos em prisão,"
               },
               {
                 "ref": "Romanos 8:9–11",
@@ -1888,7 +1893,7 @@
             "crossReferences": [
               {
                 "ref": "Hebreus 13:2",
-                "text": "Sm 7.."
+                "text": "Não se esqueçam de demonstrar hospitalidade, porque alguns, sem o saber, hospedaram anjos."
               },
               {
                 "ref": "Romanos 12:13",
@@ -1985,7 +1990,7 @@
             "crossReferences": [
               {
                 "ref": "Romanos 8:17",
-                "text": "Se somos seus filhos, então somos seus herdeiros e, portanto, co- herdeiros com Cristo. Se de fato participamos de seu sofrimento, participaremos também de sua glória."
+                "text": "Se somos seus filhos, então somos seus herdeiros e, portanto, co-herdeiros com Cristo. Se de fato participamos de seu sofrimento, participaremos também de sua glória."
               },
               {
                 "ref": "Tiago 1:2–3",
@@ -2072,7 +2077,7 @@
           },
           {
             "number": 17,
-            "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas- novas de Deus!",
+            "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas-novas de Deus!",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2100,7 +2105,7 @@
             "crossReferences": [
               {
                 "ref": "Provérbios 11:31",
-                "text": "Se o justo recebe o que merece aqui na terra,"
+                "text": "Se o justo recebe o que merece aqui na terra, quanto mais o pecador perverso."
               },
               {
                 "ref": "Ezequiel 18:24",
@@ -2146,6 +2151,7 @@
   "5": {
     "book": "1 Pedro",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Conselhos para os líderes e para os jovens",
@@ -2165,7 +2171,7 @@
               },
               {
                 "ref": "Romanos 8:17–18",
-                "text": "Se somos seus filhos, então somos seus herdeiros e, portanto, co- herdeiros com Cristo. Se de fato participamos de seu sofrimento, participaremos também de sua glória."
+                "text": "Se somos seus filhos, então somos seus herdeiros e, portanto, co-herdeiros com Cristo. Se de fato participamos de seu sofrimento, participaremos também de sua glória."
               },
               {
                 "ref": "2 João 1:1–3 João 1:15",
@@ -2446,7 +2452,7 @@
               },
               {
                 "ref": "Salmos 87:4",
-                "text": "Incluirei o Egito116 e a Babilônia entre os que me conhecem, também a Filístia e Tiro, e até a distante Etiópia;117 ali todos se tornaram seus cidadãos!"
+                "text": "Incluirei o Egito e a Babilônia entre os que me conhecem, também a Filístia e Tiro, e até a distante Etiópia; ali todos se tornaram seus cidadãos!"
               },
               {
                 "ref": "Apocalipse 18:2",
@@ -2456,7 +2462,7 @@
           },
           {
             "number": 14,
-            "text": "Cumprimentem uns aos outros com um beijo de amor. Paz seja com todos vocês que estão em Cristo. 1 1. Províncias romanas onde hoje fica a Turquia. 2 1. Lv 11.44-45; 19.; 20.. 3 1.24-25 Is 40.6-8. 4 2. Em grego, sacerdócio santo. 5 2. Is 28., conforme a Septuaginta. 6 2.7a Ou Sim, para vocês que creem, existe honra. 7 2.7b Sl 118.. 8 2. Is 8.. 9 2. Em grego, sacerdócio real. 10 2. Os 1.,; 2.. 11 2. Em grego, no dia da visitação. 12 2.17 Em grego, a irmandade. 13 2. Ou porque vocês temem a Deus; o grego traz em todo o temor. 14 2. Alguns manuscritos trazem morreu. 15 2. Ver Is 53.. 16 3.10-12 Sl 34.12-16. 17 3. Em algumas traduções essa frase fica no versículo 15. 18 3.18a Alguns manuscritos trazem morreu. 19 3.18b Ou em espírito. 20 3. Ou suplicam a Deus por uma boa consciência. 21 4. Ou Pois aquele [ou Aquele] que sofreu fisicamente acabou com o pecado. 22 4.6a Ou embora as pessoas os tivessem julgado dignos de morte. 23 4.6b Ou em espírito. 24 4.14a Ou a glória de Deus, seu Espírito. 25 4.14b Alguns manuscritos acrescentam Ele é blasfemado por eles, mas glorificado por vocês. 26 4. Pv 11., conforme a Septuaginta. 27 5. Ou anciãos; também em 5.. 28 5. Pv 3., conforme a Septuaginta. 29 5. Em grego, sua irmandade. 30 5. Em grego, Silvano. 31 5. Ou Sua igreja irmã aqui na Babilônia. É provável que Babilônia represente Roma.",
+            "text": "Cumprimentem uns aos outros com um beijo de amor. Paz seja com todos vocês que estão em Cristo.",
             "isJesusWords": false,
             "crossReferences": [
               {

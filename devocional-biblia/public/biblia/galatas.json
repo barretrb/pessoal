@@ -2,6 +2,7 @@
   "1": {
     "book": "Gálatas",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Paulo",
@@ -13,11 +14,11 @@
             "crossReferences": [
               {
                 "ref": "Gálatas 1:11–12",
-                "text": "Irmãos, quero que vocês entendam que a mensagem das boas- novas por mim anunciada não provém do raciocínio humano."
+                "text": "Irmãos, quero que vocês entendam que a mensagem das boas-novas por mim anunciada não provém do raciocínio humano."
               },
               {
                 "ref": "1 Coríntios 1:1",
-                "text": "Eu, Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta, com nosso irmão Sóstenes, 2à igreja de Deus em Corinto, àqueles que ele santificou por meio de Cristo Jesus. Vocês foram cham..."
+                "text": "Eu, Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta, com nosso irmão Sóstenes,"
               },
               {
                 "ref": "Apocalipse 1:5",
@@ -62,7 +63,8 @@
                 "text": "Graça, misericórdia e paz que vêm de Deus, o Pai, e de Jesus Cristo, o Filho do Pai, estarão conosco, os que vivemos na verdade e no amor."
               },
               {
-                "ref": "2 Coríntios 13:14"
+                "ref": "2 Coríntios 13:14",
+                "text": "Que a graça do Senhor Jesus Cristo, o amor de Deus e a comunhão do Espírito Santo sejam com todos vocês."
               },
               {
                 "ref": "Romanos 1:7–15",
@@ -150,7 +152,7 @@
           },
           {
             "number": 7,
-            "text": "mas que não são boas-novas de maneira nenhuma. Estão sendo perturbados por aqueles que distorcem deliberadamente as boas- novas de Cristo.",
+            "text": "mas que não são boas-novas de maneira nenhuma. Estão sendo perturbados por aqueles que distorcem deliberadamente as boas-novas de Cristo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -186,7 +188,7 @@
               },
               {
                 "ref": "Gálatas 1:9",
-                "text": "Repito o que disse antes: se alguém anunciar boas- novas diferentes das que vocês receberam, que seja amaldiçoado."
+                "text": "Repito o que disse antes: se alguém anunciar boas-novas diferentes das que vocês receberam, que seja amaldiçoado."
               },
               {
                 "ref": "1 Coríntios 16:22",
@@ -196,7 +198,7 @@
           },
           {
             "number": 9,
-            "text": "Repito o que disse antes: se alguém anunciar boas- novas diferentes das que vocês receberam, que seja amaldiçoado.",
+            "text": "Repito o que disse antes: se alguém anunciar boas-novas diferentes das que vocês receberam, que seja amaldiçoado.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -232,11 +234,11 @@
               },
               {
                 "ref": "Efésios 6:6",
-                "text": "Procurem agradá- los sempre, e não apenas quando eles estiverem observando. Como escravos de Cristo, façam a vontade de Deus de todo o coração."
+                "text": "Procurem agradá-los sempre, e não apenas quando eles estiverem observando. Como escravos de Cristo, façam a vontade de Deus de todo o coração."
               },
               {
                 "ref": "Tiago 4:4",
-                "text": "Adúlteros!14 Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam- se inimigos de Deus."
+                "text": "Adúlteros! Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam-se inimigos de Deus."
               }
             ]
           }
@@ -247,7 +249,7 @@
         "verses": [
           {
             "number": 11,
-            "text": "Irmãos, quero que vocês entendam que a mensagem das boas- novas por mim anunciada não provém do raciocínio humano.",
+            "text": "Irmãos, quero que vocês entendam que a mensagem das boas-novas por mim anunciada não provém do raciocínio humano.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -339,7 +341,7 @@
           },
           {
             "number": 15,
-            "text": "Contudo, ainda antes de eu nascer, Deus me escolheu e me chamou por sua graça.",
+            "text": "Contudo, ainda antes de eu nascer, Deus me escolheu e me chamou por sua graça. Foi do agrado dele",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -359,12 +361,7 @@
                 "text": "Pois Deus nos salvou e nos chamou para uma vida santa, não porque merecêssemos, mas porque este era seu plano desde os tempos eternos: mostrar sua graça por meio de Cristo Jesus."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Foi do agrado dele",
-        "verses": [
+          },
           {
             "number": 16,
             "text": "revelar seu Filho a mim, para que eu o anunciasse aos gentios. Quando isso aconteceu, não consultei ser humano algum.",
@@ -372,7 +369,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 16:17",
-                "text": "Jesus disse: “Que grande privilégio você teve, Simão, filho de João!85 Foi meu Pai no céu quem lhe revelou isso. Nenhum ser humano saberia por si só."
+                "text": "Jesus disse: “Que grande privilégio você teve, Simão, filho de João! Foi meu Pai no céu quem lhe revelou isso. Nenhum ser humano saberia por si só."
               },
               {
                 "ref": "Efésios 3:5–10",
@@ -536,7 +533,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 11:18",
-                "text": "Ao ouvirem isso, pararam de levantar objeções e começaram a louvar a Deus, dizendo: “Vemos que Deus deu aos gentios o mesmo privilégio de se arrepender e receber a vida ­eterna!”."
+                "text": "Ao ouvirem isso, pararam de levantar objeções e começaram a louvar a Deus, dizendo: “Vemos que Deus deu aos gentios o mesmo privilégio de se arrepender e receber a vida eterna!”."
               },
               {
                 "ref": "Lucas 15:10",
@@ -559,6 +556,7 @@
   "2": {
     "book": "Gálatas",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Os apóstolos aceitam Paulo",
@@ -703,7 +701,7 @@
           },
           {
             "number": 7,
-            "text": "Ao contrário, viram que me havia sido confiada a responsabilidade de anunciar as boas-novas aos gentios, assim como a Pedro tinha sido confiada a responsabilidade de anunciar as boas-novas aos judeus.8",
+            "text": "Ao contrário, viram que me havia sido confiada a responsabilidade de anunciar as boas-novas aos gentios, assim como a Pedro tinha sido confiada a responsabilidade de anunciar as boas-novas aos judeus.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -915,7 +913,7 @@
           },
           {
             "number": 16,
-            "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em ­Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque obedecemos à lei. Pois ninguém é declarado justo diante de Deus pela obediência à lei”.",
+            "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque obedecemos à lei. Pois ninguém é declarado justo diante de Deus pela obediência à lei”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1039,7 +1037,7 @@
               },
               {
                 "ref": "Gálatas 3:21",
-                "text": "Existe, portanto, algum conflito entre a lei e as promessas de Deus?21 De maneira nenhuma! Se a lei fosse capaz de nos conceder nova vida, seríamos declarados justos pela obediência a ela."
+                "text": "Existe, portanto, algum conflito entre a lei e as promessas de Deus? De maneira nenhuma! Se a lei fosse capaz de nos conceder nova vida, seríamos declarados justos pela obediência a ela."
               },
               {
                 "ref": "Hebreus 7:11",
@@ -1058,6 +1056,7 @@
   "3": {
     "book": "Gálatas",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "A lei e a fé em Cristo",
@@ -1219,7 +1218,7 @@
               },
               {
                 "ref": "Salmos 100:3",
-                "text": "Reconheçam que o SENHOR é Deus! Ele nos criou e a ele pertencemos;128 somos seu povo, o rebanho que ele pastoreia."
+                "text": "Reconheçam que o SENHOR é Deus! Ele nos criou e a ele pertencemos; somos seu povo, o rebanho que ele pastoreia."
               }
             ]
           },
@@ -1275,7 +1274,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 27:26"
+                "ref": "Deuteronômio 27:26",
+                "text": "‘Maldito quem não confirmar e cumprir os termos desta lei’. E todo o povo responderá: ‘Amém!’.”"
               },
               {
                 "ref": "Romanos 8:7",
@@ -1310,7 +1310,7 @@
               },
               {
                 "ref": "Gálatas 2:16",
-                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em ­Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque..."
+                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque o..."
               }
             ]
           },
@@ -1426,7 +1426,7 @@
               },
               {
                 "ref": "Gênesis 22:17–18",
-                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar."
+                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar. Seus descendentes conquistarão as cidades de seus inimigos"
               }
             ]
           },
@@ -1524,7 +1524,7 @@
           },
           {
             "number": 21,
-            "text": "Existe, portanto, algum conflito entre a lei e as promessas de Deus?21 De maneira nenhuma! Se a lei fosse capaz de nos conceder nova vida, seríamos declarados justos pela obediência a ela.",
+            "text": "Existe, portanto, algum conflito entre a lei e as promessas de Deus? De maneira nenhuma! Se a lei fosse capaz de nos conceder nova vida, seríamos declarados justos pela obediência a ela.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1653,7 +1653,7 @@
               },
               {
                 "ref": "2 Coríntios 6:18",
-                "text": "Eu serei seu Pai, e vocês serão meus filhos e minhas filhas,"
+                "text": "Eu serei seu Pai, e vocês serão meus filhos e minhas filhas, diz o Senhor Todo-poderoso”."
               },
               {
                 "ref": "João 1:12–13",
@@ -1730,7 +1730,7 @@
               },
               {
                 "ref": "Romanos 8:17",
-                "text": "Se somos seus filhos, então somos seus herdeiros e, portanto, co- herdeiros com Cristo. Se de fato participamos de seu sofrimento, participaremos também de sua glória."
+                "text": "Se somos seus filhos, então somos seus herdeiros e, portanto, co-herdeiros com Cristo. Se de fato participamos de seu sofrimento, participaremos também de sua glória."
               }
             ]
           }
@@ -1741,6 +1741,7 @@
   "4": {
     "book": "Gálatas",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -2001,7 +2002,7 @@
           },
           {
             "number": 12,
-            "text": "Irmãos, peço-lhes que sejam como eu, pois eu também sou como vocês.",
+            "text": "Irmãos, peço-lhes que sejam como eu, pois eu também sou como vocês. E vocês não me trataram mal",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2021,12 +2022,7 @@
                 "text": "Quando estive com os judeus, vivi como os judeus para levá-los a Cristo. Quando estive com os que seguem a lei judaica, vivi debaixo dessa lei. Embora não esteja sujeito à lei, agi desse modo para levar a Cristo aqueles que estão debaixo da lei."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "E vocês não me trataram mal",
-        "verses": [
+          },
           {
             "number": 13,
             "text": "e certamente se lembram de que eu estava doente quando lhes anunciei as boas-novas pela primeira vez.",
@@ -2065,7 +2061,7 @@
               },
               {
                 "ref": "Hebreus 13:2",
-                "text": "Sm 7.."
+                "text": "Não se esqueçam de demonstrar hospitalidade, porque alguns, sem o saber, hospedaram anjos."
               },
               {
                 "ref": "Malaquias 2:7",
@@ -2121,7 +2117,7 @@
           },
           {
             "number": 17,
-            "text": "Esses falsos mestres estão extremamente ansiosos para agradá- los, mas suas intenções não são boas. Querem afastá-los de mim para que dependam deles.",
+            "text": "Esses falsos mestres estão extremamente ansiosos para agradá-los, mas suas intenções não são boas. Querem afastá-los de mim para que dependam deles.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2138,7 +2134,7 @@
               },
               {
                 "ref": "Mateus 23:15",
-                "text": "“Que aflição os espera, mestres da lei e fariseus! Hipócritas! Atravessam terra e mar para converter alguém e depois o tornam um filho do inferno,134 duas vezes pior que vocês."
+                "text": "“Que aflição os espera, mestres da lei e fariseus! Hipócritas! Atravessam terra e mar para converter alguém e depois o tornam um filho do inferno, duas vezes pior que vocês."
               }
             ]
           },
@@ -2334,7 +2330,7 @@
             "crossReferences": [
               {
                 "ref": "Hebreus 12:22",
-                "text": "Vocês, porém, chegaram ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, aos incontáveis milhares de anjos em alegre reunião, 23à congregação dos filhos mais velhos, cujos nomes estão escritos no céu, e a Deus..."
+                "text": "Vocês, porém, chegaram ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, aos incontáveis milhares de anjos em alegre reunião,"
               },
               {
                 "ref": "Apocalipse 21:2",
@@ -2421,7 +2417,7 @@
           },
           {
             "number": 30,
-            "text": "Mas o que dizem as Escrituras sobre isso? “Livre-se da escrava e do filho dela, pois o filho da escrava não será herdeiro junto com o filho da mulher livre.”30",
+            "text": "Mas o que dizem as Escrituras sobre isso? “Livre-se da escrava e do filho dela, pois o filho da escrava não será herdeiro junto com o filho da mulher livre.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2472,6 +2468,7 @@
   "5": {
     "book": "Gálatas",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Liberdade em Cristo",
@@ -2540,7 +2537,8 @@
                 "text": "Pois quem obedece a todas as leis, exceto uma, torna-se culpado de desobedecer a todas as outras."
               },
               {
-                "ref": "Deuteronômio 27:26"
+                "ref": "Deuteronômio 27:26",
+                "text": "‘Maldito quem não confirmar e cumprir os termos desta lei’. E todo o povo responderá: ‘Amém!’.”"
               }
             ]
           },
@@ -2689,7 +2687,7 @@
               },
               {
                 "ref": "Gálatas 1:7",
-                "text": "mas que não são boas-novas de maneira nenhuma. Estão sendo perturbados por aqueles que distorcem deliberadamente as boas- novas de Cristo."
+                "text": "mas que não são boas-novas de maneira nenhuma. Estão sendo perturbados por aqueles que distorcem deliberadamente as boas-novas de Cristo."
               },
               {
                 "ref": "2 Coríntios 2:3",
@@ -3077,6 +3075,7 @@
   "6": {
     "book": "Gálatas",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "Colhemos aquilo que semeamos",
@@ -3361,7 +3360,7 @@
             "crossReferences": [
               {
                 "ref": "Filipenses 3:3",
-                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
+                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
               },
               {
                 "ref": "1 Coríntios 5:6",
@@ -3425,7 +3424,7 @@
           },
           {
             "number": 16,
-            "text": "Que a paz e a miseri­córdia de Deus estejam sobre todos os que vivem de acordo com esse princípio e sobre o Israel de Deus.",
+            "text": "Que a paz e a misericórdia de Deus estejam sobre todos os que vivem de acordo com esse princípio e sobre o Israel de Deus.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3434,7 +3433,7 @@
               },
               {
                 "ref": "Filipenses 3:3",
-                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
+                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
               },
               {
                 "ref": "Romanos 9:6–8",
@@ -3471,7 +3470,7 @@
           },
           {
             "number": 18,
-            "text": "Irmãos, que a graça de nosso Senhor Jesus Cristo esteja com o espírito de vocês. Amém. 1 1. Alguns manuscritos trazem Deus, nosso Pai, e o Senhor Jesus Cristo. 2 1. Ou pela revelação acerca de Jesus Cristo. 3 1.16a Ou em mim. 4 1.16b Em grego, não consultei carne nem sangue. 5 1. Em grego, Cefas. 6 2. Em grego, fosse grego. 7 2.7a Em grego, o evangelho da incircuncisão. 8 2.7b Em grego, o evangelho da circuncisão. 9 2. Em grego, apóstolo dos circuncidados. 10 2.9a Em grego, Cefas; também em 2., 11 2.9b Em grego, com os circuncidados. 12 2. Alguns tradutores afirmam que a citação se restringe ao versículo 14, outros, que se estende até o 16, e outros ainda, até o 21. 13 3. Gn 15.. 14 3. Gn 12.; 18.; 22.. 15 3. Dt 27.. 16 3. Hc 2.. 17 3. Lv 18.. 18 3. Dt 21., conforme a Septuaginta. 19 3.16a Em grego, a sua semente; também em 3.16c,. Ver notas em Gn 12. e 13.. 20 3.16b Em grego, a suas sementes. 21 3. Alguns manuscritos trazem e as promessas? 22 3.28a Em grego, nem grego. 23 3.28b Em grego, macho nem fêmea. 24 3. Em grego, verdadeira semente. 25 4.6a Em grego, vocês são. 26 4.6b Termo aramaico para “pai”. 27 4. Ver Gn 16.; 21.2-3. 28 4. Alguns manuscritos trazem E o monte Sinai, na Arábia, agora é como Jerusalém. 29 4. Is 54.. 30 4. Gn 21.. 31 5. Lv 19.. 32 6. Ou Por causa dele. 33 6. Ou isto é, o Israel.",
+            "text": "Irmãos, que a graça de nosso Senhor Jesus Cristo esteja com o espírito de vocês. Amém.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3487,7 +3486,8 @@
                 "text": "Em breve o Deus da paz esmagará Satanás sob os pés de vocês. Que a graça de nosso Senhor Jesus seja com vocês."
               },
               {
-                "ref": "2 Coríntios 13:14"
+                "ref": "2 Coríntios 13:14",
+                "text": "Que a graça do Senhor Jesus Cristo, o amor de Deus e a comunhão do Espírito Santo sejam com todos vocês."
               }
             ]
           }

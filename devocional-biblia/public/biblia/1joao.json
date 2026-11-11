@@ -2,6 +2,7 @@
   "1": {
     "book": "1 João",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Introdução",
@@ -202,7 +203,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 32:5",
-                "text": "Finalmente, confessei a ti todos os meus pecados e não escondi mais a minha culpa. Disse comigo: “Confessarei ao SENHOR a minha rebeldia”, e tu perdoaste toda a minha culpa."
+                "text": "Finalmente, confessei a ti todos os meus pecados e não escondi mais a minha culpa. Disse comigo: “Confessarei ao SENHOR a minha rebeldia”, e tu perdoaste toda a minha culpa. Interlúdio"
               },
               {
                 "ref": "Provérbios 28:13",
@@ -248,6 +249,7 @@
   "2": {
     "book": "1 João",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -591,7 +593,7 @@
             "crossReferences": [
               {
                 "ref": "Tiago 4:4",
-                "text": "Adúlteros!14 Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam- se inimigos de Deus."
+                "text": "Adúlteros! Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam-se inimigos de Deus."
               },
               {
                 "ref": "Romanos 12:2",
@@ -599,7 +601,7 @@
               },
               {
                 "ref": "Mateus 6:24",
-                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”48 Ensino sobre a preocupação"
+                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”"
               },
               {
                 "ref": "Colossenses 3:1–2",
@@ -719,7 +721,7 @@
               },
               {
                 "ref": "2 Coríntios 1:21–22",
-                "text": "É Deus quem nos capacita e a vocês a permanecermos firmes em Cristo. e nos identificou como sua propriedade ao colocar em nosso coração o selo do Espírito, a garantia de tudo que ele nos prometeu."
+                "text": "É Deus quem nos capacita e a vocês a permanecermos firmes em Cristo. Ele nos ungiu e nos identificou como sua propriedade ao colocar em nosso coração o selo do Espírito, a garantia de tudo que ele nos prometeu."
               },
               {
                 "ref": "Isaías 61:1",
@@ -946,6 +948,7 @@
   "3": {
     "book": "1 João",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -965,7 +968,7 @@
               },
               {
                 "ref": "2 Coríntios 6:18",
-                "text": "Eu serei seu Pai, e vocês serão meus filhos e minhas filhas,"
+                "text": "Eu serei seu Pai, e vocês serão meus filhos e minhas filhas, diz o Senhor Todo-poderoso”."
               },
               {
                 "ref": "Gálatas 4:5–6",
@@ -1250,7 +1253,7 @@
               },
               {
                 "ref": "Tiago 4:4",
-                "text": "Adúlteros!14 Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam- se inimigos de Deus."
+                "text": "Adúlteros! Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam-se inimigos de Deus."
               }
             ]
           },
@@ -1514,6 +1517,7 @@
   "4": {
     "book": "1 João",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Como identificar falsos profetas",
@@ -1703,7 +1707,7 @@
               },
               {
                 "ref": "2 Coríntios 13:11",
-                "text": "Irmãos, encerro minha carta com estas últimas palavras: Alegrem- se. Cresçam até alcançar a maturidade. Encorajem-se mutuamente. Vivam em harmonia e paz. Então o Deus de amor e paz estará com vocês."
+                "text": "Irmãos, encerro minha carta com estas últimas palavras: Alegrem-se. Cresçam até alcançar a maturidade. Encorajem-se mutuamente. Vivam em harmonia e paz. Então o Deus de amor e paz estará com vocês."
               }
             ]
           },
@@ -2009,6 +2013,7 @@
   "5": {
     "book": "1 João",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Crer no Filho de Deus",
@@ -2150,10 +2155,11 @@
             "crossReferences": [
               {
                 "ref": "Mateus 28:19",
-                "text": "Portanto, vão e façam discípulos de todas as nações,170 batizando-os em nome do Pai, do Filho e do Espírito Santo."
+                "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo."
               },
               {
-                "ref": "2 Coríntios 13:14"
+                "ref": "2 Coríntios 13:14",
+                "text": "Que a graça do Senhor Jesus Cristo, o amor de Deus e a comunhão do Espírito Santo sejam com todos vocês."
               },
               {
                 "ref": "Atos 5:32",
@@ -2323,7 +2329,7 @@
               },
               {
                 "ref": "Jeremias 33:3",
-                "text": "Pergunte- me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
+                "text": "Pergunte-me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
               },
               {
                 "ref": "1 João 3:21–22",
@@ -2365,7 +2371,7 @@
               },
               {
                 "ref": "1 Samuel 2:25",
-                "text": "Se alguém peca contra outra pessoa, Deus poderá12 intervir em favor do culpado. Mas, se alguém peca contra o SENHOR, quem poderá interceder?”. Contudo, os filhos de Eli não deram atenção ao pai, pois o SENHOR já havia decidido matá-los."
+                "text": "Se alguém peca contra outra pessoa, Deus poderá intervir em favor do culpado. Mas, se alguém peca contra o SENHOR, quem poderá interceder?”. Contudo, os filhos de Eli não deram atenção ao pai, pois o SENHOR já havia decidido matá-los."
               },
               {
                 "ref": "Jeremias 11:14",
@@ -2471,7 +2477,7 @@
           },
           {
             "number": 21,
-            "text": "Filhinhos, afastem-se dos ídolos. 1 1. Em grego, O que foi desde o princípio. 2 1. Ou para que nossa alegria seja completa; alguns manuscritos trazem para que a alegria de vocês seja completa. 3 2. Ou o amor a ele. 4 2. Ou o Messias. Tanto Messias (do hebraico) como Cristo (do grego) significam “ungido”. 5 3. Em grego, a semente de Deus. 6 4. Alguns manuscritos trazem Nós amamos a Deus; outros, Nós o amamos. 7 5. Alguns poucos manuscritos tardios acrescentam no céu: o Pai, a Palavra e o Espírito Santo, e esses três são um. E temos três testemunhas na terra...",
+            "text": "Filhinhos, afastem-se dos ídolos.",
             "isJesusWords": false,
             "crossReferences": [
               {

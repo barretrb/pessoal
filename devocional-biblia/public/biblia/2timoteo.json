@@ -2,6 +2,7 @@
   "1": {
     "book": "2 Timóteo",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Paulo",
@@ -72,7 +73,7 @@
               },
               {
                 "ref": "Atos 23:1",
-                "text": "Paulo olhou fixamente para o conselho dos líderes do povo114 e disse: “Irmãos, tenho vivido diante de Deus com a consciência limpa”."
+                "text": "Paulo olhou fixamente para o conselho dos líderes do povo e disse: “Irmãos, tenho vivido diante de Deus com a consciência limpa”."
               },
               {
                 "ref": "Atos 24:14",
@@ -252,7 +253,7 @@
               },
               {
                 "ref": "Efésios 3:7–8",
-                "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas- novas."
+                "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas-novas."
               },
               {
                 "ref": "Atos 9:15",
@@ -386,7 +387,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 28:30–31",
-                "text": "Durante os dois anos seguintes, Paulo morou em Roma, às próprias custas.141 A todos que o visitavam ele recebia,"
+                "text": "Durante os dois anos seguintes, Paulo morou em Roma, às próprias custas. A todos que o visitavam ele recebia, proclamando corajosamente o reino de Deus e ensinando a respeito do Senhor Jesus Cristo sem restrição alguma."
               }
             ]
           },
@@ -420,6 +421,7 @@
   "2": {
     "book": "2 Timóteo",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "O bom soldado de Cristo",
@@ -619,7 +621,7 @@
               },
               {
                 "ref": "Filipenses 1:7",
-                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas- novas."
+                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas-novas."
               },
               {
                 "ref": "2 Timóteo 1:8",
@@ -673,7 +675,7 @@
               },
               {
                 "ref": "1 Timóteo 1:15",
-                "text": "Esta é uma afirmação digna de confiança, e todos devem aceitá- la: “Cristo Jesus veio ao mundo para salvar os pecadores”, e eu sou o pior de todos."
+                "text": "Esta é uma afirmação digna de confiança, e todos devem aceitá-la: “Cristo Jesus veio ao mundo para salvar os pecadores”, e eu sou o pior de todos."
               }
             ]
           },
@@ -684,7 +686,7 @@
             "crossReferences": [
               {
                 "ref": "Romanos 8:17",
-                "text": "Se somos seus filhos, então somos seus herdeiros e, portanto, co- herdeiros com Cristo. Se de fato participamos de seu sofrimento, participaremos também de sua glória."
+                "text": "Se somos seus filhos, então somos seus herdeiros e, portanto, co-herdeiros com Cristo. Se de fato participamos de seu sofrimento, participaremos também de sua glória."
               },
               {
                 "ref": "Mateus 10:33",
@@ -734,7 +736,7 @@
               },
               {
                 "ref": "2 Timóteo 2:23",
-                "text": "Digo mais uma vez: não se envolva em ­discussões tolas e ignorantes que só servem para gerar brigas."
+                "text": "Digo mais uma vez: não se envolva em discussões tolas e ignorantes que só servem para gerar brigas."
               },
               {
                 "ref": "2 Timóteo 4:1",
@@ -841,7 +843,7 @@
           },
           {
             "number": 19,
-            "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”.",
+            "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -927,13 +929,13 @@
               },
               {
                 "ref": "1 Timóteo 6:11",
-                "text": "Você, porém, que é um homem de Deus, ­fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão."
+                "text": "Você, porém, que é um homem de Deus, fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão."
               }
             ]
           },
           {
             "number": 23,
-            "text": "Digo mais uma vez: não se envolva em ­discussões tolas e ignorantes que só servem para gerar brigas.",
+            "text": "Digo mais uma vez: não se envolva em discussões tolas e ignorantes que só servem para gerar brigas.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -945,7 +947,8 @@
                 "text": "Não se envolva em discussões tolas sobre genealogias intermináveis, nem em disputas e brigas sobre a obediência às leis judaicas. Essas coisas são inúteis, e perda de tempo."
               },
               {
-                "ref": "1 Timóteo 6:4–5"
+                "ref": "1 Timóteo 6:4–5",
+                "text": "é arrogante e sem entendimento. Vive com o desejo doentio de discutir o significado das palavras e provoca contendas que resultam em inveja, divisão, difamação e suspeitas malignas."
               },
               {
                 "ref": "1 Timóteo 4:7",
@@ -983,7 +986,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 11:18",
-                "text": "Ao ouvirem isso, pararam de levantar objeções e começaram a louvar a Deus, dizendo: “Vemos que Deus deu aos gentios o mesmo privilégio de se arrepender e receber a vida ­eterna!”."
+                "text": "Ao ouvirem isso, pararam de levantar objeções e começaram a louvar a Deus, dizendo: “Vemos que Deus deu aos gentios o mesmo privilégio de se arrepender e receber a vida eterna!”."
               },
               {
                 "ref": "Gálatas 6:1",
@@ -1029,6 +1032,7 @@
   "3": {
     "book": "2 Timóteo",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Os perigos dos últimos dias",
@@ -1252,7 +1256,7 @@
             "crossReferences": [
               {
                 "ref": "1 Timóteo 6:11",
-                "text": "Você, porém, que é um homem de Deus, ­fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão."
+                "text": "Você, porém, que é um homem de Deus, fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão."
               },
               {
                 "ref": "Tito 2:7",
@@ -1283,7 +1287,7 @@
               },
               {
                 "ref": "Atos 14:5–6",
-                "text": "Então um grupo de gentios, judeus e seus líderes resolveu atacá- los e apedrejá-los. Quando os apóstolos souberam disso, fugiram para a região da Licaônia, para as cidades de Listra e Derbe e seus arredores."
+                "text": "Então um grupo de gentios, judeus e seus líderes resolveu atacá-los e apedrejá-los. Quando os apóstolos souberam disso, fugiram para a região da Licaônia, para as cidades de Listra e Derbe e seus arredores."
               },
               {
                 "ref": "Atos 13:45",
@@ -1425,7 +1429,7 @@
               },
               {
                 "ref": "1 Timóteo 6:11",
-                "text": "Você, porém, que é um homem de Deus, ­fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão."
+                "text": "Você, porém, que é um homem de Deus, fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão."
               }
             ]
           }
@@ -1436,6 +1440,7 @@
   "4": {
     "book": "2 Timóteo",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -1923,7 +1928,7 @@
           },
           {
             "number": 22,
-            "text": "Que o Senhor esteja com seu espírito. E que a graça esteja com todos vocês. 1 1. Ou um espírito de temor e covardia, mas sim de poder, amor e autocontrole. 2 1. Ou o que lhe confiei. 3 2. Em grego, gangrena. 4 2.19a Nm 16.. 5 2.19b Ver Is 52.. 6 3. Em grego, tornam cativas.",
+            "text": "Que o Senhor esteja com seu espírito. E que a graça esteja com todos vocês.",
             "isJesusWords": false,
             "crossReferences": [
               {

@@ -2,6 +2,7 @@
   "1": {
     "book": "Tiago",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Tiago",
@@ -21,11 +22,11 @@
               },
               {
                 "ref": "João 7:35",
-                "text": "Os judeus se perguntavam: “Para onde ele pretende ir? Será que planeja partir e ir aos judeus em outras terras?34 Talvez até ensine aos gregos!"
+                "text": "Os judeus se perguntavam: “Para onde ele pretende ir? Será que planeja partir e ir aos judeus em outras terras? Talvez até ensine aos gregos!"
               },
               {
                 "ref": "Atos 8:1",
-                "text": "E Saulo concordou inteiramente com a morte de Estêvão. A perseguição faz os discípulos dispersarem Uma grande onda de perseguição começou naquele dia e varreu a igreja de Jerusalém. Todos eles, com exceção dos apóstolos..."
+                "text": "E Saulo concordou inteiramente com a morte de Estêvão."
               }
             ]
           }
@@ -72,7 +73,7 @@
               },
               {
                 "ref": "Colossenses 1:11",
-                "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam."
+                "text": "Oramos também para que sejam fortalecidos com o poder glorioso de Deus, a fim de que tenham toda a perseverança e paciência de que necessitam. Que sejam cheios de alegria"
               },
               {
                 "ref": "2 Coríntios 4:17",
@@ -133,7 +134,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 21:21–22",
-                "text": "Jesus respondeu: “Eu lhes digo a verdade: se vocês tiverem fé e não duvidarem, poderão fazer o mesmo que fiz com esta figueira, e muito mais. Poderão até dizer a este monte: ‘Levante-se e ­atire-se no mar’, e isso acontecerá."
+                "text": "Jesus respondeu: “Eu lhes digo a verdade: se vocês tiverem fé e não duvidarem, poderão fazer o mesmo que fiz com esta figueira, e muito mais. Poderão até dizer a este monte: ‘Levante-se e atire-se no mar’, e isso acontecerá."
               },
               {
                 "ref": "Hebreus 11:6",
@@ -183,7 +184,7 @@
               },
               {
                 "ref": "Mateus 6:24",
-                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”48 Ensino sobre a preocupação"
+                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”"
               },
               {
                 "ref": "Tiago 4:8",
@@ -644,6 +645,7 @@
   "2": {
     "book": "Tiago",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Advertência contra o preconceito",
@@ -724,7 +726,7 @@
             "crossReferences": [
               {
                 "ref": "João 7:24",
-                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”. Jesus é o Messias?"
+                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”."
               },
               {
                 "ref": "Jó 34:19",
@@ -736,7 +738,7 @@
               },
               {
                 "ref": "Salmos 82:2",
-                "text": "“Até quando tomarão decisões injustas que favorecem a causa dos perversos?"
+                "text": "“Até quando tomarão decisões injustas que favorecem a causa dos perversos? Interlúdio"
               }
             ]
           },
@@ -869,7 +871,8 @@
                 "text": "Eu lhes digo a verdade: enquanto o céu e a terra existirem, nem a menor letra ou o menor traço da lei desaparecerá até que todas as coisas se cumpram."
               },
               {
-                "ref": "Deuteronômio 27:26"
+                "ref": "Deuteronômio 27:26",
+                "text": "‘Maldito quem não confirmar e cumprir os termos desta lei’. E todo o povo responderá: ‘Amém!’.”"
               }
             ]
           },
@@ -915,7 +918,7 @@
               },
               {
                 "ref": "Filipenses 4:8",
-                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem- se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
+                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem-se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
               }
             ]
           },
@@ -1156,7 +1159,7 @@
           },
           {
             "number": 23,
-            "text": "E aconteceu exatamente como as Escrituras dizem: “Abraão creu em Deus, e assim foi considerado justo”. Ele até foi chamado amigo de Deus!9",
+            "text": "E aconteceu exatamente como as Escrituras dizem: “Abraão creu em Deus, e assim foi considerado justo”. Ele até foi chamado amigo de Deus!",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1245,6 +1248,7 @@
   "3": {
     "book": "Tiago",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "A importância de controlar a língua",
@@ -1405,7 +1409,7 @@
               },
               {
                 "ref": "Salmos 140:3",
-                "text": "Sua língua fere como uma serpente; veneno de víbora goteja de seus lábios."
+                "text": "Sua língua fere como uma serpente; veneno de víbora goteja de seus lábios. Interlúdio"
               },
               {
                 "ref": "Salmos 55:21",
@@ -1436,7 +1440,7 @@
               },
               {
                 "ref": "Salmos 62:4",
-                "text": "Planejam me derrubar de minha posição elevada; têm prazer em contar mentiras. Diante de mim, me elogiam; em seu coração, porém, me amaldiçoam."
+                "text": "Planejam me derrubar de minha posição elevada; têm prazer em contar mentiras. Diante de mim, me elogiam; em seu coração, porém, me amaldiçoam. Interlúdio"
               }
             ]
           },
@@ -1642,6 +1646,7 @@
   "4": {
     "book": "Tiago",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Aproximem-se de Deus",
@@ -1717,7 +1722,7 @@
           },
           {
             "number": 4,
-            "text": "Adúlteros!14 Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam- se inimigos de Deus.",
+            "text": "Adúlteros! Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam-se inimigos de Deus.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1730,7 +1735,7 @@
               },
               {
                 "ref": "Mateus 6:24",
-                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”48 Ensino sobre a preocupação"
+                "text": "“Ninguém pode servir a dois senhores, pois odiará um e amará o outro; será dedicado a um e desprezará o outro. Vocês não podem servir a Deus e ao dinheiro.”"
               },
               {
                 "ref": "João 15:19",
@@ -1740,7 +1745,7 @@
           },
           {
             "number": 5,
-            "text": "O que vocês acham que as Escrituras querem dizer quando afirmam que o espírito colocado por Deus em nós tem ciúmes?15",
+            "text": "O que vocês acham que as Escrituras querem dizer quando afirmam que o espírito colocado por Deus em nós tem ciúmes?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1971,7 +1976,7 @@
               },
               {
                 "ref": "Salmos 39:5",
-                "text": "A vida que me deste não é mais longa que alguns palmos, e diante de ti toda a minha existência não passa de um momento; na verdade, o ser humano não passa de um sopro”."
+                "text": "A vida que me deste não é mais longa que alguns palmos, e diante de ti toda a minha existência não passa de um momento; na verdade, o ser humano não passa de um sopro”. Interlúdio"
               },
               {
                 "ref": "1 João 2:17",
@@ -2059,6 +2064,7 @@
   "5": {
     "book": "Tiago",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Advertência aos ricos",
@@ -2197,7 +2203,7 @@
               },
               {
                 "ref": "Lucas 22:51–53",
-                "text": "Mas Jesus disse: “Basta!”. E, tocando a orelha do homem, curou- o."
+                "text": "Mas Jesus disse: “Basta!”. E, tocando a orelha do homem, curou-o."
               }
             ]
           }
@@ -2410,7 +2416,7 @@
               },
               {
                 "ref": "Mateus 21:21–22",
-                "text": "Jesus respondeu: “Eu lhes digo a verdade: se vocês tiverem fé e não duvidarem, poderão fazer o mesmo que fiz com esta figueira, e muito mais. Poderão até dizer a este monte: ‘Levante-se e ­atire-se no mar’, e isso acontecerá."
+                "text": "Jesus respondeu: “Eu lhes digo a verdade: se vocês tiverem fé e não duvidarem, poderão fazer o mesmo que fiz com esta figueira, e muito mais. Poderão até dizer a este monte: ‘Levante-se e atire-se no mar’, e isso acontecerá."
               }
             ]
           },
@@ -2499,7 +2505,7 @@
               },
               {
                 "ref": "Mateus 18:15",
-                "text": "“Se um irmão pecar contra você,100 fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
+                "text": "“Se um irmão pecar contra você, fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
               },
               {
                 "ref": "Tiago 5:20",
@@ -2513,7 +2519,7 @@
           },
           {
             "number": 20,
-            "text": "saibam que quem trouxer o pecador de volta de seu desvio o salvará da morte e trará perdão para muitos pecados. 1 1. Ou perfeitos. 2 1. Ou Deus não deve ser posto à prova por perversos. 3 1. Em grego, nos tornamos como primícias de suas criaturas. 4 2. Em grego, à sua sinagoga. 5 2. Lv 19.. 6 2. Êx 20.13-14; Dt 5.17-18. 7 2. Alguns manuscritos trazem que Deus é um. Ver Dt 6.. 8 2.23a Gn 15.. 9 2.23b Ver Is 41.. 10 2. Ou sem espírito. 11 3. Ou porque ela queimará no inferno [em grego, Gehenna]. 12 3. Em grego, do sal. 13 3. Ou de coisas boas, ou de retidão. 14 4. Em grego, Adúlteras! 15 4. Ou que Deus anseia com zelo pelo espírito humano que colocou em nós?, ou que o Espírito que Deus colocou em nós se opõe à nossa inveja? 16 4. Pv 3., conforme a Septuaginta. 17 5.6a Ou o Justo. 18 5.6b Ou e eles não lhes resistem?, ou e Deus não se opõe a vocês?, ou e eles não os acusam agora diante de Deus? 19 5. Ou anciãos.",
+            "text": "saibam que quem trouxer o pecador de volta de seu desvio o salvará da morte e trará perdão para muitos pecados.",
             "isJesusWords": false,
             "crossReferences": [
               {

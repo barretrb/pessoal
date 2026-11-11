@@ -2,6 +2,7 @@
   "1": {
     "book": "Habacuque",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -59,7 +60,8 @@
                 "text": "Confunde-os, Senhor, e frustra seus planos, pois vejo violência e conflito na cidade."
               },
               {
-                "ref": "Jeremias 9:2–6"
+                "ref": "Jeremias 9:2–6",
+                "text": "Quem dera pudesse ir para bem longe, morar numa cabana no deserto e me esquecer do meu povo! Pois todos são adúlteros, um bando de traidores."
               },
               {
                 "ref": "Eclesiastes 5:8",
@@ -101,12 +103,12 @@
         "verses": [
           {
             "number": 5,
-            "text": "“Observem as nações ao redor; olhem e admirem-se!1 Pois faço algo em seus dias, algo em que vocês não acreditariam mesmo que alguém lhes contasse.",
+            "text": "“Observem as nações ao redor; olhem e admirem-se! Pois faço algo em seus dias, algo em que vocês não acreditariam mesmo que alguém lhes contasse.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Atos 13:40–41",
-                "text": "Por isso, tomem cuidado para que não se apliquem a vocês as palavras dos profetas: 41‘Olhem, zombadores; fiquem admirados e morram! Pois faço algo em seus dias, algo em que vocês não acreditariam mesmo que lhes contassem’”."
+                "text": "Por isso, tomem cuidado para que não se apliquem a vocês as palavras dos profetas:"
               },
               {
                 "ref": "Isaías 29:14",
@@ -137,7 +139,7 @@
               },
               {
                 "ref": "2 Crônicas 36:17",
-                "text": "Então o SENHOR trouxe o rei da Babilônia contra eles. Os babilônios154 mataram os jovens e foram atrás deles até dentro do santuário. Não tiveram piedade nem dos rapazes, nem das moças, nem dos idosos e doentes. Deus os..."
+                "text": "Então o SENHOR trouxe o rei da Babilônia contra eles. Os babilônios mataram os jovens e foram atrás deles até dentro do santuário. Não tiveram piedade nem dos rapazes, nem das moças, nem dos idosos e doentes. Deus os entregou todos nas mãos do rei."
               },
               {
                 "ref": "2 Crônicas 36:6",
@@ -209,7 +211,8 @@
                 "text": "Um leão saiu de seu abrigo, um destruidor de nações. Saiu de sua toca e se encaminha até vocês; ele devastará sua terra. Suas cidades serão arruinadas, e ninguém viverá nelas."
               },
               {
-                "ref": "Jó 29:18"
+                "ref": "Jó 29:18",
+                "text": "‘Por certo morrerei rodeado por minha família’, pensava, ‘depois de uma vida longa e boa."
               }
             ]
           },
@@ -228,7 +231,7 @@
               },
               {
                 "ref": "2 Crônicas 36:10",
-                "text": "Na virada do ano,152 o rei Nabucodonosor levou Joaquim para a Babilônia. Nessa ocasião, também levou os tesouros do templo do SENHOR. Nabucodonosor nomeou Zedequias, tio153 de Joaquim, rei sobre Judá e sobre Jerusalém."
+                "text": "Na virada do ano, o rei Nabucodonosor levou Joaquim para a Babilônia. Nessa ocasião, também levou os tesouros do templo do SENHOR. Nabucodonosor nomeou Zedequias, tio de Joaquim, rei sobre Judá e sobre Jerusalém."
               },
               {
                 "ref": "Jeremias 32:24",
@@ -397,13 +400,14 @@
   "2": {
     "book": "Habacuque",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "",
         "verses": [
           {
             "number": 1,
-            "text": "Subirei até minha torre de vigia e ficarei de guarda. Ali esperarei para ver o que ele diz, que resposta dará4 à minha queixa.",
+            "text": "Subirei até minha torre de vigia e ficarei de guarda. Ali esperarei para ver o que ele diz, que resposta dará à minha queixa.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -436,7 +440,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 30:8",
-                "text": "Agora vá e escreva estas palavras; registre-as num livro."
+                "text": "Agora vá e escreva estas palavras; registre-as num livro. Elas permanecerão até o fim dos tempos como testemunha"
               },
               {
                 "ref": "Apocalipse 14:13",
@@ -494,7 +498,7 @@
               },
               {
                 "ref": "Gálatas 2:16",
-                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em ­Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque..."
+                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque o..."
               }
             ]
           },
@@ -574,7 +578,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 33:1",
-                "text": "Que aflição espera vocês, assírios, que destroem os outros,105 mas nunca foram destruídos! Traem outros, mas nunca foram traídos. Quando terminarem de destruir, serão destruídos. Quando terminarem de trair, serão traídos."
+                "text": "Que aflição espera vocês, assírios, que destroem os outros, mas nunca foram destruídos! Traem outros, mas nunca foram traídos. Quando terminarem de destruir, serão destruídos. Quando terminarem de trair, serão traídos."
               },
               {
                 "ref": "Habacuque 2:17",
@@ -609,7 +613,7 @@
               },
               {
                 "ref": "Atos 1:17–25",
-                "text": "Judas era um de nós e participava do ministério conosco”. 18(Ele comprou um campo com o dinheiro que recebeu por sua perversidade. Ao cair ali de cabeça, seu corpo se partiu ao meio, e seus intestinos se derramaram."
+                "text": "Judas era um de nós e participava do ministério conosco”."
               }
             ]
           },
@@ -619,7 +623,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Reis 9:26"
+                "ref": "2 Reis 9:26",
+                "text": "‘Assim diz o SENHOR: Ontem vi o assassinato de Nabote e seus filhos. Juro solenemente que o farei pagar por ele neste campo’. Portanto, jogue-o na propriedade de Nabote, como o SENHOR disse”."
               },
               {
                 "ref": "Naum 1:14",
@@ -627,7 +632,7 @@
               },
               {
                 "ref": "Habacuque 2:16",
-                "text": "Em breve, porém, será sua vez de serem humilhados; venham, bebam e fiquem despidos e expostos!8 Bebam do cálice do SENHOR, e toda a sua glória será transformada em desonra."
+                "text": "Em breve, porém, será sua vez de serem humilhados; venham, bebam e fiquem despidos e expostos! Bebam do cálice do SENHOR, e toda a sua glória será transformada em desonra."
               },
               {
                 "ref": "2 Reis 10:7",
@@ -752,7 +757,7 @@
           },
           {
             "number": 16,
-            "text": "Em breve, porém, será sua vez de serem humilhados; venham, bebam e fiquem despidos e expostos!8 Bebam do cálice do SENHOR, e toda a sua glória será transformada em desonra.",
+            "text": "Em breve, porém, será sua vez de serem humilhados; venham, bebam e fiquem despidos e expostos! Bebam do cálice do SENHOR, e toda a sua glória será transformada em desonra.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -872,6 +877,7 @@
   "3": {
     "book": "Habacuque",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "A oração de Habacuque",
@@ -929,7 +935,7 @@
               },
               {
                 "ref": "Salmos 4:4",
-                "text": "Não pequem ao permitir que a ira os controle; reflitam durante a noite e permaneçam em silêncio."
+                "text": "Não pequem ao permitir que a ira os controle; reflitam durante a noite e permaneçam em silêncio. Interlúdio"
               },
               {
                 "ref": "Amós 1:12",
@@ -1058,7 +1064,7 @@
           },
           {
             "number": 9,
-            "text": "Pegaste teu arco e tua aljava cheia de flechas e dividiste a terra com rios.",
+            "text": "Pegaste teu arco e tua aljava cheia de flechas e dividiste a terra com rios. Interlúdio",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1078,12 +1084,7 @@
                 "text": "Prepara o arco para atacar seu povo, como se fosse seu inimigo. Usa contra eles sua força para matar os melhores jovens. Derrama como fogo sua fúria sobre a tenda da bela Sião."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Interlúdio",
-        "verses": [
+          },
           {
             "number": 10,
             "text": "Os montes viram e tremeram, e as águas avançaram com violência. O grande abismo clamou e levantou bem alto as mãos.",
@@ -1155,7 +1156,7 @@
           },
           {
             "number": 13,
-            "text": "Saíste para resgatar teu povo, para libertar teus ungidos. Esmagaste a cabeça dos perversos e os descobriste até os ossos.",
+            "text": "Saíste para resgatar teu povo, para libertar teus ungidos. Esmagaste a cabeça dos perversos e os descobriste até os ossos. Interlúdio",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1164,7 +1165,7 @@
               },
               {
                 "ref": "Salmos 105:15",
-                "text": "“Não toquem em meu povo escolhido,133 não façam mal a meus profetas”."
+                "text": "“Não toquem em meu povo escolhido, não façam mal a meus profetas”."
               },
               {
                 "ref": "Êxodo 15:1–2",
@@ -1175,12 +1176,7 @@
                 "text": "e o SENHOR deu a Israel vitória sobre seus inimigos. Os israelitas os perseguiram até a grande Sidom, até Misrefote-Maim e até o vale de Mispá, a leste, e não sobrou nenhum guerreiro inimigo com vida."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Interlúdio",
-        "verses": [
+          },
           {
             "number": 14,
             "text": "Com tuas armas destruíste o líder dos que avançaram como um vendaval, pensando que o povo fosse presa fácil.",
@@ -1234,7 +1230,7 @@
               },
               {
                 "ref": "Habacuque 1:5–11",
-                "text": "“Observem as nações ao redor; olhem e admirem-se!1 Pois faço algo em seus dias, algo em que vocês não acreditariam mesmo que alguém lhes contasse."
+                "text": "“Observem as nações ao redor; olhem e admirem-se! Pois faço algo em seus dias, algo em que vocês não acreditariam mesmo que alguém lhes contasse."
               },
               {
                 "ref": "Daniel 10:8",
@@ -1294,7 +1290,7 @@
           },
           {
             "number": 19,
-            "text": "O SENHOR Soberano é minha força! Ele torna meus pés firmes como os da corça, para que eu possa andar em lugares altos. (Ao regente do coral: Essa oração deve ser acompanhada por instrumentos de corda.) 1 1. A Septuaginta traz Olhem, zombadores; / olhem, admirem-se e morram. Comparar com At 13.. 2 1. Ou caldeus. 3 1. Ou guepardos. 4 2. Conforme a versão siríaca; o hebraico traz darei. 5 2.3b-4 A Septuaginta traz Se a visão se demorar, espere com paciência, / pois ela certamente virá e não se atrasará. /",
+            "text": "O SENHOR Soberano é minha força! Ele torna meus pés firmes como os da corça, para que eu possa andar em lugares altos. (Ao regente do coral: Essa oração deve ser acompanhada por instrumentos de corda.)",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1312,48 +1308,6 @@
               {
                 "ref": "Salmos 46:1",
                 "text": "Deus é nosso refúgio e nossa força, sempre pronto a nos socorrer em tempos de aflição."
-              }
-            ]
-          },
-          {
-            "number": 4,
-            "text": "Não terei prazer algum em quem se desviar. / Mas o justo viverá por minha fé. Comparar com Rm 1.; Gl 3.; Hb 10.37-38. 6 2.5a Conforme o manuscrito do mar Morto",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Mateus 17:2",
-                "text": "Enquanto os três observavam, a aparência de Jesus foi transformada de tal modo que seu rosto brilhava como o sol e suas roupas se tornaram brancas como a luz."
-              },
-              {
-                "ref": "Isaías 60:19–20",
-                "text": "“Você não precisará do brilho do sol durante o dia, nem da claridade da lua durante a noite, pois o SENHOR será sua luz eterna; seu Deus será sua glória."
-              },
-              {
-                "ref": "Jó 26:14",
-                "text": "Isso é apenas o começo de tudo que ele faz, um mero sussurro de sua força; quem pode compreender o trovão de seu poder?”."
-              },
-              {
-                "ref": "Êxodo 14:20",
-                "text": "e ficou entre o acampamento egípcio e o acampamento de Israel. A nuvem escura trouxe trevas para os egípcios, mas luz para os israelitas. Com isso, os dois grupos não se aproximaram durante toda a noite."
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "QpHab; outros manuscritos hebraicos trazem O vinho. 7 2.5b Em hebraico, como o Sheol. 8 2. Os manuscritos do mar Morto, a Septuaginta e a versão siríaca trazem e cambaleiem! 9 3. O hebraico acrescenta conforme sigionote, provavelmente uma indicação do arranjo musical para a oração. 10 3.3a Em hebraico, Temã. 11 3.3b Em hebraico, Selá. O significado da palavra é incerto, embora se trate, provavelmente, de um termo musical ou literário; também em 3.,. 12 3. Em hebraico, A decomposição entrou em meus ossos. 13 3. Ou Ele me dá a velocidade da corça.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Salmos 90:1–17",
-                "text": "Senhor, tu tens sido nosso refúgio ao longo das gerações."
-              },
-              {
-                "ref": "Salmos 86:1–17",
-                "text": "Inclina-te, SENHOR, e ouve minha oração; responde-me, pois estou aflito e necessitado."
-              },
-              {
-                "ref": "Salmos 7:1–17",
-                "text": "Em ti me refugio, SENHOR, meu Deus; salva-me dos que me perseguem e livra-me!"
               }
             ]
           }

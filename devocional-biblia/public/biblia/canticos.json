@@ -2,6 +2,7 @@
   "1": {
     "book": "Cântico dos Cânticos",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -37,7 +38,7 @@
               },
               {
                 "ref": "Cânticos 1:4",
-                "text": "Leve-me com você; venha, vamos depressa! O rei me trouxe ao quarto dele. As mulheres de Jerusalém Ó rei, estamos alegres e felizes por sua causa! Celebraremos seu amor mais que o vinho. A Amada Com razão elas o amam."
+                "text": "Leve-me com você; venha, vamos depressa! O rei me trouxe ao quarto dele."
               },
               {
                 "ref": "Salmos 36:7",
@@ -74,7 +75,63 @@
           },
           {
             "number": 4,
-            "text": "Leve-me com você; venha, vamos depressa! O rei me trouxe ao quarto dele. As mulheres de Jerusalém Ó rei, estamos alegres e felizes por sua causa! Celebraremos seu amor mais que o vinho. A Amada Com razão elas o amam.",
+            "text": "Leve-me com você; venha, vamos depressa! O rei me trouxe ao quarto dele.",
+            "isJesusWords": false,
+            "crossReferences": [
+              {
+                "ref": "Oséias 11:4",
+                "text": "Guiei Israel com meus laços de amor. Tirei o jugo de seu pescoço e eu mesmo me inclinei para alimentá-lo."
+              },
+              {
+                "ref": "João 6:44",
+                "text": "Pois ninguém pode vir a mim se o Pai, que me enviou, não o trouxer a mim; e no último dia eu o ressuscitarei."
+              },
+              {
+                "ref": "Salmos 45:14–15",
+                "text": "Em suas roupas bordadas, é levada até o rei, acompanhada de suas damas de honra. Formam um grupo alegre e festivo que entra no palácio real."
+              },
+              {
+                "ref": "João 12:32",
+                "text": "E, quando eu for levantado da terra, atrairei todos a mim”."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "As mulheres de Jerusalém",
+        "verses": [
+          {
+            "number": 4,
+            "text": "Ó rei, estamos alegres e felizes por sua causa! Celebraremos seu amor mais que o vinho.",
+            "isJesusWords": false,
+            "crossReferences": [
+              {
+                "ref": "Oséias 11:4",
+                "text": "Guiei Israel com meus laços de amor. Tirei o jugo de seu pescoço e eu mesmo me inclinei para alimentá-lo."
+              },
+              {
+                "ref": "João 6:44",
+                "text": "Pois ninguém pode vir a mim se o Pai, que me enviou, não o trouxer a mim; e no último dia eu o ressuscitarei."
+              },
+              {
+                "ref": "Salmos 45:14–15",
+                "text": "Em suas roupas bordadas, é levada até o rei, acompanhada de suas damas de honra. Formam um grupo alegre e festivo que entra no palácio real."
+              },
+              {
+                "ref": "João 12:32",
+                "text": "E, quando eu for levantado da terra, atrairei todos a mim”."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "A Amada",
+        "verses": [
+          {
+            "number": 4,
+            "text": "Com razão elas o amam.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -420,6 +477,7 @@
   "2": {
     "book": "Cântico dos Cânticos",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "A Amada",
@@ -463,7 +521,7 @@
               },
               {
                 "ref": "Mateus 6:28–29",
-                "text": "“E por que se preocupar com a roupa? Observem como crescem os lírios do campo. e, no entanto, nem Salomão em toda a sua glória se vestiu como eles."
+                "text": "“E por que se preocupar com a roupa? Observem como crescem os lírios do campo. Não trabalham nem fazem roupas e, no entanto, nem Salomão em toda a sua glória se vestiu como eles."
               },
               {
                 "ref": "Mateus 10:16",
@@ -487,7 +545,7 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 8:5",
-                "text": "Quem é essa que vem subindo do deserto, apoiada em seu amado? A Amada Despertei você debaixo da macieira, onde sua mãe o deu à luz, onde, com muitas dores, ela o trouxe ao mundo."
+                "text": "Quem é essa que vem subindo do deserto, apoiada em seu amado?"
               },
               {
                 "ref": "Hebreus 1:1–6",
@@ -518,7 +576,7 @@
               },
               {
                 "ref": "Cânticos 1:4",
-                "text": "Leve-me com você; venha, vamos depressa! O rei me trouxe ao quarto dele. As mulheres de Jerusalém Ó rei, estamos alegres e felizes por sua causa! Celebraremos seu amor mais que o vinho. A Amada Com razão elas o amam."
+                "text": "Leve-me com você; venha, vamos depressa! O rei me trouxe ao quarto dele."
               },
               {
                 "ref": "João 15:9–15",
@@ -660,7 +718,7 @@
               },
               {
                 "ref": "2 Coríntios 6:17–18",
-                "text": "Portanto, afastem-se e separem-se deles, diz o Senhor. Não toquem em coisas impuras, e eu os receberei. Eu serei seu Pai, e vocês serão meus filhos e minhas filhas,"
+                "text": "Portanto, afastem-se e separem-se deles, diz o Senhor. Não toquem em coisas impuras, e eu os receberei. Eu serei seu Pai, e vocês serão meus filhos e minhas filhas, diz o Senhor Todo-poderoso”."
               }
             ]
           },
@@ -847,6 +905,7 @@
   "3": {
     "book": "Cântico dos Cânticos",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "A Amada",
@@ -870,7 +929,7 @@
               },
               {
                 "ref": "Isaías 26:9",
-                "text": "À noite eu te procuro, ó Deus; pela manhã92 te busco de todo o coração. Pois só quando vens julgar a terra as pessoas aprendem a justiça."
+                "text": "À noite eu te procuro, ó Deus; pela manhã te busco de todo o coração. Pois só quando vens julgar a terra as pessoas aprendem a justiça."
               }
             ]
           },
@@ -893,7 +952,7 @@
               },
               {
                 "ref": "Isaías 64:7",
-                "text": "Ainda assim, ninguém invoca teu nome nem suplica por tua misericórdia. Por isso te afastaste de nós e nos entregaste179 a nossos pecados."
+                "text": "Ainda assim, ninguém invoca teu nome nem suplica por tua misericórdia. Por isso te afastaste de nós e nos entregaste a nossos pecados."
               }
             ]
           },
@@ -974,7 +1033,7 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 8:5",
-                "text": "Quem é essa que vem subindo do deserto, apoiada em seu amado? A Amada Despertei você debaixo da macieira, onde sua mãe o deu à luz, onde, com muitas dores, ela o trouxe ao mundo."
+                "text": "Quem é essa que vem subindo do deserto, apoiada em seu amado?"
               },
               {
                 "ref": "Cânticos 1:13",
@@ -1051,7 +1110,7 @@
               },
               {
                 "ref": "Apocalipse 14:6",
-                "text": "Vi outro anjo que voava no ponto mais alto do céu, levando as boas- novas eternas para anunciá-las aos habitantes da terra, a toda nação, tribo, língua e povo."
+                "text": "Vi outro anjo que voava no ponto mais alto do céu, levando as boas-novas eternas para anunciá-las aos habitantes da terra, a toda nação, tribo, língua e povo."
               }
             ]
           },
@@ -1070,7 +1129,7 @@
               },
               {
                 "ref": "Salmos 87:3",
-                "text": "Ó cidade de Deus, que coisas gloriosas são ditas a seu respeito!"
+                "text": "Ó cidade de Deus, que coisas gloriosas são ditas a seu respeito! Interlúdio"
               },
               {
                 "ref": "1 Timóteo 3:15–16",
@@ -1113,6 +1172,7 @@
   "4": {
     "book": "Cântico dos Cânticos",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "O Amado",
@@ -1284,7 +1344,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 3:9"
+                "ref": "Deuteronômio 3:9",
+                "text": "(Os sidônios chamam o monte Hermom de Siriom, enquanto os amorreus o chamam de Senir.)"
               },
               {
                 "ref": "Cânticos 2:13",
@@ -1315,7 +1376,7 @@
               },
               {
                 "ref": "Cânticos 5:1–2",
-                "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite. As mulheres de Jerusalém Comam e bebam, amado e amada! Sim, bebam de seu amor quanto puderem!"
+                "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite."
               },
               {
                 "ref": "Oséias 2:19–20",
@@ -1353,11 +1414,11 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 5:1",
-                "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite. As mulheres de Jerusalém Comam e bebam, amado e amada! Sim, bebam de seu amor quanto puderem!"
+                "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite."
               },
               {
                 "ref": "Cânticos 7:9",
-                "text": "Que seus beijos sejam como o melhor vinho. A Amada Sim, vinho que escorre para meu amado, que flui suave por lábios e dentes."
+                "text": "Que seus beijos sejam como o melhor vinho."
               },
               {
                 "ref": "Gênesis 27:27",
@@ -1477,7 +1538,7 @@
               },
               {
                 "ref": "Cânticos 5:1",
-                "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite. As mulheres de Jerusalém Comam e bebam, amado e amada! Sim, bebam de seu amor quanto puderem!"
+                "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite."
               },
               {
                 "ref": "Atos 2:1–2",
@@ -1496,13 +1557,42 @@
   "5": {
     "book": "Cântico dos Cânticos",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "O Amado",
         "verses": [
           {
             "number": 1,
-            "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite. As mulheres de Jerusalém Comam e bebam, amado e amada! Sim, bebam de seu amor quanto puderem!",
+            "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite.",
+            "isJesusWords": false,
+            "crossReferences": [
+              {
+                "ref": "Cânticos 6:2",
+                "text": "Meu amado desceu a seu jardim, aos canteiros de especiarias, para pastorear nos jardins e para colher lírios."
+              },
+              {
+                "ref": "Cânticos 4:16",
+                "text": "Desperte, vento norte! Levante-se, vento sul! Soprem em meu jardim e espalhem sua fragrância por toda parte. Entre em seu jardim, meu amor, e saboreie seus melhores frutos."
+              },
+              {
+                "ref": "Apocalipse 22:17",
+                "text": "O Espírito e a noiva dizem: “Vem!”. Que todo aquele que ouve diga: “Vem!”. Quem tiver sede, venha. Quem quiser, beba de graça da água da vida."
+              },
+              {
+                "ref": "Isaías 58:11",
+                "text": "O SENHOR os guiará continuamente, lhes dará água quando tiverem sede e restaurará suas forças. Vocês serão como um jardim bem regado, como a fonte que não para de jorrar."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "As mulheres de Jerusalém",
+        "verses": [
+          {
+            "number": 1,
+            "text": "Comam e bebam, amado e amada! Sim, bebam de seu amor quanto puderem!",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1585,7 +1675,7 @@
               },
               {
                 "ref": "Filipenses 2:13",
-                "text": "Pois Deus está agindo em vocês, dando- lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
+                "text": "Pois Deus está agindo em vocês, dando-lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
               },
               {
                 "ref": "Gênesis 43:30",
@@ -1639,7 +1729,7 @@
               },
               {
                 "ref": "Salmos 77:3",
-                "text": "Lembro-me de Deus e começo a gemer; desfaleço, ansioso por sua ajuda."
+                "text": "Lembro-me de Deus e começo a gemer; desfaleço, ansioso por sua ajuda. Interlúdio"
               }
             ]
           },
@@ -1709,7 +1799,7 @@
               },
               {
                 "ref": "Salmos 87:3",
-                "text": "Ó cidade de Deus, que coisas gloriosas são ditas a seu respeito!"
+                "text": "Ó cidade de Deus, que coisas gloriosas são ditas a seu respeito! Interlúdio"
               },
               {
                 "ref": "Salmos 45:13",
@@ -1867,7 +1957,7 @@
               },
               {
                 "ref": "Cânticos 7:9",
-                "text": "Que seus beijos sejam como o melhor vinho. A Amada Sim, vinho que escorre para meu amado, que flui suave por lábios e dentes."
+                "text": "Que seus beijos sejam como o melhor vinho."
               },
               {
                 "ref": "Gálatas 2:20",
@@ -1886,6 +1976,7 @@
   "6": {
     "book": "Cântico dos Cânticos",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "As mulheres de Jerusalém",
@@ -2079,7 +2170,7 @@
               },
               {
                 "ref": "Gênesis 30:13",
-                "text": "Lia o chamou de Aser,103 pois disse: “Como estou alegre! Agora as outras mulheres celebrarão comigo”."
+                "text": "Lia o chamou de Aser, pois disse: “Como estou alegre! Agora as outras mulheres celebrarão comigo”."
               },
               {
                 "ref": "Salmos 45:9",
@@ -2167,8 +2258,19 @@
         "title": "As mulheres de Jerusalém",
         "verses": [
           {
-            "number": 1316,
-            "text": "Volte, volte para junto de nós, sulamita! Volte, volte para que a vejamos outra vez! O Amado Por que vocês olham para a sulamita enquanto ela se move com tanta graça entre duas fileiras de",
+            "number": 13,
+            "text": "Volte, volte para junto de nós, sulamita! Volte, volte para que a vejamos outra vez!",
+            "isJesusWords": false,
+            "crossReferences": []
+          }
+        ]
+      },
+      {
+        "title": "O Amado",
+        "verses": [
+          {
+            "number": 13,
+            "text": "Por que vocês olham para a sulamita enquanto ela se move com tanta graça entre duas fileiras de dançarinas?",
             "isJesusWords": false,
             "crossReferences": []
           }
@@ -2179,12 +2281,13 @@
   "7": {
     "book": "Cântico dos Cânticos",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
-        "title": "dançarinas?17",
+        "title": "",
         "verses": [
           {
-            "number": 118,
+            "number": 1,
             "text": "Como são lindos seus pés calçados com sandálias, moça com porte de princesa! As curvas de seus quadris são como joias, trabalho de artífice habilidoso.",
             "isJesusWords": false,
             "crossReferences": []
@@ -2292,7 +2395,7 @@
               },
               {
                 "ref": "Isaías 62:4–5",
-                "text": "Nunca mais será chamada de “Cidade Abandonada”170 nem de “Terra Desolada”.171 Seu novo nome será “Cidade do Prazer de Deus”172 e “Esposa de Deus”,173 pois o SENHOR tem prazer em você e a tomará como esposa."
+                "text": "Nunca mais será chamada de “Cidade Abandonada” nem de “Terra Desolada”. Seu novo nome será “Cidade do Prazer de Deus” e “Esposa de Deus”, pois o SENHOR tem prazer em você e a tomará como esposa."
               }
             ]
           },
@@ -2344,7 +2447,7 @@
           },
           {
             "number": 9,
-            "text": "Que seus beijos sejam como o melhor vinho. A Amada Sim, vinho que escorre para meu amado, que flui suave por lábios e dentes.",
+            "text": "Que seus beijos sejam como o melhor vinho.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2360,7 +2463,36 @@
                 "text": "Que a mensagem a respeito de Cristo, em toda a sua riqueza, preencha a vida de vocês. Ensinem e aconselhem uns aos outros com toda a sabedoria. Cantem a Deus salmos, hinos e cânticos espirituais com o coração agradecido."
               },
               {
-                "ref": "Atos 2:11–13"
+                "ref": "Atos 2:11–13",
+                "text": "(tanto judeus como convertidos ao judaísmo), cretenses e árabes, e todos nós ouvimos estas pessoas falarem em nossa própria língua sobre as coisas maravilhosas que Deus fez!”."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "A Amada",
+        "verses": [
+          {
+            "number": 9,
+            "text": "Sim, vinho que escorre para meu amado, que flui suave por lábios e dentes.",
+            "isJesusWords": false,
+            "crossReferences": [
+              {
+                "ref": "Cânticos 5:16",
+                "text": "Sua voz é a própria doçura; ele é desejável em todos os sentidos. Esse, ó mulheres de Jerusalém, é meu amado, meu amigo."
+              },
+              {
+                "ref": "Efésios 4:29",
+                "text": "Evitem o linguajar sujo e insultante. Que todas as suas palavras sejam boas e úteis, a fim de dar ânimo àqueles que as ouvirem."
+              },
+              {
+                "ref": "Colossenses 3:16–17",
+                "text": "Que a mensagem a respeito de Cristo, em toda a sua riqueza, preencha a vida de vocês. Ensinem e aconselhem uns aos outros com toda a sabedoria. Cantem a Deus salmos, hinos e cânticos espirituais com o coração agradecido."
+              },
+              {
+                "ref": "Atos 2:11–13",
+                "text": "(tanto judeus como convertidos ao judaísmo), cretenses e árabes, e todos nós ouvimos estas pessoas falarem em nossa própria língua sobre as coisas maravilhosas que Deus fez!”."
               }
             ]
           },
@@ -2402,7 +2534,7 @@
               },
               {
                 "ref": "Cânticos 1:4",
-                "text": "Leve-me com você; venha, vamos depressa! O rei me trouxe ao quarto dele. As mulheres de Jerusalém Ó rei, estamos alegres e felizes por sua causa! Celebraremos seu amor mais que o vinho. A Amada Com razão elas o amam."
+                "text": "Leve-me com você; venha, vamos depressa! O rei me trouxe ao quarto dele."
               }
             ]
           },
@@ -2459,6 +2591,7 @@
   "8": {
     "book": "Cântico dos Cânticos",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "A Amada",
@@ -2474,7 +2607,7 @@
               },
               {
                 "ref": "Zacarias 9:9",
-                "text": "Alegre-se, ó povo de Sião!29 Exulte, ó preciosa Jerusalém!30 Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
+                "text": "Alegre-se, ó povo de Sião! Exulte, ó preciosa Jerusalém! Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
               },
               {
                 "ref": "Gálatas 4:26",
@@ -2528,7 +2661,7 @@
               },
               {
                 "ref": "Isaías 62:4–5",
-                "text": "Nunca mais será chamada de “Cidade Abandonada”170 nem de “Terra Desolada”.171 Seu novo nome será “Cidade do Prazer de Deus”172 e “Esposa de Deus”,173 pois o SENHOR tem prazer em você e a tomará como esposa."
+                "text": "Nunca mais será chamada de “Cidade Abandonada” nem de “Terra Desolada”. Seu novo nome será “Cidade do Prazer de Deus” e “Esposa de Deus”, pois o SENHOR tem prazer em você e a tomará como esposa."
               }
             ]
           },
@@ -2554,7 +2687,7 @@
         "verses": [
           {
             "number": 5,
-            "text": "Quem é essa que vem subindo do deserto, apoiada em seu amado? A Amada Despertei você debaixo da macieira, onde sua mãe o deu à luz, onde, com muitas dores, ela o trouxe ao mundo.",
+            "text": "Quem é essa que vem subindo do deserto, apoiada em seu amado?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2563,7 +2696,35 @@
               },
               {
                 "ref": "Isaías 40:3",
-                "text": "Ouçam! Uma voz clama: “Abram caminho no deserto para o SENHOR!127 Preparem para nosso Deus uma estrada reta na terra desolada!"
+                "text": "Ouçam! Uma voz clama: “Abram caminho no deserto para o SENHOR! Preparem para nosso Deus uma estrada reta na terra desolada!"
+              },
+              {
+                "ref": "Salmos 63:8",
+                "text": "Minha alma se apega a ti; tua forte mão direita me sustenta."
+              },
+              {
+                "ref": "Cânticos 2:3",
+                "text": "Como uma macieira entre as árvores do bosque, assim é meu amado entre os rapazes. À sua sombra agradável eu me sento e saboreio seus deliciosos frutos."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "A Amada",
+        "verses": [
+          {
+            "number": 5,
+            "text": "Despertei você debaixo da macieira, onde sua mãe o deu à luz, onde, com muitas dores, ela o trouxe ao mundo.",
+            "isJesusWords": false,
+            "crossReferences": [
+              {
+                "ref": "Cânticos 3:6",
+                "text": "O que é isso que vem subindo do deserto, como nuvem de fumaça? De onde vem esse perfume de mirra e incenso, o aroma de todo tipo de especiaria?"
+              },
+              {
+                "ref": "Isaías 40:3",
+                "text": "Ouçam! Uma voz clama: “Abram caminho no deserto para o SENHOR! Preparem para nosso Deus uma estrada reta na terra desolada!"
               },
               {
                 "ref": "Salmos 63:8",
@@ -2734,7 +2895,7 @@
               },
               {
                 "ref": "Atos 20:28",
-                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos,102 a fim de pastorearem sua igreja, comprada com seu próprio sangue."
+                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos, a fim de pastorearem sua igreja, comprada com seu próprio sangue."
               },
               {
                 "ref": "1 Timóteo 4:15–16",
@@ -2781,7 +2942,7 @@
         "verses": [
           {
             "number": 14,
-            "text": "Venha correndo, meu amado! Seja como a gazela, como o jovem cervo sobre os montes de especiarias. 1 1. Os subtítulos identificam os interlocutores e não fazem parte do texto original, embora o hebraico geralmente forneça indicações por meio do gênero de quem fala. 2 1. Em hebraico, como uma mulher com véu. 3 2. Traduzido tradicionalmente como Eu sou a rosa de Sarom, região na planície costeira da Palestina. 4 2. Ou seu estandarte de amor está sobre mim. 5 2. Ou enquanto não estiver pronto. 6 2. Ou época das podas. 7 2. Ou nos montes de Beter. 8 3. Ou enquanto não estiver pronto. 9 3. Ou encosto, ou base. O significado do hebraico é incerto. 10 4. Em hebraico, Nenhum está faltando; / cada um tem um gêmeo. 11 4. Ou Olhe para baixo. 12 4. Em hebraico, minha irmã; também em 4.,. 13 5. Em hebraico, minha irmã; também em 5.. 14 6. Em hebraico, Nenhum está faltando; cada um tem um gêmeo. 15 6. Ou me levou aos carros reais de meu povo, ou aos carros de Aminadabe. O significado do hebraico é incerto. 16 6.13a No texto hebraico, o versículo 6. é numerado 7.. 17 6.13b Ou como olhariam os movimentos de dois exércitos?, ou como olhariam a dança de Maanaim? O significado do hebraico é incerto. 18 7. No texto hebraico, os versículos 7.1-13 são numerados 7.2-14. 19 7. Conforme a Septuaginta, a versão siríaca e a Vulgata; o hebraico traz sobre os lábios dos que dormem. 20 7. Ou nas vilas. 21 8. Ou ali ela me ensinará. 22 8. Ou enquanto não estiver pronto. 23 8.6a Ou a paixão é duradoura. 24 8.6b Em hebraico, o Sheol.",
+            "text": "Venha correndo, meu amado! Seja como a gazela, como o jovem cervo sobre os montes de especiarias.",
             "isJesusWords": false,
             "crossReferences": [
               {

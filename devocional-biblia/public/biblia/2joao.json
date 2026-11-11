@@ -2,6 +2,7 @@
   "1": {
     "book": "2 João",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações",
@@ -294,7 +295,7 @@
           },
           {
             "number": 13,
-            "text": "Saudações dos filhos de sua irmã5 escolhida. 1 1.1a Ou o ancião. 2 1.1b Ou à igreja escolhida e a seus membros. 3 1. Ou Agora, igreja. 4 1. Alguns manuscritos trazem vocês se esforçaram. 5 1. Ou membros de sua igreja irmã.",
+            "text": "Saudações dos filhos de sua irmã escolhida.",
             "isJesusWords": false,
             "crossReferences": [
               {

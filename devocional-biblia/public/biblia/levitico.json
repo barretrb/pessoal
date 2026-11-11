@@ -2,6 +2,7 @@
   "1": {
     "book": "Levítico",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Procedimentos para o holocausto",
@@ -13,7 +14,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 19:3",
-                "text": "Então Moisés subiu ao monte para apresentar-se diante de Deus. Lá de cima, o SENHOR o chamou e disse: “Transmita esta mensagem à família de Jacó; anuncie-a aos descendentes de Israel: 4‘Vocês viram o que fiz aos egípcios..."
+                "text": "Então Moisés subiu ao monte para apresentar-se diante de Deus. Lá de cima, o SENHOR o chamou e disse: “Transmita esta mensagem à família de Jacó; anuncie-a aos descendentes de Israel:"
               },
               {
                 "ref": "Êxodo 25:22",
@@ -170,7 +171,7 @@
               },
               {
                 "ref": "Êxodo 29:17–18",
-                "text": "Corte o carneiro em pedaços e lave os órgãos internos e as pernas. e queime o animal inteiro no altar. Esse é um holocausto ao SENHOR, é aroma agradável, uma oferta especial apresentada ao SENHOR."
+                "text": "Corte o carneiro em pedaços e lave os órgãos internos e as pernas. Coloque-os junto à cabeça e aos demais pedaços do corpo"
               },
               {
                 "ref": "Levítico 1:12",
@@ -372,6 +373,7 @@
   "2": {
     "book": "Levítico",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Procedimentos para a oferta de cereal",
@@ -502,7 +504,7 @@
               },
               {
                 "ref": "Marcos 14:1–15",
-                "text": "Faltavam dois dias para a Páscoa e para a Festa dos Pães sem Fermento. Os principais sacerdotes e mestres da lei ainda procuravam uma oportunidade de prender Jesus em segredo e matá- lo."
+                "text": "Faltavam dois dias para a Páscoa e para a Festa dos Pães sem Fermento. Os principais sacerdotes e mestres da lei ainda procuravam uma oportunidade de prender Jesus em segredo e matá-lo."
               }
             ]
           },
@@ -706,6 +708,7 @@
   "3": {
     "book": "Levítico",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Procedimentos para a oferta de paz",
@@ -770,7 +773,8 @@
                 "text": "Depois, removerá toda a gordura do novilho a ser apresentado como oferta pelo pecado, incluindo a gordura que envolve os órgãos internos,"
               },
               {
-                "ref": "Mateus 15:8"
+                "ref": "Mateus 15:8",
+                "text": "‘Este povo me honra com os lábios, mas o coração está longe de mim."
               },
               {
                 "ref": "Êxodo 29:22",
@@ -965,7 +969,7 @@
               },
               {
                 "ref": "Mateus 25:32–33",
-                "text": "Todas as nações149 serão reunidas em sua presença, e ele separará as pessoas como um pastor separa as ovelhas dos bodes. Colocará as ovelhas à sua direita e os bodes à sua esquerda."
+                "text": "Todas as nações serão reunidas em sua presença, e ele separará as pessoas como um pastor separa as ovelhas dos bodes. Colocará as ovelhas à sua direita e os bodes à sua esquerda."
               },
               {
                 "ref": "Levítico 10:16",
@@ -1076,7 +1080,7 @@
               },
               {
                 "ref": "Mateus 26:28",
-                "text": "porque este é o meu sangue, que confirma a aliança.150 Ele é derramado como sacrifício para perdoar os pecados de muitos."
+                "text": "porque este é o meu sangue, que confirma a aliança. Ele é derramado como sacrifício para perdoar os pecados de muitos."
               },
               {
                 "ref": "Deuteronômio 15:23",
@@ -1095,6 +1099,7 @@
   "4": {
     "book": "Levítico",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Procedimentos para a oferta pelo pecado",
@@ -1139,7 +1144,7 @@
           },
           {
             "number": 3,
-            "text": "“Se o sacerdote ungido pecar, trazendo ­culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu.",
+            "text": "“Se o sacerdote ungido pecar, trazendo culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1236,7 +1241,7 @@
             "crossReferences": [
               {
                 "ref": "Levítico 8:15",
-                "text": "e Moisés o matou. Pegou um pouco do sangue e, com o dedo, colocou- o nas quatro pontas do altar, a fim de purificá-lo. O restante do sangue ele derramou na base do altar. Desse modo, consagrou o altar e fez expiação por ele."
+                "text": "e Moisés o matou. Pegou um pouco do sangue e, com o dedo, colocou-o nas quatro pontas do altar, a fim de purificá-lo. O restante do sangue ele derramou na base do altar. Desse modo, consagrou o altar e fez expiação por ele."
               },
               {
                 "ref": "Levítico 9:9",
@@ -1267,7 +1272,7 @@
               },
               {
                 "ref": "João 12:27",
-                "text": "“Agora minha alma está angustiada. Acaso devo orar ‘Pai, salva- me desta hora’? Mas foi exatamente por esse motivo que eu vim!"
+                "text": "“Agora minha alma está angustiada. Acaso devo orar ‘Pai, salva-me desta hora’? Mas foi exatamente por esse motivo que eu vim!"
               },
               {
                 "ref": "Isaías 53:10",
@@ -1377,7 +1382,7 @@
               },
               {
                 "ref": "Levítico 4:3",
-                "text": "“Se o sacerdote ungido pecar, trazendo ­culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
+                "text": "“Se o sacerdote ungido pecar, trazendo culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
               },
               {
                 "ref": "Levítico 4:28",
@@ -1659,7 +1664,7 @@
               },
               {
                 "ref": "Levítico 4:3",
-                "text": "“Se o sacerdote ungido pecar, trazendo ­culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
+                "text": "“Se o sacerdote ungido pecar, trazendo culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
               },
               {
                 "ref": "Romanos 8:3",
@@ -1827,6 +1832,7 @@
   "5": {
     "book": "Levítico",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Pecados que exigem uma oferta pelo pecado",
@@ -1906,7 +1912,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Eclesiastes 5:2–6"
+                "ref": "Eclesiastes 5:2–6",
+                "text": "Não se precipite em fazer promessas nem em apresentar suas questões a Deus. Afinal, Deus está nos céus, e você, na terra; portanto, fale pouco."
               },
               {
                 "ref": "Juízes 11:31",
@@ -2078,7 +2085,8 @@
                 "text": "Quando apresentarem essas ofertas, também entregarão ao SENHOR uma oferta de cereal de dois litros de farinha da melhor qualidade misturada com um litro de azeite."
               },
               {
-                "ref": "Êxodo 16:36"
+                "ref": "Êxodo 16:36",
+                "text": "(A vasilha usada para medir o maná continha um ômer, que era a décima parte da medida padrão.)"
               }
             ]
           },
@@ -2144,7 +2152,7 @@
               },
               {
                 "ref": "Levítico 7:1",
-                "text": "“Estas são as instruções para a oferta pela ­culpa. É oferta santíssima."
+                "text": "“Estas são as instruções para a oferta pela culpa. É oferta santíssima."
               }
             ]
           },
@@ -2155,7 +2163,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 30:13",
-                "text": "Cada pessoa contada entregará uma pequena quantidade de prata como oferta sagrada ao SENHOR. (O pagamento corresponderá a meio siclo, com base no siclo padrão do santuário, equivalente a doze gramas.95)"
+                "text": "Cada pessoa contada entregará uma pequena quantidade de prata como oferta sagrada ao SENHOR. (O pagamento corresponderá a meio siclo, com base no siclo padrão do santuário, equivalente a doze gramas.)"
               },
               {
                 "ref": "Esdras 10:19",
@@ -2167,7 +2175,7 @@
               },
               {
                 "ref": "Levítico 7:1",
-                "text": "“Estas são as instruções para a oferta pela ­culpa. É oferta santíssima."
+                "text": "“Estas são as instruções para a oferta pela culpa. É oferta santíssima."
               }
             ]
           },
@@ -2242,7 +2250,7 @@
           },
           {
             "number": 19,
-            "text": "Essa é uma oferta pela ­culpa, pois a pessoa certamente se tornou culpada diante do SENHOR”.",
+            "text": "Essa é uma oferta pela culpa, pois a pessoa certamente se tornou culpada diante do SENHOR”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2270,32 +2278,16 @@
   "6": {
     "book": "Levítico",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "Pecados que exigem uma oferta pela culpa",
         "verses": [
           {
-            "number": 14,
+            "number": 1,
             "text": "Então o SENHOR disse a Moisés:",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "João 6:32",
-                "text": "Jesus disse: “Eu lhes digo a verdade: não foi Moisés quem lhes deu pão do céu. É meu Pai quem dá o verdadeiro pão do céu a vocês."
-              },
-              {
-                "ref": "Levítico 2:1–2",
-                "text": "“Quando apresentar ao SENHOR uma oferta de cereal, deverá ser de farinha da melhor qualidade. Derrame azeite sobre a farinha, acrescente um pouco de incenso"
-              },
-              {
-                "ref": "Números 15:4",
-                "text": "Quando apresentarem essas ofertas, também entregarão ao SENHOR uma oferta de cereal de dois litros de farinha da melhor qualidade misturada com um litro de azeite."
-              },
-              {
-                "ref": "Números 15:6",
-                "text": "“Se o sacrifício for um carneiro, apresentem uma oferta de cereal de quatro litros de farinha da melhor qualidade misturada com um litro e um terço de azeite"
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 2,
@@ -2437,7 +2429,7 @@
         "title": "Instruções adicionais para os holocaustos",
         "verses": [
           {
-            "number": 85,
+            "number": 8,
             "text": "Então o SENHOR disse a Moisés:",
             "isJesusWords": false,
             "crossReferences": []
@@ -2611,7 +2603,7 @@
               },
               {
                 "ref": "Ezequiel 44:29",
-                "text": "Seu alimento virá das ofertas e dos sacri­fícios que os israelitas trouxerem para o templo: as ofertas de cereal, as ofertas pelo pecado e as ofertas pela culpa. Tudo que for consagrado para o SENHOR pertencerá aos sacerdotes."
+                "text": "Seu alimento virá das ofertas e dos sacrifícios que os israelitas trouxerem para o templo: as ofertas de cereal, as ofertas pelo pecado e as ofertas pela culpa. Tudo que for consagrado para o SENHOR pertencerá aos sacerdotes."
               },
               {
                 "ref": "Levítico 10:12–13",
@@ -2699,7 +2691,7 @@
           },
           {
             "number": 20,
-            "text": "“No dia em que Arão e seus filhos forem ungidos, apresentarão ao SENHOR a oferta padrão de cereal de dois ­litros de farinha da melhor qualidade; metade pela manhã e metade à tarde.",
+            "text": "“No dia em que Arão e seus filhos forem ungidos, apresentarão ao SENHOR a oferta padrão de cereal de dois litros de farinha da melhor qualidade; metade pela manhã e metade à tarde.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2707,7 +2699,8 @@
                 "text": "Em seguida, usando farinha de trigo da melhor qualidade e sem fermento, faça pães, bolos misturados com azeite e pães finos untados com azeite."
               },
               {
-                "ref": "Êxodo 16:36"
+                "ref": "Êxodo 16:36",
+                "text": "(A vasilha usada para medir o maná continha um ômer, que era a décima parte da medida padrão.)"
               },
               {
                 "ref": "Levítico 2:1–16",
@@ -2757,7 +2750,7 @@
               },
               {
                 "ref": "Levítico 4:3",
-                "text": "“Se o sacerdote ungido pecar, trazendo ­culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
+                "text": "“Se o sacerdote ungido pecar, trazendo culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
               }
             ]
           },
@@ -2844,7 +2837,8 @@
                 "text": "Faça expiação pelo altar e consagre-o diariamente por sete dias. No final desse período, o altar será absolutamente santo, e tudo que o tocar se tornará santo."
               },
               {
-                "ref": "Ageu 2:12"
+                "ref": "Ageu 2:12",
+                "text": "‘Se alguém levar em sua roupa a carne consagrada de um sacrifício, e se, por acaso, a roupa tocar num pão, num ensopado, em vinho, em azeite ou em qualquer outro tipo de alimento, esse alimento também se tornará consagra..."
               },
               {
                 "ref": "2 Coríntios 7:11",
@@ -2905,7 +2899,7 @@
               },
               {
                 "ref": "Levítico 4:3–21",
-                "text": "“Se o sacerdote ungido pecar, trazendo ­culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
+                "text": "“Se o sacerdote ungido pecar, trazendo culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
               },
               {
                 "ref": "Hebreus 13:11",
@@ -2924,13 +2918,14 @@
   "7": {
     "book": "Levítico",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Instruções adicionais para a oferta pela culpa",
         "verses": [
           {
             "number": 1,
-            "text": "“Estas são as instruções para a oferta pela ­culpa. É oferta santíssima.",
+            "text": "“Estas são as instruções para a oferta pela culpa. É oferta santíssima.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2999,7 +2994,7 @@
           },
           {
             "number": 4,
-            "text": "os dois rins, a gordura ao redor deles perto dos lombos e o lóbulo do fígado.",
+            "text": "os dois rins, a gordura ao redor deles perto dos lombos e o lóbulo do fígado. Ele removerá todas essas partes junto com os rins",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -3007,12 +3002,7 @@
                 "text": "os dois rins, a gordura ao redor deles perto dos lombos e o lóbulo do fígado. Todas essas partes serão removidas junto com os rins,"
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Ele removerá todas essas partes junto com os rins",
-        "verses": [
+          },
           {
             "number": 5,
             "text": "e queimará tudo no altar como oferta especial apresentada ao SENHOR. É a oferta pela culpa.",
@@ -3112,7 +3102,7 @@
               },
               {
                 "ref": "Ezequiel 44:29",
-                "text": "Seu alimento virá das ofertas e dos sacri­fícios que os israelitas trouxerem para o templo: as ofertas de cereal, as ofertas pelo pecado e as ofertas pela culpa. Tudo que for consagrado para o SENHOR pertencerá aos sacerdotes."
+                "text": "Seu alimento virá das ofertas e dos sacrifícios que os israelitas trouxerem para o templo: as ofertas de cereal, as ofertas pelo pecado e as ofertas pela culpa. Tudo que for consagrado para o SENHOR pertencerá aos sacerdotes."
               },
               {
                 "ref": "Gálatas 6:6",
@@ -3250,7 +3240,7 @@
             "crossReferences": [
               {
                 "ref": "Levítico 19:5–8",
-                "text": "“Quando sacrificarem uma oferta de paz ao SENHOR, apresentem- na de forma apropriada, para que sejam aceitos."
+                "text": "“Quando sacrificarem uma oferta de paz ao SENHOR, apresentem-na de forma apropriada, para que sejam aceitos."
               },
               {
                 "ref": "Deuteronômio 12:6",
@@ -3261,7 +3251,8 @@
                 "text": "“Levem ao lugar que o SENHOR escolher as ofertas sagradas e as ofertas apresentadas para cumprir um voto."
               },
               {
-                "ref": "Naum 1:15"
+                "ref": "Naum 1:15",
+                "text": "Vejam, um mensageiro vem pelas montanhas com boas notícias! Ele traz uma mensagem de paz. Celebrem suas festas, ó habitantes de Judá, e cumpram seus votos, pois seus inimigos perversos nunca mais invadirão sua terra; serão completamente destruídos."
               }
             ]
           },
@@ -3376,7 +3367,7 @@
               },
               {
                 "ref": "Deuteronômio 14:12–20",
-                "text": "Estas são as criaturas voadoras que vocês não podem comer: o abutre-fouveiro, o abutre-barbudo, o abutre- fusco,"
+                "text": "Estas são as criaturas voadoras que vocês não podem comer: o abutre-fouveiro, o abutre-barbudo, o abutre-fusco,"
               }
             ]
           }
@@ -3603,7 +3594,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Levítico 6:1–30"
+                "ref": "Levítico 6:1–30",
+                "text": "Então o SENHOR disse a Moisés:"
               },
               {
                 "ref": "Levítico 26:1–46",
@@ -3721,6 +3713,7 @@
   "8": {
     "book": "Levítico",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "A consagração dos sacerdotes",
@@ -3774,7 +3767,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 30:13",
-                "text": "Assim, uma grande multidão se reuniu em Jerusalém no segundo mês,134 para comemorar a Festa dos Pães sem Fermento."
+                "text": "Assim, uma grande multidão se reuniu em Jerusalém no segundo mês, para comemorar a Festa dos Pães sem Fermento."
               },
               {
                 "ref": "Atos 2:1",
@@ -3942,7 +3935,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 52:15",
-                "text": "Ele causará assombro em158 muitas nações; reis ficarão mudos diante dele, pois verão aquilo que ninguém lhes havia falado,"
+                "text": "Ele causará assombro em muitas nações; reis ficarão mudos diante dele, pois verão aquilo que ninguém lhes havia falado, entenderão aquilo que nunca tinham ouvido."
               },
               {
                 "ref": "Êxodo 16:14",
@@ -4019,7 +4012,7 @@
               },
               {
                 "ref": "Levítico 4:3–12",
-                "text": "“Se o sacerdote ungido pecar, trazendo ­culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
+                "text": "“Se o sacerdote ungido pecar, trazendo culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
               },
               {
                 "ref": "Levítico 16:21",
@@ -4029,7 +4022,7 @@
           },
           {
             "number": 15,
-            "text": "e Moisés o matou. Pegou um pouco do sangue e, com o dedo, colocou- o nas quatro pontas do altar, a fim de purificá-lo. O restante do sangue ele derramou na base do altar. Desse modo, consagrou o altar e fez expiação por ele.",
+            "text": "e Moisés o matou. Pegou um pouco do sangue e, com o dedo, colocou-o nas quatro pontas do altar, a fim de purificá-lo. O restante do sangue ele derramou na base do altar. Desse modo, consagrou o altar e fez expiação por ele.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4462,7 +4455,7 @@
               },
               {
                 "ref": "Números 9:19",
-                "text": "Se a nuvem ficava sobre o taber­náculo por muito tempo, os israelitas permaneciam ali e cumpriam suas obrigações para com o SENHOR."
+                "text": "Se a nuvem ficava sobre o tabernáculo por muito tempo, os israelitas permaneciam ali e cumpriam suas obrigações para com o SENHOR."
               }
             ]
           },
@@ -4472,7 +4465,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 12:32"
+                "ref": "Deuteronômio 12:32",
+                "text": "“Portanto, tenham o cuidado de cumprir todas as ordens que lhes dou. Não acrescentem nem tirem coisa alguma.”"
               },
               {
                 "ref": "Deuteronômio 4:2",
@@ -4495,6 +4489,7 @@
   "9": {
     "book": "Levítico",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "Os sacerdotes iniciam seu serviço",
@@ -4506,7 +4501,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 28:1",
-                "text": "Cr 3.."
+                "text": "Depois do sábado, no primeiro dia da semana, bem cedo, Maria Madalena e a outra Maria foram visitar o túmulo."
               },
               {
                 "ref": "Levítico 15:29",
@@ -4529,7 +4524,7 @@
             "crossReferences": [
               {
                 "ref": "Levítico 4:3",
-                "text": "“Se o sacerdote ungido pecar, trazendo ­culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
+                "text": "“Se o sacerdote ungido pecar, trazendo culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
               },
               {
                 "ref": "Levítico 8:18",
@@ -4648,7 +4643,7 @@
               },
               {
                 "ref": "Levítico 4:3",
-                "text": "“Se o sacerdote ungido pecar, trazendo ­culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
+                "text": "“Se o sacerdote ungido pecar, trazendo culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
               },
               {
                 "ref": "Hebreus 9:7",
@@ -4690,7 +4685,7 @@
               },
               {
                 "ref": "Levítico 8:15",
-                "text": "e Moisés o matou. Pegou um pouco do sangue e, com o dedo, colocou- o nas quatro pontas do altar, a fim de purificá-lo. O restante do sangue ele derramou na base do altar. Desse modo, consagrou o altar e fez expiação por ele."
+                "text": "e Moisés o matou. Pegou um pouco do sangue e, com o dedo, colocou-o nas quatro pontas do altar, a fim de purificá-lo. O restante do sangue ele derramou na base do altar. Desse modo, consagrou o altar e fez expiação por ele."
               },
               {
                 "ref": "Hebreus 2:10",
@@ -4957,7 +4952,7 @@
               },
               {
                 "ref": "Números 6:23–27",
-                "text": "“Diga a Arão e a seus filhos que abençoem o povo de Israel com esta bênção especial: 24‘Que o SENHOR o abençoe e o proteja."
+                "text": "“Diga a Arão e a seus filhos que abençoem o povo de Israel com esta bênção especial:"
               },
               {
                 "ref": "1 Pedro 3:9",
@@ -5018,6 +5013,7 @@
   "10": {
     "book": "Levítico",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "O pecado de Nadabe e Abiú",
@@ -5032,7 +5028,8 @@
                 "text": "Nadabe e Abiú morreram quando trouxeram fogo estranho diante do SENHOR."
               },
               {
-                "ref": "Deuteronômio 12:32"
+                "ref": "Deuteronômio 12:32",
+                "text": "“Portanto, tenham o cuidado de cumprir todas as ordens que lhes dou. Não acrescentem nem tirem coisa alguma.”"
               },
               {
                 "ref": "Levítico 16:12",
@@ -5135,7 +5132,7 @@
               },
               {
                 "ref": "Josué 7:1",
-                "text": "Mas os israelitas violaram as instruções a respei­to das coisas separadas para o SENHOR. Um homem chamado Acã roubou algumas delas, e a ira do SENHOR se acendeu contra os israelitas. Acã era filho de Carmi, filho de Zimr..."
+                "text": "Mas os israelitas violaram as instruções a respeito das coisas separadas para o SENHOR. Um homem chamado Acã roubou algumas delas, e a ira do SENHOR se acendeu contra os israelitas. Acã era filho de Carmi, filho de Zimri..."
               },
               {
                 "ref": "Números 16:22",
@@ -5158,7 +5155,7 @@
               },
               {
                 "ref": "2 Coríntios 1:21",
-                "text": "É Deus quem nos capacita e a vocês a permanecermos firmes em Cristo."
+                "text": "É Deus quem nos capacita e a vocês a permanecermos firmes em Cristo. Ele nos ungiu"
               },
               {
                 "ref": "Atos 10:38",
@@ -5223,7 +5220,7 @@
               },
               {
                 "ref": "Ezequiel 44:23",
-                "text": "Ensinarão meu povo a diferença entre sagrado e profano, entre cerimonialmente puro e ­impuro."
+                "text": "Ensinarão meu povo a diferença entre sagrado e profano, entre cerimonialmente puro e impuro."
               }
             ]
           },
@@ -5372,7 +5369,7 @@
               },
               {
                 "ref": "Êxodo 28:38",
-                "text": "Arão a usará na testa, para que tome sobre si toda a ­culpa dos israelitas quando consagrarem suas ofertas sagradas. Terá de usá-la sempre na testa para que o SENHOR aceite seu povo."
+                "text": "Arão a usará na testa, para que tome sobre si toda a culpa dos israelitas quando consagrarem suas ofertas sagradas. Terá de usá-la sempre na testa para que o SENHOR aceite seu povo."
               },
               {
                 "ref": "Levítico 7:6–7",
@@ -5452,6 +5449,7 @@
   "11": {
     "book": "Levítico",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "Animais cerimonialmente puros e impuros",
@@ -5767,7 +5765,7 @@
               },
               {
                 "ref": "Isaías 34:11–15",
-                "text": "Ali viverão a coruja do deserto e o mocho, o corujão e o corvo.108 Pois Deus medirá aquela terra com cuidado; ele a medirá para o caos e para a destruição."
+                "text": "Ali viverão a coruja do deserto e o mocho, o corujão e o corvo. Pois Deus medirá aquela terra com cuidado; ele a medirá para o caos e para a destruição."
               }
             ]
           },
@@ -5779,7 +5777,7 @@
           },
           {
             "number": 18,
-            "text": "a coruja-das-torres, a coruja-do-deserto, o abutre-do- egito,",
+            "text": "a coruja-das-torres, a coruja-do-deserto, o abutre-do-egito,",
             "isJesusWords": false,
             "crossReferences": []
           },
@@ -6333,7 +6331,7 @@
               },
               {
                 "ref": "Ezequiel 44:23",
-                "text": "Ensinarão meu povo a diferença entre sagrado e profano, entre cerimonialmente puro e ­impuro."
+                "text": "Ensinarão meu povo a diferença entre sagrado e profano, entre cerimonialmente puro e impuro."
               },
               {
                 "ref": "Romanos 14:13–23",
@@ -6352,6 +6350,7 @@
   "12": {
     "book": "Levítico",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "A purificação depois do parto",
@@ -6539,6 +6538,7 @@
   "13": {
     "book": "Levítico",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "Doenças graves de pele",
@@ -6631,7 +6631,7 @@
               },
               {
                 "ref": "Ezequiel 44:10",
-                "text": "E os homens da tribo de Levi que me abandonaram quando Israel se afastou de mim para adorar ídolos163 sofrerão as consequências de seus pecados."
+                "text": "E os homens da tribo de Levi que me abandonaram quando Israel se afastou de mim para adorar ídolos sofrerão as consequências de seus pecados."
               }
             ]
           },
@@ -6703,7 +6703,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 15:7–8",
-                "text": "Hipócritas! Isaías tinha razão quando assim profetizou a seu respeito: 8‘Este povo me honra com os lábios, mas o coração está longe de mim."
+                "text": "Hipócritas! Isaías tinha razão quando assim profetizou a seu respeito: ‘Este povo me honra com os lábios, mas o coração está longe de mim."
               },
               {
                 "ref": "Filipenses 3:18–19",
@@ -6727,7 +6727,7 @@
           },
           {
             "number": 10,
-            "text": "Se o sacerdote encontrar um inchaço branco na pele, se alguns pelos sobre a mancha tiverem ficado brancos e se houver uma ferida aberta na região afetada, 11é um caso crônico de lepra, e o sacerdote declarará a pessoa cerimonialmente impura. Nesses casos, não será necessário isolar a pessoa para avaliá-la, pois é evidente que a pele está contaminada pela doença.",
+            "text": "Se o sacerdote encontrar um inchaço branco na pele, se alguns pelos sobre a mancha tiverem ficado brancos e se houver uma ferida aberta na região afetada,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6736,7 +6736,7 @@
               },
               {
                 "ref": "2 Crônicas 26:19–20",
-                "text": "Uzias, que segurava um incensário, ficou indignado. Enquanto ele demonstrava sua raiva contra os sacerdotes diante do altar de incenso no templo do SENHOR, apareceu lepra123 em sua testa."
+                "text": "Uzias, que segurava um incensário, ficou indignado. Enquanto ele demonstrava sua raiva contra os sacerdotes diante do altar de incenso no templo do SENHOR, apareceu lepra em sua testa."
               },
               {
                 "ref": "João 7:7",
@@ -6747,6 +6747,12 @@
                 "text": "Enquanto a nuvem se afastava da tenda, Miriã ficou ali, com a pele branca como a neve, leprosa. Quando Arão viu o que havia acontecido com ela,"
               }
             ]
+          },
+          {
+            "number": 11,
+            "text": "é um caso crônico de lepra, e o sacerdote declarará a pessoa cerimonialmente impura. Nesses casos, não será necessário isolar a pessoa para avaliá-la, pois é evidente que a pele está contaminada pela doença.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 12,
@@ -6793,7 +6799,7 @@
             "crossReferences": [
               {
                 "ref": "Levítico 13:10",
-                "text": "Se o sacerdote encontrar um inchaço branco na pele, se alguns pelos sobre a mancha tiverem ficado brancos e se houver uma ferida aberta na região afetada, 11é um caso crônico de lepra, e o sacerdote declarará a pessoa ce..."
+                "text": "Se o sacerdote encontrar um inchaço branco na pele, se alguns pelos sobre a mancha tiverem ficado brancos e se houver uma ferida aberta na região afetada,"
               }
             ]
           },
@@ -7060,7 +7066,7 @@
               },
               {
                 "ref": "Mateus 23:5",
-                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios131 mais largos que de costume e vestem mantos com franjas mais longas."
+                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios mais largos que de costume e vestem mantos com franjas mais longas."
               },
               {
                 "ref": "Levítico 13:30",
@@ -7260,7 +7266,7 @@
               },
               {
                 "ref": "Ezequiel 24:17",
-                "text": "Sofra em si­lêncio, mas não lamente junto ao túmulo. Não des­cubra a cabeça nem tire as sandálias. Não siga os rituais de luto nem aceite comida de amigos que vierem consolá-lo”."
+                "text": "Sofra em silêncio, mas não lamente junto ao túmulo. Não descubra a cabeça nem tire as sandálias. Não siga os rituais de luto nem aceite comida de amigos que vierem consolá-lo”."
               }
             ]
           },
@@ -7356,7 +7362,7 @@
             "crossReferences": [
               {
                 "ref": "Ezequiel 44:23",
-                "text": "Ensinarão meu povo a diferença entre sagrado e profano, entre cerimonialmente puro e ­impuro."
+                "text": "Ensinarão meu povo a diferença entre sagrado e profano, entre cerimonialmente puro e impuro."
               }
             ]
           },
@@ -7511,6 +7517,7 @@
   "14": {
     "book": "Levítico",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
         "title": "A purificação das doenças de pele",
@@ -7668,7 +7675,7 @@
               },
               {
                 "ref": "Isaías 52:15",
-                "text": "Ele causará assombro em158 muitas nações; reis ficarão mudos diante dele, pois verão aquilo que ninguém lhes havia falado,"
+                "text": "Ele causará assombro em muitas nações; reis ficarão mudos diante dele, pois verão aquilo que ninguém lhes havia falado, entenderão aquilo que nunca tinham ouvido."
               }
             ]
           },
@@ -7901,7 +7908,7 @@
               },
               {
                 "ref": "2 Coríntios 1:21–22",
-                "text": "É Deus quem nos capacita e a vocês a permanecermos firmes em Cristo. e nos identificou como sua propriedade ao colocar em nosso coração o selo do Espírito, a garantia de tudo que ele nos prometeu."
+                "text": "É Deus quem nos capacita e a vocês a permanecermos firmes em Cristo. Ele nos ungiu e nos identificou como sua propriedade ao colocar em nosso coração o selo do Espírito, a garantia de tudo que ele nos prometeu."
               },
               {
                 "ref": "Levítico 4:31",
@@ -8037,7 +8044,8 @@
                 "text": "Não tens prazer em ofertas nem em sacrifícios; agora que me fizeste ouvir, compreendo: tu não exiges holocaustos nem ofertas pelo pecado."
               },
               {
-                "ref": "Eclesiastes 5:1"
+                "ref": "Eclesiastes 5:1",
+                "text": "Quando você entrar na casa de Deus, tome cuidado com o que faz e ouça com atenção. Age mal quem apresenta ofertas a Deus sem pensar."
               },
               {
                 "ref": "Levítico 14:14–20",
@@ -8161,7 +8169,7 @@
               },
               {
                 "ref": "Mateus 11:5",
-                "text": "os cegos veem, os aleijados andam, os leprosos são purificados, os surdos ouvem, os mortos são ressuscitados e as boas- novas são anunciadas aos pobres”."
+                "text": "os cegos veem, os aleijados andam, os leprosos são purificados, os surdos ouvem, os mortos são ressuscitados e as boas-novas são anunciadas aos pobres”."
               }
             ]
           }
@@ -8374,7 +8382,7 @@
               },
               {
                 "ref": "2 Pedro 2:22",
-                "text": "Neles se confirmam os provérbios: “O cão volta a seu próprio vômito”12 e “A porca lavada volta a revolver-se na lama”."
+                "text": "Neles se confirmam os provérbios: “O cão volta a seu próprio vômito” e “A porca lavada volta a revolver-se na lama”."
               },
               {
                 "ref": "Jeremias 6:28–30",
@@ -8607,7 +8615,7 @@
               },
               {
                 "ref": "Ezequiel 44:23",
-                "text": "Ensinarão meu povo a diferença entre sagrado e profano, entre cerimonialmente puro e ­impuro."
+                "text": "Ensinarão meu povo a diferença entre sagrado e profano, entre cerimonialmente puro e impuro."
               },
               {
                 "ref": "Deuteronômio 24:8",
@@ -8622,6 +8630,7 @@
   "15": {
     "book": "Levítico",
     "chapter": "15",
+    "verified": true,
     "sections": [
       {
         "title": "Secreções corporais",
@@ -9242,7 +9251,7 @@
               },
               {
                 "ref": "Números 19:13",
-                "text": "Quem toca num cadáver e não se purifica corretamente contamina o taberná­culo do SENHOR e será eliminado do povo de Israel. Permanecerá impuro, uma vez que a água da purificação não foi aspergida sobre ele."
+                "text": "Quem toca num cadáver e não se purifica corretamente contamina o tabernáculo do SENHOR e será eliminado do povo de Israel. Permanecerá impuro, uma vez que a água da purificação não foi aspergida sobre ele."
               },
               {
                 "ref": "Ezequiel 5:11",
@@ -9303,6 +9312,7 @@
   "16": {
     "book": "Levítico",
     "chapter": "16",
+    "verified": true,
     "sections": [
       {
         "title": "O Dia da Expiação",
@@ -9348,7 +9358,7 @@
             "crossReferences": [
               {
                 "ref": "Levítico 4:3",
-                "text": "“Se o sacerdote ungido pecar, trazendo ­culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
+                "text": "“Se o sacerdote ungido pecar, trazendo culpa sobre todo o povo, apresentará ao SENHOR um novilho sem defeito como oferta pelo pecado que cometeu."
               },
               {
                 "ref": "Hebreus 9:24–25",
@@ -9366,7 +9376,7 @@
           },
           {
             "number": 4,
-            "text": "Vestirá a túnica sagrada de linho e a roupa de baixo de linho, diretamente sobre a pele. Amarrará na cintura o cinturão de linho e colocará na cabeça o turbante de linho. As roupas são sagradas, de modo que ele deverá se banhar com água antes de vesti- las.",
+            "text": "Vestirá a túnica sagrada de linho e a roupa de baixo de linho, diretamente sobre a pele. Amarrará na cintura o cinturão de linho e colocará na cabeça o turbante de linho. As roupas são sagradas, de modo que ele deverá se banhar com água antes de vesti-las.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9647,7 +9657,7 @@
               },
               {
                 "ref": "Ezequiel 45:18–19",
-                "text": "“Assim diz o SENHOR Soberano: No primeiro dia do primeiro mês de cada ano,177 vocês sacrificarão um novilho sem defeito para purificar o templo."
+                "text": "“Assim diz o SENHOR Soberano: No primeiro dia do primeiro mês de cada ano, vocês sacrificarão um novilho sem defeito para purificar o templo."
               },
               {
                 "ref": "Levítico 16:18",
@@ -9727,7 +9737,7 @@
               },
               {
                 "ref": "Ezequiel 45:20",
-                "text": "Vocês farão o mesmo no sétimo dia do ano novo em favor de qualquer um que houver pecado sem intenção ou por ignorância. Assim, purificarão178 o templo."
+                "text": "Vocês farão o mesmo no sétimo dia do ano novo em favor de qualquer um que houver pecado sem intenção ou por ignorância. Assim, purificarão o templo."
               },
               {
                 "ref": "Levítico 6:30",
@@ -9994,7 +10004,7 @@
           },
           {
             "number": 32,
-            "text": "Nas gerações futuras, a cerimônia de expiação será realizada pelo sacerdote ungido e consagrado para servir como sacerdote no lugar de seu antepassado Arão.",
+            "text": "Nas gerações futuras, a cerimônia de expiação será realizada pelo sacerdote ungido e consagrado para servir como sacerdote no lugar de seu antepassado Arão. Ele vestirá as roupas sagradas de linho",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -10014,12 +10024,7 @@
                 "text": "Amarre o cinturão em volta da cintura de Arão e de seus filhos e coloque o turbante especial na cabeça de cada um. Assim, o direito de sacerdócio lhes pertencerá por lei para sempre. Desse modo, você consagrará Arão e seus filhos."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Ele vestirá as roupas sagradas de linho",
-        "verses": [
+          },
           {
             "number": 33,
             "text": "e fará expiação pelo lugar santíssimo, pela tenda do encontro, pelo altar, pelos sacerdotes e por toda a comunidade.",
@@ -10069,6 +10074,7 @@
   "17": {
     "book": "Levítico",
     "chapter": "17",
+    "verified": true,
     "sections": [
       {
         "title": "Normas sobre o sangue",
@@ -10395,6 +10401,7 @@
   "18": {
     "book": "Levítico",
     "chapter": "18",
+    "verified": true,
     "sections": [
       {
         "title": "Práticas sexuais proibidas",
@@ -10485,7 +10492,7 @@
               },
               {
                 "ref": "Ezequiel 20:11",
-                "text": "Ali lhes dei meus decretos e estatutos, para que encontrassem vida ao praticá- los."
+                "text": "Ali lhes dei meus decretos e estatutos, para que encontrassem vida ao praticá-los."
               },
               {
                 "ref": "Romanos 10:5",
@@ -10549,14 +10556,16 @@
                 "text": "“Se um homem desonrar seu pai tendo relações sexuais com qualquer das esposas de seu pai, o homem e a mulher serão executados; decretaram a própria morte."
               },
               {
-                "ref": "Deuteronômio 22:30"
+                "ref": "Deuteronômio 22:30",
+                "text": "“Nenhum homem tomará por mulher alguém que foi esposa de seu pai, pois isso desonraria seu pai.”"
               },
               {
                 "ref": "1 Coríntios 5:1",
                 "text": "Comenta-se por toda parte que há imoralidade sexual em seu meio, imoralidade que nem mesmo os pagãos praticam. Soube de um homem entre vocês que mantém relações sexuais com a própria madrasta."
               },
               {
-                "ref": "Deuteronômio 27:20"
+                "ref": "Deuteronômio 27:20",
+                "text": "‘Maldito quem tiver relações sexuais com a esposa de seu pai, pois desonrou seu pai’. E todo o povo responderá: ‘Amém!’."
               }
             ]
           },
@@ -10574,7 +10583,8 @@
                 "text": "Há quem cometa adultério com a esposa do vizinho, quem contamine sua nora e quem violente a própria irmã."
               },
               {
-                "ref": "Deuteronômio 27:22"
+                "ref": "Deuteronômio 27:22",
+                "text": "‘Maldito quem tiver relações sexuais com sua irmã, seja filha de seu pai ou de sua mãe’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "2 Samuel 13:11–14",
@@ -10695,7 +10705,8 @@
                 "text": "Pisoteiam a cabeça dos indefesos no pó e empurram os oprimidos para fora do caminho. Pai e filho dormem com a mesma mulher e assim profanam meu santo nome."
               },
               {
-                "ref": "Deuteronômio 27:23"
+                "ref": "Deuteronômio 27:23",
+                "text": "‘Maldito quem tiver relações sexuais com sua sogra’. E todo o povo responderá: ‘Amém!’."
               }
             ]
           },
@@ -10706,7 +10717,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 29:28",
-                "text": "Jacó concordou em trabalhar mais sete anos. Uma semana depois de Jacó ter se casado com Lia, Labão lhe entregou Raquel. 29(Labão deu sua serva Bila a Raquel para servi-la.)"
+                "text": "Jacó concordou em trabalhar mais sete anos. Uma semana depois de Jacó ter se casado com Lia, Labão lhe entregou Raquel."
               },
               {
                 "ref": "Gênesis 30:15",
@@ -10775,7 +10786,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 12:31",
-                "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacri­fícios a seus deuses."
+                "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacrifícios a seus deuses."
               },
               {
                 "ref": "Levítico 20:2–5",
@@ -10832,7 +10843,8 @@
                 "text": "“Se um homem tiver relações sexuais com sua nora, ambos serão executados, pois cometeram uma depravação; decretaram a própria morte."
               },
               {
-                "ref": "Deuteronômio 27:21"
+                "ref": "Deuteronômio 27:21",
+                "text": "‘Maldito quem tiver relações sexuais com um animal’. E todo o povo responderá: ‘Amém!’."
               }
             ]
           },
@@ -10855,7 +10867,7 @@
               },
               {
                 "ref": "Deuteronômio 12:31",
-                "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacri­fícios a seus deuses."
+                "text": "Não adorem o SENHOR, seu Deus, da forma como outras nações adoram os deuses delas, pois realizam para eles todo tipo de atos detestáveis que o SENHOR odeia. Chegam até a queimar seus filhos e filhas como sacrifícios a seus deuses."
               }
             ]
           },
@@ -10900,7 +10912,8 @@
                 "text": "Se obedecerem a todos os decretos e mandamentos que hoje lhes dou, tudo irá bem com vocês e seus filhos, e vocês terão vida longa na terra que o SENHOR, seu Deus, lhes dá para sempre”."
               },
               {
-                "ref": "Deuteronômio 12:32"
+                "ref": "Deuteronômio 12:32",
+                "text": "“Portanto, tenham o cuidado de cumprir todas as ordens que lhes dou. Não acrescentem nem tirem coisa alguma.”"
               }
             ]
           },
@@ -10914,7 +10927,8 @@
                 "text": "“Não se contaminem de nenhuma dessas formas, pois os povos que expulsarei da presença de vocês se contaminaram com todas essas práticas."
               },
               {
-                "ref": "Deuteronômio 27:15"
+                "ref": "Deuteronômio 27:15",
+                "text": "‘Maldito quem esculpir ou fundir um ídolo e o levantar em segredo. Os ídolos, trabalhos de artesãos, são detestáveis ao SENHOR’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "2 Crônicas 36:14",
@@ -10998,6 +11012,7 @@
   "19": {
     "book": "Levítico",
     "chapter": "19",
+    "verified": true,
     "sections": [
       {
         "title": "Santidade na conduta pessoal",
@@ -11079,7 +11094,7 @@
           },
           {
             "number": 5,
-            "text": "“Quando sacrificarem uma oferta de paz ao SENHOR, apresentem- na de forma apropriada, para que sejam aceitos.",
+            "text": "“Quando sacrificarem uma oferta de paz ao SENHOR, apresentem-na de forma apropriada, para que sejam aceitos.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -11102,7 +11117,7 @@
           },
           {
             "number": 6,
-            "text": "Comam o sacri­fício no mesmo dia em que o oferecerem, ou no dia seguinte. O que restar até o terceiro dia será completamente queimado.",
+            "text": "Comam o sacrifício no mesmo dia em que o oferecerem, ou no dia seguinte. O que restar até o terceiro dia será completamente queimado.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -11270,7 +11285,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 27:18"
+                "ref": "Deuteronômio 27:18",
+                "text": "‘Maldito quem fizer o cego se desviar de seu caminho’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Levítico 19:32",
@@ -11296,7 +11312,8 @@
                 "text": "e imparciais em seus julgamentos. Cuidem tanto dos casos dos pobres como dos ricos. Não deixem que ninguém os intimide, pois Deus dará a decisão por seu intermédio. Tragam-me os casos que forem difíceis demais para vocês, e eu cuidarei deles’."
               },
               {
-                "ref": "Deuteronômio 27:19"
+                "ref": "Deuteronômio 27:19",
+                "text": "‘Maldito quem negar justiça aos estrangeiros, aos órfãos ou às viúvas’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Provérbios 24:23",
@@ -11361,7 +11378,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 22:39–40",
-                "text": "O segundo é igualmente importante: ‘Ame o seu próximo como a si mesmo’. Toda a lei e todas as exigências dos profetas se baseiam nesses dois mandamentos”. De quem o Cristo é filho?"
+                "text": "O segundo é igualmente importante: ‘Ame o seu próximo como a si mesmo’. Toda a lei e todas as exigências dos profetas se baseiam nesses dois mandamentos”."
               },
               {
                 "ref": "Romanos 13:9",
@@ -11624,7 +11641,8 @@
                 "text": "“Mostrem respeito, cada um de vocês, por sua mãe e por seu pai; guardem também meus sábados. Eu sou o SENHOR, seu Deus."
               },
               {
-                "ref": "Eclesiastes 5:1"
+                "ref": "Eclesiastes 5:1",
+                "text": "Quando você entrar na casa de Deus, tome cuidado com o que faz e ouça com atenção. Age mal quem apresenta ofertas a Deus sem pensar."
               },
               {
                 "ref": "Êxodo 20:8",
@@ -11720,7 +11738,7 @@
               },
               {
                 "ref": "Mateus 5:43",
-                "text": "“Vocês ouviram o que foi dito: ‘Ame o seu próximo’40 e odeie o seu inimigo."
+                "text": "“Vocês ouviram o que foi dito: ‘Ame o seu próximo’ e odeie o seu inimigo."
               }
             ]
           },
@@ -11800,6 +11818,7 @@
   "20": {
     "book": "Levítico",
     "chapter": "20",
+    "verified": true,
     "sections": [
       {
         "title": "Castigos pela desobediência",
@@ -11838,7 +11857,7 @@
               },
               {
                 "ref": "Deuteronômio 21:21",
-                "text": "Então todos os homens da ci­dade o executarão por apedrejamento. Desse modo, vocês eliminarão o mal do seu meio, e todo o ­Israel ficará sabendo disso e temerá.”"
+                "text": "Então todos os homens da cidade o executarão por apedrejamento. Desse modo, vocês eliminarão o mal do seu meio, e todo o Israel ficará sabendo disso e temerá.”"
               },
               {
                 "ref": "Jeremias 7:31",
@@ -11911,7 +11930,7 @@
               },
               {
                 "ref": "Jeremias 32:39",
-                "text": "Eu lhes darei um só coração e um só propósito: adorar- me para sempre, para o seu próprio bem e para o bem de seus descendentes."
+                "text": "Eu lhes darei um só coração e um só propósito: adorar-me para sempre, para o seu próprio bem e para o bem de seus descendentes."
               }
             ]
           },
@@ -11995,14 +12014,15 @@
               },
               {
                 "ref": "Marcos 7:10",
-                "text": "Por exemplo, Moisés deu esta lei: ‘Honre seu pai e sua mãe’28 e ‘Quem insultar seu pai ou sua mãe será executado’."
+                "text": "Por exemplo, Moisés deu esta lei: ‘Honre seu pai e sua mãe’ e ‘Quem insultar seu pai ou sua mãe será executado’."
               },
               {
-                "ref": "Deuteronômio 27:16"
+                "ref": "Deuteronômio 27:16",
+                "text": "‘Maldito quem desonrar pai ou mãe’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Mateus 15:4",
-                "text": "Pois Deus ordenou: ‘Honre seu pai e sua mãe’81 e ‘Quem insultar seu pai ou sua mãe será executado’."
+                "text": "Pois Deus ordenou: ‘Honre seu pai e sua mãe’ e ‘Quem insultar seu pai ou sua mãe será executado’."
               }
             ]
           },
@@ -12035,10 +12055,12 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 27:20"
+                "ref": "Deuteronômio 27:20",
+                "text": "‘Maldito quem tiver relações sexuais com a esposa de seu pai, pois desonrou seu pai’. E todo o povo responderá: ‘Amém!’."
               },
               {
-                "ref": "Deuteronômio 27:23"
+                "ref": "Deuteronômio 27:23",
+                "text": "‘Maldito quem tiver relações sexuais com sua sogra’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Levítico 18:7–8",
@@ -12068,7 +12090,8 @@
                 "text": "“Que tipo de garantia você quer?”, replicou ele. Ela disse: “Deixe comigo seu selo pessoal, junto com o cordão dele e o cajado que você está segurando”. Judá entregou os objetos. Depois, teve relações com Tamar, e ela engravidou."
               },
               {
-                "ref": "Deuteronômio 27:23"
+                "ref": "Deuteronômio 27:23",
+                "text": "‘Maldito quem tiver relações sexuais com sua sogra’. E todo o povo responderá: ‘Amém!’."
               }
             ]
           },
@@ -12101,7 +12124,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 27:23"
+                "ref": "Deuteronômio 27:23",
+                "text": "‘Maldito quem tiver relações sexuais com sua sogra’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Levítico 18:17",
@@ -12127,7 +12151,8 @@
                 "text": "“Homem nenhum deve se contaminar tendo relações sexuais com um animal. E mulher nenhuma deve se oferecer para um animal macho para ter relações com ele. Isso é depravação."
               },
               {
-                "ref": "Deuteronômio 27:21"
+                "ref": "Deuteronômio 27:21",
+                "text": "‘Maldito quem tiver relações sexuais com um animal’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Êxodo 22:19",
@@ -12168,7 +12193,8 @@
                 "text": "“Não tenha relações sexuais com sua irmã ou meia-irmã, filha de seu pai ou de sua mãe, nascida em sua casa ou em outra casa."
               },
               {
-                "ref": "Deuteronômio 27:22"
+                "ref": "Deuteronômio 27:22",
+                "text": "‘Maldito quem tiver relações sexuais com sua irmã, seja filha de seu pai ou de sua mãe’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "2 Samuel 13:12",
@@ -12275,7 +12301,7 @@
               },
               {
                 "ref": "Salmos 119:80",
-                "text": "Que eu seja inculpável na obediência a teus decretos; então jamais serei envergonhado. Kaf"
+                "text": "Que eu seja inculpável na obediência a teus decretos; então jamais serei envergonhado."
               },
               {
                 "ref": "Salmos 105:45",
@@ -12405,6 +12431,7 @@
   "21": {
     "book": "Levítico",
     "chapter": "21",
+    "verified": true,
     "sections": [
       {
         "title": "Instruções para os sacerdotes",
@@ -12595,7 +12622,7 @@
               },
               {
                 "ref": "Levítico 16:32",
-                "text": "Nas gerações futuras, a cerimônia de expiação será realizada pelo sacerdote ungido e consagrado para servir como sacerdote no lugar de seu antepassado Arão."
+                "text": "Nas gerações futuras, a cerimônia de expiação será realizada pelo sacerdote ungido e consagrado para servir como sacerdote no lugar de seu antepassado Arão. Ele vestirá as roupas sagradas de linho"
               },
               {
                 "ref": "Mateus 26:65",
@@ -12778,7 +12805,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 23:1"
+                "ref": "Deuteronômio 23:1",
+                "text": "“Se um homem tiver os testículos esmagados ou o membro amputado, não terá permissão de entrar nas reuniões sagradas do SENHOR."
               },
               {
                 "ref": "Isaías 56:3",
@@ -12816,7 +12844,7 @@
               },
               {
                 "ref": "Levítico 7:1",
-                "text": "“Estas são as instruções para a oferta pela ­culpa. É oferta santíssima."
+                "text": "“Estas são as instruções para a oferta pela culpa. É oferta santíssima."
               },
               {
                 "ref": "Números 18:19",
@@ -12843,7 +12871,7 @@
               },
               {
                 "ref": "Êxodo 30:6–8",
-                "text": "Coloque o altar de incenso diante da cortina que protege a ­arca da aliança, em frente à tampa da arca, o lugar de expiação, que cobre as tábuas da aliança. Ali eu me encontrarei com você."
+                "text": "Coloque o altar de incenso diante da cortina que protege a arca da aliança, em frente à tampa da arca, o lugar de expiação, que cobre as tábuas da aliança. Ali eu me encontrarei com você."
               },
               {
                 "ref": "Levítico 15:31",
@@ -12881,6 +12909,7 @@
   "22": {
     "book": "Levítico",
     "chapter": "22",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -12938,7 +12967,7 @@
               },
               {
                 "ref": "Salmos 16:11",
-                "text": "Tu me mostrarás o caminho da vida e me darás a alegria de tua presença"
+                "text": "Tu me mostrarás o caminho da vida e me darás a alegria de tua presença e o prazer de viver contigo para sempre."
               },
               {
                 "ref": "Êxodo 33:14–15",
@@ -13129,7 +13158,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 40:13",
-                "text": "Quem pode orientar o Espírito do SENHOR?130 Quem sabe o suficiente para aconselhá-lo ou instruí-lo?"
+                "text": "Quem pode orientar o Espírito do SENHOR? Quem sabe o suficiente para aconselhá-lo ou instruí-lo?"
               },
               {
                 "ref": "Levítico 21:3",
@@ -13356,7 +13385,7 @@
           },
           {
             "number": 24,
-            "text": "Se um animal tiver testículos danificados ou for castrado, não poderá ser oferecido ao SENHOR.",
+            "text": "Se um animal tiver testículos danificados ou for castrado, não poderá ser oferecido ao SENHOR. Nunca façam isso em sua própria terra",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13364,19 +13393,15 @@
                 "text": "Não apresentem um animal defeituoso, pois o SENHOR não o aceitará em favor de vocês."
               },
               {
-                "ref": "Deuteronômio 23:1"
+                "ref": "Deuteronômio 23:1",
+                "text": "“Se um homem tiver os testículos esmagados ou o membro amputado, não terá permissão de entrar nas reuniões sagradas do SENHOR."
               },
               {
                 "ref": "Levítico 21:20",
                 "text": "ou seja corcunda, ou anão, ou tenha um olho defeituoso, ou feridas na pele ou sarna, ou testículos defeituosos."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Nunca façam isso em sua própria terra",
-        "verses": [
+          },
           {
             "number": 25,
             "text": "e não recebam de estrangeiros animais como esses em pagamento, para depois oferecê-los como sacrifício a Deus. Não serão aceitos em seu favor, pois são mutilados ou defeituosos”.",
@@ -13570,6 +13595,7 @@
   "23": {
     "book": "Levítico",
     "chapter": "23",
+    "verified": true,
     "sections": [
       {
         "title": "As festas de Israel",
@@ -13607,7 +13633,8 @@
                 "text": "“Além do sábado, estas são as festas que o SENHOR estabeleceu, as reuniões sagradas que serão celebradas anualmente no devido tempo.”"
               },
               {
-                "ref": "Levítico 23:37"
+                "ref": "Levítico 23:37",
+                "text": "(“Essas são as festas que o SENHOR estabeleceu. Celebrem-nas a cada ano como reuniões sagradas, apresentando para o SENHOR, no dia apropriado, as ofertas especiais de sacrifícios queimados, ofertas de cereal, sacrifícios e ofertas derramadas."
               },
               {
                 "ref": "Êxodo 23:14–17",
@@ -13652,7 +13679,8 @@
                 "text": "“A cada ano, celebrem três festas em minha honra."
               },
               {
-                "ref": "Levítico 23:37"
+                "ref": "Levítico 23:37",
+                "text": "(“Essas são as festas que o SENHOR estabeleceu. Celebrem-nas a cada ano como reuniões sagradas, apresentando para o SENHOR, no dia apropriado, as ofertas especiais de sacrifícios queimados, ofertas de cereal, sacrifícios e ofertas derramadas."
               },
               {
                 "ref": "Levítico 23:2",
@@ -13703,7 +13731,7 @@
               },
               {
                 "ref": "Êxodo 34:18",
-                "text": "“Celebre a Festa dos Pães sem Fermento. Durante sete dias, coma seu pão sem fermento, conforme eu lhe ordenei. Celebre essa festa anualmente no tempo determinado, no mês de abibe,109 pois é o aniversário de sua partida do Egito."
+                "text": "“Celebre a Festa dos Pães sem Fermento. Durante sete dias, coma seu pão sem fermento, conforme eu lhe ordenei. Celebre essa festa anualmente no tempo determinado, no mês de abibe, pois é o aniversário de sua partida do Egito."
               },
               {
                 "ref": "Atos 12:3–4",
@@ -13900,7 +13928,7 @@
               },
               {
                 "ref": "Êxodo 34:22",
-                "text": "“Celebre a Festa da Colheita110 com os primeiros frutos da colheita do trigo. Celebre também a Festa da Última Colheita111 no final da safra."
+                "text": "“Celebre a Festa da Colheita com os primeiros frutos da colheita do trigo. Celebre também a Festa da Última Colheita no final da safra."
               },
               {
                 "ref": "Levítico 25:8",
@@ -14333,7 +14361,7 @@
           },
           {
             "number": 36,
-            "text": "Durante sete dias, vocês apresentarão ofertas especiais para o SENHOR. No oitavo dia, haverá outra reunião sagrada, na qual apresentarão ofertas especiais para o SENHOR. Será uma ocasião solene, e ninguém fará nenhum trabalho habitual. 37(“Essas são as festas que o SENHOR estabeleceu. Celebrem-nas a cada ano como reuniões sagradas, apresentando para o SENHOR, no dia apropriado, as ofertas especiais de sacrifícios queimados, ofertas de cereal, sacrifícios e ofertas derramadas.",
+            "text": "Durante sete dias, vocês apresentarão ofertas especiais para o SENHOR. No oitavo dia, haverá outra reunião sagrada, na qual apresentarão ofertas especiais para o SENHOR. Será uma ocasião solene, e ninguém fará nenhum trabalho habitual.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14353,6 +14381,12 @@
                 "text": "Durante os sete dias seguintes, Salomão e todo o Israel celebraram a Festa das Cabanas. Uma grande multidão havia se reunido, de lugares distantes como Lebo-Hamate, ao norte, e o ribeiro do Egito, ao sul."
               }
             ]
+          },
+          {
+            "number": 37,
+            "text": "(“Essas são as festas que o SENHOR estabeleceu. Celebrem-nas a cada ano como reuniões sagradas, apresentando para o SENHOR, no dia apropriado, as ofertas especiais de sacrifícios queimados, ofertas de cereal, sacrifícios e ofertas derramadas.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 38,
@@ -14396,7 +14430,7 @@
               },
               {
                 "ref": "Levítico 23:36",
-                "text": "Durante sete dias, vocês apresentarão ofertas especiais para o SENHOR. No oitavo dia, haverá outra reunião sagrada, na qual apresentarão ofertas especiais para o SENHOR. Será uma ocasião solene, e ninguém fará nenhum tra..."
+                "text": "Durante sete dias, vocês apresentarão ofertas especiais para o SENHOR. No oitavo dia, haverá outra reunião sagrada, na qual apresentarão ofertas especiais para o SENHOR. Será uma ocasião solene, e ninguém fará nenhum trabalho habitual."
               }
             ]
           },
@@ -14419,7 +14453,7 @@
               },
               {
                 "ref": "João 12:13",
-                "text": "tomou ramos de palmeiras e saiu ao seu encontro, gritando: “Hosana!57 Bendito é o que vem em nome do Senhor! Bendito é o Rei de Israel!”."
+                "text": "tomou ramos de palmeiras e saiu ao seu encontro, gritando: “Hosana! Bendito é o que vem em nome do Senhor! Bendito é o Rei de Israel!”."
               }
             ]
           },
@@ -14506,6 +14540,7 @@
   "24": {
     "book": "Levítico",
     "chapter": "24",
+    "verified": true,
     "sections": [
       {
         "title": "Óleo puro e pães sagrados",
@@ -14620,11 +14655,11 @@
               },
               {
                 "ref": "Êxodo 25:23–24",
-                "text": "“Faça também uma mesa de madeira de acácia com 90 centímetros de comprimento, 45 centímetros de largura e 67, centímetros de altura. Revista-a com ouro puro e coloque uma moldura de ouro ao seu redor."
+                "text": "“Faça também uma mesa de madeira de acácia com 90 centímetros de comprimento, 45 centímetros de largura e 67,5 centímetros de altura. Revista-a com ouro puro e coloque uma moldura de ouro ao seu redor."
               },
               {
                 "ref": "Êxodo 37:10–16",
-                "text": "Bezalel120 fez a mesa de madeira de acácia com 90 centímetros de comprimento, 45 centímetros de largura e 67, centímetros de altura."
+                "text": "Bezalel fez a mesa de madeira de acácia com 90 centímetros de comprimento, 45 centímetros de largura e 67,5 centímetros de altura."
               },
               {
                 "ref": "2 Crônicas 13:11",
@@ -14784,7 +14819,7 @@
               },
               {
                 "ref": "Deuteronômio 21:21",
-                "text": "Então todos os homens da ci­dade o executarão por apedrejamento. Desse modo, vocês eliminarão o mal do seu meio, e todo o ­Israel ficará sabendo disso e temerá.”"
+                "text": "Então todos os homens da cidade o executarão por apedrejamento. Desse modo, vocês eliminarão o mal do seu meio, e todo o Israel ficará sabendo disso e temerá.”"
               },
               {
                 "ref": "Levítico 20:27",
@@ -14856,7 +14891,8 @@
                 "text": "“Se, contudo, alguém demonstrar hostilidade a seu vizinho, ficar à espreita dele e o atacar e matar, fugindo depois para uma das cidades de refúgio,"
               },
               {
-                "ref": "Deuteronômio 27:24"
+                "ref": "Deuteronômio 27:24",
+                "text": "‘Maldito quem matar o seu próximo em segredo’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Números 35:30–31",
@@ -14985,6 +15021,7 @@
   "25": {
     "book": "Levítico",
     "chapter": "25",
+    "verified": true,
     "sections": [
       {
         "title": "O ano sabático",
@@ -15019,7 +15056,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 36:21",
-                "text": "Cumpriu-se, desse modo, a mensagem do SENHOR transmitida por Jeremias. A terra finalmente desfrutou seu descanso sabático e permaneceu desolada até que se completaram os setenta anos, conforme o profeta havia ­anunciado."
+                "text": "Cumpriu-se, desse modo, a mensagem do SENHOR transmitida por Jeremias. A terra finalmente desfrutou seu descanso sabático e permaneceu desolada até que se completaram os setenta anos, conforme o profeta havia anunciado."
               },
               {
                 "ref": "Levítico 26:34–35",
@@ -15057,7 +15094,7 @@
               },
               {
                 "ref": "2 Crônicas 36:21",
-                "text": "Cumpriu-se, desse modo, a mensagem do SENHOR transmitida por Jeremias. A terra finalmente desfrutou seu descanso sabático e permaneceu desolada até que se completaram os setenta anos, conforme o profeta havia ­anunciado."
+                "text": "Cumpriu-se, desse modo, a mensagem do SENHOR transmitida por Jeremias. A terra finalmente desfrutou seu descanso sabático e permaneceu desolada até que se completaram os setenta anos, conforme o profeta havia anunciado."
               },
               {
                 "ref": "Êxodo 23:10–11",
@@ -15822,7 +15859,7 @@
               },
               {
                 "ref": "Salmos 2:8–9",
-                "text": "Basta pedir e lhe darei as nações como herança, a terra inteira como sua propriedade. Você as quebrará3 com cetro de ferro e as despedaçará como vasos de barro’”."
+                "text": "Basta pedir e lhe darei as nações como herança, a terra inteira como sua propriedade. Você as quebrará com cetro de ferro e as despedaçará como vasos de barro’”."
               },
               {
                 "ref": "Apocalipse 2:26–27",
@@ -15832,7 +15869,7 @@
           },
           {
             "number": 45,
-            "text": "Também poderão comprar os filhos de residentes temporários que moram com vocês, incluindo os que nasceram em sua terra.",
+            "text": "Também poderão comprar os filhos de residentes temporários que moram com vocês, incluindo os que nasceram em sua terra. Poderão considerá-los sua propriedade",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -15840,12 +15877,7 @@
                 "text": "“Não permitam que o estrangeiro comprometido com o SENHOR diga: ‘O SENHOR jamais me deixará fazer parte de seu povo’. E não permitam que o eunuco diga: ‘Sou uma árvore seca, sem filhos e sem futuro’."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Poderão considerá-los sua propriedade",
-        "verses": [
+          },
           {
             "number": 46,
             "text": "e deixá-los para seus filhos como herança permanente. Poderão tratá-los como escravos, mas jamais oprimirão alguém do seu povo.",
@@ -16030,6 +16062,7 @@
   "26": {
     "book": "Levítico",
     "chapter": "26",
+    "verified": true,
     "sections": [
       {
         "title": "Bênçãos pela obediência",
@@ -16044,7 +16077,8 @@
                 "text": "“Não depositem sua confiança em ídolos nem façam para si imagens de metal representando deuses. Eu sou o SENHOR, seu Deus."
               },
               {
-                "ref": "Deuteronômio 27:15"
+                "ref": "Deuteronômio 27:15",
+                "text": "‘Maldito quem esculpir ou fundir um ídolo e o levantar em segredo. Os ídolos, trabalhos de artesãos, são detestáveis ao SENHOR’. E todo o povo responderá: ‘Amém!’."
               },
               {
                 "ref": "Números 33:52",
@@ -16174,7 +16208,7 @@
               },
               {
                 "ref": "Juízes 4:16",
-                "text": "Baraque perseguiu os carros de guerra e o exército inimigo até Harosete- Hagoim e matou todos os guerreiros de Sísera. Nenhum deles escapou."
+                "text": "Baraque perseguiu os carros de guerra e o exército inimigo até Harosete-Hagoim e matou todos os guerreiros de Sísera. Nenhum deles escapou."
               },
               {
                 "ref": "1 Samuel 14:13",
@@ -16340,13 +16374,13 @@
               },
               {
                 "ref": "Malaquias 2:2",
-                "text": "Escutem- me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência."
+                "text": "Escutem-me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência."
               }
             ]
           },
           {
             "number": 15,
-            "text": "e se quebrarem a minha aliança rejeitando meus decretos, desprezando meus estatutos e ­re­cusando-se a cumprir meus mandamentos,",
+            "text": "e se quebrarem a minha aliança rejeitando meus decretos, desprezando meus estatutos e recusando-se a cumprir meus mandamentos,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -16772,7 +16806,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 36:21",
-                "text": "Cumpriu-se, desse modo, a mensagem do SENHOR transmitida por Jeremias. A terra finalmente desfrutou seu descanso sabático e permaneceu desolada até que se completaram os setenta anos, conforme o profeta havia ­anunciado."
+                "text": "Cumpriu-se, desse modo, a mensagem do SENHOR transmitida por Jeremias. A terra finalmente desfrutou seu descanso sabático e permaneceu desolada até que se completaram os setenta anos, conforme o profeta havia anunciado."
               },
               {
                 "ref": "Levítico 25:2–4",
@@ -16971,7 +17005,7 @@
             "crossReferences": [
               {
                 "ref": "Levítico 26:15",
-                "text": "e se quebrarem a minha aliança rejeitando meus decretos, desprezando meus estatutos e ­re­cusando-se a cumprir meus mandamentos,"
+                "text": "e se quebrarem a minha aliança rejeitando meus decretos, desprezando meus estatutos e recusando-se a cumprir meus mandamentos,"
               },
               {
                 "ref": "Romanos 8:7",
@@ -17063,6 +17097,7 @@
   "27": {
     "book": "Levítico",
     "chapter": "27",
+    "verified": true,
     "sections": [
       {
         "title": "Normas acerca de votos e dízimos",
@@ -17108,14 +17143,15 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 30:13",
-                "text": "Cada pessoa contada entregará uma pequena quantidade de prata como oferta sagrada ao SENHOR. (O pagamento corresponderá a meio siclo, com base no siclo padrão do santuário, equivalente a doze gramas.95)"
+                "text": "Cada pessoa contada entregará uma pequena quantidade de prata como oferta sagrada ao SENHOR. (O pagamento corresponderá a meio siclo, com base no siclo padrão do santuário, equivalente a doze gramas.)"
               },
               {
                 "ref": "Números 18:16",
-                "text": "Vocês deverão resgatá-los quando eles tiverem um mês de idade. (O preço do resgate é de cinco peças de prata, com base no siclo do santuário, equivalente a doze gramas cada peça.51)"
+                "text": "Vocês deverão resgatá-los quando eles tiverem um mês de idade. (O preço do resgate é de cinco peças de prata, com base no siclo do santuário, equivalente a doze gramas cada peça.)"
               },
               {
-                "ref": "Levítico 27:25"
+                "ref": "Levítico 27:25",
+                "text": "(Todos os pagamentos serão calculados de acordo com o peso do siclo do santuário, equivalente a doze gramas.)"
               },
               {
                 "ref": "Levítico 5:15",
@@ -17130,7 +17166,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 27:9–10",
-                "text": "Cumpriu-se, assim, a profecia de Jeremias que diz: “Tomaram as trinta peças de prata, preço pelo qual ele foi avaliado pelo povo de Israel,"
+                "text": "Cumpriu-se, assim, a profecia de Jeremias que diz: “Tomaram as trinta peças de prata, preço pelo qual ele foi avaliado pelo povo de Israel, e compraram o campo do oleiro, conforme o Senhor ordenou”."
               },
               {
                 "ref": "Zacarias 11:12–13",
@@ -17149,7 +17185,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 37:28",
-                "text": "Então, quando os ismaelitas, que eram negociantes midianitas, se aproximaram, os irmãos de José o tiraram da cisterna e o venderam para eles por vinte peças138 de prata. E os negociantes o levaram para o Egito."
+                "text": "Então, quando os ismaelitas, que eram negociantes midianitas, se aproximaram, os irmãos de José o tiraram da cisterna e o venderam para eles por vinte peças de prata. E os negociantes o levaram para o Egito."
               }
             ]
           },
@@ -17402,7 +17438,7 @@
             "crossReferences": [
               {
                 "ref": "Levítico 27:24",
-                "text": "No Ano do Jubileu, o campo será devolvido a quem o herdou como propriedade familiar. 25(Todos os pagamentos serão calculados de acordo com o peso do siclo do santuário, equivalente a doze gramas.56)"
+                "text": "No Ano do Jubileu, o campo será devolvido a quem o herdou como propriedade familiar."
               }
             ]
           },
@@ -17413,7 +17449,7 @@
             "crossReferences": [
               {
                 "ref": "Ezequiel 44:29",
-                "text": "Seu alimento virá das ofertas e dos sacri­fícios que os israelitas trouxerem para o templo: as ofertas de cereal, as ofertas pelo pecado e as ofertas pela culpa. Tudo que for consagrado para o SENHOR pertencerá aos sacerdotes."
+                "text": "Seu alimento virá das ofertas e dos sacrifícios que os israelitas trouxerem para o templo: as ofertas de cereal, as ofertas pelo pecado e as ofertas pela culpa. Tudo que for consagrado para o SENHOR pertencerá aos sacerdotes."
               },
               {
                 "ref": "Números 18:14",
@@ -17461,7 +17497,7 @@
           },
           {
             "number": 24,
-            "text": "No Ano do Jubileu, o campo será devolvido a quem o herdou como propriedade familiar. 25(Todos os pagamentos serão calculados de acordo com o peso do siclo do santuário, equivalente a doze gramas.56)",
+            "text": "No Ano do Jubileu, o campo será devolvido a quem o herdou como propriedade familiar.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -17473,6 +17509,12 @@
                 "text": "Se, contudo, não quiser reavê-lo e ele for vendido a outra pessoa, o campo não poderá mais ser comprado de volta."
               }
             ]
+          },
+          {
+            "number": 25,
+            "text": "(Todos os pagamentos serão calculados de acordo com o peso do siclo do santuário, equivalente a doze gramas.)",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 26,
@@ -17620,7 +17662,7 @@
           },
           {
             "number": 34,
-            "text": "Esses são os mandamentos que o SENHOR deu aos israelitas por meio de Moisés no monte Sinai. 1 1. Ou o papo e o seu conteúdo. O significado do hebraico é incerto. 2 5. Em hebraico, 1/10 de efa. 3 5. Cada siclo equivalia a 12 gramas. 4 6. No texto hebraico, os versículos 6.1-7 são numerados 5.20-26. 5 6. No texto hebraico, os versículos 6.8-30 são numerados 6.1-23. 6 6. Em hebraico, 1/10 de efa. 7 6. O significado do termo hebraico é incerto. 8 8. Ou para se fazer expiação sobre ele. 9 9. Ou uma vaca; também em 9.,. 10 10. Ou Não descubram a cabeça. 11 11. A identificação de alguns dos animais, aves e insetos deste capítulo é incerta. 12 11. Ou hírace, ou arganaz. 13 13. O termo hebraico não se refere somente à hanseníase, mas também a diversas doenças de pele. 14 13. Ou e descobrirá a cabeça. 15 13. O termo hebraico usado aqui e ao longo desta passagem é o mesmo traduzido anteriormente por “lepra”; ver nota em 13.. 16 14. O termo hebraico não se refere somente à hanseníase, mas também a diversas doenças de pele. 17 14.10a Em hebraico, 3/10 de efa. 18 14.10b Em hebraico, 1 logue (0, litro); também em 14.. 19 14. Em hebraico, 1/10 de efa. 20 14. O termo hebraico usado aqui e ao longo desta passagem é o mesmo traduzido anteriormente por “lepra”; ver nota em 13.. 21 16. Em hebraico, sobre o testemunho. O termo hebraico para “testemunho” se refere aos termos da aliança do SENHOR com Israel escritos em tábuas de pedra guardadas na arca, e também à aliança em si. 22 16.29a No antigo calendário lunar hebraico, esse dia caía em setembro ou outubro. 23 16.29b Ou jejuarão; também em 16.. 24 17. Ou uma vaca. 25 17. Em hebraico, será culpado de sangue. 26 17. Ou demônios em forma de bode. 27 18. Ou não se case com. 28 19. Em hebraico, contra seu irmão. 29 19. Em hebraico, Considerem-nos incircuncisos. 30 19. Em hebraico, Usem 1 efa [medida para secos] honesto e 1 him [medida para líquidos] honesto. 31 20. A Septuaginta traz Quem insultar. Comparar com Mt 15.; Mc 7.. 32 21. Ou Nunca descobrirá a cabeça. 33 22. O termo hebraico não se refere somente à hanseníase, mas também a diversas doenças de pele. 34 22. Ou uma vaca. 35 23. No antigo calendário lunar hebraico, esse dia caía no fim de março, em abril ou no começo de maio. 36 23.13a Em hebraico, 2/10 de efa; também em 23.. 37 23.13b Em hebraico, 1/4 de him. 38 23. Essa celebração, também conhecida como Festa da Colheita ou Festa das Semanas, passou a ser chamada posteriormente de Festa de Pentecostes (ver At 2.1) e é comemorada hoje com o nome Shavuot. 39 23.24 No antigo calendário lunar hebraico, esse dia caía em setembro ou outubro. Comemorada hoje com o nome Rosh Hashanah, o ano-novo judeu. 40 23.27a No antigo calendário lunar hebraico, esse dia caía em setembro ou outubro. Comemorada hoje com o nome Yom Kippur. 41 23.27b Ou jejuarem; também em 23.,. 42 23. Ou Festa dos Tabernáculos. Chamada anteriormente de Festa da Última Colheita (ver Êx 23.16b) e comemorada hoje com o nome Sucot. 43 23. Ou recolham frutos de árvores imponentes. 44 24. Em hebraico, fora da cortina interna do testemunho; ver nota em 16.. 45 24. Em hebraico, 2/10 de efa. 46 25. Em hebraico, sete semanas de anos. 47 25. Em hebraico, no décimo dia do sétimo mês, no Dia da Expiação; ver 23.27a e respectiva nota. 48 26. É possível que o termo hebraico usado aqui (lit., coisas redondas) se refira a estrume. 49 26. Em hebraico, incircunciso. 50 27. Em hebraico, 50 siclos. 51 27. Em hebraico, 30 siclos. 52 27. Em hebraico, Um menino [...] 20 siclos de prata; uma menina [...] 10 siclos de prata. 53 27. Em hebraico, Um menino [...] 5 siclos de prata; uma menina [...] 3 siclos de prata. 54 27. Em hebraico, Um homem [...] 15 siclos de prata; uma mulher [...] 10 siclos de prata. 55 27. Em hebraico, 50 siclos de prata por 1 ômer de sementes de cevada. 56 27. Em hebraico, equivalente a 20 geras.",
+            "text": "Esses são os mandamentos que o SENHOR deu aos israelitas por meio de Moisés no monte Sinai.",
             "isJesusWords": false,
             "crossReferences": [
               {

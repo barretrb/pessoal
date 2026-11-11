@@ -2,6 +2,7 @@
   "1": {
     "book": "Atos dos Apóstolos",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "A promessa do Espírito Santo",
@@ -21,7 +22,7 @@
               },
               {
                 "ref": "Mateus 4:23–24",
-                "text": "Jesus viajou por toda a região da Galileia, ensinando nas sinagogas, anunciando as ­boas-novas do reino e curando as pessoas de todo tipo de doenças."
+                "text": "Jesus viajou por toda a região da Galileia, ensinando nas sinagogas, anunciando as boas-novas do reino e curando as pessoas de todo tipo de doenças."
               },
               {
                 "ref": "João 18:19–21",
@@ -48,7 +49,7 @@
               },
               {
                 "ref": "Isaías 59:20–21",
-                "text": "“O Redentor virá a Jerusalém para resgatar em Israel aqueles que se afastaram de seus pecados”,166 diz o SENHOR."
+                "text": "“O Redentor virá a Jerusalém para resgatar em Israel aqueles que se afastaram de seus pecados”, diz o SENHOR."
               }
             ]
           },
@@ -156,7 +157,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 24:36",
-                "text": "“Contudo, ninguém sabe o dia nem a hora em que essas coisas acontecerão, nem mesmo os anjos no céu, nem o Filho.146 Somente o Pai sabe."
+                "text": "“Contudo, ninguém sabe o dia nem a hora em que essas coisas acontecerão, nem mesmo os anjos no céu, nem o Filho. Somente o Pai sabe."
               },
               {
                 "ref": "1 Tessalonicenses 5:1–2",
@@ -179,11 +180,11 @@
             "crossReferences": [
               {
                 "ref": "Mateus 28:19",
-                "text": "Portanto, vão e façam discípulos de todas as nações,170 batizando-os em nome do Pai, do Filho e do Espírito Santo."
+                "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo."
               },
               {
                 "ref": "Marcos 16:15",
-                "text": "Jesus lhes disse: “Vão ao mundo inteiro e anunciem as boas- novas a todos."
+                "text": "Jesus lhes disse: “Vão ao mundo inteiro e anunciem as boas-novas a todos."
               },
               {
                 "ref": "Romanos 15:19",
@@ -357,7 +358,7 @@
               },
               {
                 "ref": "Salmos 32:5–6",
-                "text": "Finalmente, confessei a ti todos os meus pecados e não escondi mais a minha culpa. Disse comigo: “Confessarei ao SENHOR a minha rebeldia”, e tu perdoaste toda a minha culpa."
+                "text": "Finalmente, confessei a ti todos os meus pecados e não escondi mais a minha culpa. Disse comigo: “Confessarei ao SENHOR a minha rebeldia”, e tu perdoaste toda a minha culpa. Interlúdio"
               }
             ]
           },
@@ -386,7 +387,7 @@
           },
           {
             "number": 17,
-            "text": "Judas era um de nós e participava do ministério conosco”. 18(Ele comprou um campo com o dinheiro que recebeu por sua perversidade. Ao cair ali de cabeça, seu corpo se partiu ao meio, e seus intestinos se derramaram.",
+            "text": "Judas era um de nós e participava do ministério conosco”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -408,13 +409,19 @@
             ]
           },
           {
+            "number": 18,
+            "text": "(Ele comprou um campo com o dinheiro que recebeu por sua perversidade. Ao cair ali de cabeça, seu corpo se partiu ao meio, e seus intestinos se derramaram.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 19,
             "text": "A notícia se espalhou entre todos os habitantes de Jerusalém, e eles deram ao lugar o nome aramaico Aceldama, que significa “Campo de Sangue”.)",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Atos 21:40",
-                "text": "O comandante concordou, de modo que Paulo ficou em pé na escadaria e fez sinal para o povo se calar. Logo, um silêncio profundo envolveu a multidão, e ele lhes falou em aramaico,109 o idioma deles."
+                "text": "O comandante concordou, de modo que Paulo ficou em pé na escadaria e fez sinal para o povo se calar. Logo, um silêncio profundo envolveu a multidão, e ele lhes falou em aramaico, o idioma deles."
               },
               {
                 "ref": "Atos 2:22",
@@ -516,7 +523,7 @@
           },
           {
             "number": 24,
-            "text": "Em seguida, oraram: “Senhor, tu conheces cada coração.",
+            "text": "Em seguida, oraram: “Senhor, tu conheces cada coração. Mostra-nos qual destes homens escolheste",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -536,12 +543,7 @@
                 "text": "Nada, em toda a criação, está escondido de Deus. Tudo está descoberto e exposto diante de seus olhos, e é a ele que prestamos contas."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Mostra-nos qual destes homens escolheste",
-        "verses": [
+          },
           {
             "number": 25,
             "text": "como apóstolo para substituir Judas neste ministério, pois ele se desviou e foi para seu devido lugar”.",
@@ -595,6 +597,7 @@
   "2": {
     "book": "Atos dos Apóstolos",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "A vinda do Espírito Santo",
@@ -701,7 +704,8 @@
                 "text": "Naquela época, vivia em Jerusalém um homem chamado Simeão. Ele era justo e devoto, e esperava ansiosamente pela restauração de Israel. O Espírito Santo estava sobre ele"
               },
               {
-                "ref": "Atos 8:2"
+                "ref": "Atos 8:2",
+                "text": "(Alguns homens devotos vieram e, com grande tristeza, sepultaram Estêvão.)"
               },
               {
                 "ref": "Colossenses 1:23",
@@ -709,7 +713,7 @@
               },
               {
                 "ref": "Mateus 24:14",
-                "text": "As boas-novas a respeito do reino serão anunciadas em todo o mundo, para que todas as nações140 as ouçam; então, virá o fim."
+                "text": "As boas-novas a respeito do reino serão anunciadas em todo o mundo, para que todas as nações as ouçam; então, virá o fim."
               }
             ]
           },
@@ -738,7 +742,7 @@
           },
           {
             "number": 7,
-            "text": "Muito admirados, exclamavam: “Como isto é possível?",
+            "text": "Muito admirados, exclamavam: “Como isto é possível? Estes homens são todos galileus",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -758,12 +762,7 @@
                 "text": "A multidão respondia: “É Jesus, o profeta de Nazaré, da Galileia”."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Estes homens são todos galileus",
-        "verses": [
+          },
           {
             "number": 8,
             "text": "e, no entanto, cada um de nós os ouve falar em nosso próprio idioma!",
@@ -804,7 +803,7 @@
           },
           {
             "number": 10,
-            "text": "da Frígia, da Panfília, do Egito e de regiões da Líbia próximas a Cirene, visitantes de Roma 11(tanto judeus como convertidos ao judaísmo), cretenses e árabes, e todos nós ouvimos estas pessoas falarem em nossa própria língua sobre as coisas maravilhosas que Deus fez!”.",
+            "text": "da Frígia, da Panfília, do Egito e de regiões da Líbia próximas a Cirene, visitantes de Roma",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -826,13 +825,19 @@
             ]
           },
           {
+            "number": 11,
+            "text": "(tanto judeus como convertidos ao judaísmo), cretenses e árabes, e todos nós ouvimos estas pessoas falarem em nossa própria língua sobre as coisas maravilhosas que Deus fez!”.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 12,
             "text": "Admirados e perplexos, perguntavam uns aos outros: “Que significa isto?”.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Atos 17:20",
-                "text": "Você diz coisas um tanto estranhas, e queremos saber o que significam”. 21(Convém explicar que os atenienses, bem como os estrangeiros que viviam em Atenas, pareciam não fazer outra coisa senão discutir as últimas novidades.)"
+                "text": "Você diz coisas um tanto estranhas, e queremos saber o que significam”."
               },
               {
                 "ref": "Lucas 18:36",
@@ -844,7 +849,7 @@
               },
               {
                 "ref": "Atos 10:17",
-                "text": "Pedro ficou perplexo, pensando em qual seria o significado da visão. Nesse momento, os homens que Cornélio tinha enviado encontraram a casa de Simão."
+                "text": "Pedro ficou perplexo, pensando em qual seria o significado da visão. Nesse momento, os homens que Cornélio tinha enviado encontraram a casa de Simão. Eles se aproximaram do portão"
               }
             ]
           },
@@ -916,13 +921,20 @@
           },
           {
             "number": 16,
-            "text": "Pelo contrário! O que vocês estão vendo foi predito há tempos pelo profeta Joel: 17‘Nos últimos dias’, disse Deus, ‘derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os jovens terão visões, e os velhos terão sonhos.",
+            "text": "Pelo contrário! O que vocês estão vendo foi predito há tempos pelo profeta Joel:",
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Joel 2:28–32"
+                "ref": "Joel 2:28–32",
+                "text": "“Então, depois que eu tiver feito essas coisas, derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os velhos terão sonhos, e os jovens terão visões."
               }
             ]
+          },
+          {
+            "number": 17,
+            "text": "‘Nos últimos dias’, disse Deus, ‘derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os jovens terão visões, e os velhos terão sonhos.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 18,
@@ -957,7 +969,8 @@
                 "text": "Farei maravilhas nos céus e na terra: sangue e fogo, e colunas de fumaça. O sol se escurecerá, a lua se tornará vermelha como sangue antes que chegue o grande e terrível dia do SENHOR."
               },
               {
-                "ref": "Malaquias 4:1–6"
+                "ref": "Malaquias 4:1–6",
+                "text": "Assim diz o SENHOR dos Exércitos: “O dia do julgamento se aproxima e arde como uma fornalha. Naquele dia, serão queimados como palha os arrogantes e os perversos. Serão consumidos, desde as raízes até os ramos."
               },
               {
                 "ref": "Sofonias 1:14–18",
@@ -1148,7 +1161,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 16:11",
-                "text": "Tu me mostrarás o caminho da vida e me darás a alegria de tua presença"
+                "text": "Tu me mostrarás o caminho da vida e me darás a alegria de tua presença e o prazer de viver contigo para sempre."
               },
               {
                 "ref": "Salmos 25:4",
@@ -1198,7 +1211,7 @@
               },
               {
                 "ref": "Salmos 89:3–4",
-                "text": "Tu disseste: “Fiz uma aliança com Davi, meu servo escolhido. A ele fiz este juramento: 4‘Estabelecerei seus descendentes como reis para sempre; eles se sentarão em seu trono de geração em geração’”."
+                "text": "Tu disseste: “Fiz uma aliança com Davi, meu servo escolhido. A ele fiz este juramento: ‘Estabelecerei seus descendentes como reis para sempre; eles se sentarão em seu trono de geração em geração’”. Interlúdio"
               },
               {
                 "ref": "Jeremias 33:14–15",
@@ -1286,7 +1299,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 110:1",
-                "text": "O SENHOR disse ao meu Senhor:144 “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
+                "text": "O SENHOR disse ao meu Senhor: “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
               },
               {
                 "ref": "Mateus 22:42–45",
@@ -1386,7 +1399,7 @@
               },
               {
                 "ref": "Atos 8:12",
-                "text": "No entanto, quando Filipe lhes levou a mensagem sobre as boas- novas do reino de Deus e sobre o nome de Jesus Cristo, eles creram e, como resultado, muitos homens e mulheres foram batizados."
+                "text": "No entanto, quando Filipe lhes levou a mensagem sobre as boas-novas do reino de Deus e sobre o nome de Jesus Cristo, eles creram e, como resultado, muitos homens e mulheres foram batizados."
               },
               {
                 "ref": "Lucas 24:47",
@@ -1613,6 +1626,7 @@
   "3": {
     "book": "Atos dos Apóstolos",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Pedro cura um mendigo aleijado",
@@ -1647,7 +1661,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 14:8",
-                "text": "Enquanto estavam em Listra, Paulo e Barnabé encontraram um homem com os pés aleijados. Sofria desse problema desde o nascimento e, portanto, nunca tinha andado."
+                "text": "Enquanto estavam em Listra, Paulo e Barnabé encontraram um homem com os pés aleijados. Sofria desse problema desde o nascimento e, portanto, nunca tinha andado. Estava sentado"
               },
               {
                 "ref": "João 9:8",
@@ -1870,10 +1884,12 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Mateus 22:32"
+                "ref": "Mateus 22:32",
+                "text": "‘Eu sou o Deus de Abraão, o Deus de Isaque e o Deus de Jacó’. Portanto, ele é o Deus dos vivos, e não dos mortos”."
               },
               {
-                "ref": "Atos 7:32"
+                "ref": "Atos 7:32",
+                "text": "‘Eu sou o Deus de seus antepassados, o Deus de Abraão, de Isaque e de Jacó’. Moisés tremia de medo e não tinha coragem de olhar."
               },
               {
                 "ref": "João 19:15",
@@ -1938,7 +1954,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 21:21–22",
-                "text": "Jesus respondeu: “Eu lhes digo a verdade: se vocês tiverem fé e não duvidarem, poderão fazer o mesmo que fiz com esta figueira, e muito mais. Poderão até dizer a este monte: ‘Levante-se e ­atire-se no mar’, e isso acontecerá."
+                "text": "Jesus respondeu: “Eu lhes digo a verdade: se vocês tiverem fé e não duvidarem, poderão fazer o mesmo que fiz com esta figueira, e muito mais. Poderão até dizer a este monte: ‘Levante-se e atire-se no mar’, e isso acontecerá."
               },
               {
                 "ref": "Atos 3:6",
@@ -2157,7 +2173,7 @@
               },
               {
                 "ref": "1 Crônicas 16:17",
-                "text": "Ele a confirmou a Jacó por decreto, ao povo de Israel como aliança sem fim: 18‘Darei a vocês a terra de Canaã, como a porção de sua herança’."
+                "text": "Ele a confirmou a Jacó por decreto, ao povo de Israel como aliança sem fim:"
               }
             ]
           },
@@ -2191,6 +2207,7 @@
   "4": {
     "book": "Atos dos Apóstolos",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Pedro e João diante do conselho de líderes",
@@ -2306,7 +2323,7 @@
               },
               {
                 "ref": "Lucas 20:1",
-                "text": "Certo dia, quando Jesus ensinava o povo e anunciava as boas- novas no templo, os principais sacerdotes, os mestres da lei e os líderes do povo se aproximaram dele"
+                "text": "Certo dia, quando Jesus ensinava o povo e anunciava as boas-novas no templo, os principais sacerdotes, os mestres da lei e os líderes do povo se aproximaram dele"
               }
             ]
           },
@@ -2490,7 +2507,7 @@
               },
               {
                 "ref": "Atos 2:7–12",
-                "text": "Muito admirados, exclamavam: “Como isto é possível?"
+                "text": "Muito admirados, exclamavam: “Como isto é possível? Estes homens são todos galileus"
               }
             ]
           },
@@ -3039,6 +3056,7 @@
   "5": {
     "book": "Atos dos Apóstolos",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Ananias e Safira",
@@ -3085,7 +3103,7 @@
               },
               {
                 "ref": "Mateus 23:5",
-                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios131 mais largos que de costume e vestem mantos com franjas mais longas."
+                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios mais largos que de costume e vestem mantos com franjas mais longas."
               }
             ]
           },
@@ -3275,7 +3293,7 @@
               },
               {
                 "ref": "Hebreus 2:4",
-                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade. Jesus, o homem"
+                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade."
               },
               {
                 "ref": "Atos 14:3",
@@ -3325,7 +3343,7 @@
               },
               {
                 "ref": "Esdras 10:1",
-                "text": "Cr 6.6-10."
+                "text": "Enquanto Esdras orava e fazia essa confissão, chorando e com o rosto no chão diante do templo de Deus, uma grande multidão de israelitas — homens, mulheres e crianças — se reuniu e chorou amargamente com ele."
               }
             ]
           },
@@ -3391,7 +3409,7 @@
               },
               {
                 "ref": "Atos 7:9",
-                "text": "“Os patriarcas tiveram inveja de seu irmão José e o venderam como escravo para o Egito."
+                "text": "“Os patriarcas tiveram inveja de seu irmão José e o venderam como escravo para o Egito. Mas Deus estava com ele"
               },
               {
                 "ref": "1 Pedro 2:1",
@@ -3483,7 +3501,7 @@
               },
               {
                 "ref": "Salmos 105:22",
-                "text": "Tinha toda a liberdade de instruir134 os assistentes do faraó e de ensinar os conselheiros da corte."
+                "text": "Tinha toda a liberdade de instruir os assistentes do faraó e de ensinar os conselheiros da corte."
               },
               {
                 "ref": "Atos 4:5–7",
@@ -3709,7 +3727,7 @@
               },
               {
                 "ref": "Atos 11:18",
-                "text": "Ao ouvirem isso, pararam de levantar objeções e começaram a louvar a Deus, dizendo: “Vemos que Deus deu aos gentios o mesmo privilégio de se arrepender e receber a vida ­eterna!”."
+                "text": "Ao ouvirem isso, pararam de levantar objeções e começaram a louvar a Deus, dizendo: “Vemos que Deus deu aos gentios o mesmo privilégio de se arrepender e receber a vida eterna!”."
               }
             ]
           },
@@ -3789,7 +3807,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 27:19",
-                "text": "Nesse momento, enquanto Pilatos estava sentado no tribunal, sua esposa lhe mandou o seguinte recado: “Deixe esse homem inocente em paz. Na noite passada, tive um sonho a respei­to dele e fiquei muito perturbada”."
+                "text": "Nesse momento, enquanto Pilatos estava sentado no tribunal, sua esposa lhe mandou o seguinte recado: “Deixe esse homem inocente em paz. Na noite passada, tive um sonho a respeito dele e fiquei muito perturbada”."
               },
               {
                 "ref": "Jeremias 26:19",
@@ -3973,6 +3991,7 @@
   "6": {
     "book": "Atos dos Apóstolos",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "Sete homens são escolhidos para servir",
@@ -4107,7 +4126,7 @@
               },
               {
                 "ref": "Atos 1:24",
-                "text": "Em seguida, oraram: “Senhor, tu conheces cada coração."
+                "text": "Em seguida, oraram: “Senhor, tu conheces cada coração. Mostra-nos qual destes homens escolheste"
               },
               {
                 "ref": "1 Timóteo 4:14",
@@ -4181,7 +4200,7 @@
               },
               {
                 "ref": "Mateus 27:32",
-                "text": "No caminho, encontraram um homem chamado Simão, de Cirene,163 e os soldados o obrigaram a carregar a cruz."
+                "text": "No caminho, encontraram um homem chamado Simão, de Cirene, e os soldados o obrigaram a carregar a cruz."
               },
               {
                 "ref": "Mateus 10:17",
@@ -4219,7 +4238,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 26:59–60",
-                "text": "Lá dentro, os principais sacerdotes e todo o conselho dos líderes do povo154 tentavam encontrar testemunhas que mentissem a respeito de Jesus, para que pudessem condená-lo à morte."
+                "text": "Lá dentro, os principais sacerdotes e todo o conselho dos líderes do povo tentavam encontrar testemunhas que mentissem a respeito de Jesus, para que pudessem condená-lo à morte."
               },
               {
                 "ref": "1 Reis 21:10–13",
@@ -4269,7 +4288,7 @@
               },
               {
                 "ref": "Atos 21:28",
-                "text": "gritando: “Homens de Israel, ajudem-nos! Este é o homem que fala contra nosso povo em toda parte e ensina todos a desobedecerem às leis judaicas. Fala contra o templo e até profana este santo lugar, trazendo gentios106 para dentro dele”."
+                "text": "gritando: “Homens de Israel, ajudem-nos! Este é o homem que fala contra nosso povo em toda parte e ensina todos a desobedecerem às leis judaicas. Fala contra o templo e até profana este santo lugar, trazendo gentios para dentro dele”."
               },
               {
                 "ref": "Salmos 56:5",
@@ -4277,13 +4296,13 @@
               },
               {
                 "ref": "Mateus 24:15",
-                "text": "“Chegará o dia em que vocês verão aquilo de que o profeta Daniel falou, a ‘terrível profanação’141 que será colocada no lugar santo. (Leitor, preste atenção!)"
+                "text": "“Chegará o dia em que vocês verão aquilo de que o profeta Daniel falou, a ‘terrível profanação’ que será colocada no lugar santo. (Leitor, preste atenção!)"
               }
             ]
           },
           {
             "number": 14,
-            "text": "Nós o ouvimos dizer que esse Jesus de Nazaré30 destruirá o templo e mudará os costumes que Moisés nos deixou”.",
+            "text": "Nós o ouvimos dizer que esse Jesus de Nazaré destruirá o templo e mudará os costumes que Moisés nos deixou”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4319,7 +4338,7 @@
               },
               {
                 "ref": "Êxodo 34:29–35",
-                "text": "Quando Moisés desceu do monte Sinai carregando as duas tábuas da aliança,113 não percebeu que seu rosto brilhava, pois ele havia falado com o SENHOR."
+                "text": "Quando Moisés desceu do monte Sinai carregando as duas tábuas da aliança, não percebeu que seu rosto brilhava, pois ele havia falado com o SENHOR."
               },
               {
                 "ref": "Mateus 17:2",
@@ -4334,6 +4353,7 @@
   "7": {
     "book": "Atos dos Apóstolos",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "O testemunho de Estêvão diante do conselho",
@@ -4353,7 +4373,7 @@
               },
               {
                 "ref": "Atos 6:13–14",
-                "text": "As falsas testemunhas declararam: “Este homem vive falando contra o santo templo e a lei de Moisés. Nós o ouvimos dizer que esse Jesus de Nazaré30 destruirá o templo e mudará os costumes que Moisés nos deixou”."
+                "text": "As falsas testemunhas declararam: “Este homem vive falando contra o santo templo e a lei de Moisés. Nós o ouvimos dizer que esse Jesus de Nazaré destruirá o templo e mudará os costumes que Moisés nos deixou”."
               },
               {
                 "ref": "João 18:33–35",
@@ -4495,7 +4515,7 @@
               },
               {
                 "ref": "Gênesis 15:14–16",
-                "text": "Mas eu castigarei a nação que os escravizar e, por fim, eles sairão de lá com grande riqueza. 15(Você, por sua vez, morrerá em paz e será sepultado em idade avançada.)"
+                "text": "Mas eu castigarei a nação que os escravizar e, por fim, eles sairão de lá com grande riqueza."
               }
             ]
           },
@@ -4524,7 +4544,7 @@
           },
           {
             "number": 9,
-            "text": "“Os patriarcas tiveram inveja de seu irmão José e o venderam como escravo para o Egito.",
+            "text": "“Os patriarcas tiveram inveja de seu irmão José e o venderam como escravo para o Egito. Mas Deus estava com ele",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4544,12 +4564,7 @@
                 "text": "“Cheguem mais perto”, disse José. Quando eles se aproximaram, José continuou: “Eu sou José, o irmão que vocês venderam como escravo ao Egito."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Mas Deus estava com ele",
-        "verses": [
+          },
           {
             "number": 10,
             "text": "e o livrou de todas as suas dificuldades. Deus concedeu a José favor e sabedoria diante do faraó, rei do Egito, e o faraó o nomeou governador de todo o Egito e administrador de seu palácio.",
@@ -4588,7 +4603,7 @@
               },
               {
                 "ref": "Gênesis 42:5",
-                "text": "Os filhos de Jacó147 chegaram ao Egito junto com outros para comprar mantimentos, porque também havia fome em Canaã."
+                "text": "Os filhos de Jacó chegaram ao Egito junto com outros para comprar mantimentos, porque também havia fome em Canaã."
               }
             ]
           },
@@ -4660,7 +4675,7 @@
               },
               {
                 "ref": "Gênesis 46:3–7",
-                "text": "“Eu sou Deus,158 o Deus de seu pai”, disse a voz. “Não tenha medo de descer ao Egito, pois lá farei de sua família uma grande nação."
+                "text": "“Eu sou Deus, o Deus de seu pai”, disse a voz. “Não tenha medo de descer ao Egito, pois lá farei de sua família uma grande nação."
               },
               {
                 "ref": "Números 20:15",
@@ -4938,7 +4953,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 18:2–4",
-                "text": "Moisés tinha mandado Zípora, sua mulher, e seus dois filhos de volta para a casa de Jetro, que os acolheu. 3(O primeiro filho de Moisés se chamava Gérson, pois quando o menino nasceu, Moisés disse: “Sou forasteiro em terra alheia”."
+                "text": "Moisés tinha mandado Zípora, sua mulher, e seus dois filhos de volta para a casa de Jetro, que os acolheu."
               },
               {
                 "ref": "Êxodo 4:19–20",
@@ -4969,13 +4984,13 @@
               },
               {
                 "ref": "Isaías 63:9",
-                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou.175 Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
+                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou. Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
               }
             ]
           },
           {
             "number": 31,
-            "text": "Quando Moisés viu aquilo, ficou admirado. Aproximando-se para observar melhor, ouviu a voz do Senhor, que disse: 32‘Eu sou o Deus de seus antepassados, o Deus de Abraão, de Isaque e de Jacó’. Moisés tremia de medo e não tinha coragem de olhar.",
+            "text": "Quando Moisés viu aquilo, ficou admirado. Aproximando-se para observar melhor, ouviu a voz do Senhor, que disse:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4983,6 +4998,12 @@
                 "text": "“Que coisa espantosa!”, pensou ele. “Por que o fogo não consome o arbusto? Preciso ver isso de perto.”"
               }
             ]
+          },
+          {
+            "number": 32,
+            "text": "‘Eu sou o Deus de seus antepassados, o Deus de Abraão, de Isaque e de Jacó’. Moisés tremia de medo e não tinha coragem de olhar.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 33,
@@ -5002,7 +5023,8 @@
                 "text": "Nós mesmos ouvimos essa voz do céu quando estávamos com ele no monte santo."
               },
               {
-                "ref": "Eclesiastes 5:1"
+                "ref": "Eclesiastes 5:1",
+                "text": "Quando você entrar na casa de Deus, tome cuidado com o que faz e ouça com atenção. Age mal quem apresenta ofertas a Deus sem pensar."
               }
             ]
           },
@@ -5166,7 +5188,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 106:19–21",
-                "text": "No monte Sinai,138 fizeram um bezerro; prostraram-se diante de uma imagem de metal."
+                "text": "No monte Sinai, fizeram um bezerro; prostraram-se diante de uma imagem de metal."
               },
               {
                 "ref": "Neemias 9:18",
@@ -5239,7 +5261,7 @@
               },
               {
                 "ref": "Êxodo 38:21",
-                "text": "Esta é uma relação dos materiais usados na construção do tabernáculo, o santuário da aliança.131 Os levitas registraram os valores totais conforme Moisés os havia instruído, e Itamar, filho do sacerdote Arão, supervisionou esse trabalho."
+                "text": "Esta é uma relação dos materiais usados na construção do tabernáculo, o santuário da aliança. Os levitas registraram os valores totais conforme Moisés os havia instruído, e Itamar, filho do sacerdote Arão, supervisionou esse trabalho."
               },
               {
                 "ref": "Hebreus 8:5",
@@ -5322,7 +5344,7 @@
           },
           {
             "number": 48,
-            "text": "O Altíssimo, porém, não habita em templos feitos por mãos humanas. Como diz o profeta: 49‘O céu é meu trono, e a terra é o suporte de meus pés. Acaso construiriam para mim um templo assim tão bom?’, diz o Senhor. ‘Que lugar de descanso me poderiam fazer?",
+            "text": "O Altíssimo, porém, não habita em templos feitos por mãos humanas. Como diz o profeta:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5331,7 +5353,7 @@
               },
               {
                 "ref": "Isaías 66:1–2",
-                "text": "Co 2.. Co 6.."
+                "text": "Assim diz o SENHOR: “O céu é meu trono, e a terra é o suporte de meus pés. Acaso construiriam para mim um templo assim tão bom? Que lugar de descanso me poderiam fazer?"
               },
               {
                 "ref": "1 Reis 8:27",
@@ -5344,6 +5366,12 @@
             ]
           },
           {
+            "number": 49,
+            "text": "‘O céu é meu trono, e a terra é o suporte de meus pés. Acaso construiriam para mim um templo assim tão bom?’, diz o Senhor. ‘Que lugar de descanso me poderiam fazer?",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 50,
             "text": "Acaso não foram minhas mãos que criaram o céu e a terra?’.",
             "isJesusWords": false,
@@ -5354,7 +5382,7 @@
               },
               {
                 "ref": "Isaías 66:2",
-                "text": "Co 6.."
+                "text": "Minhas mãos criaram os céus e a terra; eles e tudo que neles há são meus. Eu, o SENHOR, falei! “Abençoarei os de coração humilde e oprimido, os que tremem diante de minha palavra."
               },
               {
                 "ref": "Salmos 33:6–9",
@@ -5488,7 +5516,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 26:64–65",
-                "text": "Jesus respondeu: “É como você diz. Eu lhes digo que, no futuro, verão o Filho do Homem sentado à direita do Deus Poderoso155 e vindo sobre as nuvens do céu”."
+                "text": "Jesus respondeu: “É como você diz. Eu lhes digo que, no futuro, verão o Filho do Homem sentado à direita do Deus Poderoso e vindo sobre as nuvens do céu”."
               },
               {
                 "ref": "Apocalipse 11:19",
@@ -5538,7 +5566,7 @@
               },
               {
                 "ref": "Atos 8:1",
-                "text": "E Saulo concordou inteiramente com a morte de Estêvão. A perseguição faz os discípulos dispersarem Uma grande onda de perseguição começou naquele dia e varreu a igreja de Jerusalém. Todos eles, com exceção dos apóstolos..."
+                "text": "E Saulo concordou inteiramente com a morte de Estêvão."
               },
               {
                 "ref": "Levítico 24:14–16",
@@ -5603,13 +5631,14 @@
   "8": {
     "book": "Atos dos Apóstolos",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "",
         "verses": [
           {
             "number": 1,
-            "text": "E Saulo concordou inteiramente com a morte de Estêvão. A perseguição faz os discípulos dispersarem Uma grande onda de perseguição começou naquele dia e varreu a igreja de Jerusalém. Todos eles, com exceção dos apóstolos, foram dispersos pelas regiões da Judeia e de Samaria. 2(Alguns homens devotos vieram e, com grande tristeza, sepultaram Estêvão.)",
+            "text": "E Saulo concordou inteiramente com a morte de Estêvão.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5629,6 +5658,40 @@
                 "text": "Foi a isto que Deus, em sua sabedoria, se referiu: ‘Eu lhes enviarei profetas e apóstolos, mas eles matarão alguns e perseguirão outros’."
               }
             ]
+          }
+        ]
+      },
+      {
+        "title": "A perseguição faz os discípulos dispersarem",
+        "verses": [
+          {
+            "number": 1,
+            "text": "Uma grande onda de perseguição começou naquele dia e varreu a igreja de Jerusalém. Todos eles, com exceção dos apóstolos, foram dispersos pelas regiões da Judeia e de Samaria.",
+            "isJesusWords": false,
+            "crossReferences": [
+              {
+                "ref": "Daniel 3:16–18",
+                "text": "Sadraque, Mesaque e Abede-Nego responderam: “Ó Nabucodonosor, não precisamos nos defender diante do rei."
+              },
+              {
+                "ref": "Atos 22:20",
+                "text": "E quando Estêvão, tua testemunha, foi morto, eu estava inteiramente de acordo. Fiquei ali e guardei os mantos que eles tiraram quando foram apedrejá-lo’."
+              },
+              {
+                "ref": "Atos 5:40",
+                "text": "Os demais membros aceitaram o conselho de Gamaliel. Chamaram os apóstolos e mandaram açoitá-los. Depois, ordenaram que nunca mais falassem em nome de Jesus e, por fim, os soltaram."
+              },
+              {
+                "ref": "Lucas 11:49–50",
+                "text": "Foi a isto que Deus, em sua sabedoria, se referiu: ‘Eu lhes enviarei profetas e apóstolos, mas eles matarão alguns e perseguirão outros’."
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "text": "(Alguns homens devotos vieram e, com grande tristeza, sepultaram Estêvão.)",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 3,
@@ -5669,7 +5732,7 @@
               },
               {
                 "ref": "Atos 8:1",
-                "text": "E Saulo concordou inteiramente com a morte de Estêvão. A perseguição faz os discípulos dispersarem Uma grande onda de perseguição começou naquele dia e varreu a igreja de Jerusalém. Todos eles, com exceção dos apóstolos..."
+                "text": "E Saulo concordou inteiramente com a morte de Estêvão."
               },
               {
                 "ref": "Atos 11:19",
@@ -5715,7 +5778,7 @@
               },
               {
                 "ref": "Mateus 20:15–16",
-                "text": "É contra a lei eu fazer o que quero com o meu dinheiro? Ou você está com inveja porque fui bondoso com os outros?’."
+                "text": "É contra a lei eu fazer o que quero com o meu dinheiro? Ou você está com inveja porque fui bondoso com os outros?’. “Assim, os últimos serão os primeiros, e os primeiros serão os últimos”."
               },
               {
                 "ref": "2 Crônicas 30:12",
@@ -5742,7 +5805,7 @@
               },
               {
                 "ref": "Atos 14:8–10",
-                "text": "Enquanto estavam em Listra, Paulo e Barnabé encontraram um homem com os pés aleijados. Sofria desse problema desde o nascimento e, portanto, nunca tinha andado."
+                "text": "Enquanto estavam em Listra, Paulo e Barnabé encontraram um homem com os pés aleijados. Sofria desse problema desde o nascimento e, portanto, nunca tinha andado. Estava sentado"
               },
               {
                 "ref": "Atos 5:16",
@@ -5844,7 +5907,7 @@
           },
           {
             "number": 12,
-            "text": "No entanto, quando Filipe lhes levou a mensagem sobre as boas- novas do reino de Deus e sobre o nome de Jesus Cristo, eles creram e, como resultado, muitos homens e mulheres foram batizados.",
+            "text": "No entanto, quando Filipe lhes levou a mensagem sobre as boas-novas do reino de Deus e sobre o nome de Jesus Cristo, eles creram e, como resultado, muitos homens e mulheres foram batizados.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -5857,7 +5920,7 @@
               },
               {
                 "ref": "Mateus 28:19",
-                "text": "Portanto, vão e façam discípulos de todas as nações,170 batizando-os em nome do Pai, do Filho e do Espírito Santo."
+                "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo."
               },
               {
                 "ref": "1 Pedro 3:21",
@@ -5907,7 +5970,7 @@
               },
               {
                 "ref": "Atos 8:1",
-                "text": "E Saulo concordou inteiramente com a morte de Estêvão. A perseguição faz os discípulos dispersarem Uma grande onda de perseguição começou naquele dia e varreu a igreja de Jerusalém. Todos eles, com exceção dos apóstolos..."
+                "text": "E Saulo concordou inteiramente com a morte de Estêvão."
               }
             ]
           },
@@ -5949,7 +6012,7 @@
               },
               {
                 "ref": "Mateus 28:19",
-                "text": "Portanto, vão e façam discípulos de todas as nações,170 batizando-os em nome do Pai, do Filho e do Espírito Santo."
+                "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo."
               },
               {
                 "ref": "1 Coríntios 1:13–15",
@@ -6194,7 +6257,7 @@
           },
           {
             "number": 27,
-            "text": "Filipe partiu e encontrou no caminho um alto oficial etíope, o eunuco responsável pelos tesouros de Candace, rainha da Etiópia.",
+            "text": "Filipe partiu e encontrou no caminho um alto oficial etíope, o eunuco responsável pelos tesouros de Candace, rainha da Etiópia. Ele tinha ido a Jerusalém para participar da adoração",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6214,12 +6277,7 @@
                 "text": "O etíope Ebede-Meleque, oficial importante da corte, soube que Jeremias estava no poço. Naquele momento, o rei julgava um caso junto ao portão de Benjamim;"
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Ele tinha ido a Jerusalém para participar da adoração",
-        "verses": [
+          },
           {
             "number": 28,
             "text": "e estava no caminho de volta. Sentado em sua carruagem, lia em voz alta o livro do profeta Isaías.",
@@ -6235,7 +6293,7 @@
               },
               {
                 "ref": "Atos 28:25",
-                "text": "E, depois de discutirem entre si, foram embora com estas palavras finais de Paulo: “O Espírito Santo estava certo quando disse a nossos antepassados por meio do profeta Isaías: 26‘Vá e diga a este povo: Quando ouvirem o..."
+                "text": "E, depois de discutirem entre si, foram embora com estas palavras finais de Paulo: “O Espírito Santo estava certo quando disse a nossos antepassados por meio do profeta Isaías:"
               },
               {
                 "ref": "Deuteronômio 17:18–19",
@@ -6346,7 +6404,7 @@
               },
               {
                 "ref": "Isaías 53:8",
-                "text": "Condenado injustamente, foi levado embora.160 Ninguém se importou de ele morrer sem deixar descendentes, de sua vida ser cortada no meio do caminho.161 Mas ele foi ferido mortalmente por causa da rebeldia do meu povo."
+                "text": "Condenado injustamente, foi levado embora. Ninguém se importou de ele morrer sem deixar descendentes, de sua vida ser cortada no meio do caminho. Mas ele foi ferido mortalmente por causa da rebeldia do meu povo."
               },
               {
                 "ref": "Filipenses 2:8–9",
@@ -6388,7 +6446,7 @@
               },
               {
                 "ref": "Atos 18:28",
-                "text": "pois, em debates públicos, refutava os judeus com fortes argumentos. Usando as Escrituras, demonstrava- lhes que Jesus é o Cristo."
+                "text": "pois, em debates públicos, refutava os judeus com fortes argumentos. Usando as Escrituras, demonstrava-lhes que Jesus é o Cristo."
               },
               {
                 "ref": "Mateus 5:2",
@@ -6514,6 +6572,7 @@
   "9": {
     "book": "Atos dos Apóstolos",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "A conversão de Saulo",
@@ -6598,7 +6657,7 @@
               },
               {
                 "ref": "Isaías 63:9",
-                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou.175 Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
+                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou. Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
               },
               {
                 "ref": "Gênesis 22:11",
@@ -6648,7 +6707,7 @@
               },
               {
                 "ref": "Gálatas 1:15–16",
-                "text": "Contudo, ainda antes de eu nascer, Deus me escolheu e me chamou por sua graça. revelar seu Filho a mim, para que eu o anunciasse aos gentios. Quando isso aconteceu, não consultei ser humano algum."
+                "text": "Contudo, ainda antes de eu nascer, Deus me escolheu e me chamou por sua graça. Foi do agrado dele revelar seu Filho a mim, para que eu o anunciasse aos gentios. Quando isso aconteceu, não consultei ser humano algum."
               }
             ]
           },
@@ -6723,7 +6782,7 @@
           },
           {
             "number": 10,
-            "text": "Havia em Damasco um discípulo chamado Ananias. O Senhor o chamou numa visão: “­Ananias!”. “Sim, Senhor!”, respondeu ele.",
+            "text": "Havia em Damasco um discípulo chamado Ananias. O Senhor o chamou numa visão: “Ananias!”. “Sim, Senhor!”, respondeu ele.",
             "isJesusWords": true,
             "crossReferences": [
               {
@@ -6778,7 +6837,7 @@
               },
               {
                 "ref": "Atos 9:10",
-                "text": "Havia em Damasco um discípulo chamado Ananias. O Senhor o chamou numa visão: “­Ananias!”. “Sim, Senhor!”, respondeu ele."
+                "text": "Havia em Damasco um discípulo chamado Ananias. O Senhor o chamou numa visão: “Ananias!”. “Sim, Senhor!”, respondeu ele."
               },
               {
                 "ref": "Atos 9:17–18",
@@ -6827,7 +6886,8 @@
                 "text": "Fuja de tudo que estimule as paixões da juventude. Em vez disso, busque justiça, fidelidade, amor e paz, na companhia daqueles que invocam o Senhor com coração puro."
               },
               {
-                "ref": "1 Coríntios 1:2"
+                "ref": "1 Coríntios 1:2",
+                "text": "à igreja de Deus em Corinto, àqueles que ele santificou por meio de Cristo Jesus. Vocês foram chamados por Deus para ser seu povo santo junto com todos que, em toda parte, invocam o nome de nosso Senhor Jesus Cristo, Senhor deles e nosso."
               }
             ]
           },
@@ -6838,11 +6898,11 @@
             "crossReferences": [
               {
                 "ref": "Gálatas 1:15–16",
-                "text": "Contudo, ainda antes de eu nascer, Deus me escolheu e me chamou por sua graça. revelar seu Filho a mim, para que eu o anunciasse aos gentios. Quando isso aconteceu, não consultei ser humano algum."
+                "text": "Contudo, ainda antes de eu nascer, Deus me escolheu e me chamou por sua graça. Foi do agrado dele revelar seu Filho a mim, para que eu o anunciasse aos gentios. Quando isso aconteceu, não consultei ser humano algum."
               },
               {
                 "ref": "Efésios 3:7–8",
-                "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas- novas."
+                "text": "Pela graça e pelo grande poder de Deus, recebi o privilégio de servir anunciando essas boas-novas."
               },
               {
                 "ref": "2 Timóteo 4:16–17",
@@ -6925,12 +6985,40 @@
           },
           {
             "number": 19,
-            "text": "e, depois de comer, recuperou as forças. Saulo em Damasco e em Jerusalém Saulo permaneceu alguns dias em Damasco, com os discípulos.",
+            "text": "e, depois de comer, recuperou as forças.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Atos 26:20",
-                "text": "Anunciei a mensagem primeiro em Damasco, depois em Jerusalém e em toda a Judeia, e também aos gentios, dizendo que todos devem arrepender- se, voltar-se para Deus e mostrar, por meio de suas boas obras, que mudaram de rumo."
+                "text": "Anunciei a mensagem primeiro em Damasco, depois em Jerusalém e em toda a Judeia, e também aos gentios, dizendo que todos devem arrepender-se, voltar-se para Deus e mostrar, por meio de suas boas obras, que mudaram de rumo."
+              },
+              {
+                "ref": "1 Samuel 30:12",
+                "text": "Também lhe deram um pedaço de bolo de figo e dois bolos de passas, pois fazia três dias e três noites que não comia nem bebia nada. Em pouco tempo, recuperou as forças."
+              },
+              {
+                "ref": "Gálatas 1:17",
+                "text": "Tampouco subi a Jerusalém para pedir o conselho daqueles que eram apóstolos antes de mim. Em vez disso, fui à Arábia e depois voltei à cidade de Damasco."
+              },
+              {
+                "ref": "Atos 27:33–36",
+                "text": "Enquanto amanhecia, Paulo insistiu que todos comessem. “De tão preocupados, vocês não se alimentam há duas semanas”, disse ele."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Saulo em Damasco e em Jerusalém",
+        "verses": [
+          {
+            "number": 19,
+            "text": "Saulo permaneceu alguns dias em Damasco, com os discípulos.",
+            "isJesusWords": false,
+            "crossReferences": [
+              {
+                "ref": "Atos 26:20",
+                "text": "Anunciei a mensagem primeiro em Damasco, depois em Jerusalém e em toda a Judeia, e também aos gentios, dizendo que todos devem arrepender-se, voltar-se para Deus e mostrar, por meio de suas boas obras, que mudaram de rumo."
               },
               {
                 "ref": "1 Samuel 30:12",
@@ -7053,7 +7141,7 @@
               },
               {
                 "ref": "Atos 20:19",
-                "text": "fiz o trabalho do Senhor humildemente e com muitas lágrimas."
+                "text": "fiz o trabalho do Senhor humildemente e com muitas lágrimas. Suportei as provações decorrentes das intrigas dos judeus"
               },
               {
                 "ref": "Salmos 37:32–33",
@@ -7087,7 +7175,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 26:20",
-                "text": "Anunciei a mensagem primeiro em Damasco, depois em Jerusalém e em toda a Judeia, e também aos gentios, dizendo que todos devem arrepender- se, voltar-se para Deus e mostrar, por meio de suas boas obras, que mudaram de rumo."
+                "text": "Anunciei a mensagem primeiro em Damasco, depois em Jerusalém e em toda a Judeia, e também aos gentios, dizendo que todos devem arrepender-se, voltar-se para Deus e mostrar, por meio de suas boas obras, que mudaram de rumo."
               },
               {
                 "ref": "Gálatas 1:17–19",
@@ -7095,7 +7183,7 @@
               },
               {
                 "ref": "Atos 9:19",
-                "text": "e, depois de comer, recuperou as forças. Saulo em Damasco e em Jerusalém Saulo permaneceu alguns dias em Damasco, com os discípulos."
+                "text": "e, depois de comer, recuperou as forças."
               },
               {
                 "ref": "Mateus 10:17–19",
@@ -7160,7 +7248,7 @@
               },
               {
                 "ref": "Atos 11:20",
-                "text": "Contudo, alguns dos discípulos que foram de Chipre e Cirene até Antioquia começaram a anunciar aos gentios as boas- novas a respeito do Senhor Jesus."
+                "text": "Contudo, alguns dos discípulos que foram de Chipre e Cirene até Antioquia começaram a anunciar aos gentios as boas-novas a respeito do Senhor Jesus."
               },
               {
                 "ref": "2 Coríntios 11:26",
@@ -7257,7 +7345,7 @@
               },
               {
                 "ref": "Atos 14:8",
-                "text": "Enquanto estavam em Listra, Paulo e Barnabé encontraram um homem com os pés aleijados. Sofria desse problema desde o nascimento e, portanto, nunca tinha andado."
+                "text": "Enquanto estavam em Listra, Paulo e Barnabé encontraram um homem com os pés aleijados. Sofria desse problema desde o nascimento e, portanto, nunca tinha andado. Estava sentado"
               },
               {
                 "ref": "Marcos 2:3–11",
@@ -7498,6 +7586,7 @@
   "10": {
     "book": "Atos dos Apóstolos",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "Cornélio manda chamar Pedro",
@@ -7509,7 +7598,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 27:1",
-                "text": "Quando chegou a hora, zarpamos para a Itália. Paulo e muitos outros prisioneiros foram colocados sob a guarda de um oficial romano128 chamado Júlio, capitão do Regimento Imperial."
+                "text": "Quando chegou a hora, zarpamos para a Itália. Paulo e muitos outros prisioneiros foram colocados sob a guarda de um oficial romano chamado Júlio, capitão do Regimento Imperial."
               },
               {
                 "ref": "Atos 8:40",
@@ -7517,7 +7606,7 @@
               },
               {
                 "ref": "Mateus 27:27",
-                "text": "Alguns dos soldados do governador levaram Jesus ao quartel162 e chamaram todo o regimento."
+                "text": "Alguns dos soldados do governador levaram Jesus ao quartel e chamaram todo o regimento."
               },
               {
                 "ref": "Mateus 8:5–13",
@@ -7567,7 +7656,7 @@
               },
               {
                 "ref": "Jó 4:15–16",
-                "text": "Um espírito passou diante de meu rosto, e os pelos de meu corpo se arrepiaram."
+                "text": "Um espírito passou diante de meu rosto, e os pelos de meu corpo se arrepiaram. O espírito parou, mas não pude ver sua forma; um vulto estava diante de meus olhos. No silêncio, ouvi uma voz dizer:"
               }
             ]
           },
@@ -7605,7 +7694,7 @@
               },
               {
                 "ref": "Atos 16:9",
-                "text": "Naquela noite, Paulo teve uma visão, na qual um homem da Macedônia em pé lhe suplicava: “Venha para a Macedônia e ajude- nos!”."
+                "text": "Naquela noite, Paulo teve uma visão, na qual um homem da Macedônia em pé lhe suplicava: “Venha para a Macedônia e ajude-nos!”."
               },
               {
                 "ref": "Atos 9:38",
@@ -7863,13 +7952,13 @@
               },
               {
                 "ref": "2 Coríntios 13:1",
-                "text": "Co 16.3-4."
+                "text": "Esta é a terceira vez que irei visitá-los. “Os fatos a respeito de cada caso devem ser confirmados pelo depoimento de duas ou três testemunhas.”"
               }
             ]
           },
           {
             "number": 17,
-            "text": "Pedro ficou perplexo, pensando em qual seria o significado da visão. Nesse momento, os homens que Cornélio tinha enviado encontraram a casa de Simão.",
+            "text": "Pedro ficou perplexo, pensando em qual seria o significado da visão. Nesse momento, os homens que Cornélio tinha enviado encontraram a casa de Simão. Eles se aproximaram do portão",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -7889,12 +7978,7 @@
                 "text": "Buscavam descobrir a que tempo ou ocasião se referia o Espírito de Cristo, que neles estava, ao predizer o sofrimento de Cristo e sua grande glória posterior."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Eles se aproximaram do portão",
-        "verses": [
+          },
           {
             "number": 18,
             "text": "e perguntaram se estava hospedado ali Simão, também chamado Pedro.",
@@ -7935,7 +8019,7 @@
           },
           {
             "number": 20,
-            "text": "Levante-se, desça e vá encontrar- se com eles. Não hesite em acompanhá-los, pois eu os enviei”.",
+            "text": "Levante-se, desça e vá encontrar-se com eles. Não hesite em acompanhá-los, pois eu os enviei”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -7948,7 +8032,7 @@
               },
               {
                 "ref": "Marcos 16:15",
-                "text": "Jesus lhes disse: “Vão ao mundo inteiro e anunciem as boas- novas a todos."
+                "text": "Jesus lhes disse: “Vão ao mundo inteiro e anunciem as boas-novas a todos."
               },
               {
                 "ref": "Isaías 48:16",
@@ -7994,7 +8078,7 @@
               },
               {
                 "ref": "3 João 1:12",
-                "text": "Todos, incluindo a própria verdade, falam bem de Demétrio. Nós dizemos o mesmo a ­respeito dele, e você sabe que falamos a verdade."
+                "text": "Todos, incluindo a própria verdade, falam bem de Demétrio. Nós dizemos o mesmo a respeito dele, e você sabe que falamos a verdade."
               },
               {
                 "ref": "Marcos 8:38",
@@ -8017,7 +8101,7 @@
               },
               {
                 "ref": "Hebreus 13:2",
-                "text": "Sm 7.."
+                "text": "Não se esqueçam de demonstrar hospitalidade, porque alguns, sem o saber, hospedaram anjos."
               },
               {
                 "ref": "1 Pedro 4:9",
@@ -8059,7 +8143,7 @@
               },
               {
                 "ref": "Apocalipse 22:8–9",
-                "text": "Eu, João, sou aquele que ouviu e viu todas essas coisas. E, quando as ouvi e vi, caí aos pés do anjo que as mostrou a mim, a fim de adorá- lo."
+                "text": "Eu, João, sou aquele que ouviu e viu todas essas coisas. E, quando as ouvi e vi, caí aos pés do anjo que as mostrou a mim, a fim de adorá-lo."
               },
               {
                 "ref": "Mateus 8:2",
@@ -8082,7 +8166,7 @@
               },
               {
                 "ref": "Apocalipse 22:8–9",
-                "text": "Eu, João, sou aquele que ouviu e viu todas essas coisas. E, quando as ouvi e vi, caí aos pés do anjo que as mostrou a mim, a fim de adorá- lo."
+                "text": "Eu, João, sou aquele que ouviu e viu todas essas coisas. E, quando as ouvi e vi, caí aos pés do anjo que as mostrou a mim, a fim de adorá-lo."
               },
               {
                 "ref": "Mateus 4:10",
@@ -8096,7 +8180,7 @@
           },
           {
             "number": 27,
-            "text": "Os dois conversaram e depois entraram na casa, onde muitos outros ­estavam ­reu­nidos.",
+            "text": "Os dois conversaram e depois entraram na casa, onde muitos outros estavam reunidos.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -8151,7 +8235,7 @@
               },
               {
                 "ref": "Atos 10:19–20",
-                "text": "Enquanto Pedro ainda refletia sobre a visão, o Espírito lhe disse: “Três homens vieram procurá-lo. Levante-se, desça e vá encontrar- se com eles. Não hesite em acompanhá-los, pois eu os enviei”."
+                "text": "Enquanto Pedro ainda refletia sobre a visão, o Espírito lhe disse: “Três homens vieram procurá-lo. Levante-se, desça e vá encontrar-se com eles. Não hesite em acompanhá-los, pois eu os enviei”."
               },
               {
                 "ref": "1 Pedro 3:15",
@@ -8547,7 +8631,8 @@
                 "text": "Os seguintes sinais acompanharão aqueles que crerem: em meu nome expulsarão demônios, falarão em novas línguas,"
               },
               {
-                "ref": "Atos 2:11"
+                "ref": "Atos 2:11",
+                "text": "(tanto judeus como convertidos ao judaísmo), cretenses e árabes, e todos nós ouvimos estas pessoas falarem em nossa própria língua sobre as coisas maravilhosas que Deus fez!”."
               }
             ]
           },
@@ -8604,6 +8689,7 @@
   "11": {
     "book": "Atos dos Apóstolos",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "A explicação de Pedro",
@@ -8711,7 +8797,7 @@
               },
               {
                 "ref": "Jeremias 1:11–14",
-                "text": "Então o SENHOR me disse: “O que você vê, Jeremias?”. Eu respondi: “Vejo o ramo de uma amen­doeira”."
+                "text": "Então o SENHOR me disse: “O que você vê, Jeremias?”. Eu respondi: “Vejo o ramo de uma amendoeira”."
               },
               {
                 "ref": "Atos 11:5–14",
@@ -8825,11 +8911,11 @@
               },
               {
                 "ref": "Atos 9:10–12",
-                "text": "Havia em Damasco um discípulo chamado Ananias. O Senhor o chamou numa visão: “­Ananias!”. “Sim, Senhor!”, respondeu ele."
+                "text": "Havia em Damasco um discípulo chamado Ananias. O Senhor o chamou numa visão: “Ananias!”. “Sim, Senhor!”, respondeu ele."
               },
               {
                 "ref": "Atos 10:17–18",
-                "text": "Pedro ficou perplexo, pensando em qual seria o significado da visão. Nesse momento, os homens que Cornélio tinha enviado encontraram a casa de Simão. e perguntaram se estava hospedado ali Simão, também chamado Pedro."
+                "text": "Pedro ficou perplexo, pensando em qual seria o significado da visão. Nesse momento, os homens que Cornélio tinha enviado encontraram a casa de Simão. Eles se aproximaram do portão"
               },
               {
                 "ref": "Êxodo 4:27",
@@ -8973,7 +9059,7 @@
           },
           {
             "number": 18,
-            "text": "Ao ouvirem isso, pararam de levantar objeções e começaram a louvar a Deus, dizendo: “Vemos que Deus deu aos gentios o mesmo privilégio de se arrepender e receber a vida ­eterna!”.",
+            "text": "Ao ouvirem isso, pararam de levantar objeções e começaram a louvar a Deus, dizendo: “Vemos que Deus deu aos gentios o mesmo privilégio de se arrepender e receber a vida eterna!”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9014,7 +9100,7 @@
               },
               {
                 "ref": "João 7:35",
-                "text": "Os judeus se perguntavam: “Para onde ele pretende ir? Será que planeja partir e ir aos judeus em outras terras?34 Talvez até ensine aos gregos!"
+                "text": "Os judeus se perguntavam: “Para onde ele pretende ir? Será que planeja partir e ir aos judeus em outras terras? Talvez até ensine aos gregos!"
               },
               {
                 "ref": "Gálatas 2:11",
@@ -9024,7 +9110,7 @@
           },
           {
             "number": 20,
-            "text": "Contudo, alguns dos discípulos que foram de Chipre e Cirene até Antioquia começaram a anunciar aos gentios as boas- novas a respeito do Senhor Jesus.",
+            "text": "Contudo, alguns dos discípulos que foram de Chipre e Cirene até Antioquia começaram a anunciar aos gentios as boas-novas a respeito do Senhor Jesus.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9033,7 +9119,7 @@
               },
               {
                 "ref": "Mateus 27:32",
-                "text": "No caminho, encontraram um homem chamado Simão, de Cirene,163 e os soldados o obrigaram a carregar a cruz."
+                "text": "No caminho, encontraram um homem chamado Simão, de Cirene, e os soldados o obrigaram a carregar a cruz."
               },
               {
                 "ref": "Efésios 3:8",
@@ -9041,7 +9127,7 @@
               },
               {
                 "ref": "Atos 2:10",
-                "text": "da Frígia, da Panfília, do Egito e de regiões da Líbia próximas a Cirene, visitantes de Roma 11(tanto judeus como convertidos ao judaísmo), cretenses e árabes, e todos nós ouvimos estas pessoas falarem em nossa própria l..."
+                "text": "da Frígia, da Panfília, do Egito e de regiões da Líbia próximas a Cirene, visitantes de Roma"
               }
             ]
           },
@@ -9197,7 +9283,8 @@
                 "text": "Ele designou alguns para apóstolos, outros para profetas, outros para evangelistas, outros para pastores e mestres."
               },
               {
-                "ref": "Atos 2:17"
+                "ref": "Atos 2:17",
+                "text": "‘Nos últimos dias’, disse Deus, ‘derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os jovens terão visões, e os velhos terão sonhos."
               }
             ]
           },
@@ -9277,6 +9364,7 @@
   "12": {
     "book": "Atos dos Apóstolos",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "O martírio de Tiago e a prisão de Pedro",
@@ -9633,7 +9721,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 21:40",
-                "text": "O comandante concordou, de modo que Paulo ficou em pé na escadaria e fez sinal para o povo se calar. Logo, um silêncio profundo envolveu a multidão, e ele lhes falou em aramaico,109 o idioma deles."
+                "text": "O comandante concordou, de modo que Paulo ficou em pé na escadaria e fez sinal para o povo se calar. Logo, um silêncio profundo envolveu a multidão, e ele lhes falou em aramaico, o idioma deles."
               },
               {
                 "ref": "Atos 19:33",
@@ -9670,7 +9758,7 @@
           },
           {
             "number": 19,
-            "text": "Herodes ordenou que fosse feita uma busca completa por ele. Não conseguindo encontrá- lo, interrogou os guardas e mandou executá-los. Depois disso, Herodes partiu da Judeia e foi passar algum tempo em Cesareia.",
+            "text": "Herodes ordenou que fosse feita uma busca completa por ele. Não conseguindo encontrá-lo, interrogou os guardas e mandou executá-los. Depois disso, Herodes partiu da Judeia e foi passar algum tempo em Cesareia.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9837,6 +9925,7 @@
   "13": {
     "book": "Atos dos Apóstolos",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "Barnabé e Saulo são enviados pela igreja",
@@ -9871,7 +9960,7 @@
             "crossReferences": [
               {
                 "ref": "Gálatas 1:15",
-                "text": "Contudo, ainda antes de eu nascer, Deus me escolheu e me chamou por sua graça."
+                "text": "Contudo, ainda antes de eu nascer, Deus me escolheu e me chamou por sua graça. Foi do agrado dele"
               },
               {
                 "ref": "Atos 9:15",
@@ -10079,7 +10168,7 @@
               },
               {
                 "ref": "Salmos 32:4",
-                "text": "Dia e noite, tua mão pesava sobre mim; minha força evaporou como água no calor do verão."
+                "text": "Dia e noite, tua mão pesava sobre mim; minha força evaporou como água no calor do verão. Interlúdio"
               },
               {
                 "ref": "Hebreus 10:31",
@@ -10097,7 +10186,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Coríntios 10:4–5"
+                "ref": "2 Coríntios 10:4–5",
+                "text": "Usamos as armas poderosas de Deus, e não as armas do mundo, para derrubar as fortalezas do raciocínio humano e acabar com os falsos argumentos."
               },
               {
                 "ref": "Atos 13:7",
@@ -10109,7 +10199,7 @@
               },
               {
                 "ref": "Mateus 27:54",
-                "text": "O oficial romano168 e os outros soldados que vigiavam Jesus ficaram aterrorizados com o terremoto e com tudo que havia acontecido, e disseram: “Este homem era verdadeiramente o Filho de Deus!”."
+                "text": "O oficial romano e os outros soldados que vigiavam Jesus ficaram aterrorizados com o terremoto e com tudo que havia acontecido, e disseram: “Este homem era verdadeiramente o Filho de Deus!”."
               }
             ]
           }
@@ -10213,7 +10303,7 @@
               },
               {
                 "ref": "Isaías 63:9–14",
-                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou.175 Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
+                "text": "Em todo o sofrimento deles, ele também sofreu e ele mesmo os salvou. Em seu amor e misericórdia, ele os resgatou; levantou-os e nos braços os carregou ao longo dos anos."
               },
               {
                 "ref": "Salmos 105:23–24",
@@ -10244,7 +10334,7 @@
               },
               {
                 "ref": "Números 14:22",
-                "text": "nenhuma dessas pessoas entrará na terra. Todas elas viram a minha presença gloriosa e os sinais que realizei no Egito e no deserto. Repetidamente, porém, me puseram à prova, ­re-­ cusando-se a ouvir a minha voz."
+                "text": "nenhuma dessas pessoas entrará na terra. Todas elas viram a minha presença gloriosa e os sinais que realizei no Egito e no deserto. Repetidamente, porém, me puseram à prova, re- cusando-se a ouvir a minha voz."
               }
             ]
           },
@@ -10412,7 +10502,7 @@
               },
               {
                 "ref": "Colossenses 1:5",
-                "text": "que vêm da esperança confiante naquilo que lhes está reservado no céu. Vocês têm essa expectativa desde que ouviram pela primeira vez a verdade das boas- novas."
+                "text": "que vêm da esperança confiante naquilo que lhes está reservado no céu. Vocês têm essa expectativa desde que ouviram pela primeira vez a verdade das boas-novas."
               },
               {
                 "ref": "Lucas 1:69",
@@ -10695,7 +10785,7 @@
             "crossReferences": [
               {
                 "ref": "Gálatas 2:16",
-                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em ­Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque..."
+                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque o..."
               },
               {
                 "ref": "Romanos 10:4",
@@ -10713,11 +10803,12 @@
           },
           {
             "number": 40,
-            "text": "Por isso, tomem cuidado para que não se apliquem a vocês as palavras dos profetas: 41‘Olhem, zombadores; fiquem admirados e morram! Pois faço algo em seus dias, algo em que vocês não acreditariam mesmo que lhes contassem’”.",
+            "text": "Por isso, tomem cuidado para que não se apliquem a vocês as palavras dos profetas:",
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Malaquias 4:1"
+                "ref": "Malaquias 4:1",
+                "text": "Assim diz o SENHOR dos Exércitos: “O dia do julgamento se aproxima e arde como uma fornalha. Naquele dia, serão queimados como palha os arrogantes e os perversos. Serão consumidos, desde as raízes até os ramos."
               },
               {
                 "ref": "Malaquias 3:2",
@@ -10732,6 +10823,12 @@
                 "text": "Portanto, irmãos, cuidem para que nenhum de vocês tenha coração perverso e incrédulo que os desvie do Deus vivo."
               }
             ]
+          },
+          {
+            "number": 41,
+            "text": "‘Olhem, zombadores; fiquem admirados e morram! Pois faço algo em seus dias, algo em que vocês não acreditariam mesmo que lhes contassem’”.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 42,
@@ -10791,7 +10888,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 49:10",
-                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes,172 até que venha aquele a quem pertence,173 aquele que todas as nações honrarão."
+                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes, até que venha aquele a quem pertence, aquele que todas as nações honrarão."
               },
               {
                 "ref": "Salmos 110:3",
@@ -10803,7 +10900,7 @@
               },
               {
                 "ref": "Isaías 11:10",
-                "text": "Naquele dia, o descendente de Jessé46 será uma bandeira de salvação para todo o mundo. As nações se reunirão junto a ele, e a terra onde ele habita será um lugar glorioso."
+                "text": "Naquele dia, o descendente de Jessé será uma bandeira de salvação para todo o mundo. As nações se reunirão junto a ele, e a terra onde ele habita será um lugar glorioso."
               }
             ]
           },
@@ -10818,7 +10915,7 @@
               },
               {
                 "ref": "Atos 18:6",
-                "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição!91 Eu sou inocente. De agora em diante, pregarei aos gentios”."
+                "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição! Eu sou inocente. De agora em diante, pregarei aos gentios”."
               },
               {
                 "ref": "Atos 5:17",
@@ -10956,7 +11053,7 @@
               },
               {
                 "ref": "Atos 18:6",
-                "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição!91 Eu sou inocente. De agora em diante, pregarei aos gentios”."
+                "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição! Eu sou inocente. De agora em diante, pregarei aos gentios”."
               },
               {
                 "ref": "Atos 14:21",
@@ -10994,6 +11091,7 @@
   "14": {
     "book": "Atos dos Apóstolos",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
         "title": "Paulo e Barnabé em Icônio",
@@ -11039,7 +11137,8 @@
                 "text": "Eles mataram o Senhor Jesus e os profetas, e agora também nos perseguem. Não agradam a Deus e trabalham contra toda a humanidade,"
               },
               {
-                "ref": "Marcos 15:10–11"
+                "ref": "Marcos 15:10–11",
+                "text": "(Pois havia percebido que os principais sacerdotes tinham prendido Jesus por inveja.) Nesse momento, os principais sacerdotes instigaram a multidão a pedir a libertação de Barrabás em vez de Jesus."
               }
             ]
           },
@@ -11050,7 +11149,7 @@
             "crossReferences": [
               {
                 "ref": "Hebreus 2:4",
-                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade. Jesus, o homem"
+                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade."
               },
               {
                 "ref": "Efésios 6:18–20",
@@ -11091,7 +11190,7 @@
           },
           {
             "number": 5,
-            "text": "Então um grupo de gentios, judeus e seus líderes resolveu atacá- los e apedrejá-los.",
+            "text": "Então um grupo de gentios, judeus e seus líderes resolveu atacá-los e apedrejá-los.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -11146,7 +11245,7 @@
               },
               {
                 "ref": "Atos 16:10",
-                "text": "Então decidimos partir de imediato para a Macedônia, concluindo que Deus nos havia chamado para anunciar ali as boas- novas."
+                "text": "Então decidimos partir de imediato para a Macedônia, concluindo que Deus nos havia chamado para anunciar ali as boas-novas."
               },
               {
                 "ref": "1 Tessalonicenses 2:2",
@@ -11165,7 +11264,7 @@
         "verses": [
           {
             "number": 8,
-            "text": "Enquanto estavam em Listra, Paulo e Barnabé encontraram um homem com os pés aleijados. Sofria desse problema desde o nascimento e, portanto, nunca tinha andado.",
+            "text": "Enquanto estavam em Listra, Paulo e Barnabé encontraram um homem com os pés aleijados. Sofria desse problema desde o nascimento e, portanto, nunca tinha andado. Estava sentado",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -11185,12 +11284,7 @@
                 "text": "O homem respondeu: “Não consigo, senhor, pois não tenho quem me coloque no tanque quando a água se agita. Alguém sempre chega antes de mim”."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Estava sentado",
-        "verses": [
+          },
           {
             "number": 9,
             "text": "e ouvia Paulo pregar. Paulo olhou diretamente para ele e, vendo que ele tinha fé para ser curado,",
@@ -11416,7 +11510,7 @@
               },
               {
                 "ref": "Atos 14:5",
-                "text": "Então um grupo de gentios, judeus e seus líderes resolveu atacá- los e apedrejá-los."
+                "text": "Então um grupo de gentios, judeus e seus líderes resolveu atacá-los e apedrejá-los."
               }
             ]
           },
@@ -11430,7 +11524,8 @@
                 "text": "De fato, esperávamos morrer. Mas, como resultado, deixamos de confiar em nós mesmos e aprendemos a confiar somente em Deus, que ressuscita os mortos."
               },
               {
-                "ref": "2 Coríntios 6:9"
+                "ref": "2 Coríntios 6:9",
+                "text": "Somos tratados como desconhecidos, embora sejamos bem conhecidos. Vivemos à beira da morte, mas ainda estamos vivos. Fomos espancados, mas não mortos."
               },
               {
                 "ref": "Atos 14:6",
@@ -11462,7 +11557,7 @@
               },
               {
                 "ref": "Mateus 28:19",
-                "text": "Portanto, vão e façam discípulos de todas as nações,170 batizando-os em nome do Pai, do Filho e do Espírito Santo."
+                "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo."
               },
               {
                 "ref": "2 Timóteo 3:11",
@@ -11614,6 +11709,7 @@
   "15": {
     "book": "Atos dos Apóstolos",
     "chapter": "15",
+    "verified": true,
     "sections": [
       {
         "title": "O concílio de Jerusalém",
@@ -11675,7 +11771,7 @@
               },
               {
                 "ref": "Atos 21:5",
-                "text": "Ao fim de nosso tempo ali, voltamos ao navio, e toda a congregação, incluindo mulheres104 e crianças, saiu da cidade e nos acompanhou até a praia. Ali nos ajoelhamos, oramos"
+                "text": "Ao fim de nosso tempo ali, voltamos ao navio, e toda a congregação, incluindo mulheres e crianças, saiu da cidade e nos acompanhou até a praia. Ali nos ajoelhamos, oramos"
               },
               {
                 "ref": "Tito 3:13",
@@ -11786,7 +11882,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 1:24",
-                "text": "Em seguida, oraram: “Senhor, tu conheces cada coração."
+                "text": "Em seguida, oraram: “Senhor, tu conheces cada coração. Mostra-nos qual destes homens escolheste"
               },
               {
                 "ref": "Atos 10:47",
@@ -11942,7 +12038,7 @@
           },
           {
             "number": 15,
-            "text": "E isso está em pleno acordo com o que disseram os profetas. Como está escrito: 16‘Depois disso voltarei e restaurarei a tenda caída de Davi. Reconstruirei suas ruínas e a restaurarei,",
+            "text": "E isso está em pleno acordo com o que disseram os profetas. Como está escrito:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -11954,6 +12050,12 @@
                 "text": "Lembrem-se de que Cristo veio para servir aos judeus, a fim de mostrar que Deus é fiel às promessas feitas a seus patriarcas,"
               }
             ]
+          },
+          {
+            "number": 16,
+            "text": "‘Depois disso voltarei e restaurarei a tenda caída de Davi. Reconstruirei suas ruínas e a restaurarei,",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 17,
@@ -11974,7 +12076,7 @@
               },
               {
                 "ref": "Isaías 65:1",
-                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome,180 eu disse: ‘Aqui estou! Aqui estou!’."
+                "text": "O SENHOR diz: “Estava pronto para atender, mas ninguém pediu ajuda; estava pronto para ser encontrado, mas ninguém me procurou. A uma nação que não invocava meu nome, eu disse: ‘Aqui estou! Aqui estou!’."
               }
             ]
           },
@@ -12012,7 +12114,7 @@
               },
               {
                 "ref": "Gálatas 1:7–10",
-                "text": "mas que não são boas-novas de maneira nenhuma. Estão sendo perturbados por aqueles que distorcem deliberadamente as boas- novas de Cristo."
+                "text": "mas que não são boas-novas de maneira nenhuma. Estão sendo perturbados por aqueles que distorcem deliberadamente as boas-novas de Cristo."
               },
               {
                 "ref": "Atos 15:24",
@@ -12077,7 +12179,7 @@
         "verses": [
           {
             "number": 22,
-            "text": "Então os apóstolos e presbíteros e toda a igreja em Jerusalém escolheram representantes e os enviaram a Antioquia da Síria, com Paulo e Barnabé, para informar sobre essa decisão. Os homens escolhidos eram dois líderes entre os irmãos: Judas, também chamado Barsabás, e ­Silas.",
+            "text": "Então os apóstolos e presbíteros e toda a igreja em Jerusalém escolheram representantes e os enviaram a Antioquia da Síria, com Paulo e Barnabé, para informar sobre essa decisão. Os homens escolhidos eram dois líderes entre os irmãos: Judas, também chamado Barsabás, e Silas.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -12297,7 +12399,7 @@
               },
               {
                 "ref": "Filipenses 3:3",
-                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo- nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
+                "text": "Pois nós, que adoramos por meio do Espírito de Deus, somos os verdadeiros circuncidados. Alegramo-nos no que Cristo Jesus fez por nós. Não colocamos nenhuma confiança nos esforços humanos,"
               },
               {
                 "ref": "Atos 15:1",
@@ -12385,7 +12487,7 @@
               },
               {
                 "ref": "Mateus 28:19–20",
-                "text": "Portanto, vão e façam discípulos de todas as nações,170 batizando-os em nome do Pai, do Filho e do Espírito Santo."
+                "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo."
               },
               {
                 "ref": "Atos 13:1",
@@ -12417,7 +12519,7 @@
               },
               {
                 "ref": "Êxodo 4:18",
-                "text": "Moisés voltou à casa de Jetro, seu sogro, e lhe disse: “Por favor, permita-me voltar ao Egito para procurar meus parentes. Nem sei se ainda ­vivem”. “Vá em paz”, respondeu Jetro."
+                "text": "Moisés voltou à casa de Jetro, seu sogro, e lhe disse: “Por favor, permita-me voltar ao Egito para procurar meus parentes. Nem sei se ainda vivem”. “Vá em paz”, respondeu Jetro."
               }
             ]
           },
@@ -12508,7 +12610,8 @@
                 "text": "O que agora sou, porém, deve-se inteiramente à graça que Deus derramou sobre mim, e que não foi inútil. Trabalhei com mais dedicação que qualquer outro apóstolo e, no entanto, não fui eu, mas Deus que, em sua graça, operou por meu intermédio."
               },
               {
-                "ref": "2 Coríntios 13:14"
+                "ref": "2 Coríntios 13:14",
+                "text": "Que a graça do Senhor Jesus Cristo, o amor de Deus e a comunhão do Espírito Santo sejam com todos vocês."
               }
             ]
           },
@@ -12538,6 +12641,7 @@
   "16": {
     "book": "Atos dos Apóstolos",
     "chapter": "16",
+    "verified": true,
     "sections": [
       {
         "title": "A segunda viagem missionária de Paulo",
@@ -12733,12 +12837,12 @@
           },
           {
             "number": 9,
-            "text": "Naquela noite, Paulo teve uma visão, na qual um homem da Macedônia em pé lhe suplicava: “Venha para a Macedônia e ajude- nos!”.",
+            "text": "Naquela noite, Paulo teve uma visão, na qual um homem da Macedônia em pé lhe suplicava: “Venha para a Macedônia e ajude-nos!”.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Atos 9:10–12",
-                "text": "Havia em Damasco um discípulo chamado Ananias. O Senhor o chamou numa visão: “­Ananias!”. “Sim, Senhor!”, respondeu ele."
+                "text": "Havia em Damasco um discípulo chamado Ananias. O Senhor o chamou numa visão: “Ananias!”. “Sim, Senhor!”, respondeu ele."
               },
               {
                 "ref": "Atos 19:21",
@@ -12756,7 +12860,7 @@
           },
           {
             "number": 10,
-            "text": "Então decidimos partir de imediato para a Macedônia, concluindo que Deus nos havia chamado para anunciar ali as boas- novas.",
+            "text": "Então decidimos partir de imediato para a Macedônia, concluindo que Deus nos havia chamado para anunciar ali as boas-novas.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -12816,7 +12920,7 @@
               },
               {
                 "ref": "Atos 16:9",
-                "text": "Naquela noite, Paulo teve uma visão, na qual um homem da Macedônia em pé lhe suplicava: “Venha para a Macedônia e ajude- nos!”."
+                "text": "Naquela noite, Paulo teve uma visão, na qual um homem da Macedônia em pé lhe suplicava: “Venha para a Macedônia e ajude-nos!”."
               }
             ]
           },
@@ -12831,7 +12935,7 @@
               },
               {
                 "ref": "Atos 21:5",
-                "text": "Ao fim de nosso tempo ali, voltamos ao navio, e toda a congregação, incluindo mulheres104 e crianças, saiu da cidade e nos acompanhou até a praia. Ali nos ajoelhamos, oramos"
+                "text": "Ao fim de nosso tempo ali, voltamos ao navio, e toda a congregação, incluindo mulheres e crianças, saiu da cidade e nos acompanhou até a praia. Ali nos ajoelhamos, oramos"
               },
               {
                 "ref": "Colossenses 1:23",
@@ -12877,7 +12981,7 @@
               },
               {
                 "ref": "Hebreus 13:2",
-                "text": "Sm 7.."
+                "text": "Não se esqueçam de demonstrar hospitalidade, porque alguns, sem o saber, hospedaram anjos."
               },
               {
                 "ref": "Atos 16:33",
@@ -12993,7 +13097,7 @@
             "crossReferences": [
               {
                 "ref": "Tiago 4:4",
-                "text": "Adúlteros!14 Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam- se inimigos de Deus."
+                "text": "Adúlteros! Não percebem que a amizade com o mundo os torna inimigos de Deus? Repito: se desejam ser amigos do mundo, tornam-se inimigos de Deus."
               },
               {
                 "ref": "João 15:18–20",
@@ -13143,7 +13247,7 @@
               },
               {
                 "ref": "Mateus 28:2",
-                "text": "Sm 5.."
+                "text": "De repente, houve um grande terremoto, pois um anjo do Senhor desceu do céu, rolou a pedra da entrada e sentou-se sobre ela."
               }
             ]
           },
@@ -13154,7 +13258,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 12:19",
-                "text": "Herodes ordenou que fosse feita uma busca completa por ele. Não conseguindo encontrá- lo, interrogou os guardas e mandou executá-los. Depois disso, Herodes partiu da Judeia e foi passar algum tempo em Cesareia."
+                "text": "Herodes ordenou que fosse feita uma busca completa por ele. Não conseguindo encontrá-lo, interrogou os guardas e mandou executá-los. Depois disso, Herodes partiu da Judeia e foi passar algum tempo em Cesareia."
               },
               {
                 "ref": "Mateus 27:5",
@@ -13384,7 +13488,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 22:25–29",
-                "text": "Quando amarravam Paulo para açoitá-lo, ele disse ao oficial112 que estava ali: “A lei permite açoitar um cidadão romano sem que ele tenha sido julgado?”."
+                "text": "Quando amarravam Paulo para açoitá-lo, ele disse ao oficial que estava ali: “A lei permite açoitar um cidadão romano sem que ele tenha sido julgado?”."
               },
               {
                 "ref": "Provérbios 28:1",
@@ -13472,6 +13576,7 @@
   "17": {
     "book": "Atos dos Apóstolos",
     "chapter": "17",
+    "verified": true,
     "sections": [
       {
         "title": "Paulo anuncia as boas-novas em Tessalônica",
@@ -13529,7 +13634,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 18:28",
-                "text": "pois, em debates públicos, refutava os judeus com fortes argumentos. Usando as Escrituras, demonstrava- lhes que Jesus é o Cristo."
+                "text": "pois, em debates públicos, refutava os judeus com fortes argumentos. Usando as Escrituras, demonstrava-lhes que Jesus é o Cristo."
               },
               {
                 "ref": "Atos 9:22",
@@ -13564,7 +13669,7 @@
               },
               {
                 "ref": "2 Coríntios 6:17–18",
-                "text": "Portanto, afastem-se e separem-se deles, diz o Senhor. Não toquem em coisas impuras, e eu os receberei. Eu serei seu Pai, e vocês serão meus filhos e minhas filhas,"
+                "text": "Portanto, afastem-se e separem-se deles, diz o Senhor. Não toquem em coisas impuras, e eu os receberei. Eu serei seu Pai, e vocês serão meus filhos e minhas filhas, diz o Senhor Todo-poderoso”."
               }
             ]
           },
@@ -13882,7 +13987,7 @@
           },
           {
             "number": 19,
-            "text": "Então levaram Paulo ao conselho da ­cidade e disseram: “Pode nos dizer que novo ensino é esse?",
+            "text": "Então levaram Paulo ao conselho da cidade e disseram: “Pode nos dizer que novo ensino é esse?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13905,7 +14010,7 @@
           },
           {
             "number": 20,
-            "text": "Você diz coisas um tanto estranhas, e queremos saber o que significam”. 21(Convém explicar que os atenienses, bem como os estrangeiros que viviam em Atenas, pareciam não fazer outra coisa senão discutir as últimas novidades.)",
+            "text": "Você diz coisas um tanto estranhas, e queremos saber o que significam”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13927,6 +14032,12 @@
             ]
           },
           {
+            "number": 21,
+            "text": "(Convém explicar que os atenienses, bem como os estrangeiros que viviam em Atenas, pareciam não fazer outra coisa senão discutir as últimas novidades.)",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 22,
             "text": "Então Paulo se levantou diante do conselho e assim se dirigiu a seus membros: “Homens de Atenas, vejo que em todos os aspectos vocês são muito religiosos,",
             "isJesusWords": false,
@@ -13941,7 +14052,7 @@
               },
               {
                 "ref": "Jeremias 50:38",
-                "text": "A seca115 virá até mesmo sobre suas fontes de água, e elas secarão. Por que tudo isso acontecerá? Porque toda a terra se encheu de ídolos, e o povo está enlouquecido por eles."
+                "text": "A seca virá até mesmo sobre suas fontes de água, e elas secarão. Por que tudo isso acontecerá? Porque toda a terra se encheu de ídolos, e o povo está enlouquecido por eles."
               },
               {
                 "ref": "Jeremias 10:2–3",
@@ -13987,11 +14098,11 @@
               },
               {
                 "ref": "Atos 7:48",
-                "text": "O Altíssimo, porém, não habita em templos feitos por mãos humanas. Como diz o profeta: 49‘O céu é meu trono, e a terra é o suporte de meus pés. Acaso construiriam para mim um templo assim tão bom?’, diz o Senhor. ‘Que lu..."
+                "text": "O Altíssimo, porém, não habita em templos feitos por mãos humanas. Como diz o profeta:"
               },
               {
                 "ref": "Isaías 66:1",
-                "text": "Co 2.."
+                "text": "Assim diz o SENHOR: “O céu é meu trono, e a terra é o suporte de meus pés. Acaso construiriam para mim um templo assim tão bom? Que lugar de descanso me poderiam fazer?"
               }
             ]
           },
@@ -14192,7 +14303,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 17:19",
-                "text": "Então levaram Paulo ao conselho da ­cidade e disseram: “Pode nos dizer que novo ensino é esse?"
+                "text": "Então levaram Paulo ao conselho da cidade e disseram: “Pode nos dizer que novo ensino é esse?"
               },
               {
                 "ref": "Romanos 11:5–6",
@@ -14215,6 +14326,7 @@
   "18": {
     "book": "Atos dos Apóstolos",
     "chapter": "18",
+    "verified": true,
     "sections": [
       {
         "title": "Paulo encontra Priscila e Áquila em Corinto",
@@ -14225,7 +14337,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Coríntios 1:2"
+                "ref": "1 Coríntios 1:2",
+                "text": "à igreja de Deus em Corinto, àqueles que ele santificou por meio de Cristo Jesus. Vocês foram chamados por Deus para ser seu povo santo junto com todos que, em toda parte, invocam o nome de nosso Senhor Jesus Cristo, Senhor deles e nosso."
               },
               {
                 "ref": "2 Timóteo 4:20",
@@ -14271,7 +14384,7 @@
             "crossReferences": [
               {
                 "ref": "1 Tessalonicenses 2:9",
-                "text": "Não se lembram, irmãos, de como trabalhamos arduamente entre vocês? Noite e dia nos esforçamos para obter sustento, a fim de não sermos um peso para ninguém enquanto lhes anunciávamos as boas- novas de Deus."
+                "text": "Não se lembram, irmãos, de como trabalhamos arduamente entre vocês? Noite e dia nos esforçamos para obter sustento, a fim de não sermos um peso para ninguém enquanto lhes anunciávamos as boas-novas de Deus."
               },
               {
                 "ref": "1 Coríntios 4:12",
@@ -14279,7 +14392,7 @@
               },
               {
                 "ref": "2 Coríntios 11:7",
-                "text": "Será que fiz mal quando me humilhei e os honrei anunciando- lhes as boas-novas de Deus sem esperar nada em troca?"
+                "text": "Será que fiz mal quando me humilhei e os honrei anunciando-lhes as boas-novas de Deus sem esperar nada em troca?"
               },
               {
                 "ref": "2 Coríntios 11:9",
@@ -14321,7 +14434,7 @@
               },
               {
                 "ref": "Atos 18:28",
-                "text": "pois, em debates públicos, refutava os judeus com fortes argumentos. Usando as Escrituras, demonstrava- lhes que Jesus é o Cristo."
+                "text": "pois, em debates públicos, refutava os judeus com fortes argumentos. Usando as Escrituras, demonstrava-lhes que Jesus é o Cristo."
               },
               {
                 "ref": "Atos 9:22",
@@ -14335,7 +14448,7 @@
           },
           {
             "number": 6,
-            "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição!91 Eu sou inocente. De agora em diante, pregarei aos gentios”.",
+            "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição! Eu sou inocente. De agora em diante, pregarei aos gentios”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14386,7 +14499,7 @@
               },
               {
                 "ref": "Marcos 16:15–16",
-                "text": "Jesus lhes disse: “Vão ao mundo inteiro e anunciem as boas- novas a todos. Quem crer e for batizado será salvo, mas quem se recusar a crer será condenado."
+                "text": "Jesus lhes disse: “Vão ao mundo inteiro e anunciem as boas-novas a todos. Quem crer e for batizado será salvo, mas quem se recusar a crer será condenado."
               },
               {
                 "ref": "Romanos 10:14–17",
@@ -14538,11 +14651,12 @@
                 "text": "Ao contrário, era algo relacionado à sua religião e a um morto chamado Jesus, que Paulo insiste que está vivo."
               },
               {
-                "ref": "1 Timóteo 6:4"
+                "ref": "1 Timóteo 6:4",
+                "text": "é arrogante e sem entendimento. Vive com o desejo doentio de discutir o significado das palavras e provoca contendas que resultam em inveja, divisão, difamação e suspeitas malignas."
               },
               {
                 "ref": "2 Timóteo 2:23",
-                "text": "Digo mais uma vez: não se envolva em ­discussões tolas e ignorantes que só servem para gerar brigas."
+                "text": "Digo mais uma vez: não se envolva em discussões tolas e ignorantes que só servem para gerar brigas."
               }
             ]
           },
@@ -14572,7 +14686,7 @@
             "crossReferences": [
               {
                 "ref": "1 Coríntios 1:1",
-                "text": "Eu, Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta, com nosso irmão Sóstenes, 2à igreja de Deus em Corinto, àqueles que ele santificou por meio de Cristo Jesus. Vocês foram cham..."
+                "text": "Eu, Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, escrevo esta carta, com nosso irmão Sóstenes,"
               },
               {
                 "ref": "Amós 6:6",
@@ -14822,7 +14936,7 @@
           },
           {
             "number": 28,
-            "text": "pois, em debates públicos, refutava os judeus com fortes argumentos. Usando as Escrituras, demonstrava- lhes que Jesus é o Cristo.",
+            "text": "pois, em debates públicos, refutava os judeus com fortes argumentos. Usando as Escrituras, demonstrava-lhes que Jesus é o Cristo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14850,6 +14964,7 @@
   "19": {
     "book": "Atos dos Apóstolos",
     "chapter": "19",
+    "verified": true,
     "sections": [
       {
         "title": "A terceira viagem missionária de Paulo",
@@ -14957,7 +15072,7 @@
               },
               {
                 "ref": "Atos 8:12",
-                "text": "No entanto, quando Filipe lhes levou a mensagem sobre as boas- novas do reino de Deus e sobre o nome de Jesus Cristo, eles creram e, como resultado, muitos homens e mulheres foram batizados."
+                "text": "No entanto, quando Filipe lhes levou a mensagem sobre as boas-novas do reino de Deus e sobre o nome de Jesus Cristo, eles creram e, como resultado, muitos homens e mulheres foram batizados."
               },
               {
                 "ref": "Romanos 6:3–4",
@@ -15023,7 +15138,7 @@
               },
               {
                 "ref": "Judas 1:3",
-                "text": "Amados, embora planejasse escrever-lhes com todo empenho sobre a salvação que compartilhamos, entendo agora que devo escrever a- ­ respeito de outro assunto e insistir que defendam a fé que, de uma vez por todas, foi confiada ao povo santo."
+                "text": "Amados, embora planejasse escrever-lhes com todo empenho sobre a salvação que compartilhamos, entendo agora que devo escrever a- respeito de outro assunto e insistir que defendam a fé que, de uma vez por todas, foi confiada ao povo santo."
               }
             ]
           },
@@ -15038,7 +15153,7 @@
               },
               {
                 "ref": "Atos 18:6–8",
-                "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição!91 Eu sou inocente. De agora em diante, pregarei aos gentios”."
+                "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição! Eu sou inocente. De agora em diante, pregarei aos gentios”."
               },
               {
                 "ref": "2 Pedro 2:12",
@@ -15092,7 +15207,7 @@
               },
               {
                 "ref": "Hebreus 2:4",
-                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade. Jesus, o homem"
+                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade."
               }
             ]
           },
@@ -15228,7 +15343,7 @@
               },
               {
                 "ref": "Salmos 32:5",
-                "text": "Finalmente, confessei a ti todos os meus pecados e não escondi mais a minha culpa. Disse comigo: “Confessarei ao SENHOR a minha rebeldia”, e tu perdoaste toda a minha culpa."
+                "text": "Finalmente, confessei a ti todos os meus pecados e não escondi mais a minha culpa. Disse comigo: “Confessarei ao SENHOR a minha rebeldia”, e tu perdoaste toda a minha culpa. Interlúdio"
               },
               {
                 "ref": "Mateus 3:6",
@@ -15293,7 +15408,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 20:22",
-                "text": "“Agora, impelido pelo Espírito,100 vou a Jerusalém. Não sei o que me espera ali,"
+                "text": "“Agora, impelido pelo Espírito, vou a Jerusalém. Não sei o que me espera ali,"
               },
               {
                 "ref": "Atos 20:16",
@@ -15324,7 +15439,7 @@
               },
               {
                 "ref": "Atos 16:9–10",
-                "text": "Naquela noite, Paulo teve uma visão, na qual um homem da Macedônia em pé lhe suplicava: “Venha para a Macedônia e ajude- nos!”."
+                "text": "Naquela noite, Paulo teve uma visão, na qual um homem da Macedônia em pé lhe suplicava: “Venha para a Macedônia e ajude-nos!”."
               },
               {
                 "ref": "Atos 19:29",
@@ -15355,7 +15470,8 @@
                 "text": "Irmãos, queremos que saibam das aflições pelas quais passamos na província da Ásia. Fomos esmagados e oprimidos além da nossa capacidade de suportar, e pensamos que não sobreviveríamos."
               },
               {
-                "ref": "2 Coríntios 6:9"
+                "ref": "2 Coríntios 6:9",
+                "text": "Somos tratados como desconhecidos, embora sejamos bem conhecidos. Vivemos à beira da morte, mas ainda estamos vivos. Fomos espancados, mas não mortos."
               }
             ]
           },
@@ -15466,7 +15582,7 @@
               },
               {
                 "ref": "Atos 21:28–31",
-                "text": "gritando: “Homens de Israel, ajudem-nos! Este é o homem que fala contra nosso povo em toda parte e ensina todos a desobedecerem às leis judaicas. Fala contra o templo e até profana este santo lugar, trazendo gentios106 para dentro dele”."
+                "text": "gritando: “Homens de Israel, ajudem-nos! Este é o homem que fala contra nosso povo em toda parte e ensina todos a desobedecerem às leis judaicas. Fala contra o templo e até profana este santo lugar, trazendo gentios para dentro dele”."
               },
               {
                 "ref": "Atos 7:54",
@@ -15489,7 +15605,7 @@
               },
               {
                 "ref": "Atos 27:2",
-                "text": "Aristarco, um macedônio de Tessalônica, nos acompanhou. Partimos num navio que tinha vindo do porto de Adramítio, no litoral noroeste da província da Ásia.129 Estavam previstas diversas paradas em portos ao longo da costa."
+                "text": "Aristarco, um macedônio de Tessalônica, nos acompanhou. Partimos num navio que tinha vindo do porto de Adramítio, no litoral noroeste da província da Ásia. Estavam previstas diversas paradas em portos ao longo da costa."
               },
               {
                 "ref": "Filemom 1:24",
@@ -15585,7 +15701,7 @@
               },
               {
                 "ref": "Filipenses 1:7",
-                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas- novas."
+                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas-novas."
               }
             ]
           },
@@ -15730,7 +15846,7 @@
             ]
           },
           {
-            "number": 4197,
+            "number": 41,
             "text": "Então os despediu, e a multidão se dispersou.",
             "isJesusWords": false,
             "crossReferences": []
@@ -15742,6 +15858,7 @@
   "20": {
     "book": "Atos dos Apóstolos",
     "chapter": "20",
+    "verified": true,
     "sections": [
       {
         "title": "Paulo vai à Macedônia e à Grécia",
@@ -15799,7 +15916,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 20:19",
-                "text": "fiz o trabalho do Senhor humildemente e com muitas lágrimas."
+                "text": "fiz o trabalho do Senhor humildemente e com muitas lágrimas. Suportei as provações decorrentes das intrigas dos judeus"
               },
               {
                 "ref": "2 Coríntios 11:26",
@@ -15834,7 +15951,7 @@
               },
               {
                 "ref": "Atos 21:29",
-                "text": "Antes tinham visto Paulo na cidade com Trófimo, um gentio de Éfeso,107 e concluíram que Paulo o havia levado para dentro do templo."
+                "text": "Antes tinham visto Paulo na cidade com Trófimo, um gentio de Éfeso, e concluíram que Paulo o havia levado para dentro do templo."
               }
             ]
           },
@@ -15853,7 +15970,7 @@
               },
               {
                 "ref": "Atos 16:10–11",
-                "text": "Então decidimos partir de imediato para a Macedônia, concluindo que Deus nos havia chamado para anunciar ali as boas- novas."
+                "text": "Então decidimos partir de imediato para a Macedônia, concluindo que Deus nos havia chamado para anunciar ali as boas-novas."
               },
               {
                 "ref": "2 Coríntios 2:12",
@@ -16098,7 +16215,7 @@
               },
               {
                 "ref": "Atos 20:28",
-                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos,102 a fim de pastorearem sua igreja, comprada com seu próprio sangue."
+                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos, a fim de pastorearem sua igreja, comprada com seu próprio sangue."
               }
             ]
           },
@@ -16127,7 +16244,7 @@
           },
           {
             "number": 19,
-            "text": "fiz o trabalho do Senhor humildemente e com muitas lágrimas.",
+            "text": "fiz o trabalho do Senhor humildemente e com muitas lágrimas. Suportei as provações decorrentes das intrigas dos judeus",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -16147,12 +16264,7 @@
                 "text": "onde ficou por três meses. Quando se preparava para navegar de volta à Síria, descobriu que alguns judeus conspiravam contra sua vida e decidiu voltar pela Macedônia."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Suportei as provações decorrentes das intrigas dos judeus",
-        "verses": [
+          },
           {
             "number": 20,
             "text": "e jamais deixei de dizer a vocês o que precisavam ouvir, seja publicamente, seja em seus lares.",
@@ -16191,7 +16303,7 @@
               },
               {
                 "ref": "Atos 11:18",
-                "text": "Ao ouvirem isso, pararam de levantar objeções e começaram a louvar a Deus, dizendo: “Vemos que Deus deu aos gentios o mesmo privilégio de se arrepender e receber a vida ­eterna!”."
+                "text": "Ao ouvirem isso, pararam de levantar objeções e começaram a louvar a Deus, dizendo: “Vemos que Deus deu aos gentios o mesmo privilégio de se arrepender e receber a vida eterna!”."
               },
               {
                 "ref": "Lucas 13:3",
@@ -16201,7 +16313,7 @@
           },
           {
             "number": 22,
-            "text": "“Agora, impelido pelo Espírito,100 vou a Jerusalém. Não sei o que me espera ali,",
+            "text": "“Agora, impelido pelo Espírito, vou a Jerusalém. Não sei o que me espera ali,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -16279,7 +16391,7 @@
               },
               {
                 "ref": "Mateus 4:23",
-                "text": "Jesus viajou por toda a região da Galileia, ensinando nas sinagogas, anunciando as ­boas-novas do reino e curando as pessoas de todo tipo de doenças."
+                "text": "Jesus viajou por toda a região da Galileia, ensinando nas sinagogas, anunciando as boas-novas do reino e curando as pessoas de todo tipo de doenças."
               },
               {
                 "ref": "Atos 20:38",
@@ -16293,12 +16405,12 @@
           },
           {
             "number": 26,
-            "text": "Por isso, declaro hoje que, se alguém se perder, não será por minha culpa,101",
+            "text": "Por isso, declaro hoje que, se alguém se perder, não será por minha culpa,",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Atos 18:6",
-                "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição!91 Eu sou inocente. De agora em diante, pregarei aos gentios”."
+                "text": "Mas, quando eles se opuseram a Paulo e o insultaram, ele sacudiu o pó da roupa e disse: “Vocês são responsáveis por sua própria destruição! Eu sou inocente. De agora em diante, pregarei aos gentios”."
               },
               {
                 "ref": "Ezequiel 33:2–9",
@@ -16339,7 +16451,7 @@
           },
           {
             "number": 28,
-            "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos,102 a fim de pastorearem sua igreja, comprada com seu próprio sangue.103",
+            "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos, a fim de pastorearem sua igreja, comprada com seu próprio sangue.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -16528,7 +16640,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 21:5",
-                "text": "Ao fim de nosso tempo ali, voltamos ao navio, e toda a congregação, incluindo mulheres104 e crianças, saiu da cidade e nos acompanhou até a praia. Ali nos ajoelhamos, oramos"
+                "text": "Ao fim de nosso tempo ali, voltamos ao navio, e toda a congregação, incluindo mulheres e crianças, saiu da cidade e nos acompanhou até a praia. Ali nos ajoelhamos, oramos"
               },
               {
                 "ref": "Lucas 22:41",
@@ -16586,7 +16698,7 @@
               },
               {
                 "ref": "Atos 21:5",
-                "text": "Ao fim de nosso tempo ali, voltamos ao navio, e toda a congregação, incluindo mulheres104 e crianças, saiu da cidade e nos acompanhou até a praia. Ali nos ajoelhamos, oramos"
+                "text": "Ao fim de nosso tempo ali, voltamos ao navio, e toda a congregação, incluindo mulheres e crianças, saiu da cidade e nos acompanhou até a praia. Ali nos ajoelhamos, oramos"
               }
             ]
           }
@@ -16597,6 +16709,7 @@
   "21": {
     "book": "Atos dos Apóstolos",
     "chapter": "21",
+    "verified": true,
     "sections": [
       {
         "title": "Paulo viaja para Jerusalém",
@@ -16616,7 +16729,7 @@
               },
               {
                 "ref": "Atos 16:10–11",
-                "text": "Então decidimos partir de imediato para a Macedônia, concluindo que Deus nos havia chamado para anunciar ali as boas- novas."
+                "text": "Então decidimos partir de imediato para a Macedônia, concluindo que Deus nos havia chamado para anunciar ali as boas-novas."
               },
               {
                 "ref": "Lucas 8:22",
@@ -16681,7 +16794,7 @@
               },
               {
                 "ref": "Atos 20:22–23",
-                "text": "“Agora, impelido pelo Espírito,100 vou a Jerusalém. Não sei o que me espera ali, senão que o Espírito Santo me diz, em todas as cidades, que tenho pela frente prisão e sofrimento."
+                "text": "“Agora, impelido pelo Espírito, vou a Jerusalém. Não sei o que me espera ali, senão que o Espírito Santo me diz, em todas as cidades, que tenho pela frente prisão e sofrimento."
               },
               {
                 "ref": "Mateus 10:11",
@@ -16695,7 +16808,7 @@
           },
           {
             "number": 5,
-            "text": "Ao fim de nosso tempo ali, voltamos ao navio, e toda a congregação, incluindo mulheres104 e crianças, saiu da cidade e nos acompanhou até a praia. Ali nos ajoelhamos, oramos",
+            "text": "Ao fim de nosso tempo ali, voltamos ao navio, e toda a congregação, incluindo mulheres e crianças, saiu da cidade e nos acompanhou até a praia. Ali nos ajoelhamos, oramos",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -16791,14 +16904,16 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Atos 2:17"
+                "ref": "Atos 2:17",
+                "text": "‘Nos últimos dias’, disse Deus, ‘derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os jovens terão visões, e os velhos terão sonhos."
               },
               {
                 "ref": "Apocalipse 2:20",
                 "text": "“Contudo, tenho contra você uma queixa. Você tem permitido que essa mulher, Jezabel, que se diz profetisa, faça meus servos se desviarem. Ela os ensina a cometer imoralidade sexual e a comer alimentos oferecidos a ídolos."
               },
               {
-                "ref": "Joel 2:28"
+                "ref": "Joel 2:28",
+                "text": "“Então, depois que eu tiver feito essas coisas, derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os velhos terão sonhos, e os jovens terão visões."
               },
               {
                 "ref": "Lucas 2:36",
@@ -16859,7 +16974,7 @@
               },
               {
                 "ref": "Atos 20:22",
-                "text": "“Agora, impelido pelo Espírito,100 vou a Jerusalém. Não sei o que me espera ali,"
+                "text": "“Agora, impelido pelo Espírito, vou a Jerusalém. Não sei o que me espera ali,"
               },
               {
                 "ref": "Atos 21:4",
@@ -16901,7 +17016,7 @@
               },
               {
                 "ref": "Mateus 26:42",
-                "text": "Então os deixou pela segunda vez e orou: “Meu Pai! Se não for possível afastar de mim este cálice152 sem que eu o beba, faça-se a tua vontade”."
+                "text": "Então os deixou pela segunda vez e orou: “Meu Pai! Se não for possível afastar de mim este cálice sem que eu o beba, faça-se a tua vontade”."
               },
               {
                 "ref": "Mateus 26:39",
@@ -16979,7 +17094,7 @@
               },
               {
                 "ref": "Hebreus 13:1–2",
-                "text": "Continuem a amar uns aos outros como irmãos. Sm 7.."
+                "text": "Continuem a amar uns aos outros como irmãos. Não se esqueçam de demonstrar hospitalidade, porque alguns, sem o saber, hospedaram anjos."
               },
               {
                 "ref": "3 João 1:7–8",
@@ -16989,7 +17104,7 @@
           },
           {
             "number": 18,
-            "text": "No dia seguinte, Paulo foi conosco a um encontro com Tiago, e todos os presbíteros105 da igreja de Jerusalém estavam presentes.",
+            "text": "No dia seguinte, Paulo foi conosco a um encontro com Tiago, e todos os presbíteros da igreja de Jerusalém estavam presentes.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -17021,7 +17136,7 @@
               },
               {
                 "ref": "Atos 1:17",
-                "text": "Judas era um de nós e participava do ministério conosco”. 18(Ele comprou um campo com o dinheiro que recebeu por sua perversidade. Ao cair ali de cabeça, seu corpo se partiu ao meio, e seus intestinos se derramaram."
+                "text": "Judas era um de nós e participava do ministério conosco”."
               },
               {
                 "ref": "Romanos 15:18–19",
@@ -17052,7 +17167,7 @@
               },
               {
                 "ref": "Atos 11:18",
-                "text": "Ao ouvirem isso, pararam de levantar objeções e começaram a louvar a Deus, dizendo: “Vemos que Deus deu aos gentios o mesmo privilégio de se arrepender e receber a vida ­eterna!”."
+                "text": "Ao ouvirem isso, pararam de levantar objeções e começaram a louvar a Deus, dizendo: “Vemos que Deus deu aos gentios o mesmo privilégio de se arrepender e receber a vida eterna!”."
               }
             ]
           },
@@ -17075,7 +17190,7 @@
               },
               {
                 "ref": "Atos 21:28",
-                "text": "gritando: “Homens de Israel, ajudem-nos! Este é o homem que fala contra nosso povo em toda parte e ensina todos a desobedecerem às leis judaicas. Fala contra o templo e até profana este santo lugar, trazendo gentios106 para dentro dele”."
+                "text": "gritando: “Homens de Israel, ajudem-nos! Este é o homem que fala contra nosso povo em toda parte e ensina todos a desobedecerem às leis judaicas. Fala contra o templo e até profana este santo lugar, trazendo gentios para dentro dele”."
               }
             ]
           },
@@ -17204,7 +17319,7 @@
           },
           {
             "number": 28,
-            "text": "gritando: “Homens de Israel, ajudem-nos! Este é o homem que fala contra nosso povo em toda parte e ensina todos a desobedecerem às leis judaicas. Fala contra o templo e até profana este santo lugar, trazendo gentios106 para dentro dele”.",
+            "text": "gritando: “Homens de Israel, ajudem-nos! Este é o homem que fala contra nosso povo em toda parte e ensina todos a desobedecerem às leis judaicas. Fala contra o templo e até profana este santo lugar, trazendo gentios para dentro dele”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -17227,7 +17342,7 @@
           },
           {
             "number": 29,
-            "text": "Antes tinham visto Paulo na cidade com Trófimo, um gentio de Éfeso,107 e concluíram que Paulo o havia levado para dentro do templo.",
+            "text": "Antes tinham visto Paulo na cidade com Trófimo, um gentio de Éfeso, e concluíram que Paulo o havia levado para dentro do templo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -17292,7 +17407,7 @@
           },
           {
             "number": 32,
-            "text": "No mesmo instante, ele chamou seus soldados e oficiais108 e correu para o meio da multidão. Quando viram o comandante e os soldados se aproximarem, pararam de espancar Paulo.",
+            "text": "No mesmo instante, ele chamou seus soldados e oficiais e correu para o meio da multidão. Quando viram o comandante e os soldados se aproximarem, pararam de espancar Paulo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -17469,7 +17584,7 @@
           },
           {
             "number": 40,
-            "text": "O comandante concordou, de modo que Paulo ficou em pé na escadaria e fez sinal para o povo se calar. Logo, um silêncio profundo envolveu a multidão, e ele lhes falou em aramaico,109 o idioma deles.",
+            "text": "O comandante concordou, de modo que Paulo ficou em pé na escadaria e fez sinal para o povo se calar. Logo, um silêncio profundo envolveu a multidão, e ele lhes falou em aramaico, o idioma deles.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -17478,7 +17593,7 @@
               },
               {
                 "ref": "Atos 26:14",
-                "text": "Todos nós caímos no chão, e eu ouvi uma voz que me dizia em aramaico:125 ‘Saulo, Saulo, por que você me persegue? Não adianta lutar contra minha vontade’."
+                "text": "Todos nós caímos no chão, e eu ouvi uma voz que me dizia em aramaico: ‘Saulo, Saulo, por que você me persegue? Não adianta lutar contra minha vontade’."
               },
               {
                 "ref": "João 5:2",
@@ -17497,6 +17612,7 @@
   "22": {
     "book": "Atos dos Apóstolos",
     "chapter": "22",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -17520,18 +17636,18 @@
               },
               {
                 "ref": "Filipenses 1:7",
-                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas- novas."
+                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas-novas."
               }
             ]
           },
           {
             "number": 2,
-            "text": "Quando o ouviram falar em aramaico,110 o silêncio foi ainda maior.",
+            "text": "Quando o ouviram falar em aramaico, o silêncio foi ainda maior.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Atos 21:40",
-                "text": "O comandante concordou, de modo que Paulo ficou em pé na escadaria e fez sinal para o povo se calar. Logo, um silêncio profundo envolveu a multidão, e ele lhes falou em aramaico,109 o idioma deles."
+                "text": "O comandante concordou, de modo que Paulo ficou em pé na escadaria e fez sinal para o povo se calar. Logo, um silêncio profundo envolveu a multidão, e ele lhes falou em aramaico, o idioma deles."
               }
             ]
           },
@@ -17652,7 +17768,7 @@
           },
           {
             "number": 8,
-            "text": "“‘Quem és tu, Senhor?’, perguntei. “E a voz respondeu: ‘Sou Jesus, o nazareno,111 a quem você persegue’.",
+            "text": "“‘Quem és tu, Senhor?’, perguntei. “E a voz respondeu: ‘Sou Jesus, o nazareno, a quem você persegue’.",
             "isJesusWords": true,
             "crossReferences": [
               {
@@ -17753,11 +17869,11 @@
               },
               {
                 "ref": "3 João 1:12",
-                "text": "Todos, incluindo a própria verdade, falam bem de Demétrio. Nós dizemos o mesmo a ­respeito dele, e você sabe que falamos a verdade."
+                "text": "Todos, incluindo a própria verdade, falam bem de Demétrio. Nós dizemos o mesmo a respeito dele, e você sabe que falamos a verdade."
               },
               {
                 "ref": "2 Coríntios 6:8",
-                "text": "Servimos quer as pessoas nos honrem, quer nos desprezem, quer nos difamem, quer nos elogiem. Somos chamados de impostores, apesar de sermos honestos. 9 ­Somos tratados como desconhecidos, embora sejamos bem conhecidos. V..."
+                "text": "Servimos quer as pessoas nos honrem, quer nos desprezem, quer nos difamem, quer nos elogiem. Somos chamados de impostores, apesar de sermos honestos."
               }
             ]
           },
@@ -17925,7 +18041,7 @@
               },
               {
                 "ref": "Atos 8:1",
-                "text": "E Saulo concordou inteiramente com a morte de Estêvão. A perseguição faz os discípulos dispersarem Uma grande onda de perseguição começou naquele dia e varreu a igreja de Jerusalém. Todos eles, com exceção dos apóstolos..."
+                "text": "E Saulo concordou inteiramente com a morte de Estêvão."
               },
               {
                 "ref": "Romanos 1:32",
@@ -17933,7 +18049,7 @@
               },
               {
                 "ref": "Apocalipse 2:13",
-                "text": "“Conheço o lugar onde você vive, a cidade onde está o trono de Satanás. Ainda assim, você permanece leal a meu nome. Recusou- se a negar sua fé em mim até mesmo quando Antipas, minha testemunha fiel, foi morto onde vocês..."
+                "text": "“Conheço o lugar onde você vive, a cidade onde está o trono de Satanás. Ainda assim, você permanece leal a meu nome. Recusou-se a negar sua fé em mim até mesmo quando Antipas, minha testemunha fiel, foi morto onde vocês..."
               }
             ]
           },
@@ -17998,7 +18114,7 @@
               },
               {
                 "ref": "Atos 26:11",
-                "text": "Muitas vezes providenciei que fossem castigados nas sinagogas, a fim de obrigá- los a blasfemar. Eu me opunha a eles com tanta violência que os perseguia até em cidades estrangeiras."
+                "text": "Muitas vezes providenciei que fossem castigados nas sinagogas, a fim de obrigá-los a blasfemar. Eu me opunha a eles com tanta violência que os perseguia até em cidades estrangeiras."
               },
               {
                 "ref": "Atos 7:58",
@@ -18036,7 +18152,7 @@
           },
           {
             "number": 25,
-            "text": "Quando amarravam Paulo para açoitá-lo, ele disse ao oficial112 que estava ali: “A lei permite açoitar um cidadão romano sem que ele tenha sido julgado?”.",
+            "text": "Quando amarravam Paulo para açoitá-lo, ele disse ao oficial que estava ali: “A lei permite açoitar um cidadão romano sem que ele tenha sido julgado?”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -18053,7 +18169,7 @@
               },
               {
                 "ref": "Mateus 27:54",
-                "text": "O oficial romano168 e os outros soldados que vigiavam Jesus ficaram aterrorizados com o terremoto e com tudo que havia acontecido, e disseram: “Este homem era verdadeiramente o Filho de Deus!”."
+                "text": "O oficial romano e os outros soldados que vigiavam Jesus ficaram aterrorizados com o terremoto e com tudo que havia acontecido, e disseram: “Este homem era verdadeiramente o Filho de Deus!”."
               }
             ]
           },
@@ -18079,7 +18195,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 22:25",
-                "text": "Quando amarravam Paulo para açoitá-lo, ele disse ao oficial112 que estava ali: “A lei permite açoitar um cidadão romano sem que ele tenha sido julgado?”."
+                "text": "Quando amarravam Paulo para açoitá-lo, ele disse ao oficial que estava ali: “A lei permite açoitar um cidadão romano sem que ele tenha sido julgado?”."
               }
             ]
           },
@@ -18119,7 +18235,7 @@
         "verses": [
           {
             "number": 30,
-            "text": "No dia seguinte, o comandante ordenou que os principais sacerdotes se reunissem com o conselho dos líderes do povo.113 Queria descobrir exatamente qual era o problema, por isso soltou Paulo e mandou que o trouxessem diante deles.",
+            "text": "No dia seguinte, o comandante ordenou que os principais sacerdotes se reunissem com o conselho dos líderes do povo. Queria descobrir exatamente qual era o problema, por isso soltou Paulo e mandou que o trouxessem diante deles.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -18147,13 +18263,14 @@
   "23": {
     "book": "Atos dos Apóstolos",
     "chapter": "23",
+    "verified": true,
     "sections": [
       {
         "title": "",
         "verses": [
           {
             "number": 1,
-            "text": "Paulo olhou fixamente para o conselho dos líderes do povo114 e disse: “Irmãos, tenho vivido diante de Deus com a consciência limpa”.",
+            "text": "Paulo olhou fixamente para o conselho dos líderes do povo e disse: “Irmãos, tenho vivido diante de Deus com a consciência limpa”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -18185,20 +18302,21 @@
               },
               {
                 "ref": "Atos 24:1",
-                "text": "Cinco dias depois, o sumo sacerdote Ananias chegou com alguns dos líderes do povo e um advogado119 chamado Tértulo para exporem ao governador sua causa contra Paulo."
+                "text": "Cinco dias depois, o sumo sacerdote Ananias chegou com alguns dos líderes do povo e um advogado chamado Tértulo para exporem ao governador sua causa contra Paulo."
               },
               {
                 "ref": "1 Reis 22:24",
-                "text": "Então Zedequias, filho de Quenaaná, se aproximou de Micaías e lhe deu uma bofetada. “Como foi que o Espírito do SENHOR me deixou para falar com você?”,118 perguntou ele."
+                "text": "Então Zedequias, filho de Quenaaná, se aproximou de Micaías e lhe deu uma bofetada. “Como foi que o Espírito do SENHOR me deixou para falar com você?”, perguntou ele."
               },
               {
-                "ref": "Miqueias 5:1"
+                "ref": "Miqueias 5:1",
+                "text": "Mobilizem-se! Reúnam suas tropas! O inimigo cerca Jerusalém. Com uma vara ferirá o rosto do líder de Israel."
               }
             ]
           },
           {
             "number": 3,
-            "text": "Então Paulo lhe disse: “Deus o ferirá, seu grande hipócrita!115 Que espécie de juiz é o senhor, desrespeitando a lei ao mandar me agredir dessa forma?”.",
+            "text": "Então Paulo lhe disse: “Deus o ferirá, seu grande hipócrita! Que espécie de juiz é o senhor, desrespeitando a lei ao mandar me agredir dessa forma?”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -18215,7 +18333,7 @@
               },
               {
                 "ref": "Salmos 82:1–2",
-                "text": "Deus preside a assembleia dos céus; no meio dos seres celestiais,110 anuncia seu julgamento: “Até quando tomarão decisões injustas que favorecem a causa dos perversos?"
+                "text": "Deus preside a assembleia dos céus; no meio dos seres celestiais, anuncia seu julgamento: “Até quando tomarão decisões injustas que favorecem a causa dos perversos? Interlúdio"
               }
             ]
           },
@@ -18227,7 +18345,7 @@
           },
           {
             "number": 5,
-            "text": "“Irmãos, não sabia que ele era o sumo sacerdote”, respondeu Paulo. “Pois as Escrituras dizem: ‘Não fale mal de suas autoridades’.”116",
+            "text": "“Irmãos, não sabia que ele era o sumo sacerdote”, respondeu Paulo. “Pois as Escrituras dizem: ‘Não fale mal de suas autoridades’.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -18290,7 +18408,7 @@
               },
               {
                 "ref": "Mateus 10:34",
-                "text": "“Não imaginem que vim trazer paz à terra! Não vim trazer paz, mas a espada. 35‘Vim para pôr o homem contra seu pai, a filha contra sua mãe, e a nora contra sua sogra."
+                "text": "“Não imaginem que vim trazer paz à terra! Não vim trazer paz, mas a espada."
               }
             ]
           },
@@ -18504,7 +18622,7 @@
           },
           {
             "number": 17,
-            "text": "Então Paulo mandou chamar um dos oficiais romanos117 e disse: “Leve este rapaz ao comandante. Ele tem algo importante para lhe contar”.",
+            "text": "Então Paulo mandou chamar um dos oficiais romanos e disse: “Leve este rapaz ao comandante. Ele tem algo importante para lhe contar”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -18590,7 +18708,7 @@
               },
               {
                 "ref": "Atos 23:1",
-                "text": "Paulo olhou fixamente para o conselho dos líderes do povo114 e disse: “Irmãos, tenho vivido diante de Deus com a consciência limpa”."
+                "text": "Paulo olhou fixamente para o conselho dos líderes do povo e disse: “Irmãos, tenho vivido diante de Deus com a consciência limpa”."
               }
             ]
           },
@@ -18719,7 +18837,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 22:25–29",
-                "text": "Quando amarravam Paulo para açoitá-lo, ele disse ao oficial112 que estava ali: “A lei permite açoitar um cidadão romano sem que ele tenha sido julgado?”."
+                "text": "Quando amarravam Paulo para açoitá-lo, ele disse ao oficial que estava ali: “A lei permite açoitar um cidadão romano sem que ele tenha sido julgado?”."
               },
               {
                 "ref": "Atos 21:31–33",
@@ -18742,7 +18860,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 22:30",
-                "text": "No dia seguinte, o comandante ordenou que os principais sacerdotes se reunissem com o conselho dos líderes do povo.113 Queria descobrir exatamente qual era o problema, por isso soltou Paulo e mandou que o trouxessem diante deles."
+                "text": "No dia seguinte, o comandante ordenou que os principais sacerdotes se reunissem com o conselho dos líderes do povo. Queria descobrir exatamente qual era o problema, por isso soltou Paulo e mandou que o trouxessem diante deles."
               }
             ]
           },
@@ -18776,7 +18894,7 @@
               },
               {
                 "ref": "2 Coríntios 13:11",
-                "text": "Irmãos, encerro minha carta com estas últimas palavras: Alegrem- se. Cresçam até alcançar a maturidade. Encorajem-se mutuamente. Vivam em harmonia e paz. Então o Deus de amor e paz estará com vocês."
+                "text": "Irmãos, encerro minha carta com estas últimas palavras: Alegrem-se. Cresçam até alcançar a maturidade. Encorajem-se mutuamente. Vivam em harmonia e paz. Então o Deus de amor e paz estará com vocês."
               }
             ]
           },
@@ -18862,7 +18980,7 @@
           },
           {
             "number": 35,
-            "text": "“Ouvirei seu caso pessoalmente quando seus acusadores chegarem”, disse o governador. Em seguida, ordenou que Paulo fosse mantido na prisão do palácio que Herodes havia construído.118",
+            "text": "“Ouvirei seu caso pessoalmente quando seus acusadores chegarem”, disse o governador. Em seguida, ordenou que Paulo fosse mantido na prisão do palácio que Herodes havia construído.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -18875,7 +18993,7 @@
               },
               {
                 "ref": "Mateus 27:27",
-                "text": "Alguns dos soldados do governador levaram Jesus ao quartel162 e chamaram todo o regimento."
+                "text": "Alguns dos soldados do governador levaram Jesus ao quartel e chamaram todo o regimento."
               },
               {
                 "ref": "Mateus 2:1",
@@ -18890,13 +19008,14 @@
   "24": {
     "book": "Atos dos Apóstolos",
     "chapter": "24",
+    "verified": true,
     "sections": [
       {
         "title": "Paulo diante de Félix",
         "verses": [
           {
             "number": 1,
-            "text": "Cinco dias depois, o sumo sacerdote Ananias chegou com alguns dos líderes do povo e um advogado119 chamado Tértulo para exporem ao governador sua causa contra Paulo.",
+            "text": "Cinco dias depois, o sumo sacerdote Ananias chegou com alguns dos líderes do povo e um advogado chamado Tértulo para exporem ao governador sua causa contra Paulo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -19041,7 +19160,7 @@
           },
           {
             "number": 8,
-            "text": "e ordenou a nós, os acusadores, que nos apresentássemos perante o senhor.120 Nossas acusações poderão ser confirmadas quando o senhor interrogar Paulo pessoalmente”.",
+            "text": "e ordenou a nós, os acusadores, que nos apresentássemos perante o senhor. Nossas acusações poderão ser confirmadas quando o senhor interrogar Paulo pessoalmente”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -19081,7 +19200,7 @@
               },
               {
                 "ref": "Salmos 4:2",
-                "text": "Até quando vocês jogarão minha reputação na lama? Até quando farão acusações infundadas e continuarão a mentir?"
+                "text": "Até quando vocês jogarão minha reputação na lama? Até quando farão acusações infundadas e continuarão a mentir? Interlúdio"
               }
             ]
           },
@@ -19096,7 +19215,7 @@
               },
               {
                 "ref": "1 Samuel 2:25",
-                "text": "Se alguém peca contra outra pessoa, Deus poderá12 intervir em favor do culpado. Mas, se alguém peca contra o SENHOR, quem poderá interceder?”. Contudo, os filhos de Eli não deram atenção ao pai, pois o SENHOR já havia decidido matá-los."
+                "text": "Se alguém peca contra outra pessoa, Deus poderá intervir em favor do culpado. Mas, se alguém peca contra o SENHOR, quem poderá interceder?”. Contudo, os filhos de Eli não deram atenção ao pai, pois o SENHOR já havia decidido matá-los."
               },
               {
                 "ref": "Atos 12:17",
@@ -19115,11 +19234,11 @@
             "crossReferences": [
               {
                 "ref": "Atos 24:1",
-                "text": "Cinco dias depois, o sumo sacerdote Ananias chegou com alguns dos líderes do povo e um advogado119 chamado Tértulo para exporem ao governador sua causa contra Paulo."
+                "text": "Cinco dias depois, o sumo sacerdote Ananias chegou com alguns dos líderes do povo e um advogado chamado Tértulo para exporem ao governador sua causa contra Paulo."
               },
               {
                 "ref": "Atos 21:18",
-                "text": "No dia seguinte, Paulo foi conosco a um encontro com Tiago, e todos os presbíteros105 da igreja de Jerusalém estavam presentes."
+                "text": "No dia seguinte, Paulo foi conosco a um encontro com Tiago, e todos os presbíteros da igreja de Jerusalém estavam presentes."
               }
             ]
           },
@@ -19218,7 +19337,7 @@
               },
               {
                 "ref": "Atos 23:1",
-                "text": "Paulo olhou fixamente para o conselho dos líderes do povo114 e disse: “Irmãos, tenho vivido diante de Deus com a consciência limpa”."
+                "text": "Paulo olhou fixamente para o conselho dos líderes do povo e disse: “Irmãos, tenho vivido diante de Deus com a consciência limpa”."
               },
               {
                 "ref": "2 Coríntios 4:2",
@@ -19289,7 +19408,7 @@
           },
           {
             "number": 20,
-            "text": "Pergunte a estes homens que aqui estão de que crimes o conselho dos líderes do povo121 me considerou culpado,",
+            "text": "Pergunte a estes homens que aqui estão de que crimes o conselho dos líderes do povo me considerou culpado,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -19350,7 +19469,7 @@
           },
           {
             "number": 23,
-            "text": "Ordenou que um oficial122 mantivesse Paulo sob custódia, mas lhe deu certa liberdade e permitiu que seus amigos o visitassem e providenciassem aquilo de que ele precisava.",
+            "text": "Ordenou que um oficial mantivesse Paulo sob custódia, mas lhe deu certa liberdade e permitiu que seus amigos o visitassem e providenciassem aquilo de que ele precisava.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -19378,7 +19497,7 @@
               },
               {
                 "ref": "Gálatas 2:16",
-                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em ­Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque..."
+                "text": "E, no entanto, sabemos que uma pessoa é declarada justa diante de Deus pela fé em Jesus Cristo, e não pela obediência à lei. E cremos em Cristo Jesus, para que fôssemos declarados justos pela fé em Cristo, e não porque o..."
               },
               {
                 "ref": "Gálatas 3:2",
@@ -19386,7 +19505,7 @@
               },
               {
                 "ref": "Judas 1:3",
-                "text": "Amados, embora planejasse escrever-lhes com todo empenho sobre a salvação que compartilhamos, entendo agora que devo escrever a- ­ respeito de outro assunto e insistir que defendam a fé que, de uma vez por todas, foi confiada ao povo santo."
+                "text": "Amados, embora planejasse escrever-lhes com todo empenho sobre a salvação que compartilhamos, entendo agora que devo escrever a- respeito de outro assunto e insistir que defendam a fé que, de uma vez por todas, foi confiada ao povo santo."
               }
             ]
           },
@@ -19409,7 +19528,7 @@
               },
               {
                 "ref": "2 Pedro 1:6",
-                "text": "ao conhecimento o domínio próprio; ao domínio próprio a perseverança; à perseverança a devoção a Deus; 7à devoção a Deus a fraternidade; e à fraternidade o amor."
+                "text": "ao conhecimento o domínio próprio; ao domínio próprio a perseverança; à perseverança a devoção a Deus;"
               }
             ]
           },
@@ -19466,6 +19585,7 @@
   "25": {
     "book": "Atos dos Apóstolos",
     "chapter": "25",
+    "verified": true,
     "sections": [
       {
         "title": "Paulo diante de Festo",
@@ -19504,7 +19624,7 @@
               },
               {
                 "ref": "Atos 24:1",
-                "text": "Cinco dias depois, o sumo sacerdote Ananias chegou com alguns dos líderes do povo e um advogado119 chamado Tértulo para exporem ao governador sua causa contra Paulo."
+                "text": "Cinco dias depois, o sumo sacerdote Ananias chegou com alguns dos líderes do povo e um advogado chamado Tértulo para exporem ao governador sua causa contra Paulo."
               }
             ]
           },
@@ -19538,7 +19658,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 24:23",
-                "text": "Ordenou que um oficial122 mantivesse Paulo sob custódia, mas lhe deu certa liberdade e permitiu que seus amigos o visitassem e providenciassem aquilo de que ele precisava."
+                "text": "Ordenou que um oficial mantivesse Paulo sob custódia, mas lhe deu certa liberdade e permitiu que seus amigos o visitassem e providenciassem aquilo de que ele precisava."
               }
             ]
           },
@@ -19580,7 +19700,7 @@
               },
               {
                 "ref": "Mateus 27:19",
-                "text": "Nesse momento, enquanto Pilatos estava sentado no tribunal, sua esposa lhe mandou o seguinte recado: “Deixe esse homem inocente em paz. Na noite passada, tive um sonho a respei­to dele e fiquei muito perturbada”."
+                "text": "Nesse momento, enquanto Pilatos estava sentado no tribunal, sua esposa lhe mandou o seguinte recado: “Deixe esse homem inocente em paz. Na noite passada, tive um sonho a respeito dele e fiquei muito perturbada”."
               },
               {
                 "ref": "2 Coríntios 5:10",
@@ -19728,7 +19848,7 @@
           },
           {
             "number": 13,
-            "text": "Alguns dias depois, o rei Agripa chegou com sua irmã, Berenice,123 para visitar Festo.",
+            "text": "Alguns dias depois, o rei Agripa chegou com sua irmã, Berenice, para visitar Festo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -19767,7 +19887,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 24:1",
-                "text": "Cinco dias depois, o sumo sacerdote Ananias chegou com alguns dos líderes do povo e um advogado119 chamado Tértulo para exporem ao governador sua causa contra Paulo."
+                "text": "Cinco dias depois, o sumo sacerdote Ananias chegou com alguns dos líderes do povo e um advogado chamado Tértulo para exporem ao governador sua causa contra Paulo."
               },
               {
                 "ref": "Lucas 23:23",
@@ -19912,7 +20032,7 @@
               },
               {
                 "ref": "Isaías 52:15",
-                "text": "Ele causará assombro em158 muitas nações; reis ficarão mudos diante dele, pois verão aquilo que ninguém lhes havia falado,"
+                "text": "Ele causará assombro em muitas nações; reis ficarão mudos diante dele, pois verão aquilo que ninguém lhes havia falado, entenderão aquilo que nunca tinham ouvido."
               },
               {
                 "ref": "Mateus 10:18",
@@ -19932,7 +20052,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 25:13",
-                "text": "Alguns dias depois, o rei Agripa chegou com sua irmã, Berenice,123 para visitar Festo."
+                "text": "Alguns dias depois, o rei Agripa chegou com sua irmã, Berenice, para visitar Festo."
               },
               {
                 "ref": "Atos 26:30",
@@ -19990,7 +20110,7 @@
               },
               {
                 "ref": "João 18:38",
-                "text": "Pilatos perguntou: “Que é a verdade?”. Jesus é condenado à morte Depois que disse isso, Pilatos saiu outra vez para onde estava o povo e declarou: “Ele não é culpado de crime algum."
+                "text": "Pilatos perguntou: “Que é a verdade?”."
               }
             ]
           },
@@ -20027,6 +20147,7 @@
   "26": {
     "book": "Atos dos Apóstolos",
     "chapter": "26",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -20084,7 +20205,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 6:14",
-                "text": "Nós o ouvimos dizer que esse Jesus de Nazaré30 destruirá o templo e mudará os costumes que Moisés nos deixou”."
+                "text": "Nós o ouvimos dizer que esse Jesus de Nazaré destruirá o templo e mudará os costumes que Moisés nos deixou”."
               },
               {
                 "ref": "Atos 26:26",
@@ -20184,7 +20305,7 @@
               },
               {
                 "ref": "Mateus 19:28",
-                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado113 e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
+                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
               }
             ]
           },
@@ -20213,7 +20334,7 @@
           },
           {
             "number": 9,
-            "text": "“Eu costumava pensar que era minha obrigação empenhar-me em me opor ao nome de Jesus, o nazareno.124",
+            "text": "“Eu costumava pensar que era minha obrigação empenhar-me em me opor ao nome de Jesus, o nazareno.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -20222,7 +20343,7 @@
               },
               {
                 "ref": "Atos 22:8",
-                "text": "“‘Quem és tu, Senhor?’, perguntei. “E a voz respondeu: ‘Sou Jesus, o nazareno,111 a quem você persegue’."
+                "text": "“‘Quem és tu, Senhor?’, perguntei. “E a voz respondeu: ‘Sou Jesus, o nazareno, a quem você persegue’."
               },
               {
                 "ref": "Gálatas 1:13–14",
@@ -20259,7 +20380,7 @@
           },
           {
             "number": 11,
-            "text": "Muitas vezes providenciei que fossem castigados nas sinagogas, a fim de obrigá- los a blasfemar. Eu me opunha a eles com tanta violência que os perseguia até em cidades estrangeiras.",
+            "text": "Muitas vezes providenciei que fossem castigados nas sinagogas, a fim de obrigá-los a blasfemar. Eu me opunha a eles com tanta violência que os perseguia até em cidades estrangeiras.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -20328,12 +20449,12 @@
           },
           {
             "number": 14,
-            "text": "Todos nós caímos no chão, e eu ouvi uma voz que me dizia em aramaico:125 ‘Saulo, Saulo, por que você me persegue? Não adianta lutar contra minha vontade’.126",
+            "text": "Todos nós caímos no chão, e eu ouvi uma voz que me dizia em aramaico: ‘Saulo, Saulo, por que você me persegue? Não adianta lutar contra minha vontade’.",
             "isJesusWords": true,
             "crossReferences": [
               {
                 "ref": "Atos 21:40",
-                "text": "O comandante concordou, de modo que Paulo ficou em pé na escadaria e fez sinal para o povo se calar. Logo, um silêncio profundo envolveu a multidão, e ele lhes falou em aramaico,109 o idioma deles."
+                "text": "O comandante concordou, de modo que Paulo ficou em pé na escadaria e fez sinal para o povo se calar. Logo, um silêncio profundo envolveu a multidão, e ele lhes falou em aramaico, o idioma deles."
               },
               {
                 "ref": "Atos 9:7",
@@ -20466,7 +20587,7 @@
           },
           {
             "number": 20,
-            "text": "Anunciei a mensagem primeiro em Damasco, depois em Jerusalém e em toda a Judeia, e também aos gentios, dizendo que todos devem arrepender- se, voltar-se para Deus e mostrar, por meio de suas boas obras, que mudaram de rumo.",
+            "text": "Anunciei a mensagem primeiro em Damasco, depois em Jerusalém e em toda a Judeia, e também aos gentios, dizendo que todos devem arrepender-se, voltar-se para Deus e mostrar, por meio de suas boas obras, que mudaram de rumo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -20630,7 +20751,7 @@
           },
           {
             "number": 28,
-            "text": "Então Agripa o interrompeu: “Você acredita que pode me convencer a tornar-me cristão em tão pouco tempo?”.127",
+            "text": "Então Agripa o interrompeu: “Você acredita que pode me convencer a tornar-me cristão em tão pouco tempo?”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -20742,13 +20863,14 @@
   "27": {
     "book": "Atos dos Apóstolos",
     "chapter": "27",
+    "verified": true,
     "sections": [
       {
         "title": "Paulo vai a Roma",
         "verses": [
           {
             "number": 1,
-            "text": "Quando chegou a hora, zarpamos para a Itália. Paulo e muitos outros prisioneiros foram colocados sob a guarda de um oficial romano128 chamado Júlio, capitão do Regimento Imperial.",
+            "text": "Quando chegou a hora, zarpamos para a Itália. Paulo e muitos outros prisioneiros foram colocados sob a guarda de um oficial romano chamado Júlio, capitão do Regimento Imperial.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -20771,7 +20893,7 @@
           },
           {
             "number": 2,
-            "text": "Aristarco, um macedônio de Tessalônica, nos acompanhou. Partimos num navio que tinha vindo do porto de Adramítio, no litoral noroeste da província da Ásia.129 Estavam previstas diversas paradas em portos ao longo da costa.",
+            "text": "Aristarco, um macedônio de Tessalônica, nos acompanhou. Partimos num navio que tinha vindo do porto de Adramítio, no litoral noroeste da província da Ásia. Estavam previstas diversas paradas em portos ao longo da costa.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -20799,7 +20921,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 24:23",
-                "text": "Ordenou que um oficial122 mantivesse Paulo sob custódia, mas lhe deu certa liberdade e permitiu que seus amigos o visitassem e providenciassem aquilo de que ele precisava."
+                "text": "Ordenou que um oficial mantivesse Paulo sob custódia, mas lhe deu certa liberdade e permitiu que seus amigos o visitassem e providenciassem aquilo de que ele precisava."
               },
               {
                 "ref": "Atos 28:16",
@@ -20811,7 +20933,7 @@
               },
               {
                 "ref": "Isaías 23:2–4",
-                "text": "Chorem em silêncio, moradores do litoral e comerciantes de Sidom!"
+                "text": "Chorem em silêncio, moradores do litoral e comerciantes de Sidom! Seus negociantes atravessavam o mar"
               }
             ]
           },
@@ -20876,7 +20998,7 @@
               },
               {
                 "ref": "Atos 27:1",
-                "text": "Quando chegou a hora, zarpamos para a Itália. Paulo e muitos outros prisioneiros foram colocados sob a guarda de um oficial romano128 chamado Júlio, capitão do Regimento Imperial."
+                "text": "Quando chegou a hora, zarpamos para a Itália. Paulo e muitos outros prisioneiros foram colocados sob a guarda de um oficial romano chamado Júlio, capitão do Regimento Imperial."
               }
             ]
           },
@@ -20894,7 +21016,8 @@
                 "text": "Até mesmo um deles, um profeta nascido em Creta, disse: “Os cretenses são mentirosos, animais cruéis e comilões preguiçosos”."
               },
               {
-                "ref": "Atos 2:11"
+                "ref": "Atos 2:11",
+                "text": "(tanto judeus como convertidos ao judaísmo), cretenses e árabes, e todos nós ouvimos estas pessoas falarem em nossa própria língua sobre as coisas maravilhosas que Deus fez!”."
               },
               {
                 "ref": "Tito 1:5",
@@ -20915,7 +21038,7 @@
           },
           {
             "number": 9,
-            "text": "Havíamos perdido muito tempo. As condições climáticas estavam se tornando perigosas para a navegação, pois se aproximava o fim do outono,130 e Paulo tratou dessa questão com os oficiais do navio.",
+            "text": "Havíamos perdido muito tempo. As condições climáticas estavam se tornando perigosas para a navegação, pois se aproximava o fim do outono, e Paulo tratou dessa questão com os oficiais do navio.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -21051,7 +21174,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 27:27",
-                "text": "Por volta da meia-noite, na décima quarta noite de tempestade, enquanto éramos levados de um lado para o outro no mar Adriático,132 os marinheiros perceberam que estávamos perto de terra firme."
+                "text": "Por volta da meia-noite, na décima quarta noite de tempestade, enquanto éramos levados de um lado para o outro no mar Adriático, os marinheiros perceberam que estávamos perto de terra firme."
               },
               {
                 "ref": "Tiago 3:4",
@@ -21061,7 +21184,7 @@
           },
           {
             "number": 16,
-            "text": "Navegamos pelo lado menos exposto de uma pequena ilha chamada Cauda,131 onde, com muito custo, conseguimos içar para bordo o barco salva-vidas que viajava rebocado.",
+            "text": "Navegamos pelo lado menos exposto de uma pequena ilha chamada Cauda, onde, com muito custo, conseguimos içar para bordo o barco salva-vidas que viajava rebocado.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -21173,7 +21296,7 @@
               },
               {
                 "ref": "Atos 27:9–10",
-                "text": "Havíamos perdido muito tempo. As condições climáticas estavam se tornando perigosas para a navegação, pois se aproximava o fim do outono,130 e Paulo tratou dessa questão com os oficiais do navio."
+                "text": "Havíamos perdido muito tempo. As condições climáticas estavam se tornando perigosas para a navegação, pois se aproximava o fim do outono, e Paulo tratou dessa questão com os oficiais do navio."
               },
               {
                 "ref": "Atos 27:33–35",
@@ -21219,7 +21342,7 @@
               },
               {
                 "ref": "Romanos 1:9",
-                "text": "O Deus a quem sirvo em meu espírito, anunciando as boas- novas a respeito de seu Filho, sabe como nunca deixo de me lembrar de vocês"
+                "text": "O Deus a quem sirvo em meu espírito, anunciando as boas-novas a respeito de seu Filho, sabe como nunca deixo de me lembrar de vocês"
               },
               {
                 "ref": "Hebreus 1:14",
@@ -21280,7 +21403,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 28:1",
-                "text": "Sm 13.."
+                "text": "Uma vez a salvo em terra, descobrimos que estávamos na ilha de Malta."
               },
               {
                 "ref": "Atos 27:17",
@@ -21299,7 +21422,7 @@
         "verses": [
           {
             "number": 27,
-            "text": "Por volta da meia-noite, na décima quarta noite de tempestade, enquanto éramos levados de um lado para o outro no mar Adriático,132 os marinheiros perceberam que estávamos perto de terra firme.",
+            "text": "Por volta da meia-noite, na décima quarta noite de tempestade, enquanto éramos levados de um lado para o outro no mar Adriático, os marinheiros perceberam que estávamos perto de terra firme.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -21322,7 +21445,7 @@
           },
           {
             "number": 28,
-            "text": "Lançaram a sonda e verificaram que a água tinha 37 metros de profundidade. Um pouco depois, lançaram a sonda novamente e encontraram apenas 27 metros.133",
+            "text": "Lançaram a sonda e verificaram que a água tinha 37 metros de profundidade. Um pouco depois, lançaram a sonda novamente e encontraram apenas 27 metros.",
             "isJesusWords": false,
             "crossReferences": []
           },
@@ -21356,7 +21479,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 27:16",
-                "text": "Navegamos pelo lado menos exposto de uma pequena ilha chamada Cauda,131 onde, com muito custo, conseguimos içar para bordo o barco salva-vidas que viajava rebocado."
+                "text": "Navegamos pelo lado menos exposto de uma pequena ilha chamada Cauda, onde, com muito custo, conseguimos içar para bordo o barco salva-vidas que viajava rebocado."
               },
               {
                 "ref": "Atos 27:32",
@@ -21417,7 +21540,7 @@
               },
               {
                 "ref": "Atos 9:19",
-                "text": "e, depois de comer, recuperou as forças. Saulo em Damasco e em Jerusalém Saulo permaneceu alguns dias em Damasco, com os discípulos."
+                "text": "e, depois de comer, recuperou as forças."
               },
               {
                 "ref": "Atos 27:21",
@@ -21450,7 +21573,7 @@
           },
           {
             "number": 35,
-            "text": "Em seguida, tomou um pão, deu graças a Deus na presença de todos, ­partiu-o em pedaços e comeu.",
+            "text": "Em seguida, tomou um pão, deu graças a Deus na presença de todos, partiu-o em pedaços e comeu.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -21504,7 +21627,8 @@
                 "text": "Os que acreditaram nas palavras de Pedro foram batizados, e naquele dia houve um acréscimo de cerca de três mil pessoas."
               },
               {
-                "ref": "1 Pedro 3:20"
+                "ref": "1 Pedro 3:20",
+                "text": "àqueles que, muito tempo atrás, desobedeceram a Deus quando ele esperou pacientemente enquanto Noé construía sua embarcação. Apenas oito pessoas foram salvas por meio da água do dilúvio,"
               },
               {
                 "ref": "Romanos 13:1",
@@ -21546,7 +21670,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 28:1",
-                "text": "Sm 13.."
+                "text": "Uma vez a salvo em terra, descobrimos que estávamos na ilha de Malta."
               }
             ]
           },
@@ -21580,7 +21704,7 @@
               },
               {
                 "ref": "1 Reis 22:48",
-                "text": "Josafá construiu uma frota de navios mercantes121 para buscar ouro em Ofir. As embarcações, porém, nunca chegaram a navegar, pois naufragaram no porto de Eziom-Geber."
+                "text": "Josafá construiu uma frota de navios mercantes para buscar ouro em Ofir. As embarcações, porém, nunca chegaram a navegar, pois naufragaram no porto de Eziom-Geber."
               },
               {
                 "ref": "2 Crônicas 20:37",
@@ -21603,7 +21727,7 @@
               },
               {
                 "ref": "Atos 12:19",
-                "text": "Herodes ordenou que fosse feita uma busca completa por ele. Não conseguindo encontrá- lo, interrogou os guardas e mandou executá-los. Depois disso, Herodes partiu da Judeia e foi passar algum tempo em Cesareia."
+                "text": "Herodes ordenou que fosse feita uma busca completa por ele. Não conseguindo encontrá-lo, interrogou os guardas e mandou executá-los. Depois disso, Herodes partiu da Judeia e foi passar algum tempo em Cesareia."
               },
               {
                 "ref": "Lucas 23:40–41",
@@ -21664,6 +21788,7 @@
   "28": {
     "book": "Atos dos Apóstolos",
     "chapter": "28",
+    "verified": true,
     "sections": [
       {
         "title": "Paulo na ilha de Malta",
@@ -21687,7 +21812,7 @@
               },
               {
                 "ref": "Atos 16:10",
-                "text": "Então decidimos partir de imediato para a Macedônia, concluindo que Deus nos havia chamado para anunciar ali as boas- novas."
+                "text": "Então decidimos partir de imediato para a Macedônia, concluindo que Deus nos havia chamado para anunciar ali as boas-novas."
               }
             ]
           },
@@ -21706,7 +21831,7 @@
               },
               {
                 "ref": "Hebreus 13:2",
-                "text": "Sm 7.."
+                "text": "Não se esqueçam de demonstrar hospitalidade, porque alguns, sem o saber, hospedaram anjos."
               },
               {
                 "ref": "2 Coríntios 11:27",
@@ -21752,7 +21877,7 @@
               },
               {
                 "ref": "João 7:24",
-                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”. Jesus é o Messias?"
+                "text": "Não julguem de acordo com as aparências, mas julguem de maneira justa”."
               },
               {
                 "ref": "Atos 28:2",
@@ -21794,7 +21919,7 @@
               },
               {
                 "ref": "Mateus 21:9",
-                "text": "E as pessoas, tanto as que iam à frente como as que o seguiam, gritavam: “Hosana,118 Filho de Davi! Bendito é o que vem em nome do Senhor! Hosana no mais alto céu!”."
+                "text": "E as pessoas, tanto as que iam à frente como as que o seguiam, gritavam: “Hosana, Filho de Davi! Bendito é o que vem em nome do Senhor! Hosana no mais alto céu!”."
               },
               {
                 "ref": "Atos 14:11–13",
@@ -21901,7 +22026,7 @@
         "verses": [
           {
             "number": 11,
-            "text": "Três meses depois do naufrágio, embarcamos em outro navio, que havia passado o inverno na ilha. Era um navio alexandrino, que tinha na parte da frente a figura dos deuses gêmeos.134",
+            "text": "Três meses depois do naufrágio, embarcamos em outro navio, que havia passado o inverno na ilha. Era um navio alexandrino, que tinha na parte da frente a figura dos deuses gêmeos.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -21924,7 +22049,7 @@
           },
           {
             "number": 12,
-            "text": "Aportamos em Siracusa,135 onde ficamos três dias.",
+            "text": "Aportamos em Siracusa, onde ficamos três dias.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -21933,13 +22058,13 @@
               },
               {
                 "ref": "Atos 27:2",
-                "text": "Aristarco, um macedônio de Tessalônica, nos acompanhou. Partimos num navio que tinha vindo do porto de Adramítio, no litoral noroeste da província da Ásia.129 Estavam previstas diversas paradas em portos ao longo da costa."
+                "text": "Aristarco, um macedônio de Tessalônica, nos acompanhou. Partimos num navio que tinha vindo do porto de Adramítio, no litoral noroeste da província da Ásia. Estavam previstas diversas paradas em portos ao longo da costa."
               }
             ]
           },
           {
             "number": 13,
-            "text": "Dali navegamos até Régio.136 Um dia depois, um vento sul começou a soprar, de modo que no dia seguinte prosseguimos até Potéoli.",
+            "text": "Dali navegamos até Régio. Um dia depois, um vento sul começou a soprar, de modo que no dia seguinte prosseguimos até Potéoli.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -21973,7 +22098,7 @@
           },
           {
             "number": 15,
-            "text": "Os irmãos em Roma souberam que estávamos chegando e vieram ao nosso encontro no Fórum137 da Via Ápia. Outros se juntaram a nós nas Três Vendas.138 Ao vê-los, Paulo se animou e agradeceu a Deus.",
+            "text": "Os irmãos em Roma souberam que estávamos chegando e vieram ao nosso encontro no Fórum da Via Ápia. Outros se juntaram a nós nas Três Vendas. Ao vê-los, Paulo se animou e agradeceu a Deus.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -22005,7 +22130,7 @@
               },
               {
                 "ref": "Atos 24:23",
-                "text": "Ordenou que um oficial122 mantivesse Paulo sob custódia, mas lhe deu certa liberdade e permitiu que seus amigos o visitassem e providenciassem aquilo de que ele precisava."
+                "text": "Ordenou que um oficial mantivesse Paulo sob custódia, mas lhe deu certa liberdade e permitiu que seus amigos o visitassem e providenciassem aquilo de que ele precisava."
               },
               {
                 "ref": "Romanos 1:7–15",
@@ -22013,7 +22138,7 @@
               },
               {
                 "ref": "Gênesis 37:36",
-                "text": "Enquanto isso, os negociantes midianitas140 chegaram ao Egito, onde venderam José a Potifar, oficial e capitão da guarda do faraó."
+                "text": "Enquanto isso, os negociantes midianitas chegaram ao Egito, onde venderam José a Potifar, oficial e capitão da guarda do faraó."
               }
             ]
           }
@@ -22033,7 +22158,7 @@
               },
               {
                 "ref": "Atos 6:14",
-                "text": "Nós o ouvimos dizer que esse Jesus de Nazaré30 destruirá o templo e mudará os costumes que Moisés nos deixou”."
+                "text": "Nós o ouvimos dizer que esse Jesus de Nazaré destruirá o templo e mudará os costumes que Moisés nos deixou”."
               },
               {
                 "ref": "Gênesis 40:15",
@@ -22192,12 +22317,12 @@
           },
           {
             "number": 25,
-            "text": "E, depois de discutirem entre si, foram embora com estas palavras finais de Paulo: “O Espírito Santo estava certo quando disse a nossos antepassados por meio do profeta Isaías: 26‘Vá e diga a este povo: Quando ouvirem o que digo, não entenderão. Quando virem o que faço, não compreenderão.",
+            "text": "E, depois de discutirem entre si, foram embora com estas palavras finais de Paulo: “O Espírito Santo estava certo quando disse a nossos antepassados por meio do profeta Isaías:",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Mateus 15:7",
-                "text": "Hipócritas! Isaías tinha razão quando assim profetizou a seu respeito: 8‘Este povo me honra com os lábios, mas o coração está longe de mim."
+                "text": "Hipócritas! Isaías tinha razão quando assim profetizou a seu respeito:"
               },
               {
                 "ref": "Marcos 7:6",
@@ -22210,8 +22335,14 @@
             ]
           },
           {
+            "number": 26,
+            "text": "‘Vá e diga a este povo: Quando ouvirem o que digo, não entenderão. Quando virem o que faço, não compreenderão.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 27,
-            "text": "Pois o coração deste povo está endurecido; ouvem com dificuldade e têm os olhos fechados, de modo que seus olhos não veem, e seus ouvidos não ouvem, e seu coração não entende, e não se voltam para mim, nem permitem que eu os cure’.139",
+            "text": "Pois o coração deste povo está endurecido; ouvem com dificuldade e têm os olhos fechados, de modo que seus olhos não veem, e seus ouvidos não ouvem, e seu coração não entende, e não se voltam para mim, nem permitem que eu os cure’.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -22245,12 +22376,12 @@
           },
           {
             "number": 29,
-            "text": "Depois de ele ter dito essas palavras, os judeus partiram, em grande desacordo uns com os outros.140",
+            "text": "Depois de ele ter dito essas palavras, os judeus partiram, em grande desacordo uns com os outros.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Mateus 10:34",
-                "text": "“Não imaginem que vim trazer paz à terra! Não vim trazer paz, mas a espada. 35‘Vim para pôr o homem contra seu pai, a filha contra sua mãe, e a nora contra sua sogra."
+                "text": "“Não imaginem que vim trazer paz à terra! Não vim trazer paz, mas a espada."
               },
               {
                 "ref": "Lucas 12:51",
@@ -22262,13 +22393,13 @@
               },
               {
                 "ref": "Atos 28:25",
-                "text": "E, depois de discutirem entre si, foram embora com estas palavras finais de Paulo: “O Espírito Santo estava certo quando disse a nossos antepassados por meio do profeta Isaías: 26‘Vá e diga a este povo: Quando ouvirem o..."
+                "text": "E, depois de discutirem entre si, foram embora com estas palavras finais de Paulo: “O Espírito Santo estava certo quando disse a nossos antepassados por meio do profeta Isaías:"
               }
             ]
           },
           {
             "number": 30,
-            "text": "Durante os dois anos seguintes, Paulo morou em Roma, às próprias custas.141 A todos que o visitavam ele recebia,",
+            "text": "Durante os dois anos seguintes, Paulo morou em Roma, às próprias custas. A todos que o visitavam ele recebia,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -22291,7 +22422,7 @@
           },
           {
             "number": 31,
-            "text": "proclamando corajosamente o reino de Deus e ensinando a respeito do Senhor Jesus Cristo sem restrição alguma. 1 1. Isto é, o evangelho de Lucas. 2 1. Ou em; também em 1.5b. 3 1. Em grego, a jornada de um sábado. 4 1. Em grego, irmãos. 5 1. Sl 69.; 109.. 6 2. A Festa de Pentecostes era comemorada cinquenta dias depois da Páscoa dos judeus (quando Jesus foi crucificado). 7 2.17-21 Jl 2.28-32. 8 2. Ou Jesus de Nazaré. 9 2. Em grego, no Hades; também em 2.. 10 2.25-28 Sl 16.8-11, conforme a Septuaginta. 11 2. Ou Messias. Tanto Messias (do hebraico) como Cristo (do grego) significam “ungido”. 12 2.34-35 Sl 110.. 13 2. Ou Vocês devem se arrepender, e cada um deve ser batizado em nome de Jesus Cristo, para o perdão de seus pecados. 14 2. Ou para aqueles no futuro distante, ou para os gentios. 15 2. Ou e coração sincero. 16 3.6a Ou Jesus Cristo de Nazaré. 17 3.6b Alguns manuscritos não trazem levante-se e. 18 3. Dt 18.. 19 3. Dt 18.; Lv 23.. 20 3.25a Em grego, sua semente. 21 3.25b Gn 12.; 22.. 22 4. Ou Jesus Cristo de Nazaré. 23 4. Sl 118.. 24 4. Em grego, do Sinédrio. 25 4.25-26 Ou seu Messias [Ungido]. Sl 2.1-2. 26 5. Em grego, Sinédrio; também em 5.,,. 27 5. Em grego, num madeiro. 28 5. Em grego, pelo nome. 29 6. Em grego, Sinédrio; também em 6.. 30 6. Ou Jesus, o nazareno. 31 7.2a Mesopotâmia era a região onde hoje se localiza o Iraque. 32 7.2b Harã era uma cidade na região da atual Síria. 33 7. Gn 12.. 34 7.5-7 Gn 12.; 15.13-14; Êx 3.. 35 7. Alguns manuscritos trazem José foi reconhecido por seus irmãos. 36 7.31-34 Êx 3.5-10. 37 7. Dt 18.. 38 7. Êx 32.. 39 7.42-43 Am 5.25-27, conforme a Septuaginta. 40 7. Em grego, a tenda do testemunho. 41 7. Alguns manuscritos trazem para a casa de Jacó. 42 7.49-50 Is 66.1-2. 43 8. Ou Vá ao meio-dia. 44 8.32-33 Is 53.7-8, conforme a Septuaginta. 45 8. Alguns manuscritos não trazem o versículo 37. 46 9. Tanto Tabita (do aramaico) como Dorcas (do grego) significam “gazela”. 47 9. Em grego, os santos. 48 10. Em grego, centurião; também em 10.. 49 10. Em grego, comum; também em 10.,. 50 10. Em grego, num madeiro. 51 10. Em grego, Os fiéis da circuncisão. 52 11. Em grego, os da circuncisão. 53 11. Em grego, homens incircuncisos. 54 11. Em grego, comum; também em 11.. 55 11. Ou em; também em 11.16b. 56 11. Em grego, aos helenistas (i.e., aos de fala grega); alguns manuscritos trazem aos gregos. 57 11. Ou anciãos. 58 12. Em grego, o rei Herodes. Sobrinho de Herodes Antipas e neto de Herodes, o Grande. 59 12. Ou sua missão, voltaram a Jerusalém. Alguns manuscritos trazem sua missão, voltaram de Jerusalém; outros, sua missão, voltaram de Jerusalém para Antioquia. 60 13.1a Em grego, chamado Níger. 61 13.1b Em grego, Herodes, o tetrarca. 62 13.13-14 Panfília e Pisídia eram distritos na região que hoje corresponde à Turquia. 63 13. Alguns manuscritos trazem Ele cuidou deles; comparar com Dt 1.. 64 13.",
+            "text": "proclamando corajosamente o reino de Deus e ensinando a respeito do Senhor Jesus Cristo sem restrição alguma.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -22304,34 +22435,11 @@
               },
               {
                 "ref": "Mateus 4:23",
-                "text": "Jesus viajou por toda a região da Galileia, ensinando nas sinagogas, anunciando as ­boas-novas do reino e curando as pessoas de todo tipo de doenças."
+                "text": "Jesus viajou por toda a região da Galileia, ensinando nas sinagogas, anunciando as boas-novas do reino e curando as pessoas de todo tipo de doenças."
               },
               {
                 "ref": "Atos 28:23",
                 "text": "Então marcaram uma data e, nesse dia, muita gente foi à casa de Paulo. Ele explicou e testemunhou sobre o reino de Deus e, desde cedo até a noite, procurou convencê-los acerca de Jesus com base na lei de Moisés e nos livros dos profetas."
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Sm 13.. 65 13. Em grego, do madeiro. 66 13. Ou Hoje eu o revelo como meu Filho. Sl 2.. 67 13. Is 55.. 68 13. Sl 16.. 69 13. Hc 1., conforme a Septuaginta. 70 13. Is 49.. 71 14. Assim como Listra e Derbe (14.6), a cidade de Icônio ficava na região que hoje corresponde à Turquia. 72 14. Em grego, em licaônico. 73 14. Em grego, Homens. 74 14. Ou anciãos. 75 15.2a Em grego, eles decidiram. 76 15.2b Ou anciãos; também em 15.,,,. 77 15. Em grego, Simeão. 78 15.16-18 Am 9.11-12, conforme a Septuaginta; Is 45.. 79 15. Alguns manuscritos não trazem o versículo 34. 80 16. Ou anciãos. 81 16.6-7 Frígia, Galácia, Ásia, Mísia e Bitínia eram distritos na região que hoje corresponde à Turquia. 82 16. Deste ponto em diante, Lucas, o autor de Atos, começou a viajar com Paulo. 83 17. Alguns manuscritos trazem várias esposas de homens de alta posição. 84 17. Ou ao povo. 85 17. Ou à sociedade mais erudita de filósofos da cidade. Em grego, ao Areópago; também em 17.. 86 17. Em grego, De um só; alguns manuscritos trazem De um só sangue. 87 17. Alguns manuscritos trazem nossos. 88 17. Em grego, o areopagita. 89 18.1 Atenas e Corinto eram cidades importantes da Acaia, a região sul da península grega. 90 18. Ou artesãos que trabalhavam com couro. 91 18. Em grego, O sangue de vocês está sobre sua própria cabeça. 92 18. Em grego, Todos; alguns manuscritos trazem Todos os gregos. 93 18. Ou com entusiasmo no Espírito. 94 19. Em grego, 50.000 dracmas. Uma dracma equivalia ao salário por um dia completo de trabalho. 95 19. Ou decidiu em seu espírito. 96 19. Também conhecida como Diana. 97 19. Outras traduções apresentam o versículo 41 como parte do versículo 40. 98 20. Alguns manuscritos acrescentam depois de pararmos em Trogílio. 99 20. Ou anciãos. 100 20. Ou por meu espírito, ou por uma compulsão interior; o grego traz pelo espírito. 101 20. Ou sou inocente do sangue de todos. 102 20.28a Ou supervisores. 103 20.28b Ou com o sangue de seu próprio [Filho]. 104 21. Ou esposas. 105 21. Ou anciãos. 106 21. Em grego, gregos. 107 21. Ou Trófimo, o efésio. 108 21. Em grego, centuriões. 109 21. Ou em hebraico. 110 22. Ou em hebraico. 111 22. Ou Jesus de Nazaré. 112 22. Em grego, centurião; também em 22.. 113 22. Em grego, Sinédrio. 114 23. Em grego, Sinédrio; também em 23.,,,. 115 23. Em grego, parede branqueada. 116 23. Êx 22.. 117 23. Em grego, centuriões; também em 23.. 118 23. Em grego, no pretório de Herodes. 119 24. Em grego, um orador. 120 24.6-8 Alguns manuscritos não trazem todo o trecho Nós queríamos julgá-lo [...] perante o senhor. 121 24. Em grego, Sinédrio. 122 24. Em grego, centurião. 123 25. Em grego, o rei Agripa e Berenice chegaram. 124 26. Ou Jesus de Nazaré. 125 26.14a Ou em hebraico. 126 26.14b Em grego, É difícil dar coices contra o aguilhão. 127 26. Ou Um pouco mais e seus argumentos me transformariam num cristão. 128 27. Em grego, centurião; também em 27.,,,. 129 27. A Ásia era uma província romana na região que hoje corresponde à Turquia. 130 27. Em grego, porque já havia passado o jejum. O jejum em questão era associado ao Dia da Expiação (Yom Kippur), que caía no final de setembro ou início de outubro (e, portanto, no outono do Hemisfério Norte). 131 27. Alguns manuscritos trazem Clauda. 132 27. Diferentemente do mar conhecido por este nome hoje, no primeiro século o mar Adriático abrangia a parte central do mar Mediterrâneo. 133 27. Em grego, 20 braças [...] 15 braças. 134 28. Isto é, os deuses romanos Cástor e Pólux. 135 28. Siracusa se localiza na ilha da Sicília. 136 28. Régio se localiza na extremidade sul da Itália. 137 28.15a O Fórum ficava a cerca de 70 quilômetros de Roma. 138 28.15b As Três Vendas ficavam a cerca de 57 quilômetros de Roma. 139 28.26-27 Is 6.9-10, conforme a Septuaginta. 140 28. Alguns manuscritos não trazem o versículo 29. 141 28. Ou na casa que ele havia alugado.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Atos 27:26",
-                "text": "É necessário, porém, que sejamos impulsionados para uma ilha”."
-              },
-              {
-                "ref": "Atos 27:44",
-                "text": "Os outros se agarraram a tábuas ou pedaços do navio destruído. Assim, todos chegaram à praia em segurança."
-              },
-              {
-                "ref": "Atos 27:39",
-                "text": "Ao amanhecer, não reconheceram a terra, mas viram uma enseada com uma praia e cogitaram se seria possível chegar ali e atracar o navio."
-              },
-              {
-                "ref": "Atos 16:10",
-                "text": "Então decidimos partir de imediato para a Macedônia, concluindo que Deus nos havia chamado para anunciar ali as boas- novas."
               }
             ]
           }

@@ -2,6 +2,7 @@
   "1": {
     "book": "Joel",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -13,14 +14,15 @@
             "crossReferences": [
               {
                 "ref": "Atos 2:16",
-                "text": "Pelo contrário! O que vocês estão vendo foi predito há tempos pelo profeta Joel: 17‘Nos últimos dias’, disse Deus, ‘derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os jovens ter..."
+                "text": "Pelo contrário! O que vocês estão vendo foi predito há tempos pelo profeta Joel:"
               },
               {
                 "ref": "Jeremias 1:2",
                 "text": "O SENHOR lhe deu esta mensagem no décimo terceiro ano do reinado de Josias, filho de Amom, rei de Judá."
               },
               {
-                "ref": "Ezequiel 1:3"
+                "ref": "Ezequiel 1:3",
+                "text": "(O SENHOR deu essa mensagem ao sacerdote Ezequiel, filho de Buzi, junto ao rio Quebar, na terra dos babilônios, e a mão do SENHOR estava sobre ele.)"
               },
               {
                 "ref": "2 Pedro 1:21",
@@ -81,7 +83,7 @@
           },
           {
             "number": 4,
-            "text": "Depois que os gafanhotos cortadores devoraram as colheitas, os gafanhotos migradores comeram o que restava; então vieram os gafanhotos saltadores e, depois deles, os gafanhotos destruidores!1",
+            "text": "Depois que os gafanhotos cortadores devoraram as colheitas, os gafanhotos migradores comeram o que restava; então vieram os gafanhotos saltadores e, depois deles, os gafanhotos destruidores!",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -305,7 +307,7 @@
               },
               {
                 "ref": "1 Reis 21:27",
-                "text": "Quando Acabe ouviu essa mensagem, rasgou suas roupas, vestiu- se de pano de saco e jejuou. Passou a dormir em cima de panos de saco e a andar cabisbaixo."
+                "text": "Quando Acabe ouviu essa mensagem, rasgou suas roupas, vestiu-se de pano de saco e jejuou. Passou a dormir em cima de panos de saco e a andar cabisbaixo."
               }
             ]
           },
@@ -469,6 +471,7 @@
   "2": {
     "book": "Joel",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Os gafanhotos invadem como um exército",
@@ -491,7 +494,8 @@
                 "text": "O fim de todas as coisas está próximo. Portanto, sejam sensatos e disciplinados em suas orações."
               },
               {
-                "ref": "Malaquias 4:1"
+                "ref": "Malaquias 4:1",
+                "text": "Assim diz o SENHOR dos Exércitos: “O dia do julgamento se aproxima e arde como uma fornalha. Naquele dia, serão queimados como palha os arrogantes e os perversos. Serão consumidos, desde as raízes até os ramos."
               }
             ]
           },
@@ -632,7 +636,7 @@
               },
               {
                 "ref": "2 Crônicas 32:5",
-                "text": "Então Ezequias se dedicou a reparar todos os trechos onde o muro estava quebrado, construiu torres e fez outro muro do lado de fora do primeiro. Também reforçou o aterro139 da Cidade de Davi e fabricou grande quantidade de armas e escudos."
+                "text": "Então Ezequias se dedicou a reparar todos os trechos onde o muro estava quebrado, construiu torres e fez outro muro do lado de fora do primeiro. Também reforçou o aterro da Cidade de Davi e fabricou grande quantidade de armas e escudos."
               },
               {
                 "ref": "2 Crônicas 23:10",
@@ -821,7 +825,7 @@
               },
               {
                 "ref": "1 Coríntios 7:5",
-                "text": "Não privem um ao outro de terem relações, a menos que ambos concordem em abster-se da intimidade sexual por certo tempo, a fim de se dedicarem de modo mais pleno à oração. Depois disso, unam- se novamente, para que Satan..."
+                "text": "Não privem um ao outro de terem relações, a menos que ambos concordem em abster-se da intimidade sexual por certo tempo, a fim de se dedicarem de modo mais pleno à oração. Depois disso, unam-se novamente, para que Sataná..."
               },
               {
                 "ref": "Joel 1:14",
@@ -876,7 +880,7 @@
               },
               {
                 "ref": "Lamentações 3:22",
-                "text": "O amor do SENHOR não tem fim!12 Suas misericórdias são inesgotáveis."
+                "text": "O amor do SENHOR não tem fim! Suas misericórdias são inesgotáveis."
               }
             ]
           },
@@ -1062,7 +1066,7 @@
           },
           {
             "number": 27,
-            "text": "Então vocês saberão que estou no meio de Israel, que sou o SENHOR, seu Deus, e não há nenhum outro; nunca mais meu povo será envergonhado.” O SENHOR promete seu Espírito 285 “Então, depois que eu tiver feito essas coisas, derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os velhos terão sonhos, e os jovens terão visões.",
+            "text": "Então vocês saberão que estou no meio de Israel, que sou o SENHOR, seu Deus, e não há nenhum outro; nunca mais meu povo será envergonhado.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1079,9 +1083,20 @@
               },
               {
                 "ref": "Ezequiel 39:28",
-                "text": "Então meu povo saberá que eu sou o SENHOR, seu Deus, pois os enviei para o exílio entre as nações e os trouxe de volta para sua terra."
+                "text": "Então meu povo saberá que eu sou o SENHOR, seu Deus, pois os enviei para o exílio entre as nações e os trouxe de volta para sua terra. Não deixarei nenhum deles para trás"
               }
             ]
+          }
+        ]
+      },
+      {
+        "title": "O SENHOR promete seu Espírito",
+        "verses": [
+          {
+            "number": 28,
+            "text": "“Então, depois que eu tiver feito essas coisas, derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os velhos terão sonhos, e os jovens terão visões.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 29,
@@ -1139,7 +1154,8 @@
                 "text": "“Imediatamente depois da angústia daqueles dias, ‘o sol escurecerá, a lua não dará luz, as estrelas cairão do céu e os poderes dos céus serão abalados’."
               },
               {
-                "ref": "Malaquias 4:1"
+                "ref": "Malaquias 4:1",
+                "text": "Assim diz o SENHOR dos Exércitos: “O dia do julgamento se aproxima e arde como uma fornalha. Naquele dia, serão queimados como palha os arrogantes e os perversos. Serão consumidos, desde as raízes até os ramos."
               },
               {
                 "ref": "Malaquias 4:5",
@@ -1166,7 +1182,7 @@
               },
               {
                 "ref": "Jeremias 33:3",
-                "text": "Pergunte- me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
+                "text": "Pergunte-me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
               }
             ]
           }
@@ -1177,13 +1193,14 @@
   "3": {
     "book": "Joel",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Julgamento contra as nações inimigas",
         "verses": [
           {
             "number": 1,
-            "text": "17 “No tempo em que essas coisas acontecerem, quando eu restaurar Judá e Jerusalém,",
+            "text": "“No tempo em que essas coisas acontecerem, quando eu restaurar Judá e Jerusalém,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1196,7 +1213,7 @@
               },
               {
                 "ref": "Ezequiel 39:25",
-                "text": "“Portanto, assim diz o SENHOR Soberano: Acabarei com o exílio de meu povo;102 terei compaixão de todo o Israel, pois tenho zelo por meu santo nome."
+                "text": "“Portanto, assim diz o SENHOR Soberano: Acabarei com o exílio de meu povo; terei compaixão de todo o Israel, pois tenho zelo por meu santo nome."
               },
               {
                 "ref": "Amós 9:14",
@@ -1211,7 +1228,7 @@
             "crossReferences": [
               {
                 "ref": "Zacarias 14:2–4",
-                "text": "Rs 25.."
+                "text": "Reunirei todas as nações para lutarem contra Jerusalém. A cidade será conquistada, as casas serão saqueadas, e as mulheres, violentadas. Metade da população será levada para o exílio, e o restante será deixado na cidade."
               },
               {
                 "ref": "Isaías 66:16",
@@ -1561,14 +1578,15 @@
             "crossReferences": [
               {
                 "ref": "Joel 2:27",
-                "text": "Então vocês saberão que estou no meio de Israel, que sou o SENHOR, seu Deus, e não há nenhum outro; nunca mais meu povo será envergonhado.” O SENHOR promete seu Espírito 285 “Então, depois que eu tiver feito essas coisas..."
+                "text": "Então vocês saberão que estou no meio de Israel, que sou o SENHOR, seu Deus, e não há nenhum outro; nunca mais meu povo será envergonhado.”"
               },
               {
                 "ref": "Isaías 52:1",
                 "text": "Desperte, desperte, ó Sião! Vista-se de força! Ponha suas lindas roupas, ó cidade santa de Jerusalém, pois os incircuncisos e os impuros não entrarão mais por seus portões."
               },
               {
-                "ref": "Naum 1:15"
+                "ref": "Naum 1:15",
+                "text": "Vejam, um mensageiro vem pelas montanhas com boas notícias! Ele traz uma mensagem de paz. Celebrem suas festas, ó habitantes de Judá, e cumpram seus votos, pois seus inimigos perversos nunca mais invadirão sua terra; serão completamente destruídos."
               },
               {
                 "ref": "Isaías 4:3",
@@ -1614,11 +1632,11 @@
               },
               {
                 "ref": "Zacarias 14:18–19",
-                "text": "Se o povo do Egito não quiser ir à festa, o SENHOR o castigará45 com as mesmas pragas que enviará sobre as outras nações que se recusarem a ir."
+                "text": "Se o povo do Egito não quiser ir à festa, o SENHOR o castigará com as mesmas pragas que enviará sobre as outras nações que se recusarem a ir."
               },
               {
                 "ref": "Obadias 1:1",
-                "text": "Esta é a visão que o SENHOR Soberano revelou a Obadias acerca da terra de Edom. O julgamento de Edom é anunciado Ouvimos uma mensagem do SENHOR, que um embaixador foi enviado às nações para dizer: “Preparem-se, todos! Va..."
+                "text": "Esta é a visão que o SENHOR Soberano revelou a Obadias acerca da terra de Edom."
               }
             ]
           },
@@ -1643,7 +1661,7 @@
           },
           {
             "number": 21,
-            "text": "Perdoarei os crimes de meu povo, que ainda não perdoei; e eu, o SENHOR, habitarei em Sião.” 1 1. A identificação exata dos quatro tipos de gafanhotos é incerta. 2 2. Ou como cavaleiros. 3 2. Em hebraico, para o mar oriental [...] para o mar ocidental. 4 2. A identificação exata dos quatro tipos de gafanhotos é incerta. 5 2. No texto hebraico, os versículos 2.28-32 são numerados 3.1-5. 6 2. A Septuaginta traz glorioso. 7 3. No texto hebraico, os versículos 3.1-21 são numerados 4.1-21. 8 3. Josafá significa “o SENHOR julga”. 9 3. Em hebraico, aos povos de Javã. 10 3. Em hebraico, aos sabeus. 11 3. A Septuaginta traz pois o tempo da colheita chegou. Comparar com Mc 4.. 12 3. Em hebraico, vale de Sitim.",
+            "text": "Perdoarei os crimes de meu povo, que ainda não perdoei; e eu, o SENHOR, habitarei em Sião.”",
             "isJesusWords": false,
             "crossReferences": [
               {

@@ -2,6 +2,7 @@
   "1": {
     "book": "Hebreus",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Jesus Cristo é o Filho de Deus",
@@ -16,7 +17,8 @@
                 "text": "Acima de tudo, saibam que nenhuma profecia nas Escrituras surgiu do entendimento do próprio profeta, nem de iniciativa humana. Esses homens foram impulsionados pelo Espírito Santo e falaram da parte de Deus."
               },
               {
-                "ref": "Joel 2:28"
+                "ref": "Joel 2:28",
+                "text": "“Então, depois que eu tiver feito essas coisas, derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os velhos terão sonhos, e os jovens terão visões."
               },
               {
                 "ref": "Números 12:6–8",
@@ -251,7 +253,7 @@
               },
               {
                 "ref": "Marcos 13:31",
-                "text": "O céu e a terra desaparecerão, mas as minhas palavras jamais ­desaparecerão."
+                "text": "O céu e a terra desaparecerão, mas as minhas palavras jamais desaparecerão."
               },
               {
                 "ref": "Lucas 21:33",
@@ -293,14 +295,15 @@
             "crossReferences": [
               {
                 "ref": "Salmos 110:1",
-                "text": "O SENHOR disse ao meu Senhor:144 “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
+                "text": "O SENHOR disse ao meu Senhor: “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
               },
               {
                 "ref": "Marcos 12:36",
                 "text": "O próprio Davi, falando por meio do Espírito Santo, disse: ‘O Senhor disse ao meu Senhor: Sente-se no lugar de honra à minha direita até que eu humilhe seus inimigos debaixo de seus pés’."
               },
               {
-                "ref": "Mateus 22:44"
+                "ref": "Mateus 22:44",
+                "text": "‘O Senhor disse ao meu Senhor: Sente-se no lugar de honra à minha direita até que eu humilhe seus inimigos debaixo de seus pés’."
               },
               {
                 "ref": "Hebreus 10:12–13",
@@ -338,6 +341,7 @@
   "2": {
     "book": "Hebreus",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "Advertência contra a negligência espiritual",
@@ -407,13 +411,13 @@
               },
               {
                 "ref": "1 Pedro 4:17–18",
-                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas- novas de Deus!"
+                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas-novas de Deus!"
               }
             ]
           },
           {
             "number": 4,
-            "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade. Jesus, o homem",
+            "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -433,7 +437,12 @@
                 "text": "Por isso as Escrituras dizem: “Quando ele subiu às alturas, levou muitos prisioneiros e concedeu dádivas ao povo”."
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "title": "Jesus, o homem",
+        "verses": [
           {
             "number": 5,
             "text": "Além disso, não são anjos que governarão o mundo futuro a que nos referimos.",
@@ -601,7 +610,8 @@
                 "text": "Jesus respondeu: “Falei abertamente a todos. Ensinei regularmente nas sinagogas e no templo, onde o povo se reúne."
               },
               {
-                "ref": "Salmos 111:1"
+                "ref": "Salmos 111:1",
+                "text": "Louvado seja o SENHOR! De todo o meu coração darei graças ao SENHOR quando me reunir com os justos."
               }
             ]
           },
@@ -750,6 +760,7 @@
   "3": {
     "book": "Hebreus",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Jesus é maior que Moisés",
@@ -941,14 +952,15 @@
               },
               {
                 "ref": "Deuteronômio 4:9",
-                "text": "“Fiquem muito atentos! Cuidem para que não se esqueçam daquilo que viram com os próprios olhos. Não deixem que essas lembranças se apaguem de sua memória enquanto viverem. Passem- nas adiante a seus filhos e netos."
+                "text": "“Fiquem muito atentos! Cuidem para que não se esqueçam daquilo que viram com os próprios olhos. Não deixem que essas lembranças se apaguem de sua memória enquanto viverem. Passem-nas adiante a seus filhos e netos."
               },
               {
                 "ref": "Deuteronômio 4:3",
                 "text": "“Vocês viram com os próprios olhos o que o SENHOR fez no incidente em Baal-Peor. Ali, o SENHOR, seu Deus, destruiu todos aqueles que adoraram Baal, o deus de Peor."
               },
               {
-                "ref": "Êxodo 19:4"
+                "ref": "Êxodo 19:4",
+                "text": "‘Vocês viram o que fiz aos egípcios. Sabem como carreguei vocês sobre asas de águias e os trouxe para mim."
               }
             ]
           },
@@ -982,7 +994,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 1:34–35",
-                "text": "“Quando o SENHOR ouviu vocês se queixarem, ficou irado e, por isso, fez um juramento: 35‘Nenhum de vocês desta geração perversa viverá para ver a boa terra que eu jurei dar a seus antepassados."
+                "text": "“Quando o SENHOR ouviu vocês se queixarem, ficou irado e, por isso, fez um juramento: ‘Nenhum de vocês desta geração perversa viverá para ver a boa terra que eu jurei dar a seus antepassados."
               },
               {
                 "ref": "Hebreus 4:3",
@@ -1147,7 +1159,7 @@
               },
               {
                 "ref": "Deuteronômio 1:34–35",
-                "text": "“Quando o SENHOR ouviu vocês se queixarem, ficou irado e, por isso, fez um juramento: 35‘Nenhum de vocês desta geração perversa viverá para ver a boa terra que eu jurei dar a seus antepassados."
+                "text": "“Quando o SENHOR ouviu vocês se queixarem, ficou irado e, por isso, fez um juramento: ‘Nenhum de vocês desta geração perversa viverá para ver a boa terra que eu jurei dar a seus antepassados."
               },
               {
                 "ref": "Números 14:30",
@@ -1189,6 +1201,7 @@
   "4": {
     "book": "Hebreus",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Descanso prometido ao povo de Deus",
@@ -1342,7 +1355,7 @@
               },
               {
                 "ref": "Mateus 22:43",
-                "text": "Jesus perguntou: “Então por que Davi, falando por meio do Espírito, chama o Cristo de ‘meu Senhor’? Pois Davi disse: 44‘O Senhor disse ao meu Senhor: Sente-se no lugar de honra à minha direita até que eu humilhe seus inimigos debaixo de seus pés’."
+                "text": "Jesus perguntou: “Então por que Davi, falando por meio do Espírito, chama o Cristo de ‘meu Senhor’? Pois Davi disse:"
               }
             ]
           },
@@ -1565,13 +1578,14 @@
   "5": {
     "book": "Hebreus",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "",
         "verses": [
           {
             "number": 1,
-            "text": "Todo sumo sacerdote é um homem escolhido para representar outras pessoas nas coisas referentes a Deus.",
+            "text": "Todo sumo sacerdote é um homem escolhido para representar outras pessoas nas coisas referentes a Deus. Ele apresenta ofertas e sacrifícios pelos pecados",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1591,12 +1605,7 @@
                 "text": "“Quando consagrar Arão e seus filhos para me servirem como sacerdotes, realize a seguinte cerimônia: tome um novilho e dois carneiros sem defeito."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Ele apresenta ofertas e sacrifícios pelos pecados",
-        "verses": [
+          },
           {
             "number": 2,
             "text": "e é capaz de tratar com bondade os ignorantes e os que se desviam, pois está sujeito às mesmas fraquezas.",
@@ -1723,7 +1732,7 @@
               },
               {
                 "ref": "Mateus 27:46",
-                "text": "Por volta das três da tarde, Jesus clamou em alta voz: “Eli, Eli,165 lamá sabactâni?”, que quer dizer: “Meu Deus, meu Deus, por que me abandonaste?”."
+                "text": "Por volta das três da tarde, Jesus clamou em alta voz: “Eli, Eli, lamá sabactâni?”, que quer dizer: “Meu Deus, meu Deus, por que me abandonaste?”."
               },
               {
                 "ref": "Marcos 14:32–39",
@@ -1900,6 +1909,7 @@
   "6": {
     "book": "Hebreus",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -1923,7 +1933,7 @@
               },
               {
                 "ref": "Atos 26:20",
-                "text": "Anunciei a mensagem primeiro em Damasco, depois em Jerusalém e em toda a Judeia, e também aos gentios, dizendo que todos devem arrepender- se, voltar-se para Deus e mostrar, por meio de suas boas obras, que mudaram de rumo."
+                "text": "Anunciei a mensagem primeiro em Damasco, depois em Jerusalém e em toda a Judeia, e também aos gentios, dizendo que todos devem arrepender-se, voltar-se para Deus e mostrar, por meio de suas boas obras, que mudaram de rumo."
               }
             ]
           },
@@ -2215,7 +2225,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 22:17",
-                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar."
+                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar. Seus descendentes conquistarão as cidades de seus inimigos"
               },
               {
                 "ref": "Deuteronômio 1:10",
@@ -2376,6 +2386,7 @@
   "7": {
     "book": "Hebreus",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Melquisedeque é maior que Abraão",
@@ -2536,7 +2547,8 @@
                 "text": "Isaque perguntou: “Como encontrou a caça tão depressa, meu filho?”. Jacó respondeu: “O SENHOR, seu Deus, a colocou no meu caminho”."
               },
               {
-                "ref": "2 Coríntios 13:14"
+                "ref": "2 Coríntios 13:14",
+                "text": "Que a graça do Senhor Jesus Cristo, o amor de Deus e a comunhão do Espírito Santo sejam com todos vocês."
               }
             ]
           },
@@ -2584,12 +2596,12 @@
           },
           {
             "number": 10,
-            "text": "Embora Levi ainda não tivesse nas­cido, a semente da qual ele veio já estava no corpo de Abraão, seu antepassado, quando Melquisedeque se encontrou com ele.",
+            "text": "Embora Levi ainda não tivesse nascido, a semente da qual ele veio já estava no corpo de Abraão, seu antepassado, quando Melquisedeque se encontrou com ele.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Gênesis 35:11",
-                "text": "Deus também lhe disse: “Eu sou o Deus Todo-poderoso.126 Seja fértil e multiplique-se. Você se tornará uma grande nação, até mesmo muitas nações. Haverá reis entre seus descendentes."
+                "text": "Deus também lhe disse: “Eu sou o Deus Todo-poderoso. Seja fértil e multiplique-se. Você se tornará uma grande nação, até mesmo muitas nações. Haverá reis entre seus descendentes."
               },
               {
                 "ref": "Hebreus 7:5",
@@ -2639,7 +2651,7 @@
               },
               {
                 "ref": "Atos 6:13–14",
-                "text": "As falsas testemunhas declararam: “Este homem vive falando contra o santo templo e a lei de Moisés. Nós o ouvimos dizer que esse Jesus de Nazaré30 destruirá o templo e mudará os costumes que Moisés nos deixou”."
+                "text": "As falsas testemunhas declararam: “Este homem vive falando contra o santo templo e a lei de Moisés. Nós o ouvimos dizer que esse Jesus de Nazaré destruirá o templo e mudará os costumes que Moisés nos deixou”."
               },
               {
                 "ref": "Ezequiel 16:61",
@@ -2676,11 +2688,12 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Miqueias 5:2"
+                "ref": "Miqueias 5:2",
+                "text": "Mas você, ó Belém Efrata, é apenas uma pequena vila entre todo o povo de Judá. E, no entanto, um governante de Israel, cujas origens são do passado distante, sairá de você em meu favor."
               },
               {
                 "ref": "Isaías 11:1",
-                "text": "Do tronco da linhagem de Jessé45 brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
+                "text": "Do tronco da linhagem de Jessé brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
               },
               {
                 "ref": "Lucas 3:33",
@@ -3014,6 +3027,7 @@
   "8": {
     "book": "Hebreus",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "O ministério superior de nosso Sumo Sacerdote",
@@ -3071,7 +3085,7 @@
             "crossReferences": [
               {
                 "ref": "Hebreus 5:1",
-                "text": "Todo sumo sacerdote é um homem escolhido para representar outras pessoas nas coisas referentes a Deus."
+                "text": "Todo sumo sacerdote é um homem escolhido para representar outras pessoas nas coisas referentes a Deus. Ele apresenta ofertas e sacrifícios pelos pecados"
               },
               {
                 "ref": "Efésios 5:2",
@@ -3098,7 +3112,7 @@
               },
               {
                 "ref": "Hebreus 5:1",
-                "text": "Todo sumo sacerdote é um homem escolhido para representar outras pessoas nas coisas referentes a Deus."
+                "text": "Todo sumo sacerdote é um homem escolhido para representar outras pessoas nas coisas referentes a Deus. Ele apresenta ofertas e sacrifícios pelos pecados"
               },
               {
                 "ref": "2 Crônicas 26:18–19",
@@ -3171,7 +3185,7 @@
               },
               {
                 "ref": "Gálatas 3:21",
-                "text": "Existe, portanto, algum conflito entre a lei e as promessas de Deus?21 De maneira nenhuma! Se a lei fosse capaz de nos conceder nova vida, seríamos declarados justos pela obediência a ela."
+                "text": "Existe, portanto, algum conflito entre a lei e as promessas de Deus? De maneira nenhuma! Se a lei fosse capaz de nos conceder nova vida, seríamos declarados justos pela obediência a ela."
               },
               {
                 "ref": "Hebreus 8:6",
@@ -3324,6 +3338,7 @@
   "9": {
     "book": "Hebreus",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "A adoração na antiga aliança",
@@ -3377,11 +3392,11 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 26:31–33",
-                "text": "“Para o interior do tabernáculo, confec­cione uma cortina especial de linho finamente tecido. Enfeite-a com fios de tecido azul, roxo e vermelho e com querubins bordados com habilidade."
+                "text": "“Para o interior do tabernáculo, confeccione uma cortina especial de linho finamente tecido. Enfeite-a com fios de tecido azul, roxo e vermelho e com querubins bordados com habilidade."
               },
               {
                 "ref": "Êxodo 40:3",
-                "text": "Coloque a arca da aliança143 dentro dele e pendure a cortina interna para proteger a arca."
+                "text": "Coloque a arca da aliança dentro dele e pendure a cortina interna para proteger a arca."
               },
               {
                 "ref": "Mateus 27:51",
@@ -3404,7 +3419,7 @@
               },
               {
                 "ref": "Êxodo 40:3",
-                "text": "Coloque a arca da aliança143 dentro dele e pendure a cortina interna para proteger a arca."
+                "text": "Coloque a arca da aliança dentro dele e pendure a cortina interna para proteger a arca."
               },
               {
                 "ref": "Êxodo 26:33",
@@ -3435,7 +3450,7 @@
               },
               {
                 "ref": "Êxodo 25:17–22",
-                "text": "“Faça a tampa da arca, que é o lugar de expiação, de ouro puro. Deve medir 1, metro de comprimento e 67, centímetros de largura."
+                "text": "“Faça a tampa da arca, que é o lugar de expiação, de ouro puro. Deve medir 1,15 metro de comprimento e 67,5 centímetros de largura."
               }
             ]
           },
@@ -3519,7 +3534,7 @@
               },
               {
                 "ref": "Hebreus 5:1",
-                "text": "Todo sumo sacerdote é um homem escolhido para representar outras pessoas nas coisas referentes a Deus."
+                "text": "Todo sumo sacerdote é um homem escolhido para representar outras pessoas nas coisas referentes a Deus. Ele apresenta ofertas e sacrifícios pelos pecados"
               },
               {
                 "ref": "Romanos 5:14",
@@ -3765,7 +3780,7 @@
               },
               {
                 "ref": "Mateus 26:28",
-                "text": "porque este é o meu sangue, que confirma a aliança.150 Ele é derramado como sacrifício para perdoar os pecados de muitos."
+                "text": "porque este é o meu sangue, que confirma a aliança. Ele é derramado como sacrifício para perdoar os pecados de muitos."
               },
               {
                 "ref": "Zacarias 9:11",
@@ -3784,7 +3799,7 @@
             "crossReferences": [
               {
                 "ref": "Levítico 8:15",
-                "text": "e Moisés o matou. Pegou um pouco do sangue e, com o dedo, colocou- o nas quatro pontas do altar, a fim de purificá-lo. O restante do sangue ele derramou na base do altar. Desse modo, consagrou o altar e fez expiação por ele."
+                "text": "e Moisés o matou. Pegou um pouco do sangue e, com o dedo, colocou-o nas quatro pontas do altar, a fim de purificá-lo. O restante do sangue ele derramou na base do altar. Desse modo, consagrou o altar e fez expiação por ele."
               },
               {
                 "ref": "Levítico 8:19",
@@ -3960,6 +3975,7 @@
   "10": {
     "book": "Hebreus",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "O sacrifício definitivo de Cristo",
@@ -4185,7 +4201,7 @@
               },
               {
                 "ref": "Hebreus 5:1",
-                "text": "Todo sumo sacerdote é um homem escolhido para representar outras pessoas nas coisas referentes a Deus."
+                "text": "Todo sumo sacerdote é um homem escolhido para representar outras pessoas nas coisas referentes a Deus. Ele apresenta ofertas e sacrifícios pelos pecados"
               },
               {
                 "ref": "Números 28:3",
@@ -4231,7 +4247,7 @@
               },
               {
                 "ref": "Salmos 110:1",
-                "text": "O SENHOR disse ao meu Senhor:144 “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
+                "text": "O SENHOR disse ao meu Senhor: “Sente-se no lugar de honra à minha direita, até que eu humilhe seus inimigos e os ponha debaixo de seus pés”."
               },
               {
                 "ref": "Lucas 20:43",
@@ -4676,7 +4692,7 @@
               },
               {
                 "ref": "Filipenses 4:14",
-                "text": "Mesmo assim, vocês fizeram bem em me ajudar na dificuldade pela qual estou ­passando."
+                "text": "Mesmo assim, vocês fizeram bem em me ajudar na dificuldade pela qual estou passando."
               },
               {
                 "ref": "Hebreus 11:36",
@@ -4684,7 +4700,7 @@
               },
               {
                 "ref": "Filipenses 1:7",
-                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas- novas."
+                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas-novas."
               }
             ]
           },
@@ -4782,7 +4798,7 @@
           },
           {
             "number": 38,
-            "text": "Meu justo viverá pela fé; se ele se afastar, porém, não me agradarei dele.”56",
+            "text": "Meu justo viverá pela fé; se ele se afastar, porém, não me agradarei dele.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4833,6 +4849,7 @@
   "11": {
     "book": "Hebreus",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "Grandes exemplos de fé",
@@ -4932,7 +4949,7 @@
               },
               {
                 "ref": "Judas 1:14",
-                "text": "Enoque, que viveu na sétima geração depois de Adão, profetizou a respeito desses homens, dizendo: “Ouçam!"
+                "text": "Enoque, que viveu na sétima geração depois de Adão, profetizou a respeito desses homens, dizendo: “Ouçam! O Senhor vem com incontáveis milhares de santos"
               },
               {
                 "ref": "Hebreus 11:6",
@@ -4977,7 +4994,8 @@
                 "text": "Assim, Deus disse a Noé: “Decidi acabar com todos os seres vivos, pois encheram a terra de violência. Sim, destruirei todos eles e também a terra!"
               },
               {
-                "ref": "1 Pedro 3:20"
+                "ref": "1 Pedro 3:20",
+                "text": "àqueles que, muito tempo atrás, desobedeceram a Deus quando ele esperou pacientemente enquanto Noé construía sua embarcação. Apenas oito pessoas foram salvas por meio da água do dilúvio,"
               },
               {
                 "ref": "Ezequiel 14:14",
@@ -5054,7 +5072,7 @@
               },
               {
                 "ref": "Hebreus 12:22",
-                "text": "Vocês, porém, chegaram ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, aos incontáveis milhares de anjos em alegre reunião, 23à congregação dos filhos mais velhos, cujos nomes estão escritos no céu, e a Deus..."
+                "text": "Vocês, porém, chegaram ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, aos incontáveis milhares de anjos em alegre reunião,"
               }
             ]
           },
@@ -5088,14 +5106,15 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 22:17",
-                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar."
+                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar. Seus descendentes conquistarão as cidades de seus inimigos"
               },
               {
                 "ref": "Gênesis 32:12",
                 "text": "Mas tu prometeste: ‘Certamente tratarei bem de você e multiplicarei seus descendentes até que se tornem tão numerosos quanto a areia à beira do mar, que não se pode contar’”."
               },
               {
-                "ref": "Oséias 1:10"
+                "ref": "Oséias 1:10",
+                "text": "“Virá o tempo, porém, em que o povo de Israel se tornará como a areia à beira do mar, que não se pode contar. Então, no lugar onde lhes foi dito: ‘Vocês não são meu povo’, se dirá: ‘Vocês são filhos do Deus vivo’."
               },
               {
                 "ref": "Jeremias 33:22",
@@ -5278,7 +5297,7 @@
               },
               {
                 "ref": "Gênesis 48:5–22",
-                "text": "“Agora, tomo para mim, como meus próprios filhos, seus dois rapazes, Efraim e Manassés, ­nascidos aqui na terra do Egito antes de minha chegada. Eles serão meus filhos, como são Rúben e Simeão."
+                "text": "“Agora, tomo para mim, como meus próprios filhos, seus dois rapazes, Efraim e Manassés, nascidos aqui na terra do Egito antes de minha chegada. Eles serão meus filhos, como são Rúben e Simeão."
               }
             ]
           },
@@ -5446,7 +5465,7 @@
               },
               {
                 "ref": "Salmos 106:9–11",
-                "text": "Ordenou que o mar Vermelho137 secasse e os conduziu pelas águas como por um deserto."
+                "text": "Ordenou que o mar Vermelho secasse e os conduziu pelas águas como por um deserto."
               },
               {
                 "ref": "Êxodo 14:13–Êxodo 15:21",
@@ -5468,7 +5487,8 @@
                 "text": "Você e seus homens de guerra marcharão ao redor da cidade uma vez por dia, durante seis dias."
               },
               {
-                "ref": "2 Coríntios 10:4–5"
+                "ref": "2 Coríntios 10:4–5",
+                "text": "Usamos as armas poderosas de Deus, e não as armas do mundo, para derrubar as fortalezas do raciocínio humano e acabar com os falsos argumentos."
               }
             ]
           },
@@ -5548,7 +5568,7 @@
             "crossReferences": [
               {
                 "ref": "1 Samuel 17:51–52",
-                "text": "Em seguida, correu até o filisteu, puxou da bainha a espada dele e a usou para matá-lo e cortar-lhe a cabeça. Israel derrota os filisteus Quando os filisteus viram que seu melhor guerreiro estava morto, deram meia-volta e fugiram."
+                "text": "Em seguida, correu até o filisteu, puxou da bainha a espada dele e a usou para matá-lo e cortar-lhe a cabeça."
               },
               {
                 "ref": "2 Reis 6:16–18",
@@ -5575,7 +5595,7 @@
               },
               {
                 "ref": "2 Reis 4:27–37",
-                "text": "Mas, quando ela chegou ao homem de Deus no monte, abraçou os pés dele. Geazi quis afastá-la, mas o homem de Deus disse: “Deixe- a em paz. Ela está profundamente angustiada, mas o SENHOR não me revelou o motivo”."
+                "text": "Mas, quando ela chegou ao homem de Deus no monte, abraçou os pés dele. Geazi quis afastá-la, mas o homem de Deus disse: “Deixe-a em paz. Ela está profundamente angustiada, mas o SENHOR não me revelou o motivo”."
               },
               {
                 "ref": "Filipenses 3:11",
@@ -5648,7 +5668,7 @@
               },
               {
                 "ref": "1 Reis 19:9",
-                "text": "Ali encontrou uma caverna onde passou a noite. O SENHOR fala com Elias Então o SENHOR lhe disse: “O que você faz aqui, Elias?”."
+                "text": "Ali encontrou uma caverna onde passou a noite."
               },
               {
                 "ref": "Isaías 57:1",
@@ -5709,6 +5729,7 @@
   "12": {
     "book": "Hebreus",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "A disciplina de Deus comprova seu amor",
@@ -5793,7 +5814,7 @@
               },
               {
                 "ref": "Apocalipse 2:13",
-                "text": "“Conheço o lugar onde você vive, a cidade onde está o trono de Satanás. Ainda assim, você permanece leal a meu nome. Recusou- se a negar sua fé em mim até mesmo quando Antipas, minha testemunha fiel, foi morto onde vocês..."
+                "text": "“Conheço o lugar onde você vive, a cidade onde está o trono de Satanás. Ainda assim, você permanece leal a meu nome. Recusou-se a negar sua fé em mim até mesmo quando Antipas, minha testemunha fiel, foi morto onde vocês..."
               },
               {
                 "ref": "Hebreus 10:32–34",
@@ -6197,13 +6218,13 @@
               },
               {
                 "ref": "Salmos 119:120",
-                "text": "Estremeço de medo de ti; tenho temor reverente por teus estatutos. Áin"
+                "text": "Estremeço de medo de ti; tenho temor reverente por teus estatutos."
               }
             ]
           },
           {
             "number": 22,
-            "text": "Vocês, porém, chegaram ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, aos incontáveis milhares de anjos em alegre reunião, 23à congregação dos filhos mais velhos, cujos nomes estão escritos no céu, e a Deus, que é juiz de todos, aos espíritos dos justos no céu, agora aperfeiçoados,",
+            "text": "Vocês, porém, chegaram ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, aos incontáveis milhares de anjos em alegre reunião,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6225,6 +6246,12 @@
             ]
           },
           {
+            "number": 23,
+            "text": "à congregação dos filhos mais velhos, cujos nomes estão escritos no céu, e a Deus, que é juiz de todos, aos espíritos dos justos no céu, agora aperfeiçoados,",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 24,
             "text": "a Jesus, o mediador da nova aliança, e ao sangue aspergido, que fala de coisas melhores do que falava o sangue de Abel.",
             "isJesusWords": false,
@@ -6239,7 +6266,7 @@
               },
               {
                 "ref": "Mateus 26:28",
-                "text": "porque este é o meu sangue, que confirma a aliança.150 Ele é derramado como sacrifício para perdoar os pecados de muitos."
+                "text": "porque este é o meu sangue, que confirma a aliança. Ele é derramado como sacrifício para perdoar os pecados de muitos."
               },
               {
                 "ref": "Gênesis 4:10",
@@ -6369,6 +6396,7 @@
   "13": {
     "book": "Hebreus",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "Instruções práticas",
@@ -6391,7 +6419,8 @@
                 "text": "Uma vez que vocês foram purificados de seus pecados quando obedeceram à verdade, tenham como alvo agora o amor fraternal sem fingimento. Amem uns aos outros sinceramente, de todo o coração."
               },
               {
-                "ref": "2 Pedro 1:7"
+                "ref": "2 Pedro 1:7",
+                "text": "à devoção a Deus a fraternidade; e à fraternidade o amor."
               }
             ]
           },
@@ -6567,7 +6596,7 @@
               },
               {
                 "ref": "1 Timóteo 6:3–5",
-                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente 4é arrogante e sem entendimento. Vive com o desejo doentio d..."
+                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente"
               },
               {
                 "ref": "Efésios 5:6",
@@ -6682,7 +6711,7 @@
               },
               {
                 "ref": "Hebreus 12:22",
-                "text": "Vocês, porém, chegaram ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, aos incontáveis milhares de anjos em alegre reunião, 23à congregação dos filhos mais velhos, cujos nomes estão escritos no céu, e a Deus..."
+                "text": "Vocês, porém, chegaram ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, aos incontáveis milhares de anjos em alegre reunião,"
               },
               {
                 "ref": "Hebreus 11:12–16",
@@ -6831,7 +6860,7 @@
             "crossReferences": [
               {
                 "ref": "Filipenses 2:13",
-                "text": "Pois Deus está agindo em vocês, dando- lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
+                "text": "Pois Deus está agindo em vocês, dando-lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
               },
               {
                 "ref": "2 Tessalonicenses 2:17",
@@ -6881,7 +6910,7 @@
               },
               {
                 "ref": "Filemom 1:1",
-                "text": "Eu, Paulo, prisioneiro de Cristo Jesus, escrevo esta carta, junto com nosso irmão Timóteo, a Filemom, nosso amado colaborador, 2à irmã Áfia, a Arquipo, nosso companheiro na luta, e à igreja que se reúne em sua casa."
+                "text": "Eu, Paulo, prisioneiro de Cristo Jesus, escrevo esta carta, junto com nosso irmão Timóteo, a Filemom, nosso amado colaborador,"
               },
               {
                 "ref": "2 Timóteo 1:8",
@@ -6918,7 +6947,7 @@
           },
           {
             "number": 25,
-            "text": "Que a graça de Deus seja com todos vocês. 1 1.5a Ou hoje eu o revelo como meu Filho. Sl 2.. 2 1.5b",
+            "text": "Que a graça de Deus seja com todos vocês.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6936,29 +6965,6 @@
               {
                 "ref": "Tito 3:15",
                 "text": "Todos aqui mandam lembranças. Por favor, envie minhas saudações a todos que nos amam na fé. Que a graça de Deus esteja com todos vocês."
-              }
-            ]
-          },
-          {
-            "number": 2,
-            "text": "Sm 7.. 3 1.6a Ou primogênito. 4 1.6b Ou quando ele trouxer novamente seu Filho supremo [ou Filho primogênito] ao mundo, dirá. 5 1.6c Dt 32.. 6 1. Sl 104., conforme a Septuaginta. 7 1.8-9 Sl 45.6-7. 8 1.10-12 Sl 102.25-27 9 1. Sl 110.. 10 2. Ou o Filho do Homem. 11 2. Alguns manuscritos acrescentam Tu o encarregaste de tudo que criaste. 12 2.6-8 Sl 8.4-6, conforme a Septuaginta. 13 2. Sl 22.. 14 2. Is 8.17-18. 15 2. Ou tem. 16 3. Alguns manuscritos não trazem toda. 17 3. Alguns manuscritos acrescentam até o fim. 18 3.7-11 Sl 95.7-11. 19 3. Sl 95.7-8. 20 4. Alguns manuscritos trazem pois não combinaram com fé aquilo que ouviram. 21 4. Sl 95.. 22 4. Gn 2.. 23 4. Sl 95.. 24 4. Sl 95.7-8. 25 4. Ou descanso sabático. 26 5. Ou hoje eu o revelo como meu Filho. Sl 2.. 27 5. Sl 110.. 28 5. Ou dos oráculos de Deus. 29 6. Gn 22.. 30 7. Sl 110.. 31 7. Sl 110.. 32 7. Ou salvar completamente. 33 7. Ou exaltado acima dos céus. 34 8. Ou na tenda; também em 8.. 35 8. Êx 25.; 26.. 36 8.8-12 Jr 31.31-34. 37 9. Ou tenda; também em 9.,. 38 9. Ou propiciatório. 39 9. Em grego, na primeira tenda. 40 9. Em grego, na segunda tenda. 41 9. Em grego, a primeira tenda. 42 9. Em grego, regras para o corpo. 43 9. Alguns manuscritos trazem que estão por vir. 44 9.16a Ou aliança; também em 9.. 45 9.16b Ou Quando alguém faz uma aliança, é necessário confirmá-la com a morte de um sacrifício. 46 9. Alguns manuscritos não trazem e de bodes. 47 9. Êx 24.. 48 9. Em grego, das eras. 49 10. Em grego, ele; também em 10.. 50 10.5-7 Sl 40.6-8, conforme a Septuaginta. 51 10. Jr 31.33a. 52 10. Jr 31.34b. 53 10. Em grego, Por sua carne. 54 10.30a Dt 32.. 55 10.30b Dt 32.. 56 10.37-38 Hc 2.3-4. 57 11. Gn 5.. 58 11. Ou Pela fé, ele [Abraão] pôde ter um filho, embora Sara fosse estéril e ele, muito idoso. Ele creu. 59 11. Gn 21.. 60 11. Alguns manuscritos acrescentam alguns foram postos à prova. 61 12. Ou Em lugar da alegria. 62 12.5-6 Pv 3.11-12, conforme a Septuaginta. 63 12. Alguns manuscritos não trazem monte. 64 12. Êx 19.. 65 12. Dt 9.. 66 12. Ag 2.. 67 13. Dt 31.,. 68 13. Sl 118.. 69 13. Ou na tenda. 70 13. Alguns manuscritos trazem em nós.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Mateus 25:35",
-                "text": "Pois tive fome e vocês me deram de comer. Tive sede e me deram de beber. Era estrangeiro e me convidaram para a sua casa."
-              },
-              {
-                "ref": "Gênesis 18:1–Gênesis 19:3",
-                "text": "O SENHOR apareceu novamente a Abraão junto ao bosque de carvalhos que pertencia a Manre. Abraão estava sentado à entrada de sua tenda na hora mais quente do dia."
-              },
-              {
-                "ref": "1 Pedro 4:9",
-                "text": "Abram sua casa de bom grado para os que necessitam de um lugar para se hospedar."
-              },
-              {
-                "ref": "Romanos 12:13",
-                "text": "Quando membros do povo santo passarem por necessidade, ajudem com prontidão. Estejam sempre dispostos a praticar a hospitalidade."
               }
             ]
           }

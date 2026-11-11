@@ -2,13 +2,42 @@
   "1": {
     "book": "Obadias",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "",
         "verses": [
           {
             "number": 1,
-            "text": "Esta é a visão que o SENHOR Soberano revelou a Obadias acerca da terra de Edom. O julgamento de Edom é anunciado Ouvimos uma mensagem do SENHOR, que um embaixador foi enviado às nações para dizer: “Preparem-se, todos! Vamos reunir nossos exércitos e atacar Edom!”.",
+            "text": "Esta é a visão que o SENHOR Soberano revelou a Obadias acerca da terra de Edom.",
+            "isJesusWords": false,
+            "crossReferences": [
+              {
+                "ref": "Amós 1:11–12",
+                "text": "Assim diz o SENHOR: “Os habitantes de Edom pecaram repetidamente; não deixarei que fiquem impunes! Com espadas perseguiram seus parentes, os israelitas, e não tiveram compaixão deles. Em sua fúria, os despedaçaram sem pa..."
+              },
+              {
+                "ref": "Joel 3:19",
+                "text": "O Egito, porém, se transformará numa terra desolada, e Edom se tornará um deserto, pois atacaram o povo de Judá e mataram inocentes em sua terra."
+              },
+              {
+                "ref": "Ezequiel 25:12–14",
+                "text": "“Assim diz o SENHOR Soberano: O povo de Edom pecou grandemente quando se vingou do povo de Judá."
+              },
+              {
+                "ref": "Salmos 137:7",
+                "text": "Ó SENHOR, lembra-te do que os edomitas fizeram no dia em que Jerusalém foi conquistada. Disseram: “Destruam-na! Arrasem-na até o chão!”."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "O julgamento de Edom é anunciado",
+        "verses": [
+          {
+            "number": 1,
+            "text": "Ouvimos uma mensagem do SENHOR, que um embaixador foi enviado às nações para dizer: “Preparem-se, todos! Vamos reunir nossos exércitos e atacar Edom!”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -112,7 +141,8 @@
                 "text": "Quando colherem uvas em seus vinhedos, não passem novamente pelas videiras. Deixem as uvas restantes para os estrangeiros, os órfãos e as viúvas."
               },
               {
-                "ref": "Lamentações 1:1"
+                "ref": "Lamentações 1:1",
+                "text": "A cidade que antes era cheia de gente agora está deserta. Antes era grande entre as nações, agora está sozinha, como uma viúva. Antes era rainha de toda a terra, agora é escrava."
               },
               {
                 "ref": "2 Samuel 1:19",
@@ -311,7 +341,7 @@
           },
           {
             "number": 14,
-            "text": "Não deveria ter ficado nas encruzilhadas para matar os que tentavam escapar. Não deveria ter capturado e entregado os sobreviventes naquele tempo de aflição.” Edom é destruído, e Israel, restaurado",
+            "text": "Não deveria ter ficado nas encruzilhadas para matar os que tentavam escapar. Não deveria ter capturado e entregado os sobreviventes naquele tempo de aflição.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -331,7 +361,12 @@
                 "text": "“Não deveria ter ficado satisfeito quando exilaram seus parentes em terras distantes. Não deveria ter se alegrado quando o povo de Judá sofreu tamanha desgraça. Não deveria ter falado com arrogância naquele tempo de aflição."
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "title": "Edom é destruído, e Israel, restaurado",
+        "verses": [
           {
             "number": 15,
             "text": "“Está próximo o dia em que eu, o SENHOR, julgarei todas as nações! Como você fez a Israel, assim lhe será feito. Toda a sua maldade cairá sobre sua cabeça.",
@@ -374,7 +409,7 @@
               },
               {
                 "ref": "1 Pedro 4:17",
-                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas- novas de Deus!"
+                "text": "Pois chegou a hora do julgamento, que deve começar pela casa de Deus. E, se o julgamento começa conosco, que destino terrível aguarda aqueles que nunca obedeceram às boas-novas de Deus!"
               }
             ]
           },
@@ -426,7 +461,7 @@
           },
           {
             "number": 19,
-            "text": "“Então meu povo que vive no Neguebe ocupará os montes de Edom. Os que vivem nas colinas de Judá4 possuirão as planícies dos filisteus e tomarão os campos de Efraim e de Samaria. O povo de Benjamim ocupará a terra de Gileade.",
+            "text": "“Então meu povo que vive no Neguebe ocupará os montes de Edom. Os que vivem nas colinas de Judá possuirão as planícies dos filisteus e tomarão os campos de Efraim e de Samaria. O povo de Benjamim ocupará a terra de Gileade.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -439,7 +474,7 @@
               },
               {
                 "ref": "Jeremias 32:44",
-                "text": "Sim, campos voltarão a ser comprados e vendidos e escrituras serão assinadas na terra de Benjamim, aqui em Jerusalém, nas cidades de Judá, na região montanhosa, nas colinas de Judá65 e no Neguebe. Pois, um dia, eu os res..."
+                "text": "Sim, campos voltarão a ser comprados e vendidos e escrituras serão assinadas na terra de Benjamim, aqui em Jerusalém, nas cidades de Judá, na região montanhosa, nas colinas de Judá e no Neguebe. Pois, um dia, eu os resta..."
               },
               {
                 "ref": "Ezequiel 36:28",
@@ -458,11 +493,11 @@
               },
               {
                 "ref": "Lucas 4:26",
-                "text": "E, no entanto, Elias não foi envia­do a nenhuma delas, mas sim a uma estrangeira, uma viúva de Sarepta, na região de Sidom."
+                "text": "E, no entanto, Elias não foi enviado a nenhuma delas, mas sim a uma estrangeira, uma viúva de Sarepta, na região de Sidom."
               },
               {
                 "ref": "Jeremias 32:44",
-                "text": "Sim, campos voltarão a ser comprados e vendidos e escrituras serão assinadas na terra de Benjamim, aqui em Jerusalém, nas cidades de Judá, na região montanhosa, nas colinas de Judá65 e no Neguebe. Pois, um dia, eu os res..."
+                "text": "Sim, campos voltarão a ser comprados e vendidos e escrituras serão assinadas na terra de Benjamim, aqui em Jerusalém, nas cidades de Judá, na região montanhosa, nas colinas de Judá e no Neguebe. Pois, um dia, eu os resta..."
               },
               {
                 "ref": "Jeremias 33:13",
@@ -472,7 +507,7 @@
           },
           {
             "number": 21,
-            "text": "Os que foram resgatados subirão ao monte Sião, em Jerusalém, para governar sobre os montes de Edom; e o reino será do SENHOR.” 1 1. Em hebraico, Esaú; também em 1.8b,,... 2 1. Em hebraico, contra seu irmão, Jacó. Os nomes “Jacó” e “Israel” são usados de forma intercambiável ao longo de todo o Antigo Testamento e se referem, por vezes, ao patriarca e, em outras ocasiões, à nação. 3 1. Em hebraico, A casa de Jacó; também em 1.. Ver nota em 1.. 4 1. Em hebraico, na Sefelá. 5 1. Em hebraico, em Sefarade. 6 1.21a Conforme a Septuaginta e a versão siríaca; o hebraico traz Os resgatadores. 7 1.21b Ou do.",
+            "text": "Os que foram resgatados subirão ao monte Sião, em Jerusalém, para governar sobre os montes de Edom; e o reino será do SENHOR.”",
             "isJesusWords": false,
             "crossReferences": [
               {

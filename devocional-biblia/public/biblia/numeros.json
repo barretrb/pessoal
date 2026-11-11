@@ -2,6 +2,7 @@
   "1": {
     "book": "Números",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Censo dos soldados de Israel",
@@ -31,7 +32,7 @@
           },
           {
             "number": 2,
-            "text": "“Realize um censo de toda a comunidade de Israel, de acordo com seus clãs e famílias.",
+            "text": "“Realize um censo de toda a comunidade de Israel, de acordo com seus clãs e famílias. Faça uma lista de todos os homens",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -51,15 +52,10 @@
                 "text": "“Realizem um censo de toda a comunidade de Israel, de acordo com suas famílias. Façam uma lista de todos os homens de 20 anos para cima, aptos para irem à guerra”."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Faça uma lista de todos os homens",
-        "verses": [
+          },
           {
             "number": 3,
-            "text": "de 20 anos para cima, aptos para irem à guerra.",
+            "text": "de 20 anos para cima, aptos para irem à guerra. Você e Arão registrarão os soldados",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -79,12 +75,7 @@
                 "text": "“Celebrem a Festa dos Pães sem Fermento, pois ela os lembrará de que eu tirei suas multidões da terra do Egito exatamente nesse dia. A festa será uma lei permanente para vocês; celebrem-na nesse dia de geração em geração."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Você e Arão registrarão os soldados",
-        "verses": [
+          },
           {
             "number": 4,
             "text": "com a ajuda do chefe dos clãs de cada uma das tribos.",
@@ -378,7 +369,7 @@
               },
               {
                 "ref": "Neemias 7:61",
-                "text": "Nessa ocasião, outro grupo regressou das cidades de Tel-Melá, Tel-Harsa, Querube, Adã40 e Imer. Contudo, não puderam comprovar que eles ou suas famílias eram descendentes de Israel."
+                "text": "Nessa ocasião, outro grupo regressou das cidades de Tel-Melá, Tel-Harsa, Querube, Adã e Imer. Contudo, não puderam comprovar que eles ou suas famílias eram descendentes de Israel."
               },
               {
                 "ref": "Hebreus 7:6",
@@ -397,11 +388,11 @@
               },
               {
                 "ref": "Números 1:2",
-                "text": "“Realize um censo de toda a comunidade de Israel, de acordo com seus clãs e famílias."
+                "text": "“Realize um censo de toda a comunidade de Israel, de acordo com seus clãs e famílias. Faça uma lista de todos os homens"
               },
               {
                 "ref": "2 Samuel 24:1–10",
-                "text": "Cr 21.12); o hebraico traz sete."
+                "text": "Mais uma vez, a ira do SENHOR ardeu contra Israel e incitou Davi contra eles. “Vá e conte o povo de Israel e de Judá”, disse-lhe o SENHOR."
               }
             ]
           },
@@ -504,7 +495,7 @@
               },
               {
                 "ref": "Gênesis 46:16",
-                "text": "Os filhos de Gade foram: Zefom,161 Hagi, Suni, Esbom, Eri, Arodi e Areli."
+                "text": "Os filhos de Gade foram: Zefom, Hagi, Suni, Esbom, Eri, Arodi e Areli."
               },
               {
                 "ref": "Números 2:14–15",
@@ -588,7 +579,7 @@
               },
               {
                 "ref": "Gênesis 30:18",
-                "text": "Chamou-o de Issacar,104 pois disse: “Deus me recompensou porque entreguei minha serva por mulher a meu marido”."
+                "text": "Chamou-o de Issacar, pois disse: “Deus me recompensou porque entreguei minha serva por mulher a meu marido”."
               },
               {
                 "ref": "Números 26:23–25",
@@ -603,7 +594,7 @@
             "crossReferences": [
               {
                 "ref": "Números 26:25",
-                "text": "Esses foram os clãs de Issacar, que totalizaram 64.300 homens registrados. A tribo de Zebulom 26 Estes foram os clãs descendentes dos filhos de Zebulom: O clã seredita, assim chamado por causa de seu antepassado Serede...."
+                "text": "Esses foram os clãs de Issacar, que totalizaram 64.300 homens registrados."
               },
               {
                 "ref": "Números 2:6",
@@ -617,7 +608,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Números 26:26–27"
+                "ref": "Números 26:26–27",
+                "text": "Estes foram os clãs descendentes dos filhos de Zebulom: O clã seredita, assim chamado por causa de seu antepassado Serede. O clã elonita, assim chamado por causa de seu antepassado Elom. O clã jaleelita, assim chamado po..."
               },
               {
                 "ref": "Gênesis 46:14",
@@ -625,7 +617,7 @@
               },
               {
                 "ref": "Gênesis 30:20",
-                "text": "Chamou-o de Zebulom,105 pois disse: “Deus me deu uma boa recompensa. Agora meu marido me tratará com respeito, porque lhe dei seis filhos”."
+                "text": "Chamou-o de Zebulom, pois disse: “Deus me deu uma boa recompensa. Agora meu marido me tratará com respeito, porque lhe dei seis filhos”."
               },
               {
                 "ref": "Gênesis 49:13",
@@ -667,7 +659,7 @@
               },
               {
                 "ref": "Gênesis 30:24",
-                "text": "e o chamou de José,106 pois disse: “Que o SENHOR me acrescente ainda outro filho!”."
+                "text": "e o chamou de José, pois disse: “Que o SENHOR me acrescente ainda outro filho!”."
               }
             ]
           },
@@ -690,7 +682,7 @@
               },
               {
                 "ref": "Gênesis 48:5",
-                "text": "“Agora, tomo para mim, como meus próprios filhos, seus dois rapazes, Efraim e Manassés, ­nascidos aqui na terra do Egito antes de minha chegada. Eles serão meus filhos, como são Rúben e Simeão."
+                "text": "“Agora, tomo para mim, como meus próprios filhos, seus dois rapazes, Efraim e Manassés, nascidos aqui na terra do Egito antes de minha chegada. Eles serão meus filhos, como são Rúben e Simeão."
               }
             ]
           },
@@ -781,7 +773,7 @@
               },
               {
                 "ref": "Gênesis 30:5–6",
-                "text": "Bila engravidou e deu um filho a Jacó. Raquel o chamou de Dã,100 pois disse: “Deus me fez justiça! Ouviu meu pedido e me deu um filho!”."
+                "text": "Bila engravidou e deu um filho a Jacó. Raquel o chamou de Dã, pois disse: “Deus me fez justiça! Ouviu meu pedido e me deu um filho!”."
               },
               {
                 "ref": "Números 26:42–43",
@@ -819,11 +811,11 @@
               },
               {
                 "ref": "Gênesis 30:12–13",
-                "text": "Então Zilpa deu a Jacó o segundo filho. Lia o chamou de Aser,103 pois disse: “Como estou alegre! Agora as outras mulheres celebrarão comigo”."
+                "text": "Então Zilpa deu a Jacó o segundo filho. Lia o chamou de Aser, pois disse: “Como estou alegre! Agora as outras mulheres celebrarão comigo”."
               },
               {
                 "ref": "Gênesis 46:27",
-                "text": "Além deles, José teve dois filhos163 que nasceram no Egito, totalizando setenta164 membros da família de Jacó no Egito."
+                "text": "Além deles, José teve dois filhos que nasceram no Egito, totalizando setenta membros da família de Jacó no Egito."
               },
               {
                 "ref": "Gênesis 49:20",
@@ -861,7 +853,7 @@
               },
               {
                 "ref": "Gênesis 30:7–8",
-                "text": "Bila engravidou novamente e deu a Jacó o segundo filho. Raquel o chamou de Naftali,101 pois disse: “Tive uma luta intensa com minha irmã e venci!”."
+                "text": "Bila engravidou novamente e deu a Jacó o segundo filho. Raquel o chamou de Naftali, pois disse: “Tive uma luta intensa com minha irmã e venci!”."
               },
               {
                 "ref": "Gênesis 46:24",
@@ -895,7 +887,7 @@
               },
               {
                 "ref": "Números 1:2–16",
-                "text": "“Realize um censo de toda a comunidade de Israel, de acordo com seus clãs e famílias."
+                "text": "“Realize um censo de toda a comunidade de Israel, de acordo com seus clãs e famílias. Faça uma lista de todos os homens"
               }
             ]
           },
@@ -951,7 +943,8 @@
                 "text": "Mas Joabe não incluiu no censo as tribos de Levi e Benjamim, pois achou absurda a ordem do rei."
               },
               {
-                "ref": "1 Crônicas 6:1–81"
+                "ref": "1 Crônicas 6:1–81",
+                "text": "Os filhos de Levi foram: Gérson, Coate e Merari."
               }
             ]
           },
@@ -983,11 +976,11 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 38:21",
-                "text": "Esta é uma relação dos materiais usados na construção do tabernáculo, o santuário da aliança.131 Os levitas registraram os valores totais conforme Moisés os havia instruído, e Itamar, filho do sacerdote Arão, supervisionou esse trabalho."
+                "text": "Esta é uma relação dos materiais usados na construção do tabernáculo, o santuário da aliança. Os levitas registraram os valores totais conforme Moisés os havia instruído, e Itamar, filho do sacerdote Arão, supervisionou esse trabalho."
               },
               {
                 "ref": "Êxodo 31:18",
-                "text": "Quando o SENHOR terminou de falar com Moisés no monte Sinai, entregou-lhe as duas tábuas de pedra gravadas com os termos da aliança,100 escritas pelo dedo de Deus."
+                "text": "Quando o SENHOR terminou de falar com Moisés no monte Sinai, entregou-lhe as duas tábuas de pedra gravadas com os termos da aliança, escritas pelo dedo de Deus."
               },
               {
                 "ref": "Números 4:15",
@@ -1074,7 +1067,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 12:32"
+                "ref": "Deuteronômio 12:32",
+                "text": "“Portanto, tenham o cuidado de cumprir todas as ordens que lhes dou. Não acrescentem nem tirem coisa alguma.”"
               },
               {
                 "ref": "Êxodo 40:32",
@@ -1097,6 +1091,7 @@
   "2": {
     "book": "Números",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "A organização de Israel no acampamento",
@@ -1199,7 +1194,7 @@
             "crossReferences": [
               {
                 "ref": "Números 26:25",
-                "text": "Esses foram os clãs de Issacar, que totalizaram 64.300 homens registrados. A tribo de Zebulom 26 Estes foram os clãs descendentes dos filhos de Zebulom: O clã seredita, assim chamado por causa de seu antepassado Serede...."
+                "text": "Esses foram os clãs de Issacar, que totalizaram 64.300 homens registrados."
               },
               {
                 "ref": "Números 1:29",
@@ -1232,7 +1227,8 @@
                 "text": "totalizaram 57.400. Esse é o número da tribo de Zebulom."
               },
               {
-                "ref": "Números 26:26–27"
+                "ref": "Números 26:26–27",
+                "text": "Estes foram os clãs descendentes dos filhos de Zebulom: O clã seredita, assim chamado por causa de seu antepassado Serede. O clã elonita, assim chamado por causa de seu antepassado Elom. O clã jaleelita, assim chamado po..."
               }
             ]
           },
@@ -1391,7 +1387,7 @@
             "crossReferences": [
               {
                 "ref": "Números 10:21",
-                "text": "Então vieram os levitas da divisão coatita carregando os objetos sagrados. Antes que o povo chegasse ao próximo acampamento, o taber­náculo deveria estar armado em seu novo local."
+                "text": "Então vieram os levitas da divisão coatita carregando os objetos sagrados. Antes que o povo chegasse ao próximo acampamento, o tabernáculo deveria estar armado em seu novo local."
               },
               {
                 "ref": "Números 10:17",
@@ -1737,6 +1733,7 @@
   "3": {
     "book": "Números",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "A nomeação dos levitas para o serviço",
@@ -1760,7 +1757,7 @@
               },
               {
                 "ref": "Gênesis 2:4",
-                "text": "Esse é o relato da criação dos céus e da terra. O homem e a mulher no jardim Quando o SENHOR Deus criou a terra e os céus,"
+                "text": "Esse é o relato da criação dos céus e da terra."
               }
             ]
           },
@@ -1889,7 +1886,7 @@
             "crossReferences": [
               {
                 "ref": "Números 10:21",
-                "text": "Então vieram os levitas da divisão coatita carregando os objetos sagrados. Antes que o povo chegasse ao próximo acampamento, o taber­náculo deveria estar armado em seu novo local."
+                "text": "Então vieram os levitas da divisão coatita carregando os objetos sagrados. Antes que o povo chegasse ao próximo acampamento, o tabernáculo deveria estar armado em seu novo local."
               },
               {
                 "ref": "Números 4:33",
@@ -1978,7 +1975,7 @@
           },
           {
             "number": 13,
-            "text": "pois todos os filhos mais velhos são meus. No dia em que feri mortalmente todos os filhos mais velhos dos ­egípcios, consagrei para mim todos os filhos mais velhos de Israel e todos os machos das primeiras crias dos animais. Eles são meus. Eu sou o SENHOR”.",
+            "text": "pois todos os filhos mais velhos são meus. No dia em que feri mortalmente todos os filhos mais velhos dos egípcios, consagrei para mim todos os filhos mais velhos de Israel e todos os machos das primeiras crias dos animais. Eles são meus. Eu sou o SENHOR”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2010,7 +2007,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Crônicas 6:1"
+                "ref": "1 Crônicas 6:1",
+                "text": "Os filhos de Levi foram: Gérson, Coate e Merari."
               }
             ]
           },
@@ -2056,7 +2054,7 @@
               },
               {
                 "ref": "Gênesis 45:21",
-                "text": "Os filhos de Jacó155 seguiram essas instruções. José providenciou carruagens, conforme o faraó havia ordenado, e lhes deu mantimentos para a viagem."
+                "text": "Os filhos de Jacó seguiram essas instruções. José providenciou carruagens, conforme o faraó havia ordenado, e lhes deu mantimentos para a viagem."
               }
             ]
           },
@@ -2078,7 +2076,8 @@
                 "text": "Quando Balaão percebeu que o SENHOR se agradava de abençoar Israel, não recorreu à adivinhação como antes. Em vez disso, voltou-se em direção ao deserto,"
               },
               {
-                "ref": "1 Crônicas 6:1–2"
+                "ref": "1 Crônicas 6:1–2",
+                "text": "Os filhos de Levi foram: Gérson, Coate e Merari. Os descendentes de Coate foram: Anrão, Isar, Hebrom e Uziel."
               }
             ]
           },
@@ -2120,7 +2119,7 @@
               },
               {
                 "ref": "1 Crônicas 25:4",
-                "text": "Dos filhos de Hemã: Buquias, Matanias, Uziel, Subael,162 Jerimote, Hananias, Hanani, Eliata, Gidalti, Romanti-Ézer, Josbecasa, Maloti, Hotir e Maaziote."
+                "text": "Dos filhos de Hemã: Buquias, Matanias, Uziel, Subael, Jerimote, Hananias, Hanani, Eliata, Gidalti, Romanti-Ézer, Josbecasa, Maloti, Hotir e Maaziote."
               },
               {
                 "ref": "Êxodo 6:20",
@@ -2135,7 +2134,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 6:19",
-                "text": "Os descendentes de Merari foram: Mali e Musi. Estes são os clãs dos levitas, conforme rela­cionados nos registros de família."
+                "text": "Os descendentes de Merari foram: Mali e Musi. Estes são os clãs dos levitas, conforme relacionados nos registros de família."
               },
               {
                 "ref": "1 Crônicas 6:19",
@@ -2245,11 +2244,11 @@
               },
               {
                 "ref": "Êxodo 27:9–16",
-                "text": "“Em seguida, faça um pátio para o tabernáculo, fechado com cortinas de linho finamente tecido."
+                "text": "“Em seguida, faça um pátio para o tabernáculo, fechado com cortinas de linho finamente tecido. As cortinas do lado sul terão 45 metros de comprimento"
               },
               {
                 "ref": "Êxodo 38:9–16",
-                "text": "Bezalel fez ainda o pátio, que era fechado com cortinas de linho finamente tecido."
+                "text": "Bezalel fez ainda o pátio, que era fechado com cortinas de linho finamente tecido. As cortinas do lado sul tinham 45 metros de comprimento"
               }
             ]
           },
@@ -2274,12 +2273,12 @@
           },
           {
             "number": 28,
-            "text": "Nos clãs coatitas havia 8.6006 indivíduos do sexo masculino de um mês de idade para cima. Eram encarregados de cuidar do santuário,",
+            "text": "Nos clãs coatitas havia 8.600 indivíduos do sexo masculino de um mês de idade para cima. Eram encarregados de cuidar do santuário,",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Números 3:31",
-                "text": "Eram encarregados de cuidar da arca, da mesa, do candelabro, dos dois altares, dos diversos utensílios do santuário, da cortina interna e de todos os objetos rela­cionados ao seu uso."
+                "text": "Eram encarregados de cuidar da arca, da mesa, do candelabro, dos dois altares, dos diversos utensílios do santuário, da cortina interna e de todos os objetos relacionados ao seu uso."
               },
               {
                 "ref": "Números 4:35–36",
@@ -2335,16 +2334,16 @@
           },
           {
             "number": 31,
-            "text": "Eram encarregados de cuidar da arca, da mesa, do candelabro, dos dois altares, dos diversos utensílios do santuário, da cortina interna e de todos os objetos rela­cionados ao seu uso.",
+            "text": "Eram encarregados de cuidar da arca, da mesa, do candelabro, dos dois altares, dos diversos utensílios do santuário, da cortina interna e de todos os objetos relacionados ao seu uso.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Êxodo 26:31–33",
-                "text": "“Para o interior do tabernáculo, confec­cione uma cortina especial de linho finamente tecido. Enfeite-a com fios de tecido azul, roxo e vermelho e com querubins bordados com habilidade."
+                "text": "“Para o interior do tabernáculo, confeccione uma cortina especial de linho finamente tecido. Enfeite-a com fios de tecido azul, roxo e vermelho e com querubins bordados com habilidade."
               },
               {
                 "ref": "Êxodo 27:1–8",
-                "text": "“Usando madeira de acácia, construa um altar quadrado com 2, metros de largura e comprimento e 1, metro de altura."
+                "text": "“Usando madeira de acácia, construa um altar quadrado com 2,25 metros de largura e comprimento e 1,35 metro de altura."
               },
               {
                 "ref": "Números 4:4–16",
@@ -2428,13 +2427,13 @@
               },
               {
                 "ref": "Números 3:28–29",
-                "text": "Nos clãs coatitas havia 8.6006 indivíduos do sexo masculino de um mês de idade para cima. Eram encarregados de cuidar do santuário, e a área designada para seu acampamento ficava no lado sul do tabernáculo."
+                "text": "Nos clãs coatitas havia 8.600 indivíduos do sexo masculino de um mês de idade para cima. Eram encarregados de cuidar do santuário, e a área designada para seu acampamento ficava no lado sul do tabernáculo."
               }
             ]
           },
           {
             "number": 36,
-            "text": "Os meraritas eram encarregados de cuidar das armações que sustentavam o taber-­ náculo, além dos travessões, das colunas, das bases e de todos os objetos relacionados ao seu uso.",
+            "text": "Os meraritas eram encarregados de cuidar das armações que sustentavam o taber- náculo, além dos travessões, das colunas, das bases e de todos os objetos relacionados ao seu uso.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2524,7 +2523,7 @@
               },
               {
                 "ref": "2 Timóteo 2:19",
-                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”."
               },
               {
                 "ref": "Isaías 4:3",
@@ -2619,18 +2618,19 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 30:13",
-                "text": "Cada pessoa contada entregará uma pequena quantidade de prata como oferta sagrada ao SENHOR. (O pagamento corresponderá a meio siclo, com base no siclo padrão do santuário, equivalente a doze gramas.95)"
+                "text": "Cada pessoa contada entregará uma pequena quantidade de prata como oferta sagrada ao SENHOR. (O pagamento corresponderá a meio siclo, com base no siclo padrão do santuário, equivalente a doze gramas.)"
               },
               {
                 "ref": "Levítico 27:6",
                 "text": "Um menino de 1 mês a 5 anos vale 60 gramas de prata; uma menina da mesma idade vale 36 gramas de prata."
               },
               {
-                "ref": "Levítico 27:25"
+                "ref": "Levítico 27:25",
+                "text": "(Todos os pagamentos serão calculados de acordo com o peso do siclo do santuário, equivalente a doze gramas.)"
               },
               {
                 "ref": "Números 18:16",
-                "text": "Vocês deverão resgatá-los quando eles tiverem um mês de idade. (O preço do resgate é de cinco peças de prata, com base no siclo do santuário, equivalente a doze gramas cada peça.51)"
+                "text": "Vocês deverão resgatá-los quando eles tiverem um mês de idade. (O preço do resgate é de cinco peças de prata, com base no siclo do santuário, equivalente a doze gramas cada peça.)"
               }
             ]
           },
@@ -2704,6 +2704,7 @@
   "4": {
     "book": "Números",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Deveres dos clãs coatitas",
@@ -2761,7 +2762,7 @@
               },
               {
                 "ref": "Números 8:24–26",
-                "text": "“Dê a seguinte instrução aos levitas."
+                "text": "“Dê a seguinte instrução aos levitas. Começarão a servir na tenda do encontro aos 25 anos"
               }
             ]
           },
@@ -2841,11 +2842,11 @@
               },
               {
                 "ref": "Êxodo 37:10–16",
-                "text": "Bezalel120 fez a mesa de madeira de acácia com 90 centímetros de comprimento, 45 centímetros de largura e 67, centímetros de altura."
+                "text": "Bezalel fez a mesa de madeira de acácia com 90 centímetros de comprimento, 45 centímetros de largura e 67,5 centímetros de altura."
               },
               {
                 "ref": "Êxodo 25:23–30",
-                "text": "“Faça também uma mesa de madeira de acácia com 90 centímetros de comprimento, 45 centímetros de largura e 67, centímetros de altura."
+                "text": "“Faça também uma mesa de madeira de acácia com 90 centímetros de comprimento, 45 centímetros de largura e 67,5 centímetros de altura."
               }
             ]
           },
@@ -2946,7 +2947,7 @@
           },
           {
             "number": 13,
-            "text": "“Removerão as cinzas do altar de sacri­fícios e o cobrirão com um pano roxo.",
+            "text": "“Removerão as cinzas do altar de sacrifícios e o cobrirão com um pano roxo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2974,7 +2975,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 38:1–7",
-                "text": "Usando madeira de acácia, Bezalel125 construiu um altar quadrado para o holocausto, com 2, metros de largura e comprimento e 1, metro de altura."
+                "text": "Usando madeira de acácia, Bezalel construiu um altar quadrado para o holocausto, com 2,25 metros de largura e comprimento e 1,35 metro de altura."
               },
               {
                 "ref": "2 Crônicas 4:19",
@@ -3001,7 +3002,7 @@
               },
               {
                 "ref": "1 Crônicas 13:9–10",
-                "text": "Quando chegaram à eira de Nacom,120 os bois que puxavam a carroça tropeçaram, e Uzá estendeu a mão para segurar a arca."
+                "text": "Quando chegaram à eira de Nacom, os bois que puxavam a carroça tropeçaram, e Uzá estendeu a mão para segurar a arca."
               }
             ]
           },
@@ -3011,7 +3012,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Êxodo 25:6"
+                "ref": "Êxodo 25:6",
+                "text": "óleo de oliva para as lâmpadas; especiarias para o óleo da unção e para o incenso perfumado;"
               },
               {
                 "ref": "Levítico 24:2",
@@ -3193,7 +3195,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 27:9",
-                "text": "“Em seguida, faça um pátio para o tabernáculo, fechado com cortinas de linho finamente tecido."
+                "text": "“Em seguida, faça um pátio para o tabernáculo, fechado com cortinas de linho finamente tecido. As cortinas do lado sul terão 45 metros de comprimento"
               },
               {
                 "ref": "Êxodo 35:18",
@@ -3262,7 +3264,7 @@
               },
               {
                 "ref": "1 Timóteo 6:11–12",
-                "text": "Você, porém, que é um homem de Deus, ­fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão."
+                "text": "Você, porém, que é um homem de Deus, fuja de todas essas coisas más. Busque a justiça, a devoção e também a fé, o amor, a perseverança e a mansidão."
               },
               {
                 "ref": "2 Timóteo 2:4",
@@ -3277,7 +3279,7 @@
             "crossReferences": [
               {
                 "ref": "Números 3:36–37",
-                "text": "Os meraritas eram encarregados de cuidar das armações que sustentavam o taber-­ náculo, além dos travessões, das colunas, das bases e de todos os objetos relacionados ao seu uso."
+                "text": "Os meraritas eram encarregados de cuidar das armações que sustentavam o taber- náculo, além dos travessões, das colunas, das bases e de todos os objetos relacionados ao seu uso."
               },
               {
                 "ref": "Números 7:8–9",
@@ -3296,7 +3298,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 38:21",
-                "text": "Esta é uma relação dos materiais usados na construção do tabernáculo, o santuário da aliança.131 Os levitas registraram os valores totais conforme Moisés os havia instruído, e Itamar, filho do sacerdote Arão, supervisionou esse trabalho."
+                "text": "Esta é uma relação dos materiais usados na construção do tabernáculo, o santuário da aliança. Os levitas registraram os valores totais conforme Moisés os havia instruído, e Itamar, filho do sacerdote Arão, supervisionou esse trabalho."
               },
               {
                 "ref": "Êxodo 38:17",
@@ -3580,7 +3582,7 @@
               },
               {
                 "ref": "Mateus 20:16",
-                "text": "“Assim, os últimos serão os primeiros, e os primeiros serão os últimos”.115 Jesus prediz sua morte e ressurreição"
+                "text": "“Assim, os últimos serão os primeiros, e os primeiros serão os últimos”."
               }
             ]
           },
@@ -3614,6 +3616,7 @@
   "5": {
     "book": "Números",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "Pureza no acampamento de Israel",
@@ -3644,7 +3647,7 @@
               },
               {
                 "ref": "Números 9:6–10",
-                "text": "Alguns dos homens, porém, estavam cerimonialmente impuros por terem tocado num cadáver, e não puderam celebrar a Páscoa naquele dia."
+                "text": "Alguns dos homens, porém, estavam cerimonialmente impuros por terem tocado num cadáver, e não puderam celebrar a Páscoa naquele dia. Eles se dirigiram a Moisés e Arão no mesmo dia"
               },
               {
                 "ref": "Números 12:14",
@@ -4230,6 +4233,7 @@
   "6": {
     "book": "Números",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "Leis acerca do voto nazireu",
@@ -4359,7 +4363,7 @@
             "crossReferences": [
               {
                 "ref": "Números 9:6",
-                "text": "Alguns dos homens, porém, estavam cerimonialmente impuros por terem tocado num cadáver, e não puderam celebrar a Páscoa naquele dia."
+                "text": "Alguns dos homens, porém, estavam cerimonialmente impuros por terem tocado num cadáver, e não puderam celebrar a Páscoa naquele dia. Eles se dirigiram a Moisés e Arão no mesmo dia"
               },
               {
                 "ref": "Levítico 21:1–2",
@@ -4382,7 +4386,7 @@
             "crossReferences": [
               {
                 "ref": "2 Coríntios 6:17–18",
-                "text": "Portanto, afastem-se e separem-se deles, diz o Senhor. Não toquem em coisas impuras, e eu os receberei. Eu serei seu Pai, e vocês serão meus filhos e minhas filhas,"
+                "text": "Portanto, afastem-se e separem-se deles, diz o Senhor. Não toquem em coisas impuras, e eu os receberei. Eu serei seu Pai, e vocês serão meus filhos e minhas filhas, diz o Senhor Todo-poderoso”."
               }
             ]
           },
@@ -4659,7 +4663,7 @@
           },
           {
             "number": 23,
-            "text": "“Diga a Arão e a seus filhos que abençoem o povo de Israel com esta bênção especial: 24‘Que o SENHOR o abençoe e o proteja.",
+            "text": "“Diga a Arão e a seus filhos que abençoem o povo de Israel com esta bênção especial:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4681,6 +4685,12 @@
             ]
           },
           {
+            "number": 24,
+            "text": "‘Que o SENHOR o abençoe e o proteja.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 25,
             "text": "Que o SENHOR olhe para você com favor e lhe mostre bondade.",
             "isJesusWords": false,
@@ -4699,7 +4709,7 @@
               },
               {
                 "ref": "Êxodo 33:19",
-                "text": "O SENHOR respondeu: “Farei passar diante de você toda a minha bondade e anunciarei diante de você o meu nome, Javé.106 Pois terei misericórdia de quem eu quiser, e mostrarei compaixão a quem eu quiser."
+                "text": "O SENHOR respondeu: “Farei passar diante de você toda a minha bondade e anunciarei diante de você o meu nome, Javé. Pois terei misericórdia de quem eu quiser, e mostrarei compaixão a quem eu quiser."
               }
             ]
           },
@@ -4756,6 +4766,7 @@
   "7": {
     "book": "Números",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Ofertas para a consagração",
@@ -4794,7 +4805,7 @@
               },
               {
                 "ref": "1 Crônicas 29:6–8",
-                "text": "Então os chefes das famílias, os líderes das tribos, os generais e os capitães,184 e os administradores do rei ofertaram voluntariamente."
+                "text": "Então os chefes das famílias, os líderes das tribos, os generais e os capitães, e os administradores do rei ofertaram voluntariamente."
               },
               {
                 "ref": "Números 2:1–34",
@@ -4813,7 +4824,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 45:21",
-                "text": "Os filhos de Jacó155 seguiram essas instruções. José providenciou carruagens, conforme o faraó havia ordenado, e lhes deu mantimentos para a viagem."
+                "text": "Os filhos de Jacó seguiram essas instruções. José providenciou carruagens, conforme o faraó havia ordenado, e lhes deu mantimentos para a viagem."
               },
               {
                 "ref": "Êxodo 25:2",
@@ -4892,7 +4903,7 @@
             "crossReferences": [
               {
                 "ref": "Números 3:36–37",
-                "text": "Os meraritas eram encarregados de cuidar das armações que sustentavam o taber-­ náculo, além dos travessões, das colunas, das bases e de todos os objetos relacionados ao seu uso."
+                "text": "Os meraritas eram encarregados de cuidar das armações que sustentavam o taber- náculo, além dos travessões, das colunas, das bases e de todos os objetos relacionados ao seu uso."
               },
               {
                 "ref": "Números 4:28–33",
@@ -4915,7 +4926,7 @@
               },
               {
                 "ref": "Números 3:31",
-                "text": "Eram encarregados de cuidar da arca, da mesa, do candelabro, dos dois altares, dos diversos utensílios do santuário, da cortina interna e de todos os objetos rela­cionados ao seu uso."
+                "text": "Eram encarregados de cuidar da arca, da mesa, do candelabro, dos dois altares, dos diversos utensílios do santuário, da cortina interna e de todos os objetos relacionados ao seu uso."
               },
               {
                 "ref": "Números 4:4–16",
@@ -4995,7 +5006,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 30:13",
-                "text": "Cada pessoa contada entregará uma pequena quantidade de prata como oferta sagrada ao SENHOR. (O pagamento corresponderá a meio siclo, com base no siclo padrão do santuário, equivalente a doze gramas.95)"
+                "text": "Cada pessoa contada entregará uma pequena quantidade de prata como oferta sagrada ao SENHOR. (O pagamento corresponderá a meio siclo, com base no siclo padrão do santuário, equivalente a doze gramas.)"
               },
               {
                 "ref": "Êxodo 25:29",
@@ -5117,7 +5128,7 @@
               },
               {
                 "ref": "Esdras 1:9",
-                "text": "Esta é uma lista dos objetos que foram devolvidos: 30 bacias de ouro, 1.000 bacias de prata, 29 incensários de prata, 1030 tigelas de ouro, 410 tigelas de prata, 1.000 objetos diversos."
+                "text": "Esta é uma lista dos objetos que foram devolvidos: 30 bacias de ouro, 1.000 bacias de prata, 29 incensários de prata,"
               },
               {
                 "ref": "Jeremias 52:18",
@@ -5306,7 +5317,7 @@
               },
               {
                 "ref": "Salmos 66:15",
-                "text": "Por isso te apresentarei holocaustos: meus melhores carneiros, como aroma agradável, e um sacrifício de novilhos e cabritos."
+                "text": "Por isso te apresentarei holocaustos: meus melhores carneiros, como aroma agradável, e um sacrifício de novilhos e cabritos. Interlúdio"
               }
             ]
           },
@@ -5470,7 +5481,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 66:15",
-                "text": "Por isso te apresentarei holocaustos: meus melhores carneiros, como aroma agradável, e um sacrifício de novilhos e cabritos."
+                "text": "Por isso te apresentarei holocaustos: meus melhores carneiros, como aroma agradável, e um sacrifício de novilhos e cabritos. Interlúdio"
               },
               {
                 "ref": "2 Coríntios 5:21",
@@ -5850,18 +5861,18 @@
               },
               {
                 "ref": "1 Crônicas 29:6–8",
-                "text": "Então os chefes das famílias, os líderes das tribos, os generais e os capitães,184 e os administradores do rei ofertaram voluntariamente."
+                "text": "Então os chefes das famílias, os líderes das tribos, os generais e os capitães, e os administradores do rei ofertaram voluntariamente."
               }
             ]
           },
           {
             "number": 85,
-            "text": "Cada bandeja de prata pesava 1.560 gramas e cada bacia de prata pesava 840 gramas. Ao todo, os objetos de prata pesavam 28, quilos, com base no peso do siclo do santuário.",
+            "text": "Cada bandeja de prata pesava 1.560 gramas e cada bacia de prata pesava 840 gramas. Ao todo, os objetos de prata pesavam 28,8 quilos, com base no peso do siclo do santuário.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "1 Crônicas 29:4",
-                "text": "Ofereço 105 toneladas de ouro de Ofir e 245 toneladas de prata183 refinada para revestir as paredes das construções,"
+                "text": "Ofereço 105 toneladas de ouro de Ofir e 245 toneladas de prata refinada para revestir as paredes das construções,"
               },
               {
                 "ref": "Esdras 8:25–26",
@@ -5873,7 +5884,7 @@
               },
               {
                 "ref": "1 Crônicas 22:14",
-                "text": "“Trabalhei arduamente para providenciar os materiais para a construção do templo do SENHOR: 3.500 toneladas de ouro, 35.000 toneladas de prata155 e tanto ferro e bronze que não se pode pesar. Também juntei madeira e pedr..."
+                "text": "“Trabalhei arduamente para providenciar os materiais para a construção do templo do SENHOR: 3.500 toneladas de ouro, 35.000 toneladas de prata e tanto ferro e bronze que não se pode pesar. Também juntei madeira e pedra..."
               }
             ]
           },
@@ -5947,6 +5958,7 @@
   "8": {
     "book": "Números",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "A preparação das lâmpadas",
@@ -6089,7 +6101,7 @@
               },
               {
                 "ref": "Números 19:13",
-                "text": "Quem toca num cadáver e não se purifica corretamente contamina o taberná­culo do SENHOR e será eliminado do povo de Israel. Permanecerá impuro, uma vez que a água da purificação não foi aspergida sobre ele."
+                "text": "Quem toca num cadáver e não se purifica corretamente contamina o tabernáculo do SENHOR e será eliminado do povo de Israel. Permanecerá impuro, uma vez que a água da purificação não foi aspergida sobre ele."
               },
               {
                 "ref": "Levítico 8:6",
@@ -6254,7 +6266,7 @@
               },
               {
                 "ref": "Gálatas 1:15",
-                "text": "Contudo, ainda antes de eu nascer, Deus me escolheu e me chamou por sua graça."
+                "text": "Contudo, ainda antes de eu nascer, Deus me escolheu e me chamou por sua graça. Foi do agrado dele"
               }
             ]
           },
@@ -6414,7 +6426,7 @@
               },
               {
                 "ref": "2 Crônicas 30:15–17",
-                "text": "No décimo quarto dia do segundo mês,135 o povo abateu o cordeiro pascal. Isso deixou os sacerdotes e levitas envergonhados, por isso se purificaram e trouxeram holocaustos ao templo do SENHOR."
+                "text": "No décimo quarto dia do segundo mês, o povo abateu o cordeiro pascal. Isso deixou os sacerdotes e levitas envergonhados, por isso se purificaram e trouxeram holocaustos ao templo do SENHOR."
               },
               {
                 "ref": "2 Crônicas 31:2",
@@ -6434,7 +6446,7 @@
           },
           {
             "number": 24,
-            "text": "“Dê a seguinte instrução aos levitas.",
+            "text": "“Dê a seguinte instrução aos levitas. Começarão a servir na tenda do encontro aos 25 anos",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6454,12 +6466,7 @@
                 "text": "Estes foram os descendentes de Levi conforme seus clãs, os chefes de suas famílias, registrados por nome. Cada um precisava ter 20 anos ou mais a fim de se qualificar para o serviço na casa do SENHOR."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Começarão a servir na tenda do encontro aos 25 anos",
-        "verses": [
+          },
           {
             "number": 25,
             "text": "e deixarão o serviço aos 50 anos.",
@@ -6505,6 +6512,7 @@
   "9": {
     "book": "Números",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "A segunda Páscoa",
@@ -6558,7 +6566,7 @@
               },
               {
                 "ref": "2 Crônicas 30:15",
-                "text": "No décimo quarto dia do segundo mês,135 o povo abateu o cordeiro pascal. Isso deixou os sacerdotes e levitas envergonhados, por isso se purificaram e trouxeram holocaustos ao templo do SENHOR."
+                "text": "No décimo quarto dia do segundo mês, o povo abateu o cordeiro pascal. Isso deixou os sacerdotes e levitas envergonhados, por isso se purificaram e trouxeram holocaustos ao templo do SENHOR."
               },
               {
                 "ref": "2 Crônicas 30:2",
@@ -6601,7 +6609,7 @@
           },
           {
             "number": 6,
-            "text": "Alguns dos homens, porém, estavam cerimonialmente impuros por terem tocado num cadáver, e não puderam celebrar a Páscoa naquele dia.",
+            "text": "Alguns dos homens, porém, estavam cerimonialmente impuros por terem tocado num cadáver, e não puderam celebrar a Páscoa naquele dia. Eles se dirigiram a Moisés e Arão no mesmo dia",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6621,15 +6629,10 @@
                 "text": "Agora ouça-me e escute meu conselho, e Deus esteja com você. Continue a ser o representante do povo diante de Deus, apresentando-lhe as questões trazidas pelo povo."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Eles se dirigiram a Moisés e Arão no mesmo dia",
-        "verses": [
+          },
           {
             "number": 7,
-            "text": "e disseram: “Ficamos cerimonialmente impuros, pois tocamos num cadáver. Mas por que estamos impedidos de apresentar a oferta do SENHOR no devido tempo como os demais ­israelitas?”.",
+            "text": "e disseram: “Ficamos cerimonialmente impuros, pois tocamos num cadáver. Mas por que estamos impedidos de apresentar a oferta do SENHOR no devido tempo como os demais israelitas?”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6698,7 +6701,7 @@
               },
               {
                 "ref": "Números 9:6–7",
-                "text": "Alguns dos homens, porém, estavam cerimonialmente impuros por terem tocado num cadáver, e não puderam celebrar a Páscoa naquele dia."
+                "text": "Alguns dos homens, porém, estavam cerimonialmente impuros por terem tocado num cadáver, e não puderam celebrar a Páscoa naquele dia. Eles se dirigiram a Moisés e Arão no mesmo dia"
               }
             ]
           },
@@ -6763,7 +6766,7 @@
               },
               {
                 "ref": "Números 9:7",
-                "text": "e disseram: “Ficamos cerimonialmente impuros, pois tocamos num cadáver. Mas por que estamos impedidos de apresentar a oferta do SENHOR no devido tempo como os demais ­israelitas?”."
+                "text": "e disseram: “Ficamos cerimonialmente impuros, pois tocamos num cadáver. Mas por que estamos impedidos de apresentar a oferta do SENHOR no devido tempo como os demais israelitas?”."
               },
               {
                 "ref": "Números 5:31",
@@ -6841,7 +6844,7 @@
               },
               {
                 "ref": "Êxodo 40:38",
-                "text": "Durante o dia, a nuvem do SENHOR pairava no ar acima do tabernáculo e, à noite, fogo ardia dentro da nuvem, de modo que todo o povo de Israel podia vê- la. E isso ocorreu ao longo de todas as jornadas dos israelitas."
+                "text": "Durante o dia, a nuvem do SENHOR pairava no ar acima do tabernáculo e, à noite, fogo ardia dentro da nuvem, de modo que todo o povo de Israel podia vê-la. E isso ocorreu ao longo de todas as jornadas dos israelitas."
               }
             ]
           },
@@ -6870,7 +6873,7 @@
           },
           {
             "number": 18,
-            "text": "Assim, viajavam e acampavam por ordem do SENHOR, para onde ele os conduzia. Enquanto a nuvem estava sobre o taber­náculo, permaneciam acampados.",
+            "text": "Assim, viajavam e acampavam por ordem do SENHOR, para onde ele os conduzia. Enquanto a nuvem estava sobre o tabernáculo, permaneciam acampados.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6893,7 +6896,7 @@
           },
           {
             "number": 19,
-            "text": "Se a nuvem ficava sobre o taber­náculo por muito tempo, os israelitas permaneciam ali e cumpriam suas obrigações para com o SENHOR.",
+            "text": "Se a nuvem ficava sobre o tabernáculo por muito tempo, os israelitas permaneciam ali e cumpriam suas obrigações para com o SENHOR.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6921,7 +6924,7 @@
               },
               {
                 "ref": "Números 9:18",
-                "text": "Assim, viajavam e acampavam por ordem do SENHOR, para onde ele os conduzia. Enquanto a nuvem estava sobre o taber­náculo, permaneciam acampados."
+                "text": "Assim, viajavam e acampavam por ordem do SENHOR, para onde ele os conduzia. Enquanto a nuvem estava sobre o tabernáculo, permaneciam acampados."
               },
               {
                 "ref": "Números 10:13",
@@ -6962,7 +6965,8 @@
                 "text": "Conduziu-os por um caminho seguro, a uma cidade onde pudessem morar."
               },
               {
-                "ref": "Deuteronômio 2:3–4"
+                "ref": "Deuteronômio 2:3–4",
+                "text": "‘Vocês andaram por esta região montanhosa tempo suficiente; agora, sigam para o norte."
               }
             ]
           },
@@ -6973,7 +6977,7 @@
             "crossReferences": [
               {
                 "ref": "Números 9:19",
-                "text": "Se a nuvem ficava sobre o taber­náculo por muito tempo, os israelitas permaneciam ali e cumpriam suas obrigações para com o SENHOR."
+                "text": "Se a nuvem ficava sobre o tabernáculo por muito tempo, os israelitas permaneciam ali e cumpriam suas obrigações para com o SENHOR."
               },
               {
                 "ref": "Josué 22:3",
@@ -6996,6 +7000,7 @@
   "10": {
     "book": "Números",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "As trombetas de prata",
@@ -7099,7 +7104,7 @@
               },
               {
                 "ref": "Isaías 58:1",
-                "text": "“Grite alto, com todas as suas forças! Grite alto, como o som da trombeta! Fale ao meu povo, Israel,164 sobre sua rebeldia e seus pecados!"
+                "text": "“Grite alto, com todas as suas forças! Grite alto, como o som da trombeta! Fale ao meu povo, Israel, sobre sua rebeldia e seus pecados!"
               },
               {
                 "ref": "Joel 2:1",
@@ -7407,7 +7412,7 @@
           },
           {
             "number": 21,
-            "text": "Então vieram os levitas da divisão coatita carregando os objetos sagrados. Antes que o povo chegasse ao próximo acampamento, o taber­náculo deveria estar armado em seu novo local.",
+            "text": "Então vieram os levitas da divisão coatita carregando os objetos sagrados. Antes que o povo chegasse ao próximo acampamento, o tabernáculo deveria estar armado em seu novo local.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -7582,7 +7587,7 @@
           },
           {
             "number": 30,
-            "text": "“Não irei”, respondeu Hobabe. “Preciso voltar para minha própria terra e para minha ­família.”",
+            "text": "“Não irei”, respondeu Hobabe. “Preciso voltar para minha própria terra e para minha família.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -7748,6 +7753,7 @@
   "11": {
     "book": "Números",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "O povo se queixa a Moisés",
@@ -7794,7 +7800,7 @@
               },
               {
                 "ref": "Salmos 78:34–35",
-                "text": "Quando Deus começou a matá-los, finalmente o buscaram; arrependeram-se e levaram Deus a sério. Então lembraram que Deus era sua rocha, que o Deus Altíssimo104 era seu redentor."
+                "text": "Quando Deus começou a matá-los, finalmente o buscaram; arrependeram-se e levaram Deus a sério. Então lembraram que Deus era sua rocha, que o Deus Altíssimo era seu redentor."
               }
             ]
           },
@@ -7805,7 +7811,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 9:22",
-                "text": "“Vocês também provocaram a ira do SENHOR em Taberá, em Massá22 e em Quibrote-Hataavá."
+                "text": "“Vocês também provocaram a ira do SENHOR em Taberá, em Massá e em Quibrote-Hataavá."
               }
             ]
           },
@@ -8097,7 +8103,7 @@
               },
               {
                 "ref": "Gênesis 46:27",
-                "text": "Além deles, José teve dois filhos163 que nasceram no Egito, totalizando setenta164 membros da família de Jacó no Egito."
+                "text": "Além deles, José teve dois filhos que nasceram no Egito, totalizando setenta membros da família de Jacó no Egito."
               }
             ]
           },
@@ -8131,7 +8137,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 19:10",
-                "text": "Então o SENHOR disse a Moisés: “Desça e consagre o povo, hoje e amanhã."
+                "text": "Então o SENHOR disse a Moisés: “Desça e consagre o povo, hoje e amanhã. Providencie que eles lavem suas roupas"
               },
               {
                 "ref": "Atos 7:39",
@@ -8234,7 +8240,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 59:1",
-                "text": "Ouçam! O braço do SENHOR não é fraco demais para salvá- los, nem seu ouvido é surdo para ouvi-los."
+                "text": "Ouçam! O braço do SENHOR não é fraco demais para salvá-los, nem seu ouvido é surdo para ouvi-los."
               },
               {
                 "ref": "Gênesis 18:14",
@@ -8275,7 +8281,8 @@
                 "text": "Eu descerei e falarei com você. Tomarei um pouco do Espírito que está sobre você e o colocarei sobre eles. Assim, dividirão com você o peso do povo, para que não precise carregá-lo sozinho."
               },
               {
-                "ref": "Joel 2:28–29"
+                "ref": "Joel 2:28–29",
+                "text": "“Então, depois que eu tiver feito essas coisas, derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os velhos terão sonhos, e os jovens terão visões."
               },
               {
                 "ref": "Números 12:5",
@@ -8413,10 +8420,11 @@
             "crossReferences": [
               {
                 "ref": "Ezequiel 45:11",
-                "text": "O ômer171 será a unidade padrão para medir volume, e o efa e o bato172 medirão, cada um, um décimo de ômer."
+                "text": "O ômer será a unidade padrão para medir volume, e o efa e o bato medirão, cada um, um décimo de ômer."
               },
               {
-                "ref": "Êxodo 16:36"
+                "ref": "Êxodo 16:36",
+                "text": "(A vasilha usada para medir o maná continha um ômer, que era a décima parte da medida padrão.)"
               }
             ]
           },
@@ -8450,7 +8458,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 9:22",
-                "text": "“Vocês também provocaram a ira do SENHOR em Taberá, em Massá22 e em Quibrote-Hataavá."
+                "text": "“Vocês também provocaram a ira do SENHOR em Taberá, em Massá e em Quibrote-Hataavá."
               },
               {
                 "ref": "1 Coríntios 10:6",
@@ -8464,7 +8472,7 @@
           },
           {
             "number": 35,
-            "text": "De Quibrote- Hataavá o povo viajou para Hazerote, onde ficou algum tempo.",
+            "text": "De Quibrote-Hataavá o povo viajou para Hazerote, onde ficou algum tempo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -8488,6 +8496,7 @@
   "12": {
     "book": "Números",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "As queixas de Miriã e Arão",
@@ -8517,7 +8526,7 @@
           },
           {
             "number": 2,
-            "text": "Disseram: “Acaso o SENHOR fala apenas por meio de Moisés? Também não falou por meio de nós?”. E o SENHOR ouviu isso. 3(Ora, Moisés era muito humilde, mais que qualquer outra pessoa na terra.)",
+            "text": "Disseram: “Acaso o SENHOR fala apenas por meio de Moisés? Também não falou por meio de nós?”. E o SENHOR ouviu isso.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -8530,7 +8539,7 @@
               },
               {
                 "ref": "Isaías 37:4",
-                "text": "Contudo, talvez o SENHOR, seu Deus, tenha ouvido o porta-voz116 que o rei da Assíria enviou para desafiar o Deus vivo e o castigue por suas palavras. Por favor, ore por nós que restamos!’”."
+                "text": "Contudo, talvez o SENHOR, seu Deus, tenha ouvido o porta-voz que o rei da Assíria enviou para desafiar o Deus vivo e o castigue por suas palavras. Por favor, ore por nós que restamos!’”."
               },
               {
                 "ref": "Miqueias 6:4",
@@ -8539,13 +8548,19 @@
             ]
           },
           {
+            "number": 3,
+            "text": "(Ora, Moisés era muito humilde, mais que qualquer outra pessoa na terra.)",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 4,
             "text": "No mesmo instante, o SENHOR chamou Moisés, Arão e Miriã e disse: “Vão à tenda do encontro, vocês três!”, e eles foram para lá.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Salmos 76:9",
-                "text": "Tu te levantaste para julgar, ó Deus, para salvar os oprimidos da terra."
+                "text": "Tu te levantaste para julgar, ó Deus, para salvar os oprimidos da terra. Interlúdio"
               },
               {
                 "ref": "Números 16:16–21",
@@ -8568,7 +8583,7 @@
               },
               {
                 "ref": "Êxodo 40:38",
-                "text": "Durante o dia, a nuvem do SENHOR pairava no ar acima do tabernáculo e, à noite, fogo ardia dentro da nuvem, de modo que todo o povo de Israel podia vê- la. E isso ocorreu ao longo de todas as jornadas dos israelitas."
+                "text": "Durante o dia, a nuvem do SENHOR pairava no ar acima do tabernáculo e, à noite, fogo ardia dentro da nuvem, de modo que todo o povo de Israel podia vê-la. E isso ocorreu ao longo de todas as jornadas dos israelitas."
               },
               {
                 "ref": "Salmos 99:7",
@@ -8679,7 +8694,7 @@
               },
               {
                 "ref": "2 Crônicas 26:19–21",
-                "text": "Uzias, que segurava um incensário, ficou indignado. Enquanto ele demonstrava sua raiva contra os sacerdotes diante do altar de incenso no templo do SENHOR, apareceu lepra123 em sua testa."
+                "text": "Uzias, que segurava um incensário, ficou indignado. Enquanto ele demonstrava sua raiva contra os sacerdotes diante do altar de incenso no templo do SENHOR, apareceu lepra em sua testa."
               },
               {
                 "ref": "2 Reis 15:5",
@@ -8809,7 +8824,7 @@
             "crossReferences": [
               {
                 "ref": "Números 11:35",
-                "text": "De Quibrote- Hataavá o povo viajou para Hazerote, onde ficou algum tempo."
+                "text": "De Quibrote-Hataavá o povo viajou para Hazerote, onde ficou algum tempo."
               },
               {
                 "ref": "Números 33:18",
@@ -8817,7 +8832,7 @@
               },
               {
                 "ref": "1 Samuel 25:1",
-                "text": "Samuel morreu, e todo o Israel se reuniu para lamentar sua morte. Foi sepultado em Ramá, onde tinha vivido. Davi se enfurece contra Nabal Então Davi desceu para o deserto de Maom."
+                "text": "Samuel morreu, e todo o Israel se reuniu para lamentar sua morte. Foi sepultado em Ramá, onde tinha vivido."
               },
               {
                 "ref": "Habacuque 3:3",
@@ -8832,6 +8847,7 @@
   "13": {
     "book": "Números",
     "chapter": "13",
+    "verified": true,
     "sections": [
       {
         "title": "Doze espiões fazem o reconhecimento de Canaã",
@@ -8978,7 +8994,7 @@
               },
               {
                 "ref": "Josué 24:1–33",
-                "text": "Cr 2.; o hebraico traz Zabdi; também em 7.,."
+                "text": "Então Josué reuniu todas as tribos de Israel em Siquém. Convocou também os líderes, os chefes, os juízes e os oficiais de Israel, e todos vieram e se apresentaram diante de Deus."
               },
               {
                 "ref": "Deuteronômio 31:7–8",
@@ -9105,7 +9121,7 @@
               },
               {
                 "ref": "Josué 15:3",
-                "text": "seguia para o sul pela ladeira do Escorpião, passando pelo deserto de Zim e prosseguindo até Hezrom, ao sul de Cades- Barneia. Então subia até Adar e fazia uma curva em direção a Carca."
+                "text": "seguia para o sul pela ladeira do Escorpião, passando pelo deserto de Zim e prosseguindo até Hezrom, ao sul de Cades-Barneia. Então subia até Adar e fazia uma curva em direção a Carca."
               },
               {
                 "ref": "Juízes 1:19",
@@ -9115,7 +9131,7 @@
           },
           {
             "number": 18,
-            "text": "Vejam como é a terra e des­cubram se seus habitantes são fortes ou fracos, poucos ou muitos.",
+            "text": "Vejam como é a terra e descubram se seus habitantes são fortes ou fracos, poucos ou muitos.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9254,7 +9270,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 34:28",
-                "text": "Moisés permaneceu no monte com o SENHOR quarenta dias e quarenta noites. Durante todo esse tempo, não comeu pão nem bebeu água. E escreveu os termos da aliança, os dez mandamentos,112 nas tábuas de pedra."
+                "text": "Moisés permaneceu no monte com o SENHOR quarenta dias e quarenta noites. Durante todo esse tempo, não comeu pão nem bebeu água. E escreveu os termos da aliança, os dez mandamentos, nas tábuas de pedra."
               },
               {
                 "ref": "Êxodo 24:18",
@@ -9457,6 +9473,7 @@
   "14": {
     "book": "Números",
     "chapter": "14",
+    "verified": true,
     "sections": [
       {
         "title": "O povo se rebela",
@@ -9621,7 +9638,7 @@
               },
               {
                 "ref": "Isaías 62:4",
-                "text": "Nunca mais será chamada de “Cidade Abandonada”170 nem de “Terra Desolada”.171 Seu novo nome será “Cidade do Prazer de Deus”172 e “Esposa de Deus”,173 pois o SENHOR tem prazer em você e a tomará como esposa."
+                "text": "Nunca mais será chamada de “Cidade Abandonada” nem de “Terra Desolada”. Seu novo nome será “Cidade do Prazer de Deus” e “Esposa de Deus”, pois o SENHOR tem prazer em você e a tomará como esposa."
               },
               {
                 "ref": "Números 13:27",
@@ -9694,7 +9711,7 @@
               },
               {
                 "ref": "Deuteronômio 9:22–23",
-                "text": "“Vocês também provocaram a ira do SENHOR em Taberá, em Massá22 e em Quibrote-Hataavá."
+                "text": "“Vocês também provocaram a ira do SENHOR em Taberá, em Massá e em Quibrote-Hataavá."
               },
               {
                 "ref": "Hebreus 3:8",
@@ -9721,7 +9738,7 @@
               },
               {
                 "ref": "2 Samuel 24:1",
-                "text": "Cr 21.12); o hebraico traz sete."
+                "text": "Mais uma vez, a ira do SENHOR ardeu contra Israel e incitou Davi contra eles. “Vá e conte o povo de Israel e de Judá”, disse-lhe o SENHOR."
               }
             ]
           }
@@ -9778,7 +9795,7 @@
           },
           {
             "number": 15,
-            "text": "Se exterminares todo este povo com um só golpe, as nações que ouviram falar de tua fama dirão: 16‘O SENHOR não foi capaz de levá-los à terra que jurou lhes dar, por isso os matou no deserto’.",
+            "text": "Se exterminares todo este povo com um só golpe, as nações que ouviram falar de tua fama dirão:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9788,8 +9805,14 @@
             ]
           },
           {
+            "number": 16,
+            "text": "‘O SENHOR não foi capaz de levá-los à terra que jurou lhes dar, por isso os matou no deserto’.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 17,
-            "text": "“Por favor, Senhor, mostra que o teu poder é tão grande quanto declaraste. Pois disseste: 18‘O SENHOR é lento para se irar, é cheio de amor e perdoa todo tipo de pecado e rebeldia. Contudo, não absolve o culpado; traz as consequências do pecado dos pais sobre os filhos até a terceira e quarta geração’.",
+            "text": "“Por favor, Senhor, mostra que o teu poder é tão grande quanto declaraste. Pois disseste:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9805,6 +9828,12 @@
                 "text": "Ao ver isso, a multidão se encheu de temor e louvou a Deus por ele ter dado tal autoridade aos seres humanos."
               }
             ]
+          },
+          {
+            "number": 18,
+            "text": "‘O SENHOR é lento para se irar, é cheio de amor e perdoa todo tipo de pecado e rebeldia. Contudo, não absolve o culpado; traz as consequências do pecado dos pais sobre os filhos até a terceira e quarta geração’.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 19,
@@ -9873,7 +9902,7 @@
           },
           {
             "number": 22,
-            "text": "nenhuma dessas pessoas entrará na terra. Todas elas viram a minha presença gloriosa e os sinais que realizei no Egito e no deserto. Repetidamente, porém, me puseram à prova, ­re-­ cusando-se a ouvir a minha voz.",
+            "text": "nenhuma dessas pessoas entrará na terra. Todas elas viram a minha presença gloriosa e os sinais que realizei no Egito e no deserto. Repetidamente, porém, me puseram à prova, re- cusando-se a ouvir a minha voz.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -9900,7 +9929,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Números 32:11"
+                "ref": "Números 32:11",
+                "text": "‘De todos aqueles que eu resgatei do Egito, ninguém com 20 anos para cima verá a terra que eu jurei dar a Abraão, Isaque e Jacó, pois não me obedeceram de todo o coração."
               },
               {
                 "ref": "Números 26:64",
@@ -9930,7 +9960,8 @@
                 "text": "Dois dos homens que tinham feito o reconhecimento da terra, Josué, filho de Num, e Calebe, filho de Jefoné, rasgaram suas roupas"
               },
               {
-                "ref": "Números 32:11–12"
+                "ref": "Números 32:11–12",
+                "text": "‘De todos aqueles que eu resgatei do Egito, ninguém com 20 anos para cima verá a terra que eu jurei dar a Abraão, Isaque e Jacó, pois não me obedeceram de todo o coração."
               },
               {
                 "ref": "Atos 11:23",
@@ -9945,7 +9976,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 1:40",
-                "text": "Quanto a vocês, deem meia- volta e retornem ao deserto, em direção ao mar Vermelho’."
+                "text": "Quanto a vocês, deem meia-volta e retornem ao deserto, em direção ao mar Vermelho’."
               },
               {
                 "ref": "Números 13:29",
@@ -10013,7 +10044,8 @@
                 "text": "Suas vozes se elevaram em grande protesto contra Moisés e Arão. “Ah, se ao menos tivéssemos morrido no Egito, ou mesmo aqui no deserto!”, diziam."
               },
               {
-                "ref": "Deuteronômio 1:35"
+                "ref": "Deuteronômio 1:35",
+                "text": "‘Nenhum de vocês desta geração perversa viverá para ver a boa terra que eu jurei dar a seus antepassados."
               }
             ]
           },
@@ -10326,7 +10358,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 15:2",
-                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça- me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
+                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça-me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
               },
               {
                 "ref": "Números 14:25",
@@ -10395,6 +10427,7 @@
   "15": {
     "book": "Números",
     "chapter": "15",
+    "verified": true,
     "sections": [
       {
         "title": "Leis acerca das ofertas",
@@ -11064,7 +11097,7 @@
               },
               {
                 "ref": "Mateus 23:5",
-                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios131 mais largos que de costume e vestem mantos com franjas mais longas."
+                "text": "“Tudo que fazem é para se exibir. Usam nos braços filactérios mais largos que de costume e vestem mantos com franjas mais longas."
               },
               {
                 "ref": "Mateus 9:20",
@@ -11152,6 +11185,7 @@
   "16": {
     "book": "Números",
     "chapter": "16",
+    "verified": true,
     "sections": [
       {
         "title": "A rebelião de Corá",
@@ -11263,7 +11297,7 @@
               },
               {
                 "ref": "2 Timóteo 2:19",
-                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele”4 e “Todos que pertencem ao Senhor devem se afastar do mal”."
+                "text": "Mas o alicerce sólido de Deus permanece firme, com esta inscrição: “O Senhor conhece quem pertence a ele” e “Todos que pertencem ao Senhor devem se afastar do mal”."
               },
               {
                 "ref": "Levítico 10:3",
@@ -11330,7 +11364,7 @@
           },
           {
             "number": 9,
-            "text": "Acaso lhes parece de pouca importância que o Deus de Israel os tenha escolhido dentre toda a comunidade de Israel para estar perto dele a fim de trabalharem no taberná­culo do SENHOR e estarem perante a comunidade para servi-la?",
+            "text": "Acaso lhes parece de pouca importância que o Deus de Israel os tenha escolhido dentre toda a comunidade de Israel para estar perto dele a fim de trabalharem no tabernáculo do SENHOR e estarem perante a comunidade para servi-la?",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -11343,7 +11377,7 @@
               },
               {
                 "ref": "Ezequiel 44:10–11",
-                "text": "E os homens da tribo de Levi que me abandonaram quando Israel se afastou de mim para adorar ídolos163 sofrerão as consequências de seus pecados."
+                "text": "E os homens da tribo de Levi que me abandonaram quando Israel se afastou de mim para adorar ídolos sofrerão as consequências de seus pecados."
               },
               {
                 "ref": "Números 16:13",
@@ -11445,7 +11479,7 @@
           },
           {
             "number": 14,
-            "text": "Além disso, você não nos levou a outra terra que produz leite e mel com fartura, e não nos deu uma nova propriedade com campos e vinhedos. Está tentando enganar estes homens?43 Não iremos!”.",
+            "text": "Além disso, você não nos levou a outra terra que produz leite e mel com fartura, e não nos deu uma nova propriedade com campos e vinhedos. Está tentando enganar estes homens? Não iremos!”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -11628,7 +11662,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 13:5",
-                "text": "Ao mesmo tempo, uma grande rachadura apareceu no altar e as cinzas se derramaram, exatamente como o homem de Deus tinha dito na mensagem recebida do ­SENHOR."
+                "text": "Ao mesmo tempo, uma grande rachadura apareceu no altar e as cinzas se derramaram, exatamente como o homem de Deus tinha dito na mensagem recebida do SENHOR."
               }
             ]
           },
@@ -11746,7 +11780,7 @@
               },
               {
                 "ref": "Eclesiastes 3:19",
-                "text": "Pois tanto pessoas como animais têm o mesmo destino: ambos respi­ram e ambos morrem. As pessoas não têm vantagem alguma sobre os animais. Isso não faz o menor sentido!"
+                "text": "Pois tanto pessoas como animais têm o mesmo destino: ambos respiram e ambos morrem. As pessoas não têm vantagem alguma sobre os animais. Isso não faz o menor sentido!"
               },
               {
                 "ref": "Êxodo 32:34",
@@ -11893,7 +11927,7 @@
             ]
           },
           {
-            "number": 3645,
+            "number": 36,
             "text": "O SENHOR disse a Moisés:",
             "isJesusWords": false,
             "crossReferences": []
@@ -12191,12 +12225,13 @@
   "17": {
     "book": "Números",
     "chapter": "17",
+    "verified": true,
     "sections": [
       {
         "title": "A vara de Arão floresce",
         "verses": [
           {
-            "number": 146,
+            "number": 1,
             "text": "O SENHOR disse a Moisés:",
             "isJesusWords": false,
             "crossReferences": []
@@ -12258,7 +12293,7 @@
               },
               {
                 "ref": "Êxodo 30:6",
-                "text": "Coloque o altar de incenso diante da cortina que protege a ­arca da aliança, em frente à tampa da arca, o lugar de expiação, que cobre as tábuas da aliança. Ali eu me encontrarei com você."
+                "text": "Coloque o altar de incenso diante da cortina que protege a arca da aliança, em frente à tampa da arca, o lugar de expiação, que cobre as tábuas da aliança. Ali eu me encontrarei com você."
               },
               {
                 "ref": "Números 17:7",
@@ -12311,7 +12346,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 38:21",
-                "text": "Esta é uma relação dos materiais usados na construção do tabernáculo, o santuário da aliança.131 Os levitas registraram os valores totais conforme Moisés os havia instruído, e Itamar, filho do sacerdote Arão, supervisionou esse trabalho."
+                "text": "Esta é uma relação dos materiais usados na construção do tabernáculo, o santuário da aliança. Os levitas registraram os valores totais conforme Moisés os havia instruído, e Itamar, filho do sacerdote Arão, supervisionou esse trabalho."
               },
               {
                 "ref": "Atos 7:44",
@@ -12436,7 +12471,7 @@
               },
               {
                 "ref": "1 Crônicas 13:11–13",
-                "text": "Davi ficou indignado porque a ira do SENHOR irrompeu contra Uzá e chamou aquele lugar de Perez-Uzá,121 como é conhecido até hoje."
+                "text": "Davi ficou indignado porque a ira do SENHOR irrompeu contra Uzá e chamou aquele lugar de Perez-Uzá, como é conhecido até hoje."
               },
               {
                 "ref": "Números 16:26",
@@ -12451,6 +12486,7 @@
   "18": {
     "book": "Números",
     "chapter": "18",
+    "verified": true,
     "sections": [
       {
         "title": "Deveres dos sacerdotes e levitas",
@@ -12462,7 +12498,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 28:38",
-                "text": "Arão a usará na testa, para que tome sobre si toda a ­culpa dos israelitas quando consagrarem suas ofertas sagradas. Terá de usá-la sempre na testa para que o SENHOR aceite seu povo."
+                "text": "Arão a usará na testa, para que tome sobre si toda a culpa dos israelitas quando consagrarem suas ofertas sagradas. Terá de usá-la sempre na testa para que o SENHOR aceite seu povo."
               },
               {
                 "ref": "1 Pedro 2:24",
@@ -12485,7 +12521,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 29:34",
-                "text": "Lia engravidou pela terceira vez e deu à luz outro filho. Chamou- o de Levi, pois disse: “Certamente, desta vez meu marido terá afeição por mim, pois lhe dei três filhos!”."
+                "text": "Lia engravidou pela terceira vez e deu à luz outro filho. Chamou-o de Levi, pois disse: “Certamente, desta vez meu marido terá afeição por mim, pois lhe dei três filhos!”."
               },
               {
                 "ref": "Números 3:6–13",
@@ -12750,7 +12786,7 @@
               },
               {
                 "ref": "Ezequiel 44:29",
-                "text": "Seu alimento virá das ofertas e dos sacri­fícios que os israelitas trouxerem para o templo: as ofertas de cereal, as ofertas pelo pecado e as ofertas pela culpa. Tudo que for consagrado para o SENHOR pertencerá aos sacerdotes."
+                "text": "Seu alimento virá das ofertas e dos sacrifícios que os israelitas trouxerem para o templo: as ofertas de cereal, as ofertas pelo pecado e as ofertas pela culpa. Tudo que for consagrado para o SENHOR pertencerá aos sacerdotes."
               }
             ]
           },
@@ -12779,23 +12815,24 @@
           },
           {
             "number": 16,
-            "text": "Vocês deverão resgatá-los quando eles tiverem um mês de idade. (O preço do resgate é de cinco peças de prata, com base no siclo do santuário, equivalente a doze gramas cada peça.51)",
+            "text": "Vocês deverão resgatá-los quando eles tiverem um mês de idade. (O preço do resgate é de cinco peças de prata, com base no siclo do santuário, equivalente a doze gramas cada peça.)",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Êxodo 30:13",
-                "text": "Cada pessoa contada entregará uma pequena quantidade de prata como oferta sagrada ao SENHOR. (O pagamento corresponderá a meio siclo, com base no siclo padrão do santuário, equivalente a doze gramas.95)"
+                "text": "Cada pessoa contada entregará uma pequena quantidade de prata como oferta sagrada ao SENHOR. (O pagamento corresponderá a meio siclo, com base no siclo padrão do santuário, equivalente a doze gramas.)"
               },
               {
                 "ref": "Números 3:47",
                 "text": "recolha cinco peças de prata para cada um deles, com base no siclo do santuário, equivalente a doze gramas cada peça."
               },
               {
-                "ref": "Levítico 27:25"
+                "ref": "Levítico 27:25",
+                "text": "(Todos os pagamentos serão calculados de acordo com o peso do siclo do santuário, equivalente a doze gramas.)"
               },
               {
                 "ref": "Ezequiel 45:12",
-                "text": "A medida padrão para pesos será o siclo de prata.173 Um siclo consistirá em vinte geras, e sessenta siclos corresponderão a uma mina.”174 Ofertas especiais e comemorações"
+                "text": "A medida padrão para pesos será o siclo de prata. Um siclo consistirá em vinte geras, e sessenta siclos corresponderão a uma mina.”"
               }
             ]
           },
@@ -13005,7 +13042,7 @@
           },
           {
             "number": 28,
-            "text": "Apresentem a décima parte do dízimo recebido dos israelitas como oferta para o SENHOR. Essa é a porção sagrada do SENHOR, e vocês devem apresentá- la ao sacerdote Arão.",
+            "text": "Apresentem a décima parte do dízimo recebido dos israelitas como oferta para o SENHOR. Essa é a porção sagrada do SENHOR, e vocês devem apresentá-la ao sacerdote Arão.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13109,6 +13146,7 @@
   "19": {
     "book": "Números",
     "chapter": "19",
+    "verified": true,
     "sections": [
       {
         "title": "A água da purificação",
@@ -13287,7 +13325,7 @@
             "crossReferences": [
               {
                 "ref": "Números 19:13",
-                "text": "Quem toca num cadáver e não se purifica corretamente contamina o taberná­culo do SENHOR e será eliminado do povo de Israel. Permanecerá impuro, uma vez que a água da purificação não foi aspergida sobre ele."
+                "text": "Quem toca num cadáver e não se purifica corretamente contamina o tabernáculo do SENHOR e será eliminado do povo de Israel. Permanecerá impuro, uma vez que a água da purificação não foi aspergida sobre ele."
               },
               {
                 "ref": "Hebreus 9:13",
@@ -13374,7 +13412,7 @@
           },
           {
             "number": 13,
-            "text": "Quem toca num cadáver e não se purifica corretamente contamina o taberná­culo do SENHOR e será eliminado do povo de Israel. Permanecerá impuro, uma vez que a água da purificação não foi aspergida sobre ele.",
+            "text": "Quem toca num cadáver e não se purifica corretamente contamina o tabernáculo do SENHOR e será eliminado do povo de Israel. Permanecerá impuro, uma vez que a água da purificação não foi aspergida sobre ele.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -13456,7 +13494,7 @@
               },
               {
                 "ref": "Lucas 11:44",
-                "text": "Sim, que aflição os espera! Pois são como túmulos escondidos: as pessoas passam por cima deles sem saber onde estão ­pisando”."
+                "text": "Sim, que aflição os espera! Pois são como túmulos escondidos: as pessoas passam por cima deles sem saber onde estão pisando”."
               }
             ]
           },
@@ -13536,7 +13574,7 @@
             "crossReferences": [
               {
                 "ref": "Números 19:13",
-                "text": "Quem toca num cadáver e não se purifica corretamente contamina o taberná­culo do SENHOR e será eliminado do povo de Israel. Permanecerá impuro, uma vez que a água da purificação não foi aspergida sobre ele."
+                "text": "Quem toca num cadáver e não se purifica corretamente contamina o tabernáculo do SENHOR e será eliminado do povo de Israel. Permanecerá impuro, uma vez que a água da purificação não foi aspergida sobre ele."
               },
               {
                 "ref": "Marcos 16:16",
@@ -13605,6 +13643,7 @@
   "20": {
     "book": "Números",
     "chapter": "20",
+    "verified": true,
     "sections": [
       {
         "title": "A desobediência de Moisés",
@@ -13708,7 +13747,7 @@
             "crossReferences": [
               {
                 "ref": "Números 16:14",
-                "text": "Além disso, você não nos levou a outra terra que produz leite e mel com fartura, e não nos deu uma nova propriedade com campos e vinhedos. Está tentando enganar estes homens?43 Não iremos!”."
+                "text": "Além disso, você não nos levou a outra terra que produz leite e mel com fartura, e não nos deu uma nova propriedade com campos e vinhedos. Está tentando enganar estes homens? Não iremos!”."
               },
               {
                 "ref": "Neemias 9:21",
@@ -13803,7 +13842,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 106:32–33",
-                "text": "Também em Meribá, provocaram a ira do SENHOR, e causaram sérios problemas a Moisés. Fizeram Moisés se irar,140 e ele falou sem refletir."
+                "text": "Também em Meribá, provocaram a ira do SENHOR, e causaram sérios problemas a Moisés. Fizeram Moisés se irar, e ele falou sem refletir."
               },
               {
                 "ref": "Mateus 5:22",
@@ -13960,7 +13999,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 2:27"
+                "ref": "Deuteronômio 2:27",
+                "text": "‘Deixe-nos atravessar seu território. Ficaremos na estrada principal e não nos desviaremos nem para um lado nem para o outro."
               },
               {
                 "ref": "Números 21:1",
@@ -13968,7 +14008,7 @@
               },
               {
                 "ref": "Números 21:22–24",
-                "text": "“Permita-nos atravessar sua terra. Teremos cuidado de não passar por seus campos e vinhedos, e não beberemos água de seus poços. Seguiremos pela estrada real e só a deixaremos quando tivermos atravessado seu ­território”."
+                "text": "“Permita-nos atravessar sua terra. Teremos cuidado de não passar por seus campos e vinhedos, e não beberemos água de seus poços. Seguiremos pela estrada real e só a deixaremos quando tivermos atravessado seu território”."
               },
               {
                 "ref": "Deuteronômio 2:1–4",
@@ -13991,7 +14031,7 @@
               },
               {
                 "ref": "Números 21:4",
-                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom."
+                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom. Mas o povo ficou impaciente"
               },
               {
                 "ref": "Números 21:23",
@@ -14055,7 +14095,8 @@
                 "text": "Os descendentes de Esaú, que habitam em Seir, nos permitiram passar pelo território deles, como também fizeram os moabitas, que habitam na região de Ar. Deixe-nos passar até atravessarmos o Jordão e entrarmos na terra qu..."
               },
               {
-                "ref": "Deuteronômio 2:27"
+                "ref": "Deuteronômio 2:27",
+                "text": "‘Deixe-nos atravessar seu território. Ficaremos na estrada principal e não nos desviaremos nem para um lado nem para o outro."
               },
               {
                 "ref": "Juízes 11:24",
@@ -14079,15 +14120,15 @@
               },
               {
                 "ref": "Números 21:4",
-                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom."
+                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom. Mas o povo ficou impaciente"
               },
               {
                 "ref": "Ezequiel 48:28",
-                "text": "A fronteira sul de Gade vai de Tamar até as águas de Meribá, em Cades,206 depois segue o ribeiro do Egito até o Mediterrâneo."
+                "text": "A fronteira sul de Gade vai de Tamar até as águas de Meribá, em Cades, depois segue o ribeiro do Egito até o Mediterrâneo."
               },
               {
                 "ref": "Ezequiel 47:19",
-                "text": "“A fronteira sul se estenderá de Tamar até as águas de Meribá, em Cades,196 e de lá seguirá o curso do ribeiro do Egito até o Mediterrâneo. Essa será a fronteira sul."
+                "text": "“A fronteira sul se estenderá de Tamar até as águas de Meribá, em Cades, e de lá seguirá o curso do ribeiro do Egito até o Mediterrâneo. Essa será a fronteira sul."
               }
             ]
           },
@@ -14132,7 +14173,7 @@
             "crossReferences": [
               {
                 "ref": "Números 33:38–39",
-                "text": "Enquanto estavam ao pé do monte Hor, por ordem do SENHOR o sacerdote Arão subiu ao monte e morreu ali. Isso aconteceu no primeiro dia do quinto mês,103 quarenta anos depois que Israel saiu do Egito."
+                "text": "Enquanto estavam ao pé do monte Hor, por ordem do SENHOR o sacerdote Arão subiu ao monte e morreu ali. Isso aconteceu no primeiro dia do quinto mês, quarenta anos depois que Israel saiu do Egito."
               }
             ]
           },
@@ -14166,7 +14207,7 @@
             "crossReferences": [
               {
                 "ref": "Números 21:4",
-                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom."
+                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom. Mas o povo ficou impaciente"
               }
             ]
           },
@@ -14176,7 +14217,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 10:6"
+                "ref": "Deuteronômio 10:6",
+                "text": "(Os israelitas saíram dos poços do povo de Jacã e viajaram para Moserá, onde Arão morreu e foi sepultado. Eleazar, seu filho, serviu como sacerdote em seu lugar."
               },
               {
                 "ref": "Êxodo 29:29–30",
@@ -14188,7 +14230,7 @@
               },
               {
                 "ref": "Números 33:38–49",
-                "text": "Enquanto estavam ao pé do monte Hor, por ordem do SENHOR o sacerdote Arão subiu ao monte e morreu ali. Isso aconteceu no primeiro dia do quinto mês,103 quarenta anos depois que Israel saiu do Egito."
+                "text": "Enquanto estavam ao pé do monte Hor, por ordem do SENHOR o sacerdote Arão subiu ao monte e morreu ali. Isso aconteceu no primeiro dia do quinto mês, quarenta anos depois que Israel saiu do Egito."
               }
             ]
           },
@@ -14210,7 +14252,8 @@
                 "text": "Deus chamou a parte seca de “terra” e as águas de “mares”. E Deus viu que isso era bom."
               },
               {
-                "ref": "Atos 8:2"
+                "ref": "Atos 8:2",
+                "text": "(Alguns homens devotos vieram e, com grande tristeza, sepultaram Estêvão.)"
               }
             ]
           }
@@ -14221,6 +14264,7 @@
   "21": {
     "book": "Números",
     "chapter": "21",
+    "verified": true,
     "sections": [
       {
         "title": "Vitória sobre os cananeus",
@@ -14301,7 +14345,7 @@
         "verses": [
           {
             "number": 4,
-            "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom.",
+            "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom. Mas o povo ficou impaciente",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14321,12 +14365,7 @@
                 "text": "Por que querem desanimar o restante dos israelitas de atravessar o rio para a terra que o SENHOR lhes deu?"
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Mas o povo ficou impaciente",
-        "verses": [
+          },
           {
             "number": 5,
             "text": "e começou a se queixar contra Deus e contra Moisés: “Por que você nos tirou do Egito para morrermos aqui no deserto? Aqui não há o que comer nem o que beber. E detestamos este maná horrível!”.",
@@ -14514,7 +14553,7 @@
               },
               {
                 "ref": "Josué 10:13",
-                "text": "O sol parou e a lua ficou onde estava, até que o povo tivesse derrotado seus inimigos. Acaso esse acontecimento não está registrado no Livro de Jasar?22 O sol parou no meio do céu e não se pôs por cerca de um dia inteiro."
+                "text": "O sol parou e a lua ficou onde estava, até que o povo tivesse derrotado seus inimigos. Acaso esse acontecimento não está registrado no Livro de Jasar? O sol parou no meio do céu e não se pôs por cerca de um dia inteiro."
               }
             ]
           },
@@ -14524,11 +14563,12 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 2:18"
+                "ref": "Deuteronômio 2:18",
+                "text": "‘Hoje vocês atravessarão a fronteira com Moabe pela região de Ar"
               },
               {
                 "ref": "Deuteronômio 2:9",
-                "text": "o SENHOR nos advertiu: ‘Não perturbem os moabitas, os descendentes de Ló, nem comecem uma guerra contra eles. Eu dei a eles como propriedade a região de Ar, e não darei a vocês parte alguma do território deles’. 10(Antig..."
+                "text": "o SENHOR nos advertiu: ‘Não perturbem os moabitas, os descendentes de Ló, nem comecem uma guerra contra eles. Eu dei a eles como propriedade a região de Ar, e não darei a vocês parte alguma do território deles’."
               },
               {
                 "ref": "Números 21:28",
@@ -14655,7 +14695,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 2:26–28",
-                "text": "“Do deserto de Quedemote, enviei embaixadores ao rei Seom de Hesbom com a seguinte proposta de paz: 27‘Deixe-nos atravessar seu território. Ficaremos na estrada principal e não nos desviaremos nem para um lado nem para o outro."
+                "text": "“Do deserto de Quedemote, enviei embaixadores ao rei Seom de Hesbom com a seguinte proposta de paz:"
               },
               {
                 "ref": "Números 20:14–19",
@@ -14669,7 +14709,7 @@
           },
           {
             "number": 22,
-            "text": "“Permita-nos atravessar sua terra. Teremos cuidado de não passar por seus campos e vinhedos, e não beberemos água de seus poços. Seguiremos pela estrada real e só a deixaremos quando tivermos atravessado seu ­território”.",
+            "text": "“Permita-nos atravessar sua terra. Teremos cuidado de não passar por seus campos e vinhedos, e não beberemos água de seus poços. Seguiremos pela estrada real e só a deixaremos quando tivermos atravessado seu território”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -14762,7 +14802,7 @@
               },
               {
                 "ref": "Jeremias 48:2",
-                "text": "Ninguém mais se orgulhará de Moabe, pois em Hesbom tramam destruí-la. Dizem: ‘Venham, vamos acabar com aquela nação!’. A cidade de Madmém101 também será silenciada; a espada a perseguirá."
+                "text": "Ninguém mais se orgulhará de Moabe, pois em Hesbom tramam destruí-la. Dizem: ‘Venham, vamos acabar com aquela nação!’. A cidade de Madmém também será silenciada; a espada a perseguirá."
               },
               {
                 "ref": "Josué 13:17",
@@ -14892,7 +14932,7 @@
               },
               {
                 "ref": "Jeremias 48:32",
-                "text": "“Habitantes de Sibma, cheia de videiras, chorarei por vocês mais do que chorei por Jazer. Seus ramos se estendiam até o mar Morto,106 mas o destruidor acabou com tudo; colheu suas uvas e seus frutos de verão."
+                "text": "“Habitantes de Sibma, cheia de videiras, chorarei por vocês mais do que chorei por Jazer. Seus ramos se estendiam até o mar Morto, mas o destruidor acabou com tudo; colheu suas uvas e seus frutos de verão."
               },
               {
                 "ref": "Números 32:35",
@@ -14980,6 +15020,7 @@
   "22": {
     "book": "Números",
     "chapter": "22",
+    "verified": true,
     "sections": [
       {
         "title": "Balaque manda buscar Balaão",
@@ -14991,7 +15032,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 3:8",
-                "text": "“Assim, tomamos o território dos dois reis amorreus a leste do rio Jordão, desde o vale de Arnom até o monte Hermom. 9(Os sidônios chamam o monte Hermom de Siriom, enquanto os amorreus o chamam de Senir.)"
+                "text": "“Assim, tomamos o território dos dois reis amorreus a leste do rio Jordão, desde o vale de Arnom até o monte Hermom."
               },
               {
                 "ref": "Deuteronômio 1:5",
@@ -15003,7 +15044,7 @@
               },
               {
                 "ref": "Números 36:13",
-                "text": "Esses são os mandamentos e os estatutos que o SENHOR deu aos israelitas por meio de Moisés enquanto estavam acampados nas campinas de Moabe junto ao rio Jordão, do lado oposto de ­Jericó."
+                "text": "Esses são os mandamentos e os estatutos que o SENHOR deu aos israelitas por meio de Moisés enquanto estavam acampados nas campinas de Moabe junto ao rio Jordão, do lado oposto de Jericó."
               }
             ]
           },
@@ -15189,7 +15230,7 @@
           },
           {
             "number": 10,
-            "text": "Balaão respondeu a Deus: “Balaque, filho de Zipor, rei de Moabe, me enviou a seguinte mensagem: 11‘Um povo enorme saiu do Egito e cobre a terra. Venha e amaldiçoe esse povo. Então, quem sabe, poderei enfrentá-lo e expulsá-lo da terra’”.",
+            "text": "Balaão respondeu a Deus: “Balaque, filho de Zipor, rei de Moabe, me enviou a seguinte mensagem:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -15199,8 +15240,14 @@
             ]
           },
           {
+            "number": 11,
+            "text": "‘Um povo enorme saiu do Egito e cobre a terra. Venha e amaldiçoe esse povo. Então, quem sabe, poderei enfrentá-lo e expulsá-lo da terra’”.",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
             "number": 12,
-            "text": "Mas Deus disse a Balaão: “Não vá com eles nem amaldiçoe esse povo, pois é povo aben­çoado!”.",
+            "text": "Mas Deus disse a Balaão: “Não vá com eles nem amaldiçoe esse povo, pois é povo abençoado!”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -15253,7 +15300,7 @@
           },
           {
             "number": 15,
-            "text": "Então Balaque fez outra tentativa. Dessa vez, enviou um número maior de oficiais ainda mais importantes que os homens que tinha envia­do inicialmente.",
+            "text": "Então Balaque fez outra tentativa. Dessa vez, enviou um número maior de oficiais ainda mais importantes que os homens que tinha enviado inicialmente.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -15296,7 +15343,7 @@
               },
               {
                 "ref": "Ester 7:9",
-                "text": "Harbona, um dos eunucos do rei, disse: “Hamã construiu uma forca de mais de vinte metros no pátio da casa dele. Pretendia usá- la para enforcar Mardoqueu, o homem que salvou o rei de ser assassinado”. “Usem-na para enforcar Hamã!”, ordenou o rei."
+                "text": "Harbona, um dos eunucos do rei, disse: “Hamã construiu uma forca de mais de vinte metros no pátio da casa dele. Pretendia usá-la para enforcar Mardoqueu, o homem que salvou o rei de ser assassinado”. “Usem-na para enforcar Hamã!”, ordenou o rei."
               },
               {
                 "ref": "Mateus 16:26",
@@ -15314,7 +15361,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Números 24:13"
+                "ref": "Números 24:13",
+                "text": "‘Mesmo que Balaque me desse seu palácio cheio de prata e ouro, eu não poderia fazer coisa alguma, boa ou má, contra a vontade do SENHOR’! Avisei que só poderia falar aquilo que o SENHOR dissesse!"
               },
               {
                 "ref": "2 Crônicas 18:13",
@@ -15363,7 +15411,8 @@
                 "text": "Balaão respondeu: “Como eu poderia transmitir algo diferente daquilo que o SENHOR pôs em minha boca?”."
               },
               {
-                "ref": "Números 24:13"
+                "ref": "Números 24:13",
+                "text": "‘Mesmo que Balaque me desse seu palácio cheio de prata e ouro, eu não poderia fazer coisa alguma, boa ou má, contra a vontade do SENHOR’! Avisei que só poderia falar aquilo que o SENHOR dissesse!"
               },
               {
                 "ref": "2 Tessalonicenses 2:9–12",
@@ -15671,7 +15720,7 @@
             "crossReferences": [
               {
                 "ref": "Atos 28:15",
-                "text": "Os irmãos em Roma souberam que estávamos chegando e vieram ao nosso encontro no Fórum137 da Via Ápia. Outros se juntaram a nós nas Três Vendas.138 Ao vê-los, Paulo se animou e agradeceu a Deus."
+                "text": "Os irmãos em Roma souberam que estávamos chegando e vieram ao nosso encontro no Fórum da Via Ápia. Outros se juntaram a nós nas Três Vendas. Ao vê-los, Paulo se animou e agradeceu a Deus."
               },
               {
                 "ref": "Isaías 16:2",
@@ -15725,7 +15774,7 @@
               },
               {
                 "ref": "Números 23:16",
-                "text": "Então o SENHOR veio ao encontro de Balaão e lhe transmitiu uma mensagem, e depois disse: “Volte até onde Balaque está e transmita- lhe essa mensagem”."
+                "text": "Então o SENHOR veio ao encontro de Balaão e lhe transmitiu uma mensagem, e depois disse: “Volte até onde Balaque está e transmita-lhe essa mensagem”."
               },
               {
                 "ref": "Isaías 46:10",
@@ -15735,7 +15784,7 @@
           },
           {
             "number": 39,
-            "text": "Então Balaão acompanhou Balaque até Quiriate- Huzote.",
+            "text": "Então Balaão acompanhou Balaque até Quiriate-Huzote.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -15786,7 +15835,7 @@
               },
               {
                 "ref": "Números 25:2–3",
-                "text": "Essas mulheres os convidaram para os sacri­fícios a seus deuses, e o povo participou da festa e adorou os deuses de Moabe. Assim, os israelitas prestaram culto a Baal em Peor, e a ira do SENHOR se acendeu contra o povo."
+                "text": "Essas mulheres os convidaram para os sacrifícios a seus deuses, e o povo participou da festa e adorou os deuses de Moabe. Assim, os israelitas prestaram culto a Baal em Peor, e a ira do SENHOR se acendeu contra o povo."
               }
             ]
           }
@@ -15797,6 +15846,7 @@
   "23": {
     "book": "Números",
     "chapter": "23",
+    "verified": true,
     "sections": [
       {
         "title": "A primeira mensagem de Balaão",
@@ -15869,7 +15919,7 @@
             "crossReferences": [
               {
                 "ref": "Números 23:16",
-                "text": "Então o SENHOR veio ao encontro de Balaão e lhe transmitiu uma mensagem, e depois disse: “Volte até onde Balaque está e transmita- lhe essa mensagem”."
+                "text": "Então o SENHOR veio ao encontro de Balaão e lhe transmitiu uma mensagem, e depois disse: “Volte até onde Balaque está e transmita-lhe essa mensagem”."
               },
               {
                 "ref": "Lucas 18:12",
@@ -15880,7 +15930,8 @@
                 "text": "Não é uma recompensa pela prática de boas obras, para que ninguém venha a se orgulhar."
               },
               {
-                "ref": "Mateus 20:12"
+                "ref": "Mateus 20:12",
+                "text": "‘Aqueles trabalharam apenas uma hora e, no entanto, o senhor lhes pagou a mesma quantia que a nós, que trabalhamos o dia todo no calor intenso’."
               }
             ]
           },
@@ -15899,7 +15950,7 @@
               },
               {
                 "ref": "Isaías 51:16",
-                "text": "Pus minhas palavras em sua boca e o escondi em segurança em minha mão. Estendi151 os céus e lancei os alicerces da terra. Sou eu quem diz a Israel: ‘Tu és meu povo!’.”"
+                "text": "Pus minhas palavras em sua boca e o escondi em segurança em minha mão. Estendi os céus e lancei os alicerces da terra. Sou eu quem diz a Israel: ‘Tu és meu povo!’.”"
               },
               {
                 "ref": "Isaías 59:21",
@@ -15960,7 +16011,7 @@
               },
               {
                 "ref": "Números 22:12",
-                "text": "Mas Deus disse a Balaão: “Não vá com eles nem amaldiçoe esse povo, pois é povo aben­çoado!”."
+                "text": "Mas Deus disse a Balaão: “Não vá com eles nem amaldiçoe esse povo, pois é povo abençoado!”."
               }
             ]
           },
@@ -16124,7 +16175,7 @@
           },
           {
             "number": 16,
-            "text": "Então o SENHOR veio ao encontro de Balaão e lhe transmitiu uma mensagem, e depois disse: “Volte até onde Balaque está e transmita- lhe essa mensagem”.",
+            "text": "Então o SENHOR veio ao encontro de Balaão e lhe transmitiu uma mensagem, e depois disse: “Volte até onde Balaque está e transmita-lhe essa mensagem”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -16205,7 +16256,7 @@
               },
               {
                 "ref": "Números 22:12",
-                "text": "Mas Deus disse a Balaão: “Não vá com eles nem amaldiçoe esse povo, pois é povo aben­çoado!”."
+                "text": "Mas Deus disse a Balaão: “Não vá com eles nem amaldiçoe esse povo, pois é povo abençoado!”."
               },
               {
                 "ref": "Gênesis 12:2",
@@ -16213,7 +16264,7 @@
               },
               {
                 "ref": "Gênesis 22:17",
-                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar."
+                "text": "certamente o abençoarei. Multiplicarei grandemente seus descendentes, e eles serão como as estrelas no céu e a areia na beira do mar. Seus descendentes conquistarão as cidades de seus inimigos"
               }
             ]
           },
@@ -16427,6 +16478,7 @@
   "24": {
     "book": "Números",
     "chapter": "24",
+    "verified": true,
     "sections": [
       {
         "title": "",
@@ -16522,7 +16574,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 38:21",
-                "text": "Esta é uma relação dos materiais usados na construção do tabernáculo, o santuário da aliança.131 Os levitas registraram os valores totais conforme Moisés os havia instruído, e Itamar, filho do sacerdote Arão, supervisionou esse trabalho."
+                "text": "Esta é uma relação dos materiais usados na construção do tabernáculo, o santuário da aliança. Os levitas registraram os valores totais conforme Moisés os havia instruído, e Itamar, filho do sacerdote Arão, supervisionou esse trabalho."
               },
               {
                 "ref": "Levítico 23:42",
@@ -16599,7 +16651,7 @@
               },
               {
                 "ref": "Salmos 2:9",
-                "text": "Você as quebrará3 com cetro de ferro e as despedaçará como vasos de barro’”."
+                "text": "Você as quebrará com cetro de ferro e as despedaçará como vasos de barro’”."
               },
               {
                 "ref": "Jeremias 50:17",
@@ -16678,7 +16730,7 @@
           },
           {
             "number": 12,
-            "text": "Balaão disse a Balaque: “Você não se lembra do que expliquei a seus mensageiros? Eu lhes avisei: 13‘Mesmo que Balaque me desse seu palácio cheio de prata e ouro, eu não poderia fazer coisa alguma, boa ou má, contra a vontade do SENHOR’! Avisei que só poderia falar aquilo que o SENHOR dissesse!",
+            "text": "Balaão disse a Balaque: “Você não se lembra do que expliquei a seus mensageiros? Eu lhes avisei:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -16690,6 +16742,12 @@
                 "text": "Balaão respondeu: “Agora estou aqui, mas não posso falar o que bem entender. Transmitirei apenas a mensagem que Deus puser em minha boca”."
               }
             ]
+          },
+          {
+            "number": 13,
+            "text": "‘Mesmo que Balaque me desse seu palácio cheio de prata e ouro, eu não poderia fazer coisa alguma, boa ou má, contra a vontade do SENHOR’! Avisei que só poderia falar aquilo que o SENHOR dissesse!",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 14,
@@ -16780,7 +16838,7 @@
               },
               {
                 "ref": "Gênesis 49:10",
-                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes,172 até que venha aquele a quem pertence,173 aquele que todas as nações honrarão."
+                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes, até que venha aquele a quem pertence, aquele que todas as nações honrarão."
               },
               {
                 "ref": "Apocalipse 1:7",
@@ -16818,14 +16876,15 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 49:10",
-                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes,172 até que venha aquele a quem pertence,173 aquele que todas as nações honrarão."
+                "text": "O cetro não se afastará de Judá, nem o bastão de autoridade de seus descendentes, até que venha aquele a quem pertence, aquele que todas as nações honrarão."
               },
               {
                 "ref": "Mateus 28:18",
                 "text": "Jesus se aproximou deles e disse: “Toda a autoridade no céu e na terra me foi dada."
               },
               {
-                "ref": "Miqueias 5:2"
+                "ref": "Miqueias 5:2",
+                "text": "Mas você, ó Belém Efrata, é apenas uma pequena vila entre todo o povo de Judá. E, no entanto, um governante de Israel, cujas origens são do passado distante, sairá de você em meu favor."
               },
               {
                 "ref": "Salmos 2:1–12",
@@ -16870,7 +16929,8 @@
                 "text": "Quando a tribo de Judá deixou Jericó, a cidade das palmeiras, os queneus, descendentes do sogro de Moisés, os acompanharam até o deserto de Judá. Eles se estabeleceram no meio do povo dali, perto da cidade de Arade, no Neguebe."
               },
               {
-                "ref": "Jó 29:18"
+                "ref": "Jó 29:18",
+                "text": "‘Por certo morrerei rodeado por minha família’, pensava, ‘depois de uma vida longa e boa."
               }
             ]
           },
@@ -16881,7 +16941,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 83:8",
-                "text": "A eles também se uniram os assírios e se aliaram aos descendentes de Ló."
+                "text": "A eles também se uniram os assírios e se aliaram aos descendentes de Ló. Interlúdio"
               },
               {
                 "ref": "Esdras 4:2",
@@ -16965,6 +17025,7 @@
   "25": {
     "book": "Números",
     "chapter": "25",
+    "verified": true,
     "sections": [
       {
         "title": "Moabe corrompe Israel",
@@ -16984,7 +17045,7 @@
               },
               {
                 "ref": "Números 33:49",
-                "text": "Junto ao rio Jordão, acamparam desde Bete-Jesimote até Abel- Sitim nas campinas de Moabe."
+                "text": "Junto ao rio Jordão, acamparam desde Bete-Jesimote até Abel-Sitim nas campinas de Moabe."
               },
               {
                 "ref": "Miqueias 6:5",
@@ -16994,7 +17055,7 @@
           },
           {
             "number": 2,
-            "text": "Essas mulheres os convidaram para os sacri­fícios a seus deuses, e o povo participou da festa e adorou os deuses de Moabe.",
+            "text": "Essas mulheres os convidaram para os sacrifícios a seus deuses, e o povo participou da festa e adorou os deuses de Moabe.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -17057,7 +17118,7 @@
               },
               {
                 "ref": "2 Samuel 21:6",
-                "text": "Portanto, entregue- nos sete dos filhos de Saul, para que os executemos diante do SENHOR em Gibeá, no monte do SENHOR”. “Está bem”, disse o rei. “Farei o que me pedem.”"
+                "text": "Portanto, entregue-nos sete dos filhos de Saul, para que os executemos diante do SENHOR em Gibeá, no monte do SENHOR”. “Está bem”, disse o rei. “Farei o que me pedem.”"
               }
             ]
           },
@@ -17118,7 +17179,7 @@
               },
               {
                 "ref": "1 Samuel 18:10–11",
-                "text": "No dia seguinte, um espírito maligno enviado por Deus se apoderou de Saul, e ele começou a delirar em sua casa, como se fosse louco. Davi tocava a harpa, como fazia todos os dias."
+                "text": "No dia seguinte, um espírito maligno enviado por Deus se apoderou de Saul, e ele começou a delirar em sua casa, como se fosse louco. Davi tocava a harpa, como fazia todos os dias. Mas Saul tinha uma lança na mão"
               },
               {
                 "ref": "Juízes 20:28",
@@ -17349,6 +17410,7 @@
   "26": {
     "book": "Números",
     "chapter": "26",
+    "verified": true,
     "sections": [
       {
         "title": "O segundo censo dos soldados de Israel",
@@ -17371,11 +17433,11 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 38:25–26",
-                "text": "A comunidade toda de Israel contribuiu com 3.520 quilos133 de prata, calculados de acordo com o siclo do santuário."
+                "text": "A comunidade toda de Israel contribuiu com 3.520 quilos de prata, calculados de acordo com o siclo do santuário."
               },
               {
                 "ref": "Números 1:2–3",
-                "text": "“Realize um censo de toda a comunidade de Israel, de acordo com seus clãs e famílias. de 20 anos para cima, aptos para irem à guerra."
+                "text": "“Realize um censo de toda a comunidade de Israel, de acordo com seus clãs e famílias. Faça uma lista de todos os homens de 20 anos para cima, aptos para irem à guerra. Você e Arão registrarão os soldados"
               },
               {
                 "ref": "Êxodo 30:11–16",
@@ -17417,7 +17479,7 @@
               },
               {
                 "ref": "1 Crônicas 21:1",
-                "text": "Satanás151 se levantou contra Israel e incitou Davi a fazer um censo."
+                "text": "Satanás se levantou contra Israel e incitou Davi a fazer um censo."
               }
             ]
           }
@@ -17628,7 +17690,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 46:16",
-                "text": "Os filhos de Gade foram: Zefom,161 Hagi, Suni, Esbom, Eri, Arodi e Areli."
+                "text": "Os filhos de Gade foram: Zefom, Hagi, Suni, Esbom, Eri, Arodi e Areli."
               },
               {
                 "ref": "Números 2:14",
@@ -17643,7 +17705,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 46:16",
-                "text": "Os filhos de Gade foram: Zefom,161 Hagi, Suni, Esbom, Eri, Arodi e Areli."
+                "text": "Os filhos de Gade foram: Zefom, Hagi, Suni, Esbom, Eri, Arodi e Areli."
               }
             ]
           },
@@ -17654,7 +17716,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 46:16",
-                "text": "Os filhos de Gade foram: Zefom,161 Hagi, Suni, Esbom, Eri, Arodi e Areli."
+                "text": "Os filhos de Gade foram: Zefom, Hagi, Suni, Esbom, Eri, Arodi e Areli."
               }
             ]
           },
@@ -17774,7 +17836,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 46:13",
-                "text": "Os filhos de Issacar foram: Tolá, Puá,159 Jasube160 e Sinrom."
+                "text": "Os filhos de Issacar foram: Tolá, Puá, Jasube e Sinrom."
               },
               {
                 "ref": "1 Crônicas 7:1",
@@ -17782,7 +17844,7 @@
               },
               {
                 "ref": "Gênesis 30:17–18",
-                "text": "Deus respondeu às orações de Lia, que engravidou novamente e deu a Jacó o quinto filho. Chamou-o de Issacar,104 pois disse: “Deus me recompensou porque entreguei minha serva por mulher a meu marido”."
+                "text": "Deus respondeu às orações de Lia, que engravidou novamente e deu a Jacó o quinto filho. Chamou-o de Issacar, pois disse: “Deus me recompensou porque entreguei minha serva por mulher a meu marido”."
               },
               {
                 "ref": "Números 2:5",
@@ -17797,13 +17859,13 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 46:13",
-                "text": "Os filhos de Issacar foram: Tolá, Puá,159 Jasube160 e Sinrom."
+                "text": "Os filhos de Issacar foram: Tolá, Puá, Jasube e Sinrom."
               }
             ]
           },
           {
             "number": 25,
-            "text": "Esses foram os clãs de Issacar, que totalizaram 64.300 homens registrados. A tribo de Zebulom 26 Estes foram os clãs descendentes dos filhos de Zebulom: O clã seredita, assim chamado por causa de seu antepassado Serede. O clã elonita, assim chamado por causa de seu antepassado Elom. O clã jaleelita, assim chamado por causa de seu antepassado Jaleel.",
+            "text": "Esses foram os clãs de Issacar, que totalizaram 64.300 homens registrados.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -17815,6 +17877,17 @@
                 "text": "A tribo de Issacar acampará ao lado da tribo de Judá. Natanael, filho de Zuar, será seu líder. Seu número de soldados registrados é de 54.400."
               }
             ]
+          }
+        ]
+      },
+      {
+        "title": "A tribo de Zebulom",
+        "verses": [
+          {
+            "number": 26,
+            "text": "Estes foram os clãs descendentes dos filhos de Zebulom: O clã seredita, assim chamado por causa de seu antepassado Serede. O clã elonita, assim chamado por causa de seu antepassado Elom. O clã jaleelita, assim chamado por causa de seu antepassado Jaleel.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 27,
@@ -17847,11 +17920,11 @@
               },
               {
                 "ref": "Gênesis 48:5",
-                "text": "“Agora, tomo para mim, como meus próprios filhos, seus dois rapazes, Efraim e Manassés, ­nascidos aqui na terra do Egito antes de minha chegada. Eles serão meus filhos, como são Rúben e Simeão."
+                "text": "“Agora, tomo para mim, como meus próprios filhos, seus dois rapazes, Efraim e Manassés, nascidos aqui na terra do Egito antes de minha chegada. Eles serão meus filhos, como são Rúben e Simeão."
               },
               {
                 "ref": "Gênesis 41:51–52",
-                "text": "José chamou o filho mais velho de Manassés,145 pois disse: “Deus me fez esquecer todas as minhas dificuldades e toda a família de meu pai”."
+                "text": "José chamou o filho mais velho de Manassés, pois disse: “Deus me fez esquecer todas as minhas dificuldades e toda a família de meu pai”."
               },
               {
                 "ref": "Gênesis 48:13–20",
@@ -17874,7 +17947,7 @@
               },
               {
                 "ref": "Números 36:1",
-                "text": "Cr 7.1); o hebraico traz puvita [...] Puvá."
+                "text": "Os chefes das famílias do clã de Gileade, descendentes de Maquir, filho de Manassés, filho de José, apresentaram uma petição a Moisés e aos líderes de Israel, os chefes das famílias."
               },
               {
                 "ref": "Gênesis 48:14",
@@ -17913,7 +17986,7 @@
           },
           {
             "number": 32,
-            "text": "O clã semidaíta, assim chamado por causa de seu antepassado Semida. O clã heferita, assim chamado por causa de seu antepassado Héfer. 33(Zelofeade, um dos descendentes de Héfer, não teve filhos, mas suas filhas se chamavam Maala, Noa, Hogla, Milca e Tirza.)",
+            "text": "O clã semidaíta, assim chamado por causa de seu antepassado Semida. O clã heferita, assim chamado por causa de seu antepassado Héfer.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -17921,6 +17994,12 @@
                 "text": "Assim, a porção de terra a oeste do Jordão foi para as demais famílias dos clãs da tribo de Manassés: Abiezer, Heleque, Asriel, Siquém, Héfer e Semida. Esses descendentes do sexo masculino representavam os clãs de Manassés, filho de José."
               }
             ]
+          },
+          {
+            "number": 33,
+            "text": "(Zelofeade, um dos descendentes de Héfer, não teve filhos, mas suas filhas se chamavam Maala, Noa, Hogla, Milca e Tirza.)",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 34,
@@ -18314,14 +18393,16 @@
                 "text": "Os filhos de Levi foram: Gérson, Coate e Merari."
               },
               {
-                "ref": "1 Crônicas 6:1"
+                "ref": "1 Crônicas 6:1",
+                "text": "Os filhos de Levi foram: Gérson, Coate e Merari."
               },
               {
                 "ref": "Êxodo 6:16–19",
                 "text": "Estes são os descendentes de Levi, conforme relacionados nos registros de família. Os filhos de Levi foram Gérson, Coate e Merari. (Levi viveu 137 anos.)"
               },
               {
-                "ref": "1 Crônicas 6:16–30"
+                "ref": "1 Crônicas 6:16–30",
+                "text": "Os filhos de Levi foram: Gérson, Coate e Merari."
               }
             ]
           },
@@ -18484,6 +18565,7 @@
   "27": {
     "book": "Números",
     "chapter": "27",
+    "verified": true,
     "sections": [
       {
         "title": "As filhas de Zelofeade",
@@ -18494,7 +18576,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Números 26:33"
+                "ref": "Números 26:33",
+                "text": "(Zelofeade, um dos descendentes de Héfer, não teve filhos, mas suas filhas se chamavam Maala, Noa, Hogla, Milca e Tirza.)"
               },
               {
                 "ref": "Gálatas 3:28",
@@ -18506,7 +18589,7 @@
               },
               {
                 "ref": "Números 36:1–12",
-                "text": "Cr 7.1); o hebraico traz puvita [...] Puvá."
+                "text": "Os chefes das famílias do clã de Gileade, descendentes de Maquir, filho de Manassés, filho de José, apresentaram uma petição a Moisés e aos líderes de Israel, os chefes das famílias."
               }
             ]
           },
@@ -18636,7 +18719,7 @@
               },
               {
                 "ref": "Números 36:1–2",
-                "text": "Cr 7.1); o hebraico traz puvita [...] Puvá. Tm 2.."
+                "text": "Os chefes das famílias do clã de Gileade, descendentes de Maquir, filho de Manassés, filho de José, apresentaram uma petição a Moisés e aos líderes de Israel, os chefes das famílias."
               }
             ]
           },
@@ -18701,7 +18784,7 @@
               },
               {
                 "ref": "Deuteronômio 3:23–27",
-                "text": "“Também naquela ocasião, supliquei ao SENHOR: 24‘Ó SENHOR Soberano, tu apenas começaste a mostrar a este teu servo a tua grandeza e a força da tua mão. Existe algum deus no céu ou na terra capaz de realizar obras tão gra..."
+                "text": "“Também naquela ocasião, supliquei ao SENHOR:"
               },
               {
                 "ref": "Deuteronômio 32:48–52",
@@ -18719,7 +18802,8 @@
                 "text": "“Vingue-se dos midianitas pelo que fizeram aos israelitas. Depois disso, você morrerá e será reunido a seus antepassados”."
               },
               {
-                "ref": "Deuteronômio 10:6"
+                "ref": "Deuteronômio 10:6",
+                "text": "(Os israelitas saíram dos poços do povo de Jacã e viajaram para Moserá, onde Arão morreu e foi sepultado. Eleazar, seu filho, serviu como sacerdote em seu lugar."
               },
               {
                 "ref": "Números 20:24–28",
@@ -18799,7 +18883,7 @@
               },
               {
                 "ref": "1 Reis 22:17",
-                "text": "Então Micaías respondeu: “Vi todo o Israel espalhado pelos montes, como ovelhas sem pastor. E o SENHOR disse: ‘Seu líder foi morto.117 Mande-os para casa em paz’”."
+                "text": "Então Micaías respondeu: “Vi todo o Israel espalhado pelos montes, como ovelhas sem pastor. E o SENHOR disse: ‘Seu líder foi morto. Mande-os para casa em paz’”."
               },
               {
                 "ref": "Marcos 6:34",
@@ -18849,7 +18933,7 @@
               },
               {
                 "ref": "Lucas 9:1–5",
-                "text": "Enquanto todos se maravilhavam com seus feitos, Jesus disse aos discípulos:"
+                "text": "Jesus reuniu os Doze e lhes deu poder e autoridade para expulsar todos os demônios e curar enfermidades."
               },
               {
                 "ref": "Colossenses 4:17",
@@ -18940,6 +19024,7 @@
   "28": {
     "book": "Números",
     "chapter": "28",
+    "verified": true,
     "sections": [
       {
         "title": "As ofertas diárias",
@@ -19024,7 +19109,7 @@
               },
               {
                 "ref": "1 Reis 18:36",
-                "text": "Na hora costumeira de oferecer o sacrifício da tarde, o profeta Elias se aproximou do altar e orou: “Ó SENHOR, Deus de Abraão, Isaque e Jacó,107 prova hoje que és Deus em Israel e que sou teu servo. Prova que fiz tudo isso por ordem tua."
+                "text": "Na hora costumeira de oferecer o sacrifício da tarde, o profeta Elias se aproximou do altar e orou: “Ó SENHOR, Deus de Abraão, Isaque e Jacó, prova hoje que és Deus em Israel e que sou teu servo. Prova que fiz tudo isso por ordem tua."
               },
               {
                 "ref": "Êxodo 12:6",
@@ -19046,7 +19131,8 @@
                 "text": "“Quando apresentar ao SENHOR uma oferta de cereal, deverá ser de farinha da melhor qualidade. Derrame azeite sobre a farinha, acrescente um pouco de incenso"
               },
               {
-                "ref": "Êxodo 16:36"
+                "ref": "Êxodo 16:36",
+                "text": "(A vasilha usada para medir o maná continha um ômer, que era a décima parte da medida padrão.)"
               },
               {
                 "ref": "Números 15:4–5",
@@ -19209,7 +19295,7 @@
               },
               {
                 "ref": "Ezequiel 46:5–7",
-                "text": "Apresentará uma oferta de cereal de um cesto de farinha183 com o carneiro e a quantidade de farinha que puder com cada cordeiro; também oferecerá um jarro184 de azeite para cada cesto de farinha."
+                "text": "Apresentará uma oferta de cereal de um cesto de farinha com o carneiro e a quantidade de farinha que puder com cada cordeiro; também oferecerá um jarro de azeite para cada cesto de farinha."
               },
               {
                 "ref": "Números 29:10",
@@ -19355,7 +19441,7 @@
               },
               {
                 "ref": "Números 28:31",
-                "text": "Preparem esses holocaustos adi­cionais, junto com suas ofertas derramadas, além do holocausto habitual e da oferta de cereal que o acompanha. Cuidem para que todos os animais sejam sem defeito.”"
+                "text": "Preparem esses holocaustos adicionais, junto com suas ofertas derramadas, além do holocausto habitual e da oferta de cereal que o acompanha. Cuidem para que todos os animais sejam sem defeito.”"
               },
               {
                 "ref": "Levítico 22:20",
@@ -19464,7 +19550,7 @@
               },
               {
                 "ref": "Êxodo 34:22",
-                "text": "“Celebre a Festa da Colheita110 com os primeiros frutos da colheita do trigo. Celebre também a Festa da Última Colheita111 no final da safra."
+                "text": "“Celebre a Festa da Colheita com os primeiros frutos da colheita do trigo. Celebre também a Festa da Última Colheita no final da safra."
               },
               {
                 "ref": "Levítico 23:10",
@@ -19549,7 +19635,7 @@
           },
           {
             "number": 31,
-            "text": "Preparem esses holocaustos adi­cionais, junto com suas ofertas derramadas, além do holocausto habitual e da oferta de cereal que o acompanha. Cuidem para que todos os animais sejam sem defeito.”",
+            "text": "Preparem esses holocaustos adicionais, junto com suas ofertas derramadas, além do holocausto habitual e da oferta de cereal que o acompanha. Cuidem para que todos os animais sejam sem defeito.”",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -19573,6 +19659,7 @@
   "29": {
     "book": "Números",
     "chapter": "29",
+    "verified": true,
     "sections": [
       {
         "title": "As ofertas para a Festa das Trombetas",
@@ -19588,7 +19675,7 @@
               },
               {
                 "ref": "Marcos 16:15–16",
-                "text": "Jesus lhes disse: “Vão ao mundo inteiro e anunciem as boas- novas a todos. Quem crer e for batizado será salvo, mas quem se recusar a crer será condenado."
+                "text": "Jesus lhes disse: “Vão ao mundo inteiro e anunciem as boas-novas a todos. Quem crer e for batizado será salvo, mas quem se recusar a crer será condenado."
               },
               {
                 "ref": "Zacarias 9:14",
@@ -19794,7 +19881,7 @@
               },
               {
                 "ref": "Ezequiel 45:25",
-                "text": "“Durante os sete dias da Festa das Cabanas, que ocorre a cada ano no décimo quinto dia do sétimo mês,182 o príncipe fornecerá esses mesmos sacrifícios como oferta pelo pecado, holocausto e oferta de cereal, bem como a quantidade requerida de azeite.”"
+                "text": "“Durante os sete dias da Festa das Cabanas, que ocorre a cada ano no décimo quinto dia do sétimo mês, o príncipe fornecerá esses mesmos sacrifícios como oferta pelo pecado, holocausto e oferta de cereal, bem como a quantidade requerida de azeite.”"
               }
             ]
           },
@@ -19823,7 +19910,7 @@
           },
           {
             "number": 14,
-            "text": "Cada um desses sacrifícios será acompanhado de uma oferta de cereal de farinha da melhor quali­dade umedecida com azeite: seis quilos para cada um dos treze novilhos, quatro quilos para cada um dos dois carneiros",
+            "text": "Cada um desses sacrifícios será acompanhado de uma oferta de cereal de farinha da melhor qualidade umedecida com azeite: seis quilos para cada um dos treze novilhos, quatro quilos para cada um dos dois carneiros",
             "isJesusWords": false,
             "crossReferences": []
           },
@@ -19871,7 +19958,7 @@
               },
               {
                 "ref": "Levítico 23:36",
-                "text": "Durante sete dias, vocês apresentarão ofertas especiais para o SENHOR. No oitavo dia, haverá outra reunião sagrada, na qual apresentarão ofertas especiais para o SENHOR. Será uma ocasião solene, e ninguém fará nenhum tra..."
+                "text": "Durante sete dias, vocês apresentarão ofertas especiais para o SENHOR. No oitavo dia, haverá outra reunião sagrada, na qual apresentarão ofertas especiais para o SENHOR. Será uma ocasião solene, e ninguém fará nenhum trabalho habitual."
               },
               {
                 "ref": "Números 29:20–40",
@@ -20090,12 +20177,12 @@
           },
           {
             "number": 35,
-            "text": "“No oitavo dia da festa, declarem uma ­reunião solene. Não façam nenhum trabalho habitual nesse dia.",
+            "text": "“No oitavo dia da festa, declarem uma reunião solene. Não façam nenhum trabalho habitual nesse dia.",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Levítico 23:36",
-                "text": "Durante sete dias, vocês apresentarão ofertas especiais para o SENHOR. No oitavo dia, haverá outra reunião sagrada, na qual apresentarão ofertas especiais para o SENHOR. Será uma ocasião solene, e ninguém fará nenhum tra..."
+                "text": "Durante sete dias, vocês apresentarão ofertas especiais para o SENHOR. No oitavo dia, haverá outra reunião sagrada, na qual apresentarão ofertas especiais para o SENHOR. Será uma ocasião solene, e ninguém fará nenhum trabalho habitual."
               },
               {
                 "ref": "Apocalipse 7:9–17",
@@ -20159,7 +20246,7 @@
             ]
           },
           {
-            "number": 4092,
+            "number": 40,
             "text": "Moisés transmitiu todas essas instruções aos israelitas, conforme o SENHOR lhe havia ordenado.",
             "isJesusWords": false,
             "crossReferences": []
@@ -20171,12 +20258,13 @@
   "30": {
     "book": "Números",
     "chapter": "30",
+    "verified": true,
     "sections": [
       {
         "title": "Leis acerca de votos e juramentos",
         "verses": [
           {
-            "number": 193,
+            "number": 1,
             "text": "Moisés mandou chamar os chefes das tribos de Israel e lhes disse: “Foi isto que o SENHOR ordenou:",
             "isJesusWords": false,
             "crossReferences": []
@@ -20240,11 +20328,11 @@
             "crossReferences": [
               {
                 "ref": "Mateus 15:4–6",
-                "text": "Pois Deus ordenou: ‘Honre seu pai e sua mãe’81 e ‘Quem insultar seu pai ou sua mãe será executado’."
+                "text": "Pois Deus ordenou: ‘Honre seu pai e sua mãe’ e ‘Quem insultar seu pai ou sua mãe será executado’."
               },
               {
                 "ref": "Marcos 7:10–13",
-                "text": "Por exemplo, Moisés deu esta lei: ‘Honre seu pai e sua mãe’28 e ‘Quem insultar seu pai ou sua mãe será executado’."
+                "text": "Por exemplo, Moisés deu esta lei: ‘Honre seu pai e sua mãe’ e ‘Quem insultar seu pai ou sua mãe será executado’."
               },
               {
                 "ref": "Efésios 6:1",
@@ -20292,7 +20380,7 @@
           },
           {
             "number": 8,
-            "text": "Mas, se no dia em que ficar sabendo seu marido se recusar a deixá- la cumprir o voto ou a promessa precipitada, os compromissos dela serão anulados, e o SENHOR a perdoará.",
+            "text": "Mas, se no dia em que ficar sabendo seu marido se recusar a deixá-la cumprir o voto ou a promessa precipitada, os compromissos dela serão anulados, e o SENHOR a perdoará.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -20356,7 +20444,7 @@
             "crossReferences": [
               {
                 "ref": "Números 30:8",
-                "text": "Mas, se no dia em que ficar sabendo seu marido se recusar a deixá- la cumprir o voto ou a promessa precipitada, os compromissos dela serão anulados, e o SENHOR a perdoará."
+                "text": "Mas, se no dia em que ficar sabendo seu marido se recusar a deixá-la cumprir o voto ou a promessa precipitada, os compromissos dela serão anulados, e o SENHOR a perdoará."
               },
               {
                 "ref": "Números 15:28",
@@ -20387,7 +20475,7 @@
               },
               {
                 "ref": "Esdras 8:21",
-                "text": "Ali, junto ao canal de Aava, ordenei que todos nós jejuássemos e nos humilhássemos diante de nosso Deus. Oramos para que ele nos propor­cionasse uma viagem segura e nos protegesse, como também a nossos filhos e a nossos bens."
+                "text": "Ali, junto ao canal de Aava, ordenei que todos nós jejuássemos e nos humilhássemos diante de nosso Deus. Oramos para que ele nos proporcionasse uma viagem segura e nos protegesse, como também a nossos filhos e a nossos bens."
               },
               {
                 "ref": "Salmos 35:13",
@@ -20412,7 +20500,7 @@
               },
               {
                 "ref": "Números 30:8",
-                "text": "Mas, se no dia em que ficar sabendo seu marido se recusar a deixá- la cumprir o voto ou a promessa precipitada, os compromissos dela serão anulados, e o SENHOR a perdoará."
+                "text": "Mas, se no dia em que ficar sabendo seu marido se recusar a deixá-la cumprir o voto ou a promessa precipitada, os compromissos dela serão anulados, e o SENHOR a perdoará."
               },
               {
                 "ref": "Levítico 5:1",
@@ -20450,6 +20538,7 @@
   "31": {
     "book": "Números",
     "chapter": "31",
+    "verified": true,
     "sections": [
       {
         "title": "Israel conquista Midiã",
@@ -20642,7 +20731,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Reis 9:16"
+                "ref": "1 Reis 9:16",
+                "text": "(O faraó, rei do Egito, havia atacado e conquistado Gezer. Matou seus habitantes cananeus, incendiou a cidade e a deu como presente à sua filha quando ela se casou com Salomão."
               },
               {
                 "ref": "1 Samuel 30:1",
@@ -20725,7 +20815,8 @@
                 "text": "O homem de Deus se irou com ele. “Você deveria ter atirado contra o chão cinco ou seis vezes!”, exclamou. “Assim, teria ferido os sírios até que fossem completamente destruídos. Agora você será vitorioso apenas três vezes.”"
               },
               {
-                "ref": "Números 12:3"
+                "ref": "Números 12:3",
+                "text": "(Ora, Moisés era muito humilde, mais que qualquer outra pessoa na terra.)"
               }
             ]
           },
@@ -20847,7 +20938,7 @@
               },
               {
                 "ref": "Êxodo 19:10",
-                "text": "Então o SENHOR disse a Moisés: “Desça e consagre o povo, hoje e amanhã."
+                "text": "Então o SENHOR disse a Moisés: “Desça e consagre o povo, hoje e amanhã. Providencie que eles lavem suas roupas"
               },
               {
                 "ref": "Números 19:14–16",
@@ -21037,7 +21128,7 @@
             "crossReferences": [
               {
                 "ref": "Números 3:31",
-                "text": "Eram encarregados de cuidar da arca, da mesa, do candelabro, dos dois altares, dos diversos utensílios do santuário, da cortina interna e de todos os objetos rela­cionados ao seu uso."
+                "text": "Eram encarregados de cuidar da arca, da mesa, do candelabro, dos dois altares, dos diversos utensílios do santuário, da cortina interna e de todos os objetos relacionados ao seu uso."
               },
               {
                 "ref": "Números 3:25",
@@ -21070,7 +21161,7 @@
           },
           {
             "number": 32,
-            "text": "O despojo restante de tudo que os soldados haviam tomado totalizou 675.000 ovelhas, 3372.000 cabeças de gado, 3461.000 jumentos",
+            "text": "O despojo restante de tudo que os soldados haviam tomado totalizou 675.000 ovelhas,",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -21082,6 +21173,18 @@
                 "text": "Todos os homens que participaram da batalha tomaram para si uma parte do despojo."
               }
             ]
+          },
+          {
+            "number": 33,
+            "text": "72.000 cabeças de gado,",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 34,
+            "text": "61.000 jumentos",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 35,
@@ -21106,7 +21209,7 @@
           },
           {
             "number": 37,
-            "text": "das quais 675 eram o tributo ao SENHOR; 3836.000 cabeças de gado, das quais 72 eram o tributo ao SENHOR; 3930.500 jumentos, dos quais 61 eram o tributo ao SENHOR;",
+            "text": "das quais 675 eram o tributo ao SENHOR;",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -21114,6 +21217,18 @@
                 "text": "Então celebrem a Festa da Colheita em homenagem ao SENHOR, seu Deus. Levem uma oferta voluntária proporcional às bênçãos que receberam dele."
               }
             ]
+          },
+          {
+            "number": 38,
+            "text": "36.000 cabeças de gado, das quais 72 eram o tributo ao SENHOR;",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 39,
+            "text": "30.500 jumentos, dos quais 61 eram o tributo ao SENHOR;",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 40,
@@ -21152,7 +21267,19 @@
           },
           {
             "number": 43,
-            "text": "A parte dos israelitas totalizou 337.500 ovelhas, 4436.000 cabeças de gado, 4530.500 jumentos",
+            "text": "A parte dos israelitas totalizou 337.500 ovelhas,",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 44,
+            "text": "36.000 cabeças de gado,",
+            "isJesusWords": false,
+            "crossReferences": []
+          },
+          {
+            "number": 45,
+            "text": "30.500 jumentos",
             "isJesusWords": false,
             "crossReferences": []
           },
@@ -21270,7 +21397,7 @@
               },
               {
                 "ref": "Números 31:32",
-                "text": "O despojo restante de tudo que os soldados haviam tomado totalizou 675.000 ovelhas, 3372.000 cabeças de gado, 3461.000 jumentos"
+                "text": "O despojo restante de tudo que os soldados haviam tomado totalizou 675.000 ovelhas,"
               }
             ]
           },
@@ -21304,6 +21431,7 @@
   "32": {
     "book": "Números",
     "chapter": "32",
+    "verified": true,
     "sections": [
       {
         "title": "As tribos a leste do Jordão",
@@ -21326,7 +21454,8 @@
                 "text": "Ló olhou demoradamente para as planícies férteis do vale do Jordão, na direção de Zoar. A região toda era bem irrigada, como o jardim do SENHOR, ou como a terra do Egito. (Isso foi antes de o SENHOR destruir Sodoma e Gomorra.)"
               },
               {
-                "ref": "Gênesis 13:2"
+                "ref": "Gênesis 13:2",
+                "text": "(Abrão era muito rico e tinha muitos rebanhos, prata e ouro.)"
               }
             ]
           },
@@ -21421,7 +21550,7 @@
               },
               {
                 "ref": "Filipenses 2:4",
-                "text": "Não- ­ procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios."
+                "text": "Não- procurem apenas os próprios interesses, mas preocupem-se também com os interesses alheios."
               },
               {
                 "ref": "2 Samuel 11:11",
@@ -21448,7 +21577,7 @@
               },
               {
                 "ref": "Números 21:4",
-                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom."
+                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom. Mas o povo ficou impaciente"
               }
             ]
           },
@@ -21492,7 +21621,7 @@
           },
           {
             "number": 10,
-            "text": "Por isso a ira do SENHOR se acendeu contra eles, e ele jurou: 11‘De todos aqueles que eu resgatei do Egito, ninguém com 20 anos para cima verá a terra que eu jurei dar a Abraão, Isaque e Jacó, pois não me obedeceram de todo o coração.",
+            "text": "Por isso a ira do SENHOR se acendeu contra eles, e ele jurou:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -21501,7 +21630,7 @@
               },
               {
                 "ref": "Deuteronômio 1:34–40",
-                "text": "“Quando o SENHOR ouviu vocês se queixarem, ficou irado e, por isso, fez um juramento: 35‘Nenhum de vocês desta geração perversa viverá para ver a boa terra que eu jurei dar a seus antepassados."
+                "text": "“Quando o SENHOR ouviu vocês se queixarem, ficou irado e, por isso, fez um juramento:"
               },
               {
                 "ref": "Hebreus 3:8–19",
@@ -21512,6 +21641,12 @@
                 "text": "Jamais verão a terra que jurei dar a seus antepassados. Nenhum daqueles que me trataram com desprezo a verá."
               }
             ]
+          },
+          {
+            "number": 11,
+            "text": "‘De todos aqueles que eu resgatei do Egito, ninguém com 20 anos para cima verá a terra que eu jurei dar a Abraão, Isaque e Jacó, pois não me obedeceram de todo o coração.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 12,
@@ -21593,7 +21728,7 @@
               },
               {
                 "ref": "2 Crônicas 15:2",
-                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça- me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
+                "text": "e ele foi ao encontro do rei Asa. “Ouça-me, Asa!”, disse ele. “Ouça-me todo o povo de Judá e de Benjamim! O SENHOR estará com vocês enquanto estiverem com ele! Sempre que o buscarem, o encontrarão. Mas, se o abandonarem, ele os abandonará."
               },
               {
                 "ref": "Romanos 14:15",
@@ -21853,7 +21988,7 @@
           },
           {
             "number": 30,
-            "text": "Mas, se eles se re­cusarem a armar-se e atravessar o rio com vocês, serão obrigados a aceitar uma porção de terra com o restante de vocês em Canaã”.",
+            "text": "Mas, se eles se recusarem a armar-se e atravessar o rio com vocês, serão obrigados a aceitar uma porção de terra com o restante de vocês em Canaã”.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -21942,7 +22077,7 @@
               },
               {
                 "ref": "Números 33:45–46",
-                "text": "Saíram de Ijé-Abarim104 e acamparam em Dibom-Gade. Saíram de Dibom-Gade e acamparam em Almom-Diblataim."
+                "text": "Saíram de Ijé-Abarim e acamparam em Dibom-Gade. Saíram de Dibom-Gade e acamparam em Almom-Diblataim."
               }
             ]
           },
@@ -21963,7 +22098,7 @@
           },
           {
             "number": 36,
-            "text": "Bete-Ninra e Bete- Harã, e todas eram cidades fortificadas e com currais para os rebanhos.",
+            "text": "Bete-Ninra e Bete-Harã, e todas eram cidades fortificadas e com currais para os rebanhos.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -22071,7 +22206,7 @@
               },
               {
                 "ref": "1 Reis 4:13",
-                "text": "Ben-Geber, em Ramote-Gileade, incluindo as Cidades de Jair (assim chamadas por causa de Jair, da tribo de Manassés9), em Gileade, e na região de Argobe, em Basã, incluindo sessenta grandes cidades fortificadas com trancas de bronze nos portões."
+                "text": "Ben-Geber, em Ramote-Gileade, incluindo as Cidades de Jair (assim chamadas por causa de Jair, da tribo de Manassés), em Gileade, e na região de Argobe, em Basã, incluindo sessenta grandes cidades fortificadas com trancas de bronze nos portões."
               }
             ]
           },
@@ -22097,6 +22232,7 @@
   "33": {
     "book": "Números",
     "chapter": "33",
+    "verified": true,
     "sections": [
       {
         "title": "Recapitulação da jornada de Israel",
@@ -22217,7 +22353,7 @@
           },
           {
             "number": 7,
-            "text": "Saíram de Etã e voltaram para Pi-Hairote, de frente para Baal- Zefom, e acamparam perto de Migdol.",
+            "text": "Saíram de Etã e voltaram para Pi-Hairote, de frente para Baal-Zefom, e acamparam perto de Migdol.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -22226,17 +22362,17 @@
               },
               {
                 "ref": "Êxodo 14:9",
-                "text": "Os egípcios os perseguiram com todas as forças do exército do faraó — todos os seus cavalos e carros de guerra, cavaleiros e tropas — e os alcançaram no acampamento em Pi- Hairote, à beira do mar, em frente a Baal-Zefom."
+                "text": "Os egípcios os perseguiram com todas as forças do exército do faraó — todos os seus cavalos e carros de guerra, cavaleiros e tropas — e os alcançaram no acampamento em Pi-Hairote, à beira do mar, em frente a Baal-Zefom."
               },
               {
                 "ref": "Números 33:8",
-                "text": "Saíram de Pi-Hairote,100 atravessaram o mar Vermelho101 e chegaram ao deserto. Viajaram três dias pelo deserto de Etã e acamparam em Mara."
+                "text": "Saíram de Pi-Hairote, atravessaram o mar Vermelho e chegaram ao deserto. Viajaram três dias pelo deserto de Etã e acamparam em Mara."
               }
             ]
           },
           {
             "number": 8,
-            "text": "Saíram de Pi-Hairote,100 atravessaram o mar Vermelho101 e chegaram ao deserto. Viajaram três dias pelo deserto de Etã e acamparam em Mara.",
+            "text": "Saíram de Pi-Hairote, atravessaram o mar Vermelho e chegaram ao deserto. Viajaram três dias pelo deserto de Etã e acamparam em Mara.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -22262,7 +22398,7 @@
           },
           {
             "number": 10,
-            "text": "Saíram de Elim e acamparam junto ao mar Vermelho.102",
+            "text": "Saíram de Elim e acamparam junto ao mar Vermelho.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -22363,7 +22499,7 @@
             "crossReferences": [
               {
                 "ref": "Números 11:35",
-                "text": "De Quibrote- Hataavá o povo viajou para Hazerote, onde ficou algum tempo."
+                "text": "De Quibrote-Hataavá o povo viajou para Hazerote, onde ficou algum tempo."
               }
             ]
           },
@@ -22474,7 +22610,7 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 10:5–6",
-                "text": "Então virei-me, desci o monte e coloquei as tábuas na arca da aliança que eu tinha feito. As tábuas ainda estão dentro da arca, conforme o SENHOR me ordenou. 6(Os israelitas saíram dos poços do povo de Jacã25 e viajaram..."
+                "text": "Então virei-me, desci o monte e coloquei as tábuas na arca da aliança que eu tinha feito. As tábuas ainda estão dentro da arca, conforme o SENHOR me ordenou."
               }
             ]
           },
@@ -22484,7 +22620,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 10:6"
+                "ref": "Deuteronômio 10:6",
+                "text": "(Os israelitas saíram dos poços do povo de Jacã e viajaram para Moserá, onde Arão morreu e foi sepultado. Eleazar, seu filho, serviu como sacerdote em seu lugar."
               },
               {
                 "ref": "1 Crônicas 1:43",
@@ -22539,11 +22676,11 @@
               },
               {
                 "ref": "1 Reis 22:48",
-                "text": "Josafá construiu uma frota de navios mercantes121 para buscar ouro em Ofir. As embarcações, porém, nunca chegaram a navegar, pois naufragaram no porto de Eziom-Geber."
+                "text": "Josafá construiu uma frota de navios mercantes para buscar ouro em Ofir. As embarcações, porém, nunca chegaram a navegar, pois naufragaram no porto de Eziom-Geber."
               },
               {
                 "ref": "2 Crônicas 20:36",
-                "text": "Juntos, construíram uma frota de navios mercantes no porto em Eziom- Geber."
+                "text": "Juntos, construíram uma frota de navios mercantes no porto em Eziom-Geber."
               }
             ]
           },
@@ -22577,7 +22714,7 @@
             "crossReferences": [
               {
                 "ref": "Números 21:4",
-                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom."
+                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom. Mas o povo ficou impaciente"
               },
               {
                 "ref": "Números 20:22–23",
@@ -22591,11 +22728,12 @@
           },
           {
             "number": 38,
-            "text": "Enquanto estavam ao pé do monte Hor, por ordem do SENHOR o sacerdote Arão subiu ao monte e morreu ali. Isso aconteceu no primeiro dia do quinto mês,103 quarenta anos depois que Israel saiu do Egito.",
+            "text": "Enquanto estavam ao pé do monte Hor, por ordem do SENHOR o sacerdote Arão subiu ao monte e morreu ali. Isso aconteceu no primeiro dia do quinto mês, quarenta anos depois que Israel saiu do Egito.",
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 10:6"
+                "ref": "Deuteronômio 10:6",
+                "text": "(Os israelitas saíram dos poços do povo de Jacã e viajaram para Moserá, onde Arão morreu e foi sepultado. Eleazar, seu filho, serviu como sacerdote em seu lugar."
               },
               {
                 "ref": "Deuteronômio 32:50",
@@ -22636,7 +22774,7 @@
             "crossReferences": [
               {
                 "ref": "Números 21:4",
-                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom."
+                "text": "Em seguida, partiram do monte Hor e tomaram o caminho para o mar Vermelho, a fim de contornar a terra de Edom. Mas o povo ficou impaciente"
               }
             ]
           },
@@ -22670,7 +22808,7 @@
           },
           {
             "number": 45,
-            "text": "Saíram de Ijé-Abarim104 e acamparam em Dibom-Gade.",
+            "text": "Saíram de Ijé-Abarim e acamparam em Dibom-Gade.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -22742,7 +22880,7 @@
           },
           {
             "number": 49,
-            "text": "Junto ao rio Jordão, acamparam desde Bete-Jesimote até Abel- Sitim nas campinas de Moabe.",
+            "text": "Junto ao rio Jordão, acamparam desde Bete-Jesimote até Abel-Sitim nas campinas de Moabe.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -22759,7 +22897,7 @@
               },
               {
                 "ref": "Ezequiel 25:9",
-                "text": "abrirei seu lado leste e acabarei com as imponentes cidades de sua fronteira: Bete-Jesimote, Baal- Meom e Quiriataim."
+                "text": "abrirei seu lado leste e acabarei com as imponentes cidades de sua fronteira: Bete-Jesimote, Baal-Meom e Quiriataim."
               }
             ]
           },
@@ -22770,7 +22908,7 @@
             "crossReferences": [
               {
                 "ref": "Números 33:48–49",
-                "text": "Saíram dos montes de Abarim e acamparam nas campinas de Moabe, junto ao rio Jordão, do lado oposto de Jericó. Junto ao rio Jordão, acamparam desde Bete-Jesimote até Abel- Sitim nas campinas de Moabe."
+                "text": "Saíram dos montes de Abarim e acamparam nas campinas de Moabe, junto ao rio Jordão, do lado oposto de Jericó. Junto ao rio Jordão, acamparam desde Bete-Jesimote até Abel-Sitim nas campinas de Moabe."
               }
             ]
           },
@@ -22915,6 +23053,7 @@
   "34": {
     "book": "Números",
     "chapter": "34",
+    "verified": true,
     "sections": [
       {
         "title": "As fronteiras da terra",
@@ -22953,7 +23092,7 @@
               },
               {
                 "ref": "1 Pedro 1:3–4",
-                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos."
+                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos. Agora temos uma viva esperança"
               },
               {
                 "ref": "Salmos 78:54–55",
@@ -22963,7 +23102,7 @@
           },
           {
             "number": 3,
-            "text": "A região sul se estenderá desde o deserto de Zim, ao longo da divisa com Edom. A fronteira sul começará no leste, na extremidade do mar Morto.105",
+            "text": "A região sul se estenderá desde o deserto de Zim, ao longo da divisa com Edom. A fronteira sul começará no leste, na extremidade do mar Morto.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -22980,13 +23119,13 @@
               },
               {
                 "ref": "Ezequiel 47:18–23",
-                "text": "“A fronteira leste começará num ponto entre Haurã e Damasco e se estenderá para o sul ao longo do rio Jordão, entre Israel e Gileade, passando o mar Morto194 e prosseguindo para o sul até Tamar.195 Essa será a fronteira leste."
+                "text": "“A fronteira leste começará num ponto entre Haurã e Damasco e se estenderá para o sul ao longo do rio Jordão, entre Israel e Gileade, passando o mar Morto e prosseguindo para o sul até Tamar. Essa será a fronteira leste."
               }
             ]
           },
           {
             "number": 4,
-            "text": "Ela se estenderá pelo sul, passando pela ladeira do Escorpião,106 em direção a Zim. Seu extremo ao sul será Cades- Barneia, de onde seguirá até Hazar-Adar e, de lá, até Azmom.",
+            "text": "Ela se estenderá pelo sul, passando pela ladeira do Escorpião, em direção a Zim. Seu extremo ao sul será Cades-Barneia, de onde seguirá até Hazar-Adar e, de lá, até Azmom.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -22999,7 +23138,7 @@
               },
               {
                 "ref": "Josué 15:3–4",
-                "text": "seguia para o sul pela ladeira do Escorpião, passando pelo deserto de Zim e prosseguindo até Hezrom, ao sul de Cades- Barneia. Então subia até Adar e fazia uma curva em direção a Carca."
+                "text": "seguia para o sul pela ladeira do Escorpião, passando pelo deserto de Zim e prosseguindo até Hezrom, ao sul de Cades-Barneia. Então subia até Adar e fazia uma curva em direção a Carca."
               },
               {
                 "ref": "Juízes 1:36",
@@ -23009,7 +23148,7 @@
           },
           {
             "number": 5,
-            "text": "De Azmom, a fronteira fará uma curva em direção ao ribeiro do Egito e terminará no mar Mediterrâneo.107",
+            "text": "De Azmom, a fronteira fará uma curva em direção ao ribeiro do Egito e terminará no mar Mediterrâneo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -23127,7 +23266,7 @@
           },
           {
             "number": 11,
-            "text": "e descerá até Ribla, do lado leste de Aim. De lá, descerá beirando o lado leste do mar da Galileia108",
+            "text": "e descerá até Ribla, do lado leste de Aim. De lá, descerá beirando o lado leste do mar da Galileia",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -23383,6 +23522,7 @@
   "35": {
     "book": "Números",
     "chapter": "35",
+    "verified": true,
     "sections": [
       {
         "title": "Cidades para os levitas",
@@ -23413,7 +23553,7 @@
               },
               {
                 "ref": "Ezequiel 48:8",
-                "text": "“Ao sul de Judá fica a terra separada para um propósito especial. Ela terá 12, quilômetros197 de largura e terá as mesmas fronteiras a leste e a oeste que os territórios das tribos. No centro dela estará o templo."
+                "text": "“Ao sul de Judá fica a terra separada para um propósito especial. Ela terá 12,5 quilômetros de largura e terá as mesmas fronteiras a leste e a oeste que os territórios das tribos. No centro dela estará o templo."
               },
               {
                 "ref": "1 Coríntios 9:10–14",
@@ -23436,23 +23576,23 @@
               },
               {
                 "ref": "Josué 21:11",
-                "text": "Quiriate- Arba (isto é, Hebrom), na região montanhosa de Judá, com as pastagens ao redor. (Arba era antepassado de Enaque.)"
+                "text": "Quiriate-Arba (isto é, Hebrom), na região montanhosa de Judá, com as pastagens ao redor. (Arba era antepassado de Enaque.)"
               },
               {
                 "ref": "Ezequiel 45:2",
-                "text": "Uma parte dessa terra, com 250 metros de cada lado,165 será separada para o templo. Ao redor dela haverá um espaço aberto com 25 metros166 de largura."
+                "text": "Uma parte dessa terra, com 250 metros de cada lado, será separada para o templo. Ao redor dela haverá um espaço aberto com 25 metros de largura."
               }
             ]
           },
           {
             "number": 4,
-            "text": "As pastagens reservadas para os levitas ao redor dessas cidades se estenderão em todas as direções por 450 metros109 a partir dos muros da cidade.",
+            "text": "As pastagens reservadas para os levitas ao redor dessas cidades se estenderão em todas as direções por 450 metros a partir dos muros da cidade.",
             "isJesusWords": false,
             "crossReferences": []
           },
           {
             "number": 5,
-            "text": "Meçam 900 metros110 fora dos muros da cidade em todas as direções — leste, sul, oeste e norte —, com a cidade no centro. Essa será a área de pastagem das cidades.",
+            "text": "Meçam 900 metros fora dos muros da cidade em todas as direções — leste, sul, oeste e norte —, com a cidade no centro. Essa será a área de pastagem das cidades.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -23715,7 +23855,7 @@
           },
           {
             "number": 19,
-            "text": "O parente mais próximo da vítima é responsável pela execução do assassino. Quando o encontrar, o vingador deverá exe­cutar o assassino.",
+            "text": "O parente mais próximo da vítima é responsável pela execução do assassino. Quando o encontrar, o vingador deverá executar o assassino.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -23743,7 +23883,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 21:14",
-                "text": "Se, contudo, alguém matar outra pessoa intencional­mente, o assassino será preso e executado, mesmo que tenha buscado refúgio em meu altar."
+                "text": "Se, contudo, alguém matar outra pessoa intencionalmente, o assassino será preso e executado, mesmo que tenha buscado refúgio em meu altar."
               },
               {
                 "ref": "Deuteronômio 19:11",
@@ -23778,7 +23918,7 @@
               },
               {
                 "ref": "Números 35:19",
-                "text": "O parente mais próximo da vítima é responsável pela execução do assassino. Quando o encontrar, o vingador deverá exe­cutar o assassino."
+                "text": "O parente mais próximo da vítima é responsável pela execução do assassino. Quando o encontrar, o vingador deverá executar o assassino."
               }
             ]
           },
@@ -23870,7 +24010,8 @@
                 "text": "Com isso, vocês evitarão a morte de inocentes na terra que o SENHOR, seu Deus, lhes dá como herança. Do contrário, seriam culpados pelo sangue de inocentes."
               },
               {
-                "ref": "Êxodo 22:2"
+                "ref": "Êxodo 22:2",
+                "text": "“Se um ladrão for pego em flagrante arrombando uma casa e for ferido e morto no confronto, a pessoa que matou o ladrão não será culpada de homicídio."
               },
               {
                 "ref": "Deuteronômio 19:6",
@@ -23935,7 +24076,7 @@
               },
               {
                 "ref": "2 Coríntios 13:1",
-                "text": "Co 16.3-4."
+                "text": "Esta é a terceira vez que irei visitá-los. “Os fatos a respeito de cada caso devem ser confirmados pelo depoimento de duas ou três testemunhas.”"
               }
             ]
           },
@@ -23946,7 +24087,7 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 21:14",
-                "text": "Se, contudo, alguém matar outra pessoa intencional­mente, o assassino será preso e executado, mesmo que tenha buscado refúgio em meu altar."
+                "text": "Se, contudo, alguém matar outra pessoa intencionalmente, o assassino será preso e executado, mesmo que tenha buscado refúgio em meu altar."
               },
               {
                 "ref": "2 Samuel 12:13",
@@ -24038,6 +24179,7 @@
   "36": {
     "book": "Números",
     "chapter": "36",
+    "verified": true,
     "sections": [
       {
         "title": "Mulheres que herdam propriedades",
@@ -24105,7 +24247,7 @@
               },
               {
                 "ref": "Isaías 61:2",
-                "text": "Ele me enviou para dizer aos que choram que é chegado o tempo do favor do SENHOR169 e o dia da ira de Deus contra seus inimigos."
+                "text": "Ele me enviou para dizer aos que choram que é chegado o tempo do favor do SENHOR e o dia da ira de Deus contra seus inimigos."
               },
               {
                 "ref": "Levítico 25:10–18",
@@ -24237,7 +24379,8 @@
                 "text": "Certo dia, Maala, Noa, Hogla, Milca e Tirza, as filhas de Zelofeade, fizeram uma petição. Seu pai pertencia a um dos clãs de Manassés, pois era descendente de Héfer, filho de Gileade, filho de Maquir, filho de Manassés, filho de José."
               },
               {
-                "ref": "Números 26:33"
+                "ref": "Números 26:33",
+                "text": "(Zelofeade, um dos descendentes de Héfer, não teve filhos, mas suas filhas se chamavam Maala, Noa, Hogla, Milca e Tirza.)"
               }
             ]
           },
@@ -24258,7 +24401,7 @@
           },
           {
             "number": 13,
-            "text": "Esses são os mandamentos e os estatutos que o SENHOR deu aos israelitas por meio de Moisés enquanto estavam acampados nas campinas de Moabe junto ao rio Jordão, do lado oposto de ­Jericó. 1 1. No antigo calendário lunar hebraico, esse dia caía em abril ou maio. 2 1. Em hebraico, no primeiro dia do segundo mês; ver 1.. 3 1. Em hebraico, de Israel. Os nomes “Israel” e “Jacó” são frequentemente usados de forma intercambiável ao longo de todo o Antigo Testamento e se referem, por vezes, ao patriarca e, em outras ocasiões, à nação. 4 1. Ou tabernáculo do testemunho; também em 1.. 5 2. Conforme vários manuscritos hebraicos, o Pentateuco Samaritano e a Vulgata (ver tb. 1.14); a maioria dos manuscritos hebraicos traz filho de Reuel. 6 3. Alguns manuscritos gregos trazem 8.300; ver o total em 3.. 7 3. Em hebraico, 5 siclos segundo o siclo do santuário, equivalente a 20 geras. 8 3. Em hebraico, 1.365 siclos, cerca de 16, quilos. 9 4. Ou arca do testemunho. 10 5. O termo hebraico não se refere somente à hanseníase, mas também a diversas doenças de pele. 11 5. Em hebraico, 1/10 de efa. 12 5. Em hebraico, sua coxa definhar; também em 5.. 13 7. Em hebraico, uma bandeja de prata pesando 130 [siclos] e uma bacia de prata pesando 70 siclos; também em 7.,,,, 43,,,,,,,. 14 7. Em hebraico, 10 [siclos]; também em 7.,,,,,,,,,,,. 15 7. Em hebraico, 2.400 [siclos]. 16 7. Em hebraico, 120 [siclos]. 17 7. Ou arca do testemunho. 18 9. No antigo calendário lunar hebraico, o primeiro mês geralmente caía entre março e abril. 19 9.3 No antigo calendário lunar hebraico, esse dia caía no final de março, em abril ou no início de maio. 20 9. No antigo calendário lunar hebraico, esse dia caía no final de abril, em maio ou no início de junho. 21 9. Ou tenda do testemunho. 22 10.11a No antigo calendário lunar hebraico, esse dia caía no final de abril, em maio ou no início de junho. 23 10.11b Ou tabernáculo do testemunho. 24 11. Taberá significa “o lugar da queima”. 25 11. Em hebraico, tenda; também em 11.. 26 11. Ou cobriam o chão formando uma camada de quase 1 metro [2 côvados] de altura. 27 11. Em hebraico, 10 ômeres, cerca de 2.200 litros. 28 11. Quibrote-Hataavá significa “túmulos da gula”. 29 12. O termo cuxita possivelmente indica origem etíope. 30 12. Ou de todo o meu povo, é nele que confio. 31 12. O termo hebraico não se refere somente à hanseníase, mas também a diversas doenças de pele. 32 13. Escol significa “cacho”. 33 13. Em hebraico, do mar. 34 13. Em hebraico, nefilim. 35 14. Em hebraico, mar de juncos. 36 15.4a Em hebraico, 1/10 de efa. 37 15.4b Em hebraico, 1/4 de him; também em 15.. 38 15.6a Em hebraico, 2/10 de efa. 39 15.6b Em hebraico, 1/3 de him; também em 15.. 40 15.9a Em hebraico, 3/10 de efa. 41 15.9b Em hebraico, 1/2 de him; também em 15.. 42 16. A Septuaginta traz Deus visitou e conhece os que são seus.",
+            "text": "Esses são os mandamentos e os estatutos que o SENHOR deu aos israelitas por meio de Moisés enquanto estavam acampados nas campinas de Moabe junto ao rio Jordão, do lado oposto de Jericó.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -24276,57 +24419,6 @@
               {
                 "ref": "Números 33:50",
                 "text": "Enquanto estavam acampados perto do rio Jordão, nas campinas de Moabe, do lado oposto de Jericó, o SENHOR disse a Moisés:"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Comparar com",
-        "verses": [
-          {
-            "number": 2,
-            "text": "Tm 2.. 43 16. Em hebraico, Está tentando furar os olhos destes homens? 44 16. Em hebraico, ao Sheol; também em 16.. 45 16. No texto hebraico, os versículos 16.36-50 são numerados 17.1-15. 46 17. No texto hebraico, os versículos 17.1-13 são numerados 17.16-28. 47 17. Em hebraico, na tenda do encontro, diante do testemunho. O termo hebraico para “testemunho” se refere aos termos da aliança do SENHOR com Israel escritos em tábuas de pedra guardadas na arca, e também à aliança em si. 48 17. Ou tabernáculo do testemunho; também em 17.. 49 17. Em hebraico, diante do testemunho; ver nota em 17.. 50 18. Ou tabernáculo do testemunho. 51 18. Em hebraico, 5 siclos segundo o siclo do santuário, equivalente a 20 geras. 52 18. Em hebraico, de sal. 53 20. No antigo calendário lunar hebraico, o primeiro mês geralmente caía entre março e abril. O número de anos desde a saída do Egito não é especificado. 54 20. Meribá significa “discussão”. 55 21. Hormá significa “destruição”. 56 21. Em hebraico, mar de juncos. 57 21. Beer significa “poço”. 58 21. Ou se vê Jesimom. 59 21. Ou pois o terreno da fronteira com os amonitas era escarpado; o hebraico traz pois a divisa com os amonitas era forte. 60 21. Ou até que o fogo se espalhe até Medeba. O significado do hebraico é incerto. 61 22. Em hebraico, perto do rio. 62 22. Em hebraico, partiram com o dinheiro da adivinhação na mão. 63 23. Ou de onde se vê Jesimon. 64 24. Ou como um vale. 65 24. Conforme o Pentateuco Samaritano; o significado do termo hebraico é incerto. 66 24. Em hebraico, Quitim. 67 26. No texto hebraico, a primeira parte do versículo 26. é numerada 25.. 68 26. Em hebraico, Israel; ver nota em 1.. 69 26. Conforme a versão siríaca (ver tb. Gn 46.; Êx 6.15); o hebraico traz nemuelita [...] Nemuel. 70 26. Conforme os textos paralelos em Gn 46. e Êx 6.; o hebraico traz zeraíta [...] Zerá. 71 26. Conforme o Pentateuco Samaritano, a Septuaginta e a versão siríaca (ver tb. Gn 46.16); o hebraico traz Arode. 72 26. Conforme o Pentateuco Samaritano, a Septuaginta, a versão siríaca e a Vulgata (ver tb.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Números 27:1–7",
-                "text": "Certo dia, Maala, Noa, Hogla, Milca e Tirza, as filhas de Zelofeade, fizeram uma petição. Seu pai pertencia a um dos clãs de Manassés, pois era descendente de Héfer, filho de Gileade, filho de Maquir, filho de Manassés, filho de José."
-              },
-              {
-                "ref": "Números 33:54",
-                "text": "Distribuam a terra entre os clãs por sorteio e de forma proporcional ao tamanho de cada clã. Os clãs maiores receberão uma porção maior, e os clãs menores, uma porção menor. A decisão por sorteio é definitiva. Assim, as..."
-              },
-              {
-                "ref": "Josué 17:3–6",
-                "text": "Contudo, Zelofeade, filho de Héfer, filho de Gileade, filho de Maquir, filho de Manassés, não teve filhos, mas somente filhas. Seus nomes eram: Maala, Noa, Hogla, Milca e Tirza."
-              },
-              {
-                "ref": "Jó 42:15",
-                "text": "Em toda a terra, não havia mulheres tão lindas como as filhas de Jó. E seu pai lhes deu herança junto com os irmãos delas."
-              }
-            ]
-          },
-          {
-            "number": 1,
-            "text": "Cr 7.1); o hebraico traz puvita [...] Puvá. 73 26. Conforme alguns manuscritos hebraicos, o Pentateuco Samaritano, a Septuaginta, a versão siríaca e a Vulgata; a maioria dos manuscritos hebraicos traz Sefufã. 74 26. Conforme o Pentateuco Samaritano, alguns manuscritos gregos e a Vulgata; o hebraico não traz por causa de seu antepassado Arde. 75 28.5a Em hebraico, 1/10 de efa; também em 28.,,. 76 28.5b Em hebraico, 1/4 de him; também em 28.. 77 28. Em hebraico, 2/10 de efa; também em 28.,,. 78 28. Em hebraico, 3/10 de efa; também em 28.,. 79 28.14a Em hebraico, 1/2 him. 80 28.14b Em hebraico, 1/3 de him. 81 28.14c Em hebraico, 1/4 de him. 82 28. No antigo calendário lunar hebraico, esse dia caía no final de março, em abril ou no início de maio. 83 28. Em hebraico, Festa das Semanas. Chamada posteriormente de Festa de Pentecostes (ver At 2.1) e comemorada hoje com o nome Shavuot. 84 29. No antigo calendário lunar hebraico, esse dia caía em setembro ou outubro. Comemorado hoje com o nome Rosh Hashanah, o ano-novo judeu. 85 29.3a Em hebraico, 3/10 de efa; também em 29.,. 86 29.3b Em hebraico, 2/10 de efa; também em 29.,. 87 29. Em hebraico, 1/10 de efa; também em 29.,. 88 29.7a No antigo calendário lunar hebraico, esse dia caía em setembro ou outubro. Comemorado hoje com o nome Yom Kippur. 89 29.7b Ou jejuarão. 90 29.12a No antigo calendário lunar hebraico, esse dia caía no final de setembro, em outubro ou no início de novembro. 91 29.12b Ou Festa dos Tabernáculos. Chamada anteriormente de Festa da Última Colheita (ver Êx 23.16) e comemorada hoje com o nome Sucot. 92 29. No texto hebraico, o versículo 29. é numerado 30.. 93 30. No texto hebraico, os versículos 30.1-16 são numerados 30.2-17. 94 30. Ou jejuar. 95 31. Em hebraico, os comandantes de milhares e os comandantes de centenas; também em 31.,,. 96 31. Em hebraico, 16.750 siclos. 97 32. Conforme o Pentateuco Samaritano e a Septuaginta (ver tb. 32.38); o hebraico traz Sebã. 98 32. Em hebraico, Havote-Jair. 99 33. No antigo calendário lunar hebraico, esse dia caía no final de março, em abril ou no início de maio. 100 33.8a Conforme vários manuscritos hebraicos, o Pentateuco Samaritano e a Vulgata (ver tb. 33.7); o hebraico traz Saíram de diante de Hairote. 101 33.8b Em hebraico, o mar. 102 33. Em hebraico, mar de juncos; também em 33.. 103 33. No antigo calendário lunar hebraico, esse dia caía em julho ou agosto. 104 33. Em hebraico, Ijim, outro nome para Ijé-Abarim. 105 34. Em hebraico, mar Salgado; também em 34.. 106 34. Ou ladeira de Acrabim. 107 34. Em hebraico, no mar; também em 34.,. 108 34. Em hebraico, mar de Quinerete. 109 35. Em hebraico, 1.000 côvados. 110 35. Em hebraico, 2.000 côvados.",
-            "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Números 27:1",
-                "text": "Certo dia, Maala, Noa, Hogla, Milca e Tirza, as filhas de Zelofeade, fizeram uma petição. Seu pai pertencia a um dos clãs de Manassés, pois era descendente de Héfer, filho de Gileade, filho de Maquir, filho de Manassés, filho de José."
-              },
-              {
-                "ref": "1 Crônicas 7:14–16",
-                "text": "Os descendentes de Manassés com sua concubina arameia foram: Asriel e Maquir, pai de Gileade."
-              },
-              {
-                "ref": "Números 26:29–33",
-                "text": "Estes foram os clãs descendentes de Manassés: O clã maquirita, assim chamado por causa de seu antepassado Maquir. O clã gileadita, assim chamado por causa de seu antepassado Gileade, filho de Maquir."
-              },
-              {
-                "ref": "Josué 17:2–3",
-                "text": "Assim, a porção de terra a oeste do Jordão foi para as demais famílias dos clãs da tribo de Manassés: Abiezer, Heleque, Asriel, Siquém, Héfer e Semida. Esses descendentes do sexo masculino representavam os clãs de Manassés, filho de José."
               }
             ]
           }

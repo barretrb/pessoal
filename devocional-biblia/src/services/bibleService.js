@@ -68,17 +68,19 @@ export function sanitizeBookData(bookData) {
       continue;
     }
 
+    // Capítulos já verificados da fonte NVT oficial ou já estruturados em múltiplas seções
+    // não devem sofrer re-divisão heurística (evita transformar continuações de versículo em subtítulo).
+    if (chData.verified || chData.sections.length > 1) {
+      result[chKey] = chData;
+      continue;
+    }
+
     const allVerses = chData.sections.flatMap(s => s.verses);
     if (!allVerses || allVerses.length === 0) {
       result[chKey] = chData;
       continue;
     }
 
-    const hasEmbedded = allVerses.some(v => v.text && /^(.*?[.!?\u201d\u2019'])\s+([A-ZÀ-Ú][^.!?\n,;:]{3,65})$/.test(v.text));
-    if (!hasEmbedded && chData.sections.length > 1) {
-      result[chKey] = chData;
-      continue;
-    }
 
     let newSections = [];
     let currentTitle = chData.sections[0]?.title || '';
@@ -90,9 +92,11 @@ export function sanitizeBookData(bookData) {
 
       const match = text.match(/^(.*?[.!?\u201d\u2019'])\s+([A-ZÀ-Ú][^.!?\n,;:]{3,65})$/);
 
-      if (match) {
+      const nextVerseText = (allVerses[i + 1]?.text || '').trim();
+      const candidateTitle = match ? match[2].trim() : '';
+      if (match && i + 1 < allVerses.length && candidateTitle !== 'Interlúdio' && nextVerseText && !/^[a-zà-ú]/.test(nextVerseText)) {
         const cleanScripture = match[1].trim();
-        const nextTitle = match[2].trim();
+        const nextTitle = candidateTitle;
 
         v.text = cleanScripture;
         currentVerses.push(v);

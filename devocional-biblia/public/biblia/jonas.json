@@ -2,6 +2,7 @@
   "1": {
     "book": "Jonas",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Jonas foge de Deus",
@@ -44,7 +45,7 @@
               },
               {
                 "ref": "Isaías 58:1",
-                "text": "“Grite alto, com todas as suas forças! Grite alto, como o som da trombeta! Fale ao meu povo, Israel,164 sobre sua rebeldia e seus pecados!"
+                "text": "“Grite alto, com todas as suas forças! Grite alto, como o som da trombeta! Fale ao meu povo, Israel, sobre sua rebeldia e seus pecados!"
               },
               {
                 "ref": "Naum 1:1",
@@ -117,7 +118,7 @@
               },
               {
                 "ref": "Lucas 22:45–46",
-                "text": "Por fim, ele se levantou, voltou aos discípulos e os encontrou dormindo, exaustos de tristeza. “Por que vocês dormem?”, perguntou ele. “Levantem-se e orem para que não cedam à ­tentação.”"
+                "text": "Por fim, ele se levantou, voltou aos discípulos e os encontrou dormindo, exaustos de tristeza. “Por que vocês dormem?”, perguntou ele. “Levantem-se e orem para que não cedam à tentação.”"
               }
             ]
           },
@@ -367,7 +368,7 @@
             ]
           },
           {
-            "number": 171,
+            "number": 17,
             "text": "O SENHOR fez que um grande peixe engolisse Jonas. E Jonas ficou dentro do peixe por três dias e três noites.",
             "isJesusWords": false,
             "crossReferences": []
@@ -379,12 +380,13 @@
   "2": {
     "book": "Jonas",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "A oração de Jonas",
         "verses": [
           {
-            "number": 12,
+            "number": 1,
             "text": "Então, de dentro do peixe, Jonas orou ao SENHOR, seu Deus,",
             "isJesusWords": false,
             "crossReferences": []
@@ -549,7 +551,7 @@
             "crossReferences": [
               {
                 "ref": "Salmos 3:8",
-                "text": "De ti, SENHOR, vem o livramento; abençoa o teu povo!"
+                "text": "De ti, SENHOR, vem o livramento; abençoa o teu povo! Interlúdio"
               },
               {
                 "ref": "Salmos 50:14",
@@ -595,6 +597,7 @@
   "3": {
     "book": "Jonas",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Jonas vai a Nínive",
@@ -610,7 +613,7 @@
               },
               {
                 "ref": "João 21:15–17",
-                "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”.100 “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus."
+                "text": "Depois da refeição, Jesus perguntou a Simão Pedro: “Simão, filho de João, você me ama mais do que estes?”. “Sim, Senhor”, respondeu Pedro. “O senhor sabe que eu o amo”. “Então alimente meus cordeiros”, disse Jesus."
               }
             ]
           },
@@ -805,7 +808,7 @@
               },
               {
                 "ref": "1 Reis 21:27–29",
-                "text": "Quando Acabe ouviu essa mensagem, rasgou suas roupas, vestiu- se de pano de saco e jejuou. Passou a dormir em cima de panos de saco e a andar cabisbaixo."
+                "text": "Quando Acabe ouviu essa mensagem, rasgou suas roupas, vestiu-se de pano de saco e jejuou. Passou a dormir em cima de panos de saco e a andar cabisbaixo."
               },
               {
                 "ref": "Êxodo 32:14",
@@ -824,6 +827,7 @@
   "4": {
     "book": "Jonas",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "A ira de Jonas por causa da misericórdia do SENHOR",
@@ -865,7 +869,8 @@
                 "text": "O SENHOR passou diante de Moisés, proclamando: “Javé! O SENHOR! O Deus de compaixão e misericórdia! Sou lento para me irar e cheio de amor e fidelidade."
               },
               {
-                "ref": "Números 14:18–19"
+                "ref": "Números 14:18–19",
+                "text": "‘O SENHOR é lento para se irar, é cheio de amor e perdoa todo tipo de pecado e rebeldia. Contudo, não absolve o culpado; traz as consequências do pecado dos pais sobre os filhos até a terceira e quarta geração’."
               },
               {
                 "ref": "Joel 2:13–14",
@@ -911,7 +916,7 @@
               },
               {
                 "ref": "Salmos 106:32–33",
-                "text": "Também em Meribá, provocaram a ira do SENHOR, e causaram sérios problemas a Moisés. Fizeram Moisés se irar,140 e ele falou sem refletir."
+                "text": "Também em Meribá, provocaram a ira do SENHOR, e causaram sérios problemas a Moisés. Fizeram Moisés se irar, e ele falou sem refletir."
               },
               {
                 "ref": "Miqueias 6:3",
@@ -926,7 +931,7 @@
             "crossReferences": [
               {
                 "ref": "1 Reis 19:9",
-                "text": "Ali encontrou uma caverna onde passou a noite. O SENHOR fala com Elias Então o SENHOR lhe disse: “O que você faz aqui, Elias?”."
+                "text": "Ali encontrou uma caverna onde passou a noite."
               },
               {
                 "ref": "Gênesis 19:27–28",
@@ -960,7 +965,8 @@
                 "text": "Aqueles que choram, que se alegram ou que compram coisas não devem se entregar totalmente à tristeza, à alegria ou aos bens."
               },
               {
-                "ref": "Jonas 1:17"
+                "ref": "Jonas 1:17",
+                "text": "O SENHOR fez que um grande peixe engolisse Jonas. E Jonas ficou dentro do peixe por três dias e três noites."
               }
             ]
           },
@@ -1050,7 +1056,7 @@
           },
           {
             "number": 11,
-            "text": "Nínive, porém, tem mais de 120 mil pessoas que não sabem decidir entre o certo e o errado, sem falar de muitos animais. Acaso não devo ter compaixão dessa grande cidade?”. 1 1. No texto hebraico, o versículo 1. é numerado 2.. 2 2. No texto hebraico, os versículos 2.1-10 são numerados 2.2-11. 3 2. Em hebraico, do Sheol. 4 2. Ou algum dia olharei de novo para teu santo templo? 5 3. Em hebraico, uma grande cidade para Deus, de três dias de jornada. 6 4. Em hebraico, pessoas que não sabem distinguir a mão direita da mão esquerda.",
+            "text": "Nínive, porém, tem mais de 120 mil pessoas que não sabem decidir entre o certo e o errado, sem falar de muitos animais. Acaso não devo ter compaixão dessa grande cidade?”.",
             "isJesusWords": false,
             "crossReferences": [
               {

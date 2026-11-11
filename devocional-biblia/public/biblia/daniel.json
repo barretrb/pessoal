@@ -2,6 +2,7 @@
   "1": {
     "book": "Daniel",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Daniel na corte de Nabucodonosor",
@@ -32,7 +33,7 @@
             "crossReferences": [
               {
                 "ref": "2 Crônicas 36:7",
-                "text": "Nabucodonosor também levou alguns dos tesouros do templo do SENHOR e os colocou em seu palácio,150 na Babilônia."
+                "text": "Nabucodonosor também levou alguns dos tesouros do templo do SENHOR e os colocou em seu palácio, na Babilônia."
               },
               {
                 "ref": "Zacarias 5:11",
@@ -54,10 +55,12 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Isaías 39:7"
+                "ref": "Isaías 39:7",
+                "text": "‘Até mesmo alguns de seus descendentes serão levados para o exílio. Eles se tornarão eunucos e servirão no palácio do rei da Babilônia’”."
               },
               {
-                "ref": "2 Reis 20:17–18"
+                "ref": "2 Reis 20:17–18",
+                "text": "‘Está chegando o dia em que tudo em seu palácio, todos os tesouros que seus antepassados acumularam até agora, será levado para a Babilônia. Não ficará coisa alguma’, diz o SENHOR."
               },
               {
                 "ref": "2 Reis 24:15",
@@ -103,7 +106,7 @@
               },
               {
                 "ref": "1 Reis 10:8",
-                "text": "Como deve ser feliz o seu povo!73 Que privilégio para seus oficiais estarem em sua presença todos os dias, ouvindo sua sabedoria!"
+                "text": "Como deve ser feliz o seu povo! Que privilégio para seus oficiais estarem em sua presença todos os dias, ouvindo sua sabedoria!"
               },
               {
                 "ref": "Daniel 1:8",
@@ -126,7 +129,7 @@
               },
               {
                 "ref": "Mateus 24:15",
-                "text": "“Chegará o dia em que vocês verão aquilo de que o profeta Daniel falou, a ‘terrível profanação’141 que será colocada no lugar santo. (Leitor, preste atenção!)"
+                "text": "“Chegará o dia em que vocês verão aquilo de que o profeta Daniel falou, a ‘terrível profanação’ que será colocada no lugar santo. (Leitor, preste atenção!)"
               },
               {
                 "ref": "Ezequiel 14:20",
@@ -176,7 +179,7 @@
               },
               {
                 "ref": "1 Coríntios 10:18–21",
-                "text": "Pensem no povo de Israel. Acaso os que comiam dos sacri­fícios não partilhavam do mesmo altar?"
+                "text": "Pensem no povo de Israel. Acaso os que comiam dos sacrifícios não partilhavam do mesmo altar?"
               },
               {
                 "ref": "Ezequiel 4:13–14",
@@ -413,6 +416,7 @@
   "2": {
     "book": "Daniel",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "O sonho de Nabucodonosor",
@@ -470,7 +474,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 40:8",
-                "text": "Eles responderam: “Esta noite, nós dois tivemos sonhos, mas ninguém sabe nos dizer o que significam”. “A interpretação dos sonhos vem de Deus”, disse José. “Contem- me o que sonharam.”"
+                "text": "Eles responderam: “Esta noite, nós dois tivemos sonhos, mas ninguém sabe nos dizer o que significam”. “A interpretação dos sonhos vem de Deus”, disse José. “Contem-me o que sonharam.”"
               },
               {
                 "ref": "Gênesis 41:15",
@@ -497,7 +501,7 @@
               },
               {
                 "ref": "Esdras 4:7",
-                "text": "Mais tarde, durante o reinado de Artaxerxes, rei da Pérsia, os inimigos de Judá, liderados por Bislão, Mitredate e Tabeel, enviaram a Artaxerxes uma carta em aramaico, que foi traduzida para o rei. 819 O comandante Reum..."
+                "text": "Mais tarde, durante o reinado de Artaxerxes, rei da Pérsia, os inimigos de Judá, liderados por Bislão, Mitredate e Tabeel, enviaram a Artaxerxes uma carta em aramaico, que foi traduzida para o rei."
               },
               {
                 "ref": "Daniel 5:10",
@@ -505,7 +509,7 @@
               },
               {
                 "ref": "Isaías 36:11",
-                "text": "Então Eliaquim, Sebna e Joá disseram ao porta-voz: “Por favor, fale conosco em aramaico, pois entendemos bem essa língua. Não fale em hebraico,115 pois o povo sobre o muro o ouvirá”."
+                "text": "Então Eliaquim, Sebna e Joá disseram ao porta-voz: “Por favor, fale conosco em aramaico, pois entendemos bem essa língua. Não fale em hebraico, pois o povo sobre o muro o ouvirá”."
               }
             ]
           },
@@ -565,7 +569,8 @@
                 "text": "Então os astrólogos responderam ao rei em aramaico: “Que o rei viva para sempre! Conte-nos o sonho e nós lhe diremos o que ele significa”."
               },
               {
-                "ref": "Daniel 2:9"
+                "ref": "Daniel 2:9",
+                "text": "‘Se não me contarem qual foi o sonho, estão condenados!’. Por isso, conspiraram para me dizer mentiras, na esperança de que mudarei de ideia. Digam-me, porém, qual foi o sonho e então saberei que podem explicar o que ele significa”."
               },
               {
                 "ref": "Eclesiastes 10:4",
@@ -575,7 +580,7 @@
           },
           {
             "number": 8,
-            "text": "O rei respondeu: “Sei o que estão fazendo! Estão tentando ganhar tempo, pois sabem que falo sério quando digo: 9‘Se não me contarem qual foi o sonho, estão condenados!’. Por isso, conspiraram para me dizer mentiras, na esperança de que mudarei de ideia. Digam-me, porém, qual foi o sonho e então saberei que podem explicar o que ele significa”.",
+            "text": "O rei respondeu: “Sei o que estão fazendo! Estão tentando ganhar tempo, pois sabem que falo sério quando digo:",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -587,6 +592,12 @@
                 "text": "Vivam com sabedoria entre os que são de fora e aproveitem bem todas as oportunidades."
               }
             ]
+          },
+          {
+            "number": 9,
+            "text": "‘Se não me contarem qual foi o sonho, estão condenados!’. Por isso, conspiraram para me dizer mentiras, na esperança de que mudarei de ideia. Digam-me, porém, qual foi o sonho e então saberei que podem explicar o que ele significa”.",
+            "isJesusWords": false,
+            "crossReferences": []
           },
           {
             "number": 10,
@@ -683,7 +694,7 @@
               },
               {
                 "ref": "Jeremias 52:12",
-                "text": "Em 17 de agosto daquele ano,129 o décimo nono ano do reinado de Nabucodonosor, Nebuzaradã, capitão da guarda e oficial do rei babilônio, chegou a Jerusalém."
+                "text": "Em 17 de agosto daquele ano, o décimo nono ano do reinado de Nabucodonosor, Nebuzaradã, capitão da guarda e oficial do rei babilônio, chegou a Jerusalém."
               },
               {
                 "ref": "Jeremias 39:9",
@@ -712,7 +723,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Daniel 2:9–11"
+                "ref": "Daniel 2:9–11",
+                "text": "‘Se não me contarem qual foi o sonho, estão condenados!’. Por isso, conspiraram para me dizer mentiras, na esperança de que mudarei de ideia. Digam-me, porém, qual foi o sonho e então saberei que podem explicar o que ele significa”."
               },
               {
                 "ref": "Daniel 1:18–19",
@@ -746,7 +758,7 @@
             "crossReferences": [
               {
                 "ref": "Jeremias 33:3",
-                "text": "Pergunte- me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
+                "text": "Pergunte-me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
               },
               {
                 "ref": "Mateus 18:19",
@@ -764,7 +776,7 @@
           },
           {
             "number": 19,
-            "text": "Naquela noite, o segredo foi revelado a Daniel numa visão.",
+            "text": "Naquela noite, o segredo foi revelado a Daniel numa visão. Então Daniel louvou o Deus dos céus",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -784,12 +796,7 @@
                 "text": "Deus concedeu aos quatro rapazes aptidão incomum para entender todos os aspectos da literatura e da sabedoria, e a Daniel concedeu a capacidade especial de interpretar sonhos e visões."
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Então Daniel louvou o Deus dos céus",
-        "verses": [
+          },
           {
             "number": 20,
             "text": "e disse: “Louvado seja o nome de Deus para todo o sempre, pois a ele pertencem a sabedoria e o poder.",
@@ -978,7 +985,7 @@
             "crossReferences": [
               {
                 "ref": "Gênesis 40:8",
-                "text": "Eles responderam: “Esta noite, nós dois tivemos sonhos, mas ninguém sabe nos dizer o que significam”. “A interpretação dos sonhos vem de Deus”, disse José. “Contem- me o que sonharam.”"
+                "text": "Eles responderam: “Esta noite, nós dois tivemos sonhos, mas ninguém sabe nos dizer o que significam”. “A interpretação dos sonhos vem de Deus”, disse José. “Contem-me o que sonharam.”"
               },
               {
                 "ref": "Amós 4:13",
@@ -1093,7 +1100,7 @@
             "crossReferences": [
               {
                 "ref": "Daniel 7:19–26",
-                "text": "Então eu quis saber o verdadeiro signifi­cado da quarta besta, tão diferente das demais e tão aterrorizante. Ela havia devorado e despedaçado suas vítimas com dentes de ferro e garras de bronze e esmagado os restos com os pés."
+                "text": "Então eu quis saber o verdadeiro significado da quarta besta, tão diferente das demais e tão aterrorizante. Ela havia devorado e despedaçado suas vítimas com dentes de ferro e garras de bronze e esmagado os restos com os pés."
               },
               {
                 "ref": "Daniel 7:7–8",
@@ -1444,13 +1451,14 @@
   "3": {
     "book": "Daniel",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "A estátua de ouro de Nabucodonosor",
         "verses": [
           {
             "number": 1,
-            "text": "O rei Nabucodonosor fez uma estátua de ouro de 27 metros de altura e 2, metros de largura e a colocou na planície de Dura, na província da Babilônia.",
+            "text": "O rei Nabucodonosor fez uma estátua de ouro de 27 metros de altura e 2,7 metros de largura e a colocou na planície de Dura, na província da Babilônia.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -1481,7 +1489,8 @@
                 "text": "Os altos funcionários, os oficiais, os governadores e os conselheiros se juntaram ao redor deles e viram que o fogo não os havia tocado. Nem um fio de cabelo na cabeça deles estava chamuscado, e suas roupas não estavam q..."
               },
               {
-                "ref": "Daniel 6:1–4"
+                "ref": "Daniel 6:1–4",
+                "text": "O rei Dario resolveu dividir o reino em 120 províncias e nomeou um alto funcionário para governar cada uma delas."
               },
               {
                 "ref": "Êxodo 32:4–6",
@@ -1512,7 +1521,7 @@
               },
               {
                 "ref": "Salmos 82:1–8",
-                "text": "Deus preside a assembleia dos céus; no meio dos seres celestiais,110 anuncia seu julgamento:"
+                "text": "Deus preside a assembleia dos céus; no meio dos seres celestiais, anuncia seu julgamento:"
               }
             ]
           },
@@ -1526,7 +1535,8 @@
                 "text": "Então o rei Dario enviou esta mensagem a povos de todas as raças, nações e línguas em todo o mundo: “Paz e prosperidade!"
               },
               {
-                "ref": "Daniel 4:1"
+                "ref": "Daniel 4:1",
+                "text": "O rei Nabucodonosor enviou esta mensagem a povos de todas as raças, nações e línguas em todo o mundo: “Paz e prosperidade!"
               },
               {
                 "ref": "Miqueias 6:16",
@@ -1739,16 +1749,16 @@
           },
           {
             "number": 14,
-            "text": "ele lhes disse: “Sadraque, Mesaque e Abede-Nego, é verdade que vocês se ­recusam a servir meus deuses e a adorar a estátua que levantei?",
+            "text": "ele lhes disse: “Sadraque, Mesaque e Abede-Nego, é verdade que vocês se recusam a servir meus deuses e a adorar a estátua que levantei?",
             "isJesusWords": false,
             "crossReferences": [
               {
                 "ref": "Jeremias 50:2",
-                "text": "“Anunciem a todo o mundo, não escondam nada. Levantem uma bandeira para proclamar a todos que a Babilônia cairá. Suas imagens e seus ídolos112 serão despedaçados; seus deuses, Bel e Merodaque, sofrerão completa humilhação."
+                "text": "“Anunciem a todo o mundo, não escondam nada. Levantem uma bandeira para proclamar a todos que a Babilônia cairá. Suas imagens e seus ídolos serão despedaçados; seus deuses, Bel e Merodaque, sofrerão completa humilhação."
               },
               {
                 "ref": "Daniel 3:1",
-                "text": "O rei Nabucodonosor fez uma estátua de ouro de 27 metros de altura e 2, metros de largura e a colocou na planície de Dura, na província da Babilônia."
+                "text": "O rei Nabucodonosor fez uma estátua de ouro de 27 metros de altura e 2,7 metros de largura e a colocou na planície de Dura, na província da Babilônia."
               },
               {
                 "ref": "Isaías 46:1",
@@ -1943,7 +1953,7 @@
           },
           {
             "number": 23,
-            "text": "Assim, Sadraque, Mesaque e Abede- Nego, amarrados, caíram nas chamas intensas.",
+            "text": "Assim, Sadraque, Mesaque e Abede-Nego, amarrados, caíram nas chamas intensas.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2012,7 +2022,7 @@
           },
           {
             "number": 26,
-            "text": "Então Nabucodonosor se aproximou o máximo que pôde da porta da fornalha ardente e gritou: “Sadraque, Mesaque e Abede- Nego, servos do Deus Altíssimo, saiam! Venham aqui!”. E Sadraque, Mesaque e Abede-Nego saíram do meio do fogo.",
+            "text": "Então Nabucodonosor se aproximou o máximo que pôde da porta da fornalha ardente e gritou: “Sadraque, Mesaque e Abede-Nego, servos do Deus Altíssimo, saiam! Venham aqui!”. E Sadraque, Mesaque e Abede-Nego saíram do meio do fogo.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -2132,12 +2142,13 @@
   "4": {
     "book": "Daniel",
     "chapter": "4",
+    "verified": true,
     "sections": [
       {
         "title": "Nabucodonosor sonha com uma árvore",
         "verses": [
           {
-            "number": 114,
+            "number": 1,
             "text": "O rei Nabucodonosor enviou esta mensagem a povos de todas as raças, nações e línguas em todo o mundo: “Paz e prosperidade!",
             "isJesusWords": false,
             "crossReferences": []
@@ -2149,7 +2160,7 @@
             "crossReferences": [
               {
                 "ref": "Daniel 3:26",
-                "text": "Então Nabucodonosor se aproximou o máximo que pôde da porta da fornalha ardente e gritou: “Sadraque, Mesaque e Abede- Nego, servos do Deus Altíssimo, saiam! Venham aqui!”. E Sadraque, Mesaque e Abede-Nego saíram do meio do fogo."
+                "text": "Então Nabucodonosor se aproximou o máximo que pôde da porta da fornalha ardente e gritou: “Sadraque, Mesaque e Abede-Nego, servos do Deus Altíssimo, saiam! Venham aqui!”. E Sadraque, Mesaque e Abede-Nego saíram do meio do fogo."
               },
               {
                 "ref": "Salmos 66:16",
@@ -2189,8 +2200,8 @@
             ]
           },
           {
-            "number": 415,
-            "text": "“Eu, Nabucodonosor, vivia em meu pa­lácio, com todo conforto e prosperidade.",
+            "number": 4,
+            "text": "“Eu, Nabucodonosor, vivia em meu palácio, com todo conforto e prosperidade.",
             "isJesusWords": false,
             "crossReferences": []
           },
@@ -2278,7 +2289,7 @@
               },
               {
                 "ref": "Jeremias 50:2",
-                "text": "“Anunciem a todo o mundo, não escondam nada. Levantem uma bandeira para proclamar a todos que a Babilônia cairá. Suas imagens e seus ídolos112 serão despedaçados; seus deuses, Bel e Merodaque, sofrerão completa humilhação."
+                "text": "“Anunciem a todo o mundo, não escondam nada. Levantem uma bandeira para proclamar a todos que a Babilônia cairá. Suas imagens e seus ídolos serão despedaçados; seus deuses, Bel e Merodaque, sofrerão completa humilhação."
               },
               {
                 "ref": "Isaías 63:11",
@@ -2758,7 +2769,8 @@
                 "text": "Na verdade, o Senhor não demora em cumprir sua promessa, como pensam alguns. Pelo contrário, ele é paciente por causa de vocês. Não deseja que ninguém seja destruído, mas que todos se arrependam."
               },
               {
-                "ref": "1 Pedro 3:20"
+                "ref": "1 Pedro 3:20",
+                "text": "àqueles que, muito tempo atrás, desobedeceram a Deus quando ele esperou pacientemente enquanto Noé construía sua embarcação. Apenas oito pessoas foram salvas por meio da água do dilúvio,"
               }
             ]
           },
@@ -2777,7 +2789,7 @@
               },
               {
                 "ref": "Isaías 10:8–15",
-                "text": "Ele dirá: ‘Em breve cada um de meus príncipes será rei. 9‘Destruímos Calno, como fizemos com Carquemis, Hamate caiu diante de nós, como aconteceu com Arpade, e derrotamos Samaria, como fizemos com Damasco."
+                "text": "Ele dirá: ‘Em breve cada um de meus príncipes será rei."
               },
               {
                 "ref": "Ezequiel 29:3",
@@ -2958,6 +2970,7 @@
   "5": {
     "book": "Daniel",
     "chapter": "5",
+    "verified": true,
     "sections": [
       {
         "title": "A inscrição na parede",
@@ -3311,7 +3324,7 @@
               },
               {
                 "ref": "Gênesis 40:8",
-                "text": "Eles responderam: “Esta noite, nós dois tivemos sonhos, mas ninguém sabe nos dizer o que significam”. “A interpretação dos sonhos vem de Deus”, disse José. “Contem- me o que sonharam.”"
+                "text": "Eles responderam: “Esta noite, nós dois tivemos sonhos, mas ninguém sabe nos dizer o que significam”. “A interpretação dos sonhos vem de Deus”, disse José. “Contem-me o que sonharam.”"
               },
               {
                 "ref": "Daniel 5:29",
@@ -3365,7 +3378,7 @@
               },
               {
                 "ref": "Atos 7:48",
-                "text": "O Altíssimo, porém, não habita em templos feitos por mãos humanas. Como diz o profeta: 49‘O céu é meu trono, e a terra é o suporte de meus pés. Acaso construiriam para mim um templo assim tão bom?’, diz o Senhor. ‘Que lu..."
+                "text": "O Altíssimo, porém, não habita em templos feitos por mãos humanas. Como diz o profeta:"
               }
             ]
           },
@@ -3533,7 +3546,7 @@
               },
               {
                 "ref": "Isaías 47:1–15",
-                "text": "“Desça, ó Babilônia,140 e sente-se no pó, pois chegaram ao fim seus dias no trono. A bela Babilônia141 nunca voltará a ser princesa encantadora e delicada."
+                "text": "“Desça, ó Babilônia, e sente-se no pó, pois chegaram ao fim seus dias no trono. A bela Babilônia nunca voltará a ser princesa encantadora e delicada."
               },
               {
                 "ref": "Daniel 9:2",
@@ -3578,7 +3591,8 @@
                 "text": "Assim, Daniel prosperou durante o reinado de Dario e durante o reinado de Ciro, o persa."
               },
               {
-                "ref": "Daniel 5:31"
+                "ref": "Daniel 5:31",
+                "text": "E Dario, o medo, tinha 62 anos quando se apoderou do reino."
               },
               {
                 "ref": "Isaías 21:2",
@@ -3625,7 +3639,7 @@
             ]
           },
           {
-            "number": 3127,
+            "number": 31,
             "text": "E Dario, o medo, tinha 62 anos quando se apoderou do reino.",
             "isJesusWords": false,
             "crossReferences": []
@@ -3637,12 +3651,13 @@
   "6": {
     "book": "Daniel",
     "chapter": "6",
+    "verified": true,
     "sections": [
       {
         "title": "Daniel na cova dos leões",
         "verses": [
           {
-            "number": 128,
+            "number": 1,
             "text": "O rei Dario resolveu dividir o reino em 120 províncias e nomeou um alto funcionário para governar cada uma delas.",
             "isJesusWords": false,
             "crossReferences": []
@@ -3731,7 +3746,7 @@
               },
               {
                 "ref": "Atos 24:20–21",
-                "text": "Pergunte a estes homens que aqui estão de que crimes o conselho dos líderes do povo121 me considerou culpado,"
+                "text": "Pergunte a estes homens que aqui estão de que crimes o conselho dos líderes do povo me considerou culpado,"
               },
               {
                 "ref": "1 Samuel 24:17",
@@ -3773,7 +3788,7 @@
               },
               {
                 "ref": "Salmos 62:4",
-                "text": "Planejam me derrubar de minha posição elevada; têm prazer em contar mentiras. Diante de mim, me elogiam; em seu coração, porém, me amaldiçoam."
+                "text": "Planejam me derrubar de minha posição elevada; têm prazer em contar mentiras. Diante de mim, me elogiam; em seu coração, porém, me amaldiçoam. Interlúdio"
               },
               {
                 "ref": "Daniel 3:2",
@@ -4045,7 +4060,7 @@
               },
               {
                 "ref": "Mateus 28:1",
-                "text": "Cr 3.."
+                "text": "Depois do sábado, no primeiro dia da semana, bem cedo, Maria Madalena e a outra Maria foram visitar o túmulo."
               },
               {
                 "ref": "Marcos 16:2",
@@ -4174,7 +4189,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Daniel 4:1"
+                "ref": "Daniel 4:1",
+                "text": "O rei Nabucodonosor enviou esta mensagem a povos de todas as raças, nações e línguas em todo o mundo: “Paz e prosperidade!"
               },
               {
                 "ref": "Esdras 1:1–2",
@@ -4266,6 +4282,7 @@
   "7": {
     "book": "Daniel",
     "chapter": "7",
+    "verified": true,
     "sections": [
       {
         "title": "Visão das quatro bestas",
@@ -4276,7 +4293,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Joel 2:28"
+                "ref": "Joel 2:28",
+                "text": "“Então, depois que eu tiver feito essas coisas, derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os velhos terão sonhos, e os jovens terão visões."
               },
               {
                 "ref": "Daniel 4:5",
@@ -4349,7 +4367,7 @@
               },
               {
                 "ref": "Ezequiel 17:3",
-                "text": "Transmita-lhes a seguinte mensagem do SENHOR Soberano: “Uma grande águia, com asas grandes e penas longas, coberta com plumagem de várias cores, veio ao Líbano."
+                "text": "Transmita-lhes a seguinte mensagem do SENHOR Soberano: “Uma grande águia, com asas grandes e penas longas, coberta com plumagem de várias cores, veio ao Líbano. Agarrou a ponta de um cedro"
               }
             ]
           },
@@ -4418,7 +4436,7 @@
               },
               {
                 "ref": "Daniel 7:19–20",
-                "text": "Então eu quis saber o verdadeiro signifi­cado da quarta besta, tão diferente das demais e tão aterrorizante. Ela havia devorado e despedaçado suas vítimas com dentes de ferro e garras de bronze e esmagado os restos com os pés."
+                "text": "Então eu quis saber o verdadeiro significado da quarta besta, tão diferente das demais e tão aterrorizante. Ela havia devorado e despedaçado suas vítimas com dentes de ferro e garras de bronze e esmagado os restos com os pés."
               }
             ]
           },
@@ -4536,7 +4554,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 26:64",
-                "text": "Jesus respondeu: “É como você diz. Eu lhes digo que, no futuro, verão o Filho do Homem sentado à direita do Deus Poderoso155 e vindo sobre as nuvens do céu”."
+                "text": "Jesus respondeu: “É como você diz. Eu lhes digo que, no futuro, verão o Filho do Homem sentado à direita do Deus Poderoso e vindo sobre as nuvens do céu”."
               },
               {
                 "ref": "Apocalipse 1:7",
@@ -4674,7 +4692,7 @@
           },
           {
             "number": 19,
-            "text": "Então eu quis saber o verdadeiro signifi­cado da quarta besta, tão diferente das demais e tão aterrorizante. Ela havia devorado e despedaçado suas vítimas com dentes de ferro e garras de bronze e esmagado os restos com os pés.",
+            "text": "Então eu quis saber o verdadeiro significado da quarta besta, tão diferente das demais e tão aterrorizante. Ela havia devorado e despedaçado suas vítimas com dentes de ferro e garras de bronze e esmagado os restos com os pés.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4744,7 +4762,7 @@
               },
               {
                 "ref": "Mateus 19:28",
-                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado113 e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
+                "text": "Jesus respondeu: “Eu lhes garanto que, quando o mundo for renovado e o Filho do Homem se sentar em seu trono glorioso, vocês, que foram meus seguidores, também se sentarão em doze tronos para julgar as doze tribos de Israel."
               }
             ]
           },
@@ -4889,13 +4907,14 @@
   "8": {
     "book": "Daniel",
     "chapter": "8",
+    "verified": true,
     "sections": [
       {
         "title": "Visão de um carneiro e de um bode",
         "verses": [
           {
             "number": 1,
-            "text": "134 Durante o terceiro ano do reinado de Belsazar, eu, Daniel, tive outra visão, depois da primeira.",
+            "text": "Durante o terceiro ano do reinado de Belsazar, eu, Daniel, tive outra visão, depois da primeira.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -4919,7 +4938,7 @@
               },
               {
                 "ref": "Neemias 1:1",
-                "text": "Estas são as memórias de Neemias, filho de Hacalias. A preocupação de Neemias com Jerusalém No mês de quisleu, no vigésimo ano do reinado do rei Artaxerxes, eu estava na fortaleza de Susã."
+                "text": "Estas são as memórias de Neemias, filho de Hacalias."
               },
               {
                 "ref": "Gênesis 10:22",
@@ -5109,7 +5128,7 @@
               },
               {
                 "ref": "Ezequiel 46:14",
-                "text": "Junto com ele, apresentarão ao SENHOR uma oferta de cereal com a sexta parte de um cesto185 de farinha e um terço do jarro186 de azeite para umedecer a farinha da melhor qualidade. Este será um decreto permanente para vocês."
+                "text": "Junto com ele, apresentarão ao SENHOR uma oferta de cereal com a sexta parte de um cesto de farinha e um terço do jarro de azeite para umedecer a farinha da melhor qualidade. Este será um decreto permanente para vocês."
               }
             ]
           },
@@ -5313,7 +5332,7 @@
               },
               {
                 "ref": "Daniel 11:1–2",
-                "text": "Tenho acompanhado Miguel para apoiá-lo e fortalecê-lo desde o primeiro ano do reinado de Dario, o medo.) Reis do sul e do norte"
+                "text": "Tenho acompanhado Miguel para apoiá-lo e fortalecê-lo desde o primeiro ano do reinado de Dario, o medo.)"
               }
             ]
           },
@@ -5477,6 +5496,7 @@
   "9": {
     "book": "Daniel",
     "chapter": "9",
+    "verified": true,
     "sections": [
       {
         "title": "A oração de Daniel por seu povo",
@@ -5488,7 +5508,7 @@
             "crossReferences": [
               {
                 "ref": "Daniel 11:1",
-                "text": "Tenho acompanhado Miguel para apoiá-lo e fortalecê-lo desde o primeiro ano do reinado de Dario, o medo.) Reis do sul e do norte"
+                "text": "Tenho acompanhado Miguel para apoiá-lo e fortalecê-lo desde o primeiro ano do reinado de Dario, o medo.)"
               },
               {
                 "ref": "Daniel 1:21",
@@ -5518,7 +5538,7 @@
               },
               {
                 "ref": "2 Crônicas 36:21",
-                "text": "Cumpriu-se, desse modo, a mensagem do SENHOR transmitida por Jeremias. A terra finalmente desfrutou seu descanso sabático e permaneceu desolada até que se completaram os setenta anos, conforme o profeta havia ­anunciado."
+                "text": "Cumpriu-se, desse modo, a mensagem do SENHOR transmitida por Jeremias. A terra finalmente desfrutou seu descanso sabático e permaneceu desolada até que se completaram os setenta anos, conforme o profeta havia anunciado."
               },
               {
                 "ref": "Zacarias 7:5",
@@ -5537,7 +5557,7 @@
               },
               {
                 "ref": "Jeremias 33:3",
-                "text": "Pergunte- me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
+                "text": "Pergunte-me e eu lhe contarei coisas maravilhosas, segredos que você não sabe, a respeito do que está por vir."
               },
               {
                 "ref": "Tiago 5:16–18",
@@ -5890,7 +5910,7 @@
               },
               {
                 "ref": "Salmos 80:14–19",
-                "text": "Ó Deus dos Exércitos, suplicamos que voltes! Olha dos céus e vê a nossa aflição."
+                "text": "Ó Deus dos Exércitos, suplicamos que voltes! Olha dos céus e vê a nossa aflição. Cuida desta videira"
               }
             ]
           },
@@ -6006,7 +6026,7 @@
               },
               {
                 "ref": "Mateus 24:15",
-                "text": "“Chegará o dia em que vocês verão aquilo de que o profeta Daniel falou, a ‘terrível profanação’141 que será colocada no lugar santo. (Leitor, preste atenção!)"
+                "text": "“Chegará o dia em que vocês verão aquilo de que o profeta Daniel falou, a ‘terrível profanação’ que será colocada no lugar santo. (Leitor, preste atenção!)"
               },
               {
                 "ref": "Lucas 1:28",
@@ -6044,7 +6064,7 @@
             "crossReferences": [
               {
                 "ref": "Esdras 4:24",
-                "text": "Assim, a obra no templo de Deus em Jerusalém foi interrompida e"
+                "text": "Assim, a obra no templo de Deus em Jerusalém foi interrompida e ficou parada até o segundo ano do reinado de Dario, rei da Pérsia."
               },
               {
                 "ref": "João 4:25",
@@ -6067,7 +6087,7 @@
             "crossReferences": [
               {
                 "ref": "Isaías 53:8",
-                "text": "Condenado injustamente, foi levado embora.160 Ninguém se importou de ele morrer sem deixar descendentes, de sua vida ser cortada no meio do caminho.161 Mas ele foi ferido mortalmente por causa da rebeldia do meu povo."
+                "text": "Condenado injustamente, foi levado embora. Ninguém se importou de ele morrer sem deixar descendentes, de sua vida ser cortada no meio do caminho. Mas ele foi ferido mortalmente por causa da rebeldia do meu povo."
               },
               {
                 "ref": "Naum 1:8",
@@ -6090,7 +6110,7 @@
             "crossReferences": [
               {
                 "ref": "Mateus 24:15",
-                "text": "“Chegará o dia em que vocês verão aquilo de que o profeta Daniel falou, a ‘terrível profanação’141 que será colocada no lugar santo. (Leitor, preste atenção!)"
+                "text": "“Chegará o dia em que vocês verão aquilo de que o profeta Daniel falou, a ‘terrível profanação’ que será colocada no lugar santo. (Leitor, preste atenção!)"
               },
               {
                 "ref": "Daniel 12:11",
@@ -6098,7 +6118,7 @@
               },
               {
                 "ref": "Marcos 13:14",
-                "text": "“Chegará o dia em que vocês verão a ‘terrível profanação’69 no lugar onde não deveria estar. (Leitor, preste atenção!) Então, quem estiver na Judeia, fuja para os montes."
+                "text": "“Chegará o dia em que vocês verão a ‘terrível profanação’ no lugar onde não deveria estar. (Leitor, preste atenção!) Então, quem estiver na Judeia, fuja para os montes."
               },
               {
                 "ref": "Lucas 21:20",
@@ -6113,6 +6133,7 @@
   "10": {
     "book": "Daniel",
     "chapter": "10",
+    "verified": true,
     "sections": [
       {
         "title": "Visão do mensageiro",
@@ -6196,7 +6217,8 @@
                 "text": "O terceiro braço, chamado Tigre, corria para o leste da terra da Assíria. O quarto braço era chamado de Eufrates."
               },
               {
-                "ref": "Ezequiel 1:3"
+                "ref": "Ezequiel 1:3",
+                "text": "(O SENHOR deu essa mensagem ao sacerdote Ezequiel, filho de Buzi, junto ao rio Quebar, na terra dos babilônios, e a mão do SENHOR estava sobre ele.)"
               },
               {
                 "ref": "Daniel 8:2",
@@ -6495,7 +6517,7 @@
               },
               {
                 "ref": "Juízes 13:21–23",
-                "text": "O anjo do SENHOR não voltou a aparecer a Manoá e sua esposa."
+                "text": "O anjo do SENHOR não voltou a aparecer a Manoá e sua esposa. Então Manoá finalmente percebeu que era o anjo do SENHOR"
               },
               {
                 "ref": "Juízes 6:22",
@@ -6564,7 +6586,7 @@
               },
               {
                 "ref": "Isaías 37:36",
-                "text": "Naquela noite, o anjo do SENHOR foi ao acampamento assírio e matou 185 mil soldados assírios. Quando os sobreviventes122 acordaram na manhã seguinte, encontraram cadáveres por toda parte."
+                "text": "Naquela noite, o anjo do SENHOR foi ao acampamento assírio e matou 185 mil soldados assírios. Quando os sobreviventes acordaram na manhã seguinte, encontraram cadáveres por toda parte."
               },
               {
                 "ref": "Atos 12:23",
@@ -6602,13 +6624,14 @@
   "11": {
     "book": "Daniel",
     "chapter": "11",
+    "verified": true,
     "sections": [
       {
         "title": "",
         "verses": [
           {
             "number": 1,
-            "text": "Tenho acompanhado Miguel para apoiá-lo e fortalecê-lo desde o primeiro ano do reinado de Dario, o medo.) Reis do sul e do norte",
+            "text": "Tenho acompanhado Miguel para apoiá-lo e fortalecê-lo desde o primeiro ano do reinado de Dario, o medo.)",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -6616,7 +6639,8 @@
                 "text": "Era o primeiro ano do reinado de Dario, o medo, filho de Assuero, que se tornou rei dos babilônios."
               },
               {
-                "ref": "Daniel 5:31"
+                "ref": "Daniel 5:31",
+                "text": "E Dario, o medo, tinha 62 anos quando se apoderou do reino."
               },
               {
                 "ref": "Atos 14:22",
@@ -6627,7 +6651,12 @@
                 "text": "Então aquele que se parecia com um homem tocou em mim novamente, e senti minhas forças voltarem."
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "title": "Reis do sul e do norte",
+        "verses": [
           {
             "number": 2,
             "text": "“Agora, portanto, eu lhe revelarei a verdade. Outros três reis persas reinarão e serão sucedidos pelo quarto rei, muito mais rico que os outros. Ele usará sua riqueza para instigar todos a lutarem contra o reino da Grécia.",
@@ -6639,7 +6668,7 @@
               },
               {
                 "ref": "Daniel 11:25",
-                "text": "“Então juntará coragem e reunirá um grande exército contra o rei do sul. Este sairá para a batalha, mas de nada adiantará, pois haverá conspi­rações contra ele."
+                "text": "“Então juntará coragem e reunirá um grande exército contra o rei do sul. Este sairá para a batalha, mas de nada adiantará, pois haverá conspirações contra ele."
               },
               {
                 "ref": "Amós 3:7",
@@ -6670,7 +6699,7 @@
               },
               {
                 "ref": "Hebreus 2:4",
-                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade. Jesus, o homem"
+                "text": "E Deus confirmou a mensagem por meio de sinais, maravilhas e diversos milagres, e também por dons do Espírito Santo, conforme sua vontade."
               }
             ]
           },
@@ -6704,7 +6733,7 @@
             "crossReferences": [
               {
                 "ref": "Daniel 11:25",
-                "text": "“Então juntará coragem e reunirá um grande exército contra o rei do sul. Este sairá para a batalha, mas de nada adiantará, pois haverá conspi­rações contra ele."
+                "text": "“Então juntará coragem e reunirá um grande exército contra o rei do sul. Este sairá para a batalha, mas de nada adiantará, pois haverá conspirações contra ele."
               },
               {
                 "ref": "Daniel 11:14",
@@ -6750,7 +6779,7 @@
               },
               {
                 "ref": "Isaías 11:1",
-                "text": "Do tronco da linhagem de Jessé45 brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
+                "text": "Do tronco da linhagem de Jessé brotará um renovo; sim, um novo Ramo que de suas raízes dará frutos."
               },
               {
                 "ref": "Jó 14:7",
@@ -6773,7 +6802,7 @@
               },
               {
                 "ref": "Jeremias 43:12–13",
-                "text": "Incendiará os templos dos deuses- ­ egípcios; queimará os templos e levará os ídolos como despojo. Limpará a terra do Egito, como um pastor que tira os piolhos de seu manto, e sairá dali sem sofrer dano algum."
+                "text": "Incendiará os templos dos deuses- egípcios; queimará os templos e levará os ídolos como despojo. Limpará a terra do Egito, como um pastor que tira os piolhos de seu manto, e sairá dali sem sofrer dano algum."
               },
               {
                 "ref": "Daniel 10:3",
@@ -6960,7 +6989,7 @@
               },
               {
                 "ref": "Ezequiel 4:7",
-                "text": "“Enquanto isso, continue a olhar para o cerco de Jerusalém. Deite- se com o braço descoberto e profetize contra a cidade."
+                "text": "“Enquanto isso, continue a olhar para o cerco de Jerusalém. Deite-se com o braço descoberto e profetize contra a cidade."
               },
               {
                 "ref": "2 Reis 12:17",
@@ -7135,7 +7164,7 @@
           },
           {
             "number": 25,
-            "text": "“Então juntará coragem e reunirá um grande exército contra o rei do sul. Este sairá para a batalha, mas de nada adiantará, pois haverá conspi­rações contra ele.",
+            "text": "“Então juntará coragem e reunirá um grande exército contra o rei do sul. Este sairá para a batalha, mas de nada adiantará, pois haverá conspirações contra ele.",
             "isJesusWords": false,
             "crossReferences": [
               {
@@ -7236,7 +7265,7 @@
               },
               {
                 "ref": "Daniel 11:25",
-                "text": "“Então juntará coragem e reunirá um grande exército contra o rei do sul. Este sairá para a batalha, mas de nada adiantará, pois haverá conspi­rações contra ele."
+                "text": "“Então juntará coragem e reunirá um grande exército contra o rei do sul. Este sairá para a batalha, mas de nada adiantará, pois haverá conspirações contra ele."
               },
               {
                 "ref": "Atos 17:26",
@@ -7286,11 +7315,11 @@
               },
               {
                 "ref": "Mateus 24:15",
-                "text": "“Chegará o dia em que vocês verão aquilo de que o profeta Daniel falou, a ‘terrível profanação’141 que será colocada no lugar santo. (Leitor, preste atenção!)"
+                "text": "“Chegará o dia em que vocês verão aquilo de que o profeta Daniel falou, a ‘terrível profanação’ que será colocada no lugar santo. (Leitor, preste atenção!)"
               },
               {
                 "ref": "Marcos 13:14",
-                "text": "“Chegará o dia em que vocês verão a ‘terrível profanação’69 no lugar onde não deveria estar. (Leitor, preste atenção!) Então, quem estiver na Judeia, fuja para os montes."
+                "text": "“Chegará o dia em que vocês verão a ‘terrível profanação’ no lugar onde não deveria estar. (Leitor, preste atenção!) Então, quem estiver na Judeia, fuja para os montes."
               }
             ]
           },
@@ -7611,6 +7640,7 @@
   "12": {
     "book": "Daniel",
     "chapter": "12",
+    "verified": true,
     "sections": [
       {
         "title": "O tempo do fim",
@@ -7852,7 +7882,7 @@
               },
               {
                 "ref": "Mateus 24:15",
-                "text": "“Chegará o dia em que vocês verão aquilo de que o profeta Daniel falou, a ‘terrível profanação’141 que será colocada no lugar santo. (Leitor, preste atenção!)"
+                "text": "“Chegará o dia em que vocês verão aquilo de que o profeta Daniel falou, a ‘terrível profanação’ que será colocada no lugar santo. (Leitor, preste atenção!)"
               },
               {
                 "ref": "Apocalipse 13:5",
@@ -7860,7 +7890,7 @@
               },
               {
                 "ref": "Marcos 13:14",
-                "text": "“Chegará o dia em que vocês verão a ‘terrível profanação’69 no lugar onde não deveria estar. (Leitor, preste atenção!) Então, quem estiver na Judeia, fuja para os montes."
+                "text": "“Chegará o dia em que vocês verão a ‘terrível profanação’ no lugar onde não deveria estar. (Leitor, preste atenção!) Então, quem estiver na Judeia, fuja para os montes."
               }
             ]
           },
@@ -7889,7 +7919,7 @@
           },
           {
             "number": 13,
-            "text": "“Quanto a você, siga seu caminho até o fim. Você descansará e, no final dos dias, se levantará para receber sua herança”. 1 1. Isto é, no ano 605 a.C. 2 1. Em hebraico, de Sinar. 3 1. Ou dos caldeus. 4 1. Ciro começou a reinar sobre a Babilônia em 539 a.C. 5 2. Isto é, no ano 603 a.C. 6 2. Ou caldeus; também em 2.,,. 7 2. Daqui até o capítulo 7, o texto original está em aramaico. 8 3. Em aramaico, 60 côvados de altura e 6 côvados de largura. 9 3. Em aramaico, os altos funcionários, oficiais, governadores, conselheiros, tesoureiros, juízes, magistrados e todas as autoridades das províncias. 10 3. A identificação de alguns desses instrumentos musicais é incerta. 11 3. Em aramaico, da trombeta, da flauta, da cítara, da lira, da harpa, do pífaro e de outros instrumentos musicais. 12 3. Em aramaico, caldeus. 13 3. Em aramaico, da trombeta, da flauta, da cítara, da lira, da harpa, do pífaro e de outros instrumentos musicais. 14 4. No texto aramaico, os versículos 4.1-3 são numerados 3.31-33. 15 4. No texto aramaico, os versículos 4.4-37 são numerados 4.1-34. 16 4. Ou caldeus. 17 4. Ou vigilante; também em 4.. 18 4. Ou vigilantes. 19 5. Em aramaico, seu pai; também em 5.,,. 20 5. Ou caldeus; também em 5.. 21 5. Em aramaico, filho. 22 5. Mene significa “contado”. 23 5. Tequel significa “pesado”. 24 5. Em aramaico, Peres, singular de Parsim, que significa “dividido”. 25 5.30a Ou rei caldeu. 26 5.30b Os persas e os medos conquistaram a Babilônia em outubro de 539 a.C. 27 5. No texto aramaico, o versículo 5. é numerado 6.. 28 6. No texto aramaico, os versículos 6.1-28 são numerados 6.2-29. 29 6. Ou de Dario, isto é, o reinado de Ciro, o persa. 30 7. O primeiro ano do reinado de Belsazar (corregente com seu pai, Nabônido) foi 556 a.C. (ou talvez até 553 a.C.). 31 7. Em aramaico, Ancião de Dias; também em 7.,. 32 7. Em aramaico, por um período e um tempo. 33 7. Ou ao Filho do Homem. 34 8. Daqui até o capítulo 12, o texto original está em hebraico. Ver nota em 2.. 35 8. Ou à porta Ulai; também em 8.. 36 8. Ou junto à porta; também em 8.. 37 8.11-12 O significado do hebraico é incerto. 38 8. Em hebraico, de Javã. 39 8. Em hebraico, das tardes e manhãs; comparar com 8.. 40 9. Ou dos caldeus. 41 9. Ver Jr 25.11-12; 29.. 42 9.24a Em hebraico, setenta setes. 43 9.24b Ou o Santíssimo. 44 9.25a Em hebraico, 7 setes, mais 62 setes. 45 9.25b Ou de um ungido; também em 9.. O hebraico traz de um messias. 46 9.25c Ou e um fosso, ou e trincheiras. 47 9.26a Em hebraico, Depois de 62 setes. 48 9.26b O significado do hebraico é incerto. 49 9.27a Em hebraico, por 1 sete. 50 9.27b Em hebraico, E na asa; o significado do hebraico é incerto. 51 9.27c Em hebraico, uma abominação de desolação. 52 10. Isto é, no ano 536 a.C. 53 10. Em hebraico, No vigésimo quarto dia do primeiro mês, do antigo calendário lunar hebraico. Essa data em Daniel é confirmada por datas em registros persas que sobreviveram ao tempo e pode ser relacionada com precisão ao calendário moderno. O ano foi 536 a.C. 54 10. O significado do hebraico é incerto. 55 10. Conforme a maioria dos manuscritos do Texto Massorético; um manuscrito do Texto Massorético e uma versão grega trazem Então algo que se parecia com a mão de um homem. 56 10. Em hebraico, de Javã. 57 11. Em hebraico, de Javã. 58 11. Em hebraico, um ramo de suas raízes. 59 11. Em hebraico, de Quitim. 60 11. Em hebraico, a abominação de desolação. 61 11. Ou por um preço. 62 11. Em hebraico, os cuxitas. 63 12. Em hebraico, Muitos dos que dormem no pó da terra. 64 12.11 Em hebraico, a abominação de desolação.",
+            "text": "“Quanto a você, siga seu caminho até o fim. Você descansará e, no final dos dias, se levantará para receber sua herança”.",
             "isJesusWords": false,
             "crossReferences": [
               {

@@ -2,6 +2,7 @@
   "1": {
     "book": "Tito",
     "chapter": "1",
+    "verified": true,
     "sections": [
       {
         "title": "Saudações de Paulo",
@@ -17,7 +18,7 @@
               },
               {
                 "ref": "1 Timóteo 6:3",
-                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente 4é arrogante e sem entendimento. Vive com o desejo doentio d..."
+                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente"
               },
               {
                 "ref": "2 Timóteo 2:25",
@@ -25,7 +26,7 @@
               },
               {
                 "ref": "2 Timóteo 2:23",
-                "text": "Digo mais uma vez: não se envolva em ­discussões tolas e ignorantes que só servem para gerar brigas."
+                "text": "Digo mais uma vez: não se envolva em discussões tolas e ignorantes que só servem para gerar brigas."
               }
             ]
           },
@@ -86,7 +87,7 @@
               },
               {
                 "ref": "Judas 1:3",
-                "text": "Amados, embora planejasse escrever-lhes com todo empenho sobre a salvação que compartilhamos, entendo agora que devo escrever a- ­ respeito de outro assunto e insistir que defendam a fé que, de uma vez por todas, foi confiada ao povo santo."
+                "text": "Amados, embora planejasse escrever-lhes com todo empenho sobre a salvação que compartilhamos, entendo agora que devo escrever a- respeito de outro assunto e insistir que defendam a fé que, de uma vez por todas, foi confiada ao povo santo."
               },
               {
                 "ref": "2 Pedro 1:1",
@@ -118,7 +119,7 @@
               },
               {
                 "ref": "Eclesiastes 12:9",
-                "text": "A terra se beneficia de um rei que cultiva a terra. O significado do hebraico é incerto."
+                "text": "O Mestre era considerado sábio e ensinou ao povo tudo que sabia. Com muita atenção, ouviu, examinou e organizou muitos provérbios."
               },
               {
                 "ref": "1 Coríntios 14:40",
@@ -190,7 +191,8 @@
                 "text": "Hirão ficou muito contente quando recebeu a mensagem de Salomão e disse: “Louvado seja o SENHOR neste dia, pois deu a Davi um filho sábio para ser rei dessa grande nação!”."
               },
               {
-                "ref": "1 Reis 5:1"
+                "ref": "1 Reis 5:1",
+                "text": "Hirão, rei de Tiro, sempre havia sido um fiel aliado de Davi. Quando soube que Salomão, filho de Davi, tinha sido ungido como o novo rei de Israel, Hirão mandou representantes para cumprimentá-lo."
               }
             ]
           },
@@ -209,7 +211,7 @@
               },
               {
                 "ref": "1 Timóteo 6:3",
-                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente 4é arrogante e sem entendimento. Vive com o desejo doentio d..."
+                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente"
               },
               {
                 "ref": "1 Timóteo 1:10",
@@ -328,7 +330,7 @@
               },
               {
                 "ref": "2 Pedro 2:22",
-                "text": "Neles se confirmam os provérbios: “O cão volta a seu próprio vômito”12 e “A porca lavada volta a revolver-se na lama”."
+                "text": "Neles se confirmam os provérbios: “O cão volta a seu próprio vômito” e “A porca lavada volta a revolver-se na lama”."
               }
             ]
           },
@@ -347,7 +349,7 @@
               },
               {
                 "ref": "1 Coríntios 10:23",
-                "text": "“Tudo é permitido”, mas nem tudo convém. “Tudo é permitido”, mas nem tudo traz bene­fícios."
+                "text": "“Tudo é permitido”, mas nem tudo convém. “Tudo é permitido”, mas nem tudo traz benefícios."
               },
               {
                 "ref": "1 Timóteo 4:3–4",
@@ -385,6 +387,7 @@
   "2": {
     "book": "Tito",
     "chapter": "2",
+    "verified": true,
     "sections": [
       {
         "title": "O ensino correto na vida da igreja",
@@ -400,7 +403,7 @@
               },
               {
                 "ref": "1 Timóteo 6:3",
-                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente 4é arrogante e sem entendimento. Vive com o desejo doentio d..."
+                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente"
               },
               {
                 "ref": "Tito 1:9",
@@ -483,7 +486,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Provérbios 31:10–31"
+                "ref": "Provérbios 31:10–31",
+                "text": "Quem encontrará uma mulher virtuosa? Ela é mais preciosa que rubis."
               },
               {
                 "ref": "Colossenses 3:18",
@@ -560,7 +564,7 @@
               },
               {
                 "ref": "1 Timóteo 6:3",
-                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente 4é arrogante e sem entendimento. Vive com o desejo doentio d..."
+                "text": "Talvez alguns nos contradigam, mas estes são os verdadeiros ensinamentos do Senhor Jesus Cristo, que conduzem a uma vida de devoção. Quem ensina algo diferente"
               },
               {
                 "ref": "Filipenses 2:14–16",
@@ -736,6 +740,7 @@
   "3": {
     "book": "Tito",
     "chapter": "3",
+    "verified": true,
     "sections": [
       {
         "title": "Faça o que é bom",
@@ -851,7 +856,7 @@
               },
               {
                 "ref": "1 Pedro 1:3",
-                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos."
+                "text": "Todo louvor seja a Deus, o Pai de nosso Senhor Jesus Cristo. Por sua grande misericórdia, ele nos fez nascer de novo, por meio da ressurreição de Jesus Cristo dentre os mortos. Agora temos uma viva esperança"
               }
             ]
           },
@@ -861,7 +866,8 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Joel 2:28"
+                "ref": "Joel 2:28",
+                "text": "“Então, depois que eu tiver feito essas coisas, derramarei meu Espírito sobre todo tipo de pessoa. Seus filhos e suas filhas profetizarão; os velhos terão sonhos, e os jovens terão visões."
               },
               {
                 "ref": "Romanos 5:5",
@@ -884,7 +890,7 @@
             "crossReferences": [
               {
                 "ref": "Romanos 8:17",
-                "text": "Se somos seus filhos, então somos seus herdeiros e, portanto, co- herdeiros com Cristo. Se de fato participamos de seu sofrimento, participaremos também de sua glória."
+                "text": "Se somos seus filhos, então somos seus herdeiros e, portanto, co-herdeiros com Cristo. Se de fato participamos de seu sofrimento, participaremos também de sua glória."
               },
               {
                 "ref": "Tito 2:11",
@@ -938,7 +944,7 @@
               },
               {
                 "ref": "2 Timóteo 2:23",
-                "text": "Digo mais uma vez: não se envolva em ­discussões tolas e ignorantes que só servem para gerar brigas."
+                "text": "Digo mais uma vez: não se envolva em discussões tolas e ignorantes que só servem para gerar brigas."
               },
               {
                 "ref": "Tito 1:14",
@@ -961,7 +967,7 @@
               },
               {
                 "ref": "Mateus 18:15–17",
-                "text": "“Se um irmão pecar contra você,100 fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
+                "text": "“Se um irmão pecar contra você, fale com ele em particular e chame-lhe a atenção para o erro. Se ele o ouvir, você terá recuperado seu irmão."
               },
               {
                 "ref": "2 Timóteo 3:5",
@@ -1073,7 +1079,7 @@
         "verses": [
           {
             "number": 15,
-            "text": "Todos aqui mandam lembranças. Por favor, envie minhas saudações a todos que nos amam na fé. Que a graça de Deus esteja com todos vocês. 1 1. Ou anciãos. 2 1. Ou ter somente uma mulher, ou ter se casado somente uma vez. 3 1. Ou supervisor. 4 1. Em grego, especialmente aos da circuncisão. 5 1. Citação de Epimênides de Cnossos. 6 2. Alguns manuscritos trazem a cuidar do lar. 7 3. Em grego, Ele nos salvou mediante o lavar da regeneração e renovação do Espírito Santo.",
+            "text": "Todos aqui mandam lembranças. Por favor, envie minhas saudações a todos que nos amam na fé. Que a graça de Deus esteja com todos vocês.",
             "isJesusWords": false,
             "crossReferences": [
               {
