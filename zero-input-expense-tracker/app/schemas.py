@@ -1,7 +1,7 @@
 from datetime import datetime
 from decimal import Decimal
-from typing import Literal
-from pydantic import BaseModel, Field
+from typing import Any, Literal
+from pydantic import BaseModel, Field, field_validator
 
 
 class NotificationPayload(BaseModel):
@@ -20,6 +20,24 @@ class AIExtractionResult(BaseModel):
     suggested_category: str = Field(default="Outros")
     confidence: float = Field(default=0.0, ge=0.0, le=1.0)
     top_categories: list[str] = Field(default_factory=list)
+
+    @field_validator("amount", mode="before")
+    @classmethod
+    def coerce_amount(cls, value: Any) -> float:
+        if value is None or value == "":
+            return 0.0
+        return max(0.0, float(value))
+
+    @field_validator("installments", mode="before")
+    @classmethod
+    def coerce_installments(cls, value: Any) -> int:
+        if value is None or value == "":
+            return 1
+        try:
+            qty = int(value)
+        except (TypeError, ValueError):
+            return 1
+        return qty if qty >= 1 else 1
 
 
 class IngestionResponse(BaseModel):
