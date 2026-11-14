@@ -1,3 +1,4 @@
+import logging
 from datetime import datetime, timedelta, timezone
 from decimal import Decimal
 from zoneinfo import ZoneInfo
@@ -18,6 +19,8 @@ from app.services.telegram_bot import (
     send_confirmed_notification,
     send_hitl_category_prompt,
 )
+
+logger = logging.getLogger(__name__)
 
 
 def to_utc(dt: datetime, tz_name: str) -> datetime:
@@ -62,6 +65,13 @@ def upsert_merchant_memory(
 async def process_notification(
     db: Session, payload: NotificationPayload, settings: Settings
 ) -> IngestionResponse:
+    logger.info(
+        "Incoming notification: app=%r title=%r text=%r ts=%s",
+        payload.app,
+        payload.title,
+        payload.text,
+        payload.timestamp.isoformat(),
+    )
     occurred_utc = to_utc(payload.timestamp, settings.TIMEZONE)
 
     used_memory = False
@@ -74,8 +84,9 @@ async def process_notification(
         memory.hit_count += 1
         db.flush()
     else:
-        # 2. Call AI Parser (Groq llama-3.3-70b-versatile)
+        # 2. Call AI Parser (Groq)
         extraction = await parse_notification_with_ai(payload, settings)
+        logger.info("AI extraction result: %s", extraction.model_dump())
         used_ai = True
 
         if (
