@@ -1,0 +1,15 @@
+Options -Indexes
+RewriteEngine On
+
+# Block direct access to sensitive files and directories
+RewriteRule ^(config\.php|config\.example\.php|src/.*|data/.*)$ - [F,L,NC]
+RewriteRule \.(db|sqlite|sqlite3)$ - [F,L,NC]
+
+# Forward Authorization / X-API-Key headers
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# Route all requests to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
