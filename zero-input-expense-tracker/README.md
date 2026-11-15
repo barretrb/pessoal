@@ -88,10 +88,10 @@ Comandos disponíveis no chat do bot: `/saldo` ou `/resumo`.
 
 ```json
 {
-  "app": "{not_app_package}",
-  "title": "{not_title}",
-  "text": "{not_text}",
-  "timestamp": "{year}-{month_digit}-{dayofmonth}T{hour}:{minute}:{second}-03:00"
+  "app": "[not_app_package]",
+  "title": "[not_title]",
+  "text": "[notification]",
+  "timestamp": "[year]-[month_digit]-[dayofmonth]T[hour]:[minute]:[second]-03:00"
 }
 ```
 
