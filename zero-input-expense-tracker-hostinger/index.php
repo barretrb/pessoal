@@ -273,11 +273,22 @@ if ($path === '/login' && $method === 'GET') {
 }
 
 if ($path === '/login' && $method === 'POST') {
+    $ip = get_client_ip();
+    $retryAfter = check_login_rate_limit($pdo, $ip);
+    if ($retryAfter !== null) {
+        $mins = max(1, (int)ceil($retryAfter / 60));
+        http_response_code(429);
+        header('Retry-After: ' . $retryAfter);
+        render_login("Muitas tentativas incorretas. Tente novamente em {$mins} minuto(s).");
+    }
+
     $pass = (string)($_POST['password'] ?? '');
     if (!hash_equals((string)$config['dashboard_password'], $pass)) {
+        record_login_failure($pdo, $ip);
         http_response_code(401);
         render_login('Senha incorreta.');
     }
+    clear_login_failures($pdo, $ip);
     setcookie(SESSION_COOKIE_NAME, create_session_token($config), [
         'expires' => time() + SESSION_MAX_AGE,
         'path' => '/',

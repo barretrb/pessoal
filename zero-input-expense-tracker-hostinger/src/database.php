@@ -79,5 +79,12 @@ function init_schema(PDO $pdo): void
             hit_count INTEGER NOT NULL DEFAULT 1,
             updated_at TEXT NOT NULL
         );
+
+        CREATE TABLE IF NOT EXISTS login_attempts (
+            ip TEXT PRIMARY KEY,
+            attempts INTEGER NOT NULL DEFAULT 0,
+            locked_until INTEGER NOT NULL DEFAULT 0,
+            updated_at INTEGER NOT NULL DEFAULT 0
+        );
     ");
 }
