@@ -178,7 +178,11 @@ def build_system_prompt() -> str:
         "5. Provide top_categories with 3 most likely categories from the allowed list, "
         "starting with suggested_category.\n"
         "6. Set confidence < 0.85 if the merchant name is ambiguous (e.g., generic person name on PIX, "
-        "unrecognized store, or vague description)."
+        "unrecognized store, or vague description).\n"
+        "7. Clean up 'merchant' into a short, human-readable establishment name in Title Case "
+        "(e.g., 'Uber', 'iFood', 'Amazon', 'Supermercado Dia', 'Padaria Central'). Strip card prefixes/codes "
+        "like 'PG *', 'IFD*', 'MP *', 'MERCADOPAGO*', 'COMPRA APROVADA', 'CARTAO FINAL xxxx', CNPJ, 'LTDA', 'S.A.', "
+        "city names, and ugly gateway suffixes."
     )
 
 

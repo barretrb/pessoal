@@ -276,6 +276,48 @@ def add_plan_from_dashboard(
     return RedirectResponse(url="/dashboard", status_code=303)
 
 
+@router.post("/dashboard/plan/{plan_id}/update", include_in_schema=False)
+def update_plan_from_dashboard(
+    plan_id: int,
+    category: str = Form(...),
+    month: str | None = Form(default=None),
+    authenticated: bool = Depends(get_dashboard_session),
+    db: Session = Depends(get_db),
+):
+    if not authenticated:
+        return RedirectResponse(url="/login", status_code=303)
+    plan = db.query(AnnualPlan).filter(AnnualPlan.id == plan_id).first()
+    if plan is not None and category in DEFAULT_CATEGORIES:
+        plan.category = category
+        db.commit()
+    redirect_url = f"/dashboard?month={month}" if month else "/dashboard"
+    return RedirectResponse(url=redirect_url, status_code=303)
+
+
+@router.post("/dashboard/transaction/{tx_id}/update", include_in_schema=False)
+def update_transaction_from_dashboard(
+    tx_id: int,
+    merchant: str = Form(...),
+    category: str = Form(...),
+    redirect_to: str = Form(default="/dashboard"),
+    authenticated: bool = Depends(get_dashboard_session),
+    db: Session = Depends(get_db),
+):
+    if not authenticated:
+        return RedirectResponse(url="/login", status_code=303)
+    tx = db.query(Transaction).filter(Transaction.id == tx_id).first()
+    if tx is not None:
+        clean_merchant = merchant.strip()
+        if clean_merchant:
+            tx.merchant = clean_merchant
+            tx.merchant_normalized = normalize_text(clean_merchant) or tx.merchant_normalized
+        if category in DEFAULT_CATEGORIES:
+            tx.category = category
+        db.commit()
+    safe_redirect = redirect_to if redirect_to.startswith("/") else "/dashboard"
+    return RedirectResponse(url=safe_redirect, status_code=303)
+
+
 @router.post("/dashboard/plan/{plan_id}/delete", include_in_schema=False)
 def delete_plan_from_dashboard(
     plan_id: int,

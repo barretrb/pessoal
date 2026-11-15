@@ -15,57 +15,53 @@
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen">
-  <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex flex-wrap items-center justify-between gap-4">
-      <div class="flex items-center gap-6">
-        <div class="flex items-center gap-3">
-          <span class="text-2xl">💳</span>
-          <div>
-            <h1 class="text-lg font-bold tracking-tight">Zero-Input Finance</h1>
-            <p class="text-xs text-slate-400">Competência {{ summary.period }}</p>
-          </div>
-        </div>
-        <nav class="hidden md:flex items-center gap-2">
-          <a href="/dashboard?month={{ summary.period }}" class="px-3 py-1.5 rounded-lg bg-slate-800 text-xs font-semibold text-emerald-300">Visão Geral</a>
-          <a href="/transactions?year={{ summary.year }}&month={{ summary.month }}" class="px-3 py-1.5 rounded-lg hover:bg-slate-800 text-xs font-medium text-slate-300 transition-colors">Gastos Detalhados</a>
+  <!-- Compact Mobile-First Header (non-sticky so mobile screen stays free) -->
+  <header class="border-b border-slate-800 bg-slate-900/90">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 py-2 flex items-center justify-between gap-2">
+      <div class="flex items-center gap-2 min-w-0">
+        <span class="text-lg">💳</span>
+        <h1 class="text-sm sm:text-base font-bold tracking-tight truncate">FinControl</h1>
+        <nav class="hidden sm:flex items-center gap-1.5 ml-3">
+          <a href="/dashboard?month={{ summary.period }}" class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-semibold text-emerald-300">Visão Geral</a>
+          <a href="/transactions?year={{ summary.year }}&month={{ summary.month }}" class="px-2.5 py-1 rounded-md hover:bg-slate-800 text-xs font-medium text-slate-300">Gastos</a>
         </nav>
       </div>
 
-      <div class="flex flex-wrap items-center gap-2.5">
+      <div class="flex items-center gap-1.5 sm:gap-2">
         {% if summary.pending_count > 0 %}
-        <span class="inline-flex items-center gap-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 px-3 py-1 text-xs font-medium text-amber-300">
-          ⏳ {{ summary.pending_count }} pendente(s)
+        <span class="rounded-full bg-amber-500/15 border border-amber-500/30 px-2 py-0.5 text-[11px] font-medium text-amber-300" title="Pendentes no Telegram">
+          ⏳ {{ summary.pending_count }}
         </span>
         {% endif %}
 
-        <button
-          type="button"
-          onclick="openQuickModal('INCOME')"
-          class="rounded-lg bg-emerald-600 hover:bg-emerald-500 px-3 py-1.5 text-xs font-semibold text-white transition-colors"
-        >
-          + Receita / Lançamento
-        </button>
-
-        <form method="get" action="/dashboard" class="flex items-center gap-2">
+        <form method="get" action="/dashboard" class="flex items-center">
           <input
             type="month"
             name="month"
             value="{{ summary.period }}"
             onchange="this.form.submit()"
-            class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-1.5 text-xs text-slate-200 focus:border-emerald-500 focus:outline-none"
+            class="rounded-md bg-slate-950 border border-slate-700 px-2 py-1 text-xs text-slate-200 focus:border-emerald-500 focus:outline-none w-32 sm:w-auto"
           />
         </form>
 
+        <button
+          type="button"
+          onclick="openQuickModal('INCOME')"
+          class="rounded-md bg-emerald-600 hover:bg-emerald-500 px-2.5 py-1 text-xs font-semibold text-white whitespace-nowrap"
+        >
+          + <span class="hidden sm:inline">Receita / Gasto</span>
+        </button>
+
         <a
           href="/transactions?year={{ summary.year }}&month={{ summary.month }}"
-          class="md:hidden rounded-lg border border-slate-700 hover:bg-slate-800 px-3 py-1.5 text-xs font-medium text-slate-300"
+          class="sm:hidden rounded-md border border-slate-700 hover:bg-slate-800 px-2 py-1 text-xs text-slate-300"
         >
-          Detalhes
+          Lista
         </a>
 
         <a
           href="/logout"
-          class="rounded-lg border border-slate-700 hover:bg-slate-800 px-3 py-1.5 text-xs font-medium text-slate-300 transition-colors"
+          class="rounded-md border border-slate-700 hover:bg-slate-800 px-2 py-1 text-xs text-slate-300"
         >
           Sair
         </a>
@@ -73,80 +69,62 @@
     </div>
   </header>
 
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8 space-y-8">
-    <!-- 4 Differentiated KPI Cards -->
-    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      <div class="bg-slate-900 border border-emerald-500/30 rounded-xl p-5">
-        <div class="flex items-center justify-between">
-          <p class="text-xs font-medium uppercase tracking-wider text-emerald-300/80">Receita Total</p>
-          <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300">Entradas</span>
-        </div>
-        <p class="text-2xl font-bold text-emerald-400 mt-2">R$ {{ summary.total_income_brl }}</p>
-        <p class="text-[11px] text-slate-400 mt-1">Salário + receitas extras do mês</p>
+  <main class="max-w-7xl mx-auto px-3 sm:px-6 py-4 sm:py-6 space-y-5 sm:space-y-6">
+    <!-- 4 Differentiated KPI Cards (2x2 on mobile) -->
+    <section class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+      <div class="bg-slate-900 border border-emerald-500/30 rounded-xl p-3.5 sm:p-5">
+        <p class="text-[11px] sm:text-xs font-medium uppercase tracking-wider text-emerald-300/80">Receita Total</p>
+        <p class="text-lg sm:text-2xl font-bold text-emerald-400 mt-1">R$ {{ summary.total_income_brl }}</p>
+        <p class="hidden sm:block text-[11px] text-slate-400 mt-1">Salário + extras</p>
       </div>
 
-      <div class="bg-slate-900 border border-sky-500/30 rounded-xl p-5">
-        <div class="flex items-center justify-between">
-          <p class="text-xs font-medium uppercase tracking-wider text-sky-300/80">Custos Fixos &amp; Médias</p>
-          <span class="text-xs px-2 py-0.5 rounded bg-sky-500/15 text-sky-300">Provisionado</span>
-        </div>
-        <p class="text-2xl font-bold text-sky-400 mt-2">R$ {{ summary.fixed_expenses_brl }}</p>
-        <p class="text-[11px] text-slate-400 mt-1">Fixos + Enel/Naturgy (média/real)</p>
+      <div class="bg-slate-900 border border-sky-500/30 rounded-xl p-3.5 sm:p-5">
+        <p class="text-[11px] sm:text-xs font-medium uppercase tracking-wider text-sky-300/80">Fixos &amp; Médias</p>
+        <p class="text-lg sm:text-2xl font-bold text-sky-400 mt-1">R$ {{ summary.fixed_expenses_brl }}</p>
+        <p class="hidden sm:block text-[11px] text-slate-400 mt-1">Provisionado + consumo</p>
       </div>
 
-      <div class="bg-slate-900 border border-rose-500/30 rounded-xl p-5">
-        <div class="flex items-center justify-between">
-          <p class="text-xs font-medium uppercase tracking-wider text-rose-300/80">Gastos Variáveis (Cartão)</p>
-          <span class="text-xs px-2 py-0.5 rounded bg-rose-500/15 text-rose-300">Tempo Real</span>
-        </div>
-        <p class="text-2xl font-bold text-rose-400 mt-2">R$ {{ summary.variable_expenses_brl }}</p>
-        <p class="text-[11px] text-slate-400 mt-1">Compras de cartão, PIX e avulsos</p>
+      <div class="bg-slate-900 border border-rose-500/30 rounded-xl p-3.5 sm:p-5">
+        <p class="text-[11px] sm:text-xs font-medium uppercase tracking-wider text-rose-300/80">Variáveis (Cartão)</p>
+        <p class="text-lg sm:text-2xl font-bold text-rose-400 mt-1">R$ {{ summary.variable_expenses_brl }}</p>
+        <p class="hidden sm:block text-[11px] text-slate-400 mt-1">Cartão, PIX e avulsos</p>
       </div>
 
-      <div class="bg-slate-900 border {% if summary.saldo_livre >= 0 %}border-emerald-400/40{% else %}border-rose-500/40{% endif %} rounded-xl p-5">
-        <div class="flex items-center justify-between">
-          <p class="text-xs font-medium uppercase tracking-wider text-slate-300">Saldo Livre Atual</p>
-          <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300">Disponível</span>
-        </div>
-        <p class="text-2xl font-bold mt-2 {% if summary.saldo_livre >= 0 %}text-emerald-300{% else %}text-rose-400{% endif %}">
+      <div class="bg-slate-900 border {% if summary.saldo_livre >= 0 %}border-emerald-400/40{% else %}border-rose-500/40{% endif %} rounded-xl p-3.5 sm:p-5">
+        <p class="text-[11px] sm:text-xs font-medium uppercase tracking-wider text-slate-300">Saldo Livre Atual</p>
+        <p class="text-lg sm:text-2xl font-bold mt-1 {% if summary.saldo_livre >= 0 %}text-emerald-300{% else %}text-rose-400{% endif %}">
           R$ {{ summary.saldo_livre_brl }}
         </p>
-        <p class="text-[11px] text-slate-400 mt-1">Receita − (Fixos &amp; Médias + Variáveis)</p>
+        <p class="hidden sm:block text-[11px] text-slate-400 mt-1">Disponível no mês</p>
       </div>
     </section>
 
     <!-- Contas de Consumo (Média vs. Real) -->
-    <section class="bg-slate-900 border border-slate-800 rounded-xl p-6">
-      <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-        <div>
-          <h2 class="text-base font-semibold">Contas de Consumo (Média vs. Real)</h2>
-          <p class="text-xs text-slate-400">
-            Provisionadas no dia 1º pela média móvel dos últimos 3 meses confirmados. Ao informar o valor real, substitui a estimativa sem duplicar.
-          </p>
-        </div>
+    <section class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
+      <div class="mb-3">
+        <h2 class="text-sm sm:text-base font-semibold">Contas de Consumo (Média vs. Real)</h2>
+        <p class="text-xs text-slate-400">Ao confirmar o valor real, substitui a estimativa sem duplicar e atualiza a média móvel 3M.</p>
       </div>
 
       {% if summary.consumption_bills %}
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
         {% for bill in summary.consumption_bills %}
-        <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-4 flex flex-col justify-between gap-4">
-          <div class="flex items-start justify-between gap-3">
+        <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-3.5 sm:p-4 flex flex-col justify-between gap-3">
+          <div class="flex items-start justify-between gap-2">
             <div>
-              <div class="flex items-center gap-2">
+              <div class="flex flex-wrap items-center gap-1.5">
                 <h3 class="font-semibold text-sm text-slate-100">{{ bill.title }}</h3>
                 {% if bill.status == "CONFIRMED" %}
-                <span class="text-[11px] px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Real Confirmado</span>
+                <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Real</span>
                 {% elif bill.status == "ESTIMATED" %}
-                <span class="text-[11px] px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30">Provisionado (Estimado)</span>
-                {% else %}
-                <span class="text-[11px] px-2 py-0.5 rounded-full bg-slate-800 text-slate-400">Não provisionado</span>
+                <span class="text-[10px] px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30">Estimado</span>
                 {% endif %}
               </div>
-              <p class="text-xs text-slate-400 mt-1">Vencimento dia {{ bill.due_day }} · {{ bill.payment_method }}</p>
+              <p class="text-[11px] text-slate-400 mt-0.5">Dia {{ bill.due_day }} · {{ bill.payment_method }}</p>
             </div>
             <div class="text-right">
-              <p class="text-lg font-bold text-sky-300">R$ {{ bill.current_amount_brl }}</p>
-              <p class="text-[11px] text-slate-400">Média 3M: R$ {{ bill.rolling_avg_3m_brl }} ({{ bill.confirmed_months }}m)</p>
+              <p class="text-base sm:text-lg font-bold text-sky-300">R$ {{ bill.current_amount_brl }}</p>
+              <p class="text-[11px] text-slate-400">Média 3M: R$ {{ bill.rolling_avg_3m_brl }}</p>
             </div>
           </div>
 
@@ -161,14 +139,13 @@
               name="real_amount"
               value="{{ '%.2f'|format(bill.current_amount) }}"
               required
-              placeholder="Valor real (R$)"
-              class="w-36 rounded-lg bg-slate-900 border border-slate-700 px-2.5 py-1.5 text-xs text-slate-100 focus:border-emerald-500 focus:outline-none"
+              class="w-28 sm:w-36 rounded-lg bg-slate-900 border border-slate-700 px-2.5 py-1.5 text-xs text-slate-100 focus:border-emerald-500 focus:outline-none"
             />
             <button
               type="submit"
-              class="rounded-lg bg-sky-600 hover:bg-sky-500 px-3 py-1.5 text-xs font-semibold text-white transition-colors"
+              class="flex-1 sm:flex-none rounded-lg bg-sky-600 hover:bg-sky-500 px-3 py-1.5 text-xs font-semibold text-white transition-colors"
             >
-              {% if bill.status == "CONFIRMED" %}Corrigir Valor Real{% else %}Confirmar Valor Real{% endif %}
+              {% if bill.status == "CONFIRMED" %}Corrigir{% else %}Confirmar Real{% endif %}
             </button>
           </form>
           {% endif %}
@@ -176,94 +153,82 @@
         {% endfor %}
       </div>
       {% else %}
-      <p class="text-sm text-slate-400">Nenhuma conta de consumo com média móvel cadastrada.</p>
+      <p class="text-sm text-slate-400">Nenhuma conta de consumo cadastrada.</p>
       {% endif %}
     </section>
 
-    <!-- Monthly Charts -->
-    <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      <div class="lg:col-span-2 bg-slate-900 border border-slate-800 rounded-xl p-6">
-        <div class="flex items-center justify-between mb-4">
-          <div>
-            <h2 class="text-base font-semibold">Burn Rate Mensal</h2>
-            <p class="text-xs text-slate-400">Gasto acumulado vs. Limite planejado (R$ {{ summary.budget_limit_brl }})</p>
-          </div>
-        </div>
-        <div class="h-72">
-          <canvas id="burnRateChart"></canvas>
+    <!-- Distribuição por Categoria (Burn Rate removed) -->
+    <section class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+        <div>
+          <h2 class="text-sm sm:text-base font-semibold">Distribuição por Categoria</h2>
+          <p class="text-xs text-slate-400">Total de despesas no mês: R$ {{ summary.total_expenses_brl }}</p>
         </div>
       </div>
-
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
-        <h2 class="text-base font-semibold mb-1">Distribuição por Categoria</h2>
-        <p class="text-xs text-slate-400 mb-4">Total de despesas: R$ {{ summary.total_expenses_brl }}</p>
-        {% if summary.category_breakdown %}
+      {% if summary.category_breakdown %}
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         <div class="h-52 flex items-center justify-center">
           <canvas id="categoryChart"></canvas>
         </div>
-        <ul class="mt-4 space-y-1.5 text-xs">
+        <ul class="space-y-2 text-xs sm:text-sm">
           {% for item in summary.category_breakdown %}
-          <li class="flex items-center justify-between text-slate-300">
+          <li class="flex items-center justify-between text-slate-300 border-b border-slate-800/50 pb-1">
             <span>{{ item.category }}</span>
-            <span class="font-medium">R$ {{ item.total_brl }} ({{ item.percentage }}%)</span>
+            <span class="font-medium">R$ {{ item.total_brl }} <span class="text-slate-400">({{ item.percentage }}%)</span></span>
           </li>
           {% endfor %}
         </ul>
-        {% else %}
-        <div class="h-56 flex items-center justify-center text-sm text-slate-500">
-          Nenhuma despesa registrada neste mês.
-        </div>
-        {% endif %}
       </div>
+      {% else %}
+      <div class="py-8 text-center text-sm text-slate-500">
+        Nenhuma despesa registrada neste mês.
+      </div>
+      {% endif %}
     </section>
 
-    <!-- Visão Anual Mês a Mês -->
-    <section class="bg-slate-900 border border-slate-800 rounded-xl p-6 space-y-5">
-      <div class="flex flex-wrap items-center justify-between gap-3">
+    <!-- Visão do Ano por Mês (2 dimensões: Receita vs Despesa) -->
+    <section class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6 space-y-4">
+      <div class="flex flex-wrap items-center justify-between gap-2">
         <div>
-          <h2 class="text-base font-semibold">Visão do Ano por Mês ({{ yearly.year }})</h2>
-          <p class="text-xs text-slate-400">Comparativo mensal de Receitas, Fixos &amp; Médias, Variáveis e Saldo Livre. Clique no cabeçalho para ordenar.</p>
+          <h2 class="text-sm sm:text-base font-semibold">Visão do Ano por Mês ({{ yearly.year }})</h2>
+          <p class="text-xs text-slate-400">Receita vs. Despesa total por mês.</p>
         </div>
-        <div class="text-xs text-slate-300 bg-slate-950 border border-slate-800 rounded-lg px-3 py-1.5">
-          Saldo Anual Acumulado:
+        <div class="text-xs text-slate-300 bg-slate-950 border border-slate-800 rounded-lg px-3 py-1">
+          Saldo Anual:
           <strong class="{% if yearly.totals.saldo_livre >= 0 %}text-emerald-400{% else %}text-rose-400{% endif %}">
             R$ {{ yearly.totals.saldo_livre_brl }}
           </strong>
         </div>
       </div>
 
-      <div class="h-64">
+      <div class="h-56 sm:h-64">
         <canvas id="yearlyChart"></canvas>
       </div>
 
       <div class="overflow-x-auto">
-        <table class="w-full text-sm text-left" data-sortable>
-          <thead class="text-xs uppercase text-slate-400 border-b border-slate-800">
+        <table class="w-full text-xs sm:text-sm text-left" data-sortable>
+          <thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800">
             <tr>
-              <th class="py-2.5 pr-4" data-sort="none" data-type="num">Mês</th>
-              <th class="py-2.5 pr-4 text-right" data-sort="none" data-type="num">Receita</th>
-              <th class="py-2.5 pr-4 text-right" data-sort="none" data-type="num">Fixos &amp; Médias</th>
-              <th class="py-2.5 pr-4 text-right" data-sort="none" data-type="num">Variáveis</th>
-              <th class="py-2.5 pr-4 text-right" data-sort="none" data-type="num">Total Saídas</th>
-              <th class="py-2.5 pr-4 text-right" data-sort="none" data-type="num">Saldo Livre</th>
-              <th class="py-2.5 text-right">Ações</th>
+              <th class="py-2 pr-3" data-sort="none" data-type="num">Mês</th>
+              <th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Receita</th>
+              <th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Despesa</th>
+              <th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Saldo</th>
+              <th class="py-2 text-right">Ações</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-800/70">
             {% for m in yearly.months %}
             {% set m_period = "%04d-%02d"|format(yearly.year, m.month) %}
             <tr class="hover:bg-slate-800/30 {% if m.month == summary.month %}bg-slate-800/40{% endif %}">
-              <td class="py-2.5 pr-4 font-medium" data-value="{{ m.month }}">{{ m.label }}/{{ yearly.year }}</td>
-              <td class="py-2.5 pr-4 text-right text-emerald-400" data-value="{{ m.income }}">R$ {{ m.income_brl }}</td>
-              <td class="py-2.5 pr-4 text-right text-sky-400" data-value="{{ m.fixed_expenses }}">R$ {{ m.fixed_expenses_brl }}</td>
-              <td class="py-2.5 pr-4 text-right text-rose-400" data-value="{{ m.variable_expenses }}">R$ {{ m.variable_expenses_brl }}</td>
-              <td class="py-2.5 pr-4 text-right text-slate-200" data-value="{{ m.total_expenses }}">R$ {{ m.total_expenses_brl }}</td>
-              <td class="py-2.5 pr-4 text-right font-semibold {% if m.saldo_livre >= 0 %}text-emerald-300{% else %}text-rose-400{% endif %}" data-value="{{ m.saldo_livre }}">
+              <td class="py-2 pr-3 font-medium whitespace-nowrap" data-value="{{ m.month }}">{{ m.label }}/{{ yearly.year }}</td>
+              <td class="py-2 pr-3 text-right text-emerald-400 whitespace-nowrap" data-value="{{ m.income }}">R$ {{ m.income_brl }}</td>
+              <td class="py-2 pr-3 text-right text-rose-400 whitespace-nowrap" data-value="{{ m.total_expenses }}">R$ {{ m.total_expenses_brl }}</td>
+              <td class="py-2 pr-3 text-right font-semibold whitespace-nowrap {% if m.saldo_livre >= 0 %}text-emerald-300{% else %}text-rose-400{% endif %}" data-value="{{ m.saldo_livre }}">
                 R$ {{ m.saldo_livre_brl }}
               </td>
-              <td class="py-2.5 text-right whitespace-nowrap">
+              <td class="py-2 text-right whitespace-nowrap">
                 <a href="/dashboard?month={{ m_period }}" class="text-xs text-sky-400 hover:text-sky-300 mr-2">Abrir</a>
-                <a href="/transactions?year={{ yearly.year }}&month={{ m.month }}" class="text-xs text-slate-400 hover:text-slate-200">Gastos</a>
+                <a href="/transactions?year={{ yearly.year }}&month={{ m.month }}" class="text-xs text-slate-400 hover:text-slate-200">Lista</a>
               </td>
             </tr>
             {% endfor %}
@@ -272,79 +237,85 @@
       </div>
     </section>
 
-    <!-- Annual Plan Section -->
-    <section class="bg-slate-900 border border-slate-800 rounded-xl p-6 space-y-6">
+    <!-- Annual Plan Section (with inline Category editing!) -->
+    <section class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6 space-y-5">
       <div>
-        <h2 class="text-base font-semibold">Planejamento Anual (Receitas, Custos Fixos &amp; Médias)</h2>
-        <p class="text-xs text-slate-400">Lançados automaticamente no início de cada mês. Clique nos títulos para ordenar.</p>
+        <h2 class="text-sm sm:text-base font-semibold">Planejamento Anual (Receitas, Fixos &amp; Médias)</h2>
+        <p class="text-xs text-slate-400">Altere a categoria diretamente na lista abaixo ou adicione um novo item.</p>
       </div>
 
-      <form method="post" action="/dashboard/plan" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-8 gap-3">
-        <input type="text" name="title" placeholder="Descrição (ex: Aluguel)" required class="lg:col-span-2 rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm focus:border-emerald-500 focus:outline-none" />
-        <select name="type" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm focus:border-emerald-500 focus:outline-none">
+      <form method="post" action="/dashboard/plan" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-8 gap-2.5">
+        <input type="text" name="title" placeholder="Descrição (ex: Aluguel)" required class="lg:col-span-2 rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
+        <select name="type" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none">
           <option value="EXPENSE">Despesa</option>
           <option value="INCOME">Receita</option>
         </select>
-        <input type="number" step="0.01" min="0.01" name="amount" placeholder="Valor (R$)" required class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm focus:border-emerald-500 focus:outline-none" />
-        <select name="category" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm focus:border-emerald-500 focus:outline-none">
+        <input type="number" step="0.01" min="0.01" name="amount" placeholder="Valor (R$)" required class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
+        <select name="category" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none">
           {% for cat in categories %}
           <option value="{{ cat }}">{{ cat }}</option>
           {% endfor %}
         </select>
-        <select name="plan_type" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm focus:border-emerald-500 focus:outline-none">
+        <select name="plan_type" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none">
           <option value="FIXED">Fixo</option>
           <option value="ROLLING_AVERAGE">Média Móvel</option>
         </select>
         <div class="flex gap-2">
-          <select name="payment_method" class="w-1/2 rounded-lg bg-slate-950 border border-slate-700 px-2 py-2 text-sm focus:border-emerald-500 focus:outline-none">
+          <select name="payment_method" class="w-1/2 rounded-lg bg-slate-950 border border-slate-700 px-2 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none">
             <option value="PIX">PIX</option>
             <option value="Cartão">Cartão</option>
           </select>
-          <input type="number" min="1" max="31" name="day_of_month" placeholder="Dia" required class="w-1/2 rounded-lg bg-slate-950 border border-slate-700 px-2 py-2 text-sm focus:border-emerald-500 focus:outline-none" />
+          <input type="number" min="1" max="31" name="day_of_month" placeholder="Dia" required class="w-1/2 rounded-lg bg-slate-950 border border-slate-700 px-2 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
         </div>
-        <button type="submit" class="rounded-lg bg-emerald-600 hover:bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition-colors">
+        <button type="submit" class="rounded-lg bg-emerald-600 hover:bg-emerald-500 px-4 py-2 text-xs sm:text-sm font-semibold text-white transition-colors">
           Adicionar
         </button>
       </form>
 
       {% if plans %}
       <div class="overflow-x-auto">
-        <table class="w-full text-sm text-left" data-sortable>
-          <thead class="text-xs uppercase text-slate-400 border-b border-slate-800">
+        <table class="w-full text-xs sm:text-sm text-left" data-sortable>
+          <thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800">
             <tr>
-              <th class="py-2 pr-4" data-sort="none" data-type="num">Dia</th>
-              <th class="py-2 pr-4" data-sort="none" data-type="text">Descrição</th>
-              <th class="py-2 pr-4" data-sort="none" data-type="text">Tipo</th>
-              <th class="py-2 pr-4" data-sort="none" data-type="text">Modelo</th>
-              <th class="py-2 pr-4" data-sort="none" data-type="text">Método</th>
-              <th class="py-2 pr-4" data-sort="none" data-type="text">Categoria</th>
-              <th class="py-2 pr-4 text-right" data-sort="none" data-type="num">Valor</th>
+              <th class="py-2 pr-3" data-sort="none" data-type="num">Dia</th>
+              <th class="py-2 pr-3" data-sort="none" data-type="text">Descrição</th>
+              <th class="py-2 pr-3" data-sort="none" data-type="text">Tipo</th>
+              <th class="py-2 pr-3" data-sort="none" data-type="text">Categoria</th>
+              <th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Valor</th>
               <th class="py-2 text-right">Ação</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-800/70">
             {% for plan in plans %}
             <tr class="hover:bg-slate-800/30">
-              <td class="py-2.5 pr-4 text-slate-300" data-value="{{ plan.day_of_month }}">Dia {{ "%02d"|format(plan.day_of_month) }}</td>
-              <td class="py-2.5 pr-4 font-medium">{{ plan.title }}</td>
-              <td class="py-2.5 pr-4">
+              <td class="py-2 pr-3 text-slate-300 whitespace-nowrap" data-value="{{ plan.day_of_month }}">Dia {{ "%02d"|format(plan.day_of_month) }}</td>
+              <td class="py-2 pr-3 font-medium">
+                {{ plan.title }}
+                <span class="block text-[10px] text-slate-400">{{ "Média Móvel" if plan.plan_type == "ROLLING_AVERAGE" else "Fixo" }} · {{ plan.payment_method }}</span>
+              </td>
+              <td class="py-2 pr-3 whitespace-nowrap">
                 {% if plan.type == "INCOME" %}
-                <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300">Receita</span>
+                <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300">Receita</span>
                 {% else %}
-                <span class="text-xs px-2 py-0.5 rounded bg-rose-500/15 text-rose-300">Despesa</span>
+                <span class="text-[11px] px-2 py-0.5 rounded bg-rose-500/15 text-rose-300">Despesa</span>
                 {% endif %}
               </td>
-              <td class="py-2.5 pr-4 text-xs text-slate-300">
-                {% if plan.plan_type == "ROLLING_AVERAGE" %}
-                <span class="px-2 py-0.5 rounded bg-sky-500/15 text-sky-300">Média Móvel</span>
-                {% else %}
-                <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">Fixo</span>
-                {% endif %}
+              <td class="py-2 pr-3" data-value="{{ plan.category }}">
+                <form method="post" action="/dashboard/plan/{{ plan.id }}/update" class="inline">
+                  <input type="hidden" name="month" value="{{ summary.period }}" />
+                  <select
+                    name="category"
+                    onchange="this.form.submit()"
+                    class="rounded-md bg-slate-950 border border-slate-700 px-2 py-1 text-xs text-slate-200 focus:border-emerald-500 focus:outline-none"
+                  >
+                    {% for cat in categories %}
+                    <option value="{{ cat }}" {% if plan.category == cat %}selected{% endif %}>{{ cat }}</option>
+                    {% endfor %}
+                  </select>
+                </form>
               </td>
-              <td class="py-2.5 pr-4 text-xs text-slate-400">{{ plan.payment_method }}</td>
-              <td class="py-2.5 pr-4 text-slate-300">{{ plan.category }}</td>
-              <td class="py-2.5 pr-4 text-right font-medium" data-value="{{ plan.amount }}">R$ {{ "%.2f"|format(plan.amount)|replace(".", ",") }}</td>
-              <td class="py-2.5 text-right">
+              <td class="py-2 pr-3 text-right font-medium whitespace-nowrap" data-value="{{ plan.amount }}">R$ {{ "%.2f"|format(plan.amount)|replace(".", ",") }}</td>
+              <td class="py-2 text-right whitespace-nowrap">
                 <form method="post" action="/dashboard/plan/{{ plan.id }}/delete" class="inline">
                   <button type="submit" class="text-xs text-rose-400 hover:text-rose-300">Remover</button>
                 </form>
@@ -359,12 +330,12 @@
       {% endif %}
     </section>
 
-    <!-- Recent Transactions -->
-    <section class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+    <!-- Recent Transactions (with Edit Title & Category button!) -->
+    <section class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
       <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
         <div>
-          <h2 class="text-base font-semibold">Transações Recentes ({{ summary.period }})</h2>
-          <p class="text-xs text-slate-400">Clique no cabeçalho das colunas para ordenar.</p>
+          <h2 class="text-sm sm:text-base font-semibold">Transações Recentes ({{ summary.period }})</h2>
+          <p class="text-xs text-slate-400">Clique em "Editar" para corrigir título ou categoria.</p>
         </div>
         <a href="/transactions?year={{ summary.year }}&month={{ summary.month }}" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300">
           Ver todas com filtros →
@@ -372,44 +343,56 @@
       </div>
       {% if summary.transactions %}
       <div class="overflow-x-auto">
-        <table class="w-full text-sm text-left" data-sortable>
-          <thead class="text-xs uppercase text-slate-400 border-b border-slate-800">
+        <table class="w-full text-xs sm:text-sm text-left" data-sortable>
+          <thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800">
             <tr>
-              <th class="py-2 pr-4" data-sort="none" data-type="date">Data</th>
-              <th class="py-2 pr-4" data-sort="none" data-type="text">Estabelecimento / Conta</th>
-              <th class="py-2 pr-4" data-sort="none" data-type="text">Categoria</th>
-              <th class="py-2 pr-4" data-sort="none" data-type="text">Origem</th>
-              <th class="py-2 pr-4" data-sort="none" data-type="text">Status</th>
-              <th class="py-2 text-right" data-sort="none" data-type="num">Valor</th>
+              <th class="py-2 pr-3" data-sort="none" data-type="date">Data</th>
+              <th class="py-2 pr-3" data-sort="none" data-type="text">Estabelecimento / Conta</th>
+              <th class="py-2 pr-3" data-sort="none" data-type="text">Categoria</th>
+              <th class="py-2 pr-3" data-sort="none" data-type="text">Status</th>
+              <th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Valor</th>
+              <th class="py-2 text-right">Ação</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-800/70">
             {% for tx in summary.transactions %}
             <tr class="hover:bg-slate-800/30">
-              <td class="py-2.5 pr-4 text-slate-400 text-xs whitespace-nowrap" data-value="{{ tx.occurred_at.isoformat() }}">
+              <td class="py-2 pr-3 text-slate-400 text-xs whitespace-nowrap" data-value="{{ tx.occurred_at.isoformat() }}">
                 {{ tx.occurred_at.strftime("%d/%m %H:%M") }}
               </td>
-              <td class="py-2.5 pr-4 font-medium">
+              <td class="py-2 pr-3 font-medium">
                 {{ tx.merchant }}
                 {% if tx.installments > 1 %}
                 <span class="text-xs text-slate-400">({{ tx.installments }}x)</span>
                 {% endif %}
+                <span class="block text-[10px] text-slate-500">{{ tx.source }}</span>
               </td>
-              <td class="py-2.5 pr-4 text-slate-300">{{ tx.category }}</td>
-              <td class="py-2.5 pr-4 text-xs text-slate-400">{{ tx.source }}</td>
-              <td class="py-2.5 pr-4">
+              <td class="py-2 pr-3 text-slate-300 whitespace-nowrap">{{ tx.category }}</td>
+              <td class="py-2 pr-3 whitespace-nowrap">
                 {% if tx.status == "CONFIRMED" %}
-                <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300">Confirmado</span>
+                <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300">Confirmado</span>
                 {% elif tx.status == "ESTIMATED" %}
-                <span class="text-xs px-2 py-0.5 rounded bg-sky-500/15 text-sky-300">Estimado</span>
+                <span class="text-[11px] px-2 py-0.5 rounded bg-sky-500/15 text-sky-300">Estimado</span>
                 {% elif tx.status == "PENDING" %}
-                <span class="text-xs px-2 py-0.5 rounded bg-amber-500/15 text-amber-300">Pendente</span>
+                <span class="text-[11px] px-2 py-0.5 rounded bg-amber-500/15 text-amber-300">Pendente</span>
                 {% else %}
-                <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-slate-300">{{ tx.status }}</span>
+                <span class="text-[11px] px-2 py-0.5 rounded bg-slate-700 text-slate-300">{{ tx.status }}</span>
                 {% endif %}
               </td>
-              <td class="py-2.5 text-right font-medium {% if tx.type == 'INCOME' %}text-emerald-400{% else %}text-rose-400{% endif %}" data-value="{{ tx.amount }}">
+              <td class="py-2 pr-3 text-right font-medium whitespace-nowrap {% if tx.type == 'INCOME' %}text-emerald-400{% else %}text-rose-400{% endif %}" data-value="{{ tx.amount }}">
                 {% if tx.type == "INCOME" %}+{% else %}-{% endif %} R$ {{ "%.2f"|format(tx.amount)|replace(".", ",") }}
+              </td>
+              <td class="py-2 text-right whitespace-nowrap">
+                <button
+                  type="button"
+                  data-id="{{ tx.id }}"
+                  data-merchant="{{ tx.merchant }}"
+                  data-category="{{ tx.category }}"
+                  onclick="openEditTxModal(this)"
+                  class="text-xs text-sky-400 hover:text-sky-300"
+                >
+                  Editar
+                </button>
               </td>
             </tr>
             {% endfor %}
@@ -424,7 +407,7 @@
 
   <!-- Quick Modal: Extra Income / Manual Transaction -->
   <div id="quickModal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-md p-6 space-y-4">
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-md p-5 space-y-4">
       <div class="flex items-center justify-between">
         <h3 class="text-base font-bold">Lançamento Rápido</h3>
         <button type="button" onclick="closeQuickModal()" class="text-slate-400 hover:text-slate-200 text-lg">&times;</button>
@@ -464,6 +447,35 @@
     </div>
   </div>
 
+  <!-- Edit Transaction Modal -->
+  <div id="editTxModal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-md p-5 space-y-4">
+      <div class="flex items-center justify-between">
+        <h3 class="text-base font-bold">Editar Despesa / Lançamento</h3>
+        <button type="button" onclick="closeEditTxModal()" class="text-slate-400 hover:text-slate-200 text-lg">&times;</button>
+      </div>
+      <form id="editTxForm" method="post" action="/dashboard/transaction/0/update" class="space-y-3">
+        <input type="hidden" name="redirect_to" value="/dashboard?month={{ summary.period }}" />
+        <div>
+          <label class="block text-xs text-slate-400 mb-1">Título / Estabelecimento</label>
+          <input type="text" name="merchant" id="editTxMerchant" required class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm" />
+        </div>
+        <div>
+          <label class="block text-xs text-slate-400 mb-1">Categoria</label>
+          <select name="category" id="editTxCategory" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm">
+            {% for cat in categories %}
+            <option value="{{ cat }}">{{ cat }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeEditTxModal()" class="rounded-lg border border-slate-700 px-4 py-2 text-xs text-slate-300">Cancelar</button>
+          <button type="submit" class="rounded-lg bg-sky-600 hover:bg-sky-500 px-4 py-2 text-xs font-semibold text-white">Salvar Alterações</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script>
     function openQuickModal(type) {
       document.getElementById('quickTxType').value = type || 'INCOME';
@@ -472,8 +484,17 @@
     function closeQuickModal() {
       document.getElementById('quickModal').classList.add('hidden');
     }
+    function openEditTxModal(btn) {
+      const id = btn.getAttribute('data-id');
+      document.getElementById('editTxForm').action = '/dashboard/transaction/' + id + '/update';
+      document.getElementById('editTxMerchant').value = btn.getAttribute('data-merchant') || '';
+      document.getElementById('editTxCategory').value = btn.getAttribute('data-category') || 'Outros';
+      document.getElementById('editTxModal').classList.remove('hidden');
+    }
+    function closeEditTxModal() {
+      document.getElementById('editTxModal').classList.add('hidden');
+    }
 
-    // Generic Sortable Tables
     function makeTableSortable(table) {
       const headers = table.querySelectorAll('thead th[data-sort]');
       headers.forEach((th, colIdx) => {
@@ -512,44 +533,6 @@
     }
     document.querySelectorAll('table[data-sortable]').forEach(makeTableSortable);
 
-    const burnData = {{ summary.burn_rate | tojson }};
-    const burnCtx = document.getElementById('burnRateChart').getContext('2d');
-    new Chart(burnCtx, {
-      type: 'line',
-      data: {
-        labels: burnData.labels,
-        datasets: [
-          {
-            label: 'Gasto Real Acumulado (R$)',
-            data: burnData.actual,
-            borderColor: '#f43f5e',
-            backgroundColor: 'rgba(244, 63, 94, 0.15)',
-            fill: true,
-            tension: 0.25,
-            borderWidth: 2.5,
-          },
-          {
-            label: 'Meta Linear (R$)',
-            data: burnData.planned,
-            borderColor: '#38bdf8',
-            borderDash: [6, 6],
-            fill: false,
-            tension: 0,
-            borderWidth: 2,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: { legend: { labels: { color: '#cbd5e1' } } },
-        scales: {
-          x: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(148,163,184,0.1)' } },
-          y: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(148,163,184,0.1)' } },
-        },
-      },
-    });
-
     const catBreakdown = {{ summary.category_breakdown | tojson }};
     if (catBreakdown.length > 0) {
       const catCtx = document.getElementById('categoryChart').getContext('2d');
@@ -575,6 +558,7 @@
       });
     }
 
+    // Yearly Chart: 2 dimensions only (Receita & Despesa)
     const yearlyMonths = {{ yearly.months | tojson }};
     const yearlyCtx = document.getElementById('yearlyChart').getContext('2d');
     new Chart(yearlyCtx, {
@@ -585,17 +569,12 @@
           {
             label: 'Receita',
             data: yearlyMonths.map(m => m.income),
-            backgroundColor: 'rgba(16, 185, 129, 0.75)',
+            backgroundColor: 'rgba(16, 185, 129, 0.8)',
           },
           {
-            label: 'Fixos & Médias',
-            data: yearlyMonths.map(m => m.fixed_expenses),
-            backgroundColor: 'rgba(56, 189, 248, 0.75)',
-          },
-          {
-            label: 'Variáveis (Cartão)',
-            data: yearlyMonths.map(m => m.variable_expenses),
-            backgroundColor: 'rgba(244, 63, 94, 0.75)',
+            label: 'Despesa',
+            data: yearlyMonths.map(m => m.total_expenses),
+            backgroundColor: 'rgba(244, 63, 94, 0.8)',
           },
         ],
       },

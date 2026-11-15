@@ -511,7 +511,7 @@ def test_dashboard_auth_and_render(client):
 
     dash = client.get("/dashboard")
     assert dash.status_code == 200
-    assert "Burn Rate Mensal" in dash.text
+    assert "Distribuição por Categoria" in dash.text
     assert "Saldo Livre Atual" in dash.text
     assert "Contas de Consumo (Média vs. Real)" in dash.text
     assert "Visão do Ano por Mês" in dash.text
@@ -712,3 +712,37 @@ def test_transactions_page_filters(client, db_session):
     assert resp.status_code == 200
     assert "Inglês" in resp.text
     assert "Financiamento Apto" not in resp.text
+
+
+def test_edit_plan_category_and_transaction_title(client, db_session):
+    from datetime import date
+    from app.services.planner import ensure_month_provision
+    from app.services.seed_data import seed_annual_plan
+
+    seed_annual_plan(db_session)
+    ensure_month_provision(db_session, get_test_settings(), date(2026, 11, 1))
+
+    client.post("/login", data={"password": TEST_DASHBOARD_PASS}, follow_redirects=False)
+
+    ingles_plan = db_session.query(AnnualPlan).filter(AnnualPlan.title == "Inglês").first()
+    assert ingles_plan is not None
+
+    r_plan = client.post(
+        f"/dashboard/plan/{ingles_plan.id}/update",
+        data={"category": "Software", "month": "2026-11"},
+        follow_redirects=False,
+    )
+    assert r_plan.status_code == 303
+    db_session.refresh(ingles_plan)
+    assert ingles_plan.category == "Software"
+
+    tx = db_session.query(Transaction).filter(Transaction.annual_plan_id == ingles_plan.id).first()
+    r_tx = client.post(
+        f"/dashboard/transaction/{tx.id}/update",
+        data={"merchant": "Curso Inglês VIP", "category": "Educação", "redirect_to": "/dashboard?month=2026-11"},
+        follow_redirects=False,
+    )
+    assert r_tx.status_code == 303
+    db_session.refresh(tx)
+    assert tx.merchant == "Curso Inglês VIP"
+    assert tx.category == "Educação"

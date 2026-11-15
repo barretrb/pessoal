@@ -496,6 +496,45 @@ if ($path === '/dashboard/plan' && $method === 'POST') {
     exit;
 }
 
+if ($method === 'POST' && preg_match('#^/dashboard/plan/(\d+)/update$#', $path, $m)) {
+    if (!is_dashboard_authenticated($config)) {
+        header('Location: /login', true, 303);
+        exit;
+    }
+    $cat = (string)($_POST['category'] ?? '');
+    $monthParam = trim((string)($_POST['month'] ?? ''));
+    if ($cat !== '' && in_array($cat, $config['categories'], true)) {
+        $pdo->prepare('UPDATE annual_plan SET category = ?, updated_at = ? WHERE id = ?')
+            ->execute([$cat, gmdate('Y-m-d\TH:i:s\Z'), (int)$m[1]]);
+    }
+    $redir = $monthParam !== '' ? '/dashboard?month=' . urlencode($monthParam) : '/dashboard';
+    header("Location: {$redir}", true, 303);
+    exit;
+}
+
+if ($method === 'POST' && preg_match('#^/dashboard/transaction/(\d+)/update$#', $path, $m)) {
+    if (!is_dashboard_authenticated($config)) {
+        header('Location: /login', true, 303);
+        exit;
+    }
+    $merchant = trim((string)($_POST['merchant'] ?? ''));
+    $cat = (string)($_POST['category'] ?? '');
+    $redirectTo = (string)($_POST['redirect_to'] ?? '/dashboard');
+    if ($merchant !== '') {
+        $norm = normalize_text($merchant) ?: 'estabelecimento';
+        if ($cat !== '' && in_array($cat, $config['categories'], true)) {
+            $pdo->prepare('UPDATE transactions SET merchant = ?, merchant_normalized = ?, category = ? WHERE id = ?')
+                ->execute([$merchant, $norm, $cat, (int)$m[1]]);
+        } else {
+            $pdo->prepare('UPDATE transactions SET merchant = ?, merchant_normalized = ? WHERE id = ?')
+                ->execute([$merchant, $norm, (int)$m[1]]);
+        }
+    }
+    $safeRedir = str_starts_with($redirectTo, '/') ? $redirectTo : '/dashboard';
+    header("Location: {$safeRedir}", true, 303);
+    exit;
+}
+
 if ($method === 'POST' && preg_match('#^/dashboard/plan/(\d+)/delete$#', $path, $m)) {
     if (!is_dashboard_authenticated($config)) {
         header('Location: /login', true, 303);
