@@ -14,6 +14,11 @@ from app.services.ai_parser import (
     try_deterministic_memory_match,
 )
 from app.services.analytics import compute_monthly_summary
+from app.services.planner import (
+    find_matching_fixed_card_tx,
+    find_matching_rolling_tx,
+    reconcile_transaction_amount,
+)
 from app.services.telegram_bot import (
     build_top_3_categories,
     send_confirmed_notification,
@@ -111,6 +116,52 @@ async def process_notification(
             db.flush()
 
     amount_dec = Decimal(f"{extraction.amount:.2f}")
+
+    # 2b. Phase 2: Reconcile ROLLING_AVERAGE or deduplicate FIXED_PLAN Cartão in current month
+    try:
+        local_dt = occurred_utc.astimezone(ZoneInfo(settings.TIMEZONE))
+    except Exception:
+        local_dt = occurred_utc
+    period = local_dt.strftime("%Y-%m")
+    match_context = f"{extraction.merchant} {payload.title} {payload.text}".strip()
+
+    if extraction.type == "EXPENSE":
+        rolling_tx = find_matching_rolling_tx(db, match_context, period)
+        if rolling_tx is not None:
+            reconcile_transaction_amount(db, rolling_tx.id, amount_dec)
+            return IngestionResponse(
+                status="CONFIRMED",
+                transaction_id=rolling_tx.id,
+                type=rolling_tx.type,
+                amount=amount_dec,
+                merchant=rolling_tx.merchant,
+                category=rolling_tx.category,
+                confidence=1.0,
+                used_memory=used_memory,
+                used_ai=used_ai,
+                message="Reconciled rolling-average bill (ESTIMATED -> CONFIRMED) without duplication.",
+            )
+
+        fixed_card_tx = find_matching_fixed_card_tx(db, amount_dec, match_context, period)
+        if fixed_card_tx is not None:
+            fixed_card_tx.amount = amount_dec
+            fixed_card_tx.status = "CONFIRMED"
+            fixed_card_tx.app_name = payload.app
+            fixed_card_tx.raw_title = payload.title
+            fixed_card_tx.raw_text = payload.text
+            db.commit()
+            return IngestionResponse(
+                status="DUPLICATE",
+                transaction_id=fixed_card_tx.id,
+                type=fixed_card_tx.type,
+                amount=amount_dec,
+                merchant=fixed_card_tx.merchant,
+                category=fixed_card_tx.category,
+                confidence=1.0,
+                used_memory=used_memory,
+                used_ai=used_ai,
+                message="Matched FIXED_PLAN card item within +/- R$ 1.00; confirmed without duplication.",
+            )
 
     # 3. Deduplication: same amount & type within DEDUP_WINDOW_MINUTES
     window = timedelta(minutes=settings.DEDUP_WINDOW_MINUTES)

@@ -33,8 +33,10 @@ function init_schema(PDO $pdo): void
     $pdo->exec("
         CREATE TABLE IF NOT EXISTS annual_plan (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            title TEXT NOT NULL,
+            title TEXT NOT NULL UNIQUE,
             type TEXT NOT NULL,
+            plan_type TEXT NOT NULL DEFAULT 'FIXED',
+            payment_method TEXT NOT NULL DEFAULT 'PIX',
             amount REAL NOT NULL,
             category TEXT NOT NULL,
             day_of_month INTEGER NOT NULL,
@@ -87,4 +89,15 @@ function init_schema(PDO $pdo): void
             updated_at INTEGER NOT NULL DEFAULT 0
         );
     ");
+
+    $cols = [];
+    foreach ($pdo->query('PRAGMA table_info(annual_plan)')->fetchAll() as $col) {
+        $cols[$col['name']] = true;
+    }
+    if (!isset($cols['plan_type'])) {
+        $pdo->exec("ALTER TABLE annual_plan ADD COLUMN plan_type TEXT NOT NULL DEFAULT 'FIXED'");
+    }
+    if (!isset($cols['payment_method'])) {
+        $pdo->exec("ALTER TABLE annual_plan ADD COLUMN payment_method TEXT NOT NULL DEFAULT 'PIX'");
+    }
 }

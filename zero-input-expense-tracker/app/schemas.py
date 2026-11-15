@@ -56,6 +56,8 @@ class IngestionResponse(BaseModel):
 class AnnualPlanCreate(BaseModel):
     title: str = Field(..., min_length=1, max_length=150)
     type: Literal["INCOME", "EXPENSE"]
+    plan_type: Literal["FIXED", "ROLLING_AVERAGE"] = "FIXED"
+    payment_method: str = Field(default="PIX", max_length=24)
     amount: Decimal = Field(..., gt=0)
     category: str = Field(..., min_length=1, max_length=64)
     day_of_month: int = Field(..., ge=1, le=31)
@@ -67,6 +69,8 @@ class AnnualPlanCreate(BaseModel):
 class AnnualPlanUpdate(BaseModel):
     title: str | None = Field(default=None, min_length=1, max_length=150)
     type: Literal["INCOME", "EXPENSE"] | None = None
+    plan_type: Literal["FIXED", "ROLLING_AVERAGE"] | None = None
+    payment_method: str | None = Field(default=None, max_length=24)
     amount: Decimal | None = Field(default=None, gt=0)
     category: str | None = Field(default=None, min_length=1, max_length=64)
     day_of_month: int | None = Field(default=None, ge=1, le=31)
@@ -79,6 +83,8 @@ class AnnualPlanOut(BaseModel):
     id: int
     title: str
     type: str
+    plan_type: str
+    payment_method: str
     amount: Decimal
     category: str
     day_of_month: int
@@ -95,3 +101,36 @@ class CronExecutionResponse(BaseModel):
     created_count: int
     skipped_count: int
     created_ids: list[int]
+
+
+class ReconcileRequest(BaseModel):
+    amount: Decimal = Field(..., gt=0)
+
+
+class ReconcileResponse(BaseModel):
+    transaction_id: int
+    annual_plan_id: int | None = None
+    amount: Decimal
+    status: str
+    new_rolling_average: Decimal | None = None
+
+
+class ManualTransactionCreate(BaseModel):
+    merchant: str = Field(..., min_length=1, max_length=150)
+    type: Literal["INCOME", "EXPENSE"] = "INCOME"
+    amount: Decimal = Field(..., gt=0)
+    category: str = Field(default="Salário/Receita", max_length=64)
+    occurred_at: datetime | None = None
+
+
+class TransactionOut(BaseModel):
+    id: int
+    source: str
+    type: str
+    amount: Decimal
+    merchant: str
+    category: str
+    status: str
+    occurred_at: datetime
+
+    model_config = {"from_attributes": True}

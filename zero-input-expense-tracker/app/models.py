@@ -24,8 +24,10 @@ class AnnualPlan(Base):
     __tablename__ = "annual_plan"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
-    title: Mapped[str] = mapped_column(String(150), nullable=False)
+    title: Mapped[str] = mapped_column(String(150), nullable=False, unique=True)
     type: Mapped[str] = mapped_column(String(16), nullable=False)  # INCOME | EXPENSE
+    plan_type: Mapped[str] = mapped_column(String(24), nullable=False, default="FIXED")  # FIXED | ROLLING_AVERAGE
+    payment_method: Mapped[str] = mapped_column(String(24), nullable=False, default="PIX")  # PIX | Cartão
     amount: Mapped[Decimal] = mapped_column(Numeric(12, 2), nullable=False)
     category: Mapped[str] = mapped_column(String(64), nullable=False)
     day_of_month: Mapped[int] = mapped_column(Integer, nullable=False)
@@ -56,7 +58,9 @@ class Transaction(Base):
     installments: Mapped[int] = mapped_column(Integer, nullable=False, default=1)
     category: Mapped[str] = mapped_column(String(64), nullable=False, index=True)
     confidence: Mapped[float] = mapped_column(Float, nullable=False, default=1.0)
-    status: Mapped[str] = mapped_column(String(20), nullable=False, default="CONFIRMED", index=True)
+    status: Mapped[str] = mapped_column(
+        String(20), nullable=False, default="CONFIRMED", index=True
+    )  # CONFIRMED | PENDING | ESTIMATED
     occurred_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, index=True)
     telegram_message_id: Mapped[int | None] = mapped_column(Integer, nullable=True)
     annual_plan_id: Mapped[int | None] = mapped_column(

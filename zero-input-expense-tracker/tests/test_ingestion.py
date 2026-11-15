@@ -26,6 +26,7 @@ def get_test_settings() -> Settings:
         GROQ_API_KEY="gsk_test",
         TELEGRAM_BOT_TOKEN="123:test",
         TELEGRAM_CHAT_ID="999999",
+        TELEGRAM_WEBHOOK_SECRET="",
         CONFIDENCE_THRESHOLD=0.85,
         DEDUP_WINDOW_MINUTES=3,
         MONTHLY_BUDGET_LIMIT=5000.0,
@@ -129,7 +130,7 @@ def test_nubank_single_purchase_confirmed_and_silent_telegram(client, db_session
     assert body["used_ai"] is True
     mock_tg.assert_awaited_once()
 
-    tx = db_session.query(Transaction).first()
+    tx = db_session.query(Transaction).order_by(Transaction.id.asc()).first()
     assert tx is not None
     assert tx.amount == Decimal("45.90")
     assert tx.status == "CONFIRMED"
@@ -170,7 +171,7 @@ def test_installment_purchase_itau(client, db_session):
         )
 
     assert resp.status_code == 200
-    tx = db_session.query(Transaction).first()
+    tx = db_session.query(Transaction).order_by(Transaction.id.asc()).first()
     assert tx.installments == 6
     assert tx.amount == Decimal("600.00")
 
@@ -479,7 +480,7 @@ def test_annual_plan_daily_cron_idempotency(client, db_session):
         headers=auth_headers(),
     )
     assert r1.status_code == 200
-    assert r1.json()["created_count"] == 1
+    assert r1.json()["created_count"] == 2
     assert r1.json()["skipped_count"] == 0
 
     # Re-run same day -> idempotent
@@ -489,9 +490,9 @@ def test_annual_plan_daily_cron_idempotency(client, db_session):
     )
     assert r2.status_code == 200
     assert r2.json()["created_count"] == 0
-    assert r2.json()["skipped_count"] == 1
+    assert r2.json()["skipped_count"] == 2
 
-    tx = db_session.query(Transaction).first()
+    tx = db_session.query(Transaction).order_by(Transaction.id.asc()).first()
     assert tx.source == "FIXED_PLAN"
     assert tx.merchant == "Salário Mensal"
 
@@ -511,7 +512,9 @@ def test_dashboard_auth_and_render(client):
     dash = client.get("/dashboard")
     assert dash.status_code == 200
     assert "Burn Rate Mensal" in dash.text
-    assert "Saldo Livre do Mês" in dash.text
+    assert "Saldo Livre Atual" in dash.text
+    assert "Contas de Consumo (Média vs. Real)" in dash.text
+    assert "Visão do Ano por Mês" in dash.text
 
 
 def test_ai_fallback_to_gemini_when_groq_fails():
@@ -555,3 +558,157 @@ def test_ai_fallback_to_gemini_when_groq_fails():
     assert result.merchant == "Farmácia"
     assert result.suggested_category == "Saúde"
     mock_gemini.assert_awaited_once()
+
+
+def test_phase2_seed_and_initial_saldo_livre(db_session):
+    from datetime import date
+    from app.services.analytics import compute_monthly_summary
+    from app.services.planner import ensure_month_provision
+    from app.services.seed_data import seed_annual_plan
+
+    inserted = seed_annual_plan(db_session)
+    assert inserted == 11
+    # Idempotent second run
+    assert seed_annual_plan(db_session) == 0
+
+    prov = ensure_month_provision(db_session, get_test_settings(), date(2026, 11, 1))
+    assert prov.created_count == 11
+
+    summary = compute_monthly_summary(db_session, get_test_settings(), year=2026, month=11)
+    assert summary["total_income"] == pytest.approx(11177.00, abs=0.01)
+    assert summary["fixed_expenses"] == pytest.approx(6563.29, abs=0.01)
+    assert summary["variable_expenses"] == pytest.approx(0.0, abs=0.01)
+    assert summary["saldo_livre"] == pytest.approx(4613.71, abs=0.01)
+
+
+def test_rolling_average_reconcile_replaces_estimated_and_updates_plan(client, db_session):
+    from datetime import date
+    from app.services.analytics import compute_monthly_summary
+    from app.services.planner import ensure_month_provision
+    from app.services.seed_data import seed_annual_plan
+
+    seed_annual_plan(db_session)
+    enel_plan = db_session.query(AnnualPlan).filter(AnnualPlan.title == "Energia (Enel)").first()
+    assert enel_plan is not None
+
+    # Provision 3 months and reconcile Enel in each: 420, 380, 460 -> avg 420.00
+    for m, val in [(9, "420.00"), (10, "380.00")]:
+        ensure_month_provision(db_session, get_test_settings(), date(2026, m, 1))
+        tx = (
+            db_session.query(Transaction)
+            .filter(Transaction.annual_plan_id == enel_plan.id, Transaction.plan_period == f"2026-{m:02d}")
+            .first()
+        )
+        assert tx.status == "ESTIMATED"
+        resp = client.patch(
+            f"/api/v1/transactions/{tx.id}/reconcile",
+            json={"amount": val},
+            headers=auth_headers(),
+        )
+        assert resp.status_code == 200
+        assert resp.json()["status"] == "CONFIRMED"
+
+    # Month 11: reconcile via webhook notification matching Enel
+    ensure_month_provision(db_session, get_test_settings(), date(2026, 11, 1))
+    nov_tx_before = (
+        db_session.query(Transaction)
+        .filter(Transaction.annual_plan_id == enel_plan.id, Transaction.plan_period == "2026-11")
+        .first()
+    )
+    assert nov_tx_before.status == "ESTIMATED"
+
+    enel_ai = AIExtractionResult(
+        is_financial_transaction=True,
+        type="EXPENSE",
+        amount=460.00,
+        merchant="Enel Energia",
+        installments=1,
+        suggested_category="Contas Fixas",
+        confidence=0.96,
+    )
+    with patch("app.services.ingestion.parse_notification_with_ai", new=AsyncMock(return_value=enel_ai)):
+        wh_resp = client.post(
+            "/api/v1/webhook/notification",
+            json={
+                "app": "com.nu.production",
+                "title": "Pix enviado",
+                "text": "Pagamento PIX de R$ 460,00 para Enel Distribuicao",
+                "timestamp": "2026-11-10T14:00:00-03:00",
+            },
+            headers=auth_headers(),
+        )
+    assert wh_resp.status_code == 200
+    assert wh_resp.json()["status"] == "CONFIRMED"
+    assert wh_resp.json()["transaction_id"] == nov_tx_before.id
+
+    db_session.refresh(nov_tx_before)
+    db_session.refresh(enel_plan)
+    assert nov_tx_before.status == "CONFIRMED"
+    assert nov_tx_before.amount == Decimal("460.00")
+    # 3-month average of (420 + 380 + 460) / 3 = 420.00
+    assert enel_plan.amount == Decimal("420.00")
+
+    # Verify Saldo Livre reflects replacement (not sum): 4613.71 - 60.00 = 4553.71
+    summary = compute_monthly_summary(db_session, get_test_settings(), year=2026, month=11)
+    assert summary["saldo_livre"] == pytest.approx(4553.71, abs=0.01)
+
+
+def test_fixed_card_google_ai_pro_dedup_within_1_real(client, db_session):
+    from datetime import date
+    from app.services.planner import ensure_month_provision
+    from app.services.seed_data import seed_annual_plan
+
+    seed_annual_plan(db_session)
+    ensure_month_provision(db_session, get_test_settings(), date(2026, 11, 1))
+
+    google_plan = db_session.query(AnnualPlan).filter(AnnualPlan.title == "Google AI Pro (5 TB)").first()
+    google_tx = (
+        db_session.query(Transaction)
+        .filter(Transaction.annual_plan_id == google_plan.id, Transaction.plan_period == "2026-11")
+        .first()
+    )
+    assert google_tx.status == "ESTIMATED"
+    assert google_tx.amount == Decimal("96.99")
+
+    card_ai = AIExtractionResult(
+        is_financial_transaction=True,
+        type="EXPENSE",
+        amount=97.50,
+        merchant="Google AI Pro",
+        installments=1,
+        suggested_category="Software",
+        confidence=0.95,
+    )
+    with patch("app.services.ingestion.parse_notification_with_ai", new=AsyncMock(return_value=card_ai)):
+        resp = client.post(
+            "/api/v1/webhook/notification",
+            json={
+                "app": "com.nu.production",
+                "title": "Compra no cartão",
+                "text": "Compra aprovada de R$ 97,50 em Google AI Pro",
+                "timestamp": "2026-11-14T10:00:00-03:00",
+            },
+            headers=auth_headers(),
+        )
+    assert resp.status_code == 200
+    assert resp.json()["status"] == "DUPLICATE"
+    assert resp.json()["transaction_id"] == google_tx.id
+
+    db_session.refresh(google_tx)
+    assert google_tx.status == "CONFIRMED"
+    assert google_tx.amount == Decimal("97.50")
+
+
+def test_transactions_page_filters(client, db_session):
+    from datetime import date
+    from app.services.planner import ensure_month_provision
+    from app.services.seed_data import seed_annual_plan
+
+    seed_annual_plan(db_session)
+    ensure_month_provision(db_session, get_test_settings(), date(2026, 11, 1))
+
+    client.post("/login", data={"password": TEST_DASHBOARD_PASS}, follow_redirects=False)
+    resp = client.get("/transactions?year=2026&month=11&category=Educação")
+    assert resp.status_code == 200
+    assert "Inglês" in resp.text
+    assert "Financiamento Apto" not in resp.text

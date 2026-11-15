@@ -1,14 +1,31 @@
+from datetime import datetime, timezone
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import AnnualPlan
-from app.schemas import AnnualPlanCreate, AnnualPlanOut, AnnualPlanUpdate
+from app.models import AnnualPlan, Transaction
+from app.schemas import (
+    AnnualPlanCreate,
+    AnnualPlanOut,
+    AnnualPlanUpdate,
+    ManualTransactionCreate,
+    ReconcileRequest,
+    ReconcileResponse,
+    TransactionOut,
+)
 from app.security import verify_api_key
+from app.services.ai_parser import normalize_text
+from app.services.planner import reconcile_transaction_amount
 
 router = APIRouter(
     prefix="/api/v1/annual-plan",
     tags=["Annual Plan"],
+    dependencies=[Depends(verify_api_key)],
+)
+
+tx_router = APIRouter(
+    prefix="/api/v1/transactions",
+    tags=["Transactions"],
     dependencies=[Depends(verify_api_key)],
 )
 
@@ -50,3 +67,47 @@ def delete_annual_plan(plan_id: int, db: Session = Depends(get_db)) -> None:
         raise HTTPException(status_code=404, detail="Annual plan item not found")
     db.delete(plan)
     db.commit()
+
+
+@tx_router.patch("/{tx_id}/reconcile", response_model=ReconcileResponse)
+def reconcile_transaction(
+    tx_id: int,
+    payload: ReconcileRequest,
+    db: Session = Depends(get_db),
+) -> ReconcileResponse:
+    try:
+        return reconcile_transaction_amount(db, tx_id, payload.amount)
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+
+@tx_router.post("/manual", response_model=TransactionOut, status_code=status.HTTP_201_CREATED)
+def create_manual_transaction(
+    payload: ManualTransactionCreate,
+    db: Session = Depends(get_db),
+) -> Transaction:
+    occ = payload.occurred_at or datetime.now(timezone.utc)
+    if occ.tzinfo is None:
+        occ = occ.replace(tzinfo=timezone.utc)
+    else:
+        occ = occ.astimezone(timezone.utc)
+    merchant_display = payload.merchant.strip()
+    tx = Transaction(
+        source="MANUAL",
+        app_name="Dashboard",
+        raw_title=merchant_display,
+        raw_text=f"Lançamento manual: {merchant_display}",
+        type=payload.type,
+        amount=payload.amount,
+        merchant=merchant_display,
+        merchant_normalized=normalize_text(merchant_display) or "manual",
+        installments=1,
+        category=payload.category,
+        confidence=1.0,
+        status="CONFIRMED",
+        occurred_at=occ,
+    )
+    db.add(tx)
+    db.commit()
+    db.refresh(tx)
+    return tx

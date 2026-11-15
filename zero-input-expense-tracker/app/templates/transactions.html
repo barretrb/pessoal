@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gastos Detalhados — Zero-Input Finance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    th[data-sort] { cursor: pointer; user-select: none; }
+    th[data-sort]:hover { color: #e2e8f0; }
+    th[data-sort]::after { content: " ↕"; opacity: 0.4; font-size: 0.7em; }
+    th[data-sort="asc"]::after { content: " ↑"; opacity: 1; color: #34d399; }
+    th[data-sort="desc"]::after { content: " ↓"; opacity: 1; color: #34d399; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+  <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-6">
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">💳</span>
+          <div>
+            <h1 class="text-lg font-bold tracking-tight">Gastos Detalhados</h1>
+            <p class="text-xs text-slate-400">Filtros avançados e ordenação</p>
+          </div>
+        </div>
+        <nav class="flex items-center gap-2">
+          <a href="/dashboard" class="px-3 py-1.5 rounded-lg hover:bg-slate-800 text-xs font-medium text-slate-300 transition-colors">Visão Geral</a>
+          <a href="/transactions" class="px-3 py-1.5 rounded-lg bg-slate-800 text-xs font-semibold text-emerald-300">Gastos Detalhados</a>
+        </nav>
+      </div>
+      <a href="/logout" class="rounded-lg border border-slate-700 hover:bg-slate-800 px-3 py-1.5 text-xs font-medium text-slate-300">Sair</a>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8 space-y-6">
+    <!-- Filter Bar -->
+    <section class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+      <form method="get" action="/transactions" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3">
+        <div>
+          <label class="block text-[11px] text-slate-400 mb-1">Ano</label>
+          <input type="number" name="year" min="2020" max="2100" value="{{ filters.year }}" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs text-slate-100" />
+        </div>
+        <div>
+          <label class="block text-[11px] text-slate-400 mb-1">Mês</label>
+          <select name="month" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs text-slate-100">
+            <option value="0" {% if filters.month == 0 %}selected{% endif %}>Todos os meses</option>
+            {% for name in month_names %}
+            <option value="{{ loop.index }}" {% if filters.month == loop.index %}selected{% endif %}>{{ "%02d"|format(loop.index) }} - {{ name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div>
+          <label class="block text-[11px] text-slate-400 mb-1">Categoria</label>
+          <select name="category" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs text-slate-100">
+            <option value="">Todas</option>
+            {% for cat in categories %}
+            <option value="{{ cat }}" {% if filters.category == cat %}selected{% endif %}>{{ cat }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div>
+          <label class="block text-[11px] text-slate-400 mb-1">Tipo</label>
+          <select name="tx_type" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs text-slate-100">
+            <option value="">Todos</option>
+            <option value="EXPENSE" {% if filters.tx_type == "EXPENSE" %}selected{% endif %}>Despesa</option>
+            <option value="INCOME" {% if filters.tx_type == "INCOME" %}selected{% endif %}>Receita</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-[11px] text-slate-400 mb-1">Origem</label>
+          <select name="source" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs text-slate-100">
+            <option value="">Todas</option>
+            <option value="NOTIFICATION" {% if filters.source == "NOTIFICATION" %}selected{% endif %}>Notificação</option>
+            <option value="FIXED_PLAN" {% if filters.source == "FIXED_PLAN" %}selected{% endif %}>Plano Fixo/Média</option>
+            <option value="MANUAL" {% if filters.source == "MANUAL" %}selected{% endif %}>Manual</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-[11px] text-slate-400 mb-1">Status</label>
+          <select name="status" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs text-slate-100">
+            <option value="">Todos</option>
+            <option value="CONFIRMED" {% if filters.status == "CONFIRMED" %}selected{% endif %}>Confirmado</option>
+            <option value="ESTIMATED" {% if filters.status == "ESTIMATED" %}selected{% endif %}>Estimado</option>
+            <option value="PENDING" {% if filters.status == "PENDING" %}selected{% endif %}>Pendente</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-[11px] text-slate-400 mb-1">Valor Mín / Máx</label>
+          <div class="flex gap-1.5">
+            <input type="text" name="min_amount" value="{{ filters.min_amount }}" placeholder="Mín" class="w-1/2 rounded-lg bg-slate-950 border border-slate-700 px-2 py-2 text-xs text-slate-100" />
+            <input type="text" name="max_amount" value="{{ filters.max_amount }}" placeholder="Máx" class="w-1/2 rounded-lg bg-slate-950 border border-slate-700 px-2 py-2 text-xs text-slate-100" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-[11px] text-slate-400 mb-1">Despesa / Busca</label>
+          <input type="text" name="q" value="{{ filters.q }}" placeholder="Ex: Uber, Enel..." class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs text-slate-100" />
+        </div>
+
+        <div class="sm:col-span-2 md:col-span-4 lg:col-span-8 flex items-center justify-end gap-2 pt-1">
+          <a href="/transactions" class="rounded-lg border border-slate-700 hover:bg-slate-800 px-3 py-1.5 text-xs text-slate-300">Limpar</a>
+          <button type="submit" class="rounded-lg bg-emerald-600 hover:bg-emerald-500 px-4 py-1.5 text-xs font-semibold text-white">Filtrar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Summary Strip -->
+    <section class="grid grid-cols-1 sm:grid-cols-4 gap-4">
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+        <p class="text-xs text-slate-400">Registros Encontrados</p>
+        <p class="text-xl font-bold text-slate-100 mt-1">{{ result.total_count }}</p>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+        <p class="text-xs text-slate-400">Receitas Filtradas</p>
+        <p class="text-xl font-bold text-emerald-400 mt-1">R$ {{ result.total_income_brl }}</p>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+        <p class="text-xs text-slate-400">Despesas Filtradas</p>
+        <p class="text-xl font-bold text-rose-400 mt-1">R$ {{ result.total_expense_brl }}</p>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+        <p class="text-xs text-slate-400">Saldo Líquido Filtrado</p>
+        <p class="text-xl font-bold mt-1 {% if result.net >= 0 %}text-emerald-300{% else %}text-rose-400{% endif %}">R$ {{ result.net_brl }}</p>
+      </div>
+    </section>
+
+    <!-- Detailed Sortable Table -->
+    <section class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-base font-semibold">Lista de Lançamentos</h2>
+        <span class="text-xs text-slate-400">Clique em qualquer coluna para ordenar</span>
+      </div>
+      {% if result.transactions %}
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left" data-sortable>
+          <thead class="text-xs uppercase text-slate-400 border-b border-slate-800">
+            <tr>
+              <th class="py-2.5 pr-4" data-sort="none" data-type="date">Data/Hora</th>
+              <th class="py-2.5 pr-4" data-sort="none" data-type="text">Despesa / Estabelecimento</th>
+              <th class="py-2.5 pr-4" data-sort="none" data-type="text">Categoria</th>
+              <th class="py-2.5 pr-4" data-sort="none" data-type="text">Tipo</th>
+              <th class="py-2.5 pr-4" data-sort="none" data-type="text">Origem</th>
+              <th class="py-2.5 pr-4" data-sort="none" data-type="text">Status</th>
+              <th class="py-2.5 text-right" data-sort="none" data-type="num">Valor</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/70">
+            {% for tx in result.transactions %}
+            <tr class="hover:bg-slate-800/30">
+              <td class="py-2.5 pr-4 text-xs text-slate-400 whitespace-nowrap" data-value="{{ tx.occurred_at.isoformat() }}">
+                {{ tx.occurred_at.strftime("%d/%m/%Y %H:%M") }}
+              </td>
+              <td class="py-2.5 pr-4 font-medium">
+                {{ tx.merchant }}
+                {% if tx.installments > 1 %}
+                <span class="text-xs text-slate-400">({{ tx.installments }}x)</span>
+                {% endif %}
+                {% if tx.app_name %}
+                <span class="block text-[11px] text-slate-500">{{ tx.app_name }}</span>
+                {% endif %}
+              </td>
+              <td class="py-2.5 pr-4 text-slate-300">{{ tx.category }}</td>
+              <td class="py-2.5 pr-4 text-xs">
+                {% if tx.type == "INCOME" %}
+                <span class="text-emerald-300">Receita</span>
+                {% else %}
+                <span class="text-rose-300">Despesa</span>
+                {% endif %}
+              </td>
+              <td class="py-2.5 pr-4 text-xs text-slate-400">{{ tx.source }}</td>
+              <td class="py-2.5 pr-4">
+                {% if tx.status == "CONFIRMED" %}
+                <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300">Confirmado</span>
+                {% elif tx.status == "ESTIMATED" %}
+                <span class="text-xs px-2 py-0.5 rounded bg-sky-500/15 text-sky-300">Estimado</span>
+                {% elif tx.status == "PENDING" %}
+                <span class="text-xs px-2 py-0.5 rounded bg-amber-500/15 text-amber-300">Pendente</span>
+                {% else %}
+                <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-slate-300">{{ tx.status }}</span>
+                {% endif %}
+              </td>
+              <td class="py-2.5 text-right font-semibold whitespace-nowrap {% if tx.type == 'INCOME' %}text-emerald-400{% else %}text-rose-400{% endif %}" data-value="{{ tx.amount }}">
+                {% if tx.type == "INCOME" %}+{% else %}-{% endif %} R$ {{ "%.2f"|format(tx.amount)|replace(".", ",") }}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% else %}
+      <p class="text-sm text-slate-500">Nenhuma transação encontrada para os filtros selecionados.</p>
+      {% endif %}
+    </section>
+  </main>
+
+  <script>
+    function makeTableSortable(table) {
+      const headers = table.querySelectorAll('thead th[data-sort]');
+      headers.forEach((th, colIdx) => {
+        th.addEventListener('click', () => {
+          const tbody = table.querySelector('tbody');
+          const rows = Array.from(tbody.querySelectorAll('tr'));
+          const current = th.getAttribute('data-sort');
+          const nextDir = current === 'asc' ? 'desc' : 'asc';
+          const type = th.getAttribute('data-type') || 'text';
+
+          headers.forEach(h => h.setAttribute('data-sort', 'none'));
+          th.setAttribute('data-sort', nextDir);
+
+          rows.sort((a, b) => {
+            const cellA = a.children[colIdx];
+            const cellB = b.children[colIdx];
+            const rawA = (cellA.getAttribute('data-value') || cellA.textContent || '').trim();
+            const rawB = (cellB.getAttribute('data-value') || cellB.textContent || '').trim();
+
+            let cmp = 0;
+            if (type === 'num') {
+              const nA = parseFloat(rawA.replace(/[^\d.-]/g, '')) || 0;
+              const nB = parseFloat(rawB.replace(/[^\d.-]/g, '')) || 0;
+              cmp = nA - nB;
+            } else if (type === 'date') {
+              cmp = rawA.localeCompare(rawB);
+            } else {
+              cmp = rawA.localeCompare(rawB, 'pt-BR', { sensitivity: 'base' });
+            }
+            return nextDir === 'asc' ? cmp : -cmp;
+          });
+
+          rows.forEach(r => tbody.appendChild(r));
+        });
+      });
+    }
+    document.querySelectorAll('table[data-sortable]').forEach(makeTableSortable);
+  </script>
+</body>
+</html>

@@ -3,19 +3,16 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 DEFAULT_CATEGORIES: list[str] = [
-    "Alimentação",
-    "Supermercado",
-    "Transporte",
-    "Moradia",
-    "Saúde",
-    "Lazer",
-    "Assinaturas",
+    "Salário/Receita",
+    "Contas Fixas",
     "Educação",
-    "Compras",
-    "Serviços",
-    "Salário",
-    "Investimentos",
-    "Transferência",
+    "Saúde/Pet",
+    "Mercado/Casa",
+    "Alimentação Out",
+    "Transporte/Viagem",
+    "Software",
+    "Shopping",
+    "Lazer",
     "Outros",
 ]
 

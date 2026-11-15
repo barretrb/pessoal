@@ -1,6 +1,11 @@
 <?php
 declare(strict_types=1);
 
+const MONTH_NAMES_PT = [
+    'Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun',
+    'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez',
+];
+
 function format_brl(float $value): string
 {
     return number_format($value, 2, ',', '.');
@@ -37,7 +42,7 @@ function compute_monthly_summary(PDO $pdo, array $config, ?int $year = null, ?in
             $pendingCount++;
             continue;
         }
-        if ($tx['status'] !== 'CONFIRMED') {
+        if (!in_array($tx['status'], ['CONFIRMED', 'ESTIMATED'], true)) {
             continue;
         }
         $amount = (float)$tx['amount'];
@@ -86,10 +91,54 @@ function compute_monthly_summary(PDO $pdo, array $config, ?int $year = null, ?in
         ];
     }
 
+    $periodStr = sprintf('%04d-%02d', $targetYear, $targetMonth);
+    $rollingPlans = $pdo->query("SELECT * FROM annual_plan WHERE plan_type = 'ROLLING_AVERAGE' AND active = 1 ORDER BY id ASC")->fetchAll();
+    $consumptionBills = [];
+    $histStmt = $pdo->prepare(
+        "SELECT amount FROM transactions WHERE type = 'EXPENSE' AND status = 'CONFIRMED' AND annual_plan_id = ? ORDER BY occurred_at DESC, id DESC LIMIT 3"
+    );
+
+    foreach ($rollingPlans as $plan) {
+        $currentTx = null;
+        foreach ($txs as $t) {
+            if ((int)($t['annual_plan_id'] ?? 0) === (int)$plan['id'] && ($t['plan_period'] ?? '') === $periodStr) {
+                $currentTx = $t;
+                break;
+            }
+        }
+        $histStmt->execute([$plan['id']]);
+        $histRows = $histStmt->fetchAll();
+        if ($histRows) {
+            $sumHist = 0.0;
+            foreach ($histRows as $hr) {
+                $sumHist += (float)$hr['amount'];
+            }
+            $avgVal = round($sumHist / count($histRows), 2);
+        } else {
+            $avgVal = (float)$plan['amount'];
+        }
+        $curAmt = $currentTx ? (float)$currentTx['amount'] : (float)$plan['amount'];
+        $consumptionBills[] = [
+            'plan_id' => (int)$plan['id'],
+            'title' => $plan['title'],
+            'due_day' => (int)$plan['day_of_month'],
+            'payment_method' => $plan['payment_method'] ?? 'PIX',
+            'transaction_id' => $currentTx ? (int)$currentTx['id'] : null,
+            'status' => $currentTx ? $currentTx['status'] : 'NOT_PROVISIONED',
+            'current_amount' => $curAmt,
+            'current_amount_brl' => format_brl($curAmt),
+            'provisioned_amount' => (float)$plan['amount'],
+            'provisioned_amount_brl' => format_brl((float)$plan['amount']),
+            'rolling_avg_3m' => $avgVal,
+            'rolling_avg_3m_brl' => format_brl($avgVal),
+            'confirmed_months' => count($histRows),
+        ];
+    }
+
     return [
         'year' => $targetYear,
         'month' => $targetMonth,
-        'period' => sprintf('%04d-%02d', $targetYear, $targetMonth),
+        'period' => $periodStr,
         'total_income' => $totalIncome,
         'total_income_brl' => format_brl($totalIncome),
         'fixed_expenses' => $fixedExpenses,
@@ -109,6 +158,190 @@ function compute_monthly_summary(PDO $pdo, array $config, ?int $year = null, ?in
             'planned' => $plannedCum,
         ],
         'category_breakdown' => $breakdown,
+        'consumption_bills' => $consumptionBills,
         'transactions' => array_slice($txs, 0, 50),
+    ];
+}
+
+function compute_yearly_summary(PDO $pdo, array $config, ?int $year = null): array
+{
+    $tz = new DateTimeZone($config['timezone'] ?: 'UTC');
+    $now = new DateTimeImmutable('now', $tz);
+    $targetYear = $year ?? (int)$now->format('Y');
+
+    $startUtc = (new DateTimeImmutable(sprintf('%04d-01-01 00:00:00', $targetYear), $tz))
+        ->setTimezone(new DateTimeZone('UTC'))->format('Y-m-d\TH:i:s\Z');
+    $endUtc = (new DateTimeImmutable(sprintf('%04d-12-31 23:59:59', $targetYear), $tz))
+        ->setTimezone(new DateTimeZone('UTC'))->format('Y-m-d\TH:i:s\Z');
+
+    $stmt = $pdo->prepare(
+        "SELECT * FROM transactions WHERE occurred_at >= ? AND occurred_at <= ? AND status IN ('CONFIRMED', 'ESTIMATED')"
+    );
+    $stmt->execute([$startUtc, $endUtc]);
+    $txs = $stmt->fetchAll();
+
+    $monthly = [];
+    for ($m = 1; $m <= 12; $m++) {
+        $monthly[$m] = ['income' => 0.0, 'fixed' => 0.0, 'variable' => 0.0, 'tx_count' => 0];
+    }
+
+    foreach ($txs as $tx) {
+        $occ = new DateTimeImmutable($tx['occurred_at'], new DateTimeZone('UTC'));
+        $m = (int)$occ->setTimezone($tz)->format('n');
+        $amt = (float)$tx['amount'];
+        $monthly[$m]['tx_count']++;
+        if ($tx['type'] === 'INCOME') {
+            $monthly[$m]['income'] += $amt;
+        } elseif ($tx['type'] === 'EXPENSE') {
+            if ($tx['source'] === 'FIXED_PLAN') {
+                $monthly[$m]['fixed'] += $amt;
+            } else {
+                $monthly[$m]['variable'] += $amt;
+            }
+        }
+    }
+
+    $monthsOut = [];
+    $totInc = 0.0;
+    $totFix = 0.0;
+    $totVar = 0.0;
+
+    for ($m = 1; $m <= 12; $m++) {
+        $inc = $monthly[$m]['income'];
+        $fix = $monthly[$m]['fixed'];
+        $var = $monthly[$m]['variable'];
+        $exp = $fix + $var;
+        $saldo = $inc - $exp;
+        $totInc += $inc;
+        $totFix += $fix;
+        $totVar += $var;
+        $monthsOut[] = [
+            'month' => $m,
+            'label' => MONTH_NAMES_PT[$m - 1],
+            'income' => $inc,
+            'income_brl' => format_brl($inc),
+            'fixed_expenses' => $fix,
+            'fixed_expenses_brl' => format_brl($fix),
+            'variable_expenses' => $var,
+            'variable_expenses_brl' => format_brl($var),
+            'total_expenses' => $exp,
+            'total_expenses_brl' => format_brl($exp),
+            'saldo_livre' => $saldo,
+            'saldo_livre_brl' => format_brl($saldo),
+            'tx_count' => $monthly[$m]['tx_count'],
+        ];
+    }
+
+    $totExp = $totFix + $totVar;
+    $totSaldo = $totInc - $totExp;
+    return [
+        'year' => $targetYear,
+        'months' => $monthsOut,
+        'totals' => [
+            'income' => $totInc,
+            'income_brl' => format_brl($totInc),
+            'fixed_expenses' => $totFix,
+            'fixed_expenses_brl' => format_brl($totFix),
+            'variable_expenses' => $totVar,
+            'variable_expenses_brl' => format_brl($totVar),
+            'total_expenses' => $totExp,
+            'total_expenses_brl' => format_brl($totExp),
+            'saldo_livre' => $totSaldo,
+            'saldo_livre_brl' => format_brl($totSaldo),
+        ],
+    ];
+}
+
+function query_detailed_transactions(PDO $pdo, array $config, array $filters): array
+{
+    $tz = new DateTimeZone($config['timezone'] ?: 'UTC');
+    $now = new DateTimeImmutable('now', $tz);
+    $targetYear = !empty($filters['year']) ? (int)$filters['year'] : (int)$now->format('Y');
+    $month = isset($filters['month']) ? (int)$filters['month'] : (int)$now->format('n');
+
+    if ($month >= 1 && $month <= 12) {
+        $daysInMonth = (int)(new DateTimeImmutable(sprintf('%04d-%02d-01', $targetYear, $month), $tz))->format('t');
+        $startUtc = (new DateTimeImmutable(sprintf('%04d-%02d-01 00:00:00', $targetYear, $month), $tz))
+            ->setTimezone(new DateTimeZone('UTC'))->format('Y-m-d\TH:i:s\Z');
+        $endUtc = (new DateTimeImmutable(sprintf('%04d-%02d-%02d 23:59:59', $targetYear, $month, $daysInMonth), $tz))
+            ->setTimezone(new DateTimeZone('UTC'))->format('Y-m-d\TH:i:s\Z');
+    } else {
+        $startUtc = (new DateTimeImmutable(sprintf('%04d-01-01 00:00:00', $targetYear), $tz))
+            ->setTimezone(new DateTimeZone('UTC'))->format('Y-m-d\TH:i:s\Z');
+        $endUtc = (new DateTimeImmutable(sprintf('%04d-12-31 23:59:59', $targetYear), $tz))
+            ->setTimezone(new DateTimeZone('UTC'))->format('Y-m-d\TH:i:s\Z');
+    }
+
+    $where = ['occurred_at >= ?', 'occurred_at <= ?'];
+    $params = [$startUtc, $endUtc];
+
+    if (!empty($filters['category'])) {
+        $where[] = 'category = ?';
+        $params[] = $filters['category'];
+    }
+    if (!empty($filters['tx_type'])) {
+        $where[] = 'type = ?';
+        $params[] = $filters['tx_type'];
+    }
+    if (!empty($filters['source'])) {
+        $where[] = 'source = ?';
+        $params[] = $filters['source'];
+    }
+    if (!empty($filters['status'])) {
+        $where[] = 'status = ?';
+        $params[] = $filters['status'];
+    }
+    if ($filters['min_amount'] !== null && $filters['min_amount'] !== '') {
+        $minVal = (float)str_replace(',', '.', (string)$filters['min_amount']);
+        $where[] = 'amount >= ?';
+        $params[] = $minVal;
+    }
+    if ($filters['max_amount'] !== null && $filters['max_amount'] !== '') {
+        $maxVal = (float)str_replace(',', '.', (string)$filters['max_amount']);
+        $where[] = 'amount <= ?';
+        $params[] = $maxVal;
+    }
+
+    $sql = 'SELECT * FROM transactions WHERE ' . implode(' AND ', $where) . ' ORDER BY occurred_at DESC, id DESC';
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute($params);
+    $rows = $stmt->fetchAll();
+
+    $search = trim((string)($filters['q'] ?? ''));
+    if ($search !== '') {
+        $qLow = mb_strtolower($search);
+        $rows = array_values(array_filter($rows, function ($t) use ($qLow) {
+            return str_contains(mb_strtolower((string)($t['merchant'] ?? '')), $qLow)
+                || str_contains(mb_strtolower((string)($t['category'] ?? '')), $qLow)
+                || str_contains(mb_strtolower((string)($t['raw_title'] ?? '')), $qLow)
+                || str_contains(mb_strtolower((string)($t['raw_text'] ?? '')), $qLow);
+        }));
+    }
+
+    $totInc = 0.0;
+    $totExp = 0.0;
+    foreach ($rows as $t) {
+        if (!in_array($t['status'], ['CONFIRMED', 'ESTIMATED'], true)) {
+            continue;
+        }
+        if ($t['type'] === 'INCOME') {
+            $totInc += (float)$t['amount'];
+        } elseif ($t['type'] === 'EXPENSE') {
+            $totExp += (float)$t['amount'];
+        }
+    }
+    $net = $totInc - $totExp;
+
+    return [
+        'year' => $targetYear,
+        'month' => $month,
+        'transactions' => $rows,
+        'total_count' => count($rows),
+        'total_income' => $totInc,
+        'total_income_brl' => format_brl($totInc),
+        'total_expense' => $totExp,
+        'total_expense_brl' => format_brl($totExp),
+        'net' => $net,
+        'net_brl' => format_brl($net),
     ];
 }
