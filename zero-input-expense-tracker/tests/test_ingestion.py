@@ -512,3 +512,46 @@ def test_dashboard_auth_and_render(client):
     assert dash.status_code == 200
     assert "Burn Rate Mensal" in dash.text
     assert "Saldo Livre do Mês" in dash.text
+
+
+def test_ai_fallback_to_gemini_when_groq_fails():
+    import asyncio
+    from app.schemas import NotificationPayload
+    from app.services.ai_parser import parse_notification_with_ai
+
+    settings = Settings(
+        API_SECRET_KEY=TEST_API_KEY,
+        GROQ_API_KEY="gsk_test",
+        GEMINI_API_KEY="gemini_test",
+    )
+    payload = NotificationPayload(
+        app="com.nu.production",
+        title="Compra aprovada",
+        text="Compra de R$ 35,00 em Farmácia",
+        timestamp=datetime.now(timezone.utc),
+    )
+    gemini_result = AIExtractionResult(
+        is_financial_transaction=True,
+        type="EXPENSE",
+        amount=35.0,
+        merchant="Farmácia",
+        installments=1,
+        suggested_category="Saúde",
+        confidence=0.93,
+    )
+
+    with (
+        patch(
+            "app.services.ai_parser.parse_notification_with_groq",
+            new=AsyncMock(side_effect=RuntimeError("Groq 503")),
+        ),
+        patch(
+            "app.services.ai_parser.parse_notification_with_gemini",
+            new=AsyncMock(return_value=gemini_result),
+        ) as mock_gemini,
+    ):
+        result = asyncio.run(parse_notification_with_ai(payload, settings))
+
+    assert result.merchant == "Farmácia"
+    assert result.suggested_category == "Saúde"
+    mock_gemini.assert_awaited_once()

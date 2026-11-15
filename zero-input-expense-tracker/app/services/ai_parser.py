@@ -1,4 +1,5 @@
 import json
+import logging
 import re
 import unicodedata
 import httpx
@@ -7,6 +8,8 @@ from sqlalchemy.orm import Session
 from app.config import DEFAULT_CATEGORIES, Settings
 from app.models import MerchantMemory
 from app.schemas import AIExtractionResult, NotificationPayload
+
+logger = logging.getLogger(__name__)
 
 _BRL_AMOUNT_RE = re.compile(r"R\$\s*([\d\.]+,\d{2})", re.IGNORECASE)
 _INSTALLMENTS_RE = re.compile(
@@ -179,19 +182,21 @@ def build_system_prompt() -> str:
     )
 
 
-async def parse_notification_with_ai(
-    payload: NotificationPayload, settings: Settings
-) -> AIExtractionResult:
-    """Call Groq OpenAI-compatible Chat Completions API in JSON mode."""
-    if not settings.GROQ_API_KEY:
-        raise RuntimeError("GROQ_API_KEY is not configured")
-
-    user_content = (
+def _format_user_content(payload: NotificationPayload) -> str:
+    return (
         f"App: {payload.app}\n"
         f"Title: {payload.title}\n"
         f"Text: {payload.text}\n"
         f"Timestamp: {payload.timestamp.isoformat()}"
     )
+
+
+async def parse_notification_with_groq(
+    payload: NotificationPayload, settings: Settings
+) -> AIExtractionResult:
+    """Call Groq OpenAI-compatible Chat Completions API in JSON mode."""
+    if not settings.GROQ_API_KEY:
+        raise RuntimeError("GROQ_API_KEY is not configured")
 
     url = f"{settings.GROQ_BASE_URL.rstrip('/')}/chat/completions"
     headers = {
@@ -204,7 +209,7 @@ async def parse_notification_with_ai(
         "response_format": {"type": "json_object"},
         "messages": [
             {"role": "system", "content": build_system_prompt()},
-            {"role": "user", "content": user_content},
+            {"role": "user", "content": _format_user_content(payload)},
         ],
     }
 
@@ -216,3 +221,55 @@ async def parse_notification_with_ai(
     content = data["choices"][0]["message"]["content"]
     parsed = json.loads(content)
     return AIExtractionResult.model_validate(parsed)
+
+
+async def parse_notification_with_gemini(
+    payload: NotificationPayload, settings: Settings
+) -> AIExtractionResult:
+    """Call Google Gemini generateContent API in JSON mode (fallback)."""
+    if not settings.GEMINI_API_KEY:
+        raise RuntimeError("GEMINI_API_KEY is not configured")
+
+    url = (
+        f"https://generativelanguage.googleapis.com/v1beta/models/"
+        f"{settings.GEMINI_MODEL}:generateContent"
+    )
+    headers = {
+        "Content-Type": "application/json",
+        "X-goog-api-key": settings.GEMINI_API_KEY,
+    }
+    body = {
+        "systemInstruction": {"parts": [{"text": build_system_prompt()}]},
+        "contents": [{"parts": [{"text": _format_user_content(payload)}]}],
+        "generationConfig": {
+            "temperature": 0.0,
+            "responseMimeType": "application/json",
+        },
+    }
+
+    async with httpx.AsyncClient(timeout=20.0) as client:
+        response = await client.post(url, headers=headers, json=body)
+        response.raise_for_status()
+        data = response.json()
+
+    content = data["candidates"][0]["content"]["parts"][0]["text"]
+    parsed = json.loads(content)
+    return AIExtractionResult.model_validate(parsed)
+
+
+async def parse_notification_with_ai(
+    payload: NotificationPayload, settings: Settings
+) -> AIExtractionResult:
+    """Parse notification with Groq first, falling back to Gemini on error."""
+    if settings.GROQ_API_KEY:
+        try:
+            return await parse_notification_with_groq(payload, settings)
+        except Exception as exc:
+            if not settings.GEMINI_API_KEY:
+                raise
+            logger.warning("Groq parser failed (%s); falling back to Gemini.", exc)
+
+    if settings.GEMINI_API_KEY:
+        return await parse_notification_with_gemini(payload, settings)
+
+    raise RuntimeError("Neither GROQ_API_KEY nor GEMINI_API_KEY is configured")
