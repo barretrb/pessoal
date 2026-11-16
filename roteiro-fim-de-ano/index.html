@@ -117,10 +117,45 @@
           <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/55 to-black/15"></div>
           <div class="absolute bottom-2 left-2.5 right-2.5 sm:bottom-4 sm:left-4 sm:right-4">
             <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-emerald-300 block leading-tight">Roteiro 2 • Vinhedos & Lareira</span>
-            <h3 class="font-serif text-xs sm:text-xl font-semibold text-white mt-0.5 leading-tight">Pôr do Sol na Serra & 5 Vinícolas</h3>
+            <h3 class="font-serif text-xs sm:text-xl font-semibold text-white mt-0.5 leading-tight">Pôr do Sol na Serra & 6 Vinícolas</h3>
             <p class="text-[10px] sm:text-xs text-stone-200 mt-0.5 sm:mt-1"><span class="hidden sm:inline">2 bases fixas sem pressa • </span>R$ 18.160<span class="hidden sm:inline"> (carro alugado)</span></p>
           </div>
         </div>
+      </div>
+    </section>
+
+        <!-- Matriz de Decisão Rápida (10 Critérios) -->
+    <section id="matriz-decisao" class="bg-white rounded-3xl p-4 sm:p-6 border border-stone-200/90 shadow-xs">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pb-4 mb-4 border-b border-stone-100">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-widest text-forest">Comparativo Direto • 10 Critérios</span>
+          <h2 class="font-serif text-xl sm:text-2xl font-semibold text-ink mt-0.5">Matriz de Decisão Rápida (Plano 1 vs. Plano 2)</h2>
+        </div>
+        <div class="inline-flex items-center gap-2 bg-stone-100 border border-stone-200 px-3 py-1.5 rounded-xl text-xs font-semibold text-ink self-start sm:self-auto">
+          <span>Placar Objetivo:</span>
+          <span class="text-forest font-bold">Plano 2 (6 Melhor)</span>
+          <span class="text-stone-400">vs.</span>
+          <span class="text-amber-800 font-bold">Plano 1 (3 Melhor)</span>
+          <span class="text-stone-400">|</span>
+          <span class="text-stone-600">1 Empate</span>
+        </div>
+      </div>
+
+      <!-- Mobile Cards (< md) -->
+      <div id="decision-matrix-mobile" class="grid grid-cols-1 gap-2.5 md:hidden"></div>
+
+      <!-- Desktop Table (>= md) -->
+      <div class="hidden md:block overflow-x-auto rounded-2xl border border-stone-200/80">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="bg-stone-50 text-stone-600 text-[11px] uppercase tracking-wider border-b border-stone-200">
+              <th class="py-3 px-4 font-semibold w-[24%]">Critério</th>
+              <th class="py-3 px-4 font-semibold w-[38%]">Plano 1: Estrada Real (MG)</th>
+              <th class="py-3 px-4 font-semibold w-[38%] text-forest">Plano 2: Serra da Mantiqueira</th>
+            </tr>
+          </thead>
+          <tbody id="decision-matrix-tbody" class="divide-y divide-stone-100"></tbody>
+        </table>
       </div>
     </section>
 
@@ -493,7 +528,7 @@
         title: "Mantiqueira Sem Pressa: Vinhos de Altitude, Cachoeiras & Lareira",
         subtitle: "9 noites em Pinhal/São Bento + 7 em Gonçalves — desfaça a mala só 1 vez",
         hooks: [
-          "5 vinícolas de altitude + Fazenda Oliq (azeites)",
+          "6 vinícolas de altitude + Fazenda Oliq (azeites)",
           "2 bases próximas (~4h por trecho, sem correria)",
           "100% mapeado para 2 Chihuahuas (jardins, trilhas & chalés)"
         ],
@@ -512,7 +547,7 @@
         },
         petNote: "Trilha do Bauzinho, Cachoeira do Lageado e jardins da Villa Santa Maria / Raízes do Baú são pet-friendly na guia. Para a Entre Vilas (4h), os cães ficam no chalé — confirme essa permissão antes de reservar.",
         climateNote: "Apenas 2 bases conectadas por 52 km (~1h15), eliminando Cunha e Penedo para evitar serras na chuva. Rota 100% asfaltada via Dutra + SP-046.",
-        gastronomy: "Cozinha equipada nos chalés para café da manhã tranquilo e jantares leves (~R$ 4.440 economizados), focando o orçamento nas 5 vinícolas, Fazenda Oliq e queijos da Fazenda Retiro das Pedras.",
+        gastronomy: "Cozinha equipada nos chalés para café da manhã tranquilo e jantares leves (~R$ 4.440 economizados), focando o orçamento nas 6 vinícolas, Fazenda Oliq e queijos da Fazenda Retiro das Pedras.",
         heroPhotos: [
           { url: photos.raizesBau, shortLabel: "Vinícola Raízes do Baú", caption: "Vinícola Raízes do Baú — piqueniques nos vinhedos de frente para a Pedra do Baú", location: "São Bento • SP", category: "Vinícola" },
           { url: photos.essenza, shortLabel: "Vinícola Essenza", caption: "Vinícola Boutique Essenza — degustação em pergolados entre vinhedo e olival", location: "Pinhal • SP", category: "Vinícola" },
@@ -588,9 +623,10 @@
               stop: "Parada na volta (04/01): Almoço em Resende / Penedo na Via Dutra."
             },
             place: "Gonçalves (MG)",
-            desc: "Trilha da Pedra Chanfrada (40 min em araucárias) e Pedra do Forno; Cachoeira do Simão, Sete Quedas, Retiro e Henriques (piscinas naturais rasas); queijarias na Terra Fria e Fazenda Retiro das Pedras.",
+            desc: "Bate-volta na Vinícola Ferreira (Piranguçu, ~35 min), Trilha da Pedra Chanfrada e Pedra do Forno; Cachoeira do Simão, Sete Quedas, Retiro e Henriques (piscinas naturais rasas); queijarias na Terra Fria e Fazenda Retiro das Pedras.",
             conciergeTip: "Queijos e cafés da Fazenda Retiro das Pedras abastecem sua cozinha do chalé para cafés da manhã inesquecíveis na serra.",
             activities: [
+              { label: "Bate-volta: Vinícola Ferreira", tag: "vinicola", badge: "Vinícola • Piranguçu", photo: photos.raizesBau, caption: "Vinícola Ferreira — almoço harmonizado em altitude (bate-volta a ~35 min de Gonçalves)", location: "Piranguçu • MG" },
               { label: "Cachoeira do Simão & Sete Quedas", tag: "natureza", badge: "Piscinas Naturais", photo: photos.cachLageado, caption: "Quedas d'água e piscinas naturais na Mantiqueira", location: "Gonçalves • MG" },
               { label: "Pedra Chanfrada & Pedra do Forno", tag: "natureza", badge: "Trilha 40min • Guia", photo: photos.serraGoncalves, caption: "Montanhas e araucárias de Gonçalves", location: "Gonçalves • MG" },
               { label: "Fazenda Retiro das Pedras & Queijos", tag: "pet", badge: "Queijos & Café • Pet", photo: photos.goncalves, caption: "Vila de Gonçalves — queijarias, empórios e comida mineira", location: "Gonçalves • MG" }
@@ -637,6 +673,7 @@
           { name: "Vinícola Raízes do Baú (São Bento)", type: "Vinícola • Piquenique", price: "~R$ 150–260/pessoa", insta: "https://www.instagram.com/vinicolafazendaportaldaluz/", site: "https://www.vinicolaraizesdobau.com.br/" },
           { name: "Vinícola Entre Vilas (1.600m)", type: "Vinícola • 4 Tempos", price: "~R$ 350–450/pessoa", insta: "https://www.instagram.com/entrevilas/", site: "https://www.entrevilas.com.br/" },
           { name: "Vinícola Boutique Essenza (Pinhal)", type: "Vinícola & Olival", price: "~R$ 220–290/pessoa", insta: "https://www.instagram.com/vinicolaessenza/", site: "https://www.vinicolaessenza.com.br/" },
+          { name: "Vinícola Ferreira (Bate-volta Gonçalves)", type: "Vinícola • Piranguçu", price: "~R$ 180–280/pessoa", insta: "https://www.instagram.com/vinicola.ferreira/", site: "https://vinicolaferreira.com.br/" },
           { name: "Pousada Vida Verde (Gonçalves)", type: "Hospedagem Fazenda", price: "R$ 720–880/noite", insta: null, site: "https://www.pousadavidaverde.com.br/" }
         ],
         videoId: "xT7TYA7dJ4Y",
@@ -770,7 +807,7 @@
         {
           label: "Enoturismo & Azeites",
           v0: "3 vinícolas (ANSEHI, Trindade, Luiz Porto)",
-          v1: "5 vinícolas de altitude + Fazenda Oliq"
+          v1: "6 vinícolas de altitude + Fazenda Oliq"
         },
         {
           label: "Natureza & Ecoturismo",
@@ -1110,7 +1147,131 @@
       `;
     }
 
+
+    const decisionMatrix = [
+      {
+        criterion: "1. Enoturismo (Vinícolas)",
+        p1Badge: "PIOR", p1Type: "pior",
+        p1Text: "Apenas 3 vinícolas mais dispersas na rota.",
+        p2Badge: "MELHOR", p2Type: "melhor",
+        p2Text: "6 vinícolas de altitude concentradas (incluindo bate-volta na Vinícola Ferreira)."
+      },
+      {
+        criterion: "2. Gastronomia Autoral & Azeites",
+        p1Badge: "PIOR", p1Type: "pior",
+        p1Text: "Menos opções de almoços harmonizados em vinícolas e menor cultura de azeites.",
+        p2Badge: "MELHOR", p2Type: "melhor",
+        p2Text: "Almoços harmonizados em altitude (Entre Vilas, Villa Santa Maria, Ferreira) e degustação de azeites (Oliq)."
+      },
+      {
+        criterion: "3. Gastronomia Mineira Raiz & Quitandas",
+        p1Badge: "MELHOR", p1Type: "melhor",
+        p1Text: "Fartura tradicional no fogão a lenha, doces de tacho, broas e quitandas autênticas.",
+        p2Badge: "PIOR", p2Type: "pior",
+        p2Text: "Forte em Gonçalves, mas o eixo paulista (São Bento/Pinhal) puxa mais para bistrôs contemporâneos."
+      },
+      {
+        criterion: "4. Fazendas Históricas & Hotéis-Fazenda",
+        p1Badge: "MELHOR", p1Type: "melhor",
+        p1Text: "Fazendas centenárias reais (Jaguara, Sete Lagoas, Areal) com casarão colonial, lago e estrutura tradicional.",
+        p2Badge: "PIOR", p2Type: "pior",
+        p2Text: "Predomínio de chalés de montanha e pousadas rurais em vez de hotéis-fazenda históricos."
+      },
+      {
+        criterion: "5. Cafés Especiais, Queijos & Cozinhar no Chalé",
+        p1Badge: "IGUAL", p1Type: "igual",
+        p1Text: "Excelente oferta de queijos mineiros (Jaguara/Tiradentes), cafés especiais e empórios.",
+        p2Badge: "IGUAL", p2Type: "igual",
+        p2Text: "Excelente oferta de queijos da Terra Fria (Gonçalves), cafés de altitude e empórios locais."
+      },
+      {
+        criterion: "6. Trilhas, Quedas d'Água, Piscinas & Grutas",
+        p1Badge: "PIOR em trilhas | ÚNICO em Grutas", p1Type: "pior",
+        p1Text: "Grutas Rei do Mato e Maquiné, mas menos piscinas naturais acessíveis.",
+        p2Badge: "MELHOR", p2Type: "melhor",
+        p2Text: "Alta concentração de cachoeiras rasas, piscinas naturais (Simão, Sete Quedas, Lageado) e mirantes fáceis (Bauzinho, Chanfrada)."
+      },
+      {
+        criterion: "7. Conforto para os 2 Chihuahuas",
+        p1Badge: "PIOR", p1Type: "pior",
+        p1Text: "Grutas, caves fechadas e ladeiras pedregosas exigem deixá-los sozinhos no quarto com mais frequência.",
+        p2Badge: "MELHOR", p2Type: "melhor",
+        p2Text: "Vinícolas com jardins abertos, trilhas curtas acessíveis na guia/mochila e chalés com quintal/mata."
+      },
+      {
+        criterion: "8. Logística de Estrada & Troca de Malas",
+        p1Badge: "PIOR", p1Type: "pior",
+        p1Text: "4 trocas de hospedagem e ~1.220 km rodados.",
+        p2Badge: "MELHOR", p2Type: "melhor",
+        p2Text: "Apenas 2 bases fixas (9 noites + 7 noites) e ~980 km rodados."
+      },
+      {
+        criterion: "9. Clima no Verão (Sem depender de AC)",
+        p1Badge: "PIOR", p1Type: "pior",
+        p1Text: "Mais quente (especialmente Sete Lagoas) e ladeiras escorregadias na chuva.",
+        p2Badge: "MELHOR", p2Type: "melhor",
+        p2Text: "Altitude (1.200m–1.700m) garante noites frescas (15°C–18°C), dispensando AC com conforto."
+      },
+      {
+        criterion: "10. Investimento Total (c/ Carro Alugado)",
+        p1Badge: "MELHOR", p1Type: "melhor",
+        p1Text: "R$ 16.280 (economia de R$ 1.880 no total).",
+        p2Badge: "PIOR", p2Type: "pior",
+        p2Text: "R$ 18.160 (ticket médio de diária mais alto na Mantiqueira no Natal/Réveillon)."
+      }
+    ];
+
+    function badgeClass(type) {
+      if (type === "melhor") return "bg-emerald-50 text-emerald-800 border-emerald-200";
+      if (type === "igual") return "bg-stone-100 text-stone-700 border-stone-200";
+      return "bg-amber-50/90 text-amber-800 border-amber-200";
+    }
+
+    function renderDecisionMatrix() {
+      const tbody = document.getElementById("decision-matrix-tbody");
+      const mobile = document.getElementById("decision-matrix-mobile");
+      if (tbody) {
+        tbody.innerHTML = decisionMatrix.map(row => `
+          <tr class="hover:bg-stone-50/70 transition-colors">
+            <td class="py-3 px-4 font-semibold text-ink align-top">${row.criterion}</td>
+            <td class="py-3 px-4 text-stone-600 align-top">
+              <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border mb-1 ${badgeClass(row.p1Type)}">${row.p1Badge}</span>
+              <p class="leading-snug">${row.p1Text}</p>
+            </td>
+            <td class="py-3 px-4 text-stone-700 align-top bg-emerald-50/20">
+              <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border mb-1 ${badgeClass(row.p2Type)}">${row.p2Badge}</span>
+              <p class="leading-snug">${row.p2Text}</p>
+            </td>
+          </tr>
+        `).join('');
+      }
+      if (mobile) {
+        mobile.innerHTML = decisionMatrix.map(row => `
+          <div class="rounded-xl border border-stone-200/80 p-3 bg-stone-50/40 space-y-2">
+            <div class="text-xs font-bold text-ink">${row.criterion}</div>
+            <div class="grid grid-cols-1 gap-2 text-[11px]">
+              <div class="bg-white rounded-lg p-2.5 border border-stone-200/70">
+                <div class="flex items-center justify-between gap-2 mb-1">
+                  <span class="font-semibold text-stone-500">Plano 1 • Estrada Real</span>
+                  <span class="text-[9px] font-bold uppercase px-2 py-0.5 rounded-full border ${badgeClass(row.p1Type)}">${row.p1Badge}</span>
+                </div>
+                <p class="text-stone-600 leading-snug">${row.p1Text}</p>
+              </div>
+              <div class="bg-white rounded-lg p-2.5 border border-emerald-200/70">
+                <div class="flex items-center justify-between gap-2 mb-1">
+                  <span class="font-semibold text-forest">Plano 2 • Mantiqueira</span>
+                  <span class="text-[9px] font-bold uppercase px-2 py-0.5 rounded-full border ${badgeClass(row.p2Type)}">${row.p2Badge}</span>
+                </div>
+                <p class="text-stone-700 leading-snug">${row.p2Text}</p>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
     document.addEventListener("DOMContentLoaded", () => {
+      renderDecisionMatrix();
       selectPlan(1);
       renderComparisonTable();
       updateVoteSummary();
