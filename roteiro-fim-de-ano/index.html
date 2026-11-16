@@ -290,7 +290,17 @@
             desc: "Caminhada leve na base da Serra de São José e poço natural do Bosque da Mãe D'Água, Vinícola Trindade (Bichinho) e Vinícola Luiz Porto (Tiradentes).",
             conciergeTip: "🍷 Programe a Vinícola Trindade e a Luiz Porto em tardes diferentes para aproveitar sem pressa.",
             activities: [
-              { label: "Bosque da Mãe D'Água & Serra", tag: "natureza", badge: "🥾 Poço Natural • 🐾 Pet", photoIdx: 0 },
+              {
+                label: "Bosque da Mãe D'Água & Serra",
+                tag: "natureza",
+                badge: "🥾 Poço Natural • 🐾 Pet",
+                customPhoto: {
+                  url: wm("Tiradentes_chafariz_sao_jose.jpg"),
+                  caption: "Bosque da Mãe D'Água e Serra de São José (ao fundo do Chafariz de São José, Tiradentes)",
+                  location: "Tiradentes • MG",
+                  category: "🥾 Trilhas & Piscinas Naturais"
+                }
+              },
               { label: "Vinícola Trindade (Bichinho)", tag: "vinicola", badge: "🍷 Vinícola • Domo", photoIdx: 1 },
               { label: "Profetas em Congonhas", tag: "natureza", badge: "🏛️ Parada Cultural", photoIdx: 7 }
             ],
@@ -553,6 +563,15 @@
 
     function openPlanPhoto(photoIdx) {
       showModalPhoto(plans[activePlanIndex].heroPhotos, photoIdx);
+    }
+
+    function openActivityPhoto(stageIdx, actIdx) {
+      const act = plans[activePlanIndex].stages[stageIdx].activities[actIdx];
+      if (act.customPhoto) {
+        showModalPhoto([act.customPhoto], 0);
+      } else {
+        openPlanPhoto(act.photoIdx);
+      }
     }
 
     function stepModalPhoto(delta) {
@@ -829,14 +848,17 @@
 
                 ${visibleActivities.length ? `
                   <div class="flex flex-wrap gap-2 mt-4">
-                    ${visibleActivities.map(a => `
-                      <button type="button" onclick="openPlanPhoto(${a.photoIdx})"
+                    ${visibleActivities.map((a, aIdx) => {
+                      const realIdx = stage.activities.indexOf(a);
+                      return `
+                      <button type="button" onclick="openActivityPhoto(${idx}, ${realIdx})"
                         class="inline-flex items-center gap-1.5 text-[11px] font-semibold px-3 py-1.5 rounded-xl border transition-colors cursor-pointer ${tagStyles[a.tag] || tagStyles.natureza}">
                         <span>${a.label}</span>
                         <span class="opacity-75 text-[10px]">(${a.badge})</span>
                         <span>📷</span>
                       </button>
-                    `).join('')}
+                    `;
+                    }).join('')}
                   </div>
                 ` : ''}
 
