@@ -10,6 +10,8 @@
   <meta property="og:description" content="16 diárias de carro saindo de Niterói com 2 Chihuahuas: vinícolas, cachoeiras, trilhas acessíveis, hospedagens com cozinha e orçamento realista." />
   <meta property="og:image" content="https://vinicolaraizesdobau.com.br/wp-content/uploads/2021/05/bg1-quem-somos-vinicola-raizes-do-bau.jpg" />
   <meta property="og:url" content="https://roteiro.reagiu.com.br/" />
+  <link rel="preload" as="image" href="https://vinicolaraizesdobau.com.br/wp-content/uploads/2021/05/bg1-quem-somos-vinicola-raizes-do-bau.jpg" />
+  <link rel="preload" as="image" href="https://vinicolaessenza.com.br/assets/media/2025/06/Secao-1.webp" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,10 +95,10 @@
   </nav>
 
   <!-- Main Content -->
-  <main class="max-w-6xl mx-auto px-3 sm:px-4 pt-4 sm:pt-5 pb-16 space-y-8">
+  <main class="max-w-6xl mx-auto px-3 sm:px-4 pt-3 sm:pt-5 pb-16 space-y-8">
     <div id="plan-content" class="space-y-6"></div>
 
-    <!-- Side-by-Side Comparison & Budget -->
+    <!-- Side-by-Side Comparison (Responsive: Stacked Cards on Mobile, Table on Desktop) -->
     <section id="comparativo" class="pt-6 border-t border-stone-200 scroll-mt-24">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-5">
         <div>
@@ -114,7 +116,11 @@
         </div>
       </div>
 
-      <div class="bg-white rounded-2xl border border-stone-200/90 shadow-xs overflow-hidden">
+      <!-- Mobile Stacked Cards (< md) -->
+      <div id="comparison-mobile" class="grid grid-cols-1 gap-2.5 md:hidden"></div>
+
+      <!-- Desktop Table (>= md) -->
+      <div class="hidden md:block bg-white rounded-2xl border border-stone-200/90 shadow-xs overflow-hidden">
         <div class="overflow-x-auto">
           <table class="w-full text-left border-collapse text-xs md:text-sm">
             <thead>
@@ -157,11 +163,34 @@
     const abnb = (place, checkin, checkout) =>
       `https://www.airbnb.com.br/s/${encodeURIComponent(place)}/homes?checkin=${checkin}&checkout=${checkout}&adults=2&pets=2&amenities%5B%5D=8`;
 
+    const photos = {
+      tiradentesCentro: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Centro_hist%C3%B3rico_de_Tiradentes_-_MG.jpg/960px-Centro_hist%C3%B3rico_de_Tiradentes_-_MG.jpg",
+      trindadeVinhos: "https://vinicolatrindade.com.br/wp-content/uploads/2026/07/vinhos-1024x684.webp",
+      trindadeExp: "https://vinicolatrindade.com.br/wp-content/uploads/2026/07/experiencias-1024x684.webp",
+      grutaReiMato: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Monumento_Natural_Estadual_Gruta_Rei_do_Mato_por_Douver_Ferreira_%2809%29.jpg/960px-Monumento_Natural_Estadual_Gruta_Rei_do_Mato_por_Douver_Ferreira_%2809%29.jpg",
+      grutaMaquine: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Gruta_de_Maquin%C3%A9%2C_MG.jpg/960px-Gruta_de_Maquin%C3%A9%2C_MG.jpg",
+      cachPrazeres: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Prazeres%2C_cachoeira.jpg/960px-Prazeres%2C_cachoeira.jpg",
+      ouroPreto: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Ouro_Preto%2C_Minas_Gerais.jpg/960px-Ouro_Preto%2C_Minas_Gerais.jpg",
+      congonhas: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Santu%C3%A1rio_de_Bom_Jesus_de_Matosinhos%2C_em_Congonhas.jpg/960px-Santu%C3%A1rio_de_Bom_Jesus_de_Matosinhos%2C_em_Congonhas.jpg",
+      chafarizTiradentes: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Tiradentes_chafariz_sao_jose.jpg/960px-Tiradentes_chafariz_sao_jose.jpg",
+      villaAlferes: "https://lirp.cdn-website.com/36e30871/dms3rep/multi/opt/e-df71e711-1920w.jpg",
+      solarCedro: "https://solarfazendadocedro.com.br/wp-content/uploads/2026/06/foto.jpg",
+      tankamana: "https://www.tankamana.com.br/wp-content/themes/Pousada%20Aldeia/assets/images/suite-destaque.jpg",
+      raizesBau: "https://vinicolaraizesdobau.com.br/wp-content/uploads/2021/05/bg1-quem-somos-vinicola-raizes-do-bau.jpg",
+      essenza: "https://vinicolaessenza.com.br/assets/media/2025/06/Secao-1.webp",
+      pedraBau: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Pedra_do_Ba%C3%BA_e_Bauzinho_%28S%C3%A3o_Bento_do_Sapuca%C3%AD%29.jpg/960px-Pedra_do_Ba%C3%BA_e_Bauzinho_%28S%C3%A3o_Bento_do_Sapuca%C3%AD%29.jpg",
+      cachLageado: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Cachoeira_do_Lageado_-_Santo_Ant%C3%B4nio_do_Pinhal_-_SP.jpg/960px-Cachoeira_do_Lageado_-_Santo_Ant%C3%B4nio_do_Pinhal_-_SP.jpg",
+      entreVilas: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Pedra_do_Bau_ao_p%C3%B4r-do-sol.JPG/960px-Pedra_do_Bau_ao_p%C3%B4r-do-sol.JPG",
+      goncalves: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Gon%C3%A7alves_%28MG%29.jpg/960px-Gon%C3%A7alves_%28MG%29.jpg",
+      serraGoncalves: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Vista_Rural_de_Gon%C3%A7alves%2C_Minas_Gerais.jpg/960px-Vista_Rural_de_Gon%C3%A7alves%2C_Minas_Gerais.jpg",
+      chaleSerra: "https://pousadacandeias.com.br/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-09-at-21.49.42.jpeg"
+    };
+
     const tagStyles = {
-      vinicola: "bg-rose-50 text-rose-800 border-rose-200 hover:bg-rose-900 hover:text-white",
-      natureza: "bg-emerald-50 text-emerald-800 border-emerald-200 hover:bg-emerald-900 hover:text-white",
-      gruta: "bg-amber-50 text-amber-900 border-amber-200 hover:bg-amber-900 hover:text-white",
-      pet: "bg-sky-50 text-sky-800 border-sky-200 hover:bg-sky-900 hover:text-white"
+      vinicola: "border-rose-200 bg-rose-50/50 hover:bg-rose-50",
+      natureza: "border-emerald-200 bg-emerald-50/50 hover:bg-emerald-50",
+      gruta: "border-amber-200 bg-amber-50/50 hover:bg-amber-50",
+      pet: "border-sky-200 bg-sky-50/50 hover:bg-sky-50"
     };
 
     const plans = [
@@ -192,34 +221,10 @@
         climateNote: "4 paradas conectadas pela BR-040 e Estrada Real. Inclui parada de almoço em Juiz de Fora/Barbacena na ida e parada cultural em Congonhas rumo a Tiradentes.",
         gastronomy: "Cozinha equipada nos chalés para café da manhã e refeições leves (~R$ 4.120 economizados), liberando o orçamento para almoços nas vinícolas, cafés e queijos da Fazenda da Jaguara.",
         heroPhotos: [
-          {
-            url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Centro_hist%C3%B3rico_de_Tiradentes_-_MG.jpg/960px-Centro_hist%C3%B3rico_de_Tiradentes_-_MG.jpg",
-            shortLabel: "Centro de Tiradentes",
-            caption: "Ruas históricas de Tiradentes aos pés da Serra de São José",
-            location: "Tiradentes • MG",
-            category: "Cidade"
-          },
-          {
-            url: "https://vinicolatrindade.com.br/wp-content/uploads/2026/07/vinhos-1024x684.webp",
-            shortLabel: "Vinícola Trindade",
-            caption: "Vinícola Trindade (Bichinho) — degustação de vinhos de inverno no domo geodésico",
-            location: "Bichinho • MG",
-            category: "Vinícola"
-          },
-          {
-            url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Monumento_Natural_Estadual_Gruta_Rei_do_Mato_por_Douver_Ferreira_%2809%29.jpg/960px-Monumento_Natural_Estadual_Gruta_Rei_do_Mato_por_Douver_Ferreira_%2809%29.jpg",
-            shortLabel: "Gruta Rei do Mato",
-            caption: "Gruta Rei do Mato (Sete Lagoas) — passarelas iluminadas",
-            location: "Sete Lagoas • MG",
-            category: "Gruta"
-          },
-          {
-            url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Prazeres%2C_cachoeira.jpg/960px-Prazeres%2C_cachoeira.jpg",
-            shortLabel: "Cachoeira dos Prazeres",
-            caption: "Cachoeira dos Prazeres em Lavras Novas — trilha leve e poços naturais",
-            location: "Lavras Novas • MG",
-            category: "Cachoeira"
-          }
+          { url: photos.tiradentesCentro, shortLabel: "Centro de Tiradentes", caption: "Ruas históricas de Tiradentes aos pés da Serra de São José", location: "Tiradentes • MG", category: "Cidade" },
+          { url: photos.trindadeVinhos, shortLabel: "Vinícola Trindade", caption: "Vinícola Trindade (Bichinho) — degustação de vinhos de inverno no domo geodésico", location: "Bichinho • MG", category: "Vinícola" },
+          { url: photos.grutaReiMato, shortLabel: "Gruta Rei do Mato", caption: "Gruta Rei do Mato (Sete Lagoas) — passarelas iluminadas", location: "Sete Lagoas • MG", category: "Gruta" },
+          { url: photos.cachPrazeres, shortLabel: "Cachoeira dos Prazeres", caption: "Cachoeira dos Prazeres em Lavras Novas — trilha leve e poços naturais", location: "Lavras Novas • MG", category: "Cachoeira" }
         ],
         stages: [
           {
@@ -236,60 +241,43 @@
             desc: "Gruta Rei do Mato e Gruta de Maquiné (passarelas iluminadas), piscinas naturais de cascata, trilhas ecológicas e queijos curados da Fazenda da Jaguara.",
             conciergeTip: "Atenção: Valide na reserva se os 2 Chihuahuas podem ficar 2h30 no quarto durante a entrada nas grutas.",
             activities: [
-              { label: "Gruta Rei do Mato", tag: "gruta", badge: "Gruta • Quarto 2h30", photoIdx: 2 },
-              {
-                label: "Gruta de Maquiné",
-                tag: "gruta",
-                badge: "Gruta • Quarto 2h30",
-                customPhoto: {
-                  url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Gruta_de_Maquin%C3%A9%2C_MG.jpg/960px-Gruta_de_Maquin%C3%A9%2C_MG.jpg",
-                  caption: "Gruta de Maquiné (Cordisburgo) — formações calcárias monumentais",
-                  location: "Cordisburgo • MG",
-                  category: "Gruta"
-                }
-              },
-              {
-                label: "Piscinas de Cascata & Trilhas",
-                tag: "natureza",
-                badge: "Piscinas • Pet",
-                customPhoto: {
-                  url: "https://lirp.cdn-website.com/36e30871/dms3rep/multi/opt/e-df71e711-1920w.jpg",
-                  caption: "Jardins e hospedagem em contato com a natureza mineira",
-                  location: "Minas Gerais",
-                  category: "Hospedagem"
-                }
-              }
+              { label: "Gruta Rei do Mato", tag: "gruta", badge: "Gruta • Quarto 2h30", photo: photos.grutaReiMato, caption: "Gruta Rei do Mato (Sete Lagoas) — passarelas iluminadas", location: "Sete Lagoas • MG" },
+              { label: "Gruta de Maquiné", tag: "gruta", badge: "Gruta • Quarto 2h30", photo: photos.grutaMaquine, caption: "Gruta de Maquiné (Cordisburgo) — formações calcárias monumentais", location: "Cordisburgo • MG" },
+              { label: "Piscinas de Cascata & Trilhas", tag: "natureza", badge: "Piscinas • Pet", photo: photos.solarCedro, caption: "Piscinas naturais e trilhas ecológicas em fazenda", location: "Região das Grutas • MG" }
             ],
             lodgings: [
               {
-                name: "Vale da Mata",
+                name: "Vale da Mata Estância Ecológica",
                 type: "Fazenda",
                 price: "R$ 680 – R$ 820/noite",
                 petStatus: "Pet sozinho no quarto: a confirmar",
                 highlights: "Casinhas coloniais, piscina em cascata natural, trilhas e café incluído.",
                 kitchen: false,
-                url: "https://www.google.com/search?q=Vale+da+Mata+Sete+Lagoas+MG",
-                cta: "Consultar"
+                photo: photos.solarCedro,
+                url: "https://www.valedamatamg.com.br/",
+                cta: "Ver site oficial"
               },
               {
-                name: "Sítio Gran Royalle (Airbnb)",
+                name: "Casas de Campo e Sítios (Airbnb)",
                 type: "Airbnb",
                 price: "R$ 450 – R$ 580/noite",
                 petStatus: "Área cercada • Pet-friendly",
-                highlights: "Cozinha completa, área verde cercada e liberdade total para os 2 Chihuahuas.",
+                highlights: "Busca filtrada para 2 pets e cozinha completa na região de Sete Lagoas.",
                 kitchen: true,
+                photo: photos.chaleSerra,
                 url: abnb("Sete Lagoas, Minas Gerais", "2026-12-19", "2026-12-23"),
                 cta: "Buscar no Airbnb"
               },
               {
-                name: "Chalés Rurais / Fazenda Melancias",
+                name: "Pousada Fazenda das Melancias",
                 type: "Rural",
                 price: "R$ 420 – R$ 550/noite",
                 petStatus: "Pet sozinho no quarto: a confirmar",
                 highlights: "Clima de fazenda com cozinha/copa de apoio e contato com a natureza.",
                 kitchen: true,
-                url: "https://www.google.com/search?q=Pousada+Fazenda+Sete+Lagoas+MG+pet+friendly",
-                cta: "Consultar"
+                photo: photos.villaAlferes,
+                url: "https://www.instagram.com/explore/tags/fazendadasmelancias/",
+                cta: "Ver no Instagram"
               }
             ]
           },
@@ -307,38 +295,19 @@
             desc: "Trilhas e banho nas Cachoeiras dos Prazeres e do Falcão (pet-friendly na guia pela manhã), cafés artesanais e degustação na Vinícola ANSEHI (~R$ 180/pessoa | 2h30).",
             conciergeTip: "Prepare o café da manhã e refeições leves no chalé e reserve o orçamento para a Vinícola ANSEHI e a ceia de Natal.",
             activities: [
-              { label: "Cachoeira dos Prazeres & Falcão", tag: "natureza", badge: "Cachoeiras • Guia", photoIdx: 3 },
-              {
-                label: "Vinícola ANSEHI",
-                tag: "vinicola",
-                badge: "Vinícola ~R$ 180",
-                customPhoto: {
-                  url: "https://vinicolatrindade.com.br/wp-content/uploads/2026/07/vinhos-1024x684.webp",
-                  caption: "Degustação de vinhos mineiros harmonizados com queijos e charcutaria",
-                  location: "Ouro Preto • MG",
-                  category: "Vinícola"
-                }
-              },
-              {
-                label: "Cafés em Ouro Preto",
-                tag: "natureza",
-                badge: "Cafés & História",
-                customPhoto: {
-                  url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Ouro_Preto%2C_Minas_Gerais.jpg/960px-Ouro_Preto%2C_Minas_Gerais.jpg",
-                  caption: "Ouro Preto — Natal histórico e cafeterias autorais",
-                  location: "Ouro Preto • MG",
-                  category: "Cidade"
-                }
-              }
+              { label: "Cachoeira dos Prazeres & Falcão", tag: "natureza", badge: "Cachoeiras • Guia", photo: photos.cachPrazeres, caption: "Cachoeira dos Prazeres em Lavras Novas", location: "Lavras Novas • MG" },
+              { label: "Vinícola ANSEHI", tag: "vinicola", badge: "Vinícola ~R$ 180", photo: photos.trindadeExp, caption: "Degustação de vinhos mineiros harmonizados com queijos", location: "Ouro Preto • MG" },
+              { label: "Cafés em Ouro Preto", tag: "natureza", badge: "Cafés & História", photo: photos.ouroPreto, caption: "Ouro Preto — Natal histórico e cafeterias autorais", location: "Ouro Preto • MG" }
             ],
             lodgings: [
               {
-                name: "Chalé Privativo com Cozinha (Airbnb)",
+                name: "Chalés com Cozinha (Airbnb)",
                 type: "Airbnb",
                 price: "R$ 450 – R$ 590/noite",
                 petStatus: "Privativo • Pet-friendly",
-                highlights: "Vista para a serra, varanda e cozinha equipada para café e refeições leves.",
+                highlights: "Busca filtrada em Lavras Novas com cozinha equipada para café e refeições leves.",
                 kitchen: true,
+                photo: photos.chaleSerra,
                 url: abnb("Lavras Novas, Ouro Preto, Minas Gerais", "2026-12-23", "2026-12-28"),
                 cta: "Buscar no Airbnb"
               },
@@ -349,8 +318,9 @@
                 petStatus: "Pet sozinho no quarto: a confirmar",
                 highlights: "Na rua principal (caminhada fácil c/ cães), jardins e café caseiro.",
                 kitchen: false,
-                url: "https://www.google.com/search?q=Pousada+Buiei%C3%A9+Lavras+Novas",
-                cta: "Consultar"
+                photo: photos.ouroPreto,
+                url: "http://pousadabuieie.com.br/",
+                cta: "Ver site oficial"
               },
               {
                 name: "Pousada Carumbé",
@@ -359,8 +329,9 @@
                 petStatus: "Pet-friendly (confirmar regras)",
                 highlights: "Chalés confortáveis, piscinas e excelente avaliação de tutores.",
                 kitchen: false,
-                url: "https://www.google.com/search?q=Pousada+Carumb%C3%A9+Lavras+Novas",
-                cta: "Consultar"
+                photo: photos.villaAlferes,
+                url: "https://www.carumbe.com.br/",
+                cta: "Ver site oficial"
               }
             ]
           },
@@ -378,38 +349,19 @@
             desc: "Caminhada leve na base da Serra de São José e poço natural do Bosque da Mãe D'Água, Vinícola Trindade (Bichinho) e Vinícola Luiz Porto (Tiradentes).",
             conciergeTip: "Programe a Vinícola Trindade e a Luiz Porto em tardes diferentes para aproveitar sem pressa.",
             activities: [
-              {
-                label: "Bosque da Mãe D'Água & Serra",
-                tag: "natureza",
-                badge: "Poço Natural • Pet",
-                customPhoto: {
-                  url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Tiradentes_chafariz_sao_jose.jpg/960px-Tiradentes_chafariz_sao_jose.jpg",
-                  caption: "Bosque da Mãe D'Água e Serra de São José (ao fundo do Chafariz de São José)",
-                  location: "Tiradentes • MG",
-                  category: "Trilhas & Piscinas"
-                }
-              },
-              { label: "Vinícola Trindade (Bichinho)", tag: "vinicola", badge: "Vinícola • Domo", photoIdx: 1 },
-              {
-                label: "Profetas em Congonhas",
-                tag: "natureza",
-                badge: "Parada Cultural",
-                customPhoto: {
-                  url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Santu%C3%A1rio_de_Bom_Jesus_de_Matosinhos%2C_em_Congonhas.jpg/960px-Santu%C3%A1rio_de_Bom_Jesus_de_Matosinhos%2C_em_Congonhas.jpg",
-                  caption: "Santuário de Bom Jesus de Matosinhos — Profetas de Aleijadinho",
-                  location: "Congonhas • MG",
-                  category: "Cultura"
-                }
-              }
+              { label: "Bosque da Mãe D'Água & Serra", tag: "natureza", badge: "Poço Natural • Pet", photo: photos.chafarizTiradentes, caption: "Bosque da Mãe D'Água e Serra de São José", location: "Tiradentes • MG" },
+              { label: "Vinícola Trindade (Bichinho)", tag: "vinicola", badge: "Vinícola • Domo", photo: photos.trindadeVinhos, caption: "Vinícola Trindade — vinhos de inverno no domo geodésico", location: "Bichinho • MG" },
+              { label: "Profetas em Congonhas", tag: "natureza", badge: "Parada Cultural", photo: photos.congonhas, caption: "Santuário de Bom Jesus de Matosinhos em Congonhas", location: "Congonhas • MG" }
             ],
             lodgings: [
               {
-                name: "Casa/Chalé Largo do Ó (Airbnb)",
+                name: "Casas e Chalés no Centro (Airbnb)",
                 type: "Airbnb",
                 price: "R$ 520 – R$ 680/noite",
                 petStatus: "Quintal privativo • Pet-friendly",
-                highlights: "Quintal privativo, cozinha completa e vista para a Serra de São José.",
+                highlights: "Busca filtrada em Tiradentes com cozinha completa e filtro pet.",
                 kitchen: true,
+                photo: photos.tiradentesCentro,
                 url: abnb("Tiradentes, Minas Gerais", "2026-12-28", "2027-01-03"),
                 cta: "Buscar no Airbnb"
               },
@@ -420,8 +372,9 @@
                 petStatus: "Pet-friendly (confirmar regras)",
                 highlights: "Quartos amplos, jardins e café da manhã com quitandas mineiras.",
                 kitchen: false,
+                photo: photos.villaAlferes,
                 url: "https://www.villaalferes.com.br/",
-                cta: "Site oficial"
+                cta: "Ver site oficial"
               },
               {
                 name: "Casarão Trindade (na Vinícola)",
@@ -430,8 +383,9 @@
                 petStatus: "Política pet: validar antes",
                 highlights: "8 suítes históricas dentro da Vinícola Trindade em Bichinho.",
                 kitchen: false,
+                photo: photos.trindadeExp,
                 url: "https://www.vinicolatrindade.com.br/",
-                cta: "Site oficial"
+                cta: "Ver site oficial"
               }
             ]
           },
@@ -451,12 +405,13 @@
             activities: [],
             lodgings: [
               {
-                name: "Chalé na Serra (Airbnb)",
+                name: "Chalés na Serra (Airbnb)",
                 type: "Airbnb",
                 price: "R$ 420 – R$ 550/noite",
                 petStatus: "Pet-friendly",
-                highlights: "Refúgio tranquilo em Itaipava/Vale do Cuiabá com cozinha de apoio.",
+                highlights: "Busca filtrada em Itaipava/Vale do Cuiabá com cozinha de apoio.",
                 kitchen: true,
+                photo: photos.chaleSerra,
                 url: abnb("Itaipava, Petrópolis, Rio de Janeiro", "2027-01-03", "2027-01-04"),
                 cta: "Buscar no Airbnb"
               },
@@ -467,8 +422,9 @@
                 petStatus: "Pet-friendly (confirmar taxa)",
                 highlights: "Beira da BR-040, clima de fazenda, lago e retorno rápido para Niterói.",
                 kitchen: false,
-                url: "https://www.google.com/search?q=Hotel+Solar+Fazenda+do+Cedro+Areal",
-                cta: "Consultar"
+                photo: photos.solarCedro,
+                url: "https://solarfazendadocedro.com.br/",
+                cta: "Ver site oficial"
               },
               {
                 name: "Pousada Tankamana",
@@ -477,8 +433,9 @@
                 petStatus: "Pet-friendly (confirmar regras)",
                 highlights: "Chalés rústicos imersos na Mata Atlântica.",
                 kitchen: false,
-                url: "https://www.google.com/search?q=Pousada+Tankamana+Itaipava",
-                cta: "Consultar"
+                photo: photos.tankamana,
+                url: "https://www.tankamana.com.br/",
+                cta: "Ver site oficial"
               }
             ]
           }
@@ -523,34 +480,10 @@
         climateNote: "Apenas 2 bases conectadas por 52 km (~1h15), eliminando Cunha e Penedo para evitar serras na chuva. Rota 100% asfaltada via Dutra + SP-046.",
         gastronomy: "Cozinha equipada nos chalés para café da manhã tranquilo e jantares leves (~R$ 4.440 economizados), focando o orçamento nas 5 vinícolas, Fazenda Oliq e queijos da Fazenda Retiro das Pedras.",
         heroPhotos: [
-          {
-            url: "https://vinicolaraizesdobau.com.br/wp-content/uploads/2021/05/bg1-quem-somos-vinicola-raizes-do-bau.jpg",
-            shortLabel: "Vinícola Raízes do Baú",
-            caption: "Vinícola Raízes do Baú — piqueniques nos vinhedos de frente para a Pedra do Baú",
-            location: "São Bento • SP",
-            category: "Vinícola"
-          },
-          {
-            url: "https://vinicolaessenza.com.br/assets/media/2025/06/Secao-1.webp",
-            shortLabel: "Vinícola Essenza",
-            caption: "Vinícola Boutique Essenza — degustação em pergolados entre vinhedo e olival",
-            location: "Pinhal • SP",
-            category: "Vinícola"
-          },
-          {
-            url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Pedra_do_Ba%C3%BA_e_Bauzinho_%28S%C3%A3o_Bento_do_Sapuca%C3%AD%29.jpg/960px-Pedra_do_Ba%C3%BA_e_Bauzinho_%28S%C3%A3o_Bento_do_Sapuca%C3%AD%29.jpg",
-            shortLabel: "Pedra do Baú & Bauzinho",
-            caption: "Trilha do Bauzinho (1.760m) — caminhada de 10 min pet-friendly na guia",
-            location: "São Bento • SP",
-            category: "Trilha"
-          },
-          {
-            url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Cachoeira_do_Lageado_-_Santo_Ant%C3%B4nio_do_Pinhal_-_SP.jpg/960px-Cachoeira_do_Lageado_-_Santo_Ant%C3%B4nio_do_Pinhal_-_SP.jpg",
-            shortLabel: "Cachoeira do Lageado",
-            caption: "Cachoeira do Lageado — quedas d'água e piscinas naturais cristalinas",
-            location: "Pinhal • SP",
-            category: "Cachoeira"
-          }
+          { url: photos.raizesBau, shortLabel: "Vinícola Raízes do Baú", caption: "Vinícola Raízes do Baú — piqueniques nos vinhedos de frente para a Pedra do Baú", location: "São Bento • SP", category: "Vinícola" },
+          { url: photos.essenza, shortLabel: "Vinícola Essenza", caption: "Vinícola Boutique Essenza — degustação em pergolados entre vinhedo e olival", location: "Pinhal • SP", category: "Vinícola" },
+          { url: photos.pedraBau, shortLabel: "Pedra do Baú & Bauzinho", caption: "Trilha do Bauzinho (1.760m) — caminhada de 10 min pet-friendly na guia", location: "São Bento • SP", category: "Trilha" },
+          { url: photos.cachLageado, shortLabel: "Cachoeira do Lageado", caption: "Cachoeira do Lageado — quedas d'água e piscinas naturais cristalinas", location: "Pinhal • SP", category: "Cachoeira" }
         ],
         stages: [
           {
@@ -567,31 +500,22 @@
             desc: "9 noites fixas para intercalar 5 vinícolas + Fazenda Oliq (azeites) com Trilha do Bauzinho (1.760m), Pico do Agudo, Cachoeira do Lageado e Cachoeira dos Amores / Toldi.",
             conciergeTip: "Noites frescas na serra dispensam AC obrigatório; o chalé com cozinha permite café da manhã no seu ritmo antes de sair para as trilhas e vinícolas.",
             activities: [
-              { label: "Vinícola Villa Santa Maria", tag: "vinicola", badge: "Vinícola • Jardim Pet", photoIdx: 2 },
-              { label: "Vinícola Raízes do Baú", tag: "vinicola", badge: "Piquenique • Pet", photoIdx: 0 },
-              {
-                label: "Vinícola Entre Vilas • 4 Tempos",
-                tag: "vinicola",
-                badge: "Almoço • Chalé 4h",
-                customPhoto: {
-                  url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Pedra_do_Bau_ao_p%C3%B4r-do-sol.JPG/960px-Pedra_do_Bau_ao_p%C3%B4r-do-sol.JPG",
-                  caption: "Altiplano do Baú ao pôr do sol — cenário da Vinícola Entre Vilas (1.600m)",
-                  location: "Entre Vilas • SP",
-                  category: "Vinícola"
-                }
-              },
-              { label: "Vinícola Essenza & Bela Vista + Oliq", tag: "vinicola", badge: "Vinícolas & Azeite", photoIdx: 1 },
-              { label: "Trilha do Bauzinho & Pico Agudo", tag: "natureza", badge: "Trilha 10min • Guia", photoIdx: 2 },
-              { label: "Cachoeira do Lageado, Amores & Toldi", tag: "natureza", badge: "Piscinas Naturais", photoIdx: 3 }
+              { label: "Vinícola Villa Santa Maria", tag: "vinicola", badge: "Vinícola • Jardim Pet", photo: photos.pedraBau, caption: "Vinícola Villa Santa Maria — tour guiado e jardins pet-friendly", location: "São Bento do Sapucaí • SP" },
+              { label: "Vinícola Raízes do Baú", tag: "vinicola", badge: "Piquenique • Pet", photo: photos.raizesBau, caption: "Vinícola Raízes do Baú — piquenique de frente para a Pedra do Baú", location: "São Bento do Sapucaí • SP" },
+              { label: "Vinícola Entre Vilas • 4 Tempos", tag: "vinicola", badge: "Almoço • Chalé 4h", photo: photos.entreVilas, caption: "Altiplano do Baú ao pôr do sol — Vinícola Entre Vilas (1.600m)", location: "Entre Vilas • SP" },
+              { label: "Vinícola Essenza & Bela Vista + Oliq", tag: "vinicola", badge: "Vinícolas & Azeite", photo: photos.essenza, caption: "Vinícola Boutique Essenza — degustação entre vinhedo e olival", location: "Santo Antônio do Pinhal • SP" },
+              { label: "Trilha do Bauzinho & Pico Agudo", tag: "natureza", badge: "Trilha 10min • Guia", photo: photos.pedraBau, caption: "Trilha leve do Bauzinho (1.760m) — acesso fácil na guia", location: "São Bento do Sapucaí • SP" },
+              { label: "Cachoeira do Lageado, Amores & Toldi", tag: "natureza", badge: "Piscinas Naturais", photo: photos.cachLageado, caption: "Cachoeira do Lageado — quedas e piscinas naturais", location: "Santo Antônio do Pinhal • SP" }
             ],
             lodgings: [
               {
-                name: "Chalé na Montanha com Cozinha (Airbnb)",
+                name: "Chalés na Montanha (Airbnb)",
                 type: "Airbnb",
                 price: "R$ 520 – R$ 680/noite",
                 petStatus: "Privativo • Pet-friendly",
-                highlights: "Varanda panorâmica, cozinha equipada para café/jantar e filtro pet aplicado.",
+                highlights: "Busca filtrada em Santo Antônio do Pinhal com cozinha equipada e filtro pet.",
                 kitchen: true,
+                photo: photos.chaleSerra,
                 url: abnb("Santo Antônio do Pinhal, São Paulo", "2026-12-19", "2026-12-28"),
                 cta: "Buscar no Airbnb"
               },
@@ -602,8 +526,9 @@
                 petStatus: "Pet-friendly (confirmar quarto)",
                 highlights: "Próxima à Pedra do Baú e vinícolas; chalés acolhedores para tutores de pets.",
                 kitchen: false,
-                url: "https://www.google.com/search?q=Pousada+Lua+Bonita+S%C3%A3o+Bento+do+Sapuca%C3%AD",
-                cta: "Consultar"
+                photo: photos.pedraBau,
+                url: "https://www.booking.com/searchresults.pt-br.html?ss=Pousada+Lua+Bonita+S%C3%A3o+Bento+do+Sapuca%C3%AD",
+                cta: "Ver no Booking"
               },
               {
                 name: "Pousada Vinhas do Pinhal",
@@ -612,8 +537,9 @@
                 petStatus: "Aceita pets pequenos (confirmar)",
                 highlights: "Temática enoturística com vista da serra.",
                 kitchen: false,
-                url: "https://www.google.com/search?q=Pousada+Vinhas+do+Pinhal+Santo+Ant%C3%B4nio+do+Pinhal",
-                cta: "Consultar"
+                photo: photos.essenza,
+                url: "https://www.pousadavinhasdopinhal.com.br/",
+                cta: "Ver site oficial"
               }
             ]
           },
@@ -631,38 +557,19 @@
             desc: "Trilha da Pedra Chanfrada (40 min em araucárias) e Pedra do Forno; Cachoeira do Simão, Sete Quedas, Retiro e Henriques (piscinas naturais rasas); queijarias na Terra Fria e Fazenda Retiro das Pedras.",
             conciergeTip: "Queijos e cafés da Fazenda Retiro das Pedras abastecem sua cozinha do chalé para cafés da manhã inesquecíveis na serra.",
             activities: [
-              { label: "Cachoeira do Simão, Sete Quedas & Retiro", tag: "natureza", badge: "Piscinas Naturais", photoIdx: 3 },
-              {
-                label: "Pedra Chanfrada & Pedra do Forno",
-                tag: "natureza",
-                badge: "Trilha 40min • Guia",
-                customPhoto: {
-                  url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Vista_Rural_de_Gon%C3%A7alves%2C_Minas_Gerais.jpg/960px-Vista_Rural_de_Gon%C3%A7alves%2C_Minas_Gerais.jpg",
-                  caption: "Montanhas e araucárias de Gonçalves — trilhas panorâmicas",
-                  location: "Gonçalves • MG",
-                  category: "Trilhas"
-                }
-              },
-              {
-                label: "Fazenda Retiro das Pedras & Queijos",
-                tag: "pet",
-                badge: "Queijos & Café • Pet",
-                customPhoto: {
-                  url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Gon%C3%A7alves_%28MG%29.jpg/960px-Gon%C3%A7alves_%28MG%29.jpg",
-                  caption: "Vila de Gonçalves — queijarias, empórios e comida mineira",
-                  location: "Gonçalves • MG",
-                  category: "Gastronomia"
-                }
-              }
+              { label: "Cachoeira do Simão, Sete Quedas & Retiro", tag: "natureza", badge: "Piscinas Naturais", photo: photos.cachLageado, caption: "Quedas d'água e piscinas naturais na Mantiqueira", location: "Gonçalves • MG" },
+              { label: "Pedra Chanfrada & Pedra do Forno", tag: "natureza", badge: "Trilha 40min • Guia", photo: photos.serraGoncalves, caption: "Montanhas e araucárias de Gonçalves", location: "Gonçalves • MG" },
+              { label: "Fazenda Retiro das Pedras & Queijos", tag: "pet", badge: "Queijos & Café • Pet", photo: photos.goncalves, caption: "Vila de Gonçalves — queijarias, empórios e comida mineira", location: "Gonçalves • MG" }
             ],
             lodgings: [
               {
-                name: "Chalé Serrano com Cozinha (Airbnb)",
+                name: "Chalés Serranos com Cozinha (Airbnb)",
                 type: "Airbnb",
                 price: "R$ 540 – R$ 690/noite",
                 petStatus: "Privativo • Pet-friendly",
-                highlights: "Privacidade total na serra, cozinha completa para refeições leves e filtro pet.",
+                highlights: "Busca filtrada em Gonçalves com cozinha completa e filtro para 2 pets.",
                 kitchen: true,
+                photo: photos.chaleSerra,
                 url: abnb("Gonçalves, Minas Gerais", "2026-12-28", "2027-01-04"),
                 cta: "Buscar no Airbnb"
               },
@@ -673,8 +580,9 @@
                 petStatus: "Pet sozinho no quarto: a confirmar",
                 highlights: "Estilo fazenda mineira com lagos, áreas gramadas, trilhas e comida caseira.",
                 kitchen: false,
+                photo: photos.serraGoncalves,
                 url: "https://www.pousadavidaverde.com.br/",
-                cta: "Site oficial"
+                cta: "Ver site oficial"
               },
               {
                 name: "Pousada Cabanas no Mundo",
@@ -683,8 +591,9 @@
                 petStatus: "Pet-friendly (confirmar regras)",
                 highlights: "Cachoeira privativa e piscina natural por trilha interna.",
                 kitchen: false,
-                url: "https://www.google.com/search?q=Pousada+Cabanas+no+Mundo+Gon%C3%A7alves+MG",
-                cta: "Consultar"
+                photo: photos.goncalves,
+                url: "https://www.pousadacabanasnomundo.com.br/",
+                cta: "Ver site oficial"
               }
             ]
           }
@@ -778,11 +687,12 @@
 
     function openActivityPhoto(stageIdx, actIdx) {
       const act = plans[activePlanIndex].stages[stageIdx].activities[actIdx];
-      if (act.customPhoto) {
-        showModalPhoto([act.customPhoto], 0);
-      } else {
-        openPlanPhoto(act.photoIdx);
-      }
+      showModalPhoto([{
+        url: act.photo,
+        caption: act.caption,
+        location: act.location,
+        category: act.badge
+      }], 0);
     }
 
     function stepModalPhoto(delta) {
@@ -808,79 +718,85 @@
 
     function renderComparisonTable() {
       const tbody = document.getElementById("comparison-tbody");
-      if (!tbody) return;
+      const mobileBox = document.getElementById("comparison-mobile");
       const totals = plans.map(getPlanTotal);
 
-      tbody.innerHTML = `
-        <tr class="bg-stone-50 font-bold text-ink">
-          <td class="py-3.5 px-4">Investimento Total</td>
-          ${plans.map((p, i) => `
-            <td class="py-3.5 px-4 tabular-nums text-sm md:text-base">
-              ${fmtBRL(totals[i])}
-              <span class="block text-[11px] font-normal text-stone-500">~${fmtBRL(Math.round(totals[i] / 16))}/dia</span>
-            </td>
-          `).join('')}
-        </tr>
-        <tr>
-          <td class="py-3 px-4 font-semibold text-stone-700">Orçamento Inteligente (Cozinha)</td>
-          ${plans.map(p => `
-            <td class="py-3 px-4">
-              <span class="font-bold text-emerald-700">~${fmtBRL(p.costs.kitchenSavings)} livres</span>
-              <span class="block text-[11px] text-stone-500">Para vinícolas, cafés e ceias</span>
-            </td>
-          `).join('')}
-        </tr>
-        <tr>
-          <td class="py-3 px-4 font-semibold text-stone-700">Enoturismo & Azeites</td>
-          <td class="py-3 px-4 text-stone-600">3 vinícolas (ANSEHI, Trindade, Luiz Porto)</td>
-          <td class="py-3 px-4 text-stone-600">5 vinícolas de altitude + Fazenda Oliq (azeites)</td>
-        </tr>
-        <tr>
-          <td class="py-3 px-4 font-semibold text-stone-700">Natureza & Ecoturismo</td>
-          <td class="py-3 px-4 text-stone-600">Grutas Rei do Mato & Maquiné, Cach. Prazeres & Falcão, Serra de São José</td>
-          <td class="py-3 px-4 text-stone-600">Bauzinho (1.760m), Pico Agudo, Pedra Chanfrada + 6 Cachoeiras/Piscinas</td>
-        </tr>
-        <tr>
-          <td class="py-3 px-4 font-semibold text-stone-700">Hospedagem (16 diárias)</td>
-          ${plans.map(p => `
-            <td class="py-3 px-4 tabular-nums">
-              ${fmtBRL(p.costs.lodging)} <span class="block text-[11px] text-stone-500">${p.costs.lodgingNote}</span>
-            </td>
-          `).join('')}
-        </tr>
-        <tr>
-          <td class="py-3 px-4 font-semibold text-stone-700">Alimentação, Mercado & Ceias</td>
-          ${plans.map(p => `
-            <td class="py-3 px-4 tabular-nums">
-              ${fmtBRL(p.costs.food)} <span class="block text-[11px] text-stone-500">${p.costs.foodNote}</span>
-            </td>
-          `).join('')}
-        </tr>
-        <tr>
-          <td class="py-3 px-4 font-semibold text-stone-700">Aluguel de Carro (16 dias)</td>
-          ${plans.map(p => `
-            <td class="py-3 px-4 tabular-nums">
-              ${useOwnCar ? '<span class="text-forest font-semibold">R$ 0 (Próprio)</span>' : `${fmtBRL(p.costs.car)} <span class="block text-[11px] text-stone-500">Saída e retorno Niterói</span>`}
-            </td>
-          `).join('')}
-        </tr>
-        <tr>
-          <td class="py-3 px-4 font-semibold text-stone-700">Combustível + Pedágios</td>
-          ${plans.map(p => `
-            <td class="py-3 px-4 tabular-nums">
-              ${fmtBRL(p.costs.fuel)} <span class="block text-[11px] text-stone-500">${p.costs.km}</span>
-            </td>
-          `).join('')}
-        </tr>
-        <tr>
-          <td class="py-3 px-4 font-semibold text-stone-700">Vinícolas, Grutas & Parques</td>
-          ${plans.map(p => `
-            <td class="py-3 px-4 tabular-nums">
-              ${fmtBRL(p.costs.tickets)} <span class="block text-[11px] text-stone-500">${p.costs.ticketsNote}</span>
-            </td>
-          `).join('')}
-        </tr>
-      `;
+      const rows = [
+        {
+          label: "Investimento Total",
+          v0: `${fmtBRL(totals[0])} (~${fmtBRL(Math.round(totals[0] / 16))}/dia)`,
+          v1: `${fmtBRL(totals[1])} (~${fmtBRL(Math.round(totals[1] / 16))}/dia)`,
+          highlight: true
+        },
+        {
+          label: "Orçamento Inteligente (Cozinha)",
+          v0: `~${fmtBRL(plans[0].costs.kitchenSavings)} livres (café e refeições leves)`,
+          v1: `~${fmtBRL(plans[1].costs.kitchenSavings)} livres (café e refeições leves)`
+        },
+        {
+          label: "Enoturismo & Azeites",
+          v0: "3 vinícolas (ANSEHI, Trindade, Luiz Porto)",
+          v1: "5 vinícolas de altitude + Fazenda Oliq"
+        },
+        {
+          label: "Natureza & Ecoturismo",
+          v0: "Grutas Rei do Mato & Maquiné, Cach. Prazeres & Falcão",
+          v1: "Bauzinho (1.760m), Pico Agudo, Pedra Chanfrada + 6 Cachoeiras"
+        },
+        {
+          label: "Hospedagem (16 diárias)",
+          v0: `${fmtBRL(plans[0].costs.lodging)} (${plans[0].costs.lodgingNote})`,
+          v1: `${fmtBRL(plans[1].costs.lodging)} (${plans[1].costs.lodgingNote})`
+        },
+        {
+          label: "Alimentação, Mercado & Ceias",
+          v0: `${fmtBRL(plans[0].costs.food)} (${plans[0].costs.foodNote})`,
+          v1: `${fmtBRL(plans[1].costs.food)} (${plans[1].costs.foodNote})`
+        },
+        {
+          label: "Aluguel de Carro (16 dias)",
+          v0: useOwnCar ? "R$ 0 (Carro Próprio)" : `${fmtBRL(plans[0].costs.car)} (saída Niterói)`,
+          v1: useOwnCar ? "R$ 0 (Carro Próprio)" : `${fmtBRL(plans[1].costs.car)} (saída Niterói)`
+        },
+        {
+          label: "Combustível + Pedágios",
+          v0: `${fmtBRL(plans[0].costs.fuel)} (${plans[0].costs.km})`,
+          v1: `${fmtBRL(plans[1].costs.fuel)} (${plans[1].costs.km})`
+        },
+        {
+          label: "Vinícolas, Grutas & Parques",
+          v0: `${fmtBRL(plans[0].costs.tickets)} (${plans[0].costs.ticketsNote})`,
+          v1: `${fmtBRL(plans[1].costs.tickets)} (${plans[1].costs.ticketsNote})`
+        }
+      ];
+
+      if (tbody) {
+        tbody.innerHTML = rows.map(r => `
+          <tr class="${r.highlight ? 'bg-stone-50 font-bold text-ink' : ''}">
+            <td class="py-3 px-4 font-semibold text-stone-700">${r.label}</td>
+            <td class="py-3 px-4 tabular-nums ${r.highlight ? 'text-ink text-base' : 'text-stone-600'}">${r.v0}</td>
+            <td class="py-3 px-4 tabular-nums ${r.highlight ? 'text-forest text-base' : 'text-stone-600'}">${r.v1}</td>
+          </tr>
+        `).join('');
+      }
+
+      if (mobileBox) {
+        mobileBox.innerHTML = rows.map(r => `
+          <div class="bg-white rounded-xl border border-stone-200/90 p-3.5 ${r.highlight ? 'ring-1 ring-forest/20 bg-stone-50/70' : ''}">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-stone-500 mb-2">${r.label}</div>
+            <div class="grid grid-cols-2 gap-3 text-xs">
+              <div>
+                <div class="text-[10px] font-semibold text-stone-400">1. Estrada Real</div>
+                <div class="mt-0.5 ${r.highlight ? 'font-bold text-ink text-sm' : 'text-stone-700'}">${r.v0}</div>
+              </div>
+              <div>
+                <div class="text-[10px] font-semibold text-forest">2. Mantiqueira</div>
+                <div class="mt-0.5 ${r.highlight ? 'font-bold text-forest text-sm' : 'text-stone-700'}">${r.v1}</div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
     }
 
     function selectPlan(index) {
@@ -913,10 +829,9 @@
       ];
 
       container.innerHTML = `
-        <!-- Clean, Aspirational First Fold (Mobile: Photo first; Desktop: Copy Left + 4-Photo Mosaic Right) -->
-        <section class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
-          <!-- Left: Editorial Promise + 3 Hooks + Anchored Cost + Primary CTA -->
-          <div class="order-2 lg:order-1 lg:col-span-5 bg-white rounded-2xl p-5 md:p-6 border border-stone-200/90 flex flex-col justify-between gap-5">
+        <!-- First Fold (Mobile: Compact Photo + Copy + Price + CTA all inside 375x812) -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-5 items-stretch">
+          <div class="order-2 lg:order-1 lg:col-span-5 bg-white rounded-2xl p-4 sm:p-6 border border-stone-200/90 flex flex-col justify-between gap-3.5 sm:gap-5">
             <div>
               <div class="flex items-center justify-between gap-2">
                 <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-forest">
@@ -929,11 +844,10 @@
                 </button>
               </div>
 
-              <h1 class="font-serif text-2xl md:text-3xl font-semibold text-ink mt-2.5 leading-tight">${plan.title}</h1>
-              <p class="text-xs md:text-sm text-stone-500 mt-1.5">${plan.subtitle}</p>
+              <h1 class="font-serif text-xl sm:text-3xl font-semibold text-ink mt-2 leading-tight">${plan.title}</h1>
+              <p class="text-xs sm:text-sm text-stone-500 mt-1">${plan.subtitle}</p>
 
-              <!-- 3 Concrete Hooks -->
-              <ul class="mt-4 space-y-2 text-xs md:text-sm text-stone-700">
+              <ul class="mt-3 space-y-1.5 text-xs sm:text-sm text-stone-700">
                 ${plan.hooks.map(h => `
                   <li class="flex items-start gap-2">
                     <span class="text-forest font-bold mt-0.5">✓</span>
@@ -943,42 +857,41 @@
               </ul>
             </div>
 
-            <!-- Anchored Cost + Primary CTA -->
-            <div class="pt-4 border-t border-stone-100 flex flex-wrap items-center justify-between gap-3">
+            <div class="pt-3 border-t border-stone-100 flex flex-wrap items-center justify-between gap-3">
               <div>
-                <div class="text-lg md:text-xl font-bold text-ink tabular-nums">${fmtBRL(total)}</div>
+                <div class="text-lg sm:text-xl font-bold text-ink tabular-nums">${fmtBRL(total)}</div>
                 <div class="text-[11px] text-stone-500 tabular-nums">~${fmtBRL(daily)}/dia • ${useOwnCar ? 'carro próprio' : 'carro alugado'}</div>
               </div>
               <a href="#roteiro-etapas"
-                class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-forest hover:bg-stone-900 text-white text-xs font-semibold transition-colors shadow-xs">
+                class="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-forest hover:bg-stone-900 text-white text-xs font-semibold transition-colors shadow-xs">
                 Ver roteiro e chalés ↓
               </a>
             </div>
           </div>
 
-          <!-- Right: 4-Photo Breathing Mosaic (1 Big Hero + 3 Clean Cards, Zero Truncation) -->
-          <div class="order-1 lg:order-2 lg:col-span-7 flex flex-col gap-2.5">
+          <!-- 4-Photo Mosaic (Eager + High Priority, Compact on Mobile) -->
+          <div class="order-1 lg:order-2 lg:col-span-7 flex flex-col gap-2">
             <div onclick="openPlanPhoto(0)"
-              class="group relative h-[210px] sm:h-[260px] rounded-2xl overflow-hidden bg-stone-200 cursor-pointer border border-stone-200/80">
-              <img src="${heroMain.url}" alt="${heroMain.caption}" referrerpolicy="no-referrer"
+              class="group relative h-[155px] sm:h-[265px] rounded-2xl overflow-hidden bg-stone-200 cursor-pointer border border-stone-200/80">
+              <img src="${heroMain.url}" alt="${heroMain.caption}" referrerpolicy="no-referrer" fetchpriority="high" decoding="sync"
                 onerror="this.onerror=null; this.src='https://placehold.co/1000x600/1c1917/faf8f5?text=${encodeURIComponent(heroMain.shortLabel)}';"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               <div class="absolute inset-0 bg-gradient-to-t from-stone-950/75 via-stone-950/10 to-transparent"></div>
-              <div class="absolute bottom-3 left-3.5 right-3.5 flex items-end justify-between gap-2">
-                <p class="text-white text-sm font-semibold leading-snug">${heroMain.shortLabel}</p>
+              <div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between gap-2">
+                <p class="text-white text-xs sm:text-sm font-semibold leading-snug">${heroMain.shortLabel}</p>
                 <span class="text-[11px] text-stone-200 shrink-0">Ampliar ⤢</span>
               </div>
             </div>
 
-            <div class="grid grid-cols-3 gap-2.5">
+            <div class="grid grid-cols-3 gap-2">
               ${heroThumbs.map((photo, idx) => `
                 <div onclick="openPlanPhoto(${idx + 1})"
-                  class="group relative h-[96px] sm:h-[116px] rounded-xl overflow-hidden bg-stone-200 cursor-pointer border border-stone-200/80">
-                  <img src="${photo.url}" alt="${photo.caption}" referrerpolicy="no-referrer"
+                  class="group relative h-[68px] sm:h-[116px] rounded-xl overflow-hidden bg-stone-200 cursor-pointer border border-stone-200/80">
+                  <img src="${photo.url}" alt="${photo.caption}" referrerpolicy="no-referrer" fetchpriority="high" decoding="sync"
                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/1c1917/faf8f5?text=${encodeURIComponent(photo.shortLabel)}';"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/15 to-transparent"></div>
-                  <span class="absolute bottom-2 left-2.5 right-2.5 text-white text-[11px] font-semibold leading-tight">
+                  <span class="absolute bottom-1.5 left-2 right-2 text-white text-[10px] sm:text-[11px] font-semibold leading-tight">
                     ${photo.shortLabel}
                   </span>
                 </div>
@@ -987,7 +900,7 @@
           </div>
         </section>
 
-        <!-- Concierge Strategy & Kitchen Savings (Below the Fold) -->
+        <!-- Concierge Strategy & Kitchen Savings -->
         <section class="grid grid-cols-1 md:grid-cols-3 gap-3">
           <div class="bg-white rounded-2xl p-4 border border-stone-200/90">
             <div class="text-[11px] font-bold uppercase tracking-wider text-amber-800 mb-1">Estratégia Pet (2 Chihuahuas)</div>
@@ -1016,7 +929,7 @@
           </div>
         </div>
 
-        <!-- Stages with 3 Actionable Lodging Options per Stage -->
+        <!-- Stages with Visible Thumbnail Activity Cards & Photo-Header Lodging Cards -->
         <section class="space-y-6">
           ${plan.stages.map((stage, idx) => {
             const visibleActivities = activeFilter === "all"
@@ -1024,7 +937,7 @@
               : stage.activities.filter(a => a.tag === activeFilter || (activeFilter === "pet" && a.badge.includes("Pet")));
 
             return `
-              <div class="bg-white rounded-2xl p-5 md:p-6 border border-stone-200/90">
+              <div class="bg-white rounded-2xl p-4 sm:p-6 border border-stone-200/90">
                 <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-4 pb-4 border-b border-stone-100">
                   <div class="flex items-start gap-3">
                     <div class="w-7 h-7 rounded-full bg-ink text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
@@ -1055,43 +968,58 @@
                 </div>
 
                 ${visibleActivities.length ? `
-                  <div class="flex flex-wrap gap-2 mt-4">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 mt-4">
                     ${visibleActivities.map(a => {
                       const realIdx = stage.activities.indexOf(a);
                       return `
                       <button type="button" onclick="openActivityPhoto(${idx}, ${realIdx})"
-                        class="inline-flex items-center gap-1.5 text-[11px] font-semibold px-3 py-1.5 rounded-xl border transition-colors cursor-pointer ${tagStyles[a.tag] || tagStyles.natureza}">
-                        <span>${a.label}</span>
-                        <span class="opacity-75 text-[10px]">• ${a.badge}</span>
-                        <span>📷</span>
+                        class="group flex items-center gap-3 p-2 rounded-xl border text-left transition-all cursor-pointer ${tagStyles[a.tag] || tagStyles.natureza}">
+                        <img src="${a.photo}" alt="${a.label}" referrerpolicy="no-referrer"
+                          onerror="this.onerror=null; this.src='https://placehold.co/160x160/1c1917/faf8f5?text=Foto';"
+                          class="w-12 h-12 rounded-lg object-cover shrink-0 bg-stone-200 group-hover:scale-105 transition-transform" />
+                        <div class="min-w-0">
+                          <div class="text-xs font-bold text-ink leading-snug truncate">${a.label}</div>
+                          <div class="text-[10px] font-medium text-stone-600 mt-0.5">${a.badge}</div>
+                        </div>
                       </button>
                     `;
                     }).join('')}
                   </div>
                 ` : ''}
 
-                <!-- 3 Actionable Lodging Options Grid -->
+                <!-- 3 Lodging Options Grid with Visible Cover Photos & Specific CTAs -->
                 <div class="mt-5 pt-4 border-t border-stone-100">
-                  <div class="text-[11px] font-bold uppercase tracking-wider text-stone-500 mb-2.5">3 Opções de Hospedagem nesta Parada</div>
-                  <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                  <div class="text-[11px] font-bold uppercase tracking-wider text-stone-500 mb-3">3 Opções de Hospedagem nesta Parada</div>
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
                     ${stage.lodgings.map(l => `
-                      <div class="p-3.5 rounded-xl border ${l.kitchen ? 'border-emerald-300/80 bg-emerald-50/30' : 'border-stone-200/80 bg-stone-50/60'} hover:bg-white transition-colors flex flex-col justify-between gap-2.5">
+                      <div class="rounded-xl border overflow-hidden ${l.kitchen ? 'border-emerald-300/80 bg-emerald-50/20' : 'border-stone-200/80 bg-stone-50/50'} hover:bg-white transition-colors flex flex-col justify-between">
                         <div>
-                          <div class="flex items-center justify-between gap-2">
-                            <span class="text-[10px] font-bold uppercase tracking-wider text-forest">${l.type}</span>
-                            <span class="text-[11px] font-bold text-ink tabular-nums bg-white border border-stone-200 px-2 py-0.5 rounded-md">${l.price}</span>
+                          <div class="relative h-28 w-full bg-stone-200 overflow-hidden">
+                            <img src="${l.photo}" alt="${l.name}" referrerpolicy="no-referrer"
+                              onerror="this.onerror=null; this.src='https://placehold.co/600x300/1c1917/faf8f5?text=${encodeURIComponent(l.name)}';"
+                              class="w-full h-full object-cover" />
+                            <span class="absolute top-2 left-2 bg-stone-950/75 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md">
+                              ${l.type}
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/95 text-ink text-[11px] font-bold tabular-nums px-2 py-0.5 rounded-md shadow-xs">
+                              ${l.price}
+                            </span>
                           </div>
-                          <h4 class="text-xs sm:text-sm font-bold text-ink mt-1.5">${l.name}</h4>
-                          <div class="flex flex-wrap gap-1 mt-1.5">
-                            ${l.kitchen ? `<span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-full">Cozinha Equipada</span>` : ''}
-                            <span class="text-[10px] font-medium text-stone-600 bg-stone-200/60 px-2 py-0.5 rounded-full">${l.petStatus}</span>
+                          <div class="p-3.5 pb-2">
+                            <h4 class="text-xs sm:text-sm font-bold text-ink leading-snug">${l.name}</h4>
+                            <div class="flex flex-wrap gap-1 mt-1.5">
+                              ${l.kitchen ? `<span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-full">Cozinha Equipada</span>` : ''}
+                              <span class="text-[10px] font-medium text-stone-600 bg-stone-200/70 px-2 py-0.5 rounded-full">${l.petStatus}</span>
+                            </div>
+                            <p class="text-[11px] text-stone-600 mt-1.5 leading-snug">${l.highlights}</p>
                           </div>
-                          <p class="text-[11px] text-stone-600 mt-1.5 leading-snug">${l.highlights}</p>
                         </div>
-                        <a href="${l.url}" target="_blank" rel="noopener noreferrer"
-                          class="inline-flex items-center justify-center text-[11px] font-semibold text-forest bg-white hover:bg-forest hover:text-white border border-stone-300 hover:border-forest px-3 py-1.5 rounded-lg transition-colors">
-                          ${l.cta} ↗
-                        </a>
+                        <div class="px-3.5 pb-3.5 pt-1">
+                          <a href="${l.url}" target="_blank" rel="noopener noreferrer"
+                            class="w-full inline-flex items-center justify-center text-[11px] font-semibold text-forest bg-white hover:bg-forest hover:text-white border border-stone-300 hover:border-forest px-3 py-1.5 rounded-lg transition-colors">
+                            ${l.cta} ↗
+                          </a>
+                        </div>
                       </div>
                     `).join('')}
                   </div>
@@ -1104,7 +1032,7 @@
         <!-- Bottom Grid: Verified Links + Region Videos -->
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           <div class="lg:col-span-6 bg-white rounded-2xl p-5 border border-stone-200/90">
-            <h2 class="font-serif text-lg font-semibold text-ink pb-3 mb-3 border-b border-stone-100">Canais Oficiais Verificados</h2>
+            <h2 class="font-serif text-lg font-semibold text-ink pb-3 mb-3 border-b border-stone-100">Canais Oficiais das Vinícolas & Pousadas</h2>
             <div class="divide-y divide-stone-100">
               ${plan.curatedLinks.map(link => `
                 <div class="py-2.5 first:pt-0 last:pb-0 flex items-center justify-between gap-3">
