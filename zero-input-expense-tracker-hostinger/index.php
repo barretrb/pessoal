@@ -402,7 +402,7 @@ if ($path === '/dashboard' && $method === 'GET') {
     $summary = compute_monthly_summary($pdo, $config, $year, $month);
     $yearly = compute_yearly_summary($pdo, $config, $summary['year']);
     $plans = $pdo->query('SELECT * FROM annual_plan ORDER BY day_of_month ASC')->fetchAll();
-    render_dashboard($summary, $yearly, $plans, $config['categories']);
+    render_dashboard($summary, $yearly, $plans, get_all_categories($pdo, $config));
 }
 
 if ($path === '/transactions' && $method === 'GET') {
@@ -424,7 +424,7 @@ if ($path === '/transactions' && $method === 'GET') {
         'max_amount' => (string)($_GET['max_amount'] ?? ''),
     ];
     $result = query_detailed_transactions($pdo, $config, $filters);
-    render_transactions($result, $config['categories'], $filters);
+    render_transactions($result, get_all_categories($pdo, $config), $filters);
 }
 
 if ($path === '/dashboard/reconcile' && $method === 'POST') {
@@ -453,7 +453,9 @@ if ($path === '/dashboard/income' && $method === 'POST') {
     }
     $title = trim((string)($_POST['title'] ?? ''));
     $amount = round((float)($_POST['amount'] ?? 0), 2);
-    $cat = (string)($_POST['category'] ?? 'Salário/Receita');
+    $rawCat = (string)($_POST['category'] ?? 'Salário/Receita');
+    $newCat = trim((string)($_POST['new_category'] ?? ''));
+    $cat = ensure_category_exists($pdo, $config, ($rawCat === '__NEW__' || $newCat !== '') ? $newCat : $rawCat);
     $txType = (string)($_POST['tx_type'] ?? 'INCOME');
     $monthParam = trim((string)($_POST['month'] ?? ''));
     if ($title !== '' && in_array($txType, ['INCOME', 'EXPENSE'], true) && $amount > 0) {
@@ -481,7 +483,9 @@ if ($path === '/dashboard/plan' && $method === 'POST') {
     $title = trim((string)($_POST['title'] ?? ''));
     $type = (string)($_POST['type'] ?? '');
     $amount = (float)($_POST['amount'] ?? 0);
-    $category = (string)($_POST['category'] ?? 'Outros');
+    $rawCat = (string)($_POST['category'] ?? 'Outros');
+    $newCat = trim((string)($_POST['new_category'] ?? ''));
+    $category = ensure_category_exists($pdo, $config, ($rawCat === '__NEW__' || $newCat !== '') ? $newCat : $rawCat);
     $day = (int)($_POST['day_of_month'] ?? 0);
     $planType = in_array((string)($_POST['plan_type'] ?? 'FIXED'), ['FIXED', 'ROLLING_AVERAGE'], true) ? (string)$_POST['plan_type'] : 'FIXED';
     $paymentMethod = in_array((string)($_POST['payment_method'] ?? 'PIX'), ['PIX', 'Cartão'], true) ? (string)$_POST['payment_method'] : 'PIX';
@@ -501,9 +505,11 @@ if ($method === 'POST' && preg_match('#^/dashboard/plan/(\d+)/update$#', $path, 
         header('Location: /login', true, 303);
         exit;
     }
-    $cat = (string)($_POST['category'] ?? '');
+    $rawCat = (string)($_POST['category'] ?? '');
+    $newCat = trim((string)($_POST['new_category'] ?? ''));
+    $cat = ensure_category_exists($pdo, $config, ($rawCat === '__NEW__' || $newCat !== '') ? $newCat : $rawCat);
     $monthParam = trim((string)($_POST['month'] ?? ''));
-    if ($cat !== '' && in_array($cat, $config['categories'], true)) {
+    if ($cat !== '') {
         $pdo->prepare('UPDATE annual_plan SET category = ?, updated_at = ? WHERE id = ?')
             ->execute([$cat, gmdate('Y-m-d\TH:i:s\Z'), (int)$m[1]]);
     }
@@ -518,18 +524,33 @@ if ($method === 'POST' && preg_match('#^/dashboard/transaction/(\d+)/update$#', 
         exit;
     }
     $merchant = trim((string)($_POST['merchant'] ?? ''));
-    $cat = (string)($_POST['category'] ?? '');
+    $rawCat = (string)($_POST['category'] ?? '');
+    $newCat = trim((string)($_POST['new_category'] ?? ''));
+    $cat = ensure_category_exists($pdo, $config, ($rawCat === '__NEW__' || $newCat !== '') ? $newCat : $rawCat);
+    $occDate = trim((string)($_POST['occurred_date'] ?? ''));
     $redirectTo = (string)($_POST['redirect_to'] ?? '/dashboard');
     if ($merchant !== '') {
         $norm = normalize_text($merchant) ?: 'estabelecimento';
-        if ($cat !== '' && in_array($cat, $config['categories'], true)) {
+        if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $occDate)) {
+            $pdo->prepare('UPDATE transactions SET merchant = ?, merchant_normalized = ?, category = ?, occurred_at = ? WHERE id = ?')
+                ->execute([$merchant, $norm, $cat, $occDate . 'T15:00:00Z', (int)$m[1]]);
+        } else {
             $pdo->prepare('UPDATE transactions SET merchant = ?, merchant_normalized = ?, category = ? WHERE id = ?')
                 ->execute([$merchant, $norm, $cat, (int)$m[1]]);
-        } else {
-            $pdo->prepare('UPDATE transactions SET merchant = ?, merchant_normalized = ? WHERE id = ?')
-                ->execute([$merchant, $norm, (int)$m[1]]);
         }
     }
+    $safeRedir = str_starts_with($redirectTo, '/') ? $redirectTo : '/dashboard';
+    header("Location: {$safeRedir}", true, 303);
+    exit;
+}
+
+if ($method === 'POST' && preg_match('#^/dashboard/transaction/(\d+)/delete$#', $path, $m)) {
+    if (!is_dashboard_authenticated($config)) {
+        header('Location: /login', true, 303);
+        exit;
+    }
+    $pdo->prepare('DELETE FROM transactions WHERE id = ?')->execute([(int)$m[1]]);
+    $redirectTo = (string)($_POST['redirect_to'] ?? '/dashboard');
     $safeRedir = str_starts_with($redirectTo, '/') ? $redirectTo : '/dashboard';
     header("Location: {$safeRedir}", true, 303);
     exit;

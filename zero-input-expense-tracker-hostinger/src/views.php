@@ -101,6 +101,7 @@ function render_dashboard(array $summary, array $yearly, array $plans, array $ca
     foreach ($categories as $c) {
         $catOptions .= '<option value="' . h($c) . '">' . h($c) . '</option>';
     }
+    $catOptionsWithNew = $catOptions . '<option value="__NEW__">+ Nova categoria...</option>';
 
     // Consumption Bills HTML
     $billsHtml = '';
@@ -212,8 +213,9 @@ HTML;
             }
             $catSelectHtml = '<form method="post" action="/dashboard/plan/' . $pId . '/update" class="inline">'
                 . '<input type="hidden" name="month" value="' . $period . '" />'
-                . '<select name="category" onchange="this.form.submit()" class="rounded-md bg-slate-950 border border-slate-700 px-2 py-1 text-xs text-slate-200 focus:border-emerald-500 focus:outline-none">'
-                . $planCatOpts
+                . '<input type="hidden" name="new_category" value="" />'
+                . '<select name="category" data-prev="' . h($p['category']) . '" onchange="handleInlinePlanCategory(this)" class="rounded-md bg-slate-950 border border-slate-700 px-2 py-1 text-xs text-slate-200 focus:border-emerald-500 focus:outline-none">'
+                . $planCatOpts . '<option value="__NEW__">+ Nova categoria...</option>'
                 . '</select></form>';
 
             $rows .= '<tr class="hover:bg-slate-800/30">'
@@ -249,7 +251,9 @@ HTML;
             $valColor = $tx['type'] === 'INCOME' ? 'text-emerald-400' : 'text-rose-400';
             $amtVal = (float)$tx['amount'];
             $txId = (int)$tx['id'];
-            $editBtn = '<button type="button" data-id="' . $txId . '" data-merchant="' . h($tx['merchant']) . '" data-category="' . h($tx['category']) . '" onclick="openEditTxModal(this)" class="text-xs text-sky-400 hover:text-sky-300">Editar</button>';
+            $occLocalDate = (new DateTimeImmutable($tx['occurred_at'], new DateTimeZone('UTC')))
+                ->setTimezone(new DateTimeZone('America/Sao_Paulo'))->format('Y-m-d');
+            $editBtn = '<button type="button" data-id="' . $txId . '" data-merchant="' . h($tx['merchant']) . '" data-category="' . h($tx['category']) . '" data-date="' . $occLocalDate . '" onclick="openEditTxModal(this)" class="text-xs text-sky-400 hover:text-sky-300">Editar</button>';
             $rows .= '<tr class="hover:bg-slate-800/30">'
                 . '<td class="py-2 pr-3 text-slate-400 text-xs whitespace-nowrap" data-value="' . h($tx['occurred_at']) . '">' . $dt . '</td>'
                 . '<td class="py-2 pr-3 font-medium">' . h($tx['merchant']) . $inst . '<span class="block text-[10px] text-slate-500">' . h($tx['source']) . '</span></td>'
@@ -386,7 +390,8 @@ HTML;
         <input type="text" name="title" placeholder="Descrição (ex: Aluguel)" required class="lg:col-span-2 rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
         <select name="type" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="EXPENSE">Despesa</option><option value="INCOME">Receita</option></select>
         <input type="number" step="0.01" min="0.01" name="amount" placeholder="Valor (R$)" required class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
-        <select name="category" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none">{$catOptions}</select>
+        <select name="category" onchange="toggleNewCatInput(this, 'planNewCat')" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none">{$catOptionsWithNew}</select>
+        <input type="text" name="new_category" id="planNewCat" placeholder="Nome da nova categoria" class="hidden rounded-lg bg-slate-950 border border-emerald-500 px-3 py-2 text-xs sm:text-sm focus:outline-none" />
         <select name="plan_type" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="FIXED">Fixo</option><option value="ROLLING_AVERAGE">Média Móvel</option></select>
         <div class="flex gap-2">
           <select name="payment_method" class="w-1/2 rounded-lg bg-slate-950 border border-slate-700 px-2 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="PIX">PIX</option><option value="Cartão">Cartão</option></select>
@@ -435,9 +440,10 @@ HTML;
           </div>
           <div>
             <label class="block text-xs text-slate-400 mb-1">Categoria</label>
-            <select name="category" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm">{$catOptions}</select>
+            <select name="category" onchange="toggleNewCatInput(this, 'quickNewCat')" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm">{$catOptionsWithNew}</select>
           </div>
         </div>
+        <input type="text" name="new_category" id="quickNewCat" placeholder="Nome da nova categoria" class="hidden w-full rounded-lg bg-slate-950 border border-emerald-500 px-3 py-2 text-sm" />
         <div class="flex justify-end gap-2 pt-2">
           <button type="button" onclick="closeQuickModal()" class="rounded-lg border border-slate-700 px-4 py-2 text-xs text-slate-300">Cancelar</button>
           <button type="submit" class="rounded-lg bg-emerald-600 hover:bg-emerald-500 px-4 py-2 text-xs font-semibold text-white">Salvar</button>
@@ -458,19 +464,55 @@ HTML;
           <label class="block text-xs text-slate-400 mb-1">Título / Estabelecimento</label>
           <input type="text" name="merchant" id="editTxMerchant" required class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm" />
         </div>
-        <div>
-          <label class="block text-xs text-slate-400 mb-1">Categoria</label>
-          <select name="category" id="editTxCategory" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm">{$catOptions}</select>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs text-slate-400 mb-1">Categoria</label>
+            <select name="category" id="editTxCategory" onchange="toggleNewCatInput(this, 'editTxNewCat')" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm">{$catOptionsWithNew}</select>
+          </div>
+          <div>
+            <label class="block text-xs text-slate-400 mb-1">Data (Competência)</label>
+            <input type="date" name="occurred_date" id="editTxDate" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm" />
+          </div>
         </div>
-        <div class="flex justify-end gap-2 pt-2">
-          <button type="button" onclick="closeEditTxModal()" class="rounded-lg border border-slate-700 px-4 py-2 text-xs text-slate-300">Cancelar</button>
-          <button type="submit" class="rounded-lg bg-sky-600 hover:bg-sky-500 px-4 py-2 text-xs font-semibold text-white">Salvar Alterações</button>
+        <input type="text" name="new_category" id="editTxNewCat" placeholder="Nome da nova categoria" class="hidden w-full rounded-lg bg-slate-950 border border-emerald-500 px-3 py-2 text-sm" />
+        <div class="flex items-center justify-between pt-2">
+          <button type="submit" id="deleteTxBtn" formaction="/dashboard/transaction/0/delete" onclick="return confirm('Excluir este lançamento?')" class="rounded-lg border border-rose-500/40 text-rose-400 hover:bg-rose-500/10 px-3 py-2 text-xs">Excluir</button>
+          <div class="flex gap-2">
+            <button type="button" onclick="closeEditTxModal()" class="rounded-lg border border-slate-700 px-4 py-2 text-xs text-slate-300">Cancelar</button>
+            <button type="submit" class="rounded-lg bg-sky-600 hover:bg-sky-500 px-4 py-2 text-xs font-semibold text-white">Salvar</button>
+          </div>
         </div>
       </form>
     </div>
   </div>
 
   <script>
+    function toggleNewCatInput(selectEl, inputId) {
+      const inp = document.getElementById(inputId);
+      if (!inp) return;
+      if (selectEl.value === '__NEW__') {
+        inp.classList.remove('hidden');
+        inp.required = true;
+        inp.focus();
+      } else {
+        inp.classList.add('hidden');
+        inp.required = false;
+        inp.value = '';
+      }
+    }
+    function handleInlinePlanCategory(selectEl) {
+      if (selectEl.value === '__NEW__') {
+        const name = window.prompt('Digite o nome da nova categoria:');
+        if (name && name.trim()) {
+          selectEl.form.querySelector('input[name="new_category"]').value = name.trim();
+          selectEl.form.submit();
+        } else {
+          selectEl.value = selectEl.getAttribute('data-prev') || 'Outros';
+        }
+      } else {
+        selectEl.form.submit();
+      }
+    }
     function openQuickModal(type) {
       document.getElementById('quickTxType').value = type || 'INCOME';
       document.getElementById('quickModal').classList.remove('hidden');
@@ -481,8 +523,14 @@ HTML;
     function openEditTxModal(btn) {
       const id = btn.getAttribute('data-id');
       document.getElementById('editTxForm').action = '/dashboard/transaction/' + id + '/update';
+      document.getElementById('deleteTxBtn').setAttribute('formaction', '/dashboard/transaction/' + id + '/delete');
       document.getElementById('editTxMerchant').value = btn.getAttribute('data-merchant') || '';
       document.getElementById('editTxCategory').value = btn.getAttribute('data-category') || 'Outros';
+      document.getElementById('editTxDate').value = btn.getAttribute('data-date') || '';
+      const newInp = document.getElementById('editTxNewCat');
+      newInp.classList.add('hidden');
+      newInp.required = false;
+      newInp.value = '';
       document.getElementById('editTxModal').classList.remove('hidden');
     }
     function closeEditTxModal() {
@@ -567,7 +615,9 @@ function render_transactions(array $result, array $categories, array $filters): 
             $valColor = $tx['type'] === 'INCOME' ? 'text-emerald-400' : 'text-rose-400';
             $amtVal = (float)$tx['amount'];
             $txId = (int)$tx['id'];
-            $editBtn = '<button type="button" data-id="' . $txId . '" data-merchant="' . h($tx['merchant']) . '" data-category="' . h($tx['category']) . '" onclick="openEditTxModal(this)" class="text-xs text-sky-400 hover:text-sky-300">Editar</button>';
+            $occLocalDate = (new DateTimeImmutable($tx['occurred_at'], new DateTimeZone('UTC')))
+                ->setTimezone(new DateTimeZone('America/Sao_Paulo'))->format('Y-m-d');
+            $editBtn = '<button type="button" data-id="' . $txId . '" data-merchant="' . h($tx['merchant']) . '" data-category="' . h($tx['category']) . '" data-date="' . $occLocalDate . '" onclick="openEditTxModal(this)" class="text-xs text-sky-400 hover:text-sky-300">Editar</button>';
             $rows .= '<tr class="hover:bg-slate-800/30">'
                 . '<td class="py-2 pr-3 text-xs text-slate-400 whitespace-nowrap" data-value="' . h($tx['occurred_at']) . '">' . $dt . '</td>'
                 . '<td class="py-2 pr-3 font-medium">' . h($tx['merchant']) . $inst . '<span class="block text-[10px] text-slate-500">' . h($tx['source']) . $appSub . '</span></td>'
@@ -690,24 +740,53 @@ function render_transactions(array $result, array $categories, array $filters): 
           <label class="block text-xs text-slate-400 mb-1">Título / Estabelecimento</label>
           <input type="text" name="merchant" id="editTxMerchant" required class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm" />
         </div>
-        <div>
-          <label class="block text-xs text-slate-400 mb-1">Categoria</label>
-          <select name="category" id="editTxCategory" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm">{$catPlainOpts}</select>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs text-slate-400 mb-1">Categoria</label>
+            <select name="category" id="editTxCategory" onchange="toggleNewCatInput(this, 'editTxNewCat')" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm">{$catPlainOpts}<option value="__NEW__">+ Nova categoria...</option></select>
+          </div>
+          <div>
+            <label class="block text-xs text-slate-400 mb-1">Data (Competência)</label>
+            <input type="date" name="occurred_date" id="editTxDate" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm" />
+          </div>
         </div>
-        <div class="flex justify-end gap-2 pt-2">
-          <button type="button" onclick="closeEditTxModal()" class="rounded-lg border border-slate-700 px-4 py-2 text-xs text-slate-300">Cancelar</button>
-          <button type="submit" class="rounded-lg bg-sky-600 hover:bg-sky-500 px-4 py-2 text-xs font-semibold text-white">Salvar Alterações</button>
+        <input type="text" name="new_category" id="editTxNewCat" placeholder="Nome da nova categoria" class="hidden w-full rounded-lg bg-slate-950 border border-emerald-500 px-3 py-2 text-sm" />
+        <div class="flex items-center justify-between pt-2">
+          <button type="submit" id="deleteTxBtn" formaction="/dashboard/transaction/0/delete" onclick="return confirm('Excluir este lançamento?')" class="rounded-lg border border-rose-500/40 text-rose-400 hover:bg-rose-500/10 px-3 py-2 text-xs">Excluir</button>
+          <div class="flex gap-2">
+            <button type="button" onclick="closeEditTxModal()" class="rounded-lg border border-slate-700 px-4 py-2 text-xs text-slate-300">Cancelar</button>
+            <button type="submit" class="rounded-lg bg-sky-600 hover:bg-sky-500 px-4 py-2 text-xs font-semibold text-white">Salvar</button>
+          </div>
         </div>
       </form>
     </div>
   </div>
 
   <script>
+    function toggleNewCatInput(selectEl, inputId) {
+      const inp = document.getElementById(inputId);
+      if (!inp) return;
+      if (selectEl.value === '__NEW__') {
+        inp.classList.remove('hidden');
+        inp.required = true;
+        inp.focus();
+      } else {
+        inp.classList.add('hidden');
+        inp.required = false;
+        inp.value = '';
+      }
+    }
     function openEditTxModal(btn) {
       const id = btn.getAttribute('data-id');
       document.getElementById('editTxForm').action = '/dashboard/transaction/' + id + '/update';
+      document.getElementById('deleteTxBtn').setAttribute('formaction', '/dashboard/transaction/' + id + '/delete');
       document.getElementById('editTxMerchant').value = btn.getAttribute('data-merchant') || '';
       document.getElementById('editTxCategory').value = btn.getAttribute('data-category') || 'Outros';
+      document.getElementById('editTxDate').value = btn.getAttribute('data-date') || '';
+      const newInp = document.getElementById('editTxNewCat');
+      newInp.classList.add('hidden');
+      newInp.required = false;
+      newInp.value = '';
       document.getElementById('editTxModal').classList.remove('hidden');
     }
     function closeEditTxModal() {

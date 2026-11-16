@@ -21,6 +21,8 @@ from app.services.analytics import (
     MONTH_NAMES_PT,
     compute_monthly_summary,
     compute_yearly_summary,
+    ensure_category_exists,
+    get_all_categories,
     get_local_now,
     query_detailed_transactions,
 )
@@ -110,7 +112,7 @@ def dashboard_view(
             "summary": summary,
             "yearly": yearly,
             "plans": plans,
-            "categories": DEFAULT_CATEGORIES,
+            "categories": get_all_categories(db),
         },
     )
 
@@ -168,7 +170,7 @@ def transactions_view(
         name="transactions.html",
         context={
             "result": result,
-            "categories": DEFAULT_CATEGORIES,
+            "categories": get_all_categories(db),
             "month_names": MONTH_NAMES_PT,
             "filters": {
                 "year": effective_year,
@@ -204,11 +206,17 @@ def reconcile_from_dashboard(
     return RedirectResponse(url=redirect_url, status_code=303)
 
 
+def _resolve_category(db: Session, category: str, new_category: str = "") -> str:
+    chosen = new_category.strip() if category == "__NEW__" or new_category.strip() else category.strip()
+    return ensure_category_exists(db, chosen or "Outros")
+
+
 @router.post("/dashboard/income", include_in_schema=False)
 def add_manual_from_dashboard(
     title: str = Form(...),
     amount: Decimal = Form(...),
     category: str = Form(default="Salário/Receita"),
+    new_category: str = Form(default=""),
     tx_type: str = Form(default="INCOME"),
     month: str | None = Form(default=None),
     authenticated: bool = Depends(get_dashboard_session),
@@ -225,6 +233,7 @@ def add_manual_from_dashboard(
             except Exception:
                 pass
         merchant_display = title.strip()
+        final_cat = _resolve_category(db, category, new_category)
         tx = Transaction(
             source="MANUAL",
             app_name="Dashboard",
@@ -235,7 +244,7 @@ def add_manual_from_dashboard(
             merchant=merchant_display,
             merchant_normalized=normalize_text(merchant_display) or "manual",
             installments=1,
-            category=category,
+            category=final_cat,
             confidence=1.0,
             status="CONFIRMED",
             occurred_at=occ,
@@ -252,6 +261,7 @@ def add_plan_from_dashboard(
     type: str = Form(...),
     amount: Decimal = Form(...),
     category: str = Form(...),
+    new_category: str = Form(default=""),
     day_of_month: int = Form(...),
     plan_type: str = Form(default="FIXED"),
     payment_method: str = Form(default="PIX"),
@@ -261,11 +271,12 @@ def add_plan_from_dashboard(
     if not authenticated:
         return RedirectResponse(url="/login", status_code=303)
     if type in ("INCOME", "EXPENSE") and amount > 0 and 1 <= day_of_month <= 31:
+        final_cat = _resolve_category(db, category, new_category)
         plan = AnnualPlan(
             title=title.strip(),
             type=type,
             amount=amount,
-            category=category,
+            category=final_cat,
             day_of_month=day_of_month,
             plan_type=plan_type if plan_type in ("FIXED", "ROLLING_AVERAGE") else "FIXED",
             payment_method=payment_method if payment_method in ("PIX", "Cartão") else "PIX",
@@ -280,6 +291,7 @@ def add_plan_from_dashboard(
 def update_plan_from_dashboard(
     plan_id: int,
     category: str = Form(...),
+    new_category: str = Form(default=""),
     month: str | None = Form(default=None),
     authenticated: bool = Depends(get_dashboard_session),
     db: Session = Depends(get_db),
@@ -287,9 +299,11 @@ def update_plan_from_dashboard(
     if not authenticated:
         return RedirectResponse(url="/login", status_code=303)
     plan = db.query(AnnualPlan).filter(AnnualPlan.id == plan_id).first()
-    if plan is not None and category in DEFAULT_CATEGORIES:
-        plan.category = category
-        db.commit()
+    if plan is not None:
+        final_cat = _resolve_category(db, category, new_category)
+        if final_cat:
+            plan.category = final_cat
+            db.commit()
     redirect_url = f"/dashboard?month={month}" if month else "/dashboard"
     return RedirectResponse(url=redirect_url, status_code=303)
 
@@ -299,6 +313,8 @@ def update_transaction_from_dashboard(
     tx_id: int,
     merchant: str = Form(...),
     category: str = Form(...),
+    new_category: str = Form(default=""),
+    occurred_date: str = Form(default=""),
     redirect_to: str = Form(default="/dashboard"),
     authenticated: bool = Depends(get_dashboard_session),
     db: Session = Depends(get_db),
@@ -311,8 +327,32 @@ def update_transaction_from_dashboard(
         if clean_merchant:
             tx.merchant = clean_merchant
             tx.merchant_normalized = normalize_text(clean_merchant) or tx.merchant_normalized
-        if category in DEFAULT_CATEGORIES:
-            tx.category = category
+        final_cat = _resolve_category(db, category, new_category)
+        if final_cat:
+            tx.category = final_cat
+        if occurred_date.strip():
+            try:
+                y_s, m_s, d_s = occurred_date.strip().split("-")
+                tx.occurred_at = datetime(int(y_s), int(m_s), int(d_s), 15, 0, tzinfo=timezone.utc)
+            except Exception:
+                pass
+        db.commit()
+    safe_redirect = redirect_to if redirect_to.startswith("/") else "/dashboard"
+    return RedirectResponse(url=safe_redirect, status_code=303)
+
+
+@router.post("/dashboard/transaction/{tx_id}/delete", include_in_schema=False)
+def delete_transaction_from_dashboard(
+    tx_id: int,
+    redirect_to: str = Form(default="/dashboard"),
+    authenticated: bool = Depends(get_dashboard_session),
+    db: Session = Depends(get_db),
+):
+    if not authenticated:
+        return RedirectResponse(url="/login", status_code=303)
+    tx = db.query(Transaction).filter(Transaction.id == tx_id).first()
+    if tx is not None:
+        db.delete(tx)
         db.commit()
     safe_redirect = redirect_to if redirect_to.startswith("/") else "/dashboard"
     return RedirectResponse(url=safe_redirect, status_code=303)

@@ -5,13 +5,43 @@ from decimal import Decimal
 from zoneinfo import ZoneInfo
 from sqlalchemy.orm import Session
 
-from app.config import Settings
-from app.models import AnnualPlan, Transaction
+from app.config import DEFAULT_CATEGORIES, Settings
+from app.models import AnnualPlan, Category, Transaction
 
 MONTH_NAMES_PT = [
     "Jan", "Fev", "Mar", "Abr", "Mai", "Jun",
     "Jul", "Ago", "Set", "Out", "Nov", "Dez",
 ]
+
+
+def get_all_categories(db: Session) -> list[str]:
+    result = list(DEFAULT_CATEGORIES)
+    seen = set(result)
+    for (name,) in db.query(Category.name).order_by(Category.name.asc()).all():
+        if name and name not in seen:
+            result.append(name)
+            seen.add(name)
+    for (name,) in db.query(AnnualPlan.category).distinct().all():
+        if name and name not in seen:
+            result.append(name)
+            seen.add(name)
+    for (name,) in db.query(Transaction.category).distinct().all():
+        if name and name not in seen:
+            result.append(name)
+            seen.add(name)
+    return result
+
+
+def ensure_category_exists(db: Session, name: str) -> str:
+    clean = (name or "").strip()[:64]
+    if not clean:
+        return "Outros"
+    if clean not in DEFAULT_CATEGORIES:
+        existing = db.query(Category).filter(Category.name == clean).first()
+        if existing is None:
+            db.add(Category(name=clean))
+            db.flush()
+    return clean
 
 
 def format_brl(value: Decimal | float) -> str:

@@ -11,6 +11,47 @@ function format_brl(float $value): string
     return number_format($value, 2, ',', '.');
 }
 
+function get_all_categories(PDO $pdo, array $config): array
+{
+    $result = $config['categories'] ?? [];
+    $seen = array_flip($result);
+    foreach ($pdo->query('SELECT name FROM categories ORDER BY name ASC')->fetchAll() as $r) {
+        $n = trim((string)$r['name']);
+        if ($n !== '' && !isset($seen[$n])) {
+            $result[] = $n;
+            $seen[$n] = true;
+        }
+    }
+    foreach ($pdo->query('SELECT DISTINCT category FROM annual_plan')->fetchAll() as $r) {
+        $n = trim((string)$r['category']);
+        if ($n !== '' && !isset($seen[$n])) {
+            $result[] = $n;
+            $seen[$n] = true;
+        }
+    }
+    foreach ($pdo->query('SELECT DISTINCT category FROM transactions')->fetchAll() as $r) {
+        $n = trim((string)$r['category']);
+        if ($n !== '' && !isset($seen[$n])) {
+            $result[] = $n;
+            $seen[$n] = true;
+        }
+    }
+    return $result;
+}
+
+function ensure_category_exists(PDO $pdo, array $config, string $name): string
+{
+    $clean = mb_substr(trim($name), 0, 64);
+    if ($clean === '') {
+        return 'Outros';
+    }
+    if (!in_array($clean, $config['categories'] ?? [], true)) {
+        $pdo->prepare('INSERT OR IGNORE INTO categories (name, created_at) VALUES (?, ?)')
+            ->execute([$clean, gmdate('Y-m-d\TH:i:s\Z')]);
+    }
+    return $clean;
+}
+
 function compute_monthly_summary(PDO $pdo, array $config, ?int $year = null, ?int $month = null): array
 {
     $tz = new DateTimeZone($config['timezone'] ?: 'UTC');

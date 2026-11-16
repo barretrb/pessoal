@@ -176,6 +176,7 @@
                   data-id="{{ tx.id }}"
                   data-merchant="{{ tx.merchant }}"
                   data-category="{{ tx.category }}"
+                  data-date="{{ tx.occurred_at.strftime('%Y-%m-%d') }}"
                   onclick="openEditTxModal(this)"
                   class="text-xs text-sky-400 hover:text-sky-300"
                 >
@@ -206,28 +207,58 @@
           <label class="block text-xs text-slate-400 mb-1">Título / Estabelecimento</label>
           <input type="text" name="merchant" id="editTxMerchant" required class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm" />
         </div>
-        <div>
-          <label class="block text-xs text-slate-400 mb-1">Categoria</label>
-          <select name="category" id="editTxCategory" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm">
-            {% for cat in categories %}
-            <option value="{{ cat }}">{{ cat }}</option>
-            {% endfor %}
-          </select>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs text-slate-400 mb-1">Categoria</label>
+            <select name="category" id="editTxCategory" onchange="toggleNewCatInput(this, 'editTxNewCat')" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm">
+              {% for cat in categories %}
+              <option value="{{ cat }}">{{ cat }}</option>
+              {% endfor %}
+              <option value="__NEW__">+ Nova categoria...</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs text-slate-400 mb-1">Data (Competência)</label>
+            <input type="date" name="occurred_date" id="editTxDate" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm" />
+          </div>
         </div>
-        <div class="flex justify-end gap-2 pt-2">
-          <button type="button" onclick="closeEditTxModal()" class="rounded-lg border border-slate-700 px-4 py-2 text-xs text-slate-300">Cancelar</button>
-          <button type="submit" class="rounded-lg bg-sky-600 hover:bg-sky-500 px-4 py-2 text-xs font-semibold text-white">Salvar Alterações</button>
+        <input type="text" name="new_category" id="editTxNewCat" placeholder="Nome da nova categoria" class="hidden w-full rounded-lg bg-slate-950 border border-emerald-500 px-3 py-2 text-sm" />
+        <div class="flex items-center justify-between pt-2">
+          <button type="submit" id="deleteTxBtn" formaction="/dashboard/transaction/0/delete" onclick="return confirm('Excluir este lançamento?')" class="rounded-lg border border-rose-500/40 text-rose-400 hover:bg-rose-500/10 px-3 py-2 text-xs">Excluir</button>
+          <div class="flex gap-2">
+            <button type="button" onclick="closeEditTxModal()" class="rounded-lg border border-slate-700 px-4 py-2 text-xs text-slate-300">Cancelar</button>
+            <button type="submit" class="rounded-lg bg-sky-600 hover:bg-sky-500 px-4 py-2 text-xs font-semibold text-white">Salvar</button>
+          </div>
         </div>
       </form>
     </div>
   </div>
 
   <script>
+    function toggleNewCatInput(selectEl, inputId) {
+      const inp = document.getElementById(inputId);
+      if (!inp) return;
+      if (selectEl.value === '__NEW__') {
+        inp.classList.remove('hidden');
+        inp.required = true;
+        inp.focus();
+      } else {
+        inp.classList.add('hidden');
+        inp.required = false;
+        inp.value = '';
+      }
+    }
     function openEditTxModal(btn) {
       const id = btn.getAttribute('data-id');
       document.getElementById('editTxForm').action = '/dashboard/transaction/' + id + '/update';
+      document.getElementById('deleteTxBtn').setAttribute('formaction', '/dashboard/transaction/' + id + '/delete');
       document.getElementById('editTxMerchant').value = btn.getAttribute('data-merchant') || '';
       document.getElementById('editTxCategory').value = btn.getAttribute('data-category') || 'Outros';
+      document.getElementById('editTxDate').value = btn.getAttribute('data-date') || '';
+      const newInp = document.getElementById('editTxNewCat');
+      newInp.classList.add('hidden');
+      newInp.required = false;
+      newInp.value = '';
       document.getElementById('editTxModal').classList.remove('hidden');
     }
     function closeEditTxModal() {

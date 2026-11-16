@@ -746,3 +746,38 @@ def test_edit_plan_category_and_transaction_title(client, db_session):
     db_session.refresh(tx)
     assert tx.merchant == "Curso Inglês VIP"
     assert tx.category == "Educação"
+
+
+def test_create_custom_category_on_plan_and_transaction(client, db_session):
+    from datetime import date
+    from app.services.planner import ensure_month_provision
+    from app.services.seed_data import seed_annual_plan
+
+    seed_annual_plan(db_session)
+    ensure_month_provision(db_session, get_test_settings(), date(2026, 11, 1))
+    client.post("/login", data={"password": TEST_DASHBOARD_PASS}, follow_redirects=False)
+
+    ingles_plan = db_session.query(AnnualPlan).filter(AnnualPlan.title == "Inglês").first()
+    r1 = client.post(
+        f"/dashboard/plan/{ingles_plan.id}/update",
+        data={"category": "__NEW__", "new_category": "Idiomas", "month": "2026-11"},
+        follow_redirects=False,
+    )
+    assert r1.status_code == 303
+    db_session.refresh(ingles_plan)
+    assert ingles_plan.category == "Idiomas"
+
+    tx = db_session.query(Transaction).filter(Transaction.annual_plan_id == ingles_plan.id).first()
+    r2 = client.post(
+        f"/dashboard/transaction/{tx.id}/update",
+        data={"merchant": "Inglês", "category": "__NEW__", "new_category": "Investimentos", "occurred_date": "2026-12-05", "redirect_to": "/dashboard?month=2026-12"},
+        follow_redirects=False,
+    )
+    assert r2.status_code == 303
+    db_session.refresh(tx)
+    assert tx.category == "Investimentos"
+    assert tx.occurred_at.month == 12
+
+    dash = client.get("/dashboard")
+    assert "Idiomas" in dash.text
+    assert "Investimentos" in dash.text
