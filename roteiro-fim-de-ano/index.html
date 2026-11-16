@@ -60,10 +60,6 @@
           <span class="hidden xl:inline text-xs text-stone-500 whitespace-nowrap">• 19/12–04/01 • 16 noites • 2 Chihuahuas</span>
         </div>
         <div class="flex items-center gap-1.5 shrink-0 lg:hidden">
-          <button onclick="toggleOwnCar()" class="car-toggle-btn inline-flex items-center gap-1 px-2 py-1 rounded-lg border border-stone-300 bg-white text-[11px] font-semibold text-stone-700 cursor-pointer">
-            <span class="car-toggle-dot w-1.5 h-1.5 rounded-full bg-amber-600"></span>
-            <span class="car-toggle-label">Alugado</span>
-          </button>
           <a href="#comparativo" class="inline-flex items-center px-2.5 py-1 rounded-lg bg-stone-900 text-white text-[11px] font-semibold">
             Custos ↓
           </a>
@@ -80,13 +76,6 @@
           </button>
         </div>
 
-        <button onclick="toggleOwnCar()"
-          title="Alternar entre carro alugado ou próprio no orçamento"
-          class="car-toggle-btn hidden lg:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border border-stone-300 bg-white hover:bg-stone-50 text-[11px] font-semibold text-stone-700 transition-colors cursor-pointer whitespace-nowrap">
-          <span class="car-toggle-dot w-2 h-2 rounded-full bg-amber-600"></span>
-          <span class="car-toggle-label">Carro Alugado</span>
-        </button>
-
         <a href="#comparativo" class="hidden lg:inline-flex items-center px-3 py-1.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white text-xs font-semibold transition-colors whitespace-nowrap">
           Comparar ↓
         </a>
@@ -98,20 +87,56 @@
   <main class="max-w-6xl mx-auto px-3 sm:px-4 pt-3 sm:pt-5 pb-16 space-y-8">
     <div id="plan-content" class="space-y-6"></div>
 
-    <!-- Side-by-Side Comparison (Responsive: Stacked Cards on Mobile, Table on Desktop) -->
-    <section id="comparativo" class="pt-6 border-t border-stone-200 scroll-mt-24">
+    <!-- Instagrammable Mood Comparison Strip (Forest Contrast) -->
+    <section class="bg-forest text-white rounded-3xl p-5 sm:p-7 shadow-md">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-5">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-widest text-emerald-300">O Clima de Cada Viagem</span>
+          <h2 class="font-serif text-xl sm:text-2xl font-semibold text-white mt-0.5">Estrada Real vs. Serra da Mantiqueira</h2>
+        </div>
+        <span class="text-xs text-emerald-100/80">Clique em qualquer clima para alternar o roteiro</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div onclick="selectPlan(0); window.scrollTo({top: 0, behavior: 'smooth'});"
+          class="group relative h-[210px] sm:h-[240px] rounded-2xl overflow-hidden cursor-pointer border border-white/15">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Centro_hist%C3%B3rico_de_Tiradentes_-_MG.jpg/960px-Centro_hist%C3%B3rico_de_Tiradentes_-_MG.jpg"
+            alt="Clima Estrada Real" referrerpolicy="no-referrer"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/35 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-300">Roteiro 1 • História & Grutas</span>
+            <h3 class="font-serif text-lg sm:text-xl font-semibold text-white mt-0.5">Casario Colonial, Pedra & Grutas</h3>
+            <p class="text-xs text-stone-200 mt-1">4 paradas culturais • R$ 16.280 (carro alugado)</p>
+          </div>
+        </div>
+
+        <div onclick="selectPlan(1); window.scrollTo({top: 0, behavior: 'smooth'});"
+          class="group relative h-[210px] sm:h-[240px] rounded-2xl overflow-hidden cursor-pointer border border-white/15">
+          <img src="https://vinicolaraizesdobau.com.br/wp-content/uploads/2021/05/bg1-quem-somos-vinicola-raizes-do-bau.jpg"
+            alt="Clima Mantiqueira" referrerpolicy="no-referrer"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/35 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-300">Roteiro 2 • Vinhedos & Lareira</span>
+            <h3 class="font-serif text-lg sm:text-xl font-semibold text-white mt-0.5">Pôr do Sol na Serra & 5 Vinícolas</h3>
+            <p class="text-xs text-stone-200 mt-1">2 bases fixas sem pressa • R$ 18.160 (carro alugado)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Side-by-Side Comparison (Dark Charcoal Contrast) -->
+    <section id="comparativo" class="bg-stone-900 text-stone-100 rounded-3xl p-5 sm:p-8 scroll-mt-24 shadow-lg">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-5">
         <div>
-          <span class="text-[11px] font-bold uppercase tracking-widest text-forest">Decisão em Casal</span>
-          <h2 class="font-serif text-2xl md:text-3xl font-semibold text-ink mt-0.5">Comparativo & Orçamento (16 Diárias)</h2>
-          <p class="text-xs text-stone-500 mt-1">
-            Chalés e Airbnbs com cozinha equipada para café da manhã e refeições leves, liberando o orçamento para vinícolas, cafés e ceias.
-            <button onclick="toggleOwnCar()" class="underline text-forest font-semibold ml-1 cursor-pointer">
-              Alternar Carro Alugado / Próprio
-            </button>
+          <span class="text-[11px] font-bold uppercase tracking-widest text-emerald-400">Decisão em Casal</span>
+          <h2 class="font-serif text-2xl md:text-3xl font-semibold text-white mt-0.5">Comparativo & Orçamento (16 Diárias)</h2>
+          <p class="text-xs text-stone-300 mt-1">
+            Valores fechados com carro alugado (16 dias) e estratégia de chalés/Airbnbs com cozinha equipada.
           </p>
         </div>
-        <div id="couple-vote-summary" class="text-xs font-medium text-stone-600 bg-white border border-stone-200 px-3 py-2 rounded-xl">
+        <div id="couple-vote-summary" class="text-xs font-medium text-stone-200 bg-white/10 border border-white/15 px-3 py-2 rounded-xl">
           Clique no ♥ do roteiro para marcar o favorito do casal
         </div>
       </div>
@@ -120,17 +145,17 @@
       <div id="comparison-mobile" class="grid grid-cols-1 gap-2.5 md:hidden"></div>
 
       <!-- Desktop Table (>= md) -->
-      <div class="hidden md:block bg-white rounded-2xl border border-stone-200/90 shadow-xs overflow-hidden">
+      <div class="hidden md:block bg-stone-950/60 rounded-2xl border border-white/10 overflow-hidden">
         <div class="overflow-x-auto">
           <table class="w-full text-left border-collapse text-xs md:text-sm">
             <thead>
-              <tr class="bg-stone-900 text-stone-100 text-[11px] uppercase tracking-wider">
-                <th class="py-3 px-4 font-semibold">Categoria</th>
-                <th class="py-3 px-4 font-semibold">Plano 1: Estrada Real (MG)</th>
-                <th class="py-3 px-4 font-semibold">Plano 2: Serra da Mantiqueira</th>
+              <tr class="bg-stone-950 text-emerald-300 text-[11px] uppercase tracking-wider">
+                <th class="py-3.5 px-4 font-semibold">Categoria</th>
+                <th class="py-3.5 px-4 font-semibold">Plano 1: Estrada Real (MG)</th>
+                <th class="py-3.5 px-4 font-semibold">Plano 2: Serra da Mantiqueira</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-stone-200/80" id="comparison-tbody"></tbody>
+            <tbody class="divide-y divide-white/10" id="comparison-tbody"></tbody>
           </table>
         </div>
       </div>
@@ -772,26 +797,26 @@
 
       if (tbody) {
         tbody.innerHTML = rows.map(r => `
-          <tr class="${r.highlight ? 'bg-stone-50 font-bold text-ink' : ''}">
-            <td class="py-3 px-4 font-semibold text-stone-700">${r.label}</td>
-            <td class="py-3 px-4 tabular-nums ${r.highlight ? 'text-ink text-base' : 'text-stone-600'}">${r.v0}</td>
-            <td class="py-3 px-4 tabular-nums ${r.highlight ? 'text-forest text-base' : 'text-stone-600'}">${r.v1}</td>
+          <tr class="${r.highlight ? 'bg-white/10 font-bold text-white' : ''}">
+            <td class="py-3 px-4 font-semibold text-stone-200">${r.label}</td>
+            <td class="py-3 px-4 tabular-nums ${r.highlight ? 'text-white text-base' : 'text-stone-300'}">${r.v0}</td>
+            <td class="py-3 px-4 tabular-nums ${r.highlight ? 'text-emerald-300 text-base' : 'text-stone-300'}">${r.v1}</td>
           </tr>
         `).join('');
       }
 
       if (mobileBox) {
         mobileBox.innerHTML = rows.map(r => `
-          <div class="bg-white rounded-xl border border-stone-200/90 p-3.5 ${r.highlight ? 'ring-1 ring-forest/20 bg-stone-50/70' : ''}">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-stone-500 mb-2">${r.label}</div>
+          <div class="bg-white/5 rounded-xl border border-white/10 p-3.5 ${r.highlight ? 'bg-white/10 border-emerald-400/30' : ''}">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-stone-400 mb-2">${r.label}</div>
             <div class="grid grid-cols-2 gap-3 text-xs">
               <div>
                 <div class="text-[10px] font-semibold text-stone-400">1. Estrada Real</div>
-                <div class="mt-0.5 ${r.highlight ? 'font-bold text-ink text-sm' : 'text-stone-700'}">${r.v0}</div>
+                <div class="mt-0.5 ${r.highlight ? 'font-bold text-white text-sm' : 'text-stone-200'}">${r.v0}</div>
               </div>
               <div>
-                <div class="text-[10px] font-semibold text-forest">2. Mantiqueira</div>
-                <div class="mt-0.5 ${r.highlight ? 'font-bold text-forest text-sm' : 'text-stone-700'}">${r.v1}</div>
+                <div class="text-[10px] font-semibold text-emerald-300">2. Mantiqueira</div>
+                <div class="mt-0.5 ${r.highlight ? 'font-bold text-emerald-300 text-sm' : 'text-stone-200'}">${r.v1}</div>
               </div>
             </div>
           </div>
@@ -860,7 +885,7 @@
             <div class="pt-3 border-t border-stone-100 flex flex-wrap items-center justify-between gap-3">
               <div>
                 <div class="text-lg sm:text-xl font-bold text-ink tabular-nums">${fmtBRL(total)}</div>
-                <div class="text-[11px] text-stone-500 tabular-nums">~${fmtBRL(daily)}/dia • ${useOwnCar ? 'carro próprio' : 'carro alugado'}</div>
+                <div class="text-[11px] text-stone-500 tabular-nums">~${fmtBRL(daily)}/dia • carro alugado</div>
               </div>
               <a href="#roteiro-etapas"
                 class="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-forest hover:bg-stone-900 text-white text-xs font-semibold transition-colors shadow-xs">
@@ -897,22 +922,6 @@
                 </div>
               `).join('')}
             </div>
-          </div>
-        </section>
-
-        <!-- Concierge Strategy & Kitchen Savings -->
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-3">
-          <div class="bg-white rounded-2xl p-4 border border-stone-200/90">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-amber-800 mb-1">Estratégia Pet (2 Chihuahuas)</div>
-            <p class="text-xs text-stone-600 leading-relaxed">${plan.petNote}</p>
-          </div>
-          <div class="bg-white rounded-2xl p-4 border border-stone-200/90">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-forest mb-1">Logística & Clima</div>
-            <p class="text-xs text-stone-600 leading-relaxed">${plan.climateNote}</p>
-          </div>
-          <div class="bg-emerald-50/60 rounded-2xl p-4 border border-emerald-200/80">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-forest mb-1">${plan.costs.kitchenSavingsNote}</div>
-            <p class="text-xs text-stone-700 leading-relaxed">${plan.gastronomy}</p>
           </div>
         </section>
 
