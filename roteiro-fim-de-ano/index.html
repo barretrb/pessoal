@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dossiê de Fim de Ano • 3 Roteiros (19/12 a 04/01)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            paper: '#FAF8F5',
+            ink: '#1C1917',
+            forest: '#1E3A2F',
+            terracotta: '#B45309',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FAF8F5;
+      color: #1C1917;
+      -webkit-font-smoothing: antialiased;
+    }
+    .tabular-nums { font-variant-numeric: tabular-nums; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="selection:bg-forest selection:text-white">
+
+  <!-- Sticky Compact Navigation & Route Switcher -->
+  <nav class="sticky top-0 z-40 bg-paper/90 backdrop-blur-md border-b border-stone-200/80">
+    <div class="max-w-6xl mx-auto px-4 py-2.5 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2.5">
+      <!-- Brand / Trip Context -->
+      <div class="flex items-center justify-between gap-3">
+        <div class="flex items-center gap-2.5">
+          <span class="w-2 h-2 rounded-full bg-forest shrink-0"></span>
+          <div>
+            <span class="font-serif font-semibold text-sm md:text-base text-ink tracking-tight">Reset de Fim de Ano</span>
+            <span class="hidden sm:inline text-xs text-stone-500 ml-2">19/12 – 04/01 • 16 noites • Carro (Niterói) • 2 Chihuahuas</span>
+          </div>
+        </div>
+        <a href="#comparativo" class="lg:hidden text-[11px] font-semibold text-forest underline underline-offset-4">
+          Comparar custos ↓
+        </a>
+      </div>
+
+      <!-- 3-Route Segmented Switcher + Quick Actions -->
+      <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-0.5 lg:pb-0">
+        <div class="inline-flex bg-stone-200/70 p-1 rounded-xl gap-1 shrink-0" id="plan-tabs">
+          <button onclick="selectPlan(0)" id="tab-0" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer whitespace-nowrap">
+            1. Estrada Real & Grutas
+          </button>
+          <button onclick="selectPlan(1)" id="tab-1" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer whitespace-nowrap">
+            2. Serra da Mantiqueira ★
+          </button>
+          <button onclick="selectPlan(2)" id="tab-2" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer whitespace-nowrap">
+            3. Canastra & Capitólio
+          </button>
+        </div>
+
+        <!-- Car Ownership Toggle -->
+        <button onclick="toggleOwnCar()" id="car-toggle-btn"
+          title="Alternar entre carro próprio ou alugado no orçamento"
+          class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border border-stone-300 bg-white hover:bg-stone-50 text-[11px] font-semibold text-stone-700 transition-colors cursor-pointer shrink-0">
+          <span id="car-toggle-dot" class="w-2 h-2 rounded-full bg-amber-600"></span>
+          <span id="car-toggle-label">Carro Alugado</span>
+        </button>
+
+        <a href="#comparativo" class="hidden lg:inline-flex items-center px-3 py-1.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white text-xs font-semibold transition-colors shrink-0">
+          Comparativo ↓
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-4 pt-5 pb-16 space-y-8">
+
+    <!-- Dynamic Plan Container -->
+    <div id="plan-content" class="space-y-6"></div>
+
+    <!-- Compact Side-by-Side Comparison & Budget -->
+    <section id="comparativo" class="pt-6 border-t border-stone-200 scroll-mt-20">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-5">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-widest text-forest">Decisão em Casal</span>
+          <h2 class="font-serif text-2xl md:text-3xl font-semibold text-ink mt-0.5">Comparativo & Orçamento (16 Diárias)</h2>
+          <p class="text-xs text-stone-500 mt-1">
+            Valores estimados para casal + 2 Chihuahuas saindo de carro de Niterói.
+            <button onclick="toggleOwnCar()" class="underline text-forest font-semibold ml-1 cursor-pointer">
+              Alternar Carro Alugado / Próprio
+            </button>
+          </p>
+        </div>
+        <div id="couple-vote-summary" class="text-xs font-medium text-stone-600 bg-white border border-stone-200 px-3 py-2 rounded-xl">
+          Selecione seu favorito clicando no ♥ de cada roteiro
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-stone-200/90 shadow-xs overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs md:text-sm">
+            <thead>
+              <tr class="bg-stone-900 text-stone-100 text-[11px] uppercase tracking-wider">
+                <th class="py-3 px-4 font-semibold">Critério / Categoria</th>
+                <th class="py-3 px-4 font-semibold">Plano 1: Estrada Real (MG)</th>
+                <th class="py-3 px-4 font-semibold bg-forest/90">Plano 2: Mantiqueira (SP/MG) ★</th>
+                <th class="py-3 px-4 font-semibold">Plano 3: Canastra & Capitólio</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-stone-200/80" id="comparison-tbody">
+              <!-- Rendered dynamically to reflect Carro Próprio / Alugado -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal for Real Photos -->
+  <div id="photo-modal" class="fixed inset-0 z-50 hidden bg-stone-950/92 backdrop-blur-sm flex items-center justify-center p-4" onclick="closePhotoModal()">
+    <div class="max-w-4xl w-full bg-stone-900 rounded-2xl overflow-hidden border border-stone-700/80 shadow-2xl" onclick="event.stopPropagation()">
+      <div class="relative bg-stone-950 flex items-center justify-center min-h-[280px] max-h-[75vh]">
+        <img id="modal-img" src="" alt=""
+          class="max-h-[75vh] w-auto object-contain" />
+        <button onclick="closePhotoModal()" class="absolute top-3 right-3 bg-stone-900/85 hover:bg-stone-800 text-white w-9 h-9 rounded-full flex items-center justify-center font-bold cursor-pointer border border-stone-700">✕</button>
+      </div>
+      <div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-white bg-stone-900 border-t border-stone-800">
+        <div>
+          <span id="modal-tag" class="text-[10px] font-bold uppercase tracking-wider bg-forest text-emerald-100 px-2.5 py-0.5 rounded-full"></span>
+          <p id="modal-caption" class="text-sm font-medium mt-1.5 text-stone-100"></p>
+        </div>
+        <span id="modal-location" class="text-xs text-stone-400 font-medium shrink-0"></span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Helper for real Wikimedia Commons photos (verified exact destinations)
+    const wm = (filename) => `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(filename)}?width=1200`;
+
+    const plans = [
+      {
+        id: 0,
+        badge: "Plano 1 • Minas Gerais",
+        conciergeTag: "Melhor Custo-Benefício",
+        conciergeRecommended: false,
+        title: "Grutas, Fazendas & Estrada Real",
+        subtitle: "Sete Lagoas/Cordisburgo • Ouro Preto • Tiradentes & Bichinho",
+        costs: {
+          lodging: 7200,
+          lodgingNote: "Média R$ 450/noite",
+          food: 4200,
+          foodNote: "~R$ 260/dia + ceias",
+          car: 2880,
+          fuel: 750,
+          km: "~1.250 km rodados",
+          tolls: 220,
+          tollsNote: "BR-040 ida e volta",
+          tickets: 600,
+          ticketsNote: "Grutas, fazendas e museus"
+        },
+        petScore: "Moderado (Atenção)",
+        petNote: "Grutas Rei do Mato e Maquiné (IEF-MG) e Parque do Itacolomi PROÍBEM entrada de cães. Exige revezamento ou deixar os Chihuahuas no hotel (verificar se permitem ficar sozinhos no quarto).",
+        climateNote: "Sete Lagoas faz calor forte em dezembro (30–35°C) e chuvas de verão; Ouro Preto e Tiradentes têm noites mais amenas. Estradas 100% asfaltadas.",
+        gastronomy: "Culinária mineira de fogão a lenha, queijos artesanais da Fazenda da Jaguara e cafeterias de grãos especiais em Ouro Preto e Tiradentes.",
+        accommodations: "Hotéis urbanos em Sete Lagoas e pousadas de charme no centro histórico de Tiradentes/Ouro Preto com ar-condicionado.",
+        heroPhotos: [
+          {
+            url: wm("Centro_histórico_de_Tiradentes_-_MG.jpg"),
+            caption: "Ruas de pedra pé-de-moleque e casario colonial em Tiradentes",
+            location: "Tiradentes • MG",
+            category: "História & Charme"
+          },
+          {
+            url: wm("Ouro_Preto,_Minas_Gerais.jpg"),
+            caption: "Conjunto arquitetônico barroco cercado pelas montanhas de Ouro Preto",
+            location: "Ouro Preto • MG",
+            category: "Patrimônio"
+          },
+          {
+            url: wm("Monumento_Natural_Estadual_Gruta_Rei_do_Mato_por_Douver_Ferreira_(09).jpg"),
+            caption: "Salão iluminado e passarelas da Gruta Rei do Mato",
+            location: "Sete Lagoas • MG",
+            category: "Grutas"
+          },
+          {
+            url: wm("Gruta_de_Maquiné,_MG.jpg"),
+            caption: "Formações calcárias monumentais da Gruta de Maquiné",
+            location: "Cordisburgo • MG",
+            category: "Grutas"
+          }
+        ],
+        stages: [
+          {
+            dates: "19/12 – 23/12 (4 noites)",
+            drive: "Niterói → 515 km (~7h15 via BR-040)",
+            place: "Sete Lagoas & Cordisburgo",
+            desc: "Base urbana estruturada para visitar a Gruta Rei do Mato e a Gruta de Maquiné sem estradas de terra.",
+            conciergeTip: "⚠️ Pet Alert: Cães não entram nas grutas. Confirme com o hotel se os Chihuahuas podem ficar no quarto com ar-condicionado durante o passeio.",
+            highlights: [
+              { label: "Gruta Rei do Mato", photoIdx: 2 },
+              { label: "Gruta de Maquiné", photoIdx: 3 }
+            ]
+          },
+          {
+            dates: "23/12 – 28/12 (5 noites)",
+            drive: "170 km (~2h35 via BR-040 / BR-356)",
+            place: "Ouro Preto & Lavras Novas",
+            desc: "Natal histórico, ateliês em pedra-sabão, cafeterias autorais no centro e vista da Serra da Chapada em Lavras Novas.",
+            conciergeTip: "💡 Reserve a ceia de Natal com antecedência; em Ouro Preto muitas ruas têm ladeiras fortes (leve bolsa de transporte para os Chihuahuas).",
+            highlights: [
+              { label: "Centro Histórico", photoIdx: 1 },
+              {
+                label: "Lavras Novas",
+                customPhoto: {
+                  url: wm("Serra_da_Chapada_-_Lavras_Novas_MG.jpg"),
+                  caption: "Mirante da Serra da Chapada em Lavras Novas",
+                  location: "Lavras Novas • MG",
+                  category: "Paisagens"
+                }
+              },
+              {
+                label: "Parque do Itacolomi",
+                customPhoto: {
+                  url: wm("Parque_Estadual_do_Itacolomi.jpg"),
+                  caption: "Trilhas e paisagem do Parque Estadual do Itacolomi",
+                  location: "Ouro Preto • MG",
+                  category: "Natureza"
+                }
+              }
+            ]
+          },
+          {
+            dates: "28/12 – 03/01 (6 noites)",
+            drive: "165 km (~2h45 via Estrada Real)",
+            place: "Tiradentes & Bichinho",
+            desc: "Réveillon gastronômico, compras de artesanato em Bichinho, torrefações de café especial e caminhada leve pela Serra de São José.",
+            conciergeTip: "✨ Melhor base do roteiro para os pets: ruas planas em Bichinho, pátios abertos e restaurantes acolhedores.",
+            highlights: [
+              { label: "Centro de Tiradentes", photoIdx: 0 },
+              {
+                label: "Serra de São José",
+                customPhoto: {
+                  url: wm("Vista_aérea_de_Tiradentes.jpg"),
+                  caption: "Tiradentes aos pés dos paredões da Serra de São José",
+                  location: "Tiradentes • MG",
+                  category: "Paisagens"
+                }
+              }
+            ]
+          },
+          {
+            dates: "03/01 – 04/01 (1 noite)",
+            drive: "215 km (~3h10) + 135 km (~2h10 até Niterói)",
+            place: "Itaipava / Juiz de Fora",
+            desc: "Pernoite estratégico na descida pela BR-040 para voltar descansado a Niterói no domingo.",
+            conciergeTip: "🍽️ Almoce em Itaipava antes de pegar o trecho final da serra.",
+            highlights: []
+          }
+        ],
+        links: [
+          { name: "Pousada Villa Alferes (Tiradentes)", type: "Hospedagem Pet", insta: "https://www.instagram.com/pousadavillaalferes/", site: "https://www.villaalferes.com.br/" },
+          { name: "Pousada Brisa da Serra (Tiradentes)", type: "Hospedagem Pet", insta: "https://www.instagram.com/brisadaserratiradentes/", site: "https://www.brisadaserratiradentes.com.br/" },
+          { name: "Hotel Tulip Inn Sete Lagoas", type: "Hospedagem Base", insta: null, site: "https://www.louvrehotelsgroup.com.br/" },
+          { name: "Oficina de Agosto (Bichinho)", type: "Artesanato", insta: "https://www.instagram.com/oficinadeagosto/", site: "https://www.oficinadeagosto.com.br/" }
+        ],
+        videoId: "BwMv_eZ6ZL8",
+        videoTitle: "Tiradentes e Região (MG): Roteiro Completo",
+        extraVideos: [
+          { title: "Bichinho (MG): O Paraíso dos Artesãos", id: "pZVEVmmaX4w" },
+          { title: "Ouro Preto e Mariana: Guia Completo", id: "o9qzbIWNg54" }
+        ]
+      },
+      {
+        id: 1,
+        badge: "Plano 2 • Serra da Mantiqueira (SP/MG)",
+        conciergeTag: "★ Escolha do Concierge (Perfil + Pets)",
+        conciergeRecommended: true,
+        title: "Vinícolas de Altitude, Cerâmica & Cafés",
+        subtitle: "Cunha • Santo Antônio do Pinhal • Gonçalves",
+        costs: {
+          lodging: 9600,
+          lodgingNote: "Média R$ 600/noite",
+          food: 4800,
+          foodNote: "~R$ 300/dia + ceias",
+          car: 2880,
+          fuel: 650,
+          km: "~1.050 km rodados",
+          tolls: 270,
+          tollsNote: "Via Dutra + serras",
+          tickets: 1200,
+          ticketsNote: "Vinícolas, olival e cervejarias"
+        },
+        petScore: "Excelente (Altamente Pet Friendly)",
+        petNote: "Lavandário de Cunha, O Olival, cervejarias de Gonçalves, ateliês e áreas externas de cafés recebem cães pequenos. Na Villa Santa Maria, confirme a reserva de mesa externa para os pets.",
+        climateNote: "Altitude de 1.000m a 1.350m garante noites frescas mesmo no verão. Atenção: prefira ir a Cunha via Via Dutra + Guaratinguetá se chover forte (evite a serra estreita Paraty–Cunha à noite/chuva).",
+        gastronomy: "Cafés especiais acima de 1.200m, vinhos de colheita de inverno (Syrah/Sauvignon Blanc), azeites extravirgens artesanais e trutas.",
+        accommodations: "Chalés serranos privativos com ar-condicionado e jardins cercados — ideais para os 2 Chihuahuas circularem com segurança.",
+        heroPhotos: [
+          {
+            url: wm("O_Lavandário_-_Cunha_SP.jpg"),
+            caption: "Pôr do sol nos campos do Lavandário de Cunha",
+            location: "Cunha • SP",
+            category: "Instagramável"
+          },
+          {
+            url: wm("Pedra_do_Baú_e_Bauzinho_(São_Bento_do_Sapucaí).jpg"),
+            caption: "Complexo da Pedra do Baú e acesso leve do Bauzinho",
+            location: "Pinhal / São Bento • SP",
+            category: "Mirantes"
+          },
+          {
+            url: wm("Vista_Rural_de_Gonçalves,_Minas_Gerais.jpg"),
+            caption: "Montanhas, araucárias e vales rurais de Gonçalves",
+            location: "Gonçalves • MG",
+            category: "Serra"
+          },
+          {
+            url: wm("Cunha_SP_Vista_da_Plantação_de_Lavandas.jpg"),
+            caption: "Vista panorâmica das montanhas da Serra da Bocaina em Cunha",
+            location: "Cunha • SP",
+            category: "Paisagens"
+          }
+        ],
+        stages: [
+          {
+            dates: "19/12 – 23/12 (4 noites)",
+            drive: "Niterói → 285 km (~4h20) ou via Dutra/Guará (~4h45)",
+            place: "Cunha (SP)",
+            desc: "Capital da cerâmica Noborigama, degustação de azeites em O Olival, campos de lavanda e cafés serranos.",
+            conciergeTip: "🛣️ Dica de Estrada: Se houver previsão de chuva em 19/12, vá pela Via Dutra até Guaratinguetá em vez da serra Paraty–Cunha.",
+            highlights: [
+              { label: "O Lavandário", photoIdx: 0 },
+              { label: "Serra da Bocaina", photoIdx: 3 }
+            ]
+          },
+          {
+            dates: "23/12 – 28/12 (5 noites)",
+            drive: "155 km (~2h30 via Via Dutra / Serra de Pinhal)",
+            place: "Santo Antônio do Pinhal (SP)",
+            desc: "Natal tranquilo entre vinícolas (Villa Santa Maria), fazendas de café de altitude e caminhada curta no Bauzinho.",
+            conciergeTip: "🍷 Reserve a degustação da Villa Santa Maria com antecedência para a semana do Natal e peça mesa na área externa (pet friendly).",
+            highlights: [
+              { label: "Pedra do Baú & Bauzinho", photoIdx: 1 },
+              {
+                label: "Pico Agudo",
+                customPhoto: {
+                  url: wm("Acesso_ao_Pico_Agudo_(51397182540).jpg"),
+                  caption: "Estrada cênica de acesso ao Pico Agudo em Santo Antônio do Pinhal",
+                  location: "Santo Antônio do Pinhal • SP",
+                  category: "Mirantes"
+                }
+              }
+            ]
+          },
+          {
+            dates: "28/12 – 03/01 (6 noites)",
+            drive: "52 km (~1h15 via São Bento do Sapucaí)",
+            place: "Gonçalves (MG)",
+            desc: "A pérola gastronômica da Mantiqueira: queijarias, torrefações locais, cervejaria 3 Orelhas e Réveillon intimista.",
+            conciergeTip: "🐾 Deslocamento curtíssimo! Ideal para não cansar os Chihuahuas e aproveitar 6 dias inteiros sem pressa.",
+            highlights: [
+              { label: "Vales de Gonçalves", photoIdx: 2 },
+              {
+                label: "Centro de Gonçalves",
+                customPhoto: {
+                  url: wm("Gonçalves_(MG).jpg"),
+                  caption: "Charme serrano e ruas tranquilas de Gonçalves",
+                  location: "Gonçalves • MG",
+                  category: "Vila"
+                }
+              }
+            ]
+          },
+          {
+            dates: "03/01 – 04/01 (1 noite)",
+            drive: "205 km (~3h05) + 265 km (~3h45 até Niterói)",
+            place: "Visconde de Mauá / Penedo (RJ)",
+            desc: "Parada estratégica na volta pela Dutra para almoço de truta fresca e descanso antes do retorno a Niterói.",
+            conciergeTip: "💡 Penedo tem acesso mais rápido direto pela Dutra se vocês quiserem evitar subir outra serra no último dia.",
+            highlights: []
+          }
+        ],
+        links: [
+          { name: "Pousada Candeias (Cunha)", type: "Hospedagem Pet", insta: "https://www.instagram.com/pousadacandeiascunha/", site: "https://www.pousadacandeias.com.br/" },
+          { name: "Pousada Quatro Estações de Pinhal", type: "Hospedagem Pet", insta: "https://www.instagram.com/quatroestacoesdepinhal/", site: "https://www.quatroestacoesdepinhal.com.br/" },
+          { name: "Pousada Vida Verde (Gonçalves)", type: "Hospedagem Pet", insta: null, site: "https://www.pousadavidaverde.com.br/" },
+          { name: "Vinícola Villa Santa Maria", type: "Vinícola", insta: "https://www.instagram.com/vinicolavillasantamaria/", site: "https://www.villasantamaria.com.br/" },
+          { name: "O Olival (Fazenda de Oliveiras)", type: "Fazenda", insta: "https://www.instagram.com/o_olival/", site: "https://www.oolival.com.br/" }
+        ],
+        videoId: "xT7TYA7dJ4Y",
+        videoTitle: "5 Cidades na Serra da Mantiqueira para Conhecer",
+        extraVideos: [
+          { title: "Gonçalves (MG): Roteiro Completo com Preços", id: "8sKfMQ-HQxg" },
+          { title: "Santo Antônio do Pinhal (SP): Passeios e Pousadas", id: "wm1jnD9e6uc" }
+        ]
+      },
+      {
+        id: 2,
+        badge: "Plano 3 • Sul & Oeste de MG",
+        conciergeTag: "Queijos, Vinhos Vulcânicos & Cânions",
+        conciergeRecommended: false,
+        title: "Canastra, Capitólio & Circuito das Águas",
+        subtitle: "São Lourenço • Poços/Andradas • Capitólio (2n) • Serra da Canastra",
+        costs: {
+          lodging: 8480,
+          lodgingNote: "Média R$ 530/noite",
+          food: 4400,
+          foodNote: "~R$ 275/dia + ceias",
+          car: 2880,
+          fuel: 1050,
+          km: "~1.750 km rodados",
+          tolls: 340,
+          tollsNote: "Dutra + Fernão Dias / MG-050",
+          tickets: 1100,
+          ticketsNote: "Lancha, fazendas e parques"
+        },
+        petScore: "Restrito na Canastra / Lanchas",
+        petNote: "Parque Nacional da Serra da Canastra (Casca d'Anta) PROÍBE entrada de cães. Para passear com os Chihuahuas, priorize fazendas de queijo particulares e complexos pet friendly fora do parque.",
+        climateNote: "Roteiro mais longo (~1.750 km, 5 trocas de hotel). Em dezembro/janeiro há risco de chuva forte na Canastra (estradas de terra) e restrição de navegação em Capitólio.",
+        gastronomy: "Cafés premiados de Carmo de Minas, vinhos de solo vulcânico (Casa Geraldo / Stella Valentino) e Queijo Canastra legítimo direto do produtor.",
+        accommodations: "Hotéis-fazenda e pousadas rurais bem estruturadas com ar-condicionado e espaço verde.",
+        heroPhotos: [
+          {
+            url: wm("Canyon_no_Lago_de_Furnas.jpg"),
+            caption: "Paredões e águas esmeralda dos Cânions de Furnas",
+            location: "Capitólio • MG",
+            category: "Cânions"
+          },
+          {
+            url: wm("Cachoeira_Casca_D'Anta.jpg"),
+            caption: "Queda de 186m da Cachoeira Casca d'Anta na Serra da Canastra",
+            location: "Serra da Canastra • MG",
+            category: "Cachoeiras"
+          },
+          {
+            url: wm("Queijo_canastra,_Minas_Gerais.jpg"),
+            caption: "Tradicional Queijo da Canastra curado nas fazendas produtoras",
+            location: "São Roque de Minas • MG",
+            category: "Gastronomia"
+          },
+          {
+            url: wm("Parque_das_Águas_de_São_Lourenço_-_MG.JPG"),
+            caption: "Alamedas planas e lago do Parque das Águas de São Lourenço",
+            location: "São Lourenço • MG",
+            category: "Águas"
+          }
+        ],
+        stages: [
+          {
+            dates: "19/12 – 23/12 (4 noites)",
+            drive: "Niterói → 370 km (~5h10 via Dutra / BR-354)",
+            place: "São Lourenço, Caxambu & Carmo de Minas",
+            desc: "Terroir premiado de cafés especiais em Carmo de Minas, alamedas do Circuito das Águas e artesanato mineiro.",
+            conciergeTip: "☕ Agende a visita na Unique Cafés (Carmo de Minas) para degustação guiada.",
+            highlights: [
+              { label: "Parque das Águas", photoIdx: 3 }
+            ]
+          },
+          {
+            dates: "23/12 – 27/12 (4 noites)",
+            drive: "225 km (~3h15 via BR-267)",
+            place: "Poços de Caldas & Andradas",
+            desc: "Natal serrano na Rota do Vinho Vulcânico: Casa Geraldo e Stella Valentino, além de cafés e cristais.",
+            conciergeTip: "🍷 Região excelente para enoturismo sem enfrentar grandes altitudes ou estradas ruins.",
+            highlights: [
+              {
+                label: "Poços de Caldas",
+                customPhoto: {
+                  url: wm("Poços_de_Caldas_047.jpg"),
+                  caption: "Centro histórico e arquitetura termal de Poços de Caldas",
+                  location: "Poços de Caldas • MG",
+                  category: "Cidade"
+                }
+              }
+            ]
+          },
+          {
+            dates: "27/12 – 29/12 (2 noites)",
+            drive: "235 km (~3h20 via MG-050)",
+            place: "Capitólio & Lago de Furnas",
+            desc: "Parada estratégica de 2 noites para rever os cânions pela manhã (horário mais firme no verão).",
+            conciergeTip: "🚤 Contrate lancha privativa ou confirme antes se a embarcação aceita 2 Chihuahuas na bolsa.",
+            highlights: [
+              { label: "Cânions de Furnas", photoIdx: 0 }
+            ]
+          },
+          {
+            dates: "29/12 – 03/01 (5 noites)",
+            drive: "85 km (~1h25 via Piumhi / Vargem Bonita)",
+            place: "Serra da Canastra (São Roque de Minas)",
+            desc: "Fazendas históricas de Queijo Canastra, café coado na roça e Réveillon sossegado.",
+            conciergeTip: "⚠️ Pet & Chuva Alert: Cães são proibidos no Parque Nacional (Casca d'Anta). Se chover forte, evite estradas de terra sem 4x4.",
+            highlights: [
+              { label: "Queijo Canastra", photoIdx: 2 },
+              { label: "Casca d'Anta", photoIdx: 1 },
+              {
+                label: "Serra da Canastra",
+                customPhoto: {
+                  url: wm("Serra_da_Canastra_MG.jpg"),
+                  caption: "Planalto e campos abertos da Serra da Canastra",
+                  location: "São Roque de Minas • MG",
+                  category: "Paisagens"
+                }
+              }
+            ]
+          },
+          {
+            dates: "03/01 – 04/01 (1 noite)",
+            drive: "445 km (~5h40) + 185 km (~2h30 até Niterói)",
+            place: "Penedo ou Itaipava (RJ)",
+            desc: "Quebra estratégica na volta pela Dutra para evitar dirigir ~8h seguidas até Niterói.",
+            conciergeTip: "🚗 Trecho longo no dia 03/01 — saia cedo da Canastra.",
+            highlights: []
+          }
+        ],
+        links: [
+          { name: "Vinícola Casa Geraldo (Andradas)", type: "Vinícola", insta: "https://www.instagram.com/vinicolacasageraldo/", site: "https://www.casageraldo.com.br/" },
+          { name: "Vinícola Stella Valentino (Andradas)", type: "Vinícola", insta: "https://www.instagram.com/vinicolastellavalentino/", site: "https://www.stellavalentino.com.br/" },
+          { name: "Vila Chico Hotel Fazenda (São Lourenço)", type: "Hospedagem Pet", insta: "https://www.instagram.com/vila.chico/", site: "https://vilachico.com.br/" },
+          { name: "Unique Cafés (Carmo de Minas)", type: "Fazenda de Café", insta: "https://www.instagram.com/uniquecafes/", site: "https://uniquecafes.com.br/" },
+          { name: "Fazenda Capão Grande (Canastra)", type: "Queijaria", insta: "https://www.instagram.com/fazendacapaogrande/", site: "https://queijodacanastra.com.br/" }
+        ],
+        videoId: "OQTU8KrqX78",
+        videoTitle: "Capitólio & Serra da Canastra (MG): Roteiro Completo",
+        extraVideos: [
+          { title: "Serra da Canastra (MG): Guia Antes de Viajar", id: "GTflb47kIhY" },
+          { title: "Serra da Canastra ou Capitólio: Qual Escolher?", id: "9DHCH-JRT7w" }
+        ]
+      }
+    ];
+
+    let activePlanIndex = 0;
+    let useOwnCar = false;
+    let favorites = JSON.parse(localStorage.getItem("trip_favorites_2026") || "{}");
+
+    const fmtBRL = (val) => "R$ " + val.toLocaleString("pt-BR");
+
+    function getPlanTotal(plan) {
+      const c = plan.costs;
+      return c.lodging + c.food + (useOwnCar ? 0 : c.car) + c.fuel + c.tolls + c.tickets;
+    }
+
+    function toggleOwnCar() {
+      useOwnCar = !useOwnCar;
+      const dot = document.getElementById("car-toggle-dot");
+      const label = document.getElementById("car-toggle-label");
+      if (dot && label) {
+        dot.className = `w-2 h-2 rounded-full ${useOwnCar ? "bg-emerald-600" : "bg-amber-600"}`;
+        label.textContent = useOwnCar ? "Carro Próprio (-R$ 2.880)" : "Carro Alugado";
+      }
+      selectPlan(activePlanIndex);
+      renderComparisonTable();
+    }
+
+    function toggleFavorite(planId) {
+      favorites[planId] = !favorites[planId];
+      localStorage.setItem("trip_favorites_2026", JSON.stringify(favorites));
+      selectPlan(activePlanIndex);
+      updateVoteSummary();
+    }
+
+    function updateVoteSummary() {
+      const el = document.getElementById("couple-vote-summary");
+      if (!el) return;
+      const favNames = plans.filter(p => favorites[p.id]).map(p => `Plano ${p.id + 1}`);
+      el.innerHTML = favNames.length
+        ? `<span class="text-rose-600 font-bold">♥ Favoritado(s):</span> ${favNames.join(", ")}`
+        : `Clique no ♥ do roteiro para marcar o favorito do casal`;
+    }
+
+    function openPhotoModal(url, caption, location, category) {
+      const modal = document.getElementById("photo-modal");
+      const img = document.getElementById("modal-img");
+      img.src = url;
+      img.onerror = () => {
+        img.onerror = null;
+        img.src = `https://placehold.co/1000x650/1c1917/faf8f5?text=${encodeURIComponent(location)}`;
+      };
+      document.getElementById("modal-caption").textContent = caption;
+      document.getElementById("modal-location").textContent = "📍 " + location;
+      document.getElementById("modal-tag").textContent = category || "Destino";
+      modal.classList.remove("hidden");
+    }
+
+    function closePhotoModal() {
+      document.getElementById("photo-modal").classList.add("hidden");
+    }
+
+    function playInlineVideo(videoId, title) {
+      const box = document.getElementById("video-player-box");
+      if (!box) return;
+      box.innerHTML = `
+        <iframe class="w-full h-full aspect-video rounded-xl"
+          src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0"
+          title="${title}"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      `;
+    }
+
+    function renderComparisonTable() {
+      const tbody = document.getElementById("comparison-tbody");
+      if (!tbody) return;
+      const totals = plans.map(getPlanTotal);
+
+      tbody.innerHTML = `
+        <tr class="bg-stone-50 font-bold text-ink">
+          <td class="py-3.5 px-4">💰 Investimento Total Estimado</td>
+          ${plans.map((p, i) => `
+            <td class="py-3.5 px-4 tabular-nums text-sm md:text-base ${i === 1 ? 'text-forest bg-emerald-50/50' : ''}">
+              ${fmtBRL(totals[i])}
+              <span class="block text-[11px] font-normal text-stone-500">~${fmtBRL(Math.round(totals[i] / 16))}/dia</span>
+            </td>
+          `).join('')}
+        </tr>
+        <tr>
+          <td class="py-3 px-4 font-semibold text-stone-700">🐾 Perfil 2 Chihuahuas</td>
+          ${plans.map((p, i) => `
+            <td class="py-3 px-4 ${i === 1 ? 'bg-emerald-50/30 font-semibold text-forest' : 'text-stone-600'}">${p.petScore}</td>
+          `).join('')}
+        </tr>
+        <tr>
+          <td class="py-3 px-4 font-semibold text-stone-700">🏨 Hospedagem (16 diárias + Pet)</td>
+          ${plans.map((p, i) => `
+            <td class="py-3 px-4 tabular-nums ${i === 1 ? 'bg-emerald-50/30' : ''}">
+              ${fmtBRL(p.costs.lodging)} <span class="block text-[11px] text-stone-500">${p.costs.lodgingNote}</span>
+            </td>
+          `).join('')}
+        </tr>
+        <tr>
+          <td class="py-3 px-4 font-semibold text-stone-700">🍽️ Alimentação & Ceias</td>
+          ${plans.map((p, i) => `
+            <td class="py-3 px-4 tabular-nums ${i === 1 ? 'bg-emerald-50/30' : ''}">
+              ${fmtBRL(p.costs.food)} <span class="block text-[11px] text-stone-500">${p.costs.foodNote}</span>
+            </td>
+          `).join('')}
+        </tr>
+        <tr>
+          <td class="py-3 px-4 font-semibold text-stone-700">🚗 Carro (16 dias)</td>
+          ${plans.map((p, i) => `
+            <td class="py-3 px-4 tabular-nums ${i === 1 ? 'bg-emerald-50/30' : ''}">
+              ${useOwnCar ? '<span class="text-forest font-semibold">R$ 0 (Próprio)</span>' : `${fmtBRL(p.costs.car)} <span class="block text-[11px] text-stone-500">R$ 180/dia c/ seguro</span>`}
+            </td>
+          `).join('')}
+        </tr>
+        <tr>
+          <td class="py-3 px-4 font-semibold text-stone-700">⛽ Combustível</td>
+          ${plans.map((p, i) => `
+            <td class="py-3 px-4 tabular-nums ${i === 1 ? 'bg-emerald-50/30' : ''}">
+              ${fmtBRL(p.costs.fuel)} <span class="block text-[11px] text-stone-500">${p.costs.km}</span>
+            </td>
+          `).join('')}
+        </tr>
+        <tr>
+          <td class="py-3 px-4 font-semibold text-stone-700">🛣️ Pedágios</td>
+          ${plans.map((p, i) => `
+            <td class="py-3 px-4 tabular-nums ${i === 1 ? 'bg-emerald-50/30' : ''}">
+              ${fmtBRL(p.costs.tolls)} <span class="block text-[11px] text-stone-500">${p.costs.tollsNote}</span>
+            </td>
+          `).join('')}
+        </tr>
+        <tr>
+          <td class="py-3 px-4 font-semibold text-stone-700">🎟️ Passeios & Degustações</td>
+          ${plans.map((p, i) => `
+            <td class="py-3 px-4 tabular-nums ${i === 1 ? 'bg-emerald-50/30' : ''}">
+              ${fmtBRL(p.costs.tickets)} <span class="block text-[11px] text-stone-500">${p.costs.ticketsNote}</span>
+            </td>
+          `).join('')}
+        </tr>
+      `;
+    }
+
+    function selectPlan(index) {
+      activePlanIndex = index;
+
+      [0, 1, 2].forEach(i => {
+        const tab = document.getElementById(`tab-${i}`);
+        if (i === index) {
+          tab.className = "px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer whitespace-nowrap bg-ink text-white shadow-xs";
+        } else {
+          tab.className = "px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer whitespace-nowrap text-stone-600 hover:text-ink hover:bg-white/60";
+        }
+      });
+
+      const plan = plans[index];
+      const total = getPlanTotal(plan);
+      const daily = Math.round(total / 16);
+      const isFav = !!favorites[plan.id];
+      const container = document.getElementById("plan-content");
+
+      container.innerHTML = `
+        <!-- Editorial Hero Split (Compact & High Impact) -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+          <!-- Left: Dossier Summary (5 cols) -->
+          <div class="lg:col-span-5 bg-white rounded-2xl p-5 md:p-6 border border-stone-200/90 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-[11px] font-bold uppercase tracking-widest ${plan.conciergeRecommended ? 'text-forest bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full' : 'text-stone-500'}">
+                  ${plan.conciergeTag}
+                </span>
+                <button onclick="toggleFavorite(${plan.id})"
+                  class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-xs font-semibold transition-colors cursor-pointer ${isFav ? 'bg-rose-50 border-rose-200 text-rose-600' : 'bg-stone-50 border-stone-200 text-stone-600 hover:bg-stone-100'}">
+                  <span>${isFav ? '♥' : '♡'}</span>
+                  <span>${isFav ? 'Favorito' : 'Favoritar'}</span>
+                </button>
+              </div>
+
+              <h1 class="font-serif text-2xl md:text-3xl font-semibold text-ink mt-3 leading-tight">${plan.title}</h1>
+              <p class="text-xs md:text-sm text-stone-500 font-medium mt-1">${plan.subtitle}</p>
+            </div>
+
+            <!-- 4-Metric Compact Strip -->
+            <div class="grid grid-cols-2 gap-2.5 mt-5 pt-4 border-t border-stone-100">
+              <div class="bg-stone-50 rounded-xl p-3 border border-stone-200/60">
+                <span class="text-[10px] uppercase tracking-wider text-stone-500 font-semibold">Total Estimado</span>
+                <div class="text-lg md:text-xl font-bold text-ink tabular-nums mt-0.5">${fmtBRL(total)}</div>
+                <span class="text-[11px] text-stone-500 tabular-nums">~${fmtBRL(daily)}/dia</span>
+              </div>
+              <div class="bg-stone-50 rounded-xl p-3 border border-stone-200/60">
+                <span class="text-[10px] uppercase tracking-wider text-stone-500 font-semibold">Deslocamento</span>
+                <div class="text-sm md:text-base font-bold text-ink mt-1">${plan.costs.km}</div>
+                <span class="text-[11px] text-stone-500">${plan.stages.length} etapas</span>
+              </div>
+              <div class="col-span-2 bg-stone-50 rounded-xl p-3 border border-stone-200/60 flex items-center justify-between gap-2">
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-stone-500 font-semibold">Índice Pet (2 Chihuahuas)</span>
+                  <div class="text-xs font-bold ${plan.conciergeRecommended ? 'text-forest' : 'text-amber-800'} mt-0.5">${plan.petScore}</div>
+                </div>
+                <span class="text-[11px] text-stone-500 text-right max-w-[55%] leading-tight">Ver notas do concierge abaixo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Real Destination Photo Mosaic (7 cols) -->
+          <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+            ${plan.heroPhotos.map((photo, idx) => `
+              <div onclick="openPhotoModal('${photo.url.replace(/'/g, "\\'")}', '${photo.caption.replace(/'/g, "\\'")}', '${photo.location.replace(/'/g, "\\'")}', '${photo.category}')"
+                class="group relative rounded-2xl overflow-hidden bg-stone-800 cursor-pointer border border-stone-200/80 ${idx === 0 ? 'col-span-2 row-span-2 min-h-[240px] sm:min-h-[300px]' : 'min-h-[140px]'}">
+                <img src="${photo.url}" alt="${photo.caption}" loading="lazy"
+                  onerror="this.onerror=null; this.src='https://placehold.co/800x600/1c1917/faf8f5?text=${encodeURIComponent(photo.location)}';"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-950/85 via-stone-950/15 to-transparent"></div>
+                <span class="absolute top-2.5 left-2.5 bg-stone-950/70 backdrop-blur-xs text-white text-[10px] font-semibold px-2 py-0.5 rounded-full">
+                  ${photo.location}
+                </span>
+                <p class="absolute bottom-2.5 left-2.5 right-2.5 text-white text-[11px] font-medium leading-snug line-clamp-2">
+                  ${photo.caption}
+                </p>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+
+        <!-- Concierge Intelligence Brief (3 Compact Columns) -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div class="bg-white rounded-2xl p-4 border border-stone-200/90">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-amber-800 mb-1">🐾 Parecer Pet (Chihuahuas)</div>
+            <p class="text-xs text-stone-600 leading-relaxed">${plan.petNote}</p>
+          </div>
+          <div class="bg-white rounded-2xl p-4 border border-stone-200/90">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-forest mb-1">🌦️ Clima & Estradas (Dez/Jan)</div>
+            <p class="text-xs text-stone-600 leading-relaxed">${plan.climateNote}</p>
+          </div>
+          <div class="bg-white rounded-2xl p-4 border border-stone-200/90">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-stone-700 mb-1">☕ Gastronomia & Estadia</div>
+            <p class="text-xs text-stone-600 leading-relaxed">${plan.gastronomy}</p>
+          </div>
+        </section>
+
+        <!-- Main Workspace: Timeline (7 cols) + Curated Links & Video (5 cols) -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <!-- Timeline -->
+          <div class="lg:col-span-7 bg-white rounded-2xl p-5 md:p-6 border border-stone-200/90">
+            <div class="flex items-center justify-between gap-2 pb-3 mb-5 border-b border-stone-100">
+              <h2 class="font-serif text-xl font-semibold text-ink">Roteiro Etapa por Etapa</h2>
+              <span class="text-[11px] text-stone-500">Clique nas tags 📷 para foto real</span>
+            </div>
+
+            <div class="space-y-6 relative before:absolute before:inset-0 before:ml-3 before:h-full before:w-px before:bg-stone-200">
+              ${plan.stages.map((stage, idx) => `
+                <div class="relative pl-9">
+                  <div class="absolute left-0 top-0.5 w-6 h-6 rounded-full bg-ink text-white text-[11px] font-bold flex items-center justify-center ring-4 ring-white">
+                    ${idx + 1}
+                  </div>
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-forest">${stage.dates}</span>
+                    <span class="text-[11px] text-stone-500 bg-stone-100 px-2 py-0.5 rounded-md">${stage.drive}</span>
+                  </div>
+                  <h3 class="font-serif text-lg font-semibold text-ink mt-1">${stage.place}</h3>
+                  <p class="text-xs md:text-sm text-stone-600 mt-1 leading-relaxed">${stage.desc}</p>
+                  <div class="mt-2 text-[11px] text-stone-700 bg-stone-50 border-l-2 border-terracotta pl-2.5 py-1.5 rounded-r-lg">
+                    ${stage.conciergeTip}
+                  </div>
+                  ${stage.highlights.length ? `
+                    <div class="flex flex-wrap gap-1.5 mt-2.5">
+                      ${stage.highlights.map(h => {
+                        const pObj = h.customPhoto ? h.customPhoto : plan.heroPhotos[h.photoIdx];
+                        return `
+                          <button type="button"
+                            onclick="openPhotoModal('${pObj.url.replace(/'/g, "\\'")}', '${pObj.caption.replace(/'/g, "\\'")}', '${pObj.location.replace(/'/g, "\\'")}', '${pObj.category}')"
+                            class="inline-flex items-center gap-1 text-[11px] font-semibold bg-stone-100 hover:bg-ink text-stone-700 hover:text-white px-2.5 py-1 rounded-lg transition-colors cursor-pointer">
+                            <span>${h.label}</span>
+                            <span class="opacity-70">📷</span>
+                          </button>
+                        `;
+                      }).join('')}
+                    </div>
+                  ` : ''}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Curated Stays, Wineries & Compact Video Guide -->
+          <div class="lg:col-span-5 space-y-5">
+            <!-- Links -->
+            <div class="bg-white rounded-2xl p-5 border border-stone-200/90">
+              <h2 class="font-serif text-xl font-semibold text-ink pb-3 mb-3 border-b border-stone-100">Curadoria de Reservas</h2>
+              <div class="divide-y divide-stone-100">
+                ${plan.links.map(link => `
+                  <div class="py-2.5 first:pt-0 last:pb-0 flex items-center justify-between gap-3">
+                    <div class="min-w-0">
+                      <span class="text-[10px] font-bold uppercase tracking-wider text-stone-400">${link.type}</span>
+                      <div class="text-xs font-semibold text-ink truncate">${link.name}</div>
+                    </div>
+                    <div class="flex items-center gap-1.5 shrink-0">
+                      ${link.insta ? `
+                        <a href="${link.insta}" target="_blank" rel="noopener noreferrer"
+                          class="text-[11px] font-semibold text-pink-700 bg-pink-50 hover:bg-pink-100 px-2.5 py-1 rounded-lg transition-colors">
+                          IG ↗
+                        </a>
+                      ` : ''}
+                      ${link.site ? `
+                        <a href="${link.site}" target="_blank" rel="noopener noreferrer"
+                          class="text-[11px] font-semibold text-stone-700 bg-stone-100 hover:bg-stone-200 px-2.5 py-1 rounded-lg transition-colors">
+                          Site ↗
+                        </a>
+                      ` : ''}
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Compact Video Preview -->
+            <div class="bg-white rounded-2xl p-5 border border-stone-200/90">
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <h3 class="font-serif text-base font-semibold text-ink">🎬 Clima da Região em Vídeo</h3>
+                <a href="https://www.youtube.com/watch?v=${plan.videoId}" target="_blank" rel="noopener noreferrer"
+                  class="text-[11px] font-semibold text-red-600 hover:underline">YouTube ↗</a>
+              </div>
+              <div id="video-player-box" class="relative aspect-video rounded-xl overflow-hidden bg-stone-900 group cursor-pointer"
+                onclick="playInlineVideo('${plan.videoId}', '${plan.videoTitle.replace(/'/g, "\\'")}')">
+                <img src="https://i.ytimg.com/vi/${plan.videoId}/hqdefault.jpg" alt="${plan.videoTitle}"
+                  class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-stone-950/35 flex items-center justify-center">
+                  <span class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">▶</span>
+                </div>
+                <p class="absolute bottom-2.5 left-3 right-3 text-white text-xs font-semibold drop-shadow">${plan.videoTitle}</p>
+              </div>
+              <div class="mt-3 space-y-1.5">
+                ${plan.extraVideos.map(v => `
+                  <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener noreferrer"
+                    class="flex items-center justify-between text-xs text-stone-600 hover:text-ink py-1 px-2 rounded-lg hover:bg-stone-50 transition-colors">
+                    <span class="truncate">▶ ${v.title}</span>
+                    <span class="text-[10px] text-stone-400 shrink-0 ml-2">↗</span>
+                  </a>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Default to Plan 2 (Mantiqueira - Concierge Pick) or Plan 1
+      selectPlan(1);
+      renderComparisonTable();
+      updateVoteSummary();
+    });
+  </script>
+</body>
+</html>
