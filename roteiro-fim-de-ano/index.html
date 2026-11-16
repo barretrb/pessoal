@@ -43,7 +43,6 @@
   <!-- Sticky Compact Navigation & Route Switcher -->
   <nav class="sticky top-0 z-40 bg-paper/95 backdrop-blur-md border-b border-stone-200/80">
     <div class="max-w-6xl mx-auto px-4 py-2.5 flex flex-wrap items-center justify-between gap-2">
-      <!-- Brand / Trip Context -->
       <div class="flex items-center gap-2 min-w-0">
         <span class="w-2 h-2 rounded-full bg-forest shrink-0"></span>
         <span class="font-serif font-semibold text-sm md:text-base text-ink tracking-tight whitespace-nowrap">Reset de Fim de Ano</span>
@@ -51,7 +50,6 @@
         <span class="hidden sm:inline xl:hidden text-[11px] text-stone-500 whitespace-nowrap">• 19/12–04/01 • 2 Chihuahuas</span>
       </div>
 
-      <!-- 3-Route Segmented Switcher + Quick Actions -->
       <div class="flex flex-wrap items-center gap-2">
         <div class="inline-flex bg-stone-200/70 p-1 rounded-xl gap-1" id="plan-tabs">
           <button onclick="selectPlan(0)" id="tab-0" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer whitespace-nowrap">
@@ -65,7 +63,6 @@
           </button>
         </div>
 
-        <!-- Car Ownership Toggle -->
         <button onclick="toggleOwnCar()" id="car-toggle-btn"
           title="Alternar entre carro próprio ou alugado no orçamento"
           class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border border-stone-300 bg-white hover:bg-stone-50 text-[11px] font-semibold text-stone-700 transition-colors cursor-pointer whitespace-nowrap">
@@ -82,11 +79,9 @@
 
   <!-- Main Content -->
   <main class="max-w-6xl mx-auto px-4 pt-5 pb-16 space-y-8">
-
-    <!-- Dynamic Plan Container -->
     <div id="plan-content" class="space-y-6"></div>
 
-    <!-- Compact Side-by-Side Comparison & Budget -->
+    <!-- Side-by-Side Comparison & Budget -->
     <section id="comparativo" class="pt-6 border-t border-stone-200 scroll-mt-20">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-5">
         <div>
@@ -100,7 +95,7 @@
           </p>
         </div>
         <div id="couple-vote-summary" class="text-xs font-medium text-stone-600 bg-white border border-stone-200 px-3 py-2 rounded-xl">
-          Selecione seu favorito clicando no ♥ de cada roteiro
+          Clique no ♥ do roteiro para marcar o favorito do casal
         </div>
       </div>
 
@@ -151,13 +146,13 @@
       {
         id: 0,
         badge: "Plano 1 • Minas Gerais",
-        conciergeTag: "Melhor Custo-Benefício • História & Caves",
+        conciergeTag: "Melhor Custo-Benefício • Fazendas, História & Vinhos",
         conciergeRecommended: false,
-        title: "Grutas, Vinícolas Boutique & Estrada Real",
-        subtitle: "Sete Lagoas/Cordisburgo • Ouro Preto • Tiradentes & Bichinho",
+        title: "Hotéis-Fazenda, Grutas & Vinícolas da Estrada Real",
+        subtitle: "Sete Lagoas/Jaguara • Ouro Preto • Tiradentes & Bichinho",
         costs: {
-          lodging: 7200,
-          lodgingNote: "Média R$ 450/noite",
+          lodging: 7600,
+          lodgingNote: "Média R$ 475/noite (inclui fazendas)",
           food: 4200,
           foodNote: "~R$ 260/dia + ceias",
           car: 2880,
@@ -165,13 +160,13 @@
           km: "~1.250 km rodados",
           tolls: 220,
           tollsNote: "BR-040 ida e volta",
-          tickets: 600,
-          ticketsNote: "Grutas, vinícolas e museus"
+          tickets: 750,
+          ticketsNote: "Grutas, vinícolas e fazendas"
         },
-        petScore: "Bom (Com Base c/ AC)",
-        petNote: "Nos passeios onde cães não entram (Grutas Rei do Mato/Maquiné, Parque do Itacolomi e caves internas), basta deixá-los descansando no quarto com ar-condicionado por 2–3h. Em Tiradentes/Bichinho e nos jardins das vinícolas, eles acompanham vocês.",
-        climateNote: "Sete Lagoas é mais quente no verão (30–35°C); Ouro Preto e Tiradentes têm noites mais frescas. Estradas federais/estaduais 100% asfaltadas.",
-        gastronomy: "Vinhos de inverno da Estrada Real (Vinícola Luiz Porto e Vinícola Trindade em Tiradentes/Bichinho; ANSEHI e Quinta de Glaura em Ouro Preto) + cafés especiais e fogão a lenha.",
+        petScore: "Bom (Fazendas + Quarto c/ AC)",
+        petNote: "Hotéis-fazenda oferecem gramados para os Chihuahuas pela manhã e quartos frescos com AC para descansarem durante as 2h30 de visita às grutas (que proíbem cães).",
+        climateNote: "Deslocamentos pela BR-040 e Estrada Real 100% asfaltados. Saia cedo (até 07h30) nos trechos mais longos para evitar chuvas de fim de tarde.",
+        gastronomy: "Café da manhã mineiro completo (bolo de fubá, pão de queijo na hora, broa, queijo curado da Fazenda da Jaguara), fogão a lenha e vinhos de inverno (Luiz Porto, Trindade e ANSEHI).",
         heroPhotos: [
           {
             url: wm("Centro_histórico_de_Tiradentes_-_MG.jpg"),
@@ -187,9 +182,9 @@
           },
           {
             url: wm("Hotel_Fazenda_Canto_da_Siriema_-_Jaboticatubas,_Minas_Gerais_-_panoramio.jpg"),
-            caption: "Arquitetura de hotel-fazenda mineiro cercado de área verde e varandas",
-            location: "Hospedagem • MG",
-            category: "🏡 Hospedagem"
+            caption: "Hotel-fazenda mineiro com café da manhã caseiro, varandas e jardins",
+            location: "Hospedagem Fazenda • MG",
+            category: "🏡 Fazenda"
           },
           {
             url: wm("Ouro_Preto,_Minas_Gerais.jpg"),
@@ -217,9 +212,9 @@
           },
           {
             url: wm("Casa_Grande,_MG_-_Hotel_Fazenda_-_panoramio.jpg"),
-            caption: "Pousadas e fazendas históricas da Estrada Real para estadia com os pets",
+            caption: "Sede de fazenda histórica com comida mineira no fogão a lenha",
             location: "Estrada Real • MG",
-            category: "🏡 Hospedagem"
+            category: "🏡 Fazenda"
           },
           {
             url: wm("Vista_aérea_de_Tiradentes.jpg"),
@@ -231,71 +226,141 @@
         stages: [
           {
             dates: "19/12 – 23/12 (4 noites)",
-            drive: "Niterói → 515 km (~7h15 via BR-040)",
-            place: "Sete Lagoas & Cordisburgo",
-            desc: "Base urbana com hotéis estruturados para visitar a Gruta Rei do Mato e a Gruta de Maquiné pela manhã.",
-            conciergeTip: "🐾 Estratégia Pet: Escolha hotel com bom ar-condicionado e aviso de 'não perturbe' para os 2 Chihuahuas descansarem no quarto durante as 2h30 de visita às grutas.",
+            travelDetail: {
+              route: "Niterói (RJ) → Sete Lagoas / Jaguara (MG)",
+              distance: "515 km",
+              time: "~7h15 (prever +45min em chuva/feriado)",
+              road: "Ponte Rio-Niterói → BR-040 (passando por JF e BH)",
+              bestWindow: "Sair 06h30"
+            },
+            place: "Hotel-Fazenda Região das Grutas & Jaguara",
+            desc: "Troque o hotel urbano por um hotel-fazenda na região de Matozinhos/Sete Lagoas: café da manhã da roça, queijos da Fazenda da Jaguara e fácil acesso às grutas.",
+            conciergeTip: "🐾 Estratégia Pet: Os Chihuahuas ficam descansando na fazenda (quarto c/ AC) durante as 2h30 de passeio nas Grutas Rei do Mato e Maquiné.",
             highlights: [
               { label: "Gruta Rei do Mato", photoIdx: 5 },
-              { label: "Gruta de Maquiné", photoIdx: 6 }
+              { label: "Gruta de Maquiné", photoIdx: 6 },
+              { label: "Hotel Fazenda", photoIdx: 2 }
             ]
           },
           {
             dates: "23/12 – 28/12 (5 noites)",
-            drive: "170 km (~2h35 via BR-040 / BR-356)",
+            travelDetail: {
+              route: "Sete Lagoas → Ouro Preto (MG)",
+              distance: "170 km",
+              time: "~2h40 (via Anel Rodoviário de BH)",
+              road: "BR-040 → BR-356 (Rodovia dos Inconfidentes)",
+              bestWindow: "Sair 09h30 (pós café da manhã)"
+            },
             place: "Ouro Preto, Lavras Novas & Vinícolas",
-            desc: "Natal histórico, cafeterias autorais no centro e degustação nas vinícolas boutique ANSEHI (Santa Rita) ou Quinta de Glaura.",
-            conciergeTip: "🍷 Enoturismo: Agende a 'Visita Fundadora' na Vinícola ANSEHI (harmonização com queijos e charcutaria mineira).",
+            desc: "Natal histórico com bolos e cafés artesanais no centro, comida mineira caseira e degustação nas vinícolas boutique ANSEHI ou Quinta de Glaura.",
+            conciergeTip: "🍷 Experiência única: Agende a 'Visita Fundadora' na Vinícola ANSEHI (~2h30 com queijos e charcutaria mineira).",
             highlights: [
               { label: "Cidade de Ouro Preto", photoIdx: 3 },
-              { label: "Vinhedos & Degustação", photoIdx: 1 }
+              { label: "Fazenda Histórica", photoIdx: 7 }
             ]
           },
           {
             dates: "28/12 – 03/01 (6 noites)",
-            drive: "165 km (~2h45 via Estrada Real)",
+            travelDetail: {
+              route: "Ouro Preto → Tiradentes / Bichinho (MG)",
+              distance: "165 km",
+              time: "~2h50 (trecho sinuoso pós-Congonhas)",
+              road: "BR-356 → BR-040 → BR-265 (Estrada Real)",
+              bestWindow: "Sair 09h00"
+            },
             place: "Tiradentes & Bichinho (Rota do Vinho)",
-            desc: "Réveillon gastronômico, tour pelas caves da Vinícola Luiz Porto, pôr do sol no Jardim Trindade (Vinícola Trindade) e cafés especiais.",
-            conciergeTip: "🍷✨ A Vinícola Trindade (em Bichinho) une vinho de inverno, arquitetura moderna e vista para a Serra de São José.",
+            desc: "Réveillon gastronômico, tour pelas caves da Vinícola Luiz Porto, pôr do sol no Jardim Trindade, ateliês artesanais e cafés de bolo caseiro.",
+            conciergeTip: "💐 Flores & Charme: O centro de Tiradentes e as pousadas-fazenda têm jardins floridos perfeitos para fotos com os pets.",
             highlights: [
               { label: "Centro de Tiradentes", photoIdx: 0 },
-              { label: "Caves de Carvalho", photoIdx: 4 },
-              { label: "Pousadas da Região", photoIdx: 2 }
+              { label: "Vinícola Trindade", photoIdx: 1 },
+              { label: "Caves de Carvalho", photoIdx: 4 }
             ]
           },
           {
             dates: "03/01 – 04/01 (1 noite)",
-            drive: "215 km (~3h10) + 135 km (~2h10 até Niterói)",
-            place: "Itaipava / Juiz de Fora",
-            desc: "Pernoite estratégico na descida pela BR-040 para voltar descansado a Niterói.",
-            conciergeTip: "🍽️ Almoce em Itaipava antes de descer a serra.",
+            travelDetail: {
+              route: "Tiradentes → Itaipava (RJ) → Niterói",
+              distance: "215 km + 135 km",
+              time: "~3h15 (dia 03) + ~2h10 (dia 04)",
+              road: "BR-265 → BR-040 (descida da serra de Petrópolis)",
+              bestWindow: "Sair 10h00"
+            },
+            place: "Itaipava / Petrópolis (RJ)",
+            desc: "Pernoite estratégico na volta pela BR-040 com almoço de massas artesanais ou cozinha mineira antes de retornar a Niterói.",
+            conciergeTip: "🍽️ Parada leve para não dirigir 5h30 direto no retorno.",
             highlights: []
           }
         ],
-        links: [
-          { name: "Vinícola Luiz Porto (Tiradentes)", type: "Vinícola • Caves", insta: "https://www.instagram.com/vinicolaluizporto/", site: "https://www.vinicolaluizporto.com.br/" },
-          { name: "Vinícola Trindade (Bichinho)", type: "Vinícola • Domo", insta: "https://www.instagram.com/vinicolatrindade/", site: "https://www.vinicolatrindade.com.br/" },
-          { name: "Vinícola ANSEHI (Ouro Preto)", type: "Vinícola Boutique", insta: "https://www.instagram.com/vinicolaansehi/", site: "https://www.ansehi.com.br/" },
-          { name: "Pousada Villa Alferes (Tiradentes)", type: "Hospedagem Pet", insta: "https://www.instagram.com/pousadavillaalferes/", site: "https://www.villaalferes.com.br/" },
-          { name: "Pousada Brisa da Serra (Tiradentes)", type: "Hospedagem Pet", insta: "https://www.instagram.com/brisadaserratiradentes/", site: "https://www.brisadaserratiradentes.com.br/" }
+        curatedItems: [
+          {
+            name: "Vinícola Trindade (Bichinho)",
+            type: "🍷 Vinícola • Arte",
+            price: "~R$ 160–240 / pessoa",
+            duration: "2h30 a 3h no roteiro",
+            experience: "Degustação de vinhos de inverno no domo geodésico com vista para a Serra de São José + música.",
+            photo: "https://vinicolatrindade.com.br/wp-content/uploads/2026/07/vinhos-1024x684.webp",
+            insta: "https://www.instagram.com/vinicolatrindade/",
+            site: "https://www.vinicolatrindade.com.br/"
+          },
+          {
+            name: "Vinícola Luiz Porto (Tiradentes)",
+            type: "🍷 Vinícola • Caves",
+            price: "~R$ 120–190 / pessoa",
+            duration: "2h no roteiro",
+            experience: "Tour guiado pela produção e caves de carvalho + degustação da linha Dom de Minas.",
+            photo: wm("Tonéis_de_Carvalho_-_produção_de_vinho_(2541862954).jpg"),
+            insta: "https://www.instagram.com/vinicolaluizporto/",
+            site: null
+          },
+          {
+            name: "Vinícola ANSEHI (Ouro Preto)",
+            type: "🍷 Vinícola Boutique",
+            price: "~R$ 180 / pessoa",
+            duration: "2h30 no roteiro",
+            experience: "Visita Fundadora nos vinhedos de montanha harmonizada com queijos artesanais e pães.",
+            photo: wm("Ouro_Preto,_Minas_Gerais.jpg"),
+            insta: "https://www.instagram.com/vinicolaansehi/",
+            site: "https://www.ansehi.com.br/"
+          },
+          {
+            name: "Hotel Fazenda Canto da Siriema / Jaguara",
+            type: "🏡 Hospedagem Fazenda",
+            price: "~R$ 480–620 / noite",
+            duration: "4 noites (19/12–23/12)",
+            experience: "Café da manhã mineiro com bolos e queijos frescos, comida caseira no fogão a lenha e área verde p/ pets.",
+            photo: wm("Hotel_Fazenda_Canto_da_Siriema_-_Jaboticatubas,_Minas_Gerais_-_panoramio.jpg"),
+            insta: null,
+            site: "https://www.minasgerais.com.br/"
+          },
+          {
+            name: "Pousada Villa Alferes (Tiradentes)",
+            type: "🏡 Hospedagem Jardim",
+            price: "~R$ 450–580 / noite",
+            duration: "6 noites (28/12–03/01)",
+            experience: "Pousada de charme pet-friendly com jardins floridos, café da manhã artesanal e localização tranquila.",
+            photo: wm("Centro_histórico_de_Tiradentes_-_MG.jpg"),
+            insta: "https://www.instagram.com/pousadavillaalferes/",
+            site: "https://www.villaalferes.com.br/"
+          }
         ],
         videoId: "BwMv_eZ6ZL8",
         videoTitle: "Tiradentes e Região (MG): Roteiro Completo",
         extraVideos: [
-          { title: "Bichinho (MG): O Paraíso dos Artesãos e Vinho", id: "pZVEVmmaX4w" },
+          { title: "Bichinho (MG): Artesanato e Vinho", id: "pZVEVmmaX4w" },
           { title: "Ouro Preto e Mariana: Guia Completo", id: "o9qzbIWNg54" }
         ]
       },
       {
         id: 1,
         badge: "Plano 2 • Serra da Mantiqueira (SP/MG)",
-        conciergeTag: "★ Escolha do Concierge (5 Vinícolas + Clima)",
+        conciergeTag: "★ Escolha do Concierge (Vinhos, Flores & Fazendas)",
         conciergeRecommended: true,
-        title: "Rota das Vinícolas, Cafés & Alta Gastronomia",
+        title: "Rota das Vinícolas, Fazendas, Flores & Massas",
         subtitle: "Cunha (2n) • Pinhal & São Bento do Sapucaí (7n) • Gonçalves (6n)",
         costs: {
-          lodging: 9600,
-          lodgingNote: "Média R$ 600/noite",
+          lodging: 9800,
+          lodgingNote: "Média R$ 612/noite (chalés/fazendas)",
           food: 4800,
           foodNote: "~R$ 300/dia + ceias",
           car: 2880,
@@ -303,13 +368,13 @@
           km: "~1.050 km rodados",
           tolls: 270,
           tollsNote: "Via Dutra + serras",
-          tickets: 1200,
-          ticketsNote: "Degustações, vinícolas e olival"
+          tickets: 1450,
+          ticketsNote: "5 vinícolas, olival e lavandário"
         },
-        petScore: "Excelente (Hospedagem + Jardins)",
-        petNote: "Muitas vinícolas recebem cães nos jardins e piqueniques (ex: Villa Santa Maria, Raízes do Baú). Para almoços harmonizados longos ou caves fechadas, os Chihuahuas ficam confortáveis no chalé com ar-condicionado.",
-        climateNote: "Cunha reduzida para 2 noites (sem foco em cerâmica) para priorizar 7 noites no polo de vinícolas entre Pinhal e São Bento do Sapucaí. Altitude de 1.100m–1.600m garante verão ameno.",
-        gastronomy: "Maior densidade de enoturismo de altitude: Villa Santa Maria, Raízes do Baú, Entre Vilas (1.600m), Vinícola Essenza e Bela Vista + cafés especiais e queijos de Gonçalves.",
+        petScore: "Excelente (Fazendas + Jardins)",
+        petNote: "Muitas vinícolas e fazendas recebem os Chihuahuas nos jardins (Raízes do Baú, Lavandário, O Olival). Para almoços harmonizados longos (Entre Vilas), ficam seguros no chalé/fazenda com AC.",
+        climateNote: "Menores deslocamentos (~1.050 km totais, apenas 1h15 entre Pinhal e Gonçalves!). Em 19/12, se chover, suba a Cunha pela Dutra/Guaratinguetá.",
+        gastronomy: "A combinação perfeita do perfil de vocês: 5 vinícolas de altitude, campos de lavanda/flores, café da manhã colonial com bolos e queijos, massas artesanais e comida mineira em Gonçalves.",
         heroPhotos: [
           {
             url: "https://vinicolaraizesdobau.com.br/wp-content/uploads/2021/05/bg1-quem-somos-vinicola-raizes-do-bau.jpg",
@@ -324,44 +389,44 @@
             category: "🍷 Vinícola"
           },
           {
+            url: wm("O_Lavandário_-_Cunha_SP.jpg"),
+            caption: "Campos floridos e pôr do sol no Lavandário de Cunha (parada de 2 noites)",
+            location: "Cunha • SP",
+            category: "💐 Flores"
+          },
+          {
             url: wm("Pouso_Alto_MG_Brasil_-_Hotel_Serraverde_-_panoramio.jpg"),
-            caption: "Estilo das pousadas e chalés serranos cercados de verde na Mantiqueira",
-            location: "Hospedagem na Serra",
-            category: "🏡 Hospedagem"
+            caption: "Hospedagem serrana cercada de jardins, ar puro e café da manhã colonial",
+            location: "Fazendas & Pousadas",
+            category: "🏡 Fazenda"
           },
           {
             url: wm("Igreja_Matriz_de_Santo_Antônio_do_Pinhal_-_SP.jpg"),
-            caption: "Centrinho charmoso e praça de Santo Antônio do Pinhal",
+            caption: "Centrinho charmoso de Santo Antônio do Pinhal (cafés, bolos e cantinas)",
             location: "Santo Antônio do Pinhal • SP",
             category: "🏘️ Cidade"
           },
           {
             url: wm("Gonçalves_(MG).jpg"),
-            caption: "Ruas tranquilas, empórios e cafés da vila de Gonçalves",
+            caption: "Ruas tranquilas de Gonçalves (queijarias, comida mineira e flores)",
             location: "Gonçalves • MG",
             category: "🏘️ Cidade"
           },
           {
-            url: wm("O_Lavandário_-_Cunha_SP.jpg"),
-            caption: "Pôr do sol nos campos do Lavandário de Cunha (parada rápida de 2 noites)",
+            url: wm("Cunha_SP_Vista_da_Plantação_de_Lavandas.jpg"),
+            caption: "Plantação de lavandas com vista panorâmica para a Serra da Bocaina",
             location: "Cunha • SP",
-            category: "🌿 Atração"
-          },
-          {
-            url: wm("Igreja_Matriz_de_Nossa_Senhora_da_Conceição_-_Cunha_-_20230415161901.jpg"),
-            caption: "Centro histórico de Cunha para cafés e caminhada leve",
-            location: "Cunha • SP",
-            category: "🏘️ Cidade"
+            category: "💐 Flores"
           },
           {
             url: wm("Pedra_do_Baú_e_Bauzinho_(São_Bento_do_Sapucaí).jpg"),
-            caption: "Pedra do Baú ao fundo — cenário das vinícolas Raízes do Baú e Entre Vilas",
+            caption: "Pedra do Baú — cenário das vinícolas Raízes do Baú e Entre Vilas",
             location: "São Bento do Sapucaí • SP",
-            category: "🌿 Atração"
+            category: "🌿 Paisagem"
           },
           {
             url: wm("Pedra_do_Bau_ao_pôr-do-sol.JPG"),
-            caption: "Pôr do sol no Altiplano do Baú — cenário da Vinícola Entre Vilas (1.600m)",
+            caption: "Pôr do sol no Altiplano do Baú (Vinícola Entre Vilas a 1.600m)",
             location: "Entre Vilas • SP",
             category: "🍷 Vinícola"
           }
@@ -369,73 +434,141 @@
         stages: [
           {
             dates: "19/12 – 21/12 (2 noites)",
-            drive: "Niterói → 285 km (~4h20) ou via Dutra/Guará (~4h45)",
-            place: "Cunha (SP) — Parada Enxuta",
-            desc: "Estadia curta e sem pressa (sem foco em cerâmica): apenas o pôr do sol no Lavandário, degustação de azeites em O Olival e cafés na serra.",
-            conciergeTip: "🛣️ Dica de Estrada: Se chover em 19/12, vá pela Via Dutra + Guaratinguetá (evite a serra Paraty–Cunha).",
+            travelDetail: {
+              route: "Niterói (RJ) → Cunha (SP)",
+              distance: "285 km (Paraty) ou 340 km (Dutra)",
+              time: "~4h20 via Paraty / ~4h45 via Dutra-Guará",
+              road: "BR-101 + RJ-165 (ou Via Dutra + SP-171)",
+              bestWindow: "Sair 07h00 (use Dutra se chover)"
+            },
+            place: "Cunha (SP) — Flores, Azeites & Cafés",
+            desc: "Sem foco em cerâmica: 2 dias leves curtindo os campos floridos do Lavandário, degustação de azeites extravirgens em O Olival e cafés com bolo caseiro.",
+            conciergeTip: "💐 Flores & Aromas: Visite O Lavandário no fim da tarde (16h30–18h) para o pôr do sol nas flores.",
             highlights: [
-              { label: "O Lavandário", photoIdx: 5 },
-              { label: "Centro de Cunha", photoIdx: 6 }
+              { label: "O Lavandário (Flores)", photoIdx: 2 },
+              { label: "Lavandas da Bocaina", photoIdx: 6 }
             ]
           },
           {
             dates: "21/12 – 28/12 (7 noites)",
-            drive: "155 km (~2h30 via Via Dutra / Serra de Pinhal)",
-            place: "Santo Antônio do Pinhal & São Bento do Sapucaí",
-            desc: "O coração do roteiro: 7 dias com base fixa para explorar 5 vinícolas (Villa Santa Maria, Raízes do Baú, Entre Vilas a 1.600m, Essenza e Bela Vista).",
-            conciergeTip: "🍷 Obrigatório: Todas exigem reserva antecipada! Intercale piqueniques com os pets nos jardins (Raízes do Baú) e almoços harmonizados deixando os cães no chalé (Entre Vilas).",
+            travelDetail: {
+              route: "Cunha → Santo Antônio do Pinhal / São Bento (SP)",
+              distance: "155 km",
+              time: "~2h30 (serra suave no final)",
+              road: "SP-171 → Via Dutra (BR-116) → SP-046 (Pinhal)",
+              bestWindow: "Sair 09h30"
+            },
+            place: "Pinhal & São Bento do Sapucaí (5 Vinícolas + Massas)",
+            desc: "Base de 7 noites em pousada-fazenda/chalé para explorar com calma 5 vinícolas de altitude, cantinas de massas artesanais e cafés coloniais.",
+            conciergeTip: "🍷 Roteiro Sugerido: 1 vinícola a cada 1–2 dias (2h30 a 4h cada), deixando tardes livres para bolos, queijos e descanso.",
             highlights: [
-              { label: "Vinhedos & Piqueniques", photoIdx: 0 },
-              { label: "Caves & Degustação", photoIdx: 1 },
-              { label: "Centrinho de Pinhal", photoIdx: 3 },
-              { label: "Pousadas Serranas", photoIdx: 2 }
+              { label: "Raízes do Baú", photoIdx: 0 },
+              { label: "Vinícola Essenza", photoIdx: 1 },
+              { label: "Centrinho de Pinhal", photoIdx: 4 },
+              { label: "Entre Vilas (1.600m)", photoIdx: 8 }
             ]
           },
           {
             dates: "28/12 – 03/01 (6 noites)",
-            drive: "52 km (~1h15 via São Bento do Sapucaí)",
-            place: "Gonçalves (MG)",
-            desc: "Réveillon aconchegante entre fazendas de café de altitude, queijarias artesanais, Cervejaria 3 Orelhas e gastronomia de montanha.",
-            conciergeTip: "🐾 Deslocamento curtíssimo (1h15) — ótimo para o bem-estar dos Chihuahuas na virada do ano.",
+            travelDetail: {
+              route: "Santo Antônio do Pinhal → Gonçalves (MG)",
+              distance: "52 km",
+              time: "~1h15 (estrada cênica asfaltada)",
+              road: "SP-046 → São Bento do Sapucaí → MG-173",
+              bestWindow: "Sair 10h30 (pertinho!)"
+            },
+            place: "Gonçalves (MG) — Fazendas, Queijos & Comida Mineira",
+            desc: "Réveillon em pousada-fazenda com café da manhã artesanal, queijarias locais, comida mineira no fogão a lenha, flores de montanha e massas.",
+            conciergeTip: "🧀 Experiência artesanal: Visite os produtores de queijo e geleias na Estrada da Terra Fria / Sertão do Cantagalo.",
             highlights: [
-              { label: "Vila de Gonçalves", photoIdx: 4 },
-              { label: "Pedra do Baú no caminho", photoIdx: 7 }
+              { label: "Vila de Gonçalves", photoIdx: 5 },
+              { label: "Hospedagem na Serra", photoIdx: 3 }
             ]
           },
           {
             dates: "03/01 – 04/01 (1 noite)",
-            drive: "205 km (~3h05) + 265 km (~3h45 até Niterói)",
-            place: "Penedo / Visconde de Mauá (RJ)",
-            desc: "Parada estratégica na volta pela Dutra para almoço de truta fresca e descanso antes de Niterói.",
-            conciergeTip: "💡 Penedo fica colada na Dutra, evitando subir outra serra no último dia.",
+            travelDetail: {
+              route: "Gonçalves → Penedo (RJ) → Niterói",
+              distance: "205 km + 265 km",
+              time: "~3h05 (dia 03) + ~3h45 (dia 04)",
+              road: "MG-173 → Via Dutra (BR-116) → Ponte",
+              bestWindow: "Sair 09h30"
+            },
+            place: "Penedo / Itatiaia (RJ)",
+            desc: "Parada estratégica na volta pela Dutra para almoço de truta/massas e descanso antes de chegar em Niterói.",
+            conciergeTip: "🚗 Penedo fica a 5 min da Dutra, facilitando muito a saída no dia 04/01.",
             highlights: []
           }
         ],
-        links: [
-          { name: "Vinícola Villa Santa Maria (São Bento)", type: "Vinícola • Restaurante", insta: "https://www.instagram.com/vinicolavillasantamaria/", site: "https://www.villasantamaria.com.br/" },
-          { name: "Vinícola Raízes do Baú (São Bento)", type: "Vinícola • Piquenique", insta: "https://www.instagram.com/vinicolaraizesdobau/", site: "https://www.vinicolaraizesdobau.com.br/" },
-          { name: "Vinícola Entre Vilas (1.600m)", type: "Vinícola • Harmonização", insta: "https://www.instagram.com/entrevilas/", site: "https://www.entrevilas.com.br/" },
-          { name: "Vinícola Boutique Essenza (Pinhal)", type: "Vinícola & Olival", insta: "https://www.instagram.com/vinicolaessenza/", site: "https://www.vinicolaessenza.com.br/" },
-          { name: "Pousada Quatro Estações de Pinhal", type: "Hospedagem Pet", insta: "https://www.instagram.com/quatroestacoesdepinhal/", site: "https://www.quatroestacoesdepinhal.com.br/" },
-          { name: "Pousada Vida Verde (Gonçalves)", type: "Hospedagem Pet", insta: null, site: "https://www.pousadavidaverde.com.br/" }
+        curatedItems: [
+          {
+            name: "Vinícola Villa Santa Maria (São Bento)",
+            type: "🍷 Vinícola • Restaurante",
+            price: "~R$ 190–320 / pessoa",
+            duration: "3h a 4h (tour + almoço)",
+            experience: "Tour guiado nos vinhedos com sommelier, degustação de vinhos Brandina + bruschetteria e restaurante (jardim pet-friendly).",
+            photo: wm("Pedra_do_Baú_e_Bauzinho_(São_Bento_do_Sapucaí).jpg"),
+            insta: "https://www.instagram.com/vinicolavillasantamaria/",
+            site: "https://www.villasantamaria.com.br/"
+          },
+          {
+            name: "Vinícola Raízes do Baú (São Bento)",
+            type: "🍷 Vinícola • Piquenique",
+            price: "~R$ 150–260 / pessoa",
+            duration: "2h30 a 3h no roteiro",
+            experience: "Degustação orientada e piquenique exclusivo nos vinhedos ou à beira do lago de frente para a Pedra do Baú.",
+            photo: "https://vinicolaraizesdobau.com.br/wp-content/uploads/2021/05/bg1-quem-somos-vinicola-raizes-do-bau.jpg",
+            insta: "https://www.instagram.com/vinicolaraizesdobau/",
+            site: "https://www.vinicolaraizesdobau.com.br/"
+          },
+          {
+            name: "Vinícola Entre Vilas (1.600m)",
+            type: "🍷 Vinícola • Almoço 4 Tempos",
+            price: "~R$ 350–450 / pessoa",
+            duration: "3h30 a 4h (almoço)",
+            experience: "Experiência intimista no Altiplano do Baú com colheita sazonal e almoço harmonizado artesanal.",
+            photo: wm("Pedra_do_Bau_ao_pôr-do-sol.JPG"),
+            insta: "https://www.instagram.com/entrevilas/",
+            site: "https://www.entrevilas.com.br/"
+          },
+          {
+            name: "Vinícola Boutique Essenza (Pinhal)",
+            type: "🍷 Vinícola & Olival",
+            price: "~R$ 220–290 / pessoa",
+            duration: "2h30 no roteiro",
+            experience: "Visita guiada pelo vinhedo e olival + degustação harmonizada com queijos e azeites em pergolados.",
+            photo: "https://vinicolaessenza.com.br/assets/media/2025/06/Secao-1.webp",
+            insta: "https://www.instagram.com/vinicolaessenza/",
+            site: "https://www.vinicolaessenza.com.br/"
+          },
+          {
+            name: "Pousada Fazenda / Chalés em Pinhal & Gonçalves",
+            type: "🏡 Hospedagem Fazenda",
+            price: "~R$ 550–720 / noite",
+            duration: "7n Pinhal + 6n Gonçalves",
+            experience: "Café da manhã farto com bolos caseiros, queijos da serra, geleias artesanais, jardins floridos e chalés com AC.",
+            photo: wm("Pouso_Alto_MG_Brasil_-_Hotel_Serraverde_-_panoramio.jpg"),
+            insta: "https://www.instagram.com/quatroestacoesdepinhal/",
+            site: "https://www.quatroestacoesdepinhal.com.br/"
+          }
         ],
         videoId: "xT7TYA7dJ4Y",
         videoTitle: "5 Cidades na Serra da Mantiqueira para Conhecer",
         extraVideos: [
-          { title: "Gonçalves (MG): Roteiro Completo com Preços", id: "8sKfMQ-HQxg" },
-          { title: "Santo Antônio do Pinhal (SP): Passeios e Pousadas", id: "wm1jnD9e6uc" }
+          { title: "Gonçalves (MG): Roteiro Completo", id: "8sKfMQ-HQxg" },
+          { title: "Santo Antônio do Pinhal (SP): Passeios", id: "wm1jnD9e6uc" }
         ]
       },
       {
         id: 2,
         badge: "Plano 3 • Sul & Oeste de MG",
-        conciergeTag: "Vinhos Vulcânicos, Queijos & Cânions",
+        conciergeTag: "Vinhos Vulcânicos, Queijos & Fazendas",
         conciergeRecommended: false,
         title: "Andradas, Caldas, Canastra & Capitólio",
         subtitle: "São Lourenço • Poços/Andradas/Caldas • Capitólio (2n) • Canastra",
         costs: {
           lodging: 8480,
-          lodgingNote: "Média R$ 530/noite",
+          lodgingNote: "Média R$ 530/noite (hotéis-fazenda)",
           food: 4400,
           foodNote: "~R$ 275/dia + ceias",
           car: 2880,
@@ -444,12 +577,12 @@
           tolls: 340,
           tollsNote: "Dutra + Fernão Dias / MG-050",
           tickets: 1100,
-          ticketsNote: "Vinícolas, lancha e parques"
+          ticketsNote: "Vinícolas, lancha e fazendas"
         },
-        petScore: "Viável (Base c/ AC na Canastra)",
-        petNote: "Nos passeios onde cães não entram (Parque Nacional da Serra da Canastra / Casca d'Anta e lanchas sob sol forte), eles ficam descansando na pousada com ar-condicionado. Nas fazendas de queijo e jardins das vinícolas, acompanham vocês.",
-        climateNote: "Roteiro mais rodoviário (~1.750 km, 5 bases). Em dezembro/janeiro há risco de chuva na Canastra (evitar estradas de terra pesadas sem 4x4) e restrições em Capitólio.",
-        gastronomy: "Rota do Vinho Vulcânico & Dupla Poda (Casa Geraldo e Stella Valentino em Andradas + Primeira Estrada em Caldas) + Cafés de Carmo de Minas + Queijo Canastra.",
+        petScore: "Bom (Hotéis-Fazenda c/ AC)",
+        petNote: "Hotéis-fazenda como o Vila Chico (São Lourenço) e pousadas rurais na Canastra têm estrutura excelente para os pets ficarem no quarto c/ AC durante passeios restritos (Casca d'Anta).",
+        climateNote: "Roteiro mais longo (~1.750 km, 5 bases). Os deslocamentos internos têm 3h a 5h40 — saia sempre após o café da manhã para chegar antes das chuvas de verão.",
+        gastronomy: "Rota do Vinho Vulcânico (Casa Geraldo, Stella Valentino e Primeira Estrada), cafés de Carmo de Minas, café da manhã de fazenda e Queijo Canastra direto do produtor.",
         heroPhotos: [
           {
             url: "https://assets.betalabs.net/production/casageraldo/images/stores/1/passeio1.jpg",
@@ -458,16 +591,28 @@
             category: "🍷 Vinícola"
           },
           {
+            url: "https://images.tcdn.com.br/files/1313696/themes/31/img/settings/1_d.jpg",
+            caption: "Vinícola Primeira Estrada (Caldas) — pioneira na técnica da dupla poda",
+            location: "Primeira Estrada • MG",
+            category: "🍷 Vinícola"
+          },
+          {
+            url: wm("Casa_Grande,_MG_-_Hotel_Fazenda_-_panoramio.jpg"),
+            caption: "Hotéis-fazenda mineiros com café da manhã farto e comida caseira",
+            location: "Hospedagem Fazenda • MG",
+            category: "🏡 Fazenda"
+          },
+          {
             url: wm("Poços_de_Caldas_047.jpg"),
-            caption: "Arquitetura histórica, praças e cafés do centro de Poços de Caldas",
+            caption: "Arquitetura histórica, praças floridas e cafés de Poços de Caldas",
             location: "Poços de Caldas • MG",
             category: "🏘️ Cidade"
           },
           {
-            url: wm("Casa_Grande,_MG_-_Hotel_Fazenda_-_panoramio.jpg"),
-            caption: "Hotéis-fazenda e pousadas rurais estruturadas para deixar os pets com conforto",
-            location: "Hospedagem • Sul de MG",
-            category: "🏡 Hospedagem"
+            url: wm("Queijo_canastra,_Minas_Gerais.jpg"),
+            caption: "Tradicional Queijo da Canastra curado nas fazendas produtoras",
+            location: "São Roque de Minas • MG",
+            category: "🧀 Queijaria"
           },
           {
             url: wm("Canyon_no_Lago_de_Furnas.jpg"),
@@ -476,14 +621,8 @@
             category: "🌿 Atração"
           },
           {
-            url: wm("Queijo_canastra,_Minas_Gerais.jpg"),
-            caption: "Tradicional Queijo da Canastra curado nas fazendas produtoras",
-            location: "São Roque de Minas • MG",
-            category: "🧀 Gastronomia"
-          },
-          {
             url: wm("Parque_das_Águas_de_São_Lourenço_-_MG.JPG"),
-            caption: "Alamedas planas e lago do Parque das Águas de São Lourenço",
+            caption: "Alamedas planas e jardins do Parque das Águas de São Lourenço",
             location: "São Lourenço • MG",
             category: "🏘️ Cidade"
           },
@@ -494,79 +633,147 @@
             category: "🌿 Atração"
           },
           {
-            url: "https://images.tcdn.com.br/files/1313696/themes/31/img/settings/1_d.jpg",
-            caption: "Vinícola Primeira Estrada (Caldas) — pioneira na técnica da dupla poda",
-            location: "Primeira Estrada • MG",
-            category: "🍷 Vinícola"
-          },
-          {
             url: wm("Serra_da_Canastra_MG.jpg"),
             caption: "Planalto e campos abertos da Serra da Canastra",
             location: "São Roque de Minas • MG",
-            category: "🌿 Atração"
+            category: "🌿 Paisagem"
           }
         ],
         stages: [
           {
             dates: "19/12 – 23/12 (4 noites)",
-            drive: "Niterói → 370 km (~5h10 via Dutra / BR-354)",
-            place: "São Lourenço, Caxambu & Carmo de Minas",
-            desc: "Terroir premiado de cafés especiais em Carmo de Minas e alamedas planas do Circuito das Águas.",
-            conciergeTip: "☕ Agende a visita na Unique Cafés (Carmo de Minas) para degustação guiada.",
+            travelDetail: {
+              route: "Niterói (RJ) → São Lourenço (MG)",
+              distance: "370 km",
+              time: "~5h10 (subida tranquila pela Serra das Agulhas)",
+              road: "Via Dutra (BR-116) → BR-354 (Eng. Passos / Caxambu)",
+              bestWindow: "Sair 07h00"
+            },
+            place: "Hotel-Fazenda em São Lourenço & Carmo de Minas",
+            desc: "4 noites em hotel-fazenda com café da manhã mineiro, passeio de café especial na Unique Cafés (Carmo de Minas) e jardins do Parque das Águas.",
+            conciergeTip: "☕ Experiência artesanal: Agende o tour sensorial de cafés premiados na Unique Cafés (~2h).",
             highlights: [
-              { label: "São Lourenço", photoIdx: 5 }
+              { label: "São Lourenço", photoIdx: 6 },
+              { label: "Hotel Fazenda", photoIdx: 2 }
             ]
           },
           {
             dates: "23/12 – 27/12 (4 noites)",
-            drive: "225 km (~3h15 via BR-267)",
-            place: "Poços de Caldas, Andradas & Caldas (Vinhos)",
-            desc: "Natal na Rota do Vinho Vulcânico: Casa Geraldo, Stella Valentino e Vinícola Primeira Estrada (Winebar Carvalho Branco em Caldas).",
-            conciergeTip: "🍷 A Vinícola Primeira Estrada (Caldas) foi pioneira na dupla poda no Brasil — vale muito incluir na mesma base!",
+            travelDetail: {
+              route: "São Lourenço → Poços de Caldas / Andradas (MG)",
+              distance: "225 km",
+              time: "~3h20 (rodovia estadual pista simples)",
+              road: "BR-267 → MG-455 (Andradas) / BR-146",
+              bestWindow: "Sair 09h30"
+            },
+            place: "Poços de Caldas, Andradas & Caldas (3 Vinícolas)",
+            desc: "Natal na Rota do Vinho Vulcânico: Casa Geraldo, Stella Valentino e Primeira Estrada (Caldas), além de praças floridas e doces artesanais.",
+            conciergeTip: "🍷 Combine Casa Geraldo (almoço harmonizado) e Stella Valentino no mesmo dia — ficam a 10 min uma da outra.",
             highlights: [
-              { label: "Poços de Caldas", photoIdx: 1 },
-              { label: "Vinhedos & Caves", photoIdx: 0 },
-              { label: "Degustação", photoIdx: 7 }
+              { label: "Casa Geraldo", photoIdx: 0 },
+              { label: "Primeira Estrada", photoIdx: 1 },
+              { label: "Poços de Caldas", photoIdx: 3 }
             ]
           },
           {
             dates: "27/12 – 29/12 (2 noites)",
-            drive: "235 km (~3h20 via MG-050)",
+            travelDetail: {
+              route: "Poços de Caldas → Capitólio (MG)",
+              distance: "235 km",
+              time: "~3h25",
+              road: "BR-146 → MG-050 (rodovia bem sinalizada)",
+              bestWindow: "Sair 09h00"
+            },
             place: "Capitólio & Lago de Furnas",
-            desc: "Parada estratégica de 2 noites para rever os cânions no horário mais firme da manhã.",
-            conciergeTip: "🚤 Se o sol estiver muito forte, deixe os Chihuahuas no hotel com AC durante o passeio de lancha.",
+            desc: "Parada enxuta de 2 noites para rever os cânions pela manhã (horário mais firme) e comer comida mineira à beira do lago.",
+            conciergeTip: "🚤 Faça o passeio de lancha às 09h e deixe os pets descansando no hotel com AC se o sol estiver forte.",
             highlights: [
-              { label: "Cânions de Furnas", photoIdx: 3 }
+              { label: "Cânions de Furnas", photoIdx: 5 }
             ]
           },
           {
             dates: "29/12 – 03/01 (5 noites)",
-            drive: "85 km (~1h25 via Piumhi / Vargem Bonita)",
-            place: "Serra da Canastra (São Roque de Minas)",
-            desc: "Fazendas históricas de Queijo Canastra, café coado na roça e visita à parte baixa da Casca d'Anta.",
-            conciergeTip: "🐾 Para a Casca d'Anta (Parque Nacional), os pets ficam confortáveis na pousada. Nas fazendas de queijo particulares, geralmente são bem-vindos.",
+            travelDetail: {
+              route: "Capitólio → São Roque de Minas / Canastra",
+              distance: "85 km",
+              time: "~1h25 (asfalto até São Roque)",
+              road: "MG-050 (Piumhi) → MG-341",
+              bestWindow: "Sair 10h00"
+            },
+            place: "Fazendas da Serra da Canastra (Queijo & Café)",
+            desc: "Réveillon em pousada-fazenda com bolos, café coado na hora, degustação de Queijo Canastra curado nas fazendas e visita à Casca d'Anta.",
+            conciergeTip: "🧀 Experiência única: Visite a Fazenda Capão Grande para ver a maturação do Queijo Canastra e tomar café com pão de queijo.",
             highlights: [
               { label: "Queijo Canastra", photoIdx: 4 },
-              { label: "Casca d'Anta", photoIdx: 6 },
-              { label: "Pousadas Rurais", photoIdx: 2 }
+              { label: "Casca d'Anta", photoIdx: 7 }
             ]
           },
           {
             dates: "03/01 – 04/01 (1 noite)",
-            drive: "445 km (~5h40) + 185 km (~2h30 até Niterói)",
+            travelDetail: {
+              route: "Canastra → Penedo (RJ) → Niterói",
+              distance: "445 km + 185 km",
+              time: "~5h50 (dia 03) + ~2h30 (dia 04)",
+              road: "MG-050 → BR-381 (Fernão Dias) / BR-354 → Via Dutra",
+              bestWindow: "Sair 07h30 (trecho longo)"
+            },
             place: "Penedo ou Itaipava (RJ)",
-            desc: "Quebra estratégica na volta pela Dutra para evitar dirigir ~8h seguidas até Niterói.",
+            desc: "Quebra obrigatória na volta para não dirigir ~8h seguidas até Niterói.",
             conciergeTip: "🚗 Saia cedo da Canastra no dia 03/01.",
             highlights: []
           }
         ],
-        links: [
-          { name: "Vinícola Casa Geraldo (Andradas)", type: "Vinícola & Restaurante", insta: "https://www.instagram.com/vinicolacasageraldo/", site: "https://www.casageraldo.com.br/" },
-          { name: "Vinícola Stella Valentino (Andradas)", type: "Vinícola", insta: "https://www.instagram.com/vinicolastellavalentino/", site: "https://www.stellavalentino.com.br/" },
-          { name: "Vinícola Primeira Estrada (Caldas)", type: "Vinícola • Winebar", insta: "https://www.instagram.com/vinicolaprimeiraestrada/", site: "https://www.vinicolaprimeiraestrada.com.br/" },
-          { name: "Vila Chico Hotel Fazenda (São Lourenço)", type: "Hospedagem Pet", insta: "https://www.instagram.com/vila.chico/", site: "https://vilachico.com.br/" },
-          { name: "Unique Cafés (Carmo de Minas)", type: "Fazenda de Café", insta: "https://www.instagram.com/uniquecafes/", site: "https://uniquecafes.com.br/" },
-          { name: "Fazenda Capão Grande (Canastra)", type: "Queijaria", insta: "https://www.instagram.com/fazendacapaogrande/", site: "https://queijodacanastra.com.br/" }
+        curatedItems: [
+          {
+            name: "Vinícola Casa Geraldo (Andradas)",
+            type: "🍷 Vinícola • Restaurante",
+            price: "~R$ 150–260 / pessoa",
+            duration: "3h (tour + almoço)",
+            experience: "Tour pelos vinhedos, cave e degustação harmonizada com massas e pratos típicos no restaurante.",
+            photo: "https://assets.betalabs.net/production/casageraldo/images/stores/1/passeio1.jpg",
+            insta: "https://www.instagram.com/vinicolacasageraldo/",
+            site: "https://www.casageraldo.com.br/"
+          },
+          {
+            name: "Vinícola Stella Valentino (Andradas)",
+            type: "🍷 Vinícola Familiar",
+            price: "~R$ 110–170 / pessoa",
+            duration: "2h no roteiro",
+            experience: "Degustação intimista de vinhos de solo vulcânico em ambiente acolhedor e familiar.",
+            photo: "https://stellavalentino.com.br/wp-content/uploads/2022/12/WhatsApp-Image-2026-04-01-at-11.52.17-1.jpeg",
+            insta: "https://www.instagram.com/vinicolastellavalentino/",
+            site: "https://www.stellavalentino.com.br/"
+          },
+          {
+            name: "Vinícola Primeira Estrada (Caldas)",
+            type: "🍷 Vinícola • Winebar",
+            price: "~R$ 160–240 / pessoa",
+            duration: "2h30 no roteiro",
+            experience: "Pioneira da dupla poda no Brasil; degustação guiada no Winebar Carvalho Branco com vista para a serra.",
+            photo: "https://images.tcdn.com.br/files/1313696/themes/31/img/settings/1_d.jpg",
+            insta: "https://www.instagram.com/vinicolaprimeiraestrada/",
+            site: "https://www.vinicolaprimeiraestrada.com.br/"
+          },
+          {
+            name: "Vila Chico Hotel Fazenda (São Lourenço)",
+            type: "🏡 Hospedagem Fazenda",
+            price: "~R$ 580–750 / noite",
+            duration: "4 noites (19/12–23/12)",
+            experience: "Hotel-fazenda pet-friendly com café da manhã mineiro completo, comida caseira, lagos e jardins.",
+            photo: wm("Casa_Grande,_MG_-_Hotel_Fazenda_-_panoramio.jpg"),
+            insta: "https://www.instagram.com/vila.chico/",
+            site: "https://vilachico.com.br/"
+          },
+          {
+            name: "Fazenda Capão Grande (Queijo Canastra)",
+            type: "🧀 Fazenda • Queijo & Café",
+            price: "~R$ 80–120 / pessoa",
+            duration: "2h no roteiro",
+            experience: "Degustação de Queijo Canastra curado com café coado na fazenda e prosa artesanal.",
+            photo: wm("Queijo_canastra,_Minas_Gerais.jpg"),
+            insta: "https://www.instagram.com/fazendacapaogrande/",
+            site: "https://queijodacanastra.com.br/"
+          }
         ],
         videoId: "OQTU8KrqX78",
         videoTitle: "Capitólio & Serra da Canastra (MG): Roteiro Completo",
@@ -580,6 +787,7 @@
     let activePlanIndex = 1;
     let useOwnCar = false;
     let modalPhotoIndex = 0;
+    let modalGallery = [];
     let favorites = JSON.parse(localStorage.getItem("trip_favorites_2026") || "{}");
 
     const fmtBRL = (val) => "R$ " + val.toLocaleString("pt-BR");
@@ -617,28 +825,42 @@
         : `Clique no ♥ do roteiro para marcar o favorito do casal`;
     }
 
-    function openPlanPhoto(photoIdx) {
-      const photos = plans[activePlanIndex].heroPhotos;
-      modalPhotoIndex = ((photoIdx % photos.length) + photos.length) % photos.length;
-      const p = photos[modalPhotoIndex];
+    function showModalPhoto(list, idx) {
+      modalGallery = list;
+      modalPhotoIndex = ((idx % list.length) + list.length) % list.length;
+      const p = list[modalPhotoIndex];
       const modal = document.getElementById("photo-modal");
       const img = document.getElementById("modal-img");
       img.src = p.url;
       img.onerror = () => {
         img.onerror = null;
-        img.src = `https://placehold.co/1000x650/1c1917/faf8f5?text=${encodeURIComponent(p.location)}`;
+        img.src = `https://placehold.co/1000x650/1c1917/faf8f5?text=${encodeURIComponent(p.location || "Destino")}`;
       };
       document.getElementById("modal-caption").textContent = p.caption;
-      document.getElementById("modal-location").textContent = "📍 " + p.location;
+      document.getElementById("modal-location").textContent = p.location ? "📍 " + p.location : "";
       document.getElementById("modal-tag").textContent = p.category || "Destino";
-      document.getElementById("modal-counter").textContent = `${modalPhotoIndex + 1} / ${photos.length}`;
-      document.getElementById("modal-prev").classList.remove("hidden");
-      document.getElementById("modal-next").classList.remove("hidden");
+      document.getElementById("modal-counter").textContent = `${modalPhotoIndex + 1} / ${list.length}`;
+      document.getElementById("modal-prev").classList.toggle("hidden", list.length <= 1);
+      document.getElementById("modal-next").classList.toggle("hidden", list.length <= 1);
       modal.classList.remove("hidden");
     }
 
+    function openPlanPhoto(photoIdx) {
+      showModalPhoto(plans[activePlanIndex].heroPhotos, photoIdx);
+    }
+
+    function openCuratedPhoto(itemIdx) {
+      const items = plans[activePlanIndex].curatedItems.map(i => ({
+        url: i.photo,
+        caption: `${i.name} — ${i.experience}`,
+        location: `${i.price} • ${i.duration}`,
+        category: i.type
+      }));
+      showModalPhoto(items, itemIdx);
+    }
+
     function stepModalPhoto(delta) {
-      openPlanPhoto(modalPhotoIndex + delta);
+      if (modalGallery.length) showModalPhoto(modalGallery, modalPhotoIndex + delta);
     }
 
     function closePhotoModal() {
@@ -674,19 +896,25 @@
           `).join('')}
         </tr>
         <tr>
-          <td class="py-3 px-4 font-semibold text-stone-700">🍷 Foco em Vinícolas</td>
-          <td class="py-3 px-4 text-stone-600">4 vinícolas (Ouro Preto & Tiradentes)</td>
-          <td class="py-3 px-4 bg-emerald-50/30 font-semibold text-forest">5+ vinícolas de altitude concentradas</td>
-          <td class="py-3 px-4 text-stone-600">3 vinícolas (Andradas & Caldas)</td>
+          <td class="py-3 px-4 font-semibold text-stone-700">🍷 Vinícolas & Experiências</td>
+          <td class="py-3 px-4 text-stone-600">3 vinícolas (Trindade, Luiz Porto, ANSEHI)</td>
+          <td class="py-3 px-4 bg-emerald-50/30 font-semibold text-forest">5 vinícolas + Lavandário + Olival</td>
+          <td class="py-3 px-4 text-stone-600">3 vinícolas (Casa Geraldo, Stella, 1ª Estrada)</td>
         </tr>
         <tr>
-          <td class="py-3 px-4 font-semibold text-stone-700">🐾 Logística Pet (c/ Base AC)</td>
-          ${plans.map((p, i) => `
-            <td class="py-3 px-4 ${i === 1 ? 'bg-emerald-50/30 font-semibold text-forest' : 'text-stone-600'}">${p.petScore}</td>
-          `).join('')}
+          <td class="py-3 px-4 font-semibold text-stone-700">🏡 Hospedagem em Fazenda</td>
+          <td class="py-3 px-4 text-stone-600">Sim (Sete Lagoas/Jaguara + Tiradentes)</td>
+          <td class="py-3 px-4 bg-emerald-50/30 font-semibold text-forest">Sim (Chalés & Fazendas em Pinhal/Gonçalves)</td>
+          <td class="py-3 px-4 text-stone-600">Sim (Vila Chico + Fazendas Canastra)</td>
         </tr>
         <tr>
-          <td class="py-3 px-4 font-semibold text-stone-700">🏨 Hospedagem (16 diárias + Pet)</td>
+          <td class="py-3 px-4 font-semibold text-stone-700">🚗 Tempo de Estrada Total</td>
+          <td class="py-3 px-4 text-stone-600">~1.250 km (~18h ao volante em 16 dias)</td>
+          <td class="py-3 px-4 bg-emerald-50/30 font-semibold text-forest">~1.050 km (~15h ao volante • trechos curtos)</td>
+          <td class="py-3 px-4 text-stone-600">~1.750 km (~22h ao volante em 5 bases)</td>
+        </tr>
+        <tr>
+          <td class="py-3 px-4 font-semibold text-stone-700">🏨 Hospedagem (16 diárias)</td>
           ${plans.map((p, i) => `
             <td class="py-3 px-4 tabular-nums ${i === 1 ? 'bg-emerald-50/30' : ''}">
               ${fmtBRL(p.costs.lodging)} <span class="block text-[11px] text-stone-500">${p.costs.lodgingNote}</span>
@@ -710,23 +938,15 @@
           `).join('')}
         </tr>
         <tr>
-          <td class="py-3 px-4 font-semibold text-stone-700">⛽ Combustível</td>
+          <td class="py-3 px-4 font-semibold text-stone-700">⛽ Combustível + Pedágios</td>
           ${plans.map((p, i) => `
             <td class="py-3 px-4 tabular-nums ${i === 1 ? 'bg-emerald-50/30' : ''}">
-              ${fmtBRL(p.costs.fuel)} <span class="block text-[11px] text-stone-500">${p.costs.km}</span>
+              ${fmtBRL(p.costs.fuel + p.costs.tolls)} <span class="block text-[11px] text-stone-500">${p.costs.km}</span>
             </td>
           `).join('')}
         </tr>
         <tr>
-          <td class="py-3 px-4 font-semibold text-stone-700">🛣️ Pedágios</td>
-          ${plans.map((p, i) => `
-            <td class="py-3 px-4 tabular-nums ${i === 1 ? 'bg-emerald-50/30' : ''}">
-              ${fmtBRL(p.costs.tolls)} <span class="block text-[11px] text-stone-500">${p.costs.tollsNote}</span>
-            </td>
-          `).join('')}
-        </tr>
-        <tr>
-          <td class="py-3 px-4 font-semibold text-stone-700">🎟️ Passeios & Degustações</td>
+          <td class="py-3 px-4 font-semibold text-stone-700">🎟️ Vinícolas, Fazendas & Passeios</td>
           ${plans.map((p, i) => `
             <td class="py-3 px-4 tabular-nums ${i === 1 ? 'bg-emerald-50/30' : ''}">
               ${fmtBRL(p.costs.tickets)} <span class="block text-[11px] text-stone-500">${p.costs.ticketsNote}</span>
@@ -758,9 +978,8 @@
       const extraPhotos = plan.heroPhotos.slice(6);
 
       container.innerHTML = `
-        <!-- Editorial Hero Split (Compact & High Impact) -->
+        <!-- Editorial Hero Split -->
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
-          <!-- Left: Dossier Summary (5 cols) -->
           <div class="lg:col-span-5 bg-white rounded-2xl p-5 md:p-6 border border-stone-200/90 flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between gap-2">
@@ -778,7 +997,6 @@
               <p class="text-xs md:text-sm text-stone-500 font-medium mt-1">${plan.subtitle}</p>
             </div>
 
-            <!-- 4-Metric Compact Strip -->
             <div class="grid grid-cols-2 gap-2.5 mt-5 pt-4 border-t border-stone-100">
               <div class="bg-stone-50 rounded-xl p-3 border border-stone-200/60">
                 <span class="text-[10px] uppercase tracking-wider text-stone-500 font-semibold">Total Estimado</span>
@@ -792,15 +1010,15 @@
               </div>
               <div class="col-span-2 bg-stone-50 rounded-xl p-3 border border-stone-200/60 flex items-center justify-between gap-2">
                 <div>
-                  <span class="text-[10px] uppercase tracking-wider text-stone-500 font-semibold">Estratégia Pet (Base c/ AC)</span>
+                  <span class="text-[10px] uppercase tracking-wider text-stone-500 font-semibold">Fazendas & Pet (Quarto c/ AC)</span>
                   <div class="text-xs font-bold ${plan.conciergeRecommended ? 'text-forest' : 'text-amber-800'} mt-0.5">${plan.petScore}</div>
                 </div>
-                <span class="text-[11px] text-stone-500 text-right max-w-[55%] leading-tight">Vinícolas, cidades & hospedagens</span>
+                <span class="text-[11px] text-stone-500 text-right max-w-[50%] leading-tight">Café da manhã, bolos, queijos & flores</span>
               </div>
             </div>
           </div>
 
-          <!-- Right: Real Destination Photo Mosaic (7 cols, 3x3 fixed-height bento + compact extra filmstrip) -->
+          <!-- Right: Real Destination Photo Mosaic -->
           <div class="lg:col-span-7 flex flex-col gap-2">
             <div class="grid grid-cols-2 sm:grid-cols-3 sm:grid-rows-3 sm:h-[310px] gap-2">
               ${mosaicPhotos.map((photo, idx) => `
@@ -819,7 +1037,6 @@
                 </div>
               `).join('')}
             </div>
-            <!-- Compact 3-photo strip (Cities, Lodging, Extra Views) -->
             <div class="grid grid-cols-3 gap-2">
               ${extraPhotos.map((photo, idx) => `
                 <div onclick="openPlanPhoto(${idx + 6})"
@@ -837,29 +1054,29 @@
           </div>
         </section>
 
-        <!-- Concierge Intelligence Brief (3 Compact Columns) -->
+        <!-- Concierge Intelligence Brief -->
         <section class="grid grid-cols-1 md:grid-cols-3 gap-3">
           <div class="bg-white rounded-2xl p-4 border border-stone-200/90">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-amber-800 mb-1">🐾 Estratégia Pet (Quarto c/ AC)</div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-amber-800 mb-1">🐾 Fazendas & Estratégia Pet</div>
             <p class="text-xs text-stone-600 leading-relaxed">${plan.petNote}</p>
           </div>
           <div class="bg-white rounded-2xl p-4 border border-stone-200/90">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-forest mb-1">🌦️ Clima & Ritmo do Roteiro</div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-forest mb-1">🛣️ Logística & Tempo de Estrada</div>
             <p class="text-xs text-stone-600 leading-relaxed">${plan.climateNote}</p>
           </div>
           <div class="bg-white rounded-2xl p-4 border border-stone-200/90">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-stone-700 mb-1">🍷 Vinícolas & Cafés Especiais</div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-stone-700 mb-1">🧀 Café, Queijos, Massas & Flores</div>
             <p class="text-xs text-stone-600 leading-relaxed">${plan.gastronomy}</p>
           </div>
         </section>
 
-        <!-- Main Workspace: Timeline (7 cols) + Curated Links & Video (5 cols) -->
+        <!-- Main Workspace: Detailed Travel Timeline (6 cols) + Rich Wineries & Farm Stays Cards (6 cols) -->
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-          <!-- Timeline -->
-          <div class="lg:col-span-7 bg-white rounded-2xl p-5 md:p-6 border border-stone-200/90">
+          <!-- Timeline with Detailed Inter-City Travel Times -->
+          <div class="lg:col-span-6 bg-white rounded-2xl p-5 md:p-6 border border-stone-200/90">
             <div class="flex items-center justify-between gap-2 pb-3 mb-5 border-b border-stone-100">
-              <h2 class="font-serif text-xl font-semibold text-ink">Roteiro Etapa por Etapa</h2>
-              <span class="text-[11px] text-stone-500">Clique nas tags 📷 para ampliar</span>
+              <h2 class="font-serif text-xl font-semibold text-ink">Roteiro & Tempos de Viagem</h2>
+              <span class="text-[11px] text-stone-500">Cidade a cidade</span>
             </div>
 
             <div class="space-y-6 relative before:absolute before:inset-0 before:ml-3 before:h-full before:w-px before:bg-stone-200">
@@ -868,13 +1085,23 @@
                   <div class="absolute left-0 top-0.5 w-6 h-6 rounded-full bg-ink text-white text-[11px] font-bold flex items-center justify-center ring-4 ring-white">
                     ${idx + 1}
                   </div>
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="text-[11px] font-bold uppercase tracking-wider text-forest">${stage.dates}</span>
-                    <span class="text-[11px] text-stone-500 bg-stone-100 px-2 py-0.5 rounded-md">${stage.drive}</span>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-forest">${stage.dates}</span>
+                  <h3 class="font-serif text-lg font-semibold text-ink mt-0.5">${stage.place}</h3>
+
+                  <!-- Detailed Travel Box -->
+                  <div class="mt-2 bg-stone-50 border border-stone-200/80 rounded-xl p-2.5 text-[11px] space-y-1">
+                    <div class="flex items-center justify-between gap-2 font-semibold text-ink">
+                      <span>🚗 ${stage.travelDetail.route}</span>
+                      <span class="text-forest shrink-0">${stage.travelDetail.distance} • ${stage.travelDetail.time}</span>
+                    </div>
+                    <div class="text-stone-500 flex flex-wrap justify-between gap-1">
+                      <span>Via: ${stage.travelDetail.road}</span>
+                      <span class="font-medium text-stone-700">⏰ ${stage.travelDetail.bestWindow}</span>
+                    </div>
                   </div>
-                  <h3 class="font-serif text-lg font-semibold text-ink mt-1">${stage.place}</h3>
-                  <p class="text-xs md:text-sm text-stone-600 mt-1 leading-relaxed">${stage.desc}</p>
-                  <div class="mt-2 text-[11px] text-stone-700 bg-stone-50 border-l-2 border-terracotta pl-2.5 py-1.5 rounded-r-lg">
+
+                  <p class="text-xs md:text-sm text-stone-600 mt-2 leading-relaxed">${stage.desc}</p>
+                  <div class="mt-2 text-[11px] text-stone-700 bg-amber-50/60 border-l-2 border-terracotta pl-2.5 py-1.5 rounded-r-lg">
                     ${stage.conciergeTip}
                   </div>
                   ${stage.highlights.length ? `
@@ -893,30 +1120,49 @@
             </div>
           </div>
 
-          <!-- Curated Stays, Wineries & Compact Video Guide -->
-          <div class="lg:col-span-5 space-y-5">
+          <!-- Rich Wineries & Farm Stays (Photos, Prices, Experiences, Duration) -->
+          <div class="lg:col-span-6 space-y-5">
             <div class="bg-white rounded-2xl p-5 border border-stone-200/90">
-              <h2 class="font-serif text-xl font-semibold text-ink pb-3 mb-3 border-b border-stone-100">Vinícolas & Hospedagens</h2>
-              <div class="divide-y divide-stone-100">
-                ${plan.links.map(link => `
-                  <div class="py-2.5 first:pt-0 last:pb-0 flex items-center justify-between gap-3">
-                    <div class="min-w-0">
-                      <span class="text-[10px] font-bold uppercase tracking-wider text-stone-400">${link.type}</span>
-                      <div class="text-xs font-semibold text-ink truncate">${link.name}</div>
+              <div class="flex items-center justify-between gap-2 pb-3 mb-3 border-b border-stone-100">
+                <h2 class="font-serif text-xl font-semibold text-ink">Vinícolas & Hospedagens em Fazendas</h2>
+                <span class="text-[11px] text-stone-500">Valores, tempo & fotos</span>
+              </div>
+              <div class="space-y-3">
+                ${plan.curatedItems.map((item, idx) => `
+                  <div class="flex gap-3 p-3 rounded-xl border border-stone-200/80 bg-stone-50/50 hover:bg-white transition-colors">
+                    <div onclick="openCuratedPhoto(${idx})"
+                      class="w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden bg-stone-800 shrink-0 cursor-pointer relative group">
+                      <img src="${item.photo}" alt="${item.name}" loading="lazy"
+                        onerror="this.onerror=null; this.src='https://placehold.co/300x300/1c1917/faf8f5?text=Foto';"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                      <span class="absolute bottom-1 right-1 bg-stone-950/75 text-white text-[9px] px-1.5 py-0.5 rounded">📷</span>
                     </div>
-                    <div class="flex items-center gap-1.5 shrink-0">
-                      ${link.insta ? `
-                        <a href="${link.insta}" target="_blank" rel="noopener noreferrer"
-                          class="text-[11px] font-semibold text-pink-700 bg-pink-50 hover:bg-pink-100 px-2.5 py-1 rounded-lg transition-colors">
-                          IG ↗
-                        </a>
-                      ` : ''}
-                      ${link.site ? `
-                        <a href="${link.site}" target="_blank" rel="noopener noreferrer"
-                          class="text-[11px] font-semibold text-stone-700 bg-stone-100 hover:bg-stone-200 px-2.5 py-1 rounded-lg transition-colors">
-                          Site ↗
-                        </a>
-                      ` : ''}
+                    <div class="min-w-0 flex-1 flex flex-col justify-between">
+                      <div>
+                        <div class="flex flex-wrap items-center justify-between gap-1">
+                          <span class="text-[10px] font-bold uppercase tracking-wider text-forest">${item.type}</span>
+                          <span class="text-[11px] font-bold text-ink tabular-nums bg-white border border-stone-200 px-2 py-0.5 rounded-md">${item.price}</span>
+                        </div>
+                        <h3 class="text-xs sm:text-sm font-bold text-ink mt-1">${item.name}</h3>
+                        <p class="text-[11px] text-stone-600 mt-1 leading-snug">${item.experience}</p>
+                      </div>
+                      <div class="flex flex-wrap items-center justify-between gap-2 mt-2 pt-2 border-t border-stone-200/60">
+                        <span class="text-[11px] font-semibold text-terracotta">⏱️ ${item.duration}</span>
+                        <div class="flex items-center gap-1.5">
+                          ${item.insta ? `
+                            <a href="${item.insta}" target="_blank" rel="noopener noreferrer"
+                              class="text-[10px] font-semibold text-pink-700 bg-pink-50 hover:bg-pink-100 px-2 py-0.5 rounded-md transition-colors">
+                              IG ↗
+                            </a>
+                          ` : ''}
+                          ${item.site ? `
+                            <a href="${item.site}" target="_blank" rel="noopener noreferrer"
+                              class="text-[10px] font-semibold text-stone-700 bg-stone-200/70 hover:bg-stone-200 px-2 py-0.5 rounded-md transition-colors">
+                              Site ↗
+                            </a>
+                          ` : ''}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 `).join('')}
