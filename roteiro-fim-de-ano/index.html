@@ -84,41 +84,41 @@
   </nav>
 
   <!-- Main Content -->
-  <main class="max-w-6xl mx-auto px-3 sm:px-4 pt-3 sm:pt-5 pb-16 space-y-8">
+  <main class="max-w-6xl mx-auto px-3 sm:px-4 pt-2.5 sm:pt-5 pb-16 space-y-4 sm:space-y-8">
     <!-- Instagrammable Mood Comparison Strip (Forest Contrast) -->
-    <section class="bg-forest text-white rounded-3xl p-5 sm:p-7 shadow-md">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-5">
+    <section class="bg-forest text-white rounded-2xl sm:rounded-3xl p-3 sm:p-7 shadow-md">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-1 sm:gap-2 mb-2.5 sm:mb-5">
         <div>
-          <span class="text-[11px] font-bold uppercase tracking-widest text-emerald-300">O Clima de Cada Viagem</span>
-          <h2 class="font-serif text-xl sm:text-2xl font-semibold text-white mt-0.5">Estrada Real vs. Serra da Mantiqueira</h2>
+          <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-widest text-emerald-300">O Clima de Cada Viagem</span>
+          <h2 class="font-serif text-base sm:text-2xl font-semibold text-white mt-0.5 leading-tight">Estrada Real vs. Serra da Mantiqueira</h2>
         </div>
-        <span class="text-xs text-emerald-100/80">Clique em qualquer clima para alternar o roteiro</span>
+        <span class="hidden sm:inline text-xs text-emerald-100/80">Clique em qualquer clima para alternar o roteiro</span>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="grid grid-cols-2 gap-2.5 sm:gap-4">
         <div onclick="selectPlan(0); window.scrollTo({top: 0, behavior: 'smooth'});"
-          class="group relative h-[175px] sm:h-[205px] rounded-2xl overflow-hidden cursor-pointer border border-white/15">
-          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Centro_hist%C3%B3rico_de_Tiradentes_-_MG.jpg/960px-Centro_hist%C3%B3rico_de_Tiradentes_-_MG.jpg"
+          class="group relative h-[110px] sm:h-[205px] rounded-xl sm:rounded-2xl overflow-hidden cursor-pointer border border-white/15">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Ouro_Preto%2C_Minas_Gerais.jpg/960px-Ouro_Preto%2C_Minas_Gerais.jpg"
             alt="Clima Estrada Real" referrerpolicy="no-referrer"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-          <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/35 to-transparent"></div>
-          <div class="absolute bottom-4 left-4 right-4">
-            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-300">Roteiro 1 • História & Grutas</span>
-            <h3 class="font-serif text-lg sm:text-xl font-semibold text-white mt-0.5">Casario Colonial, Pedra & Grutas</h3>
-            <p class="text-xs text-stone-200 mt-1">4 paradas culturais • R$ 16.280 (carro alugado)</p>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/55 to-black/15"></div>
+          <div class="absolute bottom-2 left-2.5 right-2.5 sm:bottom-4 sm:left-4 sm:right-4">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-amber-300 block leading-tight">Roteiro 1 • História & Grutas</span>
+            <h3 class="font-serif text-xs sm:text-xl font-semibold text-white mt-0.5 leading-tight">Casario Colonial, Pedra & Grutas</h3>
+            <p class="text-[10px] sm:text-xs text-stone-200 mt-0.5 sm:mt-1"><span class="hidden sm:inline">4 paradas culturais • </span>R$ 16.280<span class="hidden sm:inline"> (carro alugado)</span></p>
           </div>
         </div>
 
         <div onclick="selectPlan(1); window.scrollTo({top: 0, behavior: 'smooth'});"
-          class="group relative h-[175px] sm:h-[205px] rounded-2xl overflow-hidden cursor-pointer border border-white/15">
-          <img src="https://vinicolaraizesdobau.com.br/wp-content/uploads/2021/05/bg1-quem-somos-vinicola-raizes-do-bau.jpg"
+          class="group relative h-[110px] sm:h-[205px] rounded-xl sm:rounded-2xl overflow-hidden cursor-pointer border border-white/15">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Pedra_do_Bau_ao_p%C3%B4r-do-sol.JPG/960px-Pedra_do_Bau_ao_p%C3%B4r-do-sol.JPG"
             alt="Clima Mantiqueira" referrerpolicy="no-referrer"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-          <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/35 to-transparent"></div>
-          <div class="absolute bottom-4 left-4 right-4">
-            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-300">Roteiro 2 • Vinhedos & Lareira</span>
-            <h3 class="font-serif text-lg sm:text-xl font-semibold text-white mt-0.5">Pôr do Sol na Serra & 5 Vinícolas</h3>
-            <p class="text-xs text-stone-200 mt-1">2 bases fixas sem pressa • R$ 18.160 (carro alugado)</p>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/55 to-black/15"></div>
+          <div class="absolute bottom-2 left-2.5 right-2.5 sm:bottom-4 sm:left-4 sm:right-4">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-emerald-300 block leading-tight">Roteiro 2 • Vinhedos & Lareira</span>
+            <h3 class="font-serif text-xs sm:text-xl font-semibold text-white mt-0.5 leading-tight">Pôr do Sol na Serra & 5 Vinícolas</h3>
+            <p class="text-[10px] sm:text-xs text-stone-200 mt-0.5 sm:mt-1"><span class="hidden sm:inline">2 bases fixas sem pressa • </span>R$ 18.160<span class="hidden sm:inline"> (carro alugado)</span></p>
           </div>
         </div>
       </div>
@@ -209,7 +209,15 @@
       entreVilas: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Pedra_do_Bau_ao_p%C3%B4r-do-sol.JPG/960px-Pedra_do_Bau_ao_p%C3%B4r-do-sol.JPG",
       goncalves: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Gon%C3%A7alves_%28MG%29.jpg/960px-Gon%C3%A7alves_%28MG%29.jpg",
       serraGoncalves: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Vista_Rural_de_Gon%C3%A7alves%2C_Minas_Gerais.jpg/960px-Vista_Rural_de_Gon%C3%A7alves%2C_Minas_Gerais.jpg",
-      chaleSerra: "https://pousadacandeias.com.br/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-09-at-21.49.42.jpeg"
+      chaleSerra: "https://pousadacandeias.com.br/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-09-at-21.49.42.jpeg",
+      cachGrande: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Cachoeira_Grande_%28Serra_do_Cip%C3%B3_-_MG%29.jpg/960px-Cachoeira_Grande_%28Serra_do_Cip%C3%B3_-_MG%29.jpg",
+      chaleCozinha: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Rustic_wood_cabin_interior_with_dining_table_kitchenette_and_bedroom_area.jpg/960px-Rustic_wood_cabin_interior_with_dining_table_kitchenette_and_bedroom_area.jpg",
+      chaleLareira: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Case_Mountain_Cabin_Interior_with_Lit_Fireplace_November_2024.jpg/960px-Case_Mountain_Cabin_Interior_with_Lit_Fireplace_November_2024.jpg",
+      chaleMontanha: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Traditional_wooden_cabins_in_the_idyllic_Slovenian_mountains_%2852339466417%29.jpg/960px-Traditional_wooden_cabins_in_the_idyllic_Slovenian_mountains_%2852339466417%29.jpg",
+      chaleCampo: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Visitors_enjoy_a_sunny_day_at_a_wooden_cabin_in_the_countryside_surrounded_by_greenery_and_mountains.jpg/960px-Visitors_enjoy_a_sunny_day_at_a_wooden_cabin_in_the_countryside_surrounded_by_greenery_and_mountains.jpg",
+      fazendaMinas: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Fazenda_Parafuso_-_Minas_Gerais_-_Brasil.jpg/960px-Fazenda_Parafuso_-_Minas_Gerais_-_Brasil.jpg",
+      chaleMadeira: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Chalet_Beuil_bois.jpg/960px-Chalet_Beuil_bois.jpg",
+      chalePedra: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Chalet_Beuil.jpg/960px-Chalet_Beuil.jpg"
     };
 
     const tagStyles = {
@@ -269,7 +277,7 @@
             activities: [
               { label: "Gruta Rei do Mato", tag: "gruta", badge: "Gruta • Quarto 2h30", photo: photos.grutaReiMato, caption: "Gruta Rei do Mato (Sete Lagoas) — passarelas iluminadas", location: "Sete Lagoas • MG" },
               { label: "Gruta de Maquiné", tag: "gruta", badge: "Gruta • Quarto 2h30", photo: photos.grutaMaquine, caption: "Gruta de Maquiné (Cordisburgo) — formações calcárias monumentais", location: "Cordisburgo • MG" },
-              { label: "Piscinas de Cascata & Trilhas", tag: "natureza", badge: "Piscinas • Pet", photo: photos.solarCedro, caption: "Piscinas naturais e trilhas ecológicas em fazenda", location: "Região das Grutas • MG" }
+              { label: "Piscinas de Cascata & Trilhas", tag: "natureza", badge: "Piscinas • Pet", photo: photos.cachGrande, caption: "Piscinas naturais e quedas d'água em Minas Gerais", location: "Região das Grutas • MG" }
             ],
             lodgings: [
               {
@@ -279,7 +287,7 @@
                 petStatus: "Pet sozinho no quarto: a confirmar",
                 highlights: "Casinhas coloniais, piscina em cascata natural, trilhas e café incluído.",
                 kitchen: false,
-                photo: photos.solarCedro,
+                photo: photos.fazendaMinas,
                 url: "https://www.valedamatamg.com.br/",
                 cta: "Ver site oficial"
               },
@@ -290,7 +298,7 @@
                 petStatus: "Área cercada • Pet-friendly",
                 highlights: "Busca filtrada para 2 pets e cozinha completa na região de Sete Lagoas.",
                 kitchen: true,
-                photo: photos.chaleSerra,
+                photo: photos.chaleCampo,
                 url: abnb("Sete Lagoas, Minas Gerais", "2026-12-19", "2026-12-23"),
                 cta: "Buscar no Airbnb"
               },
@@ -333,7 +341,7 @@
                 petStatus: "Privativo • Pet-friendly",
                 highlights: "Busca filtrada em Lavras Novas com cozinha equipada para café e refeições leves.",
                 kitchen: true,
-                photo: photos.chaleSerra,
+                photo: photos.chaleCozinha,
                 url: abnb("Lavras Novas, Ouro Preto, Minas Gerais", "2026-12-23", "2026-12-28"),
                 cta: "Buscar no Airbnb"
               },
@@ -344,7 +352,7 @@
                 petStatus: "Pet sozinho no quarto: a confirmar",
                 highlights: "Na rua principal (caminhada fácil c/ cães), jardins e café caseiro.",
                 kitchen: false,
-                photo: photos.ouroPreto,
+                photo: photos.chaleLareira,
                 url: "http://pousadabuieie.com.br/",
                 cta: "Ver site oficial"
               },
@@ -355,7 +363,7 @@
                 petStatus: "Pet-friendly (confirmar regras)",
                 highlights: "Chalés confortáveis, piscinas e excelente avaliação de tutores.",
                 kitchen: false,
-                photo: photos.villaAlferes,
+                photo: photos.tankamana,
                 url: "https://www.carumbe.com.br/",
                 cta: "Ver site oficial"
               }
@@ -387,7 +395,7 @@
                 petStatus: "Quintal privativo • Pet-friendly",
                 highlights: "Busca filtrada em Tiradentes com cozinha completa e filtro pet.",
                 kitchen: true,
-                photo: photos.tiradentesCentro,
+                photo: photos.chaleSerra,
                 url: abnb("Tiradentes, Minas Gerais", "2026-12-28", "2027-01-03"),
                 cta: "Buscar no Airbnb"
               },
@@ -409,7 +417,7 @@
                 petStatus: "Política pet: validar antes",
                 highlights: "8 suítes históricas dentro da Vinícola Trindade em Bichinho.",
                 kitchen: false,
-                photo: photos.trindadeExp,
+                photo: photos.chalePedra,
                 url: "https://www.vinicolatrindade.com.br/",
                 cta: "Ver site oficial"
               }
@@ -437,7 +445,7 @@
                 petStatus: "Pet-friendly",
                 highlights: "Busca filtrada em Itaipava/Vale do Cuiabá com cozinha de apoio.",
                 kitchen: true,
-                photo: photos.chaleSerra,
+                photo: photos.chaleMadeira,
                 url: abnb("Itaipava, Petrópolis, Rio de Janeiro", "2027-01-03", "2027-01-04"),
                 cta: "Buscar no Airbnb"
               },
@@ -541,7 +549,7 @@
                 petStatus: "Privativo • Pet-friendly",
                 highlights: "Busca filtrada em Santo Antônio do Pinhal com cozinha equipada e filtro pet.",
                 kitchen: true,
-                photo: photos.chaleSerra,
+                photo: photos.chaleMontanha,
                 url: abnb("Santo Antônio do Pinhal, São Paulo", "2026-12-19", "2026-12-28"),
                 cta: "Buscar no Airbnb"
               },
@@ -552,7 +560,7 @@
                 petStatus: "Pet-friendly (confirmar quarto)",
                 highlights: "Próxima à Pedra do Baú e vinícolas; chalés acolhedores para tutores de pets.",
                 kitchen: false,
-                photo: photos.pedraBau,
+                photo: photos.chaleLareira,
                 url: "https://www.booking.com/searchresults.pt-br.html?ss=Pousada+Lua+Bonita+S%C3%A3o+Bento+do+Sapuca%C3%AD",
                 cta: "Ver no Booking"
               },
@@ -563,7 +571,7 @@
                 petStatus: "Aceita pets pequenos (confirmar)",
                 highlights: "Temática enoturística com vista da serra.",
                 kitchen: false,
-                photo: photos.essenza,
+                photo: photos.chaleMadeira,
                 url: "https://www.pousadavinhasdopinhal.com.br/",
                 cta: "Ver site oficial"
               }
@@ -583,7 +591,7 @@
             desc: "Trilha da Pedra Chanfrada (40 min em araucárias) e Pedra do Forno; Cachoeira do Simão, Sete Quedas, Retiro e Henriques (piscinas naturais rasas); queijarias na Terra Fria e Fazenda Retiro das Pedras.",
             conciergeTip: "Queijos e cafés da Fazenda Retiro das Pedras abastecem sua cozinha do chalé para cafés da manhã inesquecíveis na serra.",
             activities: [
-              { label: "Cachoeira do Simão, Sete Quedas & Retiro", tag: "natureza", badge: "Piscinas Naturais", photo: photos.cachLageado, caption: "Quedas d'água e piscinas naturais na Mantiqueira", location: "Gonçalves • MG" },
+              { label: "Cachoeira do Simão & Sete Quedas", tag: "natureza", badge: "Piscinas Naturais", photo: photos.cachLageado, caption: "Quedas d'água e piscinas naturais na Mantiqueira", location: "Gonçalves • MG" },
               { label: "Pedra Chanfrada & Pedra do Forno", tag: "natureza", badge: "Trilha 40min • Guia", photo: photos.serraGoncalves, caption: "Montanhas e araucárias de Gonçalves", location: "Gonçalves • MG" },
               { label: "Fazenda Retiro das Pedras & Queijos", tag: "pet", badge: "Queijos & Café • Pet", photo: photos.goncalves, caption: "Vila de Gonçalves — queijarias, empórios e comida mineira", location: "Gonçalves • MG" }
             ],
@@ -595,7 +603,7 @@
                 petStatus: "Privativo • Pet-friendly",
                 highlights: "Busca filtrada em Gonçalves com cozinha completa e filtro para 2 pets.",
                 kitchen: true,
-                photo: photos.chaleSerra,
+                photo: photos.chaleCozinha,
                 url: abnb("Gonçalves, Minas Gerais", "2026-12-28", "2027-01-04"),
                 cta: "Buscar no Airbnb"
               },
@@ -606,7 +614,7 @@
                 petStatus: "Pet sozinho no quarto: a confirmar",
                 highlights: "Estilo fazenda mineira com lagos, áreas gramadas, trilhas e comida caseira.",
                 kitchen: false,
-                photo: photos.serraGoncalves,
+                photo: photos.fazendaMinas,
                 url: "https://www.pousadavidaverde.com.br/",
                 cta: "Ver site oficial"
               },
@@ -617,7 +625,7 @@
                 petStatus: "Pet-friendly (confirmar regras)",
                 highlights: "Cachoeira privativa e piscina natural por trilha interna.",
                 kitchen: false,
-                photo: photos.goncalves,
+                photo: photos.chaleCampo,
                 url: "https://www.pousadacabanasnomundo.com.br/",
                 cta: "Ver site oficial"
               }
@@ -857,8 +865,8 @@
 
       heroEl.innerHTML = `
         <!-- First Fold (Mobile: Compact Photo + Copy + Price + CTA all inside 375x812) -->
-        <section class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-5 items-stretch">
-          <div class="order-2 lg:order-1 lg:col-span-5 bg-white rounded-2xl p-4 sm:p-6 border border-stone-200/90 flex flex-col justify-between gap-3.5 sm:gap-5">
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-5 items-stretch">
+          <div class="order-2 lg:order-1 lg:col-span-5 bg-white rounded-2xl p-3.5 sm:p-6 border border-stone-200/90 flex flex-col justify-between gap-3 sm:gap-5">
             <div>
               <div class="flex items-center justify-between gap-2">
                 <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-forest">
@@ -871,10 +879,10 @@
                 </button>
               </div>
 
-              <h1 class="font-serif text-xl sm:text-3xl font-semibold text-ink mt-2 leading-tight">${plan.title}</h1>
+              <h1 class="font-serif text-lg sm:text-3xl font-semibold text-ink mt-1.5 sm:mt-2 leading-tight">${plan.title}</h1>
               <p class="text-xs sm:text-sm text-stone-500 mt-1">${plan.subtitle}</p>
 
-              <ul class="mt-3 space-y-1.5 text-xs sm:text-sm text-stone-700">
+              <ul class="mt-2.5 sm:mt-3 space-y-1 sm:space-y-1.5 text-xs sm:text-sm text-stone-700">
                 ${plan.hooks.map(h => `
                   <li class="flex items-start gap-2">
                     <span class="text-forest font-bold mt-0.5">✓</span>
@@ -884,7 +892,7 @@
               </ul>
             </div>
 
-            <div class="pt-3 border-t border-stone-100 flex flex-wrap items-center justify-between gap-3">
+            <div class="pt-2.5 sm:pt-3 border-t border-stone-100 flex flex-wrap items-center justify-between gap-3">
               <div>
                 <div class="text-lg sm:text-xl font-bold text-ink tabular-nums">${fmtBRL(total)}</div>
                 <div class="text-[11px] text-stone-500 tabular-nums">~${fmtBRL(daily)}/dia • carro alugado</div>
@@ -897,23 +905,23 @@
           </div>
 
           <!-- 4-Photo Mosaic (Eager + High Priority, Compact on Mobile) -->
-          <div class="order-1 lg:order-2 lg:col-span-7 flex flex-col gap-2">
+          <div class="order-1 lg:order-2 lg:col-span-7 flex flex-col gap-1.5 sm:gap-2">
             <div onclick="openPlanPhoto(0)"
-              class="group relative h-[155px] sm:h-[265px] rounded-2xl overflow-hidden bg-stone-200 cursor-pointer border border-stone-200/80">
+              class="group relative h-[132px] sm:h-[265px] rounded-2xl overflow-hidden bg-stone-200 cursor-pointer border border-stone-200/80">
               <img src="${heroMain.url}" alt="${heroMain.caption}" referrerpolicy="no-referrer" fetchpriority="high" decoding="sync"
                 onerror="this.onerror=null; this.src='https://placehold.co/1000x600/1c1917/faf8f5?text=${encodeURIComponent(heroMain.shortLabel)}';"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               <div class="absolute inset-0 bg-gradient-to-t from-stone-950/75 via-stone-950/10 to-transparent"></div>
-              <div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between gap-2">
+              <div class="absolute bottom-2 left-3 right-3 flex items-end justify-between gap-2">
                 <p class="text-white text-xs sm:text-sm font-semibold leading-snug">${heroMain.shortLabel}</p>
                 <span class="text-[11px] text-stone-200 shrink-0">Ampliar ⤢</span>
               </div>
             </div>
 
-            <div class="grid grid-cols-3 gap-2">
+            <div class="grid grid-cols-3 gap-1.5 sm:gap-2">
               ${heroThumbs.map((photo, idx) => `
                 <div onclick="openPlanPhoto(${idx + 1})"
-                  class="group relative h-[68px] sm:h-[116px] rounded-xl overflow-hidden bg-stone-200 cursor-pointer border border-stone-200/80">
+                  class="group relative h-[56px] sm:h-[116px] rounded-xl overflow-hidden bg-stone-200 cursor-pointer border border-stone-200/80">
                   <img src="${photo.url}" alt="${photo.caption}" referrerpolicy="no-referrer" fetchpriority="high" decoding="sync"
                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/1c1917/faf8f5?text=${encodeURIComponent(photo.shortLabel)}';"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -992,7 +1000,7 @@
                           onerror="this.onerror=null; this.src='https://placehold.co/160x160/1c1917/faf8f5?text=Foto';"
                           class="w-12 h-12 rounded-lg object-cover shrink-0 bg-stone-200 group-hover:scale-105 transition-transform" />
                         <div class="min-w-0">
-                          <div class="text-xs font-bold text-ink leading-snug truncate">${a.label}</div>
+                          <div class="text-xs font-bold text-ink leading-snug">${a.label}</div>
                           <div class="text-[10px] font-medium text-stone-600 mt-0.5">${a.badge}</div>
                         </div>
                       </button>
@@ -1052,7 +1060,7 @@
                 <div class="py-2.5 first:pt-0 last:pb-0 flex items-center justify-between gap-3">
                   <div class="min-w-0">
                     <span class="text-[10px] font-bold uppercase tracking-wider text-stone-400">${link.type} • ${link.price}</span>
-                    <div class="text-xs font-semibold text-ink truncate">${link.name}</div>
+                    <div class="text-xs font-semibold text-ink leading-snug">${link.name}</div>
                   </div>
                   <div class="flex items-center gap-1.5 shrink-0">
                     ${link.insta ? `
@@ -1091,9 +1099,9 @@
             <div class="mt-3 space-y-1.5">
               ${plan.extraVideos.map(v => `
                 <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener noreferrer"
-                  class="flex items-center justify-between text-xs text-stone-600 hover:text-ink py-1 px-2 rounded-lg hover:bg-stone-50 transition-colors">
-                  <span class="truncate">▶ ${v.title}</span>
-                  <span class="text-[10px] text-stone-400 shrink-0 ml-2">↗</span>
+                  class="flex items-start justify-between gap-2 text-xs text-stone-600 hover:text-ink py-1.5 px-2 rounded-lg hover:bg-stone-50 transition-colors">
+                  <span class="leading-snug">▶ ${v.title}</span>
+                  <span class="text-[10px] text-stone-400 shrink-0 mt-0.5">↗</span>
                 </a>
               `).join('')}
             </div>
