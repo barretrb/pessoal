@@ -280,3 +280,143 @@ function parse_notification_with_ai(array $payload, array $config): array
 
     throw new RuntimeException('No AI provider succeeded');
 }
+
+function categorize_by_keywords(string $merchant): array
+{
+    $norm = normalize_text($merchant);
+    $rules = [
+        'Mercado/Casa' => [
+            'pao de acucar', 'zona sul', 'supermercado', 'princesa', 'hortifruti', 'macc',
+            'padaria', 'mercado', 'acougue', 'sacolao', 'assai', 'carrefour', 'guanabara',
+            'mundial', 'eliasaguas', 'aguas', 'leroy merlin', 'jpssmatconst', 'consul',
+            'esponja', 'ralo', 'mesinha', 'terra',
+        ],
+        'Alimentação Out' => [
+            'ifood', '99food', 'restaurante', 'cafe', 'bistro', 'hachiko', 'balada mix',
+            'sabor de minas', 'quintal mineiro', 'orikiro', 'havanna', 'calebito', 'biju',
+            'tenaz cafe', 'nao me torre', 'jantar', 'almoco', 'bacalhau', 'frango', 'bolo',
+            'paulinhodococ', 'hnt', 'pizza', 'burger', 'sushi',
+        ],
+        'Transporte/Viagem' => [
+            'uber', '99 ', 'ecovias', 'ponte', 'movida', 'posto', 'barcas', 'airbnb',
+            'estacionamento', 'pedagio', 'combustivel', 'shell', 'ipiranga', 'br mania',
+        ],
+        'Saúde/Pet' => [
+            'drogaria', 'farma', 'crystal', 'raia', 'pacheco', 'venancio', 'cobasi',
+            'petlove', 'urban dog', 'adestram', 'vet', 'pet', 'laboratorio', 'exame',
+        ],
+        'Educação' => [
+            'alura', 'coursera', 'udemy', 'ingles', 'escola', 'faculdade', 'livraria',
+        ],
+        'Software' => [
+            'google', 'hostinger', 'melimais', 'apple', 'icloud', 'spotify', 'netflix',
+            'openai', 'chatgpt', 'claude', 'youtube', 'amazon prime', 'workspace',
+        ],
+        'Shopping' => [
+            'amazon', 'mercadolivre', 'mercado livre', 'shopee', 'foxton', 'hering',
+            'adidas', 'track field', 'ri happy', 'casasbahia', 'casas bahia', '100 util',
+            'maverick', 'plaza', 'agnaldo', 'petal', 'new light', 'shopping', 'loja',
+        ],
+        'Contas Fixas' => [
+            'vivo', 'claro', 'tim', 'enel', 'naturgy', 'condominio', 'internet',
+            'financiamento', 'diarista', 'luz', 'gas', 'agua',
+        ],
+    ];
+
+    foreach ($rules as $category => $keywords) {
+        foreach ($keywords as $kw) {
+            if (str_contains($norm, trim($kw))) {
+                return ['category' => $category, 'confidence' => 0.90];
+            }
+        }
+    }
+
+    return ['category' => 'Outros', 'confidence' => 0.65];
+}
+
+function try_settle_up_match(PDO $pdo, array $payload): ?array
+{
+    $appNorm = normalize_text((string)($payload['app'] ?? ''));
+    $titleRaw = trim((string)($payload['title'] ?? ''));
+    $textRaw = trim((string)($payload['text'] ?? ''));
+    $combinedRaw = trim($titleRaw . ' ' . $textRaw);
+    $combinedNorm = normalize_text($combinedRaw);
+
+    if (!str_contains($appNorm, 'settle') && !str_contains($combinedNorm, 'settle up')) {
+        return null;
+    }
+
+    // Ignore debt settlement notifications (e.g. "Acerto de débito") to avoid double-counting
+    $ignoreHints = ['acerto de debito', 'acerto', 'liquidou', 'quitou', 'settlement', 'settled up'];
+    foreach ($ignoreHints as $hint) {
+        if (str_contains($combinedNorm, $hint)) {
+            return [
+                'is_settle_up' => true,
+                'extraction' => [
+                    'is_financial_transaction' => false,
+                    'type' => 'IGNORE',
+                    'amount' => 0.0,
+                    'full_amount' => 0.0,
+                    'split_ratio' => 1.0,
+                    'is_shared' => 0,
+                    'merchant' => 'Settle Up (Acerto)',
+                    'installments' => 1,
+                    'suggested_category' => 'Outros',
+                    'confidence' => 1.0,
+                    'top_categories' => ['Outros'],
+                ],
+            ];
+        }
+    }
+
+    $amount = extract_brl_amount($combinedRaw);
+    if ($amount === null) {
+        return null;
+    }
+
+    // Determine if the notification already shows Rafael's share ("Você deve R$ X") or the full expense
+    $isOwedShare = str_contains($combinedNorm, 'voce deve') || str_contains($combinedNorm, 'you owe');
+    if ($isOwedShare) {
+        $rafaelShare = round($amount, 2);
+        $fullAmount = round($amount * 2.0, 2);
+    } else {
+        $fullAmount = round($amount, 2);
+        $rafaelShare = round($amount * 0.5, 2);
+    }
+
+    // Extract a clean merchant/description
+    $merchant = $titleRaw !== '' ? $titleRaw : $textRaw;
+    $merchant = preg_replace('/^.*?adicionou\s+/iu', '', $merchant) ?? $merchant;
+    $merchant = preg_replace('/R\$\s*[\d\.]+,\d{2}/iu', '', $merchant) ?? $merchant;
+    $merchant = trim($merchant, " \t\n\r\0\x0B:-–•\"'");
+    if ($merchant === '' || str_contains(normalize_text($merchant), 'settle up')) {
+        $merchant = 'Despesa Settle Up';
+    }
+
+    $mem = find_merchant_memory($pdo, $merchant);
+    if ($mem !== null) {
+        $cat = $mem['category'];
+        $conf = 0.96;
+    } else {
+        $kw = categorize_by_keywords($merchant);
+        $cat = $kw['category'];
+        $conf = $kw['confidence'];
+    }
+
+    return [
+        'is_settle_up' => true,
+        'extraction' => [
+            'is_financial_transaction' => true,
+            'type' => 'EXPENSE',
+            'amount' => $rafaelShare,
+            'full_amount' => $fullAmount,
+            'split_ratio' => 0.5,
+            'is_shared' => 1,
+            'merchant' => mb_substr($merchant, 0, 80),
+            'installments' => 1,
+            'suggested_category' => $cat,
+            'confidence' => $conf,
+            'top_categories' => [$cat, 'Alimentação Out', 'Mercado/Casa'],
+        ],
+    ];
+}

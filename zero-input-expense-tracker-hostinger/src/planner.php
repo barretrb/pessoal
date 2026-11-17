@@ -20,8 +20,8 @@ function ensure_month_provision(PDO $pdo, array $config, ?string $targetDateStr 
 
     $chk = $pdo->prepare('SELECT id FROM transactions WHERE annual_plan_id = ? AND plan_period = ? LIMIT 1');
     $ins = $pdo->prepare(
-        'INSERT INTO transactions (source, app_name, raw_title, raw_text, type, amount, merchant, merchant_normalized, installments, category, confidence, status, occurred_at, annual_plan_id, plan_period, created_at)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1, ?, 1.0, ?, ?, ?, ?, ?)'
+        'INSERT INTO transactions (source, app_name, raw_title, raw_text, type, amount, merchant, merchant_normalized, installments, category, confidence, status, occurred_at, annual_plan_id, plan_period, is_shared, split_ratio, full_amount, created_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1, ?, 1.0, ?, ?, ?, ?, ?, ?, ?, ?)'
     );
 
     foreach ($plans as $plan) {
@@ -45,6 +45,13 @@ function ensure_month_provision(PDO $pdo, array $config, ?string $targetDateStr 
         $occLocal = new DateTimeImmutable(sprintf('%04d-%02d-%02d 08:00:00', $year, $month, $dueDay), $tz);
         $occUtc = $occLocal->setTimezone(new DateTimeZone('UTC'))->format('Y-m-d\TH:i:s\Z');
         $txStatus = ($plan['type'] === 'INCOME') ? 'CONFIRMED' : 'ESTIMATED';
+        $splitRatio = (float)($plan['split_ratio'] ?? 1.0);
+        if ($splitRatio <= 0.0 || $splitRatio > 1.0) {
+            $splitRatio = 1.0;
+        }
+        $fullAmount = round((float)$plan['amount'], 2);
+        $effAmount = round($fullAmount * $splitRatio, 2);
+        $isShared = $splitRatio < 0.99 ? 1 : 0;
 
         $ins->execute([
             'FIXED_PLAN',
@@ -52,7 +59,7 @@ function ensure_month_provision(PDO $pdo, array $config, ?string $targetDateStr 
             $plan['title'],
             "Provisão mensal ({$period})",
             $plan['type'],
-            (float)$plan['amount'],
+            $effAmount,
             $plan['title'],
             normalize_text($plan['title']) ?: 'plano_anual',
             $plan['category'],
@@ -60,6 +67,9 @@ function ensure_month_provision(PDO $pdo, array $config, ?string $targetDateStr 
             $occUtc,
             $plan['id'],
             $period,
+            $isShared,
+            $splitRatio,
+            $fullAmount,
             $nowUtc,
         ]);
         $createdIds[] = (int)$pdo->lastInsertId();
@@ -89,7 +99,7 @@ function recalculate_rolling_average(PDO $pdo, int $planId): ?float
     }
 
     $histStmt = $pdo->prepare(
-        "SELECT amount FROM transactions WHERE annual_plan_id = ? AND status = 'CONFIRMED' AND type = 'EXPENSE' ORDER BY occurred_at DESC, id DESC LIMIT 3"
+        "SELECT COALESCE(full_amount, amount) AS eff_amount FROM transactions WHERE annual_plan_id = ? AND status = 'CONFIRMED' AND type = 'EXPENSE' ORDER BY occurred_at DESC, id DESC LIMIT 3"
     );
     $histStmt->execute([$planId]);
     $rows = $histStmt->fetchAll();
@@ -99,7 +109,7 @@ function recalculate_rolling_average(PDO $pdo, int $planId): ?float
 
     $sum = 0.0;
     foreach ($rows as $r) {
-        $sum += (float)$r['amount'];
+        $sum += (float)$r['eff_amount'];
     }
     $avg = round($sum / count($rows), 2);
     $pdo->prepare('UPDATE annual_plan SET amount = ?, updated_at = ? WHERE id = ?')
@@ -116,9 +126,16 @@ function reconcile_transaction_amount(PDO $pdo, int $txId, float $realAmount): a
         throw new RuntimeException('Transaction not found');
     }
 
-    $rounded = round($realAmount, 2);
-    $pdo->prepare("UPDATE transactions SET amount = ?, status = 'CONFIRMED' WHERE id = ?")
-        ->execute([$rounded, $txId]);
+    $fullRounded = round($realAmount, 2);
+    $splitRatio = (float)($tx['split_ratio'] ?? 1.0);
+    if ($splitRatio <= 0.0 || $splitRatio > 1.0) {
+        $splitRatio = 1.0;
+    }
+    $effAmount = round($fullRounded * $splitRatio, 2);
+    $isShared = $splitRatio < 0.99 ? 1 : 0;
+
+    $pdo->prepare("UPDATE transactions SET amount = ?, full_amount = ?, is_shared = ?, split_ratio = ?, status = 'CONFIRMED' WHERE id = ?")
+        ->execute([$effAmount, $fullRounded, $isShared, $splitRatio, $txId]);
 
     $newAvg = null;
     $planId = $tx['annual_plan_id'] ? (int)$tx['annual_plan_id'] : null;
@@ -129,10 +146,79 @@ function reconcile_transaction_amount(PDO $pdo, int $txId, float $realAmount): a
     return [
         'transaction_id' => $txId,
         'annual_plan_id' => $planId,
-        'amount' => $rounded,
+        'amount' => $effAmount,
+        'full_amount' => $fullRounded,
+        'split_ratio' => $splitRatio,
         'status' => 'CONFIRMED',
         'new_rolling_average' => $newAvg,
     ];
+}
+
+function toggle_transaction_split(PDO $pdo, int $txId): ?array
+{
+    $stmt = $pdo->prepare('SELECT * FROM transactions WHERE id = ? LIMIT 1');
+    $stmt->execute([$txId]);
+    $tx = $stmt->fetch();
+    if (!$tx) {
+        return null;
+    }
+
+    $currentlyShared = ((int)($tx['is_shared'] ?? 0) === 1) || ((float)($tx['split_ratio'] ?? 1.0) < 0.99);
+    $currentAmt = (float)$tx['amount'];
+    $storedFull = isset($tx['full_amount']) && $tx['full_amount'] !== null ? (float)$tx['full_amount'] : null;
+
+    if ($currentlyShared) {
+        // Restore 100%
+        $newFull = $storedFull ?? round($currentAmt * 2.0, 2);
+        $newAmt = $newFull;
+        $newRatio = 1.0;
+        $newShared = 0;
+    } else {
+        // Split 50/50
+        $newFull = $storedFull ?? $currentAmt;
+        $newAmt = round($newFull * 0.5, 2);
+        $newRatio = 0.5;
+        $newShared = 1;
+    }
+
+    $pdo->prepare('UPDATE transactions SET amount = ?, full_amount = ?, is_shared = ?, split_ratio = ? WHERE id = ?')
+        ->execute([$newAmt, $newFull, $newShared, $newRatio, $txId]);
+
+    $stmt->execute([$txId]);
+    return $stmt->fetch() ?: null;
+}
+
+function toggle_plan_split(PDO $pdo, int $planId, string $period): ?array
+{
+    $stmt = $pdo->prepare('SELECT * FROM annual_plan WHERE id = ? LIMIT 1');
+    $stmt->execute([$planId]);
+    $plan = $stmt->fetch();
+    if (!$plan) {
+        return null;
+    }
+
+    $curRatio = (float)($plan['split_ratio'] ?? 1.0);
+    $newRatio = ($curRatio < 0.99) ? 1.0 : 0.5;
+    $isShared = $newRatio < 0.99 ? 1 : 0;
+
+    $pdo->prepare('UPDATE annual_plan SET split_ratio = ?, updated_at = ? WHERE id = ?')
+        ->execute([$newRatio, gmdate('Y-m-d\TH:i:s\Z'), $planId]);
+
+    // Also update current period's provisioned transaction if present
+    $txStmt = $pdo->prepare('SELECT * FROM transactions WHERE annual_plan_id = ? AND plan_period = ? LIMIT 1');
+    $txStmt->execute([$planId, $period]);
+    $tx = $txStmt->fetch();
+    if ($tx) {
+        $fullAmt = isset($tx['full_amount']) && $tx['full_amount'] !== null
+            ? (float)$tx['full_amount']
+            : (float)$plan['amount'];
+        $effAmt = round($fullAmt * $newRatio, 2);
+        $pdo->prepare('UPDATE transactions SET amount = ?, full_amount = ?, is_shared = ?, split_ratio = ? WHERE id = ?')
+            ->execute([$effAmt, $fullAmt, $isShared, $newRatio, (int)$tx['id']]);
+    }
+
+    $stmt->execute([$planId]);
+    return $stmt->fetch() ?: null;
 }
 
 function find_matching_rolling_tx(PDO $pdo, string $merchantText, string $period): ?array

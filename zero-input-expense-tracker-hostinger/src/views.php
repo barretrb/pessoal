@@ -218,21 +218,33 @@ HTML;
                 . $planCatOpts . '<option value="__NEW__">+ Nova categoria...</option>'
                 . '</select></form>';
 
+            $planSplit = (float)($p['split_ratio'] ?? 1.0);
+            $isPlanShared = $planSplit < 0.99;
+            $splitBtnClass = $isPlanShared
+                ? 'bg-violet-500/20 text-violet-300 border border-violet-500/40'
+                : 'bg-slate-800 text-slate-400 border border-slate-700 hover:text-slate-200';
+            $splitBtnText = $isPlanShared ? '50/50' : '100%';
+            $splitToggleHtml = '<form method="post" action="/dashboard/plan/' . $pId . '/toggle-split" class="inline mr-2">'
+                . '<input type="hidden" name="month" value="' . $period . '" />'
+                . '<button type="submit" title="Alternar rateio 50/50 Settle Up" class="text-[11px] px-2 py-0.5 rounded ' . $splitBtnClass . '">' . $splitBtnText . '</button></form>';
+            $effPlanAmt = $isPlanShared ? round($amtVal * $planSplit, 2) : $amtVal;
+            $amtSub = $isPlanShared ? '<span class="block text-[10px] text-violet-300/80">50% de R$ ' . format_brl($amtVal) . '</span>' : '';
+
             $rows .= '<tr class="hover:bg-slate-800/30">'
                 . '<td class="py-2 pr-3 text-slate-300 whitespace-nowrap" data-value="' . $dayNum . '">Dia ' . sprintf('%02d', $dayNum) . '</td>'
                 . '<td class="py-2 pr-3 font-medium">' . h($p['title']) . '<span class="block text-[10px] text-slate-400">' . $ptLabel . ' · ' . $pmText . '</span></td>'
                 . '<td class="py-2 pr-3 whitespace-nowrap">' . $badge . '</td>'
                 . '<td class="py-2 pr-3" data-value="' . h($p['category']) . '">' . $catSelectHtml . '</td>'
-                . '<td class="py-2 pr-3 text-right font-medium whitespace-nowrap" data-value="' . $amtVal . '">R$ ' . format_brl($amtVal) . '</td>'
-                . '<td class="py-2 text-right whitespace-nowrap"><form method="post" action="/dashboard/plan/' . $pId . '/delete" class="inline"><button type="submit" class="text-xs text-rose-400 hover:text-rose-300">Remover</button></form></td>'
+                . '<td class="py-2 pr-3 text-right font-medium whitespace-nowrap" data-value="' . $effPlanAmt . '">R$ ' . format_brl($effPlanAmt) . $amtSub . '</td>'
+                . '<td class="py-2 text-right whitespace-nowrap">' . $splitToggleHtml . '<form method="post" action="/dashboard/plan/' . $pId . '/delete" class="inline"><button type="submit" class="text-xs text-rose-400 hover:text-rose-300">Remover</button></form></td>'
                 . '</tr>';
         }
-        $plansHtml = '<div class="overflow-x-auto"><table class="w-full text-xs sm:text-sm text-left" data-sortable><thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800"><tr><th class="py-2 pr-3" data-sort="none" data-type="num">Dia</th><th class="py-2 pr-3" data-sort="none" data-type="text">Descrição</th><th class="py-2 pr-3" data-sort="none" data-type="text">Tipo</th><th class="py-2 pr-3" data-sort="none" data-type="text">Categoria</th><th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Valor</th><th class="py-2 text-right">Ação</th></tr></thead><tbody class="divide-y divide-slate-800/70">' . $rows . '</tbody></table></div>';
+        $plansHtml = '<div class="overflow-x-auto"><table class="w-full text-xs sm:text-sm text-left" data-sortable><thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800"><tr><th class="py-2 pr-3" data-sort="none" data-type="num">Dia</th><th class="py-2 pr-3" data-sort="none" data-type="text">Descrição</th><th class="py-2 pr-3" data-sort="none" data-type="text">Tipo</th><th class="py-2 pr-3" data-sort="none" data-type="text">Categoria</th><th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Sua Parte</th><th class="py-2 text-right">Rateio / Ação</th></tr></thead><tbody class="divide-y divide-slate-800/70">' . $rows . '</tbody></table></div>';
     } else {
         $plansHtml = '<p class="text-sm text-slate-500">Nenhum item cadastrado no planejamento anual.</p>';
     }
 
-    // Recent Transactions (with Edit button!)
+    // Recent Transactions (with Edit & 50/50 Settle Up toggle button!)
     $txsHtml = '';
     if ($summary['transactions']) {
         $rows = '';
@@ -253,17 +265,29 @@ HTML;
             $txId = (int)$tx['id'];
             $occLocalDate = (new DateTimeImmutable($tx['occurred_at'], new DateTimeZone('UTC')))
                 ->setTimezone(new DateTimeZone('America/Sao_Paulo'))->format('Y-m-d');
+            $isTxShared = ((int)($tx['is_shared'] ?? 0) === 1);
+            $sharedBadge = $isTxShared ? ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-violet-500/20 text-violet-300">50/50</span>' : '';
+            $fullSub = ($isTxShared && !empty($tx['full_amount']))
+                ? '<span class="block text-[10px] text-violet-300/80">50% de R$ ' . format_brl((float)$tx['full_amount']) . '</span>'
+                : '';
+            $splitForm = $tx['type'] === 'EXPENSE'
+                ? '<form method="post" action="/dashboard/transaction/' . $txId . '/toggle-split" class="inline mr-2">'
+                  . '<input type="hidden" name="redirect_to" value="/dashboard?month=' . $period . '" />'
+                  . '<button type="submit" title="Dividir 50/50 (Settle Up)" class="text-[11px] px-1.5 py-0.5 rounded '
+                  . ($isTxShared ? 'bg-violet-500/20 text-violet-300 border border-violet-500/40' : 'bg-slate-800 text-slate-400 hover:text-slate-200 border border-slate-700')
+                  . '">÷2</button></form>'
+                : '';
             $editBtn = '<button type="button" data-id="' . $txId . '" data-merchant="' . h($tx['merchant']) . '" data-category="' . h($tx['category']) . '" data-date="' . $occLocalDate . '" onclick="openEditTxModal(this)" class="text-xs text-sky-400 hover:text-sky-300">Editar</button>';
             $rows .= '<tr class="hover:bg-slate-800/30">'
                 . '<td class="py-2 pr-3 text-slate-400 text-xs whitespace-nowrap" data-value="' . h($tx['occurred_at']) . '">' . $dt . '</td>'
-                . '<td class="py-2 pr-3 font-medium">' . h($tx['merchant']) . $inst . '<span class="block text-[10px] text-slate-500">' . h($tx['source']) . '</span></td>'
+                . '<td class="py-2 pr-3 font-medium">' . h($tx['merchant']) . $inst . $sharedBadge . '<span class="block text-[10px] text-slate-500">' . h($tx['source']) . '</span></td>'
                 . '<td class="py-2 pr-3 text-slate-300 whitespace-nowrap">' . h($tx['category']) . '</td>'
                 . '<td class="py-2 pr-3 whitespace-nowrap">' . $stBadge . '</td>'
-                . '<td class="py-2 pr-3 text-right font-medium whitespace-nowrap ' . $valColor . '" data-value="' . $amtVal . '">' . $sign . ' R$ ' . format_brl($amtVal) . '</td>'
-                . '<td class="py-2 text-right whitespace-nowrap">' . $editBtn . '</td>'
+                . '<td class="py-2 pr-3 text-right font-medium whitespace-nowrap ' . $valColor . '" data-value="' . $amtVal . '">' . $sign . ' R$ ' . format_brl($amtVal) . $fullSub . '</td>'
+                . '<td class="py-2 text-right whitespace-nowrap">' . $splitForm . $editBtn . '</td>'
                 . '</tr>';
         }
-        $txsHtml = '<div class="overflow-x-auto"><table class="w-full text-xs sm:text-sm text-left" data-sortable><thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800"><tr><th class="py-2 pr-3" data-sort="none" data-type="date">Data</th><th class="py-2 pr-3" data-sort="none" data-type="text">Estabelecimento / Conta</th><th class="py-2 pr-3" data-sort="none" data-type="text">Categoria</th><th class="py-2 pr-3" data-sort="none" data-type="text">Status</th><th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Valor</th><th class="py-2 text-right">Ação</th></tr></thead><tbody class="divide-y divide-slate-800/70">' . $rows . '</tbody></table></div>';
+        $txsHtml = '<div class="overflow-x-auto"><table class="w-full text-xs sm:text-sm text-left" data-sortable><thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800"><tr><th class="py-2 pr-3" data-sort="none" data-type="date">Data</th><th class="py-2 pr-3" data-sort="none" data-type="text">Estabelecimento / Conta</th><th class="py-2 pr-3" data-sort="none" data-type="text">Categoria</th><th class="py-2 pr-3" data-sort="none" data-type="text">Status</th><th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Valor</th><th class="py-2 text-right">Rateio / Ação</th></tr></thead><tbody class="divide-y divide-slate-800/70">' . $rows . '</tbody></table></div>';
     } else {
         $txsHtml = '<p class="text-sm text-slate-500">Nenhuma transação registrada nesta competência.</p>';
     }
@@ -271,6 +295,15 @@ HTML;
     $catJson = json_encode($summary['category_breakdown'], JSON_UNESCAPED_UNICODE);
     $yearlyJson = json_encode($yearly['months'], JSON_UNESCAPED_UNICODE);
     $sortJs = sortable_js();
+    $importBanner = '';
+    if (isset($_GET['imp'])) {
+        $impCount = (int)$_GET['imp'];
+        $dupCount = (int)($_GET['dup'] ?? 0);
+        $ignCount = (int)($_GET['ign'] ?? 0);
+        $importBanner = '<div class="rounded-xl border border-emerald-500/40 bg-emerald-500/10 px-4 py-3 text-xs sm:text-sm text-emerald-200 flex items-center justify-between">'
+            . "<span>📄 Fatura processada: <strong>{$impCount}</strong> importadas · <strong>{$dupCount}</strong> duplicadas ignoradas · <strong>{$ignCount}</strong> pagamentos/linhas ignoradas.</span>"
+            . '<a href="/dashboard?month=' . $period . '" class="text-emerald-300 underline ml-3">Fechar</a></div>';
+    }
 
     echo <<<HTML
 <!DOCTYPE html>
@@ -306,6 +339,7 @@ HTML;
         <form method="get" action="/dashboard" class="flex items-center">
           <input type="month" name="month" value="{$period}" onchange="this.form.submit()" class="rounded-md bg-slate-950 border border-slate-700 px-2 py-1 text-xs text-slate-200 focus:border-emerald-500 focus:outline-none w-32 sm:w-auto" />
         </form>
+        <button type="button" onclick="openImportModal()" class="rounded-md bg-sky-600 hover:bg-sky-500 px-2.5 py-1 text-xs font-semibold text-white whitespace-nowrap">📄 <span class="hidden sm:inline">Importar Fatura</span></button>
         <button type="button" onclick="openQuickModal('INCOME')" class="rounded-md bg-emerald-600 hover:bg-emerald-500 px-2.5 py-1 text-xs font-semibold text-white whitespace-nowrap">+ <span class="hidden sm:inline">Receita / Gasto</span></button>
         <a href="/transactions?year={$yearNum}&month={$monthNum}" class="sm:hidden rounded-md border border-slate-700 hover:bg-slate-800 px-2 py-1 text-xs text-slate-300">Lista</a>
         <a href="/logout" class="rounded-md border border-slate-700 hover:bg-slate-800 px-2 py-1 text-xs text-slate-300">Sair</a>
@@ -314,6 +348,7 @@ HTML;
   </header>
 
   <main class="max-w-7xl mx-auto px-3 sm:px-6 py-4 sm:py-6 space-y-5 sm:space-y-6">
+    {$importBanner}
     <!-- 2x2 KPIs on Mobile -->
     <section class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
       <div class="bg-slate-900 border border-emerald-500/30 rounded-xl p-3.5 sm:p-5">
@@ -386,13 +421,14 @@ HTML;
         <h2 class="text-sm sm:text-base font-semibold">Planejamento Anual (Receitas, Fixos &amp; Médias)</h2>
         <p class="text-xs text-slate-400">Altere a categoria diretamente na lista abaixo ou adicione um novo item.</p>
       </div>
-      <form method="post" action="/dashboard/plan" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-8 gap-2.5">
+      <form method="post" action="/dashboard/plan" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-9 gap-2.5">
         <input type="text" name="title" placeholder="Descrição (ex: Aluguel)" required class="lg:col-span-2 rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
         <select name="type" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="EXPENSE">Despesa</option><option value="INCOME">Receita</option></select>
         <input type="number" step="0.01" min="0.01" name="amount" placeholder="Valor (R$)" required class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
         <select name="category" onchange="toggleNewCatInput(this, 'planNewCat')" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none">{$catOptionsWithNew}</select>
         <input type="text" name="new_category" id="planNewCat" placeholder="Nome da nova categoria" class="hidden rounded-lg bg-slate-950 border border-emerald-500 px-3 py-2 text-xs sm:text-sm focus:outline-none" />
         <select name="plan_type" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="FIXED">Fixo</option><option value="ROLLING_AVERAGE">Média Móvel</option></select>
+        <select name="split_ratio" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="1.0">100% Meu</option><option value="0.5">50/50 Settle Up</option></select>
         <div class="flex gap-2">
           <select name="payment_method" class="w-1/2 rounded-lg bg-slate-950 border border-slate-700 px-2 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="PIX">PIX</option><option value="Cartão">Cartão</option></select>
           <input type="number" min="1" max="31" name="day_of_month" placeholder="Dia" required class="w-1/2 rounded-lg bg-slate-950 border border-slate-700 px-2 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
@@ -486,6 +522,46 @@ HTML;
     </div>
   </div>
 
+  <div id="importCsvModal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-lg p-5 space-y-4">
+      <div class="flex items-center justify-between">
+        <h3 class="text-base font-bold">Importar Fatura Nubank (CSV)</h3>
+        <button type="button" onclick="closeImportModal()" class="text-slate-400 hover:text-slate-200 text-lg">&times;</button>
+      </div>
+      <form method="post" action="/dashboard/import-csv" enctype="multipart/form-data" class="space-y-3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs text-slate-400 mb-1">Competência da Fatura</label>
+            <input type="month" name="billing_month" value="{$period}" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs text-slate-400 mb-1">Alocação de Data</label>
+            <select name="date_mode" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm">
+              <option value="billing">Competência da fatura acima</option>
+              <option value="original">Data original da compra</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs text-slate-400 mb-1">Arquivo .csv</label>
+          <input type="file" name="csv_file" accept=".csv,text/csv" class="w-full text-xs text-slate-300 file:mr-3 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:bg-slate-800 file:text-slate-200 hover:file:bg-slate-700" />
+        </div>
+        <div>
+          <label class="block text-xs text-slate-400 mb-1">Ou cole o conteúdo CSV (date,title,amount)</label>
+          <textarea name="csv_text" rows="5" placeholder="date,title,amount&#10;2026-11-16,Pao de Acucar-1721,&quot;247,93&quot;" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs font-mono"></textarea>
+        </div>
+        <label class="flex items-center gap-2 text-xs text-slate-300">
+          <input type="checkbox" name="auto_split_groceries" value="1" checked class="rounded border-slate-700 bg-slate-950 text-emerald-500" />
+          Dividir 50/50 automaticamente compras de Mercado/Casa (Settle Up)
+        </label>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeImportModal()" class="rounded-lg border border-slate-700 px-4 py-2 text-xs text-slate-300">Cancelar</button>
+          <button type="submit" class="rounded-lg bg-sky-600 hover:bg-sky-500 px-4 py-2 text-xs font-semibold text-white">Importar Fatura</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script>
     function toggleNewCatInput(selectEl, inputId) {
       const inp = document.getElementById(inputId);
@@ -512,6 +588,12 @@ HTML;
       } else {
         selectEl.form.submit();
       }
+    }
+    function openImportModal() {
+      document.getElementById('importCsvModal').classList.remove('hidden');
+    }
+    function closeImportModal() {
+      document.getElementById('importCsvModal').classList.add('hidden');
     }
     function openQuickModal(type) {
       document.getElementById('quickTxType').value = type || 'INCOME';
@@ -588,6 +670,7 @@ function render_transactions(array $result, array $categories, array $filters): 
     $selNotif = $filters['source'] === 'NOTIFICATION' ? 'selected' : '';
     $selPlan = $filters['source'] === 'FIXED_PLAN' ? 'selected' : '';
     $selMan = $filters['source'] === 'MANUAL' ? 'selected' : '';
+    $selCsv = $filters['source'] === 'CSV_FATURA' ? 'selected' : '';
     $selConf = $filters['status'] === 'CONFIRMED' ? 'selected' : '';
     $selEst = $filters['status'] === 'ESTIMATED' ? 'selected' : '';
     $selPend = $filters['status'] === 'PENDING' ? 'selected' : '';
@@ -617,17 +700,29 @@ function render_transactions(array $result, array $categories, array $filters): 
             $txId = (int)$tx['id'];
             $occLocalDate = (new DateTimeImmutable($tx['occurred_at'], new DateTimeZone('UTC')))
                 ->setTimezone(new DateTimeZone('America/Sao_Paulo'))->format('Y-m-d');
+            $isTxShared = ((int)($tx['is_shared'] ?? 0) === 1);
+            $sharedBadge = $isTxShared ? ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-violet-500/20 text-violet-300">50/50</span>' : '';
+            $fullSub = ($isTxShared && !empty($tx['full_amount']))
+                ? '<span class="block text-[10px] text-violet-300/80">50% de R$ ' . format_brl((float)$tx['full_amount']) . '</span>'
+                : '';
+            $splitForm = $tx['type'] === 'EXPENSE'
+                ? '<form method="post" action="/dashboard/transaction/' . $txId . '/toggle-split" class="inline mr-2">'
+                  . '<input type="hidden" name="redirect_to" value="/transactions?year=' . $yearVal . '&month=' . $monthVal . '" />'
+                  . '<button type="submit" title="Dividir 50/50 (Settle Up)" class="text-[11px] px-1.5 py-0.5 rounded '
+                  . ($isTxShared ? 'bg-violet-500/20 text-violet-300 border border-violet-500/40' : 'bg-slate-800 text-slate-400 hover:text-slate-200 border border-slate-700')
+                  . '">÷2</button></form>'
+                : '';
             $editBtn = '<button type="button" data-id="' . $txId . '" data-merchant="' . h($tx['merchant']) . '" data-category="' . h($tx['category']) . '" data-date="' . $occLocalDate . '" onclick="openEditTxModal(this)" class="text-xs text-sky-400 hover:text-sky-300">Editar</button>';
             $rows .= '<tr class="hover:bg-slate-800/30">'
                 . '<td class="py-2 pr-3 text-xs text-slate-400 whitespace-nowrap" data-value="' . h($tx['occurred_at']) . '">' . $dt . '</td>'
-                . '<td class="py-2 pr-3 font-medium">' . h($tx['merchant']) . $inst . '<span class="block text-[10px] text-slate-500">' . h($tx['source']) . $appSub . '</span></td>'
+                . '<td class="py-2 pr-3 font-medium">' . h($tx['merchant']) . $inst . $sharedBadge . '<span class="block text-[10px] text-slate-500">' . h($tx['source']) . $appSub . '</span></td>'
                 . '<td class="py-2 pr-3 text-slate-300 whitespace-nowrap">' . h($tx['category']) . '</td>'
                 . '<td class="py-2 pr-3 whitespace-nowrap">' . $stBadge . '</td>'
-                . '<td class="py-2 pr-3 text-right font-semibold whitespace-nowrap ' . $valColor . '" data-value="' . $amtVal . '">' . $sign . ' R$ ' . format_brl($amtVal) . '</td>'
-                . '<td class="py-2 text-right whitespace-nowrap">' . $editBtn . '</td>'
+                . '<td class="py-2 pr-3 text-right font-semibold whitespace-nowrap ' . $valColor . '" data-value="' . $amtVal . '">' . $sign . ' R$ ' . format_brl($amtVal) . $fullSub . '</td>'
+                . '<td class="py-2 text-right whitespace-nowrap">' . $splitForm . $editBtn . '</td>'
                 . '</tr>';
         }
-        $tableHtml = '<div class="overflow-x-auto"><table class="w-full text-xs sm:text-sm text-left" data-sortable><thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800"><tr><th class="py-2 pr-3" data-sort="none" data-type="date">Data</th><th class="py-2 pr-3" data-sort="none" data-type="text">Despesa / Estabelecimento</th><th class="py-2 pr-3" data-sort="none" data-type="text">Categoria</th><th class="py-2 pr-3" data-sort="none" data-type="text">Status</th><th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Valor</th><th class="py-2 text-right">Ação</th></tr></thead><tbody class="divide-y divide-slate-800/70">' . $rows . '</tbody></table></div>';
+        $tableHtml = '<div class="overflow-x-auto"><table class="w-full text-xs sm:text-sm text-left" data-sortable><thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800"><tr><th class="py-2 pr-3" data-sort="none" data-type="date">Data</th><th class="py-2 pr-3" data-sort="none" data-type="text">Despesa / Estabelecimento</th><th class="py-2 pr-3" data-sort="none" data-type="text">Categoria</th><th class="py-2 pr-3" data-sort="none" data-type="text">Status</th><th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Valor</th><th class="py-2 text-right">Rateio / Ação</th></tr></thead><tbody class="divide-y divide-slate-800/70">' . $rows . '</tbody></table></div>';
     } else {
         $tableHtml = '<p class="text-sm text-slate-500">Nenhuma transação encontrada para os filtros selecionados.</p>';
     }
@@ -688,7 +783,7 @@ function render_transactions(array $result, array $categories, array $filters): 
         </div>
         <div>
           <label class="block text-[11px] text-slate-400 mb-1">Origem</label>
-          <select name="source" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-2.5 py-1.5 text-xs text-slate-100"><option value="">Todas</option><option value="NOTIFICATION" {$selNotif}>Notificação</option><option value="FIXED_PLAN" {$selPlan}>Plano Fixo</option><option value="MANUAL" {$selMan}>Manual</option></select>
+          <select name="source" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-2.5 py-1.5 text-xs text-slate-100"><option value="">Todas</option><option value="NOTIFICATION" {$selNotif}>Notificação</option><option value="CSV_FATURA" {$selCsv}>Fatura CSV</option><option value="FIXED_PLAN" {$selPlan}>Plano Fixo</option><option value="MANUAL" {$selMan}>Manual</option></select>
         </div>
         <div>
           <label class="block text-[11px] text-slate-400 mb-1">Status</label>

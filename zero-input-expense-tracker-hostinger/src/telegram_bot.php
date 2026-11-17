@@ -44,15 +44,17 @@ function build_top_3_categories(array $config, string $suggested, array $topCate
     return array_slice($candidates, 0, 3);
 }
 
-function send_confirmed_telegram(array $config, float $amount, string $merchant, string $category, float $saldoLivre, ?int $txId = null): ?int
+function send_confirmed_telegram(array $config, float $amount, string $merchant, string $category, float $saldoLivre, ?int $txId = null, bool $isShared = false): ?int
 {
     if (empty($config['telegram_chat_id'])) {
         return null;
     }
+    $sharedTag = $isShared ? ' [50/50]' : '';
     $text = sprintf(
-        '✅ R$ %s em %s (%s) | Saldo Livre do Mês: R$ %s',
+        '✅ R$ %s em %s%s (%s) | Saldo Livre do Mês: R$ %s',
         format_brl($amount),
         $merchant,
+        $sharedTag,
         $category,
         format_brl($saldoLivre)
     );
@@ -61,10 +63,14 @@ function send_confirmed_telegram(array $config, float $amount, string $merchant,
         'text' => $text,
         'disable_notification' => true,
     ];
-    if ($txId !== null) {
+    if ($txId !== null && $txId > 0) {
+        $btnLabel = $isShared ? '↩️ Desfazer 50/50 (100%)' : '👥 Dividir 50/50 (Settle Up)';
         $payload['reply_markup'] = [
             'inline_keyboard' => [
-                [['text' => '✏️ Editar / Categoria', 'callback_data' => "edit:{$txId}"]],
+                [
+                    ['text' => '✏️ Editar / Categoria', 'callback_data' => "edit:{$txId}"],
+                    ['text' => $btnLabel, 'callback_data' => "split:{$txId}"],
+                ],
             ],
         ];
     }
@@ -124,12 +130,16 @@ function send_hitl_telegram(array $config, int $txId, float $amount, string $mer
     foreach (array_slice($categories, 0, 3) as $cat) {
         $row[] = ['text' => $cat, 'callback_data' => "cat:{$txId}:{$cat}"];
     }
+    $keyboard = [$row];
+    if ($txType === 'EXPENSE') {
+        $keyboard[] = [['text' => '👥 Dividir 50/50 (Settle Up)', 'callback_data' => "split:{$txId}"]];
+    }
 
     $res = telegram_post($config, 'sendMessage', [
         'chat_id' => $config['telegram_chat_id'],
         'text' => $text,
         'parse_mode' => 'Markdown',
-        'reply_markup' => ['inline_keyboard' => [$row]],
+        'reply_markup' => ['inline_keyboard' => $keyboard],
     ]);
     return ($res && !empty($res['ok'])) ? (int)$res['result']['message_id'] : null;
 }

@@ -106,4 +106,29 @@ function init_schema(PDO $pdo): void
     if (!isset($cols['payment_method'])) {
         $pdo->exec("ALTER TABLE annual_plan ADD COLUMN payment_method TEXT NOT NULL DEFAULT 'PIX'");
     }
+    if (!isset($cols['split_ratio'])) {
+        $pdo->exec("ALTER TABLE annual_plan ADD COLUMN split_ratio REAL NOT NULL DEFAULT 1.0");
+    }
+
+    $txCols = [];
+    foreach ($pdo->query('PRAGMA table_info(transactions)')->fetchAll() as $col) {
+        $txCols[$col['name']] = true;
+    }
+    if (!isset($txCols['is_shared'])) {
+        $pdo->exec("ALTER TABLE transactions ADD COLUMN is_shared INTEGER NOT NULL DEFAULT 0");
+    }
+    if (!isset($txCols['split_ratio'])) {
+        $pdo->exec("ALTER TABLE transactions ADD COLUMN split_ratio REAL NOT NULL DEFAULT 1.0");
+    }
+    if (!isset($txCols['full_amount'])) {
+        $pdo->exec("ALTER TABLE transactions ADD COLUMN full_amount REAL");
+    }
+
+    $memCols = [];
+    foreach ($pdo->query('PRAGMA table_info(merchant_memory)')->fetchAll() as $col) {
+        $memCols[$col['name']] = true;
+    }
+    if (!isset($memCols['default_split_ratio'])) {
+        $pdo->exec("ALTER TABLE merchant_memory ADD COLUMN default_split_ratio REAL NOT NULL DEFAULT 1.0");
+    }
 }

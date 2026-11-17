@@ -9,6 +9,7 @@ require_once __DIR__ . '/src/ai_parser.php';
 require_once __DIR__ . '/src/telegram_bot.php';
 require_once __DIR__ . '/src/planner.php';
 require_once __DIR__ . '/src/seed_data.php';
+require_once __DIR__ . '/src/csv_importer.php';
 require_once __DIR__ . '/src/views.php';
 
 $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
@@ -40,38 +41,75 @@ if ($method === 'POST' && $path === '/api/v1/webhook/notification') {
 
     $usedMemory = false;
     $usedAi = false;
+    $isShared = 0;
+    $splitRatio = 1.0;
+    $fullAmount = null;
 
-    $memMatch = try_deterministic_memory_match($pdo, $payload);
-    if ($memMatch !== null) {
-        $extraction = $memMatch['extraction'];
-        $usedMemory = true;
-        $pdo->prepare('UPDATE merchant_memory SET hit_count = hit_count + 1, updated_at = ? WHERE id = ?')
-            ->execute([gmdate('c'), $memMatch['memory_id']]);
-    } else {
-        try {
-            $extraction = parse_notification_with_ai($payload, $config);
-        } catch (Throwable $e) {
-            json_response(['detail' => 'AI parsing failed: ' . $e->getMessage()], 502);
-        }
-        $usedAi = true;
-
+    $settleMatch = try_settle_up_match($pdo, $payload);
+    if ($settleMatch !== null) {
+        $extraction = $settleMatch['extraction'];
         if (!$extraction['is_financial_transaction'] || $extraction['type'] === 'IGNORE' || $extraction['amount'] <= 0) {
             json_response([
                 'status' => 'IGNORED',
                 'transaction_id' => null,
                 'used_memory' => false,
-                'used_ai' => true,
-                'message' => 'Notification ignored (non-financial, promotional, or declined).',
+                'used_ai' => false,
+                'message' => 'Settle Up settlement/non-expense ignored.',
             ]);
         }
-
-        $mem = find_merchant_memory($pdo, $extraction['merchant']);
-        if ($mem !== null) {
-            $extraction['suggested_category'] = $mem['category'];
-            $extraction['confidence'] = max($extraction['confidence'], 0.95);
+        $isShared = (int)($extraction['is_shared'] ?? 1);
+        $splitRatio = (float)($extraction['split_ratio'] ?? 0.5);
+        $fullAmount = (float)($extraction['full_amount'] ?? round($extraction['amount'] * 2.0, 2));
+    } else {
+        $memMatch = try_deterministic_memory_match($pdo, $payload);
+        if ($memMatch !== null) {
+            $extraction = $memMatch['extraction'];
             $usedMemory = true;
             $pdo->prepare('UPDATE merchant_memory SET hit_count = hit_count + 1, updated_at = ? WHERE id = ?')
-                ->execute([gmdate('c'), $mem['id']]);
+                ->execute([gmdate('c'), $memMatch['memory_id']]);
+            $memRowStmt = $pdo->prepare('SELECT default_split_ratio FROM merchant_memory WHERE id = ? LIMIT 1');
+            $memRowStmt->execute([$memMatch['memory_id']]);
+            $memRow = $memRowStmt->fetch();
+            $memSplit = (float)($memRow['default_split_ratio'] ?? 1.0);
+            if ($memSplit > 0.0 && $memSplit < 0.99 && $extraction['type'] === 'EXPENSE') {
+                $fullAmount = round((float)$extraction['amount'], 2);
+                $splitRatio = $memSplit;
+                $isShared = 1;
+                $extraction['amount'] = round($fullAmount * $splitRatio, 2);
+            }
+        } else {
+            try {
+                $extraction = parse_notification_with_ai($payload, $config);
+            } catch (Throwable $e) {
+                json_response(['detail' => 'AI parsing failed: ' . $e->getMessage()], 502);
+            }
+            $usedAi = true;
+
+            if (!$extraction['is_financial_transaction'] || $extraction['type'] === 'IGNORE' || $extraction['amount'] <= 0) {
+                json_response([
+                    'status' => 'IGNORED',
+                    'transaction_id' => null,
+                    'used_memory' => false,
+                    'used_ai' => true,
+                    'message' => 'Notification ignored (non-financial, promotional, or declined).',
+                ]);
+            }
+
+            $mem = find_merchant_memory($pdo, $extraction['merchant']);
+            if ($mem !== null) {
+                $extraction['suggested_category'] = $mem['category'];
+                $extraction['confidence'] = max($extraction['confidence'], 0.95);
+                $usedMemory = true;
+                $pdo->prepare('UPDATE merchant_memory SET hit_count = hit_count + 1, updated_at = ? WHERE id = ?')
+                    ->execute([gmdate('c'), $mem['id']]);
+                $memSplit = (float)($mem['default_split_ratio'] ?? 1.0);
+                if ($memSplit > 0.0 && $memSplit < 0.99 && $extraction['type'] === 'EXPENSE') {
+                    $fullAmount = round((float)$extraction['amount'], 2);
+                    $splitRatio = $memSplit;
+                    $isShared = 1;
+                    $extraction['amount'] = round($fullAmount * $splitRatio, 2);
+                }
+            }
         }
     }
 
@@ -208,8 +246,8 @@ if ($method === 'POST' && $path === '/api/v1/webhook/notification') {
     $merchantNorm = normalize_text($merchantDisplay) ?: 'estabelecimento';
 
     $ins = $pdo->prepare(
-        'INSERT INTO transactions (source, app_name, raw_title, raw_text, type, amount, merchant, merchant_normalized, installments, category, confidence, status, occurred_at, created_at)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+        'INSERT INTO transactions (source, app_name, raw_title, raw_text, type, amount, merchant, merchant_normalized, installments, category, confidence, status, occurred_at, is_shared, split_ratio, full_amount, created_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
     );
     $ins->execute([
         'NOTIFICATION',
@@ -225,6 +263,9 @@ if ($method === 'POST' && $path === '/api/v1/webhook/notification') {
         $extraction['confidence'],
         $txStatus,
         $occurredIso,
+        $isShared,
+        $splitRatio,
+        $fullAmount ?? $amount,
         gmdate('Y-m-d\TH:i:s\Z'),
     ]);
     $txId = (int)$pdo->lastInsertId();
@@ -232,7 +273,7 @@ if ($method === 'POST' && $path === '/api/v1/webhook/notification') {
     $msgId = null;
     if ($txStatus === 'CONFIRMED') {
         $summary = compute_monthly_summary($pdo, $config);
-        $msgId = send_confirmed_telegram($config, $amount, $merchantDisplay, $extraction['suggested_category'], $summary['saldo_livre'], $txId);
+        $msgId = send_confirmed_telegram($config, $amount, $merchantDisplay, $extraction['suggested_category'], $summary['saldo_livre'], $txId, (bool)$isShared);
     } else {
         $top3 = build_top_3_categories($config, $extraction['suggested_category'], $extraction['top_categories']);
         $msgId = send_hitl_telegram($config, $txId, $amount, $merchantDisplay, $extraction['type'], $top3);
@@ -247,6 +288,7 @@ if ($method === 'POST' && $path === '/api/v1/webhook/notification') {
         'transaction_id' => $txId,
         'type' => $extraction['type'],
         'amount' => $amount,
+        'is_shared' => (bool)$isShared,
         'merchant' => $merchantDisplay,
         'category' => $extraction['suggested_category'],
         'confidence' => $extraction['confidence'],
@@ -314,10 +356,14 @@ if ($method === 'POST' && $path === '/api/v1/webhook/telegram') {
                         'text' => "Salvo como {$cat}!",
                     ]);
                     if ($chatId !== null && $messageId !== null) {
+                        $isSharedNow = ((int)($tx['is_shared'] ?? 0) === 1);
+                        $sharedTag = $isSharedNow ? ' [50/50]' : '';
+                        $btnLabel = $isSharedNow ? '↩️ Desfazer 50/50 (100%)' : '👥 Dividir 50/50 (Settle Up)';
                         $updatedText = sprintf(
-                            '✅ R$ %s em %s (%s) | Saldo Livre do Mês: R$ %s',
+                            '✅ R$ %s em %s%s (%s) | Saldo Livre do Mês: R$ %s',
                             format_brl((float)$tx['amount']),
                             $tx['merchant'],
+                            $sharedTag,
                             $cat,
                             format_brl($summary['saldo_livre'])
                         );
@@ -325,9 +371,53 @@ if ($method === 'POST' && $path === '/api/v1/webhook/telegram') {
                             'chat_id' => $chatId,
                             'message_id' => $messageId,
                             'text' => $updatedText,
+                            'reply_markup' => [
+                                'inline_keyboard' => [
+                                    [['text' => $btnLabel, 'callback_data' => "split:{$txId}"]],
+                                ],
+                            ],
                         ]);
                     }
                     json_response(['ok' => true, 'transaction_id' => $txId, 'category' => $cat]);
+                }
+            }
+        }
+
+        if (str_starts_with($data, 'split:')) {
+            $parts = explode(':', $data, 2);
+            if (count($parts) === 2 && ctype_digit($parts[1])) {
+                $txId = (int)$parts[1];
+                $updatedTx = toggle_transaction_split($pdo, $txId);
+                if ($updatedTx) {
+                    $isSharedNow = ((int)($updatedTx['is_shared'] ?? 0) === 1);
+                    $summary = compute_monthly_summary($pdo, $config);
+                    telegram_post($config, 'answerCallbackQuery', [
+                        'callback_query_id' => $cbId,
+                        'text' => $isSharedNow ? 'Dividido 50/50 (Settle Up)!' : 'Restaurado para 100%!',
+                    ]);
+                    if ($chatId !== null && $messageId !== null) {
+                        $sharedTag = $isSharedNow ? ' [50/50]' : '';
+                        $btnLabel = $isSharedNow ? '↩️ Desfazer 50/50 (100%)' : '👥 Dividir 50/50 (Settle Up)';
+                        $updatedText = sprintf(
+                            '✅ R$ %s em %s%s (%s) | Saldo Livre do Mês: R$ %s',
+                            format_brl((float)$updatedTx['amount']),
+                            $updatedTx['merchant'],
+                            $sharedTag,
+                            $updatedTx['category'],
+                            format_brl($summary['saldo_livre'])
+                        );
+                        telegram_post($config, 'editMessageText', [
+                            'chat_id' => $chatId,
+                            'message_id' => $messageId,
+                            'text' => $updatedText,
+                            'reply_markup' => [
+                                'inline_keyboard' => [
+                                    [['text' => $btnLabel, 'callback_data' => "split:{$txId}"]],
+                                ],
+                            ],
+                        ]);
+                    }
+                    json_response(['ok' => true, 'transaction_id' => $txId, 'is_shared' => $isSharedNow]);
                 }
             }
         }
@@ -699,6 +789,48 @@ if ($path === '/dashboard/income' && $method === 'POST') {
     exit;
 }
 
+if ($path === '/api/v1/import/csv' && $method === 'POST') {
+    require_api_key($config);
+    $b = json_decode((string)file_get_contents('php://input'), true) ?: [];
+    $csv = (string)($b['csv'] ?? '');
+    $billingMonth = isset($b['billing_month']) && is_string($b['billing_month']) ? trim($b['billing_month']) : null;
+    $autoSplitGroceries = !empty($b['auto_split_groceries']);
+    if (trim($csv) === '') {
+        json_response(['detail' => 'Missing csv content'], 422);
+    }
+    $res = import_nubank_csv($pdo, $config, $csv, $billingMonth ?: null, $autoSplitGroceries);
+    json_response($res);
+}
+
+if ($path === '/dashboard/import-csv' && $method === 'POST') {
+    if (!is_dashboard_authenticated($config)) {
+        header('Location: /login', true, 303);
+        exit;
+    }
+    $csvContent = '';
+    if (!empty($_FILES['csv_file']['tmp_name']) && is_uploaded_file($_FILES['csv_file']['tmp_name'])) {
+        $csvContent = (string)file_get_contents($_FILES['csv_file']['tmp_name']);
+    }
+    if (trim($csvContent) === '') {
+        $csvContent = (string)($_POST['csv_text'] ?? '');
+    }
+    $dateMode = (string)($_POST['date_mode'] ?? 'billing');
+    $billingMonth = trim((string)($_POST['billing_month'] ?? ''));
+    $targetBilling = ($dateMode === 'billing' && preg_match('/^\d{4}-\d{2}$/', $billingMonth)) ? $billingMonth : null;
+    $autoSplitGroceries = !empty($_POST['auto_split_groceries']);
+
+    $res = import_nubank_csv($pdo, $config, $csvContent, $targetBilling, $autoSplitGroceries);
+    $redirMonth = $targetBilling ?? ($billingMonth !== '' ? $billingMonth : date('Y-m'));
+    $qs = http_build_query([
+        'month' => $redirMonth,
+        'imp' => $res['imported'],
+        'dup' => $res['skipped_duplicates'],
+        'ign' => $res['ignored'],
+    ]);
+    header("Location: /dashboard?{$qs}", true, 303);
+    exit;
+}
+
 if ($path === '/dashboard/plan' && $method === 'POST') {
     if (!is_dashboard_authenticated($config)) {
         header('Location: /login', true, 303);
@@ -713,14 +845,27 @@ if ($path === '/dashboard/plan' && $method === 'POST') {
     $day = (int)($_POST['day_of_month'] ?? 0);
     $planType = in_array((string)($_POST['plan_type'] ?? 'FIXED'), ['FIXED', 'ROLLING_AVERAGE'], true) ? (string)$_POST['plan_type'] : 'FIXED';
     $paymentMethod = in_array((string)($_POST['payment_method'] ?? 'PIX'), ['PIX', 'Cartão'], true) ? (string)$_POST['payment_method'] : 'PIX';
+    $splitRatio = ((string)($_POST['split_ratio'] ?? '1.0') === '0.5') ? 0.5 : 1.0;
     if ($title !== '' && in_array($type, ['INCOME', 'EXPENSE'], true) && $amount > 0 && $day >= 1 && $day <= 31) {
         $now = gmdate('Y-m-d\TH:i:s\Z');
         $pdo->prepare(
-            'INSERT INTO annual_plan (title, type, plan_type, payment_method, amount, category, day_of_month, start_month, end_month, active, created_at, updated_at)
-             VALUES (?, ?, ?, ?, ?, ?, ?, 1, 12, 1, ?, ?)'
-        )->execute([$title, $type, $planType, $paymentMethod, $amount, $category, $day, $now, $now]);
+            'INSERT INTO annual_plan (title, type, plan_type, payment_method, amount, category, day_of_month, start_month, end_month, active, split_ratio, created_at, updated_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, 1, 12, 1, ?, ?, ?)'
+        )->execute([$title, $type, $planType, $paymentMethod, $amount, $category, $day, $splitRatio, $now, $now]);
     }
     header('Location: /dashboard', true, 303);
+    exit;
+}
+
+if ($method === 'POST' && preg_match('#^/dashboard/plan/(\d+)/toggle-split$#', $path, $m)) {
+    if (!is_dashboard_authenticated($config)) {
+        header('Location: /login', true, 303);
+        exit;
+    }
+    $monthParam = trim((string)($_POST['month'] ?? date('Y-m')));
+    toggle_plan_split($pdo, (int)$m[1], $monthParam);
+    $redir = $monthParam !== '' ? '/dashboard?month=' . urlencode($monthParam) : '/dashboard';
+    header("Location: {$redir}", true, 303);
     exit;
 }
 
@@ -739,6 +884,31 @@ if ($method === 'POST' && preg_match('#^/dashboard/plan/(\d+)/update$#', $path, 
     }
     $redir = $monthParam !== '' ? '/dashboard?month=' . urlencode($monthParam) : '/dashboard';
     header("Location: {$redir}", true, 303);
+    exit;
+}
+
+if ($method === 'POST' && preg_match('#^/dashboard/transaction/(\d+)/toggle-split$#', $path, $m)) {
+    if (!is_dashboard_authenticated($config)) {
+        header('Location: /login', true, 303);
+        exit;
+    }
+    $redirectTo = (string)($_POST['redirect_to'] ?? '/dashboard');
+    $alwaysSplit = !empty($_POST['always_split']);
+    $updated = toggle_transaction_split($pdo, (int)$m[1]);
+    if ($updated && $alwaysSplit) {
+        $newRatio = ((int)($updated['is_shared'] ?? 0) === 1) ? 0.5 : 1.0;
+        $mem = find_merchant_memory($pdo, (string)$updated['merchant']);
+        if ($mem) {
+            $pdo->prepare('UPDATE merchant_memory SET default_split_ratio = ?, updated_at = ? WHERE id = ?')
+                ->execute([$newRatio, gmdate('c'), (int)$mem['id']]);
+        } else {
+            upsert_merchant_memory($pdo, (string)$updated['merchant'], (string)$updated['category']);
+            $pdo->prepare('UPDATE merchant_memory SET default_split_ratio = ? WHERE merchant_normalized = ?')
+                ->execute([$newRatio, normalize_text((string)$updated['merchant'])]);
+        }
+    }
+    $safeRedir = str_starts_with($redirectTo, '/') ? $redirectTo : '/dashboard';
+    header("Location: {$safeRedir}", true, 303);
     exit;
 }
 
