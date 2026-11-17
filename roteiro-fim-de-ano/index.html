@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reset de Fim de Ano • 2 Roteiros (19/12 a 04/01)</title>
-  <meta name="description" content="Comparativo interativo de 16 diárias (19/12 a 04/01) saindo de Niterói com 2 Chihuahuas: Estrada Real (MG) vs. Serra da Mantiqueira (SP/MG)." />
+  <title>Reset de Fim de Ano • 4 Roteiros (19/12 a 04/01)</title>
+  <meta name="description" content="Comparativo interativo de 16 diárias (19/12 a 04/01) saindo de Niterói com 2 Chihuahuas: Estrada Real, Mantiqueira, Caparaó & Pedra Azul e Bocaina & Mauá." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Reset de Fim de Ano • Estrada Real vs. Serra da Mantiqueira" />
-  <meta property="og:description" content="16 diárias de carro saindo de Niterói com 2 Chihuahuas: vinícolas, cachoeiras, trilhas acessíveis, hospedagens pet-friendly e orçamento realista." />
+  <meta property="og:title" content="Reset de Fim de Ano • 4 Roteiros Comparados" />
+  <meta property="og:description" content="16 diárias de carro saindo de Niterói com 2 Chihuahuas: matriz de 11 critérios, vinícolas, fazendas, cachoeiras e orçamento fechado." />
   <meta property="og:image" content="https://vinicolaraizesdobau.com.br/wp-content/uploads/2021/05/bg1-quem-somos-vinicola-raizes-do-bau.jpg" />
   <meta property="og:url" content="https://roteiro.reagiu.com.br/" />
   <link rel="preload" as="image" href="https://vinicolaraizesdobau.com.br/wp-content/uploads/2021/05/bg1-quem-somos-vinicola-raizes-do-bau.jpg" />
@@ -46,13 +46,11 @@
       -webkit-font-smoothing: antialiased;
     }
     .tabular-nums { font-variant-numeric: tabular-nums; }
-    .no-scrollbar::-webkit-scrollbar { display: none; }
-    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
   </style>
 </head>
 <body class="selection:bg-forest selection:text-white">
 
-  <!-- Compact Responsive Navigation -->
+  <!-- Compact Responsive Navigation (4 Plans) -->
   <nav class="sticky top-0 z-40 bg-paper/95 backdrop-blur-md border-b border-stone-200/80">
     <div class="max-w-6xl mx-auto px-3 sm:px-4 py-2 space-y-2 lg:space-y-0 lg:flex lg:items-center lg:justify-between lg:gap-3">
       <div class="flex items-center justify-between gap-2 min-w-0">
@@ -63,23 +61,29 @@
         </div>
         <div class="flex items-center gap-1.5 shrink-0 lg:hidden">
           <a href="#matriz-decisao" class="inline-flex items-center px-2.5 py-1 rounded-lg bg-stone-900 text-white text-[11px] font-semibold">
-            Placar & Custos ↓
+            Matriz & Custos ↓
           </a>
         </div>
       </div>
 
       <div class="flex items-center gap-2">
-        <div class="grid grid-cols-2 w-full sm:w-auto sm:inline-flex bg-stone-200/75 p-1 rounded-xl gap-1" id="plan-tabs">
+        <div class="grid grid-cols-2 sm:grid-cols-4 w-full lg:w-auto lg:inline-flex bg-stone-200/75 p-1 rounded-xl gap-1" id="plan-tabs">
           <button onclick="selectPlan(0)" id="tab-0" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer truncate">
             1. Estrada Real
           </button>
           <button onclick="selectPlan(1)" id="tab-1" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer truncate">
             2. Mantiqueira
           </button>
+          <button onclick="selectPlan(2)" id="tab-2" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer truncate">
+            3. Caparaó & ES
+          </button>
+          <button onclick="selectPlan(3)" id="tab-3" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer truncate">
+            4. Bocaina & Mauá
+          </button>
         </div>
 
         <a href="#matriz-decisao" class="hidden lg:inline-flex items-center px-3 py-1.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white text-xs font-semibold transition-colors whitespace-nowrap">
-          Placar & Custos ↓
+          Matriz 11 ↓
         </a>
       </div>
     </div>
@@ -88,37 +92,63 @@
   <!-- Main Content -->
   <main class="max-w-6xl mx-auto px-3 sm:px-4 pt-3 sm:pt-4 pb-16 space-y-7">
 
-    <!-- Compact Mood Switcher Strip (Forest Contrast) -->
+    <!-- Compact 4-Plan Mood Switcher Strip (Forest Contrast) -->
     <section class="bg-forest text-white rounded-2xl sm:rounded-3xl p-3.5 sm:p-5 shadow-md">
-      <div class="flex items-center justify-between gap-2 mb-3">
-        <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-widest text-emerald-300">O Clima de Cada Viagem • Clique para alternar</span>
-        <a href="#matriz-decisao" class="text-[11px] font-semibold text-emerald-200 hover:text-white underline underline-offset-4">Placar: Plano 2 (6×3) ↓</a>
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+        <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-widest text-emerald-300">O Clima de Cada Roteiro • Clique para explorar</span>
+        <a href="#matriz-decisao" class="text-[11px] font-semibold text-emerald-200 hover:text-white underline underline-offset-4">Ver Placar (11 Critérios) ↓</a>
       </div>
 
-      <div class="grid grid-cols-2 gap-2.5 sm:gap-4">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3">
         <div onclick="selectPlan(0)"
-          class="group relative h-[105px] sm:h-[155px] rounded-xl sm:rounded-2xl overflow-hidden cursor-pointer border border-white/15">
+          class="group relative h-[100px] sm:h-[135px] rounded-xl sm:rounded-2xl overflow-hidden cursor-pointer border border-white/15">
           <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Centro_hist%C3%B3rico_de_Tiradentes_-_MG.jpg/960px-Centro_hist%C3%B3rico_de_Tiradentes_-_MG.jpg"
-            alt="Clima Estrada Real" referrerpolicy="no-referrer"
+            alt="Estrada Real" referrerpolicy="no-referrer"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/10"></div>
-          <div class="absolute bottom-2 left-2.5 right-2.5 sm:bottom-3.5 sm:left-4 sm:right-4">
-            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-amber-300 block leading-tight">Roteiro 1 • História & Grutas</span>
-            <h3 class="font-serif text-xs sm:text-lg font-semibold text-white mt-0.5 leading-tight">Casario Colonial & Grutas</h3>
-            <p class="text-[10px] sm:text-xs text-stone-200 mt-0.5"><span id="mood-price-0" class="font-semibold"></span><span class="hidden sm:inline"> • 4 paradas</span></p>
+          <div class="absolute bottom-2 left-2.5 right-2.5">
+            <span class="text-[9px] font-bold uppercase tracking-wider text-amber-300 block leading-tight">Plano 1 • 3 Melhor</span>
+            <h3 class="font-serif text-xs sm:text-sm font-semibold text-white leading-tight">Estrada Real & Grutas</h3>
+            <p class="text-[10px] text-stone-200 mt-0.5"><span id="mood-price-0" class="font-semibold"></span></p>
           </div>
         </div>
 
         <div onclick="selectPlan(1)"
-          class="group relative h-[105px] sm:h-[155px] rounded-xl sm:rounded-2xl overflow-hidden cursor-pointer border border-white/15">
+          class="group relative h-[100px] sm:h-[135px] rounded-xl sm:rounded-2xl overflow-hidden cursor-pointer border border-white/15">
           <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Pedra_do_Bau_ao_p%C3%B4r-do-sol.JPG/960px-Pedra_do_Bau_ao_p%C3%B4r-do-sol.JPG"
-            alt="Clima Mantiqueira" referrerpolicy="no-referrer"
+            alt="Mantiqueira" referrerpolicy="no-referrer"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/10"></div>
-          <div class="absolute bottom-2 left-2.5 right-2.5 sm:bottom-3.5 sm:left-4 sm:right-4">
-            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-emerald-300 block leading-tight">Roteiro 2 • Vinhedos & Lareira</span>
-            <h3 class="font-serif text-xs sm:text-lg font-semibold text-white mt-0.5 leading-tight">Serra & 5 Vinícolas</h3>
-            <p class="text-[10px] sm:text-xs text-stone-200 mt-0.5"><span id="mood-price-1" class="font-semibold"></span><span class="hidden sm:inline"> • 2 bases fixas</span></p>
+          <div class="absolute bottom-2 left-2.5 right-2.5">
+            <span class="text-[9px] font-bold uppercase tracking-wider text-emerald-300 block leading-tight">Plano 2 • 7 Melhor ★</span>
+            <h3 class="font-serif text-xs sm:text-sm font-semibold text-white leading-tight">Serra da Mantiqueira</h3>
+            <p class="text-[10px] text-stone-200 mt-0.5"><span id="mood-price-1" class="font-semibold"></span></p>
+          </div>
+        </div>
+
+        <div onclick="selectPlan(2)"
+          class="group relative h-[100px] sm:h-[135px] rounded-xl sm:rounded-2xl overflow-hidden cursor-pointer border border-white/15">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Pedra_Azul_-_Domingos_Martins_-_ES_-_Brasil.jpg/960px-Pedra_Azul_-_Domingos_Martins_-_ES_-_Brasil.jpg"
+            alt="Caparaó e Pedra Azul" referrerpolicy="no-referrer"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/10"></div>
+          <div class="absolute bottom-2 left-2.5 right-2.5">
+            <span class="text-[9px] font-bold uppercase tracking-wider text-sky-300 block leading-tight">Plano 3 • 4 Melhor</span>
+            <h3 class="font-serif text-xs sm:text-sm font-semibold text-white leading-tight">Caparaó & Pedra Azul</h3>
+            <p class="text-[10px] text-stone-200 mt-0.5"><span id="mood-price-2" class="font-semibold"></span></p>
+          </div>
+        </div>
+
+        <div onclick="selectPlan(3)"
+          class="group relative h-[100px] sm:h-[135px] rounded-xl sm:rounded-2xl overflow-hidden cursor-pointer border border-white/15">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Cachoeira_do_Escorrega%2C_Visconde_de_Mau%C3%A1.jpg/960px-Cachoeira_do_Escorrega%2C_Visconde_de_Mau%C3%A1.jpg"
+            alt="Bocaina e Mauá" referrerpolicy="no-referrer"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/10"></div>
+          <div class="absolute bottom-2 left-2.5 right-2.5">
+            <span class="text-[9px] font-bold uppercase tracking-wider text-teal-300 block leading-tight">Plano 4 • 5 Melhor</span>
+            <h3 class="font-serif text-xs sm:text-sm font-semibold text-white leading-tight">Bocaina & Mauá</h3>
+            <p class="text-[10px] text-stone-200 mt-0.5"><span id="mood-price-3" class="font-semibold"></span></p>
           </div>
         </div>
       </div>
@@ -128,32 +158,46 @@
     <div id="plan-hero"></div>
     <div id="plan-body" class="space-y-6"></div>
 
-    <!-- Matriz de Decisão Rápida (10 Critérios) -->
+    <!-- Matriz Comparativa (4 Planos — 11 Critérios) -->
     <section id="matriz-decisao" class="bg-white rounded-3xl p-4 sm:p-6 border border-stone-200/90 shadow-xs scroll-mt-24">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pb-4 mb-4 border-b border-stone-100">
+      <div class="pb-4 mb-4 border-b border-stone-100 space-y-3">
         <div>
-          <span class="text-[11px] font-bold uppercase tracking-widest text-forest">Comparativo Direto • 10 Critérios</span>
-          <h2 class="font-serif text-xl sm:text-2xl font-semibold text-ink mt-0.5">Matriz de Decisão Rápida</h2>
+          <span class="text-[11px] font-bold uppercase tracking-widest text-forest">Comparativo Direto • 11 Critérios</span>
+          <h2 class="font-serif text-xl sm:text-2xl font-semibold text-ink mt-0.5">Matriz de Decisão Rápida (4 Planos)</h2>
         </div>
-        <div class="inline-flex items-center gap-2 bg-stone-100 border border-stone-200 px-3 py-1.5 rounded-xl text-xs font-semibold text-ink self-start sm:self-auto">
-          <span>Placar:</span>
-          <span class="text-forest font-bold">Plano 2 (6 Melhor)</span>
-          <span class="text-stone-400">vs.</span>
-          <span class="text-amber-800 font-bold">Plano 1 (3 Melhor)</span>
-          <span class="text-stone-400">|</span>
-          <span class="text-stone-600">1 Empate</span>
+
+        <!-- Placar Geral Badges -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 text-xs">
+          <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl px-3 py-2">
+            <div class="font-bold text-forest">Plano 2 (Mantiqueira)</div>
+            <div class="text-[11px] text-stone-700 mt-0.5"><strong>7 Melhor</strong> • 2 Igual • 2 Pior</div>
+          </div>
+          <div class="bg-stone-50 border border-stone-200 rounded-xl px-3 py-2">
+            <div class="font-bold text-ink">Plano 4 (Bocaina & Mauá)</div>
+            <div class="text-[11px] text-stone-600 mt-0.5"><strong>5 Melhor</strong> • 4 Igual • 2 Pior</div>
+          </div>
+          <div class="bg-stone-50 border border-stone-200 rounded-xl px-3 py-2">
+            <div class="font-bold text-ink">Plano 3 (Caparaó & ES)</div>
+            <div class="text-[11px] text-stone-600 mt-0.5"><strong>4 Melhor</strong> • 4 Igual • 3 Pior</div>
+          </div>
+          <div class="bg-amber-50/60 border border-amber-200/80 rounded-xl px-3 py-2">
+            <div class="font-bold text-amber-900">Plano 1 (Estrada Real)</div>
+            <div class="text-[11px] text-stone-600 mt-0.5"><strong>3 Melhor</strong> • 1 Igual • 7 Pior</div>
+          </div>
         </div>
       </div>
 
-      <div id="decision-matrix-mobile" class="grid grid-cols-1 gap-2.5 md:hidden"></div>
+      <div id="decision-matrix-mobile" class="grid grid-cols-1 gap-2.5 lg:hidden"></div>
 
-      <div class="hidden md:block overflow-x-auto rounded-2xl border border-stone-200/80">
+      <div class="hidden lg:block overflow-x-auto rounded-2xl border border-stone-200/80">
         <table class="w-full text-left border-collapse text-xs">
           <thead>
             <tr class="bg-stone-50 text-stone-600 text-[11px] uppercase tracking-wider border-b border-stone-200">
-              <th class="py-3 px-4 font-semibold w-[24%]">Critério</th>
-              <th class="py-3 px-4 font-semibold w-[38%]">Plano 1: Estrada Real (MG)</th>
-              <th class="py-3 px-4 font-semibold w-[38%] text-forest">Plano 2: Serra da Mantiqueira</th>
+              <th class="py-3 px-3 font-semibold w-[18%]">Critério</th>
+              <th class="py-3 px-3 font-semibold w-[20.5%]">Plano 1: Estrada Real</th>
+              <th class="py-3 px-3 font-semibold w-[20.5%] text-forest">Plano 2: Mantiqueira</th>
+              <th class="py-3 px-3 font-semibold w-[20.5%]">Plano 3: Caparaó & ES</th>
+              <th class="py-3 px-3 font-semibold w-[20.5%]">Plano 4: Bocaina & Mauá</th>
             </tr>
           </thead>
           <tbody id="decision-matrix-tbody" class="divide-y divide-stone-100"></tbody>
@@ -161,14 +205,14 @@
       </div>
     </section>
 
-    <!-- Side-by-Side Budget (Dark Charcoal Contrast) -->
+    <!-- Side-by-Side Budget (Dark Charcoal Contrast — 4 Planos) -->
     <section id="comparativo" class="bg-stone-900 text-stone-100 rounded-3xl p-5 sm:p-8 scroll-mt-24 shadow-lg">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-5">
         <div>
-          <span class="text-[11px] font-bold uppercase tracking-widest text-emerald-400">Orçamento Fechado</span>
+          <span class="text-[11px] font-bold uppercase tracking-widest text-emerald-400">Orçamento Fechado • 4 Roteiros</span>
           <h2 class="font-serif text-2xl md:text-3xl font-semibold text-white mt-0.5">Custos Estimados (16 Diárias • Carro Alugado)</h2>
           <p class="text-xs text-stone-300 mt-1">
-            Estratégia com chalés/Airbnbs com cozinha para café da manhã e refeições leves, priorizando vinícolas e ceias.
+            Estratégia com chalés/Airbnbs com cozinha para café da manhã e refeições leves, priorizando passeios e ceias.
           </p>
         </div>
         <div id="couple-vote-summary" class="text-xs font-medium text-stone-200 bg-white/10 border border-white/15 px-3 py-2 rounded-xl">
@@ -176,16 +220,18 @@
         </div>
       </div>
 
-      <div id="comparison-mobile" class="grid grid-cols-1 gap-2.5 md:hidden"></div>
+      <div id="comparison-mobile" class="grid grid-cols-1 gap-2.5 lg:hidden"></div>
 
-      <div class="hidden md:block bg-stone-950/60 rounded-2xl border border-white/10 overflow-hidden">
+      <div class="hidden lg:block bg-stone-950/60 rounded-2xl border border-white/10 overflow-hidden">
         <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse text-xs md:text-sm">
+          <table class="w-full text-left border-collapse text-xs">
             <thead>
               <tr class="bg-stone-950 text-emerald-300 text-[11px] uppercase tracking-wider">
-                <th class="py-3.5 px-4 font-semibold">Categoria</th>
-                <th class="py-3.5 px-4 font-semibold">Plano 1: Estrada Real (MG)</th>
-                <th class="py-3.5 px-4 font-semibold">Plano 2: Serra da Mantiqueira</th>
+                <th class="py-3.5 px-3 font-semibold">Categoria</th>
+                <th class="py-3.5 px-3 font-semibold">1. Estrada Real</th>
+                <th class="py-3.5 px-3 font-semibold">2. Mantiqueira</th>
+                <th class="py-3.5 px-3 font-semibold">3. Caparaó & ES</th>
+                <th class="py-3.5 px-3 font-semibold">4. Bocaina & Mauá</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-white/10" id="comparison-tbody"></tbody>
@@ -221,7 +267,6 @@
     const abnb = (place, checkin, checkout) =>
       `https://www.airbnb.com.br/s/${encodeURIComponent(place)}/homes?checkin=${checkin}&checkout=${checkout}&adults=2&pets=2&amenities%5B%5D=8`;
 
-    // Unique verified Brazilian photos — ZERO repeated URLs across lodgings or same-plan cards
     const photos = {
       tiradentesCentro: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Centro_hist%C3%B3rico_de_Tiradentes_-_MG.jpg/960px-Centro_hist%C3%B3rico_de_Tiradentes_-_MG.jpg",
       tiradentesAerea: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Vista_a%C3%A9rea_de_Tiradentes.jpg/960px-Vista_a%C3%A9rea_de_Tiradentes.jpg",
@@ -254,7 +299,21 @@
       goncalves: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Gon%C3%A7alves_%28MG%29.jpg/960px-Gon%C3%A7alves_%28MG%29.jpg",
       serraGoncalves: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Vista_Rural_de_Gon%C3%A7alves%2C_Minas_Gerais.jpg/960px-Vista_Rural_de_Gon%C3%A7alves%2C_Minas_Gerais.jpg",
       cachSimao: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Cachoeira_do_Sim%C3%A3o_-_Gon%C3%A7alves-MG.jpg/960px-Cachoeira_do_Sim%C3%A3o_-_Gon%C3%A7alves-MG.jpg",
-      picoAgudo: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Acesso_ao_Pico_Agudo_%2851397182540%29.jpg/960px-Acesso_ao_Pico_Agudo_%2851397182540%29.jpg"
+      picoAgudo: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Acesso_ao_Pico_Agudo_%2851397182540%29.jpg/960px-Acesso_ao_Pico_Agudo_%2851397182540%29.jpg",
+      // Plano 3 (Caparaó & Pedra Azul)
+      pedraAzul: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Pedra_Azul_-_Domingos_Martins_-_ES_-_Brasil.jpg/960px-Pedra_Azul_-_Domingos_Martins_-_ES_-_Brasil.jpg",
+      rotaLagarto: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Rota_do_Lagarto_e_Pedra_Azul_ao_fundo%2C_Domingos_Martins_ES.JPG/960px-Rota_do_Lagarto_e_Pedra_Azul_ao_fundo%2C_Domingos_Martins_ES.JPG",
+      vistaPedraAzul: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Vista_da_Pedra_Azul.jpg/960px-Vista_da_Pedra_Azul.jpg",
+      caparaoHotel: "https://caparaoparquehotel.com.br/wp-content/uploads/2020/06/hotel1.jpg",
+      // Plano 4 (Bocaina & Mauá)
+      cachEscorrega: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Cachoeira_do_Escorrega%2C_Visconde_de_Mau%C3%A1.jpg/960px-Cachoeira_do_Escorrega%2C_Visconde_de_Mau%C3%A1.jpg",
+      viscondeMaua: "https://upload.wikimedia.org/wikipedia/commons/2/23/Visconde.de.Mau%C3%A1.RJ.jpg",
+      fazendaResgate: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Fazenda_Resgate_Em_Bananal.JPG/960px-Fazenda_Resgate_Em_Bananal.JPG",
+      fazendaBoaVista: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Fazenda_Boa_Vista%2C_Bananal-SP%2C_Vladimir_Benincasa_1.jpg/960px-Fazenda_Boa_Vista%2C_Bananal-SP%2C_Vladimir_Benincasa_1.jpg",
+      cachSantoIsidro: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Cachoeira_Santo_Isidro.jpg/960px-Cachoeira_Santo_Isidro.jpg",
+      encantoBocaina: "https://encantodabocaina.com.br/images/jkit/items/17-screen.jpg",
+      buhler: "https://www.hotelbuhler.com.br/wp-content/uploads/2018/03/Image00002.jpg",
+      tijupa: "https://cdn.prod.website-files.com/6453186e974c633cf126b0c8/668e27bdc9ea5381d3d34e1f_tb-home.jpg"
     };
 
     const tagStyles = {
@@ -312,39 +371,9 @@
               { label: "Fazenda & Piscinas Naturais", tag: "natureza", badge: "Natureza • Pet", photo: photos.arraialConto2, caption: "Área rural e piscinas naturais na região das grutas", location: "Cordisburgo • MG" }
             ],
             lodgings: [
-              {
-                name: "Vale da Mata Estância Ecológica",
-                type: "Fazenda",
-                price: "R$ 680 – R$ 820/noite",
-                petStatus: "Pet-friendly (pequeno/médio porte)",
-                highlights: "Casinhas coloniais, piscina natural, trilhas e café incluído.",
-                kitchen: false,
-                photo: photos.fazendaMinas,
-                url: "https://www.valedamatamg.com.br/",
-                cta: "Ver site oficial"
-              },
-              {
-                name: "Arraial do Conto Hotel e Lazer",
-                type: "Hotel Fazenda",
-                price: "R$ 540 – R$ 720/noite",
-                petStatus: "Pet-friendly confirmado (Cordisburgo)",
-                highlights: "Hotel-fazenda ao lado da Gruta de Maquiné com piscinas e trilhas.",
-                kitchen: false,
-                photo: photos.arraialConto,
-                url: "https://arraialdoconto.com.br/",
-                cta: "Ver site oficial"
-              },
-              {
-                name: "Casas de Campo na Região (Airbnb)",
-                type: "Airbnb",
-                price: "R$ 450 – R$ 580/noite",
-                petStatus: "Área cercada • 2 Pets",
-                highlights: "Busca filtrada para 2 pets e cozinha completa em Sete Lagoas.",
-                kitchen: true,
-                photo: photos.candeias1,
-                url: abnb("Sete Lagoas, Minas Gerais", "2026-12-19", "2026-12-23"),
-                cta: "Buscar no Airbnb"
-              }
+              { name: "Vale da Mata Estância Ecológica", type: "Fazenda", price: "R$ 680 – R$ 820/noite", petStatus: "Pet-friendly (pequeno/médio porte)", highlights: "Casinhas coloniais, piscina natural, trilhas e café incluído.", kitchen: false, photo: photos.fazendaMinas, url: "https://www.valedamatamg.com.br/", cta: "Ver site oficial" },
+              { name: "Arraial do Conto Hotel e Lazer", type: "Hotel Fazenda", price: "R$ 540 – R$ 720/noite", petStatus: "Pet-friendly confirmado (Cordisburgo)", highlights: "Hotel-fazenda ao lado da Gruta de Maquiné com piscinas e trilhas.", kitchen: false, photo: photos.arraialConto, url: "https://arraialdoconto.com.br/", cta: "Ver site oficial" },
+              { name: "Casas de Campo na Região (Airbnb)", type: "Airbnb", price: "R$ 450 – R$ 580/noite", petStatus: "Área cercada • 2 Pets", highlights: "Busca filtrada para 2 pets e cozinha completa em Sete Lagoas.", kitchen: true, photo: photos.candeias1, url: abnb("Sete Lagoas, Minas Gerais", "2026-12-19", "2026-12-23"), cta: "Buscar no Airbnb" }
             ]
           },
           {
@@ -366,39 +395,9 @@
               { label: "Mirante Chapada & Itacolomi", tag: "natureza", badge: "Trilha & Vista", photo: photos.lavrasNovas, caption: "Serra da Chapada em Lavras Novas", location: "Lavras Novas • MG" }
             ],
             lodgings: [
-              {
-                name: "Chalés com Cozinha (Airbnb)",
-                type: "Airbnb",
-                price: "R$ 450 – R$ 590/noite",
-                petStatus: "Privativo • 2 Pets",
-                highlights: "Busca filtrada em Lavras Novas com cozinha equipada.",
-                kitchen: true,
-                photo: photos.itacolomi,
-                url: abnb("Lavras Novas, Ouro Preto, Minas Gerais", "2026-12-23", "2026-12-28"),
-                cta: "Buscar no Airbnb"
-              },
-              {
-                name: "Pousada Buieié",
-                type: "Pousada",
-                price: "R$ 580 – R$ 720/noite",
-                petStatus: "Pet sozinho no quarto: a confirmar",
-                highlights: "Na rua principal (caminhada fácil c/ cães) e café caseiro.",
-                kitchen: false,
-                photo: photos.lavrasNovas,
-                url: "http://pousadabuieie.com.br/",
-                cta: "Ver site oficial"
-              },
-              {
-                name: "Pousada Carumbé",
-                type: "Pousada",
-                price: "R$ 720 – R$ 880/noite",
-                petStatus: "Apenas unidade Loft aceita pets",
-                highlights: "Chalés confortáveis e piscinas (reservar especificamente o Loft).",
-                kitchen: false,
-                photo: photos.ouroPreto,
-                url: "https://www.carumbe.com.br/",
-                cta: "Ver site oficial"
-              }
+              { name: "Chalés com Cozinha (Airbnb)", type: "Airbnb", price: "R$ 450 – R$ 590/noite", petStatus: "Privativo • 2 Pets", highlights: "Busca filtrada em Lavras Novas com cozinha equipada.", kitchen: true, photo: photos.itacolomi, url: abnb("Lavras Novas, Ouro Preto, Minas Gerais", "2026-12-23", "2026-12-28"), cta: "Buscar no Airbnb" },
+              { name: "Pousada Buieié", type: "Pousada", price: "R$ 580 – R$ 720/noite", petStatus: "Pet sozinho no quarto: a confirmar", highlights: "Na rua principal (caminhada fácil c/ cães) e café caseiro.", kitchen: false, photo: photos.lavrasNovas, url: "http://pousadabuieie.com.br/", cta: "Ver site oficial" },
+              { name: "Pousada Carumbé", type: "Pousada", price: "R$ 720 – R$ 880/noite", petStatus: "Apenas unidade Loft aceita pets", highlights: "Chalés confortáveis e piscinas (reservar especificamente o Loft).", kitchen: false, photo: photos.ouroPreto, url: "https://www.carumbe.com.br/", cta: "Ver site oficial" }
             ]
           },
           {
@@ -421,39 +420,9 @@
               { label: "Profetas em Congonhas", tag: "natureza", badge: "Parada Cultural", photo: photos.congonhas, caption: "Santuário de Bom Jesus de Matosinhos", location: "Congonhas • MG" }
             ],
             lodgings: [
-              {
-                name: "Pousada Refúgio Tiradentes",
-                type: "Pousada",
-                price: "R$ 580 – R$ 780/noite",
-                petStatus: "Pet-friendly gratuito (confirmado)",
-                highlights: "A 600m do Centro, quartos amplos, café mineiro e sem taxa pet.",
-                kitchen: false,
-                photo: photos.refugioTiradentes,
-                url: "https://refugiotiradentes.com.br/",
-                cta: "Ver site oficial"
-              },
-              {
-                name: "Casas e Chalés no Centro (Airbnb)",
-                type: "Airbnb",
-                price: "R$ 520 – R$ 680/noite",
-                petStatus: "Quintal privativo • 2 Pets",
-                highlights: "Busca filtrada em Tiradentes com cozinha completa e filtro pet.",
-                kitchen: true,
-                photo: photos.tiradentesCentro,
-                url: abnb("Tiradentes, Minas Gerais", "2026-12-28", "2027-01-03"),
-                cta: "Buscar no Airbnb"
-              },
-              {
-                name: "Casarão Trindade (na Vinícola)",
-                type: "Vinícola",
-                price: "R$ 950 – R$ 1.200/noite",
-                petStatus: "Jardim pet; suítes a confirmar",
-                highlights: "8 suítes históricas dentro da Vinícola Trindade em Bichinho.",
-                kitchen: false,
-                photo: photos.trindadeExp,
-                url: "https://www.vinicolatrindade.com.br/",
-                cta: "Ver site oficial"
-              }
+              { name: "Pousada Refúgio Tiradentes", type: "Pousada", price: "R$ 580 – R$ 780/noite", petStatus: "Pet-friendly gratuito (confirmado)", highlights: "A 600m do Centro, quartos amplos, café mineiro e sem taxa pet.", kitchen: false, photo: photos.refugioTiradentes, url: "https://refugiotiradentes.com.br/", cta: "Ver site oficial" },
+              { name: "Casas e Chalés no Centro (Airbnb)", type: "Airbnb", price: "R$ 520 – R$ 680/noite", petStatus: "Quintal privativo • 2 Pets", highlights: "Busca filtrada em Tiradentes com cozinha completa e filtro pet.", kitchen: true, photo: photos.tiradentesCentro, url: abnb("Tiradentes, Minas Gerais", "2026-12-28", "2027-01-03"), cta: "Buscar no Airbnb" },
+              { name: "Casarão Trindade (na Vinícola)", type: "Vinícola", price: "R$ 950 – R$ 1.200/noite", petStatus: "Jardim pet; suítes a confirmar", highlights: "8 suítes históricas dentro da Vinícola Trindade em Bichinho.", kitchen: false, photo: photos.trindadeExp, url: "https://www.vinicolatrindade.com.br/", cta: "Ver site oficial" }
             ]
           },
           {
@@ -471,39 +440,9 @@
             conciergeTip: "Quebra ideal para não dirigir mais de 5h direto no retorno.",
             activities: [],
             lodgings: [
-              {
-                name: "Chalés na Serra (Airbnb)",
-                type: "Airbnb",
-                price: "R$ 420 – R$ 550/noite",
-                petStatus: "2 Pets • Cozinha",
-                highlights: "Busca filtrada em Itaipava/Vale do Cuiabá com cozinha de apoio.",
-                kitchen: true,
-                photo: photos.candeias2,
-                url: abnb("Itaipava, Petrópolis, Rio de Janeiro", "2027-01-03", "2027-01-04"),
-                cta: "Buscar no Airbnb"
-              },
-              {
-                name: "Hotel Solar Fazenda do Cedro",
-                type: "Fazenda (Areal)",
-                price: "R$ 680 – R$ 820/noite",
-                petStatus: "Pet-friendly (confirmar taxa)",
-                highlights: "Beira da BR-040, clima de fazenda, lago e retorno rápido.",
-                kitchen: false,
-                photo: photos.solarCedro,
-                url: "https://solarfazendadocedro.com.br/",
-                cta: "Ver site oficial"
-              },
-              {
-                name: "Pousada Tankamana",
-                type: "Vale do Cuiabá",
-                price: "R$ 850 – R$ 1.050/noite",
-                petStatus: "Confirmar 2 pets/chalé (~6 kg) + taxa",
-                highlights: "Chalés rústicos imersos na Mata Atlântica.",
-                kitchen: false,
-                photo: photos.tankamana,
-                url: "https://www.tankamana.com.br/",
-                cta: "Ver site oficial"
-              }
+              { name: "Chalés na Serra (Airbnb)", type: "Airbnb", price: "R$ 420 – R$ 550/noite", petStatus: "2 Pets • Cozinha", highlights: "Busca filtrada em Itaipava/Vale do Cuiabá com cozinha de apoio.", kitchen: true, photo: photos.candeias2, url: abnb("Itaipava, Petrópolis, Rio de Janeiro", "2027-01-03", "2027-01-04"), cta: "Buscar no Airbnb" },
+              { name: "Hotel Solar Fazenda do Cedro", type: "Fazenda (Areal)", price: "R$ 680 – R$ 820/noite", petStatus: "Pet-friendly (confirmar taxa)", highlights: "Beira da BR-040, clima de fazenda, lago e retorno rápido.", kitchen: false, photo: photos.solarCedro, url: "https://solarfazendadocedro.com.br/", cta: "Ver site oficial" },
+              { name: "Pousada Tankamana", type: "Vale do Cuiabá", price: "R$ 850 – R$ 1.050/noite", petStatus: "Confirmar 2 pets/chalé (~6 kg) + taxa", highlights: "Chalés rústicos imersos na Mata Atlântica.", kitchen: false, photo: photos.tankamana, url: "https://www.tankamana.com.br/", cta: "Ver site oficial" }
             ]
           }
         ],
@@ -520,7 +459,7 @@
         title: "Mantiqueira Sem Pressa: Vinhos de Altitude, Cachoeiras & Lareira",
         subtitle: "9 noites em Pinhal/São Bento + 7 em Gonçalves — desfaça a mala só 1 vez",
         hooks: [
-          "5 vinícolas de altitude + Fazenda Oliq (azeites)",
+          "6 vinícolas de altitude + Fazenda Oliq (azeites)",
           "2 bases próximas (~1h15 entre elas, zero correria)",
           "Jardins pet-friendly, trilhas curtas e chalés c/ cozinha"
         ],
@@ -531,9 +470,9 @@
           foodNote: "Mercado/café no chalé + vinícolas e ceias",
           car: 2880,
           fuel: 870,
-          km: "~1.250 km (2 bases + passeios)",
+          km: "~980 km (2 bases fixas)",
           tickets: 750,
-          ticketsNote: "2–3 degustações selecionadas + garrafas p/ chalé"
+          ticketsNote: "Degustações + garrafas p/ chalé"
         },
         heroPhotos: [
           { url: photos.raizesBau, shortLabel: "Vinícola Raízes do Baú", caption: "Vinícola Raízes do Baú — piqueniques nos vinhedos de frente para a Pedra do Baú", location: "São Bento • SP", category: "Vinícola" },
@@ -553,8 +492,8 @@
               stop: "Parada estratégica (~2h45): Café em Resende / Penedo antes da subida."
             },
             place: "São Bento do Sapucaí & Santo Antônio do Pinhal",
-            desc: "4 vinícolas custo-benefício + Fazenda Oliq, Bauzinho (1.760m), Pico Agudo e Cachoeira do Lageado.",
-            conciergeTip: "Na Villa Santa Maria peça garrafa + bruschettas no jardim; na Essenza faça o Picnic/Deck (pet-friendly) em vez da Experiência Essenza (que proíbe pets).",
+            desc: "Vinícolas custo-benefício + Fazenda Oliq, Bauzinho (1.760m), Pico Agudo e Cachoeira do Lageado.",
+            conciergeTip: "Na Villa Santa Maria peça garrafa + bruschettas no jardim; na Essenza faça o Picnic/Deck (pet-friendly) em vez da Experiência Essenza.",
             activities: [
               { label: "Villa Santa Maria (Garrafa + Bruschettas)", tag: "vinicola", badge: "~R$ 220 casal • Jardim Pet", photo: photos.villaSantaMaria, caption: "Vinícola Villa Santa Maria — Brandina + bruschettas no jardim pet-friendly", location: "São Bento • SP", site: "https://www.villasantamaria.com.br/", insta: "https://www.instagram.com/vinicolavillasantamaria/" },
               { label: "Raízes do Baú (Piquenique Âncora)", tag: "vinicola", badge: "~R$ 150–220 • Pet", photo: photos.raizesBau, caption: "Vinícola Raízes do Baú — piquenique de frente para a Pedra do Baú", location: "São Bento • SP", site: "https://www.vinicolaraizesdobau.com.br/", insta: "https://www.instagram.com/vinicolafazendaportaldaluz/" },
@@ -565,39 +504,9 @@
               { label: "Cachoeira do Lageado, Amores & Toldi", tag: "natureza", badge: "Piscinas Naturais", photo: photos.cachLageado, caption: "Cachoeira do Lageado — quedas e piscinas naturais", location: "Pinhal • SP" }
             ],
             lodgings: [
-              {
-                name: "Chalés na Montanha (Airbnb)",
-                type: "Airbnb",
-                price: "R$ 520 – R$ 680/noite",
-                petStatus: "Privativo • 2 Pets",
-                highlights: "Busca filtrada em Santo Antônio do Pinhal com cozinha equipada e filtro pet.",
-                kitchen: true,
-                photo: photos.candeias1,
-                url: abnb("Santo Antônio do Pinhal, São Paulo", "2026-12-19", "2026-12-28"),
-                cta: "Buscar no Airbnb"
-              },
-              {
-                name: "Pousada Lua Bonita",
-                type: "Pousada",
-                price: "R$ 620 – R$ 780/noite",
-                petStatus: "Pet-friendly (confirmar 2 pets)",
-                highlights: "Próxima à Pedra do Baú e vinícolas; chalés acolhedores na serra.",
-                kitchen: false,
-                photo: photos.pedraBau,
-                url: "https://www.booking.com/searchresults.pt-br.html?ss=Pousada+Lua+Bonita+S%C3%A3o+Bento+do+Sapuca%C3%AD",
-                cta: "Ver no Booking"
-              },
-              {
-                name: "Pousada Vinhas do Pinhal",
-                type: "Pousada",
-                price: "R$ 750 – R$ 920/noite",
-                petStatus: "Aceita pets pequenos (confirmar)",
-                highlights: "Temática enoturística com vista da serra.",
-                kitchen: false,
-                photo: photos.pinhalIgreja,
-                url: "https://www.pousadavinhasdopinhal.com.br/",
-                cta: "Ver site oficial"
-              }
+              { name: "Chalés na Montanha (Airbnb)", type: "Airbnb", price: "R$ 520 – R$ 680/noite", petStatus: "Privativo • 2 Pets", highlights: "Busca filtrada em Santo Antônio do Pinhal com cozinha equipada e filtro pet.", kitchen: true, photo: photos.candeias1, url: abnb("Santo Antônio do Pinhal, São Paulo", "2026-12-19", "2026-12-28"), cta: "Buscar no Airbnb" },
+              { name: "Pousada Lua Bonita", type: "Pousada", price: "R$ 620 – R$ 780/noite", petStatus: "Pet-friendly (confirmar 2 pets)", highlights: "Próxima à Pedra do Baú e vinícolas; chalés acolhedores na serra.", kitchen: false, photo: photos.pedraBau, url: "https://www.booking.com/searchresults.pt-br.html?ss=Pousada+Lua+Bonita+S%C3%A3o+Bento+do+Sapuca%C3%AD", cta: "Ver no Booking" },
+              { name: "Pousada Vinhas do Pinhal", type: "Pousada", price: "R$ 750 – R$ 920/noite", petStatus: "Aceita pets pequenos (confirmar)", highlights: "Temática enoturística com vista da serra.", kitchen: false, photo: photos.pinhalIgreja, url: "https://www.pousadavinhasdopinhal.com.br/", cta: "Ver site oficial" }
             ]
           },
           {
@@ -619,39 +528,9 @@
               { label: "Fazenda Retiro das Pedras & Queijos", tag: "pet", badge: "Queijos & Café • Pet", photo: photos.goncalves, caption: "Vila de Gonçalves — queijarias, empórios e comida mineira", location: "Gonçalves • MG" }
             ],
             lodgings: [
-              {
-                name: "Chalés Serranos com Cozinha (Airbnb)",
-                type: "Airbnb",
-                price: "R$ 540 – R$ 690/noite",
-                petStatus: "Privativo • 2 Pets",
-                highlights: "Busca filtrada em Gonçalves com cozinha completa e filtro para 2 pets.",
-                kitchen: true,
-                photo: photos.candeias2,
-                url: abnb("Gonçalves, Minas Gerais", "2026-12-28", "2027-01-04"),
-                cta: "Buscar no Airbnb"
-              },
-              {
-                name: "Pousada Vida Verde",
-                type: "Fazenda",
-                price: "R$ 720 – R$ 880/noite",
-                petStatus: "Apenas chalés c/ hidro no bosque + taxa",
-                highlights: "Estilo fazenda mineira com lagos, áreas gramadas e comida caseira.",
-                kitchen: false,
-                photo: photos.serraGoncalves,
-                url: "https://www.pousadavidaverde.com.br/",
-                cta: "Ver site oficial"
-              },
-              {
-                name: "Pousada Cabanas no Mundo",
-                type: "Rural",
-                price: "R$ 790 – R$ 980/noite",
-                petStatus: "Pet-friendly (confirmar regras)",
-                highlights: "Cachoeira privativa e piscina natural por trilha interna.",
-                kitchen: false,
-                photo: photos.goncalves,
-                url: "https://www.pousadacabanasnomundo.com.br/",
-                cta: "Ver site oficial"
-              }
+              { name: "Chalés Serranos com Cozinha (Airbnb)", type: "Airbnb", price: "R$ 540 – R$ 690/noite", petStatus: "Privativo • 2 Pets", highlights: "Busca filtrada em Gonçalves com cozinha completa e filtro para 2 pets.", kitchen: true, photo: photos.candeias2, url: abnb("Gonçalves, Minas Gerais", "2026-12-28", "2027-01-04"), cta: "Buscar no Airbnb" },
+              { name: "Pousada Vida Verde", type: "Fazenda", price: "R$ 720 – R$ 880/noite", petStatus: "Apenas chalés c/ hidro no bosque + taxa", highlights: "Estilo fazenda mineira com lagos, áreas gramadas e comida caseira.", kitchen: false, photo: photos.serraGoncalves, url: "https://www.pousadavidaverde.com.br/", cta: "Ver site oficial" },
+              { name: "Pousada Cabanas no Mundo", type: "Rural", price: "R$ 790 – R$ 980/noite", petStatus: "Pet-friendly (confirmar regras)", highlights: "Cachoeira privativa e piscina natural por trilha interna.", kitchen: false, photo: photos.goncalves, url: "https://www.pousadacabanasnomundo.com.br/", cta: "Ver site oficial" }
             ]
           }
         ],
@@ -660,79 +539,262 @@
           { id: "wm1jnD9e6uc", title: "Santo Antônio do Pinhal: Passeios e Preços", tag: "Pinhal" },
           { id: "8sKfMQ-HQxg", title: "Gonçalves (MG): Roteiro Completo", tag: "Gonçalves" }
         ]
+      },
+      {
+        id: 2,
+        kicker: "NATAL EM PEDRA AZUL • RÉVEILLON NO CAPARAÓ",
+        title: "Caparaó & Montanhas Capixabas: Cafés Premiados & Poços Cristalinos",
+        subtitle: "7 noites em Pedra Azul/Domingos Martins + 9 noites em Alto Caparaó/Patrimônio da Penha",
+        hooks: [
+          "Melhores cafés especiais do Brasil & agroturismo (Venda Nova)",
+          "Auge das águas cristalinas em poços privativos pet-friendly",
+          "2 bases confortáveis (~1.050 km totais)"
+        ],
+        costs: {
+          lodging: 8960,
+          lodgingNote: "Média R$ 560/noite (Natal/Réveillon)",
+          food: 3400,
+          foodNote: "Empórios, vinhos, mercado e ceias",
+          car: 2880,
+          fuel: 860,
+          km: "~1.050 km • 2 bases",
+          tickets: 800,
+          ticketsNote: "Cafés, parques e passeios"
+        },
+        heroPhotos: [
+          { url: photos.pedraAzul, shortLabel: "Pedra Azul (ES)", caption: "Formação rochosa da Pedra Azul em Domingos Martins", location: "Pedra Azul • ES", category: "Natureza" },
+          { url: photos.rotaLagarto, shortLabel: "Rota do Lagarto", caption: "Rota do Lagarto — cafeterias, empórios de queijos e adegas", location: "Pedra Azul • ES", category: "Gastronomia" },
+          { url: photos.vistaPedraAzul, shortLabel: "Trilhas na Base", caption: "Trilhas leves e mirantes na base da Pedra Azul", location: "Domingos Martins • ES", category: "Trilha" },
+          { url: photos.caparaoHotel, shortLabel: "Serra do Caparaó", caption: "Hospedagem serrana cercada por mata em Alto Caparaó", location: "Alto Caparaó • MG", category: "Hospedagem" }
+        ],
+        stages: [
+          {
+            dates: "19/12 – 26/12 (7 noites — Natal)",
+            travelDetail: {
+              route: "Niterói (RJ) → Pedra Azul (ES)",
+              distance: "~430 km",
+              time: "~6h00",
+              road: "BR-101 Norte → BR-262",
+              bestWindow: "Sair 06h30",
+              stop: "Parada estratégica (~3h): Café/almoço em Campos dos Goytacazes ou Cachoeiro."
+            },
+            place: "Pedra Azul & Domingos Martins (ES)",
+            desc: "Rota do Lagarto (cafeterias, queijos, adegas), trilhas na base da Pedra Azul, Cachoeira do Galo e agroturismo em Venda Nova.",
+            conciergeTip: "Circuito de agroturismo de Venda Nova do Imigrante (socol, queijos e cafés) é ótimo para abastecer a cozinha do chalé.",
+            activities: [
+              { label: "Rota do Lagarto (Empórios & Adegas)", tag: "vinicola", badge: "Cafés, Queijos & Vinhos", photo: photos.rotaLagarto, caption: "Rota do Lagarto — cafeterias, empórios e adegas com vista para a Pedra Azul", location: "Pedra Azul • ES" },
+              { label: "Base da Pedra Azul & Cachoeira do Galo", tag: "natureza", badge: "Trilhas Leves • Pet", photo: photos.vistaPedraAzul, caption: "Trilhas acessíveis na base da Pedra Azul (pet-friendly na guia)", location: "Domingos Martins • ES" }
+            ],
+            lodgings: [
+              { name: "Chalés/Lofts na Rota do Lagarto (Airbnb)", type: "Airbnb", price: "R$ 520 – R$ 680/noite", petStatus: "Jardim • 2 Pets", highlights: "Vista para a pedra, cozinha equipada e jardim pet-friendly.", kitchen: true, photo: photos.pedraAzul, url: abnb("Pedra Azul, Domingos Martins, Espírito Santo", "2026-12-19", "2026-12-26"), cta: "Buscar no Airbnb" },
+              { name: "Pousada Peterle", type: "Rural", price: "R$ 580 – R$ 740/noite", petStatus: "Confirmar política pet", highlights: "Clima rural familiar, café colonial farto e áreas verdes amplas.", kitchen: false, photo: photos.rotaLagarto, url: "https://montanhascapixabas.org.br/pousada-peterle/", cta: "Ver página oficial" },
+              { name: "Pousada Rabo do Lagarto", type: "Charme", price: "R$ 780 – R$ 960/noite", petStatus: "Validar política pet antes", highlights: "Charme serrano, alta gastronomia e serviço especial de Natal.", kitchen: false, photo: photos.vistaPedraAzul, url: "https://rabodolagarto.com.br/", cta: "Ver site oficial" }
+            ]
+          },
+          {
+            dates: "26/12 – 04/01 (9 noites — Réveillon)",
+            travelDetail: {
+              route: "Pedra Azul → Alto Caparaó (~135 km) | Volta: Niterói (~390 km)",
+              distance: "135 km / 390 km",
+              time: "~2h15 / ~5h45 (04/01)",
+              road: "BR-262 → BR-116 / BR-482",
+              bestWindow: "Volta 04/01 sair 08h00",
+              stop: "Parada na volta (04/01): Almoço em Itaperuna ou Campos."
+            },
+            place: "Alto Caparaó (MG) & Patrimônio da Penha (ES)",
+            desc: "Poços naturais pet-friendly (Cachoeira da Farofa, Poço das Antas), Vale Verde/Encantado e fazendas de cafés premiados.",
+            conciergeTip: "O Parque Nacional do Caparaó restringe cães — priorize os poços naturais privativos pet-friendly de Patrimônio da Penha / Macieira.",
+            activities: [
+              { label: "Cachoeira da Farofa & Poço das Antas", tag: "natureza", badge: "Privativo • Pet-Friendly", photo: photos.caparaoHotel, caption: "Poços naturais privativos em Patrimônio da Penha / Macieira", location: "Patrimônio da Penha • ES" },
+              { label: "Fazendas de Cafés Especiais Premiados", tag: "pet", badge: "Tour Sensorial • Pet", photo: photos.fazendaMinas, caption: "Fazendas produtoras dos melhores cafés especiais do Brasil", location: "Alto Caparaó • MG" }
+            ],
+            lodgings: [
+              { name: "Chalés Beira-Rio com Cozinha (Airbnb)", type: "Airbnb", price: "R$ 460 – R$ 600/noite", petStatus: "Quintal cercado • 2 Pets", highlights: "Som de rio, cozinha completa e quintal cercado em Alto Caparaó / Penha.", kitchen: true, photo: photos.candeias1, url: abnb("Alto Caparaó, Minas Gerais", "2026-12-26", "2027-01-04"), cta: "Buscar no Airbnb" },
+              { name: "Pousada Estância Gourmet", type: "Pousada", price: "R$ 560 – R$ 710/noite", petStatus: "Confirmar política pet", highlights: "Gastronomia local, deck com vista para a serra e quartos amplos.", kitchen: false, photo: photos.serraGoncalves, url: "https://www.booking.com/searchresults.pt-br.html?ss=Pousada+Estancia+Gourmet+Alto+Caparao", cta: "Ver no Booking" },
+              { name: "Caparaó Parque Hotel", type: "Hotel Serra", price: "R$ 620 – R$ 790/noite", petStatus: "Confirmar política pet", highlights: "Estrutura de montanha com trilhas internas em Alto Caparaó.", kitchen: false, photo: photos.caparaoHotel, url: "https://caparaoparquehotel.com.br/", cta: "Ver site oficial" }
+            ]
+          }
+        ],
+        videos: []
+      },
+      {
+        id: 3,
+        kicker: "NATAL NA BOCAINA • RÉVEILLON EM MAUÁ",
+        title: "Bocaina & Visconde de Mauá: Fazendas Históricas & Poços Cristalinos",
+        subtitle: "8 noites em Bananal/São José do Barreiro (SP) + 8 noites em Mauá/Maringá (RJ/MG)",
+        hooks: [
+          "Viagem mais curta (~4h de ida, ~820 km totais)",
+          "Fazendas do Ciclo do Café séc. XIX + bistrôs de Maringá",
+          "Poços cristalinos (Escorrega, Marimbondo, Santo Isidro)"
+        ],
+        costs: {
+          lodging: 9440,
+          lodgingNote: "Média R$ 590/noite (fazendas + chalés)",
+          food: 3500,
+          foodNote: "Vinhos, bistrôs, mercado e ceias",
+          car: 2880,
+          fuel: 730,
+          km: "~820 km • 2 bases próximas",
+          tickets: 850,
+          ticketsNote: "Fazendas históricas e passeios"
+        },
+        heroPhotos: [
+          { url: photos.cachEscorrega, shortLabel: "Cachoeira do Escorrega", caption: "Cachoeira do Escorrega e poços cristalinos de Visconde de Mauá", location: "Maromba • RJ", category: "Cachoeira" },
+          { url: photos.fazendaResgate, shortLabel: "Fazenda Resgate (1828)", caption: "Fazendas históricas do Ciclo do Café do séc. XIX em Bananal", location: "Bananal • SP", category: "Fazenda" },
+          { url: photos.cachSantoIsidro, shortLabel: "Cachoeira Santo Isidro", caption: "Cachoeira Santo Isidro na Serra da Bocaina", location: "São José do Barreiro • SP", category: "Cachoeira" },
+          { url: photos.viscondeMaua, shortLabel: "Vila de Mauá & Maringá", caption: "Alameda gastronômica de Maringá e montanhas de Mauá", location: "Visconde de Mauá • RJ", category: "Cidade" }
+        ],
+        stages: [
+          {
+            dates: "19/12 – 27/12 (8 noites — Natal)",
+            travelDetail: {
+              route: "Niterói (RJ) → Bananal / São José do Barreiro (SP)",
+              distance: "~290 km",
+              time: "~4h00",
+              road: "Via Dutra (BR-116) → SP-068",
+              bestWindow: "Sair 08h00",
+              stop: "Viagem curta e direta (~4h), sem necessidade de parada longa."
+            },
+            place: "Bananal & São José do Barreiro (Serra da Bocaina)",
+            desc: "Fazendas do Ciclo do Café (Resgate, Loanda, Boa Vista), Cachoeiras do Bracuí e Santo Isidro, café colonial e queijos.",
+            conciergeTip: "Bananal fica a apenas ~4h de Niterói — ideal para chegar descansado e sem desgaste para os 2 Chihuahuas.",
+            activities: [
+              { label: "Fazendas Resgate, Loanda & Boa Vista", tag: "natureza", badge: "Ciclo do Café Séc. XIX", photo: photos.fazendaBoaVista, caption: "Fazendas históricas preservadas em Bananal (SP)", location: "Bananal • SP" },
+              { label: "Cachoeira Santo Isidro & Bracuí", tag: "natureza", badge: "Bocaina • Quedas", photo: photos.cachSantoIsidro, caption: "Cachoeira Santo Isidro — trilha acessível na Serra da Bocaina", location: "São José do Barreiro • SP" }
+            ],
+            lodgings: [
+              { name: "Fazenda Loanda (1840)", type: "Fazenda Séc. XIX", price: "R$ 620 – R$ 780/noite", petStatus: "Pet-friendly confirmado", highlights: "Hospedagem em fazenda histórica de 1840, piscina natural e fogão a lenha.", kitchen: false, photo: photos.fazendaResgate, url: "https://www.fazendaloanda.com/", cta: "Ver site oficial" },
+              { name: "Pousada Encanto da Bocaina", type: "Pousada Rural", price: "R$ 540 – R$ 690/noite", petStatus: "Ambiente tranquilo p/ cães", highlights: "Chalés no pé da serra com café rural em São José do Barreiro.", kitchen: false, photo: photos.encantoBocaina, url: "https://encantodabocaina.com.br/", cta: "Ver site oficial" },
+              { name: "Casas de Campo na Bocaina (Airbnb)", type: "Airbnb", price: "R$ 450 – R$ 580/noite", petStatus: "Privacidade • 2 Pets", highlights: "Busca filtrada na Bocaina com cozinha equipada e varanda.", kitchen: true, photo: photos.candeias2, url: abnb("Bananal, São Paulo", "2026-12-19", "2026-12-27"), cta: "Buscar no Airbnb" }
+            ]
+          },
+          {
+            dates: "27/12 – 04/01 (8 noites — Réveillon)",
+            travelDetail: {
+              route: "Bananal → Mauá (~115 km) | Volta: Niterói (~310 km)",
+              distance: "115 km / 310 km",
+              time: "~2h15 / ~4h20 (04/01)",
+              road: "Via Resende → RJ-151 • Volta: Via Dutra",
+              bestWindow: "Volta 04/01 sair 09h30",
+              stop: null
+            },
+            place: "Visconde de Mauá / Maringá / Maromba (RJ/MG)",
+            desc: "Poço do Marimbondo, Escorrega, Véu da Noiva, Poção da Maromba, bistrôs de Maringá (vinhos) e queijos/trutas.",
+            conciergeTip: "Os bistrôs da Alameda Gastronômica de Maringá têm decks externos pet-friendly e ótimas cartas de vinho.",
+            activities: [
+              { label: "Poço do Marimbondo, Escorrega & Maromba", tag: "natureza", badge: "Piscinas Cristalinas", photo: photos.cachEscorrega, caption: "Circuito de poços cristalinos em Visconde de Mauá", location: "Maromba • RJ" },
+              { label: "Alameda Gastronômica de Maringá", tag: "vinicola", badge: "Bistrôs & Vinhos • Deck Pet", photo: photos.viscondeMaua, caption: "Vila de Maringá — bistrôs com decks pet-friendly e cartas de vinho", location: "Maringá • RJ/MG" }
+            ],
+            lodgings: [
+              { name: "Chalés Beira-Rio c/ Cozinha (Airbnb)", type: "Airbnb", price: "R$ 550 – R$ 710/noite", petStatus: "Acesso ao rio • 2 Pets", highlights: "Busca filtrada em Mauá/Maringá com cozinha equipada e filtro pet.", kitchen: true, photo: photos.tijupa, url: abnb("Visconde de Mauá, Resende, Rio de Janeiro", "2026-12-27", "2027-01-04"), cta: "Buscar no Airbnb" },
+              { name: "Pousadas Rurais em Maringá (lado MG)", type: "Pousada", price: "R$ 650 – R$ 820/noite", petStatus: "Jardins • Sem fogos", highlights: "Réveillon intimista longe de fogos com café caseiro (ex: Terra da Luz).", kitchen: false, photo: photos.encantoBocaina, url: "https://www.booking.com/searchresults.pt-br.html?ss=Maringa+Minas+Gerais+Visconde+de+Maua", cta: "Ver no Booking" },
+              { name: "Hotel Bühler / Pousada Tijupá", type: "Charme", price: "R$ 780 – R$ 980/noite", petStatus: "Confirmar política pet", highlights: "Chalés de charme na Mata Atlântica com serviço de alto padrão.", kitchen: false, photo: photos.buhler, url: "https://www.hotelbuhler.com.br/", cta: "Ver site oficial" }
+            ]
+          }
+        ],
+        videos: []
       }
     ];
 
     const decisionMatrix = [
       {
-        criterion: "1. Enoturismo (Vinícolas)",
-        p1Badge: "PIOR", p1Type: "pior",
-        p1Text: "Apenas 3 vinícolas mais dispersas na rota.",
-        p2Badge: "MELHOR", p2Type: "melhor",
-        p2Text: "5 vinícolas de altitude concentradas (incluindo bate-volta na Vinícola Ferreira)."
+        criterion: "1. Enoturismo (Vinícolas Produtoras)",
+        cells: [
+          { b: "PIOR", t: "pior", d: "3 vinícolas dispersas" },
+          { b: "MELHOR", t: "melhor", d: "6 vinícolas + olival" },
+          { b: "PIOR", t: "pior", d: "Adegas e empórios" },
+          { b: "PIOR", t: "pior", d: "Cartas de bistrôs" }
+        ]
       },
       {
-        criterion: "2. Gastronomia Autoral & Azeites",
-        p1Badge: "PIOR", p1Type: "pior",
-        p1Text: "Menos opções de degustações em vinícolas e menor cultura de azeites.",
-        p2Badge: "MELHOR", p2Type: "melhor",
-        p2Text: "Degustações inteligentes (Villa Santa Maria, Ferreira, Essenza, Raízes do Baú) e azeites (Oliq)."
+        criterion: "2. Gastronomia Autoral, Bistrôs & Empórios",
+        cells: [
+          { b: "PIOR", t: "pior", d: "Foco tradicional" },
+          { b: "MELHOR", t: "melhor", d: "Bistrôs e enogastronomia" },
+          { b: "IGUAL", t: "igual", d: "Rota do Lagarto" },
+          { b: "MELHOR", t: "melhor", d: "Alameda de Maringá" }
+        ]
       },
       {
-        criterion: "3. Gastronomia Mineira Raiz & Quitandas",
-        p1Badge: "MELHOR", p1Type: "melhor",
-        p1Text: "Fartura tradicional no fogão a lenha, doces de tacho, broas e quitandas autênticas.",
-        p2Badge: "PIOR", p2Type: "pior",
-        p2Text: "Forte em Gonçalves, mas o eixo paulista (São Bento/Pinhal) puxa mais para bistrôs contemporâneos."
+        criterion: "3. Comida Mineira Raiz & Café Colonial",
+        cells: [
+          { b: "MELHOR", t: "melhor", d: "Fogão a lenha e quitandas" },
+          { b: "PIOR", t: "pior", d: "Eixo SP mais contemporâneo" },
+          { b: "IGUAL", t: "igual", d: "Café colonial capixaba" },
+          { b: "IGUAL", t: "igual", d: "Café rural da Bocaina" }
+        ]
       },
       {
-        criterion: "4. Fazendas Históricas & Hotéis-Fazenda",
-        p1Badge: "MELHOR", p1Type: "melhor",
-        p1Text: "Fazendas tradicionais reais (Vale da Mata, Arraial do Conto, Solar do Cedro) com estrutura completa.",
-        p2Badge: "PIOR", p2Type: "pior",
-        p2Text: "Predomínio de chalés de montanha e pousadas rurais em vez de hotéis-fazenda históricos."
+        criterion: "4. Fazendas Históricas & Rurais",
+        cells: [
+          { b: "MELHOR", t: "melhor", d: "Fazendas coloniais" },
+          { b: "PIOR", t: "pior", d: "Chalés serranos" },
+          { b: "IGUAL", t: "igual", d: "Fazendas de café" },
+          { b: "MELHOR", t: "melhor", d: "Fazendas do café séc. XIX" }
+        ]
       },
       {
-        criterion: "5. Cafés Especiais, Queijos & Cozinha",
-        p1Badge: "IGUAL", p1Type: "igual",
-        p1Text: "Excelente oferta de queijos mineiros (Jaguara/Tiradentes), cafés especiais e empórios.",
-        p2Badge: "IGUAL", p2Type: "igual",
-        p2Text: "Excelente oferta de queijos da Terra Fria (Gonçalves), cafés de altitude e empórios locais."
+        criterion: "5. Cafés Especiais & Queijos Artesanais",
+        cells: [
+          { b: "IGUAL", t: "igual", d: "Jaguara / Tiradentes" },
+          { b: "IGUAL", t: "igual", d: "Terra Fria / Gonçalves" },
+          { b: "MELHOR", t: "melhor", d: "Melhores cafés do Brasil" },
+          { b: "IGUAL", t: "igual", d: "Queijos da Bocaina" }
+        ]
       },
       {
-        criterion: "6. Trilhas, Quedas d'Água, Piscinas & Grutas",
-        p1Badge: "PIOR em trilhas | ÚNICO em Grutas", p1Type: "pior",
-        p1Text: "Grutas Rei do Mato e Maquiné, mas menos piscinas naturais acessíveis.",
-        p2Badge: "MELHOR", p2Type: "melhor",
-        p2Text: "Alta concentração de cachoeiras rasas, piscinas naturais (Simão, Sete Quedas, Lageado) e mirantes fáceis."
+        criterion: "6. Piscinas Naturais, Cachoeiras & Grutas",
+        cells: [
+          { b: "PIOR em piscinas", t: "pior", d: "ÚNICO em Grutas" },
+          { b: "MELHOR", t: "melhor", d: "Simão, Sete Quedas, Lageado" },
+          { b: "MELHOR", t: "melhor", d: "Farofa, Poço das Antas" },
+          { b: "MELHOR", t: "melhor", d: "Escorrega, Marimbondo" }
+        ]
       },
       {
         criterion: "7. Conforto para os 2 Chihuahuas",
-        p1Badge: "PIOR", p1Type: "pior",
-        p1Text: "Grutas, caves fechadas e ladeiras pedregosas exigem deixá-los no quarto com mais frequência.",
-        p2Badge: "MELHOR", p2Type: "melhor",
-        p2Text: "Vinícolas com jardins abertos, trilhas curtas acessíveis na guia e chalés com quintal/mata."
+        cells: [
+          { b: "PIOR", t: "pior", d: "Mais restrições (grutas)" },
+          { b: "MELHOR", t: "melhor", d: "Jardins e trilhas curtas" },
+          { b: "IGUAL", t: "igual", d: "Poços privativos pet" },
+          { b: "MELHOR", t: "melhor", d: "Viagem curta e decks pet" }
+        ]
       },
       {
         criterion: "8. Logística de Estrada & Troca de Malas",
-        p1Badge: "PIOR", p1Type: "pior",
-        p1Text: "4 trocas de hospedagem e ~1.220 km rodados.",
-        p2Badge: "MELHOR", p2Type: "melhor",
-        p2Text: "Apenas 2 bases fixas (9 noites + 7 noites) e ~1.250 km totais com passeios locais."
+        cells: [
+          { b: "PIOR", t: "pior", d: "4 trocas, ~1.220 km" },
+          { b: "IGUAL", t: "igual", d: "2 bases, ~980 km" },
+          { b: "IGUAL", t: "igual", d: "2 bases, ~1.050 km" },
+          { b: "MELHOR", t: "melhor", d: "4h de ida, 2 bases, ~820 km" }
+        ]
       },
       {
         criterion: "9. Clima no Verão (Sem depender de AC)",
-        p1Badge: "PIOR", p1Type: "pior",
-        p1Text: "Mais quente (especialmente Sete Lagoas) e ladeiras escorregadias na chuva.",
-        p2Badge: "MELHOR", p2Type: "melhor",
-        p2Text: "Altitude (1.200m–1.700m) garante noites frescas (15°C–18°C), dispensando AC com conforto."
+        cells: [
+          { b: "PIOR", t: "pior", d: "Mais quente (Sete Lagoas)" },
+          { b: "MELHOR", t: "melhor", d: "Noites 15°C–18°C" },
+          { b: "MELHOR", t: "melhor", d: "Altitude fresca (ES/MG)" },
+          { b: "IGUAL", t: "igual", d: "Ameno, mais úmido" }
+        ]
       },
       {
         criterion: "10. Investimento Total (c/ Carro Alugado)",
-        p1Badge: "MELHOR", p1Type: "melhor",
-        p1Text: "R$ 16.280 (economia de R$ 1.380 no total).",
-        p2Badge: "PIOR", p2Type: "pior",
-        p2Text: "R$ 17.660 (apenas R$ 1.380 acima do Plano 1 ao otimizar degustações + garrafas no chalé)."
+        cells: [
+          { b: "MELHOR", t: "melhor", d: "R$ 16.280" },
+          { b: "PIOR", t: "pior", d: "R$ 17.660" },
+          { b: "IGUAL", t: "igual", d: "R$ 16.900" },
+          { b: "IGUAL", t: "igual", d: "R$ 17.400" }
+        ]
+      },
+      {
+        criterion: "11. Adequação ao Período (19/12–04/01 Verão)",
+        cells: [
+          { b: "PIOR", t: "pior", d: "Chuvas em ladeiras e fora da vindima" },
+          { b: "MELHOR", t: "melhor", d: "Cachoeiras cheias + degustações normais" },
+          { b: "MELHOR", t: "melhor", d: "Águas cristalinas e cafés o ano todo" },
+          { b: "IGUAL", t: "igual", d: "Auge dos poços, porém mais úmido à tarde" }
+        ]
       }
     ];
 
@@ -836,40 +898,36 @@
     function renderDecisionMatrix() {
       const tbody = document.getElementById("decision-matrix-tbody");
       const mobile = document.getElementById("decision-matrix-mobile");
+      const planNames = ["1. Estrada Real", "2. Mantiqueira", "3. Caparaó & ES", "4. Bocaina & Mauá"];
+
       if (tbody) {
         tbody.innerHTML = decisionMatrix.map(row => `
           <tr class="hover:bg-stone-50/70 transition-colors">
-            <td class="py-3 px-4 font-semibold text-ink align-top">${row.criterion}</td>
-            <td class="py-3 px-4 text-stone-600 align-top">
-              <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border mb-1 ${badgeClass(row.p1Type)}">${row.p1Badge}</span>
-              <p class="leading-snug">${row.p1Text}</p>
-            </td>
-            <td class="py-3 px-4 text-stone-700 align-top bg-emerald-50/20">
-              <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border mb-1 ${badgeClass(row.p2Type)}">${row.p2Badge}</span>
-              <p class="leading-snug">${row.p2Text}</p>
-            </td>
+            <td class="py-3 px-3 font-semibold text-ink align-top">${row.criterion}</td>
+            ${row.cells.map((c, idx) => `
+              <td class="py-3 px-3 text-stone-600 align-top ${idx === 1 ? 'bg-emerald-50/20' : ''}">
+                <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border mb-1 ${badgeClass(c.t)}">${c.b}</span>
+                <p class="leading-snug">${c.d}</p>
+              </td>
+            `).join('')}
           </tr>
         `).join('');
       }
+
       if (mobile) {
         mobile.innerHTML = decisionMatrix.map(row => `
           <div class="rounded-xl border border-stone-200/80 p-3 bg-stone-50/40 space-y-2">
             <div class="text-xs font-bold text-ink">${row.criterion}</div>
-            <div class="grid grid-cols-1 gap-2 text-[11px]">
-              <div class="bg-white rounded-lg p-2.5 border border-stone-200/70">
-                <div class="flex items-center justify-between gap-2 mb-1">
-                  <span class="font-semibold text-stone-500">Plano 1 • Estrada Real</span>
-                  <span class="text-[9px] font-bold uppercase px-2 py-0.5 rounded-full border ${badgeClass(row.p1Type)}">${row.p1Badge}</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px]">
+              ${row.cells.map((c, idx) => `
+                <div class="bg-white rounded-lg p-2 border ${idx === 1 ? 'border-emerald-200/80' : 'border-stone-200/70'}">
+                  <div class="flex items-center justify-between gap-2 mb-0.5">
+                    <span class="font-semibold ${idx === 1 ? 'text-forest' : 'text-stone-500'}">${planNames[idx]}</span>
+                    <span class="text-[9px] font-bold uppercase px-1.5 py-0.5 rounded-full border ${badgeClass(c.t)}">${c.b}</span>
+                  </div>
+                  <p class="text-stone-600 leading-snug">${c.d}</p>
                 </div>
-                <p class="text-stone-600 leading-snug">${row.p1Text}</p>
-              </div>
-              <div class="bg-white rounded-lg p-2.5 border border-emerald-200/70">
-                <div class="flex items-center justify-between gap-2 mb-1">
-                  <span class="font-semibold text-forest">Plano 2 • Mantiqueira</span>
-                  <span class="text-[9px] font-bold uppercase px-2 py-0.5 rounded-full border ${badgeClass(row.p2Type)}">${row.p2Badge}</span>
-                </div>
-                <p class="text-stone-700 leading-snug">${row.p2Text}</p>
-              </div>
+              `).join('')}
             </div>
           </div>
         `).join('');
@@ -880,47 +938,43 @@
       const tbody = document.getElementById("comparison-tbody");
       const mobileBox = document.getElementById("comparison-mobile");
       const totals = plans.map(getPlanTotal);
+      const planNames = ["1. Estrada Real", "2. Mantiqueira", "3. Caparaó & ES", "4. Bocaina & Mauá"];
 
       const rows = [
         {
           label: "Investimento Total",
-          v0: `${fmtBRL(totals[0])} (~${fmtBRL(Math.round(totals[0] / 16))}/dia)`,
-          v1: `${fmtBRL(totals[1])} (~${fmtBRL(Math.round(totals[1] / 16))}/dia)`,
+          vals: totals.map(t => `${fmtBRL(t)} (~${fmtBRL(Math.round(t / 16))}/dia)`),
           highlight: true
         },
         {
           label: "Hospedagem (16 diárias)",
-          v0: `${fmtBRL(plans[0].costs.lodging)} (${plans[0].costs.lodgingNote})`,
-          v1: `${fmtBRL(plans[1].costs.lodging)} (${plans[1].costs.lodgingNote})`
+          vals: plans.map(p => `${fmtBRL(p.costs.lodging)} (${p.costs.lodgingNote})`)
         },
         {
           label: "Alimentação, Mercado & Ceias",
-          v0: `${fmtBRL(plans[0].costs.food)} (${plans[0].costs.foodNote})`,
-          v1: `${fmtBRL(plans[1].costs.food)} (${plans[1].costs.foodNote})`
+          vals: plans.map(p => `${fmtBRL(p.costs.food)} (${p.costs.foodNote})`)
         },
         {
           label: "Aluguel de Carro (16 dias)",
-          v0: `${fmtBRL(plans[0].costs.car)} (saída Niterói)`,
-          v1: `${fmtBRL(plans[1].costs.car)} (saída Niterói)`
+          vals: plans.map(p => `${fmtBRL(p.costs.car)} (saída Niterói)`)
         },
         {
           label: "Combustível + Pedágios",
-          v0: `${fmtBRL(plans[0].costs.fuel)} (${plans[0].costs.km})`,
-          v1: `${fmtBRL(plans[1].costs.fuel)} (${plans[1].costs.km})`
+          vals: plans.map(p => `${fmtBRL(p.costs.fuel)} (${p.costs.km})`)
         },
         {
-          label: "Vinícolas, Grutas & Parques",
-          v0: `${fmtBRL(plans[0].costs.tickets)} (${plans[0].costs.ticketsNote})`,
-          v1: `${fmtBRL(plans[1].costs.tickets)} (${plans[1].costs.ticketsNote})`
+          label: "Vinícolas, Parques & Passeios",
+          vals: plans.map(p => `${fmtBRL(p.costs.tickets)} (${p.costs.ticketsNote})`)
         }
       ];
 
       if (tbody) {
         tbody.innerHTML = rows.map(r => `
           <tr class="${r.highlight ? 'bg-white/10 font-bold text-white' : ''}">
-            <td class="py-3 px-4 font-semibold text-stone-200">${r.label}</td>
-            <td class="py-3 px-4 tabular-nums ${r.highlight ? 'text-white text-base' : 'text-stone-300'}">${r.v0}</td>
-            <td class="py-3 px-4 tabular-nums ${r.highlight ? 'text-emerald-300 text-base' : 'text-stone-300'}">${r.v1}</td>
+            <td class="py-3 px-3 font-semibold text-stone-200">${r.label}</td>
+            ${r.vals.map((v, idx) => `
+              <td class="py-3 px-3 tabular-nums ${r.highlight ? (idx === 1 ? 'text-emerald-300 text-sm' : 'text-white text-sm') : 'text-stone-300'}">${v}</td>
+            `).join('')}
           </tr>
         `).join('');
       }
@@ -929,15 +983,13 @@
         mobileBox.innerHTML = rows.map(r => `
           <div class="bg-white/5 rounded-xl border border-white/10 p-3.5 ${r.highlight ? 'bg-white/10 border-emerald-400/30' : ''}">
             <div class="text-[11px] font-bold uppercase tracking-wider text-stone-400 mb-2">${r.label}</div>
-            <div class="grid grid-cols-2 gap-3 text-xs">
-              <div>
-                <div class="text-[10px] font-semibold text-stone-400">1. Estrada Real</div>
-                <div class="mt-0.5 ${r.highlight ? 'font-bold text-white text-sm' : 'text-stone-200'}">${r.v0}</div>
-              </div>
-              <div>
-                <div class="text-[10px] font-semibold text-emerald-300">2. Mantiqueira</div>
-                <div class="mt-0.5 ${r.highlight ? 'font-bold text-emerald-300 text-sm' : 'text-stone-200'}">${r.v1}</div>
-              </div>
+            <div class="grid grid-cols-2 gap-2.5 text-xs">
+              ${r.vals.map((v, idx) => `
+                <div>
+                  <div class="text-[10px] font-semibold ${idx === 1 ? 'text-emerald-300' : 'text-stone-400'}">${planNames[idx]}</div>
+                  <div class="mt-0.5 ${r.highlight ? (idx === 1 ? 'font-bold text-emerald-300 text-sm' : 'font-bold text-white text-sm') : 'text-stone-200'}">${v}</div>
+                </div>
+              `).join('')}
             </div>
           </div>
         `).join('');
@@ -947,7 +999,7 @@
     function selectPlan(index) {
       activePlanIndex = index;
 
-      [0, 1].forEach(i => {
+      [0, 1, 2, 3].forEach(i => {
         const tab = document.getElementById(`tab-${i}`);
         if (i === index) {
           tab.className = "px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer truncate bg-ink text-white shadow-xs";
@@ -968,7 +1020,7 @@
 
       const filterDefs = [
         { id: "all", label: "Todos" },
-        { id: "vinicola", label: "Vinícolas" },
+        ...(plan.stages.some(s => s.activities.some(a => a.tag === "vinicola")) ? [{ id: "vinicola", label: "Vinícolas & Adegas" }] : []),
         { id: "natureza", label: "Trilhas & Piscinas Naturais" },
         ...(plan.id === 0 ? [{ id: "gruta", label: "Grutas" }] : []),
         { id: "pet", label: "Pet-Friendly" }
@@ -1047,9 +1099,8 @@
       `;
 
       bodyEl.innerHTML = `
-        <!-- Category Filter Strip -->
         <div id="roteiro-etapas" class="scroll-mt-24 flex flex-wrap items-center justify-between gap-2 bg-white px-4 py-3 rounded-2xl border border-stone-200/90">
-          <span class="text-xs font-semibold text-stone-600">Filtrar atrações e vinícolas:</span>
+          <span class="text-xs font-semibold text-stone-600">Filtrar atrações:</span>
           <div class="flex flex-wrap gap-1.5">
             ${filterDefs.map(f => `
               <button onclick="setFilter('${f.id}')"
@@ -1060,7 +1111,6 @@
           </div>
         </div>
 
-        <!-- Stages: Concise Visual Cards + Inline Winery Links + Unique Lodging Photos -->
         <section class="space-y-6">
           ${plan.stages.map((stage, idx) => {
             const visibleActivities = activeFilter === "all"
@@ -1127,9 +1177,8 @@
                   </div>
                 ` : `<div class="mt-4 text-xs text-stone-500 bg-stone-50 border border-stone-200/70 rounded-xl px-3.5 py-2.5 flex items-center justify-between"><span>Nenhuma atividade nesta categoria para esta etapa.</span><button onclick="setFilter('all')" class="text-forest font-semibold underline cursor-pointer">Limpar filtro</button></div>`) : ''}
 
-                <!-- 3 Lodging Options Grid -->
                 <div class="mt-5 pt-4 border-t border-stone-100">
-                  <div class="text-[11px] font-bold uppercase tracking-wider text-stone-500 mb-3">3 Opções de Hospedagem Pet-Friendly</div>
+                  <div class="text-[11px] font-bold uppercase tracking-wider text-stone-500 mb-3">3 Opções de Hospedagem</div>
                   <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
                     ${stage.lodgings.map(l => `
                       <div class="rounded-xl border overflow-hidden ${l.kitchen ? 'border-emerald-300/80 bg-emerald-50/20' : 'border-stone-200/80 bg-stone-50/50'} hover:bg-white transition-colors flex flex-col justify-between">
@@ -1169,37 +1218,38 @@
           }).join('')}
         </section>
 
-        <!-- Visual Video Suggestions Strip (Short & Guide Videos) -->
-        <section class="bg-white rounded-2xl p-4 sm:p-6 border border-stone-200/90">
-          <div class="flex items-center justify-between gap-2 mb-4">
-            <div>
-              <span class="text-[10px] font-bold uppercase tracking-widest text-red-600">Sugestões em Vídeo</span>
-              <h3 class="font-serif text-lg sm:text-xl font-semibold text-ink">Explore o Clima da Região</h3>
-            </div>
-            <span class="text-[11px] text-stone-500">Clique para assistir na página</span>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-${plan.videos.length > 3 ? '4' : '3'} gap-3.5">
-            ${plan.videos.map((v, vIdx) => `
-              <div class="rounded-xl border border-stone-200/80 overflow-hidden bg-stone-50/50 flex flex-col">
-                <div id="vbox-${plan.id}-${vIdx}" class="relative aspect-video bg-stone-900 group cursor-pointer"
-                  onclick="playVideoCard('vbox-${plan.id}-${vIdx}', '${v.id}', '${v.title.replace(/'/g, "\\'")}')">
-                  <img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="${v.title}"
-                    class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" />
-                  <div class="absolute inset-0 bg-stone-950/30 flex items-center justify-center">
-                    <span class="w-11 h-11 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform text-sm">▶</span>
-                  </div>
-                  <span class="absolute top-2 left-2 bg-stone-950/75 text-white text-[10px] font-semibold px-2 py-0.5 rounded-md">${v.tag}</span>
-                </div>
-                <div class="p-3 flex items-center justify-between gap-2">
-                  <p class="text-xs font-semibold text-ink leading-snug line-clamp-2">${v.title}</p>
-                  <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener noreferrer"
-                    class="text-[10px] font-bold text-red-600 hover:underline shrink-0">YT ↗</a>
-                </div>
+        ${plan.videos.length ? `
+          <section class="bg-white rounded-2xl p-4 sm:p-6 border border-stone-200/90">
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-red-600">Sugestões em Vídeo</span>
+                <h3 class="font-serif text-lg sm:text-xl font-semibold text-ink">Explore o Clima da Região</h3>
               </div>
-            `).join('')}
-          </div>
-        </section>
+              <span class="text-[11px] text-stone-500">Clique para assistir na página</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-${plan.videos.length > 3 ? '4' : '3'} gap-3.5">
+              ${plan.videos.map((v, vIdx) => `
+                <div class="rounded-xl border border-stone-200/80 overflow-hidden bg-stone-50/50 flex flex-col">
+                  <div id="vbox-${plan.id}-${vIdx}" class="relative aspect-video bg-stone-900 group cursor-pointer"
+                    onclick="playVideoCard('vbox-${plan.id}-${vIdx}', '${v.id}', '${v.title.replace(/'/g, "\\'")}')">
+                    <img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="${v.title}"
+                      class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" />
+                    <div class="absolute inset-0 bg-stone-950/30 flex items-center justify-center">
+                      <span class="w-11 h-11 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform text-sm">▶</span>
+                    </div>
+                    <span class="absolute top-2 left-2 bg-stone-950/75 text-white text-[10px] font-semibold px-2 py-0.5 rounded-md">${v.tag}</span>
+                  </div>
+                  <div class="p-3 flex items-center justify-between gap-2">
+                    <p class="text-xs font-semibold text-ink leading-snug line-clamp-2">${v.title}</p>
+                    <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener noreferrer"
+                      class="text-[10px] font-bold text-red-600 hover:underline shrink-0">YT ↗</a>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </section>
+        ` : ''}
       `;
     }
 
@@ -1212,8 +1262,10 @@
     });
 
     document.addEventListener("DOMContentLoaded", () => {
-      document.getElementById("mood-price-0").textContent = fmtBRL(getPlanTotal(plans[0]));
-      document.getElementById("mood-price-1").textContent = fmtBRL(getPlanTotal(plans[1]));
+      plans.forEach((p, idx) => {
+        const el = document.getElementById(`mood-price-${idx}`);
+        if (el) el.textContent = fmtBRL(getPlanTotal(p));
+      });
       renderDecisionMatrix();
       selectPlan(1);
       renderComparisonTable();
