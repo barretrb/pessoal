@@ -105,7 +105,7 @@
           <div class="absolute bottom-2 left-2.5 right-2.5 sm:bottom-4 sm:left-4 sm:right-4">
             <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-amber-300 block leading-tight">Roteiro 1 • História & Grutas</span>
             <h3 class="font-serif text-xs sm:text-xl font-semibold text-white mt-0.5 leading-tight">Casario Colonial, Pedra & Grutas</h3>
-            <p class="text-[10px] sm:text-xs text-stone-200 mt-0.5 sm:mt-1"><span class="hidden sm:inline">4 paradas culturais • </span>R$ 16.280<span class="hidden sm:inline"> (carro alugado)</span></p>
+            <p class="text-[10px] sm:text-xs text-stone-200 mt-0.5 sm:mt-1"><span class="hidden sm:inline">4 paradas culturais • </span><span id="mood-price-0" class="font-semibold"></span><span class="hidden sm:inline"> (carro alugado)</span></p>
           </div>
         </div>
 
@@ -118,46 +118,45 @@
           <div class="absolute bottom-2 left-2.5 right-2.5 sm:bottom-4 sm:left-4 sm:right-4">
             <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-emerald-300 block leading-tight">Roteiro 2 • Vinhedos & Lareira</span>
             <h3 class="font-serif text-xs sm:text-xl font-semibold text-white mt-0.5 leading-tight">Pôr do Sol na Serra & 5 Vinícolas</h3>
-            <p class="text-[10px] sm:text-xs text-stone-200 mt-0.5 sm:mt-1"><span class="hidden sm:inline">2 bases fixas sem pressa • </span>R$ 18.160<span class="hidden sm:inline"> (carro alugado)</span></p>
+            <p class="text-[10px] sm:text-xs text-stone-200 mt-0.5 sm:mt-1"><span class="hidden sm:inline">2 bases fixas sem pressa • </span><span id="mood-price-1" class="font-semibold"></span><span class="hidden sm:inline"> (carro alugado)</span></p>
           </div>
         </div>
       </div>
     </section>
 
-        <!-- Matriz de Decisão Rápida (10 Critérios) -->
-    <section id="matriz-decisao" class="bg-white rounded-3xl p-4 sm:p-6 border border-stone-200/90 shadow-xs">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pb-4 mb-4 border-b border-stone-100">
-        <div>
-          <span class="text-[11px] font-bold uppercase tracking-widest text-forest">Comparativo Direto • 10 Critérios</span>
-          <h2 class="font-serif text-xl sm:text-2xl font-semibold text-ink mt-0.5">Matriz de Decisão Rápida (Plano 1 vs. Plano 2)</h2>
-        </div>
-        <div class="inline-flex items-center gap-2 bg-stone-100 border border-stone-200 px-3 py-1.5 rounded-xl text-xs font-semibold text-ink self-start sm:self-auto">
-          <span>Placar Objetivo:</span>
-          <span class="text-forest font-bold">Plano 2 (6 Melhor)</span>
+    <!-- Matriz de Decisão Rápida (Collapsible Bar so #plan-hero stays in 1st fold) -->
+    <details id="matriz-decisao" class="group bg-white rounded-2xl border border-stone-200/90 shadow-xs">
+      <summary class="list-none cursor-pointer p-3.5 sm:px-5 sm:py-3.5 flex flex-wrap items-center justify-between gap-2 select-none">
+        <div class="flex flex-wrap items-center gap-2 text-xs">
+          <span class="font-bold uppercase tracking-wider text-forest">Placar Objetivo:</span>
+          <span class="bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5 rounded-full font-bold">Plano 2 (6 Melhor)</span>
           <span class="text-stone-400">vs.</span>
-          <span class="text-amber-800 font-bold">Plano 1 (3 Melhor)</span>
-          <span class="text-stone-400">|</span>
-          <span class="text-stone-600">1 Empate</span>
+          <span class="bg-amber-50 text-amber-800 border border-amber-200 px-2 py-0.5 rounded-full font-bold">Plano 1 (3 Melhor)</span>
+          <span class="text-stone-500 font-medium">• 1 Empate</span>
+        </div>
+        <span class="text-xs font-semibold text-forest group-open:hidden">Ver matriz (10 critérios) ▾</span>
+        <span class="text-xs font-semibold text-stone-500 hidden group-open:inline">Recolher matriz ▴</span>
+      </summary>
+
+      <div class="px-4 pb-4 sm:px-6 sm:pb-6 pt-2 border-t border-stone-100">
+        <!-- Mobile Cards (< md) -->
+        <div id="decision-matrix-mobile" class="grid grid-cols-1 gap-2.5 md:hidden"></div>
+
+        <!-- Desktop Table (>= md) -->
+        <div class="hidden md:block overflow-x-auto rounded-2xl border border-stone-200/80">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="bg-stone-50 text-stone-600 text-[11px] uppercase tracking-wider border-b border-stone-200">
+                <th class="py-3 px-4 font-semibold w-[24%]">Critério</th>
+                <th class="py-3 px-4 font-semibold w-[38%]">Plano 1: Estrada Real (MG)</th>
+                <th class="py-3 px-4 font-semibold w-[38%] text-forest">Plano 2: Serra da Mantiqueira</th>
+              </tr>
+            </thead>
+            <tbody id="decision-matrix-tbody" class="divide-y divide-stone-100"></tbody>
+          </table>
         </div>
       </div>
-
-      <!-- Mobile Cards (< md) -->
-      <div id="decision-matrix-mobile" class="grid grid-cols-1 gap-2.5 md:hidden"></div>
-
-      <!-- Desktop Table (>= md) -->
-      <div class="hidden md:block overflow-x-auto rounded-2xl border border-stone-200/80">
-        <table class="w-full text-left border-collapse text-xs">
-          <thead>
-            <tr class="bg-stone-50 text-stone-600 text-[11px] uppercase tracking-wider border-b border-stone-200">
-              <th class="py-3 px-4 font-semibold w-[24%]">Critério</th>
-              <th class="py-3 px-4 font-semibold w-[38%]">Plano 1: Estrada Real (MG)</th>
-              <th class="py-3 px-4 font-semibold w-[38%] text-forest">Plano 2: Serra da Mantiqueira</th>
-            </tr>
-          </thead>
-          <tbody id="decision-matrix-tbody" class="divide-y divide-stone-100"></tbody>
-        </table>
-      </div>
-    </section>
+    </details>
 
     <div id="plan-hero"></div>
     <div id="plan-body" class="space-y-6"></div>
@@ -245,14 +244,14 @@
       goncalves: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Gon%C3%A7alves_%28MG%29.jpg/960px-Gon%C3%A7alves_%28MG%29.jpg",
       serraGoncalves: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Vista_Rural_de_Gon%C3%A7alves%2C_Minas_Gerais.jpg/960px-Vista_Rural_de_Gon%C3%A7alves%2C_Minas_Gerais.jpg",
       chaleSerra: "https://pousadacandeias.com.br/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-09-at-21.49.42.jpeg",
-      cachGrande: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Cachoeira_Grande_%28Serra_do_Cip%C3%B3_-_MG%29.jpg/960px-Cachoeira_Grande_%28Serra_do_Cip%C3%B3_-_MG%29.jpg",
-      chaleCozinha: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Rustic_wood_cabin_interior_with_dining_table_kitchenette_and_bedroom_area.jpg/960px-Rustic_wood_cabin_interior_with_dining_table_kitchenette_and_bedroom_area.jpg",
-      chaleLareira: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Case_Mountain_Cabin_Interior_with_Lit_Fireplace_November_2024.jpg/960px-Case_Mountain_Cabin_Interior_with_Lit_Fireplace_November_2024.jpg",
-      chaleMontanha: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Traditional_wooden_cabins_in_the_idyllic_Slovenian_mountains_%2852339466417%29.jpg/960px-Traditional_wooden_cabins_in_the_idyllic_Slovenian_mountains_%2852339466417%29.jpg",
-      chaleCampo: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Visitors_enjoy_a_sunny_day_at_a_wooden_cabin_in_the_countryside_surrounded_by_greenery_and_mountains.jpg/960px-Visitors_enjoy_a_sunny_day_at_a_wooden_cabin_in_the_countryside_surrounded_by_greenery_and_mountains.jpg",
+      cachGrande: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Prazeres%2C_cachoeira.jpg/960px-Prazeres%2C_cachoeira.jpg",
+      chaleCozinha: "https://pousadacandeias.com.br/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-09-at-21.49.42.jpeg",
+      chaleLareira: "https://www.tankamana.com.br/wp-content/themes/Pousada%20Aldeia/assets/images/suite-destaque.jpg",
+      chaleMontanha: "https://pousadacandeias.com.br/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-09-at-21.46.26-2.jpeg",
+      chaleCampo: "https://lirp.cdn-website.com/36e30871/dms3rep/multi/opt/e-df71e711-1920w.jpg",
       fazendaMinas: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Fazenda_Parafuso_-_Minas_Gerais_-_Brasil.jpg/960px-Fazenda_Parafuso_-_Minas_Gerais_-_Brasil.jpg",
-      chaleMadeira: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Chalet_Beuil_bois.jpg/960px-Chalet_Beuil_bois.jpg",
-      chalePedra: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Chalet_Beuil.jpg/960px-Chalet_Beuil.jpg"
+      chaleMadeira: "https://solarfazendadocedro.com.br/wp-content/uploads/2026/06/foto.jpg",
+      chalePedra: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Vista_Rural_de_Gon%C3%A7alves%2C_Minas_Gerais.jpg/960px-Vista_Rural_de_Gon%C3%A7alves%2C_Minas_Gerais.jpg"
     };
 
     const tagStyles = {
@@ -345,8 +344,8 @@
                 highlights: "Clima de fazenda com cozinha/copa de apoio e contato com a natureza.",
                 kitchen: true,
                 photo: photos.villaAlferes,
-                url: "https://www.instagram.com/explore/tags/fazendadasmelancias/",
-                cta: "Ver no Instagram"
+                url: "https://www.google.com/search?q=Pousada+Fazenda+das+Melancias+Sete+Lagoas",
+                cta: "Buscar detalhes"
               }
             ]
           },
@@ -539,9 +538,9 @@
           foodNote: "Mercado/café no chalé + vinícolas e ceias",
           car: 2880,
           fuel: 870,
-          km: "2 bases próximas (~980 km)",
+          km: "~1.250 km (2 bases + passeios)",
           tickets: 750,
-          ticketsNote: "Degustações + garrafas para o chalé",
+          ticketsNote: "2–3 degustações selecionadas + garrafas p/ chalé",
           kitchenSavings: 4440,
           kitchenSavingsNote: "Orçamento inteligente: ~R$ 4.440 livres para vinícolas e ceias"
         },
@@ -672,7 +671,7 @@
           { name: "Vinícola Villa Santa Maria (São Bento)", type: "Vinícola • Jardim Pet", price: "~R$ 220/casal (garrafa+bruschetta)", insta: "https://www.instagram.com/vinicolavillasantamaria/", site: "https://www.villasantamaria.com.br/" },
           { name: "Vinícola Raízes do Baú (São Bento)", type: "Vinícola • Piquenique", price: "~R$ 150–220/pessoa", insta: "https://www.instagram.com/vinicolafazendaportaldaluz/", site: "https://www.vinicolaraizesdobau.com.br/" },
           { name: "Vinícola Boutique Essenza (Pinhal)", type: "Vinícola • Taças", price: "~R$ 120–150/pessoa", insta: "https://www.instagram.com/vinicolaessenza/", site: "https://www.vinicolaessenza.com.br/" },
-          { name: "Vinícola Ferreira (Bate-volta Gonçalves)", type: "Vinícola • Piranguçu", price: "~R$ 180–280/pessoa", insta: "https://www.instagram.com/vinicola.ferreira/", site: "https://vinicolaferreira.com.br/" },
+          { name: "Vinícola Ferreira (Bate-volta Gonçalves)", type: "Vinícola • Piranguçu", price: "~R$ 180–280/pessoa", insta: "https://www.instagram.com/vinicola.ferreira/", site: null },
           { name: "Pousada Vida Verde (Gonçalves)", type: "Hospedagem Fazenda", price: "R$ 720–880/noite", insta: null, site: "https://www.pousadavidaverde.com.br/" }
         ],
         videoId: "xT7TYA7dJ4Y",
@@ -686,7 +685,6 @@
 
     let activePlanIndex = 1;
     let activeFilter = "all";
-    let useOwnCar = false;
     let modalPhotoIndex = 0;
     let modalGallery = [];
     let favorites = JSON.parse(localStorage.getItem("trip_favorites_2026") || "{}");
@@ -695,24 +693,12 @@
 
     function getPlanTotal(plan) {
       const c = plan.costs;
-      return c.lodging + c.food + (useOwnCar ? 0 : c.car) + c.fuel + c.tickets;
+      return c.lodging + c.food + c.car + c.fuel + c.tickets;
     }
 
     function setFilter(cat) {
       activeFilter = cat;
       selectPlan(activePlanIndex);
-    }
-
-    function toggleOwnCar() {
-      useOwnCar = !useOwnCar;
-      document.querySelectorAll(".car-toggle-dot").forEach(dot => {
-        dot.className = `car-toggle-dot w-2 h-2 rounded-full ${useOwnCar ? "bg-emerald-600" : "bg-amber-600"}`;
-      });
-      document.querySelectorAll(".car-toggle-label").forEach(label => {
-        label.textContent = useOwnCar ? "Carro Próprio (-R$ 2.880)" : "Carro Alugado";
-      });
-      selectPlan(activePlanIndex);
-      renderComparisonTable();
     }
 
     function toggleFavorite(planId) {
@@ -749,6 +735,7 @@
       document.getElementById("modal-prev").classList.toggle("hidden", list.length <= 1);
       document.getElementById("modal-next").classList.toggle("hidden", list.length <= 1);
       modal.classList.remove("hidden");
+      document.body.classList.add("overflow-hidden");
     }
 
     function openPlanPhoto(photoIdx) {
@@ -771,6 +758,7 @@
 
     function closePhotoModal() {
       document.getElementById("photo-modal").classList.add("hidden");
+      document.body.classList.remove("overflow-hidden");
     }
 
     function playInlineVideo(videoId, title) {
@@ -806,7 +794,7 @@
         {
           label: "Enoturismo & Azeites",
           v0: "3 vinícolas (ANSEHI, Trindade, Luiz Porto)",
-          v1: "6 vinícolas de altitude + Fazenda Oliq"
+          v1: "5 vinícolas de altitude + Fazenda Oliq"
         },
         {
           label: "Natureza & Ecoturismo",
@@ -825,8 +813,8 @@
         },
         {
           label: "Aluguel de Carro (16 dias)",
-          v0: useOwnCar ? "R$ 0 (Carro Próprio)" : `${fmtBRL(plans[0].costs.car)} (saída Niterói)`,
-          v1: useOwnCar ? "R$ 0 (Carro Próprio)" : `${fmtBRL(plans[1].costs.car)} (saída Niterói)`
+          v0: `${fmtBRL(plans[0].costs.car)} (saída Niterói)`,
+          v1: `${fmtBRL(plans[1].costs.car)} (saída Niterói)`
         },
         {
           label: "Combustível + Pedágios",
@@ -898,6 +886,7 @@
         ...(plan.id === 0 ? [{ id: "gruta", label: "Grutas" }] : []),
         { id: "pet", label: "Pet-Friendly" }
       ];
+      if (!filterDefs.some(f => f.id === activeFilter)) activeFilter = "all";
 
       heroEl.innerHTML = `
         <!-- First Fold (Mobile: Compact Photo + Copy + Price + CTA all inside 375x812) -->
@@ -1043,7 +1032,7 @@
                     `;
                     }).join('')}
                   </div>
-                ` : ''}
+                ` : `<div class="mt-4 text-xs text-stone-500 bg-stone-50 border border-stone-200/70 rounded-xl px-3.5 py-2.5 flex items-center justify-between"><span>Nenhuma atividade nesta categoria para esta etapa.</span><button onclick="setFilter('all')" class="text-forest font-semibold underline cursor-pointer">Limpar filtro</button></div>`}
 
                 <!-- 3 Lodging Options Grid with Visible Cover Photos & Specific CTAs -->
                 <div class="mt-5 pt-4 border-t border-stone-100">
@@ -1269,7 +1258,17 @@
       }
     }
 
+    document.addEventListener("keydown", (e) => {
+      const modal = document.getElementById("photo-modal");
+      if (!modal || modal.classList.contains("hidden")) return;
+      if (e.key === "Escape") closePhotoModal();
+      if (e.key === "ArrowLeft") stepModalPhoto(-1);
+      if (e.key === "ArrowRight") stepModalPhoto(1);
+    });
+
     document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("mood-price-0").textContent = fmtBRL(getPlanTotal(plans[0]));
+      document.getElementById("mood-price-1").textContent = fmtBRL(getPlanTotal(plans[1]));
       renderDecisionMatrix();
       selectPlan(1);
       renderComparisonTable();
