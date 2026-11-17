@@ -781,3 +781,61 @@ def test_create_custom_category_on_plan_and_transaction(client, db_session):
     dash = client.get("/dashboard")
     assert "Idiomas" in dash.text
     assert "Investimentos" in dash.text
+
+
+def test_refund_estorno_removes_original_expense_without_bogus_records(client, db_session):
+    purchase_ai = AIExtractionResult(
+        is_financial_transaction=True,
+        type="EXPENSE",
+        amount=13.97,
+        merchant="Uber",
+        installments=1,
+        suggested_category="Transporte/Viagem",
+        confidence=0.96,
+    )
+    refund_ai = AIExtractionResult(
+        is_financial_transaction=True,
+        type="INCOME",
+        amount=13.97,
+        merchant="Uber",
+        installments=1,
+        suggested_category="Transporte/Viagem",
+        confidence=0.96,
+    )
+
+    with (
+        patch("app.services.ingestion.parse_notification_with_ai", new=AsyncMock(return_value=purchase_ai)),
+        patch("app.services.ingestion.send_confirmed_notification", new=AsyncMock(return_value=101)),
+    ):
+        r1 = client.post(
+            "/api/v1/webhook/notification",
+            json={
+                "app": "com.nu.production",
+                "title": "Compra aprovada",
+                "text": "Compra de R$ 13,97 em Uber",
+                "timestamp": "2026-11-17T09:06:00-03:00",
+            },
+            headers=auth_headers(),
+        )
+    assert r1.status_code == 200
+    assert db_session.query(Transaction).count() == 1
+
+    with (
+        patch("app.services.ingestion.parse_notification_with_ai", new=AsyncMock(return_value=refund_ai)),
+        patch("app.services.ingestion.send_confirmed_notification", new=AsyncMock(return_value=102)),
+    ):
+        r2 = client.post(
+            "/api/v1/webhook/notification",
+            json={
+                "app": "com.nu.production",
+                "title": "Estorno",
+                "text": "A compra em Uber no valor de R$ 13,97 foi estornada.",
+                "timestamp": "2026-11-17T09:08:00-03:00",
+            },
+            headers=auth_headers(),
+        )
+    assert r2.status_code == 200
+    assert r2.json()["status"] == "IGNORED"
+    assert "removed original expense" in r2.json()["message"]
+    # Zero bogus records remain (neither the cancelled purchase nor the refund)!
+    assert db_session.query(Transaction).count() == 0

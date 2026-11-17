@@ -77,6 +77,66 @@ if ($method === 'POST' && $path === '/api/v1/webhook/notification') {
 
     $amount = round((float)$extraction['amount'], 2);
 
+    // Phase 2a: Refund / Estorno handling — cancel out matching recent EXPENSE without creating bogus records
+    $refundNorm = normalize_text(trim((string)($payload['title'] ?? '') . ' ' . (string)$payload['text']));
+    $isRefund = false;
+    foreach (['estorno', 'estornada', 'estornado', 'compra cancelada', 'cancelamento de compra', 'valor devolvido', 'reembolso de compra'] as $rh) {
+        if (str_contains($refundNorm, $rh)) {
+            $isRefund = true;
+            break;
+        }
+    }
+    if ($isRefund) {
+        $merchantNormRef = normalize_text((string)($extraction['merchant'] ?? ''));
+        $lookbackIso = $occurredUtc->modify('-30 days')->format('Y-m-d\TH:i:s\Z');
+        $upperIso = $occurredUtc->modify('+5 minutes')->format('Y-m-d\TH:i:s\Z');
+        $candStmt = $pdo->prepare(
+            "SELECT * FROM transactions WHERE type = 'EXPENSE' AND ABS(amount - ?) < 0.01 AND occurred_at >= ? AND occurred_at <= ? ORDER BY occurred_at DESC, id DESC"
+        );
+        $candStmt->execute([$amount, $lookbackIso, $upperIso]);
+        $cands = $candStmt->fetchAll();
+
+        $matchedOrig = null;
+        foreach ($cands as $cand) {
+            $cNorm = (string)($cand['merchant_normalized'] ?? '');
+            if ($merchantNormRef === '' || str_contains($cNorm, $merchantNormRef) || str_contains($merchantNormRef, $cNorm)) {
+                $matchedOrig = $cand;
+                break;
+            }
+        }
+        if ($matchedOrig === null && !empty($cands)) {
+            $dayAgoIso = $occurredUtc->modify('-24 hours')->format('Y-m-d\TH:i:s\Z');
+            foreach ($cands as $cand) {
+                if ((string)$cand['occurred_at'] >= $dayAgoIso) {
+                    $matchedOrig = $cand;
+                    break;
+                }
+            }
+        }
+
+        if ($matchedOrig !== null) {
+            $origId = (int)$matchedOrig['id'];
+            $origMerchant = (string)$matchedOrig['merchant'];
+            $origCat = (string)$matchedOrig['category'];
+            $pdo->prepare('DELETE FROM transactions WHERE id = ?')->execute([$origId]);
+            $summary = compute_monthly_summary($pdo, $config);
+            send_confirmed_telegram($config, $amount, "Estorno: {$origMerchant} (compra removida)", $origCat, $summary['saldo_livre']);
+            json_response([
+                'status' => 'IGNORED',
+                'transaction_id' => $origId,
+                'type' => 'EXPENSE',
+                'amount' => $amount,
+                'merchant' => $origMerchant,
+                'category' => $origCat,
+                'confidence' => 1.0,
+                'used_memory' => $usedMemory,
+                'used_ai' => $usedAi,
+                'message' => 'Refund/estorno matched and removed original expense without creating duplicate records.',
+            ]);
+        }
+        $extraction['type'] = 'INCOME';
+    }
+
     // Phase 2: Reconcile ROLLING_AVERAGE or deduplicate FIXED_PLAN Cartão in current month
     $localTz = new DateTimeZone($config['timezone'] ?: 'UTC');
     $period = $occurredUtc->setTimezone($localTz)->format('Y-m');

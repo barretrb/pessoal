@@ -28,6 +28,22 @@ from app.services.telegram_bot import (
 logger = logging.getLogger(__name__)
 
 
+_REFUND_HINTS = (
+    "estorno",
+    "estornada",
+    "estornado",
+    "compra cancelada",
+    "cancelamento de compra",
+    "valor devolvido",
+    "reembolso de compra",
+)
+
+
+def _is_refund_notification(title: str, text: str) -> bool:
+    norm = normalize_text(f"{title} {text}")
+    return any(h in norm for h in _REFUND_HINTS)
+
+
 def to_utc(dt: datetime, tz_name: str) -> datetime:
     if dt.tzinfo is None:
         try:
@@ -116,6 +132,64 @@ async def process_notification(
             db.flush()
 
     amount_dec = Decimal(f"{extraction.amount:.2f}")
+
+    # 2a. Refund / Estorno handling: cancel out matching recent EXPENSE without creating bogus records
+    if _is_refund_notification(payload.title, payload.text):
+        merchant_norm_ref = normalize_text(extraction.merchant)
+        lookback = occurred_utc - timedelta(days=30)
+        candidates = (
+            db.query(Transaction)
+            .filter(
+                Transaction.type == "EXPENSE",
+                Transaction.amount == amount_dec,
+                Transaction.occurred_at >= lookback,
+                Transaction.occurred_at <= occurred_utc + timedelta(minutes=5),
+            )
+            .order_by(Transaction.occurred_at.desc(), Transaction.id.desc())
+            .all()
+        )
+        matched_orig = None
+        for cand in candidates:
+            c_norm = cand.merchant_normalized or ""
+            if not merchant_norm_ref or merchant_norm_ref in c_norm or c_norm in merchant_norm_ref:
+                matched_orig = cand
+                break
+        if matched_orig is None and candidates:
+            # Fallback: same amount within 24h
+            day_ago = occurred_utc - timedelta(hours=24)
+            for cand in candidates:
+                occ_c = cand.occurred_at if cand.occurred_at.tzinfo else cand.occurred_at.replace(tzinfo=timezone.utc)
+                if occ_c >= day_ago:
+                    matched_orig = cand
+                    break
+
+        if matched_orig is not None:
+            orig_id = matched_orig.id
+            orig_merchant = matched_orig.merchant
+            orig_cat = matched_orig.category
+            db.delete(matched_orig)
+            db.commit()
+            summary = compute_monthly_summary(db=db, settings=settings)
+            await send_confirmed_notification(
+                settings=settings,
+                amount=amount_dec,
+                merchant=f"Estorno: {orig_merchant} (compra removida)",
+                category=orig_cat,
+                saldo_livre=Decimal(str(summary["saldo_livre"])),
+            )
+            return IngestionResponse(
+                status="IGNORED",
+                transaction_id=orig_id,
+                type="EXPENSE",
+                amount=amount_dec,
+                merchant=orig_merchant,
+                category=orig_cat,
+                confidence=1.0,
+                used_memory=used_memory,
+                used_ai=used_ai,
+                message="Refund/estorno matched and removed original expense without creating duplicate records.",
+            )
+        extraction.type = "INCOME"
 
     # 2b. Phase 2: Reconcile ROLLING_AVERAGE or deduplicate FIXED_PLAN Cartão in current month
     try:
