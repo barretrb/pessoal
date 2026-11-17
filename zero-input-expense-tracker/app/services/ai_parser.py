@@ -182,7 +182,10 @@ def build_system_prompt() -> str:
         "7. Clean up 'merchant' into a short, human-readable establishment name in Title Case "
         "(e.g., 'Uber', 'iFood', 'Amazon', 'Supermercado Dia', 'Padaria Central'). Strip card prefixes/codes "
         "like 'PG *', 'IFD*', 'MP *', 'MERCADOPAGO*', 'COMPRA APROVADA', 'CARTAO FINAL xxxx', CNPJ, 'LTDA', 'S.A.', "
-        "city names, and ugly gateway suffixes."
+        "city names, and ugly gateway suffixes.\n"
+        "8. NEVER use a payment method or wallet ('NuPay', 'Google Pay', 'Apple Pay', 'PicPay', 'Mercado Pago', 'Pix') "
+        "as 'merchant' when the actual store/app appears in the text (e.g., 'com NuPay APROVADO em 99.' -> "
+        "merchant='99', suggested_category='Transporte/Viagem')."
     )
 
 

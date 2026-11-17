@@ -232,7 +232,7 @@ if ($method === 'POST' && $path === '/api/v1/webhook/notification') {
     $msgId = null;
     if ($txStatus === 'CONFIRMED') {
         $summary = compute_monthly_summary($pdo, $config);
-        $msgId = send_confirmed_telegram($config, $amount, $merchantDisplay, $extraction['suggested_category'], $summary['saldo_livre']);
+        $msgId = send_confirmed_telegram($config, $amount, $merchantDisplay, $extraction['suggested_category'], $summary['saldo_livre'], $txId);
     } else {
         $top3 = build_top_3_categories($config, $extraction['suggested_category'], $extraction['top_categories']);
         $msgId = send_hitl_telegram($config, $txId, $amount, $merchantDisplay, $extraction['type'], $top3);
@@ -272,6 +272,28 @@ if ($method === 'POST' && $path === '/api/v1/webhook/telegram') {
         $cbId = (string)$cb['id'];
         $chatId = $cb['message']['chat']['id'] ?? null;
         $messageId = $cb['message']['message_id'] ?? null;
+
+        if (str_starts_with($data, 'edit:')) {
+            $txIdStr = substr($data, 5);
+            if (ctype_digit($txIdStr) && $chatId !== null) {
+                $stmt = $pdo->prepare('SELECT * FROM transactions WHERE id = ? LIMIT 1');
+                $stmt->execute([(int)$txIdStr]);
+                $tx = $stmt->fetch();
+                if ($tx) {
+                    send_edit_category_keyboard_telegram(
+                        $config,
+                        $chatId,
+                        (int)$tx['id'],
+                        (float)$tx['amount'],
+                        (string)$tx['merchant'],
+                        (string)$tx['category'],
+                        get_all_categories($pdo, $config),
+                        $cbId
+                    );
+                    json_response(['ok' => true, 'action' => 'edit_menu', 'transaction_id' => (int)$tx['id']]);
+                }
+            }
+        }
 
         if (str_starts_with($data, 'cat:')) {
             $parts = explode(':', $data, 3);
@@ -313,17 +335,159 @@ if ($method === 'POST' && $path === '/api/v1/webhook/telegram') {
     }
 
     if (!empty($update['message']['text'])) {
-        $txt = strtolower(trim((string)$update['message']['text']));
+        $rawTxt = trim((string)$update['message']['text']);
+        $txt = mb_strtolower($rawTxt);
         $chatId = $update['message']['chat']['id'] ?? null;
-        if (in_array($txt, ['/saldo', '/resumo'], true) && $chatId !== null) {
-            if (empty($config['telegram_chat_id']) || (string)$chatId === (string)$config['telegram_chat_id']) {
+        if ($chatId !== null && (empty($config['telegram_chat_id']) || (string)$chatId === (string)$config['telegram_chat_id'])) {
+            $formatList = function (array $txRows, string $header) {
+                if (empty($txRows)) {
+                    return [$header . "\nNenhum lançamento encontrado.", []];
+                }
+                $lines = [$header];
+                $kb = [];
+                $row = [];
+                foreach (array_slice($txRows, 0, 8) as $t) {
+                    $sign = $t['type'] === 'INCOME' ? '+' : '-';
+                    $dtStr = (new DateTimeImmutable($t['occurred_at'], new DateTimeZone('UTC')))
+                        ->setTimezone(new DateTimeZone('America/Sao_Paulo'))->format('d/m');
+                    $lines[] = "`#{$t['id']}` {$dtStr} · *{$t['merchant']}* ({$t['category']}) · {$sign}R$ " . format_brl((float)$t['amount']);
+                    $shortMerch = mb_substr((string)$t['merchant'], 0, 12);
+                    $row[] = ['text' => "✏️ #{$t['id']} {$shortMerch}", 'callback_data' => "edit:{$t['id']}"];
+                    if (count($row) === 2) {
+                        $kb[] = $row;
+                        $row = [];
+                    }
+                }
+                if (!empty($row)) {
+                    $kb[] = $row;
+                }
+                $lines[] = "\n_Toque em um botão para trocar categoria ou envie `/editar ID Nome | Categoria`_";
+                return [implode("\n", $lines), $kb];
+            };
+
+            if (in_array($txt, ['/saldo', '/resumo'], true)) {
                 $s = compute_monthly_summary($pdo, $config);
-                $reply = "📊 Resumo ({$s['period']})\n"
+                $reply = "📊 *Resumo ({$s['period']})*\n"
                     . "Entradas: R$ {$s['total_income_brl']}\n"
-                    . "Saídas Fixas: R$ {$s['fixed_expenses_brl']}\n"
-                    . "Saídas Variáveis: R$ {$s['variable_expenses_brl']}\n"
+                    . "Fixos & Médias: R$ {$s['fixed_expenses_brl']}\n"
+                    . "Variáveis (Cartão): R$ {$s['variable_expenses_brl']}\n"
                     . "Saldo Livre: R$ {$s['saldo_livre_brl']}";
-                telegram_post($config, 'sendMessage', ['chat_id' => $chatId, 'text' => $reply]);
+                telegram_post($config, 'sendMessage', ['chat_id' => $chatId, 'text' => $reply, 'parse_mode' => 'Markdown']);
+                json_response(['ok' => true, 'command' => 'saldo']);
+            }
+
+            if (in_array($txt, ['/ultimos', '/listar', '/gastos'], true)) {
+                $s = compute_monthly_summary($pdo, $config);
+                $res = query_detailed_transactions($pdo, $config, ['year' => $s['year'], 'month' => $s['month']]);
+                [$msgTxt, $kb] = $formatList($res['transactions'], "🧾 *Últimos lançamentos ({$s['period']}):*");
+                $p = ['chat_id' => $chatId, 'text' => $msgTxt, 'parse_mode' => 'Markdown'];
+                if (!empty($kb)) {
+                    $p['reply_markup'] = ['inline_keyboard' => $kb];
+                }
+                telegram_post($config, 'sendMessage', $p);
+                json_response(['ok' => true, 'command' => 'ultimos']);
+            }
+
+            if (str_starts_with($txt, '/buscar ')) {
+                $term = trim(mb_substr($rawTxt, 8));
+                $s = compute_monthly_summary($pdo, $config);
+                $res = query_detailed_transactions($pdo, $config, ['year' => $s['year'], 'month' => $s['month'], 'q' => $term]);
+                [$msgTxt, $kb] = $formatList($res['transactions'], "🔎 *Busca por '{$term}' ({$s['period']}):*");
+                $p = ['chat_id' => $chatId, 'text' => $msgTxt, 'parse_mode' => 'Markdown'];
+                if (!empty($kb)) {
+                    $p['reply_markup'] = ['inline_keyboard' => $kb];
+                }
+                telegram_post($config, 'sendMessage', $p);
+                json_response(['ok' => true, 'command' => 'buscar']);
+            }
+
+            if (str_starts_with($txt, '/editar')) {
+                $rest = trim(mb_substr($rawTxt, 7));
+                $parts = preg_split('/\s+/', $rest, 2);
+                if (empty($parts[0]) || !ctype_digit($parts[0])) {
+                    telegram_post($config, 'sendMessage', [
+                        'chat_id' => $chatId,
+                        'text' => "Uso: `/editar <ID> <Novo Nome> | <Categoria>`\nEx: `/editar 18 99 | Transporte/Viagem`\nOu apenas `/editar 18` para escolher categoria.",
+                        'parse_mode' => 'Markdown',
+                    ]);
+                    json_response(['ok' => true, 'command' => 'editar_help']);
+                }
+                $txIdEdit = (int)$parts[0];
+                $st = $pdo->prepare('SELECT * FROM transactions WHERE id = ? LIMIT 1');
+                $st->execute([$txIdEdit]);
+                $txEdit = $st->fetch();
+                if (!$txEdit) {
+                    telegram_post($config, 'sendMessage', ['chat_id' => $chatId, 'text' => "❌ Lançamento `#{$txIdEdit}` não encontrado.", 'parse_mode' => 'Markdown']);
+                    json_response(['ok' => true, 'command' => 'editar_not_found']);
+                }
+                if (count($parts) === 1 || trim($parts[1]) === '') {
+                    send_edit_category_keyboard_telegram($config, $chatId, $txIdEdit, (float)$txEdit['amount'], (string)$txEdit['merchant'], (string)$txEdit['category'], get_all_categories($pdo, $config));
+                    json_response(['ok' => true, 'command' => 'editar_menu']);
+                }
+                $arg = trim($parts[1]);
+                $allCats = get_all_categories($pdo, $config);
+                $catMap = [];
+                foreach ($allCats as $c) {
+                    $catMap[mb_strtolower($c)] = $c;
+                }
+                $newMerch = (string)$txEdit['merchant'];
+                $newCat = (string)$txEdit['category'];
+                if (str_contains($arg, '|')) {
+                    [$mPart, $cPart] = array_map('trim', explode('|', $arg, 2));
+                    if ($mPart !== '') {
+                        $newMerch = $mPart;
+                    }
+                    if ($cPart !== '') {
+                        $newCat = $catMap[mb_strtolower($cPart)] ?? ensure_category_exists($pdo, $config, $cPart);
+                    }
+                } elseif (isset($catMap[mb_strtolower($arg)])) {
+                    $newCat = $catMap[mb_strtolower($arg)];
+                } else {
+                    $newMerch = $arg;
+                }
+                $pdo->prepare("UPDATE transactions SET merchant = ?, merchant_normalized = ?, category = ?, status = 'CONFIRMED' WHERE id = ?")
+                    ->execute([$newMerch, normalize_text($newMerch) ?: 'estabelecimento', $newCat, $txIdEdit]);
+                upsert_merchant_memory($pdo, $newMerch, $newCat);
+                $s = compute_monthly_summary($pdo, $config);
+                telegram_post($config, 'sendMessage', [
+                    'chat_id' => $chatId,
+                    'text' => "✅ Atualizado `#{$txIdEdit}`: R$ " . format_brl((float)$txEdit['amount']) . " em *{$newMerch}* ({$newCat}) | Saldo Livre: R$ {$s['saldo_livre_brl']}",
+                    'parse_mode' => 'Markdown',
+                ]);
+                json_response(['ok' => true, 'command' => 'editar', 'transaction_id' => $txIdEdit]);
+            }
+
+            if (str_starts_with($txt, '/excluir ')) {
+                $idStr = trim(mb_substr($rawTxt, 9));
+                if (ctype_digit($idStr)) {
+                    $st = $pdo->prepare('SELECT * FROM transactions WHERE id = ? LIMIT 1');
+                    $st->execute([(int)$idStr]);
+                    $txDel = $st->fetch();
+                    if ($txDel) {
+                        $pdo->prepare('DELETE FROM transactions WHERE id = ?')->execute([(int)$idStr]);
+                        $s = compute_monthly_summary($pdo, $config);
+                        telegram_post($config, 'sendMessage', [
+                            'chat_id' => $chatId,
+                            'text' => "🗑️ Excluído `#{$idStr}` ({$txDel['merchant']} - R$ " . format_brl((float)$txDel['amount']) . ") | Saldo Livre: R$ {$s['saldo_livre_brl']}",
+                            'parse_mode' => 'Markdown',
+                        ]);
+                        json_response(['ok' => true, 'command' => 'excluir', 'deleted_id' => (int)$idStr]);
+                    }
+                }
+                telegram_post($config, 'sendMessage', ['chat_id' => $chatId, 'text' => "❌ Lançamento `#{$idStr}` não encontrado.", 'parse_mode' => 'Markdown']);
+                json_response(['ok' => true, 'command' => 'excluir_not_found']);
+            }
+
+            if (in_array($txt, ['/ajuda', '/help', '/start'], true)) {
+                $helpTxt = "🤖 *Comandos do FinControl*\n"
+                    . "• `/saldo` — resumo e Saldo Livre do mês\n"
+                    . "• `/ultimos` — últimos lançamentos com botão de edição\n"
+                    . "• `/buscar <termo>` — buscar gastos (ex: `/buscar 99`)\n"
+                    . "• `/editar <ID>` — trocar categoria por botão\n"
+                    . "• `/editar <ID> <Nome> | <Categoria>` — renomear e categorizar\n"
+                    . "• `/excluir <ID>` — remover lançamento";
+                telegram_post($config, 'sendMessage', ['chat_id' => $chatId, 'text' => $helpTxt, 'parse_mode' => 'Markdown']);
+                json_response(['ok' => true, 'command' => 'ajuda']);
             }
         }
     }

@@ -42,6 +42,7 @@ async def send_confirmed_notification(
     merchant: str,
     category: str,
     saldo_livre: float,
+    transaction_id: int | None = None,
 ) -> int | None:
     if not settings.TELEGRAM_CHAT_ID:
         return None
@@ -50,15 +51,18 @@ async def send_confirmed_notification(
         f"✅ R$ {format_brl(amount)} em {merchant} ({category}) | "
         f"Saldo Livre do Mês: R$ {format_brl(saldo_livre)}"
     )
-    res = await _telegram_post(
-        settings,
-        "sendMessage",
-        {
-            "chat_id": settings.TELEGRAM_CHAT_ID,
-            "text": text,
-            "disable_notification": True,
-        },
-    )
+    payload: dict = {
+        "chat_id": settings.TELEGRAM_CHAT_ID,
+        "text": text,
+        "disable_notification": True,
+    }
+    if transaction_id is not None:
+        payload["reply_markup"] = {
+            "inline_keyboard": [
+                [{"text": "✏️ Editar / Categoria", "callback_data": f"edit:{transaction_id}"}]
+            ]
+        }
+    res = await _telegram_post(settings, "sendMessage", payload)
     if res and res.get("ok"):
         return res["result"]["message_id"]
     return None
@@ -102,6 +106,71 @@ async def send_hitl_category_prompt(
     return None
 
 
+async def send_edit_category_keyboard(
+    settings: Settings,
+    chat_id: int | str,
+    tx_id: int,
+    amount: float,
+    merchant: str,
+    current_category: str,
+    categories: list[str],
+    callback_query_id: str | None = None,
+) -> None:
+    if callback_query_id:
+        await _telegram_post(
+            settings,
+            "answerCallbackQuery",
+            {"callback_query_id": callback_query_id},
+        )
+    keyboard = []
+    row = []
+    for cat in categories:
+        row.append({"text": cat, "callback_data": f"cat:{tx_id}:{cat}"})
+        if len(row) == 3:
+            keyboard.append(row)
+            row = []
+    if row:
+        keyboard.append(row)
+
+    text = (
+        f"✏️ *Editar #{tx_id}*: R$ {format_brl(amount)} em *{merchant}*\n"
+        f"Categoria atual: _{current_category}_\n\n"
+        f"Toque em uma categoria abaixo ou envie:\n"
+        f"`/editar {tx_id} Novo Nome | Categoria`\n"
+        f"`/excluir {tx_id}`"
+    )
+    await _telegram_post(
+        settings,
+        "sendMessage",
+        {
+            "chat_id": chat_id,
+            "text": text,
+            "parse_mode": "Markdown",
+            "reply_markup": {"inline_keyboard": keyboard},
+        },
+    )
+
+
+async def send_message_with_keyboard(
+    settings: Settings,
+    chat_id: int | str,
+    text: str,
+    inline_keyboard: list[list[dict]],
+) -> None:
+    if not settings.TELEGRAM_BOT_TOKEN:
+        return
+    await _telegram_post(
+        settings,
+        "sendMessage",
+        {
+            "chat_id": chat_id,
+            "text": text,
+            "parse_mode": "Markdown",
+            "reply_markup": {"inline_keyboard": inline_keyboard},
+        },
+    )
+
+
 async def answer_callback_and_update_message(
     settings: Settings,
     callback_query_id: str,
@@ -131,6 +200,11 @@ async def answer_callback_and_update_message(
             "chat_id": chat_id,
             "message_id": message_id,
             "text": updated_text,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [{"text": "✏️ Editar / Categoria", "callback_data": f"edit_msg_noop"}]
+                ]
+            },
         },
     )
 
@@ -141,5 +215,5 @@ async def send_plain_message(
     await _telegram_post(
         settings,
         "sendMessage",
-        {"chat_id": chat_id, "text": text},
+        {"chat_id": chat_id, "text": text, "parse_mode": "Markdown"},
     )

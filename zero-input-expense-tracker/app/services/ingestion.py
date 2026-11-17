@@ -301,6 +301,7 @@ async def process_notification(
             merchant=tx.merchant,
             category=tx.category,
             saldo_livre=summary["saldo_livre"],
+            transaction_id=tx.id,
         )
     else:
         top_3 = build_top_3_categories(

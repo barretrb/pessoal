@@ -44,7 +44,7 @@ function build_top_3_categories(array $config, string $suggested, array $topCate
     return array_slice($candidates, 0, 3);
 }
 
-function send_confirmed_telegram(array $config, float $amount, string $merchant, string $category, float $saldoLivre): ?int
+function send_confirmed_telegram(array $config, float $amount, string $merchant, string $category, float $saldoLivre, ?int $txId = null): ?int
 {
     if (empty($config['telegram_chat_id'])) {
         return null;
@@ -56,12 +56,58 @@ function send_confirmed_telegram(array $config, float $amount, string $merchant,
         $category,
         format_brl($saldoLivre)
     );
-    $res = telegram_post($config, 'sendMessage', [
+    $payload = [
         'chat_id' => $config['telegram_chat_id'],
         'text' => $text,
         'disable_notification' => true,
-    ]);
+    ];
+    if ($txId !== null) {
+        $payload['reply_markup'] = [
+            'inline_keyboard' => [
+                [['text' => '✏️ Editar / Categoria', 'callback_data' => "edit:{$txId}"]],
+            ],
+        ];
+    }
+    $res = telegram_post($config, 'sendMessage', $payload);
     return ($res && !empty($res['ok'])) ? (int)$res['result']['message_id'] : null;
+}
+
+function send_edit_category_keyboard_telegram(
+    array $config,
+    $chatId,
+    int $txId,
+    float $amount,
+    string $merchant,
+    string $currentCategory,
+    array $categories,
+    ?string $callbackQueryId = null
+): void {
+    if ($callbackQueryId !== null) {
+        telegram_post($config, 'answerCallbackQuery', ['callback_query_id' => $callbackQueryId]);
+    }
+    $keyboard = [];
+    $row = [];
+    foreach ($categories as $cat) {
+        $row[] = ['text' => $cat, 'callback_data' => "cat:{$txId}:{$cat}"];
+        if (count($row) === 3) {
+            $keyboard[] = $row;
+            $row = [];
+        }
+    }
+    if (!empty($row)) {
+        $keyboard[] = $row;
+    }
+    $text = "✏️ *Editar #{$txId}*: R$ " . format_brl($amount) . " em *{$merchant}*\n"
+        . "Categoria atual: _{$currentCategory}_\n\n"
+        . "Toque em uma categoria abaixo ou envie:\n"
+        . "`/editar {$txId} Novo Nome | Categoria`\n"
+        . "`/excluir {$txId}`";
+    telegram_post($config, 'sendMessage', [
+        'chat_id' => $chatId,
+        'text' => $text,
+        'parse_mode' => 'Markdown',
+        'reply_markup' => ['inline_keyboard' => $keyboard],
+    ]);
 }
 
 function send_hitl_telegram(array $config, int $txId, float $amount, string $merchant, string $txType, array $categories): ?int

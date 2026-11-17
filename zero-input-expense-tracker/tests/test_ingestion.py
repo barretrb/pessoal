@@ -839,3 +839,79 @@ def test_refund_estorno_removes_original_expense_without_bogus_records(client, d
     assert "removed original expense" in r2.json()["message"]
     # Zero bogus records remain (neither the cancelled purchase nor the refund)!
     assert db_session.query(Transaction).count() == 0
+
+
+def test_telegram_query_and_edit_commands(client, db_session):
+    from datetime import datetime, timezone
+
+    tx = Transaction(
+        source="NOTIFICATION",
+        app_name="com.nu.production",
+        raw_title="Pagamento com NuPay aprovado",
+        raw_text="R$ 11,90 em 1x no crédito sem juros com NuPay APROVADO em 99.",
+        type="EXPENSE",
+        amount=Decimal("11.90"),
+        merchant="NuPay",
+        merchant_normalized="nupay",
+        installments=1,
+        category="Software",
+        confidence=0.95,
+        status="CONFIRMED",
+        occurred_at=datetime.now(timezone.utc),
+    )
+    db_session.add(tx)
+    db_session.commit()
+    db_session.refresh(tx)
+
+    with (
+        patch("app.routers.webhooks.send_message_with_keyboard", new=AsyncMock()) as mock_kb,
+        patch("app.routers.webhooks.send_plain_message", new=AsyncMock()) as mock_plain,
+        patch("app.routers.webhooks.send_edit_category_keyboard", new=AsyncMock()) as mock_edit_kb,
+    ):
+        # /ultimos
+        r1 = client.post(
+            "/api/v1/webhook/telegram",
+            json={"message": {"text": "/ultimos", "chat": {"id": 999999}}},
+        )
+        assert r1.status_code == 200
+        assert r1.json()["command"] == "ultimos"
+        mock_kb.assert_awaited_once()
+
+        # /buscar NuPay
+        r2 = client.post(
+            "/api/v1/webhook/telegram",
+            json={"message": {"text": "/buscar NuPay", "chat": {"id": 999999}}},
+        )
+        assert r2.status_code == 200
+        assert r2.json()["command"] == "buscar"
+
+        # /editar <id> 99 | Transporte/Viagem
+        r3 = client.post(
+            "/api/v1/webhook/telegram",
+            json={"message": {"text": f"/editar {tx.id} 99 | Transporte/Viagem", "chat": {"id": 999999}}},
+        )
+        assert r3.status_code == 200
+        assert r3.json()["command"] == "editar"
+        mock_plain.assert_awaited_once()
+
+        db_session.refresh(tx)
+        assert tx.merchant == "99"
+        assert tx.category == "Transporte/Viagem"
+
+        # Inline edit button callback
+        r4 = client.post(
+            "/api/v1/webhook/telegram",
+            json={"callback_query": {"id": "cb-edit", "data": f"edit:{tx.id}", "message": {"message_id": 10, "chat": {"id": 999999}}}},
+        )
+        assert r4.status_code == 200
+        assert r4.json()["action"] == "edit_menu"
+        mock_edit_kb.assert_awaited_once()
+
+        # /excluir <id>
+        r5 = client.post(
+            "/api/v1/webhook/telegram",
+            json={"message": {"text": f"/excluir {tx.id}", "chat": {"id": 999999}}},
+        )
+        assert r5.status_code == 200
+        assert r5.json()["command"] == "excluir"
+        assert db_session.query(Transaction).filter(Transaction.id == tx.id).first() is None
