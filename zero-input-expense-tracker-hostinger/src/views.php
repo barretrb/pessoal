@@ -49,6 +49,218 @@ function sortable_js(): string
 JS;
 }
 
+function split_and_collapse_js(): string
+{
+    return <<<JS
+    function updateTxRowUI(item) {
+      const row = document.querySelector('tr[data-tx-id="' + item.id + '"]');
+      if (!row) return;
+      const amtCell = row.querySelector('.tx-amount-cell');
+      if (amtCell) {
+        const sign = amtCell.getAttribute('data-sign') || '-';
+        amtCell.setAttribute('data-value', String(item.amount));
+        const sub = item.is_shared
+          ? '<span class="tx-full-sub block text-[10px] text-violet-300/80">50% de R$ ' + item.full_amount_brl + '</span>'
+          : '<span class="tx-full-sub hidden"></span>';
+        amtCell.innerHTML = sign + ' R$ ' + item.amount_brl + sub;
+      }
+      const badge = row.querySelector('.tx-shared-badge');
+      if (badge) {
+        badge.classList.toggle('hidden', !item.is_shared);
+      }
+      const btn = row.querySelector('.tx-split-btn');
+      if (btn) {
+        btn.className = 'tx-split-btn text-[11px] px-1.5 py-0.5 rounded mr-2 ' + (item.is_shared
+          ? 'bg-violet-500/20 text-violet-300 border border-violet-500/40'
+          : 'bg-slate-800 text-slate-400 hover:text-slate-200 border border-slate-700');
+      }
+    }
+
+    async function toggleSplitAjax(btn) {
+      const id = btn.getAttribute('data-id');
+      if (!id) return;
+      btn.disabled = true;
+      btn.style.opacity = '0.5';
+      try {
+        const res = await fetch('/dashboard/transaction/' + id + '/toggle-split', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json', 'X-Requested-With': 'fetch' }
+        });
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.ok) {
+            updateTxRowUI(data);
+          }
+        }
+      } finally {
+        btn.disabled = false;
+        btn.style.opacity = '';
+      }
+    }
+
+    function updateBulkBar() {
+      const checks = Array.from(document.querySelectorAll('.tx-row-check:checked'));
+      const bar = document.getElementById('bulkSplitBar');
+      const countEl = document.getElementById('bulkSelectedCount');
+      if (!bar || !countEl) return;
+      countEl.textContent = String(checks.length);
+      bar.classList.toggle('hidden', checks.length === 0);
+    }
+
+    function toggleAllTxChecks(master) {
+      document.querySelectorAll('.tx-row-check').forEach(cb => {
+        cb.checked = master.checked;
+      });
+      updateBulkBar();
+    }
+
+    function clearTxSelection() {
+      document.querySelectorAll('.tx-row-check, .tx-select-all').forEach(cb => {
+        cb.checked = false;
+      });
+      updateBulkBar();
+    }
+
+    async function applyBulkSplit(mode) {
+      const ids = Array.from(document.querySelectorAll('.tx-row-check:checked'))
+        .map(cb => parseInt(cb.value, 10))
+        .filter(n => !isNaN(n) && n > 0);
+      if (ids.length === 0) return;
+      const bar = document.getElementById('bulkSplitBar');
+      if (bar) bar.style.opacity = '0.6';
+      try {
+        const res = await fetch('/dashboard/transactions/bulk-split', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({ ids: ids, mode: mode })
+        });
+        if (res.ok) {
+          const data = await res.json();
+          if (data && Array.isArray(data.updated)) {
+            data.updated.forEach(updateTxRowUI);
+          }
+          clearTxSelection();
+        }
+      } finally {
+        if (bar) bar.style.opacity = '';
+      }
+    }
+
+    function setSectionCollapsed(section, collapsed) {
+      const id = section.getAttribute('data-collapse-id');
+      const body = section.querySelector('.collapse-body');
+      const icon = section.querySelector('.collapse-icon');
+      if (!body) return;
+      body.classList.toggle('hidden', collapsed);
+      if (icon) icon.textContent = collapsed ? '▸' : '▾';
+      if (id) {
+        try { localStorage.setItem('fc_col_' + id, collapsed ? '1' : '0'); } catch (e) {}
+      }
+    }
+
+    function toggleSectionCollapse(btn) {
+      const section = btn.closest('section[data-collapse-id]');
+      if (!section) return;
+      const body = section.querySelector('.collapse-body');
+      if (!body) return;
+      setSectionCollapsed(section, !body.classList.contains('hidden'));
+    }
+
+    function toggleAllSections(collapse) {
+      document.querySelectorAll('section[data-collapse-id]').forEach(sec => {
+        setSectionCollapsed(sec, collapse);
+      });
+    }
+
+    document.querySelectorAll('section[data-collapse-id]').forEach(sec => {
+      const id = sec.getAttribute('data-collapse-id');
+      if (!id) return;
+      try {
+        if (localStorage.getItem('fc_col_' + id) === '1') {
+          setSectionCollapsed(sec, true);
+        }
+      } catch (e) {}
+    });
+JS;
+}
+
+function render_tx_table(array $txs, bool $showAppSub = false, string $emptyMsg = 'Nenhuma transação encontrada.'): string
+{
+    if (empty($txs)) {
+        return '<p class="text-sm text-slate-500">' . h($emptyMsg) . '</p>';
+    }
+
+    $rows = '';
+    foreach ($txs as $tx) {
+        $dt = (new DateTimeImmutable($tx['occurred_at'], new DateTimeZone('UTC')))
+            ->setTimezone(new DateTimeZone('America/Sao_Paulo'))->format('d/m H:i');
+        $inst = (int)$tx['installments'] > 1 ? ' <span class="text-xs text-slate-400">(' . (int)$tx['installments'] . 'x)</span>' : '';
+        $appSub = ($showAppSub && !empty($tx['app_name'])) ? ' · ' . h($tx['app_name']) : '';
+        if ($tx['status'] === 'CONFIRMED') {
+            $stBadge = '<span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300">Confirmado</span>';
+        } elseif ($tx['status'] === 'ESTIMATED') {
+            $stBadge = '<span class="text-[11px] px-2 py-0.5 rounded bg-sky-500/15 text-sky-300">Estimado</span>';
+        } else {
+            $stBadge = '<span class="text-[11px] px-2 py-0.5 rounded bg-amber-500/15 text-amber-300">Pendente</span>';
+        }
+        $sign = $tx['type'] === 'INCOME' ? '+' : '-';
+        $valColor = $tx['type'] === 'INCOME' ? 'text-emerald-400' : 'text-rose-400';
+        $amtVal = (float)$tx['amount'];
+        $txId = (int)$tx['id'];
+        $occLocalDate = (new DateTimeImmutable($tx['occurred_at'], new DateTimeZone('UTC')))
+            ->setTimezone(new DateTimeZone('America/Sao_Paulo'))->format('Y-m-d');
+        $isTxShared = ((int)($tx['is_shared'] ?? 0) === 1);
+        $sharedBadgeClass = $isTxShared ? '' : 'hidden ';
+        $sharedBadge = ' <span class="tx-shared-badge ' . $sharedBadgeClass . 'text-[10px] px-1.5 py-0.5 rounded bg-violet-500/20 text-violet-300">50/50</span>';
+        $fullSub = ($isTxShared && !empty($tx['full_amount']))
+            ? '<span class="tx-full-sub block text-[10px] text-violet-300/80">50% de R$ ' . format_brl((float)$tx['full_amount']) . '</span>'
+            : '<span class="tx-full-sub hidden"></span>';
+
+        $checkboxCell = $tx['type'] === 'EXPENSE'
+            ? '<td class="py-2 pr-2 w-6"><input type="checkbox" class="tx-row-check rounded border-slate-700 bg-slate-950 text-violet-500" value="' . $txId . '" onchange="updateBulkBar()" /></td>'
+            : '<td class="py-2 pr-2 w-6"></td>';
+
+        $splitBtn = $tx['type'] === 'EXPENSE'
+            ? '<button type="button" data-id="' . $txId . '" onclick="toggleSplitAjax(this)" title="Dividir 50/50 (Settle Up)" class="tx-split-btn text-[11px] px-1.5 py-0.5 rounded mr-2 '
+              . ($isTxShared ? 'bg-violet-500/20 text-violet-300 border border-violet-500/40' : 'bg-slate-800 text-slate-400 hover:text-slate-200 border border-slate-700')
+              . '">÷2</button>'
+            : '';
+
+        $editBtn = '<button type="button" data-id="' . $txId . '" data-merchant="' . h($tx['merchant']) . '" data-category="' . h($tx['category']) . '" data-date="' . $occLocalDate . '" onclick="openEditTxModal(this)" class="text-xs text-sky-400 hover:text-sky-300">Editar</button>';
+
+        $rows .= '<tr data-tx-id="' . $txId . '" class="hover:bg-slate-800/30">'
+            . $checkboxCell
+            . '<td class="py-2 pr-3 text-xs text-slate-400 whitespace-nowrap" data-value="' . h($tx['occurred_at']) . '">' . $dt . '</td>'
+            . '<td class="py-2 pr-3 font-medium">' . h($tx['merchant']) . $inst . $sharedBadge . '<span class="block text-[10px] text-slate-500">' . h($tx['source']) . $appSub . '</span></td>'
+            . '<td class="py-2 pr-3 text-slate-300 whitespace-nowrap">' . h($tx['category']) . '</td>'
+            . '<td class="py-2 pr-3 whitespace-nowrap">' . $stBadge . '</td>'
+            . '<td class="tx-amount-cell py-2 pr-3 text-right font-semibold whitespace-nowrap ' . $valColor . '" data-sign="' . $sign . '" data-value="' . $amtVal . '">' . $sign . ' R$ ' . format_brl($amtVal) . $fullSub . '</td>'
+            . '<td class="py-2 text-right whitespace-nowrap">' . $splitBtn . $editBtn . '</td>'
+            . '</tr>';
+    }
+
+    $bulkBar = '<div id="bulkSplitBar" class="hidden mb-3 flex flex-wrap items-center justify-between gap-2 rounded-lg border border-violet-500/40 bg-violet-500/10 px-3 py-2 text-xs">'
+        . '<span class="text-violet-200"><strong id="bulkSelectedCount">0</strong> despesa(s) selecionada(s)</span>'
+        . '<div class="flex flex-wrap items-center gap-1.5">'
+        . '<button type="button" onclick="applyBulkSplit(\'half\')" class="rounded bg-violet-600 hover:bg-violet-500 px-2.5 py-1 font-semibold text-white">👥 Aplicar 50/50</button>'
+        . '<button type="button" onclick="applyBulkSplit(\'full\')" class="rounded bg-slate-700 hover:bg-slate-600 px-2.5 py-1 font-semibold text-slate-100">💯 Restaurar 100%</button>'
+        . '<button type="button" onclick="applyBulkSplit(\'toggle\')" class="rounded border border-slate-600 hover:bg-slate-800 px-2.5 py-1 text-slate-200">🔄 Inverter (÷2)</button>'
+        . '<button type="button" onclick="clearTxSelection()" class="px-2 py-1 text-slate-400 hover:text-slate-200">Limpar</button>'
+        . '</div></div>';
+
+    return $bulkBar
+        . '<div class="overflow-x-auto"><table class="w-full text-xs sm:text-sm text-left" data-sortable>'
+        . '<thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800"><tr>'
+        . '<th class="py-2 pr-2 w-6"><input type="checkbox" class="tx-select-all rounded border-slate-700 bg-slate-950 text-violet-500" onchange="toggleAllTxChecks(this)" title="Selecionar todas" /></th>'
+        . '<th class="py-2 pr-3" data-sort="none" data-type="date">Data</th>'
+        . '<th class="py-2 pr-3" data-sort="none" data-type="text">Despesa / Estabelecimento</th>'
+        . '<th class="py-2 pr-3" data-sort="none" data-type="text">Categoria</th>'
+        . '<th class="py-2 pr-3" data-sort="none" data-type="text">Status</th>'
+        . '<th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Valor</th>'
+        . '<th class="py-2 text-right">Rateio / Ação</th>'
+        . '</tr></thead><tbody class="divide-y divide-slate-800/70">' . $rows . '</tbody></table></div>';
+}
+
 function render_login(?string $error = null): void
 {
     header('Content-Type: text/html; charset=utf-8');
@@ -244,57 +456,12 @@ HTML;
         $plansHtml = '<p class="text-sm text-slate-500">Nenhum item cadastrado no planejamento anual.</p>';
     }
 
-    // Recent Transactions (with Edit & 50/50 Settle Up toggle button!)
-    $txsHtml = '';
-    if ($summary['transactions']) {
-        $rows = '';
-        foreach ($summary['transactions'] as $tx) {
-            $dt = (new DateTimeImmutable($tx['occurred_at'], new DateTimeZone('UTC')))
-                ->setTimezone(new DateTimeZone('America/Sao_Paulo'))->format('d/m H:i');
-            $inst = (int)$tx['installments'] > 1 ? ' <span class="text-xs text-slate-400">(' . (int)$tx['installments'] . 'x)</span>' : '';
-            if ($tx['status'] === 'CONFIRMED') {
-                $stBadge = '<span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300">Confirmado</span>';
-            } elseif ($tx['status'] === 'ESTIMATED') {
-                $stBadge = '<span class="text-[11px] px-2 py-0.5 rounded bg-sky-500/15 text-sky-300">Estimado</span>';
-            } else {
-                $stBadge = '<span class="text-[11px] px-2 py-0.5 rounded bg-amber-500/15 text-amber-300">Pendente</span>';
-            }
-            $sign = $tx['type'] === 'INCOME' ? '+' : '-';
-            $valColor = $tx['type'] === 'INCOME' ? 'text-emerald-400' : 'text-rose-400';
-            $amtVal = (float)$tx['amount'];
-            $txId = (int)$tx['id'];
-            $occLocalDate = (new DateTimeImmutable($tx['occurred_at'], new DateTimeZone('UTC')))
-                ->setTimezone(new DateTimeZone('America/Sao_Paulo'))->format('Y-m-d');
-            $isTxShared = ((int)($tx['is_shared'] ?? 0) === 1);
-            $sharedBadge = $isTxShared ? ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-violet-500/20 text-violet-300">50/50</span>' : '';
-            $fullSub = ($isTxShared && !empty($tx['full_amount']))
-                ? '<span class="block text-[10px] text-violet-300/80">50% de R$ ' . format_brl((float)$tx['full_amount']) . '</span>'
-                : '';
-            $splitForm = $tx['type'] === 'EXPENSE'
-                ? '<form method="post" action="/dashboard/transaction/' . $txId . '/toggle-split" class="inline mr-2">'
-                  . '<input type="hidden" name="redirect_to" value="/dashboard?month=' . $period . '" />'
-                  . '<button type="submit" title="Dividir 50/50 (Settle Up)" class="text-[11px] px-1.5 py-0.5 rounded '
-                  . ($isTxShared ? 'bg-violet-500/20 text-violet-300 border border-violet-500/40' : 'bg-slate-800 text-slate-400 hover:text-slate-200 border border-slate-700')
-                  . '">÷2</button></form>'
-                : '';
-            $editBtn = '<button type="button" data-id="' . $txId . '" data-merchant="' . h($tx['merchant']) . '" data-category="' . h($tx['category']) . '" data-date="' . $occLocalDate . '" onclick="openEditTxModal(this)" class="text-xs text-sky-400 hover:text-sky-300">Editar</button>';
-            $rows .= '<tr class="hover:bg-slate-800/30">'
-                . '<td class="py-2 pr-3 text-slate-400 text-xs whitespace-nowrap" data-value="' . h($tx['occurred_at']) . '">' . $dt . '</td>'
-                . '<td class="py-2 pr-3 font-medium">' . h($tx['merchant']) . $inst . $sharedBadge . '<span class="block text-[10px] text-slate-500">' . h($tx['source']) . '</span></td>'
-                . '<td class="py-2 pr-3 text-slate-300 whitespace-nowrap">' . h($tx['category']) . '</td>'
-                . '<td class="py-2 pr-3 whitespace-nowrap">' . $stBadge . '</td>'
-                . '<td class="py-2 pr-3 text-right font-medium whitespace-nowrap ' . $valColor . '" data-value="' . $amtVal . '">' . $sign . ' R$ ' . format_brl($amtVal) . $fullSub . '</td>'
-                . '<td class="py-2 text-right whitespace-nowrap">' . $splitForm . $editBtn . '</td>'
-                . '</tr>';
-        }
-        $txsHtml = '<div class="overflow-x-auto"><table class="w-full text-xs sm:text-sm text-left" data-sortable><thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800"><tr><th class="py-2 pr-3" data-sort="none" data-type="date">Data</th><th class="py-2 pr-3" data-sort="none" data-type="text">Estabelecimento / Conta</th><th class="py-2 pr-3" data-sort="none" data-type="text">Categoria</th><th class="py-2 pr-3" data-sort="none" data-type="text">Status</th><th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Valor</th><th class="py-2 text-right">Rateio / Ação</th></tr></thead><tbody class="divide-y divide-slate-800/70">' . $rows . '</tbody></table></div>';
-    } else {
-        $txsHtml = '<p class="text-sm text-slate-500">Nenhuma transação registrada nesta competência.</p>';
-    }
+    $txsHtml = render_tx_table($summary['transactions'], false, 'Nenhuma transação registrada nesta competência.');
 
     $catJson = json_encode($summary['category_breakdown'], JSON_UNESCAPED_UNICODE);
     $yearlyJson = json_encode($yearly['months'], JSON_UNESCAPED_UNICODE);
     $sortJs = sortable_js();
+    $splitCollapseJs = split_and_collapse_js();
     $importBanner = '';
     if (isset($_GET['imp'])) {
         $impCount = (int)$_GET['imp'];
@@ -373,80 +540,104 @@ HTML;
       </div>
     </section>
 
-    <section class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
-      <div class="mb-3">
-        <h2 class="text-sm sm:text-base font-semibold">Contas de Consumo (Média vs. Real)</h2>
-        <p class="text-xs text-slate-400">Ao confirmar o valor real, substitui a estimativa sem duplicar e atualiza a média móvel 3M.</p>
+    <div class="flex items-center justify-end gap-2">
+      <button type="button" onclick="toggleAllSections(true)" class="rounded-md border border-slate-800 bg-slate-900 hover:bg-slate-800 px-2.5 py-1 text-[11px] text-slate-300">▸ Recolher blocos</button>
+      <button type="button" onclick="toggleAllSections(false)" class="rounded-md border border-slate-800 bg-slate-900 hover:bg-slate-800 px-2.5 py-1 text-[11px] text-slate-300">▾ Expandir blocos</button>
+    </div>
+
+    <section data-collapse-id="consumption" class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
+      <div class="flex items-center justify-between gap-2 mb-3">
+        <div>
+          <h2 class="text-sm sm:text-base font-semibold">Contas de Consumo (Média vs. Real)</h2>
+          <p class="text-xs text-slate-400">Ao confirmar o valor real, substitui a estimativa sem duplicar e atualiza a média móvel 3M.</p>
+        </div>
+        <button type="button" onclick="toggleSectionCollapse(this)" class="rounded-lg border border-slate-700 hover:bg-slate-800 px-2.5 py-1 text-xs text-slate-300 shrink-0"><span class="collapse-icon">▾</span></button>
       </div>
-      {$billsHtml}
+      <div class="collapse-body">{$billsHtml}</div>
     </section>
 
-    <section class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
-      <div class="mb-4">
-        <h2 class="text-sm sm:text-base font-semibold">Distribuição por Categoria</h2>
-        <p class="text-xs text-slate-400">Total de despesas no mês: R$ {$summary['total_expenses_brl']}</p>
+    <section data-collapse-id="categories" class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
+      <div class="flex items-center justify-between gap-2 mb-4">
+        <div>
+          <h2 class="text-sm sm:text-base font-semibold">Distribuição por Categoria</h2>
+          <p class="text-xs text-slate-400">Total de despesas no mês: R$ {$summary['total_expenses_brl']}</p>
+        </div>
+        <button type="button" onclick="toggleSectionCollapse(this)" class="rounded-lg border border-slate-700 hover:bg-slate-800 px-2.5 py-1 text-xs text-slate-300 shrink-0"><span class="collapse-icon">▾</span></button>
       </div>
-      {$catListHtml}
+      <div class="collapse-body">{$catListHtml}</div>
     </section>
 
-    <section class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6 space-y-4">
+    <section data-collapse-id="yearly" class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6 space-y-4">
       <div class="flex flex-wrap items-center justify-between gap-2">
         <div>
           <h2 class="text-sm sm:text-base font-semibold">Visão do Ano por Mês ({$yearlyYear})</h2>
           <p class="text-xs text-slate-400">Receita vs. Despesa total por mês.</p>
         </div>
-        <div class="text-xs text-slate-300 bg-slate-950 border border-slate-800 rounded-lg px-3 py-1">
-          Saldo Anual: <strong class="{$yearlySaldoColor}">R$ {$yearlySaldoBrl}</strong>
+        <div class="flex items-center gap-2">
+          <div class="text-xs text-slate-300 bg-slate-950 border border-slate-800 rounded-lg px-3 py-1">
+            Saldo Anual: <strong class="{$yearlySaldoColor}">R$ {$yearlySaldoBrl}</strong>
+          </div>
+          <button type="button" onclick="toggleSectionCollapse(this)" class="rounded-lg border border-slate-700 hover:bg-slate-800 px-2.5 py-1 text-xs text-slate-300 shrink-0"><span class="collapse-icon">▾</span></button>
         </div>
       </div>
-      <div class="h-56 sm:h-64"><canvas id="yearlyChart"></canvas></div>
-      <div class="overflow-x-auto">
-        <table class="w-full text-xs sm:text-sm text-left" data-sortable>
-          <thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800">
-            <tr>
-              <th class="py-2 pr-3" data-sort="none" data-type="num">Mês</th>
-              <th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Receita</th>
-              <th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Despesa</th>
-              <th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Saldo</th>
-              <th class="py-2 text-right">Ações</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-slate-800/70">{$yearlyRows}</tbody>
-        </table>
+      <div class="collapse-body space-y-4">
+        <div class="h-56 sm:h-64"><canvas id="yearlyChart"></canvas></div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs sm:text-sm text-left" data-sortable>
+            <thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800">
+              <tr>
+                <th class="py-2 pr-3" data-sort="none" data-type="num">Mês</th>
+                <th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Receita</th>
+                <th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Despesa</th>
+                <th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Saldo</th>
+                <th class="py-2 text-right">Ações</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800/70">{$yearlyRows}</tbody>
+          </table>
+        </div>
       </div>
     </section>
 
-    <section class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6 space-y-5">
-      <div>
-        <h2 class="text-sm sm:text-base font-semibold">Planejamento Anual (Receitas, Fixos &amp; Médias)</h2>
-        <p class="text-xs text-slate-400">Altere a categoria diretamente na lista abaixo ou adicione um novo item.</p>
-      </div>
-      <form method="post" action="/dashboard/plan" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-9 gap-2.5">
-        <input type="text" name="title" placeholder="Descrição (ex: Aluguel)" required class="lg:col-span-2 rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
-        <select name="type" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="EXPENSE">Despesa</option><option value="INCOME">Receita</option></select>
-        <input type="number" step="0.01" min="0.01" name="amount" placeholder="Valor (R$)" required class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
-        <select name="category" onchange="toggleNewCatInput(this, 'planNewCat')" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none">{$catOptionsWithNew}</select>
-        <input type="text" name="new_category" id="planNewCat" placeholder="Nome da nova categoria" class="hidden rounded-lg bg-slate-950 border border-emerald-500 px-3 py-2 text-xs sm:text-sm focus:outline-none" />
-        <select name="plan_type" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="FIXED">Fixo</option><option value="ROLLING_AVERAGE">Média Móvel</option></select>
-        <select name="split_ratio" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="1.0">100% Meu</option><option value="0.5">50/50 Settle Up</option></select>
-        <div class="flex gap-2">
-          <select name="payment_method" class="w-1/2 rounded-lg bg-slate-950 border border-slate-700 px-2 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="PIX">PIX</option><option value="Cartão">Cartão</option></select>
-          <input type="number" min="1" max="31" name="day_of_month" placeholder="Dia" required class="w-1/2 rounded-lg bg-slate-950 border border-slate-700 px-2 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
+    <section data-collapse-id="plan" class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6 space-y-5">
+      <div class="flex items-center justify-between gap-2">
+        <div>
+          <h2 class="text-sm sm:text-base font-semibold">Planejamento Anual (Receitas, Fixos &amp; Médias)</h2>
+          <p class="text-xs text-slate-400">Altere a categoria diretamente na lista abaixo ou adicione um novo item.</p>
         </div>
-        <button type="submit" class="rounded-lg bg-emerald-600 hover:bg-emerald-500 px-4 py-2 text-xs sm:text-sm font-semibold text-white transition-colors">Adicionar</button>
-      </form>
-      {$plansHtml}
+        <button type="button" onclick="toggleSectionCollapse(this)" class="rounded-lg border border-slate-700 hover:bg-slate-800 px-2.5 py-1 text-xs text-slate-300 shrink-0"><span class="collapse-icon">▾</span></button>
+      </div>
+      <div class="collapse-body space-y-5">
+        <form method="post" action="/dashboard/plan" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-9 gap-2.5">
+          <input type="text" name="title" placeholder="Descrição (ex: Aluguel)" required class="lg:col-span-2 rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
+          <select name="type" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="EXPENSE">Despesa</option><option value="INCOME">Receita</option></select>
+          <input type="number" step="0.01" min="0.01" name="amount" placeholder="Valor (R$)" required class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
+          <select name="category" onchange="toggleNewCatInput(this, 'planNewCat')" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none">{$catOptionsWithNew}</select>
+          <input type="text" name="new_category" id="planNewCat" placeholder="Nome da nova categoria" class="hidden rounded-lg bg-slate-950 border border-emerald-500 px-3 py-2 text-xs sm:text-sm focus:outline-none" />
+          <select name="plan_type" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="FIXED">Fixo</option><option value="ROLLING_AVERAGE">Média Móvel</option></select>
+          <select name="split_ratio" class="rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="1.0">100% Meu</option><option value="0.5">50/50 Settle Up</option></select>
+          <div class="flex gap-2">
+            <select name="payment_method" class="w-1/2 rounded-lg bg-slate-950 border border-slate-700 px-2 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none"><option value="PIX">PIX</option><option value="Cartão">Cartão</option></select>
+            <input type="number" min="1" max="31" name="day_of_month" placeholder="Dia" required class="w-1/2 rounded-lg bg-slate-950 border border-slate-700 px-2 py-2 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
+          </div>
+          <button type="submit" class="rounded-lg bg-emerald-600 hover:bg-emerald-500 px-4 py-2 text-xs sm:text-sm font-semibold text-white transition-colors">Adicionar</button>
+        </form>
+        {$plansHtml}
+      </div>
     </section>
 
-    <section class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
+    <section data-collapse-id="txs" class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
       <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
         <div>
           <h2 class="text-sm sm:text-base font-semibold">Transações Recentes ({$period})</h2>
-          <p class="text-xs text-slate-400">Clique em "Editar" para corrigir título ou categoria.</p>
+          <p class="text-xs text-slate-400">Selecione várias para rateio em massa ou clique em "÷2" sem perder sua posição.</p>
         </div>
-        <a href="/transactions?year={$yearNum}&month={$monthNum}" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300">Ver todas com filtros →</a>
+        <div class="flex items-center gap-2">
+          <a href="/transactions?year={$yearNum}&month={$monthNum}" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300">Ver todas com filtros →</a>
+          <button type="button" onclick="toggleSectionCollapse(this)" class="rounded-lg border border-slate-700 hover:bg-slate-800 px-2.5 py-1 text-xs text-slate-300 shrink-0"><span class="collapse-icon">▾</span></button>
+        </div>
       </div>
-      {$txsHtml}
+      <div class="collapse-body">{$txsHtml}</div>
     </section>
   </main>
 
@@ -619,6 +810,7 @@ HTML;
       document.getElementById('editTxModal').classList.add('hidden');
     }
     {$sortJs}
+    {$splitCollapseJs}
     const catBreakdown = {$catJson};
     if (catBreakdown.length > 0) {
       new Chart(document.getElementById('categoryChart').getContext('2d'), {
@@ -679,55 +871,11 @@ function render_transactions(array $result, array $categories, array $filters): 
     $qVal = h((string)$filters['q']);
     $netColor = $result['net'] >= 0 ? 'text-emerald-300' : 'text-rose-400';
 
-    $tableHtml = '';
-    if (!empty($result['transactions'])) {
-        $rows = '';
-        foreach ($result['transactions'] as $tx) {
-            $dt = (new DateTimeImmutable($tx['occurred_at'], new DateTimeZone('UTC')))
-                ->setTimezone(new DateTimeZone('America/Sao_Paulo'))->format('d/m H:i');
-            $inst = (int)$tx['installments'] > 1 ? ' <span class="text-xs text-slate-400">(' . (int)$tx['installments'] . 'x)</span>' : '';
-            $appSub = !empty($tx['app_name']) ? ' · ' . h($tx['app_name']) : '';
-            if ($tx['status'] === 'CONFIRMED') {
-                $stBadge = '<span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300">Confirmado</span>';
-            } elseif ($tx['status'] === 'ESTIMATED') {
-                $stBadge = '<span class="text-[11px] px-2 py-0.5 rounded bg-sky-500/15 text-sky-300">Estimado</span>';
-            } else {
-                $stBadge = '<span class="text-[11px] px-2 py-0.5 rounded bg-amber-500/15 text-amber-300">Pendente</span>';
-            }
-            $sign = $tx['type'] === 'INCOME' ? '+' : '-';
-            $valColor = $tx['type'] === 'INCOME' ? 'text-emerald-400' : 'text-rose-400';
-            $amtVal = (float)$tx['amount'];
-            $txId = (int)$tx['id'];
-            $occLocalDate = (new DateTimeImmutable($tx['occurred_at'], new DateTimeZone('UTC')))
-                ->setTimezone(new DateTimeZone('America/Sao_Paulo'))->format('Y-m-d');
-            $isTxShared = ((int)($tx['is_shared'] ?? 0) === 1);
-            $sharedBadge = $isTxShared ? ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-violet-500/20 text-violet-300">50/50</span>' : '';
-            $fullSub = ($isTxShared && !empty($tx['full_amount']))
-                ? '<span class="block text-[10px] text-violet-300/80">50% de R$ ' . format_brl((float)$tx['full_amount']) . '</span>'
-                : '';
-            $splitForm = $tx['type'] === 'EXPENSE'
-                ? '<form method="post" action="/dashboard/transaction/' . $txId . '/toggle-split" class="inline mr-2">'
-                  . '<input type="hidden" name="redirect_to" value="/transactions?year=' . $yearVal . '&month=' . $monthVal . '" />'
-                  . '<button type="submit" title="Dividir 50/50 (Settle Up)" class="text-[11px] px-1.5 py-0.5 rounded '
-                  . ($isTxShared ? 'bg-violet-500/20 text-violet-300 border border-violet-500/40' : 'bg-slate-800 text-slate-400 hover:text-slate-200 border border-slate-700')
-                  . '">÷2</button></form>'
-                : '';
-            $editBtn = '<button type="button" data-id="' . $txId . '" data-merchant="' . h($tx['merchant']) . '" data-category="' . h($tx['category']) . '" data-date="' . $occLocalDate . '" onclick="openEditTxModal(this)" class="text-xs text-sky-400 hover:text-sky-300">Editar</button>';
-            $rows .= '<tr class="hover:bg-slate-800/30">'
-                . '<td class="py-2 pr-3 text-xs text-slate-400 whitespace-nowrap" data-value="' . h($tx['occurred_at']) . '">' . $dt . '</td>'
-                . '<td class="py-2 pr-3 font-medium">' . h($tx['merchant']) . $inst . $sharedBadge . '<span class="block text-[10px] text-slate-500">' . h($tx['source']) . $appSub . '</span></td>'
-                . '<td class="py-2 pr-3 text-slate-300 whitespace-nowrap">' . h($tx['category']) . '</td>'
-                . '<td class="py-2 pr-3 whitespace-nowrap">' . $stBadge . '</td>'
-                . '<td class="py-2 pr-3 text-right font-semibold whitespace-nowrap ' . $valColor . '" data-value="' . $amtVal . '">' . $sign . ' R$ ' . format_brl($amtVal) . $fullSub . '</td>'
-                . '<td class="py-2 text-right whitespace-nowrap">' . $splitForm . $editBtn . '</td>'
-                . '</tr>';
-        }
-        $tableHtml = '<div class="overflow-x-auto"><table class="w-full text-xs sm:text-sm text-left" data-sortable><thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800"><tr><th class="py-2 pr-3" data-sort="none" data-type="date">Data</th><th class="py-2 pr-3" data-sort="none" data-type="text">Despesa / Estabelecimento</th><th class="py-2 pr-3" data-sort="none" data-type="text">Categoria</th><th class="py-2 pr-3" data-sort="none" data-type="text">Status</th><th class="py-2 pr-3 text-right" data-sort="none" data-type="num">Valor</th><th class="py-2 text-right">Rateio / Ação</th></tr></thead><tbody class="divide-y divide-slate-800/70">' . $rows . '</tbody></table></div>';
-    } else {
-        $tableHtml = '<p class="text-sm text-slate-500">Nenhuma transação encontrada para os filtros selecionados.</p>';
-    }
+    $tableHtml = render_tx_table($result['transactions'] ?? [], true, 'Nenhuma transação encontrada para os filtros selecionados.');
 
     $sortJs = sortable_js();
+    $splitCollapseJs = split_and_collapse_js();
+    $currentReqUri = h((string)($_SERVER['REQUEST_URI'] ?? "/transactions?year={$yearVal}&month={$monthVal}"));
     echo <<<HTML
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -763,8 +911,12 @@ function render_transactions(array $result, array $categories, array $filters): 
   </header>
 
   <main class="max-w-7xl mx-auto px-3 sm:px-6 py-4 sm:py-6 space-y-5">
-    <section class="bg-slate-900 border border-slate-800 rounded-xl p-4">
-      <form method="get" action="/transactions" class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2.5">
+    <section data-collapse-id="tx_filters" class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-xs sm:text-sm font-semibold text-slate-200">Filtros</h2>
+        <button type="button" onclick="toggleSectionCollapse(this)" class="rounded-lg border border-slate-700 hover:bg-slate-800 px-2.5 py-1 text-xs text-slate-300 shrink-0"><span class="collapse-icon">▾</span></button>
+      </div>
+      <form method="get" action="/transactions" class="collapse-body grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2.5">
         <div>
           <label class="block text-[11px] text-slate-400 mb-1">Ano</label>
           <input type="number" name="year" min="2020" max="2100" value="{$yearVal}" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-2.5 py-1.5 text-xs text-slate-100" />
@@ -814,12 +966,15 @@ function render_transactions(array $result, array $categories, array $filters): 
       <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5"><p class="text-[11px] text-slate-400">Saldo Filtrado</p><p class="text-lg font-bold mt-0.5 {$netColor}">R$ {$result['net_brl']}</p></div>
     </section>
 
-    <section class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
+    <section data-collapse-id="tx_list" class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
       <div class="flex items-center justify-between mb-3">
-        <h2 class="text-sm sm:text-base font-semibold">Lista de Lançamentos</h2>
-        <span class="text-[11px] text-slate-400">Toque na coluna para ordenar</span>
+        <div>
+          <h2 class="text-sm sm:text-base font-semibold">Lista de Lançamentos</h2>
+          <span class="text-[11px] text-slate-400">Toque na coluna para ordenar · Marque várias para editar rateio em massa</span>
+        </div>
+        <button type="button" onclick="toggleSectionCollapse(this)" class="rounded-lg border border-slate-700 hover:bg-slate-800 px-2.5 py-1 text-xs text-slate-300 shrink-0"><span class="collapse-icon">▾</span></button>
       </div>
-      {$tableHtml}
+      <div class="collapse-body">{$tableHtml}</div>
     </section>
   </main>
 
@@ -830,7 +985,7 @@ function render_transactions(array $result, array $categories, array $filters): 
         <button type="button" onclick="closeEditTxModal()" class="text-slate-400 hover:text-slate-200 text-lg">&times;</button>
       </div>
       <form id="editTxForm" method="post" action="/dashboard/transaction/0/update" class="space-y-3">
-        <input type="hidden" name="redirect_to" value="/transactions?year={$yearVal}&month={$monthVal}" />
+        <input type="hidden" name="redirect_to" value="{$currentReqUri}" />
         <div>
           <label class="block text-xs text-slate-400 mb-1">Título / Estabelecimento</label>
           <input type="text" name="merchant" id="editTxMerchant" required class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm" />
@@ -888,6 +1043,7 @@ function render_transactions(array $result, array $categories, array $filters): 
       document.getElementById('editTxModal').classList.add('hidden');
     }
     {$sortJs}
+    {$splitCollapseJs}
   </script>
 </body>
 </html>

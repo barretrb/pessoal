@@ -154,9 +154,34 @@ function reconcile_transaction_amount(PDO $pdo, int $txId, float $realAmount): a
     ];
 }
 
-function toggle_transaction_split(PDO $pdo, int $txId): ?array
+function set_transaction_split(PDO $pdo, int $txId, float $targetRatio): ?array
 {
     $stmt = $pdo->prepare('SELECT * FROM transactions WHERE id = ? LIMIT 1');
+    $stmt->execute([$txId]);
+    $tx = $stmt->fetch();
+    if (!$tx || $tx['type'] !== 'EXPENSE') {
+        return null;
+    }
+
+    $currentlyShared = ((int)($tx['is_shared'] ?? 0) === 1) || ((float)($tx['split_ratio'] ?? 1.0) < 0.99);
+    $currentAmt = (float)$tx['amount'];
+    $storedFull = isset($tx['full_amount']) && $tx['full_amount'] !== null ? (float)$tx['full_amount'] : null;
+    $newFull = $storedFull ?? ($currentlyShared ? round($currentAmt * 2.0, 2) : $currentAmt);
+
+    $newRatio = ($targetRatio < 0.99) ? 0.5 : 1.0;
+    $newShared = ($newRatio < 0.99) ? 1 : 0;
+    $newAmt = round($newFull * $newRatio, 2);
+
+    $pdo->prepare('UPDATE transactions SET amount = ?, full_amount = ?, is_shared = ?, split_ratio = ? WHERE id = ?')
+        ->execute([$newAmt, $newFull, $newShared, $newRatio, $txId]);
+
+    $stmt->execute([$txId]);
+    return $stmt->fetch() ?: null;
+}
+
+function toggle_transaction_split(PDO $pdo, int $txId): ?array
+{
+    $stmt = $pdo->prepare('SELECT is_shared, split_ratio FROM transactions WHERE id = ? LIMIT 1');
     $stmt->execute([$txId]);
     $tx = $stmt->fetch();
     if (!$tx) {
@@ -164,28 +189,7 @@ function toggle_transaction_split(PDO $pdo, int $txId): ?array
     }
 
     $currentlyShared = ((int)($tx['is_shared'] ?? 0) === 1) || ((float)($tx['split_ratio'] ?? 1.0) < 0.99);
-    $currentAmt = (float)$tx['amount'];
-    $storedFull = isset($tx['full_amount']) && $tx['full_amount'] !== null ? (float)$tx['full_amount'] : null;
-
-    if ($currentlyShared) {
-        // Restore 100%
-        $newFull = $storedFull ?? round($currentAmt * 2.0, 2);
-        $newAmt = $newFull;
-        $newRatio = 1.0;
-        $newShared = 0;
-    } else {
-        // Split 50/50
-        $newFull = $storedFull ?? $currentAmt;
-        $newAmt = round($newFull * 0.5, 2);
-        $newRatio = 0.5;
-        $newShared = 1;
-    }
-
-    $pdo->prepare('UPDATE transactions SET amount = ?, full_amount = ?, is_shared = ?, split_ratio = ? WHERE id = ?')
-        ->execute([$newAmt, $newFull, $newShared, $newRatio, $txId]);
-
-    $stmt->execute([$txId]);
-    return $stmt->fetch() ?: null;
+    return set_transaction_split($pdo, $txId, $currentlyShared ? 1.0 : 0.5);
 }
 
 function toggle_plan_split(PDO $pdo, int $planId, string $period): ?array

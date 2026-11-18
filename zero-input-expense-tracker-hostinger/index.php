@@ -887,8 +887,58 @@ if ($method === 'POST' && preg_match('#^/dashboard/plan/(\d+)/update$#', $path, 
     exit;
 }
 
-if ($method === 'POST' && preg_match('#^/dashboard/transaction/(\d+)/toggle-split$#', $path, $m)) {
+if ($method === 'POST' && $path === '/dashboard/transactions/bulk-split') {
     if (!is_dashboard_authenticated($config)) {
+        json_response(['detail' => 'Unauthorized'], 401);
+    }
+    $body = json_decode((string)file_get_contents('php://input'), true);
+    if (!is_array($body)) {
+        $body = $_POST;
+    }
+    $rawIds = $body['ids'] ?? [];
+    if (is_string($rawIds)) {
+        $rawIds = array_filter(explode(',', $rawIds), fn($v) => $v !== '');
+    }
+    $mode = (string)($body['mode'] ?? 'half');
+    $updatedRows = [];
+    if (is_array($rawIds)) {
+        foreach ($rawIds as $rawId) {
+            if (!is_numeric($rawId)) {
+                continue;
+            }
+            $txId = (int)$rawId;
+            if ($txId <= 0) {
+                continue;
+            }
+            if ($mode === 'toggle') {
+                $tx = toggle_transaction_split($pdo, $txId);
+            } elseif ($mode === 'full') {
+                $tx = set_transaction_split($pdo, $txId, 1.0);
+            } else {
+                $tx = set_transaction_split($pdo, $txId, 0.5);
+            }
+            if ($tx) {
+                $updatedRows[] = [
+                    'id' => (int)$tx['id'],
+                    'amount' => (float)$tx['amount'],
+                    'amount_brl' => format_brl((float)$tx['amount']),
+                    'full_amount' => isset($tx['full_amount']) ? (float)$tx['full_amount'] : (float)$tx['amount'],
+                    'full_amount_brl' => format_brl(isset($tx['full_amount']) ? (float)$tx['full_amount'] : (float)$tx['amount']),
+                    'is_shared' => ((int)($tx['is_shared'] ?? 0) === 1),
+                ];
+            }
+        }
+    }
+    json_response(['ok' => true, 'updated' => $updatedRows]);
+}
+
+if ($method === 'POST' && preg_match('#^/dashboard/transaction/(\d+)/toggle-split$#', $path, $m)) {
+    $wantsJson = str_contains((string)($_SERVER['HTTP_ACCEPT'] ?? ''), 'application/json')
+        || strtolower((string)($_SERVER['HTTP_X_REQUESTED_WITH'] ?? '')) === 'fetch';
+    if (!is_dashboard_authenticated($config)) {
+        if ($wantsJson) {
+            json_response(['detail' => 'Unauthorized'], 401);
+        }
         header('Location: /login', true, 303);
         exit;
     }
@@ -906,6 +956,20 @@ if ($method === 'POST' && preg_match('#^/dashboard/transaction/(\d+)/toggle-spli
             $pdo->prepare('UPDATE merchant_memory SET default_split_ratio = ? WHERE merchant_normalized = ?')
                 ->execute([$newRatio, normalize_text((string)$updated['merchant'])]);
         }
+    }
+    if ($wantsJson) {
+        if (!$updated) {
+            json_response(['detail' => 'Transaction not found'], 404);
+        }
+        json_response([
+            'ok' => true,
+            'id' => (int)$updated['id'],
+            'amount' => (float)$updated['amount'],
+            'amount_brl' => format_brl((float)$updated['amount']),
+            'full_amount' => isset($updated['full_amount']) ? (float)$updated['full_amount'] : (float)$updated['amount'],
+            'full_amount_brl' => format_brl(isset($updated['full_amount']) ? (float)$updated['full_amount'] : (float)$updated['amount']),
+            'is_shared' => ((int)($updated['is_shared'] ?? 0) === 1),
+        ]);
     }
     $safeRedir = str_starts_with($redirectTo, '/') ? $redirectTo : '/dashboard';
     header("Location: {$safeRedir}", true, 303);
