@@ -7,6 +7,7 @@ import { supabase } from './supabaseClient.js';
 
 const TELEMETRY_STORAGE_PREFIX = 'devocional_telemetry_v1';
 const TELEMETRY_CLOUD_CACHE_KEY = 'devocional_telemetry_cloud_cache_v1';
+const TELEMETRY_RESET_CUTOFF_KEY = 'devocional_telemetry_reset_v1';
 
 export const FEATURE_METADATA = {
   music_play_youtube_music: {
@@ -170,6 +171,23 @@ class TelemetryService {
     }
   }
 
+  _getResetCutoffs() {
+    try {
+      const raw = localStorage.getItem(TELEMETRY_RESET_CUTOFF_KEY);
+      return raw ? JSON.parse(raw) : {};
+    } catch (e) {
+      return {};
+    }
+  }
+
+  _setResetCutoff(targetId, isoDate) {
+    try {
+      const cutoffs = this._getResetCutoffs();
+      cutoffs[targetId] = isoDate;
+      localStorage.setItem(TELEMETRY_RESET_CUTOFF_KEY, JSON.stringify(cutoffs));
+    } catch (e) {}
+  }
+
   // Registra um evento de funcionalidade usada
   track(eventId, metadata = {}) {
     try {
@@ -235,9 +253,39 @@ class TelemetryService {
 
       const cloudEvents = {};
       const profilesMap = {};
+      const cutoffs = { ...this._getResetCutoffs() };
+
+      // 1. Coleta marcadores de reset da nuvem (__reset__) para respeitar zeramentos entre dispositivos
+      data.forEach(row => {
+        if (row.feature_name === '__reset__') {
+          const targetId = row.metadata?.profileId || 'ALL';
+          const ts = row.metadata?.resetAt || row.created_at;
+          if (!cutoffs[targetId] || new Date(ts) > new Date(cutoffs[targetId])) {
+            cutoffs[targetId] = ts;
+          }
+        }
+      });
+      try {
+        localStorage.setItem(TELEMETRY_RESET_CUTOFF_KEY, JSON.stringify(cutoffs));
+      } catch (e) {}
+
+      const globalCutoffMs = cutoffs.ALL ? new Date(cutoffs.ALL).getTime() : 0;
+      let validCount = 0;
 
       data.forEach(row => {
+        if (row.feature_name === '__reset__') return;
         const fId = row.feature_name;
+        const profId = row.metadata?.profileId || (row.metadata?.profileName?.toLowerCase() === 'esposa' ? 'esposa' : 'default');
+        const profName = row.metadata?.profileName || (profId === 'esposa' ? 'Esposa' : 'Rafael');
+
+        const rowMs = new Date(row.created_at).getTime();
+        const profileCutoffMs = cutoffs[profId] ? new Date(cutoffs[profId]).getTime() : 0;
+        const effectiveCutoffMs = Math.max(globalCutoffMs, profileCutoffMs);
+        if (effectiveCutoffMs > 0 && rowMs <= effectiveCutoffMs) {
+          return;
+        }
+
+        validCount += 1;
         if (!cloudEvents[fId]) {
           cloudEvents[fId] = {
             count: 0,
@@ -254,8 +302,6 @@ class TelemetryService {
         }
 
         // Segmentação por perfil
-        const profId = row.metadata?.profileId || (row.metadata?.profileName?.toLowerCase() === 'esposa' ? 'esposa' : 'default');
-        const profName = row.metadata?.profileName || (profId === 'esposa' ? 'Esposa' : 'Rafael');
         if (!profilesMap[profId]) {
           profilesMap[profId] = {
             profileId: profId,
@@ -271,7 +317,7 @@ class TelemetryService {
       const cloudCache = {
         events: cloudEvents,
         profilesMap,
-        totalCount: data.length,
+        totalCount: validCount,
         syncedAt: new Date().toISOString()
       };
 
@@ -313,8 +359,9 @@ class TelemetryService {
         }
       }
 
-      // Se for Rafael/default e não encontrou no mapa específico, pode usar os eventos consolidados da nuvem
-      if (Object.keys(cloudProfileEvents).length === 0 && (actId === 'default' || profNameLower === 'rafael')) {
+      // Se não há mapa por perfil no cache antigo, usa fallback legado apenas se não houve reset
+      const cutoffs = this._getResetCutoffs();
+      if (!cloudCache?.profilesMap && !cutoffs.ALL && !cutoffs[actId] && (actId === 'default' || profNameLower === 'rafael')) {
         cloudProfileEvents = cloudCache?.events || {};
       }
 
@@ -512,25 +559,53 @@ class TelemetryService {
     }
   }
 
-  // Limpa o histórico de métricas local e do cache
+  // Limpa o histórico de métricas local, do cache e registra marcador de reset na nuvem
   resetStats(profileId = null) {
     try {
-      const actId = profileId || storage.getActiveProfileId() || 'default';
-      const key = this._getStorageKey(actId);
-      localStorage.removeItem(key);
+      const targetId = profileId === 'ALL' ? 'ALL' : (profileId || storage.getActiveProfileId() || 'default');
+      const nowIso = new Date().toISOString();
+      this._setResetCutoff(targetId, nowIso);
 
-      if (profileId === 'ALL' || actId === 'default') {
+      if (targetId === 'ALL') {
         const all = storage.getProfiles();
         all.forEach(p => localStorage.removeItem(this._getStorageKey(p.id)));
         localStorage.removeItem(this._getStorageKey('default'));
-        localStorage.removeItem(TELEMETRY_CLOUD_CACHE_KEY);
+        localStorage.setItem(TELEMETRY_CLOUD_CACHE_KEY, JSON.stringify({
+          events: {},
+          profilesMap: {},
+          totalCount: 0,
+          syncedAt: nowIso
+        }));
       } else {
-        const cloudCache = this._getCloudCache();
-        if (cloudCache?.profilesMap?.[actId]) {
-          delete cloudCache.profilesMap[actId];
-          localStorage.setItem(TELEMETRY_CLOUD_CACHE_KEY, JSON.stringify(cloudCache));
+        localStorage.removeItem(this._getStorageKey(targetId));
+        const cloudCache = this._getCloudCache() || { events: {}, profilesMap: {} };
+        if (cloudCache.profilesMap?.[targetId]) {
+          delete cloudCache.profilesMap[targetId];
         }
+        // Recalcula events agregados a partir dos perfis restantes
+        const rebuiltEvents = {};
+        let rebuiltTotal = 0;
+        Object.values(cloudCache.profilesMap || {}).forEach(prof => {
+          Object.entries(prof.events || {}).forEach(([fId, cnt]) => {
+            const c = typeof cnt === 'number' ? cnt : (cnt?.count || 0);
+            if (!rebuiltEvents[fId]) rebuiltEvents[fId] = { count: 0 };
+            rebuiltEvents[fId].count += c;
+            rebuiltTotal += c;
+          });
+        });
+        cloudCache.events = rebuiltEvents;
+        cloudCache.totalCount = rebuiltTotal;
+        localStorage.setItem(TELEMETRY_CLOUD_CACHE_KEY, JSON.stringify(cloudCache));
       }
+
+      // Persiste marcador de reset no Supabase de forma assíncrona (respeitado por todos os dispositivos)
+      try {
+        supabase.from('feature_telemetry').insert([{
+          feature_name: '__reset__',
+          metadata: { profileId: targetId, resetAt: nowIso }
+        }]).then(() => {}, () => {});
+      } catch (e) {}
+
       return true;
     } catch (e) {
       return false;

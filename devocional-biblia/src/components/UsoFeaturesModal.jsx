@@ -95,13 +95,7 @@ export default function UsoFeaturesModal({ isOpen, onClose, activeProfile }) {
   const handleReset = () => {
     const targetName = selectedUserFilter === 'ALL' ? 'TODOS os leitores' : (currentProfile?.name || 'o perfil selecionado');
     if (window.confirm(`Deseja zerar os contadores de métricas para ${targetName}?`)) {
-      if (selectedUserFilter === 'ALL') {
-        profiles.forEach(p => telemetryService.resetStats(p.id));
-        telemetryService.resetStats('default');
-        telemetryService.resetStats('ALL');
-      } else {
-        telemetryService.resetStats(selectedUserFilter);
-      }
+      telemetryService.resetStats(selectedUserFilter);
       loadStats();
     }
   };
