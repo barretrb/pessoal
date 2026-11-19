@@ -22,6 +22,15 @@ ensure_month_provision($pdo, $config);
 if ($method === 'GET' && $path === '/health') {
     json_response(['status' => 'ok']);
 }
+if ($method === 'GET' && $path === '/api/v1/admin/db-backup') {
+    require_api_key($config);
+    if (is_file($config['db_path'])) {
+        header('Content-Type: application/octet-stream');
+        readfile($config['db_path']);
+        exit;
+    }
+    json_response(['detail' => 'DB not found'], 404);
+}
 if ($method === 'GET' && in_array($path, ['/showcase', '/manual'], true)) {
     $showcaseFile = __DIR__ . '/docs/FINCONTROL_SHOWCASE.html';
     if (is_file($showcaseFile)) {

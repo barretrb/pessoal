@@ -114,6 +114,17 @@ function recalculate_rolling_average(PDO $pdo, int $planId): ?float
     $avg = round($sum / count($rows), 2);
     $pdo->prepare('UPDATE annual_plan SET amount = ?, updated_at = ? WHERE id = ?')
         ->execute([$avg, gmdate('Y-m-d\TH:i:s\Z'), $planId]);
+    $estRows = $pdo->prepare("SELECT id, split_ratio FROM transactions WHERE annual_plan_id = ? AND status = 'ESTIMATED'");
+    $estRows->execute([$planId]);
+    foreach ($estRows->fetchAll() as $er) {
+        $sr = (float)($er['split_ratio'] ?? 1.0);
+        if ($sr <= 0.0 || $sr > 1.0) {
+            $sr = 1.0;
+        }
+        $eff = round($avg * $sr, 2);
+        $pdo->prepare('UPDATE transactions SET amount = ?, full_amount = ? WHERE id = ?')
+            ->execute([$eff, $avg, (int)$er['id']]);
+    }
     return $avg;
 }
 

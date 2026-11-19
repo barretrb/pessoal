@@ -470,10 +470,11 @@ function render_dashboard(array $summary, array $yearly, array $plans, array $ca
     $catModalHtml = render_categories_modal($categories, "/dashboard?month={$period}");
 
     // Consumption Bills HTML
+    $pendingBills = array_values(array_filter($summary['consumption_bills'] ?? [], fn($b) => ($b['status'] ?? '') !== 'CONFIRMED'));
     $billsHtml = '';
-    if (!empty($summary['consumption_bills'])) {
+    if (!empty($pendingBills)) {
         $billsHtml .= '<div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">';
-        foreach ($summary['consumption_bills'] as $b) {
+        foreach ($pendingBills as $b) {
             $bStatus = $b['status'];
             if ($bStatus === 'CONFIRMED') {
                 $bBadge = '<span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Real</span>';
@@ -525,6 +526,22 @@ HTML;
         $billsHtml .= '</div>';
     } else {
         $billsHtml = '<p class="text-sm text-slate-400">Nenhuma conta de consumo cadastrada.</p>';
+    }
+
+    $consumptionHideClass = empty($pendingBills) ? 'hidden' : '';
+    if (false) {
+        $consumptionSectionHtml = <<<HTML
+    <section data-collapse-id="consumption" class="{$consumptionHideClass} bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
+      <div class="flex items-center justify-between gap-2 mb-3">
+        <div>
+          <h2 class="text-sm sm:text-base font-semibold">Contas de Consumo Pendentes — <span class="text-sky-400">Mês: {$monthLabelPt}</span></h2>
+          <p class="text-xs text-slate-400">Confirme o valor real da conta quando ela chegar (após confirmado, este aviso some automaticamente).</p>
+        </div>
+        <button type="button" onclick="toggleSectionCollapse(this)" class="rounded-lg border border-slate-700 hover:bg-slate-800 px-2.5 py-1 text-xs text-slate-300 shrink-0"><span class="collapse-icon">▾</span></button>
+      </div>
+      <div class="collapse-body">{$billsHtml}</div>
+    </section>
+HTML;
     }
 
     // Category Breakdown
@@ -702,7 +719,7 @@ HTML;
       <button type="button" onclick="toggleAllSections(false)" class="rounded-md border border-slate-800 bg-slate-900 hover:bg-slate-800 px-2.5 py-1 text-[11px] text-slate-300">▾ Expandir blocos</button>
     </div>
 
-    <section data-collapse-id="consumption" class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
+    <section data-collapse-id="consumption" class="{$consumptionHideClass} bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
       <div class="flex items-center justify-between gap-2 mb-3">
         <div>
           <h2 class="text-sm sm:text-base font-semibold">Contas de Consumo (Média vs. Real) — <span class="text-sky-400">Mês: {$monthLabelPt}</span></h2>
