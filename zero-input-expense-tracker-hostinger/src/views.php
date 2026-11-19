@@ -499,6 +499,7 @@ HTML;
         <nav class="hidden sm:flex items-center gap-1.5 ml-3">
           <a href="/dashboard?month={$period}" class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-semibold text-emerald-300">Visão Geral</a>
           <a href="/transactions?year={$yearNum}&month={$monthNum}" class="px-2.5 py-1 rounded-md hover:bg-slate-800 text-xs font-medium text-slate-300">Gastos</a>
+          <a href="/manual" class="px-2.5 py-1 rounded-md hover:bg-slate-800 text-xs font-medium text-slate-300">Ajuda</a>
         </nav>
       </div>
       <div class="flex items-center gap-1.5 sm:gap-2">
@@ -509,6 +510,7 @@ HTML;
         <button type="button" onclick="openImportModal()" class="rounded-md bg-sky-600 hover:bg-sky-500 px-2.5 py-1 text-xs font-semibold text-white whitespace-nowrap">📄 <span class="hidden sm:inline">Importar Fatura</span></button>
         <button type="button" onclick="openQuickModal('INCOME')" class="rounded-md bg-emerald-600 hover:bg-emerald-500 px-2.5 py-1 text-xs font-semibold text-white whitespace-nowrap">+ <span class="hidden sm:inline">Receita / Gasto</span></button>
         <a href="/transactions?year={$yearNum}&month={$monthNum}" class="sm:hidden rounded-md border border-slate-700 hover:bg-slate-800 px-2 py-1 text-xs text-slate-300">Lista</a>
+        <a href="/manual" title="Ajuda / Manual" class="sm:hidden rounded-md border border-slate-700 hover:bg-slate-800 px-2 py-1 text-xs text-slate-300">?</a>
         <a href="/logout" class="rounded-md border border-slate-700 hover:bg-slate-800 px-2 py-1 text-xs text-slate-300">Sair</a>
       </div>
     </div>
