@@ -246,8 +246,8 @@
   </div>
 
   <script>
-    const abnb = (place, checkin, checkout) =>
-      `https://www.airbnb.com.br/s/${encodeURIComponent(place)}/homes?checkin=${checkin}&checkout=${checkout}&adults=2&pets=2&amenities%5B%5D=8`;
+    const abnb = (slug, checkin, checkout) =>
+      `https://www.airbnb.com.br/s/${slug}/homes?checkin=${checkin}&checkout=${checkout}&adults=2&pets=1`;
 
     const galleryPhotos = [
       { url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Pedra_Azul_-_Domingos_Martins_-_ES_-_Brasil.jpg/960px-Pedra_Azul_-_Domingos_Martins_-_ES_-_Brasil.jpg", caption: "Pedra Azul em Domingos Martins — Natal nas Montanhas Capixabas", location: "Pedra Azul • ES", category: "Base 2" },
@@ -273,7 +273,7 @@
           { date: "21/12 (Seg)", text: "Bate-volta de 30 min até Iriri (Costa Azul e Areia Preta) com parada no Santuário Nacional de São José de Anchieta (100% pet-friendly). Se quiser fazer a trilha plana da Restinga (2,5 km) no Parque Paulo César Vinha (pets proibidos), confirmar antes se o Airbnb autoriza permanência breve ou usar pet sitter.", pet: "🐾 100% Pet (Iriri) | ⚠️ Parque s/ Pets" }
         ],
         lodgings: [
-          { name: "Airbnb na Enseada Azul ou Peracanga", price: "~R$ 340/noite", tag: "Opção Principal • Cozinha", desc: "Apartamento filtrado p/ 2 pets com cozinha equipada e garagem coberta.", url: abnb("Guarapari, Espírito Santo", "2026-12-19", "2026-12-22"), cta: "Buscar (2 Pets) no Airbnb" },
+          { name: "Airbnb na Enseada Azul ou Peracanga", price: "~R$ 340/noite", tag: "Opção Principal • Cozinha", desc: "Apartamento c/ filtro pet (marcar Cozinha e Garagem nos filtros) na Enseada Azul ou Peracanga.", url: abnb("Guarapari--ES", "2026-12-19", "2026-12-22"), cta: "Buscar no Airbnb" },
           { name: "Pousada Caravelas Guarapari (Meaípe)", price: "A partir de R$ 251/noite", tag: "Pet-Friendly • Meaípe", desc: "Aceita pets mediante pedido prévio (confirmar taxa p/ 2 Chihuahuas), piscina e garagem.", url: "https://www.booking.com/hotel/br/pousada-caravelas.pt-br.html", cta: "Ver Pousada no Booking" },
           { name: "Hotel Pousada Caminho da Praia (Praia do Morro)", price: "Consultar período", tag: "Pet-Friendly • Praia do Morro", desc: "Aceita pets de pequeno porte, piscina arborizada, café da manhã e estacionamento.", url: "https://www.booking.com/hotel/br/caminho-da-praia.pt-br.html", cta: "Ver Pousada no Booking" }
         ],
@@ -296,7 +296,7 @@
           { date: "26/12 e 27/12 (Sáb–Dom)", text: "Bate-volta ao Caparaó (~2h15 cada trecho): lavouras de café de altitude. Como o Parque Nacional proíbe pets e o bate-volta é longo para deixar os cães sozinhos, priorizar áreas privativas pet-friendly em Patrimônio da Penha/Pedra Menina ou contratar pet sitter em Pedra Azul.", pet: "☕ Caparaó • 🐾 Penha Pet" }
         ],
         lodgings: [
-          { name: "Airbnb — Chalé/Sítio Rota do Lagarto ou Venda Nova", price: "~R$ 460/noite", tag: "Opção Principal • Cozinha", desc: "Filtrado p/ 2 pets c/ cozinha e quintal (pedir aval por escrito para permanência breve se for ao parque).", url: abnb("Pedra Azul, Domingos Martins, Espírito Santo", "2026-12-22", "2026-12-28"), cta: "Buscar (2 Pets) no Airbnb" },
+          { name: "Airbnb — Chalé/Sítio Rota do Lagarto ou Venda Nova", price: "~R$ 460/noite", tag: "Opção Principal • Cozinha", desc: "Chalé/sítio c/ filtro pet em Domingos Martins / Pedra Azul (pedir aval por escrito para permanência breve).", url: abnb("Domingos-Martins--ES", "2026-12-22", "2026-12-28"), cta: "Buscar no Airbnb" },
           { name: "Away Cabanas Pedra Azul (Aracê)", price: "Consultar período", tag: "100% Pet-Friendly • Sem Taxa", desc: "A 5 min da Rota do Lagarto, cabanas privativas com cozinha, vista serra e tigelas p/ pets.", url: "https://www.instagram.com/awaycabanas/", cta: "Instagram Oficial ↗" },
           { name: "Pousada Sítio das Pedras (Domingos Martins)", price: "Consultar período", tag: "Ecoturismo • Pet-Friendly", desc: "Chalés na Rota do Galo com restaurante, jardim amplo e estrutura pet-friendly.", url: "https://www.instagram.com/sitiodaspedras.dm/", cta: "Instagram Oficial ↗" }
         ],
@@ -318,7 +318,7 @@
         lodgings: [
           { name: "Pousada Sinhá Olímpia (Ouro Preto)", price: "Consultar período", tag: "4★ • Aceita Até 2 Pets (10 kg)", desc: "Política explícita para até 2 pets pequenos (até 10 kg), piscina aquecida, jardins e estacionamento.", url: "https://pousadasinhaolimpia.com.br/", cta: "Site Oficial ↗" },
           { name: "Pousada Caminhos da Liberdade (Centro)", price: "A partir de R$ 367/noite", tag: "Centro • Pet-Friendly", desc: "A poucos passos da Praça Tiradentes, aceita pets (confirmar taxa e 2 Chihuahuas no pedido).", url: "https://www.booking.com/hotel/br/caminhos-da-liberdade-pousada.pt-br.html", cta: "Ver Pousada no Booking" },
-          { name: "Airbnb no Centro Histórico (c/ Garagem)", price: "Consultar período", tag: "Vaga Privativa • 2 Pets", desc: "Filtrado p/ 2 pets: selecionar vaga de garagem privativa para deixar as malas no SUV com segurança.", url: abnb("Ouro Preto, Minas Gerais", "2026-12-28", "2026-12-30"), cta: "Buscar (2 Pets) no Airbnb" }
+          { name: "Airbnb no Centro Histórico (c/ Garagem)", price: "Consultar período", tag: "Vaga Privativa • Pet", desc: "Filtrar por vaga de garagem privativa para deixar as malas no SUV com segurança.", url: abnb("Ouro-Preto--MG", "2026-12-28", "2026-12-30"), cta: "Buscar no Airbnb" }
         ],
         restaurants: "Varanda 1921 (Gastro Pub com área aberta), O Passo Pizza Jazz, Bené da Flauta (área externa próxima à Igreja de São Francisco) e Café das Flores."
       },
@@ -337,7 +337,7 @@
           { date: "01/01 (Sex • Ano Novo)", text: "Manhã tranquila na cidade e tour com degustação na Vinícola Mil Vidas (Ritápolis, a 30 min — pet-friendly e abre em feriados 11h–18h; reserva obrigatória pelo WhatsApp (32) 99851-7726).", pet: "🍷 Mil Vidas (Agendar)" }
         ],
         lodgings: [
-          { name: "Airbnb — Cuiabá ou Parque das Abelhas", price: "~R$ 530/noite", tag: "Opção Principal • Cozinha", desc: "Filtrado p/ 2 pets a 10 min a pé do Largo das Forras (evita bloqueios no dia 31/12).", url: abnb("Tiradentes, Minas Gerais", "2026-12-30", "2027-01-02"), cta: "Buscar (2 Pets) no Airbnb" },
+          { name: "Airbnb — Cuiabá ou Parque das Abelhas", price: "~R$ 530/noite", tag: "Opção Principal • Cozinha", desc: "Casas/chalés c/ filtro pet a 10 min a pé do Largo das Forras (evita bloqueios no dia 31/12).", url: abnb("Tiradentes--MG", "2026-12-30", "2027-01-02"), cta: "Buscar no Airbnb" },
           { name: "Pousada Vovó Teresa (Pq. dos Bandeirantes)", price: "A partir de R$ 550/noite", tag: "Pet-Friendly • Self Check-in", desc: "Ambiente sossegado com estacionamento privativo grátis (confirmar 2 Chihuahuas no pedido).", url: "https://www.booking.com/hotel/br/pousada-vovo-teresa.pt-br.html", cta: "Ver Pousada no Booking" },
           { name: "Pousada Charlotte (Centro)", price: "Consultar período", tag: "Centro • Pet-Friendly", desc: "Próxima ao centro histórico, jardim, café da manhã, caminhas p/ pets e estacionamento grátis.", url: "https://www.booking.com/hotel/br/pousada-charlotte.pt-br.html", cta: "Ver Pousada no Booking" }
         ],
@@ -358,7 +358,7 @@
           { date: "04/01 (Seg)", text: "Café da manhã na serra e retorno direto para Niterói pela BR-040 via Juiz de Fora (~4h30).", pet: "🚗 Volta p/ Casa" }
         ],
         lodgings: [
-          { name: "Airbnb — Rua Principal do Vilarejo", price: "Consultar período", tag: "Acesso Plano • 2 Pets", desc: "Chalés filtrados p/ 2 pets com acesso calçado e autorização p/ permanência durante o parque.", url: abnb("Conceição do Ibitipoca, Lima Duarte, Minas Gerais", "2027-01-02", "2027-01-04"), cta: "Buscar (2 Pets) no Airbnb" },
+          { name: "Airbnb — Rua Principal do Vilarejo", price: "Consultar período", tag: "Acesso Plano • Pet", desc: "Chalés com acesso calçado e autorização p/ permanência durante o parque.", url: abnb("Conceicao-do-Ibitipoca--MG", "2027-01-02", "2027-01-04"), cta: "Buscar no Airbnb" },
           { name: "Villa Nova Chalés", price: "Consultar período", tag: "Pet-Friendly • Sem Taxa Extra", desc: "Chalés de pedra com vista panorâmica, café da manhã artesanal e política pet-friendly.", url: "https://www.booking.com/hotel/br/villa-nova-chales.pt-br.html", cta: "Ver Chalés no Booking" },
           { name: "Ibitiaçu Chalés", price: "Consultar período", tag: "Pet-Friendly • Cozinha", desc: "Chalés com varanda térrea, cozinha equipada e vista p/ montanha (confirmar 2 pets no pedido).", url: "https://www.booking.com/hotel/br/ibitiacu-chales.pt-br.html", cta: "Ver Chalés no Booking" }
         ],
