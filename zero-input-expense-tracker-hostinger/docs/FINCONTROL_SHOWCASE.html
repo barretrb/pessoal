@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinControl — Controle Financeiro Autônomo Zero-Input</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .glass { background: rgba(15, 23, 42, 0.78); backdrop-filter: blur(14px); }
+    .glow-emerald { box-shadow: 0 0 40px -10px rgba(16, 185, 129, 0.28); }
+    .glow-sky { box-shadow: 0 0 40px -10px rgba(56, 189, 248, 0.22); }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-emerald-500/30 selection:text-emerald-200">
+
+  <!-- Top Navigation -->
+  <header class="border-b border-slate-800/80 bg-slate-950/90 sticky top-0 z-30 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
+      <div class="flex items-center gap-2.5">
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 font-bold">💳</span>
+        <div>
+          <span class="font-bold tracking-tight text-sm sm:text-base">FinControl</span>
+          <span class="hidden sm:inline-block ml-2 text-[11px] px-2 py-0.5 rounded-full bg-slate-900 border border-slate-800 text-slate-400">v2.4 · Zero-Input Finance</span>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-5 text-xs font-medium text-slate-300">
+        <a href="#simulador" class="hover:text-emerald-400 transition-colors">Simulador ao Vivo</a>
+        <a href="#pilares" class="hover:text-emerald-400 transition-colors">6 Pilares</a>
+        <a href="#comparativo" class="hover:text-emerald-400 transition-colors">Antes vs. Depois</a>
+        <a href="#manual" class="hover:text-emerald-400 transition-colors">Manual de Operação</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="/dashboard" class="rounded-lg bg-emerald-600 hover:bg-emerald-500 px-3.5 py-1.5 text-xs font-semibold text-white transition-colors">
+          Abrir Dashboard →
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-14 space-y-16 sm:space-y-24">
+
+    <!-- 1st Fold: Hero + Interactive Live Simulator -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center" id="simulador">
+      <div class="lg:col-span-6 space-y-6">
+        <div class="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 text-xs font-medium text-emerald-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          ENGENHARIA FINANCEIRA AUTÔNOMA · ANDROID + IA + TELEGRAM
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-[1.12]">
+          Planilhas morrem no dia 10.
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-sky-400">
+            Seu Saldo Livre agora atualiza em 2 segundos.
+          </span>
+        </h1>
+
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          Você encosta o cartão ou faz um PIX. Antes de guardar o celular no bolso, o <strong>FinControl</strong> captura a notificação bancária, limpa o nome da loja, aplica o rateio <strong>50/50 Settle Up</strong> e entrega no Telegram quanto dinheiro livre ainda resta no seu mês.
+        </p>
+
+        <!-- Key Proof Metrics -->
+        <div class="grid grid-cols-3 gap-3 pt-1">
+          <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3.5">
+            <p class="mono text-lg sm:text-2xl font-bold text-emerald-400">&lt; 10 ms</p>
+            <p class="text-[11px] text-slate-400 mt-0.5">Latência com Memória de Estabelecimento</p>
+          </div>
+          <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3.5">
+            <p class="mono text-lg sm:text-2xl font-bold text-sky-400">Dual-AI</p>
+            <p class="text-[11px] text-slate-400 mt-0.5">Groq 120B Primário + Gemini Flash Fallback</p>
+          </div>
+          <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3.5">
+            <p class="mono text-lg sm:text-2xl font-bold text-violet-400">50 / 50</p>
+            <p class="text-[11px] text-slate-400 mt-0.5">Rateio Settle Up Nativo em Fixos e Mercado</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3 pt-2">
+          <a href="/dashboard" class="rounded-xl bg-emerald-600 hover:bg-emerald-500 px-5 py-3 text-sm font-bold text-white transition-all glow-emerald">
+            Acessar Painel em Produção →
+          </a>
+          <a href="#manual" class="rounded-xl border border-slate-700 hover:bg-slate-900 px-5 py-3 text-sm font-semibold text-slate-200 transition-colors">
+            Ler Manual de Operação
+          </a>
+        </div>
+      </div>
+
+      <!-- Interactive Live Pipeline Simulator -->
+      <div class="lg:col-span-6 bg-slate-900/90 border border-slate-800 rounded-2xl p-4 sm:p-6 space-y-4 glow-sky">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Simulador do Motor Zero-Input</span>
+            <p class="text-[11px] text-slate-400">Toque em um cenário real abaixo para testar a reação do sistema:</p>
+          </div>
+          <span id="simLatency" class="mono text-[11px] px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+            Memory Hit · 8 ms
+          </span>
+        </div>
+
+        <!-- Scenario Selector Buttons -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <button type="button" onclick="runScenario('grocery')" id="btn-grocery" class="text-left rounded-xl border border-emerald-500/50 bg-emerald-500/10 p-2.5 transition-all">
+            <p class="text-xs font-bold text-emerald-300">1. Mercado 50/50</p>
+            <p class="text-[11px] text-slate-400 truncate">Pão de Açúcar · R$ 247,93</p>
+          </button>
+          <button type="button" onclick="runScenario('nupay')" id="btn-nupay" class="text-left rounded-xl border border-slate-800 bg-slate-950/70 hover:border-slate-700 p-2.5 transition-all">
+            <p class="text-xs font-bold text-sky-300">2. NuPay Gateway</p>
+            <p class="text-[11px] text-slate-400 truncate">NuPay em 99 · R$ 11,90</p>
+          </button>
+          <button type="button" onclick="runScenario('refund')" id="btn-refund" class="text-left rounded-xl border border-slate-800 bg-slate-950/70 hover:border-slate-700 p-2.5 transition-all">
+            <p class="text-xs font-bold text-amber-300">3. Estorno Uber</p>
+            <p class="text-[11px] text-slate-400 truncate">Cancelada · R$ 13,97</p>
+          </button>
+        </div>
+
+        <!-- Step 1: Raw Push Notification -->
+        <div class="bg-slate-950 border border-slate-800/90 rounded-xl p-3.5 space-y-1">
+          <div class="flex items-center justify-between text-[11px] text-slate-400">
+            <span>📱 1. Notificação Bruta Capturada (MacroDroid)</span>
+            <span id="simApp" class="mono text-slate-500">com.nu.production</span>
+          </div>
+          <p id="simRawTitle" class="text-xs font-semibold text-slate-200">Compra no crédito aprovada</p>
+          <p id="simRawText" class="mono text-xs text-slate-400">Compra de R$ 247,93 aprovada em PAO DE ACUCAR-1721.</p>
+        </div>
+
+        <!-- Step 2: Engine Processing -->
+        <div class="bg-slate-950 border border-slate-800/90 rounded-xl p-3.5 space-y-2">
+          <div class="flex items-center justify-between text-[11px] text-slate-400">
+            <span>🧠 2. Decisão do Motor FinControl</span>
+            <span id="simRule" class="text-[11px] text-violet-300 font-medium">Higienização + Auto-Split 50/50</span>
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-xs">
+            <div class="bg-slate-900 rounded-lg p-2">
+              <span class="block text-[10px] text-slate-500">Estabelecimento Limpo</span>
+              <strong id="simMerchant" class="text-slate-100">Pão de Açúcar</strong>
+            </div>
+            <div class="bg-slate-900 rounded-lg p-2">
+              <span class="block text-[10px] text-slate-500">Categoria</span>
+              <strong id="simCategory" class="text-emerald-300">Mercado/Casa</strong>
+            </div>
+            <div class="bg-slate-900 rounded-lg p-2">
+              <span class="block text-[10px] text-slate-500">Impacto no Saldo</span>
+              <strong id="simImpact" class="mono text-rose-400">- R$ 123,97 (50%)</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Telegram Bot Output + Live Balance -->
+        <div class="bg-emerald-950/25 border border-emerald-500/30 rounded-xl p-3.5 space-y-2">
+          <div class="flex items-center justify-between text-[11px] text-emerald-300/90">
+            <span>💬 3. Resposta Instantânea no Bot do Telegram</span>
+            <span class="mono">Silencioso · 1-Tap Edit</span>
+          </div>
+          <p id="simTelegramMsg" class="text-xs sm:text-sm font-medium text-slate-100">
+            ✅ R$ 123,97 (50% de R$ 247,93) em Pão de Açúcar (Mercado/Casa) | Saldo Livre do Mês: R$ 7.043,38
+          </p>
+          <div class="flex items-center justify-between pt-1 border-t border-emerald-500/20 text-[11px]">
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-900 text-sky-300 border border-slate-700">
+              ✏️ Editar / Categoria
+            </span>
+            <span class="text-slate-400">Base Dia 1º: <strong class="text-slate-200">R$ 7.167,35</strong> → Agora: <strong id="simFinalBalance" class="text-emerald-300">R$ 7.043,38</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mathematical Logic Strip: How the Month Starts on Day 1 -->
+    <section class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Provisão Antecipada no Dia 1º</span>
+          <h2 class="text-xl sm:text-2xl font-bold mt-1">O mês já nasce com todos os custos fixos e médias descontados</h2>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1">
+            Em vez de iludir você com o salário cheio na conta, o FinControl provisiona os 11 itens do seu planejamento anual na virada do mês.
+          </p>
+        </div>
+        <span class="mono text-xs px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300">
+          Salário (R$ 11.177,00) − Fixos &amp; Médias c/ 50/50 (R$ 4.009,65) = <strong class="text-emerald-400">R$ 7.167,35 livres</strong>
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-slate-950 border border-emerald-500/30 rounded-xl p-4">
+          <div class="flex items-center justify-between text-xs text-emerald-300">
+            <span>1. Receita Fixa (Dia 1)</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-500/15">CONFIRMED</span>
+          </div>
+          <p class="mono text-2xl font-bold text-emerald-400 mt-2">+ R$ 11.177,00</p>
+          <p class="text-xs text-slate-400 mt-1">Salário Líquido + eventuais créditos/reembolsos.</p>
+        </div>
+
+        <div class="bg-slate-950 border border-violet-500/30 rounded-xl p-4">
+          <div class="flex items-center justify-between text-xs text-violet-300">
+            <span>2. Fixos Casa 50/50</span>
+            <span class="px-2 py-0.5 rounded bg-violet-500/15">Settle Up ÷2</span>
+          </div>
+          <p class="mono text-2xl font-bold text-violet-400 mt-2">- R$ 2.501,16</p>
+          <p class="text-xs text-slate-400 mt-1">50% Financiamento (R$ 1.580,55) + 50% Condomínio (R$ 670,61) + 50% Diarista (R$ 250,00).</p>
+        </div>
+
+        <div class="bg-slate-950 border border-sky-500/30 rounded-xl p-4">
+          <div class="flex items-center justify-between text-xs text-sky-300">
+            <span>3. Fixos Individuais + Médias</span>
+            <span class="px-2 py-0.5 rounded bg-sky-500/15">ESTIMATED</span>
+          </div>
+          <p class="mono text-2xl font-bold text-sky-400 mt-2">- R$ 1.508,49</p>
+          <p class="text-xs text-slate-400 mt-1">Inglês, Plano Cachorro, Internet, Vivo, Google AI Pro + Média 3M Enel (R$ 400) e Naturgy (R$ 105).</p>
+        </div>
+
+        <div class="bg-slate-950 border border-emerald-400/40 rounded-xl p-4">
+          <div class="flex items-center justify-between text-xs text-slate-200">
+            <span>4. Saldo Livre Inicial</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-emerald-300">Orçamento Real</span>
+          </div>
+          <p class="mono text-2xl font-bold text-emerald-300 mt-2">R$ 7.167,35</p>
+          <p class="text-xs text-slate-400 mt-1">Valor real que pode ser gasto no cartão/PIX ao longo do mês sem fechar no vermelho.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 Product & Engineering Pillars -->
+    <section class="space-y-6" id="pilares">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Arquitetura de Produto</span>
+        <h2 class="text-2xl sm:text-3xl font-bold mt-1">6 motivos pelos quais o FinControl não dá trabalho</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-2.5">
+          <div class="w-9 h-9 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center font-bold">01</div>
+          <h3 class="text-base font-bold">Memória Determinística + Dual-AI</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            Lojas recorrentes são resolvidas em menos de 10 ms via banco SQLite sem gastar tokens. Lojas novas passam pelo Groq (`gpt-oss-120b`) com fallback transparente para o Google Gemini (`gemini-flash-latest`).
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-2.5">
+          <div class="w-9 h-9 rounded-xl bg-sky-500/15 text-sky-400 flex items-center justify-center font-bold">02</div>
+          <h3 class="text-base font-bold">Média Móvel de 3 Meses (Enel &amp; Naturgy)</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            Contas de consumo variáveis são provisionadas pela média histórica. Ao confirmar o valor real em 1 clique, a estimativa é substituída (nunca somada) e a média dos próximos meses é recalculada.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-2.5">
+          <div class="w-9 h-9 rounded-xl bg-violet-500/15 text-violet-400 flex items-center justify-center font-bold">03</div>
+          <h3 class="text-base font-bold">Rateio 50/50 Settle Up sem Reload</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            Divida despesas de casa e supermercado em 1 toque (`÷2`) via AJAX sem perder a posição de scroll ou aplique rateio `50/50` em massa selecionando múltiplas compras na lista detalhada.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-2.5">
+          <div class="w-9 h-9 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center font-bold">04</div>
+          <h3 class="text-base font-bold">Auto-Cancelamento de Estornos</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            Pediu um Uber e a corrida foi cancelada? Quando a notificação de estorno chega, o sistema localiza e apaga a compra original automaticamente — zero registros fantasma poluindo suas receitas ou despesas.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-2.5">
+          <div class="w-9 h-9 rounded-xl bg-rose-500/15 text-rose-400 flex items-center justify-center font-bold">05</div>
+          <h3 class="text-base font-bold">Importador de Faturas CSV Inteligente</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            Suba ou cole o CSV da fatura do Nubank na competência exata do pagamento (ex.: fatura de Dezembro). Ele ignora pagamentos de fatura anterior, anula estornos 1:1 e reconcilia assinaturas fixas do cartão.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-2.5">
+          <div class="w-9 h-9 rounded-xl bg-teal-500/15 text-teal-400 flex items-center justify-center font-bold">06</div>
+          <h3 class="text-base font-bold">Copiloto Completo no Telegram</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            Consulte `/saldo`, veja os `/ultimos` gastos, faça `/buscar uber`, renomeie ou troque categorias com `/editar ID Nome | Categoria` e apague lançamentos com `/excluir ID` sem sair do Telegram.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before vs After Comparison Table -->
+    <section class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-5" id="comparativo">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Benchmark de Fricção</span>
+        <h2 class="text-xl sm:text-2xl font-bold mt-1">Por que sistemas manuais falham — e como o FinControl resolve</h2>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs sm:text-sm text-left">
+          <thead class="text-[11px] uppercase text-slate-400 border-b border-slate-800">
+            <tr>
+              <th class="py-3 pr-4">Cenário Real do Dia a Dia</th>
+              <th class="py-3 pr-4 text-rose-300">Planilhas / Apps Tradicionais</th>
+              <th class="py-3 text-emerald-300">FinControl (Zero-Input)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/70">
+            <tr>
+              <td class="py-3.5 pr-4 font-semibold">Compra no cartão ou PIX na rua</td>
+              <td class="py-3.5 pr-4 text-slate-400">Precisa lembrar de abrir o app à noite e digitar valor e categoria.</td>
+              <td class="py-3.5 text-slate-200">Capturado da notificação em 2s, categorizado e enviado no Telegram.</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 pr-4 font-semibold">Notificação "NuPay aprovado em 99"</td>
+              <td class="py-3.5 pr-4 text-slate-400">Importa texto sujo `DL*GOOGLE` ou classifica como `NuPay`.</td>
+              <td class="py-3.5 text-slate-200">Regra anti-gateway extrai `99` e classifica em `Transporte/Viagem`.</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 pr-4 font-semibold">Corrida de aplicativo cancelada / estornada</td>
+              <td class="py-3.5 pr-4 text-slate-400">Fica 1 despesa + 1 receita falsa inflando os gráficos do mês.</td>
+              <td class="py-3.5 text-slate-200">Remove a despesa original automaticamente (zero lançamentos fantasma).</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 pr-4 font-semibold">Compras de mercado e contas 50/50 (Settle Up)</td>
+              <td class="py-3.5 pr-4 text-slate-400">Você precisa dividir na calculadora antes de lançar cada item.</td>
+              <td class="py-3.5 text-slate-200">Botão `÷2` instantâneo (individual ou em massa) + auto-split 50/50 no CSV.</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 pr-4 font-semibold">Conta de luz (Enel) e gás (Naturgy)</td>
+              <td class="py-3.5 pr-4 text-slate-400">Esquecida até o dia do vencimento, distorcendo o saldo do início do mês.</td>
+              <td class="py-3.5 text-slate-200">Provisionada no dia 1º pela média móvel 3M e reconciliada em 1 clique.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Interactive Operation Manual (Tabbed Reference) -->
+    <section class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6" id="manual">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Documentação Interativa</span>
+          <h2 class="text-xl sm:text-2xl font-bold mt-1">Manual Prático de Operação</h2>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <button type="button" onclick="switchTab('tab-telegram')" id="tbtn-telegram" class="rounded-lg bg-emerald-600 text-white px-3.5 py-1.5 text-xs font-semibold">1. Comandos Telegram</button>
+          <button type="button" onclick="switchTab('tab-dashboard')" id="tbtn-dashboard" class="rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 px-3.5 py-1.5 text-xs font-semibold">2. Dashboard &amp; Rateio 50/50</button>
+          <button type="button" onclick="switchTab('tab-csv')" id="tbtn-csv" class="rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 px-3.5 py-1.5 text-xs font-semibold">3. Importar Fatura CSV</button>
+          <button type="button" onclick="switchTab('tab-tech')" id="tbtn-tech" class="rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 px-3.5 py-1.5 text-xs font-semibold">4. MacroDroid &amp; Segurança</button>
+        </div>
+      </div>
+
+      <!-- Tab 1: Telegram -->
+      <div id="tab-telegram" class="space-y-4">
+        <p class="text-xs sm:text-sm text-slate-300">
+          O bot do Telegram funciona como controle remoto completo do seu financeiro. Além dos botões **`✏️ Editar / Categoria`** em cada notificação, você pode enviar:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-3.5">
+            <code class="text-emerald-400 font-bold">/saldo</code> ou <code class="text-emerald-400 font-bold">/resumo</code>
+            <p class="text-slate-400 mt-1">Retorna Receita Total, Fixos &amp; Médias, Variáveis e o Saldo Livre Atual da competência corrente.</p>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-3.5">
+            <code class="text-emerald-400 font-bold">/ultimos</code> (ou <code class="text-emerald-400">/listar</code>, <code class="text-emerald-400">/gastos</code>)
+            <p class="text-slate-400 mt-1">Lista os últimos 8 lançamentos com `#ID` e botões inline para trocar a categoria em 1 toque.</p>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-3.5">
+            <code class="text-sky-400 font-bold">/buscar &lt;termo&gt;</code>
+            <p class="text-slate-400 mt-1">Ex.: <code>/buscar uber</code> ou <code>/buscar 99</code>. Filtra lançamentos do mês e exibe botões de edição rápida.</p>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-3.5">
+            <code class="text-sky-400 font-bold">/editar &lt;ID&gt; &lt;Novo Nome&gt; | &lt;Categoria&gt;</code>
+            <p class="text-slate-400 mt-1">Ex.: <code>/editar 45 99 | Transporte/Viagem</code>. Renomeia, recategoriza (cria categoria se for nova) e salva na memória.</p>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-3.5">
+            <code class="text-rose-400 font-bold">/excluir &lt;ID&gt;</code>
+            <p class="text-slate-400 mt-1">Ex.: <code>/excluir 45</code>. Remove o lançamento e responde com o Saldo Livre atualizado.</p>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-3.5">
+            <code class="text-slate-300 font-bold">/ajuda</code>
+            <p class="text-slate-400 mt-1">Exibe a lista de todos os comandos disponíveis no chat.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Dashboard & 50/50 -->
+      <div id="tab-dashboard" class="hidden space-y-4 text-xs sm:text-sm text-slate-300">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-1.5">
+            <h4 class="font-bold text-violet-300">Rateio 50/50 Individual (Sem Reload)</h4>
+            <p class="text-xs text-slate-400">Toque no botão <code>÷2</code> ao lado de qualquer transação (ou <code>100% / 50/50</code> no Planejamento Anual). A página atualiza via AJAX mantendo sua posição de rolagem e filtros.</p>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-1.5">
+            <h4 class="font-bold text-emerald-300">Rateio 50/50 em Massa (`/transactions`)</h4>
+            <p class="text-xs text-slate-400">Na tela <strong>Gastos Detalhados</strong>, marque os checkboxes das compras compartilhadas e use a barra de ação em massa para aplicar <code>50/50 Settle Up</code> de uma só vez.</p>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-1.5">
+            <h4 class="font-bold text-sky-300">Nova Categoria &amp; Mudança de Mês</h4>
+            <p class="text-xs text-slate-400">Em qualquer seletor de categoria, escolha <code>+ Nova categoria...</code> para criar uma categoria personalizada. No botão <code>Editar</code> da despesa, altere a data para movê-la de competência.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: CSV Import -->
+      <div id="tab-csv" class="hidden space-y-4 text-xs sm:text-sm text-slate-300">
+        <ol class="list-decimal list-inside space-y-2 text-slate-300">
+          <li>No cabeçalho do Dashboard, clique em <strong>📄 Importar Fatura</strong>.</li>
+          <li>Envie o arquivo <code>.csv</code> do Nubank ou cole o texto <code>date,title,amount</code>.</li>
+          <li>Selecione a <strong>Competência da Fatura</strong> (ex.: <code>2026-11</code> para a fatura que vence em Novembro; <code>2026-12</code> para a que vence em Dezembro).</li>
+          <li>Deixe marcada a opção <strong>Dividir 50/50 automaticamente compras de Mercado/Casa (Settle Up)</strong> para que supermercados já entrem pela metade.</li>
+        </ol>
+      </div>
+
+      <!-- Tab 4: MacroDroid & Security -->
+      <div id="tab-tech" class="hidden space-y-3 text-xs">
+        <div class="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-2">
+          <p class="font-bold text-slate-200">Endpoint do Webhook de Notificação (MacroDroid):</p>
+          <pre class="mono text-[11px] text-emerald-300 overflow-x-auto">POST https://fincontrol.reagiu.com.br/api/v1/webhook/notification
+Header: X-API-Key: &lt;SUA_CHAVE&gt;
+Content-Type: application/json
+
+{"app":"{not_app_package}","title":"{not_title}","text":"{not_text}","timestamp":"{year}-{month_digit}-{dayofmonth}T{hour}:{minute}:{second}-03:00"}</pre>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-500">
+    FinControl · Zero-Input Personal Finance Engine · Produção: <a href="https://fincontrol.reagiu.com.br" class="text-slate-400 hover:text-emerald-400">fincontrol.reagiu.com.br</a>
+  </footer>
+
+  <script>
+    const SCENARIOS = {
+      grocery: {
+        latency: 'Memory Hit · 8 ms',
+        app: 'com.nu.production',
+        rawTitle: 'Compra no crédito aprovada',
+        rawText: 'Compra de R$ 247,93 aprovada em PAO DE ACUCAR-1721.',
+        rule: 'Higienização + Auto-Split 50/50',
+        merchant: 'Pão de Açúcar',
+        category: 'Mercado/Casa',
+        impact: '- R$ 123,97 (50%)',
+        impactClass: 'mono text-rose-400',
+        telegram: '✅ R$ 123,97 (50% de R$ 247,93) em Pão de Açúcar (Mercado/Casa) | Saldo Livre do Mês: R$ 7.043,38',
+        finalBalance: 'R$ 7.043,38'
+      },
+      nupay: {
+        latency: 'Dual-AI Rule #8 · 410 ms',
+        app: 'com.nu.production',
+        rawTitle: 'Pagamento com NuPay aprovado',
+        rawText: 'R$ 11,90 em 1x no crédito sem juros com NuPay APROVADO em 99.',
+        rule: 'Filtro Anti-Gateway (Ignora NuPay -> Extrai 99)',
+        merchant: '99',
+        category: 'Transporte/Viagem',
+        impact: '- R$ 11,90 (100%)',
+        impactClass: 'mono text-rose-400',
+        telegram: '✅ R$ 11,90 em 99 (Transporte/Viagem) | Saldo Livre do Mês: R$ 7.155,45',
+        finalBalance: 'R$ 7.155,45'
+      },
+      refund: {
+        latency: 'Auto-Refund Match · 12 ms',
+        app: 'com.nu.production',
+        rawTitle: 'Estorno',
+        rawText: 'A compra em Uber no valor de R$ 13,97 foi estornada.',
+        rule: 'Remove Compra Original (Zero Registros Fantasma)',
+        merchant: 'Uber (Cancelada)',
+        category: 'Transporte/Viagem',
+        impact: 'R$ 0,00 (Anulada)',
+        impactClass: 'mono text-amber-300',
+        telegram: '✅ R$ 13,97 em Estorno: Uber (compra removida) | Saldo Livre do Mês: R$ 7.167,35',
+        finalBalance: 'R$ 7.167,35'
+      }
+    };
+
+    function runScenario(key) {
+      const s = SCENARIOS[key];
+      if (!s) return;
+      document.getElementById('simLatency').textContent = s.latency;
+      document.getElementById('simApp').textContent = s.app;
+      document.getElementById('simRawTitle').textContent = s.rawTitle;
+      document.getElementById('simRawText').textContent = s.rawText;
+      document.getElementById('simRule').textContent = s.rule;
+      document.getElementById('simMerchant').textContent = s.merchant;
+      document.getElementById('simCategory').textContent = s.category;
+      const imp = document.getElementById('simImpact');
+      imp.textContent = s.impact;
+      imp.className = s.impactClass;
+      document.getElementById('simTelegramMsg').textContent = s.telegram;
+      document.getElementById('simFinalBalance').textContent = s.finalBalance;
+
+      ['grocery', 'nupay', 'refund'].forEach(k => {
+        const btn = document.getElementById('btn-' + k);
+        if (k === key) {
+          btn.className = 'text-left rounded-xl border border-emerald-500/60 bg-emerald-500/10 p-2.5 transition-all';
+        } else {
+          btn.className = 'text-left rounded-xl border border-slate-800 bg-slate-950/70 hover:border-slate-700 p-2.5 transition-all';
+        }
+      });
+    }
+
+    function switchTab(tabId) {
+      ['tab-telegram', 'tab-dashboard', 'tab-csv', 'tab-tech'].forEach(id => {
+        document.getElementById(id).classList.toggle('hidden', id !== tabId);
+      });
+      const map = {
+        'tab-telegram': 'tbtn-telegram',
+        'tab-dashboard': 'tbtn-dashboard',
+        'tab-csv': 'tbtn-csv',
+        'tab-tech': 'tbtn-tech'
+      };
+      Object.entries(map).forEach(([tId, bId]) => {
+        const btn = document.getElementById(bId);
+        if (tId === tabId) {
+          btn.className = 'rounded-lg bg-emerald-600 text-white px-3.5 py-1.5 text-xs font-semibold';
+        } else {
+          btn.className = 'rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 px-3.5 py-1.5 text-xs font-semibold';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

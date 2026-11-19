@@ -22,6 +22,14 @@ ensure_month_provision($pdo, $config);
 if ($method === 'GET' && $path === '/health') {
     json_response(['status' => 'ok']);
 }
+if ($method === 'GET' && in_array($path, ['/showcase', '/manual'], true)) {
+    $showcaseFile = __DIR__ . '/docs/FINCONTROL_SHOWCASE.html';
+    if (is_file($showcaseFile)) {
+        header('Content-Type: text/html; charset=utf-8');
+        readfile($showcaseFile);
+        exit;
+    }
+}
 
 // 2. Notification Ingestion Webhook
 if ($method === 'POST' && $path === '/api/v1/webhook/notification') {
