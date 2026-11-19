@@ -6,6 +6,74 @@ function h(string $v): string
     return htmlspecialchars($v, ENT_QUOTES, 'UTF-8');
 }
 
+function build_period_select_options(string $selectedPeriod): string
+{
+    $selYear = (int)substr($selectedPeriod, 0, 4);
+    if ($selYear < 2020 || $selYear > 2100) {
+        $selYear = (int)date('Y');
+    }
+    $years = [$selYear - 1, $selYear, $selYear + 1];
+    $html = '';
+    foreach ($years as $y) {
+        for ($m = 1; $m <= 12; $m++) {
+            $val = sprintf('%04d-%02d', $y, $m);
+            $label = MONTH_NAMES_PT[$m - 1] . '/' . $y;
+            $sel = ($val === $selectedPeriod) ? 'selected' : '';
+            $html .= '<option value="' . $val . '" ' . $sel . '>' . $label . '</option>';
+        }
+    }
+    return $html;
+}
+
+function render_categories_modal(array $categories, string $redirectTo): string
+{
+    $redir = h($redirectTo);
+    $rows = '';
+    foreach ($categories as $cat) {
+        $cEsc = h($cat);
+        $delBtn = ($cat !== 'Outros')
+            ? '<form method="post" action="/dashboard/categories/delete" class="inline" onsubmit="return confirm(\'Excluir a categoria ' . $cEsc . '? Os itens dela irão para Outros.\')"><input type="hidden" name="name" value="' . $cEsc . '" /><input type="hidden" name="redirect_to" value="' . $redir . '" /><button type="submit" class="rounded-lg border border-rose-500/40 text-rose-400 hover:bg-rose-500/10 px-2.5 py-1.5 text-xs">Excluir</button></form>'
+            : '<span class="text-[11px] text-slate-500 px-2">Padrão</span>';
+        $rows .= '<div class="flex items-center gap-2">'
+            . '<form method="post" action="/dashboard/categories/rename" class="flex-1 flex items-center gap-2">'
+            . '<input type="hidden" name="old_name" value="' . $cEsc . '" />'
+            . '<input type="hidden" name="redirect_to" value="' . $redir . '" />'
+            . '<input type="text" name="new_name" value="' . $cEsc . '" required class="flex-1 rounded-lg bg-slate-950 border border-slate-700 px-2.5 py-1.5 text-xs text-slate-100 focus:border-emerald-500 focus:outline-none" />'
+            . '<button type="submit" class="rounded-lg bg-sky-600 hover:bg-sky-500 px-2.5 py-1.5 text-xs font-semibold text-white">Renomear</button>'
+            . '</form>'
+            . $delBtn
+            . '</div>';
+    }
+    return <<<HTML
+  <div id="categoriesModal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-md p-5 space-y-4 max-h-[85vh] flex flex-col">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="text-base font-bold">🏷️ Gerenciar Categorias</h3>
+          <p class="text-[11px] text-slate-400">Renomeie (atualiza todos os gastos), crie ou exclua categorias.</p>
+        </div>
+        <button type="button" onclick="closeCategoriesModal()" class="text-slate-400 hover:text-slate-200 text-lg">&times;</button>
+      </div>
+      <form method="post" action="/dashboard/categories/add" class="flex items-center gap-2 pb-3 border-b border-slate-800">
+        <input type="hidden" name="redirect_to" value="{$redir}" />
+        <input type="text" name="name" required placeholder="Nova categoria (ex: Viagens, Pet...)" class="flex-1 rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs text-slate-100 focus:border-emerald-500 focus:outline-none" />
+        <button type="submit" class="rounded-lg bg-emerald-600 hover:bg-emerald-500 px-3 py-2 text-xs font-semibold text-white whitespace-nowrap">+ Criar</button>
+      </form>
+      <div class="space-y-2 overflow-y-auto pr-1 flex-1">
+        {$rows}
+      </div>
+      <div class="flex justify-end pt-2 border-t border-slate-800">
+        <button type="button" onclick="closeCategoriesModal()" class="rounded-lg border border-slate-700 px-4 py-1.5 text-xs text-slate-300">Fechar</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openCategoriesModal() { document.getElementById('categoriesModal').classList.remove('hidden'); }
+    function closeCategoriesModal() { document.getElementById('categoriesModal').classList.add('hidden'); }
+  </script>
+HTML;
+}
+
 function sortable_js(): string
 {
     return <<<JS
@@ -314,6 +382,8 @@ function render_dashboard(array $summary, array $yearly, array $plans, array $ca
         $catOptions .= '<option value="' . h($c) . '">' . h($c) . '</option>';
     }
     $catOptionsWithNew = $catOptions . '<option value="__NEW__">+ Nova categoria...</option>';
+    $periodSelectOpts = build_period_select_options($summary['period']);
+    $catModalHtml = render_categories_modal($categories, "/dashboard?month={$period}");
 
     // Consumption Bills HTML
     $billsHtml = '';
@@ -505,8 +575,9 @@ HTML;
       <div class="flex items-center gap-1.5 sm:gap-2">
         {$pendingBadge}
         <form method="get" action="/dashboard" class="flex items-center">
-          <input type="month" name="month" value="{$period}" onchange="this.form.submit()" class="rounded-md bg-slate-950 border border-slate-700 px-2 py-1 text-xs text-slate-200 focus:border-emerald-500 focus:outline-none w-32 sm:w-auto" />
+          <select name="month" onchange="this.form.submit()" class="rounded-md bg-slate-950 border border-slate-700 px-2 py-1 text-xs text-slate-200 focus:border-emerald-500 focus:outline-none">{$periodSelectOpts}</select>
         </form>
+        <button type="button" onclick="openCategoriesModal()" class="rounded-md border border-slate-700 hover:bg-slate-800 px-2.5 py-1 text-xs font-medium text-slate-200 whitespace-nowrap" title="Editar / Gerenciar Categorias">🏷️ <span class="hidden sm:inline">Categorias</span></button>
         <button type="button" onclick="openImportModal()" class="rounded-md bg-sky-600 hover:bg-sky-500 px-2.5 py-1 text-xs font-semibold text-white whitespace-nowrap">📄 <span class="hidden sm:inline">Importar Fatura</span></button>
         <button type="button" onclick="openQuickModal('INCOME')" class="rounded-md bg-emerald-600 hover:bg-emerald-500 px-2.5 py-1 text-xs font-semibold text-white whitespace-nowrap">+ <span class="hidden sm:inline">Receita / Gasto</span></button>
         <a href="/transactions?year={$yearNum}&month={$monthNum}" class="sm:hidden rounded-md border border-slate-700 hover:bg-slate-800 px-2 py-1 text-xs text-slate-300">Lista</a>
@@ -681,6 +752,7 @@ HTML;
     </div>
   </div>
 
+  {$catModalHtml}
   <div id="editTxModal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
     <div class="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-md p-5 space-y-4">
       <div class="flex items-center justify-between">
@@ -725,7 +797,7 @@ HTML;
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
             <label class="block text-xs text-slate-400 mb-1">Competência da Fatura</label>
-            <input type="month" name="billing_month" value="{$period}" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm" />
+            <select name="billing_month" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm">{$periodSelectOpts}</select>
           </div>
           <div>
             <label class="block text-xs text-slate-400 mb-1">Alocação de Data</label>
@@ -878,6 +950,12 @@ function render_transactions(array $result, array $categories, array $filters): 
     $sortJs = sortable_js();
     $splitCollapseJs = split_and_collapse_js();
     $currentReqUri = h((string)($_SERVER['REQUEST_URI'] ?? "/transactions?year={$yearVal}&month={$monthVal}"));
+    $catModalHtml = render_categories_modal($categories, "/transactions?year={$yearVal}&month={$monthVal}");
+    $yearOpts = '';
+    for ($y = $yearVal - 2; $y <= $yearVal + 2; $y++) {
+        $selY = ($y === $yearVal) ? 'selected' : '';
+        $yearOpts .= '<option value="' . $y . '" ' . $selY . '>' . $y . '</option>';
+    }
     echo <<<HTML
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -906,6 +984,8 @@ function render_transactions(array $result, array $categories, array $filters): 
         </nav>
       </div>
       <div class="flex items-center gap-1.5">
+        <button type="button" onclick="openCategoriesModal()" class="rounded-md border border-slate-700 hover:bg-slate-800 px-2.5 py-1 text-xs font-medium text-slate-200 whitespace-nowrap" title="Editar / Gerenciar Categorias">🏷️ <span class="hidden sm:inline">Categorias</span></button>
+        <a href="/manual" class="rounded-md border border-slate-700 hover:bg-slate-800 px-2 py-1 text-xs text-slate-300">Ajuda</a>
         <a href="/dashboard" class="sm:hidden rounded-md border border-slate-700 hover:bg-slate-800 px-2 py-1 text-xs text-slate-300">Dashboard</a>
         <a href="/logout" class="rounded-md border border-slate-700 hover:bg-slate-800 px-2 py-1 text-xs text-slate-300">Sair</a>
       </div>
@@ -921,11 +1001,11 @@ function render_transactions(array $result, array $categories, array $filters): 
       <form method="get" action="/transactions" class="collapse-body grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2.5">
         <div>
           <label class="block text-[11px] text-slate-400 mb-1">Ano</label>
-          <input type="number" name="year" min="2020" max="2100" value="{$yearVal}" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-2.5 py-1.5 text-xs text-slate-100" />
+          <select name="year" onchange="this.form.submit()" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-2.5 py-1.5 text-xs text-slate-100">{$yearOpts}</select>
         </div>
         <div>
           <label class="block text-[11px] text-slate-400 mb-1">Mês</label>
-          <select name="month" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-2.5 py-1.5 text-xs text-slate-100"><option value="0" {$selAllMonths}>Todos</option>{$monthOpts}</select>
+          <select name="month" onchange="this.form.submit()" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-2.5 py-1.5 text-xs text-slate-100"><option value="0" {$selAllMonths}>Todos</option>{$monthOpts}</select>
         </div>
         <div>
           <label class="block text-[11px] text-slate-400 mb-1">Categoria</label>
@@ -980,6 +1060,7 @@ function render_transactions(array $result, array $categories, array $filters): 
     </section>
   </main>
 
+  {$catModalHtml}
   <div id="editTxModal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
     <div class="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-md p-5 space-y-4">
       <div class="flex items-center justify-between">

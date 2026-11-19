@@ -1032,4 +1032,60 @@ if ($method === 'POST' && preg_match('#^/dashboard/plan/(\d+)/delete$#', $path, 
     exit;
 }
 
+if ($method === 'POST' && $path === '/dashboard/categories/add') {
+    if (!is_dashboard_authenticated($config)) {
+        header('Location: /login', true, 303);
+        exit;
+    }
+    $name = trim((string)($_POST['name'] ?? ''));
+    if ($name !== '') {
+        ensure_category_exists($pdo, $config, $name);
+    }
+    $redirectTo = (string)($_POST['redirect_to'] ?? '/dashboard');
+    $safeRedir = str_starts_with($redirectTo, '/') ? $redirectTo : '/dashboard';
+    header("Location: {$safeRedir}", true, 303);
+    exit;
+}
+
+if ($method === 'POST' && $path === '/dashboard/categories/rename') {
+    if (!is_dashboard_authenticated($config)) {
+        header('Location: /login', true, 303);
+        exit;
+    }
+    get_all_categories($pdo, $config);
+    $oldName = trim((string)($_POST['old_name'] ?? ''));
+    $newName = mb_substr(trim((string)($_POST['new_name'] ?? '')), 0, 64);
+    if ($oldName !== '' && $newName !== '' && $oldName !== $newName) {
+        $pdo->prepare('INSERT OR IGNORE INTO categories (name, created_at) VALUES (?, ?)')
+            ->execute([$newName, gmdate('Y-m-d\TH:i:s\Z')]);
+        $pdo->prepare('DELETE FROM categories WHERE name = ?')->execute([$oldName]);
+        $pdo->prepare('UPDATE annual_plan SET category = ? WHERE category = ?')->execute([$newName, $oldName]);
+        $pdo->prepare('UPDATE transactions SET category = ? WHERE category = ?')->execute([$newName, $oldName]);
+        $pdo->prepare('UPDATE merchant_memory SET category = ? WHERE category = ?')->execute([$newName, $oldName]);
+    }
+    $redirectTo = (string)($_POST['redirect_to'] ?? '/dashboard');
+    $safeRedir = str_starts_with($redirectTo, '/') ? $redirectTo : '/dashboard';
+    header("Location: {$safeRedir}", true, 303);
+    exit;
+}
+
+if ($method === 'POST' && $path === '/dashboard/categories/delete') {
+    if (!is_dashboard_authenticated($config)) {
+        header('Location: /login', true, 303);
+        exit;
+    }
+    get_all_categories($pdo, $config);
+    $name = trim((string)($_POST['name'] ?? ''));
+    if ($name !== '' && $name !== 'Outros') {
+        $pdo->prepare('DELETE FROM categories WHERE name = ?')->execute([$name]);
+        $pdo->prepare("UPDATE annual_plan SET category = 'Outros' WHERE category = ?")->execute([$name]);
+        $pdo->prepare("UPDATE transactions SET category = 'Outros' WHERE category = ?")->execute([$name]);
+        $pdo->prepare("UPDATE merchant_memory SET category = 'Outros' WHERE category = ?")->execute([$name]);
+    }
+    $redirectTo = (string)($_POST['redirect_to'] ?? '/dashboard');
+    $safeRedir = str_starts_with($redirectTo, '/') ? $redirectTo : '/dashboard';
+    header("Location: {$safeRedir}", true, 303);
+    exit;
+}
+
 json_response(['detail' => 'Not found'], 404);

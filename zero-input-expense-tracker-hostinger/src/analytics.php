@@ -13,42 +13,52 @@ function format_brl(float $value): string
 
 function get_all_categories(PDO $pdo, array $config): array
 {
-    $result = $config['categories'] ?? [];
-    $seen = array_flip($result);
-    foreach ($pdo->query('SELECT name FROM categories ORDER BY name ASC')->fetchAll() as $r) {
-        $n = trim((string)$r['name']);
-        if ($n !== '' && !isset($seen[$n])) {
-            $result[] = $n;
-            $seen[$n] = true;
+    $count = (int)$pdo->query('SELECT COUNT(*) FROM categories')->fetchColumn();
+    $now = gmdate('Y-m-d\TH:i:s\Z');
+    $ins = $pdo->prepare('INSERT OR IGNORE INTO categories (name, created_at) VALUES (?, ?)');
+    if ($count === 0) {
+        foreach ($config['categories'] ?? [] as $defCat) {
+            $defCat = trim((string)$defCat);
+            if ($defCat !== '') {
+                $ins->execute([$defCat, $now]);
+            }
         }
     }
     foreach ($pdo->query('SELECT DISTINCT category FROM annual_plan')->fetchAll() as $r) {
         $n = trim((string)$r['category']);
-        if ($n !== '' && !isset($seen[$n])) {
-            $result[] = $n;
-            $seen[$n] = true;
+        if ($n !== '') {
+            $ins->execute([$n, $now]);
         }
     }
     foreach ($pdo->query('SELECT DISTINCT category FROM transactions')->fetchAll() as $r) {
         $n = trim((string)$r['category']);
-        if ($n !== '' && !isset($seen[$n])) {
-            $result[] = $n;
-            $seen[$n] = true;
+        if ($n !== '') {
+            $ins->execute([$n, $now]);
         }
+    }
+    $result = [];
+    foreach ($pdo->query('SELECT name FROM categories ORDER BY id ASC')->fetchAll() as $r) {
+        $n = trim((string)$r['name']);
+        if ($n !== '' && !in_array($n, $result, true)) {
+            $result[] = $n;
+        }
+    }
+    if (!in_array('Outros', $result, true)) {
+        $ins->execute(['Outros', $now]);
+        $result[] = 'Outros';
     }
     return $result;
 }
 
 function ensure_category_exists(PDO $pdo, array $config, string $name): string
 {
+    get_all_categories($pdo, $config);
     $clean = mb_substr(trim($name), 0, 64);
     if ($clean === '') {
         return 'Outros';
     }
-    if (!in_array($clean, $config['categories'] ?? [], true)) {
-        $pdo->prepare('INSERT OR IGNORE INTO categories (name, created_at) VALUES (?, ?)')
-            ->execute([$clean, gmdate('Y-m-d\TH:i:s\Z')]);
-    }
+    $pdo->prepare('INSERT OR IGNORE INTO categories (name, created_at) VALUES (?, ?)')
+        ->execute([$clean, gmdate('Y-m-d\TH:i:s\Z')]);
     return $clean;
 }
 
