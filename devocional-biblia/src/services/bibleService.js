@@ -144,9 +144,9 @@ export async function fetchBookData(bookIdOrName) {
 
   // Tentativas de URL para compatibilidade com Vercel, subpastas e ambientes locais
   const urlsToTry = [
-    `/biblia/${bookId}.json`,
-    `./biblia/${bookId}.json`,
-    `biblia/${bookId}.json`
+    `/biblia/${bookId}.json?v=20261119`,
+    `./biblia/${bookId}.json?v=20261119`,
+    `biblia/${bookId}.json?v=20261119`
   ];
 
   let lastError = null;
@@ -154,6 +154,7 @@ export async function fetchBookData(bookIdOrName) {
   for (const url of urlsToTry) {
     try {
       const response = await fetch(url, {
+        cache: 'no-cache',
         headers: { 'Accept': 'application/json' }
       });
       
