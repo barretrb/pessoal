@@ -109,11 +109,11 @@ export default function LeitorBiblico({
   // Mídia devocional conectada especificamente ao capítulo bíblico aberto
   const activeChapterStr = `${activeBook} ${selectedChapter}`;
   const activeChapterIndex = dayData?.readings ? dayData.readings.indexOf(activeChapterStr) : 0;
-  const [chapterMusicOverride, setChapterMusicOverride] = useState(0);
+  const [chapterMusicOverride, setChapterMusicOverride] = useState(null);
 
   // Reseta override ao alternar de livro ou capítulo
   useEffect(() => {
-    setChapterMusicOverride(0);
+    setChapterMusicOverride(null);
   }, [activeBook, selectedChapter]);
 
   const activeChapterMusic = getMusicForChapter(
@@ -585,7 +585,7 @@ export default function LeitorBiblico({
               <button
                 onClick={() => {
                   telemetryService.track('music_cycle_reader', { chapter: activeChapterStr });
-                  setChapterMusicOverride(prev => prev + 1);
+                  setChapterMusicOverride(prev => prev === null ? (activeChapterMusic.artistIndex ?? 0) + 1 : prev + 1);
                 }}
                 className="inline-flex items-center space-x-1 px-2.5 py-1 rounded-xl bg-white dark:bg-zinc-700 border border-zinc-200 dark:border-zinc-600 text-[11px] font-medium text-zinc-700 dark:text-zinc-200 hover:bg-amber-50 dark:hover:bg-zinc-600 transition-colors shadow-2xs"
                 title="Trocar por outro louvor temático deste capítulo"
@@ -696,6 +696,13 @@ export default function LeitorBiblico({
 
               </div>
             ))
+          )}
+          {!isDataLoading && activeChapterData.length > 0 && (
+            <div className="pt-6 mt-8 border-t border-zinc-200/80 dark:border-zinc-800 sepia:border-[#e6d3a7] flex items-center justify-center gap-3 text-[11px] font-sans font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 sepia:text-[#8c6b3f] select-none">
+              <span className="h-px w-8 bg-zinc-200 dark:bg-zinc-800 sepia:bg-[#e6d3a7]" />
+              <span>Fim de {activeBook} {selectedChapter}</span>
+              <span className="h-px w-8 bg-zinc-200 dark:bg-zinc-800 sepia:bg-[#e6d3a7]" />
+            </div>
           )}
         </article>
       )}

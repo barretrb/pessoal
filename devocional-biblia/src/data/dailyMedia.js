@@ -1598,144 +1598,131 @@ export const THEMATIC_CHAPTER_MUSIC = {
   ]
 };
 
+function hashBookChapter(bookName, chapterNum) {
+  const str = `${bookName}:${chapterNum}`;
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = ((hash << 5) - hash + str.charCodeAt(i)) | 0;
+  }
+  return Math.abs(hash);
+}
+
+function buildCategoryPool(primarySpecs, genreLabel) {
+  const byId = new Map(PREFERRED_ARTISTS.map(a => [a.id, a]));
+  const usedIds = new Set();
+  const primary = [];
+
+  for (const spec of primarySpecs) {
+    const artist = byId.get(spec.id);
+    if (!artist || usedIds.has(spec.id)) continue;
+    usedIds.add(spec.id);
+    const t = artist.sampleTrack;
+    primary.push({
+      ...t,
+      title: spec.title || t.title,
+      youtubeMusicUrl: t.youtubeMusicUrl || getYoutubeMusicSearchUrl(`${t.artist} ${t.title} estudio`),
+      description: spec.description || t.description,
+      theme: genreLabel
+    });
+  }
+
+  const extras = PREFERRED_ARTISTS
+    .filter(a => !usedIds.has(a.id))
+    .map(a => ({
+      ...a.sampleTrack,
+      youtubeMusicUrl: a.sampleTrack.youtubeMusicUrl || getYoutubeMusicSearchUrl(`${a.sampleTrack.artist} ${a.sampleTrack.title} estudio`),
+      theme: genreLabel
+    }));
+
+  return { pool: [...primary, ...extras], primaryCount: primary.length };
+}
+
 // Resolução de Fallback Temático Inteligente para qualquer livro e capítulo da Bíblia
 function resolveThematicFallback(bookName, chapterNum, readingIndex = 0, overrideIndex = null) {
   const clean = (bookName || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
-  const index = overrideIndex !== null && overrideIndex !== undefined ? Math.abs(overrideIndex) : (chapterNum + readingIndex);
+  const hasOverride = overrideIndex !== null && overrideIndex !== undefined;
+  const baseHash = hashBookChapter(clean, chapterNum) + readingIndex * 7;
+
+  let category;
 
   // Evangelhos e Atos
-  if (clean.includes('mateus') || clean.includes('marcos') || clean.includes('lucas') || clean.includes('atos')) {
-    const list = [
-      {
-        title: "Castelo Forte",
-        artist: "Novo Canto (IPAlpha)",
-        album: "IPAlpha Música (Estúdio)",
-        duration: "4:50 min",
-        youtubeId: "RGCzQjFKk2w",
-        youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Castelo Forte estudio"),
-        description: "Hino congregacional da fé reformada sobre a soberania triunfante do Reino de Deus."
-      },
-      {
-        title: "Aqui Vou Eu",
-        artist: "Banda NOVA (IPAlpha)",
-        album: "IPAlpha Nova (Estúdio)",
-        duration: "4:30 min",
-        youtubeId: "cGcWmX2Pz0k",
-        youtubeMusicUrl: getYoutubeMusicSearchUrl("Banda NOVA IPAlpha Aqui Vou Eu estudio"),
-        description: "Louvor jovem de consagração e disponibilidade ao chamado do Reino de Cristo."
-      },
-      {
-        title: "Vem Me Socorrer",
-        artist: "Marcos Almeida",
-        album: "Eu Sarau (Estúdio)",
-        duration: "4:18 min",
-        youtubeId: "_kAVIQzwffg",
-        youtubeMusicUrl: getYoutubeMusicSearchUrl("Marcos Almeida Vem Me Socorrer estudio"),
-        description: "Clamor poético e sincero por graça e restauração aos pés do Redentor."
-      }
-    ];
-    return list[index % list.length];
+  if (clean.includes('mateus') || clean.includes('marcos') || clean.includes('lucas') || clean.includes('atos') || clean === 'joao') {
+    category = buildCategoryPool([
+      { id: 'novo-canto', description: 'Hino congregacional da fé reformada sobre a soberania triunfante do Reino de Deus.' },
+      { id: 'banda-nova', description: 'Louvor jovem de consagração e disponibilidade ao chamado do Reino de Cristo.' },
+      { id: 'marcos-almeida', description: 'Clamor poético e sincero por graça e restauração aos pés do Redentor.' },
+      { id: 'leonardo-goncalves', description: 'Gravação de estúdio retratando a entrega voluntária e o caminho da cruz.' },
+      { id: 'fernandinho', description: 'Celebração da missão de Jesus da Galileia até os confins da terra.' },
+      { id: 'coletivo-candieiro', description: 'Chamado ao discipulado e à pesca abundante conduzida pelo Mestre.' },
+      { id: 'morada', description: 'Adoração cristocêntrica centrada na glória e suficiência do Evangelho.' },
+      { id: 'oficina-g3', description: 'Reflexão sobre o amor incondicional revelado na vida e obra de Cristo.' },
+      { id: 'eli-soares', description: 'Oração cantada por transformação diária e fidelidade no seguimento a Jesus.' },
+      { id: 'felipe-valente', description: 'Descanso na providência do Pai que cuida dos lírios do campo e de Seus filhos.' }
+    ], 'Evangelhos & Atos');
+  } else if (
+    clean.includes('romanos') || clean.includes('corintios') || clean.includes('galatas') ||
+    clean.includes('efesios') || clean.includes('filipenses') || clean.includes('colossenses') ||
+    clean.includes('tessalonicenses') || clean.includes('timoteo') || clean.includes('tito') ||
+    clean.includes('filemom') || clean.includes('hebreus') || clean.includes('tiago') ||
+    clean.includes('pedro') || clean.includes('judas') || clean.includes('apocalipse') ||
+    clean.includes('1 joao') || clean.includes('2 joao') || clean.includes('3 joao')
+  ) {
+    // Cartas Paulinas, Gerais e Apocalipse
+    category = buildCategoryPool([
+      { id: 'projeto-sola', description: 'Exposição lírica da doutrina da justificação e supremacia de Cristo.' },
+      { id: 'paulo-cesar-baruk', title: 'Jardim da Inocência (Graça)', description: 'Gravação de estúdio celebrando a paz com Deus mediante a justificação pela fé.' },
+      { id: 'os-arrais', description: 'Folk bíblico contemplando a firme esperança da glória eterna prometida nas Escrituras.' },
+      { id: 'alexandre-magnani', description: 'Edificação mútua e comunhão do Corpo de Cristo na caminhada cristã.' },
+      { id: 'purples', description: 'Identidade em Cristo e pertencimento à família da fé.' },
+      { id: 'mauro-henrique', description: 'Humildade e dependência filial diante da sabedoria do Evangelho.' },
+      { id: 'pg', description: 'Sensibilidade à voz do Espírito e perseverança na sã doutrina.' },
+      { id: 'fruto-sagrado', description: 'Exame sincero do coração à luz da ética apostólica.' },
+      { id: 'vocal-livre', description: 'Súplica por santidade e renovação da mente pela Palavra.' },
+      { id: 'banda-nova', description: 'Envio missionário e testemunho corajoso da graça de Deus.' }
+    ], 'Epístolas & Doutrina');
+  } else if (
+    clean.includes('salmo') || clean.includes('proverbios') ||
+    clean.includes('eclesiastes') || clean.includes('canticos') || clean === 'jo'
+  ) {
+    // Salmos e Sabedoria
+    category = buildCategoryPool([
+      { id: 'novo-canto', title: 'Castelo Forte (Salmo 46)', description: 'Deus é o nosso refúgio e fortaleza, socorro bem presente nas tribulações.' },
+      { id: 'os-arrais', description: 'Oração lírica e contemplativa baseada nos cânticos de confiança nos Salmos.' },
+      { id: 'vocal-livre', description: 'Súplica sincera pela renovação de um coração puro e espírito inabalável.' },
+      { id: 'marcos-almeida', description: 'Poesia intimista de clamor por socorro e descanso na fidelidade de Deus.' },
+      { id: 'felipe-valente', description: 'Sabedoria para confiar no Senhor acima das inquietações da vida.' },
+      { id: 'paulo-cesar-baruk', description: 'Contemplação da graça e misericórdia que se renovam a cada manhã.' },
+      { id: 'purples', description: 'Desejo de habitar na casa do Senhor todos os dias da vida.' },
+      { id: 'mauro-henrique', description: 'Cântico de simplicidade e temor do Senhor, princípio da sabedoria.' },
+      { id: 'alexandre-magnani', description: 'Caminhada comunitária sustentada pela sabedoria divina.' },
+      { id: 'eli-soares', description: 'Clamor por sabedoria prática e integridade diante de Deus.' }
+    ], 'Salmos & Sabedoria');
+  } else {
+    // Antigo Testamento Geral (História e Profetas)
+    category = buildCategoryPool([
+      { id: 'novo-canto', description: 'Louvor congregacional proclamando a aliança eterna e a soberania do Senhor dos Exércitos.' },
+      { id: 'banda-nova', description: 'Louvor celebrando a obediência e prontidão ao chamado de Deus.' },
+      { id: 'projeto-sola', description: 'Poesia bíblica conectando a promessa das Escrituras ao Cordeiro Eterno.' },
+      { id: 'thalles-roberto', description: 'Clamor profético por avivamento e retorno sincero à aliança com Deus.' },
+      { id: 'fernandinho', description: 'Exaltação ao Deus que cumpre Suas promessas de geração em geração.' },
+      { id: 'morada', description: 'Adoração centrada na fidelidade de Deus ao longo da história da redenção.' },
+      { id: 'oficina-g3', description: 'Confiança na misericórdia divina mesmo em tempos de prova e exílio.' },
+      { id: 'fruto-sagrado', description: 'Chamado profético à justiça, retidão e arrependimento verdadeiro.' },
+      { id: 'pg', description: 'Escuta atenta à Palavra dos profetas que apontam para o Messias.' },
+      { id: 'coletivo-candieiro', description: 'Esperança no livramento soberano do Senhor em favor do Seu povo.' }
+    ], 'História & Profetas');
   }
 
-  // Cartas Paulinas e Gerais
-  if (clean.includes('romanos') || clean.includes('corintios') || clean.includes('galatas') || clean.includes('efesios') || clean.includes('filipenses') || clean.includes('colossenses') || clean.includes('hebreus')) {
-    const list = [
-      {
-        title: "Colossenses 1",
-        artist: "Projeto Sola",
-        album: "Single de Estúdio",
-        duration: "4:47 min",
-        youtubeId: "gk7XWCMwO94",
-        youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Colossenses 1 estudio"),
-        description: "Exposição lírica da doutrina da justificação e supremacia de Cristo."
-      },
-      {
-        title: "Jardim da Inocência (Graça)",
-        artist: "Paulo César Baruk",
-        album: "Graça (Estúdio)",
-        duration: "4:52 min",
-        youtubeId: "bi9W6oZzfxk",
-        youtubeMusicUrl: getYoutubeMusicSearchUrl("Paulo Cesar Baruk Jardim da Inocencia estudio"),
-        description: "Gravação de estúdio celebrando a paz com Deus mediante a justificação pela fé."
-      },
-      {
-        title: "Esperança",
-        artist: "Os Arrais",
-        album: "As Canções da Terra (Estúdio)",
-        duration: "4:24 min",
-        youtubeId: "eDflquxhedQ",
-        youtubeMusicUrl: getYoutubeMusicSearchUrl("Os Arrais Esperança estudio"),
-        description: "Folk bíblico contemplando a firme esperança da glória eterna prometida nas Escrituras."
-      }
-    ];
-    return list[index % list.length];
-  }
+  const { pool, primaryCount } = category;
+  const idx = hasOverride
+    ? Math.abs(overrideIndex) % pool.length
+    : Math.abs(baseHash) % primaryCount;
 
-  // Salmos e Sabedoria
-  if (clean.includes('salmo') || clean.includes('proverbios') || clean.includes('eclesiastes')) {
-    const list = [
-      {
-        title: "Castelo Forte (Salmo 46)",
-        artist: "Novo Canto (IPAlpha)",
-        album: "IPAlpha Música (Estúdio)",
-        duration: "4:50 min",
-        youtubeId: "RGCzQjFKk2w",
-        youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Castelo Forte estudio"),
-        description: "Deus é o nosso refúgio e fortaleza, socorro bem presente nas tribulações."
-      },
-      {
-        title: "Esperança",
-        artist: "Os Arrais",
-        album: "As Canções da Terra (Estúdio)",
-        duration: "4:24 min",
-        youtubeId: "eDflquxhedQ",
-        youtubeMusicUrl: getYoutubeMusicSearchUrl("Os Arrais Esperança estudio"),
-        description: "Oração lírica e contemplativa baseada nos cânticos de confiança nos Salmos."
-      },
-      {
-        title: "A Começar em Mim",
-        artist: "Vocal Livre",
-        album: "Por Toda a Terra (Estúdio)",
-        duration: "3:50 min",
-        youtubeId: "nDXqNTyNC7A",
-        youtubeMusicUrl: getYoutubeMusicSearchUrl("Vocal Livre A Começar em Mim estudio"),
-        description: "Súplica sincera pela renovação de um coração puro e espírito inabalável."
-      }
-    ];
-    return list[index % list.length];
-  }
-
-  // Antigo Testamento Geral
-  const generalList = [
-    {
-      title: "Castelo Forte",
-      artist: "Novo Canto (IPAlpha)",
-      album: "IPAlpha Música (Estúdio)",
-      duration: "4:50 min",
-      youtubeId: "RGCzQjFKk2w",
-      youtubeMusicUrl: getYoutubeMusicSearchUrl("Novo Canto IPAlpha Castelo Forte estudio"),
-      description: "Louvor congregacional proclamando a aliança eterna e a soberania do Senhor dos Exércitos."
-    },
-    {
-      title: "Aqui Vou Eu",
-      artist: "Banda NOVA (IPAlpha)",
-      album: "IPAlpha Nova (Estúdio)",
-      duration: "4:30 min",
-      youtubeId: "cGcWmX2Pz0k",
-      youtubeMusicUrl: getYoutubeMusicSearchUrl("Banda NOVA IPAlpha Aqui Vou Eu estudio"),
-      description: "Louvor celebrando a obediência e prontidão ao chamado de Deus."
-    },
-    {
-      title: "Colossenses 1",
-      artist: "Projeto Sola",
-      album: "Single de Estúdio",
-      duration: "4:47 min",
-      youtubeId: "gk7XWCMwO94",
-      youtubeMusicUrl: getYoutubeMusicSearchUrl("Projeto Sola Colossenses 1 estudio"),
-      description: "Poesia bíblica conectando a promessa das Escrituras ao Cordeiro Eterno."
-    }
-  ];
-  return generalList[index % generalList.length];
+  const track = pool[idx];
+  return {
+    ...track,
+    artistIndex: idx
+  };
 }
 
 // Obtém a música recomendada especificamente para cada capítulo do dia com base no tema exegético do texto
@@ -1767,6 +1754,6 @@ export function getMusicForChapter(dayId, readingStr, readingIndex = 0, override
     chapter: cleanReading,
     ...fallback,
     theme: fallback.theme || `Louvor para ${cleanReading}`,
-    artistIndex: overrideArtistIndex !== null && overrideArtistIndex !== undefined ? overrideArtistIndex : readingIndex
+    artistIndex: fallback.artistIndex
   };
 }
