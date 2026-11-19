@@ -70,14 +70,11 @@
 
     <!-- Hero First Fold -->
     <section class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
-      <div class="order-2 lg:order-1 lg:col-span-5 bg-white rounded-2xl p-5 md:p-6 border border-stone-200/90 flex flex-col justify-between gap-4">
+      <div class="order-1 lg:order-1 lg:col-span-5 bg-white rounded-2xl p-5 md:p-6 border border-stone-200/90 flex flex-col justify-between gap-4">
         <div>
           <div class="flex flex-wrap items-center gap-1.5">
             <span class="text-[10px] font-bold uppercase tracking-wider text-forest bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full">
               19/12/2026 a 04/01/2027 • 16 Diárias
-            </span>
-            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded-full">
-              3 Aberturas de Mala
             </span>
           </div>
 
@@ -107,7 +104,7 @@
       </div>
 
       <!-- 4-Photo Breathing Mosaic -->
-      <div class="order-1 lg:order-2 lg:col-span-7 flex flex-col gap-2.5">
+      <div class="order-2 lg:order-2 lg:col-span-7 flex flex-col gap-2.5">
         <div onclick="openLightbox(0)" class="group relative h-[185px] sm:h-[265px] rounded-2xl overflow-hidden bg-stone-200 cursor-pointer border border-stone-200/80">
           <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Pedra_Azul_-_Domingos_Martins_-_ES_-_Brasil.jpg/960px-Pedra_Azul_-_Domingos_Martins_-_ES_-_Brasil.jpg"
             alt="Pedra Azul (ES)" referrerpolicy="no-referrer" fetchpriority="high" decoding="sync"
@@ -272,15 +269,15 @@
         photo: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Por_do_sol_na_praia_de_Mea%C3%ADpe%2CGuarapari_01.jpg",
         days: [
           { date: "19/12 (Sáb)", text: "Chegada em Guarapari e caminhada de fim de tarde na Praia das Castanheiras ou Praia dos Namorados.", pet: "🐾 Pet-Friendly" },
-          { date: "20/12 (Dom)", text: "Dia de enseadas calmas nas Três Praias ou Praia de Peracanga, seguido de almoço com moqueca capixaba em Meaípe.", pet: "🐾 Enseadas Calmas" },
-          { date: "21/12 (Seg)", text: "Bate-volta de 30 min até Iriri (Costa Azul e Areia Preta) com parada no Santuário Nacional de São José de Anchieta (100% pet-friendly). Alternativa sem pets: trilha plana da Restinga (2,5 km) no Parque Paulo César Vinha até a Lagoa de Caraís e Morro da Pescaria.", pet: "🐾 100% Pet (Iriri) | 🛋️ Sem Pets (Parque)" }
+          { date: "20/12 (Dom)", text: "Dia de enseadas calmas nas Três Praias ou Praia de Peracanga, seguido de almoço com moqueca capixaba na varanda externa do Restaurante Gaeta em Meaípe.", pet: "🐾 Enseadas Calmas" },
+          { date: "21/12 (Seg)", text: "Bate-volta de 30 min até Iriri (Costa Azul e Areia Preta) com parada no Santuário Nacional de São José de Anchieta (100% pet-friendly). Se quiser fazer a trilha plana da Restinga (2,5 km) no Parque Paulo César Vinha (pets proibidos), confirmar antes se o Airbnb autoriza permanência breve ou usar pet sitter.", pet: "🐾 100% Pet (Iriri) | ⚠️ Parque s/ Pets" }
         ],
         lodgings: [
-          { name: "Airbnb na Enseada Azul ou Peracanga", price: "~R$ 340/noite", tag: "Opção Principal • Cozinha", desc: "Apartamento com cozinha equipada e garagem coberta para preparar café da manhã.", url: abnb("Guarapari, Espírito Santo", "2026-12-19", "2026-12-22"), cta: "Buscar no Airbnb" },
-          { name: "Hotel Atlântico (Centro)", price: "A partir de R$ 474/noite", tag: "3★ • Vista Mar", desc: "Piscinas, vista para o mar, café da manhã e estacionamento gratuito.", url: "https://www.booking.com/searchresults.pt-br.html?ss=Hotel+Atlantico+Guarapari", cta: "Ver no Booking" },
-          { name: "Pousada Caravelas Guarapari (Meaípe)", price: "A partir de R$ 251/noite", tag: "Custo-Benefício", desc: "Perto dos restaurantes de moqueca, com piscina e garagem gratuita.", url: "https://www.booking.com/searchresults.pt-br.html?ss=Pousada+Caravelas+Guarapari+Meaipe", cta: "Ver no Booking" }
+          { name: "Airbnb na Enseada Azul ou Peracanga", price: "~R$ 340/noite", tag: "Opção Principal • Cozinha", desc: "Apartamento filtrado p/ 2 pets com cozinha equipada e garagem coberta.", url: abnb("Guarapari, Espírito Santo", "2026-12-19", "2026-12-22"), cta: "Buscar (2 Pets) no Airbnb" },
+          { name: "Pousada Caravelas Guarapari (Meaípe)", price: "A partir de R$ 251/noite", tag: "Pet-Friendly • Meaípe", desc: "Aceita pets mediante pedido prévio (confirmar taxa p/ 2 Chihuahuas), piscina e garagem.", url: "https://www.booking.com/hotel/br/pousada-caravelas.pt-br.html", cta: "Ver Pousada no Booking" },
+          { name: "Hotel Pousada Caminho da Praia (Praia do Morro)", price: "Consultar período", tag: "Pet-Friendly • Praia do Morro", desc: "Aceita pets de pequeno porte, piscina arborizada, café da manhã e estacionamento.", url: "https://www.booking.com/hotel/br/caminho-da-praia.pt-br.html", cta: "Ver Pousada no Booking" }
         ],
-        restaurants: null
+        restaurants: "Restaurante Gaeta (Av. Beira Mar, 47 — Meaípe, moqueca capixaba tradicional com varanda externa pet-friendly; confirmar mesa pelo (27) 99900-1966)."
       },
       {
         id: "base-2",
@@ -295,13 +292,13 @@
           { date: "22/12 (Ter)", text: "Subida pela serra e passeio pela Rota do Lagarto em Pedra Azul.", pet: "🐾 Pet-Friendly" },
           { date: "23/12 (Qua)", text: "Circuito de cafés especiais e agroturismo na Fazenda Camocim (Café do Jacu) e Fazenda Carnielli (cafés, queijaria artesanal e socol).", pet: "☕ Agroturismo" },
           { date: "24/12 (Qui • Véspera)", text: "Manhã livre, café da tarde no Café da Fazenda (Rota do Lagarto) e Ceia de Natal gourmet preparada no chalé com produtos locais e vinhos de empório (ou jantar no Don Due / Espigueiro).", pet: "🎄 Ceia no Chalé" },
-          { date: "25/12 (Sex • Natal)", text: "Caminhada leve pelas trilhas baixas do Parque Estadual da Pedra Azul (deixar pets na hospedagem) e almoço tranquilo nas montanhas.", pet: "🛋️ Pets na Hospedagem" },
-          { date: "26/12 e 27/12 (Sáb–Dom)", text: "Bate-volta estruturado ao Caparaó (Alto Caparaó / Pedra Menina, ~2h15 cada trecho, sem desfazer malas): lavouras de café de altitude e poços do Vale Verde e Cachoeira Bonita (usar áreas privativas pet-friendly em Patrimônio da Penha se levar os cães).", pet: "☕ Caparaó • 🐾 Penha Pet" }
+          { date: "25/12 (Sex • Natal)", text: "Parque Estadual da Pedra Azul exige agendamento obrigatório no agenda.es.gov.br (150 vagas/dia) e costuma fechar no dia 25/12 por portaria do Iema. Plano A (se abrir): trilhas baixas pela manhã com os cães em chalé autorizado/pet sitter. Plano B: passeio pet-friendly pela Rota do Lagarto e descanso no chalé.", pet: "⚠️ Agendar • 🐾 Plano B Pet" },
+          { date: "26/12 e 27/12 (Sáb–Dom)", text: "Bate-volta ao Caparaó (~2h15 cada trecho): lavouras de café de altitude. Como o Parque Nacional proíbe pets e o bate-volta é longo para deixar os cães sozinhos, priorizar áreas privativas pet-friendly em Patrimônio da Penha/Pedra Menina ou contratar pet sitter em Pedra Azul.", pet: "☕ Caparaó • 🐾 Penha Pet" }
         ],
         lodgings: [
-          { name: "Airbnb — Chalé/Sítio Rota do Lagarto ou Venda Nova", price: "~R$ 460/noite", tag: "Opção Principal • Cozinha", desc: "Cozinha equipada, vista para a serra e área verde pet-friendly.", url: abnb("Pedra Azul, Domingos Martins, Espírito Santo", "2026-12-22", "2026-12-28"), cta: "Buscar no Airbnb" },
-          { name: "Villaggio Ronchi (BR-262, Km 90)", price: "A partir de R$ 454/noite", tag: "Intimista", desc: "Ao lado das cafeterias e restaurantes da Rota do Lagarto.", url: "https://www.booking.com/searchresults.pt-br.html?ss=Villaggio+Ronchi+Pedra+Azul", cta: "Ver no Booking" },
-          { name: "Away Cabanas (Aracê) ou Pousada Pedra Azul", price: "A partir de R$ 746/noite", tag: "4★ / Cabanas", desc: "Cabanas privativas na mata ou estrutura 4 estrelas na Rota do Lagarto.", url: "https://www.booking.com/searchresults.pt-br.html?ss=Pousada+Pedra+Azul+Domingos+Martins", cta: "Ver no Booking" }
+          { name: "Airbnb — Chalé/Sítio Rota do Lagarto ou Venda Nova", price: "~R$ 460/noite", tag: "Opção Principal • Cozinha", desc: "Filtrado p/ 2 pets c/ cozinha e quintal (pedir aval por escrito para permanência breve se for ao parque).", url: abnb("Pedra Azul, Domingos Martins, Espírito Santo", "2026-12-22", "2026-12-28"), cta: "Buscar (2 Pets) no Airbnb" },
+          { name: "Away Cabanas Pedra Azul (Aracê)", price: "Consultar período", tag: "100% Pet-Friendly • Sem Taxa", desc: "A 5 min da Rota do Lagarto, cabanas privativas com cozinha, vista serra e tigelas p/ pets.", url: "https://www.instagram.com/awaycabanas/", cta: "Instagram Oficial ↗" },
+          { name: "Pousada Sítio das Pedras (Domingos Martins)", price: "Consultar período", tag: "Ecoturismo • Pet-Friendly", desc: "Chalés na Rota do Galo com restaurante, jardim amplo e estrutura pet-friendly.", url: "https://www.instagram.com/sitiodaspedras.dm/", cta: "Instagram Oficial ↗" }
         ],
         restaurants: "Don Due (Rota do Lagarto — mesas ao ar livre), Espigueiro (Rota do Carmo), Don Calmon (BR-262, Km 90) e Travoletta (BR-262, Km 97)."
       },
@@ -315,15 +312,15 @@
         drive: "Pedra Azul → Ouro Preto • BR-262 (~360 km | ~5h30). Malas grandes ficam trancadas no SUV na garagem.",
         photo: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Ouro_Preto%2C_Minas_Gerais.jpg/960px-Ouro_Preto%2C_Minas_Gerais.jpg",
         days: [
-          { date: "28/12 (Seg)", text: "Chegada no fim da tarde, passeio noturno leve pela Praça Tiradentes iluminada e jantar mineiro.", pet: "🐾 Passeio Noturno" },
-          { date: "29/12 (Ter)", text: "Manhã na Igreja de São Francisco de Assis, Museu da Inconfidência e Matriz do Pilar. À tarde, bate-volta a Mariana (15 km) e descida de trole até o lago subterrâneo da Mina da Passagem (sem esforço físico).", pet: "🛋️ Pets na Garagem/Quarto" }
+          { date: "28/12 (Seg)", text: "Chegada no fim da tarde, passeio noturno leve pela Praça Tiradentes iluminada e jantar em área aberta pet-friendly (Varanda 1921 ou O Passo).", pet: "🐾 Passeio Noturno" },
+          { date: "29/12 (Ter)", text: "Manhã na Igreja de São Francisco de Assis, Museu da Inconfidência e Matriz do Pilar; à tarde, Mariana (15 km) e Mina da Passagem. Contratar pet sitter local ou hospedar em Airbnb/quarto com autorização expressa para os 2 Chihuahuas (nunca deixar no carro/garagem).", pet: "🐾 Pet Sitter / Quarto Autorizado" }
         ],
         lodgings: [
-          { name: "Pousada Ouro Preto (Centro Histórico)", price: "A partir de R$ 407/noite", tag: "3★ • Garagem Grátis", desc: "Casarão colonial próximo à Praça Tiradentes com estacionamento gratuito.", url: "https://www.booking.com/searchresults.pt-br.html?ss=Pousada+Ouro+Preto+Centro+Historico", cta: "Ver no Booking" },
-          { name: "Pousada Caminhos da Liberdade (Centro)", price: "A partir de R$ 367/noite", tag: "Centro • Café Incluso", desc: "Prática para caminhar pelo centro histórico, com café da manhã incluso.", url: "https://www.booking.com/searchresults.pt-br.html?ss=Pousada+Caminhos+da+Liberdade+Ouro+Preto", cta: "Ver no Booking" },
-          { name: "Airbnb no Centro Histórico (c/ Garagem)", price: "Consultar período", tag: "Vaga Privativa", desc: "Filtrar obrigatoriamente por vaga de garagem privativa para as malas no SUV.", url: abnb("Ouro Preto, Minas Gerais", "2026-12-28", "2026-12-30"), cta: "Buscar no Airbnb" }
+          { name: "Pousada Sinhá Olímpia (Ouro Preto)", price: "Consultar período", tag: "4★ • Aceita Até 2 Pets (10 kg)", desc: "Política explícita para até 2 pets pequenos (até 10 kg), piscina aquecida, jardins e estacionamento.", url: "https://pousadasinhaolimpia.com.br/", cta: "Site Oficial ↗" },
+          { name: "Pousada Caminhos da Liberdade (Centro)", price: "A partir de R$ 367/noite", tag: "Centro • Pet-Friendly", desc: "A poucos passos da Praça Tiradentes, aceita pets (confirmar taxa e 2 Chihuahuas no pedido).", url: "https://www.booking.com/hotel/br/caminhos-da-liberdade-pousada.pt-br.html", cta: "Ver Pousada no Booking" },
+          { name: "Airbnb no Centro Histórico (c/ Garagem)", price: "Consultar período", tag: "Vaga Privativa • 2 Pets", desc: "Filtrado p/ 2 pets: selecionar vaga de garagem privativa para deixar as malas no SUV com segurança.", url: abnb("Ouro Preto, Minas Gerais", "2026-12-28", "2026-12-30"), cta: "Buscar (2 Pets) no Airbnb" }
         ],
-        restaurants: null
+        restaurants: "Varanda 1921 (Gastro Pub com área aberta), O Passo Pizza Jazz, Bené da Flauta (área externa próxima à Igreja de São Francisco) e Café das Flores."
       },
       {
         id: "base-4",
@@ -337,12 +334,12 @@
         days: [
           { date: "30/12 (Qua)", text: "Parada em Congonhas, chegada em Tiradentes e passeio leve pelas ruas de pedra.", pet: "🐾 Pet-Friendly" },
           { date: "31/12 (Qui • Réveillon)", text: "Manhã nos ateliês de artesanato de Bichinho, degustação na Vinícola Trindade ou Vinícola Luiz Porto e Ceia de Réveillon no centro histórico.", pet: "🍷 Vinícolas • 🥂 Ceia 31/12" },
-          { date: "01/01 (Sex • Ano Novo)", text: "Manhã tranquila na cidade e tour com degustação na Vinícola Mil Vidas (Ritápolis, a 30 min).", pet: "🍷 Vinícola Mil Vidas" }
+          { date: "01/01 (Sex • Ano Novo)", text: "Manhã tranquila na cidade e tour com degustação na Vinícola Mil Vidas (Ritápolis, a 30 min — pet-friendly e abre em feriados 11h–18h; reserva obrigatória pelo WhatsApp (32) 99851-7726).", pet: "🍷 Mil Vidas (Agendar)" }
         ],
         lodgings: [
-          { name: "Airbnb — Cuiabá ou Parque das Abelhas", price: "~R$ 530/noite", tag: "Opção Principal • Cozinha", desc: "A 10 min a pé do Largo das Forras (evita bloqueios no dia 31/12) e espaço p/ pets.", url: abnb("Tiradentes, Minas Gerais", "2026-12-30", "2027-01-02"), cta: "Buscar no Airbnb" },
-          { name: "Pousada D'óleo de Guignard (Pau de Óleo)", price: "A partir de R$ 379/noite", tag: "Chácara • Piscina", desc: "Estilo chácara arborizada com piscina e estacionamento gratuito.", url: "https://www.booking.com/searchresults.pt-br.html?ss=Pousada+D+oleo+de+Guignard+Tiradentes", cta: "Ver no Booking" },
-          { name: "Pousada Vovó Teresa (Pq. dos Bandeirantes)", price: "A partir de R$ 550/noite", tag: "Sossego • Garagem", desc: "Ambiente sossegado com estacionamento gratuito.", url: "https://www.booking.com/searchresults.pt-br.html?ss=Pousada+Vovo+Teresa+Tiradentes", cta: "Ver no Booking" }
+          { name: "Airbnb — Cuiabá ou Parque das Abelhas", price: "~R$ 530/noite", tag: "Opção Principal • Cozinha", desc: "Filtrado p/ 2 pets a 10 min a pé do Largo das Forras (evita bloqueios no dia 31/12).", url: abnb("Tiradentes, Minas Gerais", "2026-12-30", "2027-01-02"), cta: "Buscar (2 Pets) no Airbnb" },
+          { name: "Pousada Vovó Teresa (Pq. dos Bandeirantes)", price: "A partir de R$ 550/noite", tag: "Pet-Friendly • Self Check-in", desc: "Ambiente sossegado com estacionamento privativo grátis (confirmar 2 Chihuahuas no pedido).", url: "https://www.booking.com/hotel/br/pousada-vovo-teresa.pt-br.html", cta: "Ver Pousada no Booking" },
+          { name: "Pousada Charlotte (Centro)", price: "Consultar período", tag: "Centro • Pet-Friendly", desc: "Próxima ao centro histórico, jardim, café da manhã, caminhas p/ pets e estacionamento grátis.", url: "https://www.booking.com/hotel/br/pousada-charlotte.pt-br.html", cta: "Ver Pousada no Booking" }
         ],
         restaurants: "Ceia de Ano Novo (31/12): Tragaluz Restaurante Casa (Rua Direita), Angatu (Centro), O Provençal (Centro), Pacco & Bacco (Rua Direita) e La Villa Trattoria (Centro)."
       },
@@ -356,16 +353,16 @@
         drive: "Tiradentes → Ibitipoca (~2h30 via Lima Duarte) • Volta 04/01: BR-040 via Juiz de Fora → Niterói (~4h30)",
         photo: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Concei%C3%A7%C3%A3o_do_Ibitipoca_%285%29.jpg/960px-Concei%C3%A7%C3%A3o_do_Ibitipoca_%285%29.jpg",
         days: [
-          { date: "02/01 (Sáb)", text: "Chegada no vilarejo de Conceição de Ibitipoca e tarde livre para descanso.", pet: "🐾 Vilarejo" },
-          { date: "03/01 (Dom)", text: "Circuito das Águas no Parque Estadual do Ibitipoca: caminhada leve de 5 km ida e volta com passarelas (Gruta dos Gnomos, Ponte de Pedra, Prainha e Lago dos Espelhos — deixar os pets na pousada).", pet: "🛋️ Pets na Pousada" },
+          { date: "02/01 (Sáb)", text: "Chegada no vilarejo de Conceição de Ibitipoca e tarde livre com jantar ao ar livre no centrinho (Portal da Serra).", pet: "🐾 Vilarejo" },
+          { date: "03/01 (Dom)", text: "Circuito das Águas no Parque Estadual do Ibitipoca (5 km leves com passarelas). Comprar ingresso antecipado em parquedoibitipoca.com.br (R$ 34 inteira; entrada do circuito até 15h). Pets são proibidos no parque: deixar os cães em Airbnb autorizado ou com pet sitter na vila.", pet: "⚠️ Ingresso • 🐾 Pet Sitter" },
           { date: "04/01 (Seg)", text: "Café da manhã na serra e retorno direto para Niterói pela BR-040 via Juiz de Fora (~4h30).", pet: "🚗 Volta p/ Casa" }
         ],
         lodgings: [
-          { name: "Airbnb — Rua Principal do Vilarejo", price: "Consultar período", tag: "Acesso Plano/Calçado", desc: "Chalés de madeira com acesso plano/calçado (evita ladeiras de terra na chuva).", url: abnb("Conceição do Ibitipoca, Lima Duarte, Minas Gerais", "2027-01-02", "2027-01-04"), cta: "Buscar no Airbnb" },
-          { name: "Villa Nova Chalés", price: "Consultar período", tag: "Chalés de Pedra", desc: "Chalés de pedra com vista panorâmica e café da manhã artesanal.", url: "https://www.booking.com/searchresults.pt-br.html?ss=Villa+Nova+Chales+Ibitipoca", cta: "Ver no Booking" },
-          { name: "Chalé Nativo ou Repousada Chalés", price: "Consultar período", tag: "Vilarejo • Garagem", desc: "Estrutura no vilarejo com café da manhã e estacionamento gratuito.", url: "https://www.booking.com/searchresults.pt-br.html?ss=Repousada+Chales+Ibitipoca", cta: "Ver no Booking" }
+          { name: "Airbnb — Rua Principal do Vilarejo", price: "Consultar período", tag: "Acesso Plano • 2 Pets", desc: "Chalés filtrados p/ 2 pets com acesso calçado e autorização p/ permanência durante o parque.", url: abnb("Conceição do Ibitipoca, Lima Duarte, Minas Gerais", "2027-01-02", "2027-01-04"), cta: "Buscar (2 Pets) no Airbnb" },
+          { name: "Villa Nova Chalés", price: "Consultar período", tag: "Pet-Friendly • Sem Taxa Extra", desc: "Chalés de pedra com vista panorâmica, café da manhã artesanal e política pet-friendly.", url: "https://www.booking.com/hotel/br/villa-nova-chales.pt-br.html", cta: "Ver Chalés no Booking" },
+          { name: "Ibitiaçu Chalés", price: "Consultar período", tag: "Pet-Friendly • Cozinha", desc: "Chalés com varanda térrea, cozinha equipada e vista p/ montanha (confirmar 2 pets no pedido).", url: "https://www.booking.com/hotel/br/ibitiacu-chales.pt-br.html", cta: "Ver Chalés no Booking" }
         ],
-        restaurants: null
+        restaurants: "Alecrim (Portal da Serra — mesas ao ar livre no centrinho) e Pousada Alto dos Manacás (varanda panorâmica aberta ao público na estrada do parque)."
       }
     ];
 
@@ -375,8 +372,8 @@
       { label: "Combustível + Pedágios", val: "R$ 1.180", note: "~1.580 km em anel contínuo sem repetir estrada" },
       { label: "Ceias Festivas", val: "R$ 1.150", note: "Ceia gourmet no chalé em Pedra Azul (24/12) + Tiradentes (31/12)" },
       { label: "Alimentação Diária (14 dias)", val: "R$ 2.660", note: "Café e refeições leves nos Airbnbs + almoços regionais" },
-      { label: "Passeios, Vinícolas & Parques", val: "R$ 1.450", note: "Trindade, Luiz Porto, Mil Vidas, Mina da Passagem, parques" },
-      { label: "Taxas Pet (2 Chihuahuas)", val: "R$ 350", note: "Taxa única de limpeza nos Airbnbs" },
+      { label: "Passeios, Vinícolas & Parques", val: "R$ 1.450", note: "Trindade, Luiz Porto, Mil Vidas, Mina da Passagem, ingressos Ibitipoca" },
+      { label: "Taxas Pet & Pet Sitter", val: "R$ 350", note: "Taxa de limpeza p/ 2 Chihuahuas e apoio pontual em dias de parque" },
       { label: "Economia Consolidada", val: "- R$ 4.320", note: "Frente ao orçamento tradicional em pousadas (R$ 7.860 abaixo do teto de R$ 25k)", highlight: true }
     ];
 
