@@ -11,6 +11,38 @@ function format_brl(float $value): string
     return number_format($value, 2, ',', '.');
 }
 
+function get_available_periods(PDO $pdo, array $config, ?string $includePeriod = null): array
+{
+    $tz = new DateTimeZone($config['timezone'] ?: 'UTC');
+    $periods = [];
+    $rows = $pdo->query('SELECT occurred_at, plan_period FROM transactions')->fetchAll();
+    foreach ($rows as $r) {
+        $pp = trim((string)($r['plan_period'] ?? ''));
+        if (preg_match('/^\d{4}-\d{2}$/', $pp)) {
+            $periods[$pp] = true;
+            continue;
+        }
+        $occ = (string)($r['occurred_at'] ?? '');
+        if ($occ !== '') {
+            try {
+                $dt = new DateTimeImmutable($occ, new DateTimeZone('UTC'));
+                $ym = $dt->setTimezone($tz)->format('Y-m');
+                $periods[$ym] = true;
+            } catch (Throwable $e) {
+            }
+        }
+    }
+    if ($includePeriod !== null && preg_match('/^\d{4}-\d{2}$/', $includePeriod)) {
+        $periods[$includePeriod] = true;
+    }
+    if (empty($periods)) {
+        $periods[(new DateTimeImmutable('now', $tz))->format('Y-m')] = true;
+    }
+    $list = array_keys($periods);
+    rsort($list);
+    return $list;
+}
+
 function get_all_categories(PDO $pdo, array $config): array
 {
     $count = (int)$pdo->query('SELECT COUNT(*) FROM categories')->fetchColumn();
@@ -210,6 +242,7 @@ function compute_monthly_summary(PDO $pdo, array $config, ?int $year = null, ?in
         ],
         'category_breakdown' => $breakdown,
         'consumption_bills' => $consumptionBills,
+        'available_periods' => get_available_periods($pdo, $config, $periodStr),
         'transactions' => array_slice($txs, 0, 50),
     ];
 }
@@ -394,5 +427,6 @@ function query_detailed_transactions(PDO $pdo, array $config, array $filters): a
         'total_expense_brl' => format_brl($totExp),
         'net' => $net,
         'net_brl' => format_brl($net),
+        'available_periods' => get_available_periods($pdo, $config),
     ];
 }

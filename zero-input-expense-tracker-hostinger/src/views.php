@@ -6,7 +6,32 @@ function h(string $v): string
     return htmlspecialchars($v, ENT_QUOTES, 'UTF-8');
 }
 
-function build_period_select_options(string $selectedPeriod): string
+function build_period_select_options(string $selectedPeriod, array $availablePeriods = []): string
+{
+    $periods = $availablePeriods;
+    if (!in_array($selectedPeriod, $periods, true) && preg_match('/^\d{4}-\d{2}$/', $selectedPeriod)) {
+        $periods[] = $selectedPeriod;
+    }
+    if (empty($periods)) {
+        $periods = [$selectedPeriod];
+    }
+    rsort($periods);
+    $html = '';
+    foreach ($periods as $val) {
+        if (!preg_match('/^(\d{4})-(\d{2})$/', (string)$val, $m)) {
+            continue;
+        }
+        $y = (int)$m[1];
+        $mIdx = max(1, min(12, (int)$m[2]));
+        $label = MONTH_NAMES_PT[$mIdx - 1] . '/' . $y;
+        $sel = ($val === $selectedPeriod) ? 'selected' : '';
+        $html .= '<option value="' . $val . '" ' . $sel . '>' . $label . '</option>';
+    }
+    $html .= '<option value="__CUSTOM__">⌨️ Digitar período...</option>';
+    return $html;
+}
+
+function build_period_select_options_legacy(string $selectedPeriod): string
 {
     $selYear = (int)substr($selectedPeriod, 0, 4);
     if ($selYear < 2020 || $selYear > 2100) {
@@ -70,6 +95,60 @@ function render_categories_modal(array $categories, string $redirectTo): string
   <script>
     function openCategoriesModal() { document.getElementById('categoriesModal').classList.remove('hidden'); }
     function closeCategoriesModal() { document.getElementById('categoriesModal').classList.add('hidden'); }
+    function handlePeriodSelect(sel) {
+      if (sel.value === '__CUSTOM__') {
+        const raw = window.prompt('Digite o período desejado (ex: 2026-12 ou 12/2026):', sel.getAttribute('data-current') || '');
+        if (!raw || !raw.trim()) {
+          sel.value = sel.getAttribute('data-current') || sel.options[0].value;
+          return;
+        }
+        let val = raw.trim();
+        const mBr = val.match(/^(\d{1,2})\/(\d{4})$/);
+        if (mBr) {
+          val = mBr[2] + '-' + String(mBr[1]).padStart(2, '0');
+        }
+        if (!/^\d{4}-\d{2}$/.test(val)) {
+          alert('Formato inválido. Use AAAA-MM (ex: 2026-12) ou MM/AAAA (ex: 12/2026).');
+          sel.value = sel.getAttribute('data-current') || sel.options[0].value;
+          return;
+        }
+        const opt = document.createElement('option');
+        opt.value = val;
+        opt.textContent = val;
+        opt.selected = true;
+        sel.appendChild(opt);
+      }
+      sel.form.submit();
+    }
+    function handleTxYearSelect(sel) {
+      if (sel.value === '__CUSTOM__') {
+        const raw = window.prompt('Digite o ano (ex: 2026):', sel.getAttribute('data-current') || '');
+        if (!raw || !/^\d{4}$/.test(raw.trim())) {
+          sel.value = sel.getAttribute('data-current') || sel.options[0].value;
+          return;
+        }
+        const opt = document.createElement('option');
+        opt.value = raw.trim();
+        opt.selected = true;
+        sel.appendChild(opt);
+      }
+      sel.form.submit();
+    }
+    function handleTxMonthSelect(sel) {
+      if (sel.value === '__CUSTOM__') {
+        const raw = window.prompt('Digite o número do mês (1 a 12, ou 0 para todos):', sel.getAttribute('data-current') || '');
+        const n = parseInt((raw || '').trim(), 10);
+        if (isNaN(n) || n < 0 || n > 12) {
+          sel.value = sel.getAttribute('data-current') || '0';
+          return;
+        }
+        const opt = document.createElement('option');
+        opt.value = String(n);
+        opt.selected = true;
+        sel.appendChild(opt);
+      }
+      sel.form.submit();
+    }
   </script>
 HTML;
 }
@@ -382,7 +461,12 @@ function render_dashboard(array $summary, array $yearly, array $plans, array $ca
         $catOptions .= '<option value="' . h($c) . '">' . h($c) . '</option>';
     }
     $catOptionsWithNew = $catOptions . '<option value="__NEW__">+ Nova categoria...</option>';
-    $periodSelectOpts = build_period_select_options($summary['period']);
+    $periodSelectOpts = build_period_select_options($summary['period'], $summary['available_periods'] ?? []);
+    $monthLabelPt = MONTH_NAMES_PT[$monthNum - 1] . '/' . $yearNum;
+    $billingDatalistOpts = '';
+    foreach ($summary['available_periods'] ?? [$summary['period']] as $ap) {
+        $billingDatalistOpts .= '<option value="' . h((string)$ap) . '"></option>';
+    }
     $catModalHtml = render_categories_modal($categories, "/dashboard?month={$period}");
 
     // Consumption Bills HTML
@@ -393,13 +477,13 @@ function render_dashboard(array $summary, array $yearly, array $plans, array $ca
             $bStatus = $b['status'];
             if ($bStatus === 'CONFIRMED') {
                 $bBadge = '<span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Real</span>';
-                $btnLabel = 'Corrigir';
+                $btnLabel = 'Corrigir ' . $monthLabelPt;
             } elseif ($bStatus === 'ESTIMATED') {
                 $bBadge = '<span class="text-[10px] px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30">Estimado</span>';
-                $btnLabel = 'Confirmar Real';
+                $btnLabel = 'Confirmar ' . $monthLabelPt;
             } else {
                 $bBadge = '<span class="text-[10px] px-2 py-0.5 rounded-full bg-slate-800 text-slate-400">Não provisionado</span>';
-                $btnLabel = 'Confirmar Real';
+                $btnLabel = 'Confirmar ' . $monthLabelPt;
             }
             $formHtml = '';
             if (!empty($b['transaction_id'])) {
@@ -427,7 +511,7 @@ HTML;
                     <h3 class="font-semibold text-sm text-slate-100">{$bTitle}</h3>
                     {$bBadge}
                   </div>
-                  <p class="text-[11px] text-slate-400 mt-0.5">Dia {$bDue} · {$bMethod}</p>
+                  <p class="text-[11px] text-slate-400 mt-0.5">Competência: <strong class="text-sky-300">{$monthLabelPt}</strong> · Venc. dia {$bDue}/{$monthNum}/{$yearNum} · {$bMethod}</p>
                 </div>
                 <div class="text-right">
                   <p class="text-base sm:text-lg font-bold text-sky-300">R$ {$bCurBrl}</p>
@@ -575,7 +659,7 @@ HTML;
       <div class="flex items-center gap-1.5 sm:gap-2">
         {$pendingBadge}
         <form method="get" action="/dashboard" class="flex items-center">
-          <select name="month" onchange="this.form.submit()" class="rounded-md bg-slate-950 border border-slate-700 px-2 py-1 text-xs text-slate-200 focus:border-emerald-500 focus:outline-none">{$periodSelectOpts}</select>
+          <select name="month" data-current="{$period}" onchange="handlePeriodSelect(this)" class="rounded-md bg-slate-950 border border-slate-700 px-2 py-1 text-xs text-slate-200 focus:border-emerald-500 focus:outline-none">{$periodSelectOpts}</select>
         </form>
         <button type="button" onclick="openCategoriesModal()" class="rounded-md border border-slate-700 hover:bg-slate-800 px-2.5 py-1 text-xs font-medium text-slate-200 whitespace-nowrap" title="Editar / Gerenciar Categorias">🏷️ <span class="hidden sm:inline">Categorias</span></button>
         <button type="button" onclick="openImportModal()" class="rounded-md bg-sky-600 hover:bg-sky-500 px-2.5 py-1 text-xs font-semibold text-white whitespace-nowrap">📄 <span class="hidden sm:inline">Importar Fatura</span></button>
@@ -621,7 +705,7 @@ HTML;
     <section data-collapse-id="consumption" class="bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6">
       <div class="flex items-center justify-between gap-2 mb-3">
         <div>
-          <h2 class="text-sm sm:text-base font-semibold">Contas de Consumo (Média vs. Real)</h2>
+          <h2 class="text-sm sm:text-base font-semibold">Contas de Consumo (Média vs. Real) — <span class="text-sky-400">Mês: {$monthLabelPt}</span></h2>
           <p class="text-xs text-slate-400">Ao confirmar o valor real, substitui a estimativa sem duplicar e atualiza a média móvel 3M.</p>
         </div>
         <button type="button" onclick="toggleSectionCollapse(this)" class="rounded-lg border border-slate-700 hover:bg-slate-800 px-2.5 py-1 text-xs text-slate-300 shrink-0"><span class="collapse-icon">▾</span></button>
@@ -797,7 +881,7 @@ HTML;
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
             <label class="block text-xs text-slate-400 mb-1">Competência da Fatura</label>
-            <select name="billing_month" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm">{$periodSelectOpts}</select>
+            <input type="text" name="billing_month" list="billingPeriodsList" value="{$period}" required placeholder="AAAA-MM (ex: 2026-12)" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm" /><datalist id="billingPeriodsList">{$billingDatalistOpts}</datalist>
           </div>
           <div>
             <label class="block text-xs text-slate-400 mb-1">Alocação de Data</label>
@@ -918,12 +1002,40 @@ function render_transactions(array $result, array $categories, array $filters): 
     $yearVal = (int)$filters['year'];
     $monthVal = (int)$filters['month'];
     $selAllMonths = $monthVal === 0 ? 'selected' : '';
+    $availPeriods = $result['available_periods'] ?? [];
+    $availYearsMap = [$yearVal => true];
+    $availMonthsForYearMap = [];
+    if ($monthVal >= 1 && $monthVal <= 12) {
+        $availMonthsForYearMap[$monthVal] = true;
+    }
+    foreach ($availPeriods as $ap) {
+        if (preg_match('/^(\d{4})-(\d{2})$/', (string)$ap, $mm)) {
+            $yInt = (int)$mm[1];
+            $mInt = (int)$mm[2];
+            $availYearsMap[$yInt] = true;
+            if ($yInt === $yearVal) {
+                $availMonthsForYearMap[$mInt] = true;
+            }
+        }
+    }
+    $availYears = array_keys($availYearsMap);
+    rsort($availYears);
+    $availMonths = array_keys($availMonthsForYearMap);
+    rsort($availMonths);
     $monthOpts = '';
     foreach (MONTH_NAMES_PT as $idx => $mName) {
         $mNum = $idx + 1;
+        if (!in_array($mNum, $availMonths, true)) { continue; }
         $sel = ($monthVal === $mNum) ? 'selected' : '';
         $monthOpts .= '<option value="' . $mNum . '" ' . $sel . '>' . sprintf('%02d', $mNum) . ' - ' . h($mName) . '</option>';
     }
+    $monthOpts = '';
+    foreach ($availMonths as $mNum) {
+        $mName = MONTH_NAMES_PT[$mNum - 1] ?? '';
+        $sel = ($monthVal === $mNum) ? 'selected' : '';
+        $monthOpts .= '<option value="' . $mNum . '" ' . $sel . '>' . sprintf('%02d', $mNum) . ' - ' . h($mName) . '</option>';
+    }
+    $monthOpts .= '<option value="__CUSTOM__">⌨️ Digitar mês...</option>';
     $catOpts = '';
     $catPlainOpts = '';
     foreach ($categories as $c) {
@@ -952,7 +1064,12 @@ function render_transactions(array $result, array $categories, array $filters): 
     $currentReqUri = h((string)($_SERVER['REQUEST_URI'] ?? "/transactions?year={$yearVal}&month={$monthVal}"));
     $catModalHtml = render_categories_modal($categories, "/transactions?year={$yearVal}&month={$monthVal}");
     $yearOpts = '';
-    for ($y = $yearVal - 2; $y <= $yearVal + 2; $y++) {
+    foreach ($availYears as $y) {
+        $selY = ($y === $yearVal) ? 'selected' : '';
+        $yearOpts .= '<option value="' . $y . '" ' . $selY . '>' . $y . '</option>';
+    }
+    $yearOpts .= '<option value="__CUSTOM__">⌨️ Digitar ano...</option>';
+    for ($y = 1; $y <= 0; $y++) {
         $selY = ($y === $yearVal) ? 'selected' : '';
         $yearOpts .= '<option value="' . $y . '" ' . $selY . '>' . $y . '</option>';
     }
@@ -1001,11 +1118,11 @@ function render_transactions(array $result, array $categories, array $filters): 
       <form method="get" action="/transactions" class="collapse-body grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2.5">
         <div>
           <label class="block text-[11px] text-slate-400 mb-1">Ano</label>
-          <select name="year" onchange="this.form.submit()" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-2.5 py-1.5 text-xs text-slate-100">{$yearOpts}</select>
+          <select name="year" data-current="{$yearVal}" onchange="handleTxYearSelect(this)" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-2.5 py-1.5 text-xs text-slate-100">{$yearOpts}</select>
         </div>
         <div>
           <label class="block text-[11px] text-slate-400 mb-1">Mês</label>
-          <select name="month" onchange="this.form.submit()" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-2.5 py-1.5 text-xs text-slate-100"><option value="0" {$selAllMonths}>Todos</option>{$monthOpts}</select>
+          <select name="month" data-current="{$monthVal}" onchange="handleTxMonthSelect(this)" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-2.5 py-1.5 text-xs text-slate-100"><option value="0" {$selAllMonths}>Todos</option>{$monthOpts}</select>
         </div>
         <div>
           <label class="block text-[11px] text-slate-400 mb-1">Categoria</label>
