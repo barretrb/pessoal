@@ -332,6 +332,39 @@ if ($method === 'POST' && $path === '/api/v1/webhook/telegram') {
         $chatId = $cb['message']['chat']['id'] ?? null;
         $messageId = $cb['message']['message_id'] ?? null;
 
+        if (str_starts_with($data, 'inst:')) {
+            $parts = explode(':', $data, 3);
+            if (count($parts) === 3 && ctype_digit($parts[1]) && ctype_digit($parts[2])) {
+                $txId = (int)$parts[1];
+                $qty = (int)$parts[2];
+                try {
+                    $res = apply_transaction_installments($pdo, $txId, $qty, true);
+                    $summary = compute_monthly_summary($pdo, $config);
+                    telegram_post($config, 'answerCallbackQuery', [
+                        'callback_query_id' => $cbId,
+                        'text' => "Parcelado em {$qty}x!",
+                    ]);
+                    if ($chatId !== null) {
+                        $msgText = sprintf(
+                            "💳 *Parcelado em %dx*: R$ %s/mês em *%s* (%d parcela(s) futura(s) lançada(s)) | Saldo Livre do Mês: R$ %s",
+                            $res['installments'],
+                            format_brl((float)$res['per_installment_effective']),
+                            $res['merchant'],
+                            (int)$res['projected_created'],
+                            $summary['saldo_livre_brl']
+                        );
+                        telegram_post($config, 'sendMessage', [
+                            'chat_id' => $chatId,
+                            'text' => $msgText,
+                            'parse_mode' => 'Markdown',
+                        ]);
+                    }
+                    json_response(['ok' => true, 'action' => 'installments', 'result' => $res]);
+                } catch (Throwable $e) {
+                }
+            }
+        }
+
         if (str_starts_with($data, 'edit:')) {
             $txIdStr = substr($data, 5);
             if (ctype_digit($txIdStr) && $chatId !== null) {
@@ -564,6 +597,43 @@ if ($method === 'POST' && $path === '/api/v1/webhook/telegram') {
                 json_response(['ok' => true, 'command' => 'editar', 'transaction_id' => $txIdEdit]);
             }
 
+            if (str_starts_with($txt, '/parcelar')) {
+                $rest = trim(mb_substr($rawTxt, 9));
+                $parts = preg_split('/\s+/', $rest);
+                if (count($parts) < 2 || !ctype_digit($parts[0])) {
+                    telegram_post($config, 'sendMessage', [
+                        'chat_id' => $chatId,
+                        'text' => "Uso: `/parcelar <ID> <Qtd>` (divide o valor total pelas parcelas e lança nos próximos meses)\nEx: `/parcelar 45 3` ou `/parcelar 45 3x`\n*(Se o valor já for o da parcela e só quiser marcar o número, envie `/parcelar 45 3 fixo`)*",
+                        'parse_mode' => 'Markdown',
+                    ]);
+                    json_response(['ok' => true, 'command' => 'parcelar_help']);
+                }
+                $txIdParc = (int)$parts[0];
+                $qtyRaw = rtrim(strtolower($parts[1]), 'x');
+                $qtyParc = ctype_digit($qtyRaw) ? (int)$qtyRaw : 0;
+                $divideMode = !(isset($parts[2]) && in_array(strtolower($parts[2]), ['fixo', 'apenas', 'label'], true));
+                if ($qtyParc < 1 || $qtyParc > 48) {
+                    telegram_post($config, 'sendMessage', ['chat_id' => $chatId, 'text' => "❌ Quantidade de parcelas inválida (use de 1 a 48).", 'parse_mode' => 'Markdown']);
+                    json_response(['ok' => true, 'command' => 'parcelar_invalid']);
+                }
+                try {
+                    $res = apply_transaction_installments($pdo, $txIdParc, $qtyParc, $divideMode);
+                    $s = compute_monthly_summary($pdo, $config);
+                    $extraMsg = $divideMode && $res['projected_created'] > 0
+                        ? " ({$res['projected_created']} parcela(s) lançada(s) nos próximos meses)"
+                        : "";
+                    telegram_post($config, 'sendMessage', [
+                        'chat_id' => $chatId,
+                        'text' => "💳 Atualizado `#{$txIdParc}` para *{$res['installments']}x* de R$ " . format_brl((float)$res['per_installment_effective']) . " em *{$res['merchant']}*{$extraMsg} | Saldo Livre: R$ {$s['saldo_livre_brl']}",
+                        'parse_mode' => 'Markdown',
+                    ]);
+                    json_response(['ok' => true, 'command' => 'parcelar', 'result' => $res]);
+                } catch (Throwable $e) {
+                    telegram_post($config, 'sendMessage', ['chat_id' => $chatId, 'text' => "❌ Lançamento `#{$txIdParc}` não encontrado.", 'parse_mode' => 'Markdown']);
+                    json_response(['ok' => true, 'command' => 'parcelar_not_found']);
+                }
+            }
+
             if (str_starts_with($txt, '/excluir ')) {
                 $idStr = trim(mb_substr($rawTxt, 9));
                 if (ctype_digit($idStr)) {
@@ -592,6 +662,7 @@ if ($method === 'POST' && $path === '/api/v1/webhook/telegram') {
                     . "• `/buscar <termo>` — buscar gastos (ex: `/buscar 99`)\n"
                     . "• `/editar <ID>` — trocar categoria por botão\n"
                     . "• `/editar <ID> <Nome> | <Categoria>` — renomear e categorizar\n"
+                    . "• `/parcelar <ID> <Qtd>` — parcelar compra e projetar meses seguintes\n"
                     . "• `/excluir <ID>` — remover lançamento";
                 telegram_post($config, 'sendMessage', ['chat_id' => $chatId, 'text' => $helpTxt, 'parse_mode' => 'Markdown']);
                 json_response(['ok' => true, 'command' => 'ajuda']);
@@ -1003,6 +1074,8 @@ if ($method === 'POST' && preg_match('#^/dashboard/transaction/(\d+)/update$#', 
     $newCat = trim((string)($_POST['new_category'] ?? ''));
     $cat = ensure_category_exists($pdo, $config, ($rawCat === '__NEW__' || $newCat !== '') ? $newCat : $rawCat);
     $occDate = trim((string)($_POST['occurred_date'] ?? ''));
+    $installmentsPost = isset($_POST['installments']) && $_POST['installments'] !== '' ? max(1, min(48, (int)$_POST['installments'])) : null;
+    $splitIntoInstallments = !empty($_POST['split_into_installments']);
     $redirectTo = (string)($_POST['redirect_to'] ?? '/dashboard');
     if ($merchant !== '') {
         $norm = normalize_text($merchant) ?: 'estabelecimento';
@@ -1010,8 +1083,13 @@ if ($method === 'POST' && preg_match('#^/dashboard/transaction/(\d+)/update$#', 
             $pdo->prepare('UPDATE transactions SET merchant = ?, merchant_normalized = ?, category = ?, occurred_at = ? WHERE id = ?')
                 ->execute([$merchant, $norm, $cat, $occDate . 'T15:00:00Z', (int)$m[1]]);
         } else {
-            $pdo->prepare('UPDATE transactions SET merchant = ?, merchant_normalized = ?, category = ? WHERE id = ?')
-                ->execute([$merchant, $norm, $cat, (int)$m[1]]);
+            $pdo->prepare('UPDATE transactions SET merchant = ?, merchant_normalized = ?, category = ? WHERE id = ?')->execute([$merchant, $norm, $cat, (int)$m[1]]);
+        }
+        if ($installmentsPost !== null) {
+            try {
+                apply_transaction_installments($pdo, (int)$m[1], $installmentsPost, $splitIntoInstallments);
+            } catch (Throwable $e) {
+            }
         }
     }
     $safeRedir = str_starts_with($redirectTo, '/') ? $redirectTo : '/dashboard';

@@ -373,7 +373,7 @@ function render_tx_table(array $txs, bool $showAppSub = false, string $emptyMsg 
               . '">÷2</button>'
             : '';
 
-        $editBtn = '<button type="button" data-id="' . $txId . '" data-merchant="' . h($tx['merchant']) . '" data-category="' . h($tx['category']) . '" data-date="' . $occLocalDate . '" onclick="openEditTxModal(this)" class="text-xs text-sky-400 hover:text-sky-300">Editar</button>';
+        $editBtn = '<button type="button" data-id="' . $txId . '" data-merchant="' . h($tx['merchant']) . '" data-category="' . h($tx['category']) . '" data-date="' . $occLocalDate . '" data-installments="' . max(1, (int)$tx['installments']) . '" onclick="openEditTxModal(this)" class="text-xs text-sky-400 hover:text-sky-300">Editar</button>';
 
         $rows .= '<tr data-tx-id="' . $txId . '" class="hover:bg-slate-800/30">'
             . $checkboxCell
@@ -877,6 +877,16 @@ HTML;
           </div>
         </div>
         <input type="text" name="new_category" id="editTxNewCat" placeholder="Nome da nova categoria" class="hidden w-full rounded-lg bg-slate-950 border border-emerald-500 px-3 py-2 text-sm" />
+        <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-3 space-y-2">
+          <div class="flex items-center justify-between gap-3">
+            <label for="editTxInstallments" class="text-xs text-slate-300 font-medium">💳 Quantidade de Parcelas</label>
+            <input type="number" name="installments" id="editTxInstallments" min="1" max="48" value="1" onchange="onInstallmentsChange(this)" class="w-24 rounded-lg bg-slate-900 border border-slate-700 px-3 py-1.5 text-sm text-center font-semibold text-slate-100 focus:border-emerald-500 focus:outline-none" />
+          </div>
+          <label class="flex items-start gap-2 text-[11px] text-slate-400 cursor-pointer">
+            <input type="checkbox" name="split_into_installments" id="editTxSplitInst" value="1" class="mt-0.5 rounded border-slate-700 bg-slate-900 text-sky-500" />
+            <span>Dividir o valor desta compra pelas parcelas e criar as parcelas nos próximos meses automaticamente</span>
+          </label>
+        </div>
         <div class="flex items-center justify-between pt-2">
           <button type="submit" id="deleteTxBtn" formaction="/dashboard/transaction/0/delete" onclick="return confirm('Excluir este lançamento?')" class="rounded-lg border border-rose-500/40 text-rose-400 hover:bg-rose-500/10 px-3 py-2 text-xs">Excluir</button>
           <div class="flex gap-2">
@@ -975,6 +985,11 @@ HTML;
       document.getElementById('editTxMerchant').value = btn.getAttribute('data-merchant') || '';
       document.getElementById('editTxCategory').value = btn.getAttribute('data-category') || 'Outros';
       document.getElementById('editTxDate').value = btn.getAttribute('data-date') || '';
+      const instVal = parseInt(btn.getAttribute('data-installments') || '1', 10) || 1;
+      const instInp = document.getElementById('editTxInstallments');
+      const splitChk = document.getElementById('editTxSplitInst');
+      if (instInp) { instInp.value = instVal; instInp.setAttribute('data-orig', String(instVal)); }
+      if (splitChk) { splitChk.checked = false; }
       const newInp = document.getElementById('editTxNewCat');
       newInp.classList.add('hidden');
       newInp.required = false;
@@ -982,6 +997,16 @@ HTML;
       document.getElementById('editTxModal').classList.remove('hidden');
     }
     function closeEditTxModal() {
+      document.getElementById('editTxModal').classList.add('hidden');
+    }
+    function onInstallmentsChange(inp) {
+      const val = parseInt(inp.value || '1', 10) || 1;
+      const orig = parseInt(inp.getAttribute('data-orig') || '1', 10) || 1;
+      const chk = document.getElementById('editTxSplitInst');
+      if (chk && val > 1 && val !== orig) {
+        chk.checked = true;
+      }
+    }
       document.getElementById('editTxModal').classList.add('hidden');
     }
     {$sortJs}
@@ -1218,6 +1243,16 @@ function render_transactions(array $result, array $categories, array $filters): 
           </div>
         </div>
         <input type="text" name="new_category" id="editTxNewCat" placeholder="Nome da nova categoria" class="hidden w-full rounded-lg bg-slate-950 border border-emerald-500 px-3 py-2 text-sm" />
+        <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-3 space-y-2">
+          <div class="flex items-center justify-between gap-3">
+            <label for="editTxInstallments" class="text-xs text-slate-300 font-medium">💳 Quantidade de Parcelas</label>
+            <input type="number" name="installments" id="editTxInstallments" min="1" max="48" value="1" onchange="onInstallmentsChange(this)" class="w-24 rounded-lg bg-slate-900 border border-slate-700 px-3 py-1.5 text-sm text-center font-semibold text-slate-100 focus:border-emerald-500 focus:outline-none" />
+          </div>
+          <label class="flex items-start gap-2 text-[11px] text-slate-400 cursor-pointer">
+            <input type="checkbox" name="split_into_installments" id="editTxSplitInst" value="1" class="mt-0.5 rounded border-slate-700 bg-slate-900 text-sky-500" />
+            <span>Dividir o valor desta compra pelas parcelas e criar as parcelas nos próximos meses automaticamente</span>
+          </label>
+        </div>
         <div class="flex items-center justify-between pt-2">
           <button type="submit" id="deleteTxBtn" formaction="/dashboard/transaction/0/delete" onclick="return confirm('Excluir este lançamento?')" class="rounded-lg border border-rose-500/40 text-rose-400 hover:bg-rose-500/10 px-3 py-2 text-xs">Excluir</button>
           <div class="flex gap-2">
@@ -1250,6 +1285,11 @@ function render_transactions(array $result, array $categories, array $filters): 
       document.getElementById('editTxMerchant').value = btn.getAttribute('data-merchant') || '';
       document.getElementById('editTxCategory').value = btn.getAttribute('data-category') || 'Outros';
       document.getElementById('editTxDate').value = btn.getAttribute('data-date') || '';
+      const instVal = parseInt(btn.getAttribute('data-installments') || '1', 10) || 1;
+      const instInp = document.getElementById('editTxInstallments');
+      const splitChk = document.getElementById('editTxSplitInst');
+      if (instInp) { instInp.value = instVal; instInp.setAttribute('data-orig', String(instVal)); }
+      if (splitChk) { splitChk.checked = false; }
       const newInp = document.getElementById('editTxNewCat');
       newInp.classList.add('hidden');
       newInp.required = false;
@@ -1257,6 +1297,16 @@ function render_transactions(array $result, array $categories, array $filters): 
       document.getElementById('editTxModal').classList.remove('hidden');
     }
     function closeEditTxModal() {
+      document.getElementById('editTxModal').classList.add('hidden');
+    }
+    function onInstallmentsChange(inp) {
+      const val = parseInt(inp.value || '1', 10) || 1;
+      const orig = parseInt(inp.getAttribute('data-orig') || '1', 10) || 1;
+      const chk = document.getElementById('editTxSplitInst');
+      if (chk && val > 1 && val !== orig) {
+        chk.checked = true;
+      }
+    }
       document.getElementById('editTxModal').classList.add('hidden');
     }
     {$sortJs}

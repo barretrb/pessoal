@@ -293,3 +293,131 @@ function find_matching_fixed_card_tx(PDO $pdo, float $amount, string $merchantTe
     }
     return null;
 }
+
+
+function apply_transaction_installments(
+    PDO $pdo,
+    int $txId,
+    int $installments,
+    bool $divideAndProject = true
+): array {
+    $stmt = $pdo->prepare('SELECT * FROM transactions WHERE id = ? LIMIT 1');
+    $stmt->execute([$txId]);
+    $tx = $stmt->fetch();
+    if (!$tx) {
+        throw new RuntimeException('Transaction not found');
+    }
+
+    $qty = max(1, min(48, $installments));
+    $splitRatio = (float)($tx['split_ratio'] ?? 1.0);
+    if ($splitRatio <= 0.0 || $splitRatio > 1.0) {
+        $splitRatio = 1.0;
+    }
+    $isShared = $splitRatio < 0.99 ? 1 : 0;
+
+    // Check if there are previously projected child installments for this txId
+    $refTag = "ref_tx:{$txId}";
+    $childStmt = $pdo->prepare('SELECT id, COALESCE(full_amount, amount) AS fa FROM transactions WHERE raw_text LIKE ?');
+    $childStmt->execute(['%' . $refTag]);
+    $children = $childStmt->fetchAll();
+
+    $parentFull = (float)($tx['full_amount'] ?? $tx['amount']);
+    $recoveredTotalFull = $parentFull;
+    foreach ($children as $ch) {
+        $recoveredTotalFull += (float)$ch['fa'];
+    }
+    $recoveredTotalFull = round($recoveredTotalFull, 2);
+
+    $baseMerchant = trim((string)preg_replace('/\s*(?:\(\d+\s*\/\s*\d+\)|-\s*Parcela\s*\d+\s*\/\s*\d+)\s*$/iu', '', (string)$tx['merchant']));
+    if ($baseMerchant === '') {
+        $baseMerchant = (string)$tx['merchant'];
+    }
+
+    if (!$divideAndProject) {
+        $newMerch = $qty > 1 ? "{$baseMerchant} (1/{$qty})" : $baseMerchant;
+        $pdo->prepare('UPDATE transactions SET merchant = ?, merchant_normalized = ?, installments = ? WHERE id = ?')
+            ->execute([$newMerch, normalize_text($newMerch) ?: 'estabelecimento', $qty, $txId]);
+        return [
+            'transaction_id' => $txId,
+            'merchant' => $newMerch,
+            'installments' => $qty,
+            'per_installment_full' => $parentFull,
+            'per_installment_effective' => (float)$tx['amount'],
+            'projected_created' => 0,
+        ];
+    }
+
+    // Remove previous projected child installments if re-splitting
+    if (!empty($children)) {
+        $pdo->prepare('DELETE FROM transactions WHERE raw_text LIKE ?')->execute(['%' . $refTag]);
+    }
+
+    if ($qty === 1) {
+        $effAmt = round($recoveredTotalFull * $splitRatio, 2);
+        $pdo->prepare('UPDATE transactions SET merchant = ?, merchant_normalized = ?, installments = 1, full_amount = ?, amount = ? WHERE id = ?')
+            ->execute([$baseMerchant, normalize_text($baseMerchant) ?: 'estabelecimento', $recoveredTotalFull, $effAmt, $txId]);
+        return [
+            'transaction_id' => $txId,
+            'merchant' => $baseMerchant,
+            'installments' => 1,
+            'per_installment_full' => $recoveredTotalFull,
+            'per_installment_effective' => $effAmt,
+            'projected_created' => 0,
+        ];
+    }
+
+    $basePartFull = floor(($recoveredTotalFull / $qty) * 100) / 100;
+    $firstPartFull = round($recoveredTotalFull - ($basePartFull * ($qty - 1)), 2);
+    $firstEff = round($firstPartFull * $splitRatio, 2);
+    $merch1 = "{$baseMerchant} (1/{$qty})";
+
+    $pdo->prepare('UPDATE transactions SET merchant = ?, merchant_normalized = ?, installments = ?, full_amount = ?, amount = ? WHERE id = ?')
+        ->execute([$merch1, normalize_text($merch1) ?: 'estabelecimento', $qty, $firstPartFull, $firstEff, $txId]);
+
+    $occDt = new DateTimeImmutable((string)$tx['occurred_at'], new DateTimeZone('UTC'));
+    $baseYear = (int)$occDt->format('Y');
+    $baseMonth = (int)$occDt->format('n');
+    $baseDay = min((int)$occDt->format('j'), 28);
+    $nowUtc = gmdate('Y-m-d\TH:i:s\Z');
+
+    $ins = $pdo->prepare(
+        'INSERT INTO transactions (source, app_name, raw_title, raw_text, type, amount, full_amount, is_shared, split_ratio, merchant, merchant_normalized, installments, category, confidence, status, occurred_at, created_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 1.0, ?, ?, ?)'
+    );
+
+    $partEff = round($basePartFull * $splitRatio, 2);
+    for ($i = 2; $i <= $qty; $i++) {
+        $totalMonths = ($baseYear * 12 + ($baseMonth - 1)) + ($i - 1);
+        $targetY = intdiv($totalMonths, 12);
+        $targetM = ($totalMonths % 12) + 1;
+        $nextOcc = sprintf('%04d-%02d-%02dT15:00:00Z', $targetY, $targetM, $baseDay);
+        $merchI = "{$baseMerchant} ({$i}/{$qty})";
+        $ins->execute([
+            (string)$tx['source'],
+            (string)($tx['app_name'] ?? 'Parcelamento'),
+            $merchI,
+            "Parcela {$i}/{$qty} {$refTag}",
+            (string)$tx['type'],
+            $partEff,
+            $basePartFull,
+            $isShared,
+            $splitRatio,
+            $merchI,
+            normalize_text($merchI) ?: 'estabelecimento',
+            $qty,
+            (string)$tx['category'],
+            'CONFIRMED',
+            $nextOcc,
+            $nowUtc,
+        ]);
+    }
+
+    return [
+        'transaction_id' => $txId,
+        'merchant' => $merch1,
+        'installments' => $qty,
+        'per_installment_full' => $basePartFull,
+        'per_installment_effective' => $partEff,
+        'projected_created' => $qty - 1,
+    ];
+}

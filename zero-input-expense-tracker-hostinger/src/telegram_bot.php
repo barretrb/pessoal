@@ -103,9 +103,15 @@ function send_edit_category_keyboard_telegram(
     if (!empty($row)) {
         $keyboard[] = $row;
     }
+    $instRow = [];
+    foreach ([2, 3, 4, 6, 10, 12] as $n) {
+        $instRow[] = ['text' => "💳 {$n}x", 'callback_data' => "inst:{$txId}:{$n}"];
+    }
+    $keyboard[] = $instRow;
     $text = "✏️ *Editar #{$txId}*: R$ " . format_brl($amount) . " em *{$merchant}*\n"
         . "Categoria atual: _{$currentCategory}_\n\n"
-        . "Toque em uma categoria abaixo ou envie:\n"
+        . "Toque em uma categoria, parcele (💳 2x..12x) ou envie:\n"
+        . "`/parcelar {$txId} <qtd>` (ex: `/parcelar {$txId} 5`)\n"
         . "`/editar {$txId} Novo Nome | Categoria`\n"
         . "`/excluir {$txId}`";
     telegram_post($config, 'sendMessage', [
