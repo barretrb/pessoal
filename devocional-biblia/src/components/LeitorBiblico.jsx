@@ -20,7 +20,9 @@ import {
   MapPin,
   Sun,
   Moon,
-  Coffee
+  Coffee,
+  Play,
+  X
 } from 'lucide-react';
 import { HIGHLIGHT_COLORS, storage } from '../services/storage';
 import { cloudDbService } from '../services/cloudDbService';
@@ -107,9 +109,11 @@ export default function LeitorBiblico({
   const activeChapterStr = `${activeBook} ${selectedChapter}`;
   const activeChapterIndex = dayData?.readings ? dayData.readings.indexOf(activeChapterStr) : 0;
   const [chapterMusicOverride, setChapterMusicOverride] = useState(null);
+  const [playingReaderAudio, setPlayingReaderAudio] = useState(null); // 'song' | 'inst' | null
 
   useEffect(() => {
     setChapterMusicOverride(null);
+    setPlayingReaderAudio(null);
   }, [activeBook, selectedChapter]);
 
   const activeChapterMusic = getMusicForChapter(
@@ -730,48 +734,94 @@ export default function LeitorBiblico({
           </div>
         )}
 
-        {/* Trilha Musical do Capítulo */}
+        {/* Curadoria Sonora Honesta & Fundo Instrumental sem Voz */}
         {activeChapterMusic && (
-          <div className="p-3.5 rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800/90 flex items-center justify-between gap-3 text-xs">
-            <div className="flex items-center space-x-3 min-w-0">
-              <img
-                src={`https://i.ytimg.com/vi/${activeChapterMusic.youtubeId}/mqdefault.jpg`}
-                alt={activeChapterMusic.title}
-                className="w-10 h-10 rounded-lg object-cover shrink-0 bg-zinc-900"
-                loading="lazy"
-              />
-              <div className="min-w-0">
-                <div className="font-semibold text-zinc-900 dark:text-zinc-100 truncate">
-                  {activeChapterMusic.title}
+          <div className="p-4 rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800/90 space-y-3 text-xs">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div className="flex items-center space-x-3 min-w-0">
+                <button
+                  onClick={() => setPlayingReaderAudio(prev => prev === 'song' ? null : 'song')}
+                  className="relative w-11 h-11 rounded-xl overflow-hidden shrink-0 bg-zinc-900 cursor-pointer group"
+                  title="Ouvir canção temática aqui"
+                >
+                  <img
+                    src={`https://i.ytimg.com/vi/${activeChapterMusic.youtubeId}/mqdefault.jpg`}
+                    alt={activeChapterMusic.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-black/35 flex items-center justify-center">
+                    {playingReaderAudio === 'song' ? (
+                      <X className="w-4 h-4 text-white" />
+                    ) : (
+                      <Play className="w-4 h-4 text-white fill-current ml-0.5" />
+                    )}
+                  </div>
+                </button>
+                <div className="min-w-0">
+                  <div className="font-semibold text-zinc-900 dark:text-zinc-100 truncate">
+                    {activeChapterMusic.title} • <span className="font-normal text-zinc-500">{activeChapterMusic.artist}</span>
+                  </div>
+                  <div className="text-amber-700 dark:text-amber-400 font-medium truncate">
+                    Base da canção: {activeChapterMusic.scriptureBasis}
+                  </div>
                 </div>
-                <div className="text-zinc-500 dark:text-zinc-400 truncate">
-                  {activeChapterMusic.artist} • Trilha de {activeBook} {selectedChapter}
-                </div>
+              </div>
+
+              <div className="flex items-center space-x-1.5 shrink-0">
+                <button
+                  onClick={() => setPlayingReaderAudio(prev => prev === 'inst' ? null : 'inst')}
+                  className={`inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg font-medium transition-colors cursor-pointer ${
+                    playingReaderAudio === 'inst'
+                      ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-950 font-semibold'
+                      : 'bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 text-zinc-700 dark:text-zinc-200'
+                  }`}
+                  title="Tocar piano instrumental sem voz para acompanhar a leitura"
+                >
+                  <Music className="w-3.5 h-3.5" />
+                  <span>{playingReaderAudio === 'inst' ? 'Fechar Piano' : 'Piano s/ Voz'}</span>
+                </button>
+
+                <button
+                  onClick={() => {
+                    telemetryService.track('music_cycle', { chapter: activeChapterStr });
+                    setPlayingReaderAudio(null);
+                    setChapterMusicOverride(prev => prev === null ? (activeChapterMusic.artistIndex ?? 0) + 1 : prev + 1);
+                  }}
+                  className="p-2 rounded-lg text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+                  title="Outra canção neste eixo teológico"
+                >
+                  <RefreshCw className="w-3.5 h-3.5" />
+                </button>
+
+                <a
+                  href={activeChapterMusic.youtubeMusicUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => telemetryService.track('music_play_youtube_music', { chapter: activeChapterStr, title: activeChapterMusic.title, artist: activeChapterMusic.artist })}
+                  className="p-2 rounded-lg text-zinc-400 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                  title="Abrir no YouTube Music"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
               </div>
             </div>
 
-            <div className="flex items-center space-x-1.5 shrink-0">
-              <button
-                onClick={() => {
-                  telemetryService.track('music_cycle', { chapter: activeChapterStr });
-                  setChapterMusicOverride(prev => prev === null ? (activeChapterMusic.artistIndex ?? 0) + 1 : prev + 1);
-                }}
-                className="p-2 rounded-lg text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
-                title="Trocar música"
-              >
-                <RefreshCw className="w-3.5 h-3.5" />
-              </button>
-              <a
-                href={activeChapterMusic.youtubeMusicUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => telemetryService.track('music_play_youtube_music', { chapter: activeChapterStr, title: activeChapterMusic.title, artist: activeChapterMusic.artist })}
-                className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 text-zinc-800 dark:text-zinc-200 font-medium transition-colors"
-              >
-                <span>Ouvir</span>
-                <ExternalLink className="w-3 h-3" />
-              </a>
-            </div>
+            {playingReaderAudio && (
+              <div className="rounded-xl overflow-hidden bg-black border border-zinc-800 h-28">
+                <iframe
+                  className="w-full h-full"
+                  src={`https://www.youtube.com/embed/${
+                    playingReaderAudio === 'inst'
+                      ? activeChapterMusic.instrumentalTrack?.youtubeId || 'FwBy5rVtUOg'
+                      : activeChapterMusic.youtubeId
+                  }?autoplay=1&rel=0`}
+                  title="Player Devocional"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            )}
           </div>
         )}
 

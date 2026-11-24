@@ -17,7 +17,12 @@ import {
   SlidersHorizontal,
   X
 } from 'lucide-react';
-import { getMediaForDay, EXPANDED_DEVOTIONAL_CATALOG, getMusicForChapter } from '../data/dailyMedia';
+import {
+  getMediaForDay,
+  DOCTRINAL_AXES,
+  INSTRUMENTAL_READING_TRACKS,
+  getSongsByDoctrinalAxis
+} from '../data/dailyMedia';
 import { formatDateBR } from '../services/dateUtils';
 import { telemetryService } from '../services/telemetryService';
 
@@ -111,10 +116,15 @@ export default function Dashboard({
   const [filter, setFilter] = useState('all'); // all, pending, completed
   const [selectedMonth, setSelectedMonth] = useState(currentMonthStr);
   const [showVideoPlayer, setShowVideoPlayer] = useState(false);
-  const [chapterMusicOverrides, setChapterMusicOverrides] = useState({});
-  const [playingChapterIndex, setPlayingChapterIndex] = useState(null);
+  const [musicTab, setMusicTab] = useState('reading'); // 'reading' | 'instrumental' | 'themes'
+  const [curatedPage, setCuratedPage] = useState(0);
+  const [selectedAxisId, setSelectedAxisId] = useState('cruz_redencao');
+  const [playingTrackId, setPlayingTrackId] = useState(null);
 
-  const activeMedia = getMediaForDay(currentDayId, currentDayData);
+  const activeMedia = useMemo(
+    () => getMediaForDay(currentDayId, currentDayData, dayBookData),
+    [currentDayId, currentDayData, dayBookData]
+  );
   const pendingDayData = pendingDayId ? days.find(d => d.id === pendingDayId) : null;
 
   const currentReadings = currentDayData?.readings && currentDayData.readings.length > 0
@@ -143,23 +153,18 @@ export default function Dashboard({
       : null;
   }, [dayBookData, activeChapterNum, activeBookName]);
 
-  const chapterMusics = currentReadings.map((reading, idx) => {
-    const override = chapterMusicOverrides[idx];
-    return getMusicForChapter(currentDayId, reading, idx, override);
-  });
+  const curatedSongs = activeMedia?.curatedSongs || [];
+  const PAGE_SIZE = 3;
+  const totalCuratedPages = Math.max(1, Math.ceil(curatedSongs.length / PAGE_SIZE));
+  const safePage = curatedPage % totalCuratedPages;
+  const visibleCuratedSongs = curatedSongs.slice(safePage * PAGE_SIZE, safePage * PAGE_SIZE + PAGE_SIZE);
 
-  const handleCycleChapterMusic = (readingIndex) => {
-    telemetryService.track('music_cycle', { chapter: currentReadings[readingIndex] });
-    setChapterMusicOverrides(prev => {
-      const current = prev[readingIndex] !== undefined
-        ? prev[readingIndex]
-        : (getMusicForChapter(currentDayId, currentReadings[readingIndex], readingIndex).artistIndex ?? 0);
-      const next = (current + 1) % EXPANDED_DEVOTIONAL_CATALOG.length;
-      return {
-        ...prev,
-        [readingIndex]: next
-      };
-    });
+  const axisSongs = useMemo(() => getSongsByDoctrinalAxis(selectedAxisId), [selectedAxisId]);
+
+  const handleNextCuratedPage = () => {
+    telemetryService.track('music_cycle', { dayId: currentDayId, page: (safePage + 1) % totalCuratedPages });
+    setPlayingTrackId(null);
+    setCuratedPage(prev => (prev + 1) % totalCuratedPages);
   };
 
   const isRafael = activeProfile?.id === 'default' || activeProfile?.name?.trim().toLowerCase() === 'rafael' || activeProfile?.role === 'admin';
@@ -477,105 +482,330 @@ export default function Dashboard({
         {/* COLUNA COMPLEMENTAR DIREITA (5 COLUNAS): MÚSICA ESTILO PLAYLIST + VÍDEO COM THUMBNAIL VISÍVEL */}
         <div className="lg:col-span-5 min-w-0 space-y-5">
           
-          {/* PLAYLIST DEVOCIONAL POR CAPÍTULO (ESTILO SPOTIFY / DWELL COM CAPAS VISÍVEIS) */}
+          {/* CURADORIA MUSICAL EXEGÉTICA & FUNDO INSTRUMENTAL (PADRÃO DWELL / GLORIFY) */}
           {!hidden['music'] && activeMedia?.music && (
-            <section className="rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800/90 sepia:border-[#E6DBC8] p-5 shadow-[0_1px_3px_rgba(0,0,0,0.03)]">
-              <div className="flex items-center justify-between pb-3 border-b border-zinc-100 dark:border-zinc-800/80">
-                <div className="flex items-center space-x-2">
-                  <Music className="w-4 h-4 text-amber-600 dark:text-amber-400" />
-                  <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    Trilha Devocional do Dia
-                  </h3>
+            <section className="rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800/90 sepia:border-[#E6DBC8] p-5 shadow-[0_1px_3px_rgba(0,0,0,0.03)] space-y-3.5">
+              {/* Cabeçalho + Seletor de Modo */}
+              <div className="space-y-3">
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center space-x-2">
+                    <Music className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+                    <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                      Música & Meditação Sonora
+                    </h3>
+                  </div>
+
+                  {musicTab === 'reading' && totalCuratedPages > 1 && (
+                    <button
+                      onClick={handleNextCuratedPage}
+                      className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-lg bg-zinc-100 hover:bg-zinc-200/80 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-[11px] font-medium text-zinc-700 dark:text-zinc-200 transition-colors cursor-pointer"
+                      title="Ver outras canções alinhadas aos temas teológicos da leitura de hoje"
+                    >
+                      <RefreshCw className="w-3 h-3" />
+                      <span>Alternar ({safePage + 1}/{totalCuratedPages})</span>
+                    </button>
+                  )}
                 </div>
-                <span className="text-[11px] font-medium text-zinc-400">
-                  YouTube Music
-                </span>
+
+                {/* 3 Modos Claros e Honestos */}
+                <div className="grid grid-cols-3 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/90 sepia:bg-[#EDE3D2] text-[11px] font-medium">
+                  <button
+                    onClick={() => {
+                      setMusicTab('reading');
+                      setPlayingTrackId(null);
+                    }}
+                    className={`py-1.5 rounded-lg transition-all cursor-pointer ${
+                      musicTab === 'reading'
+                        ? 'bg-white dark:bg-zinc-900 text-zinc-950 dark:text-zinc-50 shadow-2xs font-semibold'
+                        : 'text-zinc-500 hover:text-zinc-800 dark:text-zinc-400'
+                    }`}
+                  >
+                    Ecos da Leitura
+                  </button>
+                  <button
+                    onClick={() => {
+                      setMusicTab('instrumental');
+                      setPlayingTrackId(null);
+                    }}
+                    className={`py-1.5 rounded-lg transition-all cursor-pointer ${
+                      musicTab === 'instrumental'
+                        ? 'bg-white dark:bg-zinc-900 text-zinc-950 dark:text-zinc-50 shadow-2xs font-semibold'
+                        : 'text-zinc-500 hover:text-zinc-800 dark:text-zinc-400'
+                    }`}
+                  >
+                    Fundo p/ Ler
+                  </button>
+                  <button
+                    onClick={() => {
+                      setMusicTab('themes');
+                      setPlayingTrackId(null);
+                    }}
+                    className={`py-1.5 rounded-lg transition-all cursor-pointer ${
+                      musicTab === 'themes'
+                        ? 'bg-white dark:bg-zinc-900 text-zinc-950 dark:text-zinc-50 shadow-2xs font-semibold'
+                        : 'text-zinc-500 hover:text-zinc-800 dark:text-zinc-400'
+                    }`}
+                  >
+                    Por Tema
+                  </button>
+                </div>
               </div>
 
-              <div className="divide-y divide-zinc-100 dark:divide-zinc-800/70">
-                {chapterMusics.map((chapterMusic, idx) => {
-                  const isPlayingThis = playingChapterIndex === idx;
-                  return (
-                    <div key={chapterMusic.chapter || idx} className="py-3 first:pt-3.5 last:pb-1">
-                      <div className="flex items-center gap-3">
-                        {/* Capa 48x48 Visível com Botão Play */}
-                        <button
-                          onClick={() => {
-                            const nextState = isPlayingThis ? null : idx;
-                            if (nextState !== null) {
-                              telemetryService.track('music_play_in_app', { chapter: chapterMusic.chapter, title: chapterMusic.title });
-                            }
-                            setPlayingChapterIndex(nextState);
-                          }}
-                          className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0 bg-zinc-900 group cursor-pointer border border-zinc-200/60 dark:border-zinc-700"
-                          title={isPlayingThis ? 'Fechar player' : `Ouvir prévia de ${chapterMusic.title}`}
+              {/* ABA 1: ECOS DA LEITURA (CONEXÃO DOUTRINÁRIA REAL, SEM FALSO RÓTULO FIXO DE CAPÍTULO) */}
+              {musicTab === 'reading' && (
+                <>
+                  {activeMedia.activeAxisLabels?.length > 0 && (
+                    <div className="flex items-center flex-wrap gap-1.5 pt-0.5">
+                      <span className="text-[11px] text-zinc-400 dark:text-zinc-500">
+                        Temas da passagem:
+                      </span>
+                      {activeMedia.activeAxisLabels.slice(0, 2).map(ax => (
+                        <span
+                          key={ax}
+                          className="px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/80 text-[10px] font-semibold text-zinc-600 dark:text-zinc-300"
                         >
-                          <img
-                            src={`https://i.ytimg.com/vi/${chapterMusic.youtubeId}/mqdefault.jpg`}
-                            alt={chapterMusic.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                            loading="lazy"
-                          />
-                          <div className={`absolute inset-0 flex items-center justify-center transition-colors ${
-                            isPlayingThis ? 'bg-black/60' : 'bg-black/30 group-hover:bg-black/50'
-                          }`}>
-                            {isPlayingThis ? (
-                              <X className="w-4 h-4 text-white" />
-                            ) : (
-                              <Play className="w-4 h-4 text-white fill-current ml-0.5" />
-                            )}
-                          </div>
-                        </button>
-
-                        {/* Metadados Limpos sem Truncamento Agressivo */}
-                        <div className="min-w-0 flex-1">
-                          <h4 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate" title={chapterMusic.title}>
-                            {cleanTrackTitle(chapterMusic.title)}
-                          </h4>
-                          <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate mt-0.5">
-                            {chapterMusic.artist} • <span className="text-zinc-600 dark:text-zinc-300 font-medium">{chapterMusic.chapter}</span>
-                          </p>
-                        </div>
-
-                        {/* Ações Rápidas */}
-                        <div className="flex items-center space-x-1 shrink-0">
-                          <button
-                            onClick={() => handleCycleChapterMusic(idx)}
-                            className="p-2 rounded-lg text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
-                            title="Trocar música deste capítulo"
-                          >
-                            <RefreshCw className="w-3.5 h-3.5" />
-                          </button>
-
-                          <a
-                            href={chapterMusic.youtubeMusicUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => telemetryService.track('music_play_youtube_music', { chapter: chapterMusic.chapter, title: chapterMusic.title, artist: chapterMusic.artist })}
-                            className="p-2 rounded-lg text-zinc-400 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
-                            title="Abrir no YouTube Music"
-                          >
-                            <ExternalLink className="w-3.5 h-3.5" />
-                          </a>
-                        </div>
-                      </div>
-
-                      {/* Player Inline quando ativado */}
-                      {isPlayingThis && (
-                        <div className="mt-3 rounded-xl overflow-hidden bg-black border border-zinc-800 h-24">
-                          <iframe
-                            className="w-full h-full"
-                            src={`https://www.youtube.com/embed/${chapterMusic.youtubeId}?autoplay=1&rel=0`}
-                            title={`${chapterMusic.title} - ${chapterMusic.artist}`}
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                          />
-                        </div>
-                      )}
+                          {ax}
+                        </span>
+                      ))}
                     </div>
-                  );
-                })}
-              </div>
+                  )}
+
+                  <div className="divide-y divide-zinc-100 dark:divide-zinc-800/70">
+                    {visibleCuratedSongs.map(song => {
+                      const isPlayingThis = playingTrackId === song.id;
+                      return (
+                        <div key={song.id} className="py-3 first:pt-1.5 last:pb-0.5">
+                          <div className="flex items-start gap-3">
+                            <button
+                              onClick={() => {
+                                const next = isPlayingThis ? null : song.id;
+                                if (next) {
+                                  telemetryService.track('music_play_in_app', { title: song.title, artist: song.artist, basis: song.scriptureBasis });
+                                }
+                                setPlayingTrackId(next);
+                              }}
+                              className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0 bg-zinc-900 group cursor-pointer border border-zinc-200/60 dark:border-zinc-700 mt-0.5"
+                              title={isPlayingThis ? 'Fechar player' : `Ouvir ${song.title}`}
+                            >
+                              <img
+                                src={`https://i.ytimg.com/vi/${song.youtubeId}/mqdefault.jpg`}
+                                alt={song.title}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                                loading="lazy"
+                              />
+                              <div className={`absolute inset-0 flex items-center justify-center transition-colors ${
+                                isPlayingThis ? 'bg-black/65' : 'bg-black/30 group-hover:bg-black/50'
+                              }`}>
+                                {isPlayingThis ? (
+                                  <X className="w-4 h-4 text-white" />
+                                ) : (
+                                  <Play className="w-4 h-4 text-white fill-current ml-0.5" />
+                                )}
+                              </div>
+                            </button>
+
+                            <div className="min-w-0 flex-1">
+                              <div className="flex items-center justify-between gap-2">
+                                <h4 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">
+                                  {song.title}
+                                </h4>
+                                <a
+                                  href={song.youtubeMusicUrl}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  onClick={() => telemetryService.track('music_play_youtube_music', { title: song.title, artist: song.artist })}
+                                  className="p-1 rounded-md text-zinc-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors shrink-0"
+                                  title="Abrir no YouTube Music"
+                                >
+                                  <ExternalLink className="w-3.5 h-3.5" />
+                                </a>
+                              </div>
+
+                              <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate">
+                                {song.artist} • <span className="font-medium text-amber-700 dark:text-amber-400">Base: {song.scriptureBasis}</span>
+                              </p>
+
+                              <p className="text-[11px] text-zinc-500 dark:text-zinc-400 leading-snug mt-1">
+                                {song.exegeticalNote}
+                              </p>
+                            </div>
+                          </div>
+
+                          {isPlayingThis && (
+                            <div className="mt-3 rounded-xl overflow-hidden bg-black border border-zinc-800 h-28">
+                              <iframe
+                                className="w-full h-full"
+                                src={`https://www.youtube.com/embed/${song.youtubeId}?autoplay=1&rel=0`}
+                                title={`${song.title} - ${song.artist}`}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                              />
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </>
+              )}
+
+              {/* ABA 2: FUNDO INSTRUMENTAL SEM VOZ PARA LER COM FOCO (PADRÃO DWELL) */}
+              {musicTab === 'instrumental' && (
+                <div className="space-y-2.5">
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                    Arranjos sem letra cantada para acompanhar a leitura bíblica sem competir com sua atenção:
+                  </p>
+
+                  <div className="divide-y divide-zinc-100 dark:divide-zinc-800/70">
+                    {INSTRUMENTAL_READING_TRACKS.map(inst => {
+                      const isPlayingThis = playingTrackId === inst.id;
+                      return (
+                        <div key={inst.id} className="py-2.5 first:pt-1 last:pb-0.5">
+                          <div className="flex items-center gap-3">
+                            <button
+                              onClick={() => {
+                                const next = isPlayingThis ? null : inst.id;
+                                if (next) {
+                                  telemetryService.track('music_play_in_app', { title: inst.title, type: 'instrumental' });
+                                }
+                                setPlayingTrackId(next);
+                              }}
+                              className="relative w-11 h-11 rounded-xl overflow-hidden shrink-0 bg-zinc-900 group cursor-pointer border border-zinc-200/60 dark:border-zinc-700"
+                            >
+                              <img
+                                src={`https://i.ytimg.com/vi/${inst.youtubeId}/mqdefault.jpg`}
+                                alt={inst.title}
+                                className="w-full h-full object-cover"
+                                loading="lazy"
+                              />
+                              <div className={`absolute inset-0 flex items-center justify-center ${
+                                isPlayingThis ? 'bg-black/65' : 'bg-black/30 group-hover:bg-black/50'
+                              }`}>
+                                {isPlayingThis ? (
+                                  <X className="w-4 h-4 text-white" />
+                                ) : (
+                                  <Play className="w-4 h-4 text-white fill-current ml-0.5" />
+                                )}
+                              </div>
+                            </button>
+
+                            <div className="min-w-0 flex-1">
+                              <div className="flex items-center justify-between gap-2">
+                                <h4 className="text-xs sm:text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">
+                                  {inst.title}
+                                </h4>
+                                <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 shrink-0">
+                                  Sem Voz
+                                </span>
+                              </div>
+                              <p className="text-[11px] text-zinc-500 dark:text-zinc-400 leading-snug mt-0.5">
+                                {inst.purpose}
+                              </p>
+                            </div>
+                          </div>
+
+                          {isPlayingThis && (
+                            <div className="mt-2.5 rounded-xl overflow-hidden bg-black border border-zinc-800 h-28">
+                              <iframe
+                                className="w-full h-full"
+                                src={`https://www.youtube.com/embed/${inst.youtubeId}?autoplay=1&rel=0`}
+                                title={inst.title}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                              />
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {/* ABA 3: ACERVO BÍBLICO POR EIXO TEOLÓGICO */}
+              {musicTab === 'themes' && (
+                <div className="space-y-3">
+                  <div className="flex items-center gap-1.5 overflow-x-auto pb-1">
+                    {DOCTRINAL_AXES.map(ax => (
+                      <button
+                        key={ax.id}
+                        onClick={() => {
+                          setSelectedAxisId(ax.id);
+                          setPlayingTrackId(null);
+                        }}
+                        className={`px-2.5 py-1 rounded-lg text-[11px] font-medium shrink-0 transition-colors cursor-pointer ${
+                          selectedAxisId === ax.id
+                            ? 'bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-semibold'
+                            : 'bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200/70'
+                        }`}
+                      >
+                        {ax.label}
+                      </button>
+                    ))}
+                  </div>
+
+                  <div className="divide-y divide-zinc-100 dark:divide-zinc-800/70 max-h-64 overflow-y-auto pr-1">
+                    {axisSongs.map(song => {
+                      const isPlayingThis = playingTrackId === song.id;
+                      return (
+                        <div key={song.id} className="py-2.5 first:pt-1 last:pb-0.5">
+                          <div className="flex items-center gap-3">
+                            <button
+                              onClick={() => setPlayingTrackId(isPlayingThis ? null : song.id)}
+                              className="relative w-10 h-10 rounded-lg overflow-hidden shrink-0 bg-zinc-900 cursor-pointer"
+                            >
+                              <img
+                                src={`https://i.ytimg.com/vi/${song.youtubeId}/mqdefault.jpg`}
+                                alt={song.title}
+                                className="w-full h-full object-cover"
+                                loading="lazy"
+                              />
+                              <div className="absolute inset-0 bg-black/35 flex items-center justify-center">
+                                {isPlayingThis ? (
+                                  <X className="w-3.5 h-3.5 text-white" />
+                                ) : (
+                                  <Play className="w-3.5 h-3.5 text-white fill-current ml-0.5" />
+                                )}
+                              </div>
+                            </button>
+
+                            <div className="min-w-0 flex-1">
+                              <h4 className="text-xs font-semibold text-zinc-900 dark:text-zinc-100 truncate">
+                                {song.title} • <span className="font-normal text-zinc-500">{song.artist}</span>
+                              </h4>
+                              <p className="text-[11px] text-amber-700 dark:text-amber-400 font-medium truncate">
+                                Base: {song.scriptureBasis}
+                              </p>
+                            </div>
+
+                            <a
+                              href={song.youtubeMusicUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="p-1.5 rounded-md text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 shrink-0"
+                              title="Abrir no YouTube Music"
+                            >
+                              <ExternalLink className="w-3.5 h-3.5" />
+                            </a>
+                          </div>
+
+                          {isPlayingThis && (
+                            <div className="mt-2.5 rounded-xl overflow-hidden bg-black border border-zinc-800 h-24">
+                              <iframe
+                                className="w-full h-full"
+                                src={`https://www.youtube.com/embed/${song.youtubeId}?autoplay=1&rel=0`}
+                                title={song.title}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                              />
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
             </section>
           )}
 
