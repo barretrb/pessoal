@@ -13,20 +13,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
+                "ref": "2 João 1:1–2",
+                "text": "Eu, o presbítero, escrevo à senhora escolhida e a seus filhos, a quem amo na verdade, como fazem todos os que conhecem a verdade, porque a verdade permanece em nós e estará conosco para sempre.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
                 "ref": "1 João 3:18",
-                "text": "Filhinhos, não nos limitemos a dizer que amamos uns aos outros; demonstremos a verdade por meio de nossas ações."
-              },
-              {
-                "ref": "Romanos 16:23",
-                "text": "Gaio os saúda. Estou hospedado em sua casa, onde ele também tem recebido toda a igreja. Erasto, tesoureiro da cidade, bem como nosso irmão Quarto, lhes enviam saudações."
-              },
-              {
-                "ref": "1 Coríntios 1:14",
-                "text": "Graças a Deus, não batizei nenhum de vocês, exceto Crispo e Gaio,"
-              },
-              {
-                "ref": "2 João 1:1–13",
-                "text": "Eu, o presbítero, escrevo à senhora escolhida e a seus filhos, a quem amo na verdade, como fazem todos os que conhecem a verdade,"
+                "text": "Filhinhos, não nos limitemos a dizer que amamos uns aos outros; demonstremos a verdade por meio de nossas ações.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -34,24 +28,7 @@
             "number": 2,
             "text": "Amado, espero que você esteja bem e fisicamente tão sadio quanto é forte em espírito.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "2 Pedro 1:3–9",
-                "text": "Deus, com seu poder divino, nos concede tudo de que necessitamos para uma vida de devoção, pelo conhecimento completo daquele que nos chamou para si por meio de sua glória e excelência."
-              },
-              {
-                "ref": "2 Pedro 3:18",
-                "text": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, agora e para sempre! Amém."
-              },
-              {
-                "ref": "Colossenses 1:4–6",
-                "text": "pois temos ouvido falar de sua fé em Cristo Jesus e de seu amor por todo o povo santo,"
-              },
-              {
-                "ref": "1 Pedro 4:8",
-                "text": "Acima de tudo, amem uns aos outros sinceramente, pois o amor cobre muitos pecados."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 3,
@@ -60,19 +37,13 @@
             "crossReferences": [
               {
                 "ref": "2 João 1:4",
-                "text": "Fiquei muito feliz por encontrar alguns de seus filhos e ver que estão vivendo de acordo com a verdade, conforme o Pai ordenou."
+                "text": "Fiquei muito feliz por encontrar alguns de seus filhos e ver que estão vivendo de acordo com a verdade, conforme o Pai ordenou.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Tessalonicenses 3:6–9",
-                "text": "Agora, porém, Timóteo voltou trazendo boas notícias a respeito de sua fé e seu amor. Ele nos contou que vocês se lembram sempre com alegria de nossa visita e que desejam nos ver tanto quanto nós queremos vê-los."
-              },
-              {
-                "ref": "2 Coríntios 7:6–7",
-                "text": "Mas Deus, que conforta os desanimados, nos encorajou com a chegada de Tito."
-              },
-              {
-                "ref": "1 Tessalonicenses 2:19–20",
-                "text": "Afinal, o que nos dá esperança e alegria? E qual será nossa magnífica recompensa e coroa diante do Senhor Jesus quando ele voltar? Serão vocês! Sim, vocês são nosso orgulho e nossa alegria."
+                "text": "Agora, porém, Timóteo voltou trazendo boas notícias a respeito de sua fé e seu amor. Ele nos contou que vocês se lembram sempre com alegria de nossa visita e que desejam nos ver tanto quanto nós queremos vê-los. Por isso, irmãos, apesar de nossos sofrimentos e dificuldades, ficamos animados porque vocês permaneceram firmes na fé. Agora, revivemos por saber que estão firmes no Senhor. Sim, agradecemos a Deus por vocês! Por sua causa, temos grande alegria na presença de Deus.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -82,20 +53,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Gálatas 4:19",
-                "text": "Ó meus filhos queridos, sinto como se estivesse passando outra vez pelas dores de parto por sua causa, e elas continuarão até que Cristo seja plenamente desenvolvido em vocês."
-              },
-              {
-                "ref": "2 Timóteo 1:2",
-                "text": "escrevo esta carta a Timóteo, meu filho amado. Que Deus, o Pai, e Cristo Jesus, nosso Senhor, lhe deem graça, misericórdia e paz."
+                "ref": "Provérbios 23:24",
+                "text": "O pai dos justos tem motivos para se alegrar; é uma grande alegria ter filhos sábios.",
+                "category": "Citação & Cumprimento"
               },
               {
                 "ref": "1 Timóteo 1:2",
-                "text": "escrevo esta carta a Timóteo, meu verdadeiro filho na fé. Que Deus, o Pai, e Cristo Jesus, nosso Senhor, lhe deem graça, misericórdia e paz."
+                "text": "escrevo esta carta a Timóteo, meu verdadeiro filho na fé. Que Deus, o Pai, e Cristo Jesus, nosso Senhor, lhe deem graça, misericórdia e paz.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Provérbios 23:24",
-                "text": "O pai dos justos tem motivos para se alegrar; é uma grande alegria ter filhos sábios."
+                "ref": "Gálatas 4:19",
+                "text": "Ó meus filhos queridos, sinto como se estivesse passando outra vez pelas dores de parto por sua causa, e elas continuarão até que Cristo seja plenamente desenvolvido em vocês.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -110,20 +80,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Gálatas 6:10",
-                "text": "Por isso, sempre que tivermos oportunidade, façamos o bem a todos, especialmente aos da família da fé."
+                "ref": "Lucas 12:42",
+                "text": "O Senhor respondeu: “O servo fiel e sensato é aquele a quem o senhor encarrega de chefiar os demais servos da casa e alimentá-los.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Lucas 16:10–12",
-                "text": "“Se forem fiéis nas pequenas coisas, também o serão nas grandes. Mas, se forem desonestos nas pequenas coisas, também o serão nas maiores."
-              },
-              {
-                "ref": "Colossenses 3:17",
-                "text": "E tudo que fizerem ou disserem, façam em nome do Senhor Jesus, dando graças a Deus, o Pai, por meio dele."
-              },
-              {
-                "ref": "Lucas 12:42",
-                "text": "O Senhor respondeu: “O servo fiel e sensato é aquele a quem o senhor encarrega de chefiar os demais servos da casa e alimentá-los."
+                "text": "“Se forem fiéis nas pequenas coisas, também o serão nas grandes. Mas, se forem desonestos nas pequenas coisas, também o serão nas maiores. E, se vocês não são confiáveis ao lidar com a riqueza injusta deste mundo, quem lhes confiará a verdadeira riqueza? E, se não são fiéis com os bens dos outros, por que alguém lhes confiaria o que é de vocês?",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -133,20 +97,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Tessalonicenses 2:12",
-                "text": "Aconselhamos, incentivamos e insistimos para que vivam de modo que Deus considere digno, pois ele os chamou para terem parte em seu reino e em sua glória."
-              },
-              {
-                "ref": "Tito 3:13",
-                "text": "Faça todo o possível para ajudar Zenas, o advogado, e Apolo na viagem deles. Providencie que tenham tudo de que precisam."
-              },
-              {
                 "ref": "Atos 15:3",
-                "text": "A igreja, portanto, enviou seus representantes a Jerusalém. No caminho, eles pararam na Fenícia e em Samaria para visitar os irmãos e contaram que os gentios também estavam sendo convertidos, o que muito alegrou a todos."
-              },
-              {
-                "ref": "Filemom 1:5–7",
-                "text": "pois ouço com frequência de sua fé no Senhor Jesus e de seu amor por todo o povo santo."
+                "text": "A igreja, portanto, enviou seus representantes a Jerusalém. No caminho, eles pararam na Fenícia e em Samaria para visitar os irmãos e contaram que os gentios também estavam sendo convertidos, o que muito alegrou a todos.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -154,47 +107,13 @@
             "number": 7,
             "text": "Pois eles viajam a serviço do Senhor e não aceitam coisa alguma dos que são de fora.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "2 Coríntios 4:5",
-                "text": "Não andamos por aí falando de nós mesmos, mas proclamamos que Jesus Cristo é Senhor e que nós mesmos somos servos de vocês por causa de Jesus."
-              },
-              {
-                "ref": "2 Reis 5:15–16",
-                "text": "Então Naamã e toda a sua comitiva voltaram para onde morava o homem de Deus. Ao chegar diante dele, Naamã disse: “Agora sei que no mundo inteiro não há Deus, senão em Israel. Por favor, aceite um presente de seu servo”."
-              },
-              {
-                "ref": "Apocalipse 2:3",
-                "text": "Sofreu por meu nome com paciência, sem desistir."
-              },
-              {
-                "ref": "2 Coríntios 11:7–9",
-                "text": "Será que fiz mal quando me humilhei e os honrei anunciando-lhes as boas-novas de Deus sem esperar nada em troca?"
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 8,
             "text": "Assim, nós mesmos devemos sustentá-los, a fim de nos tornarmos seus cooperadores quando eles ensinarem a verdade.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Coríntios 16:10–11",
-                "text": "Quando Timóteo chegar, não deve se sentir intimidado por vocês. Ele está realizando a obra do Senhor, assim como eu."
-              },
-              {
-                "ref": "1 Coríntios 3:5–9",
-                "text": "Afinal, quem é Paulo? Quem é Apolo? Somos apenas servos de Deus por meio dos quais vocês vieram a crer. Cada um de nós fez o trabalho do qual o Senhor nos encarregou."
-              },
-              {
-                "ref": "2 Coríntios 7:2–3",
-                "text": "Peço-lhes que abram o coração para nós. Não prejudicamos ninguém, nem desencaminhamos ninguém, nem nos aproveitamos de ninguém."
-              },
-              {
-                "ref": "Colossenses 4:11",
-                "text": "Jesus, chamado Justo, também manda lembranças. Esses são os únicos irmãos judeus entre meus colaboradores. Eles trabalham comigo para o reino de Deus e têm sido um grande conforto para mim."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 9,
@@ -202,20 +121,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Tito 1:7–16",
-                "text": "O bispo administra a casa de Deus e, portanto, deve ter uma vida irrepreensível. Não deve ser arrogante nem briguento, não deve beber vinho em excesso, nem ser violento, nem buscar lucro desonesto."
-              },
-              {
-                "ref": "Lucas 22:24–27",
-                "text": "Depois, começaram a discutir entre si qual deles era o mais importante."
-              },
-              {
-                "ref": "Lucas 9:48",
-                "text": "e disse: “Quem recebe uma criança como esta em meu nome recebe a mim, e quem me recebe também recebe aquele que me enviou. Portanto, o menor entre vocês será o maior”."
-              },
-              {
-                "ref": "Mateus 23:4–8",
-                "text": "Oprimem as pessoas com exigências insuportáveis e não movem um dedo sequer para aliviar seus fardos."
+                "ref": "Tito 1:10–11",
+                "text": "Pois há muitos rebeldes que promovem conversas inúteis e enganam as pessoas. Refiro-me especialmente àqueles que insistem na necessidade da circuncisão. É preciso fazê-los calar, pois, com seus ensinamentos falsos, têm desviado famílias inteiras da verdade. Sua motivação é obter lucro desonesto.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -223,24 +131,7 @@
             "number": 10,
             "text": "Quando eu for, relatarei algumas das coisas que ele tem feito, bem como suas acusações maldosas contra nós. Ele não apenas se recusa a acolher os irmãos, mas também impede outros de ajudá-los. E, quando o fazem, ele os expulsa da igreja.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Isaías 66:5",
-                "text": "Ouçam esta mensagem do SENHOR, todos vocês que tremem diante de suas palavras: “Seu próprio povo os odeia e os expulsa porque são leais ao meu nome. Zombam: ‘Que o SENHOR seja glorificado! Alegrem-se nele!’, mas eles serão envergonhados."
-              },
-              {
-                "ref": "Lucas 6:22",
-                "text": "Felizes são vocês quando os odiarem e os excluírem, quando zombarem de vocês e os caluniarem como se fossem maus porque seguem o Filho do Homem."
-              },
-              {
-                "ref": "2 Coríntios 13:2",
-                "text": "Em minha segunda visita, já adverti aqueles que estavam em pecado. Agora, como naquela ocasião, volto a adverti-los e também os demais de que, da próxima vez, não os pouparei."
-              },
-              {
-                "ref": "Provérbios 10:8",
-                "text": "O sábio recebe os mandamentos de bom grado, mas as palavras do insensato causam sua ruína."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 11,
@@ -248,20 +139,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Isaías 1:16–17",
-                "text": "Lavem-se e limpem-se! Removam seus pecados de minha vista e parem de fazer o mal. Aprendam a fazer o bem e busquem a justiça. Ajudem os oprimidos, defendam a causa dos órfãos, lutem pelos direitos das viúvas."
-              },
-              {
-                "ref": "Salmos 37:27",
-                "text": "Afaste-se do mal e faça o bem, e você viverá na terra para sempre."
-              },
-              {
                 "ref": "Efésios 5:1",
-                "text": "Portanto, como filhos amados de Deus, imitem-no em tudo que fizerem."
-              },
-              {
-                "ref": "1 Pedro 3:11",
-                "text": "Afaste-se do mal e faça o bem; busque a paz e esforce-se para mantê-la."
+                "text": "Portanto, como filhos amados de Deus, imitem-no em tudo que fizerem.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -269,24 +149,7 @@
             "number": 12,
             "text": "Todos, incluindo a própria verdade, falam bem de Demétrio. Nós dizemos o mesmo a respeito dele, e você sabe que falamos a verdade.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Timóteo 3:7",
-                "text": "Além disso, os que são de fora devem falar bem dele, para que não seja desacreditado e caia na armadilha do diabo."
-              },
-              {
-                "ref": "João 21:24",
-                "text": "Este é o discípulo que dá testemunho destes acontecimentos e que os registrou aqui. E sabemos que seu relato é fiel."
-              },
-              {
-                "ref": "Atos 10:22",
-                "text": "Eles responderam: “Cornélio, um oficial romano, nos enviou. Ele é um homem devoto e temente a Deus, respeitado por todos os judeus. Um santo anjo o instruiu a chamar o senhor à casa dele para que ele ouça sua mensagem”."
-              },
-              {
-                "ref": "Atos 22:12",
-                "text": "Vivia ali Ananias, um homem devoto, dedicado à lei e muito respeitado por todos os judeus da cidade."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -300,7 +163,8 @@
             "crossReferences": [
               {
                 "ref": "2 João 1:12",
-                "text": "Tenho muito mais a lhes dizer, mas não quero fazê-lo com papel e tinta, pois espero visitá-los em breve e conversar com vocês pessoalmente. Então nossa alegria será completa."
+                "text": "Tenho muito mais a lhes dizer, mas não quero fazê-lo com papel e tinta, pois espero visitá-los em breve e conversar com vocês pessoalmente. Então nossa alegria será completa.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -308,35 +172,13 @@
             "number": 14,
             "text": "pois espero vê-lo em breve, e então conversaremos pessoalmente.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Efésios 6:23",
-                "text": "A paz seja com vocês, irmãos, e que Deus, o Pai, e o Senhor Jesus Cristo lhes deem amor e fidelidade."
-              },
-              {
-                "ref": "1 Pedro 5:14",
-                "text": "Cumprimentem uns aos outros com um beijo de amor. Paz seja com todos vocês que estão em Cristo."
-              },
-              {
-                "ref": "Gálatas 5:16",
-                "text": "Por isso digo: deixem que o Espírito guie sua vida. Assim, não satisfarão os anseios de sua natureza humana."
-              },
-              {
-                "ref": "Gênesis 43:23",
-                "text": "“Fiquem tranquilos”, disse o administrador. “Não tenham medo. Seu Deus, o Deus de seu pai, deve ter colocado esse tesouro nos sacos. Tenho certeza de que recebi seu pagamento.” Depois disso, soltou Simeão e o levou até onde eles estavam."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 15,
             "text": "A paz seja com você. Seus amigos daqui mandam lembranças. Por favor, envie minhas saudações pessoais a cada um dos amigos daí.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "João 10:3",
-                "text": "O porteiro lhe abre a porta, e as ovelhas reconhecem sua voz e se aproximam. Ele chama suas ovelhas pelo nome e as conduz para fora."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       }

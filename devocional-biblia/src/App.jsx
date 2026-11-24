@@ -90,7 +90,7 @@ export default function App() {
 
   // Modais e Drawers
   const [bibleArcData, setBibleArcData] = useState({ isOpen: false, book: '', chapter: '', verses: [], passage: '', text: '' });
-  const [referencesData, setReferencesData] = useState({ isOpen: false, verseKey: '', references: [] });
+  const [referencesData, setReferencesData] = useState({ isOpen: false, verseKey: '', sourceText: '', references: [] });
   const [commentaryData, setCommentaryData] = useState({ isOpen: false, chapterData: null });
   const [favoritesModalOpen, setFavoritesModalOpen] = useState(false);
   
@@ -528,8 +528,8 @@ export default function App() {
                 text: text || '' 
               });
             }}
-            onOpenReferences={(verseKey, references) => {
-              setReferencesData({ isOpen: true, verseKey, references });
+            onOpenReferences={(verseKey, references, sourceText = '') => {
+              setReferencesData({ isOpen: true, verseKey, sourceText, references });
             }}
             onOpenCommentary={(chapterData) => {
               setCommentaryData({ isOpen: true, chapterData });
@@ -631,7 +631,9 @@ export default function App() {
         isOpen={referencesData.isOpen}
         onClose={() => setReferencesData({ ...referencesData, isOpen: false })}
         verseKey={referencesData.verseKey}
+        sourceText={referencesData.sourceText}
         references={referencesData.references}
+        onNavigateToPassage={handleSelectFreeChapter}
       />
 
       {/* Drawer de Comentários & Diário Espiritual */}

@@ -13,20 +13,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Esdras 2:2",
-                "text": "Seus líderes eram Zorobabel, Jesua, Neemias, Seraías, Reelaías, Mardoqueu, Bilsã, Mispar, Bigvai, Reum e Baaná. Este é o número de homens de Israel que regressaram do exílio:"
-              },
-              {
                 "ref": "Esdras 3:8",
-                "text": "A construção do templo de Deus começou no segundo mês do segundo ano depois da chegada a Jerusalém. O grupo de trabalhadores era constituído de todos que haviam regressado do exílio, incluindo Zorobabel, filho de Sealtie..."
+                "text": "A construção do templo de Deus começou no segundo mês do segundo ano depois da chegada a Jerusalém. O grupo de trabalhadores era constituído de todos que haviam regressado do exílio, incluindo Zorobabel, filho de Sealtiel, Jesua, filho de Jeozadaque, e seus colegas, os sacerdotes, bem como todos os levitas. Os levitas de 20 anos para cima foram encarregados de supervisionar a construção do templo do SENHOR.",
+                "category": "Passagem Paralela"
               },
               {
                 "ref": "Ageu 2:10",
-                "text": "Em 18 de dezembro do segundo ano do reinado de Dario, o SENHOR enviou esta mensagem ao profeta Ageu:"
+                "text": "Em 18 de dezembro do segundo ano do reinado de Dario, o SENHOR enviou esta mensagem ao profeta Ageu:",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Neemias 7:7",
-                "text": "Seus líderes eram Zorobabel, Jesua, Neemias, Seraías, Reelaías, Naamani, Mardoqueu, Bilsã, Mispar, Bigvai, Reum e Baaná. Este é o número de homens de Israel que regressaram do exílio:"
+                "ref": "Esdras 2:2",
+                "text": "Seus líderes eram Zorobabel, Jesua, Neemias, Seraías, Reelaías, Mardoqueu, Bilsã, Mispar, Bigvai, Reum e Baaná. Este é o número de homens de Israel que regressaram do exílio:",
+                "category": "Passagem Paralela"
               }
             ]
           },
@@ -34,24 +33,7 @@
             "number": 2,
             "text": "“Assim diz o SENHOR dos Exércitos: Este povo diz: ‘Ainda não chegou a hora de reconstruir a casa do SENHOR’”.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Esdras 4:23–Esdras 5:2",
-                "text": "Quando a carta do rei Artaxerxes foi lida para Reum, Sinsai e seus companheiros, eles foram depressa a Jerusalém e, fazendo uso de força, obrigaram os judeus a parar a construção."
-              },
-              {
-                "ref": "Neemias 4:10",
-                "text": "Então o povo de Judá começou a se queixar: “Os trabalhadores estão cansados, e ainda há muito entulho para remover. Não seremos capazes de construir o muro sozinhos”."
-              },
-              {
-                "ref": "Eclesiastes 9:10",
-                "text": "Tudo que fizer, faça bem feito, pois quando descer à sepultura não haverá trabalho, nem planos, nem conhecimento, nem sabedoria."
-              },
-              {
-                "ref": "Eclesiastes 11:4",
-                "text": "O agricultor que espera condições de tempo perfeitas nunca semeia; se ele fica observando cada nuvem, não colhe."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 3,
@@ -60,11 +42,13 @@
             "crossReferences": [
               {
                 "ref": "Esdras 5:1",
-                "text": "Nessa época, os profetas Ageu e Zacarias, filho de Ido, profetizaram aos judeus de Judá e Jerusalém. Falavam em nome do Deus de Israel, que estava sobre eles."
+                "text": "Nessa época, os profetas Ageu e Zacarias, filho de Ido, profetizaram aos judeus de Judá e Jerusalém. Falavam em nome do Deus de Israel, que estava sobre eles.",
+                "category": "Passagem Paralela"
               },
               {
                 "ref": "Zacarias 1:1",
-                "text": "Em novembro do segundo ano do reinado de Dario, o SENHOR deu esta mensagem ao profeta Zacarias, filho de Berequias, neto de Ido:"
+                "text": "Em novembro do segundo ano do reinado de Dario, o SENHOR deu esta mensagem ao profeta Zacarias, filho de Berequias, neto de Ido:",
+                "category": "Passagem Paralela"
               }
             ]
           },
@@ -74,20 +58,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Samuel 7:2",
-                "text": "mandou chamar o profeta Natã. O rei disse: “Veja, moro num palácio, uma casa de cedro, enquanto a arca de Deus está lá fora, numa simples tenda”."
-              },
-              {
                 "ref": "Salmos 132:3–5",
-                "text": "“Não voltarei para casa, não descansarei em minha cama,"
+                "text": "“Não voltarei para casa, não descansarei em minha cama, não deixarei que meus olhos durmam, nem fecharei as pálpebras para cochilar, enquanto não encontrar lugar para a habitação do SENHOR, o santuário para o Poderoso de Jacó”.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Filipenses 2:21",
-                "text": "Todos os outros se preocupam apenas consigo mesmos, e não com o que é importante para Jesus Cristo."
-              },
-              {
-                "ref": "Ageu 1:9",
-                "text": "Vocês esperavam colheitas fartas, mas elas foram escassas. E, quando trouxeram esse pouco para casa, eu o fiz desaparecer com um sopro. Por quê? Porque minha casa continua em ruínas, diz o SENHOR dos Exércitos, enquanto..."
+                "ref": "2 Samuel 7:2",
+                "text": "mandou chamar o profeta Natã. O rei disse: “Veja, moro num palácio, uma casa de cedro, enquanto a arca de Deus está lá fora, numa simples tenda”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -97,20 +75,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Lamentações 3:40",
-                "text": "Em vez disso, examinemos nossos caminhos e voltemos para o SENHOR."
+                "ref": "Ageu 2:15–18",
+                "text": "Vejam o que estava acontecendo com vocês antes de começarem a lançar os alicerces do templo do SENHOR. Quando esperavam uma colheita de vinte medidas, colhiam apenas dez. Quando esperavam tirar cinquenta medidas da prensa de uvas, tiravam apenas vinte. Enviei ferrugem, mofo e granizo para destruir tudo que vocês trabalharam para produzir. E, no entanto, vocês não voltaram para mim, diz o SENHOR. “Pensem neste 18 de dezembro, o dia em que foram lançados os alicerces do templo do SENHOR. Sim, pensem bem.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Coríntios 13:5",
-                "text": "Examinem a si mesmos. Verifiquem se estão praticando o que afirmam crer. Assim, poderão ser aprovados. Certamente sabem que Jesus Cristo está entre vocês; do contrário, já foram reprovados."
-              },
-              {
-                "ref": "Ageu 2:15–18",
-                "text": "Vejam o que estava acontecendo com vocês antes de começarem a lançar os alicerces do templo do SENHOR."
-              },
-              {
-                "ref": "Ageu 1:7",
-                "text": "“Assim diz o SENHOR dos Exércitos: Vejam o que tem acontecido com vocês!"
+                "text": "Examinem a si mesmos. Verifiquem se estão praticando o que afirmam crer. Assim, poderão ser aprovados. Certamente sabem que Jesus Cristo está entre vocês; do contrário, já foram reprovados.",
+                "category": "Citação & Cumprimento"
               }
             ]
           },
@@ -120,20 +92,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Ageu 1:9",
-                "text": "Vocês esperavam colheitas fartas, mas elas foram escassas. E, quando trouxeram esse pouco para casa, eu o fiz desaparecer com um sopro. Por quê? Porque minha casa continua em ruínas, diz o SENHOR dos Exércitos, enquanto..."
-              },
-              {
                 "ref": "Deuteronômio 28:38–40",
-                "text": "“Semearão muito, mas colherão pouco, pois os gafanhotos devorarão suas plantações."
-              },
-              {
-                "ref": "Oséias 4:10",
-                "text": "Eles comerão, mas ainda sentirão fome; eles se prostituirão, mas nada receberão, pois abandonaram o SENHOR"
-              },
-              {
-                "ref": "Malaquias 3:9–11",
-                "text": "Estão sob maldição, pois a nação inteira tem me roubado."
+                "text": "“Semearão muito, mas colherão pouco, pois os gafanhotos devorarão suas plantações. Plantarão vinhedos e cuidarão deles, mas não beberão o vinho nem comerão as uvas, pois vermes devorarão as videiras. Cultivarão oliveiras em todo o seu território, mas nunca usarão azeite, pois os frutos cairão antes de amadurecer.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -143,16 +104,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Salmos 119:59–60",
-                "text": "Refleti sobre o rumo de minha vida e resolvi seguir teus preceitos. Eu me apressarei e, sem demora, obedecerei a teus mandamentos."
-              },
-              {
-                "ref": "Ageu 1:5",
-                "text": "Assim diz o SENHOR dos Exércitos: Vejam o que tem acontecido com vocês!"
-              },
-              {
                 "ref": "Filipenses 3:1",
-                "text": "Por fim, meus irmãos, alegrem-se no Senhor. Nunca me canso de dizer-lhes estas coisas, e o faço para protegê-los."
+                "text": "Por fim, meus irmãos, alegrem-se no Senhor. Nunca me canso de dizer-lhes estas coisas, e o faço para protegê-los.",
+                "category": "Citação & Cumprimento"
               }
             ]
           },
@@ -162,20 +116,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Salmos 132:13–14",
-                "text": "Pois o SENHOR escolheu Sião; desejou-a para ser sua habitação. “Este é meu descanso para sempre”, disse ele. “Habitarei aqui, pois este é o lugar que desejei."
-              },
-              {
                 "ref": "2 Crônicas 7:16",
-                "text": "Pois escolhi e consagrei este templo, onde meu nome será honrado para sempre. Olharei continuamente para ele, com todo o meu coração."
-              },
-              {
-                "ref": "Ageu 2:7",
-                "text": "Sacudirei todas as nações, e os tesouros das nações virão para este templo. Encherei este lugar de glória, diz o SENHOR dos Exércitos."
+                "text": "Pois escolhi e consagrei este templo, onde meu nome será honrado para sempre. Olharei continuamente para ele, com todo o meu coração.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Crônicas 2:8–10",
-                "text": "“Mande-me, também, madeira de cedro, cipreste e sândalo do Líbano, pois sei que ninguém no Líbano corta madeira como seus servos. Enviarei meus servos para ajudá-los."
+                "text": "“Mande-me, também, madeira de cedro, cipreste e sândalo do Líbano, pois sei que ninguém no Líbano corta madeira como seus servos. Enviarei meus servos para ajudá-los. Será necessária muita madeira, pois o templo que vou construir será grande e imponente. Como pagamento a seus cortadores de madeira, enviarei vinte mil cestos grandes de trigo batido, vinte mil cestos grandes de cevada, vinte mil tonéis de vinho e vinte mil tonéis de azeite”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -185,20 +133,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Ageu 1:4",
-                "text": "“Por que vocês vivem em casas luxuosas enquanto minha casa con- tinua em ruínas?"
-              },
-              {
                 "ref": "Ageu 2:16–17",
-                "text": "Quando esperavam uma colheita de vinte medidas, colhiam apenas dez. Quando esperavam tirar cinquenta medidas da prensa de uvas, tiravam apenas vinte."
-              },
-              {
-                "ref": "Apocalipse 3:19",
-                "text": "Eu corrijo e disciplino aqueles que amo. Por isso, seja zeloso e arrependa-se."
+                "text": "Quando esperavam uma colheita de vinte medidas, colhiam apenas dez. Quando esperavam tirar cinquenta medidas da prensa de uvas, tiravam apenas vinte. Enviei ferrugem, mofo e granizo para destruir tudo que vocês trabalharam para produzir. E, no entanto, vocês não voltaram para mim, diz o SENHOR.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Malaquias 2:2",
-                "text": "Escutem-me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência."
+                "text": "Escutem-me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "Apocalipse 3:19",
+                "text": "Eu corrijo e disciplino aqueles que amo. Por isso, seja zeloso e arrependa-se.",
+                "category": "Citação & Cumprimento"
               }
             ]
           },
@@ -208,20 +155,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Reis 8:35",
-                "text": "“Se o céu se fechar e não houver chuva porque o povo pecou contra ti, e se eles orarem voltados para este templo, invocarem o teu nome e se afastarem de seus pecados porque tu os castigaste,"
+                "ref": "1 Reis 17:1",
+                "text": "Elias, que era de Tisbe, em Gileade, disse ao rei Acabe: “Tão certo como vive o SENHOR, o Deus de Israel, a quem sirvo, não haverá orvalho nem chuva durante os próximos anos, até que eu ordene!”.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Levítico 26:19",
-                "text": "Quebrarei seu forte orgulho ao tornar o céu tão duro quanto o ferro e a terra tão impenetrável quanto o bronze."
+                "text": "Quebrarei seu forte orgulho ao tornar o céu tão duro quanto o ferro e a terra tão impenetrável quanto o bronze.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Deuteronômio 28:23–24",
-                "text": "O céu sobre sua cabeça será tão duro quanto o bronze, e a terra debaixo de vocês será tão impenetrável quanto o ferro."
-              },
-              {
-                "ref": "1 Reis 17:1",
-                "text": "Elias, que era de Tisbe, em Gileade, disse ao rei Acabe: “Tão certo como vive o SENHOR, o Deus de Israel, a quem sirvo, não haverá orvalho nem chuva durante os próximos anos, até que eu ordene!”."
+                "text": "O céu sobre sua cabeça será tão duro quanto o bronze, e a terra debaixo de vocês será tão impenetrável quanto o ferro. O SENHOR transformará em pó a chuva que rega sua terra, e cinzas cairão do céu até que vocês sejam destruídos.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -232,19 +178,8 @@
             "crossReferences": [
               {
                 "ref": "Ageu 2:17",
-                "text": "Enviei ferrugem, mofo e granizo para destruir tudo que vocês trabalharam para produzir. E, no entanto, vocês não voltaram para mim, diz o SENHOR."
-              },
-              {
-                "ref": "Deuteronômio 28:22",
-                "text": "O SENHOR os ferirá com doenças debilitantes, com febres e inflamações, com calor ardente e secas, com ferrugem e mofo. Essas calamidades os perseguirão até que vocês morram."
-              },
-              {
-                "ref": "1 Reis 17:1",
-                "text": "Elias, que era de Tisbe, em Gileade, disse ao rei Acabe: “Tão certo como vive o SENHOR, o Deus de Israel, a quem sirvo, não haverá orvalho nem chuva durante os próximos anos, até que eu ordene!”."
-              },
-              {
-                "ref": "2 Reis 8:1",
-                "text": "Eliseu tinha dito à mulher cujo filho ele havia ressuscitado: “Reúna sua família e mude-se para outro lugar, pois o SENHOR proclamou sobre a terra de Israel uma fome que durará sete anos”."
+                "text": "Enviei ferrugem, mofo e granizo para destruir tudo que vocês trabalharam para produzir. E, no entanto, vocês não voltaram para mim, diz o SENHOR.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -259,20 +194,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Isaías 50:10",
-                "text": "Quem entre vocês teme o SENHOR e obedece a seu servo? Se vocês caminham na escuridão, sem um raio de luz sequer, confiem no SENHOR e apoiem-se em seu Deus."
+                "ref": "Esdras 5:2",
+                "text": "Em resposta, Zorobabel, filho de Sealtiel, e Jesua, filho de Jeozadaque, começaram outra vez a reconstruir o templo de Deus em Jerusalém. E os profetas de Deus estavam com eles e os auxiliavam.",
+                "category": "Passagem Paralela"
               },
               {
-                "ref": "Esdras 5:2",
-                "text": "Em resposta, Zorobabel, filho de Sealtiel, e Jesua, filho de Jeozadaque, começaram outra vez a reconstruir o templo de Deus em Jerusalém. E os profetas de Deus estavam com eles e os auxiliavam."
+                "ref": "Isaías 50:10",
+                "text": "Quem entre vocês teme o SENHOR e obedece a seu servo? Se vocês caminham na escuridão, sem um raio de luz sequer, confiem no SENHOR e apoiem-se em seu Deus.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Salmos 112:1",
-                "text": "Louvado seja o SENHOR! Como é feliz aquele que teme o SENHOR e tem prazer em obedecer a seus mandamentos!"
-              },
-              {
-                "ref": "Ageu 1:14",
-                "text": "E o SENHOR deu ânimo ao governador de Judá, Zorobabel, filho de Sealtiel, ao sumo sacerdote Josué, filho de Jeozadaque, e a todo o remanescente do povo. Começaram a trabalhar na casa de seu Deus, o SENHOR dos Exércitos,"
+                "text": "Louvado seja o SENHOR! Como é feliz aquele que teme o SENHOR e tem prazer em obedecer a seus mandamentos!",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -282,20 +216,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Isaías 43:2",
-                "text": "Quando passar por águas profundas, estarei a seu lado. Quando atravessar rios, não se afogará. Quando passar pelo fogo, não se queimará; as chamas não lhe farão mal."
-              },
-              {
                 "ref": "Mateus 28:20",
-                "text": "Ensinem esses novos discípulos a obedecerem a todas as ordens que eu lhes dei. E lembrem-se disto: estou sempre com vocês, até o fim dos tempos”."
+                "text": "Ensinem esses novos discípulos a obedecerem a todas as ordens que eu lhes dei. E lembrem-se disto: estou sempre com vocês, até o fim dos tempos”.",
+                "category": "Citação & Cumprimento"
               },
               {
                 "ref": "Romanos 8:31",
-                "text": "Que podemos dizer diante de coisas tão maravilhosas? Se Deus é por nós, quem será contra nós?"
+                "text": "Que podemos dizer diante de coisas tão maravilhosas? Se Deus é por nós, quem será contra nós?",
+                "category": "Citação & Cumprimento"
               },
               {
                 "ref": "Malaquias 3:1",
-                "text": "“Vejam! Envio meu mensageiro, que preparará o caminho diante de mim. Então, de repente, o Senhor a quem vocês buscam virá a seu templo. O mensageiro da aliança, por quem vocês anseiam, certamente virá”, diz o SENHOR dos Exércitos."
+                "text": "“Vejam! Envio meu mensageiro, que preparará o caminho diante de mim. Então, de repente, o Senhor a quem vocês buscam virá a seu templo. O mensageiro da aliança, por quem vocês anseiam, certamente virá”, diz o SENHOR dos Exércitos.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -305,20 +238,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Crônicas 36:22",
-                "text": "No primeiro ano do reinado de Ciro, rei da Pérsia, o SENHOR cumpriu a profecia que havia anunciado por meio de Jeremias. O SENHOR despertou o coração de Ciro para registrar por escrito a seguinte proclamação e enviá-la a todo o seu reino:"
+                "ref": "Ageu 2:21",
+                "text": "“Diga ao governador de Judá, Zorobabel, que estou prestes a sacudir os céus e a terra.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Hebreus 13:21",
-                "text": "os capacite em tudo que precisam para fazer a vontade dele. Que ele produza em vocês, mediante o poder de Jesus Cristo, tudo que é agradável a ele, a quem seja a glória para todo o sempre! Amém."
-              },
-              {
-                "ref": "Ageu 2:21",
-                "text": "“Diga ao governador de Judá, Zorobabel, que estou prestes a sacudir os céus e a terra."
+                "text": "os capacite em tudo que precisam para fazer a vontade dele. Que ele produza em vocês, mediante o poder de Jesus Cristo, tudo que é agradável a ele, a quem seja a glória para todo o sempre! Amém.",
+                "category": "Citação & Cumprimento"
               },
               {
                 "ref": "Esdras 1:5",
-                "text": "Então o SENHOR despertou o coração dos sacerdotes, dos levitas e dos chefes das tribos de Judá e Benjamim, para que fossem a Jerusalém e reconstruíssem o templo do SENHOR."
+                "text": "Então o SENHOR despertou o coração dos sacerdotes, dos levitas e dos chefes das tribos de Judá e Benjamim, para que fossem a Jerusalém e reconstruíssem o templo do SENHOR.",
+                "category": "Passagem Paralela"
               }
             ]
           },
@@ -328,20 +260,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Ageu 1:1",
-                "text": "Em 29 de agosto do segundo ano do reinado de Dario, o SENHOR transmitiu esta mensagem por meio do profeta Ageu ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque."
-              },
-              {
-                "ref": "Ageu 2:1",
-                "text": "Então, em 17 de outubro desse mesmo ano, o SENHOR transmitiu outra mensagem por meio do profeta Ageu:"
-              },
-              {
                 "ref": "Ageu 2:10",
-                "text": "Em 18 de dezembro do segundo ano do reinado de Dario, o SENHOR enviou esta mensagem ao profeta Ageu:"
+                "text": "Em 18 de dezembro do segundo ano do reinado de Dario, o SENHOR enviou esta mensagem ao profeta Ageu:",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Ageu 2:20",
-                "text": "Naquele mesmo dia, 18 de dezembro, o SENHOR enviou mais uma mensagem a Ageu:"
+                "ref": "Ageu 1:1",
+                "text": "Em 29 de agosto do segundo ano do reinado de Dario, o SENHOR transmitiu esta mensagem por meio do profeta Ageu ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -363,20 +289,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Pedro 1:21",
-                "text": "nem de iniciativa humana. Esses homens foram impulsionados pelo Espírito Santo e falaram da parte de Deus."
+                "ref": "Ageu 1:1",
+                "text": "Em 29 de agosto do segundo ano do reinado de Dario, o SENHOR transmitiu esta mensagem por meio do profeta Ageu ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Ageu 1:1",
-                "text": "Em 29 de agosto do segundo ano do reinado de Dario, o SENHOR transmitiu esta mensagem por meio do profeta Ageu ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque."
+                "ref": "2 Pedro 1:21",
+                "text": "nem de iniciativa humana. Esses homens foram impulsionados pelo Espírito Santo e falaram da parte de Deus.",
+                "category": "Citação & Cumprimento"
               },
               {
                 "ref": "Ageu 2:20",
-                "text": "Naquele mesmo dia, 18 de dezembro, o SENHOR enviou mais uma mensagem a Ageu:"
-              },
-              {
-                "ref": "Ageu 1:15",
-                "text": "em 21 de setembro do segundo ano do reinado de Dario."
+                "text": "Naquele mesmo dia, 18 de dezembro, o SENHOR enviou mais uma mensagem a Ageu:",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -386,20 +311,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
+                "ref": "Ageu 1:14",
+                "text": "E o SENHOR deu ânimo ao governador de Judá, Zorobabel, filho de Sealtiel, ao sumo sacerdote Josué, filho de Jeozadaque, e a todo o remanescente do povo. Começaram a trabalhar na casa de seu Deus, o SENHOR dos Exércitos,",
+                "category": "Harmonia Doutrinária"
+              },
+              {
                 "ref": "Ageu 1:1",
-                "text": "Em 29 de agosto do segundo ano do reinado de Dario, o SENHOR transmitiu esta mensagem por meio do profeta Ageu ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque."
+                "text": "Em 29 de agosto do segundo ano do reinado de Dario, o SENHOR transmitiu esta mensagem por meio do profeta Ageu ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Neemias 8:9",
-                "text": "Então o governador Neemias, o sacerdote e escriba Esdras e os levitas que instruíam o povo disseram: “Não se lamentem nem chorem num dia como este! Hoje é um dia consagrado ao SENHOR, seu Deus!”. Pois todo o povo chorava..."
-              },
-              {
-                "ref": "Ageu 1:14",
-                "text": "E o SENHOR deu ânimo ao governador de Judá, Zorobabel, filho de Sealtiel, ao sumo sacerdote Josué, filho de Jeozadaque, e a todo o remanescente do povo. Começaram a trabalhar na casa de seu Deus, o SENHOR dos Exércitos,"
-              },
-              {
-                "ref": "Esdras 1:8",
-                "text": "Ciro, rei da Pérsia, deu instruções a Mitredate, seu tesoureiro, para que contasse esses utensílios e os entregasse a Sesbazar, líder dos exilados que voltavam para Judá."
+                "text": "Então o governador Neemias, o sacerdote e escriba Esdras e os levitas que instruíam o povo disseram: “Não se lamentem nem chorem num dia como este! Hoje é um dia consagrado ao SENHOR, seu Deus!”. Pois todo o povo chorava enquanto ouvia as palavras da Lei.",
+                "category": "Passagem Paralela"
               }
             ]
           },
@@ -415,20 +339,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Crônicas 28:20",
-                "text": "E continuou: “Seja forte e corajoso e faça o trabalho. Não tenha medo nem desanime, pois o SENHOR Deus, meu Deus, está com você. Ele não o deixará nem o abandonará durante toda a construção do templo do SENHOR."
-              },
-              {
-                "ref": "Josué 1:9",
-                "text": "Esta é minha ordem: Seja forte e corajoso! Não tenha medo nem desanime, pois o SENHOR, seu Deus, estará com você por onde você andar”."
-              },
-              {
                 "ref": "Deuteronômio 31:23",
-                "text": "Então o SENHOR deu ordens a Josué, filho de Num, com as seguintes palavras: “Seja forte e corajoso, pois você conduzirá o povo de Israel à terra que jurei lhes dar. Eu estarei com você”."
+                "text": "Então o SENHOR deu ordens a Josué, filho de Num, com as seguintes palavras: “Seja forte e corajoso, pois você conduzirá o povo de Israel à terra que jurei lhes dar. Eu estarei com você”.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Zacarias 8:9",
-                "text": "“Assim diz o SENHOR dos Exércitos: Sejam fortes e completem a tarefa! Desde que lançaram os alicerces do templo do SENHOR dos Exércitos, vocês têm ouvido o que os profetas dizem a respeito de terminar a obra."
+                "text": "“Assim diz o SENHOR dos Exércitos: Sejam fortes e completem a tarefa! Desde que lançaram os alicerces do templo do SENHOR dos Exércitos, vocês têm ouvido o que os profetas dizem a respeito de terminar a obra.",
+                "category": "Passagem Paralela"
+              },
+              {
+                "ref": "1 Crônicas 28:20",
+                "text": "E continuou: “Seja forte e corajoso e faça o trabalho. Não tenha medo nem desanime, pois o SENHOR Deus, meu Deus, está com você. Ele não o deixará nem o abandonará durante toda a construção do templo do SENHOR.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -436,24 +359,7 @@
             "number": 5,
             "text": "Meu Espírito habita em seu meio, como prometi quando vocês saíram do Egito. Portanto, não tenham medo’.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Êxodo 29:45–46",
-                "text": "Então viverei no meio dos israelitas e serei seu Deus, e eles saberão que eu sou o SENHOR, seu Deus. Eu os tirei da terra do Egito a fim de viver no meio deles. Eu sou o SENHOR, seu Deus.”"
-              },
-              {
-                "ref": "Êxodo 34:10",
-                "text": "O SENHOR respondeu: “Faço hoje uma aliança com você na presença de todo o seu povo. Realizarei maravilhas jamais vistas em nação alguma ou lugar algum da terra. E todos ao seu redor verão o poder do SENHOR, o poder temív..."
-              },
-              {
-                "ref": "Isaías 41:13",
-                "text": "Pois eu o seguro pela mão direita, eu, o SENHOR, seu Deus, e lhe digo: ‘Não tenha medo, estou aqui para ajudá-lo."
-              },
-              {
-                "ref": "Neemias 9:20",
-                "text": "Enviaste teu bom Espírito para instruí-los e não deixaste de lhes dar maná do céu para se alimentarem, nem água para matarem a sede."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 6,
@@ -461,20 +367,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Hebreus 12:26–28",
-                "text": "Quando Deus falou naquela ocasião, sua voz fez a terra tremer, mas agora ele promete: “Mais uma vez, farei tremer não só a terra, mas também os céus”."
+                "ref": "Lucas 21:25–27",
+                "text": "“Haverá sinais no sol, na lua e nas estrelas. E, na terra, as nações ficarão angustiadas, perplexas com o rugir dos mares e a agitação das ondas. As pessoas ficarão aterrorizadas diante do que estará prestes a acontecer na terra, pois os poderes dos céus serão abalados. Então todos verão o Filho do Homem vindo numa nuvem com poder e grande glória.",
+                "category": "Citação & Cumprimento"
               },
               {
-                "ref": "Isaías 10:25",
-                "text": "Em breve, minha fúria contra vocês passará, e minha ira se levantará para destruir os assírios”."
+                "ref": "Hebreus 12:26–28",
+                "text": "Quando Deus falou naquela ocasião, sua voz fez a terra tremer, mas agora ele promete: “Mais uma vez, farei tremer não só a terra, mas também os céus”. Isso significa que toda a criação será abalada e removida, de modo que permaneçam apenas as coisas inabaláveis. Uma vez que recebemos um reino inabalável, sejamos gratos e agrademos a Deus adorando-o com reverência e santo temor.",
+                "category": "Citação & Cumprimento"
               },
               {
                 "ref": "Atos 2:19",
-                "text": "Farei maravilhas em cima, no céu, e sinais embaixo, na terra: sangue e fogo, e nuvens de fumaça."
-              },
-              {
-                "ref": "Lucas 21:25–27",
-                "text": "“Haverá sinais no sol, na lua e nas estrelas. E, na terra, as nações ficarão angustiadas, perplexas com o rugir dos mares e a agitação das ondas."
+                "text": "Farei maravilhas em cima, no céu, e sinais embaixo, na terra: sangue e fogo, e nuvens de fumaça.",
+                "category": "Citação & Cumprimento"
               }
             ]
           },
@@ -485,19 +390,18 @@
             "crossReferences": [
               {
                 "ref": "Malaquias 3:1",
-                "text": "“Vejam! Envio meu mensageiro, que preparará o caminho diante de mim. Então, de repente, o Senhor a quem vocês buscam virá a seu templo. O mensageiro da aliança, por quem vocês anseiam, certamente virá”, diz o SENHOR dos Exércitos."
-              },
-              {
-                "ref": "1 Reis 8:11",
-                "text": "Com isso, os sacerdotes não puderam dar continuidade a seus serviços, pois a presença gloriosa do SENHOR encheu o templo do SENHOR."
+                "text": "“Vejam! Envio meu mensageiro, que preparará o caminho diante de mim. Então, de repente, o Senhor a quem vocês buscam virá a seu templo. O mensageiro da aliança, por quem vocês anseiam, certamente virá”, diz o SENHOR dos Exércitos.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Lucas 2:10–11",
-                "text": "mas o anjo lhes disse: “Não tenham medo! Trago boas notícias, que darão grande alegria a todo o povo. Hoje em Belém, a cidade de Davi, nasceu o Salvador, que é Cristo, o Senhor!"
+                "text": "mas o anjo lhes disse: “Não tenham medo! Trago boas notícias, que darão grande alegria a todo o povo. Hoje em Belém, a cidade de Davi, nasceu o Salvador, que é Cristo, o Senhor!",
+                "category": "Citação & Cumprimento"
               },
               {
-                "ref": "João 7:37–39",
-                "text": "No último dia, o mais importante da festa, Jesus se levantou e disse em alta voz: “Quem tem sede, venha a mim e beba!"
+                "ref": "1 Reis 8:11",
+                "text": "Com isso, os sacerdotes não puderam dar continuidade a seus serviços, pois a presença gloriosa do SENHOR encheu o templo do SENHOR.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -507,20 +411,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
+                "ref": "Isaías 60:17",
+                "text": "Trocarei seu bronze por ouro, seu ferro por prata, sua madeira por bronze, e suas pedras por ferro. A paz será seu líder, e a justiça, seu governante.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
                 "ref": "Salmos 50:10–12",
-                "text": "Pois são meus todos os animais dos bosques, e sou dono do gado nos milhares de colinas."
+                "text": "Pois são meus todos os animais dos bosques, e sou dono do gado nos milhares de colinas. Conheço cada pássaro dos montes, e todos os animais dos campos me pertencem. Se eu tivesse fome, não lhes diria, pois meu é o mundo inteiro e tudo que nele há.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Salmos 24:1",
-                "text": "A terra e tudo que nela há são do SENHOR; o mundo e todos os seus habitantes lhe pertencem."
-              },
-              {
-                "ref": "Isaías 60:17",
-                "text": "Trocarei seu bronze por ouro, seu ferro por prata, sua madeira por bronze, e suas pedras por ferro. A paz será seu líder, e a justiça, seu governante."
-              },
-              {
-                "ref": "1 Crônicas 29:14–16",
-                "text": "Mas quem sou eu, e quem é meu povo, para que pudéssemos te dar alguma coisa? Tudo que temos vem de ti, e demos apenas o que primeiro de ti recebemos!"
+                "text": "A terra e tudo que nela há são do SENHOR; o mundo e todos os seus habitantes lhe pertencem.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -530,20 +433,24 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Salmos 85:8–9",
-                "text": "Ouço com atenção o que Deus, o SENHOR, diz, pois ele fala de paz a seu povo fiel; que não voltem, porém, a seus caminhos insensatos."
+                "ref": "2 Coríntios 3:9–10",
+                "text": "Se o antigo sistema, que traz condenação, era glorioso, muito mais glorioso é o novo sistema, que nos torna justos diante de Deus! De fato, a glória do passado não era nada gloriosa em comparação com a glória magnífica de agora.",
+                "category": "Citação & Cumprimento"
               },
               {
                 "ref": "Colossenses 1:19–21",
-                "text": "Pois foi do agrado do Pai que toda a plenitude habitasse no Filho,"
+                "text": "Pois foi do agrado do Pai que toda a plenitude habitasse no Filho, e, por meio dele, o Pai reconciliou consigo todas as coisas. Por meio do sangue do Filho na cruz, o Pai fez as pazes com todas as coisas, tanto nos céus como na terra. Isso inclui vocês, que antes estavam longe de Deus. Eram seus inimigos, dele separados por seus maus pensamentos e ações.",
+                "category": "Citação & Cumprimento"
               },
               {
-                "ref": "2 Coríntios 3:9–10",
-                "text": "Se o antigo sistema, que traz condenação, era glorioso, muito mais glorioso é o novo sistema, que nos torna justos diante de Deus!"
+                "ref": "Salmos 85:8–9",
+                "text": "Ouço com atenção o que Deus, o SENHOR, diz, pois ele fala de paz a seu povo fiel; que não voltem, porém, a seus caminhos insensatos. Certamente sua salvação está perto dos que o temem; então nossa terra se encherá de sua glória.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Salmos 24:7–10",
-                "text": "Abram-se, portões da cidade! Abram-se, antigos portais, para que entre o Rei da glória."
+                "text": "Abram-se, portões da cidade! Abram-se, antigos portais, para que entre o Rei da glória. Quem é o Rei da glória? O SENHOR, forte e poderoso. O SENHOR, invencível nas batalhas. Abram-se, portões da cidade! Abram-se, antigos portais, para que entre o Rei da glória. Quem é o Rei da glória? O SENHOR dos Exércitos; ele é o Rei da glória.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -558,16 +465,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Ageu 2:20",
-                "text": "Naquele mesmo dia, 18 de dezembro, o SENHOR enviou mais uma mensagem a Ageu:"
-              },
-              {
                 "ref": "Ageu 1:1",
-                "text": "Em 29 de agosto do segundo ano do reinado de Dario, o SENHOR transmitiu esta mensagem por meio do profeta Ageu ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque."
+                "text": "Em 29 de agosto do segundo ano do reinado de Dario, o SENHOR transmitiu esta mensagem por meio do profeta Ageu ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Ageu 1:15–Ageu 2:1",
-                "text": "em 21 de setembro do segundo ano do reinado de Dario."
+                "ref": "Ageu 2:20",
+                "text": "Naquele mesmo dia, 18 de dezembro, o SENHOR enviou mais uma mensagem a Ageu:",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -577,20 +482,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Levítico 10:10–11",
-                "text": "Façam distinção entre o que é santo e o que é comum, entre o que é impuro e o que é puro, e ensinem aos israelitas todos os decretos que o SENHOR lhes deu por meio de Moisés”."
-              },
-              {
-                "ref": "Deuteronômio 33:10",
-                "text": "Ensinaram teus estatutos a Jacó, deram tuas instruções a Israel. Oferecem incenso diante de ti e apresentam holocaustos inteiros no teu altar."
-              },
-              {
                 "ref": "Malaquias 2:7",
-                "text": "“As palavras do sacerdote devem guardar o conhecimento de Deus, e o povo deve buscar o sacerdote para receber instrução, pois ele é mensageiro do SENHOR dos Exércitos."
+                "text": "“As palavras do sacerdote devem guardar o conhecimento de Deus, e o povo deve buscar o sacerdote para receber instrução, pois ele é mensageiro do SENHOR dos Exércitos.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Tito 1:9",
-                "text": "Deve estar plenamente convicto da mensagem fiel que lhe foi ensinada, de modo que possa encorajar outros com o verdadeiro ensino e mostrar aos que se opõem onde estão errados."
+                "text": "Deve estar plenamente convicto da mensagem fiel que lhe foi ensinada, de modo que possa encorajar outros com o verdadeiro ensino e mostrar aos que se opõem onde estão errados.",
+                "category": "Citação & Cumprimento"
               }
             ]
           },
@@ -607,19 +506,23 @@
             "crossReferences": [
               {
                 "ref": "Levítico 22:4–6",
-                "text": "“Se algum dos descendentes de Arão tiver lepra ou qualquer tipo de fluxo que o torne cerimonialmente impuro, não comerá das ofertas sagradas enquanto não for declarado puro. Também se tornará impuro se tocar num cadáver, expelir sêmen,"
+                "text": "“Se algum dos descendentes de Arão tiver lepra ou qualquer tipo de fluxo que o torne cerimonialmente impuro, não comerá das ofertas sagradas enquanto não for declarado puro. Também se tornará impuro se tocar num cadáver, expelir sêmen, tocar num animal que rasteja pelo chão e seja impuro ou tocar em alguém que, por qualquer motivo, esteja cerimonialmente impuro. Quem se contaminar de alguma dessas formas ficará impuro até o entardecer. Não comerá das ofertas sagradas enquanto não tiver se banhado com água.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Números 9:6–10",
-                "text": "Alguns dos homens, porém, estavam cerimonialmente impuros por terem tocado num cadáver, e não puderam celebrar a Páscoa naquele dia. Eles se dirigiram a Moisés e Arão no mesmo dia"
+                "ref": "Números 19:13–14",
+                "text": "Quem toca num cadáver e não se purifica corretamente contamina o tabernáculo do SENHOR e será eliminado do povo de Israel. Permanecerá impuro, uma vez que a água da purificação não foi aspergida sobre ele. “A seguinte lei se aplica quando alguém morre numa tenda. Quem entrar nessa tenda e quem estiver dentro dela quando a morte ocorrer ficarão cerimonialmente impuros por sete dias.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Números 5:2–3",
-                "text": "“Ordene aos israelitas que removam do acampamento todo aquele que sofrer de lepra ou fluxos corporais ou que tiver se tornado cerimonialmente impuro ao tocar num cadáver."
+                "text": "“Ordene aos israelitas que removam do acampamento todo aquele que sofrer de lepra ou fluxos corporais ou que tiver se tornado cerimonialmente impuro ao tocar num cadáver. Isso se aplica tanto a homens como a mulheres, para que não contaminem seu próprio acampamento, onde eu habito no meio deles”.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Números 19:11–22",
-                "text": "“Quem tocar num cadáver humano ficará cerimonialmente impuro por sete dias."
+                "ref": "Números 9:7–8",
+                "text": "e disseram: “Ficamos cerimonialmente impuros, pois tocamos num cadáver. Mas por que estamos impedidos de apresentar a oferta do SENHOR no devido tempo como os demais israelitas?”. Moisés respondeu: “Esperem aqui até eu receber instruções do SENHOR para vocês”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -629,20 +532,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Provérbios 28:9",
-                "text": "As orações de quem se recusa a ouvir a lei são detestáveis para Deus."
-              },
-              {
                 "ref": "Tito 1:15",
-                "text": "Para os que são puros, tudo é puro. Mas, para os corruptos e descrentes, nada é puro, pois têm a mente e a consciência corrompidas."
+                "text": "Para os que são puros, tudo é puro. Mas, para os corruptos e descrentes, nada é puro, pois têm a mente e a consciência corrompidas.",
+                "category": "Citação & Cumprimento"
               },
               {
-                "ref": "Isaías 1:11–15",
-                "text": "“O que os faz pensar que desejo seus muitos sacrifícios?”, diz o SENHOR. “Estou farto de holocaustos de carneiros e da gordura de novilhos gordos. Não tenho prazer no sangue de touros, de cordeiros e de bodes."
-              },
-              {
-                "ref": "Provérbios 15:8",
-                "text": "Os sacrifícios dos perversos são detestáveis para o SENHOR, mas ele tem prazer nas orações dos justos."
+                "ref": "Isaías 1:12–13",
+                "text": "Quem lhes pediu que fizessem esse alvoroço por meus pátios quando vêm me adorar? Parem de trazer ofertas inúteis; o incenso que oferecem me dá náusea! Suas festas de lua nova, seus sábados e seus dias especiais de jejum são pecaminosos e falsos; não aguento mais suas reuniões solenes!",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -652,20 +549,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Ageu 1:5",
-                "text": "Assim diz o SENHOR dos Exércitos: Vejam o que tem acontecido com vocês!"
-              },
-              {
                 "ref": "Esdras 3:10",
-                "text": "Quando os construtores terminaram os alicerces do templo do SENHOR, os sacerdotes puseram suas vestes e tomaram seus lugares para tocar as trombetas. Os levitas, descendentes de Asafe, fizeram soar os címbalos para louva..."
+                "text": "Quando os construtores terminaram os alicerces do templo do SENHOR, os sacerdotes puseram suas vestes e tomaram seus lugares para tocar as trombetas. Os levitas, descendentes de Asafe, fizeram soar os címbalos para louvar o SENHOR, conforme o rei Davi havia prescrito.",
+                "category": "Passagem Paralela"
               },
               {
                 "ref": "Esdras 4:24",
-                "text": "Assim, a obra no templo de Deus em Jerusalém foi interrompida e ficou parada até o segundo ano do reinado de Dario, rei da Pérsia."
+                "text": "Assim, a obra no templo de Deus em Jerusalém foi interrompida e ficou parada até o segundo ano do reinado de Dario, rei da Pérsia.",
+                "category": "Passagem Paralela"
               },
               {
-                "ref": "Ageu 2:18",
-                "text": "“Pensem neste 18 de dezembro, o dia em que foram lançados os alicerces do templo do SENHOR. Sim, pensem bem."
+                "ref": "Ageu 1:5",
+                "text": "Assim diz o SENHOR dos Exércitos: Vejam o que tem acontecido com vocês!",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -675,20 +571,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Ageu 1:6",
-                "text": "Plantam muito, mas colhem pouco. Comem, mas não se saciam. Bebem, mas ainda têm sede. Vestem-se, mas não se aquecem. Seus salários desaparecem como se vocês os colocassem em bolsos furados."
-              },
-              {
-                "ref": "Provérbios 3:9–10",
-                "text": "Honre o SENHOR com suas riquezas e com a melhor parte de tudo que produzir. Então seus celeiros se encherão de cereais, e seus tonéis transbordarão de vinho."
-              },
-              {
-                "ref": "Malaquias 2:2",
-                "text": "Escutem-me e decidam honrar meu nome”, diz o SENHOR dos Exércitos, “pois, do contrário, enviarei maldição sobre vocês. Amaldiçoarei até mesmo as bênçãos que receberem. Na verdade, já as amaldiçoei, pois vocês não levaram a sério minha advertência."
-              },
-              {
-                "ref": "Ageu 1:9–11",
-                "text": "Vocês esperavam colheitas fartas, mas elas foram escassas. E, quando trouxeram esse pouco para casa, eu o fiz desaparecer com um sopro. Por quê? Porque minha casa continua em ruínas, diz o SENHOR dos Exércitos, enquanto..."
+                "ref": "Ageu 1:9–10",
+                "text": "Vocês esperavam colheitas fartas, mas elas foram escassas. E, quando trouxeram esse pouco para casa, eu o fiz desaparecer com um sopro. Por quê? Porque minha casa continua em ruínas, diz o SENHOR dos Exércitos, enquanto vocês estão ocupados construindo suas casas. É por causa de vocês que os céus retêm o orvalho e a terra não produz colheitas.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -698,20 +583,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Deuteronômio 28:22",
-                "text": "O SENHOR os ferirá com doenças debilitantes, com febres e inflamações, com calor ardente e secas, com ferrugem e mofo. Essas calamidades os perseguirão até que vocês morram."
-              },
-              {
                 "ref": "Ageu 1:11",
-                "text": "Enviei uma seca sobre seus campos e sobre as colinas, uma seca que fará murchar o trigo, as uvas, as azeitonas e todas as suas plantações, que fará vocês e seus animais passarem fome e destruirá tudo que vocês trabalharam para conseguir”."
+                "text": "Enviei uma seca sobre seus campos e sobre as colinas, uma seca que fará murchar o trigo, as uvas, as azeitonas e todas as suas plantações, que fará vocês e seus animais passarem fome e destruirá tudo que vocês trabalharam para conseguir”.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Ageu 1:9",
-                "text": "Vocês esperavam colheitas fartas, mas elas foram escassas. E, quando trouxeram esse pouco para casa, eu o fiz desaparecer com um sopro. Por quê? Porque minha casa continua em ruínas, diz o SENHOR dos Exércitos, enquanto..."
+                "ref": "Deuteronômio 28:22",
+                "text": "O SENHOR os ferirá com doenças debilitantes, com febres e inflamações, com calor ardente e secas, com ferrugem e mofo. Essas calamidades os perseguirão até que vocês morram.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Reis 8:37",
-                "text": "“Se houver fome na terra, ou peste, ou praga nas lavouras, ou se elas forem atacadas por gafanhotos ou lagartas, ou se os inimigos do teu povo invadirem a terra e sitiarem suas cidades, seja qual for o desastre ou epidemia que ocorrer,"
+                "text": "“Se houver fome na terra, ou peste, ou praga nas lavouras, ou se elas forem atacadas por gafanhotos ou lagartas, ou se os inimigos do teu povo invadirem a terra e sitiarem suas cidades, seja qual for o desastre ou epidemia que ocorrer,",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -722,19 +606,13 @@
             "crossReferences": [
               {
                 "ref": "Zacarias 8:9",
-                "text": "“Assim diz o SENHOR dos Exércitos: Sejam fortes e completem a tarefa! Desde que lançaram os alicerces do templo do SENHOR dos Exércitos, vocês têm ouvido o que os profetas dizem a respeito de terminar a obra."
-              },
-              {
-                "ref": "Ageu 2:15",
-                "text": "Vejam o que estava acontecendo com vocês antes de começarem a lançar os alicerces do templo do SENHOR."
+                "text": "“Assim diz o SENHOR dos Exércitos: Sejam fortes e completem a tarefa! Desde que lançaram os alicerces do templo do SENHOR dos Exércitos, vocês têm ouvido o que os profetas dizem a respeito de terminar a obra.",
+                "category": "Passagem Paralela"
               },
               {
                 "ref": "Esdras 5:1–2",
-                "text": "Nessa época, os profetas Ageu e Zacarias, filho de Ido, profetizaram aos judeus de Judá e Jerusalém. Falavam em nome do Deus de Israel, que estava sobre eles."
-              },
-              {
-                "ref": "Zacarias 8:12",
-                "text": "Pois, agora, plantarão as sementes em paz. As videiras ficarão carregadas de uvas, a terra produzirá suas colheitas, e os céus derramarão o orvalho. Darei essas bênçãos como herança ao remanescente deste povo."
+                "text": "Nessa época, os profetas Ageu e Zacarias, filho de Ido, profetizaram aos judeus de Judá e Jerusalém. Falavam em nome do Deus de Israel, que estava sobre eles. Em resposta, Zorobabel, filho de Sealtiel, e Jesua, filho de Jeozadaque, começaram outra vez a reconstruir o templo de Deus em Jerusalém. E os profetas de Deus estavam com eles e os auxiliavam.",
+                "category": "Passagem Paralela"
               }
             ]
           },
@@ -744,20 +622,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Malaquias 3:10",
-                "text": "Tragam todos os seus dízimos aos depósitos do templo, para que haja provisão em minha casa. Se o fizerem”, diz o SENHOR dos Exércitos, “abrirei as janelas do céu para vocês. Derramarei tantas bênçãos que não haverá espaç..."
-              },
-              {
                 "ref": "Habacuque 3:17–18",
-                "text": "Ainda que a figueira não floresça e não haja frutos nas videiras, ainda que a colheita de azeitonas não dê em nada e os campos fiquem vazios e improdutivos, ainda que os rebanhos morram nos campos e os currais fiquem vazios,"
+                "text": "Ainda que a figueira não floresça e não haja frutos nas videiras, ainda que a colheita de azeitonas não dê em nada e os campos fiquem vazios e improdutivos, ainda que os rebanhos morram nos campos e os currais fiquem vazios, mesmo assim me alegrarei no SENHOR; exultarei no Deus de minha salvação!",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Provérbios 3:9–10",
-                "text": "Honre o SENHOR com suas riquezas e com a melhor parte de tudo que produzir. Então seus celeiros se encherão de cereais, e seus tonéis transbordarão de vinho."
+                "text": "Honre o SENHOR com suas riquezas e com a melhor parte de tudo que produzir. Então seus celeiros se encherão de cereais, e seus tonéis transbordarão de vinho.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Mateus 6:33",
-                "text": "Busquem, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão dadas."
+                "text": "Busquem, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão dadas.",
+                "category": "Tipologia & Aliança"
               }
             ]
           }
@@ -772,20 +649,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Esdras 5:2",
-                "text": "Em resposta, Zorobabel, filho de Sealtiel, e Jesua, filho de Jeozadaque, começaram outra vez a reconstruir o templo de Deus em Jerusalém. E os profetas de Deus estavam com eles e os auxiliavam."
-              },
-              {
-                "ref": "Zacarias 1:1",
-                "text": "Em novembro do segundo ano do reinado de Dario, o SENHOR deu esta mensagem ao profeta Zacarias, filho de Berequias, neto de Ido:"
-              },
-              {
                 "ref": "Ageu 1:1",
-                "text": "Em 29 de agosto do segundo ano do reinado de Dario, o SENHOR transmitiu esta mensagem por meio do profeta Ageu ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque."
-              },
-              {
-                "ref": "Ageu 1:15",
-                "text": "em 21 de setembro do segundo ano do reinado de Dario."
+                "text": "Em 29 de agosto do segundo ano do reinado de Dario, o SENHOR transmitiu esta mensagem por meio do profeta Ageu ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -795,20 +661,24 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Ageu 2:6–7",
-                "text": "“Pois assim diz o SENHOR dos Exércitos: Em pouco tempo sacudirei novamente os céus e a terra, os mares e a terra seca."
-              },
-              {
-                "ref": "Zacarias 4:6–10",
-                "text": "Então ele me disse: “Assim diz o SENHOR a Zorobabel: Não por força, nem por poder, mas pelo meu Espírito, diz o SENHOR dos Exércitos."
-              },
-              {
                 "ref": "Ageu 1:1",
-                "text": "Em 29 de agosto do segundo ano do reinado de Dario, o SENHOR transmitiu esta mensagem por meio do profeta Ageu ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque."
+                "text": "Em 29 de agosto do segundo ano do reinado de Dario, o SENHOR transmitiu esta mensagem por meio do profeta Ageu ao governador de Judá, Zorobabel, filho de Sealtiel, e ao sumo sacerdote Josué, filho de Jeozadaque.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "Ageu 2:6–7",
+                "text": "“Pois assim diz o SENHOR dos Exércitos: Em pouco tempo sacudirei novamente os céus e a terra, os mares e a terra seca. Sacudirei todas as nações, e os tesouros das nações virão para este templo. Encherei este lugar de glória, diz o SENHOR dos Exércitos.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "Zacarias 4:9–10",
+                "text": "“Zorobabel lançou os alicerces deste templo, e ele o completará. Então vocês saberão que o SENHOR dos Exércitos me enviou. Não desprezem os começos humildes, pois o SENHOR se alegra ao ver a obra começar, ao ver o prumo na mão de Zorobabel”. (As sete lâmpadas representam os olhos do SENHOR, que percorrem toda a terra.)",
+                "category": "Passagem Paralela"
               },
               {
                 "ref": "Hebreus 12:26–27",
-                "text": "Quando Deus falou naquela ocasião, sua voz fez a terra tremer, mas agora ele promete: “Mais uma vez, farei tremer não só a terra, mas também os céus”."
+                "text": "Quando Deus falou naquela ocasião, sua voz fez a terra tremer, mas agora ele promete: “Mais uma vez, farei tremer não só a terra, mas também os céus”. Isso significa que toda a criação será abalada e removida, de modo que permaneçam apenas as coisas inabaláveis.",
+                "category": "Tipologia & Aliança"
               }
             ]
           },
@@ -819,19 +689,8 @@
             "crossReferences": [
               {
                 "ref": "Miqueias 5:10",
-                "text": "“Naquele dia”, diz o SENHOR, “matarei seus cavalos e destruirei seus carros de guerra."
-              },
-              {
-                "ref": "Juízes 7:22",
-                "text": "Quando os trezentos israelitas tocaram as trombetas, o SENHOR fez os guerreiros que estavam no acampamento lutarem uns contra os outros com suas espadas. Os que sobreviveram fugiram para lugares distantes como Bete-Sita..."
-              },
-              {
-                "ref": "Salmos 46:9",
-                "text": "Acaba com as guerras em toda a terra, quebra o arco e parte ao meio a lança, e destrói os escudos com fogo."
-              },
-              {
-                "ref": "Zacarias 4:6",
-                "text": "Então ele me disse: “Assim diz o SENHOR a Zorobabel: Não por força, nem por poder, mas pelo meu Espírito, diz o SENHOR dos Exércitos."
+                "text": "“Naquele dia”, diz o SENHOR, “matarei seus cavalos e destruirei seus carros de guerra.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -841,20 +700,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Isaías 43:10",
-                "text": "“Você é minha testemunha, ó Israel!”, diz o SENHOR. “Você é meu servo. Foi escolhido para me conhecer, para crer em mim, para entender que somente eu sou Deus. Não há outro Deus, nunca houve e nunca haverá."
-              },
-              {
                 "ref": "Isaías 42:1",
-                "text": "“Vejam meu servo, que eu fortaleço; ele é meu escolhido, que me dá alegria. Pus sobre ele meu Espírito; ele trará justiça às nações."
+                "text": "“Vejam meu servo, que eu fortaleço; ele é meu escolhido, que me dá alegria. Pus sobre ele meu Espírito; ele trará justiça às nações.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Cânticos 8:6",
-                "text": "Coloque-me como selo sobre seu coração, como selo sobre seu braço. Pois o amor é forte como a morte, e o ciúme, exigente como a sepultura. O amor arde como fogo, como as labaredas mais intensas."
+                "ref": "Isaías 43:10",
+                "text": "“Você é minha testemunha, ó Israel!”, diz o SENHOR. “Você é meu servo. Foi escolhido para me conhecer, para crer em mim, para entender que somente eu sou Deus. Não há outro Deus, nunca houve e nunca haverá.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Zacarias 4:6–14",
-                "text": "Então ele me disse: “Assim diz o SENHOR a Zorobabel: Não por força, nem por poder, mas pelo meu Espírito, diz o SENHOR dos Exércitos."
+                "ref": "Zacarias 4:6–7",
+                "text": "Então ele me disse: “Assim diz o SENHOR a Zorobabel: Não por força, nem por poder, mas pelo meu Espírito, diz o SENHOR dos Exércitos. Nada será obstáculo para Zorobabel, nem mesmo uma grande montanha; diante dele ela se tornará uma planície! E, quando Zorobabel colocar no lugar a última pedra do templo, o povo gritará: ‘É pela graça! É pela graça!’”.",
+                "category": "Passagem Paralela"
               }
             ]
           }

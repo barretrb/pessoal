@@ -13,20 +13,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
+                "ref": "Colossenses 1:1",
+                "text": "Eu, Paulo, apóstolo de Jesus Cristo pela vontade de Deus, escrevo esta carta, junto com nosso irmão Timóteo,",
+                "category": "Harmonia Doutrinária"
+              },
+              {
                 "ref": "Efésios 3:1",
-                "text": "Quando penso em tudo isso, eu, Paulo, prisioneiro de Cristo Jesus para o bem de vocês, gentios..."
+                "text": "Quando penso em tudo isso, eu, Paulo, prisioneiro de Cristo Jesus para o bem de vocês, gentios...",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Filipenses 2:25",
-                "text": "Enquanto isso, penso que devo enviar-lhes de volta Epafrodito. Ele é um verdadeiro irmão, colaborador e companheiro de lutas, que também foi mensageiro de vocês para me ajudar em minha necessidade."
-              },
-              {
-                "ref": "Colossenses 1:1",
-                "text": "Eu, Paulo, apóstolo de Jesus Cristo pela vontade de Deus, escrevo esta carta, junto com nosso irmão Timóteo,"
-              },
-              {
-                "ref": "Filemom 1:9",
-                "text": "prefiro pedir com base no amor — eu, Paulo, já velho e agora prisioneiro de Cristo Jesus."
+                "text": "Enquanto isso, penso que devo enviar-lhes de volta Epafrodito. Ele é um verdadeiro irmão, colaborador e companheiro de lutas, que também foi mensageiro de vocês para me ajudar em minha necessidade.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -43,15 +42,18 @@
             "crossReferences": [
               {
                 "ref": "Romanos 1:7",
-                "text": "Escrevo a todos vocês que estão em Roma, amados por Deus e chamados para ser seu povo santo. Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz."
+                "text": "Escrevo a todos vocês que estão em Roma, amados por Deus e chamados para ser seu povo santo. Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Efésios 1:2",
-                "text": "Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz."
+                "text": "Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Coríntios 13:14",
-                "text": "Que a graça do Senhor Jesus Cristo, o amor de Deus e a comunhão do Espírito Santo sejam com todos vocês."
+                "text": "Que a graça do Senhor Jesus Cristo, o amor de Deus e a comunhão do Espírito Santo sejam com todos vocês.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -66,20 +68,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Romanos 1:8",
-                "text": "Antes de tudo, quero dizer que, por meio de Jesus Cristo, agradeço a meu Deus por todos vocês, pois sua fé nele é comentada em todo o mundo."
-              },
-              {
-                "ref": "Efésios 1:16",
-                "text": "não deixo de agradecer a Deus por vocês. Em minhas orações,"
-              },
-              {
                 "ref": "Colossenses 1:3",
-                "text": "Sempre oramos por vocês e damos graças a Deus, o Pai de nosso Senhor Jesus Cristo,"
+                "text": "Sempre oramos por vocês e damos graças a Deus, o Pai de nosso Senhor Jesus Cristo,",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Filipenses 1:3",
-                "text": "Todas as vezes que penso em vocês, dou graças a meu Deus."
+                "text": "Todas as vezes que penso em vocês, dou graças a meu Deus.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "Efésios 1:16",
+                "text": "não deixo de agradecer a Deus por vocês. Em minhas orações,",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -90,19 +91,18 @@
             "crossReferences": [
               {
                 "ref": "Colossenses 1:4",
-                "text": "pois temos ouvido falar de sua fé em Cristo Jesus e de seu amor por todo o povo santo,"
+                "text": "pois temos ouvido falar de sua fé em Cristo Jesus e de seu amor por todo o povo santo,",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Efésios 1:15",
-                "text": "Desde que eu soube de sua fé no Senhor Jesus e de seu amor pelo povo santo em toda parte,"
+                "text": "Desde que eu soube de sua fé no Senhor Jesus e de seu amor pelo povo santo em toda parte,",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Coríntios 16:1",
-                "text": "Quanto à pergunta sobre o dinheiro que vocês estão coletando para o povo santo, sigam as mesmas instruções que dei às igrejas na Galácia."
-              },
-              {
-                "ref": "1 João 5:1–2",
-                "text": "Todo aquele que crê que Jesus é o Cristo é nascido de Deus. E todo aquele que ama o Pai também ama os filhos dele. Sabemos que amamos os filhos de Deus se amamos a Deus e obedecemos a seus mandamentos."
+                "text": "Quanto à pergunta sobre o dinheiro que vocês estão coletando para o povo santo, sigam as mesmas instruções que dei às igrejas na Galácia.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -112,20 +112,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Filipenses 1:9–11",
-                "text": "Oro para que o amor de vocês transborde cada vez mais e que continuem a crescer em conhecimento e discernimento."
-              },
-              {
-                "ref": "2 Pedro 1:8",
-                "text": "Quanto mais crescerem nessas coisas, mais produtivos e úteis serão no conhecimento completo de nosso Senhor Jesus Cristo."
-              },
-              {
-                "ref": "Colossenses 1:9",
-                "text": "Por isso, desde que ouvimos falar a seu respeito, não deixamos de orar por vocês. Pedimos a Deus que lhes conceda pleno conhecimento de sua vontade e também sabedoria e entendimento espiritual."
-              },
-              {
-                "ref": "1 Pedro 1:5–8",
-                "text": "Por meio da fé que vocês têm, Deus os protege com seu poder até que recebam essa salvação, pronta para ser revelada nos últimos tempos."
+                "ref": "1 Pedro 1:6–7",
+                "text": "Portanto, alegrem-se com isso, ainda que agora, por algum tempo, vocês precisem suportar muitas provações. Elas mostrarão que sua fé é autêntica. Como o fogo prova e purifica o ouro, assim sua fé está sendo experimentada, e ela é muito mais preciosa que o simples ouro. Isso resultará em louvor, glória e honra no dia em que Jesus Cristo for revelado.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -135,20 +124,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Coríntios 7:13",
-                "text": "Fomos grandemente encorajados por isso. Além de nos sentirmos encorajados, ficamos particularmente contentes de ver Tito alegre porque todos vocês o receberam bem e o tranquilizaram."
-              },
-              {
                 "ref": "1 Tessalonicenses 3:9",
-                "text": "Sim, agradecemos a Deus por vocês! Por sua causa, temos grande alegria na presença de Deus."
+                "text": "Sim, agradecemos a Deus por vocês! Por sua causa, temos grande alegria na presença de Deus.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Coríntios 7:4",
-                "text": "Tenho muita confiança em vocês, e de vocês tenho muito orgulho. Vocês têm me encorajado grandemente e me proporcionado alegria, apesar de todas as nossas aflições."
+                "text": "Tenho muita confiança em vocês, e de vocês tenho muito orgulho. Vocês têm me encorajado grandemente e me proporcionado alegria, apesar de todas as nossas aflições.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Tessalonicenses 2:19",
-                "text": "Afinal, o que nos dá esperança e alegria? E qual será nossa magnífica recompensa e coroa diante do Senhor Jesus quando ele voltar? Serão vocês!"
+                "text": "Afinal, o que nos dá esperança e alegria? E qual será nossa magnífica recompensa e coroa diante do Senhor Jesus quando ele voltar? Serão vocês!",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -161,24 +149,7 @@
             "number": 8,
             "text": "Por isso, ainda que pudesse exigir em Cristo que você faça o que é certo,",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Tessalonicenses 2:6",
-                "text": "Quanto ao reconhecimento humano, nunca o buscamos de vocês, nem de nenhum outro."
-              },
-              {
-                "ref": "2 Coríntios 10:8",
-                "text": "Pode parecer que estou me orgulhando além do que deveria da autoridade que o Senhor nos deu, mas nossa autoridade visa edificar vocês, e não destruí-los. Portanto, não me envergonharei de usá-la."
-              },
-              {
-                "ref": "2 Coríntios 3:12",
-                "text": "Uma vez que o novo sistema nos dá tal esperança, podemos falar com grande coragem."
-              },
-              {
-                "ref": "1 Tessalonicenses 2:2",
-                "text": "Sabem como fomos maltratados e quanto sofremos em Filipos, antes de chegarmos aí. E, no entanto, com confiança em nosso Deus, anunciamos a vocês as boas-novas de Deus, apesar de grande oposição."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 9,
@@ -186,20 +157,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Efésios 4:1",
-                "text": "Portanto, como prisioneiro no Senhor, suplico-lhes que vivam de modo digno do chamado que receberam."
+                "ref": "Efésios 3:1",
+                "text": "Quando penso em tudo isso, eu, Paulo, prisioneiro de Cristo Jesus para o bem de vocês, gentios...",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Romanos 12:1",
-                "text": "Portanto, irmãos, suplico-lhes que entreguem seu corpo a Deus, por causa de tudo que ele fez por vocês. Que seja um sacrifício vivo e santo, do tipo que Deus considera agradável. Essa é a verdadeira forma de adorá-lo."
-              },
-              {
-                "ref": "2 Coríntios 5:20",
-                "text": "Agora, portanto, somos embaixadores de Cristo; Deus faz seu apelo por nosso intermédio. Falamos em nome de Cristo quando dizemos: “Reconciliem-se com Deus!”."
-              },
-              {
-                "ref": "Efésios 3:1",
-                "text": "Quando penso em tudo isso, eu, Paulo, prisioneiro de Cristo Jesus para o bem de vocês, gentios..."
+                "text": "Portanto, irmãos, suplico-lhes que entreguem seu corpo a Deus, por causa de tudo que ele fez por vocês. Que seja um sacrifício vivo e santo, do tipo que Deus considera agradável. Essa é a verdadeira forma de adorá-lo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -209,20 +174,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Colossenses 4:9",
-                "text": "Envio também Onésimo, irmão fiel e amado, que é um de vocês. Ele e Tíquico lhes contarão tudo que tem acontecido aqui."
-              },
-              {
-                "ref": "1 Coríntios 4:15",
-                "text": "Pois, ainda que tivessem dez mil mestres em Cristo, vocês não têm muitos pais, pois eu me tornei seu pai espiritual em Cristo Jesus por meio das boas-novas que lhes anunciei."
-              },
-              {
                 "ref": "1 Timóteo 1:2",
-                "text": "escrevo esta carta a Timóteo, meu verdadeiro filho na fé. Que Deus, o Pai, e Cristo Jesus, nosso Senhor, lhe deem graça, misericórdia e paz."
+                "text": "escrevo esta carta a Timóteo, meu verdadeiro filho na fé. Que Deus, o Pai, e Cristo Jesus, nosso Senhor, lhe deem graça, misericórdia e paz.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "Colossenses 4:9",
+                "text": "Envio também Onésimo, irmão fiel e amado, que é um de vocês. Ele e Tíquico lhes contarão tudo que tem acontecido aqui.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Gálatas 4:19",
-                "text": "Ó meus filhos queridos, sinto como se estivesse passando outra vez pelas dores de parto por sua causa, e elas continuarão até que Cristo seja plenamente desenvolvido em vocês."
+                "text": "Ó meus filhos queridos, sinto como se estivesse passando outra vez pelas dores de parto por sua causa, e elas continuarão até que Cristo seja plenamente desenvolvido em vocês.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -230,47 +194,13 @@
             "number": 11,
             "text": "Onésimo não lhe foi de muita utilidade no passado, mas agora é muito útil para nós dois.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "2 Timóteo 4:11",
-                "text": "Apenas Lucas está comigo. Traga Marcos com você, pois ele me será útil no ministério."
-              },
-              {
-                "ref": "Jó 30:1–2",
-                "text": "“Agora, porém, os mais jovens zombam de mim, rapazes cujos pais não são dignos de correr com meus cães pastores. De que me serve a força deles? Seu vigor já desapareceu!"
-              },
-              {
-                "ref": "Lucas 15:32",
-                "text": "Mas tínhamos de comemorar este dia feliz, pois seu irmão estava morto e voltou à vida. Estava perdido e foi achado!’”."
-              },
-              {
-                "ref": "1 Pedro 2:10",
-                "text": "“Antes vocês não tinham identidade como povo, agora são povo de Deus. Antes não haviam recebido misericórdia, agora receberam misericórdia de Deus.”"
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 12,
             "text": "Eu o envio de volta a você, e com ele vai meu próprio coração.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Mateus 6:14–15",
-                "text": "“Seu Pai celestial os perdoará se perdoarem aqueles que pecam contra vocês. Mas, se vocês se recusarem a perdoar os outros, seu Pai não perdoará seus pecados.”"
-              },
-              {
-                "ref": "Efésios 4:32",
-                "text": "Em vez disso, sejam bondosos e tenham compaixão uns dos outros, perdoando-se como Deus os perdoou em Cristo."
-              },
-              {
-                "ref": "Lucas 15:20",
-                "text": "“Então voltou para a casa de seu pai. Quando ele ainda estava longe, seu pai o viu. Cheio de compaixão, correu para o filho, o abraçou e o beijou."
-              },
-              {
-                "ref": "Marcos 11:25",
-                "text": "Quando estiverem orando, se tiverem alguma coisa contra alguém, perdoem-no, para que seu Pai no céu também perdoe seus pecados."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 13,
@@ -278,20 +208,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Efésios 3:1",
-                "text": "Quando penso em tudo isso, eu, Paulo, prisioneiro de Cristo Jesus para o bem de vocês, gentios..."
-              },
-              {
                 "ref": "Filipenses 1:7",
-                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas-novas."
+                "text": "É apropriado que eu me sinta assim a respeito de vocês, pois os tenho em meu coração. Vocês têm participado comigo da graça, tanto em minha prisão como na defesa e confirmação das boas-novas.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Coríntios 16:17",
-                "text": "Estou muito contente com a vinda de Estéfanas, Fortunato e Acaico. Eles proveram a ajuda que vocês, por não estarem aqui, não puderam me dar."
+                "text": "Estou muito contente com a vinda de Estéfanas, Fortunato e Acaico. Eles proveram a ajuda que vocês, por não estarem aqui, não puderam me dar.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Filipenses 2:30",
-                "text": "pois arriscou a vida pela obra de Cristo e esteve a ponto de morrer enquanto fazia por mim o que vocês mesmos não podiam fazer."
+                "ref": "Efésios 3:1",
+                "text": "Quando penso em tudo isso, eu, Paulo, prisioneiro de Cristo Jesus para o bem de vocês, gentios...",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -301,20 +230,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Coríntios 9:7",
-                "text": "Cada um deve decidir em seu coração quanto dar. Não contribuam com relutância ou por obrigação. “Pois Deus ama quem dá com alegria.”"
-              },
-              {
-                "ref": "1 Crônicas 29:17",
-                "text": "Eu sei, meu Deus, que examinas nosso coração e te regozijas quando nele encontras integridade. Tu sabes que fiz tudo isso com boas intenções e vi teu povo entregar ofertas voluntariamente e com alegria."
-              },
-              {
                 "ref": "1 Pedro 5:2–3",
-                "text": "que cuidem do rebanho que Deus lhes confiou com disposição, e não de má vontade; não pelo que lucrarão com isso, mas pelo desejo de servir a Deus."
-              },
-              {
-                "ref": "1 Coríntios 9:17",
-                "text": "Se o fizesse por minha própria iniciativa, mereceria pagamento. Mas não tenho escolha, pois Deus me confiou essa responsabilidade."
+                "text": "que cuidem do rebanho que Deus lhes confiou com disposição, e não de má vontade; não pelo que lucrarão com isso, mas pelo desejo de servir a Deus. Não abusem de sua autoridade com aqueles que foram colocados sob seus cuidados, mas guiem-nos com seu bom exemplo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -322,24 +240,7 @@
             "number": 15,
             "text": "Ao que parece, você perdeu Onésimo por algum tempo para ganhá-lo de volta para sempre.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Gênesis 50:20",
-                "text": "Vocês pretendiam me fazer o mal, mas Deus planejou tudo para o bem. Colocou-me neste cargo para que eu pudesse salvar a vida de muitos."
-              },
-              {
-                "ref": "Gênesis 45:5–8",
-                "text": "Agora, não fiquem aflitos ou furiosos uns com os outros por terem me vendido para cá. Foi Deus quem me enviou adiante de vocês para lhes preservar a vida."
-              },
-              {
-                "ref": "Isaías 20:6",
-                "text": "Dirão: ‘Se isso aconteceu com aqueles que eram nossa esperança de socorro, o que será de nós? Confiávamos que eles nos protegeriam do rei da Assíria!’”."
-              },
-              {
-                "ref": "Atos 4:28",
-                "text": "Tudo que fizeram, porém, havia sido decidido de antemão pela tua vontade."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 16,
@@ -347,20 +248,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Colossenses 3:22",
-                "text": "Escravos, em tudo obedeçam a seus senhores terrenos. Procurem agradá-los sempre, e não apenas quando eles estiverem observando. Sirvam-nos com sinceridade, por causa de seu temor ao Senhor."
-              },
-              {
-                "ref": "Mateus 23:8",
-                "text": "“Não deixem que pessoa alguma os chame de ‘Rabi’, pois vocês têm somente um mestre, e todos vocês são irmãos."
-              },
-              {
-                "ref": "1 Timóteo 6:2",
-                "text": "O fato de o senhor ser irmão na fé não é desculpa para deixarem de respeitá-lo. Pelo contrário, devem trabalhar ainda mais arduamente, pois seus esforços beneficiam outros irmãos amados."
-              },
-              {
                 "ref": "1 Coríntios 7:22",
-                "text": "E, se você era escravo quando o Senhor o chamou, agora é livre no Senhor. E, se você era livre quando o Senhor o chamou, agora é escravo de Cristo."
+                "text": "E, se você era escravo quando o Senhor o chamou, agora é livre no Senhor. E, se você era livre quando o Senhor o chamou, agora é escravo de Cristo.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "Colossenses 3:22",
+                "text": "Escravos, em tudo obedeçam a seus senhores terrenos. Procurem agradá-los sempre, e não apenas quando eles estiverem observando. Sirvam-nos com sinceridade, por causa de seu temor ao Senhor.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -368,35 +263,13 @@
             "number": 17,
             "text": "Portanto, se me considera seu companheiro na fé, receba-o como receberia a mim.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "2 Coríntios 8:23",
-                "text": "Se alguém lhes perguntar a respeito de Tito, digam que ele é meu colaborador, que trabalha comigo para ajudar vocês. Quanto aos irmãos que o acompanham, foram enviados pelas igrejas e trazem honra a Cristo."
-              },
-              {
-                "ref": "Mateus 10:40",
-                "text": "“Quem recebe vocês recebe a mim, e quem me recebe também recebe aquele que me enviou."
-              },
-              {
-                "ref": "Filemom 1:12",
-                "text": "Eu o envio de volta a você, e com ele vai meu próprio coração."
-              },
-              {
-                "ref": "Mateus 18:5",
-                "text": "e quem recebe uma criança como esta em meu nome recebe a mim.”"
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 18,
             "text": "Se ele o prejudicou de alguma forma ou se lhe deve algo, cobre de mim.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Isaías 53:4–7",
-                "text": "Apesar disso, foram as nossas enfermidades que ele tomou sobre si, e foram as nossas doenças que pesaram sobre ele. Pensamos que seu sofrimento era castigo de Deus, castigo por sua culpa."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 19,
@@ -405,19 +278,13 @@
             "crossReferences": [
               {
                 "ref": "Gálatas 6:11",
-                "text": "Vejam com que letras grandes lhes escrevo, de próprio punho, estas palavras finais!"
-              },
-              {
-                "ref": "Gálatas 5:2",
-                "text": "Prestem atenção! Eu, Paulo, lhes digo: se vocês se deixarem ser circuncidados, Cristo de nada lhes servirá."
+                "text": "Vejam com que letras grandes lhes escrevo, de próprio punho, estas palavras finais!",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Coríntios 16:21–22",
-                "text": "Esta é minha saudação de próprio punho: Paulo. Se alguém não ama o Senhor, essa pessoa é maldita. Vem, nosso Senhor!"
-              },
-              {
-                "ref": "1 Coríntios 9:1–2",
-                "text": "Acaso não sou livre como qualquer outro? Não sou apóstolo? Não vi Jesus, nosso Senhor, com meus próprios olhos? Não são vocês resultado de meu trabalho no Senhor?"
+                "text": "Esta é minha saudação de próprio punho: Paulo. Se alguém não ama o Senhor, essa pessoa é maldita. Vem, nosso Senhor!",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -428,19 +295,8 @@
             "crossReferences": [
               {
                 "ref": "Filemom 1:7",
-                "text": "Seu amor, meu irmão, tem me dado muita alegria e conforto, pois sua bondade tem revigorado o coração do povo santo."
-              },
-              {
-                "ref": "3 João 1:4",
-                "text": "Eu não poderia ter maior alegria que saber que meus filhos têm seguido a verdade."
-              },
-              {
-                "ref": "Hebreus 13:17",
-                "text": "Obedeçam a seus líderes e façam o que disserem. O trabalho deles é cuidar de sua alma, e disso prestarão contas. Deem-lhes motivo para trabalhar com alegria, e não com tristeza, pois isso certamente não beneficiaria vocês."
-              },
-              {
-                "ref": "Filemom 1:12",
-                "text": "Eu o envio de volta a você, e com ele vai meu próprio coração."
+                "text": "Seu amor, meu irmão, tem me dado muita alegria e conforto, pois sua bondade tem revigorado o coração do povo santo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -448,24 +304,7 @@
             "number": 21,
             "text": "Escrevo esta carta certo de que você fará o que lhe peço, e até mais.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "2 Tessalonicenses 3:4",
-                "text": "E confiamos no Senhor que vocês estão fazendo e continuarão a fazer aquilo que lhes ordenamos."
-              },
-              {
-                "ref": "2 Coríntios 2:3",
-                "text": "Esse foi o motivo de eu ter escrito como o fiz, para que, quando eu for, não seja entristecido por aqueles que deveriam me alegrar. Sem dúvida, vocês sabem que minha alegria vem do fato de vocês estarem alegres."
-              },
-              {
-                "ref": "2 Coríntios 7:16",
-                "text": "Fico muito feliz por poder ter plena confiança em vocês."
-              },
-              {
-                "ref": "Gálatas 5:10",
-                "text": "Confio que o Senhor os guardará de crer em falsos ensinamentos. Aquele que os perturbar, seja ele quem for, será julgado."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 22,
@@ -474,19 +313,13 @@
             "crossReferences": [
               {
                 "ref": "2 Coríntios 1:11",
-                "text": "E vocês nos têm ajudado ao orar por nós. Então muitos darão graças porque Deus, em sua bondade, respondeu a tantas orações feitas em nosso favor."
-              },
-              {
-                "ref": "Filipenses 2:24",
-                "text": "E tenho confiança no Senhor de que, em breve, eu mesmo irei vê-los."
+                "text": "E vocês nos têm ajudado ao orar por nós. Então muitos darão graças porque Deus, em sua bondade, respondeu a tantas orações feitas em nosso favor.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Atos 28:23",
-                "text": "Então marcaram uma data e, nesse dia, muita gente foi à casa de Paulo. Ele explicou e testemunhou sobre o reino de Deus e, desde cedo até a noite, procurou convencê-los acerca de Jesus com base na lei de Moisés e nos livros dos profetas."
-              },
-              {
-                "ref": "Filipenses 1:19",
-                "text": "pois sei que, com suas orações e o auxílio do Espírito de Jesus Cristo, isso resultará em minha libertação."
+                "text": "Então marcaram uma data e, nesse dia, muita gente foi à casa de Paulo. Ele explicou e testemunhou sobre o reino de Deus e, desde cedo até a noite, procurou convencê-los acerca de Jesus com base na lei de Moisés e nos livros dos profetas.",
+                "category": "Passagem Paralela"
               }
             ]
           }
@@ -501,20 +334,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Colossenses 1:7",
-                "text": "Vocês aprenderam as boas-novas por meio de Epafras, nosso amado colaborador. Ele é servo fiel de Cristo e nos tem ajudado em favor de vocês."
+                "ref": "Colossenses 4:12",
+                "text": "Epafras, que é um de vocês e servo de Cristo Jesus, lhes envia saudações. Ele sempre ora por vocês com fervor, pedindo que sejam maduros e plenamente confiantes de que praticam toda a vontade de Deus.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Colossenses 4:12",
-                "text": "Epafras, que é um de vocês e servo de Cristo Jesus, lhes envia saudações. Ele sempre ora por vocês com fervor, pedindo que sejam maduros e plenamente confiantes de que praticam toda a vontade de Deus."
+                "ref": "Colossenses 1:7",
+                "text": "Vocês aprenderam as boas-novas por meio de Epafras, nosso amado colaborador. Ele é servo fiel de Cristo e nos tem ajudado em favor de vocês.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Romanos 16:7",
-                "text": "Saúdem Andrônico e Júnias, meus compatriotas judeus que estiveram comigo na prisão. São muito respeitados entre os apóstolos e se tornaram seguidores de Cristo antes de mim."
-              },
-              {
-                "ref": "Colossenses 4:10",
-                "text": "Aristarco, que é prisioneiro comigo, lhes envia saudações, e assim também Marcos, primo de Barnabé. Conforme vocês foram instruídos, se Marcos passar por aí, recebam-no bem."
+                "text": "Saúdem Andrônico e Júnias, meus compatriotas judeus que estiveram comigo na prisão. São muito respeitados entre os apóstolos e se tornaram seguidores de Cristo antes de mim.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -525,19 +357,18 @@
             "crossReferences": [
               {
                 "ref": "Colossenses 4:14",
-                "text": "Lucas, o médico amado, lhes envia saudações, assim como Demas."
+                "text": "Lucas, o médico amado, lhes envia saudações, assim como Demas.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Timóteo 4:10–11",
-                "text": "Demas me abandonou, pois ama as coisas desta vida e foi para Tessalônica. Crescente foi embora para a Galácia, e Tito, para a Dalmácia."
+                "text": "Demas me abandonou, pois ama as coisas desta vida e foi para Tessalônica. Crescente foi embora para a Galácia, e Tito, para a Dalmácia. Apenas Lucas está comigo. Traga Marcos com você, pois ele me será útil no ministério.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Colossenses 4:10",
-                "text": "Aristarco, que é prisioneiro comigo, lhes envia saudações, e assim também Marcos, primo de Barnabé. Conforme vocês foram instruídos, se Marcos passar por aí, recebam-no bem."
-              },
-              {
-                "ref": "Atos 15:37–39",
-                "text": "Barnabé queria levar João Marcos,"
+                "text": "Aristarco, que é prisioneiro comigo, lhes envia saudações, e assim também Marcos, primo de Barnabé. Conforme vocês foram instruídos, se Marcos passar por aí, recebam-no bem.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -547,20 +378,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
+                "ref": "Gálatas 6:18",
+                "text": "Irmãos, que a graça de nosso Senhor Jesus Cristo esteja com o espírito de vocês. Amém.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
                 "ref": "2 Timóteo 4:22",
-                "text": "Que o Senhor esteja com seu espírito. E que a graça esteja com todos vocês."
+                "text": "Que o Senhor esteja com seu espírito. E que a graça esteja com todos vocês.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Romanos 16:20",
-                "text": "Em breve o Deus da paz esmagará Satanás sob os pés de vocês. Que a graça de nosso Senhor Jesus seja com vocês."
-              },
-              {
-                "ref": "Gálatas 6:18",
-                "text": "Irmãos, que a graça de nosso Senhor Jesus Cristo esteja com o espírito de vocês. Amém."
-              },
-              {
-                "ref": "Romanos 16:23",
-                "text": "Gaio os saúda. Estou hospedado em sua casa, onde ele também tem recebido toda a igreja. Erasto, tesoureiro da cidade, bem como nosso irmão Quarto, lhes enviam saudações."
+                "text": "Em breve o Deus da paz esmagará Satanás sob os pés de vocês. Que a graça de nosso Senhor Jesus seja com vocês.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }

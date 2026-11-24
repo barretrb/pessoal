@@ -11,16 +11,7 @@
             "number": 1,
             "text": "Este é o cântico dos cânticos de Salomão.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Isaías 5:1",
-                "text": "Agora, cantarei a meu amado uma canção sobre seu vinhedo: Meu amado tinha um vinhedo numa colina muito fértil."
-              },
-              {
-                "ref": "1 Reis 4:32",
-                "text": "Compôs 3.000 provérbios e escreveu 1.005 canções."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -34,19 +25,18 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 4:10",
-                "text": "Seu amor é delicioso, minha amiga, minha noiva. Seu amor é melhor que vinho; seu perfume é mais agradável que especiarias."
-              },
-              {
-                "ref": "Cânticos 1:4",
-                "text": "Leve-me com você; venha, vamos depressa! O rei me trouxe ao quarto dele."
+                "text": "Seu amor é delicioso, minha amiga, minha noiva. Seu amor é melhor que vinho; seu perfume é mais agradável que especiarias.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Salmos 36:7",
-                "text": "Como é precioso o teu amor, ó Deus! Toda a humanidade encontra abrigo à sombra de tuas asas."
+                "text": "Como é precioso o teu amor, ó Deus! Toda a humanidade encontra abrigo à sombra de tuas asas.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Salmos 63:3–5",
-                "text": "Teu amor é melhor que a própria vida; com meus lábios te louvarei."
+                "text": "Teu amor é melhor que a própria vida; com meus lábios te louvarei. Sim, te louvarei enquanto viver; a ti em oração levantarei as mãos. Tu me satisfazes mais que um rico banquete; com cânticos de alegria te louvarei.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -56,20 +46,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Eclesiastes 7:1",
-                "text": "Uma boa reputação vale mais que perfume caro, e o dia da morte é melhor que o do nascimento."
-              },
-              {
-                "ref": "Êxodo 30:23–28",
-                "text": "“Junte as seguintes especiarias da melhor qualidade: seis quilos de mirra líquida, três quilos de canela perfumada, três quilos de cálamo perfumado,"
+                "ref": "Cânticos 4:10",
+                "text": "Seu amor é delicioso, minha amiga, minha noiva. Seu amor é melhor que vinho; seu perfume é mais agradável que especiarias.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "João 12:3",
-                "text": "Então Maria pegou um frasco de perfume caro feito de essência de óleo aromático, ungiu com ele os pés de Jesus e os enxugou com os cabelos. A casa se encheu com a fragrância do perfume."
-              },
-              {
-                "ref": "Cânticos 4:10",
-                "text": "Seu amor é delicioso, minha amiga, minha noiva. Seu amor é melhor que vinho; seu perfume é mais agradável que especiarias."
+                "text": "Então Maria pegou um frasco de perfume caro feito de essência de óleo aromático, ungiu com ele os pés de Jesus e os enxugou com os cabelos. A casa se encheu com a fragrância do perfume.",
+                "category": "Tipologia & Aliança"
               }
             ]
           },
@@ -77,24 +61,7 @@
             "number": 4,
             "text": "Leve-me com você; venha, vamos depressa! O rei me trouxe ao quarto dele.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Oséias 11:4",
-                "text": "Guiei Israel com meus laços de amor. Tirei o jugo de seu pescoço e eu mesmo me inclinei para alimentá-lo."
-              },
-              {
-                "ref": "João 6:44",
-                "text": "Pois ninguém pode vir a mim se o Pai, que me enviou, não o trouxer a mim; e no último dia eu o ressuscitarei."
-              },
-              {
-                "ref": "Salmos 45:14–15",
-                "text": "Em suas roupas bordadas, é levada até o rei, acompanhada de suas damas de honra. Formam um grupo alegre e festivo que entra no palácio real."
-              },
-              {
-                "ref": "João 12:32",
-                "text": "E, quando eu for levantado da terra, atrairei todos a mim”."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -108,19 +75,8 @@
             "crossReferences": [
               {
                 "ref": "Oséias 11:4",
-                "text": "Guiei Israel com meus laços de amor. Tirei o jugo de seu pescoço e eu mesmo me inclinei para alimentá-lo."
-              },
-              {
-                "ref": "João 6:44",
-                "text": "Pois ninguém pode vir a mim se o Pai, que me enviou, não o trouxer a mim; e no último dia eu o ressuscitarei."
-              },
-              {
-                "ref": "Salmos 45:14–15",
-                "text": "Em suas roupas bordadas, é levada até o rei, acompanhada de suas damas de honra. Formam um grupo alegre e festivo que entra no palácio real."
-              },
-              {
-                "ref": "João 12:32",
-                "text": "E, quando eu for levantado da terra, atrairei todos a mim”."
+                "text": "Guiei Israel com meus laços de amor. Tirei o jugo de seu pescoço e eu mesmo me inclinei para alimentá-lo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -133,24 +89,7 @@
             "number": 4,
             "text": "Com razão elas o amam.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Oséias 11:4",
-                "text": "Guiei Israel com meus laços de amor. Tirei o jugo de seu pescoço e eu mesmo me inclinei para alimentá-lo."
-              },
-              {
-                "ref": "João 6:44",
-                "text": "Pois ninguém pode vir a mim se o Pai, que me enviou, não o trouxer a mim; e no último dia eu o ressuscitarei."
-              },
-              {
-                "ref": "Salmos 45:14–15",
-                "text": "Em suas roupas bordadas, é levada até o rei, acompanhada de suas damas de honra. Formam um grupo alegre e festivo que entra no palácio real."
-              },
-              {
-                "ref": "João 12:32",
-                "text": "E, quando eu for levantado da terra, atrairei todos a mim”."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 5,
@@ -158,20 +97,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 2:14",
-                "text": "Minha pomba está escondida entre as pedras, oculta nas fendas das rochas. Mostre-me seu rosto e deixe-me ouvir sua voz. Pois sua voz é doce, e seu rosto é lindo."
-              },
-              {
-                "ref": "Lucas 15:22",
-                "text": "“O pai, no entanto, disse aos servos: ‘Depressa! Tragam a melhor roupa da casa e vistam nele. Coloquem-lhe um anel no dedo e sandálias nos pés."
-              },
-              {
-                "ref": "2 Coríntios 5:21",
-                "text": "Pois Deus fez de Cristo, aquele que nunca pecou, a oferta por nosso pecado, para que por meio dele fôssemos declarados justos diante de Deus."
-              },
-              {
                 "ref": "Cânticos 5:16",
-                "text": "Sua voz é a própria doçura; ele é desejável em todos os sentidos. Esse, ó mulheres de Jerusalém, é meu amado, meu amigo."
+                "text": "Sua voz é a própria doçura; ele é desejável em todos os sentidos. Esse, ó mulheres de Jerusalém, é meu amado, meu amigo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -181,20 +109,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 8:11–12",
-                "text": "Salomão tem um vinhedo em Baal-Hamom, que ele arrenda para lavradores. Cada um lhe paga mil peças de prata para colher os frutos."
-              },
-              {
-                "ref": "Lucas 12:51–53",
-                "text": "Vocês pensam que vim trazer paz à terra? Não! Eu vim causar divisão!"
-              },
-              {
                 "ref": "Salmos 69:8",
-                "text": "Até meus irmãos fingem não me conhecer; tratam-me como um desconhecido."
-              },
-              {
-                "ref": "Marcos 4:6",
-                "text": "mas as plantas logo murcharam sob o calor do sol e secaram, pois não tinham raízes profundas."
+                "text": "Até meus irmãos fingem não me conhecer; tratam-me como um desconhecido.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -204,20 +121,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 3:1–4",
-                "text": "Certa noite, na cama, ansiei por meu amado; ansiei por ele, mas ele não veio."
-              },
-              {
                 "ref": "Isaías 13:20",
-                "text": "A Babilônia jamais voltará a ser habitada; permanecerá vazia geração após geração. Nômades não acamparão ali, pastores não levarão suas ovelhas para passar a noite."
-              },
-              {
-                "ref": "Salmos 23:1–2",
-                "text": "O SENHOR é meu pastor, e nada me faltará. Ele me faz repousar em verdes pastos e me leva para junto de riachos tranquilos."
+                "text": "A Babilônia jamais voltará a ser habitada; permanecerá vazia geração após geração. Nômades não acamparão ali, pastores não levarão suas ovelhas para passar a noite.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Gênesis 37:16",
-                "text": "“Estou procurando meus irmãos”, respondeu José. “O senhor sabe onde eles estão cuidando dos rebanhos?”"
+                "text": "“Estou procurando meus irmãos”, respondeu José. “O senhor sabe onde eles estão cuidando dos rebanhos?”",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "Salmos 23:1–2",
+                "text": "O SENHOR é meu pastor, e nada me faltará. Ele me faz repousar em verdes pastos e me leva para junto de riachos tranquilos.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -232,20 +148,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 6:1",
-                "text": "Para onde foi seu amado, ó mulher de beleza incomparável? Diga-nos que caminho ele tomou, e a ajudaremos a encontrá-lo."
-              },
-              {
                 "ref": "Cânticos 5:9",
-                "text": "Diga-nos, mulher de beleza incomparável: Por que seu amado é melhor que todos os outros? O que ele tem de tão especial para fazermos a você essa promessa?"
-              },
-              {
-                "ref": "Tiago 5:10",
-                "text": "Irmãos, tomem como exemplo de paciência no sofrimento os profetas que falaram em nome do Senhor."
-              },
-              {
-                "ref": "Tiago 2:21",
-                "text": "Não lembram que nosso antepassado Abraão foi declarado justo por suas ações quando ofereceu seu filho Isaque sobre o altar?"
+                "text": "Diga-nos, mulher de beleza incomparável: Por que seu amado é melhor que todos os outros? O que ele tem de tão especial para fazermos a você essa promessa?",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -256,19 +161,13 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 2:10",
-                "text": "Meu amado me disse: “Levante-se, minha querida! Venha comigo, minha bela!"
+                "text": "Meu amado me disse: “Levante-se, minha querida! Venha comigo, minha bela!",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Cânticos 2:13",
-                "text": "As figueiras começam a dar frutos, e as videiras perfumadas florescem. Levante-se, minha querida! Venha comigo, minha bela!”."
-              },
-              {
-                "ref": "João 15:14–15",
-                "text": "Vocês serão meus amigos se fizerem o que eu ordeno. Já não os chamo de escravos, pois o senhor não faz confidências a seus escravos. Agora vocês são meus amigos, pois eu lhes disse tudo que o Pai me disse."
-              },
-              {
-                "ref": "Isaías 31:1",
-                "text": "Que aflição espera os que buscam a ajuda do Egito, que confiam em seus cavalos, carros e cavaleiros e dependem da força de exércitos humanos em vez de olhar para o SENHOR, o Santo de Israel!"
+                "text": "As figueiras começam a dar frutos, e as videiras perfumadas florescem. Levante-se, minha querida! Venha comigo, minha bela!”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -279,19 +178,8 @@
             "crossReferences": [
               {
                 "ref": "Ezequiel 16:11–13",
-                "text": "Também lhe dei belas joias, pulseiras e lindos colares,"
-              },
-              {
-                "ref": "1 Pedro 3:4",
-                "text": "Em vez disso, vistam-se com a beleza que vem de dentro e que não desaparece, a beleza de um espírito amável e sereno, tão precioso para Deus."
-              },
-              {
-                "ref": "Cânticos 5:13",
-                "text": "Suas faces são como jardins de especiarias que espalham sua fragrância. Seus lábios são como lírios perfumados com mirra."
-              },
-              {
-                "ref": "Gênesis 24:47",
-                "text": "“Em seguida, perguntei-lhe: ‘De quem você é filha?’. Ela respondeu: ‘Sou filha de Betuel, e meus avós são Naor e Milca’. Então coloquei a argola em seu nariz e as pulseiras em seus braços."
+                "text": "Também lhe dei belas joias, pulseiras e lindos colares, uma argola para o nariz, brincos para as orelhas e uma bela coroa para a cabeça. Assim, você foi enfeitada com ouro e prata. Suas roupas eram feitas de linho fino e seda e tinham lindos bordados. Você comia os alimentos mais seletos — farinha da melhor qualidade, mel e azeite — e se tornou mais linda que nunca. Parecia uma rainha, e de fato era!",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -299,24 +187,7 @@
             "number": 11,
             "text": "Faremos para você brincos de ouro com enfeites de prata.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Salmos 149:4",
-                "text": "Pois o SENHOR tem prazer em seu povo; ele coroa os humildes com vitória."
-              },
-              {
-                "ref": "Filipenses 3:21",
-                "text": "Ele tomará nosso frágil corpo mortal e o transformará num corpo glorioso como o dele, usando o mesmo poder com o qual submeterá todas as coisas a seu domínio."
-              },
-              {
-                "ref": "Gênesis 1:26",
-                "text": "Então Deus disse: “Façamos o ser humano à nossa imagem; ele será semelhante a nós. Dominará sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre todos os animais selvagens da terra e sobre os..."
-              },
-              {
-                "ref": "Efésios 5:25–27",
-                "text": "Maridos, ame cada um a sua esposa, como Cristo amou a igreja. Ele entregou a vida por ela,"
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -330,19 +201,8 @@
             "crossReferences": [
               {
                 "ref": "João 12:3",
-                "text": "Então Maria pegou um frasco de perfume caro feito de essência de óleo aromático, ungiu com ele os pés de Jesus e os enxugou com os cabelos. A casa se encheu com a fragrância do perfume."
-              },
-              {
-                "ref": "Apocalipse 3:20",
-                "text": "“Preste atenção! Estou à porta e bato. Se você ouvir minha voz e abrir a porta, entrarei e, juntos, faremos uma refeição, como amigos."
-              },
-              {
-                "ref": "Marcos 14:3",
-                "text": "Enquanto isso, Jesus estava em Betânia, na casa de Simão, o leproso. Quando ele estava à mesa, uma mulher entrou com um frasco de alabastro contendo um perfume caro, feito de essência de nardo. Ela quebrou o frasco e der..."
-              },
-              {
-                "ref": "Filipenses 4:18",
-                "text": "No momento, tenho tudo de que preciso, e mais. Minhas necessidades foram plenamente supridas pelas contribuições que vocês enviaram por Epafrodito. Elas são um sacrifício de aroma suave, uma oferta aceitável e agradável a Deus."
+                "text": "Então Maria pegou um frasco de perfume caro feito de essência de óleo aromático, ungiu com ele os pés de Jesus e os enxugou com os cabelos. A casa se encheu com a fragrância do perfume.",
+                "category": "Tipologia & Aliança"
               }
             ]
           },
@@ -350,46 +210,13 @@
             "number": 13,
             "text": "Meu amado é como uma delicada bolsa de mirra que repousa entre meus seios.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "João 19:39",
-                "text": "Estava com ele Nicodemos, o homem que tinha ido conversar com Jesus à noite. Nicodemos trouxe cerca de 35 litros de óleo perfumado feito com mirra e aloés."
-              },
-              {
-                "ref": "Salmos 45:8",
-                "text": "Mirra, aloés e cássia perfumam tuas roupas; em palácios de marfim, instrumentos de cordas te alegram."
-              },
-              {
-                "ref": "Efésios 3:17",
-                "text": "Então Cristo habitará em seu coração à medida que vocês confiarem nele. Suas raízes se aprofundarão em amor e os manterão fortes."
-              },
-              {
-                "ref": "Cânticos 2:7",
-                "text": "Prometam, ó mulheres de Jerusalém, pelas gazelas e corças selvagens, que não despertarão o amor antes do tempo."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 14,
             "text": "É como um ramo de flores de hena dos vinhedos de En-Gedi.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Samuel 23:29–1 Samuel 24:1"
-              },
-              {
-                "ref": "Josué 15:62",
-                "text": "Nibsã, a Cidade do Sal e En-Gedi; seis cidades com os povoados ao redor."
-              },
-              {
-                "ref": "Cânticos 2:3",
-                "text": "Como uma macieira entre as árvores do bosque, assim é meu amado entre os rapazes. À sua sombra agradável eu me sento e saboreio seus deliciosos frutos."
-              },
-              {
-                "ref": "Cânticos 1:13",
-                "text": "Meu amado é como uma delicada bolsa de mirra que repousa entre meus seios."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -403,19 +230,13 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 4:1",
-                "text": "Você é linda, minha querida, como você é linda! Seus olhos por trás do véu são como pombas. Seu cabelo é como um rebanho de cabras que desce pelas encostas de Gileade."
+                "text": "Você é linda, minha querida, como você é linda! Seus olhos por trás do véu são como pombas. Seu cabelo é como um rebanho de cabras que desce pelas encostas de Gileade.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Cânticos 5:12",
-                "text": "Seus olhos são como pombas junto aos riachos, incrustados como joias lavadas em leite."
-              },
-              {
-                "ref": "Efésios 1:17–18",
-                "text": "peço que Deus, o Pai glorioso de nosso Senhor Jesus Cristo, lhes dê sabedoria espiritual e entendimento para que cresçam no conhecimento dele."
-              },
-              {
-                "ref": "2 Coríntios 11:2–3",
-                "text": "pois o cuidado que tenho com vocês vem do próprio Deus. Eu os prometi como noiva pura a um único marido, Cristo."
+                "text": "Seus olhos são como pombas junto aos riachos, incrustados como joias lavadas em leite.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -428,47 +249,13 @@
             "number": 16,
             "text": "Como você é belo, meu amor, como você é encantador! A grama macia é nosso leito;",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Cânticos 2:3",
-                "text": "Como uma macieira entre as árvores do bosque, assim é meu amado entre os rapazes. À sua sombra agradável eu me sento e saboreio seus deliciosos frutos."
-              },
-              {
-                "ref": "Salmos 45:2",
-                "text": "Tu és o mais belo de todos; palavras graciosas fluem de teus lábios. Sim, Deus te abençoou para sempre."
-              },
-              {
-                "ref": "Zacarias 9:17",
-                "text": "Ah, como serão belos e maravilhosos! A fartura de trigo dará vigor aos rapazes, e o vinho novo fará florescer as moças."
-              },
-              {
-                "ref": "Apocalipse 5:11–13",
-                "text": "Então olhei novamente e ouvi as vozes de milhares e milhões de anjos ao redor do trono, e também dos seres vivos e dos anciãos."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 17,
             "text": "os ramos perfumados do cedro são as vigas de nossa casa, e os pinheiros aromáticos, os caibros do telhado.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Hebreus 11:10",
-                "text": "Abraão esperava confiantemente pela cidade de alicerces eternos, planejada e construída por Deus."
-              },
-              {
-                "ref": "Salmos 92:12",
-                "text": "Os justos, porém, florescerão como palmeiras e crescerão como os cedros do Líbano."
-              },
-              {
-                "ref": "Ezequiel 41:16",
-                "text": "eram todos revestidos de madeira, assim como as armações das janelas embutidas. As paredes internas eram revestidas de madeira acima e abaixo das janelas."
-              },
-              {
-                "ref": "2 Crônicas 2:8–9",
-                "text": "“Mande-me, também, madeira de cedro, cipreste e sândalo do Líbano, pois sei que ninguém no Líbano corta madeira como seus servos. Enviarei meus servos para ajudá-los."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       }
@@ -488,20 +275,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Oséias 14:5",
-                "text": "Serei para Israel como o orvalho refrescante. Israel florescerá como o lírio; lançará raízes profundas no solo, como os cedros do Líbano."
-              },
-              {
-                "ref": "Isaías 57:15",
-                "text": "O Alto e Sublime, que vive na eternidade, o Santo diz: “Habito nos lugares altos e santos, e também com os de espírito oprimido e humilde. Dou novo ânimo aos abatidos e coragem aos de coração arrependido."
-              },
-              {
                 "ref": "Isaías 35:1–2",
-                "text": "As regiões desabitadas e o deserto exultarão; a terra desolada se alegrará e florescerá como o açafrão."
-              },
-              {
-                "ref": "Cânticos 5:13",
-                "text": "Suas faces são como jardins de especiarias que espalham sua fragrância. Seus lábios são como lírios perfumados com mirra."
+                "text": "As regiões desabitadas e o deserto exultarão; a terra desolada se alegrará e florescerá como o açafrão. Haverá muitas flores, cânticos e alegria! Os desertos se tornarão verdes como os montes do Líbano, belos como o monte Carmelo e a planície de Sarom. Ali o SENHOR mostrará sua glória, o esplendor de nosso Deus.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -514,24 +290,7 @@
             "number": 2,
             "text": "Como um lírio entre os espinhos, assim é minha querida entre as moças.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Pedro 2:12",
-                "text": "Procurem viver de maneira exemplar entre os que não creem. Assim, mesmo que eles os acusem de praticar o mal, verão seu comportamento correto e darão glória a Deus quando ele julgar o mundo."
-              },
-              {
-                "ref": "Mateus 6:28–29",
-                "text": "“E por que se preocupar com a roupa? Observem como crescem os lírios do campo. Não trabalham nem fazem roupas e, no entanto, nem Salomão em toda a sua glória se vestiu como eles."
-              },
-              {
-                "ref": "Mateus 10:16",
-                "text": "“Ouçam, eu os envio como ovelhas no meio de lobos. Portanto, sejam espertos como serpentes e simples como pombas."
-              },
-              {
-                "ref": "Filipenses 2:15–16",
-                "text": "de modo que ninguém possa acusá-los. Levem uma vida pura e inculpável como filhos de Deus, brilhando como luzes resplandecentes num mundo cheio de gente corrompida e perversa."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -544,20 +303,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 8:5",
-                "text": "Quem é essa que vem subindo do deserto, apoiada em seu amado?"
-              },
-              {
-                "ref": "Hebreus 1:1–6",
-                "text": "Por muito tempo Deus falou várias vezes e de diversas maneiras a nossos antepassados por meio dos profetas."
-              },
-              {
-                "ref": "Isaías 32:2",
-                "text": "Cada um será como abrigo contra o vento e refúgio contra a tempestade, como riacho no deserto e sombra de uma grande pedra em terra seca."
-              },
-              {
-                "ref": "Isaías 25:4",
-                "text": "Mas tu, SENHOR, és fortaleza para os pobres, torre de refúgio para os necessitados em sua angústia. És abrigo contra a tempestade e sombra contra o calor. Pois os atos opressores dos cruéis são como tempestade que açoita um muro,"
+                "ref": "Hebreus 1:1–2",
+                "text": "Por muito tempo Deus falou várias vezes e de diversas maneiras a nossos antepassados por meio dos profetas. E agora, nestes últimos dias, ele nos falou por meio do Filho, o qual ele designou como herdeiro de todas as coisas e por meio de quem criou o universo.",
+                "category": "Citação & Cumprimento"
               }
             ]
           },
@@ -568,19 +316,18 @@
             "crossReferences": [
               {
                 "ref": "Romanos 5:8–10",
-                "text": "Mas Deus nos prova seu grande amor ao enviar Cristo para morrer por nós quando ainda éramos pecadores."
+                "text": "Mas Deus nos prova seu grande amor ao enviar Cristo para morrer por nós quando ainda éramos pecadores. E, uma vez que fomos declarados justos por seu sangue, certamente seremos salvos da ira de Deus por meio dele. Pois, se quando ainda éramos inimigos de Deus nosso relacionamento com ele foi restaurado pela morte de seu Filho, agora que já estamos reconciliados certamente seremos salvos por sua vida.",
+                "category": "Tipologia & Aliança"
               },
               {
-                "ref": "Romanos 8:28–39",
-                "text": "E sabemos que Deus faz todas as coisas cooperarem para o bem daqueles que o amam e que são chamados de acordo com seu propósito."
+                "ref": "Romanos 8:34–35",
+                "text": "Quem nos condenará, então? Ninguém, pois Cristo Jesus morreu e ressuscitou e está sentado no lugar de honra, à direita de Deus, intercedendo por nós. O que nos separará do amor de Cristo? Serão aflições ou calamidades, perseguições ou fome, miséria, perigo ou ameaças de morte?",
+                "category": "Tipologia & Aliança"
               },
               {
-                "ref": "Cânticos 1:4",
-                "text": "Leve-me com você; venha, vamos depressa! O rei me trouxe ao quarto dele."
-              },
-              {
-                "ref": "João 15:9–15",
-                "text": "“Eu os amei como o Pai me amou. Permaneçam no meu amor."
+                "ref": "João 15:9–10",
+                "text": "“Eu os amei como o Pai me amou. Permaneçam no meu amor. Quando vocês obedecem a meus mandamentos, permanecem no meu amor, assim como eu obedeço aos mandamentos de meu Pai e permaneço no amor dele.",
+                "category": "Tipologia & Aliança"
               }
             ]
           },
@@ -591,19 +338,18 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 5:8",
-                "text": "Prometam, ó mulheres de Jerusalém: Se encontrarem meu amado, digam-lhe que desfaleço de amor."
+                "text": "Prometam, ó mulheres de Jerusalém: Se encontrarem meu amado, digam-lhe que desfaleço de amor.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Samuel 6:19",
-                "text": "Para cada homem e mulher israelita na multidão, ele deu um pão, um bolo de tâmaras e um bolo de passas. Então todos voltaram para casa."
-              },
-              {
-                "ref": "Oséias 3:1",
-                "text": "Então o SENHOR me disse: “Vá e ame sua esposa outra vez, embora ela cometa adultério com um amante. Isso mostrará que o SENHOR ainda ama Israel, ainda que o povo tenha se voltado para outros deuses e sinta prazer em lhes trazer ofertas”."
+                "text": "Para cada homem e mulher israelita na multidão, ele deu um pão, um bolo de tâmaras e um bolo de passas. Então todos voltaram para casa.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Samuel 13:1–2",
-                "text": "Absalão, filho de Davi, tinha uma irmã muito bonita chamada Tamar. Amnom, outro filho de Davi, apaixonou-se por ela."
+                "text": "Absalão, filho de Davi, tinha uma irmã muito bonita chamada Tamar. Amnom, outro filho de Davi, apaixonou-se por ela. Amnom ficou tão obcecado por Tamar que adoeceu. Ela era virgem, e Amnom imaginou que seria impossível possuí-la.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -613,20 +359,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Sofonias 3:17",
-                "text": "Pois o SENHOR, seu Deus, está em seu meio; ele é um Salvador poderoso. Ele se agradará de vocês com exultação e acalmará todos os seus medos com amor; ele se alegrará em vocês com gritos de alegria!”."
-              },
-              {
-                "ref": "Isaías 54:5–10",
-                "text": "Pois seu marido será aquele que a fez; o SENHOR dos Exércitos é seu nome! Ele é seu Redentor, o Santo de Israel, o Deus de toda a terra."
-              },
-              {
-                "ref": "Jeremias 32:41",
-                "text": "Terei alegria em lhes fazer o bem e os plantarei nesta terra firmemente, de todo o coração."
-              },
-              {
                 "ref": "Cânticos 8:3–5",
-                "text": "Seu braço esquerdo estaria sob a minha cabeça, e o direito me abraçaria."
+                "text": "Seu braço esquerdo estaria sob a minha cabeça, e o direito me abraçaria. Prometam, ó mulheres de Jerusalém, que não despertarão o amor antes do tempo. Despertei você debaixo da macieira, onde sua mãe o deu à luz, onde, com muitas dores, ela o trouxe ao mundo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -637,19 +372,18 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 3:5",
-                "text": "Prometam, ó mulheres de Jerusalém, pelas gazelas e corças selvagens, que não despertarão o amor antes do tempo."
+                "text": "Prometam, ó mulheres de Jerusalém, pelas gazelas e corças selvagens, que não despertarão o amor antes do tempo.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Cânticos 8:4",
-                "text": "Prometam, ó mulheres de Jerusalém, que não despertarão o amor antes do tempo."
+                "text": "Prometam, ó mulheres de Jerusalém, que não despertarão o amor antes do tempo.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Provérbios 5:19",
-                "text": "Ela é gazela amorosa, corça graciosa; que os seios de sua esposa o satisfaçam sempre e você seja cativado por seu amor todo o tempo!"
-              },
-              {
-                "ref": "Efésios 5:22–33",
-                "text": "Esposas, sujeite-se cada uma a seu marido, como ao Senhor."
+                "text": "Ela é gazela amorosa, corça graciosa; que os seios de sua esposa o satisfaçam sempre e você seja cativado por seu amor todo o tempo!",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -657,24 +391,7 @@
             "number": 8,
             "text": "Ah, ouço meu amado chegando! Ele salta sobre os montes, pula sobre as colinas.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "João 10:27",
-                "text": "Minhas ovelhas ouvem a minha voz; eu as conheço, e elas me seguem."
-              },
-              {
-                "ref": "Apocalipse 3:20",
-                "text": "“Preste atenção! Estou à porta e bato. Se você ouvir minha voz e abrir a porta, entrarei e, juntos, faremos uma refeição, como amigos."
-              },
-              {
-                "ref": "João 3:29",
-                "text": "É o noivo que se casa com a noiva; o amigo do noivo simplesmente se alegra de estar ao lado dele e ouvir seus votos. Portanto, muito me alegro com o destaque dele."
-              },
-              {
-                "ref": "Cânticos 2:17",
-                "text": "Antes que soprem as brisas do amanhecer, e fujam as sombras da noite, volte para mim, meu amor, como a gazela, como o jovem cervo nos montes íngremes."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 9,
@@ -683,19 +400,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 8:14",
-                "text": "Venha correndo, meu amado! Seja como a gazela, como o jovem cervo sobre os montes de especiarias."
-              },
-              {
-                "ref": "Cânticos 2:17",
-                "text": "Antes que soprem as brisas do amanhecer, e fujam as sombras da noite, volte para mim, meu amor, como a gazela, como o jovem cervo nos montes íngremes."
-              },
-              {
-                "ref": "João 12:41",
-                "text": "As palavras de Isaías referiam-se a Jesus, pois viu sua glória e falou sobre ele."
-              },
-              {
-                "ref": "1 Coríntios 13:12",
-                "text": "Agora vemos de modo imperfeito, como um reflexo no espelho, mas então veremos tudo face a face. Tudo que sei agora é parcial e incompleto, mas conhecerei tudo plenamente, assim como Deus já me conhece plenamente."
+                "text": "Venha correndo, meu amado! Seja como a gazela, como o jovem cervo sobre os montes de especiarias.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -706,19 +412,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 4:7–8",
-                "text": "Você é inteiramente linda, minha querida; não há em você defeito algum!"
-              },
-              {
-                "ref": "Cânticos 2:13",
-                "text": "As figueiras começam a dar frutos, e as videiras perfumadas florescem. Levante-se, minha querida! Venha comigo, minha bela!”."
-              },
-              {
-                "ref": "Apocalipse 22:17",
-                "text": "O Espírito e a noiva dizem: “Vem!”. Que todo aquele que ouve diga: “Vem!”. Quem tiver sede, venha. Quem quiser, beba de graça da água da vida."
-              },
-              {
-                "ref": "2 Coríntios 6:17–18",
-                "text": "Portanto, afastem-se e separem-se deles, diz o Senhor. Não toquem em coisas impuras, e eu os receberei. Eu serei seu Pai, e vocês serão meus filhos e minhas filhas, diz o Senhor Todo-poderoso”."
+                "text": "Você é inteiramente linda, minha querida; não há em você defeito algum! Venha comigo do Líbano, minha noiva, venha comigo do Líbano. Desça do monte Amana, dos cumes do Senir e do Hermom, onde os leões têm suas tocas e os leopardos vivem nas montanhas.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -726,47 +421,13 @@
             "number": 11,
             "text": "Veja, o inverno acabou, e as chuvas passaram.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Isaías 60:1–2",
-                "text": "“Levante-se, Jerusalém! Que sua luz brilhe para que todos a vejam, pois sobre você se levanta e reluz a glória do SENHOR."
-              },
-              {
-                "ref": "Efésios 5:8",
-                "text": "Pois antigamente vocês estavam mergulhados na escuridão, mas agora têm a luz no Senhor. Vivam, portanto, como filhos da luz!"
-              },
-              {
-                "ref": "Eclesiastes 3:11",
-                "text": "E, no entanto, Deus fez tudo apropriado para seu devido tempo. Ele colocou um senso de eternidade no coração humano, mas mesmo assim ninguém é capaz de entender toda a obra de Deus, do começo ao fim."
-              },
-              {
-                "ref": "Isaías 54:6–8",
-                "text": "Pois o SENHOR a chamou de volta de seu lamento, você que era como uma jovem esposa abandonada”, diz o seu Deus."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 12,
             "text": "As flores estão brotando; chegou a época das canções, e o arrulhar das pombas enche o ar.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Isaías 55:12",
-                "text": "Vocês viverão com alegria e paz; os montes e as colinas cantarão, e as árvores do campo baterão palmas."
-              },
-              {
-                "ref": "Jeremias 8:7",
-                "text": "Até a cegonha que voa pelos céus sabe a época de migrar, assim como a rolinha, a andorinha e o grou; todos voltam no tempo certo a cada ano. Meu povo, contudo, não conhece os decretos do SENHOR."
-              },
-              {
-                "ref": "Salmos 89:15",
-                "text": "Feliz é o povo que ouve o alegre chamado para adorar, pois andará na luz de tua presença, SENHOR."
-              },
-              {
-                "ref": "Salmos 148:7–13",
-                "text": "Louvem o SENHOR desde a terra, vocês criaturas das profundezas do oceano,"
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 13,
@@ -774,20 +435,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 2:10",
-                "text": "Meu amado me disse: “Levante-se, minha querida! Venha comigo, minha bela!"
-              },
-              {
                 "ref": "Cânticos 7:11–13",
-                "text": "Venha, meu amor, vamos aos campos, passar a noite entre as flores silvestres."
+                "text": "Venha, meu amor, vamos aos campos, passar a noite entre as flores silvestres. Vamos levantar cedo para ir aos vinhedos ver se as videiras brotaram, se as flores abriram e se as romãs já estão em flor; ali eu lhe darei meu amor. Ali as mandrágoras espalham sua fragrância, e os melhores frutos estão à nossa porta, delícias novas e antigas, que guardei para você, meu amado.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Lucas 13:6–7",
-                "text": "Então Jesus contou a seguinte parábola: “Um homem tinha uma figueira em seu vinhedo e foi várias vezes procurar frutos nela, sem sucesso."
+                "text": "Então Jesus contou a seguinte parábola: “Um homem tinha uma figueira em seu vinhedo e foi várias vezes procurar frutos nela, sem sucesso. Por fim, disse ao jardineiro: ‘Esperei três anos e não encontrei um figo sequer. Corte a figueira, pois só está ocupando espaço no pomar’.",
+                "category": "Tipologia & Aliança"
               },
               {
                 "ref": "Isaías 55:10–11",
-                "text": "“A chuva e a neve descem dos céus e na terra permanecem até regá-la. Fazem brotar os cereais e produzem sementes para o agricultor e pão para os famintos."
+                "text": "“A chuva e a neve descem dos céus e na terra permanecem até regá-la. Fazem brotar os cereais e produzem sementes para o agricultor e pão para os famintos. O mesmo acontece à minha palavra: eu a envio, e ela sempre produz frutos. Ela fará o que desejo e prosperará aonde quer que eu a enviar.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -802,20 +462,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 1:5",
-                "text": "Sou morena e bela, ó mulheres de Jerusalém; morena como as tendas de Quedar, bela como as cortinas de Salomão."
-              },
-              {
-                "ref": "Esdras 9:5–6",
-                "text": "Na hora do sacrifício, levantei-me de onde havia sentado em lamentação, com as roupas rasgadas. Caí de joelhos, ergui as mãos ao SENHOR, meu Deus,"
-              },
-              {
                 "ref": "Cânticos 5:2",
-                "text": "Eu dormia, mas meu coração estava desperto, quando ouvi meu amado bater à porta e chamar: “Abra a porta para mim, minha amiga, minha querida, minha pomba, minha perfeita. Minha cabeça está molhada de orvalho, e meu cabelo, úmido do sereno da noite”."
-              },
-              {
-                "ref": "Êxodo 3:6",
-                "text": "Eu sou o Deus de seu pai, o Deus de Abraão, o Deus de Isaque e o Deus de Jacó.” Quando Moisés ouviu isso, cobriu o rosto, porque teve medo de olhar para Deus."
+                "text": "Eu dormia, mas meu coração estava desperto, quando ouvi meu amado bater à porta e chamar: “Abra a porta para mim, minha amiga, minha querida, minha pomba, minha perfeita. Minha cabeça está molhada de orvalho, e meu cabelo, úmido do sereno da noite”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -830,20 +479,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Lucas 13:32",
-                "text": "Jesus respondeu: “Vão dizer àquela raposa que continuarei a expulsar demônios e a curar hoje e amanhã; e, no terceiro dia, realizarei meu propósito."
-              },
-              {
-                "ref": "2 Pedro 2:1–3",
-                "text": "Contudo, assim como surgiram falsos profetas entre o povo de Israel, também surgirão falsos mestres entre vocês. Eles ensinarão astutamente heresias destrutivas e até negarão o Mestre que os resgatou, trazendo sobre si mesmos destruição repentina."
-              },
-              {
                 "ref": "Cânticos 7:12",
-                "text": "Vamos levantar cedo para ir aos vinhedos ver se as videiras brotaram, se as flores abriram e se as romãs já estão em flor; ali eu lhe darei meu amor."
-              },
-              {
-                "ref": "Salmos 80:13",
-                "text": "Os javalis da floresta devoram a videira, animais selvagens se alimentam dela."
+                "text": "Vamos levantar cedo para ir aos vinhedos ver se as videiras brotaram, se as flores abriram e se as romãs já estão em flor; ali eu lhe darei meu amor.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -859,19 +497,13 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 6:3",
-                "text": "Eu sou de meu amado, e meu amado é meu; ele pastoreia entre os lírios."
-              },
-              {
-                "ref": "Cânticos 7:10",
-                "text": "Eu sou de meu amado, e ele me deseja."
-              },
-              {
-                "ref": "Salmos 48:14",
-                "text": "Pois assim é nosso Deus; ele é nosso Deus para todo o sempre e nos guiará até o dia de nossa morte."
+                "text": "Eu sou de meu amado, e meu amado é meu; ele pastoreia entre os lírios.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Jeremias 31:33",
-                "text": "“E esta é a nova aliança que farei com o povo de Israel depois daqueles dias”, diz o SENHOR. “Porei minhas leis em sua mente e as escreverei em seu coração. Serei o seu Deus, e eles serão o meu povo."
+                "text": "“E esta é a nova aliança que farei com o povo de Israel depois daqueles dias”, diz o SENHOR. “Porei minhas leis em sua mente e as escreverei em seu coração. Serei o seu Deus, e eles serão o meu povo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -882,19 +514,13 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 4:6",
-                "text": "Antes que soprem as brisas do amanhecer, e fujam as sombras da noite, irei ao monte de mirra e à colina de incenso."
+                "text": "Antes que soprem as brisas do amanhecer, e fujam as sombras da noite, irei ao monte de mirra e à colina de incenso.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Cânticos 8:14",
-                "text": "Venha correndo, meu amado! Seja como a gazela, como o jovem cervo sobre os montes de especiarias."
-              },
-              {
-                "ref": "Lucas 1:78",
-                "text": "Graças à terna misericórdia de nosso Deus, a luz da manhã, vinda do céu, está prestes a raiar sobre nós,"
-              },
-              {
-                "ref": "Hebreus 10:1",
-                "text": "A lei constitui apenas uma sombra, um vislumbre das coisas boas por vir, mas não as coisas boas em si mesmas. Os sacrifícios são repetidos todos os anos, mas nunca puderam purificar inteiramente aqueles que vêm adorar."
+                "text": "Venha correndo, meu amado! Seja como a gazela, como o jovem cervo sobre os montes de especiarias.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -914,47 +540,13 @@
             "number": 1,
             "text": "Certa noite, na cama, ansiei por meu amado; ansiei por ele, mas ele não veio.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Pedro 1:8",
-                "text": "Embora nunca o tenham visto, vocês o amam. E, ainda que não o vejam agora, creem nele e se regozijam com alegria inexprimível e gloriosa,"
-              },
-              {
-                "ref": "Cânticos 5:6",
-                "text": "Abri para meu amado, mas ele já havia partido! Meu coração quase parou de tristeza. Procurei por ele, mas não o encontrei. Chamei por ele, mas ele não respondeu."
-              },
-              {
-                "ref": "Cânticos 1:7",
-                "text": "Diga-me, meu amor, aonde levará seu rebanho hoje? Onde fará suas ovelhas descansarem ao meio-dia? Por que eu andaria sem rumo, como uma prostituta, entre seus amigos e os rebanhos deles?"
-              },
-              {
-                "ref": "Isaías 26:9",
-                "text": "À noite eu te procuro, ó Deus; pela manhã te busco de todo o coração. Pois só quando vens julgar a terra as pessoas aprendem a justiça."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 2,
             "text": "Pensei: “Vou me levantar e andar pela cidade, vou procurá-lo em todas as ruas e praças; sim, vou em busca de meu amado”. Procurei por toda parte, mas não o encontrei.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Romanos 13:11",
-                "text": "Tudo isso é ainda mais urgente porque vocês sabem como é tarde; o tempo está se esgotando. Despertem, pois nossa salvação está mais próxima agora do que quando cremos no início."
-              },
-              {
-                "ref": "Efésios 5:14",
-                "text": "pois a luz torna visíveis todas as coisas. Por isso se diz: “Desperte, você que dorme, levante-se dentre os mortos, e Cristo o iluminará”."
-              },
-              {
-                "ref": "Salmos 42:7–9",
-                "text": "Ouço o tumulto do mar revolto, enquanto suas ondas e correntezas passam sobre mim."
-              },
-              {
-                "ref": "Isaías 64:7",
-                "text": "Ainda assim, ninguém invoca teu nome nem suplica por tua misericórdia. Por isso te afastaste de nós e nos entregaste a nossos pecados."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 3,
@@ -963,19 +555,13 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 5:7",
-                "text": "Os guardas me encontraram enquanto faziam a ronda. Bateram-me e feriram-me, arrancaram-me o manto, aqueles guardas dos muros."
-              },
-              {
-                "ref": "João 20:15",
-                "text": "“Mulher, por que está chorando?”, perguntou ele. “A quem você procura?” Pensando que fosse o jardineiro, ela disse: “Se o senhor o levou embora, diga-me onde o colocou, e eu irei buscá-lo”."
-              },
-              {
-                "ref": "Isaías 21:6–8",
-                "text": "Enquanto isso, o Senhor me disse: “Coloque um vigia no muro da cidade; ele deve anunciar em alta voz o que vê."
+                "text": "Os guardas me encontraram enquanto faziam a ronda. Bateram-me e feriram-me, arrancaram-me o manto, aqueles guardas dos muros.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Isaías 21:11–12",
-                "text": "Recebi esta mensagem acerca de Edom: Alguém em Edom grita para mim: “Guarda, quanto falta para amanhecer? Quando terminará a noite?”."
+                "text": "Recebi esta mensagem acerca de Edom: Alguém em Edom grita para mim: “Guarda, quanto falta para amanhecer? Quando terminará a noite?”. O guarda responde: “O amanhecer está próximo, mas logo a noite voltará; se quiser perguntar de novo, volte e pergunte”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -983,24 +569,7 @@
             "number": 4,
             "text": "Pouco depois de me afastar deles, encontrei meu amado! Segurei-o e abracei-o com força; levei-o à casa de minha mãe, à cama onde fui concebida.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Provérbios 8:17",
-                "text": "“Amo os que me amam; os que me procuram por certo me encontrarão."
-              },
-              {
-                "ref": "Provérbios 4:13",
-                "text": "Apegue-se às minhas instruções e não as solte; guarde-as bem, pois são a chave da vida."
-              },
-              {
-                "ref": "Cânticos 6:12",
-                "text": "Antes que eu me desse conta, meu desejo me levou à carruagem de um nobre."
-              },
-              {
-                "ref": "Cânticos 8:2",
-                "text": "Eu o levaria ao lar de minha infância, e ali você me ensinaria. Eu lhe daria de beber vinho com especiarias, o néctar de minhas romãs."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 5,
@@ -1009,15 +578,13 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 2:7",
-                "text": "Prometam, ó mulheres de Jerusalém, pelas gazelas e corças selvagens, que não despertarão o amor antes do tempo."
+                "text": "Prometam, ó mulheres de Jerusalém, pelas gazelas e corças selvagens, que não despertarão o amor antes do tempo.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Cânticos 8:4",
-                "text": "Prometam, ó mulheres de Jerusalém, que não despertarão o amor antes do tempo."
-              },
-              {
-                "ref": "Miqueias 4:8",
-                "text": "Quanto a você, bela Sião, fortaleza do povo de Deus, voltará a ter força e poder soberano. O reino de minha preciosa Jerusalém será restaurado."
+                "text": "Prometam, ó mulheres de Jerusalém, que não despertarão o amor antes do tempo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -1030,47 +597,13 @@
             "number": 6,
             "text": "O que é isso que vem subindo do deserto, como nuvem de fumaça? De onde vem esse perfume de mirra e incenso, o aroma de todo tipo de especiaria?",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Cânticos 8:5",
-                "text": "Quem é essa que vem subindo do deserto, apoiada em seu amado?"
-              },
-              {
-                "ref": "Cânticos 1:13",
-                "text": "Meu amado é como uma delicada bolsa de mirra que repousa entre meus seios."
-              },
-              {
-                "ref": "Apocalipse 12:14",
-                "text": "Ela, porém, recebeu duas asas como as de uma grande águia, para que voasse ao lugar preparado para ela no deserto. Ali, será sustentada e protegida da serpente durante um tempo, tempos e metade de um tempo."
-              },
-              {
-                "ref": "Jeremias 31:2",
-                "text": "Assim diz o SENHOR: “Os que sobreviverem à destruição que está por vir encontrarão favor até no deserto, pois darei descanso ao povo de Israel.”"
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 7,
             "text": "Vejam, é a liteira de Salomão, cercada por sessenta homens valentes, os melhores soldados de Israel!",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Samuel 8:16",
-                "text": "Tomará seus escravos e escravas e o melhor do gado e dos jumentos para uso próprio."
-              },
-              {
-                "ref": "Cânticos 3:9",
-                "text": "A liteira do rei Salomão é feita de madeira importada do Líbano."
-              },
-              {
-                "ref": "1 Samuel 28:2",
-                "text": "“Está bem”, disse Davi. “Agora o senhor verá por si mesmo o que somos capazes de fazer.” Então Aquis disse a Davi: “Colocarei você como meu guarda pessoal enquanto eu viver”."
-              },
-              {
-                "ref": "2 Reis 6:17",
-                "text": "Então Eliseu orou: “Ó SENHOR, abre os olhos dele, para que veja”. O SENHOR abriu os olhos do servo, e ele viu as colinas ao redor de Eliseu cheias de cavalos e carruagens de fogo."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 8,
@@ -1079,19 +612,8 @@
             "crossReferences": [
               {
                 "ref": "Salmos 45:3",
-                "text": "Põe tua espada à cintura, ó poderoso guerreiro; tu és glorioso e majestoso!"
-              },
-              {
-                "ref": "Salmos 149:5–9",
-                "text": "Alegrem-se os fiéis porque ele os honra; cantem de alegria em suas camas."
-              },
-              {
-                "ref": "Efésios 6:16–18",
-                "text": "Em todas as situações, levantem o escudo da fé, para deter as flechas de fogo do maligno."
-              },
-              {
-                "ref": "1 Tessalonicenses 5:6–8",
-                "text": "Portanto, fiquem atentos; não durmam como os outros. Permaneçam atentos e sejam sóbrios."
+                "text": "Põe tua espada à cintura, ó poderoso guerreiro; tu és glorioso e majestoso!",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1099,20 +621,7 @@
             "number": 9,
             "text": "A liteira do rei Salomão é feita de madeira importada do Líbano.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Cânticos 3:7",
-                "text": "Vejam, é a liteira de Salomão, cercada por sessenta homens valentes, os melhores soldados de Israel!"
-              },
-              {
-                "ref": "2 Samuel 23:5",
-                "text": "“Acaso não foi minha família que Deus escolheu? Sim, ele fez comigo uma aliança sem fim, bem definida e garantida nos mínimos detalhes; ele me dará segurança e êxito."
-              },
-              {
-                "ref": "Apocalipse 14:6",
-                "text": "Vi outro anjo que voava no ponto mais alto do céu, levando as boas-novas eternas para anunciá-las aos habitantes da terra, a toda nação, tribo, língua e povo."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 10,
@@ -1121,19 +630,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 1:5",
-                "text": "Sou morena e bela, ó mulheres de Jerusalém; morena como as tendas de Quedar, bela como as cortinas de Salomão."
-              },
-              {
-                "ref": "Efésios 3:18–19",
-                "text": "Também peço que, como convém a todo o povo santo, vocês possam compreender a largura, o comprimento, a altura e a profundidade do amor de Cristo."
-              },
-              {
-                "ref": "Salmos 87:3",
-                "text": "Ó cidade de Deus, que coisas gloriosas são ditas a seu respeito! Interlúdio"
-              },
-              {
-                "ref": "1 Timóteo 3:15–16",
-                "text": "para que, se eu demorar, você saiba como as pessoas devem se comportar na casa de Deus. Ela é a igreja do Deus vivo, coluna e alicerce da verdade."
+                "text": "Sou morena e bela, ó mulheres de Jerusalém; morena como as tendas de Quedar, bela como as cortinas de Salomão.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -1146,24 +644,7 @@
             "number": 11,
             "text": "Mulheres de Sião, venham ver o rei Salomão! Ele usa a coroa que sua mãe lhe deu no dia em que ele se casou, no dia mais feliz de sua vida.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Isaías 62:5",
-                "text": "Seus filhos se comprometerão com você, como o jovem se compromete com sua noiva. Então Deus se alegrará por você, como o noivo se alegra por sua noiva."
-              },
-              {
-                "ref": "Oséias 2:19–20",
-                "text": "Eu me casarei com você para sempre, e lhe mostrarei retidão e justiça, amor e compaixão. Serei fiel a você e a tornarei minha, e você conhecerá a mim, o SENHOR."
-              },
-              {
-                "ref": "Jeremias 2:2",
-                "text": "“Vá e proclame esta mensagem para Jerusalém. Assim diz o SENHOR: “Lembro-me de como você desejava me agradar, quando era uma jovem noiva, muito tempo atrás. Você me amava e me seguia até mesmo no deserto."
-              },
-              {
-                "ref": "Apocalipse 1:7",
-                "text": "Vejam! Ele vem com as nuvens do céu, e todos o verão, até mesmo aqueles que o transpassaram. E todas as nações da terra se lamentarão por causa dele. Sim! Amém!"
-              }
-            ]
+            "crossReferences": []
           }
         ]
       }
@@ -1183,20 +664,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 1:15",
-                "text": "Como você é linda, minha querida, como você é linda! Seus olhos são como pombas."
+                "ref": "Cânticos 6:5",
+                "text": "Desvie de mim seus olhos, pois eles me dominam. Seu cabelo é como um rebanho de cabras que desce pelas encostas de Gileade.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Cânticos 6:5",
-                "text": "Desvie de mim seus olhos, pois eles me dominam. Seu cabelo é como um rebanho de cabras que desce pelas encostas de Gileade."
+                "ref": "Cânticos 1:15",
+                "text": "Como você é linda, minha querida, como você é linda! Seus olhos são como pombas.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Miqueias 7:14",
-                "text": "Ó SENHOR, protege teu povo com teu cajado de pastor; conduz este rebanho que pertence a ti! Embora vivam sozinhos num bosque no alto do monte Carmelo, leva-os para pastar nos campos verdes de Basã e Gileade, como faziam muito tempo atrás."
-              },
-              {
-                "ref": "Números 32:40",
-                "text": "Moisés deu Gileade aos maquiritas, descendentes de Manassés, e eles se estabeleceram ali."
+                "text": "Ó SENHOR, protege teu povo com teu cajado de pastor; conduz este rebanho que pertence a ti! Embora vivam sozinhos num bosque no alto do monte Carmelo, leva-os para pastar nos campos verdes de Basã e Gileade, como faziam muito tempo atrás.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1207,19 +687,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 6:6",
-                "text": "Seus dentes são brancos como ovelhas recém-lavadas. Seu sorriso é perfeito; cada dente tem seu par ideal."
-              },
-              {
-                "ref": "Êxodo 23:26",
-                "text": "Em sua terra, nenhuma grávida sofrerá aborto e nenhuma mulher será estéril. Eu lhes darei vida longa e plena."
-              },
-              {
-                "ref": "1 Tessalonicenses 2:13",
-                "text": "Portanto, nunca deixamos de agradecer a Deus, pois, quando vocês receberam de nós a mensagem dele, não consideraram nossas palavras meras ideias humanas, mas as aceitaram como palavra de Deus, o que sem dúvida são. E ess..."
-              },
-              {
-                "ref": "João 15:7",
-                "text": "Mas, se vocês permanecerem em mim e minhas palavras permanecerem em vocês, pedirão o que quiserem, e isso lhes será concedido!"
+                "text": "Seus dentes são brancos como ovelhas recém-lavadas. Seu sorriso é perfeito; cada dente tem seu par ideal.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1230,19 +699,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 6:7",
-                "text": "Suas faces por trás do véu são rosadas como romãs."
-              },
-              {
-                "ref": "Cânticos 5:16",
-                "text": "Sua voz é a própria doçura; ele é desejável em todos os sentidos. Esse, ó mulheres de Jerusalém, é meu amado, meu amigo."
-              },
-              {
-                "ref": "Josué 2:18",
-                "text": "Quando entrarmos na terra, deixe este cordão vermelho pendurado na janela por onde você nos ajudou a descer. Todos os membros de sua família — pai, mãe, irmãos e todos os seus parentes — devem estar dentro desta casa."
-              },
-              {
-                "ref": "Provérbios 10:13",
-                "text": "Palavras sábias vêm dos lábios de quem tem entendimento, mas quem não tem juízo é castigado com a vara."
+                "text": "Suas faces por trás do véu são rosadas como romãs.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1253,19 +711,13 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 7:4",
-                "text": "Seu pescoço é gracioso como uma torre de marfim. Seus olhos são como os açudes cristalinos de Hesbom, junto à porta de Bete-Rabim. Seu nariz é belo como a torre do Líbano, de onde se avista Damasco."
+                "text": "Seu pescoço é gracioso como uma torre de marfim. Seus olhos são como os açudes cristalinos de Hesbom, junto à porta de Bete-Rabim. Seu nariz é belo como a torre do Líbano, de onde se avista Damasco.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Neemias 3:19",
-                "text": "Ézer, filho de Jesua, governador do distrito de Mispá, consertou o trecho seguinte do muro, desde o lugar em frente da subida para a casa das armas até a esquina do muro."
-              },
-              {
-                "ref": "Ezequiel 27:10–11",
-                "text": "“Homens das terras distantes da Pérsia, de Lídia e da Líbia serviam em seu grande exército. Penduravam os escudos e os capacetes em seus muros e assim lhe davam muita honra."
-              },
-              {
-                "ref": "Efésios 4:15–16",
-                "text": "Em vez disso, falaremos a verdade em amor, tornando-nos, em todos os aspectos, cada vez mais parecidos com Cristo, que é a cabeça."
+                "text": "Ézer, filho de Jesua, governador do distrito de Mispá, consertou o trecho seguinte do muro, desde o lugar em frente da subida para a casa das armas até a esquina do muro.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1275,20 +727,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 6:3",
-                "text": "Eu sou de meu amado, e meu amado é meu; ele pastoreia entre os lírios."
-              },
-              {
-                "ref": "Cânticos 2:16",
-                "text": "Meu amado é meu, e eu sou dele; ele pastoreia entre os lírios."
-              },
-              {
                 "ref": "Provérbios 5:19",
-                "text": "Ela é gazela amorosa, corça graciosa; que os seios de sua esposa o satisfaçam sempre e você seja cativado por seu amor todo o tempo!"
-              },
-              {
-                "ref": "1 Pedro 2:2",
-                "text": "Como bebês recém-nascidos, desejem intensamente o puro leite espiritual, para que, por meio dele, cresçam e experimentem plenamente a salvação,"
+                "text": "Ela é gazela amorosa, corça graciosa; que os seios de sua esposa o satisfaçam sempre e você seja cativado por seu amor todo o tempo!",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1299,19 +740,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 2:17",
-                "text": "Antes que soprem as brisas do amanhecer, e fujam as sombras da noite, volte para mim, meu amor, como a gazela, como o jovem cervo nos montes íngremes."
-              },
-              {
-                "ref": "Cânticos 4:14",
-                "text": "nardo e açafrão, cálamo perfumado e canela, com todas as árvores de incenso, com mirra, aloés e todas as outras especiarias finas."
-              },
-              {
-                "ref": "Lucas 1:78",
-                "text": "Graças à terna misericórdia de nosso Deus, a luz da manhã, vinda do céu, está prestes a raiar sobre nós,"
-              },
-              {
-                "ref": "Isaías 2:2",
-                "text": "Nos últimos dias, o monte da casa do SENHOR será o mais alto de todos. Será elevado acima de todos os outros montes, e povos de todo o mundo irão até lá para adorar."
+                "text": "Antes que soprem as brisas do amanhecer, e fujam as sombras da noite, volte para mim, meu amor, como a gazela, como o jovem cervo nos montes íngremes.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1322,19 +752,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 1:15",
-                "text": "Como você é linda, minha querida, como você é linda! Seus olhos são como pombas."
-              },
-              {
-                "ref": "Cânticos 4:1",
-                "text": "Você é linda, minha querida, como você é linda! Seus olhos por trás do véu são como pombas. Seu cabelo é como um rebanho de cabras que desce pelas encostas de Gileade."
-              },
-              {
-                "ref": "Judas 1:24",
-                "text": "Toda a glória seja àquele que é poderoso para guardá-los de cair e para levá-los, com grande alegria e sem defeito, à sua presença gloriosa."
-              },
-              {
-                "ref": "Colossenses 1:22",
-                "text": "Agora, porém, ele os reconciliou consigo por meio da morte do Filho no corpo físico. Como resultado, vocês podem se apresentar diante dele santos, sem culpa e livres de qualquer acusação."
+                "text": "Como você é linda, minha querida, como você é linda! Seus olhos são como pombas.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1345,19 +764,18 @@
             "crossReferences": [
               {
                 "ref": "Deuteronômio 3:9",
-                "text": "(Os sidônios chamam o monte Hermom de Siriom, enquanto os amorreus o chamam de Senir.)"
+                "text": "(Os sidônios chamam o monte Hermom de Siriom, enquanto os amorreus o chamam de Senir.)",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Cânticos 2:13",
-                "text": "As figueiras começam a dar frutos, e as videiras perfumadas florescem. Levante-se, minha querida! Venha comigo, minha bela!”."
-              },
-              {
-                "ref": "Salmos 45:10",
-                "text": "Ouça, ó filha de rei; leve a sério o que digo. Esqueça seu povo e sua família,"
+                "text": "As figueiras começam a dar frutos, e as videiras perfumadas florescem. Levante-se, minha querida! Venha comigo, minha bela!”.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Crônicas 5:23",
-                "text": "A meia tribo de Manassés era numerosa e se espalhou por toda a terra, desde Basã até Baal-Hermom, Senir e o monte Hermom."
+                "text": "A meia tribo de Manassés era numerosa e se espalhou por toda a terra, desde Basã até Baal-Hermom, Senir e o monte Hermom.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1367,20 +785,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 4:12",
-                "text": "Você é meu jardim particular, minha amiga, minha noiva, nascente fechada, fonte escondida."
-              },
-              {
-                "ref": "Provérbios 5:19–20",
-                "text": "Ela é gazela amorosa, corça graciosa; que os seios de sua esposa o satisfaçam sempre e você seja cativado por seu amor todo o tempo!"
-              },
-              {
                 "ref": "Cânticos 5:1–2",
-                "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite."
+                "text": "Comam e bebam, amado e amada! Sim, bebam de seu amor quanto puderem! Eu dormia, mas meu coração estava desperto, quando ouvi meu amado bater à porta e chamar: “Abra a porta para mim, minha amiga, minha querida, minha pomba, minha perfeita. Minha cabeça está molhada de orvalho, e meu cabelo, úmido do sereno da noite”.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Oséias 2:19–20",
-                "text": "Eu me casarei com você para sempre, e lhe mostrarei retidão e justiça, amor e compaixão. Serei fiel a você e a tornarei minha, e você conhecerá a mim, o SENHOR."
+                "text": "Eu me casarei com você para sempre, e lhe mostrarei retidão e justiça, amor e compaixão. Serei fiel a você e a tornarei minha, e você conhecerá a mim, o SENHOR.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1391,19 +803,18 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 1:2–4",
-                "text": "Beije-me, beije-me mais uma vez, pois seu amor é mais doce que o vinho."
+                "text": "Beije-me, beije-me mais uma vez, pois seu amor é mais doce que o vinho. Como é agradável seu perfume; seu nome é como a fragrância que se espalha. Não é de admirar que todas as moças o amem! Com razão elas o amam.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Cânticos 7:6",
-                "text": "Como você é linda! Como você é agradável, meu amor, e cheia de delícias!"
+                "text": "Como você é linda! Como você é agradável, meu amor, e cheia de delícias!",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Gálatas 5:22",
-                "text": "Mas o Espírito produz este fruto: amor, alegria, paz, paciência, amabilidade, bondade, fidelidade,"
-              },
-              {
-                "ref": "Filipenses 4:18",
-                "text": "No momento, tenho tudo de que preciso, e mais. Minhas necessidades foram plenamente supridas pelas contribuições que vocês enviaram por Epafrodito. Elas são um sacrifício de aroma suave, uma oferta aceitável e agradável a Deus."
+                "text": "Mas o Espírito produz este fruto: amor, alegria, paz, paciência, amabilidade, bondade, fidelidade,",
+                "category": "Tipologia & Aliança"
               }
             ]
           },
@@ -1413,20 +824,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 5:1",
-                "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite."
-              },
-              {
-                "ref": "Cânticos 7:9",
-                "text": "Que seus beijos sejam como o melhor vinho."
-              },
-              {
-                "ref": "Gênesis 27:27",
-                "text": "Jacó se aproximou e o beijou. Quando Isaque sentiu o cheiro das roupas, finalmente abençoou o filho. Disse: “Ah! O cheiro de meu filho é como o cheiro do campo que o SENHOR abençoou!"
-              },
-              {
                 "ref": "Oséias 14:6–7",
-                "text": "Seus ramos se estenderão como belas oliveiras, perfumados como os cedros do Líbano."
+                "text": "Seus ramos se estenderão como belas oliveiras, perfumados como os cedros do Líbano. Meu povo viverá novamente à minha sombra; crescerá como o trigo e florescerá como a videira. Seu aroma será agradável, como o dos vinhos do Líbano.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1436,20 +836,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Provérbios 5:15–18",
-                "text": "Beba a água de sua própria cisterna, compartilhe seu amor somente com sua esposa."
-              },
-              {
-                "ref": "Apocalipse 21:27",
-                "text": "Nenhum mal terá permissão de entrar, nem pessoa alguma que pratique o que é vergonhoso ou enganoso, mas somente aqueles cujos nomes estão escritos no Livro da Vida do Cordeiro."
-              },
-              {
-                "ref": "1 Coríntios 6:13",
-                "text": "“Os alimentos foram feitos para o estômago, e o estômago para os alimentos.” É verdade, mas um dia Deus acabará com os dois. Vocês, contudo, não podem dizer que nosso corpo foi feito para a imoralidade sexual. Ele foi fe..."
-              },
-              {
                 "ref": "Isaías 61:10–11",
-                "text": "É imensa a minha alegria no SENHOR, meu Deus! Pois ele me vestiu com roupas de salvação e pôs sobre mim um manto de justiça. Sou como o noivo com suas vestes de casamento, como a noiva com suas joias."
+                "text": "É imensa a minha alegria no SENHOR, meu Deus! Pois ele me vestiu com roupas de salvação e pôs sobre mim um manto de justiça. Sou como o noivo com suas vestes de casamento, como a noiva com suas joias. O SENHOR Soberano mostrará sua justiça às nações do mundo; todos o louvarão! Será como um jardim no começo da primavera, quando as plantas brotam por toda parte.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1457,24 +846,7 @@
             "number": 13,
             "text": "Seus renovos guardam um paraíso de romãs com especiarias raras: hena e nardo,",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Cânticos 1:14",
-                "text": "É como um ramo de flores de hena dos vinhedos de En-Gedi."
-              },
-              {
-                "ref": "Cânticos 6:11",
-                "text": "Desci ao bosque das nogueiras e fui ao vale ver as novas plantas, ver se as videiras tinham brotado e se as romãs tinham florescido."
-              },
-              {
-                "ref": "Eclesiastes 2:5",
-                "text": "Fiz jardins e parques e os enchi de árvores frutíferas de toda espécie."
-              },
-              {
-                "ref": "Filipenses 1:11",
-                "text": "Que vocês sejam sempre cheios do fruto da justiça, que vem por meio de Jesus Cristo, para a glória e o louvor de Deus."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 14,
@@ -1483,19 +855,18 @@
             "crossReferences": [
               {
                 "ref": "Êxodo 30:23",
-                "text": "“Junte as seguintes especiarias da melhor qualidade: seis quilos de mirra líquida, três quilos de canela perfumada, três quilos de cálamo perfumado,"
-              },
-              {
-                "ref": "Cânticos 4:6",
-                "text": "Antes que soprem as brisas do amanhecer, e fujam as sombras da noite, irei ao monte de mirra e à colina de incenso."
+                "text": "“Junte as seguintes especiarias da melhor qualidade: seis quilos de mirra líquida, três quilos de canela perfumada, três quilos de cálamo perfumado,",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Cânticos 3:6",
-                "text": "O que é isso que vem subindo do deserto, como nuvem de fumaça? De onde vem esse perfume de mirra e incenso, o aroma de todo tipo de especiaria?"
+                "text": "O que é isso que vem subindo do deserto, como nuvem de fumaça? De onde vem esse perfume de mirra e incenso, o aroma de todo tipo de especiaria?",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Provérbios 7:17",
-                "text": "Perfumei minha cama com mirra, aloés e canela."
+                "text": "Perfumei minha cama com mirra, aloés e canela.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1506,19 +877,18 @@
             "crossReferences": [
               {
                 "ref": "João 4:10",
-                "text": "Jesus respondeu: “Se ao menos você soubesse que presente Deus tem para você e com quem está falando, você me pediria e eu lhe daria água viva”."
+                "text": "Jesus respondeu: “Se ao menos você soubesse que presente Deus tem para você e com quem está falando, você me pediria e eu lhe daria água viva”.",
+                "category": "Tipologia & Aliança"
               },
               {
                 "ref": "João 4:14",
-                "text": "mas quem bebe da água que eu dou nunca mais terá sede. Ela se torna uma fonte que brota dentro dele e lhe dá a vida eterna”."
+                "text": "mas quem bebe da água que eu dou nunca mais terá sede. Ela se torna uma fonte que brota dentro dele e lhe dá a vida eterna”.",
+                "category": "Tipologia & Aliança"
               },
               {
                 "ref": "Jeremias 2:13",
-                "text": "“Pois meu povo cometeu duas maldades: Abandonaram a mim, a fonte de água viva, e cavaram para si cisternas rachadas, que não podem reter água.”"
-              },
-              {
-                "ref": "Jeremias 18:13–14",
-                "text": "Portanto, assim diz o SENHOR: “Quem ouviu coisa igual a essa, mesmo entre as outras nações? Israel, minha filha virgem, fez algo terrível!"
+                "text": "“Pois meu povo cometeu duas maldades: Abandonaram a mim, a fonte de água viva, e cavaram para si cisternas rachadas, que não podem reter água.”",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -1533,20 +903,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 6:2",
-                "text": "Meu amado desceu a seu jardim, aos canteiros de especiarias, para pastorear nos jardins e para colher lírios."
-              },
-              {
                 "ref": "Cânticos 5:1",
-                "text": "Entrei em meu jardim, minha amiga, minha noiva! Recolhi mirra com minhas especiarias, comi meu favo com mel, bebi meu vinho com leite."
-              },
-              {
-                "ref": "Atos 2:1–2",
-                "text": "No dia de Pentecostes, todos estavam reunidos num só lugar. De repente, veio do céu um som como o de um poderoso vendaval e encheu a casa onde estavam sentados."
-              },
-              {
-                "ref": "1 Pedro 2:5",
-                "text": "E vocês também são pedras vivas, com as quais um templo espiritual é edificado. Além disso, são sacerdotes santos. Por meio de Jesus Cristo, oferecem sacrifícios espirituais que agradam a Deus."
+                "text": "Comam e bebam, amado e amada! Sim, bebam de seu amor quanto puderem!",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -1568,20 +927,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 6:2",
-                "text": "Meu amado desceu a seu jardim, aos canteiros de especiarias, para pastorear nos jardins e para colher lírios."
-              },
-              {
-                "ref": "Cânticos 4:16",
-                "text": "Desperte, vento norte! Levante-se, vento sul! Soprem em meu jardim e espalhem sua fragrância por toda parte. Entre em seu jardim, meu amor, e saboreie seus melhores frutos."
-              },
-              {
                 "ref": "Apocalipse 22:17",
-                "text": "O Espírito e a noiva dizem: “Vem!”. Que todo aquele que ouve diga: “Vem!”. Quem tiver sede, venha. Quem quiser, beba de graça da água da vida."
+                "text": "O Espírito e a noiva dizem: “Vem!”. Que todo aquele que ouve diga: “Vem!”. Quem tiver sede, venha. Quem quiser, beba de graça da água da vida.",
+                "category": "Tipologia & Aliança"
               },
               {
-                "ref": "Isaías 58:11",
-                "text": "O SENHOR os guiará continuamente, lhes dará água quando tiverem sede e restaurará suas forças. Vocês serão como um jardim bem regado, como a fonte que não para de jorrar."
+                "ref": "Cânticos 6:2",
+                "text": "Meu amado desceu a seu jardim, aos canteiros de especiarias, para pastorear nos jardins e para colher lírios.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -1596,20 +949,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 6:2",
-                "text": "Meu amado desceu a seu jardim, aos canteiros de especiarias, para pastorear nos jardins e para colher lírios."
-              },
-              {
                 "ref": "Cânticos 4:16",
-                "text": "Desperte, vento norte! Levante-se, vento sul! Soprem em meu jardim e espalhem sua fragrância por toda parte. Entre em seu jardim, meu amor, e saboreie seus melhores frutos."
-              },
-              {
-                "ref": "Apocalipse 22:17",
-                "text": "O Espírito e a noiva dizem: “Vem!”. Que todo aquele que ouve diga: “Vem!”. Quem tiver sede, venha. Quem quiser, beba de graça da água da vida."
-              },
-              {
-                "ref": "Isaías 58:11",
-                "text": "O SENHOR os guiará continuamente, lhes dará água quando tiverem sede e restaurará suas forças. Vocês serão como um jardim bem regado, como a fonte que não para de jorrar."
+                "text": "Desperte, vento norte! Levante-se, vento sul! Soprem em meu jardim e espalhem sua fragrância por toda parte. Entre em seu jardim, meu amor, e saboreie seus melhores frutos.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -1624,20 +966,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
+                "ref": "Cânticos 6:9",
+                "text": "eu ainda escolheria minha pomba, minha perfeita, a predileta de sua mãe, muito amada por aquela que a deu à luz. As moças a veem e dizem que ela é feliz; até mesmo as rainhas e as concubinas do rei a elogiam:",
+                "category": "Harmonia Doutrinária"
+              },
+              {
                 "ref": "Apocalipse 3:20",
-                "text": "“Preste atenção! Estou à porta e bato. Se você ouvir minha voz e abrir a porta, entrarei e, juntos, faremos uma refeição, como amigos."
+                "text": "“Preste atenção! Estou à porta e bato. Se você ouvir minha voz e abrir a porta, entrarei e, juntos, faremos uma refeição, como amigos.",
+                "category": "Tipologia & Aliança"
               },
               {
                 "ref": "Cânticos 2:14",
-                "text": "Minha pomba está escondida entre as pedras, oculta nas fendas das rochas. Mostre-me seu rosto e deixe-me ouvir sua voz. Pois sua voz é doce, e seu rosto é lindo."
-              },
-              {
-                "ref": "Cânticos 6:9",
-                "text": "eu ainda escolheria minha pomba, minha perfeita, a predileta de sua mãe, muito amada por aquela que a deu à luz. As moças a veem e dizem que ela é feliz; até mesmo as rainhas e as concubinas do rei a elogiam:"
-              },
-              {
-                "ref": "Zacarias 4:1",
-                "text": "Então o anjo que falava comigo voltou e me despertou, como se eu tivesse estado dormindo."
+                "text": "Minha pomba está escondida entre as pedras, oculta nas fendas das rochas. Mostre-me seu rosto e deixe-me ouvir sua voz. Pois sua voz é doce, e seu rosto é lindo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1645,47 +986,13 @@
             "number": 3,
             "text": "Eu respondi: “Já tirei a túnica; vou ter de me vestir de novo? Já lavei os pés; vou ter de sujá-los?”.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Lucas 11:7",
-                "text": "e ele respondesse lá de dentro: ‘Não me perturbe. A porta já está trancada, e minha família e eu já estamos deitados. Não posso ajudá-lo’."
-              },
-              {
-                "ref": "Provérbios 22:13",
-                "text": "O preguiçoso diz: ‘Há um leão lá fora! Se eu sair, ele me matará!”."
-              },
-              {
-                "ref": "Romanos 7:22–23",
-                "text": "Amo a lei de Deus de todo o coração. Contudo, há outra lei dentro de mim que está em guerra com minha mente e me torna escravo do pecado que permanece dentro de mim."
-              },
-              {
-                "ref": "Mateus 25:5",
-                "text": "Como o noivo demorou a chegar, todas ficaram sonolentas e adormeceram."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 4,
             "text": "Meu amado tentou destrancar a porta, e meu coração se agitou.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Reis 3:26",
-                "text": "Então, por causa de seu amor pelo menino, a verdadeira mãe gritou: “Não, meu senhor! Dê o menino a ela. Por favor, não o mate!”. A outra mulher, porém, disse: “Muito bem, ele não será nem meu nem seu. Dividam a criança ao meio!”."
-              },
-              {
-                "ref": "Filipenses 2:13",
-                "text": "Pois Deus está agindo em vocês, dando-lhes o desejo e o poder de realizarem aquilo que é do agrado dele."
-              },
-              {
-                "ref": "Gênesis 43:30",
-                "text": "Muito emocionado por causa do irmão, José saiu depressa da sala. Foi para o quarto, onde chorou."
-              },
-              {
-                "ref": "2 Coríntios 8:16",
-                "text": "Agradeço a Deus porque ele concedeu a Tito a mesma dedicação que eu tenho por vocês."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 5,
@@ -1693,20 +1000,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 5:13",
-                "text": "Suas faces são como jardins de especiarias que espalham sua fragrância. Seus lábios são como lírios perfumados com mirra."
-              },
-              {
                 "ref": "Efésios 3:17",
-                "text": "Então Cristo habitará em seu coração à medida que vocês confiarem nele. Suas raízes se aprofundarão em amor e os manterão fortes."
+                "text": "Então Cristo habitará em seu coração à medida que vocês confiarem nele. Suas raízes se aprofundarão em amor e os manterão fortes.",
+                "category": "Tipologia & Aliança"
               },
               {
                 "ref": "Cânticos 3:6",
-                "text": "O que é isso que vem subindo do deserto, como nuvem de fumaça? De onde vem esse perfume de mirra e incenso, o aroma de todo tipo de especiaria?"
-              },
-              {
-                "ref": "2 Coríntios 7:7",
-                "text": "Sua presença foi uma alegria, como também o foi a notícia que ele nos trouxe do encorajamento que recebeu de vocês. Quando ele nos contou quanto desejam me ver, quanto lamentam o que aconteceu e quão dedicados são a mim, fiquei muito feliz!"
+                "text": "O que é isso que vem subindo do deserto, como nuvem de fumaça? De onde vem esse perfume de mirra e incenso, o aroma de todo tipo de especiaria?",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1714,24 +1015,7 @@
             "number": 6,
             "text": "Abri para meu amado, mas ele já havia partido! Meu coração quase parou de tristeza. Procurei por ele, mas não o encontrei. Chamei por ele, mas ele não respondeu.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Cânticos 5:2",
-                "text": "Eu dormia, mas meu coração estava desperto, quando ouvi meu amado bater à porta e chamar: “Abra a porta para mim, minha amiga, minha querida, minha pomba, minha perfeita. Minha cabeça está molhada de orvalho, e meu cabelo, úmido do sereno da noite”."
-              },
-              {
-                "ref": "Oséias 5:15",
-                "text": "Então retornarei a meu lugar, até que reconheçam sua culpa e voltem para mim. Pois, assim que vier o sofrimento, eles me buscarão ansiosamente.”"
-              },
-              {
-                "ref": "Apocalipse 3:19",
-                "text": "Eu corrijo e disciplino aqueles que amo. Por isso, seja zeloso e arrependa-se."
-              },
-              {
-                "ref": "Salmos 77:3",
-                "text": "Lembro-me de Deus e começo a gemer; desfaleço, ansioso por sua ajuda. Interlúdio"
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 7,
@@ -1740,19 +1024,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 3:3",
-                "text": "Os guardas me pararam enquanto faziam a ronda, e eu lhes perguntei: “Vocês viram meu amado?”."
-              },
-              {
-                "ref": "Mateus 23:2",
-                "text": "“Os mestres da lei e os fariseus ocuparam o lugar de intérpretes oficiais da lei de Moisés."
-              },
-              {
-                "ref": "Cânticos 8:11",
-                "text": "Salomão tem um vinhedo em Baal-Hamom, que ele arrenda para lavradores. Cada um lhe paga mil peças de prata para colher os frutos."
-              },
-              {
-                "ref": "Mateus 23:29–36",
-                "text": "“Que aflição os espera, mestres da lei e fariseus! Hipócritas! Constroem túmulos para os profetas, enfeitam os monumentos dos justos"
+                "text": "Os guardas me pararam enquanto faziam a ronda, e eu lhes perguntei: “Vocês viram meu amado?”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1762,20 +1035,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 2:5",
-                "text": "Fortaleçam-me com bolos de passas, revigorem-me com maçãs, pois desfaleço de amor."
-              },
-              {
                 "ref": "Cânticos 2:7",
-                "text": "Prometam, ó mulheres de Jerusalém, pelas gazelas e corças selvagens, que não despertarão o amor antes do tempo."
+                "text": "Prometam, ó mulheres de Jerusalém, pelas gazelas e corças selvagens, que não despertarão o amor antes do tempo.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Salmos 42:1–3",
-                "text": "Como a corça anseia pelas correntes de água, assim minha alma anseia por ti, ó Deus."
-              },
-              {
-                "ref": "Salmos 77:1–3",
-                "text": "Clamo a Deus; sim, grito bem alto. Quem dera Deus me ouvisse!"
+                "ref": "Cânticos 2:5",
+                "text": "Fortaleçam-me com bolos de passas, revigorem-me com maçãs, pois desfaleço de amor.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -1790,20 +1057,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 1:8",
-                "text": "Se você não sabe, mais bela de todas as mulheres, siga a trilha de meu rebanho e leve seus cabritos para pastar junto às tendas dos pastores."
-              },
-              {
                 "ref": "Cânticos 6:1",
-                "text": "Para onde foi seu amado, ó mulher de beleza incomparável? Diga-nos que caminho ele tomou, e a ajudaremos a encontrá-lo."
+                "text": "Para onde foi seu amado, ó mulher de beleza incomparável? Diga-nos que caminho ele tomou, e a ajudaremos a encontrá-lo.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Salmos 87:3",
-                "text": "Ó cidade de Deus, que coisas gloriosas são ditas a seu respeito! Interlúdio"
-              },
-              {
-                "ref": "Salmos 45:13",
-                "text": "A princesa é uma linda noiva, belíssima em seu vestido dourado."
+                "ref": "Cânticos 1:8",
+                "text": "Se você não sabe, mais bela de todas as mulheres, siga a trilha de meu rebanho e leve seus cabritos para pastar junto às tendas dos pastores.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -1816,24 +1077,7 @@
             "number": 10,
             "text": "Meu amado é moreno e fascinante; ele se destaca no meio da multidão!",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Salmos 45:2",
-                "text": "Tu és o mais belo de todos; palavras graciosas fluem de teus lábios. Sim, Deus te abençoou para sempre."
-              },
-              {
-                "ref": "Cânticos 2:1",
-                "text": "Eu sou a flor que nasce na planície de Sarom, o lírio que cresce no vale."
-              },
-              {
-                "ref": "Salmos 45:17",
-                "text": "Eu darei honra ao teu nome por todas as gerações; por isso, as nações te louvarão para todo o sempre."
-              },
-              {
-                "ref": "Filipenses 2:9–11",
-                "text": "Por isso Deus o elevou ao lugar de mais alta honra e lhe deu o nome que está acima de todos os nomes,"
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 11,
@@ -1842,19 +1086,13 @@
             "crossReferences": [
               {
                 "ref": "Apocalipse 1:14",
-                "text": "A cabeça e os cabelos eram brancos como a lã e a neve, e os olhos, como chamas de fogo."
-              },
-              {
-                "ref": "Efésios 1:21–22",
-                "text": "Agora ele está muito acima de qualquer governante, autoridade, poder, líder ou qualquer outro nome não apenas neste mundo, mas também no futuro."
-              },
-              {
-                "ref": "Daniel 7:9",
-                "text": "Enquanto eu observava, foram colocados alguns tronos, e o Ancião se sentou para julgar. Suas roupas eram brancas como a neve, e seu cabelo, como a mais pura lã. Sentava-se num trono de fogo, com rodas de chamas ardentes,"
+                "text": "A cabeça e os cabelos eram brancos como a lã e a neve, e os olhos, como chamas de fogo.",
+                "category": "Tipologia & Aliança"
               },
               {
                 "ref": "Cânticos 5:2",
-                "text": "Eu dormia, mas meu coração estava desperto, quando ouvi meu amado bater à porta e chamar: “Abra a porta para mim, minha amiga, minha querida, minha pomba, minha perfeita. Minha cabeça está molhada de orvalho, e meu cabelo, úmido do sereno da noite”."
+                "text": "Eu dormia, mas meu coração estava desperto, quando ouvi meu amado bater à porta e chamar: “Abra a porta para mim, minha amiga, minha querida, minha pomba, minha perfeita. Minha cabeça está molhada de orvalho, e meu cabelo, úmido do sereno da noite”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1865,15 +1103,13 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 4:1",
-                "text": "Você é linda, minha querida, como você é linda! Seus olhos por trás do véu são como pombas. Seu cabelo é como um rebanho de cabras que desce pelas encostas de Gileade."
+                "text": "Você é linda, minha querida, como você é linda! Seus olhos por trás do véu são como pombas. Seu cabelo é como um rebanho de cabras que desce pelas encostas de Gileade.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Cânticos 1:15",
-                "text": "Como você é linda, minha querida, como você é linda! Seus olhos são como pombas."
-              },
-              {
-                "ref": "Hebreus 4:13",
-                "text": "Nada, em toda a criação, está escondido de Deus. Tudo está descoberto e exposto diante de seus olhos, e é a ele que prestamos contas."
+                "text": "Como você é linda, minha querida, como você é linda! Seus olhos são como pombas.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1881,47 +1117,13 @@
             "number": 13,
             "text": "Suas faces são como jardins de especiarias que espalham sua fragrância. Seus lábios são como lírios perfumados com mirra.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Cânticos 1:10",
-                "text": "Como são belas suas faces; seus brincos realçam sua beleza! Como é lindo seu pescoço, enfeitado com um colar de joias!"
-              },
-              {
-                "ref": "Cânticos 2:1",
-                "text": "Eu sou a flor que nasce na planície de Sarom, o lírio que cresce no vale."
-              },
-              {
-                "ref": "Lucas 4:22",
-                "text": "Todos falavam bem dele e estavam admirados com as palavras de graça que saíam de seus lábios. Contudo, perguntavam: “Não é esse o filho de José?”."
-              },
-              {
-                "ref": "Salmos 4:6–7",
-                "text": "Muitos dizem: “Quem nos mostrará o bem?”. Que a luz do teu rosto brilhe sobre nós, SENHOR! Tu me deste alegria maior que a daqueles que têm fartas colheitas de cereais e vinho novo."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 14,
             "text": "Seus braços são como barras redondas de ouro, enfeitadas com berilo. Seu ventre é como marfim polido, que resplandece com safiras.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Êxodo 24:10",
-                "text": "onde viram o Deus de Israel, e sob os pés dele havia uma superfície azulada como a safira e clara como o céu."
-              },
-              {
-                "ref": "Isaías 54:11",
-                "text": "“Ó cidade açoitada por tempestades, aflita e desolada! Eu a reconstruirei com pedras preciosas e edificarei seus alicerces com safiras."
-              },
-              {
-                "ref": "Isaías 52:13",
-                "text": "Vejam, meu servo terá êxito; será muito exaltado."
-              },
-              {
-                "ref": "Salmos 99:4",
-                "text": "Rei poderoso, que ama a justiça, tu estabeleceste a imparcialidade. Agiste com justiça e retidão em Israel."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 15,
@@ -1929,20 +1131,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Reis 4:33",
-                "text": "Podia falar com entendimento sobre plantas de toda espécie, desde o grande cedro do Líbano até o pequeno hissopo que cresce nas fendas dos muros. Também tinha conhecimento de animais, aves, répteis e peixes."
-              },
-              {
-                "ref": "Apocalipse 1:15–16",
-                "text": "Os pés eram como bronze polido, refinado numa fornalha, e a voz ressoava como fortes ondas do mar."
-              },
-              {
                 "ref": "Cânticos 4:11",
-                "text": "Seus lábios são doces como néctar, minha noiva; debaixo de sua língua há mel e leite. Seus vestidos são perfumados como os cedros do Líbano."
-              },
-              {
-                "ref": "Cânticos 7:4",
-                "text": "Seu pescoço é gracioso como uma torre de marfim. Seus olhos são como os açudes cristalinos de Hesbom, junto à porta de Bete-Rabim. Seu nariz é belo como a torre do Líbano, de onde se avista Damasco."
+                "text": "Seus lábios são doces como néctar, minha noiva; debaixo de sua língua há mel e leite. Seus vestidos são perfumados como os cedros do Líbano.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1950,24 +1141,7 @@
             "number": 16,
             "text": "Sua voz é a própria doçura; ele é desejável em todos os sentidos. Esse, ó mulheres de Jerusalém, é meu amado, meu amigo.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Salmos 45:2",
-                "text": "Tu és o mais belo de todos; palavras graciosas fluem de teus lábios. Sim, Deus te abençoou para sempre."
-              },
-              {
-                "ref": "Cânticos 7:9",
-                "text": "Que seus beijos sejam como o melhor vinho."
-              },
-              {
-                "ref": "Gálatas 2:20",
-                "text": "Fui crucificado com Cristo; assim, já não sou eu quem vive, mas Cristo vive em mim. Portanto, vivo neste corpo terreno pela fé no Filho de Deus, que me amou e se entregou por mim."
-              },
-              {
-                "ref": "Cânticos 2:1",
-                "text": "Eu sou a flor que nasce na planície de Sarom, o lírio que cresce no vale."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       }
@@ -1988,19 +1162,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 5:9",
-                "text": "Diga-nos, mulher de beleza incomparável: Por que seu amado é melhor que todos os outros? O que ele tem de tão especial para fazermos a você essa promessa?"
-              },
-              {
-                "ref": "Cânticos 1:8",
-                "text": "Se você não sabe, mais bela de todas as mulheres, siga a trilha de meu rebanho e leve seus cabritos para pastar junto às tendas dos pastores."
-              },
-              {
-                "ref": "Jeremias 14:8",
-                "text": "Ó Esperança de Israel, nosso Salvador em tempos de angústia, por que és como estrangeiro entre nós? Por que és como viajante de passagem pela terra, que fica só uma noite?"
-              },
-              {
-                "ref": "Rute 2:12",
-                "text": "Que o SENHOR, o Deus de Israel, sob cujas asas você veio se refugiar, a recompense ricamente pelo que você fez.”"
+                "text": "Diga-nos, mulher de beleza incomparável: Por que seu amado é melhor que todos os outros? O que ele tem de tão especial para fazermos a você essa promessa?",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -2016,19 +1179,13 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 5:13",
-                "text": "Suas faces são como jardins de especiarias que espalham sua fragrância. Seus lábios são como lírios perfumados com mirra."
+                "text": "Suas faces são como jardins de especiarias que espalham sua fragrância. Seus lábios são como lírios perfumados com mirra.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Apocalipse 7:17",
-                "text": "Pois o Cordeiro que está no centro do trono será seu Pastor. Ele os guiará às fontes de água viva, e Deus enxugará de seus olhos toda lágrima”."
-              },
-              {
-                "ref": "Isaías 58:11",
-                "text": "O SENHOR os guiará continuamente, lhes dará água quando tiverem sede e restaurará suas forças. Vocês serão como um jardim bem regado, como a fonte que não para de jorrar."
-              },
-              {
-                "ref": "Sofonias 3:17",
-                "text": "Pois o SENHOR, seu Deus, está em seu meio; ele é um Salvador poderoso. Ele se agradará de vocês com exultação e acalmará todos os seus medos com amor; ele se alegrará em vocês com gritos de alegria!”."
+                "text": "Pois o Cordeiro que está no centro do trono será seu Pastor. Ele os guiará às fontes de água viva, e Deus enxugará de seus olhos toda lágrima”.",
+                "category": "Tipologia & Aliança"
               }
             ]
           },
@@ -2039,19 +1196,13 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 2:16",
-                "text": "Meu amado é meu, e eu sou dele; ele pastoreia entre os lírios."
-              },
-              {
-                "ref": "Cânticos 7:10",
-                "text": "Eu sou de meu amado, e ele me deseja."
+                "text": "Meu amado é meu, e eu sou dele; ele pastoreia entre os lírios.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Hebreus 8:10",
-                "text": "E esta é a nova aliança que farei com o povo de Israel depois daqueles dias, diz o Senhor: Porei minhas leis em sua mente e as escreverei em seu coração. Serei o seu Deus, e eles serão o meu povo."
-              },
-              {
-                "ref": "Apocalipse 21:2–4",
-                "text": "E vi a cidade santa, a nova Jerusalém, que descia do céu, da parte de Deus, como uma noiva belamente vestida para seu marido."
+                "text": "E esta é a nova aliança que farei com o povo de Israel depois daqueles dias, diz o Senhor: Porei minhas leis em sua mente e as escreverei em seu coração. Serei o seu Deus, e eles serão o meu povo.",
+                "category": "Citação & Cumprimento"
               }
             ]
           }
@@ -2064,24 +1215,7 @@
             "number": 4,
             "text": "Você é linda, minha querida, como a bela cidade de Tirza. Sim, é linda como Jerusalém, majestosa como um exército com bandeiras ao vento.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Cânticos 6:10",
-                "text": "“Quem é essa que se levanta como o amanhecer, bela como a lua, brilhante como o sol, majestosa como um exército com bandeiras ao vento?”."
-              },
-              {
-                "ref": "Salmos 48:2",
-                "text": "O monte Sião, o santo monte, é alto e magnífico; toda a terra se alegra em vê-lo; é a cidade do grande Rei."
-              },
-              {
-                "ref": "1 Reis 14:17",
-                "text": "Então a esposa de Jeroboão voltou a Tirza, e o menino morreu no instante em que ela entrou em casa."
-              },
-              {
-                "ref": "Cânticos 2:14",
-                "text": "Minha pomba está escondida entre as pedras, oculta nas fendas das rochas. Mostre-me seu rosto e deixe-me ouvir sua voz. Pois sua voz é doce, e seu rosto é lindo."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 5,
@@ -2089,20 +1223,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Êxodo 32:10",
-                "text": "Agora fique de lado, e eu lançarei contra eles minha ira ardente e os destruirei. Depois, farei de você, Moisés, uma grande nação”."
-              },
-              {
-                "ref": "Gênesis 32:26–28",
-                "text": "O homem disse: “Deixe-me ir, pois está amanhecendo!”. Jacó, porém, respondeu: “Não o deixarei ir enquanto não me abençoar”."
-              },
-              {
-                "ref": "Jeremias 15:1",
-                "text": "Então o SENHOR me disse: “Mesmo que Moisés e Samuel intercedessem diante de mim em favor deste povo, eu não ajudaria. Fora com eles! Expulse-os de minha presença!"
-              },
-              {
                 "ref": "Cânticos 4:1–3",
-                "text": "Você é linda, minha querida, como você é linda! Seus olhos por trás do véu são como pombas. Seu cabelo é como um rebanho de cabras que desce pelas encostas de Gileade."
+                "text": "Você é linda, minha querida, como você é linda! Seus olhos por trás do véu são como pombas. Seu cabelo é como um rebanho de cabras que desce pelas encostas de Gileade. Seus dentes são brancos como ovelhas recém-tosquiadas e lavadas. Seu sorriso é perfeito; cada dente tem seu par ideal. Seus lábios são como uma fita vermelha; sua boca é linda. Suas faces por trás do véu são rosadas como romãs.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2113,15 +1236,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 4:2",
-                "text": "Seus dentes são brancos como ovelhas recém-tosquiadas e lavadas. Seu sorriso é perfeito; cada dente tem seu par ideal."
-              },
-              {
-                "ref": "Mateus 25:30",
-                "text": "Agora lancem este servo inútil para fora, na escuridão, onde haverá choro e ranger de dentes’.”"
-              },
-              {
-                "ref": "Mateus 21:19",
-                "text": "Encontrando uma figueira à beira do caminho, foi ver se havia figos, mas só encontrou folhas. Então, disse à figueira: “Nunca mais dê frutos!”. E, no mesmo instante, a figueira secou."
+                "text": "Seus dentes são brancos como ovelhas recém-tosquiadas e lavadas. Seu sorriso é perfeito; cada dente tem seu par ideal.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2132,7 +1248,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 4:3",
-                "text": "Seus lábios são como uma fita vermelha; sua boca é linda. Suas faces por trás do véu são rosadas como romãs."
+                "text": "Seus lábios são como uma fita vermelha; sua boca é linda. Suas faces por trás do véu são rosadas como romãs.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2140,24 +1257,7 @@
             "number": 8,
             "text": "Mesmo entre sessenta rainhas, oitenta concubinas e incontáveis moças,",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Salmos 45:14",
-                "text": "Em suas roupas bordadas, é levada até o rei, acompanhada de suas damas de honra."
-              },
-              {
-                "ref": "1 Reis 11:3",
-                "text": "No total, casou-se com setecentas princesas e teve trezentas concubinas. E elas desviaram seu coração do SENHOR."
-              },
-              {
-                "ref": "1 Reis 11:1",
-                "text": "O rei Salomão amou muitas mulheres estrangeiras. Além da filha do faraó, ele se casou com mulheres de Moabe, de Amom, de Edom, de Sidom e dos hititas."
-              },
-              {
-                "ref": "Salmos 45:9",
-                "text": "Entre as mulheres de tua corte há filhas de reis; à tua direita, está a rainha, usando joias de ouro puro de Ofir."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 9,
@@ -2166,19 +1266,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 2:14",
-                "text": "Minha pomba está escondida entre as pedras, oculta nas fendas das rochas. Mostre-me seu rosto e deixe-me ouvir sua voz. Pois sua voz é doce, e seu rosto é lindo."
-              },
-              {
-                "ref": "Gênesis 30:13",
-                "text": "Lia o chamou de Aser, pois disse: “Como estou alegre! Agora as outras mulheres celebrarão comigo”."
-              },
-              {
-                "ref": "Salmos 45:9",
-                "text": "Entre as mulheres de tua corte há filhas de reis; à tua direita, está a rainha, usando joias de ouro puro de Ofir."
-              },
-              {
-                "ref": "Apocalipse 21:9–10",
-                "text": "Então um dos sete anjos que seguravam as sete taças com as últimas sete pragas se aproximou e me disse: “Venha comigo, e eu lhe mostrarei a noiva, a esposa do Cordeiro”."
+                "text": "Minha pomba está escondida entre as pedras, oculta nas fendas das rochas. Mostre-me seu rosto e deixe-me ouvir sua voz. Pois sua voz é doce, e seu rosto é lindo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2186,24 +1275,7 @@
             "number": 10,
             "text": "“Quem é essa que se levanta como o amanhecer, bela como a lua, brilhante como o sol, majestosa como um exército com bandeiras ao vento?”.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Cânticos 6:4",
-                "text": "Você é linda, minha querida, como a bela cidade de Tirza. Sim, é linda como Jerusalém, majestosa como um exército com bandeiras ao vento."
-              },
-              {
-                "ref": "Apocalipse 12:1",
-                "text": "Então foi visto no céu um grande sinal: uma mulher vestida do sol, com a lua sob os pés e uma coroa de doze estrelas na cabeça."
-              },
-              {
-                "ref": "Jó 31:26",
-                "text": "“Olhei para o sol, que brilha no céu, ou para a lua, que percorre seu resplendor,"
-              },
-              {
-                "ref": "Efésios 5:27",
-                "text": "Assim o fez para apresentá-la a si mesmo como igreja gloriosa, sem mancha, ruga ou qualquer outro defeito, mas santa e sem culpa."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -2217,19 +1289,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 7:12",
-                "text": "Vamos levantar cedo para ir aos vinhedos ver se as videiras brotaram, se as flores abriram e se as romãs já estão em flor; ali eu lhe darei meu amor."
-              },
-              {
-                "ref": "Atos 15:36",
-                "text": "Algum tempo depois, Paulo disse a Barnabé: “Voltemos para visitar cada uma das cidades onde pregamos a palavra do Senhor, para ver como os irmãos estão indo”."
-              },
-              {
-                "ref": "Cânticos 6:2",
-                "text": "Meu amado desceu a seu jardim, aos canteiros de especiarias, para pastorear nos jardins e para colher lírios."
-              },
-              {
-                "ref": "Isaías 5:2–4",
-                "text": "Ele arou a terra, tirou as pedras e plantou as melhores videiras. No meio do vinhedo, construiu uma torre de vigia e, junto às rochas, fez um tanque de prensar. Então esperou pela colheita de uvas doces, mas o vinhedo só produziu uvas amargas."
+                "text": "Vamos levantar cedo para ir aos vinhedos ver se as videiras brotaram, se as flores abriram e se as romãs já estão em flor; ali eu lhe darei meu amor.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2237,20 +1298,7 @@
             "number": 12,
             "text": "Antes que eu me desse conta, meu desejo me levou à carruagem de um nobre.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Lucas 15:20",
-                "text": "“Então voltou para a casa de seu pai. Quando ele ainda estava longe, seu pai o viu. Cheio de compaixão, correu para o filho, o abraçou e o beijou."
-              },
-              {
-                "ref": "Oséias 11:8–9",
-                "text": "“Como eu poderia desistir de você, Israel? Como poderia deixá-lo? Como poderia destruí-lo como Admá ou arrasá-lo como Zeboim? Meu coração está dilacerado, e minha compaixão transborda."
-              },
-              {
-                "ref": "Jeremias 31:18–20",
-                "text": "Ouvi Israel dizer: ‘Tu me disciplinaste severamente, como bezerro que precisa ser domesticado. Faze-me voltar para ti e restaura-me, pois somente tu és o SENHOR, meu Deus."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -2296,24 +1344,7 @@
             "number": 2,
             "text": "Seu umbigo tem forma perfeita, como taça cheia de vinho de boa mistura. Sua cintura é como um monte de trigo cercado de lírios.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Provérbios 3:8",
-                "text": "Então você terá saúde para o corpo e força para os ossos."
-              },
-              {
-                "ref": "Romanos 7:4",
-                "text": "Assim, meus irmãos, vocês morreram para o poder da lei quando morreram com Cristo, e agora estão unidos com aquele que foi ressuscitado dos mortos. Como resultado, podemos produzir uma colheita de boas obras para Deus."
-              },
-              {
-                "ref": "Cânticos 5:14",
-                "text": "Seus braços são como barras redondas de ouro, enfeitadas com berilo. Seu ventre é como marfim polido, que resplandece com safiras."
-              },
-              {
-                "ref": "Salmos 45:16",
-                "text": "Teus filhos serão reis, como o pai deles; tu os farás governantes de muitas terras."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 3,
@@ -2322,11 +1353,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 4:5",
-                "text": "Seus dois seios são como duas crias de gazela, filhotes gêmeos que se alimentam entre os lírios."
-              },
-              {
-                "ref": "Cânticos 6:6",
-                "text": "Seus dentes são brancos como ovelhas recém-lavadas. Seu sorriso é perfeito; cada dente tem seu par ideal."
+                "text": "Seus dois seios são como duas crias de gazela, filhotes gêmeos que se alimentam entre os lírios.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2337,19 +1365,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 4:4",
-                "text": "Seu pescoço é belo, como a torre de Davi, enfeitada com escudos de mil guerreiros valentes."
-              },
-              {
-                "ref": "Salmos 144:12",
-                "text": "Que nossos filhos floresçam na juventude como plantas viçosas. Que nossas filhas sejam como colunas graciosas, esculpidas para enfeitar um palácio."
-              },
-              {
-                "ref": "Cânticos 4:8–9",
-                "text": "Venha comigo do Líbano, minha noiva, venha comigo do Líbano. Desça do monte Amana, dos cumes do Senir e do Hermom, onde os leões têm suas tocas e os leopardos vivem nas montanhas."
-              },
-              {
-                "ref": "Filipenses 1:9–10",
-                "text": "Oro para que o amor de vocês transborde cada vez mais e que continuem a crescer em conhecimento e discernimento."
+                "text": "Seu pescoço é belo, como a torre de Davi, enfeitada com escudos de mil guerreiros valentes.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2360,19 +1377,18 @@
             "crossReferences": [
               {
                 "ref": "Isaías 35:2",
-                "text": "Haverá muitas flores, cânticos e alegria! Os desertos se tornarão verdes como os montes do Líbano, belos como o monte Carmelo e a planície de Sarom. Ali o SENHOR mostrará sua glória, o esplendor de nosso Deus."
-              },
-              {
-                "ref": "Cânticos 4:1",
-                "text": "Você é linda, minha querida, como você é linda! Seus olhos por trás do véu são como pombas. Seu cabelo é como um rebanho de cabras que desce pelas encostas de Gileade."
+                "text": "Haverá muitas flores, cânticos e alegria! Os desertos se tornarão verdes como os montes do Líbano, belos como o monte Carmelo e a planície de Sarom. Ali o SENHOR mostrará sua glória, o esplendor de nosso Deus.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Cânticos 5:11",
-                "text": "Sua cabeça é como o ouro puro, seu cabelo ondulado, preto como o corvo."
+                "text": "Sua cabeça é como o ouro puro, seu cabelo ondulado, preto como o corvo.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Miqueias 7:14",
-                "text": "Ó SENHOR, protege teu povo com teu cajado de pastor; conduz este rebanho que pertence a ti! Embora vivam sozinhos num bosque no alto do monte Carmelo, leva-os para pastar nos campos verdes de Basã e Gileade, como faziam muito tempo atrás."
+                "text": "Ó SENHOR, protege teu povo com teu cajado de pastor; conduz este rebanho que pertence a ti! Embora vivam sozinhos num bosque no alto do monte Carmelo, leva-os para pastar nos campos verdes de Basã e Gileade, como faziam muito tempo atrás.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2382,20 +1398,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Salmos 45:11",
-                "text": "pois o rei, seu marido, se encanta com sua beleza; honre-o, pois ele é seu senhor."
-              },
-              {
                 "ref": "Cânticos 4:10",
-                "text": "Seu amor é delicioso, minha amiga, minha noiva. Seu amor é melhor que vinho; seu perfume é mais agradável que especiarias."
+                "text": "Seu amor é delicioso, minha amiga, minha noiva. Seu amor é melhor que vinho; seu perfume é mais agradável que especiarias.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Cânticos 1:15–16",
-                "text": "Como você é linda, minha querida, como você é linda! Seus olhos são como pombas. Como você é belo, meu amor, como você é encantador! A grama macia é nosso leito;"
-              },
-              {
-                "ref": "Isaías 62:4–5",
-                "text": "Nunca mais será chamada de “Cidade Abandonada” nem de “Terra Desolada”. Seu novo nome será “Cidade do Prazer de Deus” e “Esposa de Deus”, pois o SENHOR tem prazer em você e a tomará como esposa."
+                "text": "Como você é linda, minha querida, como você é linda! Seus olhos são como pombas. Como você é belo, meu amor, como você é encantador! A grama macia é nosso leito;",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2403,70 +1413,19 @@
             "number": 7,
             "text": "É esbelta como uma palmeira, e seus seios são como os cachos de frutos.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Cânticos 4:5",
-                "text": "Seus dois seios são como duas crias de gazela, filhotes gêmeos que se alimentam entre os lírios."
-              },
-              {
-                "ref": "Isaías 66:10",
-                "text": "“Alegrem-se com Jerusalém! Exultem por ela, todos que a amam e todos que por ela choraram!"
-              },
-              {
-                "ref": "Salmos 92:12",
-                "text": "Os justos, porém, florescerão como palmeiras e crescerão como os cedros do Líbano."
-              },
-              {
-                "ref": "Efésios 4:13",
-                "text": "até que todos alcancemos a unidade que a fé e o conhecimento do Filho de Deus produzem e amadureçamos, chegando à completa medida da estatura de Cristo."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 8,
             "text": "Eu disse: “Subirei a palmeira e me apossarei de seus frutos”. Que seus seios sejam como cachos de uva, e que o aroma de sua respiração tenha o perfume das maçãs.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "João 14:21–23",
-                "text": "Aqueles que aceitam meus mandamentos e lhes obedecem são os que me amam. E, porque me amam, serão amados por meu Pai. E eu também os amarei e me revelarei a cada um deles.”"
-              },
-              {
-                "ref": "2 Coríntios 2:14",
-                "text": "Mas graças a Deus, que, em Cristo, sempre nos conduz triunfantemente. Agora, por nosso intermédio, ele espalha o conhecimento de Cristo por toda parte, como um doce perfume."
-              },
-              {
-                "ref": "Cânticos 2:5",
-                "text": "Fortaleçam-me com bolos de passas, revigorem-me com maçãs, pois desfaleço de amor."
-              },
-              {
-                "ref": "Cânticos 2:3",
-                "text": "Como uma macieira entre as árvores do bosque, assim é meu amado entre os rapazes. À sua sombra agradável eu me sento e saboreio seus deliciosos frutos."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 9,
             "text": "Que seus beijos sejam como o melhor vinho.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Cânticos 5:16",
-                "text": "Sua voz é a própria doçura; ele é desejável em todos os sentidos. Esse, ó mulheres de Jerusalém, é meu amado, meu amigo."
-              },
-              {
-                "ref": "Efésios 4:29",
-                "text": "Evitem o linguajar sujo e insultante. Que todas as suas palavras sejam boas e úteis, a fim de dar ânimo àqueles que as ouvirem."
-              },
-              {
-                "ref": "Colossenses 3:16–17",
-                "text": "Que a mensagem a respeito de Cristo, em toda a sua riqueza, preencha a vida de vocês. Ensinem e aconselhem uns aos outros com toda a sabedoria. Cantem a Deus salmos, hinos e cânticos espirituais com o coração agradecido."
-              },
-              {
-                "ref": "Atos 2:11–13",
-                "text": "(tanto judeus como convertidos ao judaísmo), cretenses e árabes, e todos nós ouvimos estas pessoas falarem em nossa própria língua sobre as coisas maravilhosas que Deus fez!”."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -2477,47 +1436,13 @@
             "number": 9,
             "text": "Sim, vinho que escorre para meu amado, que flui suave por lábios e dentes.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Cânticos 5:16",
-                "text": "Sua voz é a própria doçura; ele é desejável em todos os sentidos. Esse, ó mulheres de Jerusalém, é meu amado, meu amigo."
-              },
-              {
-                "ref": "Efésios 4:29",
-                "text": "Evitem o linguajar sujo e insultante. Que todas as suas palavras sejam boas e úteis, a fim de dar ânimo àqueles que as ouvirem."
-              },
-              {
-                "ref": "Colossenses 3:16–17",
-                "text": "Que a mensagem a respeito de Cristo, em toda a sua riqueza, preencha a vida de vocês. Ensinem e aconselhem uns aos outros com toda a sabedoria. Cantem a Deus salmos, hinos e cânticos espirituais com o coração agradecido."
-              },
-              {
-                "ref": "Atos 2:11–13",
-                "text": "(tanto judeus como convertidos ao judaísmo), cretenses e árabes, e todos nós ouvimos estas pessoas falarem em nossa própria língua sobre as coisas maravilhosas que Deus fez!”."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 10,
             "text": "Eu sou de meu amado, e ele me deseja.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Salmos 45:11",
-                "text": "pois o rei, seu marido, se encanta com sua beleza; honre-o, pois ele é seu senhor."
-              },
-              {
-                "ref": "Cânticos 6:3",
-                "text": "Eu sou de meu amado, e meu amado é meu; ele pastoreia entre os lírios."
-              },
-              {
-                "ref": "Cânticos 2:16",
-                "text": "Meu amado é meu, e eu sou dele; ele pastoreia entre os lírios."
-              },
-              {
-                "ref": "Gálatas 2:20",
-                "text": "Fui crucificado com Cristo; assim, já não sou eu quem vive, mas Cristo vive em mim. Portanto, vivo neste corpo terreno pela fé no Filho de Deus, que me amou e se entregou por mim."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 11,
@@ -2526,15 +1451,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 2:10–13",
-                "text": "Meu amado me disse: “Levante-se, minha querida! Venha comigo, minha bela!"
-              },
-              {
-                "ref": "Cânticos 4:8",
-                "text": "Venha comigo do Líbano, minha noiva, venha comigo do Líbano. Desça do monte Amana, dos cumes do Senir e do Hermom, onde os leões têm suas tocas e os leopardos vivem nas montanhas."
-              },
-              {
-                "ref": "Cânticos 1:4",
-                "text": "Leve-me com você; venha, vamos depressa! O rei me trouxe ao quarto dele."
+                "text": "Meu amado me disse: “Levante-se, minha querida! Venha comigo, minha bela! Veja, o inverno acabou, e as chuvas passaram. As flores estão brotando; chegou a época das canções, e o arrulhar das pombas enche o ar. As figueiras começam a dar frutos, e as videiras perfumadas florescem. Levante-se, minha querida! Venha comigo, minha bela!”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2545,19 +1463,13 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 6:11",
-                "text": "Desci ao bosque das nogueiras e fui ao vale ver as novas plantas, ver se as videiras tinham brotado e se as romãs tinham florescido."
-              },
-              {
-                "ref": "Efésios 6:24",
-                "text": "Que a graça de Deus esteja eternamente sobre todos que amam nosso Senhor Jesus Cristo."
+                "text": "Desci ao bosque das nogueiras e fui ao vale ver as novas plantas, ver se as videiras tinham brotado e se as romãs tinham florescido.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Tessalonicenses 3:5–6",
-                "text": "Assim, quando não pude mais suportar, enviei Timóteo para saber se continuavam firmes na fé. Tinha receio de que o tentador os tivesse vencido e todo o nosso trabalho houvesse sido inútil."
-              },
-              {
-                "ref": "Cânticos 7:6",
-                "text": "Como você é linda! Como você é agradável, meu amor, e cheia de delícias!"
+                "text": "Assim, quando não pude mais suportar, enviei Timóteo para saber se continuavam firmes na fé. Tinha receio de que o tentador os tivesse vencido e todo o nosso trabalho houvesse sido inútil. Agora, porém, Timóteo voltou trazendo boas notícias a respeito de sua fé e seu amor. Ele nos contou que vocês se lembram sempre com alegria de nossa visita e que desejam nos ver tanto quanto nós queremos vê-los.",
+                "category": "Tipologia & Aliança"
               }
             ]
           },
@@ -2565,24 +1477,7 @@
             "number": 13,
             "text": "Ali as mandrágoras espalham sua fragrância, e os melhores frutos estão à nossa porta, delícias novas e antigas, que guardei para você, meu amado.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Gênesis 30:14",
-                "text": "Certo dia, durante a colheita do trigo, Rúben encontrou algumas mandrágoras que cresciam no campo e as trouxe para Lia, sua mãe. Raquel suplicou a Lia: “Por favor, dê-me algumas das mandrágoras de seu filho”."
-              },
-              {
-                "ref": "Mateus 13:52",
-                "text": "Então ele acrescentou: “Todo mestre da lei que se torna discípulo no reino dos céus é como o dono de uma casa que tira do seu tesouro verdades preciosas, tanto novas como velhas”."
-              },
-              {
-                "ref": "Isaías 60:6–7",
-                "text": "Grandes caravanas de camelos cobrirão sua terra, camelos vindos de Midiã e de Efá. O povo de Sabá trará ouro e incenso e adorará o SENHOR."
-              },
-              {
-                "ref": "Filipenses 1:11",
-                "text": "Que vocês sejam sempre cheios do fruto da justiça, que vem por meio de Jesus Cristo, para a glória e o louvor de Deus."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       }
@@ -2600,24 +1495,7 @@
             "number": 1,
             "text": "Quem dera você fosse meu irmão, amamentado nos seios de minha mãe. Então eu poderia beijá-lo publicamente, e ninguém me criticaria.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Salmos 45:10–11",
-                "text": "Ouça, ó filha de rei; leve a sério o que digo. Esqueça seu povo e sua família, pois o rei, seu marido, se encanta com sua beleza; honre-o, pois ele é seu senhor."
-              },
-              {
-                "ref": "Zacarias 9:9",
-                "text": "Alegre-se, ó povo de Sião! Exulte, ó preciosa Jerusalém! Vejam, seu rei está chegando; ele é justo e vitorioso, mas também é humilde e vem montado num jumento, num jumentinho, cria de jumenta."
-              },
-              {
-                "ref": "Gálatas 4:26",
-                "text": "A segunda, Sara, representa a Jerusalém celestial. Ela é a mulher livre, e é nossa mãe."
-              },
-              {
-                "ref": "Isaías 60:14",
-                "text": "Os descendentes de seus opressores virão e se curvarão diante de você. Aqueles que a desprezavam beijarão seus pés. Eles a chamarão de Cidade do SENHOR, a Sião do Santo de Israel."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 2,
@@ -2625,20 +1503,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 3:4",
-                "text": "Pouco depois de me afastar deles, encontrei meu amado! Segurei-o e abracei-o com força; levei-o à casa de minha mãe, à cama onde fui concebida."
-              },
-              {
-                "ref": "Cânticos 4:10–Cânticos 5:1",
-                "text": "Seu amor é delicioso, minha amiga, minha noiva. Seu amor é melhor que vinho; seu perfume é mais agradável que especiarias."
-              },
-              {
-                "ref": "Gálatas 4:26",
-                "text": "A segunda, Sara, representa a Jerusalém celestial. Ela é a mulher livre, e é nossa mãe."
-              },
-              {
                 "ref": "2 Timóteo 3:15",
-                "text": "Desde a infância lhe foram ensinadas as Sagradas Escrituras, que lhe deram sabedoria para receber a salvação que vem pela fé em Cristo Jesus."
+                "text": "Desde a infância lhe foram ensinadas as Sagradas Escrituras, que lhe deram sabedoria para receber a salvação que vem pela fé em Cristo Jesus.",
+                "category": "Citação & Cumprimento"
               }
             ]
           },
@@ -2649,19 +1516,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 2:6",
-                "text": "Seu braço esquerdo está sob a minha cabeça, e o direito me abraça."
-              },
-              {
-                "ref": "2 Coríntios 12:9",
-                "text": "mas ele disse: “Minha graça é tudo de que você precisa. Meu poder opera melhor na fraqueza”. Portanto, agora fico feliz de me orgulhar de minhas fraquezas, para que o poder de Deus opere por meu intermédio."
-              },
-              {
-                "ref": "Deuteronômio 33:27",
-                "text": "O Deus eterno é seu refúgio, e seus braços eternos os sustentam. Expulsa os inimigos de diante de vocês e grita: ‘Destruam esses povos!’."
-              },
-              {
-                "ref": "Isaías 62:4–5",
-                "text": "Nunca mais será chamada de “Cidade Abandonada” nem de “Terra Desolada”. Seu novo nome será “Cidade do Prazer de Deus” e “Esposa de Deus”, pois o SENHOR tem prazer em você e a tomará como esposa."
+                "text": "Seu braço esquerdo está sob a minha cabeça, e o direito me abraça.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2672,11 +1528,13 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 2:7",
-                "text": "Prometam, ó mulheres de Jerusalém, pelas gazelas e corças selvagens, que não despertarão o amor antes do tempo."
+                "text": "Prometam, ó mulheres de Jerusalém, pelas gazelas e corças selvagens, que não despertarão o amor antes do tempo.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Cânticos 3:5",
-                "text": "Prometam, ó mulheres de Jerusalém, pelas gazelas e corças selvagens, que não despertarão o amor antes do tempo."
+                "text": "Prometam, ó mulheres de Jerusalém, pelas gazelas e corças selvagens, que não despertarão o amor antes do tempo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -2692,19 +1550,8 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 3:6",
-                "text": "O que é isso que vem subindo do deserto, como nuvem de fumaça? De onde vem esse perfume de mirra e incenso, o aroma de todo tipo de especiaria?"
-              },
-              {
-                "ref": "Isaías 40:3",
-                "text": "Ouçam! Uma voz clama: “Abram caminho no deserto para o SENHOR! Preparem para nosso Deus uma estrada reta na terra desolada!"
-              },
-              {
-                "ref": "Salmos 63:8",
-                "text": "Minha alma se apega a ti; tua forte mão direita me sustenta."
-              },
-              {
-                "ref": "Cânticos 2:3",
-                "text": "Como uma macieira entre as árvores do bosque, assim é meu amado entre os rapazes. À sua sombra agradável eu me sento e saboreio seus deliciosos frutos."
+                "text": "O que é isso que vem subindo do deserto, como nuvem de fumaça? De onde vem esse perfume de mirra e incenso, o aroma de todo tipo de especiaria?",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -2719,20 +1566,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Cânticos 3:6",
-                "text": "O que é isso que vem subindo do deserto, como nuvem de fumaça? De onde vem esse perfume de mirra e incenso, o aroma de todo tipo de especiaria?"
-              },
-              {
                 "ref": "Isaías 40:3",
-                "text": "Ouçam! Uma voz clama: “Abram caminho no deserto para o SENHOR! Preparem para nosso Deus uma estrada reta na terra desolada!"
-              },
-              {
-                "ref": "Salmos 63:8",
-                "text": "Minha alma se apega a ti; tua forte mão direita me sustenta."
-              },
-              {
-                "ref": "Cânticos 2:3",
-                "text": "Como uma macieira entre as árvores do bosque, assim é meu amado entre os rapazes. À sua sombra agradável eu me sento e saboreio seus deliciosos frutos."
+                "text": "Ouçam! Uma voz clama: “Abram caminho no deserto para o SENHOR! Preparem para nosso Deus uma estrada reta na terra desolada!",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2743,19 +1579,8 @@
             "crossReferences": [
               {
                 "ref": "Apocalipse 12:11",
-                "text": "Eles o derrotaram pelo sangue do Cordeiro e pelo testemunho deles. Não amaram a própria vida nem mesmo diante da morte."
-              },
-              {
-                "ref": "Isaías 49:16",
-                "text": "Vejam, escrevi seu nome na palma de minhas mãos; seus muros em ruínas estão sempre em minha mente."
-              },
-              {
-                "ref": "Filipenses 1:20–23",
-                "text": "Minha grande expectativa e esperança é que eu jamais seja envergonhado, mas que continue a trabalhar corajosamente, como sempre fiz, de modo que Cristo seja honrado por meu intermédio, quer eu viva, quer eu morra."
-              },
-              {
-                "ref": "Números 5:14",
-                "text": "Se o marido tiver ciúmes, suspeitar da esposa e precisar saber se ela se contaminou ou não,"
+                "text": "Eles o derrotaram pelo sangue do Cordeiro e pelo testemunho deles. Não amaram a própria vida nem mesmo diante da morte.",
+                "category": "Citação & Cumprimento"
               }
             ]
           },
@@ -2765,20 +1590,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Provérbios 6:35",
-                "text": "Não aceitará compensação alguma, nem se satisfará com os presentes mais valiosos."
+                "ref": "Romanos 13:8–10",
+                "text": "Não devam nada a ninguém, a não ser o amor de uns pelos outros. Quem ama seu próximo cumpre os requisitos da lei de Deus. Pois os mandamentos dizem: “Não cometa adultério. Não mate. Não roube. Não cobice”. Esses e outros mandamentos semelhantes se resumem num só: “Ame o seu próximo como a si mesmo”. O amor não faz o mal ao próximo, portanto o amor cumpre todas as exigências da lei de Deus.",
+                "category": "Tipologia & Aliança"
               },
               {
                 "ref": "Isaías 43:2",
-                "text": "Quando passar por águas profundas, estarei a seu lado. Quando atravessar rios, não se afogará. Quando passar pelo fogo, não se queimará; as chamas não lhe farão mal."
-              },
-              {
-                "ref": "Provérbios 6:31",
-                "text": "Ainda assim, se for apanhado, terá de pagar sete vezes o que roubou, mesmo que precise vender tudo que há em sua casa."
-              },
-              {
-                "ref": "Romanos 13:8–10",
-                "text": "Não devam nada a ninguém, a não ser o amor de uns pelos outros. Quem ama seu próximo cumpre os requisitos da lei de Deus."
+                "text": "Quando passar por águas profundas, estarei a seu lado. Quando atravessar rios, não se afogará. Quando passar pelo fogo, não se queimará; as chamas não lhe farão mal.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -2791,47 +1610,13 @@
             "number": 8,
             "text": "Temos uma irmãzinha, que ainda é jovem demais para ter seios. O que faremos por nossa irmã, se alguém a pedir em casamento?",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Pedro 2:12",
-                "text": "Procurem viver de maneira exemplar entre os que não creem. Assim, mesmo que eles os acusem de praticar o mal, verão seu comportamento correto e darão glória a Deus quando ele julgar o mundo."
-              },
-              {
-                "ref": "Salmos 2:8",
-                "text": "Basta pedir e lhe darei as nações como herança, a terra inteira como sua propriedade."
-              },
-              {
-                "ref": "Atos 22:21",
-                "text": "“Mas o Senhor me disse: ‘Vá, pois eu o enviarei para longe, para os gentios’”."
-              },
-              {
-                "ref": "Ezequiel 16:55–56",
-                "text": "Quando suas irmãs, Sodoma e Samaria, e todos os seus habitantes forem restaurados, você também será restaurada. Você, em seus dias de arrogância, desprezava Sodoma."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 9,
             "text": "Se ela for um muro, nós a protegeremos com uma torre de prata. Se ela for uma porta, nós a fecharemos com uma tranca de cedro.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Atos 14:27",
-                "text": "Quando chegaram a Antioquia, reuniram a igreja e relataram tudo que Deus tinha feito por meio deles e como tinha aberto a porta da fé também para os gentios."
-              },
-              {
-                "ref": "Efésios 2:20–22",
-                "text": "Juntos, somos sua casa, edificados sobre os alicerces dos apóstolos e dos profetas. E a pedra angular é o próprio Cristo Jesus."
-              },
-              {
-                "ref": "1 Coríntios 3:10–12",
-                "text": "Pela graça que me foi dada, lancei o alicerce como um construtor competente, e agora outros estão construindo sobre ele. Mas quem constrói sobre o alicerce precisa ter muito cuidado,"
-              },
-              {
-                "ref": "Zacarias 6:12–15",
-                "text": "Diga-lhe: ‘Assim diz o SENHOR dos Exércitos: Aqui está o homem chamado Renovo. Ele brotará de seu lugar e construirá o templo do SENHOR."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -2842,24 +1627,7 @@
             "number": 10,
             "text": "Eu sou um muro, e meus seios são suas torres. Quando meu amado olha para mim, ele se agrada do que vê.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Isaías 60:10",
-                "text": "“Estrangeiros virão para reconstruir suas cidades, e seus reis a servirão. Pois, ainda que eu a tenha destruído em minha ira, por causa de minha graça terei misericórdia de você."
-              },
-              {
-                "ref": "Lucas 1:30",
-                "text": "“Não tenha medo, Maria”, disse o anjo, “pois você encontrou favor diante de Deus."
-              },
-              {
-                "ref": "Ezequiel 16:7",
-                "text": "Eu a fiz desenvolver-se, como uma planta no campo. Você cresceu e se tornou uma linda joia. Seus seios se formaram e seu cabelo cresceu, mas você continuava nua."
-              },
-              {
-                "ref": "Deuteronômio 7:7–8",
-                "text": "“O SENHOR não se afeiçoou a vocês nem os escolheu por serem mais numerosos que outras nações, pois vocês eram a menor de todas as nações!"
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 11,
@@ -2867,20 +1635,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Eclesiastes 2:4",
-                "text": "Dediquei-me a projetos grandiosos, construindo casas enormes e plantando belos vinhedos."
-              },
-              {
                 "ref": "Isaías 7:23",
-                "text": "Naquele dia, os vinhedos prósperos, que hoje valem mil peças de prata, se tornarão terrenos cheios de espinhos e mato."
+                "text": "Naquele dia, os vinhedos prósperos, que hoje valem mil peças de prata, se tornarão terrenos cheios de espinhos e mato.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Lucas 20:9–18",
-                "text": "Em seguida, Jesus se voltou para o povo e contou a seguinte parábola: “Um homem plantou um vinhedo e o arrendou a alguns lavradores. Depois, partiu para um lugar distante, onde passou um longo tempo."
+                "ref": "Lucas 20:9–10",
+                "text": "Em seguida, Jesus se voltou para o povo e contou a seguinte parábola: “Um homem plantou um vinhedo e o arrendou a alguns lavradores. Depois, partiu para um lugar distante, onde passou um longo tempo. Na época da colheita da uva, enviou um de seus servos para receber sua parte da produção. Os lavradores atacaram o servo, o espancaram e o mandaram de volta, de mãos vazias.",
+                "category": "Tipologia & Aliança"
               },
               {
                 "ref": "Gênesis 20:16",
-                "text": "E disse a Sara: “Estou dando a seu irmão mil peças de prata diante de todas estas testemunhas para reparar qualquer dano que eu lhe tenha causado. Assim, todos saberão que você é inocente”."
+                "text": "E disse a Sara: “Estou dando a seu irmão mil peças de prata diante de todas estas testemunhas para reparar qualquer dano que eu lhe tenha causado. Assim, todos saberão que você é inocente”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2888,24 +1655,7 @@
             "number": 12,
             "text": "Quanto a meu vinhedo, faço dele o que quero, e Salomão não precisa pagar mil peças de prata. Darei, contudo, duzentas peças aos que cuidam de seus frutos.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Cânticos 1:6",
-                "text": "Não me olhem assim porque sou morena; o sol me escureceu a pele. Meus irmãos se zangaram comigo e me obrigaram a cuidar de seus vinhedos; de mim mesma, de minha videira, não pude cuidar."
-              },
-              {
-                "ref": "Atos 20:28",
-                "text": "“Portanto, cuidem de si mesmos e do rebanho sobre o qual o Espírito Santo os colocou como bispos, a fim de pastorearem sua igreja, comprada com seu próprio sangue."
-              },
-              {
-                "ref": "1 Timóteo 4:15–16",
-                "text": "Dedique total atenção a essas questões. Entregue-se inteiramente a suas tarefas, para que todos vejam seu progresso."
-              },
-              {
-                "ref": "Provérbios 4:23",
-                "text": "Acima de todas as coisas, guarde seu coração, pois ele dirige o rumo de sua vida."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -2916,24 +1666,7 @@
             "number": 13,
             "text": "Minha querida, que mora nos jardins, seus companheiros ouvem atentamente sua voz; deixe-me ouvi-la também!",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Cânticos 4:16",
-                "text": "Desperte, vento norte! Levante-se, vento sul! Soprem em meu jardim e espalhem sua fragrância por toda parte. Entre em seu jardim, meu amor, e saboreie seus melhores frutos."
-              },
-              {
-                "ref": "Cânticos 1:7",
-                "text": "Diga-me, meu amor, aonde levará seu rebanho hoje? Onde fará suas ovelhas descansarem ao meio-dia? Por que eu andaria sem rumo, como uma prostituta, entre seus amigos e os rebanhos deles?"
-              },
-              {
-                "ref": "Mateus 28:20",
-                "text": "Ensinem esses novos discípulos a obedecerem a todas as ordens que eu lhes dei. E lembrem-se disto: estou sempre com vocês, até o fim dos tempos”."
-              },
-              {
-                "ref": "Salmos 50:15",
-                "text": "Então clamem a mim em tempos de aflição; eu os livrarei, e vocês me darão glória.”"
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -2947,19 +1680,13 @@
             "crossReferences": [
               {
                 "ref": "Cânticos 2:17",
-                "text": "Antes que soprem as brisas do amanhecer, e fujam as sombras da noite, volte para mim, meu amor, como a gazela, como o jovem cervo nos montes íngremes."
-              },
-              {
-                "ref": "Apocalipse 22:20",
-                "text": "Aquele que é testemunha fiel de todas essas coisas diz: “Sim, venho em breve!”. Amém! Vem, Senhor Jesus!"
-              },
-              {
-                "ref": "Apocalipse 22:17",
-                "text": "O Espírito e a noiva dizem: “Vem!”. Que todo aquele que ouve diga: “Vem!”. Quem tiver sede, venha. Quem quiser, beba de graça da água da vida."
+                "text": "Antes que soprem as brisas do amanhecer, e fujam as sombras da noite, volte para mim, meu amor, como a gazela, como o jovem cervo nos montes íngremes.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Cânticos 2:9",
-                "text": "Meu amado é como a gazela, como o jovem cervo. Vejam, lá está ele atrás do muro, observando pelas janelas, espiando por entre as grades."
+                "text": "Meu amado é como a gazela, como o jovem cervo. Vejam, lá está ele atrás do muro, observando pelas janelas, espiando por entre as grades.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }

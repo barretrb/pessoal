@@ -13,20 +13,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Romanos 1:7",
-                "text": "Escrevo a todos vocês que estão em Roma, amados por Deus e chamados para ser seu povo santo. Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz."
-              },
-              {
                 "ref": "2 Tessalonicenses 1:1",
-                "text": "Nós, Paulo, Silas e Timóteo, escrevemos esta carta à igreja em Tessalônica, a vocês que estão em Deus, nosso Pai, e no Senhor Jesus Cristo."
+                "text": "Nós, Paulo, Silas e Timóteo, escrevemos esta carta à igreja em Tessalônica, a vocês que estão em Deus, nosso Pai, e no Senhor Jesus Cristo.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Atos 20:4",
-                "text": "Alguns homens viajavam com ele: Sópatro, filho de Pirro, de Bereia; Aristarco e Secundo, de Tessalônica; Gaio, de Derbe; Timóteo; e Tíquico e Trófimo, da província da Ásia."
+                "ref": "Romanos 1:7",
+                "text": "Escrevo a todos vocês que estão em Roma, amados por Deus e chamados para ser seu povo santo. Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Atos 18:5",
-                "text": "Depois que Silas e Timóteo chegaram da Macedônia, Paulo se dedicou totalmente à pregação da palavra e testemunhava aos judeus que Jesus era o Cristo."
+                "text": "Depois que Silas e Timóteo chegaram da Macedônia, Paulo se dedicou totalmente à pregação da palavra e testemunhava aos judeus que Jesus era o Cristo.",
+                "category": "Passagem Paralela"
               }
             ]
           }
@@ -41,20 +40,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Romanos 1:8–9",
-                "text": "Antes de tudo, quero dizer que, por meio de Jesus Cristo, agradeço a meu Deus por todos vocês, pois sua fé nele é comentada em todo o mundo."
-              },
-              {
-                "ref": "Efésios 1:15–16",
-                "text": "Desde que eu soube de sua fé no Senhor Jesus e de seu amor pelo povo santo em toda parte, não deixo de agradecer a Deus por vocês. Em minhas orações,"
-              },
-              {
                 "ref": "Filemom 1:4",
-                "text": "Sempre dou graças a meu Deus por você em minhas orações,"
+                "text": "Sempre dou graças a meu Deus por você em minhas orações,",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Colossenses 1:3",
-                "text": "Sempre oramos por vocês e damos graças a Deus, o Pai de nosso Senhor Jesus Cristo,"
+                "text": "Sempre oramos por vocês e damos graças a Deus, o Pai de nosso Senhor Jesus Cristo,",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -64,20 +57,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
+                "ref": "Gálatas 5:6",
+                "text": "Pois, em Cristo Jesus, não há benefício algum em ser ou não circuncidado. O que importa é a fé que se expressa pelo amor.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
                 "ref": "1 Coríntios 13:13",
-                "text": "Três coisas, na verdade, permanecerão: a fé, a esperança e o amor, e a maior delas é o amor."
+                "text": "Três coisas, na verdade, permanecerão: a fé, a esperança e o amor, e a maior delas é o amor.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Apocalipse 2:19",
-                "text": "“Sei de tudo que você faz. Vi seu amor, sua fé, seu serviço e sua perseverança, e observei como você tem crescido em todas essas coisas."
-              },
-              {
-                "ref": "Gálatas 5:6",
-                "text": "Pois, em Cristo Jesus, não há benefício algum em ser ou não circuncidado. O que importa é a fé que se expressa pelo amor."
-              },
-              {
-                "ref": "2 Tessalonicenses 1:11",
-                "text": "Assim, continuamos a orar por vocês, pedindo a nosso Deus que os capacite a ter uma vida digna de seu chamado e lhes dê poder para realizar as coisas boas que a fé os motivar a fazer."
+                "text": "“Sei de tudo que você faz. Vi seu amor, sua fé, seu serviço e sua perseverança, e observei como você tem crescido em todas essas coisas.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -88,19 +80,23 @@
             "crossReferences": [
               {
                 "ref": "2 Tessalonicenses 2:13",
-                "text": "Quanto a nós, não podemos deixar de dar graças a Deus por vocês, irmãos amados pelo Senhor. Somos sempre gratos porque Deus os escolheu para estarem entre os primeiros a receber a salvação por meio do Espírito que os tor..."
-              },
-              {
-                "ref": "Tito 3:4–5",
-                "text": "Mas, Quando Deus, nosso Salvador, revelou sua bondade e seu amor,"
+                "text": "Quanto a nós, não podemos deixar de dar graças a Deus por vocês, irmãos amados pelo Senhor. Somos sempre gratos porque Deus os escolheu para estarem entre os primeiros a receber a salvação por meio do Espírito que os torna santos e pela fé na verdade.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Pedro 1:10",
-                "text": "Por isso, irmãos, trabalhem ainda mais arduamente para mostrar que, de fato, estão entre os que foram chamados e escolhidos. Façam essas coisas e jamais tropeçarão."
+                "text": "Por isso, irmãos, trabalhem ainda mais arduamente para mostrar que, de fato, estão entre os que foram chamados e escolhidos. Façam essas coisas e jamais tropeçarão.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "Tito 3:4–5",
+                "text": "Mas, Quando Deus, nosso Salvador, revelou sua bondade e seu amor, ele nos salvou não porque tivéssemos feito algo justo, mas por causa de sua misericórdia. Ele nos lavou para remover nossos pecados, nos fez nascer de novo e nos deu nova vida por meio do Espírito Santo.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Romanos 9:25",
-                "text": "A esse respeito, Deus diz na profecia de Oseias: “Chamarei ‘meu povo’ aqueles que não eram meu povo, e amarei aqueles que antes eu não amava”."
+                "text": "A esse respeito, Deus diz na profecia de Oseias: “Chamarei ‘meu povo’ aqueles que não eram meu povo, e amarei aqueles que antes eu não amava”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -110,20 +106,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Tessalonicenses 3:7–9",
-                "text": "Pois vocês sabem que devem seguir nosso exemplo. Não ficamos ociosos quando estivemos com vocês,"
-              },
-              {
-                "ref": "Marcos 16:20",
-                "text": "Os discípulos foram a toda parte e anunciavam a mensagem, e o Senhor cooperava com eles, confirmando-a com muitos sinais."
-              },
-              {
                 "ref": "1 Coríntios 2:2–5",
-                "text": "Pois decidi que, enquanto estivesse com vocês, me esqueceria de tudo exceto de Jesus Cristo, aquele que foi crucificado."
+                "text": "Pois decidi que, enquanto estivesse com vocês, me esqueceria de tudo exceto de Jesus Cristo, aquele que foi crucificado. Fui até vocês em fraqueza, atemorizado e trêmulo. Minha mensagem e minha pregação foram muito simples. Em vez de usar argumentos persuasivos e astutos, me firmei no poder do Espírito. Agi desse modo para que vocês não se apoiassem em sabedoria humana, mas no poder de Deus.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Tessalonicenses 2:14",
-                "text": "Ele os chamou para a salvação quando lhes anunciamos as boas-novas; agora vocês podem participar da glória de nosso Senhor Jesus Cristo."
+                "text": "Ele os chamou para a salvação quando lhes anunciamos as boas-novas; agora vocês podem participar da glória de nosso Senhor Jesus Cristo.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "2 Tessalonicenses 3:7–9",
+                "text": "Pois vocês sabem que devem seguir nosso exemplo. Não ficamos ociosos quando estivemos com vocês, nem nos alimentamos às custas dos outros. Trabalhamos arduamente dia e noite, a fim de não sermos um peso para nenhum de vocês. Embora tivéssemos o direito de pedir que nos alimentassem, queríamos lhes dar o exemplo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -133,20 +128,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Coríntios 11:1",
-                "text": "Sejam meus imitadores, como eu sou imitador de Cristo."
-              },
-              {
                 "ref": "Atos 13:52",
-                "text": "E os discípulos estavam cheios de alegria e do Espírito Santo."
-              },
-              {
-                "ref": "1 Coríntios 4:16",
-                "text": "Portanto, suplico-lhes que sejam meus imitadores."
+                "text": "E os discípulos estavam cheios de alegria e do Espírito Santo.",
+                "category": "Passagem Paralela"
               },
               {
                 "ref": "Gálatas 5:22",
-                "text": "Mas o Espírito produz este fruto: amor, alegria, paz, paciência, amabilidade, bondade, fidelidade,"
+                "text": "Mas o Espírito produz este fruto: amor, alegria, paz, paciência, amabilidade, bondade, fidelidade,",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "1 Coríntios 4:16",
+                "text": "Portanto, suplico-lhes que sejam meus imitadores.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -156,20 +150,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Tito 2:7",
-                "text": "Você mesmo deve ser exemplo da prática de boas obras. Tudo que fizer deve refletir a integridade e a seriedade de seu ensino."
-              },
-              {
                 "ref": "1 Timóteo 4:12",
-                "text": "Não deixe que ninguém o menospreze porque você é jovem. Seja exemplo para todos os fiéis nas palavras, na conduta, no amor, na fé e na pureza."
-              },
-              {
-                "ref": "1 Pedro 5:3",
-                "text": "Não abusem de sua autoridade com aqueles que foram colocados sob seus cuidados, mas guiem-nos com seu bom exemplo."
-              },
-              {
-                "ref": "1 Tessalonicenses 1:8",
-                "text": "Agora, partindo de vocês, a palavra do Senhor tem se espalhado por toda parte, até mesmo além da Macedônia e da Acaia, pois sua fé em Deus se tornou conhecida em todo lugar. Não precisamos sequer mencioná-la,"
+                "text": "Não deixe que ninguém o menospreze porque você é jovem. Seja exemplo para todos os fiéis nas palavras, na conduta, no amor, na fé e na pureza.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -179,20 +162,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
+                "ref": "Romanos 10:17–18",
+                "text": "Portanto, a fé vem por ouvir, isto é, por ouvir as boas-novas a respeito de Cristo. Mas eu pergunto: o povo de Israel ouviu, de fato, a mensagem? Sim, eles ouviram: “Sua mensagem chegou a toda a terra, e suas palavras alcançaram os confins do mundo”.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
                 "ref": "Romanos 1:8",
-                "text": "Antes de tudo, quero dizer que, por meio de Jesus Cristo, agradeço a meu Deus por todos vocês, pois sua fé nele é comentada em todo o mundo."
-              },
-              {
-                "ref": "Romanos 10:14–18",
-                "text": "Mas como poderão invocá-lo se não crerem nele? E como crerão nele se jamais tiverem ouvido a seu respeito? E como ouvirão a seu respeito se ninguém lhes falar?"
-              },
-              {
-                "ref": "2 Tessalonicenses 1:4",
-                "text": "Por isso nos orgulhamos de falar às outras igrejas de Deus sobre sua perseverança e fidelidade em todas as perseguições e aflições que vocês têm sofrido."
-              },
-              {
-                "ref": "3 João 1:12",
-                "text": "Todos, incluindo a própria verdade, falam bem de Demétrio. Nós dizemos o mesmo a respeito dele, e você sabe que falamos a verdade."
+                "text": "Antes de tudo, quero dizer que, por meio de Jesus Cristo, agradeço a meu Deus por todos vocês, pois sua fé nele é comentada em todo o mundo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -202,20 +179,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Timóteo 4:10",
-                "text": "Trabalhamos arduamente e continuamos a lutar porque nossa esperança está no Deus vivo, o Salvador de todos, especialmente dos que creem."
-              },
-              {
-                "ref": "1 Coríntios 12:2",
-                "text": "Vocês sabem que, quando ainda eram pagãos, foram conduzidos pelo caminho errado e levados a adorar ídolos mudos."
-              },
-              {
                 "ref": "Gálatas 4:8–9",
-                "text": "Antes de conhecerem a Deus, vocês eram escravos de supostos deuses que, na verdade, nem existem."
+                "text": "Antes de conhecerem a Deus, vocês eram escravos de supostos deuses que, na verdade, nem existem. Agora que conhecem a Deus, ou melhor, agora que Deus os conhece, por que desejam voltar atrás e tornar-se novamente escravos dos frágeis e inúteis princípios básicos deste mundo?",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Tessalonicenses 2:13",
-                "text": "Portanto, nunca deixamos de agradecer a Deus, pois, quando vocês receberam de nós a mensagem dele, não consideraram nossas palavras meras ideias humanas, mas as aceitaram como palavra de Deus, o que sem dúvida são. E ess..."
+                "text": "Portanto, nunca deixamos de agradecer a Deus, pois, quando vocês receberam de nós a mensagem dele, não consideraram nossas palavras meras ideias humanas, mas as aceitaram como palavra de Deus, o que sem dúvida são. E essa mensagem continua a atuar em vocês, os que creem.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -225,20 +196,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Tessalonicenses 5:9",
-                "text": "Porque Deus decidiu nos salvar por meio de nosso Senhor Jesus Cristo, em vez de derramar sua ira sobre nós."
-              },
-              {
-                "ref": "Isaías 25:8–9",
-                "text": "Ele engolirá a morte para sempre; o SENHOR Soberano enxugará todas as lágrimas! Removerá para sempre todo insulto, contra sua terra e seu povo. O SENHOR falou!"
-              },
-              {
                 "ref": "Romanos 5:9–10",
-                "text": "E, uma vez que fomos declarados justos por seu sangue, certamente seremos salvos da ira de Deus por meio dele."
-              },
-              {
-                "ref": "Mateus 3:7",
-                "text": "Mas, quando João viu que muitos fariseus e saduceus vinham ao lugar de batismo, ele os repreendeu abertamente. “Raça de víboras!”, exclamou. “Quem os convenceu a fugir da ira que está por vir?"
+                "text": "E, uma vez que fomos declarados justos por seu sangue, certamente seremos salvos da ira de Deus por meio dele. Pois, se quando ainda éramos inimigos de Deus nosso relacionamento com ele foi restaurado pela morte de seu Filho, agora que já estamos reconciliados certamente seremos salvos por sua vida.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -260,20 +220,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Tessalonicenses 3:1",
-                "text": "Finalmente, irmãos, pedimos que orem por nós. Orem para que a mensagem do Senhor se espalhe rapidamente e seja honrada por onde quer que vá, como aconteceu quando chegou a vocês."
+                "ref": "1 Coríntios 15:58",
+                "text": "Portanto, meus amados irmãos, sejam fortes e firmes. Trabalhem sempre para o Senhor com entusiasmo, pois vocês sabem que nada do que fazem para o Senhor é inútil.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "1 Coríntios 15:58",
-                "text": "Portanto, meus amados irmãos, sejam fortes e firmes. Trabalhem sempre para o Senhor com entusiasmo, pois vocês sabem que nada do que fazem para o Senhor é inútil."
+                "ref": "2 Tessalonicenses 3:1",
+                "text": "Finalmente, irmãos, pedimos que orem por nós. Orem para que a mensagem do Senhor se espalhe rapidamente e seja honrada por onde quer que vá, como aconteceu quando chegou a vocês.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Coríntios 15:2",
-                "text": "São essas boas-novas que os salvam, se continuarem a crer na mensagem como lhes anunciei; do contrário, sua fé é inútil."
-              },
-              {
-                "ref": "Filipenses 2:16",
-                "text": "Apeguem-se firmemente à mensagem da vida. Então, no dia em que Cristo voltar, me orgulharei de saber que não participei da corrida em vão e que não trabalhei inutilmente."
+                "text": "São essas boas-novas que os salvam, se continuarem a crer na mensagem como lhes anunciei; do contrário, sua fé é inútil.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -283,20 +242,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Atos 16:22–24",
-                "text": "Logo, uma multidão revoltada se juntou contra Paulo e Silas, e os magistrados ordenaram que os dois fossem despidos e açoitados com varas."
-              },
-              {
-                "ref": "Atos 4:13",
-                "text": "Quando os membros do conselho viram a coragem de Pedro e João, ficaram admirados, pois perceberam que eram homens comuns, sem instrução religiosa formal. Reconheceram também que eles haviam estado com Jesus."
-              },
-              {
-                "ref": "2 Timóteo 1:12",
-                "text": "Por isso estou sofrendo assim. Mas não me envergonho, pois conheço aquele em quem creio e tenho certeza de que ele é capaz de guardar o que me foi confiado até o dia de sua volta."
-              },
-              {
                 "ref": "1 Pedro 2:14–16",
-                "text": "sejam os oficiais nomeados e enviados por ele para castigar os que fazem o mal e honrar os que fazem o bem."
+                "text": "sejam os oficiais nomeados e enviados por ele para castigar os que fazem o mal e honrar os que fazem o bem. É da vontade de Deus que, pela prática do bem, vocês calem os ignorantes que os acusam falsamente. Pois vocês são livres e, no entanto, são escravos de Deus; não usem sua liberdade como desculpa para fazer o mal.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -304,24 +252,7 @@
             "number": 3,
             "text": "Portanto, como veem, não pregamos com a intenção de enganá-los, nem com motivos impuros, nem com artimanhas.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "2 Coríntios 4:2",
-                "text": "Rejeitamos todos os atos vergonhosos e métodos dissimulados. Não procuramos enganar ninguém nem distorcemos a palavra de Deus. Em vez disso, dizemos a verdade diante de Deus, e todos que são honestos sabem disso."
-              },
-              {
-                "ref": "2 Coríntios 2:17",
-                "text": "Não somos como muitos que fazem da palavra de Deus um artigo de comércio. Pregamos a palavra de Deus com sinceridade e com a autoridade de Cristo, sabendo que Deus nos observa."
-              },
-              {
-                "ref": "1 Tessalonicenses 4:7",
-                "text": "Pois Deus nos chamou para uma vida santa, e não impura."
-              },
-              {
-                "ref": "1 Tessalonicenses 2:5–6",
-                "text": "Como bem sabem, nunca tentamos conquistá-los com bajulação, e Deus é nossa testemunha de que não agimos motivados pela ganância. Quanto ao reconhecimento humano, nunca o buscamos de vocês, nem de nenhum outro."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 4,
@@ -329,20 +260,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Gálatas 1:10",
-                "text": "Acaso estou tentando conquistar a aprovação das pessoas? Ou será que procuro a aprovação de Deus? Se meu objetivo fosse agradar as pessoas, não seria servo de Cristo."
-              },
-              {
                 "ref": "Romanos 8:27",
-                "text": "E o Pai, que conhece cada coração, sabe quais são as intenções do Espírito, pois o Espírito intercede por nós, o povo santo, segundo a vontade de Deus."
+                "text": "E o Pai, que conhece cada coração, sabe quais são as intenções do Espírito, pois o Espírito intercede por nós, o povo santo, segundo a vontade de Deus.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Gálatas 2:7",
-                "text": "Ao contrário, viram que me havia sido confiada a responsabilidade de anunciar as boas-novas aos gentios, assim como a Pedro tinha sido confiada a responsabilidade de anunciar as boas-novas aos judeus."
+                "text": "Ao contrário, viram que me havia sido confiada a responsabilidade de anunciar as boas-novas aos gentios, assim como a Pedro tinha sido confiada a responsabilidade de anunciar as boas-novas aos judeus.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "2 Timóteo 1:14",
-                "text": "Pelo poder do Espírito Santo que habita em nós, guarde a verdade preciosa que lhe foi confiada."
+                "ref": "Gálatas 1:10",
+                "text": "Acaso estou tentando conquistar a aprovação das pessoas? Ou será que procuro a aprovação de Deus? Se meu objetivo fosse agradar as pessoas, não seria servo de Cristo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -350,47 +280,13 @@
             "number": 5,
             "text": "Como bem sabem, nunca tentamos conquistá-los com bajulação, e Deus é nossa testemunha de que não agimos motivados pela ganância.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Romanos 1:9",
-                "text": "O Deus a quem sirvo em meu espírito, anunciando as boas-novas a respeito de seu Filho, sabe como nunca deixo de me lembrar de vocês"
-              },
-              {
-                "ref": "2 Coríntios 12:17",
-                "text": "Mas como? Algum dos homens que lhes enviei se aproveitou de vocês?"
-              },
-              {
-                "ref": "Atos 20:33",
-                "text": "“Jamais cobicei a prata, o ouro ou as roupas de alguém."
-              },
-              {
-                "ref": "Gálatas 1:20",
-                "text": "Afirmo diante de Deus que o que lhes escrevo não é mentira."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 6,
             "text": "Quanto ao reconhecimento humano, nunca o buscamos de vocês, nem de nenhum outro.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Gálatas 1:10",
-                "text": "Acaso estou tentando conquistar a aprovação das pessoas? Ou será que procuro a aprovação de Deus? Se meu objetivo fosse agradar as pessoas, não seria servo de Cristo."
-              },
-              {
-                "ref": "João 5:44",
-                "text": "Não é de admirar que não possam crer, pois vocês honram uns aos outros, mas não se importam com a honra que vem do único Deus!"
-              },
-              {
-                "ref": "João 5:41",
-                "text": "“Sua aprovação não vale nada para mim,"
-              },
-              {
-                "ref": "Filemom 1:8–9",
-                "text": "Por isso, ainda que pudesse exigir em Cristo que você faça o que é certo, prefiro pedir com base no amor — eu, Paulo, já velho e agora prisioneiro de Cristo Jesus."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 7,
@@ -398,20 +294,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Isaías 66:13",
-                "text": "Eu os consolarei em Jerusalém, como a mãe consola seu filho”."
-              },
-              {
                 "ref": "2 Timóteo 2:24–25",
-                "text": "O servo do Senhor não deve viver brigando, mas ser amável com todos, apto a ensinar e paciente. Instrua com mansidão aqueles que se opõem, na esperança de que Deus os leve ao arrependimento e, assim, conheçam a verdade."
+                "text": "O servo do Senhor não deve viver brigando, mas ser amável com todos, apto a ensinar e paciente. Instrua com mansidão aqueles que se opõem, na esperança de que Deus os leve ao arrependimento e, assim, conheçam a verdade.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "1 Tessalonicenses 2:11",
-                "text": "E sabem que tratamos a cada um como um pai trata seus filhos."
-              },
-              {
-                "ref": "Isaías 49:23",
-                "text": "Reis e rainhas os servirão e atenderão a todas as suas necessidades. Eles se curvarão diante de você com o rosto no chão e lamberão o pó de seus pés. Então você saberá que eu sou o SENHOR; quem confia em mim jamais será envergonhado”."
+                "ref": "Isaías 66:13",
+                "text": "Eu os consolarei em Jerusalém, como a mãe consola seu filho”.",
+                "category": "Citação & Cumprimento"
               }
             ]
           },
@@ -419,24 +309,7 @@
             "number": 8,
             "text": "Nós os amamos tanto que compartilhamos com vocês não apenas as boas-novas de Deus, mas também nossa própria vida.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 João 3:16",
-                "text": "Sabemos o que é o amor porque Jesus deu sua vida por nós. Portanto, também devemos dar nossa vida por nossos irmãos."
-              },
-              {
-                "ref": "2 Coríntios 12:15",
-                "text": "Por vocês, de boa vontade me desgastarei e gastarei tudo que tenho, embora pareça que, quanto mais eu os ame, menos vocês me amam."
-              },
-              {
-                "ref": "Filipenses 2:17",
-                "text": "Contudo, me alegrarei mesmo se perder a vida, entregando-a a Deus como oferta derramada, da mesma forma que o serviço fiel de vocês é uma oferta a Deus. E quero que todos vocês participem dessa alegria."
-              },
-              {
-                "ref": "Romanos 1:11–12",
-                "text": "Desejo muito visitá-los, a fim de compartilhar com vocês alguma dádiva espiritual que os ajude a se fortalecerem. Quando nos encontrarmos, quero encorajá-los na fé, e também quero ser encorajado por sua fé."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 9,
@@ -445,19 +318,13 @@
             "crossReferences": [
               {
                 "ref": "2 Tessalonicenses 3:7–9",
-                "text": "Pois vocês sabem que devem seguir nosso exemplo. Não ficamos ociosos quando estivemos com vocês,"
+                "text": "Pois vocês sabem que devem seguir nosso exemplo. Não ficamos ociosos quando estivemos com vocês, nem nos alimentamos às custas dos outros. Trabalhamos arduamente dia e noite, a fim de não sermos um peso para nenhum de vocês. Embora tivéssemos o direito de pedir que nos alimentassem, queríamos lhes dar o exemplo.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Coríntios 11:9",
-                "text": "E, quando estive com vocês e não tinha o suficiente para me sustentar, não fui um peso para ninguém, pois os irmãos que vieram da Macedônia trouxeram tudo de que eu precisava. Nunca fui um peso para vocês, e nunca serei."
-              },
-              {
-                "ref": "Atos 18:3",
-                "text": "Paulo foi morar e trabalhar com eles, pois eram fabricantes de tendas, como ele."
-              },
-              {
-                "ref": "2 Coríntios 12:13–14",
-                "text": "A única coisa que não fiz, e que faço nas outras igrejas, foi me tornar um peso para vocês. Perdoem-me por essa injustiça!"
+                "text": "E, quando estive com vocês e não tinha o suficiente para me sustentar, não fui um peso para ninguém, pois os irmãos que vieram da Macedônia trouxeram tudo de que eu precisava. Nunca fui um peso para vocês, e nunca serei.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -467,20 +334,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Pedro 5:3",
-                "text": "Não abusem de sua autoridade com aqueles que foram colocados sob seus cuidados, mas guiem-nos com seu bom exemplo."
-              },
-              {
-                "ref": "2 Coríntios 1:12",
-                "text": "Podemos dizer com certeza e com a consciência limpa que temos vivido em santidade e sinceridade dadas por Deus. Dependemos da graça divina, e não da sabedoria humana. É dessa forma que nos temos conduzido diante do mundo..."
-              },
-              {
                 "ref": "1 Tessalonicenses 1:5",
-                "text": "Pois, quando lhes apresentamos as boas-novas, não o fizemos apenas com palavras, mas também com poder, visto que o Espírito Santo lhes deu plena certeza de que era verdade o que lhes dizíamos. E vocês sabem como nos comp..."
-              },
-              {
-                "ref": "Tito 2:7–8",
-                "text": "Você mesmo deve ser exemplo da prática de boas obras. Tudo que fizer deve refletir a integridade e a seriedade de seu ensino."
+                "text": "Pois, quando lhes apresentamos as boas-novas, não o fizemos apenas com palavras, mas também com poder, visto que o Espírito Santo lhes deu plena certeza de que era verdade o que lhes dizíamos. E vocês sabem como nos comportamos entre vocês e em seu favor.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -491,19 +347,8 @@
             "crossReferences": [
               {
                 "ref": "1 Coríntios 4:14–15",
-                "text": "Não escrevo estas coisas para envergonhá-los, mas para adverti-los como meus filhos amados."
-              },
-              {
-                "ref": "Hebreus 13:22",
-                "text": "Suplico a vocês, irmãos, que prestem atenção naquilo que lhes escrevi nesta breve exortação."
-              },
-              {
-                "ref": "2 Timóteo 4:1–2",
-                "text": "Eu lhe digo solenemente, na presença de Deus e de Cristo Jesus, que um dia julgará os vivos e os mortos quando vier para estabelecer seu reino:"
-              },
-              {
-                "ref": "2 Tessalonicenses 3:12",
-                "text": "Ordenamos e insistimos em nome do Senhor Jesus Cristo que sosseguem e trabalhem para obter o próprio sustento."
+                "text": "Não escrevo estas coisas para envergonhá-los, mas para adverti-los como meus filhos amados. Pois, ainda que tivessem dez mil mestres em Cristo, vocês não têm muitos pais, pois eu me tornei seu pai espiritual em Cristo Jesus por meio das boas-novas que lhes anunciei.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -513,20 +358,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
+                "ref": "2 Tessalonicenses 2:13–14",
+                "text": "Quanto a nós, não podemos deixar de dar graças a Deus por vocês, irmãos amados pelo Senhor. Somos sempre gratos porque Deus os escolheu para estarem entre os primeiros a receber a salvação por meio do Espírito que os torna santos e pela fé na verdade. Ele os chamou para a salvação quando lhes anunciamos as boas-novas; agora vocês podem participar da glória de nosso Senhor Jesus Cristo.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
                 "ref": "Efésios 4:1",
-                "text": "Portanto, como prisioneiro no Senhor, suplico-lhes que vivam de modo digno do chamado que receberam."
+                "text": "Portanto, como prisioneiro no Senhor, suplico-lhes que vivam de modo digno do chamado que receberam.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 João 2:6",
-                "text": "Quem afirma que permanece nele deve viver como ele viveu."
-              },
-              {
-                "ref": "1 João 1:6–7",
-                "text": "Portanto, se afirmamos que temos comunhão com ele mas vivemos na escuridão, mentimos e não praticamos a verdade."
-              },
-              {
-                "ref": "2 Tessalonicenses 2:13–14",
-                "text": "Quanto a nós, não podemos deixar de dar graças a Deus por vocês, irmãos amados pelo Senhor. Somos sempre gratos porque Deus os escolheu para estarem entre os primeiros a receber a salvação por meio do Espírito que os tor..."
+                "text": "Quem afirma que permanece nele deve viver como ele viveu.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -537,19 +381,18 @@
             "crossReferences": [
               {
                 "ref": "Hebreus 4:12",
-                "text": "Pois a palavra de Deus é viva e poderosa. É mais cortante que qualquer espada de dois gumes, penetrando entre a alma e o espírito, entre a junta e a medula, e trazendo à luz até os pensamentos e desejos mais íntimos."
-              },
-              {
-                "ref": "Romanos 10:17",
-                "text": "Portanto, a fé vem por ouvir, isto é, por ouvir as boas-novas a respeito de Cristo."
+                "text": "Pois a palavra de Deus é viva e poderosa. É mais cortante que qualquer espada de dois gumes, penetrando entre a alma e o espírito, entre a junta e a medula, e trazendo à luz até os pensamentos e desejos mais íntimos.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Pedro 1:23",
-                "text": "Pois vocês nasceram de novo, não para uma vida que pode ser destruída, mas para uma vida que durará para sempre, porque vem da eterna e viva palavra de Deus."
+                "text": "Pois vocês nasceram de novo, não para uma vida que pode ser destruída, mas para uma vida que durará para sempre, porque vem da eterna e viva palavra de Deus.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Pedro 1:25",
-                "text": "mas a palavra do Senhor permanece para sempre”. E essa palavra é a mensagem das boas-novas que lhes foi anunciada."
+                "text": "mas a palavra do Senhor permanece para sempre”. E essa palavra é a mensagem das boas-novas que lhes foi anunciada.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -559,20 +402,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Tessalonicenses 3:4",
-                "text": "Quando ainda estávamos com vocês, nós os advertimos de que as aflições em breve viriam, e foi o que aconteceu, como bem sabem."
-              },
-              {
-                "ref": "Hebreus 10:33–34",
-                "text": "Houve ocasiões em que foram expostos a insultos e espancamentos; em outras, ajudaram os que passavam pelas mesmas coisas."
+                "ref": "2 Tessalonicenses 1:4",
+                "text": "Por isso nos orgulhamos de falar às outras igrejas de Deus sobre sua perseverança e fidelidade em todas as perseguições e aflições que vocês têm sofrido.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Hebreus 5:7–8",
-                "text": "Enquanto Jesus esteve na terra, ofereceu orações e súplicas, em alta voz e com lágrimas, àquele que podia salvá-lo da morte, e suas orações foram ouvidas por causa de sua profunda devoção."
-              },
-              {
-                "ref": "2 Tessalonicenses 1:4",
-                "text": "Por isso nos orgulhamos de falar às outras igrejas de Deus sobre sua perseverança e fidelidade em todas as perseguições e aflições que vocês têm sofrido."
+                "text": "Enquanto Jesus esteve na terra, ofereceu orações e súplicas, em alta voz e com lágrimas, àquele que podia salvá-lo da morte, e suas orações foram ouvidas por causa de sua profunda devoção. Embora fosse Filho, aprendeu a obediência por meio de seu sofrimento.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -582,20 +419,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
+                "ref": "Lucas 11:48–49",
+                "text": "Com isso, porém, testemunham que concordam com o que seus antepassados fizeram. Eles mataram os profetas, e vocês cooperam com eles construindo os monumentos! Foi a isto que Deus, em sua sabedoria, se referiu: ‘Eu lhes enviarei profetas e apóstolos, mas eles matarão alguns e perseguirão outros’.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
                 "ref": "Mateus 5:12",
-                "text": "Alegrem-se e exultem, porque uma grande recompensa os espera no céu. E lembrem-se de que os antigos profetas foram perseguidos da mesma forma.”"
+                "text": "Alegrem-se e exultem, porque uma grande recompensa os espera no céu. E lembrem-se de que os antigos profetas foram perseguidos da mesma forma.”",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Atos 7:52",
-                "text": "Que profeta seus antepassados não perseguiram? Mataram até aqueles que predisseram a vinda do Justo, a quem vocês traíram e assassinaram!"
-              },
-              {
-                "ref": "Lucas 11:48–53",
-                "text": "Com isso, porém, testemunham que concordam com o que seus antepassados fizeram. Eles mataram os profetas, e vocês cooperam com eles construindo os monumentos!"
-              },
-              {
-                "ref": "Atos 2:23",
-                "text": "Ele foi entregue conforme o plano preestabelecido por Deus e seu conhecimento prévio daquilo que aconteceria. Com a ajuda de gentios que desconheciam a lei, vocês o pregaram na cruz e o mataram."
+                "text": "Que profeta seus antepassados não perseguiram? Mataram até aqueles que predisseram a vinda do Justo, a quem vocês traíram e assassinaram!",
+                "category": "Passagem Paralela"
               }
             ]
           },
@@ -605,20 +441,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Atos 17:13",
-                "text": "Mas, quando os judeus de Tessalônica souberam que Paulo estava pregando a palavra de Deus em Bereia, foram até lá e criaram um alvoroço."
-              },
-              {
-                "ref": "Atos 14:19",
-                "text": "Então alguns judeus chegaram de Antioquia e Icônio e instigaram a multidão. Apedrejaram Paulo e o arrastaram para fora da cidade, pensando que ele estivesse morto."
-              },
-              {
-                "ref": "Mateus 23:32",
-                "text": "Vão e terminem o que seus antepassados começaram."
-              },
-              {
                 "ref": "Marcos 16:16",
-                "text": "Quem crer e for batizado será salvo, mas quem se recusar a crer será condenado."
+                "text": "Quem crer e for batizado será salvo, mas quem se recusar a crer será condenado.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -634,19 +459,18 @@
             "crossReferences": [
               {
                 "ref": "Colossenses 2:5",
-                "text": "Pois, embora eu esteja longe, meu coração está com vocês. E eu me alegro de que estejam vivendo como devem e de que sua fé em Cristo seja forte."
-              },
-              {
-                "ref": "1 Coríntios 5:3",
-                "text": "Embora eu não esteja com vocês em pessoa, estou presente em espírito. E, como se estivesse aí, já condenei esse homem"
-              },
-              {
-                "ref": "1 Tessalonicenses 3:6",
-                "text": "Agora, porém, Timóteo voltou trazendo boas notícias a respeito de sua fé e seu amor. Ele nos contou que vocês se lembram sempre com alegria de nossa visita e que desejam nos ver tanto quanto nós queremos vê-los."
+                "text": "Pois, embora eu esteja longe, meu coração está com vocês. E eu me alegro de que estejam vivendo como devem e de que sua fé em Cristo seja forte.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Romanos 1:13",
-                "text": "Quero que saibam, irmãos, que muitas vezes planejei visitá-los, mas até agora fui impedido. Meu desejo é trabalhar entre vocês e ver frutos espirituais como tenho visto entre outros gentios,"
+                "text": "Quero que saibam, irmãos, que muitas vezes planejei visitá-los, mas até agora fui impedido. Meu desejo é trabalhar entre vocês e ver frutos espirituais como tenho visto entre outros gentios,",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "1 Tessalonicenses 3:6",
+                "text": "Agora, porém, Timóteo voltou trazendo boas notícias a respeito de sua fé e seu amor. Ele nos contou que vocês se lembram sempre com alegria de nossa visita e que desejam nos ver tanto quanto nós queremos vê-los.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -656,20 +480,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Romanos 15:22",
-                "text": "É por isso, aliás, que há tanto tempo tenho adiado minha visita a vocês, porque estava pregando nesses lugares."
-              },
-              {
                 "ref": "Romanos 1:13",
-                "text": "Quero que saibam, irmãos, que muitas vezes planejei visitá-los, mas até agora fui impedido. Meu desejo é trabalhar entre vocês e ver frutos espirituais como tenho visto entre outros gentios,"
-              },
-              {
-                "ref": "Apocalipse 2:10",
-                "text": "Não tenha medo do que está prestes a sofrer. O diabo lançará alguns de vocês na prisão a fim de prová-los, e terão aflições por dez dias. Mas, se você permanecer fiel mesmo diante da morte, eu lhe darei a coroa da vida."
-              },
-              {
-                "ref": "Zacarias 3:1–2",
-                "text": "Então o anjo me mostrou o sumo sacerdote Josué em pé diante do anjo do SENHOR. Satanás, o acusador, também estava ali, ao lado direito do anjo, e fazia acusações contra Josué."
+                "text": "Quero que saibam, irmãos, que muitas vezes planejei visitá-los, mas até agora fui impedido. Meu desejo é trabalhar entre vocês e ver frutos espirituais como tenho visto entre outros gentios,",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -680,19 +493,23 @@
             "crossReferences": [
               {
                 "ref": "Filipenses 4:1",
-                "text": "Portanto, meus amados irmãos, permaneçam firmes no Senhor. Amo vocês e anseio vê-los, pois são minha alegria e minha coroa de recompensa."
+                "text": "Portanto, meus amados irmãos, permaneçam firmes no Senhor. Amo vocês e anseio vê-los, pois são minha alegria e minha coroa de recompensa.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Tessalonicenses 3:13",
-                "text": "E, como resultado, que Deus, nosso Pai, torne seu coração forte, irrepreensível e santo diante dele para quando nosso Senhor Jesus voltar com todo o seu povo santo. Amém."
+                "text": "E, como resultado, que Deus, nosso Pai, torne seu coração forte, irrepreensível e santo diante dele para quando nosso Senhor Jesus voltar com todo o seu povo santo. Amém.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Tessalonicenses 5:23",
-                "text": "E, agora, que o Deus da paz os torne santos em todos os aspectos, e que o espírito, a alma e o corpo de vocês sejam mantidos irrepreensíveis até a volta de nosso Senhor Jesus Cristo."
+                "text": "E, agora, que o Deus da paz os torne santos em todos os aspectos, e que o espírito, a alma e o corpo de vocês sejam mantidos irrepreensíveis até a volta de nosso Senhor Jesus Cristo.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Filipenses 2:16",
-                "text": "Apeguem-se firmemente à mensagem da vida. Então, no dia em que Cristo voltar, me orgulharei de saber que não participei da corrida em vão e que não trabalhei inutilmente."
+                "text": "Apeguem-se firmemente à mensagem da vida. Então, no dia em que Cristo voltar, me orgulharei de saber que não participei da corrida em vão e que não trabalhei inutilmente.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -700,16 +517,7 @@
             "number": 20,
             "text": "Sim, vocês são nosso orgulho e nossa alegria.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "2 Coríntios 1:14",
-                "text": "mesmo que não o façam agora. Então, no dia do Senhor Jesus, poderão se orgulhar de nós como nos orgulhamos de vocês."
-              },
-              {
-                "ref": "1 Coríntios 11:7",
-                "text": "O homem não deve cobrir a cabeça, pois ele foi criado à imagem de Deus e reflete a glória de Deus. A mulher, porém, reflete a glória do homem."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       }
@@ -727,24 +535,7 @@
             "number": 1,
             "text": "Por isso, quando não pudemos mais suportar, resolvemos ficar sozinhos em Atenas",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Atos 17:15",
-                "text": "Os que acompanharam Paulo o levaram até Atenas e, depois, voltaram a Bereia com instruções para Silas e Timóteo irem ao encontro dele o mais depressa possível."
-              },
-              {
-                "ref": "1 Tessalonicenses 3:5",
-                "text": "Assim, quando não pude mais suportar, enviei Timóteo para saber se continuavam firmes na fé. Tinha receio de que o tentador os tivesse vencido e todo o nosso trabalho houvesse sido inútil."
-              },
-              {
-                "ref": "1 Tessalonicenses 2:17",
-                "text": "Irmãos, depois de um breve tempo separados de vocês, embora nosso coração nunca os tenha deixado, esforçamo-nos por voltar a vê-los, pela grande saudade que sentimos."
-              },
-              {
-                "ref": "Jeremias 20:9",
-                "text": "Mas, se digo que nunca mais mencionarei o SENHOR, nem falarei em seu nome, sua palavra arde como fogo em meu coração; é como fogo em meus ossos. Estou cansado de tentar contê-la; é impossível!"
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 2,
@@ -752,20 +543,24 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Atos 14:22–23",
-                "text": "onde fortaleceram os discípulos. Eles os encorajaram a permanecer na fé, lembrando-os de que é necessário passar por muitos sofrimentos até entrar no reino de Deus."
+                "ref": "Filipenses 2:21–22",
+                "text": "Todos os outros se preocupam apenas consigo mesmos, e não com o que é importante para Jesus Cristo. Mas vocês sabem que Timóteo provou seu valor. Como um filho junto ao pai, ele tem servido ao meu lado na proclamação das boas-novas.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Efésios 6:21–22",
-                "text": "Tíquico lhes dará um relatório completo do que tenho feito e de como tenho passado. Ele é um irmão amado e um colaborador fiel na obra do Senhor."
+                "text": "Tíquico lhes dará um relatório completo do que tenho feito e de como tenho passado. Ele é um irmão amado e um colaborador fiel na obra do Senhor. Eu o enviei a vocês com esse propósito, para que saibam como estamos e para animá-los.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Filipenses 2:19–25",
-                "text": "Se for da vontade do Senhor Jesus, espero enviar-lhes Timóteo em breve para visitá-los. Assim ele poderá me animar, contando-me notícias de vocês."
+                "ref": "Atos 14:22–23",
+                "text": "onde fortaleceram os discípulos. Eles os encorajaram a permanecer na fé, lembrando-os de que é necessário passar por muitos sofrimentos até entrar no reino de Deus. Paulo e Barnabé também escolheram presbíteros em cada igreja e, com orações e jejuns, os entregaram aos cuidados do Senhor, em quem haviam crido.",
+                "category": "Passagem Paralela"
               },
               {
                 "ref": "Atos 16:1",
-                "text": "Paulo foi primeiro a Derbe e depois a Listra, onde havia um jovem discípulo chamado Timóteo. A mãe dele era uma judia convertida, e o pai era grego."
+                "text": "Paulo foi primeiro a Derbe e depois a Listra, onde havia um jovem discípulo chamado Timóteo. A mãe dele era uma judia convertida, e o pai era grego.",
+                "category": "Passagem Paralela"
               }
             ]
           },
@@ -773,47 +568,13 @@
             "number": 3,
             "text": "para que as dificuldades não os abalem. Mas vocês sabem que estamos destinados a passar por elas.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Atos 14:22",
-                "text": "onde fortaleceram os discípulos. Eles os encorajaram a permanecer na fé, lembrando-os de que é necessário passar por muitos sofrimentos até entrar no reino de Deus."
-              },
-              {
-                "ref": "Romanos 5:3",
-                "text": "Também nos alegramos ao enfrentar dificuldades e provações, pois sabemos que contribuem para desenvolvermos perseverança,"
-              },
-              {
-                "ref": "Atos 9:16",
-                "text": "E eu mostrarei a ele quanto deve sofrer por meu nome”."
-              },
-              {
-                "ref": "João 16:33",
-                "text": "Eu lhes falei tudo isso para que tenham paz em mim. Aqui no mundo vocês terão aflições, mas animem-se, pois eu venci o mundo”."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 4,
             "text": "Quando ainda estávamos com vocês, nós os advertimos de que as aflições em breve viriam, e foi o que aconteceu, como bem sabem.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Tessalonicenses 2:14",
-                "text": "E então, irmãos, vocês foram perseguidos por seus próprios compatriotas, tornando-se assim imitadores das igrejas de Deus em Cristo Jesus na Judeia, que também sofreram nas mãos de seu próprio povo, os judeus."
-              },
-              {
-                "ref": "2 Coríntios 8:1–2",
-                "text": "Agora, irmãos, queremos que saibam o que Deus, em sua graça, tem feito por meio das igrejas da Macedônia."
-              },
-              {
-                "ref": "1 Tessalonicenses 2:2",
-                "text": "Sabem como fomos maltratados e quanto sofremos em Filipos, antes de chegarmos aí. E, no entanto, com confiança em nosso Deus, anunciamos a vocês as boas-novas de Deus, apesar de grande oposição."
-              },
-              {
-                "ref": "Atos 17:13",
-                "text": "Mas, quando os judeus de Tessalônica souberam que Paulo estava pregando a palavra de Deus em Bereia, foram até lá e criaram um alvoroço."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 5,
@@ -821,20 +582,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Tiago 1:13–14",
-                "text": "E, quando vocês forem tentados, não digam: “Esta tentação vem de Deus”, pois Deus nunca é tentado a fazer o mal, e ele mesmo nunca tenta alguém. A tentação vem de nossos próprios desejos, que nos seduzem e nos arrastam."
-              },
-              {
-                "ref": "Mateus 4:3",
-                "text": "O tentador veio e lhe disse: “Se você é o Filho de Deus, ordene que estas pedras se transformem em pães”."
-              },
-              {
-                "ref": "2 Coríntios 2:11",
-                "text": "para que Satanás não tenha vantagem sobre nós, pois conhecemos seus planos malignos."
-              },
-              {
                 "ref": "Filipenses 2:16",
-                "text": "Apeguem-se firmemente à mensagem da vida. Então, no dia em que Cristo voltar, me orgulharei de saber que não participei da corrida em vão e que não trabalhei inutilmente."
+                "text": "Apeguem-se firmemente à mensagem da vida. Então, no dia em que Cristo voltar, me orgulharei de saber que não participei da corrida em vão e que não trabalhei inutilmente.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -845,19 +595,13 @@
             "crossReferences": [
               {
                 "ref": "1 Coríntios 11:2",
-                "text": "Eu os elogio porque vocês sempre têm se lembrado de mim e têm seguido os ensinamentos que lhes transmiti."
-              },
-              {
-                "ref": "Isaías 52:7",
-                "text": "Como são belos sobre os montes os pés do mensageiro que traz boas-novas, boas-novas de paz e salvação, de que o Deus de Israel reina!"
+                "text": "Eu os elogio porque vocês sempre têm se lembrado de mim e têm seguido os ensinamentos que lhes transmiti.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Provérbios 25:25",
-                "text": "Boas notícias vindas de uma terra distante são como água fresca para o sedento."
-              },
-              {
-                "ref": "Atos 18:5",
-                "text": "Depois que Silas e Timóteo chegaram da Macedônia, Paulo se dedicou totalmente à pregação da palavra e testemunhava aos judeus que Jesus era o Cristo."
+                "text": "Boas notícias vindas de uma terra distante são como água fresca para o sedento.",
+                "category": "Tipologia & Aliança"
               }
             ]
           },
@@ -867,20 +611,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Coríntios 1:4",
-                "text": "Ele nos encoraja em todas as nossas aflições, para que, com o encorajamento que recebemos de Deus, possamos encorajar outros quando eles passarem por aflições."
-              },
-              {
-                "ref": "2 João 1:4",
-                "text": "Fiquei muito feliz por encontrar alguns de seus filhos e ver que estão vivendo de acordo com a verdade, conforme o Pai ordenou."
-              },
-              {
-                "ref": "1 Coríntios 4:9–13",
-                "text": "Por vezes me parece que Deus colocou a nós, os apóstolos, em último lugar, como condenados à morte, espetáculo para o mundo inteiro, tanto para as pessoas como para os anjos."
-              },
-              {
-                "ref": "1 Tessalonicenses 3:8–9",
-                "text": "Agora, revivemos por saber que estão firmes no Senhor. Sim, agradecemos a Deus por vocês! Por sua causa, temos grande alegria na presença de Deus."
+                "ref": "1 Coríntios 4:9–10",
+                "text": "Por vezes me parece que Deus colocou a nós, os apóstolos, em último lugar, como condenados à morte, espetáculo para o mundo inteiro, tanto para as pessoas como para os anjos. Nossa dedicação a Cristo nos faz parecer loucos, mas vocês afirmam ser sábios em Cristo. Nós somos fracos, mas vocês são fortes. Vocês são respeitados, mas nós somos ridicularizados.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -888,24 +621,7 @@
             "number": 8,
             "text": "Agora, revivemos por saber que estão firmes no Senhor.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Coríntios 16:13",
-                "text": "Estejam vigilantes. Permaneçam firmes na fé. Sejam corajosos. Sejam fortes."
-              },
-              {
-                "ref": "Colossenses 1:23",
-                "text": "É preciso, porém, que continuem a crer nessa verdade e nela permaneçam firmes. Não se afastem da esperança que receberam quando ouviram as boas-novas, que foram anunciadas em todo o mundo e que eu, Paulo, fui designado servo para proclamar."
-              },
-              {
-                "ref": "Apocalipse 3:11",
-                "text": "Venho em breve. Apegue-se ao que você tem, para que ninguém tome sua coroa."
-              },
-              {
-                "ref": "Hebreus 10:23",
-                "text": "Apeguemo-nos firmemente, sem vacilar, à esperança que professamos, porque Deus é fiel para cumprir sua promessa."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 9,
@@ -914,19 +630,8 @@
             "crossReferences": [
               {
                 "ref": "Salmos 96:12–13",
-                "text": "Os campos e suas colheitas gritem de alegria! As árvores do bosque exultem diante do SENHOR, pois ele vem; ele vem julgar a terra. Julgará o mundo com justiça e as nações, com sua verdade."
-              },
-              {
-                "ref": "2 Coríntios 9:15",
-                "text": "Graças a Deus por essa dádiva tão maravilhosa que nem as palavras conseguem expressar!"
-              },
-              {
-                "ref": "1 Tessalonicenses 1:2–3",
-                "text": "Sempre damos graças a Deus por todos vocês e os mencionamos constantemente em nossas orações."
-              },
-              {
-                "ref": "Salmos 71:14–15",
-                "text": "Eu, porém, continuarei a esperar em ti e te louvarei cada vez mais. Falarei a todos de tua justiça; o dia todo, anunciarei tua salvação, embora não seja habilidoso com as palavras."
+                "text": "Os campos e suas colheitas gritem de alegria! As árvores do bosque exultem diante do SENHOR, pois ele vem; ele vem julgar a terra. Julgará o mundo com justiça e as nações, com sua verdade.",
+                "category": "Tipologia & Aliança"
               }
             ]
           },
@@ -934,47 +639,13 @@
             "number": 10,
             "text": "Noite e dia oramos por vocês com fervor, pedindo que possamos vê-los novamente a fim de ajudá-los a aperfeiçoar a fé.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "2 Coríntios 13:9",
-                "text": "Ficamos alegres quando estamos fracos, se isso ajudar a mostrar que, na realidade, vocês estão fortes. Oramos para que sejam restaurados."
-              },
-              {
-                "ref": "Romanos 1:10–12",
-                "text": "em minhas orações, sempre pedindo, se for da vontade de Deus, uma oportunidade de ir vê-los."
-              },
-              {
-                "ref": "1 Tessalonicenses 3:11",
-                "text": "Que Deus, nosso Pai, e nosso Senhor Jesus nos encaminhem a vocês em breve."
-              },
-              {
-                "ref": "Romanos 15:30–32",
-                "text": "Irmãos, peço-lhes em nome de nosso Senhor Jesus Cristo e pelo amor que lhes foi dado pelo Espírito Santo que se unam a mim em minha luta, orando a Deus em meu favor."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 11,
             "text": "Que Deus, nosso Pai, e nosso Senhor Jesus nos encaminhem a vocês em breve.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Provérbios 3:5–6",
-                "text": "Confie no SENHOR de todo o coração; não dependa de seu próprio entendimento. Busque a vontade dele em tudo que fizer, e ele lhe mostrará o caminho que deve seguir."
-              },
-              {
-                "ref": "Mateus 6:32",
-                "text": "Essas coisas ocupam o pensamento dos pagãos, mas seu Pai celestial já sabe do que vocês precisam."
-              },
-              {
-                "ref": "2 Tessalonicenses 2:16",
-                "text": "Que o próprio Jesus Cristo, nosso Senhor, e Deus, nosso Pai, que nos amou e pela graça nos deu eterno conforto e maravilhosa esperança,"
-              },
-              {
-                "ref": "1 Tessalonicenses 3:13",
-                "text": "E, como resultado, que Deus, nosso Pai, torne seu coração forte, irrepreensível e santo diante dele para quando nosso Senhor Jesus voltar com todo o seu povo santo. Amém."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 12,
@@ -983,19 +654,18 @@
             "crossReferences": [
               {
                 "ref": "Filipenses 1:9",
-                "text": "Oro para que o amor de vocês transborde cada vez mais e que continuem a crescer em conhecimento e discernimento."
+                "text": "Oro para que o amor de vocês transborde cada vez mais e que continuem a crescer em conhecimento e discernimento.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Romanos 13:8",
-                "text": "Não devam nada a ninguém, a não ser o amor de uns pelos outros. Quem ama seu próximo cumpre os requisitos da lei de Deus."
+                "text": "Não devam nada a ninguém, a não ser o amor de uns pelos outros. Quem ama seu próximo cumpre os requisitos da lei de Deus.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Mateus 22:39",
-                "text": "O segundo é igualmente importante: ‘Ame o seu próximo como a si mesmo’."
-              },
-              {
-                "ref": "1 João 4:7–16",
-                "text": "Amados, continuemos a amar uns aos outros, pois o amor vem de Deus. Quem ama é nascido de Deus e conhece a Deus."
+                "ref": "1 João 4:7–8",
+                "text": "Amados, continuemos a amar uns aos outros, pois o amor vem de Deus. Quem ama é nascido de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1005,20 +675,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Colossenses 1:22",
-                "text": "Agora, porém, ele os reconciliou consigo por meio da morte do Filho no corpo físico. Como resultado, vocês podem se apresentar diante dele santos, sem culpa e livres de qualquer acusação."
-              },
-              {
                 "ref": "1 Tessalonicenses 5:23",
-                "text": "E, agora, que o Deus da paz os torne santos em todos os aspectos, e que o espírito, a alma e o corpo de vocês sejam mantidos irrepreensíveis até a volta de nosso Senhor Jesus Cristo."
-              },
-              {
-                "ref": "Efésios 5:27",
-                "text": "Assim o fez para apresentá-la a si mesmo como igreja gloriosa, sem mancha, ruga ou qualquer outro defeito, mas santa e sem culpa."
+                "text": "E, agora, que o Deus da paz os torne santos em todos os aspectos, e que o espírito, a alma e o corpo de vocês sejam mantidos irrepreensíveis até a volta de nosso Senhor Jesus Cristo.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Tessalonicenses 2:19",
-                "text": "Afinal, o que nos dá esperança e alegria? E qual será nossa magnífica recompensa e coroa diante do Senhor Jesus quando ele voltar? Serão vocês!"
+                "text": "Afinal, o que nos dá esperança e alegria? E qual será nossa magnífica recompensa e coroa diante do Senhor Jesus quando ele voltar? Serão vocês!",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "Colossenses 1:22",
+                "text": "Agora, porém, ele os reconciliou consigo por meio da morte do Filho no corpo físico. Como resultado, vocês podem se apresentar diante dele santos, sem culpa e livres de qualquer acusação.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -1041,19 +710,18 @@
             "crossReferences": [
               {
                 "ref": "Colossenses 1:10",
-                "text": "Então vocês viverão de modo a sempre honrar e agradar ao Senhor, dando todo tipo de bom fruto e aprendendo a conhecer a Deus cada vez mais."
+                "text": "Então vocês viverão de modo a sempre honrar e agradar ao Senhor, dando todo tipo de bom fruto e aprendendo a conhecer a Deus cada vez mais.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Tessalonicenses 1:3",
-                "text": "Irmãos, não podemos deixar de dar graças a Deus por vocês, pois sua fé tem se desenvolvido cada vez mais, e seu amor uns pelos outros tem crescido."
+                "text": "Irmãos, não podemos deixar de dar graças a Deus por vocês, pois sua fé tem se desenvolvido cada vez mais, e seu amor uns pelos outros tem crescido.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Pedro 3:18",
-                "text": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, agora e para sempre! Amém."
-              },
-              {
-                "ref": "Hebreus 13:16",
-                "text": "E não se esqueçam de fazer o bem e de repartir o que têm com os necessitados, pois esses são os sacrifícios que agradam a Deus."
+                "text": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, agora e para sempre! Amém.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1061,24 +729,7 @@
             "number": 2,
             "text": "pois se lembram das instruções que lhes demos pela autoridade do Senhor Jesus.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Mateus 28:20",
-                "text": "Ensinem esses novos discípulos a obedecerem a todas as ordens que eu lhes dei. E lembrem-se disto: estou sempre com vocês, até o fim dos tempos”."
-              },
-              {
-                "ref": "Ezequiel 3:17",
-                "text": "“Filho do homem, eu o nomeei vigia de Israel. Sempre que receber uma mensagem minha, advirta o povo."
-              },
-              {
-                "ref": "2 Tessalonicenses 3:10",
-                "text": "Quando ainda estávamos com vocês, lhes ordenamos: “Quem não quiser trabalhar não deve comer”."
-              },
-              {
-                "ref": "1 Coríntios 9:21",
-                "text": "Quando estou com os que não seguem a lei judaica, também vivo de modo independente da lei para levá-los a Cristo. Não ignoro, porém, a lei de Deus, pois obedeço à lei de Cristo."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 3,
@@ -1086,20 +737,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Pedro 4:2",
-                "text": "Não passarão o resto da vida buscando os próprios desejos, mas fazendo a vontade de Deus."
-              },
-              {
-                "ref": "Romanos 12:2",
-                "text": "Não imitem o comportamento e os costumes deste mundo, mas deixem que Deus os transforme por meio de uma mudança em seu modo de pensar, a fim de que experimentem a boa, agradável e perfeita vontade de Deus para vocês."
-              },
-              {
                 "ref": "1 Tessalonicenses 5:23",
-                "text": "E, agora, que o Deus da paz os torne santos em todos os aspectos, e que o espírito, a alma e o corpo de vocês sejam mantidos irrepreensíveis até a volta de nosso Senhor Jesus Cristo."
-              },
-              {
-                "ref": "Hebreus 13:4",
-                "text": "Honrem o casamento e mantenham pura a união conjugal, pois Deus certamente julgará os impuros e os adúlteros."
+                "text": "E, agora, que o Deus da paz os torne santos em todos os aspectos, e que o espírito, a alma e o corpo de vocês sejam mantidos irrepreensíveis até a volta de nosso Senhor Jesus Cristo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1109,20 +749,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Coríntios 7:9",
-                "text": "Mas, se não conseguirem se controlar, devem se casar. É melhor se casar que arder em desejo."
-              },
-              {
                 "ref": "Romanos 12:1",
-                "text": "Portanto, irmãos, suplico-lhes que entreguem seu corpo a Deus, por causa de tudo que ele fez por vocês. Que seja um sacrifício vivo e santo, do tipo que Deus considera agradável. Essa é a verdadeira forma de adorá-lo."
-              },
-              {
-                "ref": "Hebreus 13:4",
-                "text": "Honrem o casamento e mantenham pura a união conjugal, pois Deus certamente julgará os impuros e os adúlteros."
-              },
-              {
-                "ref": "1 Pedro 3:7",
-                "text": "Da mesma forma, vocês, maridos, honrem sua esposa. Sejam compreensivos no convívio com ela, pois, ainda que seja mais frágil que vocês, ela é igualmente participante da dádiva de nova vida concedida por Deus. Tratem-na d..."
+                "text": "Portanto, irmãos, suplico-lhes que entreguem seu corpo a Deus, por causa de tudo que ele fez por vocês. Que seja um sacrifício vivo e santo, do tipo que Deus considera agradável. Essa é a verdadeira forma de adorá-lo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1132,20 +761,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Gálatas 4:8",
-                "text": "Antes de conhecerem a Deus, vocês eram escravos de supostos deuses que, na verdade, nem existem."
-              },
-              {
-                "ref": "Atos 17:30–31",
-                "text": "“No passado, Deus não levou em conta a ignorância das pessoas acerca dessas coisas, mas agora ele ordena que todos, em todo lugar, se arrependam."
-              },
-              {
                 "ref": "Efésios 4:17–19",
-                "text": "Assim, eu lhes digo com a autoridade do Senhor: não vivam mais como os gentios, levados por pensamentos vazios e inúteis."
-              },
-              {
-                "ref": "Colossenses 3:5",
-                "text": "Portanto, façam morrer as coisas pecaminosas e terrenas que estão dentro de vocês. Fiquem longe da imoralidade sexual, da impureza, da paixão sensual, dos desejos maus e da ganância, que é idolatria."
+                "text": "Assim, eu lhes digo com a autoridade do Senhor: não vivam mais como os gentios, levados por pensamentos vazios e inúteis. A mente deles está mergulhada na escuridão. Andam sem rumo, alienados da vida que Deus dá, pois são ignorantes e endureceram o coração para ele. Tornaram-se insensíveis, vivem em função dos prazeres sensuais e praticam avidamente toda espécie de impureza.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1153,24 +771,7 @@
             "number": 6,
             "text": "Nesse assunto, não prejudiquem nem enganem um irmão, pois o Senhor punirá todas essas práticas, como já os advertimos solenemente.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Hebreus 13:4",
-                "text": "Honrem o casamento e mantenham pura a união conjugal, pois Deus certamente julgará os impuros e os adúlteros."
-              },
-              {
-                "ref": "Êxodo 20:17",
-                "text": "“Não cobice a casa do seu próximo. Não cobice a mulher dele, nem seus servos ou servas, nem seu boi ou jumento, nem qualquer outra coisa que lhe pertença”."
-              },
-              {
-                "ref": "Êxodo 20:15",
-                "text": "“Não roube."
-              },
-              {
-                "ref": "Romanos 12:19",
-                "text": "Amados, nunca se vinguem; deixem que a ira de Deus se encarregue disso, pois assim dizem as Escrituras: “A vingança cabe a mim, eu lhes darei o troco, diz o Senhor”."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 7,
@@ -1178,20 +779,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Levítico 11:44",
-                "text": "pois eu sou o SENHOR, seu Deus. Consagrem-se e sejam santos, pois eu sou santo. Não se contaminem com nenhum desses animais pequenos que rastejam pelo chão."
-              },
-              {
-                "ref": "1 Pedro 2:9–12",
-                "text": "Vocês, porém, são povo escolhido, reino de sacerdotes, nação santa, propriedade exclusiva de Deus. Assim, vocês podem mostrar às pessoas como é admirável aquele que os chamou das trevas para sua maravilhosa luz."
-              },
-              {
-                "ref": "Efésios 1:4",
-                "text": "Mesmo antes de criar o mundo, Deus nos amou e nos escolheu em Cristo para sermos santos e sem culpa diante dele."
+                "ref": "1 Pedro 2:9–10",
+                "text": "Vocês, porém, são povo escolhido, reino de sacerdotes, nação santa, propriedade exclusiva de Deus. Assim, vocês podem mostrar às pessoas como é admirável aquele que os chamou das trevas para sua maravilhosa luz. “Antes vocês não tinham identidade como povo, agora são povo de Deus. Antes não haviam recebido misericórdia, agora receberam misericórdia de Deus.”",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Pedro 1:14–16",
-                "text": "Sejam filhos obedientes. Não voltem ao seu antigo modo de viver, quando satisfaziam os próprios desejos e viviam na ignorância."
+                "text": "Sejam filhos obedientes. Não voltem ao seu antigo modo de viver, quando satisfaziam os próprios desejos e viviam na ignorância. Agora, porém, sejam santos em tudo que fizerem, como é santo aquele que os chamou. Pois as Escrituras dizem: “Sejam santos, porque eu sou santo”.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "Efésios 1:4",
+                "text": "Mesmo antes de criar o mundo, Deus nos amou e nos escolheu em Cristo para sermos santos e sem culpa diante dele.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1199,24 +799,7 @@
             "number": 8,
             "text": "Portanto, quem se recusa a viver de acordo com essas regras não desobedece a ensinamentos humanos, mas rejeita a Deus, que lhes dá seu Espírito Santo.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 João 3:24",
-                "text": "Aqueles que obedecem a seus mandamentos permanecem nele, e ele permanece neles. E sabemos que ele permanece em nós porque o Espírito que ele nos deu permanece em nós."
-              },
-              {
-                "ref": "Lucas 10:16",
-                "text": "Então ele disse aos discípulos: “Quem aceita sua mensagem também me aceita, e quem os rejeita também me rejeita. E quem me rejeita também rejeita aquele que me enviou”."
-              },
-              {
-                "ref": "1 Samuel 8:7",
-                "text": "O SENHOR lhe respondeu: “Faça tudo que eles pedem, pois é a mim que rejeitam, e não a você. Eles me rejeitaram como seu rei."
-              },
-              {
-                "ref": "João 12:48",
-                "text": "Mas todos que me rejeitam e desprezam minha mensagem serão julgados no dia do julgamento pela verdade que tenho falado."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 9,
@@ -1224,20 +807,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 João 3:11",
-                "text": "Esta é a mensagem que vocês ouviram desde o princípio: que amemos uns aos outros."
+                "ref": "Romanos 12:10",
+                "text": "Amem-se com amor fraternal e tenham prazer em honrar uns aos outros.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Romanos 12:10",
-                "text": "Amem-se com amor fraternal e tenham prazer em honrar uns aos outros."
+                "ref": "1 João 3:11",
+                "text": "Esta é a mensagem que vocês ouviram desde o princípio: que amemos uns aos outros.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 João 3:23",
-                "text": "E este é seu mandamento: que creiamos no nome de seu Filho, Jesus Cristo, e amemos uns aos outros, conforme ele nos ordenou."
-              },
-              {
-                "ref": "Hebreus 13:1",
-                "text": "Continuem a amar uns aos outros como irmãos."
+                "text": "E este é seu mandamento: que creiamos no nome de seu Filho, Jesus Cristo, e amemos uns aos outros, conforme ele nos ordenou.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1247,20 +829,24 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Filipenses 1:9",
-                "text": "Oro para que o amor de vocês transborde cada vez mais e que continuem a crescer em conhecimento e discernimento."
-              },
-              {
-                "ref": "1 Tessalonicenses 3:12",
-                "text": "E que o Senhor faça crescer e transbordar o amor que vocês têm uns pelos outros e por todos, da mesma forma que nosso amor transborda por vocês."
-              },
-              {
                 "ref": "2 Tessalonicenses 1:3",
-                "text": "Irmãos, não podemos deixar de dar graças a Deus por vocês, pois sua fé tem se desenvolvido cada vez mais, e seu amor uns pelos outros tem crescido."
+                "text": "Irmãos, não podemos deixar de dar graças a Deus por vocês, pois sua fé tem se desenvolvido cada vez mais, e seu amor uns pelos outros tem crescido.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Tessalonicenses 1:7",
-                "text": "Com isso, tornaram-se exemplo para todos os irmãos na Grécia, tanto na Macedônia como na Acaia."
+                "text": "Com isso, tornaram-se exemplo para todos os irmãos na Grécia, tanto na Macedônia como na Acaia.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "Filipenses 1:9",
+                "text": "Oro para que o amor de vocês transborde cada vez mais e que continuem a crescer em conhecimento e discernimento.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "1 Tessalonicenses 3:12",
+                "text": "E que o Senhor faça crescer e transbordar o amor que vocês têm uns pelos outros e por todos, da mesma forma que nosso amor transborda por vocês.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1271,19 +857,13 @@
             "crossReferences": [
               {
                 "ref": "Efésios 4:28",
-                "text": "Quem é ladrão, pare de roubar. Em vez disso, use as mãos para trabalhar com empenho e honestidade e, assim, ajudar generosamente os necessitados."
+                "text": "Quem é ladrão, pare de roubar. Em vez disso, use as mãos para trabalhar com empenho e honestidade e, assim, ajudar generosamente os necessitados.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Eclesiastes 4:6",
-                "text": "E, no entanto, “É melhor ter um punhado com tranquilidade que dois punhados com trabalho árduo e correr atrás do vento”."
-              },
-              {
-                "ref": "1 Pedro 3:4",
-                "text": "Em vez disso, vistam-se com a beleza que vem de dentro e que não desaparece, a beleza de um espírito amável e sereno, tão precioso para Deus."
-              },
-              {
-                "ref": "Tito 3:14",
-                "text": "Nosso povo deve aprender a fazer o bem ao suprir as necessidades urgentes de outros; assim, ninguém será improdutivo."
+                "text": "E, no entanto, “É melhor ter um punhado com tranquilidade que dois punhados com trabalho árduo e correr atrás do vento”.",
+                "category": "Tipologia & Aliança"
               }
             ]
           },
@@ -1293,20 +873,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Colossenses 4:5",
-                "text": "Vivam com sabedoria entre os que são de fora e aproveitem bem todas as oportunidades."
-              },
-              {
                 "ref": "1 Pedro 2:12",
-                "text": "Procurem viver de maneira exemplar entre os que não creem. Assim, mesmo que eles os acusem de praticar o mal, verão seu comportamento correto e darão glória a Deus quando ele julgar o mundo."
-              },
-              {
-                "ref": "Romanos 12:17",
-                "text": "Nunca paguem o mal com o mal. Pensem sempre em fazer o que é melhor aos olhos de todos."
-              },
-              {
-                "ref": "Romanos 13:13",
-                "text": "Uma vez que pertencemos ao dia, vivamos com decência, à vista de todos. Não participem de festanças desregradas, de bebedeiras, de promiscuidade sexual e de práticas imorais, e não se envolvam em brigas nem em invejas."
+                "text": "Procurem viver de maneira exemplar entre os que não creem. Assim, mesmo que eles os acusem de praticar o mal, verão seu comportamento correto e darão glória a Deus quando ele julgar o mundo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -1321,20 +890,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Daniel 12:2",
-                "text": "Muitos dos que estão mortos e enterrados ressuscitarão, alguns para a vida eterna e outros para a vergonha e a desonra eterna."
-              },
-              {
-                "ref": "1 Tessalonicenses 4:15",
-                "text": "Dizemos a vocês, pela palavra do Senhor: nós, os que ainda estivermos vivos quando o Senhor voltar, não iremos ao encontro dele antes daqueles que já morreram."
-              },
-              {
-                "ref": "1 Tessalonicenses 5:10",
-                "text": "Cristo morreu por nós para que, quer estejamos despertos, quer dormindo, vivamos com ele para sempre."
-              },
-              {
                 "ref": "2 Pedro 3:4",
-                "text": "dizendo: “O que houve com a promessa de que ele voltaria? Desde antes do tempo de nossos antepassados, tudo permanece igual, como desde a criação do mundo”."
+                "text": "dizendo: “O que houve com a promessa de que ele voltaria? Desde antes do tempo de nossos antepassados, tudo permanece igual, como desde a criação do mundo”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1345,19 +903,23 @@
             "crossReferences": [
               {
                 "ref": "Romanos 8:11",
-                "text": "E, se o Espírito de Deus que ressuscitou Jesus dos mortos habita em vocês, o Deus que ressuscitou Cristo Jesus dos mortos dará vida a seu corpo mortal, por meio desse mesmo Espírito que habita em vocês."
+                "text": "E, se o Espírito de Deus que ressuscitou Jesus dos mortos habita em vocês, o Deus que ressuscitou Cristo Jesus dos mortos dará vida a seu corpo mortal, por meio desse mesmo Espírito que habita em vocês.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Filipenses 3:20–21",
-                "text": "Nossa cidadania, no entanto, vem do céu, e de lá aguardamos ansiosamente a volta do Salvador, o Senhor Jesus Cristo."
-              },
-              {
-                "ref": "Isaías 26:19",
-                "text": "Teus mortos, porém, viverão; seus corpos ressuscitarão. Aqueles que dormem na terra se levantarão e cantarão de alegria. Pois tua luz que dá vida descerá como o orvalho sobre teu povo no lugar dos mortos."
+                "text": "Nossa cidadania, no entanto, vem do céu, e de lá aguardamos ansiosamente a volta do Salvador, o Senhor Jesus Cristo. Ele tomará nosso frágil corpo mortal e o transformará num corpo glorioso como o dele, usando o mesmo poder com o qual submeterá todas as coisas a seu domínio.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Coríntios 4:13–14",
-                "text": "Continuamos a pregar porque temos o mesmo tipo de fé mencionada nas Escrituras: “Cri em Deus, por isso falei”."
+                "text": "Continuamos a pregar porque temos o mesmo tipo de fé mencionada nas Escrituras: “Cri em Deus, por isso falei”. Sabemos que Deus, que ressuscitou o Senhor Jesus, também nos ressuscitará com Jesus e nos apresentará a ele junto com vocês.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "Isaías 26:19",
+                "text": "Teus mortos, porém, viverão; seus corpos ressuscitarão. Aqueles que dormem na terra se levantarão e cantarão de alegria. Pois tua luz que dá vida descerá como o orvalho sobre teu povo no lugar dos mortos.",
+                "category": "Citação & Cumprimento"
               }
             ]
           },
@@ -1368,15 +930,13 @@
             "crossReferences": [
               {
                 "ref": "1 Coríntios 15:51–53",
-                "text": "Mas eu lhes revelarei um segredo maravilhoso: nem todos dormiremos, mas todos seremos transformados!"
-              },
-              {
-                "ref": "2 Coríntios 4:14",
-                "text": "Sabemos que Deus, que ressuscitou o Senhor Jesus, também nos ressuscitará com Jesus e nos apresentará a ele junto com vocês."
+                "text": "Mas eu lhes revelarei um segredo maravilhoso: nem todos dormiremos, mas todos seremos transformados! Acontecerá num instante, num piscar de olhos, ao som da última trombeta. Pois, quando a última trombeta soar, aqueles que morreram ressuscitarão a fim de viver para sempre. E nós que estivermos vivos também seremos transformados. Pois nosso corpo mortal precisa ser transformado em corpo imortal.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Tessalonicenses 2:19",
-                "text": "Afinal, o que nos dá esperança e alegria? E qual será nossa magnífica recompensa e coroa diante do Senhor Jesus quando ele voltar? Serão vocês!"
+                "text": "Afinal, o que nos dá esperança e alegria? E qual será nossa magnífica recompensa e coroa diante do Senhor Jesus quando ele voltar? Serão vocês!",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1386,20 +946,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Coríntios 15:51–52",
-                "text": "Mas eu lhes revelarei um segredo maravilhoso: nem todos dormiremos, mas todos seremos transformados!"
+                "ref": "1 Coríntios 15:23",
+                "text": "Mas essa ressurreição tem uma sequência: Cristo ressuscitou como o primeiro fruto da colheita, e depois todos que são de Cristo ressuscitarão quando ele voltar.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Apocalipse 1:7",
-                "text": "Vejam! Ele vem com as nuvens do céu, e todos o verão, até mesmo aqueles que o transpassaram. E todas as nações da terra se lamentarão por causa dele. Sim! Amém!"
+                "ref": "1 Coríntios 15:51–52",
+                "text": "Mas eu lhes revelarei um segredo maravilhoso: nem todos dormiremos, mas todos seremos transformados! Acontecerá num instante, num piscar de olhos, ao som da última trombeta. Pois, quando a última trombeta soar, aqueles que morreram ressuscitarão a fim de viver para sempre. E nós que estivermos vivos também seremos transformados.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Mateus 24:30–31",
-                "text": "Então, por fim, aparecerá no céu o sinal da vinda do Filho do Homem, e haverá grande lamentação entre todos os povos da terra. Eles verão o Filho do Homem vindo nas nuvens do céu com poder e grande glória."
-              },
-              {
-                "ref": "1 Coríntios 15:23",
-                "text": "Mas essa ressurreição tem uma sequência: Cristo ressuscitou como o primeiro fruto da colheita, e depois todos que são de Cristo ressuscitarão quando ele voltar."
+                "text": "Então, por fim, aparecerá no céu o sinal da vinda do Filho do Homem, e haverá grande lamentação entre todos os povos da terra. Eles verão o Filho do Homem vindo nas nuvens do céu com poder e grande glória. Ele enviará seus anjos com um forte sopro de trombeta, e eles reunirão os escolhidos de todas as partes do mundo, de uma extremidade à outra do céu.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1410,19 +969,18 @@
             "crossReferences": [
               {
                 "ref": "1 Coríntios 15:52",
-                "text": "Acontecerá num instante, num piscar de olhos, ao som da última trombeta. Pois, quando a última trombeta soar, aqueles que morreram ressuscitarão a fim de viver para sempre. E nós que estivermos vivos também seremos transformados."
+                "text": "Acontecerá num instante, num piscar de olhos, ao som da última trombeta. Pois, quando a última trombeta soar, aqueles que morreram ressuscitarão a fim de viver para sempre. E nós que estivermos vivos também seremos transformados.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Apocalipse 11:12",
-                "text": "Então uma forte voz do céu disse aos dois: “Subam aqui!”. E eles subiram ao céu numa nuvem, sob o olhar de seus inimigos."
+                "text": "Então uma forte voz do céu disse aos dois: “Subam aqui!”. E eles subiram ao céu numa nuvem, sob o olhar de seus inimigos.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "João 14:3",
-                "text": "e, quando tudo estiver pronto, virei buscá-los, para que estejam sempre comigo, onde eu estiver."
-              },
-              {
-                "ref": "1 Tessalonicenses 4:15",
-                "text": "Dizemos a vocês, pela palavra do Senhor: nós, os que ainda estivermos vivos quando o Senhor voltar, não iremos ao encontro dele antes daqueles que já morreram."
+                "text": "e, quando tudo estiver pronto, virei buscá-los, para que estejam sempre comigo, onde eu estiver.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1433,19 +991,13 @@
             "crossReferences": [
               {
                 "ref": "1 Tessalonicenses 5:11",
-                "text": "Portanto, animem e edifiquem uns aos outros, como têm feito."
-              },
-              {
-                "ref": "1 Tessalonicenses 5:14",
-                "text": "Irmãos, pedimos que advirtam os indisciplinados. Encorajem os desanimados. Ajudem os fracos. Sejam pacientes com todos."
+                "text": "Portanto, animem e edifiquem uns aos outros, como têm feito.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Lucas 21:28",
-                "text": "Portanto, quando todas essas coisas começarem a acontecer, levantem-se e ergam a cabeça, pois a sua salvação estará próxima”."
-              },
-              {
-                "ref": "Hebreus 10:24–25",
-                "text": "Pensemos em como motivar uns aos outros na prática do amor e das boas obras. E não deixemos de nos reunir, como fazem alguns, mas encorajemo-nos mutuamente, sobretudo agora que o dia está próximo."
+                "text": "Portanto, quando todas essas coisas começarem a acontecer, levantem-se e ergam a cabeça, pois a sua salvação estará próxima”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }
@@ -1467,20 +1019,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Atos 1:7",
-                "text": "Ele respondeu: “O Pai já determinou o tempo e a ocasião para que isso aconteça, e não cabe a vocês saber."
-              },
-              {
                 "ref": "1 Tessalonicenses 4:9",
-                "text": "Não precisamos lhes escrever sobre a importância do amor fraternal, pois o próprio Deus os ensinou a amarem uns aos outros."
-              },
-              {
-                "ref": "Mateus 24:36",
-                "text": "“Contudo, ninguém sabe o dia nem a hora em que essas coisas acontecerão, nem mesmo os anjos no céu, nem o Filho. Somente o Pai sabe."
-              },
-              {
-                "ref": "Mateus 24:3",
-                "text": "Mais tarde, Jesus sentou-se no monte das Oliveiras. Seus discípulos vieram até ele em particular e perguntaram: “Diga-nos, quando isso tudo vai acontecer? Que sinal indicará sua volta e o fim dos tempos?”."
+                "text": "Não precisamos lhes escrever sobre a importância do amor fraternal, pois o próprio Deus os ensinou a amarem uns aos outros.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1490,20 +1031,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
+                "ref": "Mateus 24:42–44",
+                "text": "“Portanto, vigiem, pois não sabem em que ocasião o seu Senhor virá. Entendam isto: se o dono da casa soubesse exatamente a que horas viria o ladrão, ficaria atento e não permitiria que a casa fosse arrombada. Estejam também sempre preparados, pois o Filho do Homem virá quando menos esperam.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
                 "ref": "Apocalipse 16:15",
-                "text": "“Eu virei inesperadamente, como ladrão! Feliz é aquele que me espera alerta e mantém puras suas vestes, para que não precise andar nu e envergonhado.”"
+                "text": "“Eu virei inesperadamente, como ladrão! Feliz é aquele que me espera alerta e mantém puras suas vestes, para que não precise andar nu e envergonhado.”",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Pedro 3:10",
-                "text": "Contudo, o dia do Senhor virá como um ladrão. Os céus desaparecerão com terrível estrondo, e até os elementos serão consumidos pelo fogo, e a terra e tudo que nela há serão expostos."
-              },
-              {
-                "ref": "Apocalipse 3:3",
-                "text": "Lembre-se do que ouviu e no que acreditou no princípio; agarre-se a isso com firmeza. Arrependa-se. Se não despertar, virei subitamente até você, como um ladrão."
-              },
-              {
-                "ref": "Mateus 24:42–44",
-                "text": "“Portanto, vigiem, pois não sabem em que ocasião o seu Senhor virá."
+                "text": "Contudo, o dia do Senhor virá como um ladrão. Os céus desaparecerão com terrível estrondo, e até os elementos serão consumidos pelo fogo, e a terra e tudo que nela há serão expostos.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1513,20 +1053,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Lucas 21:34–35",
-                "text": "“Tenham cuidado! Não deixem seu coração se entorpecer com farras e bebedeiras, nem com as preocupações desta vida. Não deixem que esse dia os pegue desprevenidos,"
+                "ref": "Lucas 17:29–30",
+                "text": "até o dia em que Ló deixou Sodoma. Então fogo e enxofre ardente caíram do céu e destruíram a todos. Sim, tudo será como sempre foi até o dia em que o Filho do Homem for revelado.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Mateus 24:37–39",
-                "text": "“Quando o Filho do Homem voltar, será como no tempo de Noé."
-              },
-              {
-                "ref": "Lucas 17:26–30",
-                "text": "“Quando o Filho do Homem voltar, será como no tempo de Noé."
+                "text": "“Quando o Filho do Homem voltar, será como no tempo de Noé. Nos dias antes do dilúvio, o povo seguia sua rotina de banquetes, festas e casamentos, até o dia em que Noé entrou na arca. Não perceberam o que estava para acontecer até que veio o dilúvio e levou todos. Assim será na vinda do Filho do Homem.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Apocalipse 18:7–8",
-                "text": "Glorificou a si mesma e viveu em luxo, agora retribuam com igual quantidade de tormento e tristeza. Ela se vangloriou em seu coração: ‘Sou rainha em meu trono. Não sou uma viúva desamparada, e não tenho motivo para me lamentar’."
+                "text": "Glorificou a si mesma e viveu em luxo, agora retribuam com igual quantidade de tormento e tristeza. Ela se vangloriou em seu coração: ‘Sou rainha em meu trono. Não sou uma viúva desamparada, e não tenho motivo para me lamentar’. Por isso, estas pragas a alcançarão num só dia: morte, pranto e fome. O fogo a consumirá por completo, pois o Senhor Deus, que a julga, é poderoso”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1537,19 +1076,13 @@
             "crossReferences": [
               {
                 "ref": "1 João 2:8",
-                "text": "E, no entanto, também é um novo mandamento, cuja verdade ele demonstrou, e vocês também a demonstram. Pois a escuridão está se dissipando, e a verdadeira luz já brilha."
-              },
-              {
-                "ref": "Deuteronômio 28:15",
-                "text": "“Mas, se vocês se recusarem a dar ouvidos ao SENHOR, seu Deus, e não cumprirem todos os mandamentos e decretos que hoje lhes dou, as seguintes maldições cairão sobre vocês e os atingirão:"
-              },
-              {
-                "ref": "Deuteronômio 28:45",
-                "text": "“Se vocês se recusarem a dar ouvidos ao SENHOR, seu Deus, e a obedecer aos mandamentos e decretos que ele lhes deu, todas estas maldições os perseguirão e os alcançarão até que sejam destruídos."
+                "text": "E, no entanto, também é um novo mandamento, cuja verdade ele demonstrou, e vocês também a demonstram. Pois a escuridão está se dissipando, e a verdadeira luz já brilha.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Colossenses 1:13",
-                "text": "Ele nos resgatou do poder das trevas e nos trouxe para o reino de seu Filho amado,"
+                "text": "Ele nos resgatou do poder das trevas e nos trouxe para o reino de seu Filho amado,",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1560,19 +1093,18 @@
             "crossReferences": [
               {
                 "ref": "Efésios 5:8",
-                "text": "Pois antigamente vocês estavam mergulhados na escuridão, mas agora têm a luz no Senhor. Vivam, portanto, como filhos da luz!"
-              },
-              {
-                "ref": "Atos 26:18",
-                "text": "para abrir os olhos deles a fim de que se voltem das trevas para a luz, e do poder de Satanás para Deus. Então receberão o perdão dos pecados e a herança entre o povo de Deus, separado pela fé em mim’."
+                "text": "Pois antigamente vocês estavam mergulhados na escuridão, mas agora têm a luz no Senhor. Vivam, portanto, como filhos da luz!",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "João 12:36",
-                "text": "Creiam na luz enquanto ainda há tempo; desse modo vocês se tornarão filhos da luz”. Depois de dizer essas coisas, Jesus foi embora e se ocultou deles."
+                "text": "Creiam na luz enquanto ainda há tempo; desse modo vocês se tornarão filhos da luz”. Depois de dizer essas coisas, Jesus foi embora e se ocultou deles.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Lucas 16:8",
-                "text": "“O patrão elogiou o administrador desonesto por sua astúcia. E é verdade que os filhos deste mundo são mais astutos ao lidar com o mundo ao redor que os filhos da luz."
+                "text": "“O patrão elogiou o administrador desonesto por sua astúcia. E é verdade que os filhos deste mundo são mais astutos ao lidar com o mundo ao redor que os filhos da luz.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1580,47 +1112,13 @@
             "number": 6,
             "text": "Portanto, fiquem atentos; não durmam como os outros. Permaneçam atentos e sejam sóbrios.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Pedro 1:13",
-                "text": "Portanto, preparem sua mente para a ação e exercitem o autocontrole. Depositem toda a sua esperança na graça que receberão quando Jesus Cristo for revelado."
-              },
-              {
-                "ref": "Mateus 24:42",
-                "text": "“Portanto, vigiem, pois não sabem em que ocasião o seu Senhor virá."
-              },
-              {
-                "ref": "Lucas 22:46",
-                "text": "“Por que vocês dormem?”, perguntou ele. “Levantem-se e orem para que não cedam à tentação.”"
-              },
-              {
-                "ref": "1 Pedro 5:8",
-                "text": "Estejam atentos! Tomem cuidado com seu grande inimigo, o diabo, que anda como um leão rugindo à sua volta, à procura de alguém para devorar."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 7,
             "text": "À noite, as pessoas dormem e os bêbados se embriagam.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Romanos 13:13",
-                "text": "Uma vez que pertencemos ao dia, vivamos com decência, à vista de todos. Não participem de festanças desregradas, de bebedeiras, de promiscuidade sexual e de práticas imorais, e não se envolvam em brigas nem em invejas."
-              },
-              {
-                "ref": "2 Pedro 2:13",
-                "text": "Praticam o mal e receberão o mal como recompensa. Gostam de se entregar à imoralidade em plena luz do dia. São uma vergonha e uma mancha no meio de vocês, sentindo prazer em enganá-los enquanto participam de suas refeições."
-              },
-              {
-                "ref": "1 Coríntios 15:34",
-                "text": "Pensem bem sobre o que é certo e parem de pecar. Pois, para sua vergonha, eu lhes digo que alguns de vocês não têm o menor conhecimento de Deus."
-              },
-              {
-                "ref": "Atos 2:15",
-                "text": "Estas pessoas não estão bêbadas, como alguns de vocês pensam, pois são apenas nove horas da manhã."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 8,
@@ -1629,19 +1127,23 @@
             "crossReferences": [
               {
                 "ref": "Romanos 13:12–13",
-                "text": "A noite está quase acabando, e logo vem o dia. Portanto, deixem de lado as obras das trevas como se fossem roupas sujas e vistam a armadura da luz."
-              },
-              {
-                "ref": "1 Pedro 1:13",
-                "text": "Portanto, preparem sua mente para a ação e exercitem o autocontrole. Depositem toda a sua esperança na graça que receberão quando Jesus Cristo for revelado."
-              },
-              {
-                "ref": "Efésios 6:11",
-                "text": "Vistam toda a armadura de Deus, para que possam permanecer firmes contra as estratégias do diabo."
+                "text": "A noite está quase acabando, e logo vem o dia. Portanto, deixem de lado as obras das trevas como se fossem roupas sujas e vistam a armadura da luz. Uma vez que pertencemos ao dia, vivamos com decência, à vista de todos. Não participem de festanças desregradas, de bebedeiras, de promiscuidade sexual e de práticas imorais, e não se envolvam em brigas nem em invejas.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Isaías 59:17",
-                "text": "Vestiu a justiça como armadura e pôs na cabeça o capacete da salvação. Cobriu-se com a túnica da vingança e envolveu-se com o manto do zelo."
+                "text": "Vestiu a justiça como armadura e pôs na cabeça o capacete da salvação. Cobriu-se com a túnica da vingança e envolveu-se com o manto do zelo.",
+                "category": "Tipologia & Aliança"
+              },
+              {
+                "ref": "Efésios 6:11",
+                "text": "Vistam toda a armadura de Deus, para que possam permanecer firmes contra as estratégias do diabo.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "1 Pedro 1:13",
+                "text": "Portanto, preparem sua mente para a ação e exercitem o autocontrole. Depositem toda a sua esperança na graça que receberão quando Jesus Cristo for revelado.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1651,20 +1153,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "1 Tessalonicenses 1:10",
-                "text": "Também comentam como vocês esperam do céu a vinda de Jesus, o Filho de Deus, a quem ele ressuscitou dos mortos e que nos livrará da ira que está para vir."
-              },
-              {
-                "ref": "1 Pedro 2:10",
-                "text": "“Antes vocês não tinham identidade como povo, agora são povo de Deus. Antes não haviam recebido misericórdia, agora receberam misericórdia de Deus.”"
-              },
-              {
                 "ref": "2 Timóteo 2:10",
-                "text": "Portanto, estou disposto a suportar qualquer coisa se isso trouxer salvação e glória eterna em Cristo Jesus para os que foram escolhidos."
-              },
-              {
-                "ref": "Atos 13:48",
-                "text": "Quando ouviram isso, os gentios se alegraram e agradeceram ao Senhor por essa mensagem, e todos que haviam sido escolhidos para a vida eterna creram."
+                "text": "Portanto, estou disposto a suportar qualquer coisa se isso trouxer salvação e glória eterna em Cristo Jesus para os que foram escolhidos.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1675,19 +1166,23 @@
             "crossReferences": [
               {
                 "ref": "Romanos 14:8–9",
-                "text": "Se vivemos, é para honrar o Senhor. E, se morremos, é para honrar o Senhor. Portanto, quer vivamos, quer morramos, pertencemos ao Senhor."
-              },
-              {
-                "ref": "1 Pedro 3:18",
-                "text": "Pois Cristo também sofreu por nossos pecados, de uma vez por todas. Embora nunca tenha pecado, morreu pelos pecadores a fim de conduzi-los a Deus. Sofreu morte física, mas foi ressuscitado pelo Espírito,"
+                "text": "Se vivemos, é para honrar o Senhor. E, se morremos, é para honrar o Senhor. Portanto, quer vivamos, quer morramos, pertencemos ao Senhor. Por isso Cristo morreu e ressuscitou, para ser Senhor tanto dos vivos como dos mortos.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "2 Coríntios 5:15",
-                "text": "Ele morreu por todos, para que os que recebem sua nova vida não vivam mais para si mesmos, mas para Cristo, que morreu e ressuscitou por eles."
+                "text": "Ele morreu por todos, para que os que recebem sua nova vida não vivam mais para si mesmos, mas para Cristo, que morreu e ressuscitou por eles.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "1 Pedro 3:18",
+                "text": "Pois Cristo também sofreu por nossos pecados, de uma vez por todas. Embora nunca tenha pecado, morreu pelos pecadores a fim de conduzi-los a Deus. Sofreu morte física, mas foi ressuscitado pelo Espírito,",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Efésios 5:2",
-                "text": "Vivam em amor, seguindo o exemplo de Cristo, que nos amou e se entregou por nós como oferta e sacrifício de aroma agradável a Deus."
+                "text": "Vivam em amor, seguindo o exemplo de Cristo, que nos amou e se entregou por nós como oferta e sacrifício de aroma agradável a Deus.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1695,24 +1190,7 @@
             "number": 11,
             "text": "Portanto, animem e edifiquem uns aos outros, como têm feito.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Efésios 4:29",
-                "text": "Evitem o linguajar sujo e insultante. Que todas as suas palavras sejam boas e úteis, a fim de dar ânimo àqueles que as ouvirem."
-              },
-              {
-                "ref": "Romanos 15:2",
-                "text": "Devemos agradar ao próximo visando ao que é certo, com a edificação deles como alvo."
-              },
-              {
-                "ref": "Hebreus 10:25",
-                "text": "E não deixemos de nos reunir, como fazem alguns, mas encorajemo-nos mutuamente, sobretudo agora que o dia está próximo."
-              },
-              {
-                "ref": "Hebreus 3:13",
-                "text": "Advirtam uns aos outros todos os dias, enquanto ainda é “hoje”, para que nenhum de vocês seja enganado pelo pecado e fique endurecido."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -1725,20 +1203,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
+                "ref": "1 Timóteo 5:17–18",
+                "text": "Os presbíteros que fazem bem seu trabalho devem receber honra redobrada, especialmente os que se dedicam arduamente à pregação e ao ensino. Pois as Escrituras dizem: “Não amordacem o boi para impedir que ele coma enquanto debulha os cereais”, e também: “Aqueles que trabalham merecem seu salário”.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
                 "ref": "Hebreus 13:17",
-                "text": "Obedeçam a seus líderes e façam o que disserem. O trabalho deles é cuidar de sua alma, e disso prestarão contas. Deem-lhes motivo para trabalhar com alegria, e não com tristeza, pois isso certamente não beneficiaria vocês."
+                "text": "Obedeçam a seus líderes e façam o que disserem. O trabalho deles é cuidar de sua alma, e disso prestarão contas. Deem-lhes motivo para trabalhar com alegria, e não com tristeza, pois isso certamente não beneficiaria vocês.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Hebreus 13:7",
-                "text": "Lembrem-se de seus líderes que lhes ensinaram a palavra de Deus. Pensem em todo o bem que resultou da vida deles e sigam seu exemplo de fé."
-              },
-              {
-                "ref": "1 Timóteo 5:17–18",
-                "text": "Os presbíteros que fazem bem seu trabalho devem receber honra redobrada, especialmente os que se dedicam arduamente à pregação e ao ensino."
-              },
-              {
-                "ref": "1 Coríntios 16:18",
-                "text": "Eles têm sido um grande estímulo para mim, como foram para vocês. Valorizem todos que servem tão bem."
+                "text": "Lembrem-se de seus líderes que lhes ensinaram a palavra de Deus. Pensem em todo o bem que resultou da vida deles e sigam seu exemplo de fé.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1749,19 +1226,18 @@
             "crossReferences": [
               {
                 "ref": "Marcos 9:50",
-                "text": "O sal é bom para temperar, mas, se perder o sabor, como torná-lo salgado outra vez? Tenham entre vocês as qualidades do bom sal e vivam em paz uns com os outros.”"
-              },
-              {
-                "ref": "Hebreus 12:14",
-                "text": "Esforcem-se para viver em paz com todos e procurem ter uma vida santa, sem a qual ninguém verá o Senhor."
-              },
-              {
-                "ref": "Tiago 3:18",
-                "text": "E aqueles que são pacificadores plantarão sementes de paz e ajuntarão uma colheita de justiça."
+                "text": "O sal é bom para temperar, mas, se perder o sabor, como torná-lo salgado outra vez? Tenham entre vocês as qualidades do bom sal e vivam em paz uns com os outros.”",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "João 13:34–35",
-                "text": "Por isso, agora eu lhes dou um novo mandamento: Amem uns aos outros. Assim como eu os amei, vocês devem amar uns aos outros. Seu amor uns pelos outros provará ao mundo que são meus discípulos”."
+                "text": "Por isso, agora eu lhes dou um novo mandamento: Amem uns aos outros. Assim como eu os amei, vocês devem amar uns aos outros. Seu amor uns pelos outros provará ao mundo que são meus discípulos”.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "Hebreus 12:14",
+                "text": "Esforcem-se para viver em paz com todos e procurem ter uma vida santa, sem a qual ninguém verá o Senhor.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1771,20 +1247,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "2 Timóteo 4:2",
-                "text": "pregue a palavra. Esteja preparado, quer a ocasião seja favorável, quer não. Corrija, repreenda e encoraje com paciência e bom ensino."
+                "ref": "2 Tessalonicenses 3:6–7",
+                "text": "E agora, irmãos, nós lhes damos a seguinte ordem em nome de nosso Senhor Jesus Cristo: mantenham-se afastados de todos os irmãos que vivem ociosamente e não seguem a tradição que receberam de nós. Pois vocês sabem que devem seguir nosso exemplo. Não ficamos ociosos quando estivemos com vocês,",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Romanos 14:1",
-                "text": "Aceitem os que são fracos na fé e não discutam sobre as opiniões deles acerca do que é certo ou errado."
+                "ref": "2 Timóteo 4:2",
+                "text": "pregue a palavra. Esteja preparado, quer a ocasião seja favorável, quer não. Corrija, repreenda e encoraje com paciência e bom ensino.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Atos 20:35",
-                "text": "Fui exemplo constante de como podemos, com trabalho árduo, ajudar os necessitados, lembrando as palavras do Senhor Jesus: ‘Há bênção maior em dar que em receber’”."
-              },
-              {
-                "ref": "2 Tessalonicenses 3:6–7",
-                "text": "E agora, irmãos, nós lhes damos a seguinte ordem em nome de nosso Senhor Jesus Cristo: mantenham-se afastados de todos os irmãos que vivem ociosamente e não seguem a tradição que receberam de nós."
+                "text": "Fui exemplo constante de como podemos, com trabalho árduo, ajudar os necessitados, lembrando as palavras do Senhor Jesus: ‘Há bênção maior em dar que em receber’”.",
+                "category": "Passagem Paralela"
               }
             ]
           },
@@ -1792,24 +1267,7 @@
             "number": 15,
             "text": "Cuidem que ninguém retribua o mal com o mal, mas procurem sempre fazer o bem uns aos outros e a todos.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "1 Pedro 3:9",
-                "text": "Não retribuam mal por mal, nem insulto com insulto. Ao contrário, retribuam com uma bênção. Foi para isso que vocês foram chamados, e a bênção lhes será concedida."
-              },
-              {
-                "ref": "Gálatas 6:10",
-                "text": "Por isso, sempre que tivermos oportunidade, façamos o bem a todos, especialmente aos da família da fé."
-              },
-              {
-                "ref": "Levítico 19:18",
-                "text": "“Não procurem se vingar nem guardem rancor de alguém do seu povo, mas cada um ame o seu próximo como a si mesmo. Eu sou o SENHOR."
-              },
-              {
-                "ref": "3 João 1:11",
-                "text": "Amado, não deixe que esse mau exemplo o influencie, mas siga apenas o que é bom. Quem faz o bem prova que é filho de Deus; quem faz o mal prova que não conhece a Deus."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 16,
@@ -1817,20 +1275,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Romanos 12:12",
-                "text": "Alegrem-se em nossa esperança. Sejam pacientes nas dificuldades e não parem de orar."
-              },
-              {
                 "ref": "Filipenses 4:4",
-                "text": "Alegrem-se sempre no Senhor. Repito: alegrem-se!"
-              },
-              {
-                "ref": "Mateus 5:12",
-                "text": "Alegrem-se e exultem, porque uma grande recompensa os espera no céu. E lembrem-se de que os antigos profetas foram perseguidos da mesma forma.”"
-              },
-              {
-                "ref": "2 Coríntios 6:10",
-                "text": "Nosso coração se entristece, mas sempre temos alegria. Somos pobres, mas enriquecemos a muitos outros. Não possuímos nada e, no entanto, temos tudo."
+                "text": "Alegrem-se sempre no Senhor. Repito: alegrem-se!",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1840,20 +1287,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
+                "ref": "Lucas 18:1",
+                "text": "Jesus contou a seus discípulos uma parábola para mostrar-lhes que deviam orar sempre e nunca desanimar.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
                 "ref": "Romanos 12:12",
-                "text": "Alegrem-se em nossa esperança. Sejam pacientes nas dificuldades e não parem de orar."
+                "text": "Alegrem-se em nossa esperança. Sejam pacientes nas dificuldades e não parem de orar.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Colossenses 4:2",
-                "text": "Dediquem-se à oração com a mente alerta e o coração agradecido."
-              },
-              {
-                "ref": "Efésios 6:18",
-                "text": "Orem no Espírito em todos os momentos e ocasiões. Permaneçam atentos e sejam persistentes em suas orações por todo o povo santo."
-              },
-              {
-                "ref": "Lucas 18:1",
-                "text": "Jesus contou a seus discípulos uma parábola para mostrar-lhes que deviam orar sempre e nunca desanimar."
+                "text": "Dediquem-se à oração com a mente alerta e o coração agradecido.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1864,19 +1310,8 @@
             "crossReferences": [
               {
                 "ref": "Efésios 5:20",
-                "text": "Por tudo deem graças a Deus, o Pai, em nome de nosso Senhor Jesus Cristo."
-              },
-              {
-                "ref": "Filipenses 4:6",
-                "text": "Não vivam preocupados com coisa alguma; em vez disso, orem a Deus pedindo aquilo de que precisam e agradecendo-lhe por tudo que ele já fez."
-              },
-              {
-                "ref": "Colossenses 3:17",
-                "text": "E tudo que fizerem ou disserem, façam em nome do Senhor Jesus, dando graças a Deus, o Pai, por meio dele."
-              },
-              {
-                "ref": "Hebreus 13:15",
-                "text": "Assim, por meio de Jesus, ofereçamos um sacrifício constante de louvor a Deus, o fruto dos lábios que proclamam seu nome."
+                "text": "Por tudo deem graças a Deus, o Pai, em nome de nosso Senhor Jesus Cristo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1884,24 +1319,7 @@
             "number": 19,
             "text": "Não apaguem o Espírito.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Efésios 4:30",
-                "text": "Não entristeçam o Espírito Santo de Deus, o selo que ele colocou sobre vocês para o dia em que nos resgatará como sua propriedade."
-              },
-              {
-                "ref": "Atos 7:51",
-                "text": "“Povo teimoso! Vocês têm o coração incircuncidado e são surdos para a verdade. Resistirão para sempre ao Espírito Santo? Foi o que seus antepassados fizeram, e vocês também o fazem!"
-              },
-              {
-                "ref": "2 Timóteo 1:6",
-                "text": "Por isso quero lembrá-lo de avivar a chama do dom que Deus lhe deu quando impus minhas mãos sobre você."
-              },
-              {
-                "ref": "1 Timóteo 4:14",
-                "text": "Não descuide do dom que recebeu por meio de profecia quando os presbíteros impuseram as mãos sobre você."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 20,
@@ -1910,19 +1328,18 @@
             "crossReferences": [
               {
                 "ref": "1 Coríntios 14:3–6",
-                "text": "Mas aquele que profetiza fortalece, anima e conforta os outros."
+                "text": "Mas aquele que profetiza fortalece, anima e conforta os outros. Quem fala em línguas fortalece a si mesmo, mas quem profetiza fortalece toda a igreja. Gostaria que todos vocês falassem em línguas, mas gostaria ainda mais que todos profetizassem. Pois a profecia é superior a falar em línguas, a menos que alguém interprete o que vocês dizem para que toda a igreja seja fortalecida. Irmãos, se eu for visitá-los e falar em línguas, em que isso os ajudará? Mas, se eu lhes trouxer uma revelação, um conhecimento especial, uma profecia ou um ensinamento, isso lhes será proveitoso.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Coríntios 14:1",
-                "text": "Que o amor seja seu maior objetivo! Contudo, desejem também os dons espirituais, especialmente a capacidade de profetizar."
+                "text": "Que o amor seja seu maior objetivo! Contudo, desejem também os dons espirituais, especialmente a capacidade de profetizar.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Números 11:25–29",
-                "text": "O SENHOR desceu na nuvem e falou com ele. Depois, deu aos setenta líderes o mesmo Espírito que estava sobre Moisés. E, quando o Espírito pousou sobre eles, os líderes profetizaram, algo que nunca mais aconteceu."
-              },
-              {
-                "ref": "Atos 19:6",
-                "text": "Paulo lhes impôs as mãos e o Espírito Santo veio sobre eles, e falaram em línguas e profetizaram."
+                "ref": "Números 11:25–26",
+                "text": "O SENHOR desceu na nuvem e falou com ele. Depois, deu aos setenta líderes o mesmo Espírito que estava sobre Moisés. E, quando o Espírito pousou sobre eles, os líderes profetizaram, algo que nunca mais aconteceu. Dois homens, Eldade e Medade, haviam permanecido no acampamento. Faziam parte da lista de autoridades, mas não tinham ido à tenda da reunião. E, no entanto, o Espírito também pousou sobre eles, de modo que profetizaram ali no acampamento.",
+                "category": "Citação & Cumprimento"
               }
             ]
           },
@@ -1933,19 +1350,8 @@
             "crossReferences": [
               {
                 "ref": "1 João 4:1",
-                "text": "Amados, não acreditem em todo espírito, mas ponham-no à prova para ter a certeza de que o espírito vem de Deus, pois há muitos falsos profetas no mundo."
-              },
-              {
-                "ref": "Romanos 12:2",
-                "text": "Não imitem o comportamento e os costumes deste mundo, mas deixem que Deus os transforme por meio de uma mudança em seu modo de pensar, a fim de que experimentem a boa, agradável e perfeita vontade de Deus para vocês."
-              },
-              {
-                "ref": "Efésios 5:10",
-                "text": "Procurem descobrir o que agrada ao Senhor."
-              },
-              {
-                "ref": "Lucas 12:57",
-                "text": "“Por que não decidem por si mesmos o que é certo?"
+                "text": "Amados, não acreditem em todo espírito, mas ponham-no à prova para ter a certeza de que o espírito vem de Deus, pois há muitos falsos profetas no mundo.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -1953,24 +1359,7 @@
             "number": 22,
             "text": "Mantenham-se afastados de toda forma de mal.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "2 Coríntios 6:3",
-                "text": "Vivemos de forma que ninguém tropece por nossa causa, nem tenha motivo para criticar nosso ministério."
-              },
-              {
-                "ref": "Filipenses 4:8",
-                "text": "Por fim, irmãos, quero lhes dizer só mais uma coisa. Concentrem-se em tudo que é verdadeiro, tudo que é nobre, tudo que é correto, tudo que é puro, tudo que é amável e tudo que é admirável. Pensem no que é excelente e digno de louvor."
-              },
-              {
-                "ref": "2 Coríntios 8:20–21",
-                "text": "Com isso, queremos evitar qualquer crítica à nossa maneira de administrar essa oferta generosa. Tomamos o cuidado de agir honradamente não só aos olhos do Senhor, mas também diante das pessoas."
-              },
-              {
-                "ref": "1 Coríntios 10:31–33",
-                "text": "Portanto, quer vocês comam, quer bebam, quer façam qualquer outra coisa, façam para a glória de Deus."
-              }
-            ]
+            "crossReferences": []
           }
         ]
       },
@@ -1983,20 +1372,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Judas 1:24",
-                "text": "Toda a glória seja àquele que é poderoso para guardá-los de cair e para levá-los, com grande alegria e sem defeito, à sua presença gloriosa."
+                "ref": "1 Tessalonicenses 3:13",
+                "text": "E, como resultado, que Deus, nosso Pai, torne seu coração forte, irrepreensível e santo diante dele para quando nosso Senhor Jesus voltar com todo o seu povo santo. Amém.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Coríntios 1:8–9",
-                "text": "Ele os manterá firmes até o fim, para que estejam livres de toda a culpa no dia de nosso Senhor Jesus Cristo. Deus é fiel, e ele os convidou a ter comunhão com seu Filho Jesus Cristo, nosso Senhor."
+                "text": "Ele os manterá firmes até o fim, para que estejam livres de toda a culpa no dia de nosso Senhor Jesus Cristo. Deus é fiel, e ele os convidou a ter comunhão com seu Filho Jesus Cristo, nosso Senhor.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Hebreus 4:12",
-                "text": "Pois a palavra de Deus é viva e poderosa. É mais cortante que qualquer espada de dois gumes, penetrando entre a alma e o espírito, entre a junta e a medula, e trazendo à luz até os pensamentos e desejos mais íntimos."
-              },
-              {
-                "ref": "1 Tessalonicenses 3:13",
-                "text": "E, como resultado, que Deus, nosso Pai, torne seu coração forte, irrepreensível e santo diante dele para quando nosso Senhor Jesus voltar com todo o seu povo santo. Amém."
+                "text": "Pois a palavra de Deus é viva e poderosa. É mais cortante que qualquer espada de dois gumes, penetrando entre a alma e o espírito, entre a junta e a medula, e trazendo à luz até os pensamentos e desejos mais íntimos.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2007,19 +1395,18 @@
             "crossReferences": [
               {
                 "ref": "2 Tessalonicenses 3:3",
-                "text": "Mas o Senhor é fiel; ele os fortalecerá e os guardará do maligno."
-              },
-              {
-                "ref": "Números 23:19",
-                "text": "Deus não é homem para mentir, nem ser humano para mudar de ideia. Alguma vez ele falou e não agiu? Alguma vez prometeu e não cumpriu?"
-              },
-              {
-                "ref": "Deuteronômio 7:9",
-                "text": "Reconheçam, portanto, que o SENHOR, seu Deus, é, de fato, Deus. Ele é o Deus fiel que cumpre por mil gerações sua aliança de amor com todos que o amam e obedecem a seus mandamentos."
+                "text": "Mas o Senhor é fiel; ele os fortalecerá e os guardará do maligno.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "1 Coríntios 1:9",
-                "text": "Deus é fiel, e ele os convidou a ter comunhão com seu Filho Jesus Cristo, nosso Senhor."
+                "text": "Deus é fiel, e ele os convidou a ter comunhão com seu Filho Jesus Cristo, nosso Senhor.",
+                "category": "Harmonia Doutrinária"
+              },
+              {
+                "ref": "Deuteronômio 7:9",
+                "text": "Reconheçam, portanto, que o SENHOR, seu Deus, é, de fato, Deus. Ele é o Deus fiel que cumpre por mil gerações sua aliança de amor com todos que o amam e obedecem a seus mandamentos.",
+                "category": "Tipologia & Aliança"
               }
             ]
           },
@@ -2027,24 +1414,7 @@
             "number": 25,
             "text": "Irmãos, orem por nós.",
             "isJesusWords": false,
-            "crossReferences": [
-              {
-                "ref": "Filipenses 1:19",
-                "text": "pois sei que, com suas orações e o auxílio do Espírito de Jesus Cristo, isso resultará em minha libertação."
-              },
-              {
-                "ref": "Hebreus 13:18–19",
-                "text": "Orem por nós, pois nossa consciência está limpa e desejamos viver de forma honrada em tudo que fazemos. Orem especialmente para que eu volte e possa vê-los em breve."
-              },
-              {
-                "ref": "2 Coríntios 1:11",
-                "text": "E vocês nos têm ajudado ao orar por nós. Então muitos darão graças porque Deus, em sua bondade, respondeu a tantas orações feitas em nosso favor."
-              },
-              {
-                "ref": "Filemom 1:22",
-                "text": "Por favor, prepare um quarto para mim, pois espero que as orações de vocês sejam respondidas e eu possa voltar a visitá-los em breve."
-              }
-            ]
+            "crossReferences": []
           },
           {
             "number": 26,
@@ -2052,12 +1422,14 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Romanos 16:16",
-                "text": "Saúdem uns aos outros com beijo santo. Todas as igrejas de Cristo lhes enviam saudações."
+                "ref": "1 Coríntios 16:20",
+                "text": "Todos os irmãos daqui lhes enviam saudações. Saúdem uns aos outros com beijo santo.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "1 Coríntios 16:20",
-                "text": "Todos os irmãos daqui lhes enviam saudações. Saúdem uns aos outros com beijo santo."
+                "ref": "Romanos 16:16",
+                "text": "Saúdem uns aos outros com beijo santo. Todas as igrejas de Cristo lhes enviam saudações.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2067,20 +1439,9 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Colossenses 4:16",
-                "text": "Depois que tiverem lido esta carta, enviem-na à igreja em Laodiceia, a fim de que eles também possam lê-la. E vocês, leiam a carta que eu escrevi para eles."
-              },
-              {
-                "ref": "2 Timóteo 4:1",
-                "text": "Eu lhe digo solenemente, na presença de Deus e de Cristo Jesus, que um dia julgará os vivos e os mortos quando vier para estabelecer seu reino:"
-              },
-              {
-                "ref": "1 Timóteo 5:21",
-                "text": "Ordeno solenemente, na presença de Deus, de Cristo Jesus e dos anjos eleitos que você obedeça a estas instruções sem tomar partido nem demonstrar favoritismo."
-              },
-              {
                 "ref": "Mateus 26:63",
-                "text": "Jesus, porém, permaneceu calado. O sumo sacerdote lhe disse: “Exijo em nome do Deus vivo que nos diga se é o Cristo, o Filho de Deus”."
+                "text": "Jesus, porém, permaneceu calado. O sumo sacerdote lhe disse: “Exijo em nome do Deus vivo que nos diga se é o Cristo, o Filho de Deus”.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           },
@@ -2090,20 +1451,19 @@
             "isJesusWords": false,
             "crossReferences": [
               {
-                "ref": "Romanos 16:20",
-                "text": "Em breve o Deus da paz esmagará Satanás sob os pés de vocês. Que a graça de nosso Senhor Jesus seja com vocês."
-              },
-              {
                 "ref": "2 Tessalonicenses 3:18",
-                "text": "Que a graça de nosso Senhor Jesus Cristo esteja com todos vocês."
+                "text": "Que a graça de nosso Senhor Jesus Cristo esteja com todos vocês.",
+                "category": "Harmonia Doutrinária"
               },
               {
                 "ref": "Romanos 1:7",
-                "text": "Escrevo a todos vocês que estão em Roma, amados por Deus e chamados para ser seu povo santo. Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz."
+                "text": "Escrevo a todos vocês que estão em Roma, amados por Deus e chamados para ser seu povo santo. Que Deus, nosso Pai, e o Senhor Jesus Cristo lhes deem graça e paz.",
+                "category": "Harmonia Doutrinária"
               },
               {
-                "ref": "Romanos 16:23",
-                "text": "Gaio os saúda. Estou hospedado em sua casa, onde ele também tem recebido toda a igreja. Erasto, tesoureiro da cidade, bem como nosso irmão Quarto, lhes enviam saudações."
+                "ref": "Romanos 16:20",
+                "text": "Em breve o Deus da paz esmagará Satanás sob os pés de vocês. Que a graça de nosso Senhor Jesus seja com vocês.",
+                "category": "Harmonia Doutrinária"
               }
             ]
           }

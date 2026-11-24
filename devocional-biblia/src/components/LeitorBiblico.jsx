@@ -676,7 +676,7 @@ export default function LeitorBiblico({
                             onClick={(e) => {
                               e.stopPropagation();
                               telemetryService.track('cross_references_click', { verse: verseKey });
-                              onOpenReferences(verseKey, crossRefs);
+                              onOpenReferences(verseKey, crossRefs, v.text);
                             }}
                             className="inline-flex items-center text-amber-600 dark:text-amber-400 hover:text-amber-800 ml-1 p-0.5 align-middle select-none"
                             title="Ver referências cruzadas"
@@ -904,7 +904,7 @@ export default function LeitorBiblico({
               {singleVerseData && (
                 <button
                   onClick={() => {
-                    onOpenReferences(singleVerseData.key, singleRefs);
+                    onOpenReferences(singleVerseData.key, singleRefs, singleVerseData.text);
                     setSelectedVerses({});
                   }}
                   className="inline-flex items-center space-x-1 text-[11px] font-medium text-amber-400 hover:underline px-1 py-0.5"
