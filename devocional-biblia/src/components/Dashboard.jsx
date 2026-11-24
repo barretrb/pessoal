@@ -44,7 +44,25 @@ function getGreeting() {
   return 'Boa noite';
 }
 
-function formatReadingsCompact(readings = []) {
+const BOOK_ABBR = {
+  'Gênesis': 'Gn', 'Êxodo': 'Êx', 'Levítico': 'Lv', 'Números': 'Nm', 'Deuteronômio': 'Dt',
+  'Josué': 'Js', 'Juízes': 'Jz', 'Rute': 'Rt', '1 Samuel': '1Sm', '2 Samuel': '2Sm',
+  '1 Reis': '1Rs', '2 Reis': '2Rs', '1 Crônicas': '1Cr', '2 Crônicas': '2Cr',
+  'Esdras': 'Ed', 'Neemias': 'Ne', 'Ester': 'Et', 'Jó': 'Jó', 'Salmos': 'Sl',
+  'Provérbios': 'Pv', 'Eclesiastes': 'Ec', 'Cânticos': 'Ct', 'Isaías': 'Is',
+  'Jeremias': 'Jr', 'Lamentações': 'Lm', 'Ezequiel': 'Ez', 'Daniel': 'Dn',
+  'Oseias': 'Os', 'Joel': 'Jl', 'Amós': 'Am', 'Obadias': 'Ob', 'Jonas': 'Jn',
+  'Miqueias': 'Mq', 'Naum': 'Na', 'Habacuque': 'Hc', 'Sofonias': 'Sf', 'Ageu': 'Ag',
+  'Zacarias': 'Zc', 'Malaquias': 'Ml', 'Mateus': 'Mt', 'Marcos': 'Mc', 'Lucas': 'Lc',
+  'João': 'Jo', 'Atos': 'At', 'Romanos': 'Rm', '1 Coríntios': '1Co', '2 Coríntios': '2Co',
+  'Gálatas': 'Gl', 'Efésios': 'Ef', 'Filipenses': 'Fp', 'Colossenses': 'Cl',
+  '1 Tessalonicenses': '1Ts', '2 Tessalonicenses': '2Ts', '1 Timóteo': '1Tm',
+  '2 Timóteo': '2Tm', 'Tito': 'Tt', 'Filemom': 'Fm', 'Hebreus': 'Hb', 'Tiago': 'Tg',
+  '1 Pedro': '1Pe', '2 Pedro': '2Pe', '1 João': '1Jo', '2 João': '2Jo', '3 João': '3Jo',
+  'Judas': 'Jd', 'Apocalipse': 'Ap'
+};
+
+function formatReadingsCompact(readings = [], compactCrossBook = false) {
   if (!readings || readings.length === 0) return '';
   if (readings.length === 1) return readings[0];
   const parsed = readings.map(r => {
@@ -56,6 +74,11 @@ function formatReadingsCompact(readings = []) {
   const last = parsed[parsed.length - 1];
   if (parsed.every(p => p.book === first.book)) {
     return `${first.book} ${first.ch}–${last.ch}`;
+  }
+  if (compactCrossBook) {
+    const b1 = BOOK_ABBR[first.book] || first.book;
+    const b2 = BOOK_ABBR[last.book] || last.book;
+    return `${b1} ${first.ch} – ${b2} ${last.ch}`;
   }
   return `${first.book} ${first.ch} – ${last.book} ${last.ch}`;
 }
@@ -167,7 +190,7 @@ export default function Dashboard({
   const ringOffset = ringCircumference - (progressPercent / 100) * ringCircumference;
 
   return (
-    <div className="w-full max-w-[1160px] mx-auto px-4 sm:px-6 lg:px-8 py-5 sm:py-8 space-y-6 overflow-x-hidden">
+    <div className="w-full max-w-[1160px] mx-auto px-4 sm:px-6 lg:px-8 py-5 sm:py-8 space-y-6 overflow-x-clip">
       
       {/* 1. HEADER COMPACTO: SAUDAÇÃO HUMANA + ANEL DE PROGRESSO ANUAL */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -700,7 +723,7 @@ export default function Dashboard({
               {filteredDays.map(d => {
                 const isToday = d.id === currentDayId;
                 const isPending = !d.completed && d.id >= startDay && d.id < currentDayId;
-                const shortReading = formatReadingsCompact(d.readings);
+                const shortReading = formatReadingsCompact(d.readings, true);
 
                 return (
                   <button

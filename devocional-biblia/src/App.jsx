@@ -59,6 +59,23 @@ export default function App() {
 
   const [currentView, setCurrentView] = useState('dashboard');
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(() => {
+    try {
+      return localStorage.getItem('devocional_sidebar_collapsed_v1') === 'true';
+    } catch {
+      return false;
+    }
+  });
+
+  const handleToggleSidebarCollapse = () => {
+    setSidebarCollapsed(prev => {
+      const next = !prev;
+      try {
+        localStorage.setItem('devocional_sidebar_collapsed_v1', String(next));
+      } catch {}
+      return next;
+    });
+  };
   
   const [isFreeReading, setIsFreeReading] = useState(false);
   const [freeReadingBook, setFreeReadingBook] = useState('Mateus');
@@ -391,11 +408,13 @@ export default function App() {
   const savedTotalCount = (favorites?.length || 0) + Object.keys(highlights || {}).length;
 
   return (
-    <div className="min-h-screen w-full max-w-[100vw] overflow-x-hidden transition-colors duration-200 bg-[#F9FAFB] dark:bg-[#09090B] sepia:bg-[#F5EFE6] text-zinc-900 dark:text-zinc-100 sepia:text-[#2C221E] flex flex-col lg:flex-row font-sans">
+    <div className="min-h-screen w-full max-w-[100vw] overflow-x-clip transition-colors duration-200 bg-[#F9FAFB] dark:bg-[#09090B] sepia:bg-[#F5EFE6] text-zinc-900 dark:text-zinc-100 sepia:text-[#2C221E] flex flex-col font-sans">
       
-      {/* 1. RAIL DE NAVEGAÇÃO DESKTOP (PADRÃO YOUVERSION WEB / LINEAR) */}
+      {/* 1. RAIL DE NAVEGAÇÃO DESKTOP FIXO E RECOLHÍVEL */}
       <SidebarNav
         currentView={currentView}
+        collapsed={sidebarCollapsed}
+        onToggleCollapse={handleToggleSidebarCollapse}
         onGoHome={() => {
           setIsFreeReading(false);
           setCurrentView('dashboard');
@@ -407,24 +426,34 @@ export default function App() {
         onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
         onOpenFavorites={openFavoritesLibrary}
         onOpenMetrics={() => setUsageMetricsOpen(true)}
+        onOpenCustomize={() => setCustomizeModalOpen(true)}
         onOpenProfiles={() => setProfileModalOpen(true)}
         onScrollToCalendar={handleScrollToCalendar}
         activeBookName={activeBookName}
         activeProfile={activeProfile}
         favoritesCount={savedTotalCount}
         pendingDayId={pendingDayId}
-        onSelectDay={handleSelectDay}
         theme={theme}
         setTheme={setTheme}
         onLogout={handleLogout}
       />
 
-      {/* Drawer Mobile */}
+      {/* Drawer Lateral Mobile (Mesmo design recolhível no celular/tablet) */}
       <SidebarDrawer
         isOpen={isDrawerOpen}
         onClose={() => setIsDrawerOpen(false)}
+        currentView={currentView}
+        onGoHome={() => {
+          setIsFreeReading(false);
+          setCurrentView('dashboard');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+        onOpenReaderToday={() => handleSelectDay(currentDayId)}
+        onScrollToCalendar={handleScrollToCalendar}
         activeProfile={activeProfile}
         activeBookName={activeBookName}
+        favoritesCount={savedTotalCount}
+        pendingDayId={pendingDayId}
         onOpenProfiles={() => setProfileModalOpen(true)}
         onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
         onOpenBibleNav={() => setBibleNavOpen(true)}
@@ -443,8 +472,8 @@ export default function App() {
         completedDaysCount={completedDaysCount}
       />
 
-      {/* 2. ÁREA DE CONTEÚDO PRINCIPAL */}
-      <div className="flex-1 min-w-0 flex flex-col min-h-screen">
+      {/* 2. ÁREA DE CONTEÚDO PRINCIPAL (Sincronizada com largura da Sidebar Fixa) */}
+      <div className={`flex-1 min-w-0 flex flex-col min-h-screen transition-[padding] duration-200 ease-out ${sidebarCollapsed ? 'lg:pl-[72px]' : 'lg:pl-64'}`}>
         {/* Top Bar exclusiva para Mobile/Tablet */}
         <Navbar
           pendingDayId={pendingDayId}
@@ -460,7 +489,7 @@ export default function App() {
           onOpenDrawer={() => setIsDrawerOpen(true)}
         />
 
-        <main className="flex-1 pb-24 lg:pb-12 overflow-x-hidden">
+        <main className="flex-1 pb-24 lg:pb-12 overflow-x-clip">
           {currentView === 'dashboard' ? (
             <Dashboard
               days={days}

@@ -1,12 +1,12 @@
 {
-  "name": "Devocional 365 NVT",
+  "name": "Devocional 365 • Bíblia NVT",
   "short_name": "Devocional 365",
-  "description": "Plano Anual de Leitura Bíblica e Devocional Diário",
+  "description": "Plano Anual de Leitura Bíblica e Estudo Exegético NVT",
   "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait",
+  "orientation": "portrait-primary",
   "background_color": "#09090b",
-  "theme_color": "#d97706",
+  "theme_color": "#09090b",
   "icons": [
     {
       "src": "/favicon.svg",
