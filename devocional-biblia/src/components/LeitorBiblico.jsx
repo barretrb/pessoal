@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { HIGHLIGHT_COLORS, storage } from '../services/storage';
+import { cloudDbService } from '../services/cloudDbService';
 import { getMediaForDay, getMediaForPassage, getMusicForChapter } from '../data/dailyMedia';
 import { speechService } from '../services/speechService';
 import { bibleCommentaryService } from '../services/bibleCommentaryService';
@@ -293,16 +294,31 @@ export default function LeitorBiblico({
 
   const handleApplyHighlight = (colorKey) => {
     if (selectedKeys.length === 0) return;
-    const updated = storage.saveMultipleHighlights(selectedKeys, colorKey);
+    if (colorKey) {
+      telemetryService.track('highlights_add', {
+        color: colorKey,
+        verses: selectedKeys.join(', '),
+        incrementBy: selectedKeys.length
+      });
+    }
+    const updated = storage.saveMultipleHighlights(selectedKeys, colorKey, storage.getActiveProfileId(), selectedVerses);
     setHighlights({ ...updated });
     setSelectedVerses({});
+    cloudDbService.triggerAutoSync();
   };
 
   const handleToggleFav = () => {
     if (selectedKeys.length === 0) return;
     const items = Object.values(selectedVerses);
+    if (!areAllSelectedFavorites) {
+      telemetryService.track('favorites_add', {
+        verses: selectedKeys.join(', '),
+        incrementBy: items.length
+      });
+    }
     const updated = storage.toggleMultipleFavorites(items);
     setFavorites([...updated]);
+    cloudDbService.triggerAutoSync();
   };
 
   const areAllSelectedFavorites = selectedKeys.length > 0 && selectedKeys.every(k => 
@@ -460,7 +476,7 @@ export default function LeitorBiblico({
             <span className="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">
               {isFreeReading ? 'Leitura Livre da Bíblia' : `Dia ${dayData?.id} • ${dayData?.dayOfWeek}`}
             </span>
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-zinc-900 dark:text-zinc-100 tracking-tight">
+            <h1 className="font-display text-3xl sm:text-4xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">
               {isFreeReading ? `${activeBook} ${selectedChapter}` : readings.join(', ')}
             </h1>
           </div>
@@ -553,13 +569,15 @@ export default function LeitorBiblico({
             {mentionedPlaces.map(place => (
               <button
                 key={place.id}
-                onClick={() => onOpenMaps && onOpenMaps(place.id)}
+                onClick={() => {
+                  telemetryService.track('biblical_maps_view', { place: place.name, chapter: activeChapterStr });
+                  onOpenMaps && onOpenMaps(place.id);
+                }}
                 className="shrink-0 px-2.5 py-1 rounded-xl bg-white dark:bg-zinc-800 border border-amber-200 dark:border-amber-800/60 text-zinc-800 dark:text-zinc-200 hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-all font-semibold flex items-center space-x-1 cursor-pointer shadow-2xs group"
                 title={`${place.name} (${place.region}) - Clique para ver a rota e história no Atlas Bíblico`}
               >
                 <MapPin className="w-3 h-3 text-amber-600 dark:text-amber-400 group-hover:scale-110 transition-transform" />
                 <span>{place.name}</span>
-                <span className="text-[10px] text-zinc-400 group-hover:text-amber-600">🗺️</span>
               </button>
             ))}
           </div>
@@ -584,10 +602,10 @@ export default function LeitorBiblico({
             <div className="flex items-center space-x-2 shrink-0 self-end sm:self-auto">
               <button
                 onClick={() => {
-                  telemetryService.track('music_cycle_reader', { chapter: activeChapterStr });
+                  telemetryService.track('music_cycle', { chapter: activeChapterStr });
                   setChapterMusicOverride(prev => prev === null ? (activeChapterMusic.artistIndex ?? 0) + 1 : prev + 1);
                 }}
-                className="inline-flex items-center space-x-1 px-2.5 py-1 rounded-xl bg-white dark:bg-zinc-700 border border-zinc-200 dark:border-zinc-600 text-[11px] font-medium text-zinc-700 dark:text-zinc-200 hover:bg-amber-50 dark:hover:bg-zinc-600 transition-colors shadow-2xs"
+                className="inline-flex items-center space-x-1 px-2.5 py-1 rounded-xl bg-white dark:bg-zinc-700 border border-zinc-200 dark:border-zinc-600 text-[11px] font-medium text-zinc-700 dark:text-zinc-200 hover:bg-amber-50 dark:hover:bg-zinc-600 transition-colors shadow-2xs cursor-pointer"
                 title="Trocar por outro louvor temático deste capítulo"
               >
                 <RefreshCw className="w-3 h-3 text-amber-600" />
@@ -598,7 +616,7 @@ export default function LeitorBiblico({
                 href={activeChapterMusic.youtubeMusicUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => telemetryService.track('music_play_youtube_music_reader', { chapter: activeChapterStr, title: activeChapterMusic.title, artist: activeChapterMusic.artist })}
+                onClick={() => telemetryService.track('music_play_youtube_music', { chapter: activeChapterStr, title: activeChapterMusic.title, artist: activeChapterMusic.artist })}
                 className="inline-flex items-center space-x-1 px-2.5 py-1 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-semibold text-[11px] transition-colors shadow-2xs"
                 title="Ouvir no YouTube Music"
               >
@@ -633,7 +651,7 @@ export default function LeitorBiblico({
                 
                 {/* Título de Seção da NVT */}
                 {section.title && (
-                  <h3 className="font-sans font-bold text-lg sm:text-xl text-teal-700 dark:text-teal-400 sepia:text-[#008674] pt-4 border-t border-zinc-100 dark:border-zinc-800 first:border-0 first:pt-0">
+                  <h3 className="font-display font-bold text-xl sm:text-2xl text-amber-900 dark:text-amber-300 sepia:text-[#5c3d1e] pt-4 border-t border-zinc-100 dark:border-zinc-800 first:border-0 first:pt-0">
                     {section.title}
                   </h3>
                 )}

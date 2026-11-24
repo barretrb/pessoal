@@ -15,6 +15,8 @@ import PinAuthModal from './components/PinAuthModal';
 import MapasBiblicosModal from './components/MapasBiblicosModal';
 import PlanoDevocionalOnboardingModal from './components/PlanoDevocionalOnboardingModal';
 import SelecaoPerfilScreen from './components/SelecaoPerfilScreen';
+import PersonalizarDashboardModal from './components/PersonalizarDashboardModal';
+import UsoFeaturesModal from './components/UsoFeaturesModal';
 
 import initialDays from './data/plano365.json';
 import lucasData from './data/lucas_nvt.json';
@@ -27,32 +29,28 @@ import { supabaseSyncService } from './services/supabaseSyncService';
 import confetti from 'canvas-confetti';
 
 export default function App() {
-  // Configurações
   const savedSettings = storage.getSettings();
   const [theme, setTheme] = useState(savedSettings.theme || 'light');
   const [redLetterEnabled, setRedLetterEnabled] = useState(savedSettings.redLetters ?? true);
 
-  // 1. SISTEMA DE PERFIS (MULTI-CONTA: RAFAEL, ESPOSA, ETC.)
+  // 1. SISTEMA DE PERFIS
   const [profiles, setProfiles] = useState(() => storage.getProfiles());
   const [activeProfileId, setActiveProfileId] = useState(() => storage.getActiveProfileId());
   const [profileModalOpen, setProfileModalOpen] = useState(false);
 
-  const activeProfile = profiles.find(p => p.id === activeProfileId) || profiles[0] || { name: 'Rafael', avatar: '👨' };
+  const activeProfile = profiles.find(p => p.id === activeProfileId) || profiles[0] || { name: 'Rafael', avatar: '👨', role: 'admin' };
 
-  // 2. LAYOUT DO DASHBOARD (REORDENAÇÃO, COLAPSO E OCULTAÇÃO)
+  // 2. LAYOUT DO DASHBOARD
   const [dashboardLayout, setDashboardLayout] = useState(() => storage.getDashboardLayout(activeProfileId));
 
-  // 3. PROGRESSO DOS 365 DIAS (POR PERFIL)
+  // 3. PROGRESSO DOS 365 DIAS E CAPÍTULOS
   const [days, setDays] = useState(() => storage.getProgress(initialDays, activeProfileId));
-
-  // 4. PROGRESSO INDIVIDUAL DE CAPÍTULOS (POR PERFIL)
   const [chapterProgress, setChapterProgress] = useState(() => storage.getChapterProgress(activeProfileId));
 
-  // Cálculo DINÂMICO da data de hoje e pendências
-  const todayDay = getTodayDay(days) || days[305];
+  // Cálculo dinâmico do dia de hoje e pendências
+  const todayDay = getTodayDay(days) || days[327] || days[305];
   const currentDayId = todayDay.id;
 
-  // Encontrar todas as pendências anteriores a hoje (respeitando início do plano e capítulos concluídos)
   const isRafael = activeProfile?.id === 'default' || activeProfile?.name?.trim().toLowerCase() === 'rafael' || activeProfile?.role === 'admin';
   const isPlanActive = activeProfile?.planOptIn !== false;
   const userStartDayId = isRafael ? 1 : (activeProfile?.startDayId || currentDayId);
@@ -62,18 +60,20 @@ export default function App() {
   // Visualização e Seleção
   const [selectedDayId, setSelectedDayId] = useState(currentDayId);
   const currentDayData = days.find(d => d.id === selectedDayId) || todayDay;
-  const currentDayReading = currentDayData?.readings?.[0] ? parseReading(currentDayData.readings[0]) : { book: 'Lucas', chapter: '1' };
+  const currentDayReading = currentDayData?.readings?.[0] ? parseReading(currentDayData.readings[0]) : { book: '1 Coríntios', chapter: '14' };
 
   const [currentView, setCurrentView] = useState('dashboard');
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false); // 'dashboard' | 'reader'
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   
-  // Estado para Leitura Livre de qualquer livro da Bíblia
+  // Estado para Leitura Livre
   const [isFreeReading, setIsFreeReading] = useState(false);
   const [freeReadingBook, setFreeReadingBook] = useState('Mateus');
   const [freeReadingChapter, setFreeReadingChapter] = useState(1);
   const [currentBookData, setCurrentBookData] = useState(lucasData);
   const [dayBookData, setDayBookData] = useState(lucasData);
   const [loadingBook, setLoadingBook] = useState(false);
+
+  const activeBookName = isFreeReading ? freeReadingBook : (currentDayReading.book || '1 Coríntios');
 
   // Sincroniza e carrega o livro bíblico correto para a leitura do dia
   useEffect(() => {
@@ -93,18 +93,14 @@ export default function App() {
   const [referencesData, setReferencesData] = useState({ isOpen: false, verseKey: '', sourceText: '', references: [] });
   const [commentaryData, setCommentaryData] = useState({ isOpen: false, chapterData: null });
   const [favoritesModalOpen, setFavoritesModalOpen] = useState(false);
+  const [usageMetricsOpen, setUsageMetricsOpen] = useState(false);
+  const [customizeModalOpen, setCustomizeModalOpen] = useState(false);
   
-  // Modais de Navegação Livre da Bíblia e Bíblia de Estudos
   const [bibleNavOpen, setBibleNavOpen] = useState(false);
-  const [studyModalData, setStudyModalData] = useState({ isOpen: false, bookName: 'Lucas' });
-
-  // Modal de Autenticação por PIN (Proteção do Rafael Admin contra acesso da esposa)
+  const [studyModalData, setStudyModalData] = useState({ isOpen: false, bookName: activeBookName });
   const [pinModalData, setPinModalData] = useState({ isOpen: false, targetProfile: null });
-
-  // Modal de Nuvem & Sincronização em múltiplos aparelhos
   const [mapasModalData, setMapasModalData] = useState({ isOpen: false, placeId: null });
   
-  // Favoritos e Highlights do perfil ativo
   const [favorites, setFavorites] = useState(() => storage.getFavorites(activeProfileId));
   const [highlights, setHighlights] = useState(() => storage.getHighlights(activeProfileId));
 
@@ -120,7 +116,6 @@ export default function App() {
     storage.saveSettings({ theme, redLetters: redLetterEnabled });
   }, [theme, redLetterEnabled]);
 
-  // Alternar perfil ativo
   const handleSelectProfile = (newId) => {
     setActiveProfileId(newId);
     storage.setActiveProfileId(newId);
@@ -131,14 +126,11 @@ export default function App() {
     setDashboardLayout(storage.getDashboardLayout(newId));
   };
 
-  // Solicitação de troca de perfil com verificação de PIN de segurança
   const handleSelectProfileRequest = (targetProfile) => {
     if (targetProfile.id === activeProfileId) {
       setProfileModalOpen(false);
       return;
     }
-
-    // Se o perfil de destino requer PIN (ex: Rafael Admin)
     if (targetProfile.requiresPin && targetProfile.pin) {
       setPinModalData({ isOpen: true, targetProfile });
     } else {
@@ -177,7 +169,6 @@ export default function App() {
     handleSelectProfile(newProf.id);
   };
 
-
   const handleUpdateProfile = (profileId, updates) => {
     const updated = storage.updateProfile(profileId, updates);
     setProfiles([...updated]);
@@ -192,7 +183,6 @@ export default function App() {
       startDayId: currentDayId
     });
   };
-
 
   const handleLogout = () => {
     storage.logout();
@@ -237,13 +227,11 @@ export default function App() {
 
   // AUTO-SYNC 100% AUTOMÁTICO NA NUVEM
   useEffect(() => {
-    // Sincronização inicial em segundo plano ao abrir o app
     cloudDbService.fetchAndMergeLatest().then(updated => {
       if (updated) handleDataSyncedFromCloud();
     });
     telemetryService.fetchCloudTelemetry();
 
-    // Sincronizar automaticamente sempre que o usuário retornar à aba ou reabrir o app
     const handleFocusSync = () => {
       if (document.visibilityState === 'visible') {
         cloudDbService.fetchAndMergeLatest().then(updated => {
@@ -256,7 +244,6 @@ export default function App() {
     window.addEventListener('focus', handleFocusSync);
     document.addEventListener('visibilitychange', handleFocusSync);
 
-    // Polling contínuo a cada 4 segundos para sincronizar leituras do celular instantaneamente no laptop
     const pollInterval = setInterval(() => {
       if (document.visibilityState === 'visible') {
         cloudDbService.fetchAndMergeLatest().then(updated => {
@@ -266,7 +253,6 @@ export default function App() {
       }
     }, 4000);
 
-    // Sincronização em tempo real do Supabase
     const unsubSupabase = supabaseSyncService.onRemoteUpdate(() => {
       handleDataSyncedFromCloud();
     });
@@ -291,7 +277,6 @@ export default function App() {
     cloudDbService.triggerAutoSync();
   };
 
-  // Handler para marcar dia inteiro como concluído
   const handleToggleComplete = (dayId, status) => {
     telemetryService.track('day_completed', { dayId, status });
     storage.saveDayProgress(dayId, status, activeProfileId);
@@ -309,11 +294,9 @@ export default function App() {
     setDays(prevDays => 
       prevDays.map(d => d.id === dayId ? { ...d, completed: status, completedAt: status ? new Date().toISOString() : null } : d)
     );
-    // Salva automaticamente no banco em nuvem sem o usuário precisar clicar em nada
     cloudDbService.triggerAutoSync();
   };
 
-  // Handler para marcar cada capítulo individualmente
   const handleToggleChapter = (chapterName, status) => {
     telemetryService.track('chapter_completed', { chapter: chapterName, status });
     const updated = storage.saveChapterProgress(chapterName, status, activeProfileId);
@@ -322,8 +305,6 @@ export default function App() {
     const p = parseReading(chapterName);
     supabaseSyncService.saveChapterProgress(p.book, p.chapter, status);
 
-    // RECONCILIAÇÃO AUTOMÁTICA DE DIAS:
-    // Encontra todos os dias que contêm este capítulo (mesmo em leitura livre ou navegação avulsa)
     const matchingDays = days.filter(d => d.readings && d.readings.includes(chapterName));
     matchingDays.forEach(matchingDay => {
       const allCompleted = matchingDay.readings.every(r => 
@@ -348,11 +329,9 @@ export default function App() {
       }
     });
 
-    // Salva automaticamente no banco em nuvem
     cloudDbService.syncNow();
   };
 
-  // Navegar para um dia específico no leitor do plano devocional
   const handleSelectDay = (dayId) => {
     setSelectedDayId(dayId);
     setIsFreeReading(false);
@@ -360,7 +339,6 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Navegar para capítulo livre de QUALQUER livro da Bíblia (Gênesis a Apocalipse)
   const handleSelectFreeChapter = async (bookName, chapterNum) => {
     const bName = bookName || 'Mateus';
     const chNum = chapterNum || 1;
@@ -382,13 +360,12 @@ export default function App() {
   };
 
   const handleOpenStudyInfo = (bookName) => {
-    setStudyModalData({ isOpen: true, bookName: bookName || 'Lucas' });
+    setStudyModalData({ isOpen: true, bookName: bookName || activeBookName });
   };
 
-  // Se o usuário não está logado (deslogou ou está no primeiro acesso)
   if (!activeProfileId) {
     return (
-      <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 sepia:bg-[#fbf0d9] flex flex-col justify-center">
+      <div className="min-h-screen bg-[#F8F6F1] dark:bg-zinc-950 sepia:bg-[#f6ecda] flex flex-col justify-center">
         <SelecaoPerfilScreen
           existingProfiles={profiles.filter(p => p.id !== 'esposa' && p.name?.toLowerCase() !== 'esposa')}
           onSelectProfileRequest={handleSelectProfileRequest}
@@ -407,16 +384,17 @@ export default function App() {
   const completedDaysCount = days.filter(d => d.completed).length;
 
   return (
-    <div className="min-h-screen transition-colors duration-200 bg-zinc-50 dark:bg-zinc-950 sepia:bg-[#fbf0d9] text-zinc-900 dark:text-zinc-100 sepia:text-[#433422] flex flex-col font-sans">
+    <div className="min-h-screen transition-colors duration-200 bg-[#F8F6F1] dark:bg-zinc-950 sepia:bg-[#f6ecda] text-zinc-900 dark:text-zinc-100 sepia:text-[#3b2d1d] flex flex-col font-sans">
       
-      {/* Barra de Navegação */}
+      {/* Menu Lateral */}
       <SidebarDrawer
         isOpen={isDrawerOpen}
         onClose={() => setIsDrawerOpen(false)}
         activeProfile={activeProfile}
+        activeBookName={activeBookName}
         onOpenProfiles={() => setProfileModalOpen(true)}
         onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
-                onOpenBibleNav={() => setBibleNavOpen(true)}
+        onOpenBibleNav={() => setBibleNavOpen(true)}
         onOpenStudyInfo={handleOpenStudyInfo}
         onOpenMetrics={() => setUsageMetricsOpen(true)}
         onOpenCustomize={() => setCustomizeModalOpen(true)}
@@ -426,16 +404,21 @@ export default function App() {
           setFavoritesModalOpen(true);
         }}
         redLetterEnabled={redLetterEnabled}
-        setRedLetterEnabled={setRedLetterEnabled}
+        setRedLetterEnabled={(val) => {
+          telemetryService.track('red_letter_toggle', { enabled: val });
+          setRedLetterEnabled(val);
+        }}
         theme={theme}
         setTheme={setTheme}
         onLogout={handleLogout}
         completedDaysCount={completedDaysCount}
       />
 
+      {/* Barra Superior Editorial */}
       <Navbar
         currentDayId={currentDayId}
         pendingDayId={pendingDayId}
+        activeBookName={activeBookName}
         onSelectDay={handleSelectDay}
         currentView={currentView}
         setCurrentView={(view) => {
@@ -462,7 +445,7 @@ export default function App() {
         activeProfile={activeProfile}
         onOpenProfiles={() => setProfileModalOpen(true)}
         onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
-                onOpenDrawer={() => setIsDrawerOpen(true)}
+        onOpenDrawer={() => setIsDrawerOpen(true)}
         onLogout={handleLogout}
       />
 
@@ -478,7 +461,10 @@ export default function App() {
             onToggleComplete={handleToggleComplete}
             onToggleChapter={handleToggleChapter}
             chapterProgress={chapterProgress}
-            onOpenBibleNav={() => setBibleNavOpen(true)}
+            onOpenBibleNav={() => {
+              telemetryService.track('free_bible_nav');
+              setBibleNavOpen(true);
+            }}
             onOpenStudyInfo={handleOpenStudyInfo}
             activeProfile={activeProfile}
             onOpenProfiles={() => setProfileModalOpen(true)}
@@ -486,13 +472,15 @@ export default function App() {
             onUpdateDashboardLayout={handleUpdateDashboardLayout}
             onResetDashboardLayout={handleResetDashboardLayout}
             onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
-                        onOpenBibleArc={(book, chapter) => {
+            onOpenTelemetry={() => setUsageMetricsOpen(true)}
+            onOpenCustomize={() => setCustomizeModalOpen(true)}
+            onOpenBibleArc={(book, chapter) => {
               setBibleArcData({ 
                 isOpen: true, 
-                book: book || 'Lucas', 
+                book: book || activeBookName, 
                 chapter: chapter || 1, 
                 verses: [], 
-                passage: `${book || 'Lucas'} ${chapter || 1}`, 
+                passage: `${book || activeBookName} ${chapter || 1}`, 
                 text: '' 
               });
             }}
@@ -545,15 +533,21 @@ export default function App() {
         )}
       </main>
 
-      {/* Barra de Navegação Inferior Móvel (Otimizada para Celular) */}
+      {/* Barra de Navegação Inferior Móvel */}
       <BottomNav
         currentView={currentView}
         onGoHome={() => {
           setIsFreeReading(false);
           setCurrentView('dashboard');
         }}
-        onOpenBibleNav={() => setBibleNavOpen(true)}
-        onOpenStudyInfo={() => handleOpenStudyInfo(isFreeReading ? freeReadingBook : 'Lucas')}
+        onOpenBibleNav={() => {
+          telemetryService.track('free_bible_nav');
+          setBibleNavOpen(true);
+        }}
+        onOpenStudyInfo={() => {
+          telemetryService.track('theological_commentary_view', { book: activeBookName });
+          handleOpenStudyInfo(activeBookName);
+        }}
         onOpenFavorites={() => {
           setFavorites(storage.getFavorites(activeProfileId));
           setHighlights(storage.getHighlights(activeProfileId));
@@ -562,7 +556,7 @@ export default function App() {
         pendingDayId={pendingDayId}
       />
 
-      {/* Modal Multi-Perfil (Gerenciamento de Contas e Admin) */}
+      {/* Modais Globais */}
       <PerfilModal
         isOpen={profileModalOpen}
         onClose={() => setProfileModalOpen(false)}
@@ -577,7 +571,6 @@ export default function App() {
         getProfileProgressStats={getProfileProgressStats}
       />
 
-      {/* Modal de Autenticação por PIN (Proteção do Rafael Admin) */}
       <PinAuthModal
         isOpen={pinModalData.isOpen}
         onClose={() => setPinModalData({ isOpen: false, targetProfile: null })}
@@ -585,16 +578,12 @@ export default function App() {
         onSuccess={handlePinSuccess}
       />
 
-      {/* Modal de Sincronização em Nuvem (Multi-Aparelho & Backup) */}
       <MapasBiblicosModal
         isOpen={mapasModalData.isOpen}
         onClose={() => setMapasModalData({ isOpen: false, placeId: null })}
         initialPlaceId={mapasModalData.placeId}
-              />
+      />
 
-      
-
-      {/* Modal Navegação Livre da Bíblia */}
       <NavegacaoBibliaModal
         isOpen={bibleNavOpen}
         onClose={() => setBibleNavOpen(false)}
@@ -603,7 +592,6 @@ export default function App() {
         chapterProgress={chapterProgress}
       />
 
-      {/* Modal Bíblia de Estudos com Acordeões Retráteis */}
       <EstudoLivroModal
         isOpen={studyModalData.isOpen}
         onClose={() => setStudyModalData({ ...studyModalData, isOpen: false })}
@@ -614,7 +602,6 @@ export default function App() {
         }}
       />
 
-      {/* Modal BibleArc (Análise de Discurso por Temas) */}
       <BibleArcModal
         key={`${bibleArcData.book}_${bibleArcData.chapter}_${bibleArcData.passage}_${bibleArcData.isOpen}`}
         isOpen={bibleArcData.isOpen}
@@ -626,7 +613,6 @@ export default function App() {
         initialText={bibleArcData.text}
       />
 
-      {/* Drawer de Referências Cruzadas */}
       <ReferenciasDrawer
         isOpen={referencesData.isOpen}
         onClose={() => setReferencesData({ ...referencesData, isOpen: false })}
@@ -636,14 +622,12 @@ export default function App() {
         onNavigateToPassage={handleSelectFreeChapter}
       />
 
-      {/* Drawer de Comentários & Diário Espiritual */}
       <ComentariosDrawer
         isOpen={commentaryData.isOpen}
         onClose={() => setCommentaryData({ ...commentaryData, isOpen: false })}
         chapterData={commentaryData.chapterData}
       />
 
-      {/* Modal de Versículos Guardados e Favoritos */}
       <DestaquesModal
         isOpen={favoritesModalOpen}
         onClose={() => setFavoritesModalOpen(false)}
@@ -659,13 +643,30 @@ export default function App() {
           setHighlights({ ...updated });
           cloudDbService.triggerAutoSync();
         }}
-        onGoToPassage={(vKey) => {
+        onGoToPassage={(vKey, book, chapter) => {
           setFavoritesModalOpen(false);
-          setCurrentView('reader');
+          if (book) {
+            handleSelectFreeChapter(book, chapter || 1);
+          } else {
+            setCurrentView('reader');
+          }
         }}
       />
 
-      {/* Modal de Boas-Vindas & Escolha do Plano Devocional para Novos Perfis */}
+      <PersonalizarDashboardModal
+        isOpen={customizeModalOpen}
+        onClose={() => setCustomizeModalOpen(false)}
+        layout={dashboardLayout}
+        onUpdateLayout={handleUpdateDashboardLayout}
+        onResetLayout={handleResetDashboardLayout}
+      />
+
+      <UsoFeaturesModal
+        isOpen={usageMetricsOpen}
+        onClose={() => setUsageMetricsOpen(false)}
+        activeProfile={activeProfile}
+      />
+
       <PlanoDevocionalOnboardingModal
         isOpen={!!(activeProfile && (activeProfile.planOptIn === null || activeProfile.planOptIn === undefined))}
         profileName={activeProfile?.name}
@@ -675,14 +676,13 @@ export default function App() {
         onDeclinePlan={handleDeclinePlan}
       />
 
-      {/* Rodapé com Indicador de Auto-Sync Automático */}
-      <footer className="py-6 border-t border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] text-center text-xs text-zinc-400 dark:text-zinc-500 space-y-1">
-        <p className="flex items-center justify-center space-x-1.5 text-emerald-600 dark:text-emerald-400 font-semibold text-[11px]">
-          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      {/* Rodapé Editorial */}
+      <footer className="py-6 border-t border-stone-200/80 dark:border-zinc-800 sepia:border-[#dfd0b2] text-center text-xs text-zinc-500 dark:text-zinc-500 space-y-1">
+        <p className="flex items-center justify-center space-x-1.5 text-emerald-700 dark:text-emerald-400 font-semibold text-[11px]">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
           <span>Sincronização em nuvem ativa • {activeProfile?.name || 'Individual'}</span>
         </p>
-        <p>Bíblia em 1 Ano • Nova Versão Transformadora (NVT)</p>
-        <p className="text-[11px]">Desenvolvido para sua caminhada diária de fé e oração.</p>
+        <p className="font-display text-sm text-zinc-700 dark:text-zinc-300">Bíblia de Estudos & Plano Anual • Nova Versão Transformadora (NVT)</p>
       </footer>
 
     </div>

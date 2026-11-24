@@ -406,7 +406,7 @@ export const storage = {
     }
   },
 
-  saveMultipleHighlights(verseKeys, colorKey, profileId = this.getActiveProfileId()) {
+  saveMultipleHighlights(verseKeys, colorKey, profileId = this.getActiveProfileId(), versesMap = {}) {
     try {
       const highlights = this.getHighlights(profileId);
       const now = new Date().toISOString();
@@ -414,11 +414,7 @@ export const storage = {
         if (!colorKey) {
           delete highlights[k];
         } else {
-          highlights[k] = {
-            color: colorKey,
-            note: "",
-            updatedAt: now
-          };
+          const vInfo = versesMap[k] || {}; highlights[k] = { color: colorKey, text: vInfo.text || highlights[k]?.text || String(), book: vInfo.book || highlights[k]?.book || String(), chapter: vInfo.chapter || highlights[k]?.chapter || String(), note: highlights[k]?.note || String(), updatedAt: now };
         }
       });
       const key = this._resolveKey(STORAGE_KEYS.HIGHLIGHTS, profileId);
