@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
+import SidebarNav from './components/SidebarNav';
 import SidebarDrawer from './components/SidebarDrawer';
 import BottomNav from './components/BottomNav';
 import Dashboard from './components/Dashboard';
@@ -33,21 +34,16 @@ export default function App() {
   const [theme, setTheme] = useState(savedSettings.theme || 'light');
   const [redLetterEnabled, setRedLetterEnabled] = useState(savedSettings.redLetters ?? true);
 
-  // 1. SISTEMA DE PERFIS
   const [profiles, setProfiles] = useState(() => storage.getProfiles());
   const [activeProfileId, setActiveProfileId] = useState(() => storage.getActiveProfileId());
   const [profileModalOpen, setProfileModalOpen] = useState(false);
 
   const activeProfile = profiles.find(p => p.id === activeProfileId) || profiles[0] || { name: 'Rafael', avatar: '👨', role: 'admin' };
 
-  // 2. LAYOUT DO DASHBOARD
   const [dashboardLayout, setDashboardLayout] = useState(() => storage.getDashboardLayout(activeProfileId));
-
-  // 3. PROGRESSO DOS 365 DIAS E CAPÍTULOS
   const [days, setDays] = useState(() => storage.getProgress(initialDays, activeProfileId));
   const [chapterProgress, setChapterProgress] = useState(() => storage.getChapterProgress(activeProfileId));
 
-  // Cálculo dinâmico do dia de hoje e pendências
   const todayDay = getTodayDay(days) || days[327] || days[305];
   const currentDayId = todayDay.id;
 
@@ -57,7 +53,6 @@ export default function App() {
   const allPendingDays = isPlanActive ? getPendingDays(days, currentDayId, chapterProgress, userStartDayId) : [];
   const pendingDayId = allPendingDays.length > 0 ? allPendingDays[0].id : null;
 
-  // Visualização e Seleção
   const [selectedDayId, setSelectedDayId] = useState(currentDayId);
   const currentDayData = days.find(d => d.id === selectedDayId) || todayDay;
   const currentDayReading = currentDayData?.readings?.[0] ? parseReading(currentDayData.readings[0]) : { book: '1 Coríntios', chapter: '14' };
@@ -65,7 +60,6 @@ export default function App() {
   const [currentView, setCurrentView] = useState('dashboard');
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   
-  // Estado para Leitura Livre
   const [isFreeReading, setIsFreeReading] = useState(false);
   const [freeReadingBook, setFreeReadingBook] = useState('Mateus');
   const [freeReadingChapter, setFreeReadingChapter] = useState(1);
@@ -75,7 +69,6 @@ export default function App() {
 
   const activeBookName = isFreeReading ? freeReadingBook : (currentDayReading.book || '1 Coríntios');
 
-  // Sincroniza e carrega o livro bíblico correto para a leitura do dia
   useEffect(() => {
     if (isFreeReading) return;
     const targetBook = currentDayReading.book || 'Lucas';
@@ -88,7 +81,6 @@ export default function App() {
     return () => { isMounted = false; };
   }, [selectedDayId, currentDayReading.book, isFreeReading]);
 
-  // Modais e Drawers
   const [bibleArcData, setBibleArcData] = useState({ isOpen: false, book: '', chapter: '', verses: [], passage: '', text: '' });
   const [referencesData, setReferencesData] = useState({ isOpen: false, verseKey: '', sourceText: '', references: [] });
   const [commentaryData, setCommentaryData] = useState({ isOpen: false, chapterData: null });
@@ -104,7 +96,6 @@ export default function App() {
   const [favorites, setFavorites] = useState(() => storage.getFavorites(activeProfileId));
   const [highlights, setHighlights] = useState(() => storage.getHighlights(activeProfileId));
 
-  // Aplicar tema no elemento raiz
   useEffect(() => {
     const root = document.documentElement;
     root.classList.remove('dark', 'sepia');
@@ -113,7 +104,8 @@ export default function App() {
     } else if (theme === 'sepia') {
       root.classList.add('sepia');
     }
-    storage.saveSettings({ theme, redLetters: redLetterEnabled });
+    const currentSettings = storage.getSettings();
+    storage.saveSettings({ ...currentSettings, theme, redLetters: redLetterEnabled });
   }, [theme, redLetterEnabled]);
 
   const handleSelectProfile = (newId) => {
@@ -225,7 +217,6 @@ export default function App() {
     };
   };
 
-  // AUTO-SYNC 100% AUTOMÁTICO NA NUVEM
   useEffect(() => {
     cloudDbService.fetchAndMergeLatest().then(updated => {
       if (updated) handleDataSyncedFromCloud();
@@ -363,9 +354,24 @@ export default function App() {
     setStudyModalData({ isOpen: true, bookName: bookName || activeBookName });
   };
 
+  const openFavoritesLibrary = () => {
+    setFavorites(storage.getFavorites(activeProfileId));
+    setHighlights(storage.getHighlights(activeProfileId));
+    setFavoritesModalOpen(true);
+  };
+
+  const handleScrollToCalendar = () => {
+    setIsFreeReading(false);
+    setCurrentView('dashboard');
+    setTimeout(() => {
+      const el = document.getElementById('annual-plan-section');
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 80);
+  };
+
   if (!activeProfileId) {
     return (
-      <div className="min-h-screen bg-[#F8F6F1] dark:bg-zinc-950 sepia:bg-[#f6ecda] flex flex-col justify-center">
+      <div className="min-h-screen bg-[#F9FAFB] dark:bg-[#09090B] sepia:bg-[#F5EFE6] flex flex-col justify-center">
         <SelecaoPerfilScreen
           existingProfiles={profiles.filter(p => p.id !== 'esposa' && p.name?.toLowerCase() !== 'esposa')}
           onSelectProfileRequest={handleSelectProfileRequest}
@@ -382,11 +388,38 @@ export default function App() {
   }
 
   const completedDaysCount = days.filter(d => d.completed).length;
+  const savedTotalCount = (favorites?.length || 0) + Object.keys(highlights || {}).length;
 
   return (
-    <div className="min-h-screen transition-colors duration-200 bg-[#F8F6F1] dark:bg-zinc-950 sepia:bg-[#f6ecda] text-zinc-900 dark:text-zinc-100 sepia:text-[#3b2d1d] flex flex-col font-sans">
+    <div className="min-h-screen w-full max-w-[100vw] overflow-x-hidden transition-colors duration-200 bg-[#F9FAFB] dark:bg-[#09090B] sepia:bg-[#F5EFE6] text-zinc-900 dark:text-zinc-100 sepia:text-[#2C221E] flex flex-col lg:flex-row font-sans">
       
-      {/* Menu Lateral */}
+      {/* 1. RAIL DE NAVEGAÇÃO DESKTOP (PADRÃO YOUVERSION WEB / LINEAR) */}
+      <SidebarNav
+        currentView={currentView}
+        onGoHome={() => {
+          setIsFreeReading(false);
+          setCurrentView('dashboard');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+        onOpenReaderToday={() => handleSelectDay(currentDayId)}
+        onOpenBibleNav={() => setBibleNavOpen(true)}
+        onOpenStudyInfo={handleOpenStudyInfo}
+        onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
+        onOpenFavorites={openFavoritesLibrary}
+        onOpenMetrics={() => setUsageMetricsOpen(true)}
+        onOpenProfiles={() => setProfileModalOpen(true)}
+        onScrollToCalendar={handleScrollToCalendar}
+        activeBookName={activeBookName}
+        activeProfile={activeProfile}
+        favoritesCount={savedTotalCount}
+        pendingDayId={pendingDayId}
+        onSelectDay={handleSelectDay}
+        theme={theme}
+        setTheme={setTheme}
+        onLogout={handleLogout}
+      />
+
+      {/* Drawer Mobile */}
       <SidebarDrawer
         isOpen={isDrawerOpen}
         onClose={() => setIsDrawerOpen(false)}
@@ -398,11 +431,7 @@ export default function App() {
         onOpenStudyInfo={handleOpenStudyInfo}
         onOpenMetrics={() => setUsageMetricsOpen(true)}
         onOpenCustomize={() => setCustomizeModalOpen(true)}
-        onOpenFavorites={() => {
-          setFavorites(storage.getFavorites(activeProfileId));
-          setHighlights(storage.getHighlights(activeProfileId));
-          setFavoritesModalOpen(true);
-        }}
+        onOpenFavorites={openFavoritesLibrary}
         redLetterEnabled={redLetterEnabled}
         setRedLetterEnabled={(val) => {
           telemetryService.track('red_letter_toggle', { enabled: val });
@@ -414,132 +443,108 @@ export default function App() {
         completedDaysCount={completedDaysCount}
       />
 
-      {/* Barra Superior Editorial */}
-      <Navbar
-        currentDayId={currentDayId}
-        pendingDayId={pendingDayId}
-        activeBookName={activeBookName}
-        onSelectDay={handleSelectDay}
-        currentView={currentView}
-        setCurrentView={(view) => {
-          setIsFreeReading(false);
-          setCurrentView(view);
-        }}
-        theme={theme}
-        setTheme={setTheme}
-        redLetterEnabled={redLetterEnabled}
-        setRedLetterEnabled={(val) => {
-          telemetryService.track('red_letter_toggle', { enabled: val });
-          setRedLetterEnabled(val);
-        }}
-        onOpenFavorites={() => {
-          setFavorites(storage.getFavorites(activeProfileId));
-          setHighlights(storage.getHighlights(activeProfileId));
-          setFavoritesModalOpen(true);
-        }}
-        onOpenBibleNav={() => {
-          telemetryService.track('free_bible_nav');
-          setBibleNavOpen(true);
-        }}
-        onOpenStudyInfo={handleOpenStudyInfo}
-        activeProfile={activeProfile}
-        onOpenProfiles={() => setProfileModalOpen(true)}
-        onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
-        onOpenDrawer={() => setIsDrawerOpen(true)}
-        onLogout={handleLogout}
-      />
+      {/* 2. ÁREA DE CONTEÚDO PRINCIPAL */}
+      <div className="flex-1 min-w-0 flex flex-col min-h-screen">
+        {/* Top Bar exclusiva para Mobile/Tablet */}
+        <Navbar
+          pendingDayId={pendingDayId}
+          onSelectDay={handleSelectDay}
+          setCurrentView={(view) => {
+            setIsFreeReading(false);
+            setCurrentView(view);
+          }}
+          theme={theme}
+          setTheme={setTheme}
+          activeProfile={activeProfile}
+          onOpenProfiles={() => setProfileModalOpen(true)}
+          onOpenDrawer={() => setIsDrawerOpen(true)}
+        />
 
-      {/* Conteúdo Principal */}
-      <main className="flex-1 pb-24 md:pb-16 overflow-x-hidden">
-        {currentView === 'dashboard' ? (
-          <Dashboard
-            days={days}
-            currentDayId={currentDayId}
-            pendingDayId={pendingDayId}
-            allPendingDays={allPendingDays}
-            onSelectDay={handleSelectDay}
-            onToggleComplete={handleToggleComplete}
-            onToggleChapter={handleToggleChapter}
-            chapterProgress={chapterProgress}
-            onOpenBibleNav={() => {
-              telemetryService.track('free_bible_nav');
-              setBibleNavOpen(true);
-            }}
-            onOpenStudyInfo={handleOpenStudyInfo}
-            activeProfile={activeProfile}
-            onOpenProfiles={() => setProfileModalOpen(true)}
-            dashboardLayout={dashboardLayout}
-            onUpdateDashboardLayout={handleUpdateDashboardLayout}
-            onResetDashboardLayout={handleResetDashboardLayout}
-            onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
-            onOpenTelemetry={() => setUsageMetricsOpen(true)}
-            onOpenCustomize={() => setCustomizeModalOpen(true)}
-            onOpenBibleArc={(book, chapter) => {
-              setBibleArcData({ 
-                isOpen: true, 
-                book: book || activeBookName, 
-                chapter: chapter || 1, 
-                verses: [], 
-                passage: `${book || activeBookName} ${chapter || 1}`, 
-                text: '' 
-              });
-            }}
-            onOptInPlan={handleAcceptPlan}
-            onOptOutPlan={handleDeclinePlan}
-            onLogout={handleLogout}
-          />
-        ) : (
-          <LeitorBiblico
-            dayData={isFreeReading ? null : currentDayData}
-            bookData={isFreeReading ? currentBookData : dayBookData}
-            currentBookName={isFreeReading ? freeReadingBook : currentDayReading.book}
-            currentChapter={isFreeReading ? freeReadingChapter : currentDayReading.chapter}
-            onBack={() => {
-              setIsFreeReading(false);
-              setCurrentView('dashboard');
-            }}
-            onToggleComplete={handleToggleComplete}
-            onNextDay={() => {
-              if (selectedDayId < 365) handleSelectDay(selectedDayId + 1);
-            }}
-            onPrevDay={() => {
-              if (selectedDayId > 1) handleSelectDay(selectedDayId - 1);
-            }}
-            redLetterEnabled={redLetterEnabled}
-            onOpenBibleArc={(book, chapter, verses, passage, text) => {
-              setBibleArcData({ 
-                isOpen: true, 
-                book, 
-                chapter, 
-                verses: verses || [], 
-                passage: passage || `${book} ${chapter}`, 
-                text: text || '' 
-              });
-            }}
-            onOpenReferences={(verseKey, references, sourceText = '') => {
-              setReferencesData({ isOpen: true, verseKey, sourceText, references });
-            }}
-            onOpenCommentary={(chapterData) => {
-              setCommentaryData({ isOpen: true, chapterData });
-            }}
-            chapterProgress={chapterProgress}
-            onToggleChapter={handleToggleChapter}
-            onOpenStudyInfo={handleOpenStudyInfo}
-            isFreeReading={isFreeReading}
-            isLoading={loadingBook}
-            onChangeFreeChapter={handleSelectFreeChapter}
-            onOpenMaps={(placeId) => setMapasModalData({ isOpen: true, placeId })}
-          />
-        )}
-      </main>
+        <main className="flex-1 pb-24 lg:pb-12 overflow-x-hidden">
+          {currentView === 'dashboard' ? (
+            <Dashboard
+              days={days}
+              dayBookData={dayBookData}
+              currentDayId={currentDayId}
+              pendingDayId={pendingDayId}
+              allPendingDays={allPendingDays}
+              onSelectDay={handleSelectDay}
+              onToggleChapter={handleToggleChapter}
+              chapterProgress={chapterProgress}
+              onOpenBibleNav={() => {
+                telemetryService.track('free_bible_nav');
+                setBibleNavOpen(true);
+              }}
+              onOpenStudyInfo={handleOpenStudyInfo}
+              activeProfile={activeProfile}
+              dashboardLayout={dashboardLayout}
+              onOpenMaps={() => setMapasModalData({ isOpen: true, placeId: null })}
+              onOpenCustomize={() => setCustomizeModalOpen(true)}
+              onOpenBibleArc={(book, chapter) => {
+                setBibleArcData({ 
+                  isOpen: true, 
+                  book: book || activeBookName, 
+                  chapter: chapter || 1, 
+                  verses: [], 
+                  passage: `${book || activeBookName} ${chapter || 1}`, 
+                  text: '' 
+                });
+              }}
+              onOptInPlan={handleAcceptPlan}
+            />
+          ) : (
+            <LeitorBiblico
+              dayData={isFreeReading ? null : currentDayData}
+              bookData={isFreeReading ? currentBookData : dayBookData}
+              currentBookName={isFreeReading ? freeReadingBook : currentDayReading.book}
+              currentChapter={isFreeReading ? freeReadingChapter : currentDayReading.chapter}
+              onBack={() => {
+                setIsFreeReading(false);
+                setCurrentView('dashboard');
+              }}
+              redLetterEnabled={redLetterEnabled}
+              setRedLetterEnabled={(val) => {
+                telemetryService.track('red_letter_toggle', { enabled: val });
+                setRedLetterEnabled(val);
+              }}
+              theme={theme}
+              setTheme={setTheme}
+              onOpenBibleArc={(book, chapter, verses, passage, text) => {
+                setBibleArcData({ 
+                  isOpen: true, 
+                  book, 
+                  chapter, 
+                  verses: verses || [], 
+                  passage: passage || `${book} ${chapter}`, 
+                  text: text || '' 
+                });
+              }}
+              onOpenReferences={(verseKey, references, sourceText = '') => {
+                setReferencesData({ isOpen: true, verseKey, sourceText, references });
+              }}
+              onOpenCommentary={(chapterData) => {
+                setCommentaryData({ isOpen: true, chapterData });
+              }}
+              chapterProgress={chapterProgress}
+              onToggleChapter={handleToggleChapter}
+              onOpenStudyInfo={handleOpenStudyInfo}
+              isFreeReading={isFreeReading}
+              isLoading={loadingBook}
+              onChangeFreeChapter={handleSelectFreeChapter}
+              onOpenMaps={(placeId) => setMapasModalData({ isOpen: true, placeId })}
+            />
+          )}
+        </main>
+      </div>
 
-      {/* Barra de Navegação Inferior Móvel */}
+      {/* Bottom Tab Bar exclusiva para Mobile/Tablet */}
       <BottomNav
         currentView={currentView}
         onGoHome={() => {
           setIsFreeReading(false);
           setCurrentView('dashboard');
         }}
+        onOpenReaderToday={() => handleSelectDay(currentDayId)}
         onOpenBibleNav={() => {
           telemetryService.track('free_bible_nav');
           setBibleNavOpen(true);
@@ -548,11 +553,7 @@ export default function App() {
           telemetryService.track('theological_commentary_view', { book: activeBookName });
           handleOpenStudyInfo(activeBookName);
         }}
-        onOpenFavorites={() => {
-          setFavorites(storage.getFavorites(activeProfileId));
-          setHighlights(storage.getHighlights(activeProfileId));
-          setFavoritesModalOpen(true);
-        }}
+        onOpenFavorites={openFavoritesLibrary}
         pendingDayId={pendingDayId}
       />
 
@@ -675,15 +676,6 @@ export default function App() {
         onAcceptPlan={handleAcceptPlan}
         onDeclinePlan={handleDeclinePlan}
       />
-
-      {/* Rodapé Editorial */}
-      <footer className="py-6 border-t border-stone-200/80 dark:border-zinc-800 sepia:border-[#dfd0b2] text-center text-xs text-zinc-500 dark:text-zinc-500 space-y-1">
-        <p className="flex items-center justify-center space-x-1.5 text-emerald-700 dark:text-emerald-400 font-semibold text-[11px]">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-          <span>Sincronização em nuvem ativa • {activeProfile?.name || 'Individual'}</span>
-        </p>
-        <p className="font-display text-sm text-zinc-700 dark:text-zinc-300">Bíblia de Estudos & Plano Anual • Nova Versão Transformadora (NVT)</p>
-      </footer>
 
     </div>
   );

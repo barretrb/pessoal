@@ -3,7 +3,6 @@ import {
   ArrowLeft, 
   ArrowRight, 
   CheckCircle2, 
-  BookOpen, 
   Link2, 
   MessageSquare, 
   Star, 
@@ -13,21 +12,20 @@ import {
   Share2,
   Copy,
   Check,
-  Info,
   BookMarked,
   Loader2,
   Headphones,
   RefreshCw,
   ExternalLink,
-  Compass,
-  MapPin
+  MapPin,
+  Sun,
+  Moon,
+  Coffee
 } from 'lucide-react';
-import confetti from 'canvas-confetti';
 import { HIGHLIGHT_COLORS, storage } from '../services/storage';
 import { cloudDbService } from '../services/cloudDbService';
-import { getMediaForDay, getMediaForPassage, getMusicForChapter } from '../data/dailyMedia';
+import { getMusicForChapter } from '../data/dailyMedia';
 import { speechService } from '../services/speechService';
-import { bibleCommentaryService } from '../services/bibleCommentaryService';
 import { crossReferenceService } from '../services/crossReferenceService';
 import { fetchBookData, normalizeBookId } from '../services/bibleService';
 import { telemetryService } from '../services/telemetryService';
@@ -45,13 +43,13 @@ function parseReading(str) {
 export default function LeitorBiblico({
   dayData,
   bookData,
-  currentBookName = 'Lucas',
-  currentChapter = '1',
+  currentBookName = '1 Coríntios',
+  currentChapter = '14',
   onBack,
-  onToggleComplete,
-  onNextDay,
-  onPrevDay,
   redLetterEnabled,
+  setRedLetterEnabled,
+  theme = 'light',
+  setTheme,
   onOpenBibleArc,
   onOpenReferences,
   onOpenCommentary,
@@ -63,28 +61,29 @@ export default function LeitorBiblico({
   onChangeFreeChapter,
   onOpenMaps
 }) {
-
-  // Lista de capítulos deste dia no plano devocional
   const readings = dayData?.readings || [`${currentBookName} ${currentChapter}`];
-  
-  // Parse capítulo selecionado inicial
   const firstParsed = parseReading(readings[0]);
   const initialChapter = isFreeReading ? String(currentChapter) : firstParsed.chapter;
   const initialBook = isFreeReading ? currentBookName : firstParsed.book;
 
+  const savedSettings = storage.getSettings();
   const [selectedChapter, setSelectedChapter] = useState(initialChapter);
   const [selectedBook, setSelectedBook] = useState(initialBook);
-  const [fontSize, setFontSize] = useState(19); // 16 a 24 px
+  const [fontSize, setFontSize] = useState(savedSettings.fontSize || 18);
+  const [fontFamily, setFontFamily] = useState(savedSettings.fontFamily || 'sans'); // 'sans' (Inter) | 'serif' (Literata)
+  const [showAppearanceMenu, setShowAppearanceMenu] = useState(false);
 
-  // MULTI-SELEÇÃO DE VERSÍCULOS
   const [selectedVerses, setSelectedVerses] = useState({});
 
-  // Mídia devocional conectada à leitura (do plano do dia ou leitura livre)
-  const dayMedia = dayData 
-    ? getMediaForDay(dayData.id, dayData) 
-    : getMediaForPassage(selectedBook || 'Lucas', selectedChapter || '1');
+  const persistReaderPrefs = (nextSize, nextFamily) => {
+    const current = storage.getSettings();
+    storage.saveSettings({
+      ...current,
+      fontSize: nextSize,
+      fontFamily: nextFamily
+    });
+  };
 
-  // Atualizar quando trocar de dia, livro ou capítulo livre
   useEffect(() => {
     if (isFreeReading) {
       setSelectedChapter(String(currentChapter));
@@ -97,22 +96,18 @@ export default function LeitorBiblico({
     setSelectedVerses({});
   }, [dayData?.id, currentBookName, currentChapter, isFreeReading]);
 
-  // Limpar seleção ao trocar de capítulo
   useEffect(() => {
     setSelectedVerses({});
   }, [selectedChapter, selectedBook]);
 
-  // Carregar dados do capítulo atual a partir de bookData ou busca dinâmica
   const activeBook = isFreeReading ? currentBookName : selectedBook;
   const [internalBookData, setInternalBookData] = useState(bookData);
   const [isFetchingBook, setIsFetchingBook] = useState(false);
 
-  // Mídia devocional conectada especificamente ao capítulo bíblico aberto
   const activeChapterStr = `${activeBook} ${selectedChapter}`;
   const activeChapterIndex = dayData?.readings ? dayData.readings.indexOf(activeChapterStr) : 0;
   const [chapterMusicOverride, setChapterMusicOverride] = useState(null);
 
-  // Reseta override ao alternar de livro ou capítulo
   useEffect(() => {
     setChapterMusicOverride(null);
   }, [activeBook, selectedChapter]);
@@ -160,7 +155,6 @@ export default function LeitorBiblico({
     sections: []
   };
 
-  // Extração dinâmica de cidades e locais bíblicos citados no capítulo ativo
   const mentionedPlaces = useMemo(() => {
     if (!activeChapterData?.sections) return [];
     const fullText = activeChapterData.sections
@@ -172,34 +166,12 @@ export default function LeitorBiblico({
   const sampleChapter = internalBookData ? Object.values(internalBookData)[0] : null;
   const isDataLoading = isLoading || isFetchingBook || Boolean(activeBook && sampleChapter?.book && normalizeBookId(sampleChapter.book) !== normalizeBookId(activeBook));
 
-  // Highlights e Favoritos locais
   const [highlights, setHighlights] = useState(storage.getHighlights());
   const [favorites, setFavorites] = useState(storage.getFavorites());
 
-  // Indicador de Comentários / Notas do Capítulo
-  const chapterNoteKey = `note_chapter_${activeBook}_${selectedChapter}`;
-  const [hasUserNote, setHasUserNote] = useState(false);
-
-  useEffect(() => {
-    try {
-      const savedNote = localStorage.getItem(chapterNoteKey);
-      setHasUserNote(!!savedNote);
-    } catch (e) {
-      setHasUserNote(false);
-    }
-  }, [chapterNoteKey]);
-
-  const hasTheologicalCommentary = !!(
-    activeChapterData?.commentary?.overview || 
-    bibleCommentaryService.getCommentary(activeBook, selectedChapter)
-  );
-  const hasAnyCommentary = hasTheologicalCommentary || hasUserNote;
-
-  // ESTADO DE NARRAÇÃO EM ÁUDIO
   const [audioStatus, setAudioStatus] = useState({ status: 'stopped', isPlaying: false, rate: 1.0 });
   const [speakingVerseNumber, setSpeakingVerseNumber] = useState(null);
 
-  // Parar áudio ao trocar de capítulo ou livro
   useEffect(() => {
     return () => {
       speechService.stop();
@@ -208,7 +180,6 @@ export default function LeitorBiblico({
     };
   }, [selectedChapter, activeBook]);
 
-  // Lista linear de versículos do capítulo atual para reprodução em áudio
   const allChapterVerses = useMemo(() => {
     const list = [];
     if (activeChapterData?.sections) {
@@ -240,7 +211,6 @@ export default function LeitorBiblico({
   const currentChapterName = `${activeBook} ${selectedChapter}`;
   const isCurrentChapterCompleted = !!chapterProgress[currentChapterName]?.completed;
 
-  // Multi-seleção de versículos
   const handleVerseClick = (v) => {
     const verseKey = `${activeBook} ${selectedChapter}:${v.number}`;
     setSelectedVerses(prev => {
@@ -265,20 +235,16 @@ export default function LeitorBiblico({
   const selectedKeys = Object.keys(selectedVerses);
   const selectedCount = selectedKeys.length;
 
-  // Ordenar números dos versículos selecionados
   const selectedNumbers = Object.values(selectedVerses)
     .map(v => v.number)
     .sort((a, b) => a - b);
 
-  // Formatar citação (ex: "Mateus 1:4" ou "Mateus 1:2–5" ou "Mateus 1:2, 4, 6")
   const formatCitation = () => {
     if (selectedNumbers.length === 0) return '';
     if (selectedNumbers.length === 1) return `${activeBook} ${selectedChapter}:${selectedNumbers[0]}`;
-    
     const isConsecutive = selectedNumbers.every((num, idx) => 
       idx === 0 || num === selectedNumbers[idx - 1] + 1
     );
-
     if (isConsecutive) {
       return `${activeBook} ${selectedChapter}:${selectedNumbers[0]}–${selectedNumbers[selectedNumbers.length - 1]}`;
     }
@@ -307,6 +273,10 @@ export default function LeitorBiblico({
     cloudDbService.triggerAutoSync();
   };
 
+  const areAllSelectedFavorites = selectedKeys.length > 0 && selectedKeys.every(k => 
+    favorites.some(f => f.key === k)
+  );
+
   const handleToggleFav = () => {
     if (selectedKeys.length === 0) return;
     const items = Object.values(selectedVerses);
@@ -320,10 +290,6 @@ export default function LeitorBiblico({
     setFavorites([...updated]);
     cloudDbService.triggerAutoSync();
   };
-
-  const areAllSelectedFavorites = selectedKeys.length > 0 && selectedKeys.every(k => 
-    favorites.some(f => f.key === k)
-  );
 
   const [copied, setCopied] = useState(false);
 
@@ -342,21 +308,12 @@ export default function LeitorBiblico({
     const combined = getCombinedText();
     const shareText = `"${combined}" (${citation} NVT)`;
     if (navigator.share) {
-      navigator.share({
-        title: citation,
-        text: shareText
-      }).catch(() => {});
+      navigator.share({ title: citation, text: shareText }).catch(() => {});
     } else {
       handleCopyVerses();
     }
   };
 
-  const handleOpenBibleArcFromTop = () => {
-    onOpenBibleArc(activeBook, selectedChapter, allChapterVerses);
-    setSelectedVerses({});
-  };
-
-  // Próximo capítulo na lista de leituras do dia
   const currentChapterIdx = readings.findIndex(r => {
     const p = parseReading(r);
     return normalizeBookId(p.book) === normalizeBookId(activeBook) && String(p.chapter) === String(selectedChapter);
@@ -372,292 +329,330 @@ export default function LeitorBiblico({
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-3 sm:px-6 py-4 sm:py-6 space-y-6 overflow-x-hidden">
+    <div className="max-w-[780px] mx-auto px-4 sm:px-6 py-4 sm:py-6 space-y-6">
       
-      {/* 1. BARRA SUPERIOR DE CONTROLE E NAVEGAÇÃO */}
-      <div className="flex flex-wrap items-center justify-between gap-2.5 pb-4 border-b border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7]">
-        <button
-          onClick={onBack}
-          className="inline-flex items-center space-x-1.5 text-xs font-semibold text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          <span>{isFreeReading ? 'Voltar' : 'Panorama'}</span>
-        </button>
+      {/* 1. BARRA DE LEITURA STICKY ESTILO YOUVERSION / APPLE BOOKS */}
+      <div className="sticky top-14 lg:top-0 z-30 -mx-4 px-4 sm:-mx-6 sm:px-6 py-3 bg-[#F9FAFB]/95 dark:bg-[#09090B]/95 sepia:bg-[#F5EFE6]/95 backdrop-blur-md border-b border-zinc-200/80 dark:border-zinc-800/80 sepia:border-[#E6DBC8]">
+        <div className="flex items-center justify-between gap-2">
+          {/* Esquerda: Voltar + Seletor de Capítulos */}
+          <div className="flex items-center space-x-2 min-w-0">
+            <button
+              onClick={onBack}
+              className="p-2 rounded-xl hover:bg-zinc-200/60 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-colors cursor-pointer shrink-0"
+              title="Voltar ao Início"
+            >
+              <ArrowLeft className="w-4 h-4" />
+            </button>
 
-        <div className="flex items-center flex-wrap gap-1.5 sm:gap-2">
-          {/* Botão de Narração em Áudio do Capítulo */}
+            {!isFreeReading && readings.length > 1 ? (
+              <div className="flex items-center space-x-1 bg-zinc-200/60 dark:bg-zinc-800/90 sepia:bg-[#E9DFCE] p-1 rounded-xl overflow-x-auto">
+                {readings.map((reading) => {
+                  const p = parseReading(reading);
+                  const isSelected = selectedChapter === p.chapter && selectedBook === p.book;
+                  const isDone = !!chapterProgress[reading]?.completed;
+                  return (
+                    <button
+                      key={reading}
+                      onClick={() => {
+                        setSelectedChapter(p.chapter);
+                        setSelectedBook(p.book);
+                      }}
+                      className={`px-2.5 py-1 rounded-lg text-xs font-medium transition-all flex items-center space-x-1 shrink-0 cursor-pointer ${
+                        isSelected
+                          ? 'bg-white dark:bg-zinc-950 text-zinc-950 dark:text-white font-semibold shadow-2xs'
+                          : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
+                      }`}
+                    >
+                      <span>{reading}</span>
+                      {isDone && <Check className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />}
+                    </button>
+                  );
+                })}
+              </div>
+            ) : (
+              <span className="font-bold text-sm sm:text-base text-zinc-950 dark:text-zinc-50 truncate">
+                {activeBook} {selectedChapter}
+              </span>
+            )}
+          </div>
+
+          {/* Direita: Ouvir, Aparência (Aa), Comentário, BibleArc */}
+          <div className="flex items-center space-x-1 shrink-0 relative">
+            {/* Ouvir Capítulo */}
+            <button
+              onClick={() => {
+                telemetryService.track('audio_narration_play', { book: activeBook, chapter: selectedChapter });
+                handleToggleAudio();
+              }}
+              className={`p-2 sm:px-2.5 sm:py-1.5 rounded-xl text-xs font-medium inline-flex items-center space-x-1.5 transition-colors cursor-pointer ${
+                audioStatus.isPlaying
+                  ? 'bg-zinc-900 dark:bg-amber-500 text-white dark:text-zinc-950 font-semibold'
+                  : 'text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200/60 dark:hover:bg-zinc-800'
+              }`}
+              title="Ouvir narração em áudio"
+            >
+              <Headphones className="w-4 h-4" />
+              <span className="hidden md:inline">{audioStatus.isPlaying ? 'Pausar' : 'Ouvir'}</span>
+            </button>
+
+            {/* Comentários & Notas */}
+            <button
+              onClick={() => {
+                telemetryService.track('theological_commentary_view', { book: activeBook, chapter: selectedChapter });
+                onOpenCommentary(activeChapterData);
+              }}
+              className="p-2 sm:px-2.5 sm:py-1.5 rounded-xl text-xs font-medium text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200/60 dark:hover:bg-zinc-800 inline-flex items-center space-x-1.5 transition-colors cursor-pointer"
+              title="Comentário expositivo e anotações"
+            >
+              <MessageSquare className="w-4 h-4" />
+              <span className="hidden md:inline">Notas</span>
+            </button>
+
+            {/* BibleArc */}
+            <button
+              onClick={() => {
+                telemetryService.track('bible_arc_view', { book: activeBook, chapter: selectedChapter });
+                onOpenBibleArc(activeBook, selectedChapter, allChapterVerses);
+                setSelectedVerses({});
+              }}
+              className="p-2 sm:px-2.5 sm:py-1.5 rounded-xl text-xs font-medium text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200/60 dark:hover:bg-zinc-800 inline-flex items-center space-x-1.5 transition-colors cursor-pointer"
+              title="Arqueamento lógico do capítulo (BibleArc)"
+            >
+              <GitCommit className="w-4 h-4" />
+              <span className="hidden lg:inline">BibleArc</span>
+            </button>
+
+            {/* Botão 'Aa' de Tipografia & Aparência (Padrão Apple Books / YouVersion) */}
+            <button
+              onClick={() => setShowAppearanceMenu(prev => !prev)}
+              className={`px-2.5 py-1.5 rounded-xl text-xs font-semibold inline-flex items-center space-x-1 transition-colors cursor-pointer border ${
+                showAppearanceMenu
+                  ? 'bg-zinc-900 text-white border-zinc-900 dark:bg-white dark:text-zinc-950 dark:border-white'
+                  : 'bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-200 border-zinc-200 dark:border-zinc-800 hover:border-zinc-300'
+              }`}
+              title="Fonte, tamanho e aparência de leitura"
+            >
+              <Type className="w-3.5 h-3.5" />
+              <span>Aa</span>
+            </button>
+
+            {/* Popover 'Aa' de Configuração de Leitura */}
+            {showAppearanceMenu && (
+              <>
+                <div
+                  className="fixed inset-0 z-40"
+                  onClick={() => setShowAppearanceMenu(false)}
+                />
+                <div className="absolute right-0 top-11 z-50 w-72 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-2xl p-4 space-y-4 text-left">
+                  {/* Escolha de Fonte */}
+                  <div className="space-y-1.5">
+                    <span className="text-[11px] font-semibold uppercase tracking-wider text-zinc-400">
+                      Tipografia do Texto
+                    </span>
+                    <div className="grid grid-cols-2 gap-1.5">
+                      <button
+                        onClick={() => {
+                          setFontFamily('sans');
+                          persistReaderPrefs(fontSize, 'sans');
+                        }}
+                        className={`py-2 px-3 rounded-xl text-xs font-medium border transition-all cursor-pointer ${
+                          fontFamily === 'sans'
+                            ? 'border-zinc-900 bg-zinc-900 text-white dark:border-white dark:bg-white dark:text-zinc-950 font-semibold'
+                            : 'border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800'
+                        }`}
+                      >
+                        Sem Serifa (Nítida)
+                      </button>
+                      <button
+                        onClick={() => {
+                          setFontFamily('serif');
+                          persistReaderPrefs(fontSize, 'serif');
+                        }}
+                        className={`py-2 px-3 rounded-xl text-xs font-medium border transition-all cursor-pointer font-scripture-serif ${
+                          fontFamily === 'serif'
+                            ? 'border-zinc-900 bg-zinc-900 text-white dark:border-white dark:bg-white dark:text-zinc-950 font-semibold'
+                            : 'border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800'
+                        }`}
+                      >
+                        Livro (Literata)
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Tamanho da Fonte */}
+                  <div className="space-y-1.5">
+                    <div className="flex items-center justify-between text-[11px] font-semibold uppercase tracking-wider text-zinc-400">
+                      <span>Tamanho</span>
+                      <span className="text-zinc-700 dark:text-zinc-200">{fontSize}px</span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-1.5">
+                      <button
+                        onClick={() => {
+                          const next = Math.max(15, fontSize - 1);
+                          setFontSize(next);
+                          persistReaderPrefs(next, fontFamily);
+                        }}
+                        className="py-2 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs font-bold cursor-pointer"
+                      >
+                        A− Diminuir
+                      </button>
+                      <button
+                        onClick={() => {
+                          const next = Math.min(26, fontSize + 1);
+                          setFontSize(next);
+                          persistReaderPrefs(next, fontFamily);
+                        }}
+                        className="py-2 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs font-bold cursor-pointer"
+                      >
+                        A+ Aumentar
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Tema */}
+                  {setTheme && (
+                    <div className="space-y-1.5">
+                      <span className="text-[11px] font-semibold uppercase tracking-wider text-zinc-400">
+                        Fundo da Página
+                      </span>
+                      <div className="grid grid-cols-3 gap-1.5 text-xs font-medium">
+                        <button
+                          onClick={() => setTheme('light')}
+                          className={`py-1.5 rounded-xl border flex items-center justify-center space-x-1 cursor-pointer ${
+                            theme === 'light' ? 'border-zinc-900 bg-white text-zinc-950 font-semibold' : 'border-zinc-200 dark:border-zinc-800 text-zinc-500'
+                          }`}
+                        >
+                          <Sun className="w-3.5 h-3.5" />
+                          <span>Claro</span>
+                        </button>
+                        <button
+                          onClick={() => setTheme('sepia')}
+                          className={`py-1.5 rounded-xl border flex items-center justify-center space-x-1 cursor-pointer bg-[#F5EFE6] text-[#2C221E] ${
+                            theme === 'sepia' ? 'border-[#8C6B3F] font-semibold ring-1 ring-[#8C6B3F]' : 'border-[#E6DBC8]'
+                          }`}
+                        >
+                          <Coffee className="w-3.5 h-3.5" />
+                          <span>Sépia</span>
+                        </button>
+                        <button
+                          onClick={() => setTheme('dark')}
+                          className={`py-1.5 rounded-xl border flex items-center justify-center space-x-1 cursor-pointer bg-zinc-950 text-zinc-100 ${
+                            theme === 'dark' ? 'border-amber-500 font-semibold ring-1 ring-amber-500' : 'border-zinc-800'
+                          }`}
+                        >
+                          <Moon className="w-3.5 h-3.5" />
+                          <span>Escuro</span>
+                        </button>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Palavras de Jesus */}
+                  {setRedLetterEnabled && (
+                    <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between">
+                      <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300">
+                        Falas de Jesus em carmim
+                      </span>
+                      <button
+                        onClick={() => setRedLetterEnabled(!redLetterEnabled)}
+                        className={`w-10 h-5.5 rounded-full transition-colors relative cursor-pointer ${
+                          redLetterEnabled ? 'bg-rose-700' : 'bg-zinc-300 dark:bg-zinc-700'
+                        }`}
+                      >
+                        <span className={`w-4 h-4 rounded-full bg-white transition-transform absolute top-0.75 left-0.75 ${
+                          redLetterEnabled ? 'translate-x-4.5' : 'translate-x-0'
+                        }`} />
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Navegação rápida entre capítulos na Leitura Livre */}
+      {isFreeReading && (
+        <div className="flex items-center justify-between text-xs text-zinc-500">
           <button
-            onClick={() => {
-              telemetryService.track('audio_narration_play', { book: activeBook, chapter: selectedChapter });
-              handleToggleAudio();
-            }}
-            className={`inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-xl border text-xs font-bold transition-all shrink-0 ${
-              audioStatus.isPlaying
-                ? 'bg-amber-500 text-white border-amber-600 shadow-md ring-2 ring-amber-400/50'
-                : audioStatus.status === 'paused'
-                ? 'bg-amber-100 text-amber-800 border-amber-400 dark:bg-amber-950/60 dark:text-amber-200'
-                : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 hover:bg-amber-50 dark:hover:bg-amber-950/30'
-            }`}
-            title="Ouvir narração em áudio dos versículos deste capítulo (Web Speech)"
+            onClick={() => onChangeFreeChapter && onChangeFreeChapter(activeBook, Math.max(1, parseInt(selectedChapter, 10) - 1))}
+            disabled={parseInt(selectedChapter, 10) <= 1}
+            className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 disabled:opacity-40 cursor-pointer"
           >
-            <Headphones className="w-3.5 h-3.5" />
-            <span>{audioStatus.isPlaying ? 'Pausar Áudio' : audioStatus.status === 'paused' ? 'Retomar' : 'Ouvir'}</span>
+            <ArrowLeft className="w-3.5 h-3.5" />
+            <span>Cap. Anterior</span>
           </button>
 
-          {/* Botão de Estudo do Livro Atual (Bíblia de Estudos) */}
           <button
             onClick={() => {
               telemetryService.track('theological_commentary_view', { book: activeBook });
               onOpenStudyInfo && onOpenStudyInfo(activeBook);
             }}
-            className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-xl border border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-950/40 hover:bg-amber-100 text-xs font-bold text-amber-800 dark:text-amber-300 transition-colors shrink-0"
-            title={`Abrir Bíblia de Estudos: Informações do Livro de ${activeBook}`}
+            className="inline-flex items-center space-x-1 text-xs font-medium text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 cursor-pointer"
           >
             <BookMarked className="w-3.5 h-3.5" />
-            <span><span className="hidden min-[380px]:inline">Estudo de </span>{activeBook}</span>
+            <span>Introdução a {activeBook}</span>
           </button>
 
-          {/* Botão de Comentários do Capítulo com Indicador Visual */}
           <button
-            onClick={() => {
-              telemetryService.track('theological_commentary_view', { book: activeBook, chapter: selectedChapter });
-              onOpenCommentary(activeChapterData);
-            }}
-            className="inline-flex items-center space-x-1.5 px-2.5 py-1.5 rounded-xl border text-xs font-bold transition-all shrink-0 border-amber-400 bg-amber-50 dark:bg-amber-950/60 text-amber-900 dark:text-amber-200 shadow-sm"
-            title="Comentário expositivo, temas centrais e conexão cristocêntrica para este capítulo"
+            onClick={() => onChangeFreeChapter && onChangeFreeChapter(activeBook, parseInt(selectedChapter, 10) + 1)}
+            className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 cursor-pointer"
           >
-            <div className="relative">
-              <MessageSquare className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-              <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
-            </div>
-            <span>Comentários</span>
-            <span className="text-[9px] font-extrabold px-1 rounded-full bg-amber-500 text-white">
-              ✓
-            </span>
+            <span>Próximo Cap.</span>
+            <ArrowRight className="w-3.5 h-3.5" />
           </button>
-
-          {/* Botão de Arqueamento (BibleArc) */}
-          <button
-            onClick={() => {
-              telemetryService.track('bible_arc_view', { book: activeBook, chapter: selectedChapter });
-              handleOpenBibleArcFromTop();
-            }}
-            className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/60 dark:bg-indigo-950/40 hover:bg-indigo-100/60 text-xs font-semibold text-indigo-700 dark:text-indigo-300 transition-colors shrink-0"
-            title="Fazer Arqueamento do Texto (John Piper)"
-          >
-            <GitCommit className="w-3.5 h-3.5" />
-            <span className="hidden min-[340px]:inline">BibleArc</span>
-          </button>
-
-          {/* Controle de Fonte */}
-          <div className="flex items-center space-x-0.5 bg-zinc-200 dark:bg-zinc-800 rounded-xl p-0.5 shrink-0">
-            <button
-              onClick={() => setFontSize(Math.max(16, fontSize - 1))}
-              className="px-2 py-1 text-xs font-bold text-zinc-700 dark:text-zinc-200 hover:text-zinc-900"
-              title="Diminuir Fonte"
-            >
-              A-
-            </button>
-            <button
-              onClick={() => setFontSize(Math.min(26, fontSize + 1))}
-              className="px-2 py-1 text-xs font-bold text-zinc-700 dark:text-zinc-200 hover:text-zinc-900"
-              title="Aumentar Fonte"
-            >
-              A+
-            </button>
-          </div>
         </div>
-      </div>
+      )}
 
-      {/* 2. CABEÇALHO DO LIVRO & SELETOR DE CAPÍTULOS */}
-      <div className="space-y-4">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">
-              {isFreeReading ? 'Leitura Livre da Bíblia' : `Dia ${dayData?.id} • ${dayData?.dayOfWeek}`}
-            </span>
-            <h1 className="font-display text-3xl sm:text-4xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">
-              {isFreeReading ? `${activeBook} ${selectedChapter}` : readings.join(', ')}
-            </h1>
-          </div>
-
-          {/* Botão de Concluir Capítulo Atual */}
-          <div className="flex items-center space-x-2">
-            <button
-              onClick={() => onToggleChapter && onToggleChapter(currentChapterName, !isCurrentChapterCompleted)}
-              className={`inline-flex items-center space-x-2 px-3.5 py-2 rounded-2xl text-xs font-bold transition-all shadow-xs ${
-                isCurrentChapterCompleted
-                  ? 'bg-emerald-600 text-white shadow-emerald-600/20'
-                  : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 hover:text-emerald-700 border border-zinc-300 dark:border-zinc-700'
-              }`}
-              title={isCurrentChapterCompleted ? "Capítulo Concluído! Clique para desmarcar" : `Marcar ${currentChapterName} como concluído`}
-            >
-              <CheckCircle2 className="w-4 h-4" />
-              <span>{isCurrentChapterCompleted ? `${currentChapterName} Lido ✓` : `Concluir ${currentChapterName}`}</span>
-            </button>
-          </div>
-        </div>
-
-        {/* Abas para alternar entre os capítulos do dia (se no plano) */}
-        {!isFreeReading && readings.length > 1 && (
-          <div className="flex items-center space-x-2 border-b border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] pb-3 overflow-x-auto">
-            {readings.map((reading) => {
-              const p = parseReading(reading);
-              const isSelected = selectedChapter === p.chapter && selectedBook === p.book;
-              const isDone = !!chapterProgress[reading]?.completed;
-
-              return (
-                <button
-                  key={reading}
-                  onClick={() => {
-                    setSelectedChapter(p.chapter);
-                    setSelectedBook(p.book);
-                  }}
-                  className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all flex items-center space-x-1.5 shrink-0 ${
-                    isSelected
-                      ? 'bg-amber-500 text-white shadow-xs'
-                      : isDone
-                        ? 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800'
-                        : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-300 dark:hover:bg-zinc-700'
-                  }`}
-                >
-                  <span>{reading}</span>
-                  {isDone && <span className="text-[10px] bg-white/20 px-1 rounded-full">✓</span>}
-                </button>
-              );
-            })}
-            
-            <span className="text-[11px] font-semibold text-zinc-400 ml-auto whitespace-nowrap pl-2">
-              {completedChaptersCount}/{readings.length} cap.
-            </span>
-          </div>
-        )}
-
-        {/* Seletor rápido de capítulos em leitura livre */}
-        {isFreeReading && (
-          <div className="flex items-center justify-between border-b border-zinc-200 dark:border-zinc-800 pb-3 text-xs text-zinc-500 dark:text-zinc-400">
-            <button
-              onClick={() => onChangeFreeChapter && onChangeFreeChapter(activeBook, Math.max(1, parseInt(selectedChapter, 10) - 1))}
-              disabled={parseInt(selectedChapter, 10) <= 1}
-              className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-300 disabled:opacity-40"
-            >
-              <ArrowLeft className="w-3.5 h-3.5" />
-              <span>Capítulo Anterior</span>
-            </button>
-
-            <span className="font-bold text-zinc-800 dark:text-zinc-200">
-              {activeBook} • Capítulo {selectedChapter}
-            </span>
-
-            <button
-              onClick={() => onChangeFreeChapter && onChangeFreeChapter(activeBook, parseInt(selectedChapter, 10) + 1)}
-              className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-300"
-            >
-              <span>Próximo Capítulo</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
-          </div>
-        )}
-
-        {/* Chips de Locais Geográficos & Históricos Citados no Capítulo */}
-        {mentionedPlaces.length > 0 && (
-          <div className="p-2.5 rounded-2xl bg-amber-500/10 dark:bg-amber-950/30 border border-amber-300/50 dark:border-amber-900/40 flex items-center gap-1.5 overflow-x-auto scrollbar-none text-xs">
-            <div className="flex items-center space-x-1.5 text-amber-800 dark:text-amber-200 font-bold shrink-0">
-              <Compass className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-              <span>Locais Históricos Citados:</span>
-            </div>
-            {mentionedPlaces.map(place => (
-              <button
-                key={place.id}
-                onClick={() => {
-                  telemetryService.track('biblical_maps_view', { place: place.name, chapter: activeChapterStr });
-                  onOpenMaps && onOpenMaps(place.id);
-                }}
-                className="shrink-0 px-2.5 py-1 rounded-xl bg-white dark:bg-zinc-800 border border-amber-200 dark:border-amber-800/60 text-zinc-800 dark:text-zinc-200 hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-all font-semibold flex items-center space-x-1 cursor-pointer shadow-2xs group"
-                title={`${place.name} (${place.region}) - Clique para ver a rota e história no Atlas Bíblico`}
-              >
-                <MapPin className="w-3 h-3 text-amber-600 dark:text-amber-400 group-hover:scale-110 transition-transform" />
-                <span>{place.name}</span>
-              </button>
-            ))}
-          </div>
-        )}
-
-        {/* Mini barra de louvor conectada especificamente ao capítulo ativo */}
-        {activeChapterMusic && (
-          <div className="p-3 rounded-2xl bg-amber-50/70 dark:bg-zinc-800/80 border border-amber-200 dark:border-zinc-700 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs">
-            <div className="flex items-center space-x-2 text-amber-900 dark:text-amber-200 min-w-0">
-              <Music className="w-4 h-4 text-amber-600 shrink-0" />
-              <div className="truncate">
-                <span>
-                  <strong>Louvor para {activeBook} {selectedChapter}:</strong> {activeChapterMusic.title} ({activeChapterMusic.artist})
-                </span>
-                {activeChapterMusic.description && (
-                  <span className="hidden md:inline text-[11px] text-zinc-500 dark:text-zinc-400 ml-2">
-                    — {activeChapterMusic.description}
-                  </span>
-                )}
-              </div>
-            </div>
-            <div className="flex items-center space-x-2 shrink-0 self-end sm:self-auto">
-              <button
-                onClick={() => {
-                  telemetryService.track('music_cycle', { chapter: activeChapterStr });
-                  setChapterMusicOverride(prev => prev === null ? (activeChapterMusic.artistIndex ?? 0) + 1 : prev + 1);
-                }}
-                className="inline-flex items-center space-x-1 px-2.5 py-1 rounded-xl bg-white dark:bg-zinc-700 border border-zinc-200 dark:border-zinc-600 text-[11px] font-medium text-zinc-700 dark:text-zinc-200 hover:bg-amber-50 dark:hover:bg-zinc-600 transition-colors shadow-2xs cursor-pointer"
-                title="Trocar por outro louvor temático deste capítulo"
-              >
-                <RefreshCw className="w-3 h-3 text-amber-600" />
-                <span>Trocar</span>
-              </button>
-
-              <a
-                href={activeChapterMusic.youtubeMusicUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => telemetryService.track('music_play_youtube_music', { chapter: activeChapterStr, title: activeChapterMusic.title, artist: activeChapterMusic.artist })}
-                className="inline-flex items-center space-x-1 px-2.5 py-1 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-semibold text-[11px] transition-colors shadow-2xs"
-                title="Ouvir no YouTube Music"
-              >
-                <Headphones className="w-3 h-3" />
-                <span>Ouvir no YouTube Music</span>
-                <ExternalLink className="w-2.5 h-2.5" />
-              </a>
-            </div>
-          </div>
-        )}
-      </div>
-
-      {/* ESTADO DE CARREGAMENTO */}
+      {/* 2. FOLHA DE LEITURA DA ESCRITURA (DIRETO NA 1ª DOBRA, ALTA NITIDEZ) */}
       {isDataLoading ? (
-        <div className="py-20 flex flex-col items-center justify-center space-y-3 text-zinc-500 dark:text-zinc-400">
-          <Loader2 className="w-8 h-8 animate-spin text-amber-500" />
-          <p className="text-sm font-semibold">Carregando {activeBook} {selectedChapter} (NVT)...</p>
+        <div className="py-24 flex flex-col items-center justify-center space-y-3 text-zinc-400">
+          <Loader2 className="w-7 h-7 animate-spin text-zinc-500" />
+          <p className="text-xs font-medium">Carregando {activeBook} {selectedChapter}...</p>
         </div>
       ) : (
-        /* 3. TEXTO BÍBLICO NVT COM PALAVRAS DE JESUS E SUPORTE A MULTI-SELEÇÃO */
         <article 
-          className="font-scripture bg-white dark:bg-zinc-900 sepia:bg-[#fbf0d9] rounded-3xl p-6 sm:p-10 shadow-xs border border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] space-y-8"
+          className={`${fontFamily === 'serif' ? 'font-scripture-serif' : 'font-scripture-sans'} bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] rounded-2xl p-6 sm:p-10 md:p-12 shadow-[0_1px_3px_rgba(0,0,0,0.03)] border border-zinc-200/80 dark:border-zinc-800/90 sepia:border-[#E6DBC8] space-y-7`}
           style={{ fontSize: `${fontSize}px` }}
         >
+          {/* Cabeçalho Limpo do Capítulo dentro da Página */}
+          <header className="pb-5 border-b border-zinc-100 dark:border-zinc-800/80 sepia:border-[#E6DBC8] flex items-baseline justify-between gap-4 font-sans">
+            <div>
+              <span className="text-[11px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block">
+                {isFreeReading ? 'Nova Versão Transformadora' : `Dia ${dayData?.id} • Nova Versão Transformadora`}
+              </span>
+              <h1 className="text-2xl sm:text-3xl font-bold text-zinc-950 dark:text-zinc-50 sepia:text-[#2C221E] tracking-tight mt-0.5">
+                {activeBook} {selectedChapter}
+              </h1>
+            </div>
+
+            <button
+              onClick={() => {
+                telemetryService.track('theological_commentary_view', { book: activeBook });
+                onOpenStudyInfo && onOpenStudyInfo(activeBook);
+              }}
+              className="text-xs font-medium text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 inline-flex items-center space-x-1 shrink-0 cursor-pointer"
+            >
+              <BookMarked className="w-3.5 h-3.5" />
+              <span>Sobre {activeBook}</span>
+            </button>
+          </header>
+
           {activeChapterData.sections.length === 0 ? (
-            <div className="py-12 text-center text-zinc-500 text-sm">
+            <div className="py-12 text-center text-zinc-400 text-sm font-sans">
               Nenhum texto disponível para {activeBook} {selectedChapter}.
             </div>
           ) : (
             activeChapterData.sections.map((section, sIdx) => (
-              <div key={sIdx} className="space-y-4">
-                
-                {/* Título de Seção da NVT */}
+              <div key={sIdx} className="space-y-3.5">
                 {section.title && (
-                  <h3 className="font-display font-bold text-xl sm:text-2xl text-amber-900 dark:text-amber-300 sepia:text-[#5c3d1e] pt-4 border-t border-zinc-100 dark:border-zinc-800 first:border-0 first:pt-0">
+                  <h2 className="font-sans font-semibold text-base sm:text-lg text-zinc-900 dark:text-zinc-100 sepia:text-[#2C221E] pt-3 first:pt-0 tracking-tight">
                     {section.title}
-                  </h3>
+                  </h2>
                 )}
 
-                {/* Versículos */}
-                <div className="space-y-2 leading-relaxed">
+                <div className="text-zinc-800 dark:text-zinc-200 sepia:text-[#2C221E]">
                   {section.verses.map((v) => {
                     const verseKey = `${activeBook} ${selectedChapter}:${v.number}`;
                     const highlight = highlights[verseKey];
@@ -671,24 +666,21 @@ export default function LeitorBiblico({
                     return (
                       <span
                         key={v.number}
-                        className={`inline relative group transition-colors rounded-sm px-0.5 py-0.5 cursor-pointer ${
-                          highlightClass ? highlightClass : 'hover:bg-amber-50/60 dark:hover:bg-zinc-800/60'
-                        } ${isSelected ? 'ring-2 ring-amber-400 bg-amber-100/60 dark:bg-amber-900/30' : ''} ${
-                          isSpeaking ? 'ring-2 ring-amber-500 bg-amber-200/70 dark:bg-amber-900/50 shadow-xs' : ''
+                        className={`inline relative transition-colors rounded px-0.5 py-0.5 cursor-pointer ${
+                          highlightClass ? highlightClass : 'hover:bg-zinc-100/80 dark:hover:bg-zinc-800/60'
+                        } ${isSelected ? 'bg-amber-100/80 dark:bg-amber-900/40 underline decoration-amber-500 decoration-dotted underline-offset-4' : ''} ${
+                          isSpeaking ? 'bg-amber-200/70 dark:bg-amber-900/60' : ''
                         }`}
                         onClick={() => handleVerseClick(v)}
                       >
-                        {/* Número do versículo */}
-                        <sup className="font-sans font-bold text-[11px] text-amber-700 dark:text-amber-500 sepia:text-[#78350f] select-none mr-1 inline-block">
+                        <sup className="font-sans font-semibold text-[11px] text-zinc-400 dark:text-zinc-500 select-none mr-1 inline-block">
                           {v.number}
                         </sup>
 
-                        {/* Texto com Destaque de Palavras de Jesus (Red Letter) */}
                         <span className={redLetterEnabled && v.isJesusWords ? 'red-letter' : ''}>
                           {v.text}{' '}
                         </span>
 
-                        {/* Ícone de Referência Cruzada Clicável */}
                         {hasCrossRefs && (
                           <button
                             onClick={(e) => {
@@ -696,237 +688,245 @@ export default function LeitorBiblico({
                               telemetryService.track('cross_references_click', { verse: verseKey });
                               onOpenReferences(verseKey, crossRefs, v.text);
                             }}
-                            className="inline-flex items-center text-amber-600 dark:text-amber-400 hover:text-amber-800 ml-1 p-0.5 align-middle select-none"
-                            title="Ver referências cruzadas"
+                            className="inline-flex items-center text-zinc-400 hover:text-amber-600 dark:hover:text-amber-400 ml-0.5 p-0.5 align-middle select-none cursor-pointer transition-colors"
+                            title="Ver referências cruzadas exegéticas"
                           >
                             <Link2 className="w-3.5 h-3.5" />
                           </button>
                         )}
 
-                        {/* Indicador de Favorito */}
                         {isFavorite && (
-                          <Star className="inline w-3 h-3 text-amber-400 fill-current ml-0.5 align-middle" />
+                          <Star className="inline w-3 h-3 text-amber-500 fill-current ml-0.5 align-middle" />
                         )}
                       </span>
                     );
                   })}
                 </div>
-
               </div>
             ))
-          )}
-          {!isDataLoading && activeChapterData.length > 0 && (
-            <div className="pt-6 mt-8 border-t border-zinc-200/80 dark:border-zinc-800 sepia:border-[#e6d3a7] flex items-center justify-center gap-3 text-[11px] font-sans font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 sepia:text-[#8c6b3f] select-none">
-              <span className="h-px w-8 bg-zinc-200 dark:bg-zinc-800 sepia:bg-[#e6d3a7]" />
-              <span>Fim de {activeBook} {selectedChapter}</span>
-              <span className="h-px w-8 bg-zinc-200 dark:bg-zinc-800 sepia:bg-[#e6d3a7]" />
-            </div>
           )}
         </article>
       )}
 
-      {/* BANNER INFORMATIVO: COMENTÁRIOS EXPOSITIVOS DESTE CAPÍTULO */}
-      <div className="p-4 sm:p-5 rounded-3xl bg-white dark:bg-zinc-800/90 sepia:bg-[#f4e4c1]/70 border border-zinc-200 dark:border-zinc-700/80 sepia:border-[#e6d3a7] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs">
-        <div className="flex items-center space-x-3">
-          <span className="text-2xl">💡</span>
-          <div>
-            <div className="flex items-center space-x-2">
-              <h5 className="font-bold text-sm text-zinc-900 dark:text-zinc-100">
-                Comentários & Contexto Teológico
-              </h5>
-              <span className="text-[10px] font-extrabold px-1.5 py-0.2 rounded-full bg-amber-500 text-white">
-                Disponível
-              </span>
+      {/* 3. PAINEL COMPLEMENTAR PÓS-LEITURA (LOCAIS CITADOS, TRILHA E CONCLUSÃO) */}
+      <div className="space-y-3">
+        {/* Locais Geográficos Citados */}
+        {mentionedPlaces.length > 0 && (
+          <div className="p-3.5 rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800/90 flex items-center gap-2 overflow-x-auto text-xs">
+            <span className="text-zinc-400 font-medium shrink-0">Locais no texto:</span>
+            {mentionedPlaces.map(place => (
+              <button
+                key={place.id}
+                onClick={() => {
+                  telemetryService.track('biblical_maps_view', { place: place.name, chapter: activeChapterStr });
+                  onOpenMaps && onOpenMaps(place.id);
+                }}
+                className="shrink-0 px-2.5 py-1 rounded-lg bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200/80 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-200 font-medium flex items-center space-x-1 cursor-pointer transition-colors"
+              >
+                <MapPin className="w-3 h-3 text-amber-600 dark:text-amber-400" />
+                <span>{place.name}</span>
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Trilha Musical do Capítulo */}
+        {activeChapterMusic && (
+          <div className="p-3.5 rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800/90 flex items-center justify-between gap-3 text-xs">
+            <div className="flex items-center space-x-3 min-w-0">
+              <img
+                src={`https://i.ytimg.com/vi/${activeChapterMusic.youtubeId}/mqdefault.jpg`}
+                alt={activeChapterMusic.title}
+                className="w-10 h-10 rounded-lg object-cover shrink-0 bg-zinc-900"
+                loading="lazy"
+              />
+              <div className="min-w-0">
+                <div className="font-semibold text-zinc-900 dark:text-zinc-100 truncate">
+                  {activeChapterMusic.title}
+                </div>
+                <div className="text-zinc-500 dark:text-zinc-400 truncate">
+                  {activeChapterMusic.artist} • Trilha de {activeBook} {selectedChapter}
+                </div>
+              </div>
             </div>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5 leading-relaxed">
-              Visão geral expositiva, temas centrais e conexão cristocêntrica de {activeBook} {selectedChapter}.
+
+            <div className="flex items-center space-x-1.5 shrink-0">
+              <button
+                onClick={() => {
+                  telemetryService.track('music_cycle', { chapter: activeChapterStr });
+                  setChapterMusicOverride(prev => prev === null ? (activeChapterMusic.artistIndex ?? 0) + 1 : prev + 1);
+                }}
+                className="p-2 rounded-lg text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+                title="Trocar música"
+              >
+                <RefreshCw className="w-3.5 h-3.5" />
+              </button>
+              <a
+                href={activeChapterMusic.youtubeMusicUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => telemetryService.track('music_play_youtube_music', { chapter: activeChapterStr, title: activeChapterMusic.title, artist: activeChapterMusic.artist })}
+                className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 text-zinc-800 dark:text-zinc-200 font-medium transition-colors"
+              >
+                <span>Ouvir</span>
+                <ExternalLink className="w-3 h-3" />
+              </a>
+            </div>
+          </div>
+        )}
+
+        {/* Conclusão do Capítulo & Avanço */}
+        <div className="p-5 rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800/90 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="text-center sm:text-left">
+            <h4 className="font-semibold text-sm text-zinc-900 dark:text-zinc-100">
+              {isCurrentChapterCompleted ? `${currentChapterName} concluído` : `Finalizar leitura de ${currentChapterName}`}
+            </h4>
+            <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+              {isFreeReading ? 'Registre este capítulo no seu histórico.' : `${completedChaptersCount} de ${readings.length} capítulos do dia lidos.`}
             </p>
           </div>
-        </div>
 
-        <button
-          onClick={() => onOpenCommentary(activeChapterData)}
-          className="w-full sm:w-auto px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-xs transition-colors whitespace-nowrap shrink-0"
-        >
-          Ler Comentários ➔
-        </button>
-      </div>
+          <div className="flex items-center space-x-2 w-full sm:w-auto justify-center sm:justify-end">
+            <button
+              onClick={() => onToggleChapter && onToggleChapter(currentChapterName, !isCurrentChapterCompleted)}
+              className={`inline-flex items-center justify-center space-x-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+                isCurrentChapterCompleted
+                  ? 'bg-emerald-600 hover:bg-emerald-700 text-white'
+                  : 'bg-zinc-950 hover:bg-zinc-800 dark:bg-white dark:hover:bg-zinc-200 text-white dark:text-zinc-950'
+              }`}
+            >
+              <CheckCircle2 className="w-4 h-4" />
+              <span>{isCurrentChapterCompleted ? 'Concluído' : 'Marcar como Lido'}</span>
+            </button>
 
-      {/* 4. CARD DE CONCLUSÃO DO CAPÍTULO ATUAL AO FINAL DA LEITURA */}
-      <div className="p-5 sm:p-6 rounded-3xl bg-zinc-100/80 dark:bg-zinc-800 sepia:bg-[#f4e4c1]/60 border border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7] flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div>
-          <div className="flex items-center space-x-2">
-            <CheckCircle2 className={`w-5 h-5 ${isCurrentChapterCompleted ? 'text-emerald-500' : 'text-zinc-400'}`} />
-            <h4 className="font-bold text-base text-zinc-900 dark:text-zinc-100">
-              {isCurrentChapterCompleted ? `${currentChapterName} Concluído!` : `Concluir Leitura de ${currentChapterName}`}
-            </h4>
+            {!isFreeReading && nextReadingInDay && (
+              <button
+                onClick={() => {
+                  const p = parseReading(nextReadingInDay);
+                  setSelectedChapter(p.chapter);
+                  setSelectedBook(p.book);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 text-zinc-800 dark:text-zinc-200 text-xs font-semibold transition-colors cursor-pointer"
+              >
+                <span>{nextReadingInDay}</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            )}
+
+            {isFreeReading && (
+              <button
+                onClick={() => onChangeFreeChapter && onChangeFreeChapter(activeBook, parseInt(selectedChapter, 10) + 1)}
+                className="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 text-zinc-800 dark:text-zinc-200 text-xs font-semibold transition-colors cursor-pointer"
+              >
+                <span>Próximo Cap.</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            )}
           </div>
-          <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
-            {isFreeReading ? 'Marque para registrar a leitura deste capítulo em seu histórico.' : `${completedChaptersCount} de ${readings.length} capítulos do dia lidos.`}
-          </p>
-        </div>
-
-        <div className="flex items-center space-x-2 w-full sm:w-auto justify-end">
-          <button
-            onClick={() => onToggleChapter && onToggleChapter(currentChapterName, !isCurrentChapterCompleted)}
-            className={`inline-flex items-center justify-center space-x-2 px-4 py-2.5 rounded-2xl text-xs font-bold transition-all shadow-xs ${
-              isCurrentChapterCompleted
-                ? 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-emerald-600/20'
-                : 'bg-amber-500 hover:bg-amber-600 text-white shadow-amber-500/20'
-            }`}
-          >
-            <Check className="w-4 h-4" />
-            <span>{isCurrentChapterCompleted ? 'Capítulo Concluído ✓' : `Marcar ${currentChapterName} como Lido`}</span>
-          </button>
-
-          {/* Próximo capítulo se houver no plano */}
-          {!isFreeReading && nextReadingInDay && (
-            <button
-              onClick={() => {
-                const p = parseReading(nextReadingInDay);
-                setSelectedChapter(p.chapter);
-                setSelectedBook(p.book);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-              className="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-2xl bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 text-zinc-800 dark:text-zinc-200 text-xs font-bold transition-colors"
-            >
-              <span>{nextReadingInDay}</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
-          )}
-
-          {/* Próximo capítulo se em leitura livre */}
-          {isFreeReading && (
-            <button
-              onClick={() => onChangeFreeChapter && onChangeFreeChapter(activeBook, parseInt(selectedChapter, 10) + 1)}
-              className="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-2xl bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 text-zinc-800 dark:text-zinc-200 text-xs font-bold transition-colors"
-            >
-              <span>Próximo Cap.</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
-          )}
         </div>
       </div>
 
-      {/* 5. TOOLBAR FLUTUANTE DE AÇÕES DE MÚLTIPLOS VERSÍCULOS SELECIONADOS */}
+      {/* 4. TOOLBAR FLUTUANTE DE SELEÇÃO DE VERSÍCULOS */}
       {selectedCount > 0 && (() => {
         const citation = formatCitation();
         const singleVerseData = selectedCount === 1 ? Object.values(selectedVerses)[0] : null;
         const singleRefs = singleVerseData 
           ? crossReferenceService.getReferences(activeBook, selectedChapter, singleVerseData.number, singleVerseData.crossReferences)
           : [];
-        const hasRefs = singleRefs.length > 0;
 
         return (
-          <div className="fixed bottom-18 md:bottom-6 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-1.25rem)] max-w-lg bg-zinc-900/95 dark:bg-zinc-900/95 text-white rounded-2xl shadow-2xl p-3 border border-zinc-700/80 backdrop-blur-md animate-in fade-in slide-in-from-bottom-4">
-            
-            {/* Linha Superior: Cabeçalho com Versículos e Ações */}
-            <div className="flex items-center justify-between pb-2 border-b border-zinc-800">
-              <div className="flex items-center space-x-1.5 min-w-0">
-                <span className="text-xs font-bold text-amber-400 truncate">
+          <div className="fixed bottom-20 lg:bottom-6 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-1.5rem)] max-w-md bg-zinc-950/95 text-white rounded-2xl shadow-2xl p-3.5 border border-zinc-800 backdrop-blur-md">
+            <div className="flex items-center justify-between pb-2.5 border-b border-zinc-800">
+              <div className="flex items-center space-x-2 min-w-0">
+                <span className="text-xs font-semibold text-white truncate">
                   {citation}
                 </span>
-                <span className="text-[10px] bg-zinc-800 text-zinc-300 px-1.5 py-0.2 rounded-full font-medium">
-                  {selectedCount} {selectedCount === 1 ? 'versículo' : 'versículos'}
+                <span className="text-[10px] bg-zinc-800 text-zinc-300 px-1.5 py-0.5 rounded font-medium">
+                  {selectedCount} {selectedCount === 1 ? 'v.' : 'vv.'}
                 </span>
-                {areAllSelectedFavorites && (
-                  <span className="text-[10px] bg-amber-400/20 text-amber-300 px-1.5 py-0.2 rounded-full font-medium">
-                    Favorito
-                  </span>
-                )}
               </div>
 
               <div className="flex items-center space-x-1 shrink-0">
-                {/* Botão Favoritar / Desfavoritar Múltiplos */}
                 <button
                   onClick={handleToggleFav}
-                  className={`p-1.5 rounded-lg transition-colors ${
+                  className={`p-1.5 rounded-lg transition-colors cursor-pointer ${
                     areAllSelectedFavorites 
                       ? 'text-amber-400 bg-amber-400/10' 
                       : 'text-zinc-400 hover:text-amber-400 hover:bg-zinc-800'
                   }`}
-                  title={areAllSelectedFavorites ? "Remover dos Favoritos" : "Favoritar versículos selecionados"}
+                  title="Favoritar"
                 >
                   <Star className="w-4 h-4" fill={areAllSelectedFavorites ? "currentColor" : "none"} />
                 </button>
 
-                {/* Botão Copiar */}
                 <button
                   onClick={handleCopyVerses}
-                  className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
-                  title="Copiar versículos selecionados"
+                  className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors cursor-pointer"
+                  title="Copiar"
                 >
                   {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
                 </button>
 
-                {/* Botão Compartilhar */}
                 <button
                   onClick={handleShareVerses}
-                  className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
-                  title="Compartilhar versículos"
+                  className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors cursor-pointer"
+                  title="Compartilhar"
                 >
                   <Share2 className="w-4 h-4" />
                 </button>
 
-                {/* Botão BibleArc */}
                 <button
                   onClick={() => {
                     onOpenBibleArc(activeBook, selectedChapter, allChapterVerses, citation, getCombinedText());
                     setSelectedVerses({});
                   }}
-                  className="inline-flex items-center space-x-1 px-2 py-1 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold ml-0.5"
-                  title="Ver análise de discurso e arqueamento dos temas deste texto"
+                  className="inline-flex items-center space-x-1 px-2.5 py-1 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-medium ml-0.5 cursor-pointer"
                 >
                   <GitCommit className="w-3.5 h-3.5" />
                   <span className="text-[11px]">BibleArc</span>
                 </button>
 
-                {/* Fechar / Desmarcar */}
                 <button
                   onClick={() => setSelectedVerses({})}
-                  className="p-1 text-zinc-400 hover:text-white ml-1 text-xs font-bold"
-                  title="Desmarcar todos"
+                  className="p-1 text-zinc-400 hover:text-white ml-1 text-xs cursor-pointer"
                 >
                   ✕
                 </button>
               </div>
             </div>
 
-            {/* Linha Inferior: Marca-Texto e Referências Cruzadas */}
-            <div className="flex items-center justify-between pt-2">
+            <div className="flex items-center justify-between pt-2.5">
               <div className="flex items-center space-x-2">
-                <span className="text-[10px] uppercase font-bold text-zinc-400 tracking-wider">
-                  Destaque:
+                <span className="text-[10px] uppercase font-semibold text-zinc-400">
+                  Grifo:
                 </span>
                 <div className="flex items-center space-x-1.5">
                   {Object.entries(HIGHLIGHT_COLORS).map(([cKey, cData]) => (
                     <button
                       key={cKey}
                       onClick={() => handleApplyHighlight(cKey)}
-                      className="w-5 h-5 rounded-full hover:scale-125 transition-transform border border-white/20"
+                      className="w-5 h-5 rounded-full hover:scale-110 transition-transform border border-white/20 cursor-pointer"
                       style={{ backgroundColor: cData.hex }}
-                      title={`Destacar selecionados: ${cData.name}`}
+                      title={cData.name}
                     />
                   ))}
                   <button
                     onClick={() => handleApplyHighlight(null)}
-                    className="text-[11px] text-zinc-400 hover:text-white px-1.5 py-0.5 rounded hover:bg-zinc-800"
-                    title="Remover cor dos selecionados"
+                    className="text-[11px] text-zinc-400 hover:text-white px-1.5 py-0.5 rounded hover:bg-zinc-800 cursor-pointer"
                   >
                     Limpar
                   </button>
                 </div>
               </div>
 
-              {/* Botão de Referências Cruzadas se 1 versículo estiver selecionado */}
               {singleVerseData && (
                 <button
                   onClick={() => {
                     onOpenReferences(singleVerseData.key, singleRefs, singleVerseData.text);
                     setSelectedVerses({});
                   }}
-                  className="inline-flex items-center space-x-1 text-[11px] font-medium text-amber-400 hover:underline px-1 py-0.5"
-                  title="Ver referências cruzadas deste versículo"
+                  className="inline-flex items-center space-x-1 text-[11px] font-medium text-amber-400 hover:underline px-1 py-0.5 cursor-pointer"
                 >
                   <Link2 className="w-3.5 h-3.5" />
                   <span>{singleRefs.length > 0 ? `${singleRefs.length} ${singleRefs.length === 1 ? 'ref' : 'refs'}` : 'Referências'}</span>
@@ -937,41 +937,22 @@ export default function LeitorBiblico({
         );
       })()}
 
-      {/* 6. NAVEGAÇÃO ENTRE DIAS NO RODAPÉ */}
-      {!isFreeReading && (
-        <div className="flex items-center justify-between pt-6 border-t border-zinc-200 dark:border-zinc-800 sepia:border-[#e6d3a7]">
-          <button
-            onClick={onPrevDay}
-            disabled={dayData?.id <= 1}
-            className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl text-xs font-medium text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 disabled:opacity-40"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            <span>Dia Anterior</span>
-          </button>
-
-          <button
-            onClick={onNextDay}
-            disabled={dayData?.id >= 365}
-            className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl text-xs font-medium text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 disabled:opacity-40"
-          >
-            <span>Próximo Dia</span>
-            <ArrowRight className="w-4 h-4" />
-          </button>
-        </div>
-      )}
-
-      {/* 7. PLAYER DE ÁUDIO BÍBLICO (WEB SPEECH NARRATOR) */}
+      {/* Barra Flutuante de Áudio em Reprodução */}
       <AudioPlayerBar
-        bookName={activeBook}
-        chapterNumber={selectedChapter}
         audioStatus={audioStatus}
-        onPlay={handleToggleAudio}
-        onPause={() => speechService.pause()}
-        onResume={() => speechService.resume()}
-        onStop={() => speechService.stop()}
-        onNextVerse={() => speechService.nextVerse()}
-        onPrevVerse={() => speechService.prevVerse()}
-        onChangeRate={(newRate) => speechService.setRate(newRate)}
+        activeBook={activeBook}
+        selectedChapter={selectedChapter}
+        speakingVerseNumber={speakingVerseNumber}
+        onPlayPause={handleToggleAudio}
+        onStop={() => {
+          speechService.stop();
+          setSpeakingVerseNumber(null);
+          setAudioStatus({ status: 'stopped', isPlaying: false, rate: 1.0 });
+        }}
+        onChangeRate={(newRate) => {
+          speechService.setRate(newRate);
+          setAudioStatus(prev => ({ ...prev, rate: newRate }));
+        }}
       />
 
     </div>

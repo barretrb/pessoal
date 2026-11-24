@@ -121,7 +121,7 @@ export default function DestaquesModal({
                       </div>
                     </div>
                     {fav.text && (
-                      <p className="font-scripture text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed italic">
+                      <p className="text-sm text-zinc-700 dark:text-zinc-200 leading-relaxed">
                         “{fav.text}”
                       </p>
                     )}
@@ -170,7 +170,7 @@ export default function DestaquesModal({
                       </div>
                     </div>
                     {item.text && (
-                      <p className="font-scripture text-sm leading-relaxed italic opacity-95">
+                      <p className="text-sm leading-relaxed">
                         “{item.text}”
                       </p>
                     )}

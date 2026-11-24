@@ -112,7 +112,7 @@ export default function ComentariosDrawer({ isOpen, onClose, chapterData }) {
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Síntese Exegética do Capítulo</span>
               </span>
-              <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed font-scripture">
+              <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">
                 {commentary.overview}
               </p>
             </div>
@@ -144,7 +144,7 @@ export default function ComentariosDrawer({ isOpen, onClose, chapterData }) {
                   <Heart className="w-3.5 h-3.5 fill-rose-600 text-rose-600" />
                   <span>Conexão Cristocêntrica & Redentora</span>
                 </span>
-                <p className="text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed font-scripture">
+                <p className="text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed">
                   {commentary.christocentricKey}
                 </p>
               </div>

@@ -96,7 +96,7 @@ export default function ReferenciasDrawer({
                   Escritura interpreta Escritura
                 </span>
               </div>
-              <p className="font-scripture text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed">
+              <p className="text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed">
                 “{sourceText}”
               </p>
             </div>
@@ -148,7 +148,7 @@ export default function ReferenciasDrawer({
                     </div>
 
                     {item.text ? (
-                      <p className="font-scripture text-sm text-zinc-800 dark:text-zinc-200 italic leading-relaxed">
+                      <p className="text-sm text-zinc-700 dark:text-zinc-200 leading-relaxed">
                         “{item.text}”
                       </p>
                     ) : (

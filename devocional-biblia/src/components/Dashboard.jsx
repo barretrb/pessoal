@@ -1,30 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { 
   Play, 
   ExternalLink, 
   CheckCircle2, 
+  Circle,
   AlertCircle, 
   Calendar, 
   BookOpen, 
-  Flame, 
   Music, 
   Video, 
-  Headphones,
   RefreshCw,
-  BarChart3,
-  ChevronRight,
-  ChevronDown,
-  ChevronUp,
   ArrowRight,
-  ArrowUp,
-  ArrowDown,
   BookMarked,
-  Library,
-  Sliders,
   Compass,
   GitCommit,
-  LogOut,
-  Disc3
+  SlidersHorizontal,
+  X
 } from 'lucide-react';
 import { getMediaForDay, EXPANDED_DEVOTIONAL_CATALOG, getMusicForChapter } from '../data/dailyMedia';
 import { formatDateBR } from '../services/dateUtils';
@@ -43,32 +34,53 @@ const MONTH_PILLS = [
   { id: '10', label: 'Out' },
   { id: '11', label: 'Nov' },
   { id: '12', label: 'Dez' },
-  { id: 'all', label: 'Ano Todo (365)' }
+  { id: 'all', label: '365 Dias' }
 ];
+
+function getGreeting() {
+  const h = new Date().getHours();
+  if (h < 12) return 'Bom dia';
+  if (h < 18) return 'Boa tarde';
+  return 'Boa noite';
+}
+
+function formatReadingsCompact(readings = []) {
+  if (!readings || readings.length === 0) return '';
+  if (readings.length === 1) return readings[0];
+  const parsed = readings.map(r => {
+    const parts = r.trim().split(/\s+/);
+    const ch = parts.pop();
+    return { book: parts.join(' '), ch };
+  });
+  const first = parsed[0];
+  const last = parsed[parsed.length - 1];
+  if (parsed.every(p => p.book === first.book)) {
+    return `${first.book} ${first.ch}–${last.ch}`;
+  }
+  return `${first.book} ${first.ch} – ${last.book} ${last.ch}`;
+}
+
+function cleanTrackTitle(title = '') {
+  return title.replace(/\s*\([^)]*\)\s*$/, '').trim() || title;
+}
 
 export default function Dashboard({ 
   days, 
+  dayBookData,
   currentDayId, 
   pendingDayId, 
   allPendingDays = [],
   onSelectDay,
-  onToggleComplete,
   onToggleChapter,
   chapterProgress = {},
   onOpenBibleNav,
   onOpenStudyInfo,
   onOpenBibleArc,
   activeProfile,
-  onOpenProfiles,
   dashboardLayout,
-  onUpdateDashboardLayout,
-  onResetDashboardLayout,
   onOpenMaps,
-  onOpenTelemetry,
   onOpenCustomize,
-  onOptInPlan,
-  onOptOutPlan,
-  onLogout
+  onOptInPlan
 }) {
   const currentDayData = days.find(d => d.id === currentDayId);
   const currentMonthStr = currentDayData?.date ? currentDayData.date.split('-')[1] : '11';
@@ -89,6 +101,24 @@ export default function Dashboard({
   const firstReadingParts = (currentReadings[0] || '1 Coríntios 14').trim().split(/\s+/);
   const activeChapterNum = firstReadingParts.pop() || '1';
   const activeBookName = firstReadingParts.join(' ') || '1 Coríntios';
+
+  // Extrai um Versículo em Destaque real do capítulo de hoje para o Hero Card (padrão YouVersion / Glorify)
+  const featuredVerse = useMemo(() => {
+    const chObj = dayBookData?.[String(activeChapterNum)] || dayBookData?.[activeChapterNum];
+    if (!chObj?.sections) return null;
+    const allVerses = chObj.sections.flatMap(s => s.verses || []);
+    if (allVerses.length === 0) return null;
+    const picked =
+      allVerses.find(v => v.text && v.text.length >= 55 && v.text.length <= 190 && (v.crossReferences?.length >= 2 || v.isJesusWords)) ||
+      allVerses.find(v => v.text && v.text.length >= 50 && v.text.length <= 200) ||
+      allVerses[0];
+    return picked
+      ? {
+          citation: `${chObj.book || activeBookName} ${activeChapterNum}:${picked.number}`,
+          text: picked.text
+        }
+      : null;
+  }, [dayBookData, activeChapterNum, activeBookName]);
 
   const chapterMusics = currentReadings.map((reading, idx) => {
     const override = chapterMusicOverrides[idx];
@@ -117,6 +147,8 @@ export default function Dashboard({
   const totalCompleted = days.filter(d => d.completed && (isRafael || d.id >= startDay)).length;
   const progressPercent = Math.min(100, Math.round((totalCompleted / (isRafael ? 365 : totalDaysInUserPlan)) * 100));
 
+  const completedTodayChapters = currentReadings.filter(r => !!chapterProgress[r]?.completed).length;
+
   const filteredDays = days.filter(d => {
     if (filter === 'completed' && !d.completed) return false;
     if (filter === 'pending' && (d.completed || d.id < startDay || d.id > currentDayId)) return false;
@@ -127,832 +159,70 @@ export default function Dashboard({
     return true;
   });
 
-  const order = dashboardLayout?.order || ['todayPending', 'music', 'studyBanner', 'video', 'calendar'];
   const hidden = dashboardLayout?.hidden || {};
-  const collapsed = dashboardLayout?.collapsed || {};
 
-  const toggleCollapse = (secId) => {
-    const nextCollapsed = { ...collapsed, [secId]: !collapsed[secId] };
-    onUpdateDashboardLayout({
-      ...dashboardLayout,
-      collapsed: nextCollapsed
-    });
-  };
-
-  const moveSection = (index, direction) => {
-    const targetIdx = index + direction;
-    if (targetIdx < 0 || targetIdx >= order.length) return;
-    const newOrder = [...order];
-    const [moved] = newOrder.splice(index, 1);
-    newOrder.splice(targetIdx, 0, moved);
-    onUpdateDashboardLayout({
-      ...dashboardLayout,
-      order: newOrder
-    });
-  };
-
-  const SectionControls = ({ secId, index, dark = false }) => {
-    const isCol = !!collapsed[secId];
-    const btnClass = dark
-      ? 'p-1 text-zinc-500 hover:text-zinc-200 disabled:opacity-20 rounded transition-colors cursor-pointer'
-      : 'p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 disabled:opacity-20 rounded transition-colors cursor-pointer';
-    return (
-      <div className="flex items-center space-x-0.5">
-        <button
-          onClick={() => moveSection(index, -1)}
-          disabled={index === 0}
-          className={`hidden sm:inline-flex ${btnClass}`}
-          title="Mover seção para cima"
-        >
-          <ArrowUp className="w-3.5 h-3.5" />
-        </button>
-        <button
-          onClick={() => moveSection(index, 1)}
-          disabled={index === order.length - 1}
-          className={`hidden sm:inline-flex ${btnClass}`}
-          title="Mover seção para baixo"
-        >
-          <ArrowDown className="w-3.5 h-3.5" />
-        </button>
-        <button
-          onClick={() => toggleCollapse(secId)}
-          className={`${btnClass} ml-1`}
-          title={isCol ? "Expandir seção" : "Recolher seção"}
-        >
-          {isCol ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
-        </button>
-      </div>
-    );
-  };
-
-  // 1. SEÇÃO: LEITURA DO DIA & PENDÊNCIAS
-  const renderTodayPending = (index) => {
-    if (!isPlanActive || hidden['todayPending']) return null;
-    const isCol = !!collapsed['todayPending'];
-
-    if (isCol) {
-      return (
-        <div 
-          key="todayPending"
-          onClick={() => toggleCollapse('todayPending')}
-          className="p-4 rounded-2xl border border-stone-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 cursor-pointer flex items-center justify-between hover:border-amber-400 transition-colors shadow-2xs"
-        >
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-700 dark:text-amber-400 flex items-center justify-center">
-              <BookOpen className="w-4 h-4" />
-            </div>
-            <div>
-              <p className="text-xs font-bold text-zinc-900 dark:text-zinc-100">
-                Leitura de Hoje: {currentDayData?.readings.join(', ')} (Dia {currentDayId})
-              </p>
-              <p className="text-[11px] text-zinc-500">
-                {pendingDayId ? `Dia ${pendingDayId} pendente` : 'Plano em dia'}
-              </p>
-            </div>
-          </div>
-          <span className="text-xs font-semibold text-amber-700 dark:text-amber-400 flex items-center">
-            Expandir <ChevronDown className="w-3.5 h-3.5 ml-1" />
-          </span>
-        </div>
-      );
-    }
-
-    return (
-      <div key="todayPending" className="space-y-4">
-        {allPendingDays && allPendingDays.length > 1 && (
-          <div className="p-3.5 rounded-2xl bg-rose-50/90 dark:bg-rose-950/30 border border-rose-200/80 dark:border-rose-900/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5 text-xs text-rose-900 dark:text-rose-200">
-            <div className="flex items-center space-x-2">
-              <AlertCircle className="w-4 h-4 text-rose-600 shrink-0" />
-              <span>
-                <strong>Leituras para recuperar:</strong> {allPendingDays.length} dias anteriores em aberto.
-              </span>
-            </div>
-            <div className="flex items-center flex-wrap gap-1.5">
-              {allPendingDays.map(pd => (
-                <button
-                  key={pd.id}
-                  onClick={() => onSelectDay(pd.id)}
-                  className="px-2.5 py-1 rounded-lg bg-white dark:bg-rose-900/60 border border-rose-200 dark:border-rose-800 hover:bg-rose-100 font-bold text-rose-800 dark:text-rose-100 transition-colors cursor-pointer"
-                >
-                  Dia {pd.id} ({formatDateBR(pd.date)})
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-
-        <div className={pendingDayData ? "grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5" : "w-full"}>
-          {/* Card de Pendência */}
-          {pendingDayData && (
-            <div className="relative rounded-3xl border border-rose-300/80 dark:border-rose-900/60 bg-white dark:bg-zinc-900 p-5 sm:p-7 shadow-xs flex flex-col justify-between">
-              <div>
-                <div className="flex items-center justify-between mb-3">
-                  <div className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-rose-100/80 dark:bg-rose-950/80 text-rose-800 dark:text-rose-300 text-[11px] font-bold uppercase tracking-wider">
-                    <AlertCircle className="w-3.5 h-3.5" />
-                    <span>Leitura Anterior Pendente</span>
-                  </div>
-                  <span className="text-xs font-semibold text-zinc-500">
-                    Dia {pendingDayData.id} • {formatDateBR(pendingDayData.date)}
-                  </span>
-                </div>
-
-                <h3 className="font-display text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-1">
-                  {pendingDayData.readings.join(', ')}
-                </h3>
-                <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-4">
-                  Toque nos capítulos abaixo para marcar os já concluídos ou abrir a leitura.
-                </p>
-
-                <div className="flex items-center flex-wrap gap-2 mb-6">
-                  {pendingDayData.readings.map(r => {
-                    const isDone = !!chapterProgress[r]?.completed;
-                    return (
-                      <button 
-                        key={r}
-                        type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          if (onToggleChapter) onToggleChapter(r, !isDone);
-                        }}
-                        className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center space-x-1.5 transition-all cursor-pointer border ${
-                          isDone 
-                            ? 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800' 
-                            : 'bg-stone-50 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border-stone-200 dark:border-zinc-700 hover:border-rose-300'
-                        }`}
-                      >
-                        <span>{r}</span>
-                        <span className="text-[10px] opacity-75">{isDone ? '✓ Lido' : '• pendente'}</span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <button
-                onClick={() => onSelectDay(pendingDayData.id)}
-                className="w-full inline-flex items-center justify-center space-x-2 px-4 py-3 rounded-2xl bg-rose-700 hover:bg-rose-800 text-white font-semibold text-xs sm:text-sm shadow-xs transition-all cursor-pointer"
-              >
-                <span>Ler Dia {pendingDayData.id} Agora</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
-            </div>
-          )}
-
-          {/* Card Principal: Leitura de Hoje (Design Editorial) */}
-          {currentDayData && (
-            <div className="relative rounded-3xl border border-stone-200/90 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-5 sm:p-7 shadow-xs flex flex-col justify-between">
-              <div>
-                <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
-                  <div className="flex items-center space-x-2">
-                    <span className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-amber-500/15 text-amber-900 dark:text-amber-300 border border-amber-500/25 text-[11px] font-bold uppercase tracking-wider">
-                      <Flame className="w-3.5 h-3.5 text-amber-600" />
-                      <span>Hoje • {formatDateBR(currentDayData.date, true)}</span>
-                    </span>
-                    {!pendingDayData && (
-                      <span className="inline-flex items-center space-x-1 px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 text-[11px] font-semibold">
-                        <CheckCircle2 className="w-3 h-3" />
-                        <span>Em Dia</span>
-                      </span>
-                    )}
-                  </div>
-
-                  <div className="flex items-center space-x-2">
-                    <span className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">
-                      Dia {currentDayData.id} de 365
-                    </span>
-                    <SectionControls secId="todayPending" index={index} />
-                  </div>
-                </div>
-
-                <h2 className="font-display text-2xl sm:text-4xl font-bold text-zinc-900 dark:text-zinc-50 tracking-tight mb-1">
-                  {currentDayData.readings.join(', ')}
-                </h2>
-                <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-5">
-                  Texto bíblico oficial na Nova Versão Transformadora (NVT) com referências exegéticas e comentários.
-                </p>
-
-                <div className="flex items-center flex-wrap gap-2 mb-6">
-                  {currentDayData.readings.map(r => {
-                    const isDone = !!chapterProgress[r]?.completed;
-                    return (
-                      <button 
-                        key={r}
-                        type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          if (onToggleChapter) onToggleChapter(r, !isDone);
-                        }}
-                        className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center space-x-1.5 transition-all cursor-pointer border ${
-                          isDone 
-                            ? 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800' 
-                            : 'bg-[#F8F6F1] dark:bg-zinc-800/90 text-zinc-800 dark:text-zinc-200 border-stone-200 dark:border-zinc-700 hover:border-amber-500/60'
-                        }`}
-                        title={isDone ? `Capítulo ${r} concluído! Clique para alternar` : `Clique para marcar ${r} como concluído`}
-                      >
-                        <span>{r}</span>
-                        <span className="text-[10px] opacity-75">{isDone ? '✓ Lido' : '• a ler'}</span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <button
-                onClick={() => onSelectDay(currentDayData.id)}
-                className="w-full inline-flex items-center justify-center space-x-2 px-5 py-3.5 rounded-2xl bg-zinc-900 hover:bg-zinc-800 dark:bg-amber-600 dark:hover:bg-amber-500 text-white font-semibold text-xs sm:text-sm shadow-sm transition-all cursor-pointer"
-              >
-                <BookOpen className="w-4 h-4 text-amber-400 dark:text-white" />
-                <span>{currentDayData.completed ? 'Rever Leitura de Hoje (NVT)' : 'Iniciar Leitura de Hoje (NVT)'}</span>
-              </button>
-            </div>
-          )}
-        </div>
-      </div>
-    );
-  };
-
-  // 2. SEÇÃO: LOUVOR & MÚSICA DEVOCIONAL POR CAPÍTULO (DECK DE ESTÚDIO EDITORIAL)
-  const renderMusic = (index) => {
-    if (hidden['music'] || !activeMedia?.music) return null;
-    const isCol = !!collapsed['music'];
-
-    if (isCol) {
-      return (
-        <div 
-          key="music"
-          onClick={() => toggleCollapse('music')}
-          className="p-4 rounded-2xl bg-zinc-900 text-zinc-100 border border-zinc-800 cursor-pointer flex items-center justify-between hover:border-amber-500/40 transition-colors"
-        >
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center">
-              <Music className="w-4 h-4" />
-            </div>
-            <div>
-              <p className="text-xs font-bold">
-                Trilha Devocional por Capítulo ({currentReadings.join(', ')})
-              </p>
-              <p className="text-[11px] text-zinc-400">
-                {chapterMusics.map(m => `${m.chapter}: ${m.title} (${m.artist})`).join(' • ')}
-              </p>
-            </div>
-          </div>
-          <span className="text-xs font-semibold text-amber-400 flex items-center">
-            Expandir <ChevronDown className="w-3.5 h-3.5 ml-1" />
-          </span>
-        </div>
-      );
-    }
-
-    return (
-      <section key="music" className="rounded-3xl bg-zinc-900 dark:bg-zinc-900/95 text-zinc-100 border border-zinc-800 p-5 sm:p-7 shadow-sm space-y-5">
-        {/* Cabeçalho do Deck Musical */}
-        <div className="flex items-start sm:items-center justify-between gap-3 border-b border-zinc-800 pb-4">
-          <div className="space-y-1">
-            <div className="inline-flex items-center space-x-1.5 text-[11px] font-bold uppercase tracking-wider text-amber-400">
-              <Disc3 className="w-3.5 h-3.5" />
-              <span>Curadoria Musical por Capítulo • YouTube Music</span>
-            </div>
-            <h3 className="font-display text-xl sm:text-2xl font-bold text-white tracking-tight">
-              Sintonia Devocional para {currentReadings.join(', ')}
-            </h3>
-          </div>
-          <SectionControls secId="music" index={index} dark />
-        </div>
-
-        {/* Grade de 3 Cards de Estúdio */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {chapterMusics.map((chapterMusic, idx) => (
-            <div 
-              key={chapterMusic.chapter || idx}
-              className="bg-zinc-800/60 hover:bg-zinc-800/90 rounded-2xl p-4 border border-zinc-700/70 hover:border-amber-500/40 flex flex-col justify-between transition-all"
-            >
-              <div>
-                {/* Topo: Capítulo & Duração */}
-                <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-md bg-amber-500/15 text-amber-300 border border-amber-500/25 font-bold text-[11px] uppercase tracking-wider">
-                    <BookOpen className="w-3 h-3" />
-                    <span>{chapterMusic.chapter}</span>
-                  </span>
-                  {chapterMusic.duration && (
-                    <span className="text-[11px] font-medium text-zinc-400">
-                      {chapterMusic.duration}
-                    </span>
-                  )}
-                </div>
-
-                {/* Título, Artista e Álbum */}
-                <div className="mb-2.5">
-                  <h4 className="font-display font-bold text-lg text-white leading-snug" title={chapterMusic.title}>
-                    {chapterMusic.title}
-                  </h4>
-                  <p className="text-xs font-semibold text-amber-400 mt-0.5">
-                    {chapterMusic.artist}
-                    {chapterMusic.album ? <span className="text-zinc-400 font-normal"> • {chapterMusic.album}</span> : null}
-                  </p>
-                </div>
-
-                {/* Conexão Temática com o Capítulo */}
-                {chapterMusic.theme && (
-                  <p className="text-[11px] font-semibold text-zinc-300 mb-1.5">
-                    {chapterMusic.theme}
-                  </p>
-                )}
-                <p className="text-xs text-zinc-400 line-clamp-2 leading-relaxed mb-4">
-                  {chapterMusic.description}
-                </p>
-              </div>
-
-              {/* Ações */}
-              <div className="space-y-2 pt-3 border-t border-zinc-700/60">
-                <div className="flex items-center gap-2">
-                  <a
-                    href={chapterMusic.youtubeMusicUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => telemetryService.track('music_play_youtube_music', { chapter: chapterMusic.chapter, title: chapterMusic.title, artist: chapterMusic.artist })}
-                    className="flex-1 inline-flex items-center justify-center space-x-1.5 px-3 py-2 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-semibold text-xs transition-colors"
-                    title={`Ouvir ${chapterMusic.title} no YouTube Music`}
-                  >
-                    <Headphones className="w-3.5 h-3.5" />
-                    <span>YouTube Music</span>
-                    <ExternalLink className="w-3 h-3 opacity-80" />
-                  </a>
-
-                  <button
-                    onClick={() => handleCycleChapterMusic(idx)}
-                    className="inline-flex items-center justify-center space-x-1 px-3 py-2 rounded-xl bg-zinc-700/70 hover:bg-zinc-700 border border-zinc-600 text-zinc-200 font-medium text-xs transition-colors shrink-0 cursor-pointer"
-                    title="Trocar por outra música do catálogo devocional"
-                  >
-                    <RefreshCw className="w-3.5 h-3.5 text-amber-400" />
-                    <span>Trocar</span>
-                  </button>
-                </div>
-
-                <button
-                  onClick={() => {
-                    const nextState = playingChapterIndex === idx ? null : idx;
-                    if (nextState !== null) {
-                      telemetryService.track('music_play_in_app', { chapter: chapterMusic.chapter, title: chapterMusic.title });
-                    }
-                    setPlayingChapterIndex(nextState);
-                  }}
-                  className="w-full text-center text-[11px] text-zinc-400 hover:text-amber-300 py-1 flex items-center justify-center space-x-1 transition-colors cursor-pointer"
-                >
-                  <Play className="w-3 h-3 fill-current text-amber-400" />
-                  <span>{playingChapterIndex === idx ? 'Ocultar Player Compacto' : 'Ouvir Prévia no App'}</span>
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Player Compacto in-app */}
-        {playingChapterIndex !== null && chapterMusics[playingChapterIndex] && (
-          <div className="pt-3 border-t border-zinc-800">
-            <div className="bg-zinc-950 rounded-2xl p-4 border border-zinc-800 max-w-2xl mx-auto">
-              <div className="flex items-center justify-between gap-2 mb-2.5">
-                <div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400">
-                    Reproduzindo • {chapterMusics[playingChapterIndex].chapter}
-                  </span>
-                  <h5 className="text-sm font-bold text-white">
-                    {chapterMusics[playingChapterIndex].title} — {chapterMusics[playingChapterIndex].artist}
-                  </h5>
-                </div>
-                <button 
-                  onClick={() => setPlayingChapterIndex(null)}
-                  className="text-xs text-zinc-400 hover:text-white px-2.5 py-1 rounded-lg bg-zinc-800 cursor-pointer"
-                >
-                  Fechar ✕
-                </button>
-              </div>
-              <div className="h-24 w-full rounded-xl overflow-hidden bg-black">
-                <iframe
-                  className="w-full h-full"
-                  src={`https://www.youtube.com/embed/${chapterMusics[playingChapterIndex].youtubeId}?autoplay=1&rel=0`}
-                  title={`${chapterMusics[playingChapterIndex].title} - ${chapterMusics[playingChapterIndex].artist}`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-          </div>
-        )}
-      </section>
-    );
-  };
-
-  // 3. SEÇÃO: BÍBLIA DE ESTUDOS & FERRAMENTAS EXEGÉTICAS (CONECTADA AO LIVRO ATIVO)
-  const renderStudyBanner = (index) => {
-    if (hidden['studyBanner']) return null;
-    const isCol = !!collapsed['studyBanner'];
-
-    if (isCol) {
-      return (
-        <div 
-          key="studyBanner"
-          onClick={() => toggleCollapse('studyBanner')}
-          className="p-4 rounded-2xl border border-stone-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 cursor-pointer flex items-center justify-between hover:border-amber-400 transition-colors"
-        >
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-700 dark:text-amber-400 flex items-center justify-center">
-              <BookMarked className="w-4 h-4" />
-            </div>
-            <div>
-              <p className="text-xs font-bold text-zinc-900 dark:text-zinc-100">
-                Ferramentas Exegéticas & Estudo de {activeBookName}
-              </p>
-              <p className="text-[11px] text-zinc-500">
-                Contexto histórico, BibleArc, Atlas e 66 Livros
-              </p>
-            </div>
-          </div>
-          <span className="text-xs font-semibold text-amber-700 dark:text-amber-400 flex items-center">
-            Expandir <ChevronDown className="w-3.5 h-3.5 ml-1" />
-          </span>
-        </div>
-      );
-    }
-
-    return (
-      <section key="studyBanner" className="p-5 sm:p-6 rounded-3xl bg-white dark:bg-zinc-900 border border-stone-200/90 dark:border-zinc-800 shadow-xs space-y-4">
-        <div className="flex items-center justify-between gap-2">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-800 dark:text-amber-300 border border-amber-500/25 flex items-center justify-center shrink-0">
-              <BookMarked className="w-5 h-5" />
-            </div>
-            <div>
-              <h3 className="font-display font-bold text-lg sm:text-xl text-zinc-900 dark:text-zinc-100 leading-tight">
-                Bíblia de Estudos & Ferramentas Exegéticas
-              </h3>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                Aprofunde a leitura de hoje (<strong>{activeBookName}</strong>) com contexto histórico, arqueamento lógico e mapas.
-              </p>
-            </div>
-          </div>
-          <SectionControls secId="studyBanner" index={index} />
-        </div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-          <button
-            onClick={() => {
-              telemetryService.track('theological_commentary_view', { book: activeBookName });
-              onOpenStudyInfo && onOpenStudyInfo(activeBookName);
-            }}
-            className="p-3 rounded-2xl bg-[#F8F6F1] dark:bg-zinc-800/70 border border-stone-200/80 dark:border-zinc-700/70 hover:border-amber-500/60 text-left transition-all cursor-pointer group"
-          >
-            <BookMarked className="w-4 h-4 text-amber-700 dark:text-amber-400 mb-1.5 group-hover:scale-110 transition-transform" />
-            <div className="text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate">
-              Estudo de {activeBookName}
-            </div>
-            <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
-              Autor, época e estrutura
-            </div>
-          </button>
-
-          <button
-            onClick={() => {
-              telemetryService.track('bible_arc_view', { book: activeBookName, chapter: activeChapterNum });
-              onOpenBibleArc && onOpenBibleArc(activeBookName, activeChapterNum);
-            }}
-            className="p-3 rounded-2xl bg-[#F8F6F1] dark:bg-zinc-800/70 border border-stone-200/80 dark:border-zinc-700/70 hover:border-amber-500/60 text-left transition-all cursor-pointer group"
-          >
-            <GitCommit className="w-4 h-4 text-amber-700 dark:text-amber-400 mb-1.5 group-hover:scale-110 transition-transform" />
-            <div className="text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate">
-              BibleArc ({activeBookName} {activeChapterNum})
-            </div>
-            <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
-              Arqueamento de discurso
-            </div>
-          </button>
-
-          <button
-            onClick={() => {
-              telemetryService.track('biblical_maps_view', { source: 'dashboard_banner' });
-              onOpenMaps && onOpenMaps();
-            }}
-            className="p-3 rounded-2xl bg-[#F8F6F1] dark:bg-zinc-800/70 border border-stone-200/80 dark:border-zinc-700/70 hover:border-amber-500/60 text-left transition-all cursor-pointer group"
-          >
-            <Compass className="w-4 h-4 text-amber-700 dark:text-amber-400 mb-1.5 group-hover:scale-110 transition-transform" />
-            <div className="text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate">
-              Atlas Bíblico
-            </div>
-            <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
-              Mapas e rotas históricas
-            </div>
-          </button>
-
-          <button
-            onClick={() => {
-              telemetryService.track('free_bible_nav', { source: 'dashboard_banner' });
-              onOpenBibleNav && onOpenBibleNav();
-            }}
-            className="p-3 rounded-2xl bg-[#F8F6F1] dark:bg-zinc-800/70 border border-stone-200/80 dark:border-zinc-700/70 hover:border-amber-500/60 text-left transition-all cursor-pointer group"
-          >
-            <Library className="w-4 h-4 text-amber-700 dark:text-amber-400 mb-1.5 group-hover:scale-110 transition-transform" />
-            <div className="text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate">
-              Navegar 66 Livros
-            </div>
-            <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
-              Antigo e Novo Testamento
-            </div>
-          </button>
-        </div>
-      </section>
-    );
-  };
-
-  // 4. SEÇÃO: VÍDEO DE ESTUDO RELACIONADO (BIBLEPROJECT)
-  const renderVideo = (index) => {
-    if (hidden['video'] || !activeMedia?.video) return null;
-    const isCol = !!collapsed['video'];
-
-    if (isCol) {
-      return (
-        <div 
-          key="video"
-          onClick={() => toggleCollapse('video')}
-          className="p-4 rounded-2xl border border-stone-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 cursor-pointer flex items-center justify-between hover:border-amber-400 transition-colors"
-        >
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-700 dark:text-amber-400 flex items-center justify-center">
-              <Video className="w-4 h-4" />
-            </div>
-            <div>
-              <p className="text-xs font-bold text-zinc-900 dark:text-zinc-100">{activeMedia.video.title}</p>
-              <p className="text-[11px] text-zinc-500">{activeMedia.video.channel}</p>
-            </div>
-          </div>
-          <span className="text-xs font-semibold text-amber-700 dark:text-amber-400 flex items-center">
-            Assistir <ChevronDown className="w-3.5 h-3.5 ml-1" />
-          </span>
-        </div>
-      );
-    }
-
-    return (
-      <section key="video" className="rounded-3xl border border-stone-200/90 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-5 sm:p-6 shadow-xs">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div className="flex items-start space-x-3.5">
-            <div className="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-800 dark:text-amber-300 border border-amber-500/25 flex items-center justify-center shrink-0 mt-0.5">
-              <Video className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2 flex-wrap">
-                <h3 className="font-display font-bold text-lg text-zinc-900 dark:text-zinc-100">
-                  {activeMedia.video.title}
-                </h3>
-                <span className="text-[10px] px-2 py-0.5 rounded-md bg-stone-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 font-semibold">
-                  Síntese Visual • {activeBookName}
-                </span>
-              </div>
-              {activeMedia.video.description && (
-                <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 max-w-2xl leading-relaxed">
-                  {activeMedia.video.description}
-                </p>
-              )}
-            </div>
-          </div>
-
-          <div className="flex items-center space-x-2 self-end sm:self-center shrink-0">
-            <button
-              onClick={() => {
-                const next = !showVideoPlayer;
-                if (next) {
-                  telemetryService.track('bible_project_video_play', { book: activeBookName, video: activeMedia.video.title });
-                }
-                setShowVideoPlayer(next);
-              }}
-              className="px-3.5 py-2 rounded-xl bg-zinc-900 dark:bg-amber-600 text-white text-xs font-semibold hover:opacity-90 transition-opacity flex items-center space-x-1.5 cursor-pointer"
-            >
-              <Play className="w-3.5 h-3.5 fill-current" />
-              <span>{showVideoPlayer ? 'Fechar Vídeo' : 'Assistir Panorama'}</span>
-            </button>
-            <SectionControls secId="video" index={index} />
-          </div>
-        </div>
-
-        {showVideoPlayer && (
-          <div className="mt-4 space-y-2">
-            <div className="aspect-video w-full max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-md bg-black border border-zinc-800">
-              <iframe
-                className="w-full h-full"
-                src={`https://www.youtube.com/embed/${activeMedia.video.youtubeId}?rel=0`}
-                title={activeMedia.video.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
-            </div>
-            {activeMedia.video.searchUrl && (
-              <div className="text-center">
-                <a
-                  href={activeMedia.video.searchUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[11px] font-semibold text-amber-700 dark:text-amber-400 hover:underline inline-flex items-center space-x-1"
-                >
-                  <span>Abrir no canal oficial BibleProject Português no YouTube</span>
-                  <ExternalLink className="w-3 h-3" />
-                </a>
-              </div>
-            )}
-          </div>
-        )}
-      </section>
-    );
-  };
-
-  // 5. SEÇÃO: PANORAMA ANUAL • 365 DIAS (COM NAVEGAÇÃO MENSAL EDITORIAL)
-  const renderCalendar = (index) => {
-    if (!isPlanActive || hidden['calendar']) return null;
-    const isCol = !!collapsed['calendar'];
-
-    if (isCol) {
-      return (
-        <div 
-          key="calendar"
-          onClick={() => toggleCollapse('calendar')}
-          className="p-4 rounded-2xl border border-stone-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 cursor-pointer flex items-center justify-between hover:border-amber-400 transition-colors"
-        >
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-700 dark:text-amber-400 flex items-center justify-center">
-              <Calendar className="w-4 h-4" />
-            </div>
-            <div>
-              <p className="text-xs font-bold text-zinc-900 dark:text-zinc-100">
-                Jornada Anual: {totalCompleted} de 365 dias concluídos ({progressPercent}%)
-              </p>
-              <div className="w-36 bg-stone-200 dark:bg-zinc-800 h-1.5 rounded-full overflow-hidden mt-1">
-                <div className="bg-amber-600 h-full" style={{ width: `${progressPercent}%` }} />
-              </div>
-            </div>
-          </div>
-          <span className="text-xs font-semibold text-amber-700 dark:text-amber-400 flex items-center">
-            Abrir Calendário <ChevronDown className="w-3.5 h-3.5 ml-1" />
-          </span>
-        </div>
-      );
-    }
-
-    return (
-      <section key="calendar" className="rounded-3xl border border-stone-200/90 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-5 sm:p-7 shadow-xs space-y-5">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div>
-            <h3 className="font-display text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100 flex items-center space-x-2">
-              <Calendar className="w-5 h-5 text-amber-600" />
-              <span>Jornada Anual • 365 Dias</span>
-            </h3>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
-              {totalCompleted} de 365 dias concluídos ({progressPercent}% do plano anual)
-            </p>
-          </div>
-
-          <div className="flex items-center space-x-2 self-end sm:self-center">
-            <div className="flex items-center space-x-1 bg-stone-100 dark:bg-zinc-800 p-1 rounded-xl text-xs font-semibold">
-              <button
-                onClick={() => setFilter('all')}
-                className={`px-2.5 py-1 rounded-lg transition-colors cursor-pointer ${
-                  filter === 'all' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-2xs' : 'text-zinc-500'
-                }`}
-              >
-                Por Mês
-              </button>
-              <button
-                onClick={() => setFilter('pending')}
-                className={`px-2.5 py-1 rounded-lg transition-colors cursor-pointer ${
-                  filter === 'pending' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-2xs' : 'text-zinc-500'
-                }`}
-              >
-                Pendentes
-              </button>
-              <button
-                onClick={() => setFilter('completed')}
-                className={`px-2.5 py-1 rounded-lg transition-colors cursor-pointer ${
-                  filter === 'completed' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-2xs' : 'text-zinc-500'
-                }`}
-              >
-                Lidos ({totalCompleted})
-              </button>
-            </div>
-            <SectionControls secId="calendar" index={index} />
-          </div>
-        </div>
-
-        {/* Barra de Progresso Editorial */}
-        <div className="w-full bg-stone-100 dark:bg-zinc-800 rounded-full h-2 overflow-hidden">
-          <div 
-            className="bg-amber-600 h-full rounded-full transition-all duration-500"
-            style={{ width: `${progressPercent}%` }}
-          />
-        </div>
-
-        {/* Seletor de Mês (evita poluição de planilha de 365 células de uma só vez) */}
-        {filter !== 'pending' && (
-          <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1">
-            {MONTH_PILLS.map(m => (
-              <button
-                key={m.id}
-                onClick={() => setSelectedMonth(m.id)}
-                className={`px-2.5 py-1 rounded-xl text-xs font-semibold shrink-0 transition-all cursor-pointer ${
-                  selectedMonth === m.id
-                    ? 'bg-zinc-900 dark:bg-amber-600 text-white shadow-2xs'
-                    : 'bg-[#F8F6F1] dark:bg-zinc-800/70 text-zinc-600 dark:text-zinc-400 hover:bg-stone-200/70'
-                }`}
-              >
-                {m.label}
-              </button>
-            ))}
-          </div>
-        )}
-
-        {/* Grade de Dias do Mês / Filtro */}
-        {filteredDays.length === 0 ? (
-          <div className="py-8 text-center text-xs text-zinc-500 dark:text-zinc-400">
-            Nenhum dia encontrado para este filtro.
-          </div>
-        ) : (
-          <div className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2 max-h-96 overflow-y-auto pr-1">
-            {filteredDays.map(d => {
-              const isToday = d.id === currentDayId;
-              const isPending = !d.completed && d.id >= startDay && d.id < currentDayId;
-              const isBeforeStart = d.id < startDay;
-              return (
-                <div
-                  key={d.id}
-                  onClick={() => onSelectDay(d.id)}
-                  className={`group relative p-2.5 rounded-xl text-left cursor-pointer transition-all border ${
-                    isToday
-                      ? 'border-amber-600 bg-amber-50/90 dark:bg-amber-950/50 text-amber-950 dark:text-amber-100 font-bold ring-1 ring-amber-500'
-                      : isPending
-                      ? 'border-rose-300 bg-rose-50/70 dark:bg-rose-950/30 text-rose-900 dark:text-rose-200 font-semibold'
-                      : d.completed
-                      ? 'border-stone-200 dark:border-zinc-800 bg-[#F8F6F1]/70 dark:bg-zinc-800/40 text-zinc-700 dark:text-zinc-300 hover:border-amber-400'
-                      : isBeforeStart
-                      ? 'border-dashed border-stone-200 dark:border-zinc-800 opacity-50 text-zinc-400'
-                      : 'border-stone-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-500 hover:border-amber-400'
-                  }`}
-                  title={`Dia ${d.id} (${formatDateBR(d.date)}): ${d.readings.join(', ')}`}
-                >
-                  <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-medium text-zinc-400">
-                      {d.date.split('-').slice(1).reverse().join('/')}
-                    </span>
-                    {d.completed && (
-                      <CheckCircle2 className="w-3 h-3 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                    )}
-                  </div>
-                  <div className="text-xs font-bold mt-0.5 truncate">
-                    Dia {d.id}
-                  </div>
-                  <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate mt-0.5">
-                    {d.readings[0]}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
-      </section>
-    );
-  };
-
-  const renderSectionMap = {
-    todayPending: renderTodayPending,
-    music: renderMusic,
-    studyBanner: renderStudyBanner,
-    video: renderVideo,
-    calendar: renderCalendar
-  };
+  // Circular SVG progress ring metrics
+  const ringRadius = 18;
+  const ringCircumference = 2 * Math.PI * ringRadius;
+  const ringOffset = ringCircumference - (progressPercent / 100) * ringCircumference;
 
   return (
-    <div className="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-7 space-y-5">
+    <div className="w-full max-w-[1160px] mx-auto px-4 sm:px-6 lg:px-8 py-5 sm:py-8 space-y-6 overflow-x-hidden">
       
-      {/* CABEÇALHO EDITORIAL DO PAINEL */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-stone-200/90 dark:border-zinc-800">
+      {/* 1. HEADER COMPACTO: SAUDAÇÃO HUMANA + ANEL DE PROGRESSO ANUAL */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <div className="flex items-center space-x-2 text-xs text-zinc-500 dark:text-zinc-400">
-            <span>{isPlanActive ? 'Jornada Devocional de' : 'Biblioteca Teológica de'}</span>
-            <button
-              onClick={onOpenProfiles}
-              className="font-bold text-zinc-900 dark:text-zinc-100 hover:text-amber-700 dark:hover:text-amber-400 underline decoration-amber-500/50 underline-offset-4 cursor-pointer"
-            >
-              {activeProfile?.name || 'Leitor'}
-            </button>
-            <span>•</span>
-            <span>{isPlanActive ? `${totalCompleted} de 365 dias (${progressPercent}%)` : 'Leitura Livre'}</span>
-          </div>
+          <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
+            {currentDayData?.dayOfWeek
+              ? `${currentDayData.dayOfWeek.charAt(0).toUpperCase()}${currentDayData.dayOfWeek.slice(1)}, `
+              : ''}
+            {formatDateBR(currentDayData?.date, true)} • Dia {currentDayId} de 365
+          </p>
+          <h1 className="text-2xl sm:text-[26px] font-bold text-zinc-950 dark:text-zinc-50 tracking-tight mt-0.5">
+            {getGreeting()}, {activeProfile?.name || 'Leitor'}
+          </h1>
         </div>
 
-        <div className="flex items-center space-x-2 self-start sm:self-auto">
-          {(activeProfile?.role === 'admin' || activeProfile?.id === 'default') && (
-            <button
-              onClick={onOpenTelemetry}
-              className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-zinc-900 border border-stone-200 dark:border-zinc-800 hover:border-amber-500/50 text-zinc-700 dark:text-zinc-300 text-xs font-semibold transition-colors cursor-pointer shadow-2xs"
-              title="Monitorar métricas de uso de todas as funcionalidades"
-            >
-              <BarChart3 className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-              <span>Métricas de Uso</span>
-            </button>
+        <div className="flex items-center gap-2.5 self-start sm:self-auto">
+          {isPlanActive && (
+            <div className="flex items-center space-x-3 px-3.5 py-2 rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800 sepia:border-[#E6DBC8] shadow-2xs">
+              <div className="relative w-10 h-10 flex items-center justify-center shrink-0">
+                <svg className="w-10 h-10 -rotate-90" viewBox="0 0 44 44">
+                  <circle
+                    cx="22"
+                    cy="22"
+                    r={ringRadius}
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="3.5"
+                    className="text-zinc-100 dark:text-zinc-800"
+                  />
+                  <circle
+                    cx="22"
+                    cy="22"
+                    r={ringRadius}
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="3.5"
+                    strokeDasharray={ringCircumference}
+                    strokeDashoffset={ringOffset}
+                    strokeLinecap="round"
+                    className="text-emerald-600 dark:text-emerald-400 transition-all duration-500"
+                  />
+                </svg>
+                <span className="absolute text-[10px] font-bold text-zinc-900 dark:text-zinc-100">
+                  {progressPercent}%
+                </span>
+              </div>
+              <div className="pr-1">
+                <div className="text-xs font-semibold text-zinc-900 dark:text-zinc-100 leading-tight">
+                  Plano Anual
+                </div>
+                <div className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                  {totalCompleted} de 365 dias lidos
+                </div>
+              </div>
+            </div>
           )}
 
           <button
@@ -960,20 +230,517 @@ export default function Dashboard({
               telemetryService.track('dashboard_customize');
               onOpenCustomize && onOpenCustomize();
             }}
-            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-zinc-900 border border-stone-200 dark:border-zinc-800 hover:border-amber-500/50 text-zinc-700 dark:text-zinc-300 text-xs font-semibold transition-colors cursor-pointer shadow-2xs"
-            title="Reordenar ou ocultar seções da tela inicial"
+            className="p-2.5 rounded-xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800 sepia:border-[#E6DBC8] text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors cursor-pointer shadow-2xs"
+            title="Configurar blocos visíveis"
           >
-            <Sliders className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-            <span>Organizar Painel</span>
+            <SlidersHorizontal className="w-4 h-4" />
           </button>
         </div>
       </div>
 
-      {/* SEÇÕES DO PAINEL */}
-      {order.map((secId, idx) => {
-        const renderFn = renderSectionMap[secId];
-        return renderFn ? renderFn(idx) : null;
-      })}
+      {/* MODO SEM PLANO ATIVO */}
+      {!isPlanActive && (
+        <div className="p-5 rounded-2xl bg-white dark:bg-[#141417] border border-zinc-200/80 dark:border-zinc-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-2xs">
+          <div>
+            <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+              Modo de Leitura Livre Ativo
+            </h3>
+            <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+              Explore os 66 livros da Bíblia, estudos exegéticos e mapas no seu ritmo, sem metas diárias.
+            </p>
+          </div>
+          {onOptInPlan && (
+            <button
+              onClick={onOptInPlan}
+              className="px-4 py-2 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-semibold text-xs shrink-0 cursor-pointer"
+            >
+              Ativar Plano Anual
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* 2. BENTO GRID ASSIMÉTRICO DE 12 COLUNAS (PADRÃO YOUVERSION / GLORIFY / DWELL) */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        
+        {/* COLUNA PRINCIPAL ESQUERDA (7 COLUNAS): LEITURA DO DIA + FERRAMENTAS DE ESTUDO */}
+        <div className="lg:col-span-7 min-w-0 space-y-5">
+          
+          {/* Banner Discreto e Elegante de Recuperação (se houver dia anterior em aberto) */}
+          {isPlanActive && !hidden['todayPending'] && pendingDayData && (
+            <div className="p-4 rounded-2xl bg-amber-50/70 dark:bg-amber-950/20 border border-amber-200/80 dark:border-amber-900/50 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div className="flex items-start space-x-3">
+                <AlertCircle className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+                <div>
+                  <div className="text-xs font-semibold text-zinc-900 dark:text-zinc-100">
+                    Leitura em aberto • Dia {pendingDayData.id} ({formatDateBR(pendingDayData.date)})
+                    {allPendingDays.length > 1 ? ` e mais ${allPendingDays.length - 1}` : ''}
+                  </div>
+                  <div className="text-xs text-zinc-600 dark:text-zinc-400 mt-0.5">
+                    {pendingDayData.readings.join(', ')}
+                  </div>
+                </div>
+              </div>
+
+              <button
+                onClick={() => onSelectDay(pendingDayData.id)}
+                className="inline-flex items-center justify-center space-x-1.5 px-3.5 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-amber-300/80 dark:border-amber-800 text-amber-900 dark:text-amber-200 font-semibold text-xs hover:bg-amber-100/50 transition-colors shrink-0 cursor-pointer"
+              >
+                <span>Recuperar</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          )}
+
+          {/* HERO CARD: LEITURA DE HOJE + VERSÍCULO EM DESTAQUE */}
+          {isPlanActive && !hidden['todayPending'] && currentDayData && (
+            <section className="rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800/90 sepia:border-[#E6DBC8] p-6 sm:p-7 shadow-[0_1px_3px_rgba(0,0,0,0.03)] space-y-5">
+              {/* Top Meta */}
+              <div className="flex items-center justify-between gap-2 flex-wrap">
+                <div className="flex items-center space-x-2">
+                  <span className="inline-flex items-center px-2.5 py-0.5 rounded-md bg-amber-500/10 text-amber-800 dark:text-amber-300 text-[11px] font-semibold tracking-wide uppercase">
+                    Leitura de Hoje
+                  </span>
+                  <span className="text-xs text-zinc-400 dark:text-zinc-500">•</span>
+                  <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
+                    ~{currentReadings.length * 4} min
+                  </span>
+                </div>
+
+                <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
+                  {completedTodayChapters}/{currentReadings.length} capítulos concluídos
+                </span>
+              </div>
+
+              {/* Título Nítido */}
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-zinc-950 dark:text-zinc-50 tracking-tight">
+                  {formatReadingsCompact(currentReadings)}
+                </h2>
+                <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1">
+                  Nova Versão Transformadora (NVT) • Referências exegéticas e notas expositivas
+                </p>
+              </div>
+
+              {/* Versículo-Chave do Dia (Amostra Viva da Escritura na 1ª Dobra) */}
+              {featuredVerse && (
+                <div
+                  onClick={() => onSelectDay(currentDayData.id)}
+                  className="p-4 rounded-xl bg-zinc-50/90 dark:bg-zinc-900/70 sepia:bg-[#F3ECE0] border border-zinc-100 dark:border-zinc-800/80 sepia:border-[#E6DBC8] cursor-pointer hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors"
+                >
+                  <p className="text-sm text-zinc-700 dark:text-zinc-200 sepia:text-[#2C221E] leading-relaxed">
+                    “{featuredVerse.text}”
+                  </p>
+                  <p className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 mt-2">
+                    {featuredVerse.citation} (NVT)
+                  </p>
+                </div>
+              )}
+
+              {/* Checklist Interativo de Capítulos */}
+              <div className="space-y-2">
+                <div className="text-[11px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+                  Capítulos do Dia
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                  {currentReadings.map(r => {
+                    const isDone = !!chapterProgress[r]?.completed;
+                    return (
+                      <button
+                        key={r}
+                        type="button"
+                        onClick={() => onToggleChapter && onToggleChapter(r, !isDone)}
+                        className={`px-3 py-2.5 rounded-xl text-xs font-medium flex items-center justify-between transition-all cursor-pointer border ${
+                          isDone
+                            ? 'bg-emerald-50/70 dark:bg-emerald-950/30 text-emerald-900 dark:text-emerald-300 border-emerald-200 dark:border-emerald-900/70 font-semibold'
+                            : 'bg-white dark:bg-zinc-900/50 text-zinc-700 dark:text-zinc-300 border-zinc-200/80 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'
+                        }`}
+                        title={isDone ? 'Marcar como não lido' : 'Marcar capítulo como concluído'}
+                      >
+                        <span className="truncate">{r}</span>
+                        {isDone ? (
+                          <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 ml-1.5" />
+                        ) : (
+                          <Circle className="w-4 h-4 text-zinc-300 dark:text-zinc-600 shrink-0 ml-1.5" />
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Botão Primário Limpo e Proporcional */}
+              <div className="pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+                <button
+                  onClick={() => onSelectDay(currentDayData.id)}
+                  className="flex-1 inline-flex items-center justify-center space-x-2 px-5 py-3 rounded-xl bg-zinc-950 hover:bg-zinc-800 dark:bg-white dark:hover:bg-zinc-200 text-white dark:text-zinc-950 font-semibold text-sm transition-colors cursor-pointer shadow-2xs"
+                >
+                  <BookOpen className="w-4 h-4" />
+                  <span>{currentDayData.completed ? 'Rever Leitura de Hoje' : 'Continuar Leitura'}</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+
+                <button
+                  onClick={onOpenBibleNav}
+                  className="inline-flex items-center justify-center space-x-1.5 px-4 py-3 rounded-xl bg-zinc-100 hover:bg-zinc-200/80 dark:bg-zinc-800/90 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-200 font-medium text-xs sm:text-sm transition-colors cursor-pointer"
+                >
+                  <span>Outro Livro</span>
+                </button>
+              </div>
+            </section>
+          )}
+
+          {/* ESTUDO CONTEXTUAL (3 CARDS COMPACTOS & EQUILIBRADOS) */}
+          {!hidden['studyBanner'] && (
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+              <button
+                onClick={() => {
+                  telemetryService.track('theological_commentary_view', { book: activeBookName });
+                  onOpenStudyInfo && onOpenStudyInfo(activeBookName);
+                }}
+                className="p-4 rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800/90 sepia:border-[#E6DBC8] hover:border-zinc-300 dark:hover:border-zinc-700 text-left transition-all cursor-pointer group shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+              >
+                <div className="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 flex items-center justify-center mb-3 group-hover:bg-amber-500/15 group-hover:text-amber-700 dark:group-hover:text-amber-300 transition-colors">
+                  <BookMarked className="w-4 h-4" />
+                </div>
+                <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">
+                  Guia de {activeBookName}
+                </div>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5 line-clamp-1">
+                  Autor, contexto e estrutura
+                </p>
+              </button>
+
+              <button
+                onClick={() => {
+                  telemetryService.track('bible_arc_view', { book: activeBookName, chapter: activeChapterNum });
+                  onOpenBibleArc && onOpenBibleArc(activeBookName, activeChapterNum);
+                }}
+                className="p-4 rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800/90 sepia:border-[#E6DBC8] hover:border-zinc-300 dark:hover:border-zinc-700 text-left transition-all cursor-pointer group shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+              >
+                <div className="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 flex items-center justify-center mb-3 group-hover:bg-amber-500/15 group-hover:text-amber-700 dark:group-hover:text-amber-300 transition-colors">
+                  <GitCommit className="w-4 h-4" />
+                </div>
+                <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">
+                  BibleArc
+                </div>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5 line-clamp-1">
+                  Lógica de {activeBookName} {activeChapterNum}
+                </p>
+              </button>
+
+              <button
+                onClick={() => {
+                  telemetryService.track('biblical_maps_view', { source: 'dashboard_bento' });
+                  onOpenMaps && onOpenMaps();
+                }}
+                className="p-4 rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800/90 sepia:border-[#E6DBC8] hover:border-zinc-300 dark:hover:border-zinc-700 text-left transition-all cursor-pointer group shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+              >
+                <div className="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 flex items-center justify-center mb-3 group-hover:bg-amber-500/15 group-hover:text-amber-700 dark:group-hover:text-amber-300 transition-colors">
+                  <Compass className="w-4 h-4" />
+                </div>
+                <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">
+                  Atlas Bíblico
+                </div>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5 line-clamp-1">
+                  Mapas e rotas históricas
+                </p>
+              </button>
+            </div>
+          )}
+
+        </div>
+
+        {/* COLUNA COMPLEMENTAR DIREITA (5 COLUNAS): MÚSICA ESTILO PLAYLIST + VÍDEO COM THUMBNAIL VISÍVEL */}
+        <div className="lg:col-span-5 min-w-0 space-y-5">
+          
+          {/* PLAYLIST DEVOCIONAL POR CAPÍTULO (ESTILO SPOTIFY / DWELL COM CAPAS VISÍVEIS) */}
+          {!hidden['music'] && activeMedia?.music && (
+            <section className="rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800/90 sepia:border-[#E6DBC8] p-5 shadow-[0_1px_3px_rgba(0,0,0,0.03)]">
+              <div className="flex items-center justify-between pb-3 border-b border-zinc-100 dark:border-zinc-800/80">
+                <div className="flex items-center space-x-2">
+                  <Music className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+                  <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                    Trilha Devocional do Dia
+                  </h3>
+                </div>
+                <span className="text-[11px] font-medium text-zinc-400">
+                  YouTube Music
+                </span>
+              </div>
+
+              <div className="divide-y divide-zinc-100 dark:divide-zinc-800/70">
+                {chapterMusics.map((chapterMusic, idx) => {
+                  const isPlayingThis = playingChapterIndex === idx;
+                  return (
+                    <div key={chapterMusic.chapter || idx} className="py-3 first:pt-3.5 last:pb-1">
+                      <div className="flex items-center gap-3">
+                        {/* Capa 48x48 Visível com Botão Play */}
+                        <button
+                          onClick={() => {
+                            const nextState = isPlayingThis ? null : idx;
+                            if (nextState !== null) {
+                              telemetryService.track('music_play_in_app', { chapter: chapterMusic.chapter, title: chapterMusic.title });
+                            }
+                            setPlayingChapterIndex(nextState);
+                          }}
+                          className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0 bg-zinc-900 group cursor-pointer border border-zinc-200/60 dark:border-zinc-700"
+                          title={isPlayingThis ? 'Fechar player' : `Ouvir prévia de ${chapterMusic.title}`}
+                        >
+                          <img
+                            src={`https://i.ytimg.com/vi/${chapterMusic.youtubeId}/mqdefault.jpg`}
+                            alt={chapterMusic.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                            loading="lazy"
+                          />
+                          <div className={`absolute inset-0 flex items-center justify-center transition-colors ${
+                            isPlayingThis ? 'bg-black/60' : 'bg-black/30 group-hover:bg-black/50'
+                          }`}>
+                            {isPlayingThis ? (
+                              <X className="w-4 h-4 text-white" />
+                            ) : (
+                              <Play className="w-4 h-4 text-white fill-current ml-0.5" />
+                            )}
+                          </div>
+                        </button>
+
+                        {/* Metadados Limpos sem Truncamento Agressivo */}
+                        <div className="min-w-0 flex-1">
+                          <h4 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate" title={chapterMusic.title}>
+                            {cleanTrackTitle(chapterMusic.title)}
+                          </h4>
+                          <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate mt-0.5">
+                            {chapterMusic.artist} • <span className="text-zinc-600 dark:text-zinc-300 font-medium">{chapterMusic.chapter}</span>
+                          </p>
+                        </div>
+
+                        {/* Ações Rápidas */}
+                        <div className="flex items-center space-x-1 shrink-0">
+                          <button
+                            onClick={() => handleCycleChapterMusic(idx)}
+                            className="p-2 rounded-lg text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+                            title="Trocar música deste capítulo"
+                          >
+                            <RefreshCw className="w-3.5 h-3.5" />
+                          </button>
+
+                          <a
+                            href={chapterMusic.youtubeMusicUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => telemetryService.track('music_play_youtube_music', { chapter: chapterMusic.chapter, title: chapterMusic.title, artist: chapterMusic.artist })}
+                            className="p-2 rounded-lg text-zinc-400 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                            title="Abrir no YouTube Music"
+                          >
+                            <ExternalLink className="w-3.5 h-3.5" />
+                          </a>
+                        </div>
+                      </div>
+
+                      {/* Player Inline quando ativado */}
+                      {isPlayingThis && (
+                        <div className="mt-3 rounded-xl overflow-hidden bg-black border border-zinc-800 h-24">
+                          <iframe
+                            className="w-full h-full"
+                            src={`https://www.youtube.com/embed/${chapterMusic.youtubeId}?autoplay=1&rel=0`}
+                            title={`${chapterMusic.title} - ${chapterMusic.artist}`}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+          )}
+
+          {/* VÍDEO BIBLEPROJECT COM CAPA 16:9 VISÍVEL NO SCROLL */}
+          {!hidden['video'] && activeMedia?.video && (
+            <section className="rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800/90 sepia:border-[#E6DBC8] overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.03)]">
+              {showVideoPlayer ? (
+                <div className="aspect-video w-full bg-black relative">
+                  <iframe
+                    className="w-full h-full"
+                    src={`https://www.youtube.com/embed/${activeMedia.video.youtubeId}?autoplay=1&rel=0`}
+                    title={activeMedia.video.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                  <button
+                    onClick={() => setShowVideoPlayer(false)}
+                    className="absolute top-2.5 right-2.5 px-2.5 py-1 rounded-lg bg-black/75 text-white text-xs font-medium hover:bg-black cursor-pointer"
+                  >
+                    Fechar
+                  </button>
+                </div>
+              ) : (
+                <div
+                  onClick={() => {
+                    telemetryService.track('bible_project_video_play', { book: activeBookName, video: activeMedia.video.title });
+                    setShowVideoPlayer(true);
+                  }}
+                  className="relative aspect-video w-full bg-zinc-900 cursor-pointer group overflow-hidden"
+                >
+                  <img
+                    src={`https://i.ytimg.com/vi/${activeMedia.video.youtubeId}/hqdefault.jpg`}
+                    alt={activeMedia.video.title}
+                    className="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
+                  <div className="absolute top-3 left-3 inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-black/60 backdrop-blur-xs text-white text-[11px] font-medium">
+                    <Video className="w-3 h-3 text-amber-400" />
+                    <span>BibleProject Português</span>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-white/95 text-zinc-950 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                      <Play className="w-5 h-5 fill-current ml-0.5" />
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              <div className="p-4">
+                <div className="flex items-start justify-between gap-2">
+                  <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 leading-snug">
+                    {activeMedia.video.title.replace('BibleProject Português | ', '')}
+                  </h3>
+                  {activeMedia.video.searchUrl && (
+                    <a
+                      href={activeMedia.video.searchUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 shrink-0 mt-0.5"
+                      title="Ver no YouTube"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  )}
+                </div>
+                {activeMedia.video.description && (
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 line-clamp-2 leading-relaxed">
+                    {activeMedia.video.description}
+                  </p>
+                )}
+              </div>
+            </section>
+          )}
+
+        </div>
+      </div>
+
+      {/* 3. CRONOGRAMA ANUAL LIMPO POR MÊS (ABAIXO DA DOBRA) */}
+      {isPlanActive && !hidden['calendar'] && (
+        <section
+          id="annual-plan-section"
+          className="min-w-0 rounded-2xl bg-white dark:bg-[#141417] sepia:bg-[#FAF6F0] border border-zinc-200/80 dark:border-zinc-800/90 sepia:border-[#E6DBC8] p-5 sm:p-6 shadow-[0_1px_3px_rgba(0,0,0,0.03)] space-y-4 overflow-hidden"
+        >
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div className="flex items-center space-x-2.5">
+              <Calendar className="w-4 h-4 text-zinc-500" />
+              <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+                Cronograma de Leitura
+              </h3>
+            </div>
+
+            <div className="flex items-center space-x-1 bg-zinc-100 dark:bg-zinc-800/90 p-1 rounded-xl text-xs font-medium self-start sm:self-auto">
+              <button
+                onClick={() => setFilter('all')}
+                className={`px-3 py-1 rounded-lg transition-colors cursor-pointer ${
+                  filter === 'all' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-2xs font-semibold' : 'text-zinc-500'
+                }`}
+              >
+                Por Mês
+              </button>
+              <button
+                onClick={() => setFilter('pending')}
+                className={`px-3 py-1 rounded-lg transition-colors cursor-pointer ${
+                  filter === 'pending' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-2xs font-semibold' : 'text-zinc-500'
+                }`}
+              >
+                Em Aberto
+              </button>
+              <button
+                onClick={() => setFilter('completed')}
+                className={`px-3 py-1 rounded-lg transition-colors cursor-pointer ${
+                  filter === 'completed' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-2xs font-semibold' : 'text-zinc-500'
+                }`}
+              >
+                Concluídos ({totalCompleted})
+              </button>
+            </div>
+          </div>
+
+          {filter !== 'pending' && (
+            <div className="flex items-center gap-1.5 overflow-x-auto pb-1">
+              {MONTH_PILLS.map(m => (
+                <button
+                  key={m.id}
+                  onClick={() => setSelectedMonth(m.id)}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-medium shrink-0 transition-all cursor-pointer ${
+                    selectedMonth === m.id
+                      ? 'bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-semibold'
+                      : 'bg-zinc-50 dark:bg-zinc-800/50 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                  }`}
+                >
+                  {m.label}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {filteredDays.length === 0 ? (
+            <div className="py-8 text-center text-xs text-zinc-400">
+              Nenhuma leitura encontrada neste filtro.
+            </div>
+          ) : (
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-2.5 max-h-96 overflow-y-auto pr-1">
+              {filteredDays.map(d => {
+                const isToday = d.id === currentDayId;
+                const isPending = !d.completed && d.id >= startDay && d.id < currentDayId;
+                const shortReading = formatReadingsCompact(d.readings);
+
+                return (
+                  <button
+                    key={d.id}
+                    onClick={() => onSelectDay(d.id)}
+                    className={`p-3 rounded-xl text-left transition-all border cursor-pointer flex flex-col justify-between ${
+                      isToday
+                        ? 'border-zinc-900 dark:border-amber-500 bg-zinc-900/5 dark:bg-amber-500/10 ring-1 ring-zinc-900 dark:ring-amber-500'
+                        : isPending
+                        ? 'border-amber-300/80 dark:border-amber-800/70 bg-amber-50/40 dark:bg-amber-950/20'
+                        : d.completed
+                        ? 'border-zinc-200/70 dark:border-zinc-800/80 bg-zinc-50/60 dark:bg-zinc-900/40 hover:border-zinc-300'
+                        : 'border-zinc-200/70 dark:border-zinc-800 bg-white dark:bg-zinc-900/20 hover:border-zinc-300'
+                    }`}
+                  >
+                    <div className="flex items-center justify-between w-full mb-1.5">
+                      <span className="text-[11px] font-medium text-zinc-400">
+                        {d.date.split('-').slice(1).reverse().join('/')}
+                      </span>
+                      {d.completed ? (
+                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                      ) : isToday ? (
+                        <span className="text-[9px] font-bold uppercase px-1.5 py-0.2 rounded bg-zinc-900 dark:bg-amber-500 text-white dark:text-zinc-950">
+                          Hoje
+                        </span>
+                      ) : null}
+                    </div>
+                    <div className="text-xs font-semibold text-zinc-900 dark:text-zinc-100 leading-snug line-clamp-1" title={d.readings.join(', ')}>
+                      {shortReading}
+                    </div>
+                    <div className="text-[10px] text-zinc-400 mt-0.5">
+                      Dia {d.id}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          )}
+        </section>
+      )}
 
     </div>
   );
