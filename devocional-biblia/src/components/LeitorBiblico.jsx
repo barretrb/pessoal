@@ -759,16 +759,23 @@ export default function LeitorBiblico({
                   </div>
                 </button>
                 <div className="min-w-0">
-                  <div className="font-semibold text-zinc-900 dark:text-zinc-100 truncate">
-                    {activeChapterMusic.title} • <span className="font-normal text-zinc-500">{activeChapterMusic.artist}</span>
+                  <div className="font-semibold text-zinc-900 dark:text-zinc-100 leading-snug">
+                    {activeChapterMusic.title} <span className="font-normal text-zinc-500">• {activeChapterMusic.artist}</span>
                   </div>
-                  <div className="text-amber-700 dark:text-amber-400 font-medium truncate">
-                    Base da canção: {activeChapterMusic.scriptureBasis}
+                  <div className="flex flex-wrap items-center gap-x-1.5 gap-y-0.5 mt-0.5 leading-snug">
+                    <span className="text-amber-700 dark:text-amber-400 font-medium">
+                      Base: {activeChapterMusic.scriptureBasis}
+                    </span>
+                    {activeChapterMusic.chapterTheme ? (
+                      <span className="text-zinc-500 dark:text-zinc-400 font-normal">
+                        • Tema: {activeChapterMusic.chapterTheme}
+                      </span>
+                    ) : null}
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-center space-x-1.5 shrink-0">
+              <div className="flex items-center space-x-1.5 shrink-0 flex-wrap gap-y-1">
                 <button
                   onClick={() => setPlayingReaderAudio(prev => prev === 'inst' ? null : 'inst')}
                   className={`inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg font-medium transition-colors cursor-pointer ${
@@ -795,14 +802,20 @@ export default function LeitorBiblico({
                 </button>
 
                 <a
-                  href={activeChapterMusic.youtubeMusicUrl}
+                  href={activeChapterMusic.youtubeDiscoveryUrl || activeChapterMusic.youtubeMusicUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => telemetryService.track('music_play_youtube_music', { chapter: activeChapterStr, title: activeChapterMusic.title, artist: activeChapterMusic.artist })}
-                  className="p-2 rounded-lg text-zinc-400 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
-                  title="Abrir no YouTube Music"
+                  onClick={() =>
+                    telemetryService.track('music_youtube_dynamic_search', {
+                      chapter: activeChapterStr,
+                      query: activeChapterMusic.youtubeDiscoveryQuery
+                    })
+                  }
+                  className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 text-zinc-700 dark:text-zinc-200 font-medium transition-colors"
+                  title={`Buscar louvores para ${activeChapterStr} no YouTube Music`}
                 >
-                  <ExternalLink className="w-3.5 h-3.5" />
+                  <span>YT Music</span>
+                  <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
             </div>
