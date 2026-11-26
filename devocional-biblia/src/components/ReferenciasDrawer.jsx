@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { X, Link2, BookOpen, Copy, Check, ArrowUpRight, Sparkles } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { X, Link2, BookOpen, Copy, Check, ArrowUpRight, Sparkles, ArrowLeft } from 'lucide-react';
 
 const CATEGORY_STYLES = {
   'Citação & Cumprimento': {
@@ -44,6 +44,15 @@ export default function ReferenciasDrawer({
 }) {
   const [copiedIdx, setCopiedIdx] = useState(null);
 
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   const handleCopy = (item, idx) => {
@@ -56,142 +65,156 @@ export default function ReferenciasDrawer({
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-hidden bg-black/40 backdrop-blur-2xs transition-opacity">
-      <div className="absolute inset-y-0 right-0 max-w-full flex pl-8 sm:pl-10">
-        <div className="w-screen max-w-md bg-white dark:bg-zinc-900 border-l border-zinc-200 dark:border-zinc-800 shadow-2xl flex flex-col">
-          
-          {/* Header */}
-          <div className="p-5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between bg-zinc-50 dark:bg-zinc-800/50">
-            <div className="flex items-center space-x-2.5">
-              <div className="w-8 h-8 rounded-lg bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 flex items-center justify-center shrink-0">
-                <Link2 className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="font-bold text-sm text-zinc-900 dark:text-zinc-100">
-                  Referências Exegéticas (NVT)
-                </h3>
-                <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                  Conexões bíblicas e teológicas de <strong className="text-zinc-700 dark:text-zinc-200">{verseKey}</strong>
-                </p>
-              </div>
+    <div
+      onClick={onClose}
+      className="fixed inset-0 z-50 flex justify-end bg-black/50 backdrop-blur-xs transition-opacity font-sans"
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="relative w-full sm:w-[448px] max-w-full h-[100dvh] bg-white dark:bg-zinc-900 border-l border-zinc-200 dark:border-zinc-800 shadow-2xl flex flex-col overflow-hidden"
+      >
+        {/* Header com Safe Area */}
+        <div className="px-4 sm:px-5 pt-[max(1rem,env(safe-area-inset-top))] pb-3.5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between gap-3 bg-zinc-50 dark:bg-zinc-800/50 shrink-0">
+          <div className="flex items-center space-x-2.5 min-w-0">
+            <div className="w-8 h-8 rounded-lg bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 flex items-center justify-center shrink-0">
+              <Link2 className="w-4 h-4" />
             </div>
-
-            <button
-              onClick={onClose}
-              className="p-1.5 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 rounded-lg"
-              title="Fechar painel"
-            >
-              <X className="w-5 h-5" />
-            </button>
-          </div>
-
-          {/* Versículo de Origem em Destaque para Comparação Exegética */}
-          {sourceText && (
-            <div className="px-5 py-3.5 bg-amber-50/70 dark:bg-amber-950/30 border-b border-amber-200/70 dark:border-amber-900/40">
-              <div className="flex items-center justify-between mb-1">
-                <span className="text-[11px] font-extrabold uppercase tracking-wider text-amber-800 dark:text-amber-300">
-                  Texto Base • {verseKey}
-                </span>
-                <span className="text-[10px] font-medium text-amber-700/80 dark:text-amber-400/80">
-                  Escritura interpreta Escritura
-                </span>
-              </div>
-              <p className="text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed">
-                “{sourceText}”
+            <div className="min-w-0">
+              <h3 className="font-bold text-sm text-zinc-900 dark:text-zinc-100 truncate">
+                Referências Exegéticas (NVT)
+              </h3>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate">
+                Conexões de <strong className="text-zinc-700 dark:text-zinc-200">{verseKey}</strong>
               </p>
             </div>
-          )}
+          </div>
 
-          {/* Lista de Referências */}
-          <div className="flex-1 overflow-y-auto p-5 space-y-4">
-            {references && references.length > 0 ? (
-              references.map((item, idx) => {
-                const catKey = item.category && CATEGORY_STYLES[item.category]
-                  ? item.category
-                  : 'Harmonia Doutrinária';
-                const catStyle = CATEGORY_STYLES[catKey];
-                const navTarget = parseRefForNavigation(item.ref);
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Fechar referências"
+            title="Fechar painel"
+            className="w-9 h-9 rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-200 flex items-center justify-center shrink-0 cursor-pointer transition-colors"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
 
-                return (
-                  <div 
-                    key={idx}
-                    className="rounded-2xl p-4 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-800/40 space-y-2.5 hover:border-amber-400/60 dark:hover:border-amber-600/60 transition-colors"
-                  >
-                    <div className="flex items-center justify-between gap-2 flex-wrap">
-                      <span className="font-bold text-xs uppercase tracking-wider text-amber-700 dark:text-amber-400 flex items-center space-x-1.5">
-                        <BookOpen className="w-3.5 h-3.5 shrink-0" />
-                        <span>{item.ref}</span>
+        {/* Versículo de Origem em Destaque */}
+        {sourceText && (
+          <div className="px-4 sm:px-5 py-3.5 bg-amber-50/70 dark:bg-amber-950/30 border-b border-amber-200/70 dark:border-amber-900/40 shrink-0">
+            <div className="flex items-center justify-between gap-2 mb-1">
+              <span className="text-[11px] font-extrabold uppercase tracking-wider text-amber-800 dark:text-amber-300">
+                Texto Base • {verseKey}
+              </span>
+              <span className="text-[10px] font-medium text-amber-700/80 dark:text-amber-400/80">
+                Escritura interpreta Escritura
+              </span>
+            </div>
+            <p className="text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed">
+              “{sourceText}”
+            </p>
+          </div>
+        )}
+
+        {/* Lista de Referências */}
+        <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4">
+          {references && references.length > 0 ? (
+            references.map((item, idx) => {
+              const catKey = item.category && CATEGORY_STYLES[item.category]
+                ? item.category
+                : 'Harmonia Doutrinária';
+              const catStyle = CATEGORY_STYLES[catKey];
+              const navTarget = parseRefForNavigation(item.ref);
+
+              return (
+                <div
+                  key={idx}
+                  className="rounded-2xl p-4 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-800/40 space-y-2.5 hover:border-amber-400/60 dark:hover:border-amber-600/60 transition-colors"
+                >
+                  <div className="flex items-center justify-between gap-2 flex-wrap">
+                    <span className="font-bold text-xs uppercase tracking-wider text-amber-700 dark:text-amber-400 flex items-center space-x-1.5">
+                      <BookOpen className="w-3.5 h-3.5 shrink-0" />
+                      <span>{item.ref}</span>
+                    </span>
+
+                    <div className="flex items-center space-x-1.5">
+                      <span
+                        className={`text-[10px] font-bold px-2 py-0.5 rounded-full border inline-flex items-center space-x-1 ${catStyle.badgeClass}`}
+                        title={catStyle.description}
+                      >
+                        <Sparkles className="w-2.5 h-2.5" />
+                        <span>{catStyle.label}</span>
                       </span>
 
-                      <div className="flex items-center space-x-1.5">
-                        {/* Badge da Ponte Hermenêutica */}
-                        <span
-                          className={`text-[10px] font-bold px-2 py-0.5 rounded-full border inline-flex items-center space-x-1 ${catStyle.badgeClass}`}
-                          title={catStyle.description}
-                        >
-                          <Sparkles className="w-2.5 h-2.5" />
-                          <span>{catStyle.label}</span>
-                        </span>
-
-                        <button
-                          onClick={() => handleCopy(item, idx)}
-                          className="p-1 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 rounded transition-colors"
-                          title="Copiar referência e texto"
-                        >
-                          {copiedIdx === idx ? (
-                            <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-                          ) : (
-                            <Copy className="w-3.5 h-3.5" />
-                          )}
-                        </button>
-                      </div>
-                    </div>
-
-                    {item.text ? (
-                      <p className="text-sm text-zinc-700 dark:text-zinc-200 leading-relaxed">
-                        “{item.text}”
-                      </p>
-                    ) : (
-                      <p className="text-xs text-zinc-500 dark:text-zinc-400 italic">
-                        Consulte esta passagem para aprofundar seu estudo bíblico.
-                      </p>
-                    )}
-
-                    {/* Rodapé do Card: Explicação da Ponte + Ação de Abrir Capítulo */}
-                    <div className="pt-1.5 border-t border-zinc-200/60 dark:border-zinc-700/50 flex items-center justify-between gap-2 text-[11px]">
-                      <span className="text-zinc-500 dark:text-zinc-400 truncate">
-                        {catStyle.description}
-                      </span>
-
-                      {navTarget && onNavigateToPassage && (
-                        <button
-                          onClick={() => {
-                            onNavigateToPassage(navTarget.book, navTarget.chapter);
-                            onClose();
-                          }}
-                          className="inline-flex items-center space-x-1 font-bold text-amber-700 dark:text-amber-400 hover:underline shrink-0"
-                          title={`Abrir ${navTarget.book} ${navTarget.chapter} no leitor bíblico`}
-                        >
-                          <span>Abrir cap.</span>
-                          <ArrowUpRight className="w-3 h-3" />
-                        </button>
-                      )}
+                      <button
+                        type="button"
+                        onClick={() => handleCopy(item, idx)}
+                        className="p-1 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 rounded transition-colors cursor-pointer"
+                        title="Copiar referência e texto"
+                      >
+                        {copiedIdx === idx ? (
+                          <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                        ) : (
+                          <Copy className="w-3.5 h-3.5" />
+                        )}
+                      </button>
                     </div>
                   </div>
-                );
-              })
-            ) : (
-              <div className="text-center py-12 text-zinc-400">
-                <p className="text-sm">Nenhuma referência adicional cadastrada para este versículo.</p>
-              </div>
-            )}
-          </div>
 
-          {/* Rodapé informativo */}
-          <div className="p-4 border-t border-zinc-200 dark:border-zinc-800 text-[11px] text-zinc-400 text-center">
-            Curadoria exegética baseada em citações diretas, cumprimento profético, tipologia e analogia da fé (NVT).
-          </div>
+                  {item.text ? (
+                    <p className="text-sm text-zinc-700 dark:text-zinc-200 leading-relaxed">
+                      “{item.text}”
+                    </p>
+                  ) : (
+                    <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                      Consulte esta passagem para aprofundar seu estudo bíblico.
+                    </p>
+                  )}
 
+                  <div className="pt-1.5 border-t border-zinc-200/60 dark:border-zinc-700/50 flex items-center justify-between gap-2 text-[11px]">
+                    <span className="text-zinc-500 dark:text-zinc-400 truncate">
+                      {catStyle.description}
+                    </span>
+
+                    {navTarget && onNavigateToPassage && (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          onNavigateToPassage(navTarget.book, navTarget.chapter);
+                          onClose();
+                        }}
+                        className="inline-flex items-center space-x-1 font-bold text-amber-700 dark:text-amber-400 hover:underline shrink-0 cursor-pointer"
+                        title={`Abrir ${navTarget.book} ${navTarget.chapter} no leitor bíblico`}
+                      >
+                        <span>Abrir cap.</span>
+                        <ArrowUpRight className="w-3 h-3" />
+                      </button>
+                    )}
+                  </div>
+                </div>
+              );
+            })
+          ) : (
+            <div className="text-center py-12 text-zinc-400">
+              <p className="text-sm">Nenhuma referência adicional cadastrada para este versículo.</p>
+            </div>
+          )}
+        </div>
+
+        {/* Rodapé Sticky para Voltar com o Polegar no Celular */}
+        <div className="px-4 sm:px-5 pt-3 pb-[max(0.875rem,env(safe-area-inset-bottom))] border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shrink-0 space-y-2">
+          <button
+            type="button"
+            onClick={onClose}
+            className="w-full py-2.5 px-4 rounded-xl bg-zinc-950 hover:bg-zinc-800 dark:bg-white dark:hover:bg-zinc-200 text-white dark:text-zinc-950 text-xs sm:text-sm font-semibold flex items-center justify-center space-x-2 transition-colors cursor-pointer"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            <span>Voltar ao Texto</span>
+          </button>
+          <p className="text-[10px] text-zinc-400 text-center">
+            Curadoria exegética NVT • Escritura interpreta Escritura
+          </p>
         </div>
       </div>
     </div>
